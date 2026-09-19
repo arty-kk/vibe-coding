@@ -19,7 +19,7 @@ class SiteTests(unittest.TestCase):
     def test_complete_translations_for_every_shipped_workflow(self):
         build_site.validate_locales(self.locales, self.rows)
         self.assertEqual({'en', 'es', 'ru', 'zh-CN'}, set(self.locales))
-        self.assertEqual(221, len(self.locales['en']['titles']))
+        self.assertEqual(len(self.rows), len(self.locales['en']['titles']))
         for locale in self.locales.values():
             self.assertEqual({'{skill}', '{title}', '{id}'}, set(re.findall(r'\{\w+\}', locale['ui']['prompt'])))
 
@@ -48,6 +48,11 @@ class SiteTests(unittest.TestCase):
                 self.assertEqual((build_site.PLUGIN/row['path']).read_text(encoding='utf-8'), shipped[row['id']]['body'])
             locale_data = json.loads(re.search(r'id="locale-data">(.*?)</script>', page, re.S)[1])
             self.assertEqual(self.locales['ru']['titles'], locale_data['ru']['titles'])
+            offline = (build_site.PLUGIN/'CATALOG.html').read_text(encoding='utf-8')
+            offline_locales = json.loads(re.search(r'id="locale-data">(.*?)</script>', offline, re.S)[1])
+            self.assertEqual(locale_data, offline_locales)
+            self.assertIn('href="assets/icon.png"', offline)
+            self.assertIn('href="https://arty-kk.github.io/vibe-coding/privacy.html"', offline)
             for name in ('privacy', 'terms'):
                 policy = (destination/f'{name}.html').read_text(encoding='utf-8')
                 self.assertIn('<html lang="en">', policy)

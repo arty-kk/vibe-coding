@@ -3,7 +3,7 @@ name: vibe-harness
 description: "Audit, fix or verify agent harness state machines, checkpoint/resume, bounded fan-out, cancellation, durable side effects and replay. This concerns application orchestration code, not creating Codex tasks."
 ---
 
-# Исполнение агентов
+# Agent execution
 
 Read [the shared workflow](../../references/workflow.md) once per task, then the one recipe matching the requested operation and boundary. Do not load every recipe. The user's request controls scope and whether edits are allowed.
 

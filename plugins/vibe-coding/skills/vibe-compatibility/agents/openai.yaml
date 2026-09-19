@@ -1,4 +1,4 @@
 interface:
-  display_name: "Vibe · Совместимость и протоколы"
-  short_description: "Контракты совместимости и сравнение с эталоном"
-  default_prompt: "Используй $vibe-compatibility. Сравни поведение реализации с эталонным контрактом."
+  display_name: "Vibe · Compatibility & protocols"
+  short_description: "Compatibility contracts and reference comparisons"
+  default_prompt: "Use $vibe-compatibility to audit the selected compatibility & protocols boundary."

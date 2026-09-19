@@ -29,9 +29,8 @@ Important first-run friction, missing setup state, misleading plan/trial guidanc
 
 Lower-risk but concrete activation improvement: weak empty-state copy, stale checklist/docs, minor redirect inconsistency, or missing test for a secondary onboarding state.
 
-## Task-sub quality
+## Finding quality
 
-- Use task briefs creation when available; do not force a handmade markdown task brief body.
-- Every task brief must cite `path:line[-line]` evidence for route/state owner and affected activation step.
+- Every finding must cite `path:line[-line]` evidence for route/state owner and affected activation step.
 - Include affected role/plan/tenant state, expected behavior, acceptance criteria, and validation direction.
 - Merge symptoms that share the same onboarding owner/source of truth.

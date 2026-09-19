@@ -1,48 +1,50 @@
-# Каталог Vibe Coding
+# Vibe Coding catalog
 
-Выберите предмет работы и режим. Для аудита достаточно указать проблему; для исправления — желаемое поведение. Каждая ссылка ведёт к установленному навыку.
+Choose the requested domain and operation. Each link opens its focused skill.
 
-| Навык | Когда применять | Сценариев |
+| Skill | When to use | Workflows |
 |---|---|---|
-| [`$vibe-task`](../skills/vibe-task/SKILL.md) | Постановка задач, разбиение и синтез результатов | 7 |
-| [`$vibe-quality`](../skills/vibe-quality/SKILL.md) | Тестовое покрытие и готовность к выпуску | 4 |
-| [`$vibe-map`](../skills/vibe-map/SKILL.md) | Устройство проекта, связи и владельцы правил | 18 |
-| [`$vibe-backend`](../skills/vibe-backend/SKILL.md) | Контракты API и сценарии работы ботов | 4 |
-| [`$vibe-product`](../skills/vibe-product/SKILL.md) | Требования, интерфейсы и пользовательские сценарии | 12 |
-| [`$vibe-design`](../skills/vibe-design/SKILL.md) | Дизайн-система, клавиатура, фокус и доступность | 4 |
-| [`$vibe-content`](../skills/vibe-content/SKILL.md) | Тексты продукта, локализация и поисковая видимость | 8 |
-| [`$vibe-ai`](../skills/vibe-ai/SKILL.md) | AI-функции, поиск по документам и оценка качества | 17 |
-| [`$vibe-ops`](../skills/vibe-ops/SKILL.md) | CI/CD, конфигурация и фоновые задачи | 5 |
-| [`$vibe-domain`](../skills/vibe-domain/SKILL.md) | Права доступа, данные, тарифы и продуктовые события | 20 |
-| [`$vibe-docs`](../skills/vibe-docs/SKILL.md) | README, дизайн-документация и границы рефакторинга | 7 |
-| [`$vibe-reliability`](../skills/vibe-reliability/SKILL.md) | Сбои, гонки, согласованность и производительность | 10 |
-| [`$vibe-workflow`](../skills/vibe-workflow/SKILL.md) | Сверка фактов, обновление карт и обслуживание плагина | 8 |
-| [`$vibe-harness`](../skills/vibe-harness/SKILL.md) | Состояния агентов, восстановление и повторный запуск | 3 |
-| [`$vibe-kubernetes`](../skills/vibe-kubernetes/SKILL.md) | Развёртывание, ресурсы и восстановление Kubernetes | 3 |
-| [`$vibe-terraform`](../skills/vibe-terraform/SKILL.md) | Планы Terraform, состояние и перенос ресурсов | 3 |
-| [`$vibe-observability`](../skills/vibe-observability/SKILL.md) | Метрики, логи, дашборды и полезные оповещения | 3 |
-| [`$vibe-kafka`](../skills/vibe-kafka/SKILL.md) | События, offsets, повторная доставка и rebalance | 3 |
-| [`$vibe-rabbitmq`](../skills/vibe-rabbitmq/SKILL.md) | Маршрутизация, подтверждения и повторная доставка | 3 |
-| [`$vibe-redis`](../skills/vibe-redis/SKILL.md) | Redis Streams, BullMQ, ARQ и восстановление задач | 3 |
-| [`$vibe-celery`](../skills/vibe-celery/SKILL.md) | Доставка задач Celery, повторы и завершение workers | 3 |
-| [`$vibe-temporal`](../skills/vibe-temporal/SKILL.md) | Детерминизм workflow, replay и совместимость версий | 3 |
-| [`$vibe-go-rust`](../skills/vibe-go-rust/SKILL.md) | Конкурентность и завершение сервисов Go и Rust | 3 |
-| [`$vibe-sql`](../skills/vibe-sql/SKILL.md) | Запросы SQL, миграции, блокировки и пулы | 3 |
-| [`$vibe-nosql`](../skills/vibe-nosql/SKILL.md) | Ключи, индексы, согласованность и горячие партиции | 3 |
-| [`$vibe-storage`](../skills/vibe-storage/SKILL.md) | Загрузка файлов, версии, доступ и восстановление | 3 |
-| [`$vibe-vectors`](../skills/vibe-vectors/SKILL.md) | Векторный поиск, ACL, полнота и переиндексация | 3 |
-| [`$vibe-clickhouse`](../skills/vibe-clickhouse/SKILL.md) | Загрузка данных, движки таблиц и стоимость запросов | 3 |
-| [`$vibe-security`](../skills/vibe-security/SKILL.md) | Безопасность, приватность и журнал действий | 11 |
-| [`$vibe-compatibility`](../skills/vibe-compatibility/SKILL.md) | Контракты совместимости и сравнение с эталоном | 3 |
-| [`$vibe-recovery`](../skills/vibe-recovery/SKILL.md) | Релизы, резервные копии, rollback и восстановление | 3 |
-| [`$vibe-integrations`](../skills/vibe-integrations/SKILL.md) | Внешние API, webhooks, таймауты и сетевые сбои | 3 |
-| [`$vibe-realtime`](../skills/vibe-realtime/SKILL.md) | Кэш клиента, optimistic updates и восстановление связи | 3 |
-| [`$vibe-payments`](../skills/vibe-payments/SKILL.md) | Платёжные события, сверка состояния и права тарифа | 3 |
-| [`$vibe-notifications`](../skills/vibe-notifications/SKILL.md) | Уведомления, согласия, доставка и защита от дублей | 3 |
-| [`$vibe-cache`](../skills/vibe-cache/SKILL.md) | Ключи кэша, инвалидация и актуальность данных | 3 |
-| [`$vibe-search`](../skills/vibe-search/SKILL.md) | Поисковые индексы, свежесть результатов и права | 3 |
-| [`$vibe-flags`](../skills/vibe-flags/SKILL.md) | Флаги функций, аудитории и откат изменений | 3 |
-| [`$vibe-mobile`](../skills/vibe-mobile/SKILL.md) | Навигация, offline, разрешения и выпуск приложения | 3 |
-| [`$vibe-desktop`](../skills/vibe-desktop/SKILL.md) | Desktop-приложения, расширения браузера и IPC | 5 |
-| [`$vibe-review`](../skills/vibe-review/SKILL.md) | Проверка полного патча и затронутых контрактов | 1 |
-| [`$vibe-probe`](../skills/vibe-probe/SKILL.md) | Одна область, доказанный баг и проверка исправления | 5 |
+| [`$vibe-ai`](../skills/vibe-ai/SKILL.md) | AI features, document retrieval and quality evaluation. | 17 |
+| [`$vibe-backend`](../skills/vibe-backend/SKILL.md) | API contracts and bot interaction flows. | 4 |
+| [`$vibe-cache`](../skills/vibe-cache/SKILL.md) | Cache keys, invalidation and data freshness. | 3 |
+| [`$vibe-celery`](../skills/vibe-celery/SKILL.md) | Celery task delivery, retries and worker shutdown. | 3 |
+| [`$vibe-clickhouse`](../skills/vibe-clickhouse/SKILL.md) | Data ingestion, table engines and query cost. | 3 |
+| [`$vibe-compatibility`](../skills/vibe-compatibility/SKILL.md) | Compatibility contracts and reference comparisons. | 3 |
+| [`$vibe-content`](../skills/vibe-content/SKILL.md) | Product copy, localization and search visibility. | 8 |
+| [`$vibe-design`](../skills/vibe-design/SKILL.md) | Design systems, keyboard navigation, focus and accessibility. | 4 |
+| [`$vibe-desktop`](../skills/vibe-desktop/SKILL.md) | Desktop apps, browser extensions and IPC. | 5 |
+| [`$vibe-docs`](../skills/vibe-docs/SKILL.md) | READMEs, design documents and refactoring boundaries. | 7 |
+| [`$vibe-domain`](../skills/vibe-domain/SKILL.md) | Access control, data, billing plans and product events. | 21 |
+| [`$vibe-flags`](../skills/vibe-flags/SKILL.md) | Feature flags, audiences and rollbacks. | 3 |
+| [`$vibe-go-rust`](../skills/vibe-go-rust/SKILL.md) | Concurrency and shutdown in Go and Rust services. | 3 |
+| [`$vibe-harness`](../skills/vibe-harness/SKILL.md) | Agent state, recovery and replay. | 3 |
+| [`$vibe-integrations`](../skills/vibe-integrations/SKILL.md) | External APIs, webhooks, timeouts and network failures. | 3 |
+| [`$vibe-kafka`](../skills/vibe-kafka/SKILL.md) | Events, offsets, redelivery and rebalancing. | 3 |
+| [`$vibe-kubernetes`](../skills/vibe-kubernetes/SKILL.md) | Kubernetes deployments, resources and recovery. | 3 |
+| [`$vibe-map`](../skills/vibe-map/SKILL.md) | Project structure, connections and contract ownership. | 18 |
+| [`$vibe-mcp`](../skills/vibe-mcp/SKILL.md) | MCP versions, tool contracts, transport and authorization. | 3 |
+| [`$vibe-mobile`](../skills/vibe-mobile/SKILL.md) | Navigation, offline behavior, permissions and releases. | 3 |
+| [`$vibe-nosql`](../skills/vibe-nosql/SKILL.md) | Keys, indexes, consistency and hot partitions. | 3 |
+| [`$vibe-notifications`](../skills/vibe-notifications/SKILL.md) | Notifications, consent, delivery and deduplication. | 3 |
+| [`$vibe-observability`](../skills/vibe-observability/SKILL.md) | Metrics, logs, dashboards and actionable alerts. | 3 |
+| [`$vibe-ops`](../skills/vibe-ops/SKILL.md) | CI/CD, configuration and background jobs. | 5 |
+| [`$vibe-payments`](../skills/vibe-payments/SKILL.md) | Payment events, reconciliation and plan entitlements. | 3 |
+| [`$vibe-probe`](../skills/vibe-probe/SKILL.md) | One area, one proven bug and a verified fix. | 5 |
+| [`$vibe-product`](../skills/vibe-product/SKILL.md) | Requirements, interfaces and user journeys. | 12 |
+| [`$vibe-quality`](../skills/vibe-quality/SKILL.md) | Test coverage and release readiness. | 4 |
+| [`$vibe-rabbitmq`](../skills/vibe-rabbitmq/SKILL.md) | Routing, acknowledgements and redelivery. | 3 |
+| [`$vibe-realtime`](../skills/vibe-realtime/SKILL.md) | Client caches, optimistic updates and reconnection. | 3 |
+| [`$vibe-recovery`](../skills/vibe-recovery/SKILL.md) | Releases, backups, rollbacks and recovery. | 3 |
+| [`$vibe-redis`](../skills/vibe-redis/SKILL.md) | Redis Streams, BullMQ, ARQ and job recovery. | 3 |
+| [`$vibe-reliability`](../skills/vibe-reliability/SKILL.md) | Failures, race conditions, consistency and performance. | 10 |
+| [`$vibe-review`](../skills/vibe-review/SKILL.md) | Full patch review and affected contracts. | 1 |
+| [`$vibe-search`](../skills/vibe-search/SKILL.md) | Search indexes, result freshness and permissions. | 3 |
+| [`$vibe-security`](../skills/vibe-security/SKILL.md) | Security, privacy and audit logs. | 11 |
+| [`$vibe-sql`](../skills/vibe-sql/SKILL.md) | SQL queries, migrations, locks and connection pools. | 3 |
+| [`$vibe-storage`](../skills/vibe-storage/SKILL.md) | File uploads, versions, access and recovery. | 3 |
+| [`$vibe-task`](../skills/vibe-task/SKILL.md) | Task definition, decomposition and synthesis of findings. | 7 |
+| [`$vibe-temporal`](../skills/vibe-temporal/SKILL.md) | Workflow determinism, replay and version compatibility. | 3 |
+| [`$vibe-terraform`](../skills/vibe-terraform/SKILL.md) | Terraform plans, state and resource moves. | 3 |
+| [`$vibe-vectors`](../skills/vibe-vectors/SKILL.md) | Vector search, ACLs, recall and reindexing. | 3 |
+| [`$vibe-web`](../skills/vibe-web/SKILL.md) | SSR, hydration, serialized data, caches and server actions. | 3 |
+| [`$vibe-workflow`](../skills/vibe-workflow/SKILL.md) | Evidence checks, map updates and plugin maintenance. | 8 |

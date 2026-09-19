@@ -1,4 +1,4 @@
 interface:
-  display_name: "Vibe · Векторные базы"
-  short_description: "Векторный поиск, ACL, полнота и переиндексация"
-  default_prompt: "Используй $vibe-vectors. Проверь полноту поиска и фильтры доступа в векторной базе."
+  display_name: "Vibe · Vector databases"
+  short_description: "Vector search, ACLs, recall and reindexing"
+  default_prompt: "Use $vibe-vectors to audit the selected vector databases boundary."

@@ -3,7 +3,7 @@ name: vibe-product
 description: "Audit or implement a selected product requirement, UI behavior, user journey, onboarding, form, or data table; verify acceptance and metric alignment against an existing repository."
 ---
 
-# Продукт и UX
+# Product & UX
 
 Read [the shared workflow](../../references/workflow.md) once per task, then the one recipe matching the requested operation and boundary. Do not load every recipe. The user's request controls scope and whether edits are allowed.
 

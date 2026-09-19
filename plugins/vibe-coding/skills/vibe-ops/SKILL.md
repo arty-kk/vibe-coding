@@ -3,7 +3,7 @@ name: vibe-ops
 description: "Audit or fix runtime configuration, background jobs and CI/CD in a repository. Bootstrap deployment files only for a requested and evidenced deployment target; do not choose a provider by default."
 ---
 
-# Инфраструктура и фоновые задачи
+# Infrastructure & background jobs
 
 Read [the shared workflow](../../references/workflow.md) once per task, then the one recipe matching the requested operation and boundary. Do not load every recipe. The user's request controls scope and whether edits are allowed.
 

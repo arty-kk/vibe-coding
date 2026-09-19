@@ -3,7 +3,7 @@ name: vibe-payments
 description: "Audit, fix or verify payment provider adapters, signed webhooks, idempotency, event ordering, reconciliation and entitlement consistency. Use sandbox fixtures for payment scenarios."
 ---
 
-# Платежи
+# Payments
 
 Read [the shared workflow](../../references/workflow.md) once per task, then the one recipe matching the requested operation and boundary. Do not load every recipe. The user's request controls scope and whether edits are allowed.
 

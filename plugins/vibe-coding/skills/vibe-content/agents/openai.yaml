@@ -1,4 +1,4 @@
 interface:
-  display_name: "Vibe · Тексты, локализация и SEO"
-  short_description: "Тексты продукта, локализация и поисковая видимость"
-  default_prompt: "Используй $vibe-content. Проверь тексты и локализацию выбранного сценария."
+  display_name: "Vibe · Copy, localization & SEO"
+  short_description: "Product copy, localization and search visibility"
+  default_prompt: "Use $vibe-content to audit the selected copy, localization & seo boundary."

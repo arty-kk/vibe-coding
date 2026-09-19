@@ -3,7 +3,7 @@ name: vibe-backend
 description: "Audit or fix API contracts and conversational bot flows in an existing repository, including validation, state transitions, callbacks, permissions, and direct consumers."
 ---
 
-# API и боты
+# APIs & bots
 
 Read [the shared workflow](../../references/workflow.md) once per task, then the one recipe matching the requested operation and boundary. Do not load every recipe. The user's request controls scope and whether edits are allowed.
 

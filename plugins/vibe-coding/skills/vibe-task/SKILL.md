@@ -3,7 +3,7 @@ name: vibe-task
 description: "Shape implementation tasks, validate scope, reconcile findings, decompose large objectives, or close an iteration. Use for requested planning and synthesis, not as a mandatory step before every edit."
 ---
 
-# Задачи и синтез
+# Tasks & synthesis
 
 Read [the shared workflow](../../references/workflow.md) once per task, then the one recipe matching the requested operation and boundary. Do not load every recipe. The user's request controls scope and whether edits are allowed.
 

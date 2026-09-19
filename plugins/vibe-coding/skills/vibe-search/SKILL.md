@@ -3,7 +3,7 @@ name: vibe-search
 description: "Audit, fix or verify document indexing, search ACLs, freshness, ranking/filter behavior, reindexing and failure recovery against product expectations."
 ---
 
-# Поисковые индексы
+# Search indexes
 
 Read [the shared workflow](../../references/workflow.md) once per task, then the one recipe matching the requested operation and boundary. Do not load every recipe. The user's request controls scope and whether edits are allowed.
 

@@ -1,7 +1,7 @@
 {
   "ui": {
     "pageTitle": "Vibe Coding — workflow catalog",
-    "description": "43 Codex skills and 221 engineering workflows for mapping, review, debugging and verification.",
+    "description": "{skills} Codex skills and {recipes} engineering workflows for mapping, review, debugging and verification.",
     "language": "Language",
     "eyebrow": "Your engineering library for Codex",
     "headline": "Pick a task.",
@@ -95,7 +95,9 @@
     "vibe-temporal": "Temporal",
     "vibe-terraform": "Terraform",
     "vibe-vectors": "Vector databases",
-    "vibe-workflow": "Workflow checks & maintenance"
+    "vibe-workflow": "Workflow checks & maintenance",
+    "vibe-mcp": "MCP servers & clients",
+    "vibe-web": "Web rendering & server boundaries"
   },
   "summaries": {
     "vibe-ai": "AI features, document retrieval and quality evaluation.",
@@ -139,7 +141,9 @@
     "vibe-temporal": "Workflow determinism, replay and version compatibility.",
     "vibe-terraform": "Terraform plans, state and resource moves.",
     "vibe-vectors": "Vector search, ACLs, recall and reindexing.",
-    "vibe-workflow": "Evidence checks, map updates and plugin maintenance."
+    "vibe-workflow": "Evidence checks, map updates and plugin maintenance.",
+    "vibe-mcp": "MCP versions, tool contracts, transport and authorization.",
+    "vibe-web": "SSR, hydration, serialized data, caches and server actions."
   },
   "titles": {
     "ai-evaluation-audit": "AI Evaluation Audit",
@@ -362,7 +366,14 @@
     "prompt-skill-sync-audit": "Prompt Skill Sync Audit",
     "prompt-skill-sync-polish": "Prompt Skill Sync Polish",
     "scoped-audit": "Scoped Audit",
-    "scoped-polish": "Scoped Polish"
+    "scoped-polish": "Scoped Polish",
+    "mcp-server-audit": "MCP Server Audit",
+    "mcp-server-polish": "MCP Server Polish",
+    "mcp-protocol-auth-check": "MCP Protocol & Authorization Check",
+    "web-rendering-audit": "Web Rendering Audit",
+    "web-rendering-polish": "Web Rendering Polish",
+    "web-boundary-check": "Web Server/Client Boundary Check",
+    "oauth-oidc-session-check": "OAuth OIDC Session Check"
   },
   "policy": {
     "privacy": "# Privacy\n\nVibe Coding is maintained by Arty S. / ARTSIOM SATSUK ([arty-kk](https://github.com/arty-kk)).\n\nThe distributed plugin contains text instructions, a local catalog and local Python utilities. It has no publisher-operated backend, analytics, tracking pixels, cookies, account system or telemetry. Its catalog and packaging utilities do not send project contents to the publisher.\n\nWhen the plugin is used in Codex or ChatGPT, the host processes prompts, files and tool results under the host's settings and policies. Workflows may use tools and services that the user has enabled; those services apply their own data policies. The plugin does not grant itself additional permissions.\n\nThe public website is hosted on GitHub Pages. GitHub may process ordinary request information under its privacy policy. Information voluntarily posted in repository issues or pull requests is public and handled by GitHub. Do not post credentials, private source code or personal data.\n\nThe website stores only your selected interface language in your browser's local storage. This preference is not sent to the publisher.\n\nPrivacy questions can be raised at [https://github.com/arty-kk/vibe-coding/issues](https://github.com/arty-kk/vibe-coding/issues) without including sensitive details.\n",

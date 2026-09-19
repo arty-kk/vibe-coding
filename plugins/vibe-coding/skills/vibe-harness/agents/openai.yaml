@@ -1,4 +1,4 @@
 interface:
-  display_name: "Vibe · Исполнение агентов"
-  short_description: "Состояния агентов, восстановление и повторный запуск"
-  default_prompt: "Используй $vibe-harness. Проверь восстановление выполнения агента после сбоя."
+  display_name: "Vibe · Agent execution"
+  short_description: "Agent state, recovery and replay"
+  default_prompt: "Use $vibe-harness to audit the selected agent execution boundary."

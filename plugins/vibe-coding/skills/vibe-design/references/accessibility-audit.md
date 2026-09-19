@@ -29,10 +29,9 @@ Important reachable accessibility gap on a main path, shared component defect li
 
 Lower-risk but concrete accessibility improvement: minor landmark/name drift, weak focus affordance, missing story/test for an important state, or non-critical responsive/zoom issue.
 
-## Task-sub quality
+## Finding quality
 
-- Use task briefs creation when available; do not force a handmade markdown task brief body.
-- Every task brief must cite `path:line[-line]` evidence for the affected owner and reachable surface.
+- Every finding must cite `path:line[-line]` evidence for the affected owner and reachable surface.
 - Include affected user path, expected accessible behavior, acceptance criteria, and validation direction such as keyboard trace, accessibility test, preview, or screenshot.
 - Merge issues by owner when one fix addresses multiple surfaces.
 - Do not report purely theoretical standard violations without reachable product impact.

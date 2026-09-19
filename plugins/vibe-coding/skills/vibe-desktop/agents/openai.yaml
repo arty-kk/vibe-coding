@@ -1,4 +1,4 @@
 interface:
-  display_name: "Vibe · Desktop и расширения"
-  short_description: "Desktop-приложения, расширения браузера и IPC"
-  default_prompt: "Используй $vibe-desktop. Проверь границы доступа между UI и native-слоем."
+  display_name: "Vibe · Desktop & extensions"
+  short_description: "Desktop apps, browser extensions and IPC"
+  default_prompt: "Use $vibe-desktop to audit the selected desktop & extensions boundary."

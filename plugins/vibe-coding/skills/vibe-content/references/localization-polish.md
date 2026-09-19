@@ -23,6 +23,8 @@ Improve a coherent localization surface: missing strings, inconsistent keys, har
 - Locale-aware dates, numbers, currencies, percentages, sorting, and relative time.
 - Validation/error/status copy, accessibility labels, metadata, notifications, and bot/web platform-specific copy.
 - Fallback behavior and key naming consistency.
+- Explicit locale/default precedence, persistence when storage is unavailable, and locale-preserving links.
+- Shared translation ownership for web, offline and generated interfaces when the product ships them.
 
 ## Implementation principles
 
@@ -35,4 +37,4 @@ Improve a coherent localization surface: missing strings, inconsistent keys, har
 
 Run relevant repository-native checks. When explaining non-obvious repo facts, skipped adjacent work, or detected behavior, cite `path:line[-line]` where useful.
 
-Spot-check at least one affected locale/render path where possible.
+Verify the reported locale and the default path. For a selector or routing change, include a saved preference, an explicit language link and the affected search or generated prompt. Inspect a representative long translation on the supported narrow layout when text expansion can affect the change.

@@ -1,11 +1,13 @@
 ---
 name: vibe-domain
-description: "Audit or fix repository business contracts: auth, RBAC/ABAC, tenant isolation, billing entitlements, data models, pipelines, analytics, experiments or notebook productionization."
+description: "Audit, fix or verify repository business contracts: authentication and OAuth/OIDC sessions, RBAC/ABAC, tenant isolation, billing, data models, pipelines, notebook productionization, experiments and product analytics."
 ---
 
-# Права, данные и бизнес-правила
+# Permissions, data & business rules
 
 Read [the shared workflow](../../references/workflow.md) once per task, then the one recipe matching the requested operation and boundary. Do not load every recipe. The user's request controls scope and whether edits are allowed.
+
+For OAuth/OIDC verification, select the session check. For a requested authentication fix, use Auth Permissions Polish and apply the relevant protocol checks during verification.
 
 ## Recipes
 
@@ -23,6 +25,7 @@ Read [the shared workflow](../../references/workflow.md) once per task, then the
 | [Experiment Design Polish](references/experiment-design-polish.md) | implement |
 | [Multi Tenant Isolation Audit](references/multi-tenant-isolation-audit.md) | audit |
 | [Multi Tenant Isolation Polish](references/multi-tenant-isolation-polish.md) | implement |
+| [OAuth OIDC Session Check](references/oauth-oidc-session-check.md) | check |
 | [Notebook Productionization Audit](references/notebook-productionization-audit.md) | audit |
 | [Notebook Productionization Polish](references/notebook-productionization-polish.md) | implement |
 | [Product Analytics Audit](references/product-analytics-audit.md) | audit |

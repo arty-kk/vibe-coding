@@ -30,11 +30,10 @@ Important extraction/correction/export defect, misleading confidence/status beha
 
 Lower-risk but concrete quality issue: unclear copy, incomplete low-confidence state, minor fixture gap, stale docs/map, or maintainability coupling that blocks safe document-pipeline changes.
 
-## Task-sub quality
+## Finding quality
 
-- Use task briefs creation when available; do not force a handmade markdown task brief body.
-- Every task brief must cite `path:line[-line]` evidence for the document pipeline owner and affected user/system surface, plus symbol when possible.
+- Every finding must cite `path:line[-line]` evidence for the document pipeline owner and affected user/system surface, plus symbol when possible.
 - Include document type, pipeline step, expected output/validation behavior, acceptance criteria, and eval/test direction when discoverable.
-- Use one unambiguous fix direction per task brief; no alternatives.
+- Use one unambiguous fix direction per finding; explain a tradeoff only when it changes the decision.
 - Merge symptoms under the same document-pipeline owner unless fixes, rollout units, fixtures, or validation strategy differ.
 - Do not recommend changing OCR providers/models unless current repo evidence proves the existing owner cannot satisfy the behavior.

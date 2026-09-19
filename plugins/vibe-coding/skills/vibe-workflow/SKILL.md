@@ -3,7 +3,7 @@ name: vibe-workflow
 description: "Normalize evidence, check or refresh stale repository maps, maintain this Vibe Coding plugin, or perform a scoped audit/fix/check when no specialized domain recipe fits."
 ---
 
-# Проверки и обслуживание процесса
+# Workflow checks & maintenance
 
 Read [the shared workflow](../../references/workflow.md) once per task, then the one recipe matching the requested operation and boundary. Do not load every recipe. The user's request controls scope and whether edits are allowed.
 

@@ -1,4 +1,4 @@
 interface:
-  display_name: "Vibe · Проверки и обслуживание процесса"
-  short_description: "Сверка фактов, обновление карт и обслуживание плагина"
-  default_prompt: "Используй $vibe-workflow. Проверь, какие карты устарели после изменений."
+  display_name: "Vibe · Workflow checks & maintenance"
+  short_description: "Evidence checks, map updates and plugin maintenance"
+  default_prompt: "Use $vibe-workflow to audit the selected workflow checks & maintenance boundary."

@@ -29,11 +29,10 @@ Important CI/deploy/runtime gap that can cause failed releases, unobserved worke
 
 Lower-risk but concrete ops hygiene: stale env docs, weak runbook, missing non-critical metric, minor workflow ambiguity, or config coupling that blocks safe operation.
 
-## Task-sub quality
+## Finding quality
 
-- Use task briefs creation when available; do not force a handmade markdown task brief body.
-- Every task brief must cite `path:line[-line]` evidence for the operational owner and affected runtime/release path, plus symbol when possible.
+- Every finding must cite `path:line[-line]` evidence for the operational owner and affected runtime/release path, plus symbol when possible.
 - Include expected operational behavior, acceptance criteria, validation command or manual verification direction, and rollback/recovery note when relevant.
-- Use one unambiguous fix direction per task brief; no alternatives.
+- Use one unambiguous fix direction per finding; explain a tradeoff only when it changes the decision.
 - Merge symptoms under the same operational owner unless rollout, validation, or risk boundaries differ.
 - Do not propose new infrastructure platforms, vendors, or broad observability stacks without repo/user evidence.

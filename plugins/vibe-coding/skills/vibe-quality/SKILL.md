@@ -3,7 +3,7 @@ name: vibe-quality
 description: "Audit test coverage or release readiness, improve an existing test harness, or verify visual regressions. For review of a concrete diff use vibe-review."
 ---
 
-# Качество и готовность
+# Quality & readiness
 
 Read [the shared workflow](../../references/workflow.md) once per task, then the one recipe matching the requested operation and boundary. Do not load every recipe. The user's request controls scope and whether edits are allowed.
 

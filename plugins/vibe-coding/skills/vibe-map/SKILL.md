@@ -3,7 +3,7 @@ name: vibe-map
 description: "Create or refresh evidence-backed repository maps of product capabilities, navigation, owners, data, runtime, permissions, tests, and releases. Use for understanding a codebase or explicitly requested maps."
 ---
 
-# Карта проекта
+# Project mapping
 
 Read [the shared workflow](../../references/workflow.md) once per task, then the one recipe matching the requested operation and boundary. Do not load every recipe. The user's request controls scope and whether edits are allowed.
 

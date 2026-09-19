@@ -3,7 +3,7 @@ name: vibe-security
 description: "Audit, fix or verify a requested application security, abuse-defense, privacy/data-rights or audit-log boundary using reachable evidence. Do not run a broad security audit for ordinary edits."
 ---
 
-# Безопасность и приватность
+# Security & privacy
 
 Read [the shared workflow](../../references/workflow.md) once per task, then the one recipe matching the requested operation and boundary. Do not load every recipe. The user's request controls scope and whether edits are allowed.
 

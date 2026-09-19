@@ -3,7 +3,7 @@ name: vibe-observability
 description: "Audit, fix or verify Prometheus, Grafana or VictoriaLogs signal semantics, alert rules, dashboards, correlation, tenant scope and cardinality costs in a repository."
 ---
 
-# Метрики, логи и алерты
+# Metrics, logs & alerts
 
 Read [the shared workflow](../../references/workflow.md) once per task, then the one recipe matching the requested operation and boundary. Do not load every recipe. The user's request controls scope and whether edits are allowed.
 

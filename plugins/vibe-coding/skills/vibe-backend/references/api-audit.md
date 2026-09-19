@@ -33,12 +33,11 @@ Reachable inconsistency causing client confusion, partial failures, duplicated A
 
 Lower-risk contract hygiene with clear consumer impact: misleading docs, minor envelope drift, weak deprecation handling, unclear optionality, or localized inconsistency.
 
-## Task-sub quality
+## Finding quality
 
-- Use task briefs creation when available; do not force a handmade markdown task brief body.
-- Every task brief must cite `path:line[-line]` evidence for the problematic behavior/contract and the owner layer, plus symbol when possible.
+- Every finding must cite `path:line[-line]` evidence for the problematic behavior/contract and the owner layer, plus symbol when possible.
 - Include reachable surface, affected actors/consumers/states, expected behavior, acceptance criteria, and validation direction when discoverable.
-- Use one unambiguous fix direction per task brief; no alternatives.
+- Use one unambiguous fix direction per finding; explain a tradeoff only when it changes the decision.
 - Merge symptoms under the same behavior owner/source of truth unless fixes, rollout units, or validation differ.
 - Do not report theoretical risks, stylistic preferences, or generic best practices without current repo impact.
 - Do not report generic REST purity issues unless the inconsistency creates current consumer or system impact.

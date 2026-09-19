@@ -3,7 +3,7 @@ name: vibe-ai
 description: "Frame, audit or improve an existing AI feature, RAG pipeline, OCR flow, agent tools, ML pipeline, evaluation, model serving or AI governance. Select the actual model/data/tool boundary."
 ---
 
-# AI, RAG и ML
+# AI, RAG & ML
 
 Read [the shared workflow](../../references/workflow.md) once per task, then the one recipe matching the requested operation and boundary. Do not load every recipe. The user's request controls scope and whether edits are allowed.
 

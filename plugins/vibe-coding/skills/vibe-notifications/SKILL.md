@@ -3,7 +3,7 @@ name: vibe-notifications
 description: "Audit, fix or verify notification eligibility, consent, templates, queues, provider status, retry deduplication and delivery recovery. Code work is not authorization to contact real recipients."
 ---
 
-# Доставка уведомлений
+# Notification delivery
 
 Read [the shared workflow](../../references/workflow.md) once per task, then the one recipe matching the requested operation and boundary. Do not load every recipe. The user's request controls scope and whether edits are allowed.
 

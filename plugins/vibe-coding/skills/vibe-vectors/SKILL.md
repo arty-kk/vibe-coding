@@ -3,7 +3,7 @@ name: vibe-vectors
 description: "Audit, fix or verify vector embedding/schema compatibility, tenant filters, upserts/deletes, ANN recall, reindex migration and degraded retrieval."
 ---
 
-# Векторные базы
+# Vector databases
 
 Read [the shared workflow](../../references/workflow.md) once per task, then the one recipe matching the requested operation and boundary. Do not load every recipe. The user's request controls scope and whether edits are allowed.
 

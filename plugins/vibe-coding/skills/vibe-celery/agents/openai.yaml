@@ -1,4 +1,4 @@
 interface:
   display_name: "Vibe · Celery"
-  short_description: "Доставка задач Celery, повторы и завершение workers"
-  default_prompt: "Используй $vibe-celery. Проверь завершение Celery worker с активными задачами."
+  short_description: "Celery task delivery, retries and worker shutdown"
+  default_prompt: "Use $vibe-celery to audit the selected celery boundary."

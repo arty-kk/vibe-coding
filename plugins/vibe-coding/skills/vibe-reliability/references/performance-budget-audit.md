@@ -40,7 +40,6 @@ Lower-risk but real issue that affects maintainability, future scaling, diagnosa
 
 ## Work item quality
 
-- Use task briefs creation when available; do not force a handmade markdown task brief body.
-- Every task brief must include affected surface, actors/consumers/states, expected behavior, acceptance criteria, and validation direction when discoverable.
-- Use one unambiguous fix direction per task brief; no alternatives.
+- Every finding must include affected surface, actors/consumers/states, expected behavior, acceptance criteria, and validation direction when discoverable.
+- Use one unambiguous fix direction per finding; explain a tradeoff only when it changes the decision.
 - If validation commands or harnesses are absent, specify observable checks that an execute run can add or perform.

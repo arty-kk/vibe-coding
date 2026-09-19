@@ -3,7 +3,7 @@ name: vibe-go-rust
 description: "Audit, fix or verify Go goroutine or Rust async task ownership, cancellation, pools, backpressure, errors and ordered service shutdown."
 ---
 
-# Сервисы Go и Rust
+# Go & Rust services
 
 Read [the shared workflow](../../references/workflow.md) once per task, then the one recipe matching the requested operation and boundary. Do not load every recipe. The user's request controls scope and whether edits are allowed.
 

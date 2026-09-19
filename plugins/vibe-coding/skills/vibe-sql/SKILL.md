@@ -3,7 +3,7 @@ name: vibe-sql
 description: "Audit, fix or verify SQL queries, indexes, locks, transactions, migration compatibility, connection pools, replica consistency and failover against the selected engine."
 ---
 
-# SQL и подключения
+# SQL & connections
 
 Read [the shared workflow](../../references/workflow.md) once per task, then the one recipe matching the requested operation and boundary. Do not load every recipe. The user's request controls scope and whether edits are allowed.
 

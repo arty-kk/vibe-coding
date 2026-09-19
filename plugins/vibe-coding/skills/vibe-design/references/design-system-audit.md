@@ -29,10 +29,9 @@ Component-system drift or missing shared state likely to cause repeated regressi
 
 Lower-risk but concrete system issue: stale docs, duplicated styling, weak variant naming, minor responsive inconsistency, missing story/example, or local drift that has a clear owner.
 
-## Task-sub quality
+## Finding quality
 
-- Use task briefs creation when available; do not force a handmade markdown task brief body.
-- Every task brief must cite `path:line[-line]` evidence for the owner token/component and at least one affected usage.
+- Every finding must cite `path:line[-line]` evidence for the owner token/component and at least one affected usage.
 - Include expected system behavior, affected surfaces, acceptance criteria, and validation direction including preview/story/screenshot when available.
 - Merge symptoms under one owner when they share source of truth and validation.
 - Do not report taste-only preferences without system consistency, accessibility, maintainability, or user-impact evidence.

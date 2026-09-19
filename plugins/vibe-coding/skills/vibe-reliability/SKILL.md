@@ -3,7 +3,7 @@ name: vibe-reliability
 description: "Audit or fix a concrete reliability, consistency, idempotency, concurrency, hot-path performance or resource-budget problem. Use current code and measurements to identify the limiting owner."
 ---
 
-# Надёжность и производительность
+# Reliability & performance
 
 Read [the shared workflow](../../references/workflow.md) once per task, then the one recipe matching the requested operation and boundary. Do not load every recipe. The user's request controls scope and whether edits are allowed.
 

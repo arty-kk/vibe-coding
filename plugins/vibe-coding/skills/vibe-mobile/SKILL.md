@@ -3,7 +3,7 @@ name: vibe-mobile
 description: "Audit, fix or verify mobile navigation, offline/sync, secure storage, platform permissions, deep links and release configuration for the changed feature."
 ---
 
-# Мобильные приложения
+# Mobile apps
 
 Read [the shared workflow](../../references/workflow.md) once per task, then the one recipe matching the requested operation and boundary. Do not load every recipe. The user's request controls scope and whether edits are allowed.
 

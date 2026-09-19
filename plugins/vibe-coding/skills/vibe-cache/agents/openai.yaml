@@ -1,4 +1,4 @@
 interface:
-  display_name: "Vibe · Кэш и свежесть"
-  short_description: "Ключи кэша, инвалидация и актуальность данных"
-  default_prompt: "Используй $vibe-cache. Проверь устаревшие данные после обновления записи."
+  display_name: "Vibe · Caching & freshness"
+  short_description: "Cache keys, invalidation and data freshness"
+  default_prompt: "Use $vibe-cache to audit the selected caching & freshness boundary."

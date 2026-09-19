@@ -1,7 +1,7 @@
 {
   "ui": {
     "pageTitle": "Vibe Coding — 工作流目录",
-    "description": "43 项 Codex 技能和 221 个工程工作流，涵盖项目梳理、代码审查、调试和验证。",
+    "description": "{skills} 项 Codex 技能和 {recipes} 个工程工作流，涵盖项目梳理、代码审查、调试和验证。",
     "language": "语言",
     "eyebrow": "你的 Codex 工程工具库",
     "headline": "选定任务。",
@@ -95,7 +95,9 @@
     "vibe-temporal": "Temporal",
     "vibe-terraform": "Terraform",
     "vibe-vectors": "向量数据库",
-    "vibe-workflow": "流程检查与维护"
+    "vibe-workflow": "流程检查与维护",
+    "vibe-mcp": "MCP 服务器与客户端",
+    "vibe-web": "Web 渲染与服务端边界"
   },
   "summaries": {
     "vibe-ai": "AI 功能、文档检索与质量评估。",
@@ -139,7 +141,9 @@
     "vibe-temporal": "工作流确定性、重放与版本兼容性。",
     "vibe-terraform": "Terraform 计划、状态与资源迁移。",
     "vibe-vectors": "向量搜索、访问控制、召回率与重建索引。",
-    "vibe-workflow": "证据核查、项目图更新与插件维护。"
+    "vibe-workflow": "证据核查、项目图更新与插件维护。",
+    "vibe-mcp": "MCP 版本、工具契约、传输与授权。",
+    "vibe-web": "SSR、水合、序列化数据、缓存与服务端操作。"
   },
   "titles": {
     "ai-evaluation-audit": "AI 评估 — 审计",
@@ -362,7 +366,14 @@
     "prompt-skill-sync-audit": "提示词与技能同步 — 审计",
     "prompt-skill-sync-polish": "提示词与技能同步 — 改进",
     "scoped-audit": "指定范围 — 审计",
-    "scoped-polish": "指定范围 — 改进"
+    "scoped-polish": "指定范围 — 改进",
+    "mcp-server-audit": "MCP 服务器审计",
+    "mcp-server-polish": "MCP 服务器改进",
+    "mcp-protocol-auth-check": "MCP 协议与授权验证",
+    "web-rendering-audit": "Web 渲染审计",
+    "web-rendering-polish": "Web 渲染改进",
+    "web-boundary-check": "Web 服务端与客户端边界验证",
+    "oauth-oidc-session-check": "OAuth 与 OIDC 会话验证"
   },
   "policy": {
     "privacy": "# 隐私\n\nVibe Coding 由 Arty S. / ARTSIOM SATSUK（[arty-kk](https://github.com/arty-kk)）维护。\n\n分发的插件包含文本指令、本地目录和本地 Python 工具。它没有由发布者运营的后端、分析系统、跟踪像素、Cookie、账户系统或遥测功能。目录与打包工具不会将项目内容发送给发布者。\n\n在 Codex 或 ChatGPT 中使用插件时，宿主应用会按照自身的设置和政策处理提示词、文件和工具结果。工作流可能使用用户已启用的工具和服务；这些服务适用各自的数据政策。插件不会自行获取额外权限。\n\n公共网站托管于 GitHub Pages。GitHub 可能根据其隐私政策处理常规请求信息。自愿发布在仓库 issue 或 pull request 中的信息是公开的，由 GitHub 处理。请勿发布凭据、私有源代码或个人数据。\n\n网站仅在浏览器的本地存储中保存你选择的界面语言。此偏好不会发送给发布者。\n\n如有隐私问题，可通过 [GitHub Issues](https://github.com/arty-kk/vibe-coding/issues) 提出，请勿包含敏感信息。\n",

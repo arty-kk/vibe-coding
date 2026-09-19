@@ -1,4 +1,4 @@
 interface:
-  display_name: "Vibe · API и боты"
-  short_description: "Контракты API и сценарии работы ботов"
-  default_prompt: "Используй $vibe-backend. Проверь контракт выбранного API и найди причины ошибок."
+  display_name: "Vibe · APIs & bots"
+  short_description: "API contracts and bot interaction flows"
+  default_prompt: "Use $vibe-backend to audit the selected apis & bots boundary."

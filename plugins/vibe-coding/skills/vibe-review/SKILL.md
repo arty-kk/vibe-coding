@@ -3,7 +3,7 @@ name: vibe-review
 description: "Review an explicit patch, PR, branch or working-tree delta and its direct contract dependencies. Default to findings only; fix review defects when requested. Use for patch review, not whole-repository audits."
 ---
 
-# Проверка изменений
+# Change review
 
 Read [the shared workflow](../../references/workflow.md) once per task, then the one recipe matching the requested operation and boundary. Do not load every recipe. The user's request controls scope and whether edits are allowed.
 

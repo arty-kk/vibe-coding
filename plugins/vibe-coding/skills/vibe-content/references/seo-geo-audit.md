@@ -29,11 +29,10 @@ Important discoverability issue: stale sitemap/canonical/hreflang, missing metad
 
 Lower-risk but concrete public-surface improvement: minor snippet drift, alt/internal-link gap, FAQ/schema opportunity backed by existing content, stale docs, or localized SEO inconsistency.
 
-## Task-sub quality
+## Finding quality
 
-- Use task briefs creation when available; do not force a handmade markdown task brief body.
-- Every task brief must cite `path:line[-line]` evidence for the public route/content/metadata owner and affected surface, plus symbol when possible.
+- Every finding must cite `path:line[-line]` evidence for the public route/content/metadata owner and affected surface, plus symbol when possible.
 - Include expected rendered output, public user/search/answer impact, acceptance criteria, and validation direction.
-- Use one unambiguous fix direction per task brief; no alternatives.
+- Use one unambiguous fix direction per finding; explain a tradeoff only when it changes the decision.
 - Merge symptoms under the same public route or metadata owner unless fixes, rollout units, locales, or validation differ.
 - Do not recommend keyword stuffing, fake claims, hidden text, doorway pages, or generic content rewrites without repo-backed product truth.

@@ -1,4 +1,4 @@
 interface:
-  display_name: "Vibe · Продукт и UX"
-  short_description: "Требования, интерфейсы и пользовательские сценарии"
-  default_prompt: "Используй $vibe-product. Проверь выбранный пользовательский сценарий целиком."
+  display_name: "Vibe · Product & UX"
+  short_description: "Requirements, interfaces and user journeys"
+  default_prompt: "Use $vibe-product to audit the selected product & ux boundary."

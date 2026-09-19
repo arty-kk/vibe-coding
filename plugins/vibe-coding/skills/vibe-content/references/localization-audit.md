@@ -13,6 +13,8 @@ Audit a selected localization surface for key ownership, interpolation safety, l
 - Keys have stable semantic ownership; code does not assemble translatable sentences from fragments.
 - Interpolation, escaping, plural/select rules, dates, numbers, currencies, units, and timezones are locale-correct.
 - Fallback and missing-key behavior are observable and do not expose internal identifiers.
+- An explicit locale, stored preference, browser negotiation and the product's default have a defined precedence. Do not replace an explicitly requested English default with automatic browser-language detection.
+- Website, offline/exported artifacts and generated catalogs use the same owned translations or have a checked synchronization boundary. A translated header does not establish translated search, prompts, metadata or accessible names.
 - Expansion, RTL, font, truncation, email/channel rendering, and accessibility are preserved.
 
 ## Audit method

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "skills": 43,
+  "skills": 45,
   "recipes": [
     {
       "title": "AI Evaluation Audit",
@@ -9,9 +9,9 @@
       "id": "ai-evaluation-audit",
       "path": "skills/vibe-ai/references/ai-evaluation-audit.md",
       "group": 7,
-      "category": "AI, RAG и ML",
-      "summary": "AI-функции, поиск по документам и оценка качества",
-      "example": "Используй $vibe-ai, сценарий «AI Evaluation Audit». Проведи аудит выбранной области без изменений кода.",
+      "category": "AI, RAG & ML",
+      "summary": "AI features, document retrieval and quality evaluation.",
+      "example": "Use $vibe-ai, workflow “AI Evaluation Audit” (ID: ai-evaluation-audit). Follow this workflow for the task below. Report the result in English.",
       "sha256": "d7ba6314ba7be771ed6d670237b98a8277340dd3edaf6cafc9ab6846b07fa908"
     },
     {
@@ -21,9 +21,9 @@
       "id": "ai-evaluation-polish",
       "path": "skills/vibe-ai/references/ai-evaluation-polish.md",
       "group": 7,
-      "category": "AI, RAG и ML",
-      "summary": "AI-функции, поиск по документам и оценка качества",
-      "example": "Используй $vibe-ai, сценарий «AI Evaluation Polish». Выполни выбранное исправление для текущей задачи.",
+      "category": "AI, RAG & ML",
+      "summary": "AI features, document retrieval and quality evaluation.",
+      "example": "Use $vibe-ai, workflow “AI Evaluation Polish” (ID: ai-evaluation-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "8f852bb2467e7563c44811702de3f3a18c25a7c5319a67d8bdb4b018f2e3d052"
     },
     {
@@ -33,10 +33,10 @@
       "id": "ai-feature-audit",
       "path": "skills/vibe-ai/references/ai-feature-audit.md",
       "group": 7,
-      "category": "AI, RAG и ML",
-      "summary": "AI-функции, поиск по документам и оценка качества",
-      "example": "Используй $vibe-ai, сценарий «AI Feature Audit». Проведи аудит выбранной области без изменений кода.",
-      "sha256": "6d2fc8f56d33696ed5fdbbe45f8492dc75d8d34077e9a42e7cfbe3bf1c12632b"
+      "category": "AI, RAG & ML",
+      "summary": "AI features, document retrieval and quality evaluation.",
+      "example": "Use $vibe-ai, workflow “AI Feature Audit” (ID: ai-feature-audit). Follow this workflow for the task below. Report the result in English.",
+      "sha256": "5c5519155c9f8e966ff436530fbc27132d3285bf2827e431485f0132a4991752"
     },
     {
       "title": "AI Feature Polish",
@@ -45,9 +45,9 @@
       "id": "ai-feature-polish",
       "path": "skills/vibe-ai/references/ai-feature-polish.md",
       "group": 7,
-      "category": "AI, RAG и ML",
-      "summary": "AI-функции, поиск по документам и оценка качества",
-      "example": "Используй $vibe-ai, сценарий «AI Feature Polish». Выполни выбранное исправление для текущей задачи.",
+      "category": "AI, RAG & ML",
+      "summary": "AI features, document retrieval and quality evaluation.",
+      "example": "Use $vibe-ai, workflow “AI Feature Polish” (ID: ai-feature-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "6af393f08588cb01ea2bbfffbd72a25b5ae9f9fb2648a36885a1e087b3cc0820"
     },
     {
@@ -57,9 +57,9 @@
       "id": "ai-ml-problem-framing",
       "path": "skills/vibe-ai/references/ai-ml-problem-framing.md",
       "group": 7,
-      "category": "AI, RAG и ML",
-      "summary": "AI-функции, поиск по документам и оценка качества",
-      "example": "Используй $vibe-ai, сценарий «AI ML Problem Framing». Подготовь результат в текущем разговоре.",
+      "category": "AI, RAG & ML",
+      "summary": "AI features, document retrieval and quality evaluation.",
+      "example": "Use $vibe-ai, workflow “AI ML Problem Framing” (ID: ai-ml-problem-framing). Follow this workflow for the task below. Report the result in English.",
       "sha256": "f43b3374b47f55eecca89d2f39d9247743829a4db0ded74d5f4f317e9e7f2628"
     },
     {
@@ -69,9 +69,9 @@
       "id": "ai-safety-governance-audit",
       "path": "skills/vibe-ai/references/ai-safety-governance-audit.md",
       "group": 7,
-      "category": "AI, RAG и ML",
-      "summary": "AI-функции, поиск по документам и оценка качества",
-      "example": "Используй $vibe-ai, сценарий «AI Safety & Governance Audit». Проведи аудит выбранной области без изменений кода.",
+      "category": "AI, RAG & ML",
+      "summary": "AI features, document retrieval and quality evaluation.",
+      "example": "Use $vibe-ai, workflow “AI Safety & Governance Audit” (ID: ai-safety-governance-audit). Follow this workflow for the task below. Report the result in English.",
       "sha256": "5a3bb9bac567f08592637a1e34998f5ac9f25eecafe41c55129b6e8b7bd4771e"
     },
     {
@@ -81,9 +81,9 @@
       "id": "ai-safety-governance-polish",
       "path": "skills/vibe-ai/references/ai-safety-governance-polish.md",
       "group": 7,
-      "category": "AI, RAG и ML",
-      "summary": "AI-функции, поиск по документам и оценка качества",
-      "example": "Используй $vibe-ai, сценарий «AI Safety & Governance Polish». Выполни выбранное исправление для текущей задачи.",
+      "category": "AI, RAG & ML",
+      "summary": "AI features, document retrieval and quality evaluation.",
+      "example": "Use $vibe-ai, workflow “AI Safety & Governance Polish” (ID: ai-safety-governance-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "b98b7d5c1f1877ba3b64545854ab08a42895481038610a5a413c7121e77174ad"
     },
     {
@@ -93,9 +93,9 @@
       "id": "llm-agent-tools-audit",
       "path": "skills/vibe-ai/references/llm-agent-tools-audit.md",
       "group": 7,
-      "category": "AI, RAG и ML",
-      "summary": "AI-функции, поиск по документам и оценка качества",
-      "example": "Используй $vibe-ai, сценарий «LLM Agent Tools Audit». Проведи аудит выбранной области без изменений кода.",
+      "category": "AI, RAG & ML",
+      "summary": "AI features, document retrieval and quality evaluation.",
+      "example": "Use $vibe-ai, workflow “LLM Agent Tools Audit” (ID: llm-agent-tools-audit). Follow this workflow for the task below. Report the result in English.",
       "sha256": "be915bed82b12fb117324c4b01d86a4087c85d95a2d2f28b19fc378d71e33cd3"
     },
     {
@@ -105,9 +105,9 @@
       "id": "llm-agent-tools-polish",
       "path": "skills/vibe-ai/references/llm-agent-tools-polish.md",
       "group": 7,
-      "category": "AI, RAG и ML",
-      "summary": "AI-функции, поиск по документам и оценка качества",
-      "example": "Используй $vibe-ai, сценарий «LLM Agent Tools Polish». Выполни выбранное исправление для текущей задачи.",
+      "category": "AI, RAG & ML",
+      "summary": "AI features, document retrieval and quality evaluation.",
+      "example": "Use $vibe-ai, workflow “LLM Agent Tools Polish” (ID: llm-agent-tools-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "6b4be298511916d05a6e859da22e60dbab3e730f2ec6a9b6d300ede8a332cef4"
     },
     {
@@ -117,10 +117,10 @@
       "id": "ml-pipeline-audit",
       "path": "skills/vibe-ai/references/ml-pipeline-audit.md",
       "group": 7,
-      "category": "AI, RAG и ML",
-      "summary": "AI-функции, поиск по документам и оценка качества",
-      "example": "Используй $vibe-ai, сценарий «ML Pipeline Audit». Проведи аудит выбранной области без изменений кода.",
-      "sha256": "017fe7a2afa7a9cf220aa80c4efd83788306996d89641afcc091f236cbb7bcc1"
+      "category": "AI, RAG & ML",
+      "summary": "AI features, document retrieval and quality evaluation.",
+      "example": "Use $vibe-ai, workflow “ML Pipeline Audit” (ID: ml-pipeline-audit). Follow this workflow for the task below. Report the result in English.",
+      "sha256": "b617031f72c76bf0fb1523ec843599fabd172b56cd64d41e35074648b9419ad8"
     },
     {
       "title": "ML Pipeline Polish",
@@ -129,9 +129,9 @@
       "id": "ml-pipeline-polish",
       "path": "skills/vibe-ai/references/ml-pipeline-polish.md",
       "group": 7,
-      "category": "AI, RAG и ML",
-      "summary": "AI-функции, поиск по документам и оценка качества",
-      "example": "Используй $vibe-ai, сценарий «ML Pipeline Polish». Выполни выбранное исправление для текущей задачи.",
+      "category": "AI, RAG & ML",
+      "summary": "AI features, document retrieval and quality evaluation.",
+      "example": "Use $vibe-ai, workflow “ML Pipeline Polish” (ID: ml-pipeline-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "7be9ac822383e8b54d6ff3de29c3dfe1b0893a3468777192f39b52aab577de90"
     },
     {
@@ -141,9 +141,9 @@
       "id": "model-serving-monitoring-audit",
       "path": "skills/vibe-ai/references/model-serving-monitoring-audit.md",
       "group": 7,
-      "category": "AI, RAG и ML",
-      "summary": "AI-функции, поиск по документам и оценка качества",
-      "example": "Используй $vibe-ai, сценарий «Model Serving & Monitoring Audit». Проведи аудит выбранной области без изменений кода.",
+      "category": "AI, RAG & ML",
+      "summary": "AI features, document retrieval and quality evaluation.",
+      "example": "Use $vibe-ai, workflow “Model Serving & Monitoring Audit” (ID: model-serving-monitoring-audit). Follow this workflow for the task below. Report the result in English.",
       "sha256": "7d294231a40507f990a52f96bc06366721ba62daa24c59928c2b8441f8b16bbd"
     },
     {
@@ -153,9 +153,9 @@
       "id": "model-serving-monitoring-polish",
       "path": "skills/vibe-ai/references/model-serving-monitoring-polish.md",
       "group": 7,
-      "category": "AI, RAG и ML",
-      "summary": "AI-функции, поиск по документам и оценка качества",
-      "example": "Используй $vibe-ai, сценарий «Model Serving & Monitoring Polish». Выполни выбранное исправление для текущей задачи.",
+      "category": "AI, RAG & ML",
+      "summary": "AI features, document retrieval and quality evaluation.",
+      "example": "Use $vibe-ai, workflow “Model Serving & Monitoring Polish” (ID: model-serving-monitoring-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "ec427f5f40d13b94c0b7451fcb7b8a908e79c993a9ca210865db68cdc0f200a5"
     },
     {
@@ -165,10 +165,10 @@
       "id": "ocr-document-ai-audit",
       "path": "skills/vibe-ai/references/ocr-document-ai-audit.md",
       "group": 7,
-      "category": "AI, RAG и ML",
-      "summary": "AI-функции, поиск по документам и оценка качества",
-      "example": "Используй $vibe-ai, сценарий «OCR Document AI Audit». Проведи аудит выбранной области без изменений кода.",
-      "sha256": "73c1305ebf05f881184bc3473ab3c11e10682ce12ca78a12fd0127e91e2bb059"
+      "category": "AI, RAG & ML",
+      "summary": "AI features, document retrieval and quality evaluation.",
+      "example": "Use $vibe-ai, workflow “OCR Document AI Audit” (ID: ocr-document-ai-audit). Follow this workflow for the task below. Report the result in English.",
+      "sha256": "116c437014f02e1e1b12eb35f2ad691b6942b7a9deb399c7ae77d867255805da"
     },
     {
       "title": "OCR Document AI Polish",
@@ -177,9 +177,9 @@
       "id": "ocr-document-ai-polish",
       "path": "skills/vibe-ai/references/ocr-document-ai-polish.md",
       "group": 7,
-      "category": "AI, RAG и ML",
-      "summary": "AI-функции, поиск по документам и оценка качества",
-      "example": "Используй $vibe-ai, сценарий «OCR Document AI Polish». Выполни выбранное исправление для текущей задачи.",
+      "category": "AI, RAG & ML",
+      "summary": "AI features, document retrieval and quality evaluation.",
+      "example": "Use $vibe-ai, workflow “OCR Document AI Polish” (ID: ocr-document-ai-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "438ebf066f15e6c2cce8647bacdd479158845e90de25a8f6e47ac31b32730c7b"
     },
     {
@@ -189,10 +189,10 @@
       "id": "rag-audit",
       "path": "skills/vibe-ai/references/rag-audit.md",
       "group": 7,
-      "category": "AI, RAG и ML",
-      "summary": "AI-функции, поиск по документам и оценка качества",
-      "example": "Используй $vibe-ai, сценарий «RAG Audit». Проведи аудит выбранной области без изменений кода.",
-      "sha256": "61c1f6632020fdd2662e4e6776378aea37e3e513ad82255e56359b57db6416d5"
+      "category": "AI, RAG & ML",
+      "summary": "AI features, document retrieval and quality evaluation.",
+      "example": "Use $vibe-ai, workflow “RAG Audit” (ID: rag-audit). Follow this workflow for the task below. Report the result in English.",
+      "sha256": "6543fe3bb031d9711af17ab30f609ffc03257e48024847cd8b1e354248281482"
     },
     {
       "title": "RAG Polish",
@@ -201,9 +201,9 @@
       "id": "rag-polish",
       "path": "skills/vibe-ai/references/rag-polish.md",
       "group": 7,
-      "category": "AI, RAG и ML",
-      "summary": "AI-функции, поиск по документам и оценка качества",
-      "example": "Используй $vibe-ai, сценарий «RAG Polish». Выполни выбранное исправление для текущей задачи.",
+      "category": "AI, RAG & ML",
+      "summary": "AI features, document retrieval and quality evaluation.",
+      "example": "Use $vibe-ai, workflow “RAG Polish” (ID: rag-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "1b557fec2e6c94625fba6de6f616dbebda7449980162936ebe63148522d5783f"
     },
     {
@@ -213,10 +213,10 @@
       "id": "api-audit",
       "path": "skills/vibe-backend/references/api-audit.md",
       "group": 3,
-      "category": "API и боты",
-      "summary": "Контракты API и сценарии работы ботов",
-      "example": "Используй $vibe-backend, сценарий «API Audit». Проведи аудит выбранной области без изменений кода.",
-      "sha256": "53ecb310201d3bd96ffa82d5ee40aa3817e35c615dde1aeccbfa0a590f9bfff1"
+      "category": "APIs & bots",
+      "summary": "API contracts and bot interaction flows.",
+      "example": "Use $vibe-backend, workflow “API Audit” (ID: api-audit). Follow this workflow for the task below. Report the result in English.",
+      "sha256": "14fb4cb5e639c172b02282733df3423205d16f1e10bf14f695910e193c789e21"
     },
     {
       "title": "API Polish",
@@ -225,9 +225,9 @@
       "id": "api-polish",
       "path": "skills/vibe-backend/references/api-polish.md",
       "group": 3,
-      "category": "API и боты",
-      "summary": "Контракты API и сценарии работы ботов",
-      "example": "Используй $vibe-backend, сценарий «API Polish». Выполни выбранное исправление для текущей задачи.",
+      "category": "APIs & bots",
+      "summary": "API contracts and bot interaction flows.",
+      "example": "Use $vibe-backend, workflow “API Polish” (ID: api-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "1b7302f413d377b72034c0dce7cbcad8f979a0bbf7d3fed063496813dc0f0bff"
     },
     {
@@ -237,10 +237,10 @@
       "id": "bot-audit",
       "path": "skills/vibe-backend/references/bot-audit.md",
       "group": 3,
-      "category": "API и боты",
-      "summary": "Контракты API и сценарии работы ботов",
-      "example": "Используй $vibe-backend, сценарий «Bot Audit». Проведи аудит выбранной области без изменений кода.",
-      "sha256": "aedd95f16fcebb12e1e04786bd79002029161a33808ae7741a034c9e092252d2"
+      "category": "APIs & bots",
+      "summary": "API contracts and bot interaction flows.",
+      "example": "Use $vibe-backend, workflow “Bot Audit” (ID: bot-audit). Follow this workflow for the task below. Report the result in English.",
+      "sha256": "f3bc1bc521cab704a0b97f3a881fe7316ada47daf4b1d3f2dfdec3cc8fe950ce"
     },
     {
       "title": "Bot Polish",
@@ -249,9 +249,9 @@
       "id": "bot-polish",
       "path": "skills/vibe-backend/references/bot-polish.md",
       "group": 3,
-      "category": "API и боты",
-      "summary": "Контракты API и сценарии работы ботов",
-      "example": "Используй $vibe-backend, сценарий «Bot Polish». Выполни выбранное исправление для текущей задачи.",
+      "category": "APIs & bots",
+      "summary": "API contracts and bot interaction flows.",
+      "example": "Use $vibe-backend, workflow “Bot Polish” (ID: bot-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "d01124b029086ef80d2a817ab8fcbd3fab8653be952fbe255b4a9d0517f55b72"
     },
     {
@@ -261,9 +261,9 @@
       "id": "cache-coherency-check",
       "path": "skills/vibe-cache/references/cache-coherency-check.md",
       "group": 35,
-      "category": "Кэш и свежесть",
-      "summary": "Ключи кэша, инвалидация и актуальность данных",
-      "example": "Используй $vibe-cache, сценарий «Cache Coherency Check». Проверь выбранное поведение и сообщи результат.",
+      "category": "Caching & freshness",
+      "summary": "Cache keys, invalidation and data freshness.",
+      "example": "Use $vibe-cache, workflow “Cache Coherency Check” (ID: cache-coherency-check). Follow this workflow for the task below. Report the result in English.",
       "sha256": "b4e0338fc9b0e0014f1ef1130da411beb398b06c54a6b179cd1a1be888656920"
     },
     {
@@ -273,9 +273,9 @@
       "id": "cache-invalidation-audit",
       "path": "skills/vibe-cache/references/cache-invalidation-audit.md",
       "group": 35,
-      "category": "Кэш и свежесть",
-      "summary": "Ключи кэша, инвалидация и актуальность данных",
-      "example": "Используй $vibe-cache, сценарий «Cache Invalidation Audit». Проведи аудит выбранной области без изменений кода.",
+      "category": "Caching & freshness",
+      "summary": "Cache keys, invalidation and data freshness.",
+      "example": "Use $vibe-cache, workflow “Cache Invalidation Audit” (ID: cache-invalidation-audit). Follow this workflow for the task below. Report the result in English.",
       "sha256": "3a545e2b9e4ba4f79f116289add8b28ce652e0a7f8f24372ea6aba57670d9ee0"
     },
     {
@@ -285,9 +285,9 @@
       "id": "cache-invalidation-polish",
       "path": "skills/vibe-cache/references/cache-invalidation-polish.md",
       "group": 35,
-      "category": "Кэш и свежесть",
-      "summary": "Ключи кэша, инвалидация и актуальность данных",
-      "example": "Используй $vibe-cache, сценарий «Cache Invalidation Polish». Выполни выбранное исправление для текущей задачи.",
+      "category": "Caching & freshness",
+      "summary": "Cache keys, invalidation and data freshness.",
+      "example": "Use $vibe-cache, workflow “Cache Invalidation Polish” (ID: cache-invalidation-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "3886ce5a75c90a10df57ba33b3bcda7c56ff7a6094c234e235e5340374daa6f6"
     },
     {
@@ -298,8 +298,8 @@
       "path": "skills/vibe-celery/references/celery-delivery-shutdown-check.md",
       "group": 20,
       "category": "Celery",
-      "summary": "Доставка задач Celery, повторы и завершение workers",
-      "example": "Используй $vibe-celery, сценарий «Celery Delivery & Shutdown Check». Проверь выбранное поведение и сообщи результат.",
+      "summary": "Celery task delivery, retries and worker shutdown.",
+      "example": "Use $vibe-celery, workflow “Celery Delivery & Shutdown Check” (ID: celery-delivery-shutdown-check). Follow this workflow for the task below. Report the result in English.",
       "sha256": "23ad3f557f7832fcb0ee9b7299ab9338c78652bf2f128fab4c9ccefee7ce078a"
     },
     {
@@ -310,8 +310,8 @@
       "path": "skills/vibe-celery/references/celery-workers-audit.md",
       "group": 20,
       "category": "Celery",
-      "summary": "Доставка задач Celery, повторы и завершение workers",
-      "example": "Используй $vibe-celery, сценарий «Celery Workers Audit». Проведи аудит выбранной области без изменений кода.",
+      "summary": "Celery task delivery, retries and worker shutdown.",
+      "example": "Use $vibe-celery, workflow “Celery Workers Audit” (ID: celery-workers-audit). Follow this workflow for the task below. Report the result in English.",
       "sha256": "0637ddd4fef6cb4d028cd307b186fe0843f59b176e0c2c8a69eafd3b12d813c2"
     },
     {
@@ -322,8 +322,8 @@
       "path": "skills/vibe-celery/references/celery-workers-polish.md",
       "group": 20,
       "category": "Celery",
-      "summary": "Доставка задач Celery, повторы и завершение workers",
-      "example": "Используй $vibe-celery, сценарий «Celery Workers Polish». Выполни выбранное исправление для текущей задачи.",
+      "summary": "Celery task delivery, retries and worker shutdown.",
+      "example": "Use $vibe-celery, workflow “Celery Workers Polish” (ID: celery-workers-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "178ed758362f256cc0859c4306414d2dafdb0a67c3d3e7dcc2ac421347066a1e"
     },
     {
@@ -334,8 +334,8 @@
       "path": "skills/vibe-clickhouse/references/clickhouse-audit.md",
       "group": 27,
       "category": "ClickHouse",
-      "summary": "Загрузка данных, движки таблиц и стоимость запросов",
-      "example": "Используй $vibe-clickhouse, сценарий «ClickHouse Audit». Проведи аудит выбранной области без изменений кода.",
+      "summary": "Data ingestion, table engines and query cost.",
+      "example": "Use $vibe-clickhouse, workflow “ClickHouse Audit” (ID: clickhouse-audit). Follow this workflow for the task below. Report the result in English.",
       "sha256": "fd826fde10cdfbc92074ace8670fc98729c20a06195ee7fc4f3ee8662117cb35"
     },
     {
@@ -346,8 +346,8 @@
       "path": "skills/vibe-clickhouse/references/clickhouse-ingestion-query-load-check.md",
       "group": 27,
       "category": "ClickHouse",
-      "summary": "Загрузка данных, движки таблиц и стоимость запросов",
-      "example": "Используй $vibe-clickhouse, сценарий «ClickHouse Ingestion & Query Load Check». Проверь выбранное поведение и сообщи результат.",
+      "summary": "Data ingestion, table engines and query cost.",
+      "example": "Use $vibe-clickhouse, workflow “ClickHouse Ingestion & Query Load Check” (ID: clickhouse-ingestion-query-load-check). Follow this workflow for the task below. Report the result in English.",
       "sha256": "ecc71b862e34d07e4ad4e756d208657d0fc6a456ca5794d73a135075dc626821"
     },
     {
@@ -358,8 +358,8 @@
       "path": "skills/vibe-clickhouse/references/clickhouse-polish.md",
       "group": 27,
       "category": "ClickHouse",
-      "summary": "Загрузка данных, движки таблиц и стоимость запросов",
-      "example": "Используй $vibe-clickhouse, сценарий «ClickHouse Polish». Выполни выбранное исправление для текущей задачи.",
+      "summary": "Data ingestion, table engines and query cost.",
+      "example": "Use $vibe-clickhouse, workflow “ClickHouse Polish” (ID: clickhouse-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "00eae5e6b9df4629e7d485d0545592e5f8acc7c18a6cff0f94e5d69878bd4155"
     },
     {
@@ -369,9 +369,9 @@
       "id": "compatibility-golden-master-check",
       "path": "skills/vibe-compatibility/references/compatibility-golden-master-check.md",
       "group": 29,
-      "category": "Совместимость и протоколы",
-      "summary": "Контракты совместимости и сравнение с эталоном",
-      "example": "Используй $vibe-compatibility, сценарий «Compatibility Golden Master Check». Проверь выбранное поведение и сообщи результат.",
+      "category": "Compatibility & protocols",
+      "summary": "Compatibility contracts and reference comparisons.",
+      "example": "Use $vibe-compatibility, workflow “Compatibility Golden Master Check” (ID: compatibility-golden-master-check). Follow this workflow for the task below. Report the result in English.",
       "sha256": "ee46c13e5d7b19ea110a848907283a3587ec0bad05755d2440dc924ddb8eb8d3"
     },
     {
@@ -381,9 +381,9 @@
       "id": "reverse-engineering-audit",
       "path": "skills/vibe-compatibility/references/reverse-engineering-audit.md",
       "group": 29,
-      "category": "Совместимость и протоколы",
-      "summary": "Контракты совместимости и сравнение с эталоном",
-      "example": "Используй $vibe-compatibility, сценарий «Reverse Engineering Audit». Проведи аудит выбранной области без изменений кода.",
+      "category": "Compatibility & protocols",
+      "summary": "Compatibility contracts and reference comparisons.",
+      "example": "Use $vibe-compatibility, workflow “Reverse Engineering Audit” (ID: reverse-engineering-audit). Follow this workflow for the task below. Report the result in English.",
       "sha256": "e428ebbc236ba2eb846624f8f31b9d5a50aa5a4158f099163474bf9214b23905"
     },
     {
@@ -393,9 +393,9 @@
       "id": "reverse-engineering-polish",
       "path": "skills/vibe-compatibility/references/reverse-engineering-polish.md",
       "group": 29,
-      "category": "Совместимость и протоколы",
-      "summary": "Контракты совместимости и сравнение с эталоном",
-      "example": "Используй $vibe-compatibility, сценарий «Reverse Engineering Polish». Выполни выбранное исправление для текущей задачи.",
+      "category": "Compatibility & protocols",
+      "summary": "Compatibility contracts and reference comparisons.",
+      "example": "Use $vibe-compatibility, workflow “Reverse Engineering Polish” (ID: reverse-engineering-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "d1c5a8b94739bf9271ee768b8def0ede686e91eef5e1ab1cb130095d99cb305f"
     },
     {
@@ -405,10 +405,10 @@
       "id": "localization-audit",
       "path": "skills/vibe-content/references/localization-audit.md",
       "group": 6,
-      "category": "Тексты, локализация и SEO",
-      "summary": "Тексты продукта, локализация и поисковая видимость",
-      "example": "Используй $vibe-content, сценарий «Localization Audit». Проведи аудит выбранной области без изменений кода.",
-      "sha256": "9e4f082bdf38fcfe058fd2fdf969cc29fe1e7e1eeebcffa7c6abbee5e66b1548"
+      "category": "Copy, localization & SEO",
+      "summary": "Product copy, localization and search visibility.",
+      "example": "Use $vibe-content, workflow “Localization Audit” (ID: localization-audit). Follow this workflow for the task below. Report the result in English.",
+      "sha256": "3a3727a556916a9dc1b63fad9a6ab3ffb92cbf88b9d1f6d9404fd2fccf57feac"
     },
     {
       "title": "Localization Polish",
@@ -417,10 +417,10 @@
       "id": "localization-polish",
       "path": "skills/vibe-content/references/localization-polish.md",
       "group": 6,
-      "category": "Тексты, локализация и SEO",
-      "summary": "Тексты продукта, локализация и поисковая видимость",
-      "example": "Используй $vibe-content, сценарий «Localization Polish». Выполни выбранное исправление для текущей задачи.",
-      "sha256": "92fb8a708fc7a88405562908b0ee2f52e12386ed8fe052958341888dad80f4ce"
+      "category": "Copy, localization & SEO",
+      "summary": "Product copy, localization and search visibility.",
+      "example": "Use $vibe-content, workflow “Localization Polish” (ID: localization-polish). Follow this workflow for the task below. Report the result in English.",
+      "sha256": "72cae531ecb28a540415b90360b13ca10a49724c7215bd946bbc8829660202bf"
     },
     {
       "title": "Notification Content Audit",
@@ -429,9 +429,9 @@
       "id": "notification-content-audit",
       "path": "skills/vibe-content/references/notification-content-audit.md",
       "group": 6,
-      "category": "Тексты, локализация и SEO",
-      "summary": "Тексты продукта, локализация и поисковая видимость",
-      "example": "Используй $vibe-content, сценарий «Notification Content Audit». Проведи аудит выбранной области без изменений кода.",
+      "category": "Copy, localization & SEO",
+      "summary": "Product copy, localization and search visibility.",
+      "example": "Use $vibe-content, workflow “Notification Content Audit” (ID: notification-content-audit). Follow this workflow for the task below. Report the result in English.",
       "sha256": "20253521cbc280b5d5a4389bf9baf16ceffe8b8cc8727a638bd1e526a64623b4"
     },
     {
@@ -441,9 +441,9 @@
       "id": "notification-content-polish",
       "path": "skills/vibe-content/references/notification-content-polish.md",
       "group": 6,
-      "category": "Тексты, локализация и SEO",
-      "summary": "Тексты продукта, локализация и поисковая видимость",
-      "example": "Используй $vibe-content, сценарий «Notification Content Polish». Выполни выбранное исправление для текущей задачи.",
+      "category": "Copy, localization & SEO",
+      "summary": "Product copy, localization and search visibility.",
+      "example": "Use $vibe-content, workflow “Notification Content Polish” (ID: notification-content-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "a25b70010ba7aa793167cc517b8274d6baf1a635e7294922cf79e5635ec51139"
     },
     {
@@ -453,9 +453,9 @@
       "id": "product-landing-copy-audit",
       "path": "skills/vibe-content/references/product-landing-copy-audit.md",
       "group": 6,
-      "category": "Тексты, локализация и SEO",
-      "summary": "Тексты продукта, локализация и поисковая видимость",
-      "example": "Используй $vibe-content, сценарий «Product & Landing Copy Audit». Проведи аудит выбранной области без изменений кода.",
+      "category": "Copy, localization & SEO",
+      "summary": "Product copy, localization and search visibility.",
+      "example": "Use $vibe-content, workflow “Product & Landing Copy Audit” (ID: product-landing-copy-audit). Follow this workflow for the task below. Report the result in English.",
       "sha256": "97553ec4a07f09474004f2f64d6b2b45fcc8ef6116bae7589142d0078c70f76d"
     },
     {
@@ -465,9 +465,9 @@
       "id": "product-landing-copy-polish",
       "path": "skills/vibe-content/references/product-landing-copy-polish.md",
       "group": 6,
-      "category": "Тексты, локализация и SEO",
-      "summary": "Тексты продукта, локализация и поисковая видимость",
-      "example": "Используй $vibe-content, сценарий «Product & Landing Copy Polish». Выполни выбранное исправление для текущей задачи.",
+      "category": "Copy, localization & SEO",
+      "summary": "Product copy, localization and search visibility.",
+      "example": "Use $vibe-content, workflow “Product & Landing Copy Polish” (ID: product-landing-copy-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "43289e331ef1149f60dd764d9b5d440ce41168c851f7928e3f9d027603011f26"
     },
     {
@@ -477,10 +477,10 @@
       "id": "seo-geo-audit",
       "path": "skills/vibe-content/references/seo-geo-audit.md",
       "group": 6,
-      "category": "Тексты, локализация и SEO",
-      "summary": "Тексты продукта, локализация и поисковая видимость",
-      "example": "Используй $vibe-content, сценарий «SEO GEO Audit». Проведи аудит выбранной области без изменений кода.",
-      "sha256": "ab9690e3e8254b41567aa5386fe0e21b2f2717e15f79aedcb3bfe12e616aff4f"
+      "category": "Copy, localization & SEO",
+      "summary": "Product copy, localization and search visibility.",
+      "example": "Use $vibe-content, workflow “SEO GEO Audit” (ID: seo-geo-audit). Follow this workflow for the task below. Report the result in English.",
+      "sha256": "4695fc5511174ffc054a898d40587f84c4f548735774e932f934a4338a9f7f6c"
     },
     {
       "title": "SEO GEO Polish",
@@ -489,9 +489,9 @@
       "id": "seo-geo-polish",
       "path": "skills/vibe-content/references/seo-geo-polish.md",
       "group": 6,
-      "category": "Тексты, локализация и SEO",
-      "summary": "Тексты продукта, локализация и поисковая видимость",
-      "example": "Используй $vibe-content, сценарий «SEO GEO Polish». Выполни выбранное исправление для текущей задачи.",
+      "category": "Copy, localization & SEO",
+      "summary": "Product copy, localization and search visibility.",
+      "example": "Use $vibe-content, workflow “SEO GEO Polish” (ID: seo-geo-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "4076995d7b858983aa987c4483d81337353a676ba2751f55ed54197e7c74b70b"
     },
     {
@@ -501,10 +501,10 @@
       "id": "accessibility-audit",
       "path": "skills/vibe-design/references/accessibility-audit.md",
       "group": 5,
-      "category": "Дизайн и доступность",
-      "summary": "Дизайн-система, клавиатура, фокус и доступность",
-      "example": "Используй $vibe-design, сценарий «Accessibility Audit». Проведи аудит выбранной области без изменений кода.",
-      "sha256": "978254ecb72c9d21e3a376400f158ef58b04a6c2f4d30b5972caf537e942562b"
+      "category": "Design & accessibility",
+      "summary": "Design systems, keyboard navigation, focus and accessibility.",
+      "example": "Use $vibe-design, workflow “Accessibility Audit” (ID: accessibility-audit). Follow this workflow for the task below. Report the result in English.",
+      "sha256": "a220df179ce37c9da9b0f29516c6eba305f135af06be1ea3f779a5749a27ea6c"
     },
     {
       "title": "Accessibility Polish",
@@ -513,9 +513,9 @@
       "id": "accessibility-polish",
       "path": "skills/vibe-design/references/accessibility-polish.md",
       "group": 5,
-      "category": "Дизайн и доступность",
-      "summary": "Дизайн-система, клавиатура, фокус и доступность",
-      "example": "Используй $vibe-design, сценарий «Accessibility Polish». Выполни выбранное исправление для текущей задачи.",
+      "category": "Design & accessibility",
+      "summary": "Design systems, keyboard navigation, focus and accessibility.",
+      "example": "Use $vibe-design, workflow “Accessibility Polish” (ID: accessibility-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "4902e69c3c01aa7c490aeee89542b5cafc957f7215a76b0e175bc8f9686f10ee"
     },
     {
@@ -525,10 +525,10 @@
       "id": "design-system-audit",
       "path": "skills/vibe-design/references/design-system-audit.md",
       "group": 5,
-      "category": "Дизайн и доступность",
-      "summary": "Дизайн-система, клавиатура, фокус и доступность",
-      "example": "Используй $vibe-design, сценарий «Design System Audit». Проведи аудит выбранной области без изменений кода.",
-      "sha256": "567fb3c0a2a69e16d593cd638c228b7b29b7e0d8bcbf174acd5df4e49d402f18"
+      "category": "Design & accessibility",
+      "summary": "Design systems, keyboard navigation, focus and accessibility.",
+      "example": "Use $vibe-design, workflow “Design System Audit” (ID: design-system-audit). Follow this workflow for the task below. Report the result in English.",
+      "sha256": "3edf10f056591386ac62174b6889a9d442d38a9b3273c6b2bd80b95b411d1867"
     },
     {
       "title": "Design System Polish",
@@ -537,9 +537,9 @@
       "id": "design-system-polish",
       "path": "skills/vibe-design/references/design-system-polish.md",
       "group": 5,
-      "category": "Дизайн и доступность",
-      "summary": "Дизайн-система, клавиатура, фокус и доступность",
-      "example": "Используй $vibe-design, сценарий «Design System Polish». Выполни выбранное исправление для текущей задачи.",
+      "category": "Design & accessibility",
+      "summary": "Design systems, keyboard navigation, focus and accessibility.",
+      "example": "Use $vibe-design, workflow “Design System Polish” (ID: design-system-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "02931157547f78ec0d3dd56dafb1803d9f20fd43f87a59a1e23185f992fb186d"
     },
     {
@@ -549,9 +549,9 @@
       "id": "browser-extension-audit",
       "path": "skills/vibe-desktop/references/browser-extension-audit.md",
       "group": 39,
-      "category": "Desktop и расширения",
-      "summary": "Desktop-приложения, расширения браузера и IPC",
-      "example": "Используй $vibe-desktop, сценарий «Browser Extension Audit». Проведи аудит выбранной области без изменений кода.",
+      "category": "Desktop & extensions",
+      "summary": "Desktop apps, browser extensions and IPC.",
+      "example": "Use $vibe-desktop, workflow “Browser Extension Audit” (ID: browser-extension-audit). Follow this workflow for the task below. Report the result in English.",
       "sha256": "991b81e5e46d085ae0ca7479bfd4859f8b6174ac14fc030523383f3ebd69792a"
     },
     {
@@ -561,9 +561,9 @@
       "id": "browser-extension-polish",
       "path": "skills/vibe-desktop/references/browser-extension-polish.md",
       "group": 39,
-      "category": "Desktop и расширения",
-      "summary": "Desktop-приложения, расширения браузера и IPC",
-      "example": "Используй $vibe-desktop, сценарий «Browser Extension Polish». Выполни выбранное исправление для текущей задачи.",
+      "category": "Desktop & extensions",
+      "summary": "Desktop apps, browser extensions and IPC.",
+      "example": "Use $vibe-desktop, workflow “Browser Extension Polish” (ID: browser-extension-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "23c623a4b5e72aef703f9a820c8946a0acfc3d664901039b07b7c4bf2bf8f513"
     },
     {
@@ -573,9 +573,9 @@
       "id": "desktop-app-audit",
       "path": "skills/vibe-desktop/references/desktop-app-audit.md",
       "group": 39,
-      "category": "Desktop и расширения",
-      "summary": "Desktop-приложения, расширения браузера и IPC",
-      "example": "Используй $vibe-desktop, сценарий «Desktop App Audit». Проведи аудит выбранной области без изменений кода.",
+      "category": "Desktop & extensions",
+      "summary": "Desktop apps, browser extensions and IPC.",
+      "example": "Use $vibe-desktop, workflow “Desktop App Audit” (ID: desktop-app-audit). Follow this workflow for the task below. Report the result in English.",
       "sha256": "d29b7e6f23dcaaf69f5151003a940e7994c49dfe4f66dd293ef3167cae8508f5"
     },
     {
@@ -585,9 +585,9 @@
       "id": "desktop-app-polish",
       "path": "skills/vibe-desktop/references/desktop-app-polish.md",
       "group": 39,
-      "category": "Desktop и расширения",
-      "summary": "Desktop-приложения, расширения браузера и IPC",
-      "example": "Используй $vibe-desktop, сценарий «Desktop App Polish». Выполни выбранное исправление для текущей задачи.",
+      "category": "Desktop & extensions",
+      "summary": "Desktop apps, browser extensions and IPC.",
+      "example": "Use $vibe-desktop, workflow “Desktop App Polish” (ID: desktop-app-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "30ed89b7104f999105883727472234cee12ad4c8fc5ee684af04136a4c36ac1b"
     },
     {
@@ -597,9 +597,9 @@
       "id": "local-client-runtime-security-check",
       "path": "skills/vibe-desktop/references/local-client-runtime-security-check.md",
       "group": 39,
-      "category": "Desktop и расширения",
-      "summary": "Desktop-приложения, расширения браузера и IPC",
-      "example": "Используй $vibe-desktop, сценарий «Local Client Runtime Security Check». Проверь выбранное поведение и сообщи результат.",
+      "category": "Desktop & extensions",
+      "summary": "Desktop apps, browser extensions and IPC.",
+      "example": "Use $vibe-desktop, workflow “Local Client Runtime Security Check” (ID: local-client-runtime-security-check). Follow this workflow for the task below. Report the result in English.",
       "sha256": "8e310e1a071e3b075b91b9b7c4043ebd1c284ec8be93c8bd6ecacbc54b3e5d82"
     },
     {
@@ -609,9 +609,9 @@
       "id": "design-gen",
       "path": "skills/vibe-docs/references/design-gen.md",
       "group": 10,
-      "category": "Документация и рефакторинг",
-      "summary": "README, дизайн-документация и границы рефакторинга",
-      "example": "Используй $vibe-docs, сценарий «DESIGN GEN». Подготовь документ по текущему проекту.",
+      "category": "Documentation & refactoring",
+      "summary": "READMEs, design documents and refactoring boundaries.",
+      "example": "Use $vibe-docs, workflow “DESIGN GEN” (ID: design-gen). Follow this workflow for the task below. Report the result in English.",
       "sha256": "73893644c1c9c6c4e92595252475526ecea62da58bb7bb133254415615fcf911"
     },
     {
@@ -621,9 +621,9 @@
       "id": "documentation-sync-audit",
       "path": "skills/vibe-docs/references/documentation-sync-audit.md",
       "group": 10,
-      "category": "Документация и рефакторинг",
-      "summary": "README, дизайн-документация и границы рефакторинга",
-      "example": "Используй $vibe-docs, сценарий «Documentation Sync Audit». Проведи аудит выбранной области без изменений кода.",
+      "category": "Documentation & refactoring",
+      "summary": "READMEs, design documents and refactoring boundaries.",
+      "example": "Use $vibe-docs, workflow “Documentation Sync Audit” (ID: documentation-sync-audit). Follow this workflow for the task below. Report the result in English.",
       "sha256": "b96f9ad0eca45f1364cb72ea78e622d08a31fe1b6e4b71281163cb215f6cf271"
     },
     {
@@ -633,9 +633,9 @@
       "id": "documentation-sync-polish",
       "path": "skills/vibe-docs/references/documentation-sync-polish.md",
       "group": 10,
-      "category": "Документация и рефакторинг",
-      "summary": "README, дизайн-документация и границы рефакторинга",
-      "example": "Используй $vibe-docs, сценарий «Documentation Sync Polish». Выполни выбранное исправление для текущей задачи.",
+      "category": "Documentation & refactoring",
+      "summary": "READMEs, design documents and refactoring boundaries.",
+      "example": "Use $vibe-docs, workflow “Documentation Sync Polish” (ID: documentation-sync-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "59b84740174680788cce6025dc801d79e0e04ece2c6cd9b2ee11a6655ac28445"
     },
     {
@@ -645,9 +645,9 @@
       "id": "migration-refactor-plan",
       "path": "skills/vibe-docs/references/migration-refactor-plan.md",
       "group": 10,
-      "category": "Документация и рефакторинг",
-      "summary": "README, дизайн-документация и границы рефакторинга",
-      "example": "Используй $vibe-docs, сценарий «Migration & Refactor Plan». Подготовь результат в текущем разговоре.",
+      "category": "Documentation & refactoring",
+      "summary": "READMEs, design documents and refactoring boundaries.",
+      "example": "Use $vibe-docs, workflow “Migration & Refactor Plan” (ID: migration-refactor-plan). Follow this workflow for the task below. Report the result in English.",
       "sha256": "9921ed311e4984257038a8cc473728cfb7591dc883094f925846315108122f34"
     },
     {
@@ -657,9 +657,9 @@
       "id": "readme-gen",
       "path": "skills/vibe-docs/references/readme-gen.md",
       "group": 10,
-      "category": "Документация и рефакторинг",
-      "summary": "README, дизайн-документация и границы рефакторинга",
-      "example": "Используй $vibe-docs, сценарий «README GEN». Подготовь документ по текущему проекту.",
+      "category": "Documentation & refactoring",
+      "summary": "READMEs, design documents and refactoring boundaries.",
+      "example": "Use $vibe-docs, workflow “README GEN” (ID: readme-gen). Follow this workflow for the task below. Report the result in English.",
       "sha256": "0da77e9ef21098ba3878b94556c0678cc1517262d1eb209a3e66f89e6f9dcd9a"
     },
     {
@@ -669,9 +669,9 @@
       "id": "refactor-boundary-audit",
       "path": "skills/vibe-docs/references/refactor-boundary-audit.md",
       "group": 10,
-      "category": "Документация и рефакторинг",
-      "summary": "README, дизайн-документация и границы рефакторинга",
-      "example": "Используй $vibe-docs, сценарий «Refactor Boundary Audit». Проведи аудит выбранной области без изменений кода.",
+      "category": "Documentation & refactoring",
+      "summary": "READMEs, design documents and refactoring boundaries.",
+      "example": "Use $vibe-docs, workflow “Refactor Boundary Audit” (ID: refactor-boundary-audit). Follow this workflow for the task below. Report the result in English.",
       "sha256": "26b80669ff3ad4e72348f0dc3c02a5c1024294cd7dd0325cea5eb7c2e0e984a8"
     },
     {
@@ -681,9 +681,9 @@
       "id": "refactor-boundary-polish",
       "path": "skills/vibe-docs/references/refactor-boundary-polish.md",
       "group": 10,
-      "category": "Документация и рефакторинг",
-      "summary": "README, дизайн-документация и границы рефакторинга",
-      "example": "Используй $vibe-docs, сценарий «Refactor Boundary Polish». Выполни выбранное исправление для текущей задачи.",
+      "category": "Documentation & refactoring",
+      "summary": "READMEs, design documents and refactoring boundaries.",
+      "example": "Use $vibe-docs, workflow “Refactor Boundary Polish” (ID: refactor-boundary-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "994317572d636a5e25aec474d1a6447464903f988801e293cfb5bdf4e4755682"
     },
     {
@@ -693,9 +693,9 @@
       "id": "auth-permissions-audit",
       "path": "skills/vibe-domain/references/auth-permissions-audit.md",
       "group": 9,
-      "category": "Права, данные и бизнес-правила",
-      "summary": "Права доступа, данные, тарифы и продуктовые события",
-      "example": "Используй $vibe-domain, сценарий «Auth Permissions Audit». Проведи аудит выбранной области без изменений кода.",
+      "category": "Permissions, data & business rules",
+      "summary": "Access control, data, billing plans and product events.",
+      "example": "Use $vibe-domain, workflow “Auth Permissions Audit” (ID: auth-permissions-audit). Follow this workflow for the task below. Report the result in English.",
       "sha256": "fa16bb512a6cc81bde409575132143a81dccf97218b3385f2a1acbb13a642e5c"
     },
     {
@@ -705,9 +705,9 @@
       "id": "auth-permissions-polish",
       "path": "skills/vibe-domain/references/auth-permissions-polish.md",
       "group": 9,
-      "category": "Права, данные и бизнес-правила",
-      "summary": "Права доступа, данные, тарифы и продуктовые события",
-      "example": "Используй $vibe-domain, сценарий «Auth Permissions Polish». Выполни выбранное исправление для текущей задачи.",
+      "category": "Permissions, data & business rules",
+      "summary": "Access control, data, billing plans and product events.",
+      "example": "Use $vibe-domain, workflow “Auth Permissions Polish” (ID: auth-permissions-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "54e2b1464fe7e8f10b6e37401b007c8c84d9cc20b173a3caf814ab0db6ccaf32"
     },
     {
@@ -717,10 +717,10 @@
       "id": "billing-entitlements-audit",
       "path": "skills/vibe-domain/references/billing-entitlements-audit.md",
       "group": 9,
-      "category": "Права, данные и бизнес-правила",
-      "summary": "Права доступа, данные, тарифы и продуктовые события",
-      "example": "Используй $vibe-domain, сценарий «Billing Entitlements Audit». Проведи аудит выбранной области без изменений кода.",
-      "sha256": "60f2b014484854d8939bf286935266cad572088fae7b08c714cfdaae0a45c564"
+      "category": "Permissions, data & business rules",
+      "summary": "Access control, data, billing plans and product events.",
+      "example": "Use $vibe-domain, workflow “Billing Entitlements Audit” (ID: billing-entitlements-audit). Follow this workflow for the task below. Report the result in English.",
+      "sha256": "22f8855293e10058cc5cfb89773e5005b4a1a7a57f845fac4eed05c32144ce13"
     },
     {
       "title": "Billing Entitlements Polish",
@@ -729,9 +729,9 @@
       "id": "billing-entitlements-polish",
       "path": "skills/vibe-domain/references/billing-entitlements-polish.md",
       "group": 9,
-      "category": "Права, данные и бизнес-правила",
-      "summary": "Права доступа, данные, тарифы и продуктовые события",
-      "example": "Используй $vibe-domain, сценарий «Billing Entitlements Polish». Выполни выбранное исправление для текущей задачи.",
+      "category": "Permissions, data & business rules",
+      "summary": "Access control, data, billing plans and product events.",
+      "example": "Use $vibe-domain, workflow “Billing Entitlements Polish” (ID: billing-entitlements-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "f8ea645a0ea0b023aee5f2e116705804926763ae7904f379a0c856233271e79f"
     },
     {
@@ -741,9 +741,9 @@
       "id": "data-model-audit",
       "path": "skills/vibe-domain/references/data-model-audit.md",
       "group": 9,
-      "category": "Права, данные и бизнес-правила",
-      "summary": "Права доступа, данные, тарифы и продуктовые события",
-      "example": "Используй $vibe-domain, сценарий «Data Model Audit». Проведи аудит выбранной области без изменений кода.",
+      "category": "Permissions, data & business rules",
+      "summary": "Access control, data, billing plans and product events.",
+      "example": "Use $vibe-domain, workflow “Data Model Audit” (ID: data-model-audit). Follow this workflow for the task below. Report the result in English.",
       "sha256": "38089a5f751e39e4b2581b51232919c9a994a16dd54cc6cb196d66bb87b9e2d5"
     },
     {
@@ -753,9 +753,9 @@
       "id": "data-model-polish",
       "path": "skills/vibe-domain/references/data-model-polish.md",
       "group": 9,
-      "category": "Права, данные и бизнес-правила",
-      "summary": "Права доступа, данные, тарифы и продуктовые события",
-      "example": "Используй $vibe-domain, сценарий «Data Model Polish». Выполни выбранное исправление для текущей задачи.",
+      "category": "Permissions, data & business rules",
+      "summary": "Access control, data, billing plans and product events.",
+      "example": "Use $vibe-domain, workflow “Data Model Polish” (ID: data-model-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "98436101ce903f2f5bec48a9dcd9588b5fc7a65e726730c035657d455d426057"
     },
     {
@@ -765,9 +765,9 @@
       "id": "data-pipeline-quality-audit",
       "path": "skills/vibe-domain/references/data-pipeline-quality-audit.md",
       "group": 9,
-      "category": "Права, данные и бизнес-правила",
-      "summary": "Права доступа, данные, тарифы и продуктовые события",
-      "example": "Используй $vibe-domain, сценарий «Data Pipeline & Quality Audit». Проведи аудит выбранной области без изменений кода.",
+      "category": "Permissions, data & business rules",
+      "summary": "Access control, data, billing plans and product events.",
+      "example": "Use $vibe-domain, workflow “Data Pipeline & Quality Audit” (ID: data-pipeline-quality-audit). Follow this workflow for the task below. Report the result in English.",
       "sha256": "32d058c82297d7869a467a31b4b48c2b7acefe71e36881979f58a4ad09e85b3b"
     },
     {
@@ -777,9 +777,9 @@
       "id": "data-pipeline-quality-polish",
       "path": "skills/vibe-domain/references/data-pipeline-quality-polish.md",
       "group": 9,
-      "category": "Права, данные и бизнес-правила",
-      "summary": "Права доступа, данные, тарифы и продуктовые события",
-      "example": "Используй $vibe-domain, сценарий «Data Pipeline & Quality Polish». Выполни выбранное исправление для текущей задачи.",
+      "category": "Permissions, data & business rules",
+      "summary": "Access control, data, billing plans and product events.",
+      "example": "Use $vibe-domain, workflow “Data Pipeline & Quality Polish” (ID: data-pipeline-quality-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "e9f0471610ff3be12c1f831354bfb63ee6a0524738a0879453c0a500d927d8b0"
     },
     {
@@ -789,9 +789,9 @@
       "id": "experiment-design-audit",
       "path": "skills/vibe-domain/references/experiment-design-audit.md",
       "group": 9,
-      "category": "Права, данные и бизнес-правила",
-      "summary": "Права доступа, данные, тарифы и продуктовые события",
-      "example": "Используй $vibe-domain, сценарий «Experiment Design Audit». Проведи аудит выбранной области без изменений кода.",
+      "category": "Permissions, data & business rules",
+      "summary": "Access control, data, billing plans and product events.",
+      "example": "Use $vibe-domain, workflow “Experiment Design Audit” (ID: experiment-design-audit). Follow this workflow for the task below. Report the result in English.",
       "sha256": "e78f61e7433f998d306c53f203aceb65f103c66fda5e70c2d086203f87b5000f"
     },
     {
@@ -801,9 +801,9 @@
       "id": "experiment-design-polish",
       "path": "skills/vibe-domain/references/experiment-design-polish.md",
       "group": 9,
-      "category": "Права, данные и бизнес-правила",
-      "summary": "Права доступа, данные, тарифы и продуктовые события",
-      "example": "Используй $vibe-domain, сценарий «Experiment Design Polish». Выполни выбранное исправление для текущей задачи.",
+      "category": "Permissions, data & business rules",
+      "summary": "Access control, data, billing plans and product events.",
+      "example": "Use $vibe-domain, workflow “Experiment Design Polish” (ID: experiment-design-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "68e892cc61acc8904da922a6c0ec914d2d74e483d5a72ca636ed9cfd08296043"
     },
     {
@@ -813,9 +813,9 @@
       "id": "multi-tenant-isolation-audit",
       "path": "skills/vibe-domain/references/multi-tenant-isolation-audit.md",
       "group": 9,
-      "category": "Права, данные и бизнес-правила",
-      "summary": "Права доступа, данные, тарифы и продуктовые события",
-      "example": "Используй $vibe-domain, сценарий «Multi Tenant Isolation Audit». Проведи аудит выбранной области без изменений кода.",
+      "category": "Permissions, data & business rules",
+      "summary": "Access control, data, billing plans and product events.",
+      "example": "Use $vibe-domain, workflow “Multi Tenant Isolation Audit” (ID: multi-tenant-isolation-audit). Follow this workflow for the task below. Report the result in English.",
       "sha256": "bef1740be45757546b7b5cd74b2637284ce7df9f05cc6c5c08b3867e4b1e62c3"
     },
     {
@@ -825,9 +825,9 @@
       "id": "multi-tenant-isolation-polish",
       "path": "skills/vibe-domain/references/multi-tenant-isolation-polish.md",
       "group": 9,
-      "category": "Права, данные и бизнес-правила",
-      "summary": "Права доступа, данные, тарифы и продуктовые события",
-      "example": "Используй $vibe-domain, сценарий «Multi Tenant Isolation Polish». Выполни выбранное исправление для текущей задачи.",
+      "category": "Permissions, data & business rules",
+      "summary": "Access control, data, billing plans and product events.",
+      "example": "Use $vibe-domain, workflow “Multi Tenant Isolation Polish” (ID: multi-tenant-isolation-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "cd1e4bcddd9230f766a777db87cd9d07825a0d8037c61fe65a90b79d9588e033"
     },
     {
@@ -837,9 +837,9 @@
       "id": "notebook-productionization-audit",
       "path": "skills/vibe-domain/references/notebook-productionization-audit.md",
       "group": 9,
-      "category": "Права, данные и бизнес-правила",
-      "summary": "Права доступа, данные, тарифы и продуктовые события",
-      "example": "Используй $vibe-domain, сценарий «Notebook Productionization Audit». Проведи аудит выбранной области без изменений кода.",
+      "category": "Permissions, data & business rules",
+      "summary": "Access control, data, billing plans and product events.",
+      "example": "Use $vibe-domain, workflow “Notebook Productionization Audit” (ID: notebook-productionization-audit). Follow this workflow for the task below. Report the result in English.",
       "sha256": "45918f6f5f12cd01b6e5f804d1d8bbf14a2bb1452180a6d605d3809743706cef"
     },
     {
@@ -849,10 +849,22 @@
       "id": "notebook-productionization-polish",
       "path": "skills/vibe-domain/references/notebook-productionization-polish.md",
       "group": 9,
-      "category": "Права, данные и бизнес-правила",
-      "summary": "Права доступа, данные, тарифы и продуктовые события",
-      "example": "Используй $vibe-domain, сценарий «Notebook Productionization Polish». Выполни выбранное исправление для текущей задачи.",
+      "category": "Permissions, data & business rules",
+      "summary": "Access control, data, billing plans and product events.",
+      "example": "Use $vibe-domain, workflow “Notebook Productionization Polish” (ID: notebook-productionization-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "f4c84d33b76584fd01682effe6ebef408eda2766a39d9424247406a4e31ef537"
+    },
+    {
+      "title": "OAuth OIDC Session Check",
+      "skill": "vibe-domain",
+      "mode": "check",
+      "id": "oauth-oidc-session-check",
+      "path": "skills/vibe-domain/references/oauth-oidc-session-check.md",
+      "group": 9,
+      "category": "Permissions, data & business rules",
+      "summary": "Access control, data, billing plans and product events.",
+      "example": "Use $vibe-domain, workflow “OAuth OIDC Session Check” (ID: oauth-oidc-session-check). Follow this workflow for the task below. Report the result in English.",
+      "sha256": "2f529093004be08180b2ea6489f0d6a90313a7785b08c7705654b3a8578c3022"
     },
     {
       "title": "Product Analytics Audit",
@@ -861,10 +873,10 @@
       "id": "product-analytics-audit",
       "path": "skills/vibe-domain/references/product-analytics-audit.md",
       "group": 9,
-      "category": "Права, данные и бизнес-правила",
-      "summary": "Права доступа, данные, тарифы и продуктовые события",
-      "example": "Используй $vibe-domain, сценарий «Product Analytics Audit». Проведи аудит выбранной области без изменений кода.",
-      "sha256": "52a446cb63be964f527b771ae4649d0e8df88bf6e5a901ebdfbeddd0c9f16f89"
+      "category": "Permissions, data & business rules",
+      "summary": "Access control, data, billing plans and product events.",
+      "example": "Use $vibe-domain, workflow “Product Analytics Audit” (ID: product-analytics-audit). Follow this workflow for the task below. Report the result in English.",
+      "sha256": "d58c8c97a8772105988c8003170b6f5626c0309119b50606a2d6c0ee74cbd55b"
     },
     {
       "title": "Product Analytics Polish",
@@ -873,9 +885,9 @@
       "id": "product-analytics-polish",
       "path": "skills/vibe-domain/references/product-analytics-polish.md",
       "group": 9,
-      "category": "Права, данные и бизнес-правила",
-      "summary": "Права доступа, данные, тарифы и продуктовые события",
-      "example": "Используй $vibe-domain, сценарий «Product Analytics Polish». Выполни выбранное исправление для текущей задачи.",
+      "category": "Permissions, data & business rules",
+      "summary": "Access control, data, billing plans and product events.",
+      "example": "Use $vibe-domain, workflow “Product Analytics Polish” (ID: product-analytics-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "aafefa934182c9cfcf103af2e9a7dae52623d595de1f5e39fd99b6348faa1f82"
     },
     {
@@ -885,9 +897,9 @@
       "id": "rbac-abac-matrix-check",
       "path": "skills/vibe-domain/references/rbac-abac-matrix-check.md",
       "group": 9,
-      "category": "Права, данные и бизнес-правила",
-      "summary": "Права доступа, данные, тарифы и продуктовые события",
-      "example": "Используй $vibe-domain, сценарий «RBAC ABAC Matrix Check». Проверь выбранное поведение и сообщи результат.",
+      "category": "Permissions, data & business rules",
+      "summary": "Access control, data, billing plans and product events.",
+      "example": "Use $vibe-domain, workflow “RBAC ABAC Matrix Check” (ID: rbac-abac-matrix-check). Follow this workflow for the task below. Report the result in English.",
       "sha256": "fd9f7462931c29512a89d67de1852253754dff1d60f92f7a1e83eb908796c358"
     },
     {
@@ -897,9 +909,9 @@
       "id": "rbac-abac-policy-audit",
       "path": "skills/vibe-domain/references/rbac-abac-policy-audit.md",
       "group": 9,
-      "category": "Права, данные и бизнес-правила",
-      "summary": "Права доступа, данные, тарифы и продуктовые события",
-      "example": "Используй $vibe-domain, сценарий «RBAC ABAC Policy Audit». Проведи аудит выбранной области без изменений кода.",
+      "category": "Permissions, data & business rules",
+      "summary": "Access control, data, billing plans and product events.",
+      "example": "Use $vibe-domain, workflow “RBAC ABAC Policy Audit” (ID: rbac-abac-policy-audit). Follow this workflow for the task below. Report the result in English.",
       "sha256": "8449bfc638746523fcfddad7cb54dba6c8817fb17d27f14bfae48fafd41e2cd1"
     },
     {
@@ -909,9 +921,9 @@
       "id": "rbac-abac-policy-polish",
       "path": "skills/vibe-domain/references/rbac-abac-policy-polish.md",
       "group": 9,
-      "category": "Права, данные и бизнес-правила",
-      "summary": "Права доступа, данные, тарифы и продуктовые события",
-      "example": "Используй $vibe-domain, сценарий «RBAC ABAC Policy Polish». Выполни выбранное исправление для текущей задачи.",
+      "category": "Permissions, data & business rules",
+      "summary": "Access control, data, billing plans and product events.",
+      "example": "Use $vibe-domain, workflow “RBAC ABAC Policy Polish” (ID: rbac-abac-policy-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "171e48607d5e582b676b10e9f5dfeaa5b6ffb7738f79449452bf6fdb94e918fd"
     },
     {
@@ -921,9 +933,9 @@
       "id": "tenant-isolation-check",
       "path": "skills/vibe-domain/references/tenant-isolation-check.md",
       "group": 9,
-      "category": "Права, данные и бизнес-правила",
-      "summary": "Права доступа, данные, тарифы и продуктовые события",
-      "example": "Используй $vibe-domain, сценарий «Tenant Isolation Check». Проверь выбранное поведение и сообщи результат.",
+      "category": "Permissions, data & business rules",
+      "summary": "Access control, data, billing plans and product events.",
+      "example": "Use $vibe-domain, workflow “Tenant Isolation Check” (ID: tenant-isolation-check). Follow this workflow for the task below. Report the result in English.",
       "sha256": "f03a4a5cf9f90c0f0f0929283753288931bfaa942153ddda059545ed7b250352"
     },
     {
@@ -933,9 +945,9 @@
       "id": "feature-flag-exposure-rollback-check",
       "path": "skills/vibe-flags/references/feature-flag-exposure-rollback-check.md",
       "group": 37,
-      "category": "Флаги и rollout",
-      "summary": "Флаги функций, аудитории и откат изменений",
-      "example": "Используй $vibe-flags, сценарий «Feature Flag Exposure & Rollback Check». Проверь выбранное поведение и сообщи результат.",
+      "category": "Feature flags & rollouts",
+      "summary": "Feature flags, audiences and rollbacks.",
+      "example": "Use $vibe-flags, workflow “Feature Flag Exposure & Rollback Check” (ID: feature-flag-exposure-rollback-check). Follow this workflow for the task below. Report the result in English.",
       "sha256": "8674122b397c81b251b97a3982c158e392a0dac0ef9c22d45ede52538d42b55e"
     },
     {
@@ -945,9 +957,9 @@
       "id": "feature-flags-rollout-audit",
       "path": "skills/vibe-flags/references/feature-flags-rollout-audit.md",
       "group": 37,
-      "category": "Флаги и rollout",
-      "summary": "Флаги функций, аудитории и откат изменений",
-      "example": "Используй $vibe-flags, сценарий «Feature Flags Rollout Audit». Проведи аудит выбранной области без изменений кода.",
+      "category": "Feature flags & rollouts",
+      "summary": "Feature flags, audiences and rollbacks.",
+      "example": "Use $vibe-flags, workflow “Feature Flags Rollout Audit” (ID: feature-flags-rollout-audit). Follow this workflow for the task below. Report the result in English.",
       "sha256": "830cabfa9a1ba850eaebd4007bc9894588875c33849828bf39a9814fadde3ea9"
     },
     {
@@ -957,9 +969,9 @@
       "id": "feature-flags-rollout-polish",
       "path": "skills/vibe-flags/references/feature-flags-rollout-polish.md",
       "group": 37,
-      "category": "Флаги и rollout",
-      "summary": "Флаги функций, аудитории и откат изменений",
-      "example": "Используй $vibe-flags, сценарий «Feature Flags Rollout Polish». Выполни выбранное исправление для текущей задачи.",
+      "category": "Feature flags & rollouts",
+      "summary": "Feature flags, audiences and rollbacks.",
+      "example": "Use $vibe-flags, workflow “Feature Flags Rollout Polish” (ID: feature-flags-rollout-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "a87cfb02164a0953819024f489244d2e8d111b8434b75a4dd8c93e148c84d1e6"
     },
     {
@@ -969,9 +981,9 @@
       "id": "go-rust-concurrency-shutdown-check",
       "path": "skills/vibe-go-rust/references/go-rust-concurrency-shutdown-check.md",
       "group": 22,
-      "category": "Сервисы Go и Rust",
-      "summary": "Конкурентность и завершение сервисов Go и Rust",
-      "example": "Используй $vibe-go-rust, сценарий «Go Rust Concurrency & Shutdown Check». Проверь выбранное поведение и сообщи результат.",
+      "category": "Go & Rust services",
+      "summary": "Concurrency and shutdown in Go and Rust services.",
+      "example": "Use $vibe-go-rust, workflow “Go Rust Concurrency & Shutdown Check” (ID: go-rust-concurrency-shutdown-check). Follow this workflow for the task below. Report the result in English.",
       "sha256": "dd4ad08411b261dec38dcb8d437fb68fc1fb75f13ce3a21e22beaf5bada05af0"
     },
     {
@@ -981,9 +993,9 @@
       "id": "go-rust-microservices-audit",
       "path": "skills/vibe-go-rust/references/go-rust-microservices-audit.md",
       "group": 22,
-      "category": "Сервисы Go и Rust",
-      "summary": "Конкурентность и завершение сервисов Go и Rust",
-      "example": "Используй $vibe-go-rust, сценарий «Go Rust Microservices Audit». Проведи аудит выбранной области без изменений кода.",
+      "category": "Go & Rust services",
+      "summary": "Concurrency and shutdown in Go and Rust services.",
+      "example": "Use $vibe-go-rust, workflow “Go Rust Microservices Audit” (ID: go-rust-microservices-audit). Follow this workflow for the task below. Report the result in English.",
       "sha256": "89d6bd21b6a3f822bca2f92da7463d94c4c4f271a6078cfb6f1ffb4074631896"
     },
     {
@@ -993,9 +1005,9 @@
       "id": "go-rust-microservices-polish",
       "path": "skills/vibe-go-rust/references/go-rust-microservices-polish.md",
       "group": 22,
-      "category": "Сервисы Go и Rust",
-      "summary": "Конкурентность и завершение сервисов Go и Rust",
-      "example": "Используй $vibe-go-rust, сценарий «Go Rust Microservices Polish». Выполни выбранное исправление для текущей задачи.",
+      "category": "Go & Rust services",
+      "summary": "Concurrency and shutdown in Go and Rust services.",
+      "example": "Use $vibe-go-rust, workflow “Go Rust Microservices Polish” (ID: go-rust-microservices-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "21941a41759d780a34aa0871f217f2fb22eaddc8db82481fb343a1480dc61b26"
     },
     {
@@ -1005,9 +1017,9 @@
       "id": "agent-harness-audit",
       "path": "skills/vibe-harness/references/agent-harness-audit.md",
       "group": 13,
-      "category": "Исполнение агентов",
-      "summary": "Состояния агентов, восстановление и повторный запуск",
-      "example": "Используй $vibe-harness, сценарий «Agent Harness Audit». Проведи аудит выбранной области без изменений кода.",
+      "category": "Agent execution",
+      "summary": "Agent state, recovery and replay.",
+      "example": "Use $vibe-harness, workflow “Agent Harness Audit” (ID: agent-harness-audit). Follow this workflow for the task below. Report the result in English.",
       "sha256": "f00797b46e0c73ca7509ae5de48696083dd6e147f9bc037e6c08fc57808812a4"
     },
     {
@@ -1017,9 +1029,9 @@
       "id": "agent-harness-polish",
       "path": "skills/vibe-harness/references/agent-harness-polish.md",
       "group": 13,
-      "category": "Исполнение агентов",
-      "summary": "Состояния агентов, восстановление и повторный запуск",
-      "example": "Используй $vibe-harness, сценарий «Agent Harness Polish». Выполни выбранное исправление для текущей задачи.",
+      "category": "Agent execution",
+      "summary": "Agent state, recovery and replay.",
+      "example": "Use $vibe-harness, workflow “Agent Harness Polish” (ID: agent-harness-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "f3fd1fb13d6d311650d991f97d5519f055110d7f235d3e4d45b8ccb74ecaed09"
     },
     {
@@ -1029,9 +1041,9 @@
       "id": "agent-harness-replay-failure-check",
       "path": "skills/vibe-harness/references/agent-harness-replay-failure-check.md",
       "group": 13,
-      "category": "Исполнение агентов",
-      "summary": "Состояния агентов, восстановление и повторный запуск",
-      "example": "Используй $vibe-harness, сценарий «Agent Harness Replay & Failure Check». Проверь выбранное поведение и сообщи результат.",
+      "category": "Agent execution",
+      "summary": "Agent state, recovery and replay.",
+      "example": "Use $vibe-harness, workflow “Agent Harness Replay & Failure Check” (ID: agent-harness-replay-failure-check). Follow this workflow for the task below. Report the result in English.",
       "sha256": "09cb8c1bcebc25e4412b5ec56df1aea31b3c2f4ce933e21f095ed0606de76fcb"
     },
     {
@@ -1041,9 +1053,9 @@
       "id": "backend-integrations-audit",
       "path": "skills/vibe-integrations/references/backend-integrations-audit.md",
       "group": 31,
-      "category": "Интеграции и сеть",
-      "summary": "Внешние API, webhooks, таймауты и сетевые сбои",
-      "example": "Используй $vibe-integrations, сценарий «Backend Integrations Audit». Проведи аудит выбранной области без изменений кода.",
+      "category": "Integrations & networking",
+      "summary": "External APIs, webhooks, timeouts and network failures.",
+      "example": "Use $vibe-integrations, workflow “Backend Integrations Audit” (ID: backend-integrations-audit). Follow this workflow for the task below. Report the result in English.",
       "sha256": "e20d3a6fe7663629fe0e144a85e3bd2fe28228f3c1ca12c30746e09aea108c23"
     },
     {
@@ -1053,9 +1065,9 @@
       "id": "backend-integrations-polish",
       "path": "skills/vibe-integrations/references/backend-integrations-polish.md",
       "group": 31,
-      "category": "Интеграции и сеть",
-      "summary": "Внешние API, webhooks, таймауты и сетевые сбои",
-      "example": "Используй $vibe-integrations, сценарий «Backend Integrations Polish». Выполни выбранное исправление для текущей задачи.",
+      "category": "Integrations & networking",
+      "summary": "External APIs, webhooks, timeouts and network failures.",
+      "example": "Use $vibe-integrations, workflow “Backend Integrations Polish” (ID: backend-integrations-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "06409e06b0ad695096438f1139f35803a4c761951a1337c1cbb67ea0966920b9"
     },
     {
@@ -1065,9 +1077,9 @@
       "id": "network-integration-failure-check",
       "path": "skills/vibe-integrations/references/network-integration-failure-check.md",
       "group": 31,
-      "category": "Интеграции и сеть",
-      "summary": "Внешние API, webhooks, таймауты и сетевые сбои",
-      "example": "Используй $vibe-integrations, сценарий «Network Integration Failure Check». Проверь выбранное поведение и сообщи результат.",
+      "category": "Integrations & networking",
+      "summary": "External APIs, webhooks, timeouts and network failures.",
+      "example": "Use $vibe-integrations, workflow “Network Integration Failure Check” (ID: network-integration-failure-check). Follow this workflow for the task below. Report the result in English.",
       "sha256": "d0600899566c923b2e9cb84262984cf4b63a694b9ac59ca6658b2c5eae8935d0"
     },
     {
@@ -1077,9 +1089,9 @@
       "id": "kafka-redpanda-audit",
       "path": "skills/vibe-kafka/references/kafka-redpanda-audit.md",
       "group": 17,
-      "category": "Kafka и Redpanda",
-      "summary": "События, offsets, повторная доставка и rebalance",
-      "example": "Используй $vibe-kafka, сценарий «Kafka Redpanda Audit». Проведи аудит выбранной области без изменений кода.",
+      "category": "Kafka & Redpanda",
+      "summary": "Events, offsets, redelivery and rebalancing.",
+      "example": "Use $vibe-kafka, workflow “Kafka Redpanda Audit” (ID: kafka-redpanda-audit). Follow this workflow for the task below. Report the result in English.",
       "sha256": "31caef40789a707317d5ba852bc6ce290a281bad5b230ced8324b21432e57d1e"
     },
     {
@@ -1089,9 +1101,9 @@
       "id": "kafka-redpanda-polish",
       "path": "skills/vibe-kafka/references/kafka-redpanda-polish.md",
       "group": 17,
-      "category": "Kafka и Redpanda",
-      "summary": "События, offsets, повторная доставка и rebalance",
-      "example": "Используй $vibe-kafka, сценарий «Kafka Redpanda Polish». Выполни выбранное исправление для текущей задачи.",
+      "category": "Kafka & Redpanda",
+      "summary": "Events, offsets, redelivery and rebalancing.",
+      "example": "Use $vibe-kafka, workflow “Kafka Redpanda Polish” (ID: kafka-redpanda-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "f3ff82965ca466a476d745cf9ceded5f7eaad5206fc7bc12820556391fb9bf1b"
     },
     {
@@ -1101,9 +1113,9 @@
       "id": "kafka-redpanda-rebalance-failure-check",
       "path": "skills/vibe-kafka/references/kafka-redpanda-rebalance-failure-check.md",
       "group": 17,
-      "category": "Kafka и Redpanda",
-      "summary": "События, offsets, повторная доставка и rebalance",
-      "example": "Используй $vibe-kafka, сценарий «Kafka Redpanda Rebalance & Failure Check». Проверь выбранное поведение и сообщи результат.",
+      "category": "Kafka & Redpanda",
+      "summary": "Events, offsets, redelivery and rebalancing.",
+      "example": "Use $vibe-kafka, workflow “Kafka Redpanda Rebalance & Failure Check” (ID: kafka-redpanda-rebalance-failure-check). Follow this workflow for the task below. Report the result in English.",
       "sha256": "2e875689e8b338ca7d9cb0c8767c956840b8ad40caa3b80d976f268edfa70186"
     },
     {
@@ -1114,8 +1126,8 @@
       "path": "skills/vibe-kubernetes/references/kubernetes-platform-audit.md",
       "group": 14,
       "category": "Kubernetes",
-      "summary": "Развёртывание, ресурсы и восстановление Kubernetes",
-      "example": "Используй $vibe-kubernetes, сценарий «Kubernetes Platform Audit». Проведи аудит выбранной области без изменений кода.",
+      "summary": "Kubernetes deployments, resources and recovery.",
+      "example": "Use $vibe-kubernetes, workflow “Kubernetes Platform Audit” (ID: kubernetes-platform-audit). Follow this workflow for the task below. Report the result in English.",
       "sha256": "6b75a3647aaecd91a2f14f0c03953beb94079713c224a51ad1d4a1ae3a454cca"
     },
     {
@@ -1126,8 +1138,8 @@
       "path": "skills/vibe-kubernetes/references/kubernetes-platform-polish.md",
       "group": 14,
       "category": "Kubernetes",
-      "summary": "Развёртывание, ресурсы и восстановление Kubernetes",
-      "example": "Используй $vibe-kubernetes, сценарий «Kubernetes Platform Polish». Выполни выбранное исправление для текущей задачи.",
+      "summary": "Kubernetes deployments, resources and recovery.",
+      "example": "Use $vibe-kubernetes, workflow “Kubernetes Platform Polish” (ID: kubernetes-platform-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "aaec1a2c1acd987fcfc3c23764ba7cab85f4ffabf85422bd86412fbafef0e498"
     },
     {
@@ -1138,8 +1150,8 @@
       "path": "skills/vibe-kubernetes/references/kubernetes-rollout-failure-check.md",
       "group": 14,
       "category": "Kubernetes",
-      "summary": "Развёртывание, ресурсы и восстановление Kubernetes",
-      "example": "Используй $vibe-kubernetes, сценарий «Kubernetes Rollout & Failure Check». Проверь выбранное поведение и сообщи результат.",
+      "summary": "Kubernetes deployments, resources and recovery.",
+      "example": "Use $vibe-kubernetes, workflow “Kubernetes Rollout & Failure Check” (ID: kubernetes-rollout-failure-check). Follow this workflow for the task below. Report the result in English.",
       "sha256": "6769e9525a72fef715dbe06bee47e35346e78393564019be4c5fb0799c1d0924"
     },
     {
@@ -1149,9 +1161,9 @@
       "id": "ai-navigation-map",
       "path": "skills/vibe-map/references/ai-navigation-map.md",
       "group": 2,
-      "category": "Карта проекта",
-      "summary": "Устройство проекта, связи и владельцы правил",
-      "example": "Используй $vibe-map, сценарий «AI Navigation Map». Покажи устройство выбранной части проекта.",
+      "category": "Project mapping",
+      "summary": "Project structure, connections and contract ownership.",
+      "example": "Use $vibe-map, workflow “AI Navigation Map” (ID: ai-navigation-map). Follow this workflow for the task below. Report the result in English.",
       "sha256": "1f4b84fa581d8032fc2dff4056a2d482f651b9b7e49cd3ec86b8f1b1210cf340"
     },
     {
@@ -1161,9 +1173,9 @@
       "id": "api-navigation-map",
       "path": "skills/vibe-map/references/api-navigation-map.md",
       "group": 2,
-      "category": "Карта проекта",
-      "summary": "Устройство проекта, связи и владельцы правил",
-      "example": "Используй $vibe-map, сценарий «API Navigation Map». Покажи устройство выбранной части проекта.",
+      "category": "Project mapping",
+      "summary": "Project structure, connections and contract ownership.",
+      "example": "Use $vibe-map, workflow “API Navigation Map” (ID: api-navigation-map). Follow this workflow for the task below. Report the result in English.",
       "sha256": "50b908e16d0498f6e692ab27cab91bce32f09defadc8ac74015eded3eb97e628"
     },
     {
@@ -1173,9 +1185,9 @@
       "id": "auth-entitlements-map",
       "path": "skills/vibe-map/references/auth-entitlements-map.md",
       "group": 2,
-      "category": "Карта проекта",
-      "summary": "Устройство проекта, связи и владельцы правил",
-      "example": "Используй $vibe-map, сценарий «Auth Entitlements Map». Покажи устройство выбранной части проекта.",
+      "category": "Project mapping",
+      "summary": "Project structure, connections and contract ownership.",
+      "example": "Use $vibe-map, workflow “Auth Entitlements Map” (ID: auth-entitlements-map). Follow this workflow for the task below. Report the result in English.",
       "sha256": "ec8d40a822c2f72b7a1547ee33c419ba509aa3536f477528a4d3a29fa2075d32"
     },
     {
@@ -1185,9 +1197,9 @@
       "id": "bot-navigation-map",
       "path": "skills/vibe-map/references/bot-navigation-map.md",
       "group": 2,
-      "category": "Карта проекта",
-      "summary": "Устройство проекта, связи и владельцы правил",
-      "example": "Используй $vibe-map, сценарий «Bot Navigation Map». Покажи устройство выбранной части проекта.",
+      "category": "Project mapping",
+      "summary": "Project structure, connections and contract ownership.",
+      "example": "Use $vibe-map, workflow “Bot Navigation Map” (ID: bot-navigation-map). Follow this workflow for the task below. Report the result in English.",
       "sha256": "2f6f28b88252b2df7080a0a6eb24056151df8dfde61b5e36c1c30993b59ccdd3"
     },
     {
@@ -1197,9 +1209,9 @@
       "id": "domain-data-map",
       "path": "skills/vibe-map/references/domain-data-map.md",
       "group": 2,
-      "category": "Карта проекта",
-      "summary": "Устройство проекта, связи и владельцы правил",
-      "example": "Используй $vibe-map, сценарий «Domain Data Map». Покажи устройство выбранной части проекта.",
+      "category": "Project mapping",
+      "summary": "Project structure, connections and contract ownership.",
+      "example": "Use $vibe-map, workflow “Domain Data Map” (ID: domain-data-map). Follow this workflow for the task below. Report the result in English.",
       "sha256": "2cc7f23a42aa15a38f8ea9b08e3755ed82bd0b071bc00623988cd46d892275d4"
     },
     {
@@ -1209,9 +1221,9 @@
       "id": "integration-map",
       "path": "skills/vibe-map/references/integration-map.md",
       "group": 2,
-      "category": "Карта проекта",
-      "summary": "Устройство проекта, связи и владельцы правил",
-      "example": "Используй $vibe-map, сценарий «Integration Map». Покажи устройство выбранной части проекта.",
+      "category": "Project mapping",
+      "summary": "Project structure, connections and contract ownership.",
+      "example": "Use $vibe-map, workflow “Integration Map” (ID: integration-map). Follow this workflow for the task below. Report the result in English.",
       "sha256": "801130839a69358ea1394800dd517cb74c2b640d448bb02f7f5cbc8f8225065a"
     },
     {
@@ -1221,9 +1233,9 @@
       "id": "ownership-invariant-map",
       "path": "skills/vibe-map/references/ownership-invariant-map.md",
       "group": 2,
-      "category": "Карта проекта",
-      "summary": "Устройство проекта, связи и владельцы правил",
-      "example": "Используй $vibe-map, сценарий «Ownership & Invariant Map». Покажи устройство выбранной части проекта.",
+      "category": "Project mapping",
+      "summary": "Project structure, connections and contract ownership.",
+      "example": "Use $vibe-map, workflow “Ownership & Invariant Map” (ID: ownership-invariant-map). Follow this workflow for the task below. Report the result in English.",
       "sha256": "5fad05a0b6f6e6ac3643f371b156058dcd06a348d67a19a8a04014793b016e7b"
     },
     {
@@ -1233,9 +1245,9 @@
       "id": "product-capability-map",
       "path": "skills/vibe-map/references/product-capability-map.md",
       "group": 2,
-      "category": "Карта проекта",
-      "summary": "Устройство проекта, связи и владельцы правил",
-      "example": "Используй $vibe-map, сценарий «Product Capability Map». Покажи устройство выбранной части проекта.",
+      "category": "Project mapping",
+      "summary": "Project structure, connections and contract ownership.",
+      "example": "Use $vibe-map, workflow “Product Capability Map” (ID: product-capability-map). Follow this workflow for the task below. Report the result in English.",
       "sha256": "ea4ffa3a8f1bb01072c7b7b10d6edff4ca813ffb73b3e10f3adfe3b1415280b9"
     },
     {
@@ -1245,9 +1257,9 @@
       "id": "product-journey-map",
       "path": "skills/vibe-map/references/product-journey-map.md",
       "group": 2,
-      "category": "Карта проекта",
-      "summary": "Устройство проекта, связи и владельцы правил",
-      "example": "Используй $vibe-map, сценарий «Product Journey Map». Покажи устройство выбранной части проекта.",
+      "category": "Project mapping",
+      "summary": "Project structure, connections and contract ownership.",
+      "example": "Use $vibe-map, workflow “Product Journey Map” (ID: product-journey-map). Follow this workflow for the task below. Report the result in English.",
       "sha256": "de55d07aa6a4fcaa96e1cd3bce73d664644fb7844f910308cf72ef935e9d758c"
     },
     {
@@ -1257,9 +1269,9 @@
       "id": "product-metrics-events-map",
       "path": "skills/vibe-map/references/product-metrics-events-map.md",
       "group": 2,
-      "category": "Карта проекта",
-      "summary": "Устройство проекта, связи и владельцы правил",
-      "example": "Используй $vibe-map, сценарий «Product Metrics Events Map». Покажи устройство выбранной части проекта.",
+      "category": "Project mapping",
+      "summary": "Project structure, connections and contract ownership.",
+      "example": "Use $vibe-map, workflow “Product Metrics Events Map” (ID: product-metrics-events-map). Follow this workflow for the task below. Report the result in English.",
       "sha256": "63c5ae37f87f09edd7fa96725fefb771fc117c59b02a9550f2bc1220301dbafa"
     },
     {
@@ -1269,9 +1281,9 @@
       "id": "product-requirements-map",
       "path": "skills/vibe-map/references/product-requirements-map.md",
       "group": 2,
-      "category": "Карта проекта",
-      "summary": "Устройство проекта, связи и владельцы правил",
-      "example": "Используй $vibe-map, сценарий «Product Requirements Map». Покажи устройство выбранной части проекта.",
+      "category": "Project mapping",
+      "summary": "Project structure, connections and contract ownership.",
+      "example": "Use $vibe-map, workflow “Product Requirements Map” (ID: product-requirements-map). Follow this workflow for the task below. Report the result in English.",
       "sha256": "203e884d64658f2fbffbbeccbcd77832d6424b90aefe455f74ae0b6968069643"
     },
     {
@@ -1281,9 +1293,9 @@
       "id": "project-atlas-map",
       "path": "skills/vibe-map/references/project-atlas-map.md",
       "group": 2,
-      "category": "Карта проекта",
-      "summary": "Устройство проекта, связи и владельцы правил",
-      "example": "Используй $vibe-map, сценарий «Project Atlas Map». Покажи устройство выбранной части проекта.",
+      "category": "Project mapping",
+      "summary": "Project structure, connections and contract ownership.",
+      "example": "Use $vibe-map, workflow “Project Atlas Map” (ID: project-atlas-map). Follow this workflow for the task below. Report the result in English.",
       "sha256": "3b7e72abdbcad6946ba4539bb63316663b0a8f14e74ba2958a62ef8fabb0324a"
     },
     {
@@ -1293,9 +1305,9 @@
       "id": "rbac-abac-policy-map",
       "path": "skills/vibe-map/references/rbac-abac-policy-map.md",
       "group": 2,
-      "category": "Карта проекта",
-      "summary": "Устройство проекта, связи и владельцы правил",
-      "example": "Используй $vibe-map, сценарий «RBAC ABAC Policy Map». Покажи устройство выбранной части проекта.",
+      "category": "Project mapping",
+      "summary": "Project structure, connections and contract ownership.",
+      "example": "Use $vibe-map, workflow “RBAC ABAC Policy Map” (ID: rbac-abac-policy-map). Follow this workflow for the task below. Report the result in English.",
       "sha256": "c1d8c04ebe85cfdd5d9396e2e416db578ed6ca6bb2f9e76d3e111c49770af31b"
     },
     {
@@ -1305,9 +1317,9 @@
       "id": "risk-release-map",
       "path": "skills/vibe-map/references/risk-release-map.md",
       "group": 2,
-      "category": "Карта проекта",
-      "summary": "Устройство проекта, связи и владельцы правил",
-      "example": "Используй $vibe-map, сценарий «Risk & Release Map». Покажи устройство выбранной части проекта.",
+      "category": "Project mapping",
+      "summary": "Project structure, connections and contract ownership.",
+      "example": "Use $vibe-map, workflow “Risk & Release Map” (ID: risk-release-map). Follow this workflow for the task below. Report the result in English.",
       "sha256": "51874d16159baf4a9fcf520ea06bda7aa064a539d9b8ad2391ac7b8e7917da25"
     },
     {
@@ -1317,9 +1329,9 @@
       "id": "runtime-flow-map",
       "path": "skills/vibe-map/references/runtime-flow-map.md",
       "group": 2,
-      "category": "Карта проекта",
-      "summary": "Устройство проекта, связи и владельцы правил",
-      "example": "Используй $vibe-map, сценарий «Runtime Flow Map». Покажи устройство выбранной части проекта.",
+      "category": "Project mapping",
+      "summary": "Project structure, connections and contract ownership.",
+      "example": "Use $vibe-map, workflow “Runtime Flow Map” (ID: runtime-flow-map). Follow this workflow for the task below. Report the result in English.",
       "sha256": "c90044ccd0dc81ddff8810876799dd4f8819995a02c074e81f15882c99e73568"
     },
     {
@@ -1329,9 +1341,9 @@
       "id": "saas-navigation-map",
       "path": "skills/vibe-map/references/saas-navigation-map.md",
       "group": 2,
-      "category": "Карта проекта",
-      "summary": "Устройство проекта, связи и владельцы правил",
-      "example": "Используй $vibe-map, сценарий «SaaS Navigation Map». Покажи устройство выбранной части проекта.",
+      "category": "Project mapping",
+      "summary": "Project structure, connections and contract ownership.",
+      "example": "Use $vibe-map, workflow “SaaS Navigation Map” (ID: saas-navigation-map). Follow this workflow for the task below. Report the result in English.",
       "sha256": "baa843a8241f96c0fc9f4519287a6a3c84f9a28188ddca8aa0be272b7c5bf0e7"
     },
     {
@@ -1341,9 +1353,9 @@
       "id": "test-coverage-map",
       "path": "skills/vibe-map/references/test-coverage-map.md",
       "group": 2,
-      "category": "Карта проекта",
-      "summary": "Устройство проекта, связи и владельцы правил",
-      "example": "Используй $vibe-map, сценарий «Test Coverage Map». Покажи устройство выбранной части проекта.",
+      "category": "Project mapping",
+      "summary": "Project structure, connections and contract ownership.",
+      "example": "Use $vibe-map, workflow “Test Coverage Map” (ID: test-coverage-map). Follow this workflow for the task below. Report the result in English.",
       "sha256": "ef7d2b34c6a48495aea886cca27e12a8e6644169b20a0c2cc0d8c32329443601"
     },
     {
@@ -1353,10 +1365,46 @@
       "id": "traceability-map",
       "path": "skills/vibe-map/references/traceability-map.md",
       "group": 2,
-      "category": "Карта проекта",
-      "summary": "Устройство проекта, связи и владельцы правил",
-      "example": "Используй $vibe-map, сценарий «Traceability Map». Покажи устройство выбранной части проекта.",
+      "category": "Project mapping",
+      "summary": "Project structure, connections and contract ownership.",
+      "example": "Use $vibe-map, workflow “Traceability Map” (ID: traceability-map). Follow this workflow for the task below. Report the result in English.",
       "sha256": "5d026e21c5914f2fdd696b45d1ec6fd8a561b8e433888fa31c546b7ed0e94424"
+    },
+    {
+      "title": "MCP Protocol & Authorization Check",
+      "skill": "vibe-mcp",
+      "mode": "check",
+      "id": "mcp-protocol-auth-check",
+      "path": "skills/vibe-mcp/references/mcp-protocol-auth-check.md",
+      "group": 40,
+      "category": "MCP servers & clients",
+      "summary": "MCP versions, tool contracts, transport and authorization.",
+      "example": "Use $vibe-mcp, workflow “MCP Protocol & Authorization Check” (ID: mcp-protocol-auth-check). Follow this workflow for the task below. Report the result in English.",
+      "sha256": "317adfa8990d2f2e66c26611f23594fb5b15ee464eba13bf00196b403358277a"
+    },
+    {
+      "title": "MCP Server Audit",
+      "skill": "vibe-mcp",
+      "mode": "audit",
+      "id": "mcp-server-audit",
+      "path": "skills/vibe-mcp/references/mcp-server-audit.md",
+      "group": 40,
+      "category": "MCP servers & clients",
+      "summary": "MCP versions, tool contracts, transport and authorization.",
+      "example": "Use $vibe-mcp, workflow “MCP Server Audit” (ID: mcp-server-audit). Follow this workflow for the task below. Report the result in English.",
+      "sha256": "a87ec465fd3117dcc38d72d5335244d4e28cb2fa4f94fcad5053487d9f61c1ef"
+    },
+    {
+      "title": "MCP Server Polish",
+      "skill": "vibe-mcp",
+      "mode": "implement",
+      "id": "mcp-server-polish",
+      "path": "skills/vibe-mcp/references/mcp-server-polish.md",
+      "group": 40,
+      "category": "MCP servers & clients",
+      "summary": "MCP versions, tool contracts, transport and authorization.",
+      "example": "Use $vibe-mcp, workflow “MCP Server Polish” (ID: mcp-server-polish). Follow this workflow for the task below. Report the result in English.",
+      "sha256": "08f145d34d973fd94eac8854ecd3dc8142f738345712ef40ddf28782f34c9ad8"
     },
     {
       "title": "Mobile App Audit",
@@ -1365,9 +1413,9 @@
       "id": "mobile-app-audit",
       "path": "skills/vibe-mobile/references/mobile-app-audit.md",
       "group": 38,
-      "category": "Мобильные приложения",
-      "summary": "Навигация, offline, разрешения и выпуск приложения",
-      "example": "Используй $vibe-mobile, сценарий «Mobile App Audit». Проведи аудит выбранной области без изменений кода.",
+      "category": "Mobile apps",
+      "summary": "Navigation, offline behavior, permissions and releases.",
+      "example": "Use $vibe-mobile, workflow “Mobile App Audit” (ID: mobile-app-audit). Follow this workflow for the task below. Report the result in English.",
       "sha256": "1a91dcffa657a7ba0f3569de61761b179252081ee1a66117c7bab2738bfdc814"
     },
     {
@@ -1377,9 +1425,9 @@
       "id": "mobile-app-polish",
       "path": "skills/vibe-mobile/references/mobile-app-polish.md",
       "group": 38,
-      "category": "Мобильные приложения",
-      "summary": "Навигация, offline, разрешения и выпуск приложения",
-      "example": "Используй $vibe-mobile, сценарий «Mobile App Polish». Выполни выбранное исправление для текущей задачи.",
+      "category": "Mobile apps",
+      "summary": "Navigation, offline behavior, permissions and releases.",
+      "example": "Use $vibe-mobile, workflow “Mobile App Polish” (ID: mobile-app-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "6b867f3cba7b3b4419a72681c30f21a251709dcbc426b696fb2c4cbdf20ecca7"
     },
     {
@@ -1389,9 +1437,9 @@
       "id": "mobile-release-offline-check",
       "path": "skills/vibe-mobile/references/mobile-release-offline-check.md",
       "group": 38,
-      "category": "Мобильные приложения",
-      "summary": "Навигация, offline, разрешения и выпуск приложения",
-      "example": "Используй $vibe-mobile, сценарий «Mobile Release & Offline Check». Проверь выбранное поведение и сообщи результат.",
+      "category": "Mobile apps",
+      "summary": "Navigation, offline behavior, permissions and releases.",
+      "example": "Use $vibe-mobile, workflow “Mobile Release & Offline Check” (ID: mobile-release-offline-check). Follow this workflow for the task below. Report the result in English.",
       "sha256": "8f55a3cd83baa3ae2c161d52d81f16db70ad284a42eaf4ece1ef87a02dca0cba"
     },
     {
@@ -1402,8 +1450,8 @@
       "path": "skills/vibe-nosql/references/nosql-consistency-hot-partition-check.md",
       "group": 24,
       "category": "NoSQL",
-      "summary": "Ключи, индексы, согласованность и горячие партиции",
-      "example": "Используй $vibe-nosql, сценарий «NoSQL Consistency & Hot Partition Check». Проверь выбранное поведение и сообщи результат.",
+      "summary": "Keys, indexes, consistency and hot partitions.",
+      "example": "Use $vibe-nosql, workflow “NoSQL Consistency & Hot Partition Check” (ID: nosql-consistency-hot-partition-check). Follow this workflow for the task below. Report the result in English.",
       "sha256": "43847c7ff1f14c240c8174abf3a2941d39e9a2b9856a9cbce2ca669276aee87d"
     },
     {
@@ -1414,8 +1462,8 @@
       "path": "skills/vibe-nosql/references/nosql-databases-audit.md",
       "group": 24,
       "category": "NoSQL",
-      "summary": "Ключи, индексы, согласованность и горячие партиции",
-      "example": "Используй $vibe-nosql, сценарий «NoSQL Databases Audit». Проведи аудит выбранной области без изменений кода.",
+      "summary": "Keys, indexes, consistency and hot partitions.",
+      "example": "Use $vibe-nosql, workflow “NoSQL Databases Audit” (ID: nosql-databases-audit). Follow this workflow for the task below. Report the result in English.",
       "sha256": "e37867ff0fea6a08357d68e88c987bb8d583420b07d324cac3b20d67026445f8"
     },
     {
@@ -1426,8 +1474,8 @@
       "path": "skills/vibe-nosql/references/nosql-databases-polish.md",
       "group": 24,
       "category": "NoSQL",
-      "summary": "Ключи, индексы, согласованность и горячие партиции",
-      "example": "Используй $vibe-nosql, сценарий «NoSQL Databases Polish». Выполни выбранное исправление для текущей задачи.",
+      "summary": "Keys, indexes, consistency and hot partitions.",
+      "example": "Use $vibe-nosql, workflow “NoSQL Databases Polish” (ID: nosql-databases-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "ff0b5d80e056e641c5a4ba84cb82b7ababb0ea96817c279169b13d60415159d8"
     },
     {
@@ -1437,9 +1485,9 @@
       "id": "notification-delivery-audit",
       "path": "skills/vibe-notifications/references/notification-delivery-audit.md",
       "group": 34,
-      "category": "Доставка уведомлений",
-      "summary": "Уведомления, согласия, доставка и защита от дублей",
-      "example": "Используй $vibe-notifications, сценарий «Notification Delivery Audit». Проведи аудит выбранной области без изменений кода.",
+      "category": "Notification delivery",
+      "summary": "Notifications, consent, delivery and deduplication.",
+      "example": "Use $vibe-notifications, workflow “Notification Delivery Audit” (ID: notification-delivery-audit). Follow this workflow for the task below. Report the result in English.",
       "sha256": "fb64f1d603a2ba6e86fff1c32cb25b9c93d09cc48b4e85c65d1f7037dcc7db22"
     },
     {
@@ -1449,9 +1497,9 @@
       "id": "notification-delivery-polish",
       "path": "skills/vibe-notifications/references/notification-delivery-polish.md",
       "group": 34,
-      "category": "Доставка уведомлений",
-      "summary": "Уведомления, согласия, доставка и защита от дублей",
-      "example": "Используй $vibe-notifications, сценарий «Notification Delivery Polish». Выполни выбранное исправление для текущей задачи.",
+      "category": "Notification delivery",
+      "summary": "Notifications, consent, delivery and deduplication.",
+      "example": "Use $vibe-notifications, workflow “Notification Delivery Polish” (ID: notification-delivery-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "bd76f7dea8540592dbb71cba024c76af17602e9425914dcc247b008124f60fc4"
     },
     {
@@ -1461,9 +1509,9 @@
       "id": "notification-failure-idempotency-check",
       "path": "skills/vibe-notifications/references/notification-failure-idempotency-check.md",
       "group": 34,
-      "category": "Доставка уведомлений",
-      "summary": "Уведомления, согласия, доставка и защита от дублей",
-      "example": "Используй $vibe-notifications, сценарий «Notification Failure & Idempotency Check». Проверь выбранное поведение и сообщи результат.",
+      "category": "Notification delivery",
+      "summary": "Notifications, consent, delivery and deduplication.",
+      "example": "Use $vibe-notifications, workflow “Notification Failure & Idempotency Check” (ID: notification-failure-idempotency-check). Follow this workflow for the task below. Report the result in English.",
       "sha256": "0e96dd8ad5632378148d590ee546d475d09b98bc392ea60729846174928e8534"
     },
     {
@@ -1473,9 +1521,9 @@
       "id": "observability-semantics-cost-check",
       "path": "skills/vibe-observability/references/observability-semantics-cost-check.md",
       "group": 16,
-      "category": "Метрики, логи и алерты",
-      "summary": "Метрики, логи, дашборды и полезные оповещения",
-      "example": "Используй $vibe-observability, сценарий «Observability Semantics & Cost Check». Проверь выбранное поведение и сообщи результат.",
+      "category": "Metrics, logs & alerts",
+      "summary": "Metrics, logs, dashboards and actionable alerts.",
+      "example": "Use $vibe-observability, workflow “Observability Semantics & Cost Check” (ID: observability-semantics-cost-check). Follow this workflow for the task below. Report the result in English.",
       "sha256": "251f7ae657a37d0d77a56d6b3e3e8aebf5dfa566e284b7f3574e9bfbfc1c1e8b"
     },
     {
@@ -1485,9 +1533,9 @@
       "id": "observability-stack-audit",
       "path": "skills/vibe-observability/references/observability-stack-audit.md",
       "group": 16,
-      "category": "Метрики, логи и алерты",
-      "summary": "Метрики, логи, дашборды и полезные оповещения",
-      "example": "Используй $vibe-observability, сценарий «Observability Stack Audit». Проведи аудит выбранной области без изменений кода.",
+      "category": "Metrics, logs & alerts",
+      "summary": "Metrics, logs, dashboards and actionable alerts.",
+      "example": "Use $vibe-observability, workflow “Observability Stack Audit” (ID: observability-stack-audit). Follow this workflow for the task below. Report the result in English.",
       "sha256": "9b5551fbe573733261ead37c8d45bb8b3d26c36d3d616204cb3fb741bd1b1935"
     },
     {
@@ -1497,9 +1545,9 @@
       "id": "observability-stack-polish",
       "path": "skills/vibe-observability/references/observability-stack-polish.md",
       "group": 16,
-      "category": "Метрики, логи и алерты",
-      "summary": "Метрики, логи, дашборды и полезные оповещения",
-      "example": "Используй $vibe-observability, сценарий «Observability Stack Polish». Выполни выбранное исправление для текущей задачи.",
+      "category": "Metrics, logs & alerts",
+      "summary": "Metrics, logs, dashboards and actionable alerts.",
+      "example": "Use $vibe-observability, workflow “Observability Stack Polish” (ID: observability-stack-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "f9c3d7034c7045b8fa74df052fa9751318830b3230edb5e927a3cb833ff26b13"
     },
     {
@@ -1509,10 +1557,10 @@
       "id": "background-jobs-audit",
       "path": "skills/vibe-ops/references/background-jobs-audit.md",
       "group": 8,
-      "category": "Инфраструктура и фоновые задачи",
-      "summary": "CI/CD, конфигурация и фоновые задачи",
-      "example": "Используй $vibe-ops, сценарий «Background Jobs Audit». Проведи аудит выбранной области без изменений кода.",
-      "sha256": "435cde12af00d610ba987c999400f98418d16bdfd1dcb521f61c45949bbc4674"
+      "category": "Infrastructure & background jobs",
+      "summary": "CI/CD, configuration and background jobs.",
+      "example": "Use $vibe-ops, workflow “Background Jobs Audit” (ID: background-jobs-audit). Follow this workflow for the task below. Report the result in English.",
+      "sha256": "3a800b209f16526302d5deb6b0b9ca7743d79916ffbb91a82fab312e4df07f6b"
     },
     {
       "title": "Background Jobs Polish",
@@ -1521,9 +1569,9 @@
       "id": "background-jobs-polish",
       "path": "skills/vibe-ops/references/background-jobs-polish.md",
       "group": 8,
-      "category": "Инфраструктура и фоновые задачи",
-      "summary": "CI/CD, конфигурация и фоновые задачи",
-      "example": "Используй $vibe-ops, сценарий «Background Jobs Polish». Выполни выбранное исправление для текущей задачи.",
+      "category": "Infrastructure & background jobs",
+      "summary": "CI/CD, configuration and background jobs.",
+      "example": "Use $vibe-ops, workflow “Background Jobs Polish” (ID: background-jobs-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "289b6d0bb894a74effda91e84a38a49eac04775727530c882dca8b2c1bc3eff3"
     },
     {
@@ -1533,9 +1581,9 @@
       "id": "deploy-bootstrap",
       "path": "skills/vibe-ops/references/deploy-bootstrap.md",
       "group": 8,
-      "category": "Инфраструктура и фоновые задачи",
-      "summary": "CI/CD, конфигурация и фоновые задачи",
-      "example": "Используй $vibe-ops, сценарий «Deploy Bootstrap». Выполни выбранное исправление для текущей задачи.",
+      "category": "Infrastructure & background jobs",
+      "summary": "CI/CD, configuration and background jobs.",
+      "example": "Use $vibe-ops, workflow “Deploy Bootstrap” (ID: deploy-bootstrap). Follow this workflow for the task below. Report the result in English.",
       "sha256": "b0e071ffdc3ecc470089d7c2c4f48d5c6107e4da7a4c4454482c95b0953364b6"
     },
     {
@@ -1545,10 +1593,10 @@
       "id": "infra-ops-audit",
       "path": "skills/vibe-ops/references/infra-ops-audit.md",
       "group": 8,
-      "category": "Инфраструктура и фоновые задачи",
-      "summary": "CI/CD, конфигурация и фоновые задачи",
-      "example": "Используй $vibe-ops, сценарий «Infra Ops Audit». Проведи аудит выбранной области без изменений кода.",
-      "sha256": "7543a1ba2bfe29a8c30b8eb571c3033205630185be88c34787b652f92d33f642"
+      "category": "Infrastructure & background jobs",
+      "summary": "CI/CD, configuration and background jobs.",
+      "example": "Use $vibe-ops, workflow “Infra Ops Audit” (ID: infra-ops-audit). Follow this workflow for the task below. Report the result in English.",
+      "sha256": "8ee5417597dbee388b419165b20305c98f503e259b31cd0cdfb04357df54c6b9"
     },
     {
       "title": "Infra Ops Polish",
@@ -1557,9 +1605,9 @@
       "id": "infra-ops-polish",
       "path": "skills/vibe-ops/references/infra-ops-polish.md",
       "group": 8,
-      "category": "Инфраструктура и фоновые задачи",
-      "summary": "CI/CD, конфигурация и фоновые задачи",
-      "example": "Используй $vibe-ops, сценарий «Infra Ops Polish». Выполни выбранное исправление для текущей задачи.",
+      "category": "Infrastructure & background jobs",
+      "summary": "CI/CD, configuration and background jobs.",
+      "example": "Use $vibe-ops, workflow “Infra Ops Polish” (ID: infra-ops-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "fb120744dd29d7672b9c148a85036aa53a4d696cfbd8f4c67761e25cf163edad"
     },
     {
@@ -1569,9 +1617,9 @@
       "id": "payments-provider-audit",
       "path": "skills/vibe-payments/references/payments-provider-audit.md",
       "group": 33,
-      "category": "Платежи",
-      "summary": "Платёжные события, сверка состояния и права тарифа",
-      "example": "Используй $vibe-payments, сценарий «Payments Provider Audit». Проведи аудит выбранной области без изменений кода.",
+      "category": "Payments",
+      "summary": "Payment events, reconciliation and plan entitlements.",
+      "example": "Use $vibe-payments, workflow “Payments Provider Audit” (ID: payments-provider-audit). Follow this workflow for the task below. Report the result in English.",
       "sha256": "606feed9c8702c742af44460748ac0d2e4c4838637552353cdb4b78dd919a2b9"
     },
     {
@@ -1581,9 +1629,9 @@
       "id": "payments-provider-polish",
       "path": "skills/vibe-payments/references/payments-provider-polish.md",
       "group": 33,
-      "category": "Платежи",
-      "summary": "Платёжные события, сверка состояния и права тарифа",
-      "example": "Используй $vibe-payments, сценарий «Payments Provider Polish». Выполни выбранное исправление для текущей задачи.",
+      "category": "Payments",
+      "summary": "Payment events, reconciliation and plan entitlements.",
+      "example": "Use $vibe-payments, workflow “Payments Provider Polish” (ID: payments-provider-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "4530080ff352350867415727a4dcdb69d2135754a0205435ebae5bf0939ba34a"
     },
     {
@@ -1593,9 +1641,9 @@
       "id": "payments-webhook-reconciliation-check",
       "path": "skills/vibe-payments/references/payments-webhook-reconciliation-check.md",
       "group": 33,
-      "category": "Платежи",
-      "summary": "Платёжные события, сверка состояния и права тарифа",
-      "example": "Используй $vibe-payments, сценарий «Payments Webhook & Reconciliation Check». Проверь выбранное поведение и сообщи результат.",
+      "category": "Payments",
+      "summary": "Payment events, reconciliation and plan entitlements.",
+      "example": "Use $vibe-payments, workflow “Payments Webhook & Reconciliation Check” (ID: payments-webhook-reconciliation-check). Follow this workflow for the task below. Report the result in English.",
       "sha256": "215556c4ae541b077105c87dd09d9208ecd6341102da66472c8a19c472a874cf"
     },
     {
@@ -1605,9 +1653,9 @@
       "id": "instant-architecture-probe",
       "path": "skills/vibe-probe/references/instant-architecture-probe.md",
       "group": 1,
-      "category": "Быстрый поиск ошибок",
-      "summary": "Одна область, доказанный баг и проверка исправления",
-      "example": "Используй $vibe-probe, сценарий «Instant Architecture Probe». Найди и исправь один доказанный дефект в выбранной области.",
+      "category": "Quick bug discovery",
+      "summary": "One area, one proven bug and a verified fix.",
+      "example": "Use $vibe-probe, workflow “Instant Architecture Probe” (ID: instant-architecture-probe). Follow this workflow for the task below. Report the result in English.",
       "sha256": "82f688c9443af14b6fbba0ffa9f66541f517441bf6e250660a11b43b9371902d"
     },
     {
@@ -1617,9 +1665,9 @@
       "id": "instant-backend-probe",
       "path": "skills/vibe-probe/references/instant-backend-probe.md",
       "group": 1,
-      "category": "Быстрый поиск ошибок",
-      "summary": "Одна область, доказанный баг и проверка исправления",
-      "example": "Используй $vibe-probe, сценарий «Instant Backend Probe». Найди и исправь один доказанный дефект в выбранной области.",
+      "category": "Quick bug discovery",
+      "summary": "One area, one proven bug and a verified fix.",
+      "example": "Use $vibe-probe, workflow “Instant Backend Probe” (ID: instant-backend-probe). Follow this workflow for the task below. Report the result in English.",
       "sha256": "a020ca0097bc994d93d2646d5d167cbdc1dfdc4c82d18b88ca658b777b288936"
     },
     {
@@ -1629,9 +1677,9 @@
       "id": "instant-bug-fix-polish",
       "path": "skills/vibe-probe/references/instant-bug-fix-polish.md",
       "group": 1,
-      "category": "Быстрый поиск ошибок",
-      "summary": "Одна область, доказанный баг и проверка исправления",
-      "example": "Используй $vibe-probe, сценарий «Instant Bug Fix Polish». Найди и исправь один доказанный дефект в выбранной области.",
+      "category": "Quick bug discovery",
+      "summary": "One area, one proven bug and a verified fix.",
+      "example": "Use $vibe-probe, workflow “Instant Bug Fix Polish” (ID: instant-bug-fix-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "9db229758ba3f9110e6a7a02edf53934a8d7bc030f88eec5e1f6895d25b3fa1c"
     },
     {
@@ -1641,9 +1689,9 @@
       "id": "instant-frontend-probe",
       "path": "skills/vibe-probe/references/instant-frontend-probe.md",
       "group": 1,
-      "category": "Быстрый поиск ошибок",
-      "summary": "Одна область, доказанный баг и проверка исправления",
-      "example": "Используй $vibe-probe, сценарий «Instant Frontend Probe». Найди и исправь один доказанный дефект в выбранной области.",
+      "category": "Quick bug discovery",
+      "summary": "One area, one proven bug and a verified fix.",
+      "example": "Use $vibe-probe, workflow “Instant Frontend Probe” (ID: instant-frontend-probe). Follow this workflow for the task below. Report the result in English.",
       "sha256": "ba4fe55394bea2913bc3c1dea2d31a9f1bd94feef0504cc97a6f69425ed2991d"
     },
     {
@@ -1653,9 +1701,9 @@
       "id": "instant-ui-ux-visual-probe",
       "path": "skills/vibe-probe/references/instant-ui-ux-visual-probe.md",
       "group": 1,
-      "category": "Быстрый поиск ошибок",
-      "summary": "Одна область, доказанный баг и проверка исправления",
-      "example": "Используй $vibe-probe, сценарий «Instant UI-UX Visual Probe». Найди и исправь один доказанный дефект в выбранной области.",
+      "category": "Quick bug discovery",
+      "summary": "One area, one proven bug and a verified fix.",
+      "example": "Use $vibe-probe, workflow “Instant UI-UX Visual Probe” (ID: instant-ui-ux-visual-probe). Follow this workflow for the task below. Report the result in English.",
       "sha256": "f8b4b04e1b1c4ff2bc9213d610139a646b30b1b893e06e86bf961ecfc7782e8f"
     },
     {
@@ -1665,9 +1713,9 @@
       "id": "form-data-ui-audit",
       "path": "skills/vibe-product/references/form-data-ui-audit.md",
       "group": 4,
-      "category": "Продукт и UX",
-      "summary": "Требования, интерфейсы и пользовательские сценарии",
-      "example": "Используй $vibe-product, сценарий «Form & Data UI Audit». Проведи аудит выбранной области без изменений кода.",
+      "category": "Product & UX",
+      "summary": "Requirements, interfaces and user journeys.",
+      "example": "Use $vibe-product, workflow “Form & Data UI Audit” (ID: form-data-ui-audit). Follow this workflow for the task below. Report the result in English.",
       "sha256": "127e0107cd46299c15bf9b82348639318ecb320d1af77ade6599c3fd1fd7c1db"
     },
     {
@@ -1677,9 +1725,9 @@
       "id": "form-data-ui-polish",
       "path": "skills/vibe-product/references/form-data-ui-polish.md",
       "group": 4,
-      "category": "Продукт и UX",
-      "summary": "Требования, интерфейсы и пользовательские сценарии",
-      "example": "Используй $vibe-product, сценарий «Form & Data UI Polish». Выполни выбранное исправление для текущей задачи.",
+      "category": "Product & UX",
+      "summary": "Requirements, interfaces and user journeys.",
+      "example": "Use $vibe-product, workflow “Form & Data UI Polish” (ID: form-data-ui-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "71257b27eeb43cc1018a2824f050399640e2e3391e92d95d153777ff713b0d8e"
     },
     {
@@ -1689,10 +1737,10 @@
       "id": "onboarding-activation-audit",
       "path": "skills/vibe-product/references/onboarding-activation-audit.md",
       "group": 4,
-      "category": "Продукт и UX",
-      "summary": "Требования, интерфейсы и пользовательские сценарии",
-      "example": "Используй $vibe-product, сценарий «Onboarding Activation Audit». Проведи аудит выбранной области без изменений кода.",
-      "sha256": "d3a726a6aad005799c7a99b07176660339488c8f1645d31651ea9233ef78b83a"
+      "category": "Product & UX",
+      "summary": "Requirements, interfaces and user journeys.",
+      "example": "Use $vibe-product, workflow “Onboarding Activation Audit” (ID: onboarding-activation-audit). Follow this workflow for the task below. Report the result in English.",
+      "sha256": "12a0247e0a618fe151b330e144ee0d9be61edc2359359a41d1242ab5de1a6c0d"
     },
     {
       "title": "Onboarding Activation Polish",
@@ -1701,9 +1749,9 @@
       "id": "onboarding-activation-polish",
       "path": "skills/vibe-product/references/onboarding-activation-polish.md",
       "group": 4,
-      "category": "Продукт и UX",
-      "summary": "Требования, интерфейсы и пользовательские сценарии",
-      "example": "Используй $vibe-product, сценарий «Onboarding Activation Polish». Выполни выбранное исправление для текущей задачи.",
+      "category": "Product & UX",
+      "summary": "Requirements, interfaces and user journeys.",
+      "example": "Use $vibe-product, workflow “Onboarding Activation Polish” (ID: onboarding-activation-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "f6cc7043d3ce8403e56062801e674dd8f0d59b9fe6776b87205c739c9c6a5e7e"
     },
     {
@@ -1713,9 +1761,9 @@
       "id": "product-acceptance-check",
       "path": "skills/vibe-product/references/product-acceptance-check.md",
       "group": 4,
-      "category": "Продукт и UX",
-      "summary": "Требования, интерфейсы и пользовательские сценарии",
-      "example": "Используй $vibe-product, сценарий «Product Acceptance Check». Проверь выбранное поведение и сообщи результат.",
+      "category": "Product & UX",
+      "summary": "Requirements, interfaces and user journeys.",
+      "example": "Use $vibe-product, workflow “Product Acceptance Check” (ID: product-acceptance-check). Follow this workflow for the task below. Report the result in English.",
       "sha256": "ba7907eb064158f1631429b0ad01e68981bc31b4c41bb6f294774936d18c347e"
     },
     {
@@ -1725,9 +1773,9 @@
       "id": "product-decision-metrics-check",
       "path": "skills/vibe-product/references/product-decision-metrics-check.md",
       "group": 4,
-      "category": "Продукт и UX",
-      "summary": "Требования, интерфейсы и пользовательские сценарии",
-      "example": "Используй $vibe-product, сценарий «Product Decision & Metrics Check». Проверь выбранное поведение и сообщи результат.",
+      "category": "Product & UX",
+      "summary": "Requirements, interfaces and user journeys.",
+      "example": "Use $vibe-product, workflow “Product Decision & Metrics Check” (ID: product-decision-metrics-check). Follow this workflow for the task below. Report the result in English.",
       "sha256": "ed4e5e57b8f24d750ef1b5e379ce8b3ca5b6f68385272d1d56e8da31f5357e08"
     },
     {
@@ -1737,9 +1785,9 @@
       "id": "product-requirements-audit",
       "path": "skills/vibe-product/references/product-requirements-audit.md",
       "group": 4,
-      "category": "Продукт и UX",
-      "summary": "Требования, интерфейсы и пользовательские сценарии",
-      "example": "Используй $vibe-product, сценарий «Product Requirements Audit». Проведи аудит выбранной области без изменений кода.",
+      "category": "Product & UX",
+      "summary": "Requirements, interfaces and user journeys.",
+      "example": "Use $vibe-product, workflow “Product Requirements Audit” (ID: product-requirements-audit). Follow this workflow for the task below. Report the result in English.",
       "sha256": "1f2911c616750f53f26efbe9fa49f0d751315d84119527996e036ac39cfcafcd"
     },
     {
@@ -1749,9 +1797,9 @@
       "id": "product-requirements-polish",
       "path": "skills/vibe-product/references/product-requirements-polish.md",
       "group": 4,
-      "category": "Продукт и UX",
-      "summary": "Требования, интерфейсы и пользовательские сценарии",
-      "example": "Используй $vibe-product, сценарий «Product Requirements Polish». Выполни выбранное исправление для текущей задачи.",
+      "category": "Product & UX",
+      "summary": "Requirements, interfaces and user journeys.",
+      "example": "Use $vibe-product, workflow “Product Requirements Polish” (ID: product-requirements-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "45127f56448b211c3fffff3ced218d71813b595776c746b703b9bcba12cce7aa"
     },
     {
@@ -1761,9 +1809,9 @@
       "id": "product-ui-audit",
       "path": "skills/vibe-product/references/product-ui-audit.md",
       "group": 4,
-      "category": "Продукт и UX",
-      "summary": "Требования, интерфейсы и пользовательские сценарии",
-      "example": "Используй $vibe-product, сценарий «Product UI Audit». Проведи аудит выбранной области без изменений кода.",
+      "category": "Product & UX",
+      "summary": "Requirements, interfaces and user journeys.",
+      "example": "Use $vibe-product, workflow “Product UI Audit” (ID: product-ui-audit). Follow this workflow for the task below. Report the result in English.",
       "sha256": "a70cfe41694acc955b925ce2098095e60a12ef3acbc38adf97e3c7674cf11fe4"
     },
     {
@@ -1773,9 +1821,9 @@
       "id": "product-ui-polish",
       "path": "skills/vibe-product/references/product-ui-polish.md",
       "group": 4,
-      "category": "Продукт и UX",
-      "summary": "Требования, интерфейсы и пользовательские сценарии",
-      "example": "Используй $vibe-product, сценарий «Product UI Polish». Выполни выбранное исправление для текущей задачи.",
+      "category": "Product & UX",
+      "summary": "Requirements, interfaces and user journeys.",
+      "example": "Use $vibe-product, workflow “Product UI Polish” (ID: product-ui-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "4c23c850c148e93f90d8a9c192c64bcd2e14a4254b6ae6949dc3d52dfcda2e88"
     },
     {
@@ -1785,10 +1833,10 @@
       "id": "ux-flow-audit",
       "path": "skills/vibe-product/references/ux-flow-audit.md",
       "group": 4,
-      "category": "Продукт и UX",
-      "summary": "Требования, интерфейсы и пользовательские сценарии",
-      "example": "Используй $vibe-product, сценарий «UX Flow Audit». Проведи аудит выбранной области без изменений кода.",
-      "sha256": "267097c677b2146d9c0701ff81e0dac4e80a1a9aa01bd4b0d4e6c136f08b259d"
+      "category": "Product & UX",
+      "summary": "Requirements, interfaces and user journeys.",
+      "example": "Use $vibe-product, workflow “UX Flow Audit” (ID: ux-flow-audit). Follow this workflow for the task below. Report the result in English.",
+      "sha256": "8058005e8c13750b09639c17c7cf4c0f042ffe3d918cae9f67947dc8530995a0"
     },
     {
       "title": "UX Flow Polish",
@@ -1797,9 +1845,9 @@
       "id": "ux-flow-polish",
       "path": "skills/vibe-product/references/ux-flow-polish.md",
       "group": 4,
-      "category": "Продукт и UX",
-      "summary": "Требования, интерфейсы и пользовательские сценарии",
-      "example": "Используй $vibe-product, сценарий «UX Flow Polish». Выполни выбранное исправление для текущей задачи.",
+      "category": "Product & UX",
+      "summary": "Requirements, interfaces and user journeys.",
+      "example": "Use $vibe-product, workflow “UX Flow Polish” (ID: ux-flow-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "388d6776f5f884b7483fab63dcc54516270d4d854c96f299446eb3f806803c2e"
     },
     {
@@ -1809,10 +1857,10 @@
       "id": "release-readiness-audit",
       "path": "skills/vibe-quality/references/release-readiness-audit.md",
       "group": 1,
-      "category": "Качество и готовность",
-      "summary": "Тестовое покрытие и готовность к выпуску",
-      "example": "Используй $vibe-quality, сценарий «Release Readiness Audit». Проведи аудит выбранной области без изменений кода.",
-      "sha256": "2278913382349233f4a6cb149b88a322b100582cb76e0e9d7482311d1a812862"
+      "category": "Quality & readiness",
+      "summary": "Test coverage and release readiness.",
+      "example": "Use $vibe-quality, workflow “Release Readiness Audit” (ID: release-readiness-audit). Follow this workflow for the task below. Report the result in English.",
+      "sha256": "2b2a586d9ef6fcc5b442e3e6553c6cc09d7fcdbcefc324ed03883428383bd0d3"
     },
     {
       "title": "Test Coverage Audit",
@@ -1821,10 +1869,10 @@
       "id": "test-coverage-audit",
       "path": "skills/vibe-quality/references/test-coverage-audit.md",
       "group": 1,
-      "category": "Качество и готовность",
-      "summary": "Тестовое покрытие и готовность к выпуску",
-      "example": "Используй $vibe-quality, сценарий «Test Coverage Audit». Проведи аудит выбранной области без изменений кода.",
-      "sha256": "eb0f5fca9a38d116b9dd06678fc05f80bfd97603f4c0e51f728ed8adea747a24"
+      "category": "Quality & readiness",
+      "summary": "Test coverage and release readiness.",
+      "example": "Use $vibe-quality, workflow “Test Coverage Audit” (ID: test-coverage-audit). Follow this workflow for the task below. Report the result in English.",
+      "sha256": "6398f22295884025028c494434cd74b0ab8ca586557644d353559eecb943a426"
     },
     {
       "title": "Test Harness Polish",
@@ -1833,9 +1881,9 @@
       "id": "test-harness-polish",
       "path": "skills/vibe-quality/references/test-harness-polish.md",
       "group": 1,
-      "category": "Качество и готовность",
-      "summary": "Тестовое покрытие и готовность к выпуску",
-      "example": "Используй $vibe-quality, сценарий «Test Harness Polish». Выполни выбранное исправление для текущей задачи.",
+      "category": "Quality & readiness",
+      "summary": "Test coverage and release readiness.",
+      "example": "Use $vibe-quality, workflow “Test Harness Polish” (ID: test-harness-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "d7819e43cafdcea745d417e5fae8bd9dbd296b6e14d3d25cca601102684ea00e"
     },
     {
@@ -1845,9 +1893,9 @@
       "id": "visual-regression-check",
       "path": "skills/vibe-quality/references/visual-regression-check.md",
       "group": 1,
-      "category": "Качество и готовность",
-      "summary": "Тестовое покрытие и готовность к выпуску",
-      "example": "Используй $vibe-quality, сценарий «Visual Regression Check». Проверь выбранное поведение и сообщи результат.",
+      "category": "Quality & readiness",
+      "summary": "Test coverage and release readiness.",
+      "example": "Use $vibe-quality, workflow “Visual Regression Check” (ID: visual-regression-check). Follow this workflow for the task below. Report the result in English.",
       "sha256": "b0894a99a55b2b2f8b681388c9b464091ac3a85b0debc5f758ddef656b328aa9"
     },
     {
@@ -1858,8 +1906,8 @@
       "path": "skills/vibe-rabbitmq/references/rabbitmq-audit.md",
       "group": 18,
       "category": "RabbitMQ",
-      "summary": "Маршрутизация, подтверждения и повторная доставка",
-      "example": "Используй $vibe-rabbitmq, сценарий «RabbitMQ Audit». Проведи аудит выбранной области без изменений кода.",
+      "summary": "Routing, acknowledgements and redelivery.",
+      "example": "Use $vibe-rabbitmq, workflow “RabbitMQ Audit” (ID: rabbitmq-audit). Follow this workflow for the task below. Report the result in English.",
       "sha256": "40d5fd84db98fa0f1d9077a039c17c012f787ba0a2359def2591524f55115173"
     },
     {
@@ -1870,8 +1918,8 @@
       "path": "skills/vibe-rabbitmq/references/rabbitmq-polish.md",
       "group": 18,
       "category": "RabbitMQ",
-      "summary": "Маршрутизация, подтверждения и повторная доставка",
-      "example": "Используй $vibe-rabbitmq, сценарий «RabbitMQ Polish». Выполни выбранное исправление для текущей задачи.",
+      "summary": "Routing, acknowledgements and redelivery.",
+      "example": "Use $vibe-rabbitmq, workflow “RabbitMQ Polish” (ID: rabbitmq-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "f348a737e1ee2a094420e3ff2c7eaa2181d0d79ac55b8739d766a7fe0139eb5c"
     },
     {
@@ -1882,8 +1930,8 @@
       "path": "skills/vibe-rabbitmq/references/rabbitmq-redelivery-recovery-check.md",
       "group": 18,
       "category": "RabbitMQ",
-      "summary": "Маршрутизация, подтверждения и повторная доставка",
-      "example": "Используй $vibe-rabbitmq, сценарий «RabbitMQ Redelivery & Recovery Check». Проверь выбранное поведение и сообщи результат.",
+      "summary": "Routing, acknowledgements and redelivery.",
+      "example": "Use $vibe-rabbitmq, workflow “RabbitMQ Redelivery & Recovery Check” (ID: rabbitmq-redelivery-recovery-check). Follow this workflow for the task below. Report the result in English.",
       "sha256": "22e5f16761bf51b2283455f62a79dbafbced2239ed67e2e861b8c02f8a1bae67"
     },
     {
@@ -1893,9 +1941,9 @@
       "id": "realtime-frontend-audit",
       "path": "skills/vibe-realtime/references/realtime-frontend-audit.md",
       "group": 32,
-      "category": "Realtime-интерфейсы",
-      "summary": "Кэш клиента, optimistic updates и восстановление связи",
-      "example": "Используй $vibe-realtime, сценарий «Realtime Frontend Audit». Проведи аудит выбранной области без изменений кода.",
+      "category": "Realtime interfaces",
+      "summary": "Client caches, optimistic updates and reconnection.",
+      "example": "Use $vibe-realtime, workflow “Realtime Frontend Audit” (ID: realtime-frontend-audit). Follow this workflow for the task below. Report the result in English.",
       "sha256": "02215aec177418b11f1d93e849b856c41b2fd013d0663175d9c29069a78076ed"
     },
     {
@@ -1905,9 +1953,9 @@
       "id": "realtime-frontend-polish",
       "path": "skills/vibe-realtime/references/realtime-frontend-polish.md",
       "group": 32,
-      "category": "Realtime-интерфейсы",
-      "summary": "Кэш клиента, optimistic updates и восстановление связи",
-      "example": "Используй $vibe-realtime, сценарий «Realtime Frontend Polish». Выполни выбранное исправление для текущей задачи.",
+      "category": "Realtime interfaces",
+      "summary": "Client caches, optimistic updates and reconnection.",
+      "example": "Use $vibe-realtime, workflow “Realtime Frontend Polish” (ID: realtime-frontend-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "875b7727cd3cd9c31a450aa335b86e00a501ffa4553ef4cb24df3db7deda96e9"
     },
     {
@@ -1917,9 +1965,9 @@
       "id": "realtime-interface-profiling-recovery-check",
       "path": "skills/vibe-realtime/references/realtime-interface-profiling-recovery-check.md",
       "group": 32,
-      "category": "Realtime-интерфейсы",
-      "summary": "Кэш клиента, optimistic updates и восстановление связи",
-      "example": "Используй $vibe-realtime, сценарий «Realtime Interface Profiling & Recovery Check». Проверь выбранное поведение и сообщи результат.",
+      "category": "Realtime interfaces",
+      "summary": "Client caches, optimistic updates and reconnection.",
+      "example": "Use $vibe-realtime, workflow “Realtime Interface Profiling & Recovery Check” (ID: realtime-interface-profiling-recovery-check). Follow this workflow for the task below. Report the result in English.",
       "sha256": "4f31ea406855bee4cb323345033059dea4fa4cbfa097f4809e7758fb38534d15"
     },
     {
@@ -1929,9 +1977,9 @@
       "id": "delivery-recovery-audit",
       "path": "skills/vibe-recovery/references/delivery-recovery-audit.md",
       "group": 30,
-      "category": "Доставка и восстановление",
-      "summary": "Релизы, резервные копии, rollback и восстановление",
-      "example": "Используй $vibe-recovery, сценарий «Delivery Recovery Audit». Проведи аудит выбранной области без изменений кода.",
+      "category": "Delivery & recovery",
+      "summary": "Releases, backups, rollbacks and recovery.",
+      "example": "Use $vibe-recovery, workflow “Delivery Recovery Audit” (ID: delivery-recovery-audit). Follow this workflow for the task below. Report the result in English.",
       "sha256": "9c5d81bc1da9278733ec743cd3feea851dd5839070e6e06f5a01bb1a7ab2e72c"
     },
     {
@@ -1941,9 +1989,9 @@
       "id": "delivery-recovery-polish",
       "path": "skills/vibe-recovery/references/delivery-recovery-polish.md",
       "group": 30,
-      "category": "Доставка и восстановление",
-      "summary": "Релизы, резервные копии, rollback и восстановление",
-      "example": "Используй $vibe-recovery, сценарий «Delivery Recovery Polish». Выполни выбранное исправление для текущей задачи.",
+      "category": "Delivery & recovery",
+      "summary": "Releases, backups, rollbacks and recovery.",
+      "example": "Use $vibe-recovery, workflow “Delivery Recovery Polish” (ID: delivery-recovery-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "7a1ad8210b698a204cf7d45784dbc37543a809776ee9277cbff679e244385bac"
     },
     {
@@ -1953,9 +2001,9 @@
       "id": "delivery-restore-rollback-check",
       "path": "skills/vibe-recovery/references/delivery-restore-rollback-check.md",
       "group": 30,
-      "category": "Доставка и восстановление",
-      "summary": "Релизы, резервные копии, rollback и восстановление",
-      "example": "Используй $vibe-recovery, сценарий «Delivery Restore & Rollback Check». Проверь выбранное поведение и сообщи результат.",
+      "category": "Delivery & recovery",
+      "summary": "Releases, backups, rollbacks and recovery.",
+      "example": "Use $vibe-recovery, workflow “Delivery Restore & Rollback Check” (ID: delivery-restore-rollback-check). Follow this workflow for the task below. Report the result in English.",
       "sha256": "07c23e927cbac43f27c88e3245d88b3c805a5c08ca4d64a946857fd39b83a310"
     },
     {
@@ -1965,9 +2013,9 @@
       "id": "redis-job-queues-audit",
       "path": "skills/vibe-redis/references/redis-job-queues-audit.md",
       "group": 19,
-      "category": "Redis и очереди",
-      "summary": "Redis Streams, BullMQ, ARQ и восстановление задач",
-      "example": "Используй $vibe-redis, сценарий «Redis Job Queues Audit». Проведи аудит выбранной области без изменений кода.",
+      "category": "Redis & queues",
+      "summary": "Redis Streams, BullMQ, ARQ and job recovery.",
+      "example": "Use $vibe-redis, workflow “Redis Job Queues Audit” (ID: redis-job-queues-audit). Follow this workflow for the task below. Report the result in English.",
       "sha256": "fdb0cd0265f1d860a1fcdf9e7f34cdf9ed68330e661dc06198b2547b814b9b9f"
     },
     {
@@ -1977,9 +2025,9 @@
       "id": "redis-job-queues-polish",
       "path": "skills/vibe-redis/references/redis-job-queues-polish.md",
       "group": 19,
-      "category": "Redis и очереди",
-      "summary": "Redis Streams, BullMQ, ARQ и восстановление задач",
-      "example": "Используй $vibe-redis, сценарий «Redis Job Queues Polish». Выполни выбранное исправление для текущей задачи.",
+      "category": "Redis & queues",
+      "summary": "Redis Streams, BullMQ, ARQ and job recovery.",
+      "example": "Use $vibe-redis, workflow “Redis Job Queues Polish” (ID: redis-job-queues-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "fa91e5298eb73fdbcc45bb0ce497304c917f3051c1785cc70ab7ff1dda38278b"
     },
     {
@@ -1989,9 +2037,9 @@
       "id": "redis-queue-load-recovery-check",
       "path": "skills/vibe-redis/references/redis-queue-load-recovery-check.md",
       "group": 19,
-      "category": "Redis и очереди",
-      "summary": "Redis Streams, BullMQ, ARQ и восстановление задач",
-      "example": "Используй $vibe-redis, сценарий «Redis Queue Load & Recovery Check». Проверь выбранное поведение и сообщи результат.",
+      "category": "Redis & queues",
+      "summary": "Redis Streams, BullMQ, ARQ and job recovery.",
+      "example": "Use $vibe-redis, workflow “Redis Queue Load & Recovery Check” (ID: redis-queue-load-recovery-check). Follow this workflow for the task below. Report the result in English.",
       "sha256": "4b729eac31cc200256f40423de64d981b793b165bd4cf28fbf96edf9ac62fd87"
     },
     {
@@ -2001,10 +2049,10 @@
       "id": "consistency-invariants-audit",
       "path": "skills/vibe-reliability/references/consistency-invariants-audit.md",
       "group": 11,
-      "category": "Надёжность и производительность",
-      "summary": "Сбои, гонки, согласованность и производительность",
-      "example": "Используй $vibe-reliability, сценарий «Consistency Invariants Audit». Проведи аудит выбранной области без изменений кода.",
-      "sha256": "1ac3be1182720eeea493fe2329100a506c79919f50faf6861d5e68732b34c40c"
+      "category": "Reliability & performance",
+      "summary": "Failures, race conditions, consistency and performance.",
+      "example": "Use $vibe-reliability, workflow “Consistency Invariants Audit” (ID: consistency-invariants-audit). Follow this workflow for the task below. Report the result in English.",
+      "sha256": "3bb258c5297b0cddade0559c3de67adbeabf7e48e3dd420ecd283f19f5f17c41"
     },
     {
       "title": "Consistency Invariants Polish",
@@ -2013,9 +2061,9 @@
       "id": "consistency-invariants-polish",
       "path": "skills/vibe-reliability/references/consistency-invariants-polish.md",
       "group": 11,
-      "category": "Надёжность и производительность",
-      "summary": "Сбои, гонки, согласованность и производительность",
-      "example": "Используй $vibe-reliability, сценарий «Consistency Invariants Polish». Выполни выбранное исправление для текущей задачи.",
+      "category": "Reliability & performance",
+      "summary": "Failures, race conditions, consistency and performance.",
+      "example": "Use $vibe-reliability, workflow “Consistency Invariants Polish” (ID: consistency-invariants-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "968477dfb446681d52e240fcaca140cd730c28e87ad0a120090430dc7b3eb21b"
     },
     {
@@ -2025,9 +2073,9 @@
       "id": "idempotency-concurrency-audit",
       "path": "skills/vibe-reliability/references/idempotency-concurrency-audit.md",
       "group": 11,
-      "category": "Надёжность и производительность",
-      "summary": "Сбои, гонки, согласованность и производительность",
-      "example": "Используй $vibe-reliability, сценарий «Idempotency & Concurrency Audit». Проведи аудит выбранной области без изменений кода.",
+      "category": "Reliability & performance",
+      "summary": "Failures, race conditions, consistency and performance.",
+      "example": "Use $vibe-reliability, workflow “Idempotency & Concurrency Audit” (ID: idempotency-concurrency-audit). Follow this workflow for the task below. Report the result in English.",
       "sha256": "ffcf2400721f6547b25d73535c363682784063e9be439897252ffa54f537d847"
     },
     {
@@ -2037,9 +2085,9 @@
       "id": "idempotency-concurrency-polish",
       "path": "skills/vibe-reliability/references/idempotency-concurrency-polish.md",
       "group": 11,
-      "category": "Надёжность и производительность",
-      "summary": "Сбои, гонки, согласованность и производительность",
-      "example": "Используй $vibe-reliability, сценарий «Idempotency & Concurrency Polish». Выполни выбранное исправление для текущей задачи.",
+      "category": "Reliability & performance",
+      "summary": "Failures, race conditions, consistency and performance.",
+      "example": "Use $vibe-reliability, workflow “Idempotency & Concurrency Polish” (ID: idempotency-concurrency-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "86f6c48ebbf9489562db8f78bdc5494e97e41d84e4735fc2b915a1df255619c0"
     },
     {
@@ -2049,10 +2097,10 @@
       "id": "performance-audit",
       "path": "skills/vibe-reliability/references/performance-audit.md",
       "group": 1,
-      "category": "Надёжность и производительность",
-      "summary": "Сбои, гонки, согласованность и производительность",
-      "example": "Используй $vibe-reliability, сценарий «Performance Audit». Проведи аудит выбранной области без изменений кода.",
-      "sha256": "4cf05954f3fba9f0a4330cc2523ada689237b2131be1a135fb500cb43db042b0"
+      "category": "Reliability & performance",
+      "summary": "Failures, race conditions, consistency and performance.",
+      "example": "Use $vibe-reliability, workflow “Performance Audit” (ID: performance-audit). Follow this workflow for the task below. Report the result in English.",
+      "sha256": "33e9abe1eeab30667192014455f4021f7ff36bfa6448f28e8e12720c3a23f998"
     },
     {
       "title": "Performance Budget Audit",
@@ -2061,10 +2109,10 @@
       "id": "performance-budget-audit",
       "path": "skills/vibe-reliability/references/performance-budget-audit.md",
       "group": 11,
-      "category": "Надёжность и производительность",
-      "summary": "Сбои, гонки, согласованность и производительность",
-      "example": "Используй $vibe-reliability, сценарий «Performance Budget Audit». Проведи аудит выбранной области без изменений кода.",
-      "sha256": "708c06169ab42212eeb5ec5e3c5250e43d9e4ec4d214459984a89c1e67e41663"
+      "category": "Reliability & performance",
+      "summary": "Failures, race conditions, consistency and performance.",
+      "example": "Use $vibe-reliability, workflow “Performance Budget Audit” (ID: performance-budget-audit). Follow this workflow for the task below. Report the result in English.",
+      "sha256": "d96c34622a6ee1c7b92180fab85acb2fab7d96e01e82c5411d8dfe799cfd72ea"
     },
     {
       "title": "Performance Budget Polish",
@@ -2073,9 +2121,9 @@
       "id": "performance-budget-polish",
       "path": "skills/vibe-reliability/references/performance-budget-polish.md",
       "group": 11,
-      "category": "Надёжность и производительность",
-      "summary": "Сбои, гонки, согласованность и производительность",
-      "example": "Используй $vibe-reliability, сценарий «Performance Budget Polish». Выполни выбранное исправление для текущей задачи.",
+      "category": "Reliability & performance",
+      "summary": "Failures, race conditions, consistency and performance.",
+      "example": "Use $vibe-reliability, workflow “Performance Budget Polish” (ID: performance-budget-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "d4538d1e75a95e4ae44fbb38c01fcb2d20d81a7bd791bf6b60783953d99fc5c9"
     },
     {
@@ -2085,9 +2133,9 @@
       "id": "performance-polish",
       "path": "skills/vibe-reliability/references/performance-polish.md",
       "group": 1,
-      "category": "Надёжность и производительность",
-      "summary": "Сбои, гонки, согласованность и производительность",
-      "example": "Используй $vibe-reliability, сценарий «Performance Polish». Выполни выбранное исправление для текущей задачи.",
+      "category": "Reliability & performance",
+      "summary": "Failures, race conditions, consistency and performance.",
+      "example": "Use $vibe-reliability, workflow “Performance Polish” (ID: performance-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "269f047f2f4c66416b85b2d53fb463609f8c1477c03a6be29547f89bab0d0ea9"
     },
     {
@@ -2097,10 +2145,10 @@
       "id": "reliability-audit",
       "path": "skills/vibe-reliability/references/reliability-audit.md",
       "group": 11,
-      "category": "Надёжность и производительность",
-      "summary": "Сбои, гонки, согласованность и производительность",
-      "example": "Используй $vibe-reliability, сценарий «Reliability Audit». Проведи аудит выбранной области без изменений кода.",
-      "sha256": "eaaee8f4a9938da624f21dfb7f58fc4f8cbca3b7e2964de66afe0f322509fbfa"
+      "category": "Reliability & performance",
+      "summary": "Failures, race conditions, consistency and performance.",
+      "example": "Use $vibe-reliability, workflow “Reliability Audit” (ID: reliability-audit). Follow this workflow for the task below. Report the result in English.",
+      "sha256": "00a49113e3e76c15b702367834b41a81e031bcc9104cf3ad2b84e2d6ce6b0080"
     },
     {
       "title": "Reliability Polish",
@@ -2109,9 +2157,9 @@
       "id": "reliability-polish",
       "path": "skills/vibe-reliability/references/reliability-polish.md",
       "group": 11,
-      "category": "Надёжность и производительность",
-      "summary": "Сбои, гонки, согласованность и производительность",
-      "example": "Используй $vibe-reliability, сценарий «Reliability Polish». Выполни выбранное исправление для текущей задачи.",
+      "category": "Reliability & performance",
+      "summary": "Failures, race conditions, consistency and performance.",
+      "example": "Use $vibe-reliability, workflow “Reliability Polish” (ID: reliability-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "ed7f1583a310ae6bc349fbe9371b796084cda87e849736250f870d6c9c76ea52"
     },
     {
@@ -2121,9 +2169,9 @@
       "id": "patch-checking",
       "path": "skills/vibe-review/references/patch-checking.md",
       "group": 1,
-      "category": "Проверка изменений",
-      "summary": "Проверка полного патча и затронутых контрактов",
-      "example": "Используй $vibe-review, сценарий «Patch Checking». Проверь текущие изменения без исправлений.",
+      "category": "Change review",
+      "summary": "Full patch review and affected contracts.",
+      "example": "Use $vibe-review, workflow “Patch Checking” (ID: patch-checking). Follow this workflow for the task below. Report the result in English.",
       "sha256": "96b3fe53586f8f0f9fb8fe65bdd2086f229720c0a85903e9139105ec19e4da51"
     },
     {
@@ -2133,9 +2181,9 @@
       "id": "search-index-audit",
       "path": "skills/vibe-search/references/search-index-audit.md",
       "group": 36,
-      "category": "Поисковые индексы",
-      "summary": "Поисковые индексы, свежесть результатов и права",
-      "example": "Используй $vibe-search, сценарий «Search Index Audit». Проведи аудит выбранной области без изменений кода.",
+      "category": "Search indexes",
+      "summary": "Search indexes, result freshness and permissions.",
+      "example": "Use $vibe-search, workflow “Search Index Audit” (ID: search-index-audit). Follow this workflow for the task below. Report the result in English.",
       "sha256": "bb05ff1be856453d1ce75eb61ecf37157e68f6c2f6ce8c9747e800087b320a3d"
     },
     {
@@ -2145,9 +2193,9 @@
       "id": "search-index-polish",
       "path": "skills/vibe-search/references/search-index-polish.md",
       "group": 36,
-      "category": "Поисковые индексы",
-      "summary": "Поисковые индексы, свежесть результатов и права",
-      "example": "Используй $vibe-search, сценарий «Search Index Polish». Выполни выбранное исправление для текущей задачи.",
+      "category": "Search indexes",
+      "summary": "Search indexes, result freshness and permissions.",
+      "example": "Use $vibe-search, workflow “Search Index Polish” (ID: search-index-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "e1d0f87e2870876722c278fa4c90af34dffe0997038f7111a3510996c8a944c8"
     },
     {
@@ -2157,9 +2205,9 @@
       "id": "search-recall-freshness-check",
       "path": "skills/vibe-search/references/search-recall-freshness-check.md",
       "group": 36,
-      "category": "Поисковые индексы",
-      "summary": "Поисковые индексы, свежесть результатов и права",
-      "example": "Используй $vibe-search, сценарий «Search Recall & Freshness Check». Проверь выбранное поведение и сообщи результат.",
+      "category": "Search indexes",
+      "summary": "Search indexes, result freshness and permissions.",
+      "example": "Use $vibe-search, workflow “Search Recall & Freshness Check” (ID: search-recall-freshness-check). Follow this workflow for the task below. Report the result in English.",
       "sha256": "7d8b3e2e5758268a94fc1a1740667ef848f4ef8054272b5f5f83f397be5dda72"
     },
     {
@@ -2169,9 +2217,9 @@
       "id": "audit-logging-compliance-audit",
       "path": "skills/vibe-security/references/audit-logging-compliance-audit.md",
       "group": 28,
-      "category": "Безопасность и приватность",
-      "summary": "Безопасность, приватность и журнал действий",
-      "example": "Используй $vibe-security, сценарий «Audit Logging Compliance Audit». Проведи аудит выбранной области без изменений кода.",
+      "category": "Security & privacy",
+      "summary": "Security, privacy and audit logs.",
+      "example": "Use $vibe-security, workflow “Audit Logging Compliance Audit” (ID: audit-logging-compliance-audit). Follow this workflow for the task below. Report the result in English.",
       "sha256": "d75815c5e2665a996b8821ba0498899d80839ca4fd5a50f97fe1f94e3d07653c"
     },
     {
@@ -2181,9 +2229,9 @@
       "id": "audit-logging-compliance-polish",
       "path": "skills/vibe-security/references/audit-logging-compliance-polish.md",
       "group": 28,
-      "category": "Безопасность и приватность",
-      "summary": "Безопасность, приватность и журнал действий",
-      "example": "Используй $vibe-security, сценарий «Audit Logging Compliance Polish». Выполни выбранное исправление для текущей задачи.",
+      "category": "Security & privacy",
+      "summary": "Security, privacy and audit logs.",
+      "example": "Use $vibe-security, workflow “Audit Logging Compliance Polish” (ID: audit-logging-compliance-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "3978c9bde6465f413fca0b970a6e251ad74e01fbf09cb7e36063a8d345f8d6eb"
     },
     {
@@ -2193,9 +2241,9 @@
       "id": "audit-trail-integrity-check",
       "path": "skills/vibe-security/references/audit-trail-integrity-check.md",
       "group": 28,
-      "category": "Безопасность и приватность",
-      "summary": "Безопасность, приватность и журнал действий",
-      "example": "Используй $vibe-security, сценарий «Audit Trail Integrity Check». Проверь выбранное поведение и сообщи результат.",
+      "category": "Security & privacy",
+      "summary": "Security, privacy and audit logs.",
+      "example": "Use $vibe-security, workflow “Audit Trail Integrity Check” (ID: audit-trail-integrity-check). Follow this workflow for the task below. Report the result in English.",
       "sha256": "96b5a95ea8a181b4c337f8ba0e674e7d23528949d028d9a8b178d95ea82d908e"
     },
     {
@@ -2205,9 +2253,9 @@
       "id": "privacy-data-rights-audit",
       "path": "skills/vibe-security/references/privacy-data-rights-audit.md",
       "group": 28,
-      "category": "Безопасность и приватность",
-      "summary": "Безопасность, приватность и журнал действий",
-      "example": "Используй $vibe-security, сценарий «Privacy Data Rights Audit». Проведи аудит выбранной области без изменений кода.",
+      "category": "Security & privacy",
+      "summary": "Security, privacy and audit logs.",
+      "example": "Use $vibe-security, workflow “Privacy Data Rights Audit” (ID: privacy-data-rights-audit). Follow this workflow for the task below. Report the result in English.",
       "sha256": "93037d7969746052d4cb6a2757b523bb03b1836a9b08f68590c8793f07ff5cae"
     },
     {
@@ -2217,9 +2265,9 @@
       "id": "privacy-data-rights-check",
       "path": "skills/vibe-security/references/privacy-data-rights-check.md",
       "group": 28,
-      "category": "Безопасность и приватность",
-      "summary": "Безопасность, приватность и журнал действий",
-      "example": "Используй $vibe-security, сценарий «Privacy Data Rights Check». Проверь выбранное поведение и сообщи результат.",
+      "category": "Security & privacy",
+      "summary": "Security, privacy and audit logs.",
+      "example": "Use $vibe-security, workflow “Privacy Data Rights Check” (ID: privacy-data-rights-check). Follow this workflow for the task below. Report the result in English.",
       "sha256": "033e323c3cdff343755ce9bff6ec2d1e902d83705b20621e422a79f708702935"
     },
     {
@@ -2229,9 +2277,9 @@
       "id": "privacy-data-rights-polish",
       "path": "skills/vibe-security/references/privacy-data-rights-polish.md",
       "group": 28,
-      "category": "Безопасность и приватность",
-      "summary": "Безопасность, приватность и журнал действий",
-      "example": "Используй $vibe-security, сценарий «Privacy Data Rights Polish». Выполни выбранное исправление для текущей задачи.",
+      "category": "Security & privacy",
+      "summary": "Security, privacy and audit logs.",
+      "example": "Use $vibe-security, workflow “Privacy Data Rights Polish” (ID: privacy-data-rights-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "ce134c7d07a1c6a588c90f8f68b0fe2bd8cc672903be1fbe3fb1e851be412b5f"
     },
     {
@@ -2241,9 +2289,9 @@
       "id": "security-abuse-defense-check",
       "path": "skills/vibe-security/references/security-abuse-defense-check.md",
       "group": 28,
-      "category": "Безопасность и приватность",
-      "summary": "Безопасность, приватность и журнал действий",
-      "example": "Используй $vibe-security, сценарий «Security Abuse Defense Check». Проверь выбранное поведение и сообщи результат.",
+      "category": "Security & privacy",
+      "summary": "Security, privacy and audit logs.",
+      "example": "Use $vibe-security, workflow “Security Abuse Defense Check” (ID: security-abuse-defense-check). Follow this workflow for the task below. Report the result in English.",
       "sha256": "97f5ab59598c0c4523edc9d7ebf0a652bf3b870226047703cd57e7cd4f12d05b"
     },
     {
@@ -2253,10 +2301,10 @@
       "id": "security-audit",
       "path": "skills/vibe-security/references/security-audit.md",
       "group": 1,
-      "category": "Безопасность и приватность",
-      "summary": "Безопасность, приватность и журнал действий",
-      "example": "Используй $vibe-security, сценарий «Security Audit». Проведи аудит выбранной области без изменений кода.",
-      "sha256": "4f5f046932bad61b541adeab6d2f20d0839b40fe31577e490d4093b5f99b1e7b"
+      "category": "Security & privacy",
+      "summary": "Security, privacy and audit logs.",
+      "example": "Use $vibe-security, workflow “Security Audit” (ID: security-audit). Follow this workflow for the task below. Report the result in English.",
+      "sha256": "65b23f1938e967df7dd3d19023d511865b61178032228e226431b29a33973b75"
     },
     {
       "title": "Security Polish",
@@ -2265,9 +2313,9 @@
       "id": "security-polish",
       "path": "skills/vibe-security/references/security-polish.md",
       "group": 1,
-      "category": "Безопасность и приватность",
-      "summary": "Безопасность, приватность и журнал действий",
-      "example": "Используй $vibe-security, сценарий «Security Polish». Выполни выбранное исправление для текущей задачи.",
+      "category": "Security & privacy",
+      "summary": "Security, privacy and audit logs.",
+      "example": "Use $vibe-security, workflow “Security Polish” (ID: security-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "87499f18efbe0d86b88a4248484a69beb82ec0836b22701bd89c5ff7320e4dc3"
     },
     {
@@ -2277,9 +2325,9 @@
       "id": "system-security-hardening-audit",
       "path": "skills/vibe-security/references/system-security-hardening-audit.md",
       "group": 28,
-      "category": "Безопасность и приватность",
-      "summary": "Безопасность, приватность и журнал действий",
-      "example": "Используй $vibe-security, сценарий «System Security Hardening Audit». Проведи аудит выбранной области без изменений кода.",
+      "category": "Security & privacy",
+      "summary": "Security, privacy and audit logs.",
+      "example": "Use $vibe-security, workflow “System Security Hardening Audit” (ID: system-security-hardening-audit). Follow this workflow for the task below. Report the result in English.",
       "sha256": "fc685239c5e8b02c34e15134caddbbcd0a89bf73e9e591e6261ec2af619d3f83"
     },
     {
@@ -2289,9 +2337,9 @@
       "id": "system-security-hardening-polish",
       "path": "skills/vibe-security/references/system-security-hardening-polish.md",
       "group": 28,
-      "category": "Безопасность и приватность",
-      "summary": "Безопасность, приватность и журнал действий",
-      "example": "Используй $vibe-security, сценарий «System Security Hardening Polish». Выполни выбранное исправление для текущей задачи.",
+      "category": "Security & privacy",
+      "summary": "Security, privacy and audit logs.",
+      "example": "Use $vibe-security, workflow “System Security Hardening Polish” (ID: system-security-hardening-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "39aeb96271229f55d8ae4306c03e150b476dfd4a423e2c1217e314adf74e212d"
     },
     {
@@ -2301,9 +2349,9 @@
       "id": "sql-databases-audit",
       "path": "skills/vibe-sql/references/sql-databases-audit.md",
       "group": 23,
-      "category": "SQL и подключения",
-      "summary": "Запросы SQL, миграции, блокировки и пулы",
-      "example": "Используй $vibe-sql, сценарий «SQL Databases Audit». Проведи аудит выбранной области без изменений кода.",
+      "category": "SQL & connections",
+      "summary": "SQL queries, migrations, locks and connection pools.",
+      "example": "Use $vibe-sql, workflow “SQL Databases Audit” (ID: sql-databases-audit). Follow this workflow for the task below. Report the result in English.",
       "sha256": "57e45a42a676139b1af3f6c9ada9b9bd20ad914e782ce38eed39b7e1db6d476d"
     },
     {
@@ -2313,9 +2361,9 @@
       "id": "sql-databases-polish",
       "path": "skills/vibe-sql/references/sql-databases-polish.md",
       "group": 23,
-      "category": "SQL и подключения",
-      "summary": "Запросы SQL, миграции, блокировки и пулы",
-      "example": "Используй $vibe-sql, сценарий «SQL Databases Polish». Выполни выбранное исправление для текущей задачи.",
+      "category": "SQL & connections",
+      "summary": "SQL queries, migrations, locks and connection pools.",
+      "example": "Use $vibe-sql, workflow “SQL Databases Polish” (ID: sql-databases-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "74377e8098c1eee301f98a6f625cf3bc8c8c719eb3091032fe4b7a7ef2c0481c"
     },
     {
@@ -2325,9 +2373,9 @@
       "id": "sql-load-lock-failover-check",
       "path": "skills/vibe-sql/references/sql-load-lock-failover-check.md",
       "group": 23,
-      "category": "SQL и подключения",
-      "summary": "Запросы SQL, миграции, блокировки и пулы",
-      "example": "Используй $vibe-sql, сценарий «SQL Load Lock & Failover Check». Проверь выбранное поведение и сообщи результат.",
+      "category": "SQL & connections",
+      "summary": "SQL queries, migrations, locks and connection pools.",
+      "example": "Use $vibe-sql, workflow “SQL Load Lock & Failover Check” (ID: sql-load-lock-failover-check). Follow this workflow for the task below. Report the result in English.",
       "sha256": "5f7452a6ce26110f3bcc8cd8962f9b87c678d839030b432dc3ed83137b39a562"
     },
     {
@@ -2337,9 +2385,9 @@
       "id": "object-storage-audit",
       "path": "skills/vibe-storage/references/object-storage-audit.md",
       "group": 25,
-      "category": "Объектное хранилище",
-      "summary": "Загрузка файлов, версии, доступ и восстановление",
-      "example": "Используй $vibe-storage, сценарий «Object Storage Audit». Проведи аудит выбранной области без изменений кода.",
+      "category": "Object storage",
+      "summary": "File uploads, versions, access and recovery.",
+      "example": "Use $vibe-storage, workflow “Object Storage Audit” (ID: object-storage-audit). Follow this workflow for the task below. Report the result in English.",
       "sha256": "108bb477647cccb6a53927c156bc99d322d6313604736a6140889dc21d8157d4"
     },
     {
@@ -2349,9 +2397,9 @@
       "id": "object-storage-integrity-recovery-check",
       "path": "skills/vibe-storage/references/object-storage-integrity-recovery-check.md",
       "group": 25,
-      "category": "Объектное хранилище",
-      "summary": "Загрузка файлов, версии, доступ и восстановление",
-      "example": "Используй $vibe-storage, сценарий «Object Storage Integrity & Recovery Check». Проверь выбранное поведение и сообщи результат.",
+      "category": "Object storage",
+      "summary": "File uploads, versions, access and recovery.",
+      "example": "Use $vibe-storage, workflow “Object Storage Integrity & Recovery Check” (ID: object-storage-integrity-recovery-check). Follow this workflow for the task below. Report the result in English.",
       "sha256": "75cc23333121f992e6a96cef0bf70c06bd2910c43a69a4503d0e23016f8b4196"
     },
     {
@@ -2361,9 +2409,9 @@
       "id": "object-storage-polish",
       "path": "skills/vibe-storage/references/object-storage-polish.md",
       "group": 25,
-      "category": "Объектное хранилище",
-      "summary": "Загрузка файлов, версии, доступ и восстановление",
-      "example": "Используй $vibe-storage, сценарий «Object Storage Polish». Выполни выбранное исправление для текущей задачи.",
+      "category": "Object storage",
+      "summary": "File uploads, versions, access and recovery.",
+      "example": "Use $vibe-storage, workflow “Object Storage Polish” (ID: object-storage-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "f045728c0dacfefb1fc43cced176693baf176c14b0ad2c7f467e1faed90ed142"
     },
     {
@@ -2373,9 +2421,9 @@
       "id": "evolution-improvement",
       "path": "skills/vibe-task/references/evolution-improvement.md",
       "group": 0,
-      "category": "Задачи и синтез",
-      "summary": "Постановка задач, разбиение и синтез результатов",
-      "example": "Используй $vibe-task, сценарий «Evolution & Improvement». Подготовь результат в текущем разговоре.",
+      "category": "Tasks & synthesis",
+      "summary": "Task definition, decomposition and synthesis of findings.",
+      "example": "Use $vibe-task, workflow “Evolution & Improvement” (ID: evolution-improvement). Follow this workflow for the task below. Report the result in English.",
       "sha256": "78a6fa2e05f0e1c0d2b6e86b17e1ebaab060f9ad07ed2c0f051d0325c0dc4f1d"
     },
     {
@@ -2385,9 +2433,9 @@
       "id": "iteration-closure",
       "path": "skills/vibe-task/references/iteration-closure.md",
       "group": 0,
-      "category": "Задачи и синтез",
-      "summary": "Постановка задач, разбиение и синтез результатов",
-      "example": "Используй $vibe-task, сценарий «Iteration Closure». Оцени завершённость текущей задачи.",
+      "category": "Tasks & synthesis",
+      "summary": "Task definition, decomposition and synthesis of findings.",
+      "example": "Use $vibe-task, workflow “Iteration Closure” (ID: iteration-closure). Follow this workflow for the task below. Report the result in English.",
       "sha256": "4524bc500789ea9d863d050554610d59a6791d3cd196f5e5b6b0b0b272d2b24b"
     },
     {
@@ -2397,9 +2445,9 @@
       "id": "map-synthesis",
       "path": "skills/vibe-task/references/map-synthesis.md",
       "group": 0,
-      "category": "Задачи и синтез",
-      "summary": "Постановка задач, разбиение и синтез результатов",
-      "example": "Используй $vibe-task, сценарий «Map Synthesis». Подготовь результат в текущем разговоре.",
+      "category": "Tasks & synthesis",
+      "summary": "Task definition, decomposition and synthesis of findings.",
+      "example": "Use $vibe-task, workflow “Map Synthesis” (ID: map-synthesis). Follow this workflow for the task below. Report the result in English.",
       "sha256": "a3570e30de7edf70c63be196302ba9e922e86ae36f00655663017a7e7ce6e9e4"
     },
     {
@@ -2409,9 +2457,9 @@
       "id": "synthesis",
       "path": "skills/vibe-task/references/synthesis.md",
       "group": 0,
-      "category": "Задачи и синтез",
-      "summary": "Постановка задач, разбиение и синтез результатов",
-      "example": "Используй $vibe-task, сценарий «Synthesis». Подготовь результат в текущем разговоре.",
+      "category": "Tasks & synthesis",
+      "summary": "Task definition, decomposition and synthesis of findings.",
+      "example": "Use $vibe-task, workflow “Synthesis” (ID: synthesis). Follow this workflow for the task below. Report the result in English.",
       "sha256": "bf955cabb3d187c7756289f0402c71e473c775e2c34398adb026bf72ed97b785"
     },
     {
@@ -2421,9 +2469,9 @@
       "id": "task-shaping",
       "path": "skills/vibe-task/references/task-shaping.md",
       "group": 0,
-      "category": "Задачи и синтез",
-      "summary": "Постановка задач, разбиение и синтез результатов",
-      "example": "Используй $vibe-task, сценарий «Task Shaping». Подготовь результат в текущем разговоре.",
+      "category": "Tasks & synthesis",
+      "summary": "Task definition, decomposition and synthesis of findings.",
+      "example": "Use $vibe-task, workflow “Task Shaping” (ID: task-shaping). Follow this workflow for the task below. Report the result in English.",
       "sha256": "2642a15638d76e848b1037d4097708c7e56b4c933bdaee3aa4b5cea4e4afc0b1"
     },
     {
@@ -2433,9 +2481,9 @@
       "id": "validation-clarification",
       "path": "skills/vibe-task/references/validation-clarification.md",
       "group": 0,
-      "category": "Задачи и синтез",
-      "summary": "Постановка задач, разбиение и синтез результатов",
-      "example": "Используй $vibe-task, сценарий «Validation & Clarification». Подготовь результат в текущем разговоре.",
+      "category": "Tasks & synthesis",
+      "summary": "Task definition, decomposition and synthesis of findings.",
+      "example": "Use $vibe-task, workflow “Validation & Clarification” (ID: validation-clarification). Follow this workflow for the task below. Report the result in English.",
       "sha256": "12c34a721b6ff5fab0168908af70db07dc54ad38e8d732a660c230373aa936ba"
     },
     {
@@ -2445,9 +2493,9 @@
       "id": "workstream-decomposition",
       "path": "skills/vibe-task/references/workstream-decomposition.md",
       "group": 0,
-      "category": "Задачи и синтез",
-      "summary": "Постановка задач, разбиение и синтез результатов",
-      "example": "Используй $vibe-task, сценарий «Workstream Decomposition». Подготовь результат в текущем разговоре.",
+      "category": "Tasks & synthesis",
+      "summary": "Task definition, decomposition and synthesis of findings.",
+      "example": "Use $vibe-task, workflow “Workstream Decomposition” (ID: workstream-decomposition). Follow this workflow for the task below. Report the result in English.",
       "sha256": "fba9cb3a753f6bd02f4f7a8d1d41424f42e029b0b67b75ceb0deff78740c714c"
     },
     {
@@ -2458,8 +2506,8 @@
       "path": "skills/vibe-temporal/references/temporal-replay-versioning-check.md",
       "group": 21,
       "category": "Temporal",
-      "summary": "Детерминизм workflow, replay и совместимость версий",
-      "example": "Используй $vibe-temporal, сценарий «Temporal Replay & Versioning Check». Проверь выбранное поведение и сообщи результат.",
+      "summary": "Workflow determinism, replay and version compatibility.",
+      "example": "Use $vibe-temporal, workflow “Temporal Replay & Versioning Check” (ID: temporal-replay-versioning-check). Follow this workflow for the task below. Report the result in English.",
       "sha256": "8fb7761da73894737ce099efdde5c93bfd9953bdecc6b271f89475ea80940e31"
     },
     {
@@ -2470,8 +2518,8 @@
       "path": "skills/vibe-temporal/references/temporal-workflows-audit.md",
       "group": 21,
       "category": "Temporal",
-      "summary": "Детерминизм workflow, replay и совместимость версий",
-      "example": "Используй $vibe-temporal, сценарий «Temporal Workflows Audit». Проведи аудит выбранной области без изменений кода.",
+      "summary": "Workflow determinism, replay and version compatibility.",
+      "example": "Use $vibe-temporal, workflow “Temporal Workflows Audit” (ID: temporal-workflows-audit). Follow this workflow for the task below. Report the result in English.",
       "sha256": "e33dfa878492795442fa9d5d8bbfd05c543519a408bffaec3085a9bb08c6e54d"
     },
     {
@@ -2482,8 +2530,8 @@
       "path": "skills/vibe-temporal/references/temporal-workflows-polish.md",
       "group": 21,
       "category": "Temporal",
-      "summary": "Детерминизм workflow, replay и совместимость версий",
-      "example": "Используй $vibe-temporal, сценарий «Temporal Workflows Polish». Выполни выбранное исправление для текущей задачи.",
+      "summary": "Workflow determinism, replay and version compatibility.",
+      "example": "Use $vibe-temporal, workflow “Temporal Workflows Polish” (ID: temporal-workflows-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "bde12b7dfe78071aad34e3a4034abac63492db96ea4a106aeba994a7d0eebff7"
     },
     {
@@ -2494,8 +2542,8 @@
       "path": "skills/vibe-terraform/references/terraform-delivery-audit.md",
       "group": 15,
       "category": "Terraform",
-      "summary": "Планы Terraform, состояние и перенос ресурсов",
-      "example": "Используй $vibe-terraform, сценарий «Terraform Delivery Audit». Проведи аудит выбранной области без изменений кода.",
+      "summary": "Terraform plans, state and resource moves.",
+      "example": "Use $vibe-terraform, workflow “Terraform Delivery Audit” (ID: terraform-delivery-audit). Follow this workflow for the task below. Report the result in English.",
       "sha256": "3a706f5c3f1061fe588bfb4abf467593bca1a22aace32fbe44210e579c4c38ec"
     },
     {
@@ -2506,8 +2554,8 @@
       "path": "skills/vibe-terraform/references/terraform-delivery-polish.md",
       "group": 15,
       "category": "Terraform",
-      "summary": "Планы Terraform, состояние и перенос ресурсов",
-      "example": "Используй $vibe-terraform, сценарий «Terraform Delivery Polish». Выполни выбранное исправление для текущей задачи.",
+      "summary": "Terraform plans, state and resource moves.",
+      "example": "Use $vibe-terraform, workflow “Terraform Delivery Polish” (ID: terraform-delivery-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "2e44d7f0114008199de6a2c300970f1eaea7a15a49248fcade314e4ef3be094f"
     },
     {
@@ -2518,8 +2566,8 @@
       "path": "skills/vibe-terraform/references/terraform-plan-state-check.md",
       "group": 15,
       "category": "Terraform",
-      "summary": "Планы Terraform, состояние и перенос ресурсов",
-      "example": "Используй $vibe-terraform, сценарий «Terraform Plan & State Check». Проверь выбранное поведение и сообщи результат.",
+      "summary": "Terraform plans, state and resource moves.",
+      "example": "Use $vibe-terraform, workflow “Terraform Plan & State Check” (ID: terraform-plan-state-check). Follow this workflow for the task below. Report the result in English.",
       "sha256": "5f3690f32da01f4063a65f32f85c913da7aa3f3957458a21049fc8b36e0da9f8"
     },
     {
@@ -2529,9 +2577,9 @@
       "id": "vector-databases-audit",
       "path": "skills/vibe-vectors/references/vector-databases-audit.md",
       "group": 26,
-      "category": "Векторные базы",
-      "summary": "Векторный поиск, ACL, полнота и переиндексация",
-      "example": "Используй $vibe-vectors, сценарий «Vector Databases Audit». Проведи аудит выбранной области без изменений кода.",
+      "category": "Vector databases",
+      "summary": "Vector search, ACLs, recall and reindexing.",
+      "example": "Use $vibe-vectors, workflow “Vector Databases Audit” (ID: vector-databases-audit). Follow this workflow for the task below. Report the result in English.",
       "sha256": "b151e001856d59b4d7722a9ba6c75019707b81525999cbefc68f5386210d77b1"
     },
     {
@@ -2541,9 +2589,9 @@
       "id": "vector-databases-polish",
       "path": "skills/vibe-vectors/references/vector-databases-polish.md",
       "group": 26,
-      "category": "Векторные базы",
-      "summary": "Векторный поиск, ACL, полнота и переиндексация",
-      "example": "Используй $vibe-vectors, сценарий «Vector Databases Polish». Выполни выбранное исправление для текущей задачи.",
+      "category": "Vector databases",
+      "summary": "Vector search, ACLs, recall and reindexing.",
+      "example": "Use $vibe-vectors, workflow “Vector Databases Polish” (ID: vector-databases-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "bc39989b4d7197b34233b1fef8195893315a65c16eff6158a9504d3016fb46fc"
     },
     {
@@ -2553,10 +2601,46 @@
       "id": "vector-recall-degradation-check",
       "path": "skills/vibe-vectors/references/vector-recall-degradation-check.md",
       "group": 26,
-      "category": "Векторные базы",
-      "summary": "Векторный поиск, ACL, полнота и переиндексация",
-      "example": "Используй $vibe-vectors, сценарий «Vector Recall & Degradation Check». Проверь выбранное поведение и сообщи результат.",
+      "category": "Vector databases",
+      "summary": "Vector search, ACLs, recall and reindexing.",
+      "example": "Use $vibe-vectors, workflow “Vector Recall & Degradation Check” (ID: vector-recall-degradation-check). Follow this workflow for the task below. Report the result in English.",
       "sha256": "200e85c0bdd6aa40b890325b4213adf0e7b95c2a1913a061573b02ff81f2c2a5"
+    },
+    {
+      "title": "Web Server/Client Boundary Check",
+      "skill": "vibe-web",
+      "mode": "check",
+      "id": "web-boundary-check",
+      "path": "skills/vibe-web/references/web-boundary-check.md",
+      "group": 41,
+      "category": "Web rendering & server boundaries",
+      "summary": "SSR, hydration, serialized data, caches and server actions.",
+      "example": "Use $vibe-web, workflow “Web Server/Client Boundary Check” (ID: web-boundary-check). Follow this workflow for the task below. Report the result in English.",
+      "sha256": "114fa288bcfd6952fddb2e54519779860d9821b6c09f8c9e1f95fa762bb3337a"
+    },
+    {
+      "title": "Web Rendering Audit",
+      "skill": "vibe-web",
+      "mode": "audit",
+      "id": "web-rendering-audit",
+      "path": "skills/vibe-web/references/web-rendering-audit.md",
+      "group": 41,
+      "category": "Web rendering & server boundaries",
+      "summary": "SSR, hydration, serialized data, caches and server actions.",
+      "example": "Use $vibe-web, workflow “Web Rendering Audit” (ID: web-rendering-audit). Follow this workflow for the task below. Report the result in English.",
+      "sha256": "8c7368fa6deed64ebaa056fb1dc404da8a0db081372be47105fd25e399a59c98"
+    },
+    {
+      "title": "Web Rendering Polish",
+      "skill": "vibe-web",
+      "mode": "implement",
+      "id": "web-rendering-polish",
+      "path": "skills/vibe-web/references/web-rendering-polish.md",
+      "group": 41,
+      "category": "Web rendering & server boundaries",
+      "summary": "SSR, hydration, serialized data, caches and server actions.",
+      "example": "Use $vibe-web, workflow “Web Rendering Polish” (ID: web-rendering-polish). Follow this workflow for the task below. Report the result in English.",
+      "sha256": "8249b7421e77177a3a920c4547efd749874a8efa0742d1dc9c13842f0ac310ff"
     },
     {
       "title": "Behavior Check",
@@ -2565,9 +2649,9 @@
       "id": "behavior-check",
       "path": "skills/vibe-workflow/references/behavior-check.md",
       "group": 12,
-      "category": "Проверки и обслуживание процесса",
-      "summary": "Сверка фактов, обновление карт и обслуживание плагина",
-      "example": "Используй $vibe-workflow, сценарий «Behavior Check». Проверь выбранное поведение и сообщи результат.",
+      "category": "Workflow checks & maintenance",
+      "summary": "Evidence checks, map updates and plugin maintenance.",
+      "example": "Use $vibe-workflow, workflow “Behavior Check” (ID: behavior-check). Follow this workflow for the task below. Report the result in English.",
       "sha256": "4c7fccf969a2705b4b5ee1f7546bdd1569dc18d0e7c42255ffd3c50751838e4e"
     },
     {
@@ -2577,9 +2661,9 @@
       "id": "evidence-normalization",
       "path": "skills/vibe-workflow/references/evidence-normalization.md",
       "group": 12,
-      "category": "Проверки и обслуживание процесса",
-      "summary": "Сверка фактов, обновление карт и обслуживание плагина",
-      "example": "Используй $vibe-workflow, сценарий «Evidence Normalization». Подготовь результат в текущем разговоре.",
+      "category": "Workflow checks & maintenance",
+      "summary": "Evidence checks, map updates and plugin maintenance.",
+      "example": "Use $vibe-workflow, workflow “Evidence Normalization” (ID: evidence-normalization). Follow this workflow for the task below. Report the result in English.",
       "sha256": "c01f878eb6ea5e593bc3e7b78cd3c4e4aeedfe1fdc4a3484612a21bf8fc8abc2"
     },
     {
@@ -2589,9 +2673,9 @@
       "id": "map-refresh-polish",
       "path": "skills/vibe-workflow/references/map-refresh-polish.md",
       "group": 12,
-      "category": "Проверки и обслуживание процесса",
-      "summary": "Сверка фактов, обновление карт и обслуживание плагина",
-      "example": "Используй $vibe-workflow, сценарий «Map Refresh Polish». Выполни выбранное исправление для текущей задачи.",
+      "category": "Workflow checks & maintenance",
+      "summary": "Evidence checks, map updates and plugin maintenance.",
+      "example": "Use $vibe-workflow, workflow “Map Refresh Polish” (ID: map-refresh-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "04a8357f1818d6eb81beed86d874438fe72e19406e099db28c6e51de6d74a15a"
     },
     {
@@ -2601,9 +2685,9 @@
       "id": "map-staleness-check",
       "path": "skills/vibe-workflow/references/map-staleness-check.md",
       "group": 12,
-      "category": "Проверки и обслуживание процесса",
-      "summary": "Сверка фактов, обновление карт и обслуживание плагина",
-      "example": "Используй $vibe-workflow, сценарий «Map Staleness Check». Проверь выбранное поведение и сообщи результат.",
+      "category": "Workflow checks & maintenance",
+      "summary": "Evidence checks, map updates and plugin maintenance.",
+      "example": "Use $vibe-workflow, workflow “Map Staleness Check” (ID: map-staleness-check). Follow this workflow for the task below. Report the result in English.",
       "sha256": "2ece56ecf72d9b8303e1ff5ba047d6f6b777782019ae5a7823f008726496666b"
     },
     {
@@ -2613,9 +2697,9 @@
       "id": "prompt-skill-sync-audit",
       "path": "skills/vibe-workflow/references/prompt-skill-sync-audit.md",
       "group": 12,
-      "category": "Проверки и обслуживание процесса",
-      "summary": "Сверка фактов, обновление карт и обслуживание плагина",
-      "example": "Используй $vibe-workflow, сценарий «Prompt Skill Sync Audit». Проведи аудит выбранной области без изменений кода.",
+      "category": "Workflow checks & maintenance",
+      "summary": "Evidence checks, map updates and plugin maintenance.",
+      "example": "Use $vibe-workflow, workflow “Prompt Skill Sync Audit” (ID: prompt-skill-sync-audit). Follow this workflow for the task below. Report the result in English.",
       "sha256": "e0e3fc53cd44f251b42c9ec27fb30cec51d0c098237325ba8ee386c8b5fae47b"
     },
     {
@@ -2625,9 +2709,9 @@
       "id": "prompt-skill-sync-polish",
       "path": "skills/vibe-workflow/references/prompt-skill-sync-polish.md",
       "group": 12,
-      "category": "Проверки и обслуживание процесса",
-      "summary": "Сверка фактов, обновление карт и обслуживание плагина",
-      "example": "Используй $vibe-workflow, сценарий «Prompt Skill Sync Polish». Выполни выбранное исправление для текущей задачи.",
+      "category": "Workflow checks & maintenance",
+      "summary": "Evidence checks, map updates and plugin maintenance.",
+      "example": "Use $vibe-workflow, workflow “Prompt Skill Sync Polish” (ID: prompt-skill-sync-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "94a19b920e8c7a3f9e3786ce56cf33599b4ff1a6125d3acd2641fb9ce139c9ad"
     },
     {
@@ -2637,9 +2721,9 @@
       "id": "scoped-audit",
       "path": "skills/vibe-workflow/references/scoped-audit.md",
       "group": 12,
-      "category": "Проверки и обслуживание процесса",
-      "summary": "Сверка фактов, обновление карт и обслуживание плагина",
-      "example": "Используй $vibe-workflow, сценарий «Scoped Audit». Проведи аудит выбранной области без изменений кода.",
+      "category": "Workflow checks & maintenance",
+      "summary": "Evidence checks, map updates and plugin maintenance.",
+      "example": "Use $vibe-workflow, workflow “Scoped Audit” (ID: scoped-audit). Follow this workflow for the task below. Report the result in English.",
       "sha256": "7d81d2b4289aacdca7f94d92feb44b8e37bbb790f4d2c47d31cd2e0bf73c20a2"
     },
     {
@@ -2649,9 +2733,9 @@
       "id": "scoped-polish",
       "path": "skills/vibe-workflow/references/scoped-polish.md",
       "group": 12,
-      "category": "Проверки и обслуживание процесса",
-      "summary": "Сверка фактов, обновление карт и обслуживание плагина",
-      "example": "Используй $vibe-workflow, сценарий «Scoped Polish». Выполни выбранное исправление для текущей задачи.",
+      "category": "Workflow checks & maintenance",
+      "summary": "Evidence checks, map updates and plugin maintenance.",
+      "example": "Use $vibe-workflow, workflow “Scoped Polish” (ID: scoped-polish). Follow this workflow for the task below. Report the result in English.",
       "sha256": "5eab4b3f42fdf1a48e5a839643a7703907427d650e468031a7841a324332f11a"
     }
   ]

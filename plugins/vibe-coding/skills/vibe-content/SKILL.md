@@ -3,7 +3,7 @@ name: vibe-content
 description: "Audit or edit repository-owned product copy, notification templates, localization, or public SEO/GEO metadata. Ground claims and calls to action in implemented capabilities."
 ---
 
-# Тексты, локализация и SEO
+# Copy, localization & SEO
 
 Read [the shared workflow](../../references/workflow.md) once per task, then the one recipe matching the requested operation and boundary. Do not load every recipe. The user's request controls scope and whether edits are allowed.
 

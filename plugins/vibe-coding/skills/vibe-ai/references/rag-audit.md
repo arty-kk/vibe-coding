@@ -30,11 +30,10 @@ Important retrieval/citation/freshness defect with user-visible impact, missing 
 
 Lower-risk but concrete RAG quality issue: weak metadata, unclear empty/low-confidence state, stale docs/map, minor eval gap, or source UI ambiguity that affects trust.
 
-## Task-sub quality
+## Finding quality
 
-- Use task briefs creation when available; do not force a handmade markdown task brief body.
-- Every task brief must cite `path:line[-line]` evidence for the ingestion/retrieval/answer owner and affected surface, plus symbol when possible.
+- Every finding must cite `path:line[-line]` evidence for the ingestion/retrieval/answer owner and affected surface, plus symbol when possible.
 - Include data source, index/retriever owner, ACL/freshness boundary, expected behavior, acceptance criteria, and validation/eval direction when discoverable.
-- Use one unambiguous fix direction per task brief; no alternatives.
+- Use one unambiguous fix direction per finding; explain a tradeoff only when it changes the decision.
 - Merge symptoms under the same retrieval owner unless fixes, rollout units, index migration, or eval strategy differ.
 - Do not recommend provider/model/vector database swaps unless current repo evidence proves the existing owner cannot satisfy the behavior.

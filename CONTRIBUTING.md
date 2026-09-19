@@ -4,6 +4,8 @@ Open an issue for a concrete defect or missing workflow. Include the selected sk
 
 Keep changes scoped to the rule's owner. Skill descriptions need clear triggers; recipes need a defined operation and observable outcome. Preserve the distinction between inspection and implementation.
 
+Add every new workflow to its skill entrypoint, `catalog.json` and all four locale files under `plugins/vibe-coding/assets/catalog/locales/`. The shared renderer updates both offline and public catalogs; do not create a separate UI or hardcode counts. See [catalog maintenance](site/README.md).
+
 Run from the repository root:
 
 ```sh

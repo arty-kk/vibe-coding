@@ -3,7 +3,7 @@ name: vibe-storage
 description: "Audit, fix or verify object storage authorization, key/version identity, multipart uploads, checksums, presigned URLs, lifecycle and restore."
 ---
 
-# Объектное хранилище
+# Object storage
 
 Read [the shared workflow](../../references/workflow.md) once per task, then the one recipe matching the requested operation and boundary. Do not load every recipe. The user's request controls scope and whether edits are allowed.
 

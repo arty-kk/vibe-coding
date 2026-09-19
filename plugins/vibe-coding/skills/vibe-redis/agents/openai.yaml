@@ -1,4 +1,4 @@
 interface:
-  display_name: "Vibe · Redis и очереди"
-  short_description: "Redis Streams, BullMQ, ARQ и восстановление задач"
-  default_prompt: "Используй $vibe-redis. Проверь блокировки и повторное выполнение задач Redis."
+  display_name: "Vibe · Redis & queues"
+  short_description: "Redis Streams, BullMQ, ARQ and job recovery"
+  default_prompt: "Use $vibe-redis to audit the selected redis & queues boundary."

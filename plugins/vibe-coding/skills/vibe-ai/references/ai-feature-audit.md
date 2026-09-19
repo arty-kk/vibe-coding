@@ -30,11 +30,10 @@ Important AI workflow with weak schema/tool validation, misleading UI state, non
 
 Lower-risk but concrete quality issue: stale AI docs/map, weak diagnostics boundary, unclear generated-content labeling, localized copy drift, noisy logs, or minor eval gap with reachable regression value.
 
-## Task-sub quality
+## Finding quality
 
-- Use task briefs creation when available; do not force a handmade markdown task brief body.
-- Every task brief must cite `path:line[-line]` evidence for the AI behavior, owner layer, and affected consumer or user state, plus symbol when possible.
+- Every finding must cite `path:line[-line]` evidence for the AI behavior, owner layer, and affected consumer or user state, plus symbol when possible.
 - Include model/prompt/tool/index/eval owner when relevant, expected behavior, acceptance criteria, and validation direction.
-- Use one unambiguous fix direction per task brief; no alternatives.
+- Use one unambiguous fix direction per finding; explain a tradeoff only when it changes the decision.
 - Merge symptoms under the same AI capability owner unless fixes, rollout units, eval strategy, or safety boundary differ.
 - Do not report abstract AI risks without current repo reachability, user impact, cost impact, or regression risk.

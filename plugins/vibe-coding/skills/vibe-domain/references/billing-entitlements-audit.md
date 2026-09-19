@@ -29,9 +29,8 @@ Important entitlement drift, quota/plan race, misleading upgrade/no-access state
 
 Lower-risk but concrete billing quality issue: stale docs, copy mismatch, minor plan matrix inconsistency, secondary lifecycle gap, or weak regression coverage.
 
-## Task-sub quality
+## Finding quality
 
-- Use task briefs creation when available; do not force a handmade markdown task brief body.
-- Every task brief must cite `path:line[-line]` evidence for entitlement source of truth and at least one consuming surface.
+- Every finding must cite `path:line[-line]` evidence for entitlement source of truth and at least one consuming surface.
 - Include affected plan/role/tenant state, expected behavior, acceptance criteria, and validation direction.
 - Merge issues by entitlement owner when one fix validates them together.

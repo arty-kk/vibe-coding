@@ -36,7 +36,7 @@ function createLanguageManager(onChange) {
     try { localStorage.setItem(storageKey, language); } catch {}
     const url = new URL(location.href);
     url.searchParams.set('lang', language);
-    history.replaceState(null, '', url);
+    updateCatalogUrl(url);
     apply();
   });
   apply();
@@ -44,4 +44,8 @@ function createLanguageManager(onChange) {
 
 function formatMessage(template, values) {
   return template.replace(/\{(\w+)\}/g, (match, key) => values[key] ?? match);
+}
+
+function updateCatalogUrl(url) {
+  try { history.replaceState(null, '', url); } catch {}
 }

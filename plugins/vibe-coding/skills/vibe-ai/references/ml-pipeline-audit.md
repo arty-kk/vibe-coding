@@ -29,11 +29,10 @@ Important model quality/regression risk, missing critical eval, feature/schema d
 
 Lower-risk but concrete ML maintainability issue: stale docs, minor metric gap, unclear threshold owner, weak data-quality check, or coupling that blocks safe model updates.
 
-## Task-sub quality
+## Finding quality
 
-- Use task briefs creation when available; do not force a handmade markdown task brief body.
-- Every task brief must cite `path:line[-line]` evidence for the data/feature/model/inference owner and affected consumer, plus symbol when possible.
+- Every finding must cite `path:line[-line]` evidence for the data/feature/model/inference owner and affected consumer, plus symbol when possible.
 - Include model/artifact/version owner, expected behavior, acceptance criteria, and validation/eval direction when discoverable.
-- Use one unambiguous fix direction per task brief; no alternatives.
+- Use one unambiguous fix direction per finding; explain a tradeoff only when it changes the decision.
 - Merge symptoms under the same pipeline owner unless fixes, rollout units, eval strategy, or deployment boundary differ.
 - Do not propose research experiments, model-family swaps, or metric redesigns without repo-visible product need and validation path.

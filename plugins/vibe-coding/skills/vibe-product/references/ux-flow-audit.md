@@ -29,11 +29,10 @@ Important task-completion friction, misleading state, missing recovery, inconsis
 
 Lower-risk but concrete flow improvement: minor navigation ambiguity, weak microcopy, incomplete empty/error state, stale flow docs, or coupling that blocks safe UX iteration.
 
-## Task-sub quality
+## Finding quality
 
-- Use task briefs creation when available; do not force a handmade markdown task brief body.
-- Every task brief must cite `path:line[-line]` evidence for the flow owner and affected route/component/state, plus symbol when possible.
+- Every finding must cite `path:line[-line]` evidence for the flow owner and affected route/component/state, plus symbol when possible.
 - Include actor, starting context, completion goal, expected result, acceptance criteria, and validation path.
-- Use one unambiguous fix direction per task brief; no alternatives.
+- Use one unambiguous fix direction per finding; explain a tradeoff only when it changes the decision.
 - Merge symptoms under the same journey owner unless fixes, rollout units, actors, or validation differ.
 - Do not report cosmetic preferences unless they affect comprehension, safety, conversion, accessibility, permissions, or task completion.

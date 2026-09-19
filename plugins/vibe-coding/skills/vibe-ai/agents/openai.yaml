@@ -1,4 +1,4 @@
 interface:
-  display_name: "Vibe · AI, RAG и ML"
-  short_description: "AI-функции, поиск по документам и оценка качества"
-  default_prompt: "Используй $vibe-ai. Проверь качество и границы доступа в RAG."
+  display_name: "Vibe · AI, RAG & ML"
+  short_description: "AI features, document retrieval and quality evaluation"
+  default_prompt: "Use $vibe-ai to audit the selected ai, rag & ml boundary."

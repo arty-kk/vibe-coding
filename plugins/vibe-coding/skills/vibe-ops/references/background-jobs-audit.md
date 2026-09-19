@@ -29,9 +29,8 @@ Important idempotency/retry/concurrency gap, stuck pending user state, missing o
 
 Lower-risk but concrete job quality issue: stale runbook, weak logging, minor batch inefficiency, secondary retry gap, or maintainability issue in worker ownership.
 
-## Task-sub quality
+## Finding quality
 
-- Use task briefs creation when available; do not force a handmade markdown task brief body.
-- Every task brief must cite `path:line[-line]` evidence for producer, worker, state owner, and affected consumer when possible.
+- Every finding must cite `path:line[-line]` evidence for producer, worker, state owner, and affected consumer when possible.
 - Include expected lifecycle behavior, failure/retry/idempotency contract, acceptance criteria, and validation direction.
 - Merge issues by job owner when one fix validates them together.

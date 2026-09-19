@@ -53,7 +53,7 @@ function openRecipe(id) {
   const url = new URL(location.href);
   url.searchParams.set('lang', language);
   url.hash = r.id;
-  history.replaceState(null, '', url);
+  updateCatalogUrl(url);
   if (!dialog.open) dialog.showModal();
 }
 
@@ -61,7 +61,7 @@ function closeDetail() {
   dialog.close();
   const url = new URL(location.href);
   url.hash = '';
-  history.replaceState(null, '', url);
+  updateCatalogUrl(url);
 }
 
 function openHash() {

@@ -3,7 +3,7 @@ name: vibe-compatibility
 description: "Audit, implement or verify a compatibility boundary through authorized reference behavior, file/protocol reconstruction, differential comparison and golden masters."
 ---
 
-# Совместимость и протоколы
+# Compatibility & protocols
 
 Read [the shared workflow](../../references/workflow.md) once per task, then the one recipe matching the requested operation and boundary. Do not load every recipe. The user's request controls scope and whether edits are allowed.
 

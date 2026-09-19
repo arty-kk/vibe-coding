@@ -1,4 +1,4 @@
 interface:
-  display_name: "Vibe Coding"
-  short_description: "Выбор рабочего сценария и навигация по плагину"
-  default_prompt: "Используй $vibe и выбери подходящий сценарий для моей задачи."
+  display_name: "Vibe · Vibe Coding"
+  short_description: "Choose a focused engineering workflow for Codex"
+  default_prompt: "Use $vibe to choose the workflow for this task."

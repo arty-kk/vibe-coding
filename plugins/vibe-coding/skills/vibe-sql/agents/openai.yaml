@@ -1,4 +1,4 @@
 interface:
-  display_name: "Vibe · SQL и подключения"
-  short_description: "Запросы SQL, миграции, блокировки и пулы"
-  default_prompt: "Используй $vibe-sql. Найди причину исчерпания подключений к базе."
+  display_name: "Vibe · SQL & connections"
+  short_description: "SQL queries, migrations, locks and connection pools"
+  default_prompt: "Use $vibe-sql to audit the selected sql & connections boundary."

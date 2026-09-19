@@ -30,9 +30,8 @@ Meaningful release risk: missing tests/checks for high-impact behavior, operatio
 
 Lower-risk but concrete readiness issue: stale docs/runbook, minor config ambiguity, secondary test gap, weak copy/state, or maintainability issue likely to slow release support.
 
-## Task-sub quality
+## Finding quality
 
-- Use task briefs creation when available; do not force a handmade markdown task brief body.
-- Every task brief must cite `path:line[-line]` evidence for the release risk and affected owner.
+- Every finding must cite `path:line[-line]` evidence for the release risk and affected owner.
 - Include expected release-safe behavior, acceptance criteria, validation direction, and whether it blocks release or can follow after release.
 - Merge issues by release owner/source of truth when one fix validates them together.

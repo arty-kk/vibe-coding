@@ -29,9 +29,8 @@ Critical funnel/core behavior cannot be measured, fires incorrectly, duplicates 
 
 Lower-risk but concrete event cleanup: inconsistent naming, missing docs, weak properties, secondary flow gaps, or maintainability issues in wrappers.
 
-## Task-sub quality
+## Finding quality
 
-- Use task briefs creation when available; do not force a handmade markdown task brief body.
-- Every task brief must cite `path:line[-line]` evidence for event owner/wrapper and affected flow.
+- Every finding must cite `path:line[-line]` evidence for event owner/wrapper and affected flow.
 - Include expected event semantics, privacy boundary, acceptance criteria, and validation direction.
 - Merge issues by event owner or flow when one fix validates them together.

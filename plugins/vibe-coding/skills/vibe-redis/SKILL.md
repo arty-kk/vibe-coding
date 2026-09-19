@@ -3,7 +3,7 @@ name: vibe-redis
 description: "Audit, fix or verify Redis Streams, BullMQ or ARQ job identity, locks, acknowledgements, retention, backpressure and recovery. Respect the selected framework delivery semantics."
 ---
 
-# Redis и очереди
+# Redis & queues
 
 Read [the shared workflow](../../references/workflow.md) once per task, then the one recipe matching the requested operation and boundary. Do not load every recipe. The user's request controls scope and whether edits are allowed.
 

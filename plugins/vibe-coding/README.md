@@ -1,6 +1,6 @@
 # Vibe Coding
 
-43 skills and 221 engineering workflows for Codex: repository mapping, planning, review, debugging, implementation and verification.
+45 skills and 228 engineering workflows for Codex: repository mapping, planning, review, debugging, implementation and verification.
 
 [Website and catalog](https://arty-kk.github.io/vibe-coding) · [Repository](https://github.com/arty-kk/vibe-coding) · [Support](https://github.com/arty-kk/vibe-coding/issues)
 
@@ -28,7 +28,7 @@ Python 3.10+:
 python3 scripts/catalog.py search webhook --mode check
 python3 scripts/catalog.py show patch-checking
 python3 scripts/validate.py
-python3 scripts/package.py --output ../vibe-coding-1.0.3.zip
+python3 scripts/package.py --output ../vibe-coding-1.1.0.zip
 ```
 
 MIT License. No bundled MCP server, account connection or telemetry.

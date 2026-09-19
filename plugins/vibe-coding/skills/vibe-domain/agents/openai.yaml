@@ -1,4 +1,4 @@
 interface:
-  display_name: "Vibe · Права, данные и бизнес-правила"
-  short_description: "Права доступа, данные, тарифы и продуктовые события"
-  default_prompt: "Используй $vibe-domain. Проверь изоляцию данных между пользователями и командами."
+  display_name: "Vibe · Permissions, data & business rules"
+  short_description: "Access control, data, billing plans and product events"
+  default_prompt: "Use $vibe-domain to audit the selected permissions, data & business rules boundary."

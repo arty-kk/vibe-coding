@@ -3,7 +3,7 @@ name: vibe-docs
 description: "Generate evidence-backed README or design documentation, synchronize stale docs, or plan and implement a scoped migration/refactor. Preserve source ownership and existing compatibility."
 ---
 
-# Документация и рефакторинг
+# Documentation & refactoring
 
 Read [the shared workflow](../../references/workflow.md) once per task, then the one recipe matching the requested operation and boundary. Do not load every recipe. The user's request controls scope and whether edits are allowed.
 

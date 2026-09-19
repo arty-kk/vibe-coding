@@ -1,20 +1,20 @@
-# Рабочие циклы
+# Workflow cycles
 
-Этапы выбираются по задаче. Простой фикс не требует создания карт или отдельного плана. Каждый этап выполняется в текущем разговоре; создание отдельных задач и делегирование не подразумеваются.
+Choose stages from the requested outcome. A straightforward fix needs neither a preliminary map nor a separate plan. Work stays in the current conversation; separate tasks and delegation are not implied.
 
-| Ситуация | Полезная последовательность | Условие завершения |
+| Situation | Useful sequence | Completion condition |
 |---|---|---|
-| Сырая идея, нужен план | vibe-task: Task Shaping → при необходимости Validation & Clarification | Понятны результат, ограничения и приёмка |
-| Незнакомый проект | vibe-map: Project Atlas → нужная детальная карта | Объяснены нужные части и подтверждены связи |
-| Неясная причина ошибки | Доменный Audit → при запросе исправления Polish → проверка | Причина подтверждена, нужное поведение проверено |
-| Конкретный баг | Сразу доменный Polish → нужный Check | Исправлен весь затронутый контракт |
-| Один новый баг | vibe-probe → проверка изменённого участка | Одна область получила подтверждённый статус |
-| Несколько отчётов | Evidence Normalization → Synthesis | Дубли объединены, противоречия явно разрешены |
-| Проверка изменений | vibe-review → исправления, если запрошены → повторная проверка изменённого | Нет известных дефектов и непроверенных обязательных условий |
-| Карты устарели | Map Staleness Check → при запросе обновления Map Refresh Polish | Обновлены затронутые записи, сохранены ID |
-| Сложный runtime-контракт | Доменный Polish → соответствующий Check | Проверены релевантные сбои, повторы и восстановление |
-| Завершение итерации | Iteration Closure | done / next slice / replan / blocked |
+| Early idea needing a plan | Task Shaping → Validation & Clarification if needed | Outcome, constraints and acceptance are clear |
+| Unfamiliar repository | Project Atlas → a relevant detailed map | Needed areas and relationships are evidenced |
+| Unclear defect | Domain audit → implementation when requested → verification | Cause is supported and requested behavior verified |
+| Known bug | Domain implementation → relevant check | The affected contract is coherently fixed |
+| One new bug | Probe → verification of the changed area | One area has an evidenced outcome |
+| Several reports | Evidence Normalization → Synthesis | Duplicates and contradictions are resolved |
+| Patch review | Review → authorized fixes → relevant recheck | No known defect or unverified required gate remains in scope |
+| Stale maps | Map Staleness Check → authorized Map Refresh | Affected entries updated with stable IDs |
+| Complex runtime contract | Domain implementation → corresponding check | Relevant failure, retry and recovery paths verified |
+| Iteration closure | Iteration Closure | Done / next slice / replan / blocked |
 
-Передавайте между этапами только необходимые сведения: цель, выбранный участок, правило и его владелец, подтверждающие файлы/строки, ожидаемое поведение, выполненные изменения, проверка и оставшиеся ограничения. Отделяйте факты от гипотез. План или карта без подтверждения текущим кодом не доказывают дефект.
+Carry only relevant context between stages: objective, boundary, rule and owner, evidence, intended behavior, changes, verification and unresolved limits. Distinguish observations from hypotheses. A plan or stale map alone does not prove a defect.
 
-Не повторяйте цикл бесконечно: новая правка или новое свидетельство оправдывает следующую проверку. Завершённая задача, конкретный внешний барьер или отсутствие прогресса заканчивает текущий цикл.
+Repeat verification when a new change or new evidence justifies it. Stop on completed scope, a concrete external gate or lack of meaningful progress; do not cycle indefinitely.

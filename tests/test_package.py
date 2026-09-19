@@ -39,6 +39,38 @@ class PackageTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             catalog.contained_path('../../README.md')
 
+    def test_new_boundaries_are_discoverable_across_languages(self):
+        rows = catalog.load_catalog()['recipes']
+        for query, skill in [('MCP', 'vibe-mcp'), ('服务器', 'vibe-mcp'),
+                             ('SSR', 'vibe-web'), ('hidratacion', 'vibe-web'),
+                             ('гидратация', 'vibe-web')]:
+            with self.subTest(query=query):
+                found = catalog.search(rows, query)
+                self.assertEqual(3, len(found))
+                self.assertTrue(all(row['skill'] == skill for row in found))
+        self.assertEqual(['oauth-oidc-session-check'], [r['id'] for r in catalog.search(rows, 'OAuth', mode='check')])
+
+    def test_old_or_incomplete_instructions_are_detected(self):
+        with tempfile.TemporaryDirectory() as d:
+            target = Path(d)/'vibe-coding'
+            shutil.copytree(PLUGIN, target)
+            entry = target/'skills/vibe-mcp/SKILL.md'
+            entry.write_text(entry.read_text(encoding='utf-8')+'\n## Task-sub quality\n', encoding='utf-8')
+            self.assertTrue(any('Legacy runtime instruction' in e for e in validate(target)))
+            locale_path = target/'assets/catalog/locales/zh-CN.json'
+            locale = json.loads(locale_path.read_text(encoding='utf-8'))
+            del locale['titles']['mcp-server-audit']
+            locale_path.write_text(json.dumps(locale), encoding='utf-8')
+            self.assertTrue(any('Invalid catalog localization' in e for e in validate(target)))
+
+    def test_stale_catalog_interface_is_detected(self):
+        with tempfile.TemporaryDirectory() as d:
+            target = Path(d)/'vibe-coding'
+            shutil.copytree(PLUGIN, target)
+            style = target/'assets/catalog/style.css'
+            style.write_text(style.read_text(encoding='utf-8')+'\nbody {margin: 1px;}\n', encoding='utf-8')
+            self.assertTrue(any('Stale HTML interface' in e for e in validate(target)))
+
     def test_recipe_corruption_is_detected(self):
         with tempfile.TemporaryDirectory() as d:
             target=Path(d)/'vibe-coding'
@@ -76,6 +108,14 @@ class PackageTests(unittest.TestCase):
                 self.assertIn('vibe-coding/plugin.json',z.namelist())
                 self.assertIn('vibe-coding/LICENSE',z.namelist())
                 self.assertFalse(any('__pycache__' in n or '/.git/' in n for n in z.namelist()))
+                z.extractall(Path(d)/'extracted')
+            extracted = Path(d)/'extracted/vibe-coding'
+            result = subprocess.run([sys.executable, str(extracted/'scripts/catalog.py'), 'search', 'MCP', '--lang', 'zh-CN', '--json'],
+                                    check=True, capture_output=True, encoding='utf-8')
+            rows = json.loads(result.stdout)
+            self.assertEqual(3, len(rows))
+            self.assertTrue(all('MCP' in r['title'] and '请用简体中文' in r['example'] for r in rows))
+            subprocess.run([sys.executable, str(extracted/'scripts/validate.py')], check=True, capture_output=True)
 
 
 if __name__ == '__main__': unittest.main()

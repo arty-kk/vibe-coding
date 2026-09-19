@@ -3,7 +3,7 @@ name: vibe-probe
 description: "Run one bounded bug-finding probe in an unvisited backend, frontend, architecture or visual area. Fix one proven defect when requested, retain visible thread history, and stop after one primary area."
 ---
 
-# Быстрый поиск ошибок
+# Quick bug discovery
 
 Read [the shared workflow](../../references/workflow.md) once per task, then the one recipe matching the requested operation and boundary. Do not load every recipe. The user's request controls scope and whether edits are allowed.
 

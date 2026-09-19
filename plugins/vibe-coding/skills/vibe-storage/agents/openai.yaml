@@ -1,4 +1,4 @@
 interface:
-  display_name: "Vibe · Объектное хранилище"
-  short_description: "Загрузка файлов, версии, доступ и восстановление"
-  default_prompt: "Используй $vibe-storage. Проверь целостность и восстановление загрузки файлов."
+  display_name: "Vibe · Object storage"
+  short_description: "File uploads, versions, access and recovery"
+  default_prompt: "Use $vibe-storage to audit the selected object storage boundary."

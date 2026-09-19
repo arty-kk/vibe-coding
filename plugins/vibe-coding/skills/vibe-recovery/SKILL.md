@@ -3,7 +3,7 @@ name: vibe-recovery
 description: "Audit, fix or verify artifact provenance, release promotion, rollback compatibility, backup integrity and disaster recovery. Restore and failure drills require an appropriate authorized environment."
 ---
 
-# Доставка и восстановление
+# Delivery & recovery
 
 Read [the shared workflow](../../references/workflow.md) once per task, then the one recipe matching the requested operation and boundary. Do not load every recipe. The user's request controls scope and whether edits are allowed.
 

@@ -8,6 +8,7 @@ import re
 import sys
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
+from catalog_site import render_catalog
 
 ROOT=Path(__file__).resolve().parents[1]
 
@@ -68,7 +69,7 @@ def validate(root=ROOT):
             target=inside(unquote(parts.path),p.parent)
             check(target is not None and target.exists(),f'Broken/escaping link: {p.relative_to(root)} -> {link}')
         if p.is_relative_to(root/'skills') or p.is_relative_to(root/'references'):
-            check(not re.search(r'Codex Cloud|task-sub|Plan mode only|\[TODO:',text),f'Legacy runtime instruction or unfinished scaffold: {p.relative_to(root)}')
+            check(not re.search(r'Codex Cloud|task-sub|Use task briefs creation|Plan mode only|\[TODO:',text,re.I),f'Legacy runtime instruction or unfinished scaffold: {p.relative_to(root)}')
     check(not list(root.rglob('AGENTS.md')),'Package must not install project-level AGENTS.md')
     html=root/'CATALOG.html';check(html.is_file(),'Missing HTML catalog')
     if html.is_file():
@@ -81,6 +82,11 @@ def validate(root=ROOT):
                     p=inside(r['path'])
                     if p and p.is_file():check(r['body']==p.read_text(encoding='utf-8'),f'Stale HTML recipe: {r["id"]}')
             except ValueError:errors.append('Invalid embedded HTML data')
+        try:
+            expected=render_catalog(rows, root=root)
+            check(html.read_text(encoding='utf-8')==expected,'Stale HTML interface or translations; run catalog.py refresh')
+        except (OSError,ValueError,KeyError) as exc:
+            errors.append(f'Invalid catalog localization: {exc}')
     try:
         portable=json.loads((root/'plugin.json').read_text(encoding='utf-8'))
         for key in ('name','version','description','author','homepage','repository','license','keywords'):

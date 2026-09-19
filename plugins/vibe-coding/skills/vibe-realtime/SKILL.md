@@ -3,7 +3,7 @@ name: vibe-realtime
 description: "Audit, fix or verify client query caches, optimistic mutations, event sequence gaps, WebSocket/SSE reconnect, persisted state and rendering cost in realtime UIs."
 ---
 
-# Realtime-интерфейсы
+# Realtime interfaces
 
 Read [the shared workflow](../../references/workflow.md) once per task, then the one recipe matching the requested operation and boundary. Do not load every recipe. The user's request controls scope and whether edits are allowed.
 

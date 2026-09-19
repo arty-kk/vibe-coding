@@ -3,7 +3,7 @@ name: vibe-integrations
 description: "Audit, fix or verify outbound clients, deadlines, retries, trusted proxies, TLS, webhooks and server WebSocket/SSE lifecycle under bounded failure scenarios."
 ---
 
-# Интеграции и сеть
+# Integrations & networking
 
 Read [the shared workflow](../../references/workflow.md) once per task, then the one recipe matching the requested operation and boundary. Do not load every recipe. The user's request controls scope and whether edits are allowed.
 
