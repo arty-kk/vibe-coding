@@ -1,6 +1,6 @@
 # Privacy
 
-Vibe Coding is maintained by Arty S. ([arty-kk](https://github.com/arty-kk)).
+Vibe Coding is maintained by Arty S. / ARTSIOM SATSUK ([arty-kk](https://github.com/arty-kk)).
 
 The distributed plugin contains text instructions, a local catalog and local Python utilities. It has no publisher-operated backend, analytics, tracking pixels, cookies, account system or telemetry. Its catalog and packaging utilities do not send project contents to the publisher.
 

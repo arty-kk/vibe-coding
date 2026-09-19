@@ -1,6 +1,6 @@
 # Terms
 
-Vibe Coding is distributed by Arty S. ([arty-kk](https://github.com/arty-kk)) under the [MIT License](LICENSE). Use, modification and redistribution of the software are governed by that license.
+Vibe Coding is distributed by Arty S. / ARTSIOM SATSUK ([arty-kk](https://github.com/arty-kk)) under the [MIT License](LICENSE). Use, modification and redistribution of the software are governed by that license.
 
 The plugin has no subscription or paid publisher service. The host application and any external services you choose to use remain subject to their own terms and charges.
 
