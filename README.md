@@ -33,7 +33,7 @@ Use Vibe Coding. Map this repository and explain its main contracts.
 | Implement product behavior | `$vibe-product` | Implement the selected form behavior and verify its acceptance criteria. |
 | Check a release | `$vibe-quality` | Assess this release against its required checks and report remaining gaps. |
 
-Use the plugin picker if your host displays names as `vibe-coding:<skill>`. Requests can be written in English or Russian. The catalog interface and many examples are in Russian; engineering recipes are in English.
+Use the plugin picker if your host displays names as `vibe-coding:<skill>`. Requests can be written in English, Spanish, Russian or Chinese. The [web catalog](https://arty-kk.github.io/vibe-coding/) defaults to English and includes Español, Русский and 简体中文. It remembers your language choice and provides localized search, workflow titles, descriptions and prompts. Technical recipe instructions are in English.
 
 ## Engineering coverage
 

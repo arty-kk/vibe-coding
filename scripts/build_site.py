@@ -1,29 +1,120 @@
 #!/usr/bin/env python3
-"""Build the static catalog and policy pages using the standard library."""
+"""Build the English-first catalog and localized policy pages without dependencies."""
 from pathlib import Path
 import html
+import json
 import re
 import shutil
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE = ROOT / 'docs'
+SOURCE = ROOT / 'site'
 PLUGIN = ROOT / 'plugins/vibe-coding'
-SITE.mkdir(exist_ok=True)
-catalog = (PLUGIN / 'CATALOG.html').read_text(encoding='utf-8')
-catalog = catalog.replace('href="README.md"', 'href="https://github.com/arty-kk/vibe-coding#readme"')
-catalog = catalog.replace('</head>', '<link rel="icon" href="icon.png"><meta name="description" content="Vibe Coding: 43 Codex skills and 221 engineering workflows for mapping, review, debugging and verification."></head>')
-catalog = catalog.replace('<div class="starter"', '<p><a href="https://github.com/arty-kk/vibe-coding#install">Install Vibe Coding</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></p><div class="starter"')
-(SITE / 'index.html').write_text(catalog, encoding='utf-8', newline='\n')
-shutil.copy2(PLUGIN / 'assets/icon.png', SITE / 'icon.png')
-for name, source in [('privacy', 'PRIVACY.md'), ('terms', 'TERMS.md')]:
-    text = (ROOT / source).read_text(encoding='utf-8')
-    text = text.replace('(LICENSE)', '(https://github.com/arty-kk/vibe-coding/blob/main/LICENSE)')
-    def paragraph(raw):
-        escaped = html.escape(raw)
-        escaped = re.sub(r'\[([^\]]+)\]\((https://[^)]+)\)', r'<a href="\2">\1</a>', escaped)
-        return '<h1>'+escaped[2:]+'</h1>' if escaped.startswith('# ') else '<p>'+escaped+'</p>'
-    body = '\n'.join(paragraph(p) for p in text.split('\n\n'))
-    page = f'<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Vibe Coding — {name.title()}</title><style>body{{max-width:760px;margin:60px auto;padding:0 24px;background:#101212;color:#f0f4ed;font:17px/1.7 system-ui}}a{{color:#c3f078}}p{{overflow-wrap:anywhere}}</style><a href="./">Vibe Coding</a><main>{body}</main></html>'
-    (SITE / (name+'.html')).write_text(page, encoding='utf-8', newline='\n')
-(SITE / '.nojekyll').touch()
-print('Built docs/index.html, privacy.html and terms.html')
+LANGUAGES = {'en': 'English', 'es': 'Español', 'ru': 'Русский', 'zh-CN': '简体中文'}
+
+
+def load_locales():
+    return {code: json.loads((SOURCE/'locales'/f'{code}.json').read_text(encoding='utf-8'))
+            for code in LANGUAGES}
+
+
+def validate_locales(locales, rows):
+    expected = {
+        'categories': {row['skill'] for row in rows},
+        'summaries': {row['skill'] for row in rows},
+        'titles': {row['id'] for row in rows},
+        'modes': {row['mode'] for row in rows},
+        'policy': {'privacy', 'terms'},
+        'ui': set(locales['en']['ui']),
+    }
+    for language in LANGUAGES:
+        data = locales[language]
+        for section, keys in expected.items():
+            if set(data[section]) != keys:
+                raise ValueError(f'{language}: missing or unexpected {section} translations')
+            for key, value in data[section].items():
+                if not isinstance(value, str) or not value.strip():
+                    raise ValueError(f'{language}: empty {section}.{key}')
+                placeholders = set(re.findall(r'\{\w+\}', value))
+                base = set(re.findall(r'\{\w+\}', locales['en'][section][key]))
+                if placeholders != base:
+                    raise ValueError(f'{language}: mismatched placeholders in {section}.{key}')
+    for name in ('privacy', 'terms'):
+        if locales['en']['policy'][name] != (ROOT/f'{name.upper()}.md').read_text(encoding='utf-8'):
+            raise ValueError(f'Update policy translations after changing {name.upper()}.md')
+
+
+def script_json(value):
+    return json.dumps(value, ensure_ascii=False, separators=(',', ':')).replace('<', '\\u003c').replace('\u2028', '\\u2028').replace('\u2029', '\\u2029')
+
+
+def policy_html(markdown):
+    """Render the small policy subset; escape all source markup and allow HTTPS links."""
+    markdown = markdown.replace('(LICENSE)', '(https://github.com/arty-kk/vibe-coding/blob/main/LICENSE)')
+    paragraphs = []
+    for raw in markdown.strip().split('\n\n'):
+        heading = raw.startswith('# ')
+        text = html.escape(raw[2:] if heading else raw)
+        text = re.sub(r'\[([^\]]+)\]\((https://[^)]+)\)', r'<a href="\2">\1</a>', text)
+        tag = 'h1' if heading else 'p'
+        paragraphs.append(f'<{tag}>{text}</{tag}>')
+    return '\n'.join(paragraphs)
+
+
+def build(destination=SITE):
+    destination.mkdir(parents=True, exist_ok=True)
+    catalog = json.loads((PLUGIN/'catalog.json').read_text(encoding='utf-8'))
+    manifest = json.loads((PLUGIN/'plugin.json').read_text(encoding='utf-8'))
+    locales = load_locales()
+    rows = catalog['recipes']
+    validate_locales(locales, rows)
+    for locale in locales.values():
+        locale['policy'] = {name: policy_html(text) for name, text in locale['policy'].items()}
+    picker = '<label class="language-label"><span data-i18n="language">{{language}}</span><select id="language">'
+    picker += ''.join(f'<option value="{code}" lang="{code}">{label}</option>' for code, label in LANGUAGES.items())
+    picker += '</select></label>'
+    common = {
+        '__STYLE__': (SOURCE/'style.css').read_text(encoding='utf-8'),
+        '__LANGUAGE_PICKER__': picker,
+        '__LANGUAGE_JS__': (SOURCE/'language.js').read_text(encoding='utf-8'),
+        '__VERSION__': html.escape(manifest['version']),
+        '__SKILLS__': str(catalog['skills']),
+        '__COUNT__': str(len(rows)),
+        '__DOMAINS__': str(len({row['group'] for row in rows})),
+    }
+    expanded = []
+    for row in rows:
+        path = (PLUGIN/row['path']).resolve()
+        if not path.is_relative_to(PLUGIN.resolve()):
+            raise ValueError(f'Escaping recipe path: {row["path"]}')
+        expanded.append({key: row[key] for key in ('id', 'title', 'skill', 'mode')} | {'body': path.read_text(encoding='utf-8')})
+    for page in ('index', 'privacy', 'terms'):
+        template = 'catalog.html' if page == 'index' else 'policy.html'
+        replacements = dict(common)
+        if page == 'index':
+            replacements.update({
+                '__RECIPE_DATA__': script_json(expanded),
+                '__LOCALE_DATA__': script_json({code: {k: v for k, v in data.items() if k != 'policy'} for code, data in locales.items()}),
+                '__CATALOG_JS__': (SOURCE/'catalog.js').read_text(encoding='utf-8'),
+            })
+        else:
+            replacements.update({
+                '__POLICY_NAME__': page,
+                '__POLICY_TITLE__': html.escape(locales['en']['ui'][page]),
+                '__POLICY_BODY__': locales['en']['policy'][page],
+                '__LOCALE_DATA__': script_json({code: {'ui': data['ui'], 'policy': {page: data['policy'][page]}} for code, data in locales.items()}),
+            })
+        output = (SOURCE/template).read_text(encoding='utf-8')
+        # Translate template markup before embedding recipe text and JSON.
+        translate = lambda text: re.sub(r'\{\{(\w+)\}\}', lambda match: html.escape(locales['en']['ui'][match[1]]), text)
+        output = translate(output)
+        replacements['__LANGUAGE_PICKER__'] = translate(picker)
+        output = re.sub(r'__[A-Z_]+__', lambda match: replacements[match[0]], output)
+        (destination/f'{page}.html').write_text(output, encoding='utf-8', newline='\n')
+    shutil.copy2(PLUGIN/'assets/icon.png', destination/'icon.png')
+    (destination/'.nojekyll').touch()
+    print('Built English-first catalog and policies: en, es, ru, zh-CN')
+
+
+if __name__ == '__main__':
+    build()

@@ -8,4 +8,6 @@ When the plugin is used in Codex or ChatGPT, the host processes prompts, files a
 
 The public website is hosted on GitHub Pages. GitHub may process ordinary request information under its privacy policy. Information voluntarily posted in repository issues or pull requests is public and handled by GitHub. Do not post credentials, private source code or personal data.
 
+The website stores only your selected interface language in your browser's local storage. This preference is not sent to the publisher.
+
 Privacy questions can be raised at [https://github.com/arty-kk/vibe-coding/issues](https://github.com/arty-kk/vibe-coding/issues) without including sensitive details.

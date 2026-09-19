@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vibe Coding — __POLICY_TITLE__</title>
+  <link rel="icon" href="icon.png">
+  <style>__STYLE__</style>
+</head>
+<body data-policy="__POLICY_NAME__">
+<header><a class="brand" href="./" data-local-link>VIBE CODING</a>__LANGUAGE_PICKER__</header>
+<main class="policy"><a href="./" data-local-link data-i18n="back">{{back}}</a><article id="policy-content">__POLICY_BODY__</article></main>
+<script type="application/json" id="locale-data">__LOCALE_DATA__</script>
+<script>__LANGUAGE_JS__</script>
+<script>
+const policyName = document.body.dataset.policy;
+createLanguageManager(locale => {
+  document.title = 'Vibe Coding — ' + locale.ui[policyName];
+  document.getElementById('policy-content').innerHTML = locale.policy[policyName];
+});
+</script>
+</body>
+</html>
