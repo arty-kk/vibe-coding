@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.3
+
+- Improve plugin card color contrast against light backgrounds.
+
 ## 1.0.2
 
 - Normalize catalog paths across Windows, macOS and Linux.

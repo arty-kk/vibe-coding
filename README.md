@@ -59,7 +59,7 @@ Python 3.10 or later is required only for the local catalog and packaging tools.
 python3 plugins/vibe-coding/scripts/validate.py
 python3 -m unittest discover -s tests -v
 python3 plugins/vibe-coding/scripts/catalog.py search webhook --mode check
-python3 plugins/vibe-coding/scripts/package.py --output dist/vibe-coding-1.0.2.zip
+python3 plugins/vibe-coding/scripts/package.py --output dist/vibe-coding-1.0.3.zip
 ```
 
 See [Contributing](CONTRIBUTING.md), [installation](plugins/vibe-coding/docs/INSTALL.md), [privacy](PRIVACY.md) and [license](LICENSE).

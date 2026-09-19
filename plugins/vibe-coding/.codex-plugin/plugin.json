@@ -1,6 +1,6 @@
 {
   "name": "vibe-coding",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Evidence-based coding workflows: 43 skills, 221 domain recipes, scoped implementation and verification.",
   "author": {
     "name": "Arty S.",
@@ -22,7 +22,7 @@
     "websiteURL": "https://arty-kk.github.io/vibe-coding",
     "privacyPolicyURL": "https://arty-kk.github.io/vibe-coding/privacy.html",
     "termsOfServiceURL": "https://arty-kk.github.io/vibe-coding/terms.html",
-    "brandColor": "#C3F078",
+    "brandColor": "#537E1B",
     "composerIcon": "./assets/icon.png",
     "logo": "./assets/icon.png"
   },
