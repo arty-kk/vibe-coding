@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vibe · Тексты, локализация и SEO"
+  short_description: "Тексты продукта, локализация и поисковая видимость"
+  default_prompt: "Используй $vibe-content. Проверь тексты и локализацию выбранного сценария."

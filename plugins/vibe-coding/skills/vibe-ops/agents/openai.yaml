@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vibe · Инфраструктура и фоновые задачи"
+  short_description: "CI/CD, конфигурация и фоновые задачи"
+  default_prompt: "Используй $vibe-ops. Проверь обработку сбоев фоновой задачи."

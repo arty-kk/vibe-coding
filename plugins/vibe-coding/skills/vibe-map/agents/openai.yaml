@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vibe · Карта проекта"
+  short_description: "Устройство проекта, связи и владельцы правил"
+  default_prompt: "Используй $vibe-map. Разберись в проекте и составь его карту."

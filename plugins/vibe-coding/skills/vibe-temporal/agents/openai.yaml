@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vibe · Temporal"
+  short_description: "Детерминизм workflow, replay и совместимость версий"
+  default_prompt: "Используй $vibe-temporal. Проверь совместимость изменений Temporal с историями."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vibe · Доставка уведомлений"
+  short_description: "Уведомления, согласия, доставка и защита от дублей"
+  default_prompt: "Используй $vibe-notifications. Проверь, почему уведомления приходят дважды."

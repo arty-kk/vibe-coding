@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vibe · NoSQL"
+  short_description: "Ключи, индексы, согласованность и горячие партиции"
+  default_prompt: "Используй $vibe-nosql. Проверь конкурентные обновления в NoSQL."

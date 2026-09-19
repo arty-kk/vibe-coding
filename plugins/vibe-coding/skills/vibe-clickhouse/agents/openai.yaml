@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vibe · ClickHouse"
+  short_description: "Загрузка данных, движки таблиц и стоимость запросов"
+  default_prompt: "Используй $vibe-clickhouse. Проверь дубли и нагрузку в ClickHouse."

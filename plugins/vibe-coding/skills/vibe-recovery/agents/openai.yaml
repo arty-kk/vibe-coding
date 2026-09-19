@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vibe · Доставка и восстановление"
+  short_description: "Релизы, резервные копии, rollback и восстановление"
+  default_prompt: "Используй $vibe-recovery. Проверь возможность восстановления из резервной копии."

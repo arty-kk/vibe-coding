@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vibe · Kubernetes"
+  short_description: "Развёртывание, ресурсы и восстановление Kubernetes"
+  default_prompt: "Используй $vibe-kubernetes. Проверь rollout и завершение подов Kubernetes."

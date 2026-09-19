@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vibe · Флаги и rollout"
+  short_description: "Флаги функций, аудитории и откат изменений"
+  default_prompt: "Используй $vibe-flags. Проверь выключение функции и поведение при сбое флагов."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vibe · Задачи и синтез"
+  short_description: "Постановка задач, разбиение и синтез результатов"
+  default_prompt: "Используй $vibe-task. Подготовь понятную задачу из моего запроса."

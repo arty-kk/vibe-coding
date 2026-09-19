@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vibe · Мобильные приложения"
+  short_description: "Навигация, offline, разрешения и выпуск приложения"
+  default_prompt: "Используй $vibe-mobile. Проверь сценарий offline и последующую синхронизацию."

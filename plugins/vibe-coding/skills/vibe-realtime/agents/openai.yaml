@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vibe · Realtime-интерфейсы"
+  short_description: "Кэш клиента, optimistic updates и восстановление связи"
+  default_prompt: "Используй $vibe-realtime. Проверь состояние интерфейса после потери соединения."

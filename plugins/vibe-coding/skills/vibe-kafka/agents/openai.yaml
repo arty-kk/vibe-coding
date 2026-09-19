@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vibe · Kafka и Redpanda"
+  short_description: "События, offsets, повторная доставка и rebalance"
+  default_prompt: "Используй $vibe-kafka. Проверь потерю и дублирование событий Kafka."

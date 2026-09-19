@@ -1,0 +1,44 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "vibe-coding",
+  "version": "1.0.1",
+  "description": "Evidence-based coding workflows: 43 skills, 221 domain recipes, scoped implementation and verification.",
+  "author": {
+    "name": "Arty S.",
+    "url": "https://github.com/arty-kk"
+  },
+  "keywords": [
+    "vibe-coding",
+    "review",
+    "debugging",
+    "architecture",
+    "quality",
+    "russian"
+  ],
+  "repository": "https://github.com/arty-kk/vibe-coding",
+  "homepage": "https://arty-kk.github.io/vibe-coding",
+  "license": "MIT",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Vibe Coding",
+        "shortDescription": "Map, review, fix and verify code with evidence.",
+        "longDescription": "Vibe Coding provides 43 focused skills and 221 engineering workflows for repository mapping, task planning, code review, debugging, implementation and release checks. It covers product, backend, data, infrastructure and AI systems. Each workflow works from current code and verifiable behavior, respects the requested scope, and reports changes, checks and remaining limitations.",
+        "developerName": "Arty S.",
+        "category": "Productivity",
+        "capabilities": [],
+        "defaultPrompt": [
+          "Map this repository and explain its main contracts.",
+          "Review this branch and report actionable defects.",
+          "Find and fix one backend bug, then verify the change."
+        ],
+        "websiteURL": "https://arty-kk.github.io/vibe-coding",
+        "privacyPolicyURL": "https://arty-kk.github.io/vibe-coding/privacy.html",
+        "termsOfServiceURL": "https://arty-kk.github.io/vibe-coding/terms.html",
+        "brandColor": "#C3F078",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/icon.png"
+      }
+    }
+  }
+}

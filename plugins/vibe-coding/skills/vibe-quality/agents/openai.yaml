@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vibe · Качество и готовность"
+  short_description: "Тестовое покрытие и готовность к выпуску"
+  default_prompt: "Используй $vibe-quality. Проверь готовность текущих изменений к выпуску."

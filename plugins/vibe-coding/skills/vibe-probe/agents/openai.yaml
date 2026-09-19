@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vibe · Быстрый поиск ошибок"
+  short_description: "Одна область, доказанный баг и проверка исправления"
+  default_prompt: "Используй $vibe-probe. Найди и исправь один баг в новой области backend."

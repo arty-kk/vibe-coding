@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vibe · Проверка изменений"
+  short_description: "Проверка полного патча и затронутых контрактов"
+  default_prompt: "Используй $vibe-review. Проверь текущий патч и исправь доказанные ошибки."

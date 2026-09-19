@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vibe Coding"
+  short_description: "Выбор рабочего сценария и навигация по плагину"
+  default_prompt: "Используй $vibe и выбери подходящий сценарий для моей задачи."

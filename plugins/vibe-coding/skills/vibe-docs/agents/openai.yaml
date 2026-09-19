@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vibe · Документация и рефакторинг"
+  short_description: "README, дизайн-документация и границы рефакторинга"
+  default_prompt: "Используй $vibe-docs. Обнови README по реальному устройству проекта."

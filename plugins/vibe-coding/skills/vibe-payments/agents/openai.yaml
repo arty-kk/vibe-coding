@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vibe · Платежи"
+  short_description: "Платёжные события, сверка состояния и права тарифа"
+  default_prompt: "Используй $vibe-payments. Проверь повторные и запоздавшие платёжные webhooks."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vibe · Безопасность и приватность"
+  short_description: "Безопасность, приватность и журнал действий"
+  default_prompt: "Используй $vibe-security. Проверь выбранный путь доступа к данным."

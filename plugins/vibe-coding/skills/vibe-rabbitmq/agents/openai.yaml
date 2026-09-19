@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vibe · RabbitMQ"
+  short_description: "Маршрутизация, подтверждения и повторная доставка"
+  default_prompt: "Используй $vibe-rabbitmq. Проверь обработку повторной доставки RabbitMQ."

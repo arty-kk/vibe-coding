@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vibe · Поисковые индексы"
+  short_description: "Поисковые индексы, свежесть результатов и права"
+  default_prompt: "Используй $vibe-search. Проверь удаление документов из результатов поиска."

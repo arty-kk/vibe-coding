@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vibe · Кэш и свежесть"
+  short_description: "Ключи кэша, инвалидация и актуальность данных"
+  default_prompt: "Используй $vibe-cache. Проверь устаревшие данные после обновления записи."

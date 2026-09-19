@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vibe · Надёжность и производительность"
+  short_description: "Сбои, гонки, согласованность и производительность"
+  default_prompt: "Используй $vibe-reliability. Найди причину повторного выполнения операции."

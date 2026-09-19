@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vibe · Terraform"
+  short_description: "Планы Terraform, состояние и перенос ресурсов"
+  default_prompt: "Используй $vibe-terraform. Проверь план Terraform на замену и потерю ресурсов."

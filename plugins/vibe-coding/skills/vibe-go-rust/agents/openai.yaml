@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vibe · Сервисы Go и Rust"
+  short_description: "Конкурентность и завершение сервисов Go и Rust"
+  default_prompt: "Используй $vibe-go-rust. Проверь отмену и завершение параллельных операций."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vibe · Метрики, логи и алерты"
+  short_description: "Метрики, логи, дашборды и полезные оповещения"
+  default_prompt: "Используй $vibe-observability. Проверь метрики и алерты выбранного сервиса."

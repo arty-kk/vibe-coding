@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vibe · Интеграции и сеть"
+  short_description: "Внешние API, webhooks, таймауты и сетевые сбои"
+  default_prompt: "Используй $vibe-integrations. Проверь обработку таймаутов внешнего API."
