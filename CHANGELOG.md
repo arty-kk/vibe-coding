@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.2
+
+- Normalize catalog paths across Windows, macOS and Linux.
+
 ## 1.0.1
 
 - Public marketplace installation for Codex.

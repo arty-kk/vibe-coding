@@ -28,7 +28,7 @@ Python 3.10+:
 python3 scripts/catalog.py search webhook --mode check
 python3 scripts/catalog.py show patch-checking
 python3 scripts/validate.py
-python3 scripts/package.py --output ../vibe-coding-1.0.1.zip
+python3 scripts/package.py --output ../vibe-coding-1.0.2.zip
 ```
 
 MIT License. No bundled MCP server, account connection or telemetry.

@@ -56,7 +56,7 @@ def validate(root=ROOT):
         check(r['mode'] in {'audit','implement','check','map','plan','document','closure','review','probe'},f'Invalid mode: {r["id"]}')
         if p and p.is_file():check(hashlib.sha256(p.read_bytes()).hexdigest()==r['sha256'],f'Stale recipe hash: {r["id"]}; run catalog.py refresh')
         if r['skill'] in skills:check(Path(r['path']).name in skills[r['skill']].read_text(encoding='utf-8'),f'Recipe not reachable from skill: {r["id"]}')
-    actual={str(p.relative_to(root)) for p in (root/'skills').glob('*/references/*.md')}
+    actual={p.relative_to(root).as_posix() for p in (root/'skills').glob('*/references/*.md')}
     check(actual==set(paths),'Unindexed or missing recipe files')
     for p in root.rglob('*'):
         check(not p.is_symlink(),f'Symlink in package: {p.relative_to(root)}')
