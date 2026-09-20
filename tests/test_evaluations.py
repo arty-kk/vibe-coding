@@ -36,6 +36,8 @@ class EvaluationRecordTests(unittest.TestCase):
                 self.assertTrue(result['reason'])
 
     def test_required_behavior_records_are_complete_and_bounded(self):
+        manifest = json.loads((ROOT/'plugins/vibe-coding/plugin.json').read_text(encoding='utf-8'))
+        self.assertEqual(manifest['version'], self.record['release'])
         cases = {row['id']: row for row in self.record['behaviors']}
         self.assertEqual({'serverless-required-write', 'mcp-http-readonly-control', 'react-hydration-preference'}, set(cases))
         for case in cases.values():
