@@ -3,6 +3,7 @@ from pathlib import Path
 import html
 import json
 import re
+from search_index import build_index
 
 ROOT = Path(__file__).resolve().parents[1]
 LANGUAGES = {'en': 'English', 'es': 'Español', 'ru': 'Русский', 'zh-CN': '简体中文'}
@@ -95,6 +96,7 @@ def render_catalog(rows, root=ROOT, offline=True):
         '__COUNT__': str(len(rows)),
         '__DOMAINS__': str(len({row['group'] for row in rows})),
         '__RECIPE_DATA__': script_json(expanded),
+        '__SEARCH_DATA__': script_json(build_index(rows, locales, root)),
         '__LOCALE_DATA__': script_json({code: {k: v for k, v in data.items() if k != 'policy'} for code, data in locales.items()}),
         '__CATALOG_JS__': (source/'catalog.js').read_text(encoding='utf-8'),
     }

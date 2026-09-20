@@ -16,3 +16,5 @@ Read [the shared workflow](../../references/workflow.md) once per task, then the
 | [Cache Invalidation Polish](references/cache-invalidation-polish.md) | implement |
 
 For an explicit multi-stage request, follow the necessary stages without discarding requested work. For a single stage, deliver that result and stop. Use [the catalog](../../references/catalog.md) only if the requested boundary belongs elsewhere.
+
+Client optimistic state and reconnect belong to [Realtime](../vibe-realtime/SKILL.md); server rendering and serialized responses belong to [Web](../vibe-web/SKILL.md). This skill owns shared cache identity, invalidation and freshness.

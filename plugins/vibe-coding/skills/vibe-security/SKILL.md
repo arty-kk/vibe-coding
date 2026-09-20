@@ -11,6 +11,8 @@ Read [the shared workflow](../../references/workflow.md) once per task, then the
 
 | Recipe | Operation |
 |---|---|
+| [Build Supply Chain Audit](references/build-supply-chain-audit.md) | audit |
+| [Build Supply Chain Polish](references/build-supply-chain-polish.md) | implement |
 | [Audit Logging Compliance Audit](references/audit-logging-compliance-audit.md) | audit |
 | [Audit Logging Compliance Polish](references/audit-logging-compliance-polish.md) | implement |
 | [Audit Trail Integrity Check](references/audit-trail-integrity-check.md) | check |
@@ -24,3 +26,5 @@ Read [the shared workflow](../../references/workflow.md) once per task, then the
 | [System Security Hardening Polish](references/system-security-hardening-polish.md) | implement |
 
 For an explicit multi-stage request, follow the necessary stages without discarding requested work. For a single stage, deliver that result and stop. Use [the catalog](../../references/catalog.md) only if the requested boundary belongs elsewhere.
+
+Build Supply Chain owns untrusted inputs, dependency execution and CI privileges. Verification of an already built artifact belongs to [Recovery](../vibe-recovery/SKILL.md).

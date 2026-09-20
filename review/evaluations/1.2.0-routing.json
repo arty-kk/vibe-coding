@@ -1,0 +1,170 @@
+[
+  {
+    "id": "ai-rag",
+    "skill": "vibe-ai",
+    "mode": "audit",
+    "edits_authorized": false,
+    "reason": "Existing RAG relevance evaluation and answer grounding are AI retrieval/model quality concerns. The request explicitly prohibits code changes."
+  },
+  {
+    "id": "harness-resume",
+    "skill": "vibe-harness",
+    "mode": "implement",
+    "edits_authorized": true,
+    "reason": "Duplicate durable business effects after checkpoint resume are owned by Harness execution and side-effect recovery. Fix authorizes relevant local changes."
+  },
+  {
+    "id": "mcp-http",
+    "skill": "vibe-mcp",
+    "mode": "audit",
+    "edits_authorized": false,
+    "reason": "MCP HTTP tool contracts and protocol-header negotiation select MCP Server Audit. Findings only explicitly excludes edits."
+  },
+  {
+    "id": "ai-not-mcp",
+    "skill": "vibe-ai",
+    "mode": "check",
+    "edits_authorized": false,
+    "reason": "The target is AI evaluation coverage of misleading tool results, with MCP explicitly excluded. Verify selects check without edits; the revised AI entrypoint explicitly supports verification using the relevant audit recipe and measured acceptance criteria."
+  },
+  {
+    "id": "cache-stale",
+    "skill": "vibe-cache",
+    "mode": "audit",
+    "edits_authorized": false,
+    "reason": "Staleness in a shared Redis read cache after an authoritative database write is cache invalidation/coherency rather than Redis queue delivery. Audit alone does not authorize edits."
+  },
+  {
+    "id": "realtime-gap",
+    "skill": "vibe-realtime",
+    "mode": "implement",
+    "edits_authorized": true,
+    "reason": "A client query cache missing event sequence data across WebSocket reconnect is Realtime state reconciliation. Fix authorizes relevant local changes."
+  },
+  {
+    "id": "web-hydration",
+    "skill": "vibe-web",
+    "mode": "implement",
+    "edits_authorized": true,
+    "reason": "The first browser render differing from server HTML is an SSR/hydration boundary. Fix selects Web Rendering implementation and authorizes relevant edits."
+  },
+  {
+    "id": "web-action",
+    "skill": "vibe-web",
+    "mode": "audit",
+    "edits_authorized": false,
+    "reason": "Web Rendering Audit explicitly covers server-action authorization at the server/client mutation boundary. Leave files unchanged excludes edits."
+  },
+  {
+    "id": "domain-role",
+    "skill": "vibe-domain",
+    "mode": "audit",
+    "edits_authorized": false,
+    "reason": "Tenant roles and local entitlement decisions are Domain policy, while provider payments are explicitly excluded. Audit selects inspection without edits."
+  },
+  {
+    "id": "payments-events",
+    "skill": "vibe-payments",
+    "mode": "implement",
+    "edits_authorized": true,
+    "reason": "Signed payment-provider event duplication and ordering belong to Payments adapter idempotency and event handling. Fix authorizes relevant local changes."
+  },
+  {
+    "id": "payments-reconcile",
+    "skill": "vibe-payments",
+    "mode": "check",
+    "edits_authorized": false,
+    "reason": "Provider-ledger and local-subscription consistency selects Payments Webhook and Reconciliation Check. Verify alone does not authorize changes."
+  },
+  {
+    "id": "domain-business",
+    "skill": "vibe-domain",
+    "mode": "implement",
+    "edits_authorized": true,
+    "reason": "Mapping internal plan entitlements to document-export permissions is a local business rule owned by Domain. Fix authorizes relevant local changes."
+  },
+  {
+    "id": "backend-evolution",
+    "skill": "vibe-backend",
+    "mode": "audit",
+    "edits_authorized": false,
+    "reason": "OpenAPI response evolution and compatibility with older generated clients explicitly select Backend API Contract Evolution Audit. No edits are requested."
+  },
+  {
+    "id": "compat-reference",
+    "skill": "vibe-compatibility",
+    "mode": "implement",
+    "edits_authorized": true,
+    "reason": "Explicitly implementing a decoder compatible with an authorized binary format selects Compatibility Reverse Engineering Polish. The supplied reference implementation and differential fixtures establish the comparison boundary. Implement authorizes relevant local decoder changes and validation; no routing or edit-authorization ambiguity remains."
+  },
+  {
+    "id": "backend-protobuf",
+    "skill": "vibe-backend",
+    "mode": "check",
+    "edits_authorized": false,
+    "reason": "The Backend API Contract Compatibility Check explicitly covers old/new producer-consumer combinations, generated artifacts, and Protobuf binary/ProtoJSON paths. Verify authorizes inspection, not edits."
+  },
+  {
+    "id": "compat-behavior",
+    "skill": "vibe-compatibility",
+    "mode": "audit",
+    "edits_authorized": false,
+    "reason": "Behavioral differences between an adapter and its authorized reference runtime select Compatibility Reverse Engineering Audit. Do not edit is explicit."
+  },
+  {
+    "id": "security-ci",
+    "skill": "vibe-security",
+    "mode": "audit",
+    "edits_authorized": false,
+    "reason": "Untrusted pull-request execution reaching CI publishing credentials is a Build Supply Chain trust and privilege boundary owned by Security. Audit alone does not authorize changes."
+  },
+  {
+    "id": "recovery-artifact",
+    "skill": "vibe-recovery",
+    "mode": "check",
+    "edits_authorized": false,
+    "reason": "Source/build/published-byte identity selects Release Artifact Trust Check, with rollback guarantees also inside Recovery. Verify alone does not authorize edits, release promotion, or a live rollback."
+  },
+  {
+    "id": "security-deps",
+    "skill": "vibe-security",
+    "mode": "implement",
+    "edits_authorized": true,
+    "reason": "Dependency lifecycle-script execution belongs to Security Build Supply Chain. The requested fix authorizes relevant local corrections to the evidenced trust boundary."
+  },
+  {
+    "id": "recovery-restore",
+    "skill": "vibe-recovery",
+    "mode": "audit",
+    "edits_authorized": false,
+    "reason": "Backup restore integrity and recovery-point objectives are Delivery Recovery audit concerns. Audit does not authorize edits or operational restore drills."
+  },
+  {
+    "id": "ops-incident",
+    "skill": "vibe-ops",
+    "mode": "audit",
+    "edits_authorized": false,
+    "reason": "Observed error-rate incident investigation using logs and deployment timing selects Ops Incident Triage Audit. Hypotheses only and no edits explicitly constrain the operation."
+  },
+  {
+    "id": "serverless-lifetime",
+    "skill": "vibe-serverless",
+    "mode": "implement",
+    "edits_authorized": true,
+    "reason": "A Workers-style handler ending successfully before invocation-owned storage completes is a Serverless lifetime/side-effect ownership defect. Fix authorizes relevant local edits, and this owner is now directly listed in the catalog."
+  },
+  {
+    "id": "serverless-batch",
+    "skill": "vibe-serverless",
+    "mode": "check",
+    "edits_authorized": false,
+    "reason": "Lambda event-source duplicates and partial-batch outcomes select Serverless Invocation Check. Verify alone does not authorize changes."
+  },
+  {
+    "id": "ops-recovery",
+    "skill": "vibe-ops",
+    "mode": "check",
+    "edits_authorized": false,
+    "reason": "Fresh evidence that incident remediation restored the affected user operation selects Ops Incident Recovery Check. The target is recovery of user behavior, not backup machinery; verification does not authorize product or operational changes."
+  }
+]

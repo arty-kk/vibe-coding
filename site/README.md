@@ -9,9 +9,10 @@ The shared renderer is `plugins/vibe-coding/scripts/catalog_site.py`. Counts and
 Run from the repository root:
 
 ```sh
+python3 -m pip install -r plugins/vibe-coding/requirements.txt
 python3 plugins/vibe-coding/scripts/catalog.py refresh
 python3 scripts/build_site.py
 python3 -m unittest discover -s tests -v
 ```
 
-Do not edit generated HTML directly. Before publishing, check all four languages on desktop and mobile: search, filters, prompt copying, workflow links, saved preferences and policy navigation. Search matches every translation and ignores accents. For the packaged catalog, verify that runtime resources are local and policy links lead to the public website.
+Do not edit generated HTML directly. Before publishing, check all four languages on desktop and mobile: search, filters, prompt copying, workflow links, saved preferences and policy navigation. Search ranks titles, translations and explicit keywords above recipe-body matches and ignores accents. CLI, website and offline catalog share the generated index. For the packaged catalog, verify that runtime resources are local and policy links lead to the public website.

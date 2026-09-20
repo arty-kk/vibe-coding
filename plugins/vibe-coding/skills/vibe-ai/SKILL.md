@@ -30,3 +30,7 @@ Read [the shared workflow](../../references/workflow.md) once per task, then the
 | [RAG Polish](references/rag-polish.md) | implement |
 
 For an explicit multi-stage request, follow the necessary stages without discarding requested work. For a single stage, deliver that result and stop. Use [the catalog](../../references/catalog.md) only if the requested boundary belongs elsewhere.
+
+Use [MCP](../vibe-mcp/SKILL.md) for protocol/transport conformance and [Harness](../vibe-harness/SKILL.md) for durable execution/checkpoint recovery. This skill owns model decisions, grounding and tool-selection quality.
+
+For a verification-only request, apply the relevant audit recipe to the stated acceptance criteria and report the measured result and gaps. Verification alone does not authorize implementation; a separate check recipe is not required.

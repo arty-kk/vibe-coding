@@ -1,0 +1,93 @@
+diff --git a/README.md b/README.md
+index bfc3441..0ffdeec 100644
+--- a/README.md
++++ b/README.md
+@@ -2,4 +2,6 @@
+ 
+ Workers-style handler with an injected storage binding. A 201 response promises that the event is stored; a failed write must not produce a successful response. The storage client is reusable. Run `node --test`.
+ 
++The handler awaits `STORE.put(event.id, event.value)` before returning `201 Saved`. A rejected write rejects the invocation. This assumes that the binding's resolved promise marks storage completion; provider-specific HTTP error mapping and caller retry policy are not modeled here.
++
+ This local fixture has no cloud credentials or deployment. It models the handler/storage promise boundary, not provider scheduling or quotas.
+diff --git a/handler.mjs b/handler.mjs
+index 07e6223..ee847e5 100644
+--- a/handler.mjs
++++ b/handler.mjs
+@@ -1,7 +1,7 @@
+ export default {
+   async fetch(request, env, ctx) {
+     const event = await request.json();
+-    env.STORE.put(event.id, event.value);
++    await env.STORE.put(event.id, event.value);
+     return new Response('Saved', { status: 201 });
+   }
+ };
+diff --git a/handler.test.mjs b/handler.test.mjs
+index b47cd21..c2f43e5 100644
+--- a/handler.test.mjs
++++ b/handler.test.mjs
+@@ -9,5 +9,63 @@ test('accepts the event', async () => {
+     method: 'POST', body: JSON.stringify({ id: 'event-1', value: 'note' })
+   }), env, { waitUntil() {} });
+   assert.equal(response.status, 201);
+-  assert.equal(writes.length, 1);
++  assert.deepEqual(writes, [['event-1', 'note']]);
++});
++
++function deferred() {
++  let resolve;
++  let reject;
++  const promise = new Promise((resolvePromise, rejectPromise) => {
++    resolve = resolvePromise;
++    reject = rejectPromise;
++  });
++  return { promise, resolve, reject };
++}
++
++test('reports Saved only after the storage write completes', async () => {
++  const write = deferred();
++  const started = deferred();
++  const env = { STORE: { put: () => {
++    started.resolve();
++    return write.promise;
++  } } };
++  let responseSettled = false;
++  const responsePromise = handler.fetch(new Request('https://example.invalid', {
++    method: 'POST', body: JSON.stringify({ id: 'event-1', value: 'note' })
++  }), env, { waitUntil() {} });
++  responsePromise.then(
++    () => { responseSettled = true; },
++    () => { responseSettled = true; }
++  );
++
++  await started.promise;
++  await Promise.resolve();
++  const settledBeforeWriteCompleted = responseSettled;
++  write.resolve();
++  const response = await responsePromise;
++
++  assert.equal(settledBeforeWriteCompleted, false,
++    'The response must remain pending while the required write is pending');
++  assert.equal(response.status, 201);
++  assert.equal(await response.text(), 'Saved');
++});
++
++test('propagates storage failure instead of reporting Saved', async () => {
++  const write = deferred();
++  const started = deferred();
++  const failure = new Error('Storage unavailable');
++  // Observe the write rejection even when the unfixed handler ignores it.
++  write.promise.catch(() => {});
++  const env = { STORE: { put: () => {
++    started.resolve();
++    return write.promise;
++  } } };
++  const responsePromise = handler.fetch(new Request('https://example.invalid', {
++    method: 'POST', body: JSON.stringify({ id: 'event-1', value: 'note' })
++  }), env, { waitUntil() {} });
++  const rejectedResponse = assert.rejects(responsePromise, error => error === failure);
++
++  await started.promise;
++  write.reject(failure);
++  await rejectedResponse;
+ });

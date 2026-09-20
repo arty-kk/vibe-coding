@@ -16,6 +16,7 @@ Choose the smallest suitable workflow from the user's requested outcome. Use [th
 | Check tests or release readiness | [Quality](../vibe-quality/SKILL.md) |
 | MCP protocol, tool contracts or transport authorization | [MCP](../vibe-mcp/SKILL.md) |
 | SSR, hydration, serialized data or server actions | [Web rendering](../vibe-web/SKILL.md) |
+| Serverless invocation lifetime, duplicate triggers or edge limits | [Serverless](../vibe-serverless/SKILL.md) |
 | Named domain, framework or infrastructure | [Domain catalog](../../references/catalog.md) |
 | Check stale maps or maintain this package | [Workflow](../vibe-workflow/SKILL.md) |
 

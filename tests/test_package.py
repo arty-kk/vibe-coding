@@ -45,10 +45,10 @@ class PackageTests(unittest.TestCase):
                              ('SSR', 'vibe-web'), ('hidratacion', 'vibe-web'),
                              ('гидратация', 'vibe-web')]:
             with self.subTest(query=query):
-                found = catalog.search(rows, query)
+                found = catalog.search(rows, query, skill=skill)
                 self.assertEqual(3, len(found))
                 self.assertTrue(all(row['skill'] == skill for row in found))
-        self.assertEqual(['oauth-oidc-session-check'], [r['id'] for r in catalog.search(rows, 'OAuth', mode='check')])
+        self.assertEqual(['oauth-oidc-session-check'], [r['id'] for r in catalog.search(rows, 'OAuth', mode='check', skill='vibe-domain')])
 
     def test_old_or_incomplete_instructions_are_detected(self):
         with tempfile.TemporaryDirectory() as d:
@@ -110,7 +110,7 @@ class PackageTests(unittest.TestCase):
                 self.assertFalse(any('__pycache__' in n or '/.git/' in n for n in z.namelist()))
                 z.extractall(Path(d)/'extracted')
             extracted = Path(d)/'extracted/vibe-coding'
-            result = subprocess.run([sys.executable, str(extracted/'scripts/catalog.py'), 'search', 'MCP', '--lang', 'zh-CN', '--json'],
+            result = subprocess.run([sys.executable, str(extracted/'scripts/catalog.py'), 'search', 'MCP', '--skill', 'vibe-mcp', '--lang', 'zh-CN', '--json'],
                                     check=True, capture_output=True, encoding='utf-8')
             rows = json.loads(result.stdout)
             self.assertEqual(3, len(rows))

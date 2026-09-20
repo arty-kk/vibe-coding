@@ -17,6 +17,9 @@ Implement one selected, evidence-backed Consistency Invariants improvement at th
 
 ## Validation
 
+- Keep the domain write and outbox intent in the same commit; coordinate inbox identity and consumer effect atomically, or identify the external idempotency/reconciliation owner.
 - Run failure-window tests around commit/publish/cache/status ordering.
 - Exercise duplicate, reorder, stale read, retry, restart, and reconciliation to prove convergence.
 - Record distributed/environment gates not reproducible locally.
+
+For database-to-event delivery, select relevant cases from [Transactional Delivery Check](transactional-delivery-check.md).

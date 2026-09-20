@@ -1,0 +1,149 @@
+{
+  "version": 1,
+  "cases": [
+    {
+      "id": "ai-rag",
+      "prompt": "Audit the relevance evaluation and grounded answers of our existing RAG feature; do not change code.",
+      "expected_skill": "vibe-ai",
+      "expected_mode": "audit"
+    },
+    {
+      "id": "harness-resume",
+      "prompt": "Fix duplicate business effects after our agent checkpoint resumes a paused tool step.",
+      "expected_skill": "vibe-harness",
+      "expected_mode": "implement"
+    },
+    {
+      "id": "mcp-http",
+      "prompt": "Audit the MCP HTTP tool contract and protocol header negotiation; findings only.",
+      "expected_skill": "vibe-mcp",
+      "expected_mode": "audit"
+    },
+    {
+      "id": "ai-not-mcp",
+      "prompt": "We call the model directly without MCP. Verify the AI feature evaluation covers misleading tool results.",
+      "expected_skill": "vibe-ai",
+      "expected_mode": "check"
+    },
+    {
+      "id": "cache-stale",
+      "prompt": "Audit why the shared Redis read cache remains stale after an authoritative database write.",
+      "expected_skill": "vibe-cache",
+      "expected_mode": "audit"
+    },
+    {
+      "id": "realtime-gap",
+      "prompt": "Fix the client query cache when a WebSocket reconnect misses an event sequence.",
+      "expected_skill": "vibe-realtime",
+      "expected_mode": "implement"
+    },
+    {
+      "id": "web-hydration",
+      "prompt": "Fix the first browser render mismatch against server-rendered HTML.",
+      "expected_skill": "vibe-web",
+      "expected_mode": "implement"
+    },
+    {
+      "id": "web-action",
+      "prompt": "Audit authorization inside an SSR application server action; leave files unchanged.",
+      "expected_skill": "vibe-web",
+      "expected_mode": "audit"
+    },
+    {
+      "id": "domain-role",
+      "prompt": "Audit tenant-scoped roles and entitlement decisions in our application; the payment provider is out of scope.",
+      "expected_skill": "vibe-domain",
+      "expected_mode": "audit"
+    },
+    {
+      "id": "payments-events",
+      "prompt": "Fix duplicate and out-of-order signed payment provider events in the billing adapter.",
+      "expected_skill": "vibe-payments",
+      "expected_mode": "implement"
+    },
+    {
+      "id": "payments-reconcile",
+      "prompt": "Verify reconciliation between the payment provider ledger and our local subscription state.",
+      "expected_skill": "vibe-payments",
+      "expected_mode": "check"
+    },
+    {
+      "id": "domain-business",
+      "prompt": "Fix the business rule mapping our internal plan entitlement to allowed document exports.",
+      "expected_skill": "vibe-domain",
+      "expected_mode": "implement"
+    },
+    {
+      "id": "backend-evolution",
+      "prompt": "Audit backward compatibility of an OpenAPI response schema with old generated clients.",
+      "expected_skill": "vibe-backend",
+      "expected_mode": "audit"
+    },
+    {
+      "id": "compat-reference",
+      "prompt": "Implement a decoder compatible with an undocumented authorized binary file format using the supplied reference implementation and differential fixtures.",
+      "expected_skill": "vibe-compatibility",
+      "expected_mode": "implement"
+    },
+    {
+      "id": "backend-protobuf",
+      "prompt": "Verify a mixed-version rollout after a Protobuf field change using our contract and consumer fixtures.",
+      "expected_skill": "vibe-backend",
+      "expected_mode": "check"
+    },
+    {
+      "id": "compat-behavior",
+      "prompt": "Audit behavioral differences between our compatibility adapter and the authorized reference runtime; do not edit.",
+      "expected_skill": "vibe-compatibility",
+      "expected_mode": "audit"
+    },
+    {
+      "id": "security-ci",
+      "prompt": "Audit whether untrusted pull request code can execute in a CI job holding publishing credentials.",
+      "expected_skill": "vibe-security",
+      "expected_mode": "audit"
+    },
+    {
+      "id": "recovery-artifact",
+      "prompt": "Verify that the exact release artifact we promote is tied to the expected source commit and can be rolled back.",
+      "expected_skill": "vibe-recovery",
+      "expected_mode": "check"
+    },
+    {
+      "id": "security-deps",
+      "prompt": "Fix the dependency installation trust boundary exposed by the supplied lifecycle-script exploit.",
+      "expected_skill": "vibe-security",
+      "expected_mode": "implement"
+    },
+    {
+      "id": "recovery-restore",
+      "prompt": "Audit backup restore integrity and the recorded recovery-point objective.",
+      "expected_skill": "vibe-recovery",
+      "expected_mode": "audit"
+    },
+    {
+      "id": "ops-incident",
+      "prompt": "Triage the current error-rate incident from supplied logs and deployment timestamps; propose hypotheses only, no edits.",
+      "expected_skill": "vibe-ops",
+      "expected_mode": "audit"
+    },
+    {
+      "id": "serverless-lifetime",
+      "prompt": "Fix a Workers-style handler that reports success before its invocation-owned storage operation finishes.",
+      "expected_skill": "vibe-serverless",
+      "expected_mode": "implement"
+    },
+    {
+      "id": "serverless-batch",
+      "prompt": "Verify duplicate and partial-batch handling for this Lambda event-source invocation.",
+      "expected_skill": "vibe-serverless",
+      "expected_mode": "check"
+    },
+    {
+      "id": "ops-recovery",
+      "prompt": "Verify that the incident remediation restored the affected user operation using the incident timeline and fresh measurements.",
+      "expected_skill": "vibe-ops",
+      "expected_mode": "check"
+    }
+  ]
+}

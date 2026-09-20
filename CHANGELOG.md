@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.2.0
+
+- Add 13 workflows for API/schema evolution, transactional delivery, build trust, incident response and serverless/edge invocation lifecycles; expand to 46 skills and 241 workflows.
+- Rebuild all 20 workflows introduced in 1.1.0 and 1.2.0 around explicit input, domain invariants, evidence rules, operation-specific execution, completion gates and output contracts.
+- Make audit priorities and finding acceptance explicit; require owner/consumer completion for implementation and an evidenced passed/failed/blocked verdict for checks.
+- Package only an explicitly approved file inventory; block unexpected, sensitive and escaping paths before creating a release archive.
+- Parse full YAML metadata and validate catalog fields before use, including clear failures for malformed or duplicate metadata.
+- Share ranked multilingual keyword/body search across CLI, website and offline catalog.
+- Clarify overlapping skill ownership and preserve previously granted authorization for routine tool operations.
+- Add release evaluation records with input/instruction fingerprints, routing cases, real loopback HTTP checks and a real React SSR/browser hydration fixture. External provider and host coverage remains explicitly bounded.
+
 ## 1.1.0
 
 - Add MCP server/client and web rendering skills with six focused audit, implementation and verification workflows.

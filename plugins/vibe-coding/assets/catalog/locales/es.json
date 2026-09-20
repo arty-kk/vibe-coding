@@ -97,7 +97,8 @@
     "vibe-vectors": "Bases de datos vectoriales",
     "vibe-workflow": "Verificación y mantenimiento de flujos",
     "vibe-mcp": "Servidores y clientes MCP",
-    "vibe-web": "Renderizado web y límites del servidor"
+    "vibe-web": "Renderizado web y límites del servidor",
+    "vibe-serverless": "Serverless y edge"
   },
   "summaries": {
     "vibe-ai": "Funciones de IA, recuperación de documentos y evaluación de calidad.",
@@ -143,7 +144,8 @@
     "vibe-vectors": "Búsqueda vectorial, ACL, exhaustividad y reindexación.",
     "vibe-workflow": "Verificación de evidencias, actualización de mapas y mantenimiento del plugin.",
     "vibe-mcp": "Versiones MCP, contratos de herramientas, transporte y autorización.",
-    "vibe-web": "SSR, hidratación, datos serializados, cachés y acciones del servidor."
+    "vibe-web": "SSR, hidratación, datos serializados, cachés y acciones del servidor.",
+    "vibe-serverless": "Ciclo de vida de invocaciones, eventos duplicados y límites de ejecución."
   },
   "titles": {
     "ai-evaluation-audit": "Evaluación de IA — Auditoría",
@@ -373,7 +375,20 @@
     "web-rendering-audit": "Auditoría del renderizado web",
     "web-rendering-polish": "Mejora del renderizado web",
     "web-boundary-check": "Verificación de límites entre servidor y cliente web",
-    "oauth-oidc-session-check": "Verificación de sesiones OAuth y OIDC"
+    "oauth-oidc-session-check": "Verificación de sesiones OAuth y OIDC",
+    "api-contract-evolution-audit": "Auditoría de evolución de contratos API",
+    "api-contract-evolution-polish": "Mejora de evolución de contratos API",
+    "api-contract-compatibility-check": "Verificación de compatibilidad de contratos API",
+    "transactional-delivery-check": "Verificación de entrega transaccional",
+    "build-supply-chain-audit": "Auditoría de la cadena de suministro de compilación",
+    "build-supply-chain-polish": "Mejora de la cadena de suministro de compilación",
+    "release-artifact-trust-check": "Verificación de confianza del artefacto de versión",
+    "incident-triage-audit": "Análisis inicial de incidentes",
+    "incident-remediation-polish": "Corrección de incidentes",
+    "incident-recovery-check": "Verificación de recuperación tras incidentes",
+    "serverless-runtime-audit": "Auditoría de ejecución serverless",
+    "serverless-runtime-polish": "Mejora de ejecución serverless",
+    "serverless-invocation-check": "Verificación de invocaciones serverless"
   },
   "policy": {
     "privacy": "# Privacidad\n\nVibe Coding es mantenido por Arty S. / ARTSIOM SATSUK ([arty-kk](https://github.com/arty-kk)).\n\nEl plugin distribuido contiene instrucciones de texto, un catálogo local y utilidades locales de Python. No tiene backend operado por el editor, analítica, píxeles de seguimiento, cookies, sistema de cuentas ni telemetría. Las utilidades de catálogo y empaquetado no envían el contenido de los proyectos al editor.\n\nCuando se usa el plugin en Codex o ChatGPT, la aplicación anfitriona procesa prompts, archivos y resultados de herramientas según su configuración y sus políticas. Los flujos de trabajo pueden usar herramientas y servicios que el usuario haya habilitado; esos servicios aplican sus propias políticas de datos. El plugin no se concede permisos adicionales.\n\nEl sitio web público está alojado en GitHub Pages. GitHub puede procesar información habitual de las solicitudes según su política de privacidad. La información publicada voluntariamente en issues o pull requests del repositorio es pública y la gestiona GitHub. No publiques credenciales, código fuente privado ni datos personales.\n\nEl sitio web guarda únicamente el idioma de interfaz seleccionado en el almacenamiento local de tu navegador. Esta preferencia no se envía al editor.\n\nPuedes plantear preguntas sobre privacidad en [GitHub Issues](https://github.com/arty-kk/vibe-coding/issues) sin incluir información sensible.\n",

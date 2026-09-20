@@ -1,0 +1,15 @@
+diff --git a/App.mjs b/App.mjs
+index f33cc19..64ad62e 100644
+--- a/App.mjs
++++ b/App.mjs
+@@ -1,7 +1,8 @@
+-import React, {useState} from 'react';
++import React, {useEffect, useState} from 'react';
+ const h = React.createElement;
+ export function App() {
+-  const [theme, setTheme] = useState(() => typeof window === 'undefined' ? 'light' : (localStorage.getItem('theme') || 'light'));
++  const [theme, setTheme] = useState('light');
++  useEffect(() => {setTheme(localStorage.getItem('theme') || 'light');}, []);
+   return h('main', null,
+     h('h1', null, 'Theme preference'),
+     h('p', {id: 'theme'}, 'Current theme: ' + theme),

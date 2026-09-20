@@ -14,3 +14,5 @@ Read [the shared workflow](../../references/workflow.md) once, then the recipe m
 | Verify protocol, tool results or authorization | [MCP Protocol & Authorization Check](references/mcp-protocol-auth-check.md) |
 
 The recipes share [version and trust boundaries](../../references/mcp-contract.md). Select the repository's supported SDK/protocol version before applying a rule. Do not treat an optional feature or a newer specification as an automatic migration requirement. An audit-and-fix request includes the correction and meaningful verification.
+
+Durable application execution belongs to [Harness](../vibe-harness/SKILL.md); model tool-choice quality belongs to [AI](../vibe-ai/SKILL.md). Keep protocol compliance separate from those concerns.

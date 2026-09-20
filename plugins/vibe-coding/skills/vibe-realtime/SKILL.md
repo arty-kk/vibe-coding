@@ -16,3 +16,5 @@ Read [the shared workflow](../../references/workflow.md) once per task, then the
 | [Realtime Interface Profiling & Recovery Check](references/realtime-interface-profiling-recovery-check.md) | check |
 
 For an explicit multi-stage request, follow the necessary stages without discarding requested work. For a single stage, deliver that result and stop. Use [the catalog](../../references/catalog.md) only if the requested boundary belongs elsewhere.
+
+Shared cache invalidation belongs to [Cache](../vibe-cache/SKILL.md); initial server rendering and hydration belong to [Web](../vibe-web/SKILL.md). This skill owns client state reconciliation and reconnect.

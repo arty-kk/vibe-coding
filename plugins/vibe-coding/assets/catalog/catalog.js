@@ -1,7 +1,8 @@
 const $ = id => document.getElementById(id);
 const recipes = JSON.parse($('recipe-data').textContent);
 const query = $('query'), category = $('category'), mode = $('mode'), dialog = $('detail');
-let locale, language, translations, searchIndex;
+let locale, language;
+const searchIndex = JSON.parse($('search-data').textContent);
 
 function node(tag, className, text) {
   const el = document.createElement(tag);
@@ -11,14 +12,16 @@ function node(tag, className, text) {
 }
 
 function fold(text) {
-  return text.normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+  return text.normalize('NFKD').replace(/\p{M}/gu, '').toLowerCase();
 }
 
 function render() {
   const terms = fold(query.value).trim().split(/\s+/).filter(Boolean);
   const list = recipes.filter(r => (!category.value || r.skill === category.value)
     && (!mode.value || r.mode === mode.value)
-    && terms.every(term => searchIndex.get(r.id).includes(term)));
+    && terms.every(term => searchIndex[r.id].primary.includes(term) || searchIndex[r.id].body.includes(term)))
+    .map(r => ({row: r, score: terms.reduce((n, term) => n + (searchIndex[r.id].primary.includes(term) ? 3 : 1), 0)}))
+    .sort((a, b) => b.score - a.score).map(item => item.row);
   $('count').textContent = formatMessage(locale.ui.count, {count: list.length, total: recipes.length});
   $('empty').hidden = list.length !== 0;
   const fragment = document.createDocumentFragment();
@@ -72,10 +75,9 @@ function openHash() {
   } catch {}
 }
 
-createLanguageManager((selected, code, all) => {
+createLanguageManager((selected, code) => {
   locale = selected;
   language = code;
-  translations = all;
   document.title = locale.ui.pageTitle;
   document.querySelector('meta[name="description"]').content = locale.ui.description;
   const selectedCategory = category.value, selectedMode = mode.value;
@@ -87,9 +89,6 @@ createLanguageManager((selected, code, all) => {
     ...Object.entries(locale.modes).map(([id, label]) => new Option(label, id)));
   category.value = selectedCategory;
   mode.value = selectedMode;
-  searchIndex ??= new Map(recipes.map(r => [r.id, fold([r.id, r.skill, r.title,
-    ...Object.values(translations).flatMap(t => [t.titles[r.id], t.categories[r.skill],
-      t.summaries[r.skill], t.modes[r.mode]])].join(' '))]));
   render();
   openHash();
 });

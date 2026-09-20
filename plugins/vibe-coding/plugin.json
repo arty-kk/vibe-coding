@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "vibe-coding",
-  "version": "1.1.0",
-  "description": "Evidence-based coding workflows: 45 skills, 228 domain recipes, scoped implementation and verification.",
+  "version": "1.2.0",
+  "description": "Evidence-based coding workflows: 46 skills, 241 domain recipes, scoped implementation and verification.",
   "author": {
     "name": "Arty S.",
     "url": "https://github.com/arty-kk"
@@ -25,7 +25,7 @@
       "interface": {
         "displayName": "Vibe Coding",
         "shortDescription": "Map, review and improve code",
-        "longDescription": "Vibe Coding provides 45 focused skills and 228 engineering workflows for repository mapping, task planning, code review, debugging, implementation and release checks. It covers product, backend, data, infrastructure, AI, MCP and web rendering. Each workflow works from current code and verifiable behavior, respects the requested scope, and reports changes, checks and remaining limitations.",
+        "longDescription": "Vibe Coding provides 46 focused skills and 241 engineering workflows for repository mapping, task planning, code review, debugging, implementation and release checks. It covers product, backend, data, infrastructure, AI, MCP, web rendering and serverless runtimes. Each workflow works from current code and verifiable behavior, respects the requested scope, and reports changes, checks and remaining limitations.",
         "developerName": "Arty S.",
         "category": "Productivity",
         "capabilities": [],

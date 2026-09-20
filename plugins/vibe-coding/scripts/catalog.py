@@ -5,9 +5,9 @@ import argparse
 import hashlib
 import json
 import sys
-import unicodedata
 from pathlib import Path
 from catalog_site import load_locales, render_catalog, LANGUAGES
+from search_index import build_index, match_score
 
 ROOT = Path(__file__).resolve().parents[1]
 MODE_NAMES = load_locales()['en']['modes']
@@ -25,21 +25,14 @@ def contained_path(raw):
 
 
 def search(rows, query='', mode=None, skill=None):
-    def fold(text):
-        return ''.join(c for c in unicodedata.normalize('NFKD', text) if not unicodedata.combining(c)).casefold()
-    terms = fold(query).split()
-    locales = load_locales()
+    index = build_index(rows, load_locales(), ROOT)
     result = []
     for row in rows:
         if mode and row['mode'] != mode: continue
         if skill and row['skill'] != skill: continue
-        fields = [row['id'], row['title'], row['skill']]
-        for locale in locales.values():
-            fields.extend([locale['titles'][row['id']], locale['categories'][row['skill']],
-                           locale['summaries'][row['skill']], locale['modes'][row['mode']]])
-        haystack = fold(' '.join(fields))
-        if all(term in haystack for term in terms): result.append(row)
-    return result
+        score = match_score(index[row['id']], query)
+        if score is not None: result.append((score, row))
+    return [row for _, row in sorted(result, key=lambda item: -item[0])]
 
 
 def render_html(rows):
@@ -50,6 +43,7 @@ def refresh():
     catalog=load_catalog()
     english = load_locales()['en']
     for row in catalog['recipes']:
+        row['title'] = english['titles'][row['id']]
         row['category'] = english['categories'][row['skill']]
         row['summary'] = english['summaries'][row['skill']]
         row['example'] = english['ui']['prompt'].format(skill=row['skill'], title=row['title'], id=row['id'])

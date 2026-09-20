@@ -11,7 +11,7 @@ Open the desktop Plugins Directory, select the Vibe Coding source and install Vi
 ## Fixed release
 
 ```sh
-codex plugin marketplace add arty-kk/vibe-coding --ref v1.0.3
+codex plugin marketplace add arty-kk/vibe-coding --ref v1.2.0
 ```
 
 ## Local checkout

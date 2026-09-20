@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """Validate the package, discovery metadata, catalog and links."""
 
-import collections
 import hashlib
 import json
 import re
@@ -9,6 +8,8 @@ import sys
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
 from catalog_site import render_catalog
+from metadata import skill_metadata, ui_metadata, catalog_errors
+from release_files import release_files
 
 ROOT=Path(__file__).resolve().parents[1]
 
@@ -24,6 +25,11 @@ def validate(root=ROOT):
         manifest=json.loads((root/'.codex-plugin/plugin.json').read_text(encoding='utf-8'))
         catalog=json.loads((root/'catalog.json').read_text(encoding='utf-8'))
     except (OSError,ValueError) as exc:return [str(exc)]
+    if not isinstance(manifest, dict): return ['plugin.json: expected an object']
+    schema_errors = catalog_errors(catalog)
+    if schema_errors: return schema_errors
+    _, inventory_errors = release_files(root)
+    errors.extend(inventory_errors)
     check(manifest.get('name')==root.name=='vibe-coding','Plugin name/folder mismatch')
     check(bool(re.fullmatch(r'\d+\.\d+\.\d+(?:[-+][0-9A-Za-z.-]+)?',manifest.get('version',''))),'Invalid version')
     check(manifest.get('skills')=='./skills/','Invalid skills path')
@@ -31,22 +37,15 @@ def validate(root=ROOT):
     skills={p.parent.name:p for p in (root/'skills').glob('*/SKILL.md')}
     check(len(skills)==catalog.get('skills'),'Catalog skill count mismatch')
     for name,path in skills.items():
-        text=path.read_text(encoding='utf-8');m=re.match(r'^---\n(.*?)\n---\n',text,re.S)
-        check(m is not None,f'Missing frontmatter: {name}')
-        if not m:continue
-        fields=dict(re.findall(r'^([a-z_-]+): (.+)$',m[1],re.M))
-        check(fields.get('name')==name and bool(re.fullmatch(r'[a-z0-9-]{1,63}',name)),f'Invalid skill name: {name}')
-        try:description=json.loads(fields.get('description','null'))
-        except ValueError:description=None
-        check(isinstance(description,str) and bool(description.strip()),f'Missing description: {name}')
+        text=path.read_text(encoding='utf-8')
+        try: skill_metadata(text, f'skills/{name}/SKILL.md', name)
+        except ValueError as exc: errors.append(str(exc))
         meta=path.parent/'agents/openai.yaml'
         check(meta.is_file(),f'Missing UI metadata: {name}')
         if meta.is_file():
-            values={}
-            for key,raw in re.findall(r'^  (display_name|short_description|default_prompt): (.+)$',meta.read_text(encoding='utf-8'),re.M):
-                try:values[key]=json.loads(raw)
-                except ValueError:errors.append(f'Invalid quoted UI field: {name}/{key}')
-            check(all(isinstance(values.get(k),str) and values[k] for k in ('display_name','short_description','default_prompt')),f'Missing UI fields: {name}')
+            try: values=ui_metadata(meta.read_text(encoding='utf-8'), f'skills/{name}/agents/openai.yaml')
+            except ValueError as exc:
+                errors.append(str(exc)); continue
             check(25<=len(values.get('short_description',''))<=64,f'UI short description length: {name}')
             check('$'+name in values.get('default_prompt',''),f'Default prompt does not invoke skill: {name}')
     rows=catalog.get('recipes',[]);ids=[r['id'] for r in rows];paths=[r['path'] for r in rows]
@@ -56,7 +55,10 @@ def validate(root=ROOT):
         check(r['skill'] in skills,f'Unknown skill: {r["id"]}')
         check(r['mode'] in {'audit','implement','check','map','plan','document','closure','review','probe'},f'Invalid mode: {r["id"]}')
         if p and p.is_file():check(hashlib.sha256(p.read_bytes()).hexdigest()==r['sha256'],f'Stale recipe hash: {r["id"]}; run catalog.py refresh')
-        if r['skill'] in skills:check(Path(r['path']).name in skills[r['skill']].read_text(encoding='utf-8'),f'Recipe not reachable from skill: {r["id"]}')
+        if r['skill'] in skills:
+            entry = skills[r['skill']]
+            targets = [inside(unquote(link), entry.parent) for link in re.findall(r'\]\(([^\s)]+)\)', entry.read_text(encoding='utf-8')) if not urlsplit(link).scheme]
+            check(p in targets, f'Recipe not reachable from skill: {r["id"]}')
     actual={p.relative_to(root).as_posix() for p in (root/'skills').glob('*/references/*.md')}
     check(actual==set(paths),'Unindexed or missing recipe files')
     for p in root.rglob('*'):
@@ -81,7 +83,7 @@ def validate(root=ROOT):
                 for r in embedded:
                     p=inside(r['path'])
                     if p and p.is_file():check(r['body']==p.read_text(encoding='utf-8'),f'Stale HTML recipe: {r["id"]}')
-            except ValueError:errors.append('Invalid embedded HTML data')
+            except (ValueError,KeyError,TypeError):errors.append('Invalid embedded HTML data')
         try:
             expected=render_catalog(rows, root=root)
             check(html.read_text(encoding='utf-8')==expected,'Stale HTML interface or translations; run catalog.py refresh')

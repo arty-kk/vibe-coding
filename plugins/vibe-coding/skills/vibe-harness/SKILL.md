@@ -16,3 +16,5 @@ Read [the shared workflow](../../references/workflow.md) once per task, then the
 | [Agent Harness Replay & Failure Check](references/agent-harness-replay-failure-check.md) | check |
 
 For an explicit multi-stage request, follow the necessary stages without discarding requested work. For a single stage, deliver that result and stop. Use [the catalog](../../references/catalog.md) only if the requested boundary belongs elsewhere.
+
+Model selection, grounding and tool-choice quality belong to [AI](../vibe-ai/SKILL.md); wire protocol/tool discovery belongs to [MCP](../vibe-mcp/SKILL.md). This skill owns durable run state and side-effect recovery.

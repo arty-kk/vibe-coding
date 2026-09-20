@@ -2,7 +2,7 @@
 
 **Understand the code. Make the change. Verify the result.**
 
-45 Codex skills and 228 focused engineering workflows for project mapping, planning, code review, debugging, implementation and release checks.
+46 Codex skills and 241 focused engineering workflows for project mapping, planning, code review, debugging, implementation and release checks.
 
 [Browse the catalog](https://arty-kk.github.io/vibe-coding) · [Русский](README.ru.md) · [Releases](https://github.com/arty-kk/vibe-coding/releases) · [Support](https://github.com/arty-kk/vibe-coding/issues)
 
@@ -16,7 +16,7 @@ codex plugin marketplace add arty-kk/vibe-coding
 
 Open the Plugins Directory in the desktop app, select **Vibe Coding**, and install **Vibe Coding**. Start a new task to load the skills. The marketplace name is `vibe-coding`.
 
-This repository provides a public marketplace source. Availability in the universal Plugins Directory is managed separately through OpenAI review.
+Also available in the [OpenAI Plugins Directory](https://chatgpt.com/plugins/plugins_6aae54a259ac8191b56161d366fb6e51).
 
 ## Start working
 
@@ -45,6 +45,7 @@ Use the plugin picker if your host displays names as `vibe-coding:<skill>`. Requ
 - Kubernetes, Terraform, CI/CD, observability, reliability, recovery and release readiness.
 - AI features, RAG, OCR, evaluations, agent tools and execution harnesses.
 - MCP tools/transports/authorization, SSR and hydration, server actions and OAuth/OIDC sessions.
+- API/schema evolution, transactional event delivery, build trust, incident response and serverless/edge lifecycles.
 
 ## How it works
 
@@ -56,14 +57,15 @@ The plugin uses the host's existing tools. It adds no MCP server, background ser
 
 ## Development
 
-Python 3.10 or later is required only for the local catalog and packaging tools.
+Python 3.10+ is required for the local tools; validation and packaging also require the pinned PyYAML dependency.
 
 ```sh
+python3 -m pip install -r plugins/vibe-coding/requirements.txt
 python3 plugins/vibe-coding/scripts/validate.py
 python3 -m unittest discover -s tests -v
 python3 plugins/vibe-coding/scripts/catalog.py search webhook --mode check
 python3 plugins/vibe-coding/scripts/catalog.py search MCP --lang es
-python3 plugins/vibe-coding/scripts/package.py --output dist/vibe-coding-1.1.0.zip
+python3 plugins/vibe-coding/scripts/package.py --output dist/vibe-coding-1.2.0.zip
 ```
 
 See [Contributing](CONTRIBUTING.md), [installation](plugins/vibe-coding/docs/INSTALL.md), [privacy](PRIVACY.md) and [license](LICENSE).

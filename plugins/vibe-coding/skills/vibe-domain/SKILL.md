@@ -36,3 +36,5 @@ For OAuth/OIDC verification, select the session check. For a requested authentic
 | [Tenant Isolation Check](references/tenant-isolation-check.md) | check |
 
 For an explicit multi-stage request, follow the necessary stages without discarding requested work. For a single stage, deliver that result and stop. Use [the catalog](../../references/catalog.md) only if the requested boundary belongs elsewhere.
+
+For provider requests, signed webhooks and external payment reconciliation, use [Payments](../vibe-payments/SKILL.md). Local plan/role/entitlement policy remains here.

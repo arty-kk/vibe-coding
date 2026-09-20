@@ -14,3 +14,5 @@ Read [the shared workflow](../../references/workflow.md) once, then the recipe m
 | Verify initial render, private data or a server mutation | [Web Server/Client Boundary Check](references/web-boundary-check.md) |
 
 Use the shared [rendering boundaries](../../references/web-rendering.md) for the selected framework path. UI acceptance belongs to [Product](../vibe-product/SKILL.md); an explicit patch review belongs to [Review](../vibe-review/SKILL.md). Follow necessary contract edges without turning the task into a framework migration or redesign.
+
+Invocation lifetime and provider execution limits belong to [Serverless](../vibe-serverless/SKILL.md); optimistic client reconciliation belongs to [Realtime](../vibe-realtime/SKILL.md). Use [Cache](../vibe-cache/SKILL.md) for shared invalidation independent of rendering.
