@@ -61,19 +61,21 @@ def language_links(lang, page='', recipe=False):
 
 def graph(version):
     return [
+        {'@type': 'Person', '@id': BASE+'#maintainer', 'name': 'Arty S.',
+         'url': 'https://github.com/arty-kk'},
         {'@type': 'WebSite', '@id': BASE+'#website', 'url': BASE, 'name': 'Vibe Coding',
-         'inLanguage': list(LANGUAGES)},
+         'inLanguage': list(LANGUAGES), 'publisher': {'@id': BASE+'#maintainer'}},
         {'@type': 'SoftwareSourceCode', '@id': BASE+'#software', 'name': 'Vibe Coding',
          'url': BASE, 'codeRepository': REPO, 'version': version,
          'description': 'Open-source engineering skills and workflows for Codex and Claude Code.',
          'runtimePlatform': ['Codex', 'Claude Code'], 'programmingLanguage': 'Markdown',
          'license': REPO+'/blob/main/LICENSE', 'isAccessibleForFree': True,
-         'author': {'@type': 'Person', 'name': 'Arty S.', 'url': 'https://github.com/arty-kk'},
+         'maintainer': {'@id': BASE+'#maintainer'},
          'image': BASE+'social-card.png'}]
 
 
 def page(lang, path, title, description, body, content, resources, version,
-         alternates=None, article=None, noindex=False):
+         alternates=None, article=None, noindex=False, directory=False):
     canonical = BASE + path
     alternate_tags = '' if alternates is None else '\n'.join(
         f'<link rel="alternate" hreflang="{code}" href="{BASE}{target}">'
@@ -84,15 +86,23 @@ def page(lang, path, title, description, body, content, resources, version,
               'isPartOf': {'@id': BASE+'#website'}, 'about': {'@id': BASE+'#software'}}
     if article:
         entity.update({'@type': 'TechArticle', 'headline': article['title'],
-                       'mainEntityOfPage': canonical, 'license': REPO+'/blob/main/LICENSE'})
+                       'mainEntityOfPage': canonical, 'license': REPO+'/blob/main/LICENSE',
+                       'publisher': {'@id': BASE+'#maintainer'}, 'version': version,
+                       'isAccessibleForFree': True, 'articleSection': article['category'],
+                       'isBasedOn': article['source']})
         data.append({'@type': 'BreadcrumbList', 'itemListElement': [
             {'@type': 'ListItem', 'position': 1, 'name': 'Vibe Coding', 'item': BASE},
-            {'@type': 'ListItem', 'position': 2, 'name': article['title'], 'item': canonical}]})
-    else:
+            {'@type': 'ListItem', 'position': 2, 'name': content['en']['allWorkflows'], 'item': BASE+'workflows/'},
+            {'@type': 'ListItem', 'position': 3, 'name': article['title'], 'item': canonical}]})
+    elif directory:
+        entity['@type'] = 'CollectionPage'
+    elif path == route(lang):
         entity['mainEntity'] = {'@id': BASE+'#software'}
     data.append(entity)
     ui = content[lang]
     policy_page = Path(path).name if path.endswith('.html') and not noindex else ''
+    navigation_page = 'workflows/' if directory else policy_page
+    page_type = 'workflow' if article else 'directory' if directory else policy_page or 'catalog'
     og_locale = {'en':'en_US', 'es':'es_ES', 'ru':'ru_RU', 'zh-CN':'zh_CN'}[lang]
     return f'''<!doctype html>
 <html lang="{lang}">
@@ -126,12 +136,13 @@ def page(lang, path, title, description, body, content, resources, version,
 <script src="{resources['engine']}" defer></script>
 <script src="{resources['js']}" defer></script>
 </head>
-<body data-base="{PREFIX}" data-language="{lang}" data-page="{'workflow' if article else policy_page or 'catalog'}">
+<body data-base="{PREFIX}" data-language="{lang}" data-page="{page_type}">
 <a class="skip" href="#content">{e(ui['skip'])}</a>
 <header class="site-header"><a class="brand" href="{PREFIX}{route(lang)}"><img src="{PREFIX}icon.png" width="32" height="32" alt="">Vibe Coding</a>
-<div class="header-actions"><a class="header-github" href="{REPO}">GitHub</a>{language_links(lang, policy_page, bool(article))}<a class="button small" href="{PREFIX}{route(lang)}#install">{e(ui["install"])}</a></div></header>
+<div class="header-actions"><a class="header-github" href="{REPO}">GitHub</a>{language_links(lang, navigation_page, bool(article))}<a class="button small" href="{PREFIX}{route(lang)}#install">{e(ui["install"])}</a></div></header>
 <main id="content">{body}
 <footer><span><a href="https://github.com/arty-kk">{e(ui['maintained'])}</a></span>
+<a href="{PREFIX}{route(lang,'workflows/')}">{e(ui['allWorkflows'])}</a>
 <a href="{REPO}">GitHub</a><a href="{REPO}/releases/tag/v{version}">{e(ui['release'])}</a>
 <a href="{REPO}/issues">{e(resources['locales'][lang]['ui']['support'])}</a>
 <a href="{REPO}/blob/main/LICENSE">MIT</a>
@@ -169,7 +180,7 @@ def home(lang, rows, locale, c, version, resources):
     categories = '<option value="">'+e(c['allTopics'])+'</option>' + ''.join(f'<option value="{skill}">{e(title)}</option>' for skill,title in sorted(locale['categories'].items(), key=lambda item:item[1]))
     modes = '<option value="">'+e(c['allActions'])+'</option>'+''.join(f'<option value="{mode}">{e(title)}</option>' for mode,title in locale['modes'].items())
     faqs = ''.join(f'<details><summary>{e(q)}</summary><p>{e(a)}</p></details>' for q,a in c['faq'])
-    shortcuts = ''.join(f'<a href="?topic={skill}#catalog" data-topic="{skill}">{e(label)}</a>' for label,skill in c['quickLinks'])
+    shortcuts = ''.join(f'<button type="button" data-topic="{skill}">{e(label)}</button>' for label,skill in c['quickLinks'])
     messages = {key:c[key] for key in ('count','countOne','pageStatus','removeFilter','searchLoading','searchFallback')}
     search_data = {
         'index':resources['search'], 'messages':messages,
@@ -189,12 +200,25 @@ def home(lang, rows, locale, c, version, resources):
 <div class="quick-links"><span>{e(c['quickLabel'])}</span>{shortcuts}</div>
 <div class="results-heading" id="results-title" tabindex="-1"><span id="count" role="status" aria-live="polite">{e(c['count'].format(count=len(rows)))}</span><div id="active-filters"></div><button type="button" id="reset" hidden>{e(c['reset'])}</button></div><p id="search-status" class="search-status" role="status"></p></div>
 <div class="rows" id="rows">{''.join(entries)}</div><div id="empty" class="empty" hidden><h3>{e(c['emptyTitle'])}</h3><p>{e(c['empty'])}</p><button id="empty-reset" type="button" class="button">{e(c['reset'])}</button></div>
-<nav id="pagination" class="pagination" aria-label="{e(ui['catalog'])}" hidden><button type="button" id="previous">{e(c['previous'])}</button><span id="page-status"></span><button type="button" id="next">{e(c['next'])}</button></nav><p class="catalog-note">{e(c['english'])}</p>
+<nav id="pagination" class="pagination" aria-label="{e(ui['catalog'])}" hidden><button type="button" id="previous">{e(c['previous'])}</button><span id="page-status"></span><button type="button" id="next">{e(c['next'])}</button></nav><p class="catalog-note">{e(c['english'])} <a href="{PREFIX}{route(lang,'workflows/')}">{e(c['allWorkflows'])} →</a></p>
 <script type="application/json" id="catalog-data">{script_json(search_data)}</script></section>
 <section class="section installation" id="install"><div class="section-heading"><div><p class="eyebrow">CODEX + CLAUDE CODE</p><h2>{e(c['install'])}</h2><p class="section-intro">{e(c['installIntro'])}</p></div><a class="text-link" href="{REPO}/blob/main/plugins/vibe-coding/docs/INSTALL.md">{e(c['docs'])} →</a></div>
 <div class="install-cards"><article class="install-card"><h3>Codex</h3><p>{e(c['codexInstall'])}</p><a class="button primary" href="{DIRECTORY}">{e(c['codexLink'])} ↗</a><pre><code id="codex-start">$vibe {e(c['demoPrompt'])}</code></pre>{copy_button('codex-start')}</article>
 <article class="install-card"><h3>Claude Code</h3><p>{e(c['claudeInstall'])}</p><pre><code id="claude-install">claude plugin marketplace add arty-kk/vibe-coding\nclaude plugin install vibe-coding@vibe-coding</code></pre>{copy_button('claude-install')}<p>{e(c['claudeStart'])}</p><pre><code id="claude-start">/vibe-coding:vibe {e(c['demoPrompt'])}</code></pre>{copy_button('claude-start')}</article></div><p class="fine">{e(c['cost'])}</p></section>
 <section class="section faq"><h2>{e(c['faqTitle'])}</h2><div>{faqs}</div></section>'''
+
+
+def directory_body(lang, rows, locale, c):
+    sections, topics = [], []
+    for skill, label in sorted(locale['categories'].items(), key=lambda item: item[1]):
+        selected = [row for row in rows if row['skill'] == skill]
+        if not selected:
+            continue
+        topics.append(f'<li><a href="#{skill}">{e(label)} <span>{len(selected)}</span></a></li>')
+        links = ''.join(f'<li><a href="{PREFIX}{workflow_route(row)}" hreflang="en">{e(display_title(row,locale,c,lang))}</a><span class="fine">{e(locale["modes"][row["mode"]])}</span></li>' for row in selected)
+        sections.append(f'<section id="{skill}" class="directory-topic"><h2>{e(label)}</h2><p>{e(locale["summaries"][skill])}</p><ul>{links}</ul></section>')
+    return f'''<article class="directory"><header><p class="eyebrow">VIBE CODING / {e(c['allWorkflows'])}</p><h1>{e(c['directoryHeading'])}</h1><p class="intro">{e(c['directoryDescription'])}</p><p class="fine">{e(c['english'])}</p><a class="text-link" href="{PREFIX}{route(lang)}#catalog">← {e(c['search'])}</a></header>
+<nav class="directory-topics" aria-label="{e(c['topic'])}"><ul>{''.join(topics)}</ul></nav><div class="directory-list">{''.join(sections)}</div></article>'''
 
 
 def recipe_markdown(row, version):
@@ -271,9 +295,13 @@ def build(destination=SITE):
         alternates = {code:route(code) for code in LANGUAGES}|{'x-default':''}
         output = page(lang,path,content[lang]['title'],content[lang]['description'],home(lang,rows,locale,content[lang],version,resources),content,resources,version,alternates)
         write(destination,path+'index.html',output); paths.append(path)
+        path = route(lang,'workflows/')
+        alternates = {code:route(code,'workflows/') for code in LANGUAGES}|{'x-default':'workflows/'}
+        output = page(lang,path,content[lang]['directoryTitle'],content[lang]['directoryDescription'],directory_body(lang,rows,locale,content[lang]),content,resources,version,alternates,directory=True)
+        write(destination,path+'index.html',output); paths.append(path)
         for name in ('privacy','terms'):
             path = route(lang,name+'.html')
-            description = ' '.join(locale['policy'][name].split('\n\n')[1].split())
+            description = content[lang][name+'Description']
             body = '<article class="policy">'+policy_html(locale['policy'][name])+f'<p><a href="{PREFIX}{route(lang)}">{e(locale["ui"]["back"])}</a></p></article>'
             output = page(lang,path,locale['ui'][name]+' — Vibe Coding',description,body,content,resources,version,{code:route(code,name+'.html') for code in LANGUAGES}|{'x-default':name+'.html'})
             write(destination,path,output); paths.append(path)
@@ -288,10 +316,11 @@ def build(destination=SITE):
         toc_html = ''.join(f'<li><a href="#{key}">{e(label)}</a></li>' for key,label in toc)
         prompt = locales['en']['ui']['prompt'].format(skill=row['skill'],title=row['title'],id=row['id'])
         messages = {lang:{key:value for key,value in data['ui'].items() if key in ('prompt','promptClaude','copy','copied','copyFallback','promptHelp')}|{'title':data['titles'][row['id']]} for lang,data in locales.items()}
-        body = f'''<article class="workflow"><nav aria-label="Breadcrumb"><a id="catalog-back" href="{PREFIX}#catalog">Back to workflows</a><span aria-hidden="true"> / </span><span>{e(title)}</span></nav>
+        source_url = f'{REPO}/blob/v{version}/plugins/vibe-coding/{quote(row["path"])}'
+        body = f'''<article class="workflow"><nav aria-label="Breadcrumb"><a href="{PREFIX}">Vibe Coding</a><span aria-hidden="true"> / </span><a href="{PREFIX}workflows/">{e(content['en']['allWorkflows'])}</a><span aria-hidden="true"> / </span><span>{e(title)}</span></nav>
 <p class="eyebrow">{e(row['category'])} · {e(locales['en']['modes'][row['mode']])}</p><h1>{e(title)}</h1>
-<p class="intro">{e(introduction)}</p><p class="fine">Vibe Coding {version} · <code>{row['skill']}</code> · English technical instructions</p>
-<section class="run-workflow" aria-labelledby="run-title"><h2 id="run-title">Use this workflow</h2><p>Install Vibe Coding, choose your assistant and prompt language, then add your task details after the prompt.</p>
+<p class="intro">{e(introduction)}</p><p class="fine">Vibe Coding {version} · <code>{row['skill']}</code> · English technical instructions</p><a id="catalog-back" class="text-link" href="{PREFIX}#catalog">← Back to search</a>
+<section class="run-workflow" aria-labelledby="run-title"><h2 id="run-title">Use this workflow</h2><p>Use this workflow in Codex or Claude Code with the free Vibe Coding plugin. Choose your assistant and prompt language, then add your task details after the prompt.</p>
 <div class="tools prompt-options" hidden><label for="host">Assistant<select id="host"><option value="codex">Codex</option><option value="claude">Claude Code</option></select></label>
 <label for="prompt-language">Prompt language<select id="prompt-language">{''.join(f'<option value="{code}">{label}</option>' for code,label in LANGUAGES.items())}</select></label></div>
 <label class="help" for="prompt">Prompt</label><textarea id="prompt" class="prompt" readonly>{e(prompt)}</textarea>
@@ -299,9 +328,9 @@ def build(destination=SITE):
 <script type="application/json" id="prompt-data">{script_json({'id':row['id'],'skill':row['skill'],'locales':messages})}</script></section>
 <nav class="toc" aria-label="On this page"><h2>In this workflow</h2><ul>{toc_html}</ul></nav>
 <section id="technical-instructions" lang="en">{rendered}</section>
-<p class="source">Workflow ID: {row['id']} · <a href="{REPO}/blob/v{version}/plugins/vibe-coding/{quote(row['path'])}">View the versioned source</a> · <a href="{REPO}/blob/v{version}/plugins/vibe-coding/references/workflow.md">Shared workflow and authority rules</a></p>
+<p class="source">Workflow ID: {row['id']} · <a href="{source_url}">View the versioned source</a> · <a href="{REPO}/blob/v{version}/plugins/vibe-coding/references/workflow.md">Shared workflow and authority rules</a></p>
 {f'<aside class="related"><h2>Related workflows</h2><ul>{related_html}</ul></aside>' if related else ''}</article>'''
-        output = page('en',path,title+' — Vibe Coding',description,body,content,resources,version,article={'title':title})
+        output = page('en',path,title+' — Vibe Coding',description,body,content,resources,version,article={'title':title,'category':row['category'],'source':source_url})
         write(destination,path+'index.html',output); paths.append(path)
     missing = '<section class="policy"><p class="eyebrow">404</p><h1>Page not found.</h1><p>This address does not match a published workflow.</p><p><a href="'+PREFIX+'#catalog">Find a workflow in the catalog →</a></p></section>'
     write(destination,'404.html',page('en','404.html','Page not found — Vibe Coding','Find engineering workflows for Codex and Claude Code.',missing,content,resources,version,noindex=True))

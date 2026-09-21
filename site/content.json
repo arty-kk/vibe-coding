@@ -9,7 +9,7 @@
     "eyebrow": "For Codex & Claude Code",
     "headline": "An engineering playbook",
     "accent": "for your AI.",
-    "intro": "Ready-to-use skills for reviewing code, finding bugs and making changes. Pick a workflow, add your task, and give your assistant a clear way to work.",
+    "intro": "Vibe Coding is a free, open-source plugin for Codex and Claude Code. Use structured workflows to review code, find bugs and make changes with checks built in.",
     "browse": "Find a workflow",
     "install": "Get the plugin",
     "facts": "Open source · Free to use · MIT license",
@@ -71,8 +71,8 @@
     "faqTitle": "A few useful details",
     "faq": [
       [
-        "What do I get?",
-        "46 skills and 241 focused workflows, from API reviews and database checks to accessibility, infrastructure and AI features. Each one gives your assistant steps to follow and a way to check the result."
+        "What is Vibe Coding?",
+        "Vibe Coding is an open-source plugin with {skills} skills and {recipes} workflows for Codex and Claude Code. It covers code reviews, debugging, databases, accessibility, infrastructure and AI features. Each workflow defines the scope, steps, evidence and checks for a task."
       ],
       [
         "How do I use a workflow?",
@@ -137,7 +137,13 @@
         "title": "Check accessibility",
         "description": "Review keyboard navigation, focus, semantics and accessible interaction in your interface."
       }
-    }
+    },
+    "allWorkflows": "All workflows",
+    "directoryTitle": "All {recipes} Engineering Workflows — Vibe Coding",
+    "directoryHeading": "Explore every workflow.",
+    "directoryDescription": "Browse all {recipes} Vibe Coding workflows by engineering topic. Find code reviews, debugging, database, accessibility and release checks for Codex and Claude Code.",
+    "privacyDescription": "How Vibe Coding handles data, browser preferences, host services and support. The plugin has no publisher-operated backend or telemetry.",
+    "termsDescription": "Vibe Coding’s MIT license, host service terms, warranty disclaimer and support policy. The plugin is free and open source."
   },
   "es": {
     "maintained": "Mantenido por Arty S.",
@@ -149,7 +155,7 @@
     "eyebrow": "Para Codex y Claude Code",
     "headline": "Un manual de ingeniería",
     "accent": "para tu IA.",
-    "intro": "Habilidades listas para revisar código, encontrar errores e implementar cambios. Elige un flujo, añade tu tarea y dale a tu asistente un método claro de trabajo.",
+    "intro": "Vibe Coding es un plugin gratuito y de código abierto para Codex y Claude Code. Sus flujos te ayudan a revisar código, encontrar errores e implementar cambios con pasos de verificación.",
     "browse": "Buscar un flujo",
     "install": "Obtener el plugin",
     "facts": "Código abierto · Gratis · Licencia MIT",
@@ -211,8 +217,8 @@
     "faqTitle": "Algunos detalles útiles",
     "faq": [
       [
-        "¿Qué incluye?",
-        "46 habilidades y 241 flujos concretos: revisiones de API, comprobaciones de bases de datos, accesibilidad, infraestructura y funciones de IA. Cada uno define pasos de trabajo y una forma de comprobar el resultado."
+        "¿Qué es Vibe Coding?",
+        "Vibe Coding es un plugin de código abierto con {skills} habilidades y {recipes} flujos para Codex y Claude Code. Abarca revisión de código, depuración, bases de datos, accesibilidad, infraestructura e IA. Cada flujo define el alcance, los pasos, las pruebas que recopilar y las comprobaciones de la tarea."
       ],
       [
         "¿Cómo utilizo un flujo?",
@@ -277,7 +283,13 @@
         "title": "Comprobar accesibilidad",
         "description": "Revisa la navegación por teclado, el foco, la semántica y las interacciones accesibles."
       }
-    }
+    },
+    "allWorkflows": "Todos los flujos",
+    "directoryTitle": "Los {recipes} flujos de ingeniería — Vibe Coding",
+    "directoryHeading": "Explora todos los flujos.",
+    "directoryDescription": "Consulta los {recipes} flujos de Vibe Coding por tema: revisión de código, depuración, bases de datos, accesibilidad y publicación para Codex y Claude Code.",
+    "privacyDescription": "Cómo Vibe Coding trata los datos, las preferencias del navegador y los servicios del asistente. El plugin no tiene servidor propio ni telemetría.",
+    "termsDescription": "Licencia MIT, condiciones de los servicios del asistente, ausencia de garantías y soporte de Vibe Coding, un plugin gratuito y de código abierto."
   },
   "ru": {
     "maintained": "Автор: Arty S.",
@@ -289,7 +301,7 @@
     "eyebrow": "Для Codex и Claude Code",
     "headline": "Инженерный подход",
     "accent": "для твоего AI.",
-    "intro": "Готовые навыки для ревью, поиска багов и работы с кодом. Выбери сценарий, добавь контекст задачи — и у ассистента будет понятный порядок действий.",
+    "intro": "Vibe Coding — бесплатный плагин с открытым кодом для Codex и Claude Code. Готовые сценарии помогают проводить ревью, находить баги и вносить изменения с проверкой результата.",
     "browse": "Найти сценарий",
     "install": "Установить плагин",
     "facts": "Открытый код · Бесплатно · Лицензия MIT",
@@ -351,8 +363,8 @@
     "faqTitle": "Что ещё нужно знать",
     "faq": [
       [
-        "Что входит в плагин?",
-        "46 навыков и 241 сценарий: от ревью API и проверки баз данных до доступности интерфейсов, инфраструктуры и AI-функций. В каждом — порядок работы и способ проверить результат."
+        "Что такое Vibe Coding?",
+        "Vibe Coding — плагин с открытым кодом для Codex и Claude Code. Он содержит сценарии для ревью, отладки, баз данных, доступности, инфраструктуры и AI. Каждый сценарий задаёт рамки задачи, порядок работы, необходимые доказательства и проверки."
       ],
       [
         "Как запустить сценарий?",
@@ -417,7 +429,13 @@
         "title": "Проверка доступности",
         "description": "Проверь клавиатурную навигацию, фокус, семантику и доступность действий в интерфейсе."
       }
-    }
+    },
+    "allWorkflows": "Все сценарии",
+    "directoryTitle": "Все сценарии разработки: {recipes} — Vibe Coding",
+    "directoryHeading": "Все сценарии по темам.",
+    "directoryDescription": "Каталог Vibe Coding для Codex и Claude Code: ревью кода, отладка, базы данных, доступность и проверка релизов. Всего сценариев — {recipes}.",
+    "privacyDescription": "Как Vibe Coding работает с данными, настройками браузера и сервисами ассистента. У плагина нет собственного сервера и телеметрии.",
+    "termsDescription": "Условия использования Vibe Coding: лицензия MIT, сервисы ассистента, ограничение гарантий и поддержка бесплатного плагина с открытым кодом."
   },
   "zh-CN": {
     "maintained": "由 Arty S. 维护",
@@ -429,7 +447,7 @@
     "eyebrow": "适用于 Codex 与 Claude Code",
     "headline": "让你的 AI",
     "accent": "按工程方法工作。",
-    "intro": "开箱即用的技能，帮助你审查代码、查找缺陷和实现变更。选择工作流，补充任务背景，让助手按清晰的步骤开展工作。",
+    "intro": "Vibe Coding 是适用于 Codex 和 Claude Code 的免费开源插件。通过包含验证步骤的工作流，审查代码、查找缺陷并实施变更。",
     "browse": "查找工作流",
     "install": "安装插件",
     "facts": "开源 · 免费使用 · MIT 许可证",
@@ -491,8 +509,8 @@
     "faqTitle": "你可能还想了解",
     "faq": [
       [
-        "插件包含什么？",
-        "46 项技能和 241 个工作流，涵盖 API 审查、数据库检查、无障碍、基础设施及 AI 功能。每个工作流都提供操作步骤和验证方法。"
+        "Vibe Coding 是什么？",
+        "Vibe Coding 是适用于 Codex 和 Claude Code 的开源插件，包含 {skills} 项技能和 {recipes} 个工作流，涵盖代码审查、调试、数据库、无障碍、基础设施和 AI 功能。每个工作流都规定任务范围、执行步骤、所需证据和验证方法。"
       ],
       [
         "如何使用工作流？",
@@ -557,6 +575,12 @@
         "title": "检查无障碍支持",
         "description": "检查键盘导航、焦点、语义结构以及交互的可访问性。"
       }
-    }
+    },
+    "allWorkflows": "全部工作流",
+    "directoryTitle": "全部 {recipes} 个工程工作流 — Vibe Coding",
+    "directoryHeading": "按主题浏览全部工作流。",
+    "directoryDescription": "按工程主题浏览 Vibe Coding 的全部 {recipes} 个工作流，涵盖代码审查、调试、数据库、无障碍和发布检查，适用于 Codex 和 Claude Code。",
+    "privacyDescription": "了解 Vibe Coding 如何处理数据、浏览器偏好设置和助手服务。插件没有发布者运营的后端或遥测。",
+    "termsDescription": "Vibe Coding 的 MIT 许可证、助手服务条款、免责声明和支持政策。插件免费且开源。"
   }
 }

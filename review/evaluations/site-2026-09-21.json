@@ -4,28 +4,30 @@
   "release_artifact_changes": {
     "scripts/build_site.py": {
       "before": "9018de109854c3dec9cd887f98255712a93bae9397b74755066ff74a974a9fdf",
-      "after": "0934e98788cc3fd650688eb77ac6d30c7d678fffccf6c30b8cf559dbcb2c70ce"
+      "after": "60553deb7321e4bb281899d3952807619d80a17ed48a6c8645ebf0ddcc44afa8"
     },
     "site/content.json": {
       "before": "6c916d32b51ddb6e9631084aee046ad4e528a154a2757772169e10e212c848a6",
-      "after": "3baa3ed76514cd72e981028fcd57cde2c61b2df8c10508a90652289e42ed1d5d"
+      "after": "b7696461f98eedffb4dda9f06cbd0747e516e0c887cea0b27382ebba0882a2c7"
     },
     "site/site.css": {
       "before": "621e098d8817a2adddc67b2acc4a0a73314c6e3ff63e59deb9d77f5c65137ea9",
-      "after": "58a426db92b98543554287a0dbc1de87bd75aad05a4944663bc59fb88724a12c"
+      "after": "d7dedb1a74373195a90e0da8960d97ad1cce2d8fdc494e902dc415dee63ce482"
     },
     "site/site.js": {
       "before": "bc8fff794e61be6feb3722f270b8959456d1e2e5a4bf228496689a055a9a07c7",
-      "after": "1a6b8ae8e53fdcf0ed4458fd7deee39f61377138d034e047534a948b9d438dc5"
+      "after": "5600da7a726f2c8567f54cc6dbc68fb1a5f71d1b597d5523e2ad34a9bbaedd81"
     }
   },
   "artifacts": {
-    "scripts/build_site.py": "0934e98788cc3fd650688eb77ac6d30c7d678fffccf6c30b8cf559dbcb2c70ce",
-    "site/content.json": "3baa3ed76514cd72e981028fcd57cde2c61b2df8c10508a90652289e42ed1d5d",
-    "site/site.css": "58a426db92b98543554287a0dbc1de87bd75aad05a4944663bc59fb88724a12c",
-    "site/site.js": "1a6b8ae8e53fdcf0ed4458fd7deee39f61377138d034e047534a948b9d438dc5",
+    "scripts/build_site.py": "60553deb7321e4bb281899d3952807619d80a17ed48a6c8645ebf0ddcc44afa8",
+    "site/content.json": "b7696461f98eedffb4dda9f06cbd0747e516e0c887cea0b27382ebba0882a2c7",
+    "site/site.css": "d7dedb1a74373195a90e0da8960d97ad1cce2d8fdc494e902dc415dee63ce482",
+    "site/site.js": "5600da7a726f2c8567f54cc6dbc68fb1a5f71d1b597d5523e2ad34a9bbaedd81",
     "site/catalog-engine.js": "bf17159fb2f37cb0ad0657721910f7017223f9d79c5a6aea272e9c8a242833f5",
-    "tests/test_site_search.cjs": "70c0d01152b025b58a047271018ba1ee55936c3f322c3c4f9a857a41f902c9c8"
+    "tests/test_site_search.cjs": "70c0d01152b025b58a047271018ba1ee55936c3f322c3c4f9a857a41f902c9c8",
+    "tests/test_site.py": "bd4c609b74f1464b9a1193f9641c64fab7d3f3187a1ec81c3640c856c006746b",
+    "site/README.md": "6a0ce9e8868dbceb246a240aeace3129c6520ff8058a4b10357fff2355f5f525"
   },
   "checks": [
     {
@@ -52,6 +54,26 @@
       "id": "static-and-assets",
       "observed": "Eight static-site tests pass for all 253 indexable pages, complete workflow instructions, canonical/hreflang, source links, sitemap, structured data, safe rendering and repeatable builds. Old published content-hashed assets are retained for cached pages and open tabs.",
       "limits": "Preserved crawlable content and metadata do not establish search ranking or indexing results."
+    },
+    {
+      "id": "seo-discovery-and-identity",
+      "observed": "Added four static topic directories with all 241 workflow links grouped into 45 catalog topics. Eleven static-site tests pass for 257 indexable canonical pages, reciprocal localized alternates, unique plain-text metadata, complete source instructions, canonical internal links, versioned article sources, visible breadcrumbs, and policy semantics. Existing eight Node search tests pass.",
+      "limits": "Directory pages improve discovery without implying that earlier workflow pages were blocked. Workflow technical instructions remain English; localized titles and prompts do not imply translated articles."
+    },
+    {
+      "id": "seo-browser-navigation",
+      "observed": "Chrome showed clean workflow href attributes before navigation. API + vibe-backend + check still selected one result; following it and using Back to search restored the same filters. Switching to Russian preserved the query and filters. The Russian directory rendered 241 workflow links without query parameters. Middle-click opened an English article with a Russian Claude Code prompt; a related workflow retained Russian. Chinese directory language navigation retained the directory route, with no horizontal overflow at 320 px. Inspected Russian 390 px and English desktop layouts; viewport restored.",
+      "limits": "Optional navigation parameters are attached when users activate links. Shared parameterized URLs remain valid and canonicalized; they are not server redirects."
+    },
+    {
+      "id": "seo-public-baseline",
+      "observed": "Before this SEO revision, a live HTTP crawl of commit 914c63cd915f3ef87d6b72e2afe845d7875242c2 fetched all 253 canonical pages successfully and matched their committed bytes. Sitemap and social assets returned 200; a nonexistent path returned a real 404. The host-root robots.txt returned 404 rather than a disallow rule.",
+      "limits": "This is the baseline HTTP observation, not the deployment verification of the revised 257-page site. No Search Console or Bing account data was accessed."
+    },
+    {
+      "id": "seo-performance-baseline",
+      "observed": "Google PageSpeed Insights mobile report etoc9f7143 (2026-09-21) scored 100 for Performance, Accessibility, Best Practices and SEO. LCP 1.2 s, TBT 0 ms, CLS 0. The web UI report succeeded after the unauthenticated API returned quota status 429.",
+      "limits": "The report measured the live baseline before this SEO revision. It is one lab run, not a Core Web Vitals field-data pass, universal accessibility certification or evidence of indexing. CrUX reported No Data."
     }
   ]
 }

@@ -63,8 +63,8 @@ class SiteTests(unittest.TestCase):
 
     def test_all_languages_are_static_self_canonical_and_reciprocal(self):
         for lang,locale in self.locales.items():
-            for suffix in ('','privacy.html','terms.html'):
-                path=site.route(lang,suffix);key=path if suffix else path+'index.html'
+            for suffix in ('','workflows/','privacy.html','terms.html'):
+                path=site.route(lang,suffix);key=path if suffix.endswith('.html') else path+'index.html'
                 page=self.pages[key];doc=self.documents[key]
                 self.assertEqual(lang,doc.matching('html')[0]['lang'])
                 self.assertEqual([site.BASE+path],[link['href'] for link in doc.matching('link',rel='canonical')])
@@ -73,9 +73,9 @@ class SiteTests(unittest.TestCase):
                 for other in self.locales:
                     self.assertEqual(site.BASE+site.route(other,suffix),alternates[other])
                 self.assertEqual(site.BASE+suffix,alternates['x-default'])
-                if suffix:
+                if suffix.endswith('.html'):
                     self.assertIn(site.policy_html(locale['policy'][suffix[:-5]]),page)
-                else:
+                elif not suffix:
                     self.assertIn('Claude Code',page)
                     links=[a for a in doc.matching('a',hreflang='en') if 'data-id' in a]
                     self.assertEqual(len(self.rows),len(links))
@@ -99,6 +99,12 @@ class SiteTests(unittest.TestCase):
             self.assertEqual('en',article['inLanguage'])
             self.assertEqual(site.display_title(row,self.locales['en'],self.content['en']),article['headline'])
             self.assertEqual(site.BASE+site.workflow_route(row),article['url'])
+            self.assertEqual(row['category'],article['articleSection'])
+            self.assertTrue(article['isAccessibleForFree'])
+            self.assertIn('/blob/v'+article['version']+'/',article['isBasedOn'])
+            self.assertIn(article['isBasedOn'],[a['href'] for a in doc.matching('a')])
+            breadcrumbs=next(item for item in graph if item['@type']=='BreadcrumbList')['itemListElement']
+            self.assertEqual([site.BASE,site.BASE+'workflows/',article['url']],[item['item'] for item in breadcrumbs])
             descriptions.append(article['description'])
             source=(site.PLUGIN/row['path']).read_text(encoding='utf-8')
             for title in re.findall(r'^## (.+)$',source,re.M):
@@ -126,7 +132,7 @@ class SiteTests(unittest.TestCase):
         urls=[item.text for item in ET.parse(self.destination/'sitemap.xml').iter('{http://www.sitemaps.org/schemas/sitemap/0.9}loc')]
         canonical={a['href'] for key,doc in self.documents.items() if key!='404.html' for a in doc.matching('link',rel='canonical')}
         self.assertEqual(canonical,set(urls));self.assertEqual(len(urls),len(set(urls)))
-        self.assertEqual(len(self.rows)+12,len(urls))
+        self.assertEqual(len(self.rows)+16,len(urls))
         self.assertIn('noindex',self.documents['404.html'].matching('meta',name='robots')[0]['content'])
         self.assertFalse((self.destination/'robots.txt').exists(),'A project-path robots.txt cannot control the host root')
 
@@ -144,6 +150,46 @@ class SiteTests(unittest.TestCase):
             self.assertEqual(['Codex','Claude Code'],software['runtimePlatform'])
             self.assertEqual(site.REPO,software['codeRepository'])
             self.assertNotIn('aggregateRating',software)
+
+    def test_directory_exposes_every_workflow_without_search_or_pagination(self):
+        for lang in self.locales:
+            key=site.route(lang,'workflows/')+'index.html'; doc=self.documents[key]
+            links=doc.matching('a',hreflang='en')
+            workflow_links=[a for a in links if a['href'].startswith(site.PREFIX+'workflows/') and a['href']!=site.PREFIX+'workflows/']
+            self.assertEqual(len(self.rows),len(workflow_links))
+            self.assertEqual({site.PREFIX+site.workflow_route(row) for row in self.rows},{a['href'] for a in workflow_links})
+            self.assertNotIn('catalog-data',doc.ids)
+            self.assertNotIn('pagination',doc.ids)
+            self.assertTrue({row['skill'] for row in self.rows}.issubset(doc.ids))
+            self.assertTrue(any(item['@type']=='CollectionPage' for item in doc.json[0]['@graph']))
+            for suffix in ('','privacy.html','terms.html'):
+                parent=site.route(lang,suffix) if suffix else site.route(lang)+'index.html'
+                self.assertIn(site.PREFIX+site.route(lang,'workflows/'),[a['href'] for a in self.documents[parent].matching('a')])
+
+    def test_indexable_pages_have_distinct_metadata_and_no_generated_query_links(self):
+        titles, descriptions = [], []
+        for name, doc in self.documents.items():
+            if name=='404.html': continue
+            self.assertEqual(1,len(doc.matching('h1')),name)
+            self.assertEqual(1,len(doc.matching('title')),name)
+            title=re.search(r'<title>(.*?)</title>',self.pages[name])[1]
+            titles.append(title)
+            descriptions.append(doc.matching('meta',name='description')[0]['content'])
+            self.assertNotRegex(descriptions[-1],r'\[[^]]+\]\([^)]+\)',name)
+            self.assertNotIn('noindex',doc.matching('meta',name='robots')[0]['content'])
+            for link in doc.matching('a'):
+                target=urlsplit(link['href'])
+                if not target.scheme and target.path.startswith(site.PREFIX):
+                    self.assertFalse(target.query,(name,link['href']))
+        self.assertEqual(len(titles),len(set(titles)))
+        self.assertEqual(len(descriptions),len(set(descriptions)))
+
+    def test_policies_do_not_claim_software_is_their_main_content(self):
+        for lang in self.locales:
+            for policy in ('privacy.html','terms.html'):
+                doc=self.documents[site.route(lang,policy)]
+                entity=next(item for item in doc.json[0]['@graph'] if item['@type']=='WebPage')
+                self.assertNotIn('mainEntity',entity)
 
     def test_build_is_deterministic_and_keeps_assets_for_open_tabs(self):
         first={p.relative_to(self.destination).as_posix():p.read_bytes() for p in self.destination.rglob('*') if p.is_file()}
