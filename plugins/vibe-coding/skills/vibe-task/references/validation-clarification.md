@@ -2,11 +2,11 @@
 
 ## Operation
 
-Analyze and return an actionable brief in the current conversation. Planning does not create a new Codex task or edit product code. Carry the full requested objective into the plan; separate independent work without silently discarding it.
+Analyze and return an actionable brief in the current conversation. Planning does not create a new assistant task or edit product code. Carry the full requested objective into the plan; separate independent work without silently discarding it.
 
 ## Goal
 
-Decide whether the task is relevant, necessary, correctly scoped, and safe to execute as one Codex task. If valid, return the smallest set of coherent in-chat briefs that covers the requested scope. If invalid, block it with evidence.
+Decide whether the task is relevant, necessary, correctly scoped, and safe to execute as one assistant task. If valid, return the smallest set of coherent in-chat briefs that covers the requested scope. If invalid, block it with evidence.
 
 ## Validation pass
 
@@ -14,7 +14,7 @@ Decide whether the task is relevant, necessary, correctly scoped, and safe to ex
 2. Verify against current repository evidence whether:
    - the issue or need exists now;
    - it is already solved fully or partially elsewhere;
-   - it conflicts with architecture, conventions, contracts, style, or `AGENTS.md`;
+   - it conflicts with architecture, conventions, contracts, style, or active repository instructions (`AGENTS.md`, `CLAUDE.md` or scoped rules);
    - affected components, modules, tests, configs, docs, maps, migrations, generated artifacts, or consumers are discoverable;
    - map-only claims are verified against current owner sources before becoming implementation scope;
    - the task is the right size for one execute run / one PR.

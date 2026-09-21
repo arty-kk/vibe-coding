@@ -1,6 +1,6 @@
 # Vibe Coding workflow
 
-Read this once per task, then only the selected recipe. Domain recipes add relevant engineering checks; they do not enlarge the user’s scope or replace active repository instructions.
+Read this once per task, apply [the host integration](hosts.md), then read only the selected recipe. Domain recipes add relevant engineering checks; they do not enlarge the user’s scope or replace active repository instructions.
 
 ## Choose the operation
 

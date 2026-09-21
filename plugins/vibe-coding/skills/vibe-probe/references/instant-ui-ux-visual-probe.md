@@ -33,7 +33,7 @@ If the user provided a screenshot, viewport, device, breakpoint, screen name, co
 
 If the user gave no target, choose the highest-confidence unvisited surface from repository evidence, in this order:
 
-1. an explicitly declared visual rule that is currently violated: design tokens, theme variables, breakpoint definitions, spacing/type scales, component variant maps, or documented UI rules in `AGENTS.md`/design docs, contradicted by hardcoded values or off-scale magic numbers on a reachable surface;
+1. an explicitly declared visual rule that is currently violated: design tokens, theme variables, breakpoint definitions, spacing/type scales, component variant maps, or documented UI rules in the active host’s repository instructions (`AGENTS.md` or `CLAUDE.md`) or design docs, contradicted by hardcoded values or off-scale magic numbers on a reachable surface;
 2. responsive breakage provable from code: fixed widths/heights on fluid containers, missing or wrong breakpoint branches, `100vw`/`100vh` on scroll containers or mobile browsers, non-wrapping flex rows with long content, grids with fixed column counts and no small-viewport branch, horizontal overflow sources, missing `min-width: 0` on flex children containing truncatable text, tables without a small-screen strategy, missing safe-area insets;
 3. missing or incorrect interaction states: hover-only affordances, absent focus-visible styling, disabled state indistinguishable from enabled, active/pressed/selected states missing, loading/empty/error/skeleton presentations absent for a surface that can enter those states;
 4. accessibility defects provable statically: interactive elements without an accessible name, non-semantic elements handling clicks without role/keyboard support, focus traps or unmanaged focus in modals/drawers/menus, missing labels/`aria-describedby` on form errors, heading-order breaks, contrast failures computable from the declared token pair, touch targets below the declared or platform minimum, `prefers-reduced-motion` not honored, `outline: none` without replacement;
@@ -99,7 +99,7 @@ P2 = narrow edge case, secondary surface, cosmetic-but-declared inconsistency, o
 
 Visual truth usually needs a renderer, and this task context may not have one. Be explicit about what was actually proven.
 
-Run repository-native checks relevant to the selected surface and changed files, discoverable from `AGENTS.md`, package scripts, Makefile, CI config, or repo docs:
+Run repository-native checks relevant to the selected surface and changed files, discoverable from the active repository instructions (`AGENTS.md`, `CLAUDE.md` or applicable scoped rules), package scripts, Makefile, CI config, or repo docs:
 
 - the narrowest component/story/snapshot test covering the surface, plus the a11y test target if one is already configured;
 - accessibility or visual-regression tooling **only if already installed and runnable here**;

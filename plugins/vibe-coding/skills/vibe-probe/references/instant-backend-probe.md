@@ -94,7 +94,7 @@ P2 = low-risk correctness, narrow edge case, test harness or generated-client is
 
 ## Validation
 
-Run repository-native checks relevant to the selected area and changed files, discoverable from `AGENTS.md`, package scripts, Makefile, CI config, tests, or repo docs. Prefer the smallest command that proves the fixed owner behavior and at least one direct consumer or regression path:
+Run repository-native checks relevant to the selected area and changed files, discoverable from the active repository instructions (`AGENTS.md`, `CLAUDE.md` or applicable scoped rules), package scripts, Makefile, CI config, tests, or repo docs. Prefer the smallest command that proves the fixed owner behavior and at least one direct consumer or regression path:
 
 - the narrowest unit/integration test target covering the owner, plus a regression case for the exact failing input when a test file already exists for that owner;
 - type check / compile of the changed package;

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>API Polish — Vibe Coding</title>
+<meta name="description" content="Improve one coherent API surface end to end: route/handler, validation, domain/service boundary, persistence side effects, errors, docs, tests, and direct consumers.…">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://arty-kk.github.io/vibe-coding/workflows/api-polish/">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Vibe Coding">
+<meta property="og:title" content="API Polish — Vibe Coding">
+<meta property="og:description" content="Improve one coherent API surface end to end: route/handler, validation, domain/service boundary, persistence side effects, errors, docs, tests, and direct consumers.…">
+<meta property="og:url" content="https://arty-kk.github.io/vibe-coding/workflows/api-polish/">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://arty-kk.github.io/vibe-coding/social-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Vibe Coding — engineering workflows for Codex and Claude Code">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="API Polish — Vibe Coding">
+<meta name="twitter:description" content="Improve one coherent API surface end to end: route/handler, validation, domain/service boundary, persistence side effects, errors, docs, tests, and direct consumers.…">
+<meta name="twitter:image" content="https://arty-kk.github.io/vibe-coding/social-card.png">
+<meta name="twitter:image:alt" content="Vibe Coding — engineering workflows for Codex and Claude Code">
+<meta name="theme-color" content="#101212">
+<link rel="icon" href="/vibe-coding/icon.png" type="image/png">
+<link rel="stylesheet" href="/vibe-coding/assets/site.e1ee5d83e343.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://arty-kk.github.io/vibe-coding/#website","url":"https://arty-kk.github.io/vibe-coding/","name":"Vibe Coding","inLanguage":["en","es","ru","zh-CN"]},{"@type":"SoftwareSourceCode","@id":"https://arty-kk.github.io/vibe-coding/#software","name":"Vibe Coding","url":"https://arty-kk.github.io/vibe-coding/","codeRepository":"https://github.com/arty-kk/vibe-coding","version":"1.3.0","description":"Open-source engineering skills and workflows for Codex and Claude Code.","runtimePlatform":["Codex","Claude Code"],"programmingLanguage":"Markdown","license":"https://github.com/arty-kk/vibe-coding/blob/main/LICENSE","isAccessibleForFree":true,"author":{"@type":"Person","name":"Arty S.","url":"https://github.com/arty-kk"},"image":"https://arty-kk.github.io/vibe-coding/social-card.png"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Vibe Coding","item":"https://arty-kk.github.io/vibe-coding/"},{"@type":"ListItem","position":2,"name":"API Polish","item":"https://arty-kk.github.io/vibe-coding/workflows/api-polish/"}]},{"@type":"TechArticle","@id":"https://arty-kk.github.io/vibe-coding/workflows/api-polish/#page","url":"https://arty-kk.github.io/vibe-coding/workflows/api-polish/","name":"API Polish — Vibe Coding","description":"Improve one coherent API surface end to end: route/handler, validation, domain/service boundary, persistence side effects, errors, docs, tests, and direct consumers.…","inLanguage":"en","isPartOf":{"@id":"https://arty-kk.github.io/vibe-coding/#website"},"about":{"@id":"https://arty-kk.github.io/vibe-coding/#software"},"headline":"API Polish","mainEntityOfPage":"https://arty-kk.github.io/vibe-coding/workflows/api-polish/","license":"https://github.com/arty-kk/vibe-coding/blob/main/LICENSE"}]}</script>
+<script src="/vibe-coding/assets/site.bc8fff794e61.js" defer></script>
+</head>
+<body data-base="/vibe-coding/" data-language="en" data-page="workflow">
+<a class="skip" href="#content">Skip to content</a>
+<header><a class="brand" href="/vibe-coding/"><span class="mark" aria-hidden="true">↗</span>VIBE CODING</a>
+<div class="header-actions"><a class="version" href="https://github.com/arty-kk/vibe-coding/releases/tag/v1.3.0">v1.3.0</a><nav class="languages" aria-label="Language"><a href="/vibe-coding/" lang="en" hreflang="en">English</a><a href="/vibe-coding/es/" lang="es" hreflang="es">Español</a><a href="/vibe-coding/ru/" lang="ru" hreflang="ru">Русский</a><a href="/vibe-coding/zh-CN/" lang="zh-CN" hreflang="zh-CN">简体中文</a></nav></div></header>
+<main id="content"><article class="workflow"><nav aria-label="Breadcrumb"><a href="/vibe-coding/#catalog">Workflow catalog</a><span aria-hidden="true"> / </span><span>API Polish</span></nav>
+<p class="eyebrow">APIs &amp; bots · Improve</p><h1>API Polish</h1>
+<p class="intro">Improve one coherent API surface end to end: route/handler, validation, domain/service boundary, persistence side effects, errors, docs, tests, and direct consumers.…</p><p class="fine">Vibe Coding 1.3.0 · <code>vibe-backend</code> · English technical instructions</p>
+<section class="run-workflow" aria-labelledby="run-title"><h2 id="run-title">Use this workflow</h2><p>Install Vibe Coding, choose your assistant and prompt language, then add your task details after the prompt.</p>
+<div class="tools prompt-options" hidden><label for="host">Assistant<select id="host"><option value="codex">Codex</option><option value="claude">Claude Code</option></select></label>
+<label for="prompt-language">Prompt language<select id="prompt-language"><option value="en">English</option><option value="es">Español</option><option value="ru">Русский</option><option value="zh-CN">简体中文</option></select></label></div>
+<label class="help" for="prompt">Prompt</label><textarea id="prompt" class="prompt" readonly>Use $vibe-backend, workflow “API Polish” (ID: api-polish). Follow this workflow for the task below. Report the result in English.</textarea>
+<div class="actions"><button class="copy" id="copy" hidden>Copy prompt</button><span id="copy-status" class="status" role="status"></span><a href="/vibe-coding/#install">Install the plugin</a></div>
+<script type="application/json" id="prompt-data">{"id":"api-polish","skill":"vibe-backend","locales":{"en":{"promptHelp":"Choose your assistant, copy the prompt and add your task details.","copy":"Copy prompt","copied":"Copied. Paste into your assistant.","copyFallback":"Text selected — press ⌘C or Ctrl+C.","prompt":"Use ${skill}, workflow “{title}” (ID: {id}). Follow this workflow for the task below. Report the result in English.","promptClaude":"/vibe-coding:{skill} Use workflow “{title}” (ID: {id}) for the task below. Report the result in English.","title":"API Polish"},"es":{"promptHelp":"Elige tu asistente, copia el prompt y añade los detalles de la tarea.","copy":"Copiar prompt","copied":"Copiado. Pégalo en tu asistente.","copyFallback":"Texto seleccionado: pulsa ⌘C o Ctrl+C.","prompt":"Usa ${skill}, flujo «{title}» (ID: {id}). Sigue este flujo para la tarea que aparece a continuación. Responde en español.","promptClaude":"/vibe-coding:{skill} Usa el flujo «{title}» (ID: {id}) para la tarea siguiente. Responde en español.","title":"API — Mejora"},"ru":{"promptHelp":"Выбери ассистента, скопируй промпт и добавь детали задачи.","copy":"Скопировать запрос","copied":"Скопировано. Вставь в своего ассистента.","copyFallback":"Текст выделен — нажми ⌘C или Ctrl+C.","prompt":"Используй ${skill}, сценарий «{title}» (ID: {id}). Выполни задачу ниже по этому сценарию. Ответь на русском.","promptClaude":"/vibe-coding:{skill} Используй сценарий «{title}» (ID: {id}) для задачи ниже. Отвечай на русском языке.","title":"API — Улучшение"},"zh-CN":{"promptHelp":"选择助手，复制提示词并补充任务详情。","copy":"复制提示词","copied":"已复制。请粘贴到你的助手中。","copyFallback":"文本已选中，请按 ⌘C 或 Ctrl+C。","prompt":"使用 ${skill}，工作流“{title}”（ID：{id}）。按此工作流完成下面的任务。请用简体中文汇报结果。","promptClaude":"/vibe-coding:{skill} 针对下面的任务使用“{title}”工作流（ID：{id}）。请用简体中文回答。","title":"API — 改进"}}}</script></section>
+<nav class="toc" aria-label="On this page"><h2>In this workflow</h2><ul><li><a href="#operation">Operation</a></li><li><a href="#goal">Goal</a></li><li><a href="#scope-selection">Scope selection</a></li><li><a href="#polish-targets">Polish targets</a></li><li><a href="#implementation-principles">Implementation principles</a></li><li><a href="#validation">Validation</a></li></ul></nav>
+<section id="technical-instructions" lang="en"><h2 id="operation">Operation</h2>
+<p>Implement the requested coherent change at the owning source and update directly affected consumers. An earlier audit is optional when the user and repository already establish the target. Validate the changed behavior, then stop when the requested scope is complete.</p>
+<h2 id="goal">Goal</h2>
+<p>Improve one coherent API surface end to end: route/handler, validation, domain/service boundary, persistence side effects, errors, docs, tests, and direct consumers. Do not merely rename fields or tidy controllers while the contract remains ambiguous or inconsistent.</p>
+<h2 id="scope-selection">Scope selection</h2>
+<ul>
+<li>If the user named an endpoint, integration, client failure, schema, webhook, SDK call, or contract issue, polish that API surface and directly affected consumers.</li>
+<li>If the request is broad, inspect the main API seams and apply the highest-confidence improvement with contract, safety, or developer-experience impact.</li>
+<li>Include related validation, error, idempotency, permission, observability, docs, and tests when they belong to the same contract.</li>
+<li>Avoid unrelated endpoint redesigns, mass API versioning, dependency changes, and database rewrites unless required by the selected contract fix.</li>
+</ul>
+<h2 id="polish-targets">Polish targets</h2>
+<ul>
+<li>Request/response schema clarity, required/optional/null semantics, type coercion, defaults, pagination, sorting, filtering, and versioning behavior.</li>
+<li>Validation boundary: reject malformed input close to the API edge while keeping domain invariants in the owner layer.</li>
+<li>Error model: stable status codes, machine-readable error codes, safe messages, retryability, conflict handling, and not-found/forbidden distinction when security allows it.</li>
+<li>Side effects: idempotency keys, duplicate prevention, transaction boundaries, retries, partial failure, webhooks, background jobs, and cache/index invalidation.</li>
+<li>Consumer contract: generated clients, frontend callers, bot/tool callers, docs/examples, fixtures, and integration tests.</li>
+<li>Operational behavior: rate limits, timeouts, logging, tracing, metrics, and safe diagnostics where repo patterns exist.</li>
+</ul>
+<h2 id="implementation-principles">Implementation principles</h2>
+<ul>
+<li>Preserve public contracts unless the task explicitly authorizes a breaking change.</li>
+<li>Reuse existing routing, schema, service, repository, auth, error, and test patterns.</li>
+<li>Prefer one source of truth for schemas and shared types over duplicated literals.</li>
+<li>Keep UI/client promises aligned with backend behavior.</li>
+<li>Update directly affected tests, generated artifacts, docs, and examples when the repo uses them.</li>
+</ul>
+<h2 id="validation">Validation</h2>
+<p>Run repository-native checks for the touched API surface. Prefer endpoint/unit/integration tests that exercise success, validation failure, auth/permission failure, conflict/idempotency, and consumer behavior. If external services or credentials block full validation, state exactly what was not exercised.</p>
+</section>
+<p class="source">Workflow ID: api-polish · <a href="https://github.com/arty-kk/vibe-coding/blob/v1.3.0/plugins/vibe-coding/skills/vibe-backend/references/api-polish.md">View the versioned source</a> · <a href="https://github.com/arty-kk/vibe-coding/blob/v1.3.0/plugins/vibe-coding/references/workflow.md">Shared workflow and authority rules</a></p>
+<aside class="related"><h2>Related workflows</h2><ul><li><a href="/vibe-coding/workflows/api-audit/">API Audit</a> <span class="fine">· Audit</span></li><li><a href="/vibe-coding/workflows/api-contract-compatibility-check/">API Contract Compatibility Check</a> <span class="fine">· Verify</span></li><li><a href="/vibe-coding/workflows/api-contract-evolution-audit/">API Contract Evolution Audit</a> <span class="fine">· Audit</span></li><li><a href="/vibe-coding/workflows/api-contract-evolution-polish/">API Contract Evolution Polish</a> <span class="fine">· Improve</span></li><li><a href="/vibe-coding/workflows/bot-audit/">Bot Audit</a> <span class="fine">· Audit</span></li><li><a href="/vibe-coding/workflows/bot-polish/">Bot Polish</a> <span class="fine">· Improve</span></li></ul></aside></article>
+<footer><span><a href="https://github.com/arty-kk">Maintained by Arty S.</a></span>
+<a href="https://github.com/arty-kk/vibe-coding">GitHub</a><a href="https://github.com/arty-kk/vibe-coding/releases/tag/v1.3.0">Release notes</a>
+<a href="https://github.com/arty-kk/vibe-coding/issues">Support</a>
+<a href="https://github.com/arty-kk/vibe-coding/blob/main/LICENSE">MIT</a>
+<a href="/vibe-coding/privacy.html">Privacy</a>
+<a href="/vibe-coding/terms.html">Terms</a></footer>
+</main></body></html>

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Backend Integrations Audit — Vibe Coding</title>
+<meta name="description" content="Audit external API, DNS/TLS/proxy, webhook, WebSocket, and SSE boundaries across identity, timeouts, retries, pooling, signatures, ordering, backpressure, and recovery.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://arty-kk.github.io/vibe-coding/workflows/backend-integrations-audit/">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Vibe Coding">
+<meta property="og:title" content="Backend Integrations Audit — Vibe Coding">
+<meta property="og:description" content="Audit external API, DNS/TLS/proxy, webhook, WebSocket, and SSE boundaries across identity, timeouts, retries, pooling, signatures, ordering, backpressure, and recovery.">
+<meta property="og:url" content="https://arty-kk.github.io/vibe-coding/workflows/backend-integrations-audit/">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://arty-kk.github.io/vibe-coding/social-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Vibe Coding — engineering workflows for Codex and Claude Code">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Backend Integrations Audit — Vibe Coding">
+<meta name="twitter:description" content="Audit external API, DNS/TLS/proxy, webhook, WebSocket, and SSE boundaries across identity, timeouts, retries, pooling, signatures, ordering, backpressure, and recovery.">
+<meta name="twitter:image" content="https://arty-kk.github.io/vibe-coding/social-card.png">
+<meta name="twitter:image:alt" content="Vibe Coding — engineering workflows for Codex and Claude Code">
+<meta name="theme-color" content="#101212">
+<link rel="icon" href="/vibe-coding/icon.png" type="image/png">
+<link rel="stylesheet" href="/vibe-coding/assets/site.e1ee5d83e343.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://arty-kk.github.io/vibe-coding/#website","url":"https://arty-kk.github.io/vibe-coding/","name":"Vibe Coding","inLanguage":["en","es","ru","zh-CN"]},{"@type":"SoftwareSourceCode","@id":"https://arty-kk.github.io/vibe-coding/#software","name":"Vibe Coding","url":"https://arty-kk.github.io/vibe-coding/","codeRepository":"https://github.com/arty-kk/vibe-coding","version":"1.3.0","description":"Open-source engineering skills and workflows for Codex and Claude Code.","runtimePlatform":["Codex","Claude Code"],"programmingLanguage":"Markdown","license":"https://github.com/arty-kk/vibe-coding/blob/main/LICENSE","isAccessibleForFree":true,"author":{"@type":"Person","name":"Arty S.","url":"https://github.com/arty-kk"},"image":"https://arty-kk.github.io/vibe-coding/social-card.png"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Vibe Coding","item":"https://arty-kk.github.io/vibe-coding/"},{"@type":"ListItem","position":2,"name":"Backend Integrations Audit","item":"https://arty-kk.github.io/vibe-coding/workflows/backend-integrations-audit/"}]},{"@type":"TechArticle","@id":"https://arty-kk.github.io/vibe-coding/workflows/backend-integrations-audit/#page","url":"https://arty-kk.github.io/vibe-coding/workflows/backend-integrations-audit/","name":"Backend Integrations Audit — Vibe Coding","description":"Audit external API, DNS/TLS/proxy, webhook, WebSocket, and SSE boundaries across identity, timeouts, retries, pooling, signatures, ordering, backpressure, and recovery.","inLanguage":"en","isPartOf":{"@id":"https://arty-kk.github.io/vibe-coding/#website"},"about":{"@id":"https://arty-kk.github.io/vibe-coding/#software"},"headline":"Backend Integrations Audit","mainEntityOfPage":"https://arty-kk.github.io/vibe-coding/workflows/backend-integrations-audit/","license":"https://github.com/arty-kk/vibe-coding/blob/main/LICENSE"}]}</script>
+<script src="/vibe-coding/assets/site.bc8fff794e61.js" defer></script>
+</head>
+<body data-base="/vibe-coding/" data-language="en" data-page="workflow">
+<a class="skip" href="#content">Skip to content</a>
+<header><a class="brand" href="/vibe-coding/"><span class="mark" aria-hidden="true">↗</span>VIBE CODING</a>
+<div class="header-actions"><a class="version" href="https://github.com/arty-kk/vibe-coding/releases/tag/v1.3.0">v1.3.0</a><nav class="languages" aria-label="Language"><a href="/vibe-coding/" lang="en" hreflang="en">English</a><a href="/vibe-coding/es/" lang="es" hreflang="es">Español</a><a href="/vibe-coding/ru/" lang="ru" hreflang="ru">Русский</a><a href="/vibe-coding/zh-CN/" lang="zh-CN" hreflang="zh-CN">简体中文</a></nav></div></header>
+<main id="content"><article class="workflow"><nav aria-label="Breadcrumb"><a href="/vibe-coding/#catalog">Workflow catalog</a><span aria-hidden="true"> / </span><span>Backend Integrations Audit</span></nav>
+<p class="eyebrow">Integrations &amp; networking · Audit</p><h1>Backend Integrations Audit</h1>
+<p class="intro">Audit external API, DNS/TLS/proxy, webhook, WebSocket, and SSE boundaries across identity, timeouts, retries, pooling, signatures, ordering, backpressure, and recovery.</p><p class="fine">Vibe Coding 1.3.0 · <code>vibe-integrations</code> · English technical instructions</p>
+<section class="run-workflow" aria-labelledby="run-title"><h2 id="run-title">Use this workflow</h2><p>Install Vibe Coding, choose your assistant and prompt language, then add your task details after the prompt.</p>
+<div class="tools prompt-options" hidden><label for="host">Assistant<select id="host"><option value="codex">Codex</option><option value="claude">Claude Code</option></select></label>
+<label for="prompt-language">Prompt language<select id="prompt-language"><option value="en">English</option><option value="es">Español</option><option value="ru">Русский</option><option value="zh-CN">简体中文</option></select></label></div>
+<label class="help" for="prompt">Prompt</label><textarea id="prompt" class="prompt" readonly>Use $vibe-integrations, workflow “Backend Integrations Audit” (ID: backend-integrations-audit). Follow this workflow for the task below. Report the result in English.</textarea>
+<div class="actions"><button class="copy" id="copy" hidden>Copy prompt</button><span id="copy-status" class="status" role="status"></span><a href="/vibe-coding/#install">Install the plugin</a></div>
+<script type="application/json" id="prompt-data">{"id":"backend-integrations-audit","skill":"vibe-integrations","locales":{"en":{"promptHelp":"Choose your assistant, copy the prompt and add your task details.","copy":"Copy prompt","copied":"Copied. Paste into your assistant.","copyFallback":"Text selected — press ⌘C or Ctrl+C.","prompt":"Use ${skill}, workflow “{title}” (ID: {id}). Follow this workflow for the task below. Report the result in English.","promptClaude":"/vibe-coding:{skill} Use workflow “{title}” (ID: {id}) for the task below. Report the result in English.","title":"Backend Integrations Audit"},"es":{"promptHelp":"Elige tu asistente, copia el prompt y añade los detalles de la tarea.","copy":"Copiar prompt","copied":"Copiado. Pégalo en tu asistente.","copyFallback":"Texto seleccionado: pulsa ⌘C o Ctrl+C.","prompt":"Usa ${skill}, flujo «{title}» (ID: {id}). Sigue este flujo para la tarea que aparece a continuación. Responde en español.","promptClaude":"/vibe-coding:{skill} Usa el flujo «{title}» (ID: {id}) para la tarea siguiente. Responde en español.","title":"Integraciones del backend — Auditoría"},"ru":{"promptHelp":"Выбери ассистента, скопируй промпт и добавь детали задачи.","copy":"Скопировать запрос","copied":"Скопировано. Вставь в своего ассистента.","copyFallback":"Текст выделен — нажми ⌘C или Ctrl+C.","prompt":"Используй ${skill}, сценарий «{title}» (ID: {id}). Выполни задачу ниже по этому сценарию. Ответь на русском.","promptClaude":"/vibe-coding:{skill} Используй сценарий «{title}» (ID: {id}) для задачи ниже. Отвечай на русском языке.","title":"Интеграции бэкенда — Аудит"},"zh-CN":{"promptHelp":"选择助手，复制提示词并补充任务详情。","copy":"复制提示词","copied":"已复制。请粘贴到你的助手中。","copyFallback":"文本已选中，请按 ⌘C 或 Ctrl+C。","prompt":"使用 ${skill}，工作流“{title}”（ID：{id}）。按此工作流完成下面的任务。请用简体中文汇报结果。","promptClaude":"/vibe-coding:{skill} 针对下面的任务使用“{title}”工作流（ID：{id}）。请用简体中文回答。","title":"后端集成 — 审计"}}}</script></section>
+<nav class="toc" aria-label="On this page"><h2>In this workflow</h2><ul><li><a href="#operation">Operation</a></li><li><a href="#goal-and-scope">Goal and scope</a></li><li><a href="#domain-invariants">Domain invariants</a></li><li><a href="#audit-method">Audit method</a></li><li><a href="#priority-model">Priority model</a></li></ul></nav>
+<section id="technical-instructions" lang="en"><h2 id="operation">Operation</h2>
+<p>Inspect the named boundary and report supported findings. Do not edit product code. Include concrete evidence, impact, the owning source, one remediation direction and a meaningful validation route. Severity follows actual impact, not a category example.</p>
+<h2 id="goal-and-scope">Goal and scope</h2>
+<p>Audit external API, DNS/TLS/proxy, webhook, WebSocket, and SSE boundaries across identity, timeouts, retries, pooling, signatures, ordering, backpressure, and recovery.</p>
+<h2 id="domain-invariants">Domain invariants</h2>
+<ul>
+<li>Every outbound call has normalized target, authentication, connect/request/idle timeout, cancellation, bounded response/body, and stable error mapping within an end-to-end deadline.</li>
+<li>Retries are limited to classified transient and semantically safe operations, use backoff/jitter and one retry budget, and do not multiply across proxy/client/job layers.</li>
+<li>Connection pools, DNS caching/refresh, TLS trust/SNI/hostname, keepalive, proxy limits, and circuit/admission behavior are bounded across replicas.</li>
+<li>Trusted proxy/header handling has an explicit hop boundary; forwarded identity/scheme/host/client IP cannot be spoofed from an untrusted peer.</li>
+<li>Webhook signatures cover exact raw bytes and required metadata, validate timestamp/nonce/replay window with constant-time comparison, and acknowledge only after the chosen durable boundary.</li>
+<li>Webhook delivery/replay is idempotent by provider event identity, preserves attempts/status, and separates permanent rejection from transient retry.</li>
+<li>WebSocket/SSE authentication, origin, lifecycle, heartbeat/idle timeout, message/event IDs, ordering, reconnect/resume, bounded buffers, slow-consumer policy, and shutdown are explicit.</li>
+<li>Network failures, dependency saturation, certificate/credential rotation, and degraded mode are observable without logging secrets or full sensitive payloads.</li>
+</ul>
+<h2 id="audit-method">Audit method</h2>
+<ol>
+<li>Trace request/event/connection from DNS/TLS/proxy/client through authentication, timeout/retry, pool, response/ack, persistence, reconnect, and shutdown.</li>
+<li>Inspect effective retry/timeout/pool settings across all layers and calculate worst-case attempts, duration, concurrent connections, and payload memory.</li>
+<li>Validate webhook raw-body capture, signature/version/clock/replay state, event identity, durable ack boundary, and re-drive tooling.</li>
+<li>Trace WebSocket/SSE connect, auth refresh, heartbeat, message sequence, gap, slow consumer, reconnect/resume, and deploy termination.</li>
+<li>Check DNS/TLS/proxy failure and rotation behavior, trusted headers, redirects/egress constraints, and dependency-specific quotas.</li>
+</ol>
+<h2 id="priority-model">Priority model</h2>
+<ul>
+<li><strong>P0:</strong> request forgery or smuggling, TLS/auth bypass, data exposure, duplicate irreversible external effects, or dependency-driven outage.</li>
+<li><strong>P1:</strong> a material DNS, proxy, timeout, retry, webhook, connection-pool, protocol, or degradation defect.</li>
+<li><strong>P2:</strong> a lower-risk but concrete observability, compatibility, or efficiency issue.</li>
+</ul>
+</section>
+<p class="source">Workflow ID: backend-integrations-audit · <a href="https://github.com/arty-kk/vibe-coding/blob/v1.3.0/plugins/vibe-coding/skills/vibe-integrations/references/backend-integrations-audit.md">View the versioned source</a> · <a href="https://github.com/arty-kk/vibe-coding/blob/v1.3.0/plugins/vibe-coding/references/workflow.md">Shared workflow and authority rules</a></p>
+<aside class="related"><h2>Related workflows</h2><ul><li><a href="/vibe-coding/workflows/backend-integrations-polish/">Backend Integrations Polish</a> <span class="fine">· Improve</span></li><li><a href="/vibe-coding/workflows/network-integration-failure-check/">Network Integration Failure Check</a> <span class="fine">· Verify</span></li></ul></aside></article>
+<footer><span><a href="https://github.com/arty-kk">Maintained by Arty S.</a></span>
+<a href="https://github.com/arty-kk/vibe-coding">GitHub</a><a href="https://github.com/arty-kk/vibe-coding/releases/tag/v1.3.0">Release notes</a>
+<a href="https://github.com/arty-kk/vibe-coding/issues">Support</a>
+<a href="https://github.com/arty-kk/vibe-coding/blob/main/LICENSE">MIT</a>
+<a href="/vibe-coding/privacy.html">Privacy</a>
+<a href="/vibe-coding/terms.html">Terms</a></footer>
+</main></body></html>

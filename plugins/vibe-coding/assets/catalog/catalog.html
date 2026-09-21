@@ -11,7 +11,7 @@
 <body>
 <header>
   <div class="brand"><span class="mark" aria-hidden="true">↗</span>VIBE CODING</div>
-  <div class="header-actions"><span class="version">CODEX PLUGIN / __VERSION__</span>__LANGUAGE_PICKER__</div>
+  <div class="header-actions"><span class="version">CODEX + CLAUDE CODE / __VERSION__</span>__LANGUAGE_PICKER__</div>
 </header>
 <main>
   <section class="hero">
@@ -49,6 +49,7 @@
 <dialog id="detail" aria-labelledby="detail-title">
   <div class="dialogtop"><span id="detail-badge" class="badge"></span><button class="close" id="close" aria-label="{{close}}" data-i18n-aria="close">×</button></div>
   <h2 id="detail-title"></h2><p class="detailmeta" id="detail-meta"></p><p id="detail-summary" class="detailmeta"></p>
+  <label class="language-label"><span data-i18n="host">{{host}}</span><select id="host"><option value="codex">Codex</option><option value="claude">Claude Code</option></select></label>
   <label for="prompt" class="help" data-i18n="promptHelp">{{promptHelp}}</label>
   <textarea class="prompt" id="prompt" readonly></textarea>
   <div class="actions"><button class="copy" id="copy" data-i18n="copy">{{copy}}</button><span id="copy-status" class="status" role="status"></span></div>

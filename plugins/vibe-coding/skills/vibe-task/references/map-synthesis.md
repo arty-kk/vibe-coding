@@ -2,7 +2,7 @@
 
 ## Operation
 
-Analyze and return an actionable brief in the current conversation. Planning does not create a new Codex task or edit product code. Carry the full requested objective into the plan; separate independent work without silently discarding it.
+Analyze and return an actionable brief in the current conversation. Planning does not create a new assistant task or edit product code. Carry the full requested objective into the plan; separate independent work without silently discarding it.
 
 ## Goal
 

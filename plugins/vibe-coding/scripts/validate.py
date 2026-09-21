@@ -93,6 +93,12 @@ def validate(root=ROOT):
         portable=json.loads((root/'plugin.json').read_text(encoding='utf-8'))
         for key in ('name','version','description','author','homepage','repository','license','keywords'):
             check(portable.get(key)==manifest.get(key),f'Manifest mismatch: {key}')
+        claude=json.loads((root/'.claude-plugin/plugin.json').read_text(encoding='utf-8'))
+        check(isinstance(claude,dict),'Claude manifest must be an object')
+        if isinstance(claude,dict):
+            for key in ('name','version','description','author','homepage','repository','license','keywords'):
+                check(claude.get(key)==manifest.get(key),f'Claude manifest mismatch: {key}')
+            check(not any(k in claude for k in ('hooks','mcpServers','agents','commands')),'Unexpected Claude runtime integration')
         check(portable.get('$schema')=='https://agent-plugins.org/schemas/1.0.0/plugin.schema.json','Invalid portable schema')
         check(portable.get('extensions',{}).get('com.openai',{}).get('interface')==manifest.get('interface'),'Interface mismatch')
         for key in ('composerIcon','logo'):

@@ -1,12 +1,12 @@
 {
   "ui": {
     "pageTitle": "Vibe Coding — 工作流目录",
-    "description": "{skills} 项 Codex 技能和 {recipes} 个工程工作流，涵盖项目梳理、代码审查、调试和验证。",
+    "description": "为 Codex 和 Claude Code 提供 {skills} 项技能和 {recipes} 个工程工作流，涵盖项目梳理、代码审查、调试和验证。",
     "language": "语言",
-    "eyebrow": "你的 Codex 工程工具库",
+    "eyebrow": "适用于 Codex 和 Claude Code 的工程工作流库",
     "headline": "选定任务。",
     "headlineAccent": "找到适合的工作流。",
-    "intro": "从梳理项目到验证变更。选择工作流、复制提示词，并在 Codex 中补充任务背景。",
+    "intro": "从梳理项目到验证修改。选择工作流，复制提示词，然后在 Codex 或 Claude Code 中补充任务背景。",
     "skills": "项技能",
     "workflows": "个工作流",
     "domains": "个领域",
@@ -32,15 +32,17 @@
     "privacy": "隐私",
     "terms": "条款",
     "close": "关闭",
-    "promptHelp": "可直接粘贴到 Codex，再补充你的任务详情。",
+    "promptHelp": "选择助手，复制提示词并补充任务详情。",
     "copy": "复制提示词",
-    "copied": "已复制。请粘贴到 Codex。",
+    "copied": "已复制。请粘贴到你的助手中。",
     "copyFallback": "文本已选中，请按 ⌘C 或 Ctrl+C。",
     "instructions": "阅读技术指令（英文）",
     "recipeId": "工作流 ID：{id}",
     "prompt": "使用 ${skill}，工作流“{title}”（ID：{id}）。按此工作流完成下面的任务。请用简体中文汇报结果。",
     "noScript": "请启用 JavaScript，以搜索工作流并复制提示词。",
-    "back": "返回目录"
+    "back": "返回目录",
+    "host": "助手",
+    "promptClaude": "/vibe-coding:{skill} 针对下面的任务使用“{title}”工作流（ID：{id}）。请用简体中文回答。"
   },
   "modes": {
     "audit": "审计",
@@ -391,7 +393,7 @@
     "serverless-invocation-check": "无服务器调用验证"
   },
   "policy": {
-    "privacy": "# 隐私\n\nVibe Coding 由 Arty S. / ARTSIOM SATSUK（[arty-kk](https://github.com/arty-kk)）维护。\n\n分发的插件包含文本指令、本地目录和本地 Python 工具。它没有由发布者运营的后端、分析系统、跟踪像素、Cookie、账户系统或遥测功能。目录与打包工具不会将项目内容发送给发布者。\n\n在 Codex 或 ChatGPT 中使用插件时，宿主应用会按照自身的设置和政策处理提示词、文件和工具结果。工作流可能使用用户已启用的工具和服务；这些服务适用各自的数据政策。插件不会自行获取额外权限。\n\n公共网站托管于 GitHub Pages。GitHub 可能根据其隐私政策处理常规请求信息。自愿发布在仓库 issue 或 pull request 中的信息是公开的，由 GitHub 处理。请勿发布凭据、私有源代码或个人数据。\n\n网站仅在浏览器的本地存储中保存你选择的界面语言。此偏好不会发送给发布者。\n\n如有隐私问题，可通过 [GitHub Issues](https://github.com/arty-kk/vibe-coding/issues) 提出，请勿包含敏感信息。\n",
+    "privacy": "# 隐私\n\nVibe Coding 由 Arty S. / ARTSIOM SATSUK（[arty-kk](https://github.com/arty-kk)）维护。\n\n分发的插件包含文本指令、本地目录和本地 Python 工具。它没有由发布者运营的后端、分析系统、跟踪像素、Cookie、账户系统或遥测功能。目录与打包工具不会将项目内容发送给发布者。\n\n在 Codex、ChatGPT 或 Claude 中使用插件时，宿主应用会按照自身的设置和政策处理提示词、文件和工具结果。工作流可能使用用户已启用的工具和服务；这些服务适用各自的数据政策。插件不会自行获取额外权限。\n\n公共网站托管于 GitHub Pages。GitHub 可能根据其隐私政策处理常规请求信息。自愿发布在仓库 issue 或 pull request 中的信息是公开的，由 GitHub 处理。请勿发布凭据、私有源代码或个人数据。\n\n网站和离线目录仅在浏览器本地存储中保存所选语言和助手。这些偏好不会发送给发布者。\n\n如有隐私问题，可通过 [GitHub Issues](https://github.com/arty-kk/vibe-coding/issues) 提出，请勿包含敏感信息。\n",
     "terms": "# 条款\n\nVibe Coding 由 Arty S. / ARTSIOM SATSUK（[arty-kk](https://github.com/arty-kk)）根据 [MIT 许可证](LICENSE) 分发。软件的使用、修改和再分发均受该许可证约束。\n\n插件不提供订阅或发布者的付费服务。宿主应用以及你选择使用的外部服务仍受各自条款和收费规则约束。\n\n在生产环境中使用之前，请审查生成的变更和验证结果。软件按“原样”提供，适用 MIT 许可证规定的免责声明和责任限制。\n\n可通过 [GitHub Issues](https://github.com/arty-kk/vibe-coding/issues) 获取支持，作者将在能力范围内尽力提供帮助。\n"
   }
 }

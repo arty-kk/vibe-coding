@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Incident Recovery Check — Vibe Coding</title>
+<meta name="description" content="Verify that the selected incident remediation restored the affected operation without changing product or operational state. Read incident response boundaries.…">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://arty-kk.github.io/vibe-coding/workflows/incident-recovery-check/">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Vibe Coding">
+<meta property="og:title" content="Incident Recovery Check — Vibe Coding">
+<meta property="og:description" content="Verify that the selected incident remediation restored the affected operation without changing product or operational state. Read incident response boundaries.…">
+<meta property="og:url" content="https://arty-kk.github.io/vibe-coding/workflows/incident-recovery-check/">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://arty-kk.github.io/vibe-coding/social-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Vibe Coding — engineering workflows for Codex and Claude Code">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Incident Recovery Check — Vibe Coding">
+<meta name="twitter:description" content="Verify that the selected incident remediation restored the affected operation without changing product or operational state. Read incident response boundaries.…">
+<meta name="twitter:image" content="https://arty-kk.github.io/vibe-coding/social-card.png">
+<meta name="twitter:image:alt" content="Vibe Coding — engineering workflows for Codex and Claude Code">
+<meta name="theme-color" content="#101212">
+<link rel="icon" href="/vibe-coding/icon.png" type="image/png">
+<link rel="stylesheet" href="/vibe-coding/assets/site.e1ee5d83e343.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://arty-kk.github.io/vibe-coding/#website","url":"https://arty-kk.github.io/vibe-coding/","name":"Vibe Coding","inLanguage":["en","es","ru","zh-CN"]},{"@type":"SoftwareSourceCode","@id":"https://arty-kk.github.io/vibe-coding/#software","name":"Vibe Coding","url":"https://arty-kk.github.io/vibe-coding/","codeRepository":"https://github.com/arty-kk/vibe-coding","version":"1.3.0","description":"Open-source engineering skills and workflows for Codex and Claude Code.","runtimePlatform":["Codex","Claude Code"],"programmingLanguage":"Markdown","license":"https://github.com/arty-kk/vibe-coding/blob/main/LICENSE","isAccessibleForFree":true,"author":{"@type":"Person","name":"Arty S.","url":"https://github.com/arty-kk"},"image":"https://arty-kk.github.io/vibe-coding/social-card.png"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Vibe Coding","item":"https://arty-kk.github.io/vibe-coding/"},{"@type":"ListItem","position":2,"name":"Incident Recovery Check","item":"https://arty-kk.github.io/vibe-coding/workflows/incident-recovery-check/"}]},{"@type":"TechArticle","@id":"https://arty-kk.github.io/vibe-coding/workflows/incident-recovery-check/#page","url":"https://arty-kk.github.io/vibe-coding/workflows/incident-recovery-check/","name":"Incident Recovery Check — Vibe Coding","description":"Verify that the selected incident remediation restored the affected operation without changing product or operational state. Read incident response boundaries.…","inLanguage":"en","isPartOf":{"@id":"https://arty-kk.github.io/vibe-coding/#website"},"about":{"@id":"https://arty-kk.github.io/vibe-coding/#software"},"headline":"Incident Recovery Check","mainEntityOfPage":"https://arty-kk.github.io/vibe-coding/workflows/incident-recovery-check/","license":"https://github.com/arty-kk/vibe-coding/blob/main/LICENSE"}]}</script>
+<script src="/vibe-coding/assets/site.bc8fff794e61.js" defer></script>
+</head>
+<body data-base="/vibe-coding/" data-language="en" data-page="workflow">
+<a class="skip" href="#content">Skip to content</a>
+<header><a class="brand" href="/vibe-coding/"><span class="mark" aria-hidden="true">↗</span>VIBE CODING</a>
+<div class="header-actions"><a class="version" href="https://github.com/arty-kk/vibe-coding/releases/tag/v1.3.0">v1.3.0</a><nav class="languages" aria-label="Language"><a href="/vibe-coding/" lang="en" hreflang="en">English</a><a href="/vibe-coding/es/" lang="es" hreflang="es">Español</a><a href="/vibe-coding/ru/" lang="ru" hreflang="ru">Русский</a><a href="/vibe-coding/zh-CN/" lang="zh-CN" hreflang="zh-CN">简体中文</a></nav></div></header>
+<main id="content"><article class="workflow"><nav aria-label="Breadcrumb"><a href="/vibe-coding/#catalog">Workflow catalog</a><span aria-hidden="true"> / </span><span>Incident Recovery Check</span></nav>
+<p class="eyebrow">Infrastructure &amp; background jobs · Verify</p><h1>Incident Recovery Check</h1>
+<p class="intro">Verify that the selected incident remediation restored the affected operation without changing product or operational state. Read incident response boundaries.…</p><p class="fine">Vibe Coding 1.3.0 · <code>vibe-ops</code> · English technical instructions</p>
+<section class="run-workflow" aria-labelledby="run-title"><h2 id="run-title">Use this workflow</h2><p>Install Vibe Coding, choose your assistant and prompt language, then add your task details after the prompt.</p>
+<div class="tools prompt-options" hidden><label for="host">Assistant<select id="host"><option value="codex">Codex</option><option value="claude">Claude Code</option></select></label>
+<label for="prompt-language">Prompt language<select id="prompt-language"><option value="en">English</option><option value="es">Español</option><option value="ru">Русский</option><option value="zh-CN">简体中文</option></select></label></div>
+<label class="help" for="prompt">Prompt</label><textarea id="prompt" class="prompt" readonly>Use $vibe-ops, workflow “Incident Recovery Check” (ID: incident-recovery-check). Follow this workflow for the task below. Report the result in English.</textarea>
+<div class="actions"><button class="copy" id="copy" hidden>Copy prompt</button><span id="copy-status" class="status" role="status"></span><a href="/vibe-coding/#install">Install the plugin</a></div>
+<script type="application/json" id="prompt-data">{"id":"incident-recovery-check","skill":"vibe-ops","locales":{"en":{"promptHelp":"Choose your assistant, copy the prompt and add your task details.","copy":"Copy prompt","copied":"Copied. Paste into your assistant.","copyFallback":"Text selected — press ⌘C or Ctrl+C.","prompt":"Use ${skill}, workflow “{title}” (ID: {id}). Follow this workflow for the task below. Report the result in English.","promptClaude":"/vibe-coding:{skill} Use workflow “{title}” (ID: {id}) for the task below. Report the result in English.","title":"Incident Recovery Check"},"es":{"promptHelp":"Elige tu asistente, copia el prompt y añade los detalles de la tarea.","copy":"Copiar prompt","copied":"Copiado. Pégalo en tu asistente.","copyFallback":"Texto seleccionado: pulsa ⌘C o Ctrl+C.","prompt":"Usa ${skill}, flujo «{title}» (ID: {id}). Sigue este flujo para la tarea que aparece a continuación. Responde en español.","promptClaude":"/vibe-coding:{skill} Usa el flujo «{title}» (ID: {id}) para la tarea siguiente. Responde en español.","title":"Verificación de recuperación tras incidentes"},"ru":{"promptHelp":"Выбери ассистента, скопируй промпт и добавь детали задачи.","copy":"Скопировать запрос","copied":"Скопировано. Вставь в своего ассистента.","copyFallback":"Текст выделен — нажми ⌘C или Ctrl+C.","prompt":"Используй ${skill}, сценарий «{title}» (ID: {id}). Выполни задачу ниже по этому сценарию. Ответь на русском.","promptClaude":"/vibe-coding:{skill} Используй сценарий «{title}» (ID: {id}) для задачи ниже. Отвечай на русском языке.","title":"Проверка восстановления после инцидента"},"zh-CN":{"promptHelp":"选择助手，复制提示词并补充任务详情。","copy":"复制提示词","copied":"已复制。请粘贴到你的助手中。","copyFallback":"文本已选中，请按 ⌘C 或 Ctrl+C。","prompt":"使用 ${skill}，工作流“{title}”（ID：{id}）。按此工作流完成下面的任务。请用简体中文汇报结果。","promptClaude":"/vibe-coding:{skill} 针对下面的任务使用“{title}”工作流（ID：{id}）。请用简体中文回答。","title":"事件恢复验证"}}}</script></section>
+<nav class="toc" aria-label="On this page"><h2>In this workflow</h2><ul><li><a href="#operation">Operation</a></li><li><a href="#required-input">Required input</a></li><li><a href="#domain-invariants">Domain invariants</a></li><li><a href="#establish-criteria">Establish criteria</a></li><li><a href="#recovery-evidence">Recovery evidence</a></li><li><a href="#verification-method">Verification method</a></li><li><a href="#evidence-and-limitations">Evidence and limitations</a></li><li><a href="#evidence-and-safety-rules">Evidence and safety rules</a></li><li><a href="#verdict-and-completion">Verdict and completion</a></li><li><a href="#output-contract">Output contract</a></li></ul></nav>
+<section id="technical-instructions" lang="en"><h2 id="operation">Operation</h2>
+<p>Verify that the selected incident remediation restored the affected operation without changing product or operational state. Read <a href="https://github.com/arty-kk/vibe-coding/blob/v1.3.0/plugins/vibe-coding/references/incident-response.md">incident response boundaries</a>. Deployment, restart, rollback and data repair remain separate actions governed by the user's authorization.</p>
+<h2 id="required-input">Required input</h2>
+<p>The affected user operation and cohorts, incident window, available symptom/runtime evidence, known changes, investigation or intervention authority and recovery criteria. Mark unavailable telemetry and unresolved causality explicitly.</p>
+<p>Select the target from the user’s request and current evidence. Reconstruct ordinary missing context from the owning code. If a missing target, authority or environment changes correctness or safety, name that specific gap and leave the dependent action blocked; continue independent work. Do not invent requirements from existing tests.</p>
+<h2 id="domain-invariants">Domain invariants</h2>
+<ul>
+<li>Incident claims distinguish user impact, observed failure and inferred cause using attributable and time-aligned evidence.</li>
+<li>A mitigation’s effect and a root-cause correction are separate claims; neither is established by temporal correlation alone.</li>
+<li>The intervention targets the authoritative failure owner and preserves directly affected compatibility, retry and durable-state contracts.</li>
+<li>Recovery is demonstrated by fresh affected-user behavior and required convergence, with valid traffic and functioning telemetry.</li>
+<li>Unfinished data repair and unobserved recurrence windows remain explicit even when immediate symptoms or alerts subside.</li>
+</ul>
+<h2 id="establish-criteria">Establish criteria</h2>
+<p>Name the incident, affected operation/cohorts, intervention identity and deployment/configuration time. Use the incident's success criteria and baseline; do not invent a convenient new threshold after seeing the result. Identify the current artifact/configuration and the observation window needed for the failure mode to recur or backlog to converge.</p>
+<h2 id="recovery-evidence">Recovery evidence</h2>
+<ul>
+<li>Fresh successful user operations through the previously failing path, including the affected identity, region or workload where relevant.</li>
+<li>Error ratio and latency with a meaningful denominator and comparable traffic; an idle service has not demonstrated recovery.</li>
+<li>Queue age, retries, dead-letter work and durable-state reconciliation, not only queue depth or process health.</li>
+<li>Resource saturation, connection/task cleanup and downstream behavior during the workload that exposed the incident.</li>
+<li>Absence of the original failure signature with functioning telemetry, plus checks for directly induced regressions.</li>
+<li>Completion or explicit remaining scope of repairs for partially written data, missed events or duplicate effects.</li>
+</ul>
+<h2 id="verification-method">Verification method</h2>
+<ol>
+<li>Confirm the intervention actually reached the intended runtime; compare immutable release/configuration identifiers.</li>
+<li>Correlate fresh evidence with the intervention timeline using event and ingestion times correctly. Exclude old delayed log entries from current-failure counts without hiding real delayed effects.</li>
+<li>Repeat the original reproduction or an equivalent safe product check. Use a valid control and the affected cohort; a health endpoint alone is insufficient.</li>
+<li>Inspect backlog and state convergence over the agreed window. Establish that retries are draining rather than simply being disabled or silently dropped.</li>
+<li>Compare with the baseline and document uncertainty from traffic changes, sampling, missing telemetry or unexercised providers.</li>
+</ol>
+<h2 id="evidence-and-limitations">Evidence and limitations</h2>
+<p>Classify the result as recovered, mitigated with remaining work, failed or not sufficiently observed. Support it with exact queries/checks, timestamps, observed values and remaining criteria. Tie a failing code/configuration condition to its owner when the source supports that conclusion; keep external causes as evidence-backed hypotheses.</p>
+<p>Do not infer causality solely because two graphs changed together, or declare full recovery because alerts stopped. State which user guarantees are restored and which data repair, recurrence, provider or longer-window checks remain open. Recommend the smallest next investigation or authorized repair rather than expanding into unrelated operations.</p>
+<h2 id="evidence-and-safety-rules">Evidence and safety rules</h2>
+<p>Define the required scenario matrix before execution from the selected invariant and current repository commands. Respect active test restrictions. Use the authorized environment and bounded workload/fault conditions. Record expected and observed state, identity/order/effect evidence and exact commands; passing harness output alone cannot override the intended contract. Pair negative cases with a valid control. Do not perform destructive drills, broaden implementation or infer provider/production behavior from local fixtures. An unavailable required scenario remains unavailable.</p>
+<h2 id="verdict-and-completion">Verdict and completion</h2>
+<p>Return <strong>passed</strong> only when every required criterion is supported by actual evidence. Return <strong>failed</strong> when a named invariant is violated, with the minimal reproduction and owner. Return <strong>blocked</strong> when required evidence cannot be obtained because the target, environment or safe operation is unavailable; name the missing gate. If a defect is already proven and other checks are blocked, report failed with those unexercised gates. Stop when the bounded matrix is resolved or cannot safely progress; never convert skipped work into a pass.</p>
+<h2 id="output-contract">Output contract</h2>
+<p>Respond in the user’s language and begin with passed, failed or blocked. Include: checked invariant and exact boundary/version; required scenario matrix with expected/observed state and per-case result; actual commands and bounded measurements; evidence anchors or minimal reproduction; residual risks; unavailable gates and their effect on the verdict. Separate inspected source from executed runtime evidence. Omit empty sections. Recommend the narrow owner correction for a failure without performing unrequested edits.</p>
+</section>
+<p class="source">Workflow ID: incident-recovery-check · <a href="https://github.com/arty-kk/vibe-coding/blob/v1.3.0/plugins/vibe-coding/skills/vibe-ops/references/incident-recovery-check.md">View the versioned source</a> · <a href="https://github.com/arty-kk/vibe-coding/blob/v1.3.0/plugins/vibe-coding/references/workflow.md">Shared workflow and authority rules</a></p>
+<aside class="related"><h2>Related workflows</h2><ul><li><a href="/vibe-coding/workflows/background-jobs-audit/">Background Jobs Audit</a> <span class="fine">· Audit</span></li><li><a href="/vibe-coding/workflows/background-jobs-polish/">Background Jobs Polish</a> <span class="fine">· Improve</span></li><li><a href="/vibe-coding/workflows/deploy-bootstrap/">Deploy Bootstrap</a> <span class="fine">· Improve</span></li><li><a href="/vibe-coding/workflows/incident-remediation-polish/">Incident Remediation Polish</a> <span class="fine">· Improve</span></li><li><a href="/vibe-coding/workflows/incident-triage-audit/">Incident Triage Audit</a> <span class="fine">· Audit</span></li><li><a href="/vibe-coding/workflows/infra-ops-audit/">Infra Ops Audit</a> <span class="fine">· Audit</span></li><li><a href="/vibe-coding/workflows/infra-ops-polish/">Infra Ops Polish</a> <span class="fine">· Improve</span></li></ul></aside></article>
+<footer><span><a href="https://github.com/arty-kk">Maintained by Arty S.</a></span>
+<a href="https://github.com/arty-kk/vibe-coding">GitHub</a><a href="https://github.com/arty-kk/vibe-coding/releases/tag/v1.3.0">Release notes</a>
+<a href="https://github.com/arty-kk/vibe-coding/issues">Support</a>
+<a href="https://github.com/arty-kk/vibe-coding/blob/main/LICENSE">MIT</a>
+<a href="/vibe-coding/privacy.html">Privacy</a>
+<a href="/vibe-coding/terms.html">Terms</a></footer>
+</main></body></html>

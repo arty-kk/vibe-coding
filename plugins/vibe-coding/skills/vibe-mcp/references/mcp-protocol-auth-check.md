@@ -39,7 +39,7 @@ Check direct calls independently of discovery filtering. Reuse a connection or d
 
 Capture the minimal request, status, result/error classification and side-effect evidence with credentials redacted. Run a valid control request beside negative cases so a broken harness cannot masquerade as successful denial. State each criterion as passed, failed or not exercised, with command/output and owning source for failures.
 
-Handler fixtures establish local dispatch and scope only. Loopback HTTP adds real serialization and header coverage; it does not prove production TLS/proxies, OAuth discovery, all SDKs or Codex-host interoperability. Report those missing checks explicitly and recommend the smallest next verification or repair for the observed gap.
+Handler fixtures establish local dispatch and scope only. Loopback HTTP adds real serialization and header coverage; it does not prove production TLS/proxies, OAuth discovery, all SDKs or interoperability with the selected host (Codex or Claude Code). Report those missing checks explicitly and recommend the smallest next verification or repair for the observed gap.
 
 ## Evidence and safety rules
 

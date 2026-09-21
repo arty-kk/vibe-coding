@@ -85,7 +85,7 @@ P2 = low-risk correctness, test harness, generated artifact, docs/map stale issu
 
 ## Validation
 
-Run repository-native checks relevant to the selected area and changed files, discoverable from `AGENTS.md`, package scripts, Makefile, CI config, tests, or repo docs. Prefer the smallest command that proves the fixed owner behavior and at least one direct consumer or regression path.
+Run repository-native checks relevant to the selected area and changed files, discoverable from the active repository instructions (`AGENTS.md`, `CLAUDE.md` or applicable scoped rules), package scripts, Makefile, CI config, tests, or repo docs. Prefer the smallest command that proves the fixed owner behavior and at least one direct consumer or regression path.
 
 Do not invent commands. Record exact commands and results. If checks are unavailable, too expensive, external, destructive, or blocked by credentials/services, report them as explicit gates, not passes.
 

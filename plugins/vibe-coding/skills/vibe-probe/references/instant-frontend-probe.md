@@ -98,7 +98,7 @@ P2 = narrow edge case, non-blocking console error, test harness or generated-cli
 
 ## Validation
 
-Run repository-native checks relevant to the selected area and changed files, discoverable from `AGENTS.md`, package scripts, Makefile, CI config, tests, or repo docs. Prefer the smallest command that proves the fixed owner behavior and at least one direct consumer or regression path:
+Run repository-native checks relevant to the selected area and changed files, discoverable from the active repository instructions (`AGENTS.md`, `CLAUDE.md` or applicable scoped rules), package scripts, Makefile, CI config, tests, or repo docs. Prefer the smallest command that proves the fixed owner behavior and at least one direct consumer or regression path:
 
 - the narrowest unit/component test target for the owner, plus a regression case for the exact trigger when a test file already exists;
 - type check of the changed package;

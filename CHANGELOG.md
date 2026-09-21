@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.3.0
+
+- Support Claude Code with a native plugin manifest, a public GitHub marketplace and a repository-root entry for directory distribution. Keep all 46 skills and 241 workflows shared with Codex.
+- Add host integration for Codex repository rules, Claude `CLAUDE.md`/scoped rules, Cowork shared files, namespaced skill invocation, relative resource paths and actual tool/permission availability. Remove Codex-only assumptions from planning and probe instructions.
+- Add Codex/Claude Code prompt selection in the offline catalog and `--host claude` in CLI search, with English, Spanish, Russian and Simplified Chinese prompts.
+- Publish fully rendered landing and policy pages in four languages, plus 241 English workflow pages with complete instructions, section anchors, related workflows and versioned source links.
+- Add canonical URLs, reciprocal language alternates, a 253-URL sitemap, software/article/breadcrumb structured data and a 1200×630 social image. Preserve legacy language/hash links.
+- Reduce initial English HTML from about 1.58 MB to 132 KB; load full-text search on demand and retain title/category search on network failure.
+- Add cross-host packaging, static SEO, link, language, metadata and search-index regression checks, plus native Claude manifest validation in CI. Preserve earlier behavioral records as historical evidence; this release does not claim full model execution in every host or workflow.
+
 ## 1.2.0
 
 - Add 13 workflows for API/schema evolution, transactional delivery, build trust, incident response and serverless/edge invocation lifecycles; expand to 46 skills and 241 workflows.

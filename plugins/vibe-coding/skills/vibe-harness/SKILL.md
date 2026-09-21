@@ -1,6 +1,6 @@
 ---
 name: vibe-harness
-description: "Audit, fix or verify agent harness state machines, checkpoint/resume, bounded fan-out, cancellation, durable side effects and replay. This concerns application orchestration code, not creating Codex tasks."
+description: "Audit, fix or verify agent harness state machines, checkpoint/resume, bounded fan-out, cancellation, durable side effects and replay. This concerns application orchestration code, not creating assistant tasks."
 ---
 
 # Agent execution

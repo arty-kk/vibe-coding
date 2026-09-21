@@ -1,0 +1,17 @@
+{
+  "name": "vibe-coding",
+  "owner": {
+    "name": "Arty S.",
+    "url": "https://github.com/arty-kk"
+  },
+  "plugins": [
+    {
+      "name": "vibe-coding",
+      "source": "./plugins/vibe-coding",
+      "description": "Evidence-based coding workflows: 46 skills, 241 domain recipes, scoped implementation and verification."
+    }
+  ],
+  "metadata": {
+    "description": "Vibe Coding: engineering skills and workflows for Claude Code and Codex."
+  }
+}

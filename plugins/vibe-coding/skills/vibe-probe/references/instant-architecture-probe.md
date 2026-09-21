@@ -43,7 +43,7 @@ Follow explicit user targets even when previously visited. For an unspecified ne
 
 If the user gave no target, choose the highest-confidence unvisited seam from repository evidence, in this order:
 
-1. an explicitly declared rule that is currently violated: import boundaries in ESLint/`import-linter`/`dependency-cruiser`/`ArchUnit`/`tsconfig` path constraints, workspace `package.json` boundaries, module visibility settings, or documented layering in `AGENTS.md`/ADR;
+1. an explicitly declared rule that is currently violated: import boundaries in ESLint/`import-linter`/`dependency-cruiser`/`ArchUnit`/`tsconfig` path constraints, workspace `package.json` boundaries, module visibility settings, or documented layering in the active host’s repository instructions (`AGENTS.md` or `CLAUDE.md`) or ADRs;
 2. a cycle or upward dependency proven by imports: domain importing infrastructure, shared/core importing feature code, package A ↔ package B, entity ↔ service loops;
 3. duplicated authority: the same invariant, validation rule, enum, permission matrix, status machine, or mapping implemented by two independent owners that can demonstrably drift;
 4. leaked boundary types: transport DTOs, ORM entities, framework request objects, or vendor SDK types crossing into layers whose contracts forbid them;
@@ -110,7 +110,7 @@ Do not raise priority based only on hypothetical future impact.
 
 ## Validation
 
-Run repository-native checks relevant to the changed boundary, discoverable from `AGENTS.md`, package scripts, Makefile, CI config, or repo docs. Prefer the smallest command that proves the boundary now holds **and** that affected consumers still compile:
+Run repository-native checks relevant to the changed boundary, discoverable from the active repository instructions (`AGENTS.md`, `CLAUDE.md` or applicable scoped rules), package scripts, Makefile, CI config, or repo docs. Prefer the smallest command that proves the boundary now holds **and** that affected consumers still compile:
 
 * boundary/graph linters already configured in the repo;
 * type check / compile of the changed packages and their direct dependents;

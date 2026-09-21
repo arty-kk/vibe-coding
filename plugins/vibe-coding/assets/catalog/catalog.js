@@ -2,6 +2,10 @@ const $ = id => document.getElementById(id);
 const recipes = JSON.parse($('recipe-data').textContent);
 const query = $('query'), category = $('category'), mode = $('mode'), dialog = $('detail');
 let locale, language;
+const host = $('host');
+let activeRecipe;
+try { host.value = localStorage.getItem('vibe-coding-host') === 'claude' ? 'claude' : 'codex'; } catch {}
+const invocation = skill => host.value === 'claude' ? '/vibe-coding:' + skill : '$' + skill;
 const searchIndex = JSON.parse($('search-data').textContent);
 
 function node(tag, className, text) {
@@ -31,7 +35,7 @@ function render() {
     button.setAttribute('aria-label', locale.titles[r.id] + ' · ' + locale.categories[r.skill]);
     button.append(node('span', 'num', String(i + 1).padStart(2, '0')));
     const name = node('span', 'name');
-    name.append(node('span', 'title', locale.titles[r.id]), node('span', 'skill', '$' + r.skill));
+    name.append(node('span', 'title', locale.titles[r.id]), node('span', 'skill', invocation(r.skill)));
     button.append(name, node('span', 'category', locale.categories[r.skill]),
       node('span', 'badge ' + r.mode, locale.modes[r.mode]), node('span', 'arrow', '↗'));
     button.addEventListener('click', () => openRecipe(r.id));
@@ -43,12 +47,13 @@ function render() {
 function openRecipe(id) {
   const r = recipes.find(row => row.id === id);
   if (!r) return;
+  activeRecipe = r.id;
   $('detail-title').textContent = locale.titles[r.id];
-  $('detail-meta').textContent = locale.categories[r.skill] + ' · $' + r.skill;
+  $('detail-meta').textContent = locale.categories[r.skill] + ' · ' + invocation(r.skill);
   $('detail-summary').textContent = locale.summaries[r.skill];
   $('detail-badge').className = 'badge ' + r.mode;
   $('detail-badge').textContent = locale.modes[r.mode];
-  $('prompt').value = formatMessage(locale.ui.prompt, {skill: r.skill, title: locale.titles[r.id], id: r.id});
+  $('prompt').value = formatMessage(locale.ui[host.value === 'claude' ? 'promptClaude' : 'prompt'], {skill: r.skill, title: locale.titles[r.id], id: r.id});
   $('body').textContent = r.body;
   $('source').textContent = formatMessage(locale.ui.recipeId, {id: r.id});
   $('copy-status').textContent = '';
@@ -122,3 +127,9 @@ document.addEventListener('keydown', event => {
   }
 });
 window.addEventListener('hashchange', openHash);
+
+host.addEventListener('change', () => {
+  try { localStorage.setItem('vibe-coding-host', host.value); } catch {}
+  render();
+  if (activeRecipe) openRecipe(activeRecipe);
+});

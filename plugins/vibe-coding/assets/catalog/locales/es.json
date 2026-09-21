@@ -1,12 +1,12 @@
 {
   "ui": {
     "pageTitle": "Vibe Coding — catálogo de flujos de trabajo",
-    "description": "{skills} habilidades de Codex y {recipes} flujos de trabajo de ingeniería para explorar, revisar, depurar y verificar código.",
+    "description": "{skills} habilidades y {recipes} flujos de ingeniería para Codex y Claude Code: mapas, revisión, depuración y verificación.",
     "language": "Idioma",
-    "eyebrow": "Tu biblioteca de ingeniería para Codex",
+    "eyebrow": "Tu biblioteca de ingeniería para Codex y Claude Code",
     "headline": "Elige una tarea.",
     "headlineAccent": "Encuentra tu flujo de trabajo.",
-    "intro": "Del mapa del proyecto a un cambio verificado. Encuentra un flujo de trabajo, copia el prompt y añade el contexto de tu tarea en Codex.",
+    "intro": "Del mapa del proyecto a un cambio verificado. Elige un flujo, copia el prompt y añade el contexto de tu tarea en Codex o Claude Code.",
     "skills": "habilidades",
     "workflows": "flujos de trabajo",
     "domains": "áreas",
@@ -32,15 +32,17 @@
     "privacy": "Privacidad",
     "terms": "Condiciones",
     "close": "Cerrar",
-    "promptHelp": "Listo para pegar: añade los detalles de tu tarea en Codex.",
+    "promptHelp": "Elige tu asistente, copia el prompt y añade los detalles de la tarea.",
     "copy": "Copiar prompt",
-    "copied": "Copiado. Pégalo en Codex.",
+    "copied": "Copiado. Pégalo en tu asistente.",
     "copyFallback": "Texto seleccionado: pulsa ⌘C o Ctrl+C.",
     "instructions": "Leer las instrucciones técnicas (en inglés)",
     "recipeId": "ID del flujo: {id}",
     "prompt": "Usa ${skill}, flujo «{title}» (ID: {id}). Sigue este flujo para la tarea que aparece a continuación. Responde en español.",
     "noScript": "Activa JavaScript para buscar flujos de trabajo y copiar prompts.",
-    "back": "Volver al catálogo"
+    "back": "Volver al catálogo",
+    "host": "Asistente",
+    "promptClaude": "/vibe-coding:{skill} Usa el flujo «{title}» (ID: {id}) para la tarea siguiente. Responde en español."
   },
   "modes": {
     "audit": "Auditoría",
@@ -391,7 +393,7 @@
     "serverless-invocation-check": "Verificación de invocaciones serverless"
   },
   "policy": {
-    "privacy": "# Privacidad\n\nVibe Coding es mantenido por Arty S. / ARTSIOM SATSUK ([arty-kk](https://github.com/arty-kk)).\n\nEl plugin distribuido contiene instrucciones de texto, un catálogo local y utilidades locales de Python. No tiene backend operado por el editor, analítica, píxeles de seguimiento, cookies, sistema de cuentas ni telemetría. Las utilidades de catálogo y empaquetado no envían el contenido de los proyectos al editor.\n\nCuando se usa el plugin en Codex o ChatGPT, la aplicación anfitriona procesa prompts, archivos y resultados de herramientas según su configuración y sus políticas. Los flujos de trabajo pueden usar herramientas y servicios que el usuario haya habilitado; esos servicios aplican sus propias políticas de datos. El plugin no se concede permisos adicionales.\n\nEl sitio web público está alojado en GitHub Pages. GitHub puede procesar información habitual de las solicitudes según su política de privacidad. La información publicada voluntariamente en issues o pull requests del repositorio es pública y la gestiona GitHub. No publiques credenciales, código fuente privado ni datos personales.\n\nEl sitio web guarda únicamente el idioma de interfaz seleccionado en el almacenamiento local de tu navegador. Esta preferencia no se envía al editor.\n\nPuedes plantear preguntas sobre privacidad en [GitHub Issues](https://github.com/arty-kk/vibe-coding/issues) sin incluir información sensible.\n",
+    "privacy": "# Privacidad\n\nVibe Coding es mantenido por Arty S. / ARTSIOM SATSUK ([arty-kk](https://github.com/arty-kk)).\n\nEl plugin distribuido contiene instrucciones de texto, un catálogo local y utilidades locales de Python. No tiene backend operado por el editor, analítica, píxeles de seguimiento, cookies, sistema de cuentas ni telemetría. Las utilidades de catálogo y empaquetado no envían el contenido de los proyectos al editor.\n\nCuando se usa el plugin en Codex, ChatGPT o Claude, la aplicación anfitriona procesa prompts, archivos y resultados de herramientas según su configuración y sus políticas. Los flujos de trabajo pueden usar herramientas y servicios que el usuario haya habilitado; esos servicios aplican sus propias políticas de datos. El plugin no se concede permisos adicionales.\n\nEl sitio web público está alojado en GitHub Pages. GitHub puede procesar información habitual de las solicitudes según su política de privacidad. La información publicada voluntariamente en issues o pull requests del repositorio es pública y la gestiona GitHub. No publiques credenciales, código fuente privado ni datos personales.\n\nEl sitio web y el catálogo sin conexión guardan únicamente el idioma y el asistente seleccionados en el almacenamiento local del navegador. Estas preferencias no se envían al editor.\n\nPuedes plantear preguntas sobre privacidad en [GitHub Issues](https://github.com/arty-kk/vibe-coding/issues) sin incluir información sensible.\n",
     "terms": "# Condiciones\n\nVibe Coding es distribuido por Arty S. / ARTSIOM SATSUK ([arty-kk](https://github.com/arty-kk)) bajo la [licencia MIT](LICENSE). El uso, la modificación y la redistribución del software se rigen por esa licencia.\n\nEl plugin no tiene suscripción ni servicios de pago del editor. La aplicación anfitriona y los servicios externos que decidas utilizar están sujetos a sus propias condiciones y tarifas.\n\nRevisa los cambios generados y los resultados de validación antes de utilizarlos en un entorno de producción. El software se proporciona tal cual, con la exclusión de garantías y la limitación de responsabilidad establecidas en la licencia MIT.\n\nSe ofrece soporte a través de [GitHub Issues](https://github.com/arty-kk/vibe-coding/issues), según la disponibilidad del responsable.\n"
   }
 }

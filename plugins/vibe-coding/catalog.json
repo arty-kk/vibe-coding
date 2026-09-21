@@ -64,7 +64,7 @@
       "category": "AI, RAG & ML",
       "summary": "AI features, document retrieval and quality evaluation.",
       "example": "Use $vibe-ai, workflow “AI ML Problem Framing” (ID: ai-ml-problem-framing). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "f43b3374b47f55eecca89d2f39d9247743829a4db0ded74d5f4f317e9e7f2628",
+      "sha256": "b938cea27019844b82ba1a1a9494e6044a47c267157dc6a0ad48a475ba7eda35",
       "keywords": []
     },
     {
@@ -775,7 +775,7 @@
       "category": "Documentation & refactoring",
       "summary": "READMEs, design documents and refactoring boundaries.",
       "example": "Use $vibe-docs, workflow “Migration & Refactor Plan” (ID: migration-refactor-plan). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "9921ed311e4984257038a8cc473728cfb7591dc883094f925846315108122f34",
+      "sha256": "50f33d05c1fb9a5c75b2b76c578491fa1faa9adacee157989aac97922a751c08",
       "keywords": []
     },
     {
@@ -1573,7 +1573,7 @@
       "category": "MCP servers & clients",
       "summary": "MCP versions, tool contracts, transport and authorization.",
       "example": "Use $vibe-mcp, workflow “MCP Protocol & Authorization Check” (ID: mcp-protocol-auth-check). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "510b5050ea447591d20a72f1a6dc3bdf30a13c2bac42f28da64d2f3415a1d6f1",
+      "sha256": "f15cb5eb6f47600fb598fee560a1360f9b563d83d610093abe92554e61af9038",
       "keywords": []
     },
     {
@@ -1938,7 +1938,7 @@
       "category": "Quick bug discovery",
       "summary": "One area, one proven bug and a verified fix.",
       "example": "Use $vibe-probe, workflow “Instant Architecture Probe” (ID: instant-architecture-probe). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "82f688c9443af14b6fbba0ffa9f66541f517441bf6e250660a11b43b9371902d",
+      "sha256": "f7c1fdaab97d9b739e340d7c754440b3cf7a29ec5fb895e0fc09f90bb9c6fafa",
       "keywords": []
     },
     {
@@ -1951,7 +1951,7 @@
       "category": "Quick bug discovery",
       "summary": "One area, one proven bug and a verified fix.",
       "example": "Use $vibe-probe, workflow “Instant Backend Probe” (ID: instant-backend-probe). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "a020ca0097bc994d93d2646d5d167cbdc1dfdc4c82d18b88ca658b777b288936",
+      "sha256": "861b057dc6d8ae30226d15aeff628b8f28743684ec39cc25e0c712042f892cf6",
       "keywords": []
     },
     {
@@ -1964,7 +1964,7 @@
       "category": "Quick bug discovery",
       "summary": "One area, one proven bug and a verified fix.",
       "example": "Use $vibe-probe, workflow “Instant Bug Fix Polish” (ID: instant-bug-fix-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "9db229758ba3f9110e6a7a02edf53934a8d7bc030f88eec5e1f6895d25b3fa1c",
+      "sha256": "bc2d635020d27f11c91944d5069489626d27282ec017e645076a57b1cc03ea4c",
       "keywords": []
     },
     {
@@ -1977,7 +1977,7 @@
       "category": "Quick bug discovery",
       "summary": "One area, one proven bug and a verified fix.",
       "example": "Use $vibe-probe, workflow “Instant Frontend Probe” (ID: instant-frontend-probe). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "ba4fe55394bea2913bc3c1dea2d31a9f1bd94feef0504cc97a6f69425ed2991d",
+      "sha256": "b977b440e75ffca9b5bcbc8a8dc3d489d9515adfd7af581bfdd13ae241c6e6c0",
       "keywords": []
     },
     {
@@ -1990,7 +1990,7 @@
       "category": "Quick bug discovery",
       "summary": "One area, one proven bug and a verified fix.",
       "example": "Use $vibe-probe, workflow “Instant UI-UX Visual Probe” (ID: instant-ui-ux-visual-probe). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "f8b4b04e1b1c4ff2bc9213d610139a646b30b1b893e06e86bf961ecfc7782e8f",
+      "sha256": "1c54e53573c80cbed136ddd303a17dfb491616e86e1ac43bcb0404b17def1207",
       "keywords": []
     },
     {
@@ -2951,7 +2951,7 @@
       "category": "Tasks & synthesis",
       "summary": "Task definition, decomposition and synthesis of findings.",
       "example": "Use $vibe-task, workflow “Evolution & Improvement” (ID: evolution-improvement). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "78a6fa2e05f0e1c0d2b6e86b17e1ebaab060f9ad07ed2c0f051d0325c0dc4f1d",
+      "sha256": "68921bcd3106ed52a0044029c50ae5585873104d14879398e8ded5a62b38b3a6",
       "keywords": []
     },
     {
@@ -2977,7 +2977,7 @@
       "category": "Tasks & synthesis",
       "summary": "Task definition, decomposition and synthesis of findings.",
       "example": "Use $vibe-task, workflow “Map Synthesis” (ID: map-synthesis). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "a3570e30de7edf70c63be196302ba9e922e86ae36f00655663017a7e7ce6e9e4",
+      "sha256": "030f25e58660cbc5ceb1d61f7e47ef4668f566d652126d5c56b853323c589afc",
       "keywords": []
     },
     {
@@ -2990,7 +2990,7 @@
       "category": "Tasks & synthesis",
       "summary": "Task definition, decomposition and synthesis of findings.",
       "example": "Use $vibe-task, workflow “Synthesis” (ID: synthesis). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "bf955cabb3d187c7756289f0402c71e473c775e2c34398adb026bf72ed97b785",
+      "sha256": "53eae5b3ffab9050155e408e228f8f534a7eda7163ea9637ae6801b5dffff59c",
       "keywords": []
     },
     {
@@ -3003,7 +3003,7 @@
       "category": "Tasks & synthesis",
       "summary": "Task definition, decomposition and synthesis of findings.",
       "example": "Use $vibe-task, workflow “Task Shaping” (ID: task-shaping). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "2642a15638d76e848b1037d4097708c7e56b4c933bdaee3aa4b5cea4e4afc0b1",
+      "sha256": "2b0314f9f332a22a67e49460bb8e90119a0f95692028e1a5ebe1cf7096353430",
       "keywords": []
     },
     {
@@ -3016,7 +3016,7 @@
       "category": "Tasks & synthesis",
       "summary": "Task definition, decomposition and synthesis of findings.",
       "example": "Use $vibe-task, workflow “Validation & Clarification” (ID: validation-clarification). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "12c34a721b6ff5fab0168908af70db07dc54ad38e8d732a660c230373aa936ba",
+      "sha256": "4e38ccb688b18055b23add1a50048d3f4b6f0ca1b93e22f6701c01f080a0b9b3",
       "keywords": []
     },
     {
@@ -3029,7 +3029,7 @@
       "category": "Tasks & synthesis",
       "summary": "Task definition, decomposition and synthesis of findings.",
       "example": "Use $vibe-task, workflow “Workstream Decomposition” (ID: workstream-decomposition). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "fba9cb3a753f6bd02f4f7a8d1d41424f42e029b0b67b75ceb0deff78740c714c",
+      "sha256": "6386b9bf803d93d5e347ed3acfa41190cf51a2feef0e371b248549e37a5698d7",
       "keywords": []
     },
     {
@@ -3211,7 +3211,7 @@
       "category": "Workflow checks & maintenance",
       "summary": "Evidence checks, map updates and plugin maintenance.",
       "example": "Use $vibe-workflow, workflow “Evidence Normalization” (ID: evidence-normalization). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "c01f878eb6ea5e593bc3e7b78cd3c4e4aeedfe1fdc4a3484612a21bf8fc8abc2",
+      "sha256": "b0333cffa646ce2d3247552dc7ffba5a19755d718fc273ce01c4e9d54a274680",
       "keywords": []
     },
     {

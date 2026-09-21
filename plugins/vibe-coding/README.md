@@ -1,6 +1,6 @@
 # Vibe Coding
 
-46 skills and 241 engineering workflows for Codex: repository mapping, planning, review, debugging, implementation and verification.
+46 skills and 241 engineering workflows for Codex and Claude Code: repository mapping, planning, review, debugging, implementation and verification.
 
 [Website and catalog](https://arty-kk.github.io/vibe-coding) · [Repository](https://github.com/arty-kk/vibe-coding) · [Support](https://github.com/arty-kk/vibe-coding/issues)
 
@@ -11,6 +11,15 @@ codex plugin marketplace add arty-kk/vibe-coding
 ```
 
 Select the Vibe Coding marketplace in the desktop Plugins Directory, install Vibe Coding, and start a new task.
+
+For Claude Code:
+
+```sh
+claude plugin marketplace add arty-kk/vibe-coding
+claude plugin install vibe-coding@vibe-coding
+```
+
+Start a new session and use `/vibe-coding:vibe`. The same skill names work with the `/vibe-coding:` prefix.
 
 ## Use
 
@@ -29,7 +38,7 @@ python3 -m pip install -r requirements.txt
 python3 scripts/catalog.py search webhook --mode check
 python3 scripts/catalog.py show patch-checking
 python3 scripts/validate.py
-python3 scripts/package.py --output ../vibe-coding-1.2.0.zip
+python3 scripts/package.py --output ../vibe-coding-1.3.0.zip
 ```
 
 MIT License. No bundled MCP server, account connection or telemetry.

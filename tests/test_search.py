@@ -37,10 +37,15 @@ class SearchTests(unittest.TestCase):
 
     def test_cli_offline_and_site_use_identical_index(self):
         expected = build_index(self.rows, load_locales(), PLUGIN)
-        for path in [PLUGIN/'CATALOG.html', ROOT/'docs/index.html']:
-            embedded = re.search(r'id="search-data">(.*?)</script>', path.read_text(encoding='utf-8'), re.S)
-            self.assertIsNotNone(embedded)
-            self.assertEqual(expected, json.loads(embedded[1]))
+        offline = (PLUGIN/'CATALOG.html').read_text(encoding='utf-8')
+        embedded = re.search(r'id="search-data">(.*?)</script>', offline, re.S)
+        self.assertIsNotNone(embedded)
+        self.assertEqual(expected, json.loads(embedded[1]))
+        public = (ROOT/'docs/index.html').read_text(encoding='utf-8')
+        config = json.loads(re.search(r'id="catalog-data">(.*?)</script>', public, re.S)[1])
+        self.assertTrue(config['index'].startswith('/vibe-coding/assets/search.'))
+        asset = ROOT/'docs'/config['index'].removeprefix('/vibe-coding/')
+        self.assertEqual(expected, json.loads(asset.read_text(encoding='utf-8')))
 
 
 if __name__ == '__main__':

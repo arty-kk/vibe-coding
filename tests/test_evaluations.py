@@ -5,11 +5,13 @@ import unittest
 
 ROOT = Path(__file__).resolve().parents[1]
 RECORD = ROOT/'review/evaluations/1.2.0.json'
+CURRENT = ROOT/'review/evaluations/1.3.0.json'
 
 
 class EvaluationRecordTests(unittest.TestCase):
     def setUp(self):
         self.record = json.loads(RECORD.read_text(encoding='utf-8'))
+        self.current = json.loads(CURRENT.read_text(encoding='utf-8'))
 
     def test_record_matches_current_instructions_inputs_and_artifacts(self):
         for section in ['instructions', 'inputs_and_artifacts']:
@@ -18,7 +20,23 @@ class EvaluationRecordTests(unittest.TestCase):
                 with self.subTest(path=name):
                     path = (ROOT/name).resolve()
                     self.assertTrue(path.is_relative_to(ROOT))
+                    change = self.current['baseline_changes'].get(name) if section == 'instructions' else None
+                    if change:
+                        self.assertEqual(expected, change['before'])
+                        self.assertTrue(change['review'])
+                        expected = change['after']
                     self.assertEqual(expected, hashlib.sha256(path.read_bytes()).hexdigest(), 'Evaluation is stale: re-evaluate affected behavior')
+
+    def test_current_release_has_separate_evidence_and_complete_instruction_fingerprints(self):
+        self.assertEqual(hashlib.sha256(RECORD.read_bytes()).hexdigest(), self.current['baseline']['sha256'])
+        self.assertEqual('1.2.0', self.current['baseline']['release'])
+        self.assertTrue(self.current['limits'])
+        files = list((ROOT/'plugins/vibe-coding/skills').rglob('*.md')) + list((ROOT/'plugins/vibe-coding/references').glob('*.md'))
+        self.assertEqual({p.relative_to(ROOT).as_posix() for p in files}, set(self.current['instructions']))
+        for section in ('instructions', 'inputs_and_artifacts'):
+            for name, expected in self.current[section].items():
+                self.assertEqual(expected, hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
+        self.assertTrue(all(case['observed'] and case['limits'] for case in self.current['checks']))
 
     def test_all_routing_cases_match_observed_owner_operation_and_authority(self):
         cases = json.loads((ROOT/self.record['routing']['cases']).read_text(encoding='utf-8'))['cases']
@@ -37,7 +55,7 @@ class EvaluationRecordTests(unittest.TestCase):
 
     def test_required_behavior_records_are_complete_and_bounded(self):
         manifest = json.loads((ROOT/'plugins/vibe-coding/plugin.json').read_text(encoding='utf-8'))
-        self.assertEqual(manifest['version'], self.record['release'])
+        self.assertEqual(manifest['version'], self.current['release'])
         cases = {row['id']: row for row in self.record['behaviors']}
         self.assertEqual({'serverless-required-write', 'mcp-http-readonly-control', 'react-hydration-preference'}, set(cases))
         for case in cases.values():

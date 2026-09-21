@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ClickHouse Audit — Vibe Coding</title>
+<meta name="description" content="Audit ClickHouse table engines, partition/order keys, ingestion/deduplication, query pruning, replication/mutations, and workload limits as one analytics contract.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://arty-kk.github.io/vibe-coding/workflows/clickhouse-audit/">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Vibe Coding">
+<meta property="og:title" content="ClickHouse Audit — Vibe Coding">
+<meta property="og:description" content="Audit ClickHouse table engines, partition/order keys, ingestion/deduplication, query pruning, replication/mutations, and workload limits as one analytics contract.">
+<meta property="og:url" content="https://arty-kk.github.io/vibe-coding/workflows/clickhouse-audit/">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://arty-kk.github.io/vibe-coding/social-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Vibe Coding — engineering workflows for Codex and Claude Code">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ClickHouse Audit — Vibe Coding">
+<meta name="twitter:description" content="Audit ClickHouse table engines, partition/order keys, ingestion/deduplication, query pruning, replication/mutations, and workload limits as one analytics contract.">
+<meta name="twitter:image" content="https://arty-kk.github.io/vibe-coding/social-card.png">
+<meta name="twitter:image:alt" content="Vibe Coding — engineering workflows for Codex and Claude Code">
+<meta name="theme-color" content="#101212">
+<link rel="icon" href="/vibe-coding/icon.png" type="image/png">
+<link rel="stylesheet" href="/vibe-coding/assets/site.e1ee5d83e343.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://arty-kk.github.io/vibe-coding/#website","url":"https://arty-kk.github.io/vibe-coding/","name":"Vibe Coding","inLanguage":["en","es","ru","zh-CN"]},{"@type":"SoftwareSourceCode","@id":"https://arty-kk.github.io/vibe-coding/#software","name":"Vibe Coding","url":"https://arty-kk.github.io/vibe-coding/","codeRepository":"https://github.com/arty-kk/vibe-coding","version":"1.3.0","description":"Open-source engineering skills and workflows for Codex and Claude Code.","runtimePlatform":["Codex","Claude Code"],"programmingLanguage":"Markdown","license":"https://github.com/arty-kk/vibe-coding/blob/main/LICENSE","isAccessibleForFree":true,"author":{"@type":"Person","name":"Arty S.","url":"https://github.com/arty-kk"},"image":"https://arty-kk.github.io/vibe-coding/social-card.png"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Vibe Coding","item":"https://arty-kk.github.io/vibe-coding/"},{"@type":"ListItem","position":2,"name":"ClickHouse Audit","item":"https://arty-kk.github.io/vibe-coding/workflows/clickhouse-audit/"}]},{"@type":"TechArticle","@id":"https://arty-kk.github.io/vibe-coding/workflows/clickhouse-audit/#page","url":"https://arty-kk.github.io/vibe-coding/workflows/clickhouse-audit/","name":"ClickHouse Audit — Vibe Coding","description":"Audit ClickHouse table engines, partition/order keys, ingestion/deduplication, query pruning, replication/mutations, and workload limits as one analytics contract.","inLanguage":"en","isPartOf":{"@id":"https://arty-kk.github.io/vibe-coding/#website"},"about":{"@id":"https://arty-kk.github.io/vibe-coding/#software"},"headline":"ClickHouse Audit","mainEntityOfPage":"https://arty-kk.github.io/vibe-coding/workflows/clickhouse-audit/","license":"https://github.com/arty-kk/vibe-coding/blob/main/LICENSE"}]}</script>
+<script src="/vibe-coding/assets/site.bc8fff794e61.js" defer></script>
+</head>
+<body data-base="/vibe-coding/" data-language="en" data-page="workflow">
+<a class="skip" href="#content">Skip to content</a>
+<header><a class="brand" href="/vibe-coding/"><span class="mark" aria-hidden="true">↗</span>VIBE CODING</a>
+<div class="header-actions"><a class="version" href="https://github.com/arty-kk/vibe-coding/releases/tag/v1.3.0">v1.3.0</a><nav class="languages" aria-label="Language"><a href="/vibe-coding/" lang="en" hreflang="en">English</a><a href="/vibe-coding/es/" lang="es" hreflang="es">Español</a><a href="/vibe-coding/ru/" lang="ru" hreflang="ru">Русский</a><a href="/vibe-coding/zh-CN/" lang="zh-CN" hreflang="zh-CN">简体中文</a></nav></div></header>
+<main id="content"><article class="workflow"><nav aria-label="Breadcrumb"><a href="/vibe-coding/#catalog">Workflow catalog</a><span aria-hidden="true"> / </span><span>ClickHouse Audit</span></nav>
+<p class="eyebrow">ClickHouse · Audit</p><h1>ClickHouse Audit</h1>
+<p class="intro">Audit ClickHouse table engines, partition/order keys, ingestion/deduplication, query pruning, replication/mutations, and workload limits as one analytics contract.</p><p class="fine">Vibe Coding 1.3.0 · <code>vibe-clickhouse</code> · English technical instructions</p>
+<section class="run-workflow" aria-labelledby="run-title"><h2 id="run-title">Use this workflow</h2><p>Install Vibe Coding, choose your assistant and prompt language, then add your task details after the prompt.</p>
+<div class="tools prompt-options" hidden><label for="host">Assistant<select id="host"><option value="codex">Codex</option><option value="claude">Claude Code</option></select></label>
+<label for="prompt-language">Prompt language<select id="prompt-language"><option value="en">English</option><option value="es">Español</option><option value="ru">Русский</option><option value="zh-CN">简体中文</option></select></label></div>
+<label class="help" for="prompt">Prompt</label><textarea id="prompt" class="prompt" readonly>Use $vibe-clickhouse, workflow “ClickHouse Audit” (ID: clickhouse-audit). Follow this workflow for the task below. Report the result in English.</textarea>
+<div class="actions"><button class="copy" id="copy" hidden>Copy prompt</button><span id="copy-status" class="status" role="status"></span><a href="/vibe-coding/#install">Install the plugin</a></div>
+<script type="application/json" id="prompt-data">{"id":"clickhouse-audit","skill":"vibe-clickhouse","locales":{"en":{"promptHelp":"Choose your assistant, copy the prompt and add your task details.","copy":"Copy prompt","copied":"Copied. Paste into your assistant.","copyFallback":"Text selected — press ⌘C or Ctrl+C.","prompt":"Use ${skill}, workflow “{title}” (ID: {id}). Follow this workflow for the task below. Report the result in English.","promptClaude":"/vibe-coding:{skill} Use workflow “{title}” (ID: {id}) for the task below. Report the result in English.","title":"ClickHouse Audit"},"es":{"promptHelp":"Elige tu asistente, copia el prompt y añade los detalles de la tarea.","copy":"Copiar prompt","copied":"Copiado. Pégalo en tu asistente.","copyFallback":"Texto seleccionado: pulsa ⌘C o Ctrl+C.","prompt":"Usa ${skill}, flujo «{title}» (ID: {id}). Sigue este flujo para la tarea que aparece a continuación. Responde en español.","promptClaude":"/vibe-coding:{skill} Usa el flujo «{title}» (ID: {id}) para la tarea siguiente. Responde en español.","title":"ClickHouse — Auditoría"},"ru":{"promptHelp":"Выбери ассистента, скопируй промпт и добавь детали задачи.","copy":"Скопировать запрос","copied":"Скопировано. Вставь в своего ассистента.","copyFallback":"Текст выделен — нажми ⌘C или Ctrl+C.","prompt":"Используй ${skill}, сценарий «{title}» (ID: {id}). Выполни задачу ниже по этому сценарию. Ответь на русском.","promptClaude":"/vibe-coding:{skill} Используй сценарий «{title}» (ID: {id}) для задачи ниже. Отвечай на русском языке.","title":"ClickHouse — Аудит"},"zh-CN":{"promptHelp":"选择助手，复制提示词并补充任务详情。","copy":"复制提示词","copied":"已复制。请粘贴到你的助手中。","copyFallback":"文本已选中，请按 ⌘C 或 Ctrl+C。","prompt":"使用 ${skill}，工作流“{title}”（ID：{id}）。按此工作流完成下面的任务。请用简体中文汇报结果。","promptClaude":"/vibe-coding:{skill} 针对下面的任务使用“{title}”工作流（ID：{id}）。请用简体中文回答。","title":"ClickHouse — 审计"}}}</script></section>
+<nav class="toc" aria-label="On this page"><h2>In this workflow</h2><ul><li><a href="#operation">Operation</a></li><li><a href="#goal-and-scope">Goal and scope</a></li><li><a href="#domain-invariants">Domain invariants</a></li><li><a href="#audit-method">Audit method</a></li><li><a href="#priority-model">Priority model</a></li></ul></nav>
+<section id="technical-instructions" lang="en"><h2 id="operation">Operation</h2>
+<p>Inspect the named boundary and report supported findings. Do not edit product code. Include concrete evidence, impact, the owning source, one remediation direction and a meaningful validation route. Severity follows actual impact, not a category example.</p>
+<h2 id="goal-and-scope">Goal and scope</h2>
+<p>Audit ClickHouse table engines, partition/order keys, ingestion/deduplication, query pruning, replication/mutations, and workload limits as one analytics contract.</p>
+<h2 id="domain-invariants">Domain invariants</h2>
+<ul>
+<li>Table engine, partition key, ORDER BY/primary key, sampling, TTL, codecs, and schema match dominant filters, data lifecycle, update model, and storage scale.</li>
+<li>Partition cardinality stays bounded and does not substitute for the ORDER BY key; queries can prune parts/granules using the actual predicates.</li>
+<li>Ingestion batch/async-insert, retries, dedup token/window, block identity, Distributed routing, and source offset define an explicit duplicate/loss contract.</li>
+<li>Replacing/Collapsing/Aggregating engines and materialized views encode their eventual merge semantics; users do not assume immediate uniqueness or final state without appropriate query logic.</li>
+<li>Queries bound scanned rows/bytes, joins, aggregation state, sorting, concurrency, timeout, memory, spill, and result size under representative cardinality/skew.</li>
+<li>Replication, quorum expectations, replica lag, Distributed tables, merges, part counts, disk, mutations, and failed inserts are observable and recoverable.</li>
+<li>Schema evolution/backfill/materialized-view changes account for existing parts, mixed writers/readers, mutation cost, and rollback/forward-fix.</li>
+<li>Connection pools, users/roles, quotas, settings profiles, workload scheduling, and read-only/tenant boundaries are deployment-wide and least privilege.</li>
+</ul>
+<h2 id="audit-method">Audit method</h2>
+<ol>
+<li>Map source batch/offset → insert path → local/distributed table → parts/replicas/views → query/user/settings → export/consumer.</li>
+<li>Inspect table DDL and representative <code>EXPLAIN</code>/query-log/system-table evidence for pruning, rows/bytes, memory, parts, merges, and latency.</li>
+<li>Trace retry/duplicate windows, partial insert, async insert acknowledgement, replica failure, Distributed queue, and source checkpoint boundaries.</li>
+<li>Evaluate partition/key choices and materialized-view semantics against real filters, time ranges, tenant skew, late data, and update/delete requirements.</li>
+<li>Calculate concurrent connections/queries/ingestion, quotas, memory, disk, merge bandwidth, and mutation/backfill pressure.</li>
+</ol>
+<h2 id="priority-model">Priority model</h2>
+<ul>
+<li><strong>P0:</strong> data loss or duplication in decision-critical pipelines, cluster overload, cross-tenant exposure, or unrecoverable schema/replication failure.</li>
+<li><strong>P1:</strong> a material ingestion, partitioning, merge, query-load, distributed-table, or retention defect.</li>
+<li><strong>P2:</strong> a lower-risk but concrete efficiency, observability, or maintainability issue.</li>
+</ul>
+</section>
+<p class="source">Workflow ID: clickhouse-audit · <a href="https://github.com/arty-kk/vibe-coding/blob/v1.3.0/plugins/vibe-coding/skills/vibe-clickhouse/references/clickhouse-audit.md">View the versioned source</a> · <a href="https://github.com/arty-kk/vibe-coding/blob/v1.3.0/plugins/vibe-coding/references/workflow.md">Shared workflow and authority rules</a></p>
+<aside class="related"><h2>Related workflows</h2><ul><li><a href="/vibe-coding/workflows/clickhouse-ingestion-query-load-check/">ClickHouse Ingestion &amp; Query Load Check</a> <span class="fine">· Verify</span></li><li><a href="/vibe-coding/workflows/clickhouse-polish/">ClickHouse Polish</a> <span class="fine">· Improve</span></li></ul></aside></article>
+<footer><span><a href="https://github.com/arty-kk">Maintained by Arty S.</a></span>
+<a href="https://github.com/arty-kk/vibe-coding">GitHub</a><a href="https://github.com/arty-kk/vibe-coding/releases/tag/v1.3.0">Release notes</a>
+<a href="https://github.com/arty-kk/vibe-coding/issues">Support</a>
+<a href="https://github.com/arty-kk/vibe-coding/blob/main/LICENSE">MIT</a>
+<a href="/vibe-coding/privacy.html">Privacy</a>
+<a href="/vibe-coding/terms.html">Terms</a></footer>
+</main></body></html>

@@ -1,6 +1,7 @@
 {
   "version": 1,
   "files": [
+    ".claude-plugin/plugin.json",
     ".codex-plugin/plugin.json",
     "CATALOG.html",
     "LICENSE",
@@ -24,6 +25,7 @@
     "references/catalog.md",
     "references/contract-evolution.md",
     "references/cycles.md",
+    "references/hosts.md",
     "references/incident-response.md",
     "references/mcp-contract.md",
     "references/serverless-runtime.md",

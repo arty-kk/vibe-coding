@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MCP Protocol &amp; Authorization Check — Vibe Coding</title>
+<meta name="description" content="Verify a selected MCP integration against explicit acceptance criteria without product edits. Use MCP contract boundaries to choose version-matched cases.…">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://arty-kk.github.io/vibe-coding/workflows/mcp-protocol-auth-check/">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Vibe Coding">
+<meta property="og:title" content="MCP Protocol &amp; Authorization Check — Vibe Coding">
+<meta property="og:description" content="Verify a selected MCP integration against explicit acceptance criteria without product edits. Use MCP contract boundaries to choose version-matched cases.…">
+<meta property="og:url" content="https://arty-kk.github.io/vibe-coding/workflows/mcp-protocol-auth-check/">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://arty-kk.github.io/vibe-coding/social-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Vibe Coding — engineering workflows for Codex and Claude Code">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="MCP Protocol &amp; Authorization Check — Vibe Coding">
+<meta name="twitter:description" content="Verify a selected MCP integration against explicit acceptance criteria without product edits. Use MCP contract boundaries to choose version-matched cases.…">
+<meta name="twitter:image" content="https://arty-kk.github.io/vibe-coding/social-card.png">
+<meta name="twitter:image:alt" content="Vibe Coding — engineering workflows for Codex and Claude Code">
+<meta name="theme-color" content="#101212">
+<link rel="icon" href="/vibe-coding/icon.png" type="image/png">
+<link rel="stylesheet" href="/vibe-coding/assets/site.e1ee5d83e343.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://arty-kk.github.io/vibe-coding/#website","url":"https://arty-kk.github.io/vibe-coding/","name":"Vibe Coding","inLanguage":["en","es","ru","zh-CN"]},{"@type":"SoftwareSourceCode","@id":"https://arty-kk.github.io/vibe-coding/#software","name":"Vibe Coding","url":"https://arty-kk.github.io/vibe-coding/","codeRepository":"https://github.com/arty-kk/vibe-coding","version":"1.3.0","description":"Open-source engineering skills and workflows for Codex and Claude Code.","runtimePlatform":["Codex","Claude Code"],"programmingLanguage":"Markdown","license":"https://github.com/arty-kk/vibe-coding/blob/main/LICENSE","isAccessibleForFree":true,"author":{"@type":"Person","name":"Arty S.","url":"https://github.com/arty-kk"},"image":"https://arty-kk.github.io/vibe-coding/social-card.png"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Vibe Coding","item":"https://arty-kk.github.io/vibe-coding/"},{"@type":"ListItem","position":2,"name":"MCP Protocol & Authorization Check","item":"https://arty-kk.github.io/vibe-coding/workflows/mcp-protocol-auth-check/"}]},{"@type":"TechArticle","@id":"https://arty-kk.github.io/vibe-coding/workflows/mcp-protocol-auth-check/#page","url":"https://arty-kk.github.io/vibe-coding/workflows/mcp-protocol-auth-check/","name":"MCP Protocol & Authorization Check — Vibe Coding","description":"Verify a selected MCP integration against explicit acceptance criteria without product edits. Use MCP contract boundaries to choose version-matched cases.…","inLanguage":"en","isPartOf":{"@id":"https://arty-kk.github.io/vibe-coding/#website"},"about":{"@id":"https://arty-kk.github.io/vibe-coding/#software"},"headline":"MCP Protocol & Authorization Check","mainEntityOfPage":"https://arty-kk.github.io/vibe-coding/workflows/mcp-protocol-auth-check/","license":"https://github.com/arty-kk/vibe-coding/blob/main/LICENSE"}]}</script>
+<script src="/vibe-coding/assets/site.bc8fff794e61.js" defer></script>
+</head>
+<body data-base="/vibe-coding/" data-language="en" data-page="workflow">
+<a class="skip" href="#content">Skip to content</a>
+<header><a class="brand" href="/vibe-coding/"><span class="mark" aria-hidden="true">↗</span>VIBE CODING</a>
+<div class="header-actions"><a class="version" href="https://github.com/arty-kk/vibe-coding/releases/tag/v1.3.0">v1.3.0</a><nav class="languages" aria-label="Language"><a href="/vibe-coding/" lang="en" hreflang="en">English</a><a href="/vibe-coding/es/" lang="es" hreflang="es">Español</a><a href="/vibe-coding/ru/" lang="ru" hreflang="ru">Русский</a><a href="/vibe-coding/zh-CN/" lang="zh-CN" hreflang="zh-CN">简体中文</a></nav></div></header>
+<main id="content"><article class="workflow"><nav aria-label="Breadcrumb"><a href="/vibe-coding/#catalog">Workflow catalog</a><span aria-hidden="true"> / </span><span>MCP Protocol &amp; Authorization Check</span></nav>
+<p class="eyebrow">MCP servers &amp; clients · Verify</p><h1>MCP Protocol &amp; Authorization Check</h1>
+<p class="intro">Verify a selected MCP integration against explicit acceptance criteria without product edits. Use MCP contract boundaries to choose version-matched cases.…</p><p class="fine">Vibe Coding 1.3.0 · <code>vibe-mcp</code> · English technical instructions</p>
+<section class="run-workflow" aria-labelledby="run-title"><h2 id="run-title">Use this workflow</h2><p>Install Vibe Coding, choose your assistant and prompt language, then add your task details after the prompt.</p>
+<div class="tools prompt-options" hidden><label for="host">Assistant<select id="host"><option value="codex">Codex</option><option value="claude">Claude Code</option></select></label>
+<label for="prompt-language">Prompt language<select id="prompt-language"><option value="en">English</option><option value="es">Español</option><option value="ru">Русский</option><option value="zh-CN">简体中文</option></select></label></div>
+<label class="help" for="prompt">Prompt</label><textarea id="prompt" class="prompt" readonly>Use $vibe-mcp, workflow “MCP Protocol &amp; Authorization Check” (ID: mcp-protocol-auth-check). Follow this workflow for the task below. Report the result in English.</textarea>
+<div class="actions"><button class="copy" id="copy" hidden>Copy prompt</button><span id="copy-status" class="status" role="status"></span><a href="/vibe-coding/#install">Install the plugin</a></div>
+<script type="application/json" id="prompt-data">{"id":"mcp-protocol-auth-check","skill":"vibe-mcp","locales":{"en":{"promptHelp":"Choose your assistant, copy the prompt and add your task details.","copy":"Copy prompt","copied":"Copied. Paste into your assistant.","copyFallback":"Text selected — press ⌘C or Ctrl+C.","prompt":"Use ${skill}, workflow “{title}” (ID: {id}). Follow this workflow for the task below. Report the result in English.","promptClaude":"/vibe-coding:{skill} Use workflow “{title}” (ID: {id}) for the task below. Report the result in English.","title":"MCP Protocol & Authorization Check"},"es":{"promptHelp":"Elige tu asistente, copia el prompt y añade los detalles de la tarea.","copy":"Copiar prompt","copied":"Copiado. Pégalo en tu asistente.","copyFallback":"Texto seleccionado: pulsa ⌘C o Ctrl+C.","prompt":"Usa ${skill}, flujo «{title}» (ID: {id}). Sigue este flujo para la tarea que aparece a continuación. Responde en español.","promptClaude":"/vibe-coding:{skill} Usa el flujo «{title}» (ID: {id}) para la tarea siguiente. Responde en español.","title":"Verificación del protocolo y la autorización MCP"},"ru":{"promptHelp":"Выбери ассистента, скопируй промпт и добавь детали задачи.","copy":"Скопировать запрос","copied":"Скопировано. Вставь в своего ассистента.","copyFallback":"Текст выделен — нажми ⌘C или Ctrl+C.","prompt":"Используй ${skill}, сценарий «{title}» (ID: {id}). Выполни задачу ниже по этому сценарию. Ответь на русском.","promptClaude":"/vibe-coding:{skill} Используй сценарий «{title}» (ID: {id}) для задачи ниже. Отвечай на русском языке.","title":"Проверка протокола и авторизации MCP"},"zh-CN":{"promptHelp":"选择助手，复制提示词并补充任务详情。","copy":"复制提示词","copied":"已复制。请粘贴到你的助手中。","copyFallback":"文本已选中，请按 ⌘C 或 Ctrl+C。","prompt":"使用 ${skill}，工作流“{title}”（ID：{id}）。按此工作流完成下面的任务。请用简体中文汇报结果。","promptClaude":"/vibe-coding:{skill} 针对下面的任务使用“{title}”工作流（ID：{id}）。请用简体中文回答。","title":"MCP 协议与授权验证"}}}</script></section>
+<nav class="toc" aria-label="On this page"><h2>In this workflow</h2><ul><li><a href="#operation">Operation</a></li><li><a href="#required-input">Required input</a></li><li><a href="#domain-invariants">Domain invariants</a></li><li><a href="#establish-the-boundary">Establish the boundary</a></li><li><a href="#protocol-checks">Protocol checks</a></li><li><a href="#identity-and-authorization-checks">Identity and authorization checks</a></li><li><a href="#evidence-and-limitations">Evidence and limitations</a></li><li><a href="#evidence-and-safety-rules">Evidence and safety rules</a></li><li><a href="#verdict-and-completion">Verdict and completion</a></li><li><a href="#output-contract">Output contract</a></li></ul></nav>
+<section id="technical-instructions" lang="en"><h2 id="operation">Operation</h2>
+<p>Verify a selected MCP integration against explicit acceptance criteria without product edits. Use <a href="https://github.com/arty-kk/vibe-coding/blob/v1.3.0/plugins/vibe-coding/references/mcp-contract.md">MCP contract boundaries</a> to choose version-matched cases. Verification results may justify a later fix; they do not silently authorize one.</p>
+<h2 id="required-input">Required input</h2>
+<p>The selected server/client, operation, supported protocol/SDK revisions, transport, affected principal/resource and expected result or effect. Establish these from the current repository and request; do not invent missing capabilities or a protocol migration.</p>
+<p>Select the target from the user’s request and current evidence. Reconstruct ordinary missing context from the owning code. If a missing target, authority or environment changes correctness or safety, name that specific gap and leave the dependent action blocked; continue independent work. Do not invent requirements from existing tests.</p>
+<h2 id="domain-invariants">Domain invariants</h2>
+<ul>
+<li>Discovery, accepted input, executed handler and serialized result describe the same operation under the supported protocol revision.</li>
+<li>HTTP routing/version metadata agrees with the body before dispatch; stdio carries valid protocol framing without diagnostic contamination.</li>
+<li>Only verified identity and operation-level policy authorize resource access. Arguments, discovery visibility and annotations cannot grant authority.</li>
+<li>Protocol failure, authentication failure and tool execution failure retain their distinct observable result contracts.</li>
+<li>Cancellation, retry and reconnect do not imply rollback and cannot bypass the durable effect’s idempotency owner.</li>
+</ul>
+<h2 id="establish-the-boundary">Establish the boundary</h2>
+<p>Identify the server/client versions, supported protocol revisions, transport, enabled capabilities and credential model. Record which implementation layers are present. Build a bounded matrix of operation, principal, input, expected transport/envelope, expected tool result and allowed durable effects. Do not count excluded or unavailable layers as passing.</p>
+<h2 id="protocol-checks">Protocol checks</h2>
+<ul>
+<li>Exercise advertised discovery and one representative operation using the supported client or raw transport. Check schema registration, pagination where used, accepted arguments and declared structured output.</li>
+<li>Distinguish initialization-era behavior from self-contained requests. On current HTTP, verify routing/version header agreement and rejection of absent or conflicting required metadata; on legacy paths, verify the negotiated initialization/session contract actually supported.</li>
+<li>Check malformed requests, unknown methods/tools, invalid arguments and tool execution errors at their respective layers. Assert request correlation, status/envelope and the consumer's displayed outcome, not only HTTP 200.</li>
+<li>For configured JSON/SSE or stdio paths, inspect framing and termination. Exercise disconnect/cancellation and bounded retry where the target owns those behaviors. Observe durable state separately from response delivery.</li>
+</ul>
+<h2 id="identity-and-authorization-checks">Identity and authorization checks</h2>
+<p>Use synthetic principals or the existing test issuer. Compare a permitted operation with missing credentials, invalid/expired credentials, wrong audience/issuer where a real verifier is included, insufficient scope and another tenant's object. Denial must prevent protected reads or writes; an error message after an unauthorized effect is a failure.</p>
+<p>Check direct calls independently of discovery filtering. Reuse a connection or discovery cache under a different principal where that path exists. Verify that untrusted tool arguments, resource contents and returned instructions cannot replace the trusted identity or expand authority. Do not send production tokens to unrelated hosts for testing.</p>
+<h2 id="evidence-and-limitations">Evidence and limitations</h2>
+<p>Capture the minimal request, status, result/error classification and side-effect evidence with credentials redacted. Run a valid control request beside negative cases so a broken harness cannot masquerade as successful denial. State each criterion as passed, failed or not exercised, with command/output and owning source for failures.</p>
+<p>Handler fixtures establish local dispatch and scope only. Loopback HTTP adds real serialization and header coverage; it does not prove production TLS/proxies, OAuth discovery, all SDKs or interoperability with the selected host (Codex or Claude Code). Report those missing checks explicitly and recommend the smallest next verification or repair for the observed gap.</p>
+<h2 id="evidence-and-safety-rules">Evidence and safety rules</h2>
+<p>Define the required scenario matrix before execution from the selected invariant and current repository commands. Respect active test restrictions. Use the authorized environment and bounded workload/fault conditions. Record expected and observed state, identity/order/effect evidence and exact commands; passing harness output alone cannot override the intended contract. Pair negative cases with a valid control. Do not perform destructive drills, broaden implementation or infer provider/production behavior from local fixtures. An unavailable required scenario remains unavailable.</p>
+<h2 id="verdict-and-completion">Verdict and completion</h2>
+<p>Return <strong>passed</strong> only when every required criterion is supported by actual evidence. Return <strong>failed</strong> when a named invariant is violated, with the minimal reproduction and owner. Return <strong>blocked</strong> when required evidence cannot be obtained because the target, environment or safe operation is unavailable; name the missing gate. If a defect is already proven and other checks are blocked, report failed with those unexercised gates. Stop when the bounded matrix is resolved or cannot safely progress; never convert skipped work into a pass.</p>
+<h2 id="output-contract">Output contract</h2>
+<p>Respond in the user’s language and begin with passed, failed or blocked. Include: checked invariant and exact boundary/version; required scenario matrix with expected/observed state and per-case result; actual commands and bounded measurements; evidence anchors or minimal reproduction; residual risks; unavailable gates and their effect on the verdict. Separate inspected source from executed runtime evidence. Omit empty sections. Recommend the narrow owner correction for a failure without performing unrequested edits.</p>
+</section>
+<p class="source">Workflow ID: mcp-protocol-auth-check · <a href="https://github.com/arty-kk/vibe-coding/blob/v1.3.0/plugins/vibe-coding/skills/vibe-mcp/references/mcp-protocol-auth-check.md">View the versioned source</a> · <a href="https://github.com/arty-kk/vibe-coding/blob/v1.3.0/plugins/vibe-coding/references/workflow.md">Shared workflow and authority rules</a></p>
+<aside class="related"><h2>Related workflows</h2><ul><li><a href="/vibe-coding/workflows/mcp-server-audit/">MCP Server Audit</a> <span class="fine">· Audit</span></li><li><a href="/vibe-coding/workflows/mcp-server-polish/">MCP Server Polish</a> <span class="fine">· Improve</span></li></ul></aside></article>
+<footer><span><a href="https://github.com/arty-kk">Maintained by Arty S.</a></span>
+<a href="https://github.com/arty-kk/vibe-coding">GitHub</a><a href="https://github.com/arty-kk/vibe-coding/releases/tag/v1.3.0">Release notes</a>
+<a href="https://github.com/arty-kk/vibe-coding/issues">Support</a>
+<a href="https://github.com/arty-kk/vibe-coding/blob/main/LICENSE">MIT</a>
+<a href="/vibe-coding/privacy.html">Privacy</a>
+<a href="/vibe-coding/terms.html">Terms</a></footer>
+</main></body></html>

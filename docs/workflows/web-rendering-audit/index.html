@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Web Rendering Audit — Vibe Coding</title>
+<meta name="description" content="Find concrete failures between server-rendered data, serialized payload, first browser render, client effects and subsequent mutations. Include the route&#x27;s directly…">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://arty-kk.github.io/vibe-coding/workflows/web-rendering-audit/">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Vibe Coding">
+<meta property="og:title" content="Web Rendering Audit — Vibe Coding">
+<meta property="og:description" content="Find concrete failures between server-rendered data, serialized payload, first browser render, client effects and subsequent mutations. Include the route&#x27;s directly…">
+<meta property="og:url" content="https://arty-kk.github.io/vibe-coding/workflows/web-rendering-audit/">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://arty-kk.github.io/vibe-coding/social-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Vibe Coding — engineering workflows for Codex and Claude Code">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Web Rendering Audit — Vibe Coding">
+<meta name="twitter:description" content="Find concrete failures between server-rendered data, serialized payload, first browser render, client effects and subsequent mutations. Include the route&#x27;s directly…">
+<meta name="twitter:image" content="https://arty-kk.github.io/vibe-coding/social-card.png">
+<meta name="twitter:image:alt" content="Vibe Coding — engineering workflows for Codex and Claude Code">
+<meta name="theme-color" content="#101212">
+<link rel="icon" href="/vibe-coding/icon.png" type="image/png">
+<link rel="stylesheet" href="/vibe-coding/assets/site.e1ee5d83e343.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://arty-kk.github.io/vibe-coding/#website","url":"https://arty-kk.github.io/vibe-coding/","name":"Vibe Coding","inLanguage":["en","es","ru","zh-CN"]},{"@type":"SoftwareSourceCode","@id":"https://arty-kk.github.io/vibe-coding/#software","name":"Vibe Coding","url":"https://arty-kk.github.io/vibe-coding/","codeRepository":"https://github.com/arty-kk/vibe-coding","version":"1.3.0","description":"Open-source engineering skills and workflows for Codex and Claude Code.","runtimePlatform":["Codex","Claude Code"],"programmingLanguage":"Markdown","license":"https://github.com/arty-kk/vibe-coding/blob/main/LICENSE","isAccessibleForFree":true,"author":{"@type":"Person","name":"Arty S.","url":"https://github.com/arty-kk"},"image":"https://arty-kk.github.io/vibe-coding/social-card.png"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Vibe Coding","item":"https://arty-kk.github.io/vibe-coding/"},{"@type":"ListItem","position":2,"name":"Web Rendering Audit","item":"https://arty-kk.github.io/vibe-coding/workflows/web-rendering-audit/"}]},{"@type":"TechArticle","@id":"https://arty-kk.github.io/vibe-coding/workflows/web-rendering-audit/#page","url":"https://arty-kk.github.io/vibe-coding/workflows/web-rendering-audit/","name":"Web Rendering Audit — Vibe Coding","description":"Find concrete failures between server-rendered data, serialized payload, first browser render, client effects and subsequent mutations. Include the route's directly…","inLanguage":"en","isPartOf":{"@id":"https://arty-kk.github.io/vibe-coding/#website"},"about":{"@id":"https://arty-kk.github.io/vibe-coding/#software"},"headline":"Web Rendering Audit","mainEntityOfPage":"https://arty-kk.github.io/vibe-coding/workflows/web-rendering-audit/","license":"https://github.com/arty-kk/vibe-coding/blob/main/LICENSE"}]}</script>
+<script src="/vibe-coding/assets/site.bc8fff794e61.js" defer></script>
+</head>
+<body data-base="/vibe-coding/" data-language="en" data-page="workflow">
+<a class="skip" href="#content">Skip to content</a>
+<header><a class="brand" href="/vibe-coding/"><span class="mark" aria-hidden="true">↗</span>VIBE CODING</a>
+<div class="header-actions"><a class="version" href="https://github.com/arty-kk/vibe-coding/releases/tag/v1.3.0">v1.3.0</a><nav class="languages" aria-label="Language"><a href="/vibe-coding/" lang="en" hreflang="en">English</a><a href="/vibe-coding/es/" lang="es" hreflang="es">Español</a><a href="/vibe-coding/ru/" lang="ru" hreflang="ru">Русский</a><a href="/vibe-coding/zh-CN/" lang="zh-CN" hreflang="zh-CN">简体中文</a></nav></div></header>
+<main id="content"><article class="workflow"><nav aria-label="Breadcrumb"><a href="/vibe-coding/#catalog">Workflow catalog</a><span aria-hidden="true"> / </span><span>Web Rendering Audit</span></nav>
+<p class="eyebrow">Web rendering &amp; server boundaries · Audit</p><h1>Web Rendering Audit</h1>
+<p class="intro">Find concrete failures between server-rendered data, serialized payload, first browser render, client effects and subsequent mutations. Include the route&#x27;s directly…</p><p class="fine">Vibe Coding 1.3.0 · <code>vibe-web</code> · English technical instructions</p>
+<section class="run-workflow" aria-labelledby="run-title"><h2 id="run-title">Use this workflow</h2><p>Install Vibe Coding, choose your assistant and prompt language, then add your task details after the prompt.</p>
+<div class="tools prompt-options" hidden><label for="host">Assistant<select id="host"><option value="codex">Codex</option><option value="claude">Claude Code</option></select></label>
+<label for="prompt-language">Prompt language<select id="prompt-language"><option value="en">English</option><option value="es">Español</option><option value="ru">Русский</option><option value="zh-CN">简体中文</option></select></label></div>
+<label class="help" for="prompt">Prompt</label><textarea id="prompt" class="prompt" readonly>Use $vibe-web, workflow “Web Rendering Audit” (ID: web-rendering-audit). Follow this workflow for the task below. Report the result in English.</textarea>
+<div class="actions"><button class="copy" id="copy" hidden>Copy prompt</button><span id="copy-status" class="status" role="status"></span><a href="/vibe-coding/#install">Install the plugin</a></div>
+<script type="application/json" id="prompt-data">{"id":"web-rendering-audit","skill":"vibe-web","locales":{"en":{"promptHelp":"Choose your assistant, copy the prompt and add your task details.","copy":"Copy prompt","copied":"Copied. Paste into your assistant.","copyFallback":"Text selected — press ⌘C or Ctrl+C.","prompt":"Use ${skill}, workflow “{title}” (ID: {id}). Follow this workflow for the task below. Report the result in English.","promptClaude":"/vibe-coding:{skill} Use workflow “{title}” (ID: {id}) for the task below. Report the result in English.","title":"Web Rendering Audit"},"es":{"promptHelp":"Elige tu asistente, copia el prompt y añade los detalles de la tarea.","copy":"Copiar prompt","copied":"Copiado. Pégalo en tu asistente.","copyFallback":"Texto seleccionado: pulsa ⌘C o Ctrl+C.","prompt":"Usa ${skill}, flujo «{title}» (ID: {id}). Sigue este flujo para la tarea que aparece a continuación. Responde en español.","promptClaude":"/vibe-coding:{skill} Usa el flujo «{title}» (ID: {id}) para la tarea siguiente. Responde en español.","title":"Auditoría del renderizado web"},"ru":{"promptHelp":"Выбери ассистента, скопируй промпт и добавь детали задачи.","copy":"Скопировать запрос","copied":"Скопировано. Вставь в своего ассистента.","copyFallback":"Текст выделен — нажми ⌘C или Ctrl+C.","prompt":"Используй ${skill}, сценарий «{title}» (ID: {id}). Выполни задачу ниже по этому сценарию. Ответь на русском.","promptClaude":"/vibe-coding:{skill} Используй сценарий «{title}» (ID: {id}) для задачи ниже. Отвечай на русском языке.","title":"Аудит веб-рендеринга"},"zh-CN":{"promptHelp":"选择助手，复制提示词并补充任务详情。","copy":"复制提示词","copied":"已复制。请粘贴到你的助手中。","copyFallback":"文本已选中，请按 ⌘C 或 Ctrl+C。","prompt":"使用 ${skill}，工作流“{title}”（ID：{id}）。按此工作流完成下面的任务。请用简体中文汇报结果。","promptClaude":"/vibe-coding:{skill} 针对下面的任务使用“{title}”工作流（ID：{id}）。请用简体中文回答。","title":"Web 渲染审计"}}}</script></section>
+<nav class="toc" aria-label="On this page"><h2>In this workflow</h2><ul><li><a href="#operation">Operation</a></li><li><a href="#required-input">Required input</a></li><li><a href="#domain-invariants">Domain invariants</a></li><li><a href="#goal-and-scope">Goal and scope</a></li><li><a href="#inspect">Inspect</a></li><li><a href="#audit-method">Audit method</a></li><li><a href="#issue-classes-and-priority">Issue classes and priority</a></li><li><a href="#evidence-requirements">Evidence requirements</a></li><li><a href="#priority-model">Priority model</a></li><li><a href="#finding-rules">Finding rules</a></li><li><a href="#completion-criteria">Completion criteria</a></li><li><a href="#output-contract">Output contract</a></li></ul></nav>
+<section id="technical-instructions" lang="en"><h2 id="operation">Operation</h2>
+<p>Inspect the selected SSR, hydration or server-action boundary without product edits. Read <a href="https://github.com/arty-kk/vibe-coding/blob/v1.3.0/plugins/vibe-coding/references/web-rendering.md">web rendering boundaries</a>, then follow the repository's actual framework and rendering mode. Do not apply one framework's server/client rules to another.</p>
+<h2 id="required-input">Required input</h2>
+<p>The selected route/action, framework/runtime version, rendering mode, affected user state, trusted session/data owner and expected initial and post-interaction behavior. Recover available facts from the repository and supplied reproduction.</p>
+<p>Select the target from the user’s request and current evidence. Reconstruct ordinary missing context from the owning code. If a missing target, authority or environment changes correctness or safety, name that specific gap and leave the dependent action blocked; continue independent work. Do not invent requirements from existing tests.</p>
+<h2 id="domain-invariants">Domain invariants</h2>
+<ul>
+<li>Server HTML and the first browser render use equivalent initial data; later preference updates preserve the product’s intended state.</li>
+<li>Serialized payloads and personalized caches expose only data authorized for the current request identity.</li>
+<li>Server mutations enforce validation and object/tenant authorization using trusted identity independently of browser controls.</li>
+<li>A committed mutation and its directly affected rendered/cached view agree under the selected freshness contract.</li>
+<li>Loading, failure, navigation and retry states preserve usable interaction and do not create unauthorized or duplicate durable effects.</li>
+</ul>
+<h2 id="goal-and-scope">Goal and scope</h2>
+<p>Find concrete failures between server-rendered data, serialized payload, first browser render, client effects and subsequent mutations. Include the route's directly shared layout, cache and authorization owner. Keep general design, unrelated client state and backend redesign outside the selected boundary.</p>
+<h2 id="inspect">Inspect</h2>
+<ul>
+<li>Framework/runtime versions, route handlers, server/client component boundaries, loaders, layouts, streaming or deferred segments, error/loading states and deployment configuration.</li>
+<li>Server render inputs, serialization/escaping, locale/timezone/theme sources, random IDs, time-dependent values, browser-only APIs and client initialization.</li>
+<li>Request identity, personalized fetches, cache keys/tags/lifetimes, CDN/framework caches and invalidation after mutations.</li>
+<li>Server actions or equivalent mutation endpoints, trusted sessions, object authorization, input validation, CSRF/origin handling and redirect destinations.</li>
+<li>Browser console/recoverable errors, rendered HTML, route tests, real browser tests and relevant production traces.</li>
+</ul>
+<h2 id="audit-method">Audit method</h2>
+<ol>
+<li>Trace a concrete route from request and identity through server HTML/data to the first client render. Separate a server-only failure, hydration mismatch and later client-state bug.</li>
+<li>Compare initial values on both sides. Reproduce the relevant saved preference, timezone, locale, signed-in state or query parameter; do not treat a harmless post-hydration update as a mismatch.</li>
+<li>Follow serialized data and shared caches across two identities when personalization exists. Identify which layer owns cache variation and which mutation invalidates it.</li>
+<li>Call the mutation boundary directly with the same object under permitted, forged and signed-out contexts. Hidden buttons and browser-supplied identity do not enforce server authorization.</li>
+<li>Verify the browser symptom and its source owner. A unit test of a page function cannot establish successful hydration or navigation.</li>
+</ol>
+<h2 id="issue-classes-and-priority">Issue classes and priority</h2>
+<p>Prioritize cross-user data exposure, unauthorized server actions and durable corruption; then failed first render, broken navigation/mutation, stale personalized output and inaccessible error recovery. Lower-priority findings still require a visible consumer effect. Examine duplicate effects during retries, lost validation errors, unsafe serialized data, unbounded redirect targets and mismatched server/browser environment assumptions only where reachable.</p>
+<h2 id="evidence-requirements">Evidence requirements</h2>
+<p>Provide route, affected state/identity, <code>path:line</code> and symbol, reproduction, expected and observed output, one correction direction and a meaningful regression. Do not suppress hydration warnings as a proposed repair or report every use of browser APIs as defective. Bound negative conclusions to the routes and states inspected, and distinguish local rendering evidence from deployment/CDN behavior.</p>
+<h2 id="priority-model">Priority model</h2>
+<p>Use the repository’s severity scale if defined. Otherwise classify by demonstrated reachability and impact, not the presence of a keyword:</p>
+<ul>
+<li><strong>P0:</strong> critical or immediate personalized data exposure or unauthorized server mutation.</li>
+<li><strong>P1:</strong> A broken render, navigation or mutation path.</li>
+<li><strong>P2:</strong> A concrete bounded stale/error-state inconsistency.</li>
+</ul>
+<p>A potentially severe category without a supported reachable path remains an unverified concern, not a P0 finding.</p>
+<h2 id="finding-rules">Finding rules</h2>
+<p>Accept a finding only when the evidence establishes the reachable trigger, authoritative owner, violated invariant, affected consumer/state and concrete impact. Separate source facts, observed runtime behavior and inference. Reject generic best practices, stylistic preferences, hypothetical scale failures and already-solved issues. Give one owner-layer remediation direction. Merge symptoms sharing the same owner and correction; split findings when owner, rollout, rollback or validation boundaries differ.</p>
+<h2 id="completion-criteria">Completion criteria</h2>
+<p>Finish when the selected path and applicable invariants have been examined, findings pass the evidence gate and material unknowns are named. No supported defect is a valid outcome. Do not expand scope or fabricate work to fill priority levels.</p>
+<h2 id="output-contract">Output contract</h2>
+<p>Respond in the user’s language. Return findings ordered by impact. Each finding contains: priority and concrete title; affected surface/actor/state; exact evidence anchors and nearest symbol; authoritative owner; violated invariant; expected versus observed behavior; reachable impact; one remediation direction; acceptance criteria; verification route; relevant rollout/rollback constraints and explicit exclusions. Use concise connected fields or prose, not empty template sections. If no finding qualifies, state that and bound the conclusion to the inspected scope. Report unresolved evidence separately. Do not create external tasks or edit code for an audit-only request.</p>
+</section>
+<p class="source">Workflow ID: web-rendering-audit · <a href="https://github.com/arty-kk/vibe-coding/blob/v1.3.0/plugins/vibe-coding/skills/vibe-web/references/web-rendering-audit.md">View the versioned source</a> · <a href="https://github.com/arty-kk/vibe-coding/blob/v1.3.0/plugins/vibe-coding/references/workflow.md">Shared workflow and authority rules</a></p>
+<aside class="related"><h2>Related workflows</h2><ul><li><a href="/vibe-coding/workflows/web-boundary-check/">Web Server/Client Boundary Check</a> <span class="fine">· Verify</span></li><li><a href="/vibe-coding/workflows/web-rendering-polish/">Web Rendering Polish</a> <span class="fine">· Improve</span></li></ul></aside></article>
+<footer><span><a href="https://github.com/arty-kk">Maintained by Arty S.</a></span>
+<a href="https://github.com/arty-kk/vibe-coding">GitHub</a><a href="https://github.com/arty-kk/vibe-coding/releases/tag/v1.3.0">Release notes</a>
+<a href="https://github.com/arty-kk/vibe-coding/issues">Support</a>
+<a href="https://github.com/arty-kk/vibe-coding/blob/main/LICENSE">MIT</a>
+<a href="/vibe-coding/privacy.html">Privacy</a>
+<a href="/vibe-coding/terms.html">Terms</a></footer>
+</main></body></html>

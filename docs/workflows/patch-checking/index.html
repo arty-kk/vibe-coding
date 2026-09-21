@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Patch Checking — Vibe Coding</title>
+<meta name="description" content="Honor the explicit diff, PR, snapshot, branch, range or commit supplied by the user. A single commit limits scope only when explicitly requested. Otherwise use the…">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://arty-kk.github.io/vibe-coding/workflows/patch-checking/">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Vibe Coding">
+<meta property="og:title" content="Patch Checking — Vibe Coding">
+<meta property="og:description" content="Honor the explicit diff, PR, snapshot, branch, range or commit supplied by the user. A single commit limits scope only when explicitly requested. Otherwise use the…">
+<meta property="og:url" content="https://arty-kk.github.io/vibe-coding/workflows/patch-checking/">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://arty-kk.github.io/vibe-coding/social-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Vibe Coding — engineering workflows for Codex and Claude Code">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Patch Checking — Vibe Coding">
+<meta name="twitter:description" content="Honor the explicit diff, PR, snapshot, branch, range or commit supplied by the user. A single commit limits scope only when explicitly requested. Otherwise use the…">
+<meta name="twitter:image" content="https://arty-kk.github.io/vibe-coding/social-card.png">
+<meta name="twitter:image:alt" content="Vibe Coding — engineering workflows for Codex and Claude Code">
+<meta name="theme-color" content="#101212">
+<link rel="icon" href="/vibe-coding/icon.png" type="image/png">
+<link rel="stylesheet" href="/vibe-coding/assets/site.e1ee5d83e343.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://arty-kk.github.io/vibe-coding/#website","url":"https://arty-kk.github.io/vibe-coding/","name":"Vibe Coding","inLanguage":["en","es","ru","zh-CN"]},{"@type":"SoftwareSourceCode","@id":"https://arty-kk.github.io/vibe-coding/#software","name":"Vibe Coding","url":"https://arty-kk.github.io/vibe-coding/","codeRepository":"https://github.com/arty-kk/vibe-coding","version":"1.3.0","description":"Open-source engineering skills and workflows for Codex and Claude Code.","runtimePlatform":["Codex","Claude Code"],"programmingLanguage":"Markdown","license":"https://github.com/arty-kk/vibe-coding/blob/main/LICENSE","isAccessibleForFree":true,"author":{"@type":"Person","name":"Arty S.","url":"https://github.com/arty-kk"},"image":"https://arty-kk.github.io/vibe-coding/social-card.png"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Vibe Coding","item":"https://arty-kk.github.io/vibe-coding/"},{"@type":"ListItem","position":2,"name":"Patch Checking","item":"https://arty-kk.github.io/vibe-coding/workflows/patch-checking/"}]},{"@type":"TechArticle","@id":"https://arty-kk.github.io/vibe-coding/workflows/patch-checking/#page","url":"https://arty-kk.github.io/vibe-coding/workflows/patch-checking/","name":"Patch Checking — Vibe Coding","description":"Honor the explicit diff, PR, snapshot, branch, range or commit supplied by the user. A single commit limits scope only when explicitly requested. Otherwise use the…","inLanguage":"en","isPartOf":{"@id":"https://arty-kk.github.io/vibe-coding/#website"},"about":{"@id":"https://arty-kk.github.io/vibe-coding/#software"},"headline":"Patch Checking","mainEntityOfPage":"https://arty-kk.github.io/vibe-coding/workflows/patch-checking/","license":"https://github.com/arty-kk/vibe-coding/blob/main/LICENSE"}]}</script>
+<script src="/vibe-coding/assets/site.bc8fff794e61.js" defer></script>
+</head>
+<body data-base="/vibe-coding/" data-language="en" data-page="workflow">
+<a class="skip" href="#content">Skip to content</a>
+<header><a class="brand" href="/vibe-coding/"><span class="mark" aria-hidden="true">↗</span>VIBE CODING</a>
+<div class="header-actions"><a class="version" href="https://github.com/arty-kk/vibe-coding/releases/tag/v1.3.0">v1.3.0</a><nav class="languages" aria-label="Language"><a href="/vibe-coding/" lang="en" hreflang="en">English</a><a href="/vibe-coding/es/" lang="es" hreflang="es">Español</a><a href="/vibe-coding/ru/" lang="ru" hreflang="ru">Русский</a><a href="/vibe-coding/zh-CN/" lang="zh-CN" hreflang="zh-CN">简体中文</a></nav></div></header>
+<main id="content"><article class="workflow"><nav aria-label="Breadcrumb"><a href="/vibe-coding/#catalog">Workflow catalog</a><span aria-hidden="true"> / </span><span>Patch Checking</span></nav>
+<p class="eyebrow">Change review · Review</p><h1>Patch Checking</h1>
+<p class="intro">Honor the explicit diff, PR, snapshot, branch, range or commit supplied by the user. A single commit limits scope only when explicitly requested. Otherwise use the…</p><p class="fine">Vibe Coding 1.3.0 · <code>vibe-review</code> · English technical instructions</p>
+<section class="run-workflow" aria-labelledby="run-title"><h2 id="run-title">Use this workflow</h2><p>Install Vibe Coding, choose your assistant and prompt language, then add your task details after the prompt.</p>
+<div class="tools prompt-options" hidden><label for="host">Assistant<select id="host"><option value="codex">Codex</option><option value="claude">Claude Code</option></select></label>
+<label for="prompt-language">Prompt language<select id="prompt-language"><option value="en">English</option><option value="es">Español</option><option value="ru">Русский</option><option value="zh-CN">简体中文</option></select></label></div>
+<label class="help" for="prompt">Prompt</label><textarea id="prompt" class="prompt" readonly>Use $vibe-review, workflow “Patch Checking” (ID: patch-checking). Follow this workflow for the task below. Report the result in English.</textarea>
+<div class="actions"><button class="copy" id="copy" hidden>Copy prompt</button><span id="copy-status" class="status" role="status"></span><a href="/vibe-coding/#install">Install the plugin</a></div>
+<script type="application/json" id="prompt-data">{"id":"patch-checking","skill":"vibe-review","locales":{"en":{"promptHelp":"Choose your assistant, copy the prompt and add your task details.","copy":"Copy prompt","copied":"Copied. Paste into your assistant.","copyFallback":"Text selected — press ⌘C or Ctrl+C.","prompt":"Use ${skill}, workflow “{title}” (ID: {id}). Follow this workflow for the task below. Report the result in English.","promptClaude":"/vibe-coding:{skill} Use workflow “{title}” (ID: {id}) for the task below. Report the result in English.","title":"Patch Checking"},"es":{"promptHelp":"Elige tu asistente, copia el prompt y añade los detalles de la tarea.","copy":"Copiar prompt","copied":"Copiado. Pégalo en tu asistente.","copyFallback":"Texto seleccionado: pulsa ⌘C o Ctrl+C.","prompt":"Usa ${skill}, flujo «{title}» (ID: {id}). Sigue este flujo para la tarea que aparece a continuación. Responde en español.","promptClaude":"/vibe-coding:{skill} Usa el flujo «{title}» (ID: {id}) para la tarea siguiente. Responde en español.","title":"Revisión de parches"},"ru":{"promptHelp":"Выбери ассистента, скопируй промпт и добавь детали задачи.","copy":"Скопировать запрос","copied":"Скопировано. Вставь в своего ассистента.","copyFallback":"Текст выделен — нажми ⌘C или Ctrl+C.","prompt":"Используй ${skill}, сценарий «{title}» (ID: {id}). Выполни задачу ниже по этому сценарию. Ответь на русском.","promptClaude":"/vibe-coding:{skill} Используй сценарий «{title}» (ID: {id}) для задачи ниже. Отвечай на русском языке.","title":"Проверка патча"},"zh-CN":{"promptHelp":"选择助手，复制提示词并补充任务详情。","copy":"复制提示词","copied":"已复制。请粘贴到你的助手中。","copyFallback":"文本已选中，请按 ⌘C 或 Ctrl+C。","prompt":"使用 ${skill}，工作流“{title}”（ID：{id}）。按此工作流完成下面的任务。请用简体中文汇报结果。","promptClaude":"/vibe-coding:{skill} 针对下面的任务使用“{title}”工作流（ID：{id}）。请用简体中文回答。","title":"补丁审查"}}}</script></section>
+<nav class="toc" aria-label="On this page"><h2>In this workflow</h2><ul><li><a href="#target-and-operation">Target and operation</a></li><li><a href="#review-the-resulting-state">Review the resulting state</a></li><li><a href="#correction-and-validation">Correction and validation</a></li><li><a href="#result">Result</a></li></ul></nav>
+<section id="technical-instructions" lang="en"><h2 id="target-and-operation">Target and operation</h2>
+<p>Honor the explicit diff, PR, snapshot, branch, range or commit supplied by the user. A single commit limits scope only when explicitly requested. Otherwise use the current branch and its evidenced integration target; use their merge base and include the full branch delta plus staged, unstaged and untracked changes. If no integration target can be established, inspect available working-tree changes and state that branch integration remains unverified. Do not invent a remote or compare an unrelated branch.</p>
+<p>If no changes or target are visible, report <code>Patch not found: no changed files or review target visible.</code> and stop. Do not create a sample patch.</p>
+<p>Review means inspect and report. Apply fixes only for a request to fix or an already-authorized implementation. Preparing or reviewing a PR does not authorize merging it.</p>
+<h2 id="review-the-resulting-state">Review the resulting state</h2>
+<p>Recover intended behavior and acceptance criteria. Inventory additions, renames, deletions, code, schemas, migrations, manifests, lockfiles, generated files, config and deployment assets. For each changed contract identify its owner and inspect direct callers, consumers and operational paths. Check target-side changes after the merge base when available; use a non-destructive merge simulation if it adds relevant evidence.</p>
+<p>Check ownership and architectural layer, producer/consumer compatibility, API/event/error semantics, permissions and tenancy, serialization, state transitions, concurrency, retries, cancellation, cleanup, migration and rollout/rollback only where the actual change makes them relevant. Check that verification exercises the real changed path rather than an unrelated or fully mocked path.</p>
+<p>A defect must be introduced by the change, represent required behavior that is missing, or be a pre-existing condition that directly prevents the changed contract from working or integrating correctly. Exclude style preferences, speculative redesign and unrelated existing defects. Cite the governing expectation and a reachable violation with path, line, symbol and impact. Separate direct evidence from inference.</p>
+<h2 id="correction-and-validation">Correction and validation</h2>
+<p>When authorized, correct each concrete in-scope defect at its authoritative owner and synchronize only directly affected contracts. Reinspect the complete resulting state after a correction. Do not keep changing architecture after the required behavior is satisfied.</p>
+<p>Discover relevant commands from the actual repository and run focused applicable checks. Record exact commands and outcomes. Required failed, missing or unavailable validation prevents a fully clean verdict; optional unrun checks are reported proportionally. Preserve unrelated work. Inspect final changes, including untracked and generated files, and use <code>git diff --check</code> when Git is available.</p>
+<p>End when the requested review/fix is complete, a concrete external gate remains or further attempts add no evidence. A repeated command without a meaningful change is not progress.</p>
+<h2 id="result">Result</h2>
+<p>Use a concise verdict: clean, fixes applied and verified, findings remain, or verification blocked. Then give material findings/changes, reviewed target, validation and residual limits in the user's language. Never report an unavailable check as passed or a local result as production readiness.</p>
+</section>
+<p class="source">Workflow ID: patch-checking · <a href="https://github.com/arty-kk/vibe-coding/blob/v1.3.0/plugins/vibe-coding/skills/vibe-review/references/patch-checking.md">View the versioned source</a> · <a href="https://github.com/arty-kk/vibe-coding/blob/v1.3.0/plugins/vibe-coding/references/workflow.md">Shared workflow and authority rules</a></p>
+</article>
+<footer><span><a href="https://github.com/arty-kk">Maintained by Arty S.</a></span>
+<a href="https://github.com/arty-kk/vibe-coding">GitHub</a><a href="https://github.com/arty-kk/vibe-coding/releases/tag/v1.3.0">Release notes</a>
+<a href="https://github.com/arty-kk/vibe-coding/issues">Support</a>
+<a href="https://github.com/arty-kk/vibe-coding/blob/main/LICENSE">MIT</a>
+<a href="/vibe-coding/privacy.html">Privacy</a>
+<a href="/vibe-coding/terms.html">Terms</a></footer>
+</main></body></html>

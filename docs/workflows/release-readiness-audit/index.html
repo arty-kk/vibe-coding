@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Release Readiness Audit — Vibe Coding</title>
+<meta name="description" content="Audit whether a repository or selected feature is ready to ship: correctness, tests, migrations, config, deploy path, observability, security/privacy, UI states,…">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://arty-kk.github.io/vibe-coding/workflows/release-readiness-audit/">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Vibe Coding">
+<meta property="og:title" content="Release Readiness Audit — Vibe Coding">
+<meta property="og:description" content="Audit whether a repository or selected feature is ready to ship: correctness, tests, migrations, config, deploy path, observability, security/privacy, UI states,…">
+<meta property="og:url" content="https://arty-kk.github.io/vibe-coding/workflows/release-readiness-audit/">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://arty-kk.github.io/vibe-coding/social-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Vibe Coding — engineering workflows for Codex and Claude Code">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Release Readiness Audit — Vibe Coding">
+<meta name="twitter:description" content="Audit whether a repository or selected feature is ready to ship: correctness, tests, migrations, config, deploy path, observability, security/privacy, UI states,…">
+<meta name="twitter:image" content="https://arty-kk.github.io/vibe-coding/social-card.png">
+<meta name="twitter:image:alt" content="Vibe Coding — engineering workflows for Codex and Claude Code">
+<meta name="theme-color" content="#101212">
+<link rel="icon" href="/vibe-coding/icon.png" type="image/png">
+<link rel="stylesheet" href="/vibe-coding/assets/site.e1ee5d83e343.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://arty-kk.github.io/vibe-coding/#website","url":"https://arty-kk.github.io/vibe-coding/","name":"Vibe Coding","inLanguage":["en","es","ru","zh-CN"]},{"@type":"SoftwareSourceCode","@id":"https://arty-kk.github.io/vibe-coding/#software","name":"Vibe Coding","url":"https://arty-kk.github.io/vibe-coding/","codeRepository":"https://github.com/arty-kk/vibe-coding","version":"1.3.0","description":"Open-source engineering skills and workflows for Codex and Claude Code.","runtimePlatform":["Codex","Claude Code"],"programmingLanguage":"Markdown","license":"https://github.com/arty-kk/vibe-coding/blob/main/LICENSE","isAccessibleForFree":true,"author":{"@type":"Person","name":"Arty S.","url":"https://github.com/arty-kk"},"image":"https://arty-kk.github.io/vibe-coding/social-card.png"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Vibe Coding","item":"https://arty-kk.github.io/vibe-coding/"},{"@type":"ListItem","position":2,"name":"Release Readiness Audit","item":"https://arty-kk.github.io/vibe-coding/workflows/release-readiness-audit/"}]},{"@type":"TechArticle","@id":"https://arty-kk.github.io/vibe-coding/workflows/release-readiness-audit/#page","url":"https://arty-kk.github.io/vibe-coding/workflows/release-readiness-audit/","name":"Release Readiness Audit — Vibe Coding","description":"Audit whether a repository or selected feature is ready to ship: correctness, tests, migrations, config, deploy path, observability, security/privacy, UI states,…","inLanguage":"en","isPartOf":{"@id":"https://arty-kk.github.io/vibe-coding/#website"},"about":{"@id":"https://arty-kk.github.io/vibe-coding/#software"},"headline":"Release Readiness Audit","mainEntityOfPage":"https://arty-kk.github.io/vibe-coding/workflows/release-readiness-audit/","license":"https://github.com/arty-kk/vibe-coding/blob/main/LICENSE"}]}</script>
+<script src="/vibe-coding/assets/site.bc8fff794e61.js" defer></script>
+</head>
+<body data-base="/vibe-coding/" data-language="en" data-page="workflow">
+<a class="skip" href="#content">Skip to content</a>
+<header><a class="brand" href="/vibe-coding/"><span class="mark" aria-hidden="true">↗</span>VIBE CODING</a>
+<div class="header-actions"><a class="version" href="https://github.com/arty-kk/vibe-coding/releases/tag/v1.3.0">v1.3.0</a><nav class="languages" aria-label="Language"><a href="/vibe-coding/" lang="en" hreflang="en">English</a><a href="/vibe-coding/es/" lang="es" hreflang="es">Español</a><a href="/vibe-coding/ru/" lang="ru" hreflang="ru">Русский</a><a href="/vibe-coding/zh-CN/" lang="zh-CN" hreflang="zh-CN">简体中文</a></nav></div></header>
+<main id="content"><article class="workflow"><nav aria-label="Breadcrumb"><a href="/vibe-coding/#catalog">Workflow catalog</a><span aria-hidden="true"> / </span><span>Release Readiness Audit</span></nav>
+<p class="eyebrow">Quality &amp; readiness · Audit</p><h1>Release Readiness Audit</h1>
+<p class="intro">Audit whether a repository or selected feature is ready to ship: correctness, tests, migrations, config, deploy path, observability, security/privacy, UI states,…</p><p class="fine">Vibe Coding 1.3.0 · <code>vibe-quality</code> · English technical instructions</p>
+<section class="run-workflow" aria-labelledby="run-title"><h2 id="run-title">Use this workflow</h2><p>Install Vibe Coding, choose your assistant and prompt language, then add your task details after the prompt.</p>
+<div class="tools prompt-options" hidden><label for="host">Assistant<select id="host"><option value="codex">Codex</option><option value="claude">Claude Code</option></select></label>
+<label for="prompt-language">Prompt language<select id="prompt-language"><option value="en">English</option><option value="es">Español</option><option value="ru">Русский</option><option value="zh-CN">简体中文</option></select></label></div>
+<label class="help" for="prompt">Prompt</label><textarea id="prompt" class="prompt" readonly>Use $vibe-quality, workflow “Release Readiness Audit” (ID: release-readiness-audit). Follow this workflow for the task below. Report the result in English.</textarea>
+<div class="actions"><button class="copy" id="copy" hidden>Copy prompt</button><span id="copy-status" class="status" role="status"></span><a href="/vibe-coding/#install">Install the plugin</a></div>
+<script type="application/json" id="prompt-data">{"id":"release-readiness-audit","skill":"vibe-quality","locales":{"en":{"promptHelp":"Choose your assistant, copy the prompt and add your task details.","copy":"Copy prompt","copied":"Copied. Paste into your assistant.","copyFallback":"Text selected — press ⌘C or Ctrl+C.","prompt":"Use ${skill}, workflow “{title}” (ID: {id}). Follow this workflow for the task below. Report the result in English.","promptClaude":"/vibe-coding:{skill} Use workflow “{title}” (ID: {id}) for the task below. Report the result in English.","title":"Release Readiness Audit"},"es":{"promptHelp":"Elige tu asistente, copia el prompt y añade los detalles de la tarea.","copy":"Copiar prompt","copied":"Copiado. Pégalo en tu asistente.","copyFallback":"Texto seleccionado: pulsa ⌘C o Ctrl+C.","prompt":"Usa ${skill}, flujo «{title}» (ID: {id}). Sigue este flujo para la tarea que aparece a continuación. Responde en español.","promptClaude":"/vibe-coding:{skill} Usa el flujo «{title}» (ID: {id}) para la tarea siguiente. Responde en español.","title":"Preparación para publicar — Auditoría"},"ru":{"promptHelp":"Выбери ассистента, скопируй промпт и добавь детали задачи.","copy":"Скопировать запрос","copied":"Скопировано. Вставь в своего ассистента.","copyFallback":"Текст выделен — нажми ⌘C или Ctrl+C.","prompt":"Используй ${skill}, сценарий «{title}» (ID: {id}). Выполни задачу ниже по этому сценарию. Ответь на русском.","promptClaude":"/vibe-coding:{skill} Используй сценарий «{title}» (ID: {id}) для задачи ниже. Отвечай на русском языке.","title":"Готовность к выпуску — Аудит"},"zh-CN":{"promptHelp":"选择助手，复制提示词并补充任务详情。","copy":"复制提示词","copied":"已复制。请粘贴到你的助手中。","copyFallback":"文本已选中，请按 ⌘C 或 Ctrl+C。","prompt":"使用 ${skill}，工作流“{title}”（ID：{id}）。按此工作流完成下面的任务。请用简体中文汇报结果。","promptClaude":"/vibe-coding:{skill} 针对下面的任务使用“{title}”工作流（ID：{id}）。请用简体中文回答。","title":"发布准备 — 审计"}}}</script></section>
+<nav class="toc" aria-label="On this page"><h2>In this workflow</h2><ul><li><a href="#operation">Operation</a></li><li><a href="#goal">Goal</a></li><li><a href="#inspect">Inspect</a></li><li><a href="#issue-classes">Issue classes</a></li><li><a href="#priority-model">Priority model</a></li><li><a href="#finding-quality">Finding quality</a></li></ul></nav>
+<section id="technical-instructions" lang="en"><h2 id="operation">Operation</h2>
+<p>Inspect the named boundary and report supported findings. Do not edit product code. Include concrete evidence, impact, the owning source, one remediation direction and a meaningful validation route. Severity follows actual impact, not a category example.</p>
+<h2 id="goal">Goal</h2>
+<p>Audit whether a repository or selected feature is ready to ship: correctness, tests, migrations, config, deploy path, observability, security/privacy, UI states, docs, and rollback/recovery. Keep only issues supported by repository evidence and relevant to release risk.</p>
+<h2 id="inspect">Inspect</h2>
+<p>Changed or selected feature areas, product capability/journey/traceability maps, routes/API/jobs/workers, migrations/schemas, RBAC/ABAC and entitlements, payments, notifications, cache/search, feature flags, mobile/extension/desktop delivery surfaces, seed data, env/config, CI/deploy files, tests, docs/runbooks, logs/metrics/health checks, user-facing copy/states, security/privacy boundaries, package/lockfiles, and recent generated maps/plans if present.</p>
+<h2 id="issue-classes">Issue classes</h2>
+<p>Look for concrete, reachable release blockers or risks in:</p>
+<ul>
+<li>Contract readiness: API/UI/job/schema drift, migration ordering, generated artifact mismatch, missing env/config, version/dependency drift, or external integration mismatch.</li>
+<li>Validation readiness: missing owner-level tests for changed behavior, brittle snapshots, unrun critical checks, no seed/fixture for release path, or visual/regression gaps on main surfaces.</li>
+<li>Operational readiness: missing health/logging/metrics for new failure path, deploy/rollback ambiguity, unsafe cleanup, background job ordering, or absent runbook for critical change.</li>
+<li>Product readiness: missing loading/error/empty/no-access/no-plan/destructive states, misleading copy, unsupported public claims, broken onboarding/billing/permission edge.</li>
+<li>Security/privacy readiness: secret/PII leakage, missing authorization enforcement, unsafe diagnostics, tenant isolation risk, or compliance-sensitive data retention/config issue.</li>
+</ul>
+<h2 id="priority-model">Priority model</h2>
+<p>Release can cause data loss/corruption, security/privacy breach, broken paid/core workflow, failed deploy/migration, or irreversible user harm.</p>
+<p>Meaningful release risk: missing tests/checks for high-impact behavior, operational blind spot, important UI state gap, integration drift, or rollback/recovery uncertainty.</p>
+<p>Lower-risk but concrete readiness issue: stale docs/runbook, minor config ambiguity, secondary test gap, weak copy/state, or maintainability issue likely to slow release support.</p>
+<h2 id="finding-quality">Finding quality</h2>
+<ul>
+<li>Every finding must cite <code>path:line[-line]</code> evidence for the release risk and affected owner.</li>
+<li>Include expected release-safe behavior, acceptance criteria, validation direction, and whether it blocks release or can follow after release.</li>
+<li>Merge issues by release owner/source of truth when one fix validates them together.</li>
+</ul>
+</section>
+<p class="source">Workflow ID: release-readiness-audit · <a href="https://github.com/arty-kk/vibe-coding/blob/v1.3.0/plugins/vibe-coding/skills/vibe-quality/references/release-readiness-audit.md">View the versioned source</a> · <a href="https://github.com/arty-kk/vibe-coding/blob/v1.3.0/plugins/vibe-coding/references/workflow.md">Shared workflow and authority rules</a></p>
+<aside class="related"><h2>Related workflows</h2><ul><li><a href="/vibe-coding/workflows/test-coverage-audit/">Test Coverage Audit</a> <span class="fine">· Audit</span></li><li><a href="/vibe-coding/workflows/test-harness-polish/">Test Harness Polish</a> <span class="fine">· Improve</span></li><li><a href="/vibe-coding/workflows/visual-regression-check/">Visual Regression Check</a> <span class="fine">· Verify</span></li></ul></aside></article>
+<footer><span><a href="https://github.com/arty-kk">Maintained by Arty S.</a></span>
+<a href="https://github.com/arty-kk/vibe-coding">GitHub</a><a href="https://github.com/arty-kk/vibe-coding/releases/tag/v1.3.0">Release notes</a>
+<a href="https://github.com/arty-kk/vibe-coding/issues">Support</a>
+<a href="https://github.com/arty-kk/vibe-coding/blob/main/LICENSE">MIT</a>
+<a href="/vibe-coding/privacy.html">Privacy</a>
+<a href="/vibe-coding/terms.html">Terms</a></footer>
+</main></body></html>
