@@ -33,6 +33,7 @@ jobs:
         with:
           node-version: '22'
       - run: python review/run_runtime_checks.py
+      - run: node --test tests/test_site_search.cjs
   claude-compatibility:
     runs-on: ubuntu-latest
     steps:

@@ -14,7 +14,13 @@ The public site is static HTML generated from the plugin's catalog and Markdown 
 
 Edit `site/content.json` for landing copy and FAQs. Counts use `{skills}` and `{recipes}`. Edit `plugins/vibe-coding/assets/catalog/locales/<language>.json` for shared catalog labels, titles, summaries, prompts and policies. Update all four languages together. The build checks translation completeness and placeholder parity. English policy text must match root `PRIVACY.md` and `TERMS.md`.
 
-Public styles and JavaScript are versioned with content hashes. The page renders all catalog links and complete workflow instructions without JavaScript. Search fetches the shared full-text index only after a query; if that request fails, title/category filtering still works and shows its limitation. Scripts enhance filtering and copying without supplying the page's core content.
+Public styles are independent of the offline catalog. The page renders every workflow link, localized description and full technical instruction without JavaScript. The interactive view displays 12 results per page, starting with 12 varied engineering tasks defined in `site/content.json`.
+
+`site/catalog-engine.js` owns Unicode normalization, word-prefix matching, weighted ranking, intersecting filters, facet counts, pagination and safe return URLs. Default search uses multilingual titles, curated keywords, topics and task names. It does not mix in incidental mentions from long technical instructions. The explicit “Search inside instructions” option fetches the shared full-text index; those matches are labeled. Loading failures leave the ordinary search operational. Disabling full-text search ignores any cached body matches.
+
+`q`, `topic`, `action`, `full` and `page` belong to the URL. Search edits replace history; filter and pagination changes add navigable history entries. Language links and workflow return links preserve the selection. Invalid filters and page values are normalized. Search handles composition events and supports clearing only the query or each filter independently.
+
+Scripts and styles use content hashes. Keep previously published assets: cached pages and already-open tabs may request an older script or lazily load its index after deployment. Builds preserve them instead of breaking those sessions.
 
 `social-card.svg` is the editable 1200×630 sharing image source. `render_social.py` renders the committed PNG with Pillow and Arial; regenerate it when the title, host support or counts change. Site builds copy the PNG without requiring an image runtime or system fonts in CI.
 
@@ -23,6 +29,7 @@ python3 -m pip install -r plugins/vibe-coding/requirements.txt -r site/requireme
 python3 plugins/vibe-coding/scripts/catalog.py refresh
 python3 scripts/build_site.py
 python3 -m unittest discover -s tests -v
+node --test tests/test_site_search.cjs
 ```
 
 The offline `CATALOG.html` remains self-contained and uses the plugin's catalog renderer. Do not package public site dependencies into the plugin.
@@ -37,4 +44,4 @@ After a release, submit `https://arty-kk.github.io/vibe-coding/sitemap.xml` thro
 
 The implementation follows [Google's AI search guidance](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide), [localized-version guidance](https://developers.google.com/search/docs/specialty/international/localized-versions) and [canonical guidance](https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls). Google does not use `llms.txt` for Search; the site exposes its real content through ordinary HTML, links and standard metadata instead.
 
-Before publishing, verify the four locales at desktop/mobile sizes, search, empty results, category/mode filters, legacy links, prompt language/host changes, clipboard behavior and policy navigation. Static tests validate every local link and section fragment, the exact sitemap set, JSON-LD, social metadata, HTML language, prompt templates and deterministic builds.
+Before publishing, verify the four locales at desktop/mobile sizes, search, empty results, category/mode filters, legacy links, prompt language/host changes, clipboard behavior and policy navigation. Static tests validate every local link and section fragment, the exact sitemap set, JSON-LD, social metadata, HTML language, prompt templates and deterministic builds. Node regression tests cover ranking, body-search isolation, multilingual matching, filter intersections and counts, empty results, URL restoration, pagination and safe return links. Browser checks must also cover navigation back from a workflow, changing language with filters, keyboard focus, copy actions and the missing-index failure state.

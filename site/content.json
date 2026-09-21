@@ -1,198 +1,562 @@
 {
   "en": {
-    "title": "Vibe Coding — Codex & Claude Code Plugin",
-    "description": "{skills} skills and {recipes} engineering workflows for Codex and Claude Code. Map repositories, review code, debug failures and verify changes. Free, open source, MIT licensed.",
-    "eyebrow": "Engineering skills for Codex + Claude Code",
-    "headline": "Understand the code.",
-    "accent": "Verify the change.",
-    "intro": "Vibe Coding is an open-source plugin with {skills} skills and {recipes} workflows for repository mapping, code review, debugging, implementation and verification. Give your assistant a concrete task and a method to work through it.",
-    "browse": "Explore the workflows",
-    "install": "Install the plugin",
-    "facts": "MIT licensed · No plugin account or API key · Uses your assistant’s tools",
-    "howTitle": "A workflow that follows your intent",
-    "howIntro": "Each skill routes to focused instructions. The assistant follows the relevant code, identifies the contract owner and checks the affected behavior. Detailed recipes load when needed.",
-    "steps": [
-      ["Inspect", "Ask for an audit or review to get evidence, impact and a concrete next step. Product code stays unchanged."],
-      ["Implement", "Ask for a fix or improvement to authorize the relevant change, including affected callers and contracts."],
-      ["Verify", "Check the requested behavior and see what passed, failed or could not be tested. A bounded check does not certify the whole project."]
-    ],
-    "examplesTitle": "Start with a real engineering task",
-    "examples": [
-      ["Map a repository", "Trace the API, data owners and runtime flow before working in an unfamiliar codebase.", "vibe-map"],
-      ["Review a patch", "Inspect the full change and its direct dependencies for actionable defects.", "vibe-review"],
-      ["Debug one failure", "Follow a reproducible bug to its owner, fix the cause and run a meaningful check.", "vibe-probe"],
-      ["Check a release", "Compare release evidence with required gates and report the remaining gaps.", "vibe-quality"]
-    ],
-    "installIntro": "The same {skills} skills work in both hosts. Choose the assistant you use for repository work.",
-    "codexInstall": "Install Vibe Coding from the OpenAI Plugins Directory, then start a new task.",
-    "codexLink": "Open in the Codex directory",
-    "claudeInstall": "Add this public GitHub marketplace and install the plugin in Claude Code:",
-    "claudeStart": "Start a new Claude Code session, then invoke a skill with its plugin namespace:",
-    "docs": "Installation and update guide",
-    "cost": "The plugin is free under the MIT license. Codex and Claude access, model usage and your project’s services follow their own pricing and requirements.",
-    "catalogNote": "Search by engineering topic, skill or operation. Full workflow instructions are available in English at permanent links; catalog labels and prompts support four languages.",
-    "english": "Full instructions in English",
-    "faqTitle": "About Vibe Coding",
-    "faq": [
-      ["What does Vibe Coding add to my assistant?", "It adds engineering instructions: an entry skill, domain skills and focused recipes. These cover product behavior, APIs, data, security, infrastructure, AI features, MCP, web rendering and release checks. It does not add an execution engine or a model."],
-      ["How is this different from a single prompt?", "A skill first selects the relevant domain and operation. A recipe then defines the goal, constraints, engineering invariants and verification method. The shared workflow separates inspection, implementation and checks."],
-      ["Does the plugin run services or collect data?", "It installs no MCP server, background service, account connection or telemetry. Your assistant uses its existing tools and permissions. The website uses no analytics or third-party scripts; local browser storage remembers catalog preferences."],
-      ["Can I use it with Claude?", "This release includes the Claude Code plugin manifest and a public marketplace. Its skills are invoked as /vibe-coding:skill-name. The documented setup is for Claude Code repository work; availability in other Claude surfaces depends on their plugin support."],
-      ["Which languages are supported?", "The catalog, search labels and copyable prompts support English, Spanish, Russian and Simplified Chinese. Technical instructions remain in English. Ask the assistant to respond in your preferred language."],
-      ["Does it guarantee correct code?", "No. Results depend on the model, available context, tools and checks. The workflows require evidence and distinguish observed results from assumptions and blocked checks. Review changes before relying on them."]
-    ],
     "maintained": "Maintained by Arty S.",
     "release": "Release notes",
     "source": "Source code",
     "skip": "Skip to content",
-    "searchLoading": "Loading full-text search…",
-    "searchFallback": "Full-text search could not load. Searching titles and categories instead."
+    "title": "Vibe Coding — Engineering Skills for Codex & Claude Code",
+    "description": "An open-source library of {skills} skills and {recipes} workflows for Codex and Claude Code. Review code, find bugs and check your next release.",
+    "eyebrow": "For Codex & Claude Code",
+    "headline": "An engineering playbook",
+    "accent": "for your AI.",
+    "intro": "Ready-to-use skills for reviewing code, finding bugs and making changes. Pick a workflow, add your task, and give your assistant a clear way to work.",
+    "browse": "Find a workflow",
+    "install": "Get the plugin",
+    "facts": "Open source · Free to use · MIT license",
+    "catalogTitle": "What are you working on?",
+    "catalogNote": "Find a workflow by topic, technology or task.",
+    "search": "Search workflows",
+    "searchPlaceholder": "Try API, Redis, accessibility…",
+    "topic": "Topic",
+    "action": "Task",
+    "allTopics": "All topics",
+    "allActions": "All tasks",
+    "fullText": "Search inside instructions",
+    "clearSearch": "Clear search",
+    "reset": "Clear all",
+    "emptyTitle": "No workflows match yet.",
+    "empty": "Try a shorter search or remove a filter. Turn on full-text search to look inside the instructions.",
+    "count": "{count} workflows",
+    "pageStatus": "{from}–{to} of {total}",
+    "previous": "Previous",
+    "next": "Next",
+    "removeFilter": "Remove {label}",
+    "searchLoading": "Searching the full instructions…",
+    "searchFallback": "Full-text search is unavailable. Title and topic search still works. Turn the option off and on to retry.",
+    "bodyMatch": "Matches inside the instructions",
+    "english": "Workflow instructions are in English. Prompts are available in four languages.",
+    "demoLabel": "A small prompt. A focused workflow.",
+    "demoTask": "Review a change",
+    "demoPrompt": "Review this branch. Find bugs, explain their impact, and point to the code.",
+    "demoNote": "The skill guides the review: scope, dependencies, evidence and checks.",
+    "copy": "Copy",
+    "copied": "Copied",
+    "copyFallback": "Select and copy the command manually.",
+    "quickLabel": "Start with",
+    "quickLinks": [
+      [
+        "Code review",
+        "vibe-review"
+      ],
+      [
+        "Find a bug",
+        "vibe-probe"
+      ],
+      [
+        "Map a project",
+        "vibe-map"
+      ],
+      [
+        "Release checks",
+        "vibe-quality"
+      ]
+    ],
+    "installIntro": "One library. Your preferred assistant.",
+    "codexInstall": "Open Vibe Coding in the plugin directory, install it, then start a new task.",
+    "codexLink": "Install in Codex",
+    "claudeInstall": "Run these two commands in your terminal:",
+    "claudeStart": "Start a new Claude Code session, then describe your task:",
+    "docs": "Installation & updates",
+    "cost": "Vibe Coding is free. Your assistant’s subscription and model usage are separate.",
+    "faqTitle": "A few useful details",
+    "faq": [
+      [
+        "What do I get?",
+        "46 skills and 241 focused workflows, from API reviews and database checks to accessibility, infrastructure and AI features. Each one gives your assistant steps to follow and a way to check the result."
+      ],
+      [
+        "How do I use a workflow?",
+        "Install the plugin, open a workflow here, and copy its prompt for Codex or Claude Code. Add the files, behavior or change you want the assistant to work on."
+      ],
+      [
+        "Which languages are supported?",
+        "The website and prompts support English, Spanish, Russian and Simplified Chinese. The technical instructions are written in English; you can ask the assistant to respond in your language."
+      ],
+      [
+        "Does the plugin need its own account or API key?",
+        "No. It uses the tools and permissions already available to your assistant. There is no plugin server, background service or telemetry."
+      ]
+    ],
+    "countOne": "{count} workflow",
+    "featured": {
+      "patch-checking": {
+        "title": "Review a code change",
+        "description": "Find actionable bugs in a patch, branch or pull request, including its direct dependencies."
+      },
+      "project-atlas-map": {
+        "title": "Map a codebase",
+        "description": "Understand the product, architecture and runtime before changing an unfamiliar project."
+      },
+      "instant-bug-fix-polish": {
+        "title": "Find and fix a bug",
+        "description": "Investigate one reproducible failure, fix its cause and check the affected behavior."
+      },
+      "release-readiness-audit": {
+        "title": "Check release readiness",
+        "description": "Review tests, deployment requirements and unresolved risks before releasing a change."
+      },
+      "api-audit": {
+        "title": "Audit an API",
+        "description": "Check request validation, response contracts, permissions and the clients that depend on them."
+      },
+      "sql-databases-audit": {
+        "title": "Review SQL and transactions",
+        "description": "Trace queries, indexes, locks and transaction boundaries in your database code."
+      },
+      "security-audit": {
+        "title": "Find security weaknesses",
+        "description": "Trace reachable attack paths and identify concrete application security defects."
+      },
+      "web-rendering-audit": {
+        "title": "Check web rendering",
+        "description": "Investigate server/client boundaries, hydration, caching and navigation in a web app."
+      },
+      "ai-feature-audit": {
+        "title": "Review an AI feature",
+        "description": "Inspect model inputs, outputs, tool use and quality checks against the feature’s goal."
+      },
+      "infra-ops-audit": {
+        "title": "Review infrastructure",
+        "description": "Check runtime configuration, deployment, background jobs and operational failure paths."
+      },
+      "product-ui-audit": {
+        "title": "Review a product interface",
+        "description": "Trace a user journey through the interface, including loading, errors and empty states."
+      },
+      "accessibility-audit": {
+        "title": "Check accessibility",
+        "description": "Review keyboard navigation, focus, semantics and accessible interaction in your interface."
+      }
+    }
   },
   "es": {
-    "title": "Vibe Coding — Plugin para Codex y Claude Code",
-    "description": "{skills} habilidades y {recipes} flujos de ingeniería para Codex y Claude Code. Explora repositorios, revisa código, depura fallos y verifica cambios. Código abierto, licencia MIT.",
-    "eyebrow": "Habilidades de ingeniería para Codex + Claude Code",
-    "headline": "Entiende el código.",
-    "accent": "Verifica el cambio.",
-    "intro": "Vibe Coding es un plugin de código abierto con {skills} habilidades y {recipes} flujos para explorar repositorios, revisar código, depurar, implementar y verificar cambios. Dale a tu asistente una tarea concreta y un método para resolverla.",
-    "browse": "Explorar los flujos",
-    "install": "Instalar el plugin",
-    "facts": "Licencia MIT · Sin cuenta ni clave API del plugin · Usa las herramientas de tu asistente",
-    "howTitle": "Un flujo que sigue tu intención",
-    "howIntro": "Cada habilidad selecciona instrucciones específicas. El asistente sigue el código relevante, identifica dónde se define el contrato y comprueba el comportamiento afectado. Las recetas detalladas se cargan cuando hacen falta.",
-    "steps": [
-      ["Inspeccionar", "Pide una auditoría o revisión para obtener pruebas, impacto y un siguiente paso concreto. El código del producto no se modifica."],
-      ["Implementar", "Pide una corrección o mejora para autorizar el cambio pertinente, incluidos los consumidores y contratos afectados."],
-      ["Verificar", "Comprueba el comportamiento solicitado y distingue lo que pasó, falló o no pudo probarse. Una comprobación acotada no certifica todo el proyecto."]
-    ],
-    "examplesTitle": "Empieza con una tarea real de ingeniería",
-    "examples": [
-      ["Explorar un repositorio", "Sigue la API, los responsables de los datos y la ejecución antes de trabajar en código desconocido.", "vibe-map"],
-      ["Revisar un cambio", "Inspecciona el cambio completo y sus dependencias directas para encontrar defectos corregibles.", "vibe-review"],
-      ["Depurar un fallo", "Rastrea un error reproducible hasta su origen, corrige la causa y ejecuta una comprobación útil.", "vibe-probe"],
-      ["Comprobar una versión", "Compara las pruebas de la versión con los controles exigidos e identifica lo que falta.", "vibe-quality"]
-    ],
-    "installIntro": "Las mismas {skills} habilidades funcionan en ambos asistentes. Elige el que usas para trabajar con repositorios.",
-    "codexInstall": "Instala Vibe Coding desde el directorio de plugins de OpenAI y empieza una tarea nueva.",
-    "codexLink": "Abrir el directorio de Codex",
-    "claudeInstall": "Añade este marketplace público de GitHub e instala el plugin en Claude Code:",
-    "claudeStart": "Abre una sesión nueva de Claude Code e invoca una habilidad con el prefijo del plugin:",
-    "docs": "Guía de instalación y actualización",
-    "cost": "El plugin es gratuito bajo la licencia MIT. El acceso a Codex y Claude, el uso de modelos y los servicios de tu proyecto tienen sus propios precios y requisitos.",
-    "catalogNote": "Busca por tema de ingeniería, habilidad u operación. Las instrucciones completas están en inglés y tienen enlaces permanentes; las etiquetas del catálogo y los prompts admiten cuatro idiomas.",
-    "english": "Instrucciones completas en inglés",
-    "faqTitle": "Acerca de Vibe Coding",
-    "faq": [
-      ["¿Qué añade Vibe Coding a mi asistente?", "Añade instrucciones de ingeniería: una habilidad de entrada, habilidades por área y recetas específicas. Cubren producto, API, datos, seguridad, infraestructura, funciones de IA, MCP, renderizado web y comprobaciones de versiones. No añade un motor de ejecución ni un modelo."],
-      ["¿En qué se diferencia de un único prompt?", "Una habilidad elige primero el área y la operación. Una receta define después el objetivo, las restricciones, las invariantes de ingeniería y el método de verificación. El flujo compartido distingue inspección, implementación y comprobación."],
-      ["¿El plugin ejecuta servicios o recopila datos?", "No instala servidores MCP, servicios en segundo plano, conexiones de cuentas ni telemetría. El asistente usa sus herramientas y permisos existentes. La web no utiliza analítica ni scripts de terceros; el almacenamiento local del navegador recuerda las preferencias del catálogo."],
-      ["¿Puedo usarlo con Claude?", "Esta versión incluye el manifiesto para Claude Code y un marketplace público. Las habilidades se invocan como /vibe-coding:nombre-de-habilidad. La instalación documentada está orientada al trabajo con repositorios en Claude Code; otras interfaces de Claude dependen de su soporte de plugins."],
-      ["¿Qué idiomas admite?", "El catálogo, las etiquetas de búsqueda y los prompts admiten inglés, español, ruso y chino simplificado. Las instrucciones técnicas están en inglés. Puedes pedir al asistente que responda en tu idioma."],
-      ["¿Garantiza que el código sea correcto?", "No. El resultado depende del modelo, el contexto, las herramientas y las comprobaciones disponibles. Los flujos exigen pruebas y distinguen resultados observados, suposiciones y comprobaciones bloqueadas. Revisa los cambios antes de utilizarlos."]
-    ],
     "maintained": "Mantenido por Arty S.",
     "release": "Notas de la versión",
     "source": "Código fuente",
     "skip": "Ir al contenido",
-    "searchLoading": "Cargando la búsqueda de texto completo…",
-    "searchFallback": "No se pudo cargar la búsqueda completa. Se buscan títulos y categorías."
+    "title": "Vibe Coding — Habilidades para Codex y Claude Code",
+    "description": "Biblioteca de código abierto con {skills} habilidades y {recipes} flujos para Codex y Claude Code. Revisa código, encuentra errores y prepara tu próxima versión.",
+    "eyebrow": "Para Codex y Claude Code",
+    "headline": "Un manual de ingeniería",
+    "accent": "para tu IA.",
+    "intro": "Habilidades listas para revisar código, encontrar errores e implementar cambios. Elige un flujo, añade tu tarea y dale a tu asistente un método claro de trabajo.",
+    "browse": "Buscar un flujo",
+    "install": "Obtener el plugin",
+    "facts": "Código abierto · Gratis · Licencia MIT",
+    "catalogTitle": "¿En qué estás trabajando?",
+    "catalogNote": "Busca un flujo por tema, tecnología o tarea.",
+    "search": "Buscar flujos",
+    "searchPlaceholder": "Prueba API, Redis, accesibilidad…",
+    "topic": "Tema",
+    "action": "Tarea",
+    "allTopics": "Todos los temas",
+    "allActions": "Todas las tareas",
+    "fullText": "Buscar dentro de las instrucciones",
+    "clearSearch": "Borrar búsqueda",
+    "reset": "Borrar todo",
+    "emptyTitle": "No hay flujos que coincidan.",
+    "empty": "Prueba una búsqueda más corta o quita un filtro. Activa la búsqueda de texto completo para consultar las instrucciones.",
+    "count": "{count} flujos",
+    "pageStatus": "{from}–{to} de {total}",
+    "previous": "Anterior",
+    "next": "Siguiente",
+    "removeFilter": "Quitar {label}",
+    "searchLoading": "Buscando en las instrucciones…",
+    "searchFallback": "La búsqueda completa no está disponible. Puedes buscar por título y tema. Desactiva y vuelve a activar la opción para reintentar.",
+    "bodyMatch": "Coincidencia dentro de las instrucciones",
+    "english": "Las instrucciones están en inglés. Los prompts están disponibles en cuatro idiomas.",
+    "demoLabel": "Un prompt breve. Un flujo concreto.",
+    "demoTask": "Revisar un cambio",
+    "demoPrompt": "Revisa esta rama. Encuentra errores, explica su impacto y señala el código.",
+    "demoNote": "La habilidad guía la revisión: alcance, dependencias, evidencias y comprobaciones.",
+    "copy": "Copiar",
+    "copied": "Copiado",
+    "copyFallback": "Selecciona y copia el comando manualmente.",
+    "quickLabel": "Empieza por",
+    "quickLinks": [
+      [
+        "Revisar código",
+        "vibe-review"
+      ],
+      [
+        "Encontrar un error",
+        "vibe-probe"
+      ],
+      [
+        "Explorar un proyecto",
+        "vibe-map"
+      ],
+      [
+        "Comprobar una versión",
+        "vibe-quality"
+      ]
+    ],
+    "installIntro": "Una biblioteca. El asistente que prefieras.",
+    "codexInstall": "Abre Vibe Coding en el directorio de plugins, instálalo y empieza una tarea nueva.",
+    "codexLink": "Instalar en Codex",
+    "claudeInstall": "Ejecuta estos dos comandos en tu terminal:",
+    "claudeStart": "Abre una sesión nueva de Claude Code y describe tu tarea:",
+    "docs": "Instalación y actualizaciones",
+    "cost": "Vibe Coding es gratuito. La suscripción al asistente y el uso de modelos se pagan por separado.",
+    "faqTitle": "Algunos detalles útiles",
+    "faq": [
+      [
+        "¿Qué incluye?",
+        "46 habilidades y 241 flujos concretos: revisiones de API, comprobaciones de bases de datos, accesibilidad, infraestructura y funciones de IA. Cada uno define pasos de trabajo y una forma de comprobar el resultado."
+      ],
+      [
+        "¿Cómo utilizo un flujo?",
+        "Instala el plugin, abre un flujo y copia su prompt para Codex o Claude Code. Añade los archivos, el comportamiento o el cambio en el que quieres trabajar."
+      ],
+      [
+        "¿Qué idiomas admite?",
+        "La web y los prompts están en inglés, español, ruso y chino simplificado. Las instrucciones técnicas están escritas en inglés; puedes pedirle al asistente que responda en tu idioma."
+      ],
+      [
+        "¿Necesita una cuenta o clave API propia?",
+        "No. Utiliza las herramientas y los permisos de tu asistente. No incluye servidores, servicios en segundo plano ni telemetría."
+      ]
+    ],
+    "countOne": "{count} flujo",
+    "featured": {
+      "patch-checking": {
+        "title": "Revisar un cambio de código",
+        "description": "Busca errores concretos en un parche, una rama o un pull request y sus dependencias directas."
+      },
+      "project-atlas-map": {
+        "title": "Explorar una base de código",
+        "description": "Entiende el producto, la arquitectura y la ejecución antes de modificar un proyecto desconocido."
+      },
+      "instant-bug-fix-polish": {
+        "title": "Encontrar y corregir un error",
+        "description": "Investiga un fallo reproducible, corrige su causa y comprueba el comportamiento afectado."
+      },
+      "release-readiness-audit": {
+        "title": "Comprobar una versión",
+        "description": "Revisa pruebas, requisitos de despliegue y riesgos pendientes antes de publicar cambios."
+      },
+      "api-audit": {
+        "title": "Auditar una API",
+        "description": "Comprueba la validación de solicitudes, las respuestas, los permisos y los clientes de la API."
+      },
+      "sql-databases-audit": {
+        "title": "Revisar SQL y transacciones",
+        "description": "Examina consultas, índices, bloqueos y límites de transacción en el código de datos."
+      },
+      "security-audit": {
+        "title": "Encontrar vulnerabilidades",
+        "description": "Sigue rutas de ataque alcanzables e identifica defectos concretos de seguridad."
+      },
+      "web-rendering-audit": {
+        "title": "Comprobar el renderizado web",
+        "description": "Investiga los límites entre servidor y cliente, la hidratación, la caché y la navegación."
+      },
+      "ai-feature-audit": {
+        "title": "Revisar una función de IA",
+        "description": "Comprueba entradas, respuestas del modelo, uso de herramientas y controles de calidad."
+      },
+      "infra-ops-audit": {
+        "title": "Revisar infraestructura",
+        "description": "Comprueba configuración, despliegues, tareas en segundo plano y comportamiento ante fallos."
+      },
+      "product-ui-audit": {
+        "title": "Revisar una interfaz",
+        "description": "Recorre un flujo de usuario, incluidos los estados de carga, error y ausencia de datos."
+      },
+      "accessibility-audit": {
+        "title": "Comprobar accesibilidad",
+        "description": "Revisa la navegación por teclado, el foco, la semántica y las interacciones accesibles."
+      }
+    }
   },
   "ru": {
-    "title": "Vibe Coding — плагин для Codex и Claude Code",
-    "description": "{skills} навыков и {recipes} инженерный сценарий для Codex и Claude Code: карта проекта, ревью, отладка и проверка изменений. Открытый код, лицензия MIT.",
-    "eyebrow": "Инженерные навыки для Codex + Claude Code",
-    "headline": "Разберись в коде.",
-    "accent": "Проверь результат.",
-    "intro": "Vibe Coding — плагин с открытым кодом: {skills} навыков и {recipes} сценарий для изучения репозитория, ревью, отладки, реализации и проверки изменений. Дай ассистенту конкретную задачу и метод её решения.",
-    "browse": "Открыть сценарии",
-    "install": "Установить плагин",
-    "facts": "Лицензия MIT · Без аккаунта и API-ключа плагина · Использует инструменты ассистента",
-    "howTitle": "Сценарий следует твоей задаче",
-    "howIntro": "Каждый навык выбирает подходящую инструкцию. Ассистент изучает связанный код, находит владельца контракта и проверяет затронутое поведение. Подробные сценарии загружаются по мере необходимости.",
-    "steps": [
-      ["Исследовать", "Запроси аудит или ревью, чтобы получить доказательства, оценку последствий и конкретный следующий шаг. Код продукта остаётся без изменений."],
-      ["Реализовать", "Запрос на исправление или улучшение разрешает соответствующие изменения, включая затронутых потребителей и контракты."],
-      ["Проверить", "Проверь нужное поведение и узнай, что прошло проверку, что сломалось и что проверить не удалось. Проверка одного участка не подтверждает исправность всего проекта."]
-    ],
-    "examplesTitle": "Начни с реальной инженерной задачи",
-    "examples": [
-      ["Разобраться в репозитории", "Проследи API, владельцев данных и выполнение программы перед работой с незнакомым кодом.", "vibe-map"],
-      ["Провести ревью", "Изучи полное изменение и его прямые зависимости, чтобы найти конкретные дефекты.", "vibe-review"],
-      ["Исправить один сбой", "Найди источник воспроизводимой ошибки, устрани причину и выполни содержательную проверку.", "vibe-probe"],
-      ["Проверить релиз", "Сопоставь результаты проверок с обязательными условиями выпуска и выясни, чего не хватает.", "vibe-quality"]
-    ],
-    "installIntro": "Одинаковые {skills} навыков работают в обоих ассистентах. Выбери тот, в котором работаешь с репозиторием.",
-    "codexInstall": "Установи Vibe Coding из каталога плагинов OpenAI и начни новую задачу.",
-    "codexLink": "Открыть в каталоге Codex",
-    "claudeInstall": "Добавь публичный маркетплейс из GitHub и установи плагин в Claude Code:",
-    "claudeStart": "Начни новую сессию Claude Code и вызови навык с префиксом плагина:",
-    "docs": "Инструкция по установке и обновлению",
-    "cost": "Плагин бесплатный, с лицензией MIT. Доступ к Codex и Claude, использование моделей и сервисы твоего проекта имеют собственные цены и требования.",
-    "catalogNote": "Ищи по инженерной теме, навыку или операции. Полные инструкции на английском доступны по постоянным ссылкам; названия, описания и промпты поддерживают четыре языка.",
-    "english": "Полные инструкции на английском",
-    "faqTitle": "О Vibe Coding",
-    "faq": [
-      ["Что Vibe Coding добавляет ассистенту?", "Инженерные инструкции: входной навык, навыки по областям и конкретные сценарии. Они охватывают продукт, API, данные, безопасность, инфраструктуру, AI-функции, MCP, веб-рендеринг и проверки релизов. Плагин не добавляет модель или движок выполнения."],
-      ["Чем это отличается от одного промпта?", "Навык сначала выбирает область и операцию. Затем сценарий задаёт цель, ограничения, инженерные инварианты и метод проверки. Общий рабочий процесс разделяет исследование, реализацию и проверку."],
-      ["Плагин запускает сервисы или собирает данные?", "Он не устанавливает MCP-серверы, фоновые службы, подключения аккаунтов или телеметрию. Ассистент использует уже доступные инструменты и разрешения. На сайте нет аналитики и сторонних скриптов; локальное хранилище браузера запоминает настройки каталога."],
-      ["Можно использовать его с Claude?", "В релиз включены манифест Claude Code и публичный маркетплейс. Навыки вызываются через /vibe-coding:имя-навыка. Документированная установка предназначена для работы с репозиториями в Claude Code; доступность в других интерфейсах Claude зависит от их поддержки плагинов."],
-      ["Какие языки поддерживаются?", "Каталог, поисковые подписи и промпты доступны на английском, испанском, русском и упрощённом китайском. Технические инструкции написаны на английском. Ассистента можно попросить отвечать на нужном языке."],
-      ["Плагин гарантирует правильный код?", "Нет. Результат зависит от модели, контекста, инструментов и доступных проверок. Сценарии требуют доказательств и отделяют наблюдения от предположений и заблокированных проверок. Изучи изменения перед использованием."]
-    ],
     "maintained": "Автор: Arty S.",
     "release": "Изменения в релизе",
     "source": "Исходный код",
     "skip": "Перейти к содержанию",
-    "searchLoading": "Загружается полнотекстовый поиск…",
-    "searchFallback": "Полнотекстовый поиск не загрузился. Поиск работает по названиям и категориям."
+    "title": "Vibe Coding — навыки для Codex и Claude Code",
+    "description": "Открытая библиотека для Codex и Claude Code: навыки — {skills}, сценарии — {recipes}. Ревью кода, поиск багов и проверки перед релизом.",
+    "eyebrow": "Для Codex и Claude Code",
+    "headline": "Инженерный подход",
+    "accent": "для твоего AI.",
+    "intro": "Готовые навыки для ревью, поиска багов и работы с кодом. Выбери сценарий, добавь контекст задачи — и у ассистента будет понятный порядок действий.",
+    "browse": "Найти сценарий",
+    "install": "Установить плагин",
+    "facts": "Открытый код · Бесплатно · Лицензия MIT",
+    "catalogTitle": "Над чем работаешь?",
+    "catalogNote": "Найди сценарий по теме, технологии или задаче.",
+    "search": "Поиск сценариев",
+    "searchPlaceholder": "Например: API, Redis, доступность…",
+    "topic": "Тема",
+    "action": "Задача",
+    "allTopics": "Все темы",
+    "allActions": "Все задачи",
+    "fullText": "Искать внутри инструкций",
+    "clearSearch": "Очистить поиск",
+    "reset": "Сбросить всё",
+    "emptyTitle": "Подходящих сценариев пока нет.",
+    "empty": "Сократи запрос или убери фильтр. Можно включить поиск по полному тексту инструкций.",
+    "count": "Найдено: {count}",
+    "pageStatus": "{from}–{to} из {total}",
+    "previous": "Назад",
+    "next": "Дальше",
+    "removeFilter": "Убрать фильтр «{label}»",
+    "searchLoading": "Ищем в полном тексте инструкций…",
+    "searchFallback": "Полный текст недоступен. Поиск по названиям и темам работает. Выключи и снова включи опцию, чтобы повторить загрузку.",
+    "bodyMatch": "Совпадение в тексте инструкции",
+    "english": "Технические инструкции — на английском. Промпты доступны на четырёх языках.",
+    "demoLabel": "Короткий запрос. Понятный сценарий.",
+    "demoTask": "Ревью изменений",
+    "demoPrompt": "Проведи ревью этой ветки. Найди баги, объясни последствия и укажи проблемные места в коде.",
+    "demoNote": "Навык задаёт порядок ревью: границы изменений, зависимости, доказательства и проверки.",
+    "copy": "Копировать",
+    "copied": "Скопировано",
+    "copyFallback": "Выдели команду и скопируй вручную.",
+    "quickLabel": "Быстрый старт",
+    "quickLinks": [
+      [
+        "Ревью кода",
+        "vibe-review"
+      ],
+      [
+        "Поиск бага",
+        "vibe-probe"
+      ],
+      [
+        "Карта проекта",
+        "vibe-map"
+      ],
+      [
+        "Проверка релиза",
+        "vibe-quality"
+      ]
+    ],
+    "installIntro": "Одна библиотека. Твой привычный ассистент.",
+    "codexInstall": "Открой Vibe Coding в каталоге плагинов, установи и начни новую задачу.",
+    "codexLink": "Установить в Codex",
+    "claudeInstall": "Выполни две команды в терминале:",
+    "claudeStart": "Начни новую сессию Claude Code и опиши задачу:",
+    "docs": "Установка и обновления",
+    "cost": "Vibe Coding бесплатный. Подписка на ассистента и использование моделей оплачиваются отдельно.",
+    "faqTitle": "Что ещё нужно знать",
+    "faq": [
+      [
+        "Что входит в плагин?",
+        "46 навыков и 241 сценарий: от ревью API и проверки баз данных до доступности интерфейсов, инфраструктуры и AI-функций. В каждом — порядок работы и способ проверить результат."
+      ],
+      [
+        "Как запустить сценарий?",
+        "Установи плагин, открой нужный сценарий и скопируй промпт для Codex или Claude Code. Добавь файлы, описание проблемы или изменения, с которыми нужно поработать."
+      ],
+      [
+        "Какие языки поддерживаются?",
+        "Сайт и промпты доступны на английском, испанском, русском и упрощённом китайском. Технические инструкции написаны на английском. Ассистента можно попросить отвечать на твоём языке."
+      ],
+      [
+        "Нужен отдельный аккаунт или API-ключ?",
+        "Нет. Плагин использует инструменты и разрешения твоего ассистента. Собственных серверов, фоновых сервисов и телеметрии у него нет."
+      ]
+    ],
+    "countOne": "Найдено: {count}",
+    "featured": {
+      "patch-checking": {
+        "title": "Ревью изменений кода",
+        "description": "Найди конкретные баги в патче, ветке или pull request с учётом прямых зависимостей."
+      },
+      "project-atlas-map": {
+        "title": "Карта кодовой базы",
+        "description": "Разберись в продукте, архитектуре и работе приложения перед изменением незнакомого проекта."
+      },
+      "instant-bug-fix-polish": {
+        "title": "Найти и исправить баг",
+        "description": "Исследуй один воспроизводимый сбой, устрани причину и проверь затронутое поведение."
+      },
+      "release-readiness-audit": {
+        "title": "Готовность к релизу",
+        "description": "Проверь тесты, условия развёртывания и нерешённые риски перед выпуском изменений."
+      },
+      "api-audit": {
+        "title": "Аудит API",
+        "description": "Проверь валидацию запросов, ответы, разрешения и зависимые от API клиенты."
+      },
+      "sql-databases-audit": {
+        "title": "SQL и транзакции",
+        "description": "Изучи запросы, индексы, блокировки и границы транзакций в коде работы с базой."
+      },
+      "security-audit": {
+        "title": "Поиск уязвимостей",
+        "description": "Проследи доступные пути атаки и найди конкретные дефекты безопасности приложения."
+      },
+      "web-rendering-audit": {
+        "title": "Проверка веб-рендеринга",
+        "description": "Исследуй границы сервера и клиента, гидратацию, кэширование и навигацию."
+      },
+      "ai-feature-audit": {
+        "title": "Ревью AI-функции",
+        "description": "Проверь входные данные, ответы модели, вызовы инструментов и оценку качества."
+      },
+      "infra-ops-audit": {
+        "title": "Ревью инфраструктуры",
+        "description": "Проверь конфигурацию, развёртывание, фоновые задачи и поведение при сбоях."
+      },
+      "product-ui-audit": {
+        "title": "Ревью интерфейса",
+        "description": "Пройди пользовательский сценарий: основные действия, загрузка, ошибки и пустые состояния."
+      },
+      "accessibility-audit": {
+        "title": "Проверка доступности",
+        "description": "Проверь клавиатурную навигацию, фокус, семантику и доступность действий в интерфейсе."
+      }
+    }
   },
   "zh-CN": {
-    "title": "Vibe Coding — Codex 与 Claude Code 插件",
-    "description": "为 Codex 和 Claude Code 提供 {skills} 项技能和 {recipes} 个工程工作流，涵盖项目梳理、代码审查、调试和验证。开源免费，采用 MIT 许可证。",
-    "eyebrow": "适用于 Codex + Claude Code 的工程技能",
-    "headline": "理解代码。",
-    "accent": "验证修改。",
-    "intro": "Vibe Coding 是一款开源插件，包含 {skills} 项技能和 {recipes} 个工作流，用于梳理仓库、代码审查、调试、实现和验证。给助手一项具体任务，也给它一套解决问题的方法。",
-    "browse": "浏览工作流",
-    "install": "安装插件",
-    "facts": "MIT 许可证 · 无需插件账户或 API 密钥 · 使用助手现有工具",
-    "howTitle": "按你的任务选择工作流",
-    "howIntro": "每项技能会选择对应的具体指令。助手沿着相关代码找到契约的定义位置，并检查受影响的行为。详细工作流按需加载。",
-    "steps": [
-      ["检查", "请求审计或审查，获得证据、影响说明和明确的下一步。产品代码保持不变。"],
-      ["实现", "请求修复或改进，即授权进行相关修改，包括受影响的调用方和契约。"],
-      ["验证", "检查指定行为，区分通过、失败和无法验证的情况。局部检查不能证明整个项目都没有问题。"]
-    ],
-    "examplesTitle": "从真实的工程任务开始",
-    "examples": [
-      ["梳理仓库", "在修改陌生代码前，追踪 API、数据归属和运行流程。", "vibe-map"],
-      ["审查变更", "检查完整变更及其直接依赖，找出可处理的具体缺陷。", "vibe-review"],
-      ["修复故障", "追踪可复现错误的源头，修复原因并执行有意义的检查。", "vibe-probe"],
-      ["检查发布", "对照发布条件核实检查结果，明确尚未满足的要求。", "vibe-quality"]
-    ],
-    "installIntro": "两个助手使用相同的 {skills} 项技能。请选择你用于仓库开发的助手。",
-    "codexInstall": "从 OpenAI 插件目录安装 Vibe Coding，然后开始一个新任务。",
-    "codexLink": "在 Codex 目录中打开",
-    "claudeInstall": "添加这个公开的 GitHub 插件市场，然后在 Claude Code 中安装插件：",
-    "claudeStart": "开始新的 Claude Code 会话，并使用带插件命名空间的命令调用技能：",
-    "docs": "安装与更新指南",
-    "cost": "插件采用 MIT 许可证，免费使用。Codex 和 Claude 的访问权限、模型用量以及项目服务各自适用其价格和要求。",
-    "catalogNote": "按工程主题、技能或操作搜索。完整的英文工作流有固定链接；目录标签和提示词支持四种语言。",
-    "english": "完整指令为英文",
-    "faqTitle": "关于 Vibe Coding",
-    "faq": [
-      ["Vibe Coding 为助手增加了什么？", "它增加了一套工程指令：入口技能、领域技能和具体工作流，涵盖产品行为、API、数据、安全、基础设施、AI 功能、MCP、Web 渲染和发布检查。它不会添加执行引擎或模型。"],
-      ["它与单条提示词有什么区别？", "技能先选择领域和操作，工作流再定义目标、约束、工程不变量和验证方法。共享流程明确区分检查、实现和验证。"],
-      ["插件会运行服务或收集数据吗？", "它不会安装 MCP 服务器、后台服务、账户连接或遥测。助手使用现有工具和权限。网站不使用分析工具或第三方脚本；浏览器本地存储仅用于记住目录偏好。"],
-      ["可以与 Claude 一起使用吗？", "本版本包含 Claude Code 插件清单和公开插件市场。技能通过 /vibe-coding:技能名 调用。文档中的安装方式面向 Claude Code 仓库开发；其他 Claude 界面是否可用取决于其插件支持。"],
-      ["支持哪些语言？", "目录、搜索标签和可复制提示词支持英语、西班牙语、俄语和简体中文。技术指令仍使用英语。可以要求助手用你偏好的语言回答。"],
-      ["它能保证代码正确吗？", "不能。结果取决于模型、上下文、工具和检查条件。工作流要求提供证据，并区分实际观察、假设和受阻的检查。使用前请审阅修改。"]
-    ],
     "maintained": "由 Arty S. 维护",
     "release": "版本说明",
     "source": "源代码",
     "skip": "跳转到内容",
-    "searchLoading": "正在加载全文搜索…",
-    "searchFallback": "无法加载全文搜索。当前仅搜索标题和分类。"
+    "title": "Vibe Coding — Codex 与 Claude Code 工程技能",
+    "description": "适用于 Codex 和 Claude Code 的开源库，包含 {skills} 项技能和 {recipes} 个工作流，用于代码审查、查找缺陷和发布检查。",
+    "eyebrow": "适用于 Codex 与 Claude Code",
+    "headline": "让你的 AI",
+    "accent": "按工程方法工作。",
+    "intro": "开箱即用的技能，帮助你审查代码、查找缺陷和实现变更。选择工作流，补充任务背景，让助手按清晰的步骤开展工作。",
+    "browse": "查找工作流",
+    "install": "安装插件",
+    "facts": "开源 · 免费使用 · MIT 许可证",
+    "catalogTitle": "你正在处理什么任务？",
+    "catalogNote": "按主题、技术或任务查找工作流。",
+    "search": "搜索工作流",
+    "searchPlaceholder": "例如：API、Redis、无障碍…",
+    "topic": "主题",
+    "action": "任务",
+    "allTopics": "全部主题",
+    "allActions": "全部任务",
+    "fullText": "搜索指令全文",
+    "clearSearch": "清除搜索",
+    "reset": "全部重置",
+    "emptyTitle": "暂时没有匹配的工作流。",
+    "empty": "试试更简短的搜索词，或移除筛选条件。也可以开启全文搜索，查找指令中的内容。",
+    "count": "找到 {count} 个工作流",
+    "pageStatus": "第 {from}–{to} 项，共 {total} 项",
+    "previous": "上一页",
+    "next": "下一页",
+    "removeFilter": "移除“{label}”筛选",
+    "searchLoading": "正在搜索指令全文…",
+    "searchFallback": "全文搜索暂不可用，仍可按标题和主题搜索。关闭并重新开启此选项即可重试。",
+    "bodyMatch": "匹配到指令中的内容",
+    "english": "技术指令以英文编写，提示词支持四种语言。",
+    "demoLabel": "简短的提示词，明确的工作流。",
+    "demoTask": "审查变更",
+    "demoPrompt": "审查这个分支，查找缺陷，说明影响，并指出相关代码。",
+    "demoNote": "技能为审查提供步骤：确定范围、检查依赖、寻找证据并验证结果。",
+    "copy": "复制",
+    "copied": "已复制",
+    "copyFallback": "请手动选中并复制命令。",
+    "quickLabel": "快速开始",
+    "quickLinks": [
+      [
+        "代码审查",
+        "vibe-review"
+      ],
+      [
+        "查找缺陷",
+        "vibe-probe"
+      ],
+      [
+        "梳理项目",
+        "vibe-map"
+      ],
+      [
+        "发布检查",
+        "vibe-quality"
+      ]
+    ],
+    "installIntro": "同一套工作流，使用你熟悉的助手。",
+    "codexInstall": "在插件目录中打开 Vibe Coding，安装后开始一个新任务。",
+    "codexLink": "在 Codex 中安装",
+    "claudeInstall": "在终端中运行这两条命令：",
+    "claudeStart": "开始新的 Claude Code 会话，然后描述你的任务：",
+    "docs": "安装与更新",
+    "cost": "Vibe Coding 免费使用。助手订阅及模型用量另行计费。",
+    "faqTitle": "你可能还想了解",
+    "faq": [
+      [
+        "插件包含什么？",
+        "46 项技能和 241 个工作流，涵盖 API 审查、数据库检查、无障碍、基础设施及 AI 功能。每个工作流都提供操作步骤和验证方法。"
+      ],
+      [
+        "如何使用工作流？",
+        "安装插件后，打开所需工作流，复制适用于 Codex 或 Claude Code 的提示词，并补充文件、问题描述或需要处理的变更。"
+      ],
+      [
+        "支持哪些语言？",
+        "网站和提示词支持英语、西班牙语、俄语和简体中文。技术指令以英文编写；你可以要求助手用你偏好的语言回答。"
+      ],
+      [
+        "需要单独的账户或 API 密钥吗？",
+        "不需要。插件使用助手现有的工具和权限，没有自己的服务器、后台服务或遥测。"
+      ]
+    ],
+    "countOne": "找到 {count} 个工作流",
+    "featured": {
+      "patch-checking": {
+        "title": "审查代码变更",
+        "description": "检查补丁、分支或拉取请求及其直接依赖，找出可处理的具体缺陷。"
+      },
+      "project-atlas-map": {
+        "title": "梳理代码库",
+        "description": "在修改陌生项目之前，了解产品功能、架构和运行方式。"
+      },
+      "instant-bug-fix-polish": {
+        "title": "查找并修复缺陷",
+        "description": "调查一个可复现的故障，修复原因并验证受影响的行为。"
+      },
+      "release-readiness-audit": {
+        "title": "检查发布准备情况",
+        "description": "发布变更前，核查测试、部署要求及尚未解决的风险。"
+      },
+      "api-audit": {
+        "title": "审计 API",
+        "description": "检查请求验证、响应约定、权限以及依赖该 API 的客户端。"
+      },
+      "sql-databases-audit": {
+        "title": "检查 SQL 与事务",
+        "description": "追踪数据代码中的查询、索引、锁和事务边界。"
+      },
+      "security-audit": {
+        "title": "查找安全漏洞",
+        "description": "沿着可达的攻击路径，定位具体的应用安全缺陷。"
+      },
+      "web-rendering-audit": {
+        "title": "检查 Web 渲染",
+        "description": "调查服务端与客户端的边界、水合、缓存和导航。"
+      },
+      "ai-feature-audit": {
+        "title": "审查 AI 功能",
+        "description": "根据功能目标，检查模型输入、输出、工具调用和质量评估。"
+      },
+      "infra-ops-audit": {
+        "title": "检查基础设施",
+        "description": "核查运行配置、部署、后台任务及故障处理流程。"
+      },
+      "product-ui-audit": {
+        "title": "审查产品界面",
+        "description": "沿用户流程检查界面，包括加载、错误和空状态。"
+      },
+      "accessibility-audit": {
+        "title": "检查无障碍支持",
+        "description": "检查键盘导航、焦点、语义结构以及交互的可访问性。"
+      }
+    }
   }
 }

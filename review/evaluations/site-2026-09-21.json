@@ -1,0 +1,57 @@
+{
+  "scope": "Public website revision after plugin 1.3.0; plugin instructions and package remain at their release fingerprints.",
+  "baseline_sha256": "27cca8985cbd36e397d27df13e638c0ae8f72a4cd44dc57c68c435f035758834",
+  "release_artifact_changes": {
+    "scripts/build_site.py": {
+      "before": "9018de109854c3dec9cd887f98255712a93bae9397b74755066ff74a974a9fdf",
+      "after": "0934e98788cc3fd650688eb77ac6d30c7d678fffccf6c30b8cf559dbcb2c70ce"
+    },
+    "site/content.json": {
+      "before": "6c916d32b51ddb6e9631084aee046ad4e528a154a2757772169e10e212c848a6",
+      "after": "3baa3ed76514cd72e981028fcd57cde2c61b2df8c10508a90652289e42ed1d5d"
+    },
+    "site/site.css": {
+      "before": "621e098d8817a2adddc67b2acc4a0a73314c6e3ff63e59deb9d77f5c65137ea9",
+      "after": "58a426db92b98543554287a0dbc1de87bd75aad05a4944663bc59fb88724a12c"
+    },
+    "site/site.js": {
+      "before": "bc8fff794e61be6feb3722f270b8959456d1e2e5a4bf228496689a055a9a07c7",
+      "after": "1a6b8ae8e53fdcf0ed4458fd7deee39f61377138d034e047534a948b9d438dc5"
+    }
+  },
+  "artifacts": {
+    "scripts/build_site.py": "0934e98788cc3fd650688eb77ac6d30c7d678fffccf6c30b8cf559dbcb2c70ce",
+    "site/content.json": "3baa3ed76514cd72e981028fcd57cde2c61b2df8c10508a90652289e42ed1d5d",
+    "site/site.css": "58a426db92b98543554287a0dbc1de87bd75aad05a4944663bc59fb88724a12c",
+    "site/site.js": "1a6b8ae8e53fdcf0ed4458fd7deee39f61377138d034e047534a948b9d438dc5",
+    "site/catalog-engine.js": "bf17159fb2f37cb0ad0657721910f7017223f9d79c5a6aea272e9c8a242833f5",
+    "tests/test_site_search.cjs": "70c0d01152b025b58a047271018ba1ee55936c3f322c3c4f9a857a41f902c9c8"
+  },
+  "checks": [
+    {
+      "id": "rank-and-facets",
+      "observed": "The prior live website returned 94 results for API. The new default returns 8 thematic results. API + vibe-backend + check returns only api-contract-compatibility-check. Facet counts follow the query and other filter. Eight Node regression tests pass, including multilingual matching, body-search isolation, pagination and safe return URLs.",
+      "limits": "Deterministic title/topic/keyword matching with word prefixes, not semantic AI search or general typo correction."
+    },
+    {
+      "id": "browser-state-and-copy",
+      "observed": "In Chrome, search and filters survived reload, workflow navigation and the catalog back link. Changing English to Russian preserved API, topic and task. Pagination showed 13–24 and browser Back restored 1–12. Clearing only the search kept the SQL topic. Empty results showed zero without removing the selected topic. The Claude Code Russian prompt copied successfully.",
+      "limits": "Observed through browser UI on the local static preview; no model execution was requested or inferred."
+    },
+    {
+      "id": "full-text-failure",
+      "observed": "SIGTERM returned zero default matches and five body matches after opting into full text; disabling the option returned to zero. A preview fixture with an unavailable index kept 8 API title/topic matches, cleared aria-busy, and displayed an actionable fallback message. Turning full text off removed that message.",
+      "limits": "The missing-index response was deliberately simulated on a preview fixture, not an actual production outage."
+    },
+    {
+      "id": "responsive-and-languages",
+      "observed": "Inspected desktop first screen and search results, Russian mobile filters, Spanish mobile first screen and Chinese mobile search. Chinese 缓存 returned three cache workflows and retained the same results after switching the interface to English. No document horizontal overflow at widths 320, 390 and 768. Browser viewport restored after checks.",
+      "limits": "Representative viewports in Chrome; not a certification of every device or accessibility conformance."
+    },
+    {
+      "id": "static-and-assets",
+      "observed": "Eight static-site tests pass for all 253 indexable pages, complete workflow instructions, canonical/hreflang, source links, sitemap, structured data, safe rendering and repeatable builds. Old published content-hashed assets are retained for cached pages and open tabs.",
+      "limits": "Preserved crawlable content and metadata do not establish search ranking or indexing results."
+    }
+  ]
+}

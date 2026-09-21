@@ -40,6 +40,7 @@ class SiteTests(unittest.TestCase):
     def setUpClass(cls):
         cls.temp=tempfile.TemporaryDirectory();cls.destination=Path(cls.temp.name)
         cls.locales=site.load_locales()
+        cls.content=json.loads((ROOT/'site/content.json').read_text(encoding='utf-8'))
         cls.rows=json.loads((site.PLUGIN/'catalog.json').read_text(encoding='utf-8'))['recipes']
         site.build(cls.destination)
         cls.pages={p.relative_to(cls.destination).as_posix():p.read_text(encoding='utf-8') for p in cls.destination.rglob('*.html')}
@@ -80,7 +81,7 @@ class SiteTests(unittest.TestCase):
                     self.assertEqual(len(self.rows),len(links))
                     self.assertEqual({site.PREFIX+site.workflow_route(row) for row in self.rows},{a['href'] for a in links})
                     self.assertNotIn('recipe-data',doc.ids)
-                    self.assertLess(len(page.encode()),230_000)
+                    self.assertLess(len(page.encode()),310_000)
 
     def test_workflows_have_full_instructions_and_truthful_metadata(self):
         descriptions=[]
@@ -96,7 +97,7 @@ class SiteTests(unittest.TestCase):
             graph=doc.json[0]['@graph']
             article=next(item for item in graph if item['@type']=='TechArticle')
             self.assertEqual('en',article['inLanguage'])
-            self.assertEqual(row['title'],article['headline'])
+            self.assertEqual(site.display_title(row,self.locales['en'],self.content['en']),article['headline'])
             self.assertEqual(site.BASE+site.workflow_route(row),article['url'])
             descriptions.append(article['description'])
             source=(site.PLUGIN/row['path']).read_text(encoding='utf-8')
@@ -144,9 +145,10 @@ class SiteTests(unittest.TestCase):
             self.assertEqual(site.REPO,software['codeRepository'])
             self.assertNotIn('aggregateRating',software)
 
-    def test_build_is_deterministic_and_drops_stale_hashed_assets(self):
+    def test_build_is_deterministic_and_keeps_assets_for_open_tabs(self):
         first={p.relative_to(self.destination).as_posix():p.read_bytes() for p in self.destination.rglob('*') if p.is_file()}
         (self.destination/'assets/site.000000000000.js').write_text('obsolete')
+        first['assets/site.000000000000.js']=b'obsolete'
         site.build(self.destination)
         second={p.relative_to(self.destination).as_posix():p.read_bytes() for p in self.destination.rglob('*') if p.is_file()}
         self.assertEqual(first,second)

@@ -6,12 +6,14 @@ import unittest
 ROOT = Path(__file__).resolve().parents[1]
 RECORD = ROOT/'review/evaluations/1.2.0.json'
 CURRENT = ROOT/'review/evaluations/1.3.0.json'
+WEBSITE = ROOT/'review/evaluations/site-2026-09-21.json'
 
 
 class EvaluationRecordTests(unittest.TestCase):
     def setUp(self):
         self.record = json.loads(RECORD.read_text(encoding='utf-8'))
         self.current = json.loads(CURRENT.read_text(encoding='utf-8'))
+        self.website = json.loads(WEBSITE.read_text(encoding='utf-8'))
 
     def test_record_matches_current_instructions_inputs_and_artifacts(self):
         for section in ['instructions', 'inputs_and_artifacts']:
@@ -35,8 +37,23 @@ class EvaluationRecordTests(unittest.TestCase):
         self.assertEqual({p.relative_to(ROOT).as_posix() for p in files}, set(self.current['instructions']))
         for section in ('instructions', 'inputs_and_artifacts'):
             for name, expected in self.current[section].items():
+                change = self.website['release_artifact_changes'].get(name) if section == 'inputs_and_artifacts' else None
+                if change:
+                    self.assertEqual(expected, change['before'])
+                    expected = change['after']
                 self.assertEqual(expected, hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
         self.assertTrue(all(case['observed'] and case['limits'] for case in self.current['checks']))
+
+    def test_website_changes_have_separate_evidence_without_rewriting_release_results(self):
+        self.assertEqual(hashlib.sha256(CURRENT.read_bytes()).hexdigest(), self.website['baseline_sha256'])
+        for name, change in self.website['release_artifact_changes'].items():
+            self.assertTrue(name.startswith('site/') or name == 'scripts/build_site.py')
+            self.assertEqual(self.current['inputs_and_artifacts'][name], change['before'])
+            self.assertEqual(self.website['artifacts'][name], change['after'])
+        for name, expected in self.website['artifacts'].items():
+            self.assertEqual(expected, hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
+        self.assertTrue(self.website['checks'])
+        self.assertTrue(all(case['observed'] and case['limits'] for case in self.website['checks']))
 
     def test_all_routing_cases_match_observed_owner_operation_and_authority(self):
         cases = json.loads((ROOT/self.record['routing']['cases']).read_text(encoding='utf-8'))['cases']
