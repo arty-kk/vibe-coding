@@ -1,0 +1,43 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "vibe-coding-library",
+  "version": "1.5.0",
+  "description": "Search 241 engineering workflows and load the selected working context through a public, read-only MCP server.",
+  "author": {"name": "Arty S.", "url": "https://github.com/arty-kk"},
+  "repository": "https://github.com/arty-kk/vibe-coding",
+  "homepage": "https://arty-kk.github.io/vibe-coding",
+  "license": "MIT",
+  "keywords": ["engineering", "workflows", "coding", "mcp", "review", "debugging"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Vibe Coding Library",
+        "shortDescription": "Coding workflows on demand",
+        "longDescription": "Vibe Coding Library searches 241 public engineering workflows and loads the selected recipe with its domain skill, working contract and required references. Search and catalog metadata support English, Spanish, Russian and Simplified Chinese; technical instructions are in English. Workflows cover repository mapping, planning, code review, API contracts, data, infrastructure, AI and release checks. One bundled skill guides workflow selection. The read-only MCP tools require no account or API key. Your agent applies retrieved guidance using its project tools and permissions.",
+        "developerName": "Arty S.",
+        "category": "Developer Tools",
+        "capabilities": ["Read"],
+        "defaultPrompt": [
+          "Find a workflow for checking MCP protocol and authorization.",
+          "Find an SQL audit workflow and load its instructions.",
+          "Find a cache audit workflow and load its instructions."
+        ],
+        "websiteURL": "https://arty-kk.github.io/vibe-coding",
+        "supportURL": "https://github.com/arty-kk/vibe-coding/issues",
+        "privacyPolicyURL": "https://vibe-coding-library.swift-seal-1081.chatgpt.site/privacy",
+        "termsOfServiceURL": "https://vibe-coding-library.swift-seal-1081.chatgpt.site/terms",
+        "brandColor": "#537E1B",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/icon.png"
+      },
+      "publication": {
+        "release_notes": "Vibe Coding Library 1.5.0 adds public MCP search and selected workflow retrieval, with bounded pagination, four catalog languages, complete versioned instruction bundles and read-only tool annotations. The audited instruction library remains version 1.4.1. The existing offline Vibe Coding package remains available separately.",
+        "translations": {
+          "es-ES": {"subtitle": "Flujos de código bajo demanda", "description": "Busca 241 flujos de ingeniería y carga la receta seleccionada con las instrucciones de su área, el contrato de trabajo y las referencias necesarias. Catálogo en inglés, español, ruso y chino simplificado; instrucciones técnicas en inglés. Las herramientas MCP son de solo lectura y no requieren cuenta ni clave de API."},
+          "ru-RU": {"subtitle": "Сценарии разработки по запросу", "description": "Поиск по 241 инженерному сценарию и загрузка выбранного сценария с инструкциями области, рабочим контрактом и необходимыми справочными материалами. Каталог поддерживает английский, испанский, русский и упрощённый китайский; технические инструкции написаны на английском. MCP-инструменты работают только на чтение и не требуют аккаунта или ключа API."},
+          "zh-CN": {"subtitle": "按需加载开发工作流", "description": "搜索 241 个工程工作流，按需加载所选工作流、领域技能、工作约定及必要参考资料。目录支持英语、西班牙语、俄语和简体中文，技术说明为英语。MCP 工具仅提供只读访问，无需账户或 API 密钥。"}
+        }
+      }
+    }
+  }
+}

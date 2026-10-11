@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "vibe-library": {
+      "type": "http",
+      "url": "https://vibe-coding-library.swift-seal-1081.chatgpt.site/library/mcp"
+    }
+  }
+}

@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.5.0 — Vibe Coding Library
+
+- Add a public read-only MCP distribution: search the 241-workflow catalog, then load the selected recipe, domain skill, working contract and required references.
+- Support both initialization-era MCP clients and MCP 2026-07-28 self-contained requests with the official SDK, bounded arguments and explicit read-only annotations.
+- Reuse the website search engine, four catalog languages, stable workflow IDs and exact instruction hashes.
+- Add a compact selection skill, portable and host-specific MCP configuration, live examples, privacy/support information and five positive plus three negative review cases.
+- Preserve the complete offline Vibe Coding 1.4.1 package and its audited instructions unchanged. The Library distribution uses a separate listing because the OpenAI portal does not support adding MCP to an existing skills-only plugin.
+
 ## 1.4.1
 
 - Add the public support URL, classify the listing as Developer Tools and state Codex/Claude Code and language support explicitly.

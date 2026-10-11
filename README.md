@@ -8,6 +8,25 @@
 
 ## Install
 
+### Vibe Coding Library via MCP
+
+[Vibe Coding Library](https://vibe-coding-library.swift-seal-1081.chatgpt.site/) searches the same 241 workflows and loads one selected working context on demand. This distribution has one selection skill and two read-only MCP tools. It requires an internet connection; no account or API key is required. The complete offline plugin below keeps all 46 skills locally.
+
+Add this Streamable HTTP endpoint to a compatible MCP client:
+
+```text
+https://vibe-coding-library.swift-seal-1081.chatgpt.site/library/mcp
+```
+
+For Claude Code, the public repository marketplace also provides the Library distribution:
+
+```sh
+claude plugin marketplace add arty-kk/vibe-coding
+claude plugin install vibe-coding-library@vibe-coding
+```
+
+Use `/vibe-coding-library:vibe-library` in Claude Code or `$vibe-library` in Codex. See the [Library package](plugins/vibe-coding-library/README.md) for the tool and privacy contracts. Its OpenAI directory submission is separate from the existing offline listing.
+
 ### Codex
 
 Add the public marketplace:
@@ -66,7 +85,7 @@ Audit and review requests produce findings. Implementation requests authorize re
 
 The [host integration](plugins/vibe-coding/references/hosts.md) respects Codex `AGENTS.md` and Claude Code `CLAUDE.md`/scoped rules without changing project instructions or host settings.
 
-The plugin uses the host's existing tools. It adds no MCP server, background service, account connection, telemetry or API-key requirement. Individual projects may require their normal dependencies and credentials.
+The offline plugin uses the host's existing tools and adds no server or account connection. The optional Library distribution connects to the public MCP service. Individual projects may require their normal dependencies and credentials.
 
 ## Development
 

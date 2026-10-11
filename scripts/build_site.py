@@ -143,6 +143,7 @@ def page(lang, path, title, description, body, content, resources, version,
 <main id="content">{body}
 <footer><span><a href="https://github.com/arty-kk">{e(ui['maintained'])}</a></span>
 <a href="{PREFIX}{route(lang,'workflows/')}">{e(ui['allWorkflows'])}</a>
+<a href="https://vibe-coding-library.swift-seal-1081.chatgpt.site/">{e(ui['mcpLabel'])}</a>
 <a href="{REPO}">GitHub</a><a href="{REPO}/releases/tag/v{version}">{e(ui['release'])}</a>
 <a href="{REPO}/issues">{e(resources['locales'][lang]['ui']['support'])}</a>
 <a href="{REPO}/blob/main/LICENSE">MIT</a>

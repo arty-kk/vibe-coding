@@ -84,7 +84,7 @@
       ],
       [
         "Does the plugin need its own account or API key?",
-        "No. It uses the tools and permissions already available to your assistant. There is no plugin server, background service or telemetry."
+        "The offline plugin uses your assistant’s existing tools and needs no publisher account or API key. Vibe Coding Library is an optional public MCP service that searches and retrieves selected instructions; it requires an internet connection."
       ]
     ],
     "countOne": "{count} workflow",
@@ -142,8 +142,9 @@
     "directoryTitle": "All {recipes} Engineering Workflows — Vibe Coding",
     "directoryHeading": "Explore every workflow.",
     "directoryDescription": "Browse all {recipes} Vibe Coding workflows by engineering topic. Find code reviews, debugging, database, accessibility and release checks for Codex and Claude Code.",
-    "privacyDescription": "How Vibe Coding handles data, browser preferences, host services and support. The plugin has no publisher-operated backend or telemetry.",
-    "termsDescription": "Vibe Coding’s MIT license, host service terms, warranty disclaimer and support policy. The plugin is free and open source."
+    "privacyDescription": "Privacy for the offline Vibe Coding plugin, browser preferences, assistant services and GitHub-hosted support. The optional MCP Library has its own privacy policy.",
+    "termsDescription": "Vibe Coding’s MIT license, host service terms, warranty disclaimer and support policy. The plugin is free and open source.",
+    "mcpLabel": "Use the MCP library"
   },
   "es": {
     "maintained": "Mantenido por Arty S.",
@@ -230,7 +231,7 @@
       ],
       [
         "¿Necesita una cuenta o clave API propia?",
-        "No. Utiliza las herramientas y los permisos de tu asistente. No incluye servidores, servicios en segundo plano ni telemetría."
+        "El plugin sin conexión utiliza las herramientas de tu asistente y no requiere cuenta del editor ni clave API. Vibe Coding Library es un servicio MCP público opcional que busca y carga las instrucciones seleccionadas; requiere conexión a internet."
       ]
     ],
     "countOne": "{count} flujo",
@@ -288,8 +289,9 @@
     "directoryTitle": "Los {recipes} flujos de ingeniería — Vibe Coding",
     "directoryHeading": "Explora todos los flujos.",
     "directoryDescription": "Consulta los {recipes} flujos de Vibe Coding por tema: revisión de código, depuración, bases de datos, accesibilidad y publicación para Codex y Claude Code.",
-    "privacyDescription": "Cómo Vibe Coding trata los datos, las preferencias del navegador y los servicios del asistente. El plugin no tiene servidor propio ni telemetría.",
-    "termsDescription": "Licencia MIT, condiciones de los servicios del asistente, ausencia de garantías y soporte de Vibe Coding, un plugin gratuito y de código abierto."
+    "privacyDescription": "Privacidad del plugin Vibe Coding sin conexión, preferencias del navegador, servicios del asistente y soporte en GitHub. La biblioteca MCP opcional tiene su propia política de privacidad.",
+    "termsDescription": "Licencia MIT, condiciones de los servicios del asistente, ausencia de garantías y soporte de Vibe Coding, un plugin gratuito y de código abierto.",
+    "mcpLabel": "Usar la biblioteca MCP"
   },
   "ru": {
     "maintained": "Автор: Arty S.",
@@ -376,7 +378,7 @@
       ],
       [
         "Нужен отдельный аккаунт или API-ключ?",
-        "Нет. Плагин использует инструменты и разрешения твоего ассистента. Собственных серверов, фоновых сервисов и телеметрии у него нет."
+        "Офлайн-плагин использует инструменты ассистента и не требует аккаунта издателя или API-ключа. Vibe Coding Library — дополнительный публичный MCP-сервис для поиска и загрузки выбранных инструкций; для него нужен интернет."
       ]
     ],
     "countOne": "Найдено: {count}",
@@ -434,8 +436,9 @@
     "directoryTitle": "Все сценарии разработки: {recipes} — Vibe Coding",
     "directoryHeading": "Все сценарии по темам.",
     "directoryDescription": "Каталог Vibe Coding для Codex и Claude Code: ревью кода, отладка, базы данных, доступность и проверка релизов. Всего сценариев — {recipes}.",
-    "privacyDescription": "Как Vibe Coding работает с данными, настройками браузера и сервисами ассистента. У плагина нет собственного сервера и телеметрии.",
-    "termsDescription": "Условия использования Vibe Coding: лицензия MIT, сервисы ассистента, ограничение гарантий и поддержка бесплатного плагина с открытым кодом."
+    "privacyDescription": "Конфиденциальность офлайн-плагина Vibe Coding, настройки браузера, сервисы ассистента и поддержка в GitHub. У дополнительной MCP-библиотеки своя политика конфиденциальности.",
+    "termsDescription": "Условия использования Vibe Coding: лицензия MIT, сервисы ассистента, ограничение гарантий и поддержка бесплатного плагина с открытым кодом.",
+    "mcpLabel": "Библиотека через MCP"
   },
   "zh-CN": {
     "maintained": "由 Arty S. 维护",
@@ -522,7 +525,7 @@
       ],
       [
         "需要单独的账户或 API 密钥吗？",
-        "不需要。插件使用助手现有的工具和权限，没有自己的服务器、后台服务或遥测。"
+        "离线插件使用助手现有的工具，无需开发者账户或 API 密钥。Vibe Coding Library 是可选的公共 MCP 服务，用于搜索并加载所选说明，需要互联网连接。"
       ]
     ],
     "countOne": "找到 {count} 个工作流",
@@ -580,7 +583,8 @@
     "directoryTitle": "全部 {recipes} 个工程工作流 — Vibe Coding",
     "directoryHeading": "按主题浏览全部工作流。",
     "directoryDescription": "按工程主题浏览 Vibe Coding 的全部 {recipes} 个工作流，涵盖代码审查、调试、数据库、无障碍和发布检查，适用于 Codex 和 Claude Code。",
-    "privacyDescription": "了解 Vibe Coding 如何处理数据、浏览器偏好设置和助手服务。插件没有发布者运营的后端或遥测。",
-    "termsDescription": "Vibe Coding 的 MIT 许可证、助手服务条款、免责声明和支持政策。插件免费且开源。"
+    "privacyDescription": "离线 Vibe Coding 插件、浏览器偏好、助手服务及 GitHub 支持的隐私说明。可选 MCP 工作流库有自己的隐私政策。",
+    "termsDescription": "Vibe Coding 的 MIT 许可证、助手服务条款、免责声明和支持政策。插件免费且开源。",
+    "mcpLabel": "使用 MCP 工作流库"
   }
 }

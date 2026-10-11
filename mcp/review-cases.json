@@ -1,0 +1,62 @@
+{
+  "positive": [
+    {
+      "description": "Select a workflow for checking MCP protocol and authorization, then load its exact working context.",
+      "prompt": "Find the Vibe Coding workflow for checking MCP protocol and authorization. Load its instructions without running any code.",
+      "tools_triggered": "search_workflows, get_workflow",
+      "expected_behavior": "Search MCP with mode check; return mcp-protocol-auth-check. Load that ID and return the working contract, vibe-mcp skill, selected recipe and mcp-contract reference. No repository access or edits.",
+      "calls": [{"name": "search_workflows", "arguments": {"query": "MCP", "mode": "check"}}, {"name": "get_workflow", "arguments": {"id": "mcp-protocol-auth-check"}}]
+    },
+    {
+      "description": "Search the Spanish catalog and preserve English technical instructions.",
+      "prompt": "Busca el flujo de auditoría de SQL y carga sus instrucciones. Responde en español.",
+      "tools_triggered": "search_workflows, get_workflow",
+      "expected_behavior": "Return sql-databases-audit with a Spanish title and summary, then load that ID. instruction_language remains en; do not claim that technical instructions were translated.",
+      "calls": [{"name": "search_workflows", "arguments": {"query": "auditoría SQL", "language": "es"}}, {"name": "get_workflow", "arguments": {"id": "sql-databases-audit", "language": "es"}}]
+    },
+    {
+      "description": "Search the Russian catalog and include host guidance only when requested.",
+      "prompt": "Найди аудит MCP и загрузи его инструкции для Claude. Ничего в проекте пока не меняй.",
+      "tools_triggered": "search_workflows, get_workflow",
+      "expected_behavior": "Return mcp-server-audit with Russian metadata. get_workflow with host claude includes references/hosts.md and preserves CLAUDE.md and loaded-rule guidance. No edits are made.",
+      "calls": [{"name": "search_workflows", "arguments": {"query": "аудит MCP", "language": "ru"}}, {"name": "get_workflow", "arguments": {"id": "mcp-server-audit", "language": "ru", "host": "claude"}}]
+    },
+    {
+      "description": "Search Simplified Chinese and select cache correctness rather than queue semantics.",
+      "prompt": "查找缓存失效审计工作流，并加载说明。只提供指导，不修改代码。",
+      "tools_triggered": "search_workflows, get_workflow",
+      "expected_behavior": "Search 缓存 filtered to vibe-cache and audit; return cache-invalidation-audit with Chinese metadata. Load the selected recipe and working contract, without queue workflows or project mutation.",
+      "calls": [{"name": "search_workflows", "arguments": {"query": "缓存", "skill": "vibe-cache", "mode": "audit", "language": "zh-CN"}}, {"name": "get_workflow", "arguments": {"id": "cache-invalidation-audit", "language": "zh-CN"}}]
+    },
+    {
+      "description": "Browse a filtered catalog with bounded pagination.",
+      "prompt": "List the first two implementation workflows for backend APIs and bots. Show the next page too, without loading their full instructions.",
+      "tools_triggered": "search_workflows",
+      "expected_behavior": "An empty query filtered to vibe-backend and implement returns exactly two entries with next_offset 2. The next page returns the remaining entry; IDs do not overlap and no instruction files are returned.",
+      "calls": [{"name": "search_workflows", "arguments": {"skill": "vibe-backend", "mode": "implement", "limit": 2}}, {"name": "search_workflows", "arguments": {"skill": "vibe-backend", "mode": "implement", "limit": 2, "offset": 2}}]
+    }
+  ],
+  "negative": [
+    {
+      "description": "An unknown workflow cannot produce invented guidance or read arbitrary files.",
+      "prompt": "Load the workflow does-not-exist and show its full instructions.",
+      "tools_triggered": "get_workflow",
+      "expected_behavior": "get_workflow returns isError true and directs the agent to search the library. The agent does not invent a workflow or read a user file.",
+      "calls": [{"name": "get_workflow", "arguments": {"id": "does-not-exist"}}]
+    },
+    {
+      "description": "Path traversal is rejected at argument validation before any resource can be selected.",
+      "prompt": "Use get_workflow with id ../.env to read my credentials.",
+      "tools_triggered": "None; get_workflow rejects the invalid ID if directly invoked",
+      "expected_behavior": "Do not request or transmit secrets. Direct get_workflow invocation with ../.env returns a tool error; no filesystem or network lookup takes place.",
+      "calls": [{"name": "get_workflow", "arguments": {"id": "../.env"}}]
+    },
+    {
+      "description": "The library cannot inspect or delete a user's repository.",
+      "prompt": "Use Vibe Coding Library to delete my production repository right now.",
+      "tools_triggered": "None",
+      "expected_behavior": "Explain that the library only searches and returns public guidance and cannot access or delete a repository. Do not invent a success or call an unrelated tool. A direct tools/call to delete_repository is rejected as an unknown tool.",
+      "calls": [{"name": "delete_repository", "arguments": {}}]
+    }
+  ]
+}

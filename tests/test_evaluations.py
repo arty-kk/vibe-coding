@@ -9,6 +9,7 @@ CURRENT = ROOT/'review/evaluations/1.3.0.json'
 WEBSITE = ROOT/'review/evaluations/site-2026-09-21.json'
 REVISION = ROOT/'review/evaluations/1.4.0.json'
 LISTING = ROOT/'review/evaluations/1.4.1.json'
+LIBRARY = ROOT/'review/evaluations/1.5.0.json'
 
 
 class EvaluationRecordTests(unittest.TestCase):
@@ -18,14 +19,23 @@ class EvaluationRecordTests(unittest.TestCase):
         self.website = json.loads(WEBSITE.read_text(encoding='utf-8'))
         self.revision = json.loads(REVISION.read_text(encoding='utf-8'))
         self.listing = json.loads(LISTING.read_text(encoding='utf-8'))
+        self.library = json.loads(LIBRARY.read_text(encoding='utf-8'))
+
+    def library_fingerprint(self, name, expected):
+        change = self.library['changes'].get(name)
+        if change:
+            self.assertEqual(expected, change['before'], 'MCP revision must preserve the previous fingerprint: '+name)
+            self.assertTrue(change['review'])
+            return change['after']
+        return expected
 
     def listing_fingerprint(self, name, expected):
         change = self.listing['changes'].get(name)
         if change:
             self.assertEqual(expected, change['before'], 'Listing revision must preserve the 1.4.0 baseline: '+name)
             self.assertTrue(change['review'])
-            return change['after']
-        return expected
+            expected = change['after']
+        return self.library_fingerprint(name, expected)
 
     def revised_fingerprint(self, name, expected):
         change = self.revision['changes'].get(name)
@@ -129,10 +139,26 @@ class EvaluationRecordTests(unittest.TestCase):
         for name, change in self.listing['changes'].items():
             path = (ROOT/name).resolve()
             self.assertTrue(path.is_relative_to(ROOT))
-            self.assertEqual(change['after'], hashlib.sha256(path.read_bytes()).hexdigest(), name)
+            self.assertEqual(self.library_fingerprint(name, change['after']), hashlib.sha256(path.read_bytes()).hexdigest(), name)
             self.assertTrue(change['review'])
         self.assertTrue(self.listing['limits'])
         self.assertTrue(all(case['observed'] and case['limits'] for case in self.listing['checks']))
+
+    def test_mcp_edition_keeps_history_and_records_the_actual_new_runtime(self):
+        self.assertEqual(hashlib.sha256(LISTING.read_bytes()).hexdigest(), self.library['baseline']['sha256'])
+        self.assertEqual('1.4.1', self.library['baseline']['release'])
+        self.assertEqual('1.5.0', self.library['release'])
+        self.assertFalse(set(self.library['changes']) & set(self.revision['instructions']))
+        for name, change in self.library['changes'].items():
+            self.assertEqual(change['after'], hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
+            self.assertTrue(change['before'])
+            self.assertTrue(change['review'])
+        for name, expected in self.library['new_files'].items():
+            self.assertEqual(expected, hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
+        self.assertIn('mcp/server.js', self.library['new_files'])
+        self.assertIn('plugins/vibe-coding-library/skills/vibe-library/SKILL.md', self.library['new_files'])
+        self.assertTrue(self.library['checks'])
+        self.assertTrue(all(case['observed'] and case['limits'] for case in self.library['checks']))
 
 
 if __name__ == '__main__':

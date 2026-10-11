@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "vibe-library": {
+      "type": "streamable-http",
+      "url": "https://vibe-coding-library.swift-seal-1081.chatgpt.site/library/mcp"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "vibe-coding-library-mcp",
+  "version": "1.5.0",
+  "private": true,
+  "type": "module",
+  "engines": {"node": ">=22.13.0"},
+  "scripts": {
+    "generate": "python3 generate.py",
+    "test": "node --test tests/*.test.js",
+    "start": "node dev.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server": "2.3.1",
+    "zod": "4.3.6"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/client": "2.3.1"
+  }
+}

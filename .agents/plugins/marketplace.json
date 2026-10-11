@@ -15,6 +15,12 @@
         "authentication": "ON_INSTALL"
       },
       "category": "Productivity"
+    },
+    {
+      "name": "vibe-coding-library",
+      "source": {"source": "local", "path": "./plugins/vibe-coding-library"},
+      "policy": {"installation": "AVAILABLE", "authentication": "ON_INSTALL"},
+      "category": "Developer Tools"
     }
   ]
 }

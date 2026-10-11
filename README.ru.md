@@ -8,6 +8,23 @@
 
 ## Установка
 
+[Vibe Coding Library](https://vibe-coding-library.swift-seal-1081.chatgpt.site/) ищет по тем же 241 сценарию и загружает выбранный рабочий контекст через MCP. В этом варианте один навык выбора и два инструмента только на чтение. Нужен интернет; аккаунт и API-ключ не требуются. Полный офлайн-плагин ниже содержит все 46 навыков локально.
+
+Адрес Streamable HTTP для совместимого MCP-клиента:
+
+```text
+https://vibe-coding-library.swift-seal-1081.chatgpt.site/library/mcp
+```
+
+В Claude Code вариант Library устанавливается из того же публичного репозитория:
+
+```sh
+claude plugin marketplace add arty-kk/vibe-coding
+claude plugin install vibe-coding-library@vibe-coding
+```
+
+Вызов: `/vibe-coding-library:vibe-library` в Claude Code или `$vibe-library` в Codex. Заявка Library в каталог OpenAI оформляется отдельно от существующего офлайн-плагина.
+
 ```sh
 codex plugin marketplace add arty-kk/vibe-coding
 ```
@@ -42,7 +59,7 @@ claude plugin install vibe-coding@vibe-coding
 
 Подробные сценарии загружаются по задаче. Поддерживаются backend, frontend, базы данных, очереди, инфраструктура, безопасность, AI, мобильные и desktop-приложения.
 
-Плагину не нужен отдельный API-ключ или сервер. Для запуска конкретного проекта нужны его обычные зависимости и доступы. Плагин опубликован в каталоге OpenAI. Для Claude Code доступна установка из публичного GitHub-маркетплейса.
+Офлайн-плагину не нужен отдельный сервер или API-ключ. Вариант Library подключается к публичному MCP-серверу. Для запуска конкретного проекта нужны его обычные зависимости и доступы. Офлайн-плагин опубликован в каталоге OpenAI. Для Claude Code оба варианта доступны через публичный GitHub-маркетплейс.
 
 ## Разработка
 

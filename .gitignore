@@ -3,3 +3,5 @@ __pycache__/
 .DS_Store
 .venv/
 dist/
+node_modules/
+mcp/generated/

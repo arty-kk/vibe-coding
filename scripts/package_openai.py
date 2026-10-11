@@ -35,7 +35,7 @@ def contrast(color, background):
     return (b + .05) / (a + .05)
 
 
-def submission_errors(manifest, root):
+def metadata_errors(manifest, root):
     """Check the applicable final-directory constraints documented on 2026-10-11."""
     errors = []
     def text(value, label, maximum, multiline=False):
@@ -122,7 +122,12 @@ def submission_errors(manifest, root):
         width, height = int.from_bytes(data[16:20], 'big'), int.from_bytes(data[20:24], 'big')
         if width != height or not 48 <= width <= 4096:
             errors.append(field + ': square icon of 48–4096 pixels required')
-    if any(key in manifest for key in ('mcpServers', 'apps', 'hooks')) or 'screenshots' in ui:
+    return errors
+
+
+def submission_errors(manifest, root):
+    errors = metadata_errors(manifest, root)
+    if any(key in manifest for key in ('mcpServers', 'apps', 'hooks')) or 'screenshots' in manifest.get('interface', {}):
         errors.append('Unsupported runtime or screenshot declaration in the skills-only distribution')
     return errors
 

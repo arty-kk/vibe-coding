@@ -9,6 +9,11 @@
       "name": "vibe-coding",
       "source": "./plugins/vibe-coding",
       "description": "Evidence-based coding workflows: 46 skills, 241 domain recipes, scoped implementation and verification."
+    },
+    {
+      "name": "vibe-coding-library",
+      "source": "./plugins/vibe-coding-library",
+      "description": "Search 241 engineering workflows and load selected guidance through a public, read-only MCP server."
     }
   ],
   "metadata": {

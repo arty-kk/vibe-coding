@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vibe Coding Library"
+  short_description: "Find and load a selected coding workflow"
+  default_prompt: "Use $vibe-library to find the engineering workflow for my task and load its instructions."

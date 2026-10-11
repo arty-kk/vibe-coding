@@ -1,0 +1,1416 @@
+{
+  "version": 1,
+  "release": "1.5.0",
+  "edition": "Vibe Coding Library MCP",
+  "date": "2026-10-11",
+  "baseline": {
+    "release": "1.4.1",
+    "file": "review/evaluations/1.4.1.json",
+    "sha256": "872eaf83c1b98654de17db4f56f68b9b9cb569e499409175f164d88b58cdaa56"
+  },
+  "changes": {
+    ".agents/plugins/marketplace.json": {
+      "before": "7c307dbe44caeede71fee4f68667798e549e2710ca86742540706bd5e9ac09b0",
+      "after": "869fe59c698f1263ca8010fa9b918bb3ded7e04be44a609c1ce2b35feda42a6b",
+      "review": "Add the MCP edition and its marketplace/package verification while preserving the offline release and historical evidence."
+    },
+    ".claude-plugin/marketplace.json": {
+      "before": "b9c2de4c84d83bb21b8d33850e0c22d49228e1d5bce7c6a4a2bbb634d69c2831",
+      "after": "71803d9b3f53addd5ef90642b9329d771bd2b3ac03423d163008f77c84b505b7",
+      "review": "Add the MCP edition and its marketplace/package verification while preserving the offline release and historical evidence."
+    },
+    ".gitignore": {
+      "before": "dcc05215681f6846c38c68bfe468ccd22a74624c76d6364034a460c78006e616",
+      "after": "ab96fddcf955e5c8e189e6c07bea410879a63cff5ad8fc7ff74788b233732fb9",
+      "review": "Add the MCP edition and its marketplace/package verification while preserving the offline release and historical evidence."
+    },
+    "CHANGELOG.md": {
+      "before": "d8c72551d49505db924d876fe201b4414de834dd3cbcda97b44a1d9f646399e5",
+      "after": "533e25aaa62944d0ccf04c44fa8b2717482ae2dd7bce6ce3a1e01735de139b83",
+      "review": "Add the MCP edition and its marketplace/package verification while preserving the offline release and historical evidence."
+    },
+    "README.md": {
+      "before": "e207cb5850c206bbba3178b4d8f897c18be107de28d6de0ba1d890d321f382c3",
+      "after": "61e764af3ba634bb4edc80d24a6e40cb0e830d174307cff84b842a3f98da4cb5",
+      "review": "Add the MCP edition and its marketplace/package verification while preserving the offline release and historical evidence."
+    },
+    "README.ru.md": {
+      "before": "38fc36dd8603ce16654f74077d8ff9faf39459617008fcdcd1f2184f6c7ef8f9",
+      "after": "08eaca24f7ca1d43ba953736a73fd1bf69a15cf0a7d46aebd10376eda9315146",
+      "review": "Add the MCP edition and its marketplace/package verification while preserving the offline release and historical evidence."
+    },
+    "docs/404.html": {
+      "before": "c333abf35a0b5e2a3fd17ef8ae50e45d638bcdea3d743ce52b8cad5f85e5a62a",
+      "after": "e8aa92dfa25ad59d04bad15ec4bba7065dbf855c97a935d2519b214048b78b6e",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/es/index.html": {
+      "before": "b09921abc2144481a9053033e5e7732eaaca1ba637344b671b7aaccb03f43157",
+      "after": "19fc8bf1ffaf6fca8b344e94eba41829ef80a67110ba89d60836b357d4cfbd4c",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/es/privacy.html": {
+      "before": "55cafd0d3594fcdad463fd8477640cf5e8e73bf9299b1c9d8a78acc04d3030bb",
+      "after": "a5f9f0b677713e46823725aee278ad2a4822441fef7f2a442d1b0f383a689228",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/es/terms.html": {
+      "before": "338566a6c995da23cf4b08321418339dae5f7b1200f971d9e70e5989de40a4b1",
+      "after": "7cff5dc1138fc1ed17034b424f0202a95043dd583dd66913f7e8e08ebed9a07c",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/es/workflows/index.html": {
+      "before": "a384af3b8e9389e992affc77937eae77486461712b0c0c819308385a46b7012c",
+      "after": "d804ec99bf3c96291b7cd5c17cf89158862dc9bd0e79d09912737e7c5f1ad3af",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/index.html": {
+      "before": "1afc2dc8912037b5500b10a926db0fa8c30d3f188de0504f3e1567d4a080a8be",
+      "after": "26f3d27e5740e85c9c25be3af83d17b404ad0ba49706958efa34fc651f51281a",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/privacy.html": {
+      "before": "4da38f45367f494fb98118c55d7c9e00ae6881f5ee68444f9d690f89a8173f98",
+      "after": "aa13e54666fb63a2c868c52004f8ef11c02eeff1733e7e3f34445f4a2e109a95",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/ru/index.html": {
+      "before": "eb4d4b0416bd92188af1d43f9cedfabf832e2af5e2208a96e42586c406e8cea1",
+      "after": "bd814b67ed5a1d63449825bbe6c274de52972f046c1ecb4839765df0ebc51b63",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/ru/privacy.html": {
+      "before": "f742bf11fc4002732486c7574e6a042fafc7841b4fe08f43f79f5bc4e60f0807",
+      "after": "1d4f95c0a86ba44365053f97829c53a0767deef96aae4f762a890d9e368f1d1b",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/ru/terms.html": {
+      "before": "487d543ffb1ee728b573c8bf5c9bf3229725ebf468ed10d67eab9bf80b2a5b48",
+      "after": "a02b6432382bbfefe94275d15e23ac651c46e9b5dc50869f4a2af22194e4aa90",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/ru/workflows/index.html": {
+      "before": "83e8218d88d8730f714f1058f4ad188b01d43cf54f5b4a930cbc3875ac2a5a02",
+      "after": "b86dd34c91bf666085f6b4ffdf5b926ccfa6e20987dc4fa376565e766d6672e5",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/terms.html": {
+      "before": "bf5b52ef7a68f3da0ec0cfb47a6e8e52add60c057d1d8d6903996e67e8e0318a",
+      "after": "a531e91d4f667a84bd6921be0c38ef8b16a314e683c8cba3cfc7e782118153ee",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/accessibility-audit/index.html": {
+      "before": "b0d746bdb756973695e766bac85cc83907026b9f87c3bd6d63843a6f53458155",
+      "after": "8a66ab9582d01dbbaf4e5e552252ebc7a2977c1bdc4d65c72c78627374179b92",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/accessibility-polish/index.html": {
+      "before": "2a24472e46163ea30f22000bb6ef4ddb785bb86945790524c0cb4120ac5009a6",
+      "after": "c8ae5990bf6ff803b51e4ff05d5b17f40cb2cebb4e397e2f53f8b46c1c51510b",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/agent-harness-audit/index.html": {
+      "before": "b150ab614ca8cf3e89998db1eb987757b63e8b7664b69f48e9aff395f9f47095",
+      "after": "20a635306119deacfdf17fbef8c2f45b64949951db5c9cc8d665822ee534eb12",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/agent-harness-polish/index.html": {
+      "before": "a9a1eaca234a1085c0270215cb310e5ac1531253f73042d5554f7cb7098a3394",
+      "after": "592b971122681b6f6c6952337c6a2d293f96c57a15c3f3ce4e5ff1e95e67cfc3",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/agent-harness-replay-failure-check/index.html": {
+      "before": "95a7ce23ad564dfd10db260ce72b5cd70d7565d34ecbaef0693975feac731255",
+      "after": "5de28a19efa34d16bb9ac3fcf9c6cea784797426d19e62695afc52271fbf156c",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/ai-evaluation-audit/index.html": {
+      "before": "582a12c4a39c4ec7564518cd1576c2ee9f38a3b5d43f5d2a97e6bcebc3013aa7",
+      "after": "c027771ae560d284b2053d2ef73e0d9fe5288b276a1ba1f03ca95ec5aaca8960",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/ai-evaluation-polish/index.html": {
+      "before": "6c188698bae3c21a055d77bdebf0e298dca49ed1d0fa532cd5a437cb2dbb26e6",
+      "after": "a03e24d68d4a71afc247bd39569283801f6a4ce7fd3702870357ad67418535e9",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/ai-feature-audit/index.html": {
+      "before": "88d3179c1c348d32c2400fc096278229ff78a1d6ec1097229485dac3fef36ccc",
+      "after": "249e11cfe1bd0ee0c6cdf20740855065eb95491fbbe3ed193da2ec6009dd7995",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/ai-feature-polish/index.html": {
+      "before": "909ceae629d1d53ed4e87452511356e8e049751b9263f12f6fb8d3211a197741",
+      "after": "a5319a5774825a613b1581a78627172b91b0470e547bd0fe0930e31e61c73543",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/ai-ml-problem-framing/index.html": {
+      "before": "0219be035871575fa4e98215c114a916c527c35a1646d331d8df5fe37f17f639",
+      "after": "24fd49b215eecf91dae7ecaf206926979489ba66580a54b0953f6060b78ed70d",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/ai-navigation-map/index.html": {
+      "before": "3c9420559ca1544033388a881c457e4cffa7734a37e8f86290932ec50acd3eb4",
+      "after": "fc2da78dac675886059065b1973aaa82dffd638f65cdcab23e9ecb045c9c885e",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/ai-safety-governance-audit/index.html": {
+      "before": "64a843a6443b7306dad9040f75eb0c04e3383eec9fccfd551be46bb6ea940641",
+      "after": "83e39934d350cd801447704202d9ce6a7540cff470f6c03213813504667553a9",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/ai-safety-governance-polish/index.html": {
+      "before": "97adf1d3819e66781e84af8c483ecee516845005f98d0bb37508a3ba13ec5d20",
+      "after": "7a468db6194ec6f50feca0f74c8a8585497e2fca57741181320005b2e40da301",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/api-audit/index.html": {
+      "before": "6385147196afffbc3cf65783c8855159fab6ef3daf1aa32c1833e0cb05bc4279",
+      "after": "9b424b9ca972148ee93c37d2df4c898e154a22dd108edfdebc44d20f1644112f",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/api-contract-compatibility-check/index.html": {
+      "before": "4c1d8294ae65dbff958ee287db2de18bd0b34fd244f78de386abc6b0a756fedd",
+      "after": "bbc4f0499e62129e29d3b639204505d6e4128620e09965f2eb2ee05da393d9f3",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/api-contract-evolution-audit/index.html": {
+      "before": "099628aecf85996d1f0a799c2a95c750254234c9c0cee0764fb78fc86952e6aa",
+      "after": "b51fc1aff6a74f9f2b8ad3f40891554dda9a1f019444ef7df8834ade05c51540",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/api-contract-evolution-polish/index.html": {
+      "before": "0e71265d13de61134346c96715d8835d74ef0bd111f285ce4ba3a01061ec2bec",
+      "after": "c1bec6442ba91d64e234159c7539869ea955c896053395f1c3136b0fde7a8f67",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/api-navigation-map/index.html": {
+      "before": "686d406b3697a03a1bc0e884b16a1709e4e5ecdf1cb535a71cc94e4e2e78c4c2",
+      "after": "2e7b2f2b841e39ed171bdbd7b0403e99d84d1c1942b4f32eff8fd49ae323b0ff",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/api-polish/index.html": {
+      "before": "0281b78b5dbeb4e31feef64e056983a7aa4e224b87d5032c1c41f9140655f366",
+      "after": "dbb4946ce90de5fc373398288b27e8fca2ae06e0e68143bc0e9edce2bb79b504",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/audit-logging-compliance-audit/index.html": {
+      "before": "3d43c081a0a1ba7d184c99086dc01a55708cb958a317f9c38e359207cfb25ebf",
+      "after": "b83c08dec8496ad1ebe5d3dd602a04916e7a8a1ecc758be9749fd4029266b7b3",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/audit-logging-compliance-polish/index.html": {
+      "before": "e702d3c75fc9d9298409931dc19c9da48393495ce2d5d5c7ca758f0278995657",
+      "after": "c7ca42ec13f1c3d21e1b1c14d32f5e169e237b0b3436f92d25e447df37506ebe",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/audit-trail-integrity-check/index.html": {
+      "before": "ac17d889adcaa7bc249f9b02d87a72bc5d144dee39c89b670eac20b050699dab",
+      "after": "c7ce75aa84d1fc3c8372746ba9dd768335b8814b1290483dd9fd903d190cb8b8",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/auth-entitlements-map/index.html": {
+      "before": "4c01a9d2624498aa17694367c11e9f0290b8d34ea8ab4b4480bbbcdec602f328",
+      "after": "ae3f1830626fe23a447f84bc1f64320194326752929a07618ad09c583d335ac9",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/auth-permissions-audit/index.html": {
+      "before": "76a1b01f3c0f10ea68a96d3aa4f0251becfca2b92ce85857dae031b9636f6a4a",
+      "after": "66330bc3476fe0cfc95e7cfa48cf08e3a22cbce97e2b9cfedc9a11fc0781467f",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/auth-permissions-polish/index.html": {
+      "before": "a56c8f2526a64f5e0e0622578cad9f6ed5db72a315a94a1d083afcff401515fd",
+      "after": "2052f8d91cb75463ad180557252fb733749163ebf6f951e0ce79d6657f0bb93c",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/backend-integrations-audit/index.html": {
+      "before": "75b9e185d98d9ef83c741f1056d3dce0dbcf648355ca4c0a8920d6b4f5ea270a",
+      "after": "19dba2cdb60bd50e6057543430963eec8a1b2e13868176d5818df03eb17acfa5",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/backend-integrations-polish/index.html": {
+      "before": "7f1fc7979596216eff48b1aaf972bf91947581b1e7e32e5de5d36ce9c0f9222e",
+      "after": "590654c47c80be8c51042d0f11189509762f66bd3c537373fa989e824b0a705c",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/background-jobs-audit/index.html": {
+      "before": "9fad29ab0a323d8ffd1095428946077426434a354e00c41870f109ee63bdf692",
+      "after": "643413418153874c106155cec7e35ba5df9c655e5ad2809f3bbd675d4e123bf3",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/background-jobs-polish/index.html": {
+      "before": "47e7f3cf828b26f20a4e9fa9ff19c9da4d91cfb6c8f391857626a5e21846d908",
+      "after": "460f78a53320cd9248be34e5ea6dfadd433e6b83158453474a5413d171714af9",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/behavior-check/index.html": {
+      "before": "5bb3584a1a7539296bfa43e5f95ddf888c6aad1ac63f94302f2cf251087a78a8",
+      "after": "23e54433e40d3cad5748e9a0b380c22aca453131f241699dc347b20a6072310d",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/billing-entitlements-audit/index.html": {
+      "before": "c492940ecb8d57d10f42ed707a52f7c9f2b8cfeda0fcc09e122e9f0e70720512",
+      "after": "7ced98eeec527af2896295b85148dfda7150576bff42d16df41df82ffb9cce2c",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/billing-entitlements-polish/index.html": {
+      "before": "34c4687e8fdfac6677efd72272edc2d79f6146e18aaa7b6bbfaebfd61c1a0416",
+      "after": "a1f08713cec9145c52f450904766e6d18559c29c4850f67b9e4d46e8d90af778",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/bot-audit/index.html": {
+      "before": "9bd92ba55faf6741e54a5bd453a794aa59e71da3a2cf7fbf363b0489ec193057",
+      "after": "8f817c1ab3e06ba4d4a5ee1f5797140113798d8645c3fa01a8a0d453eaa3e986",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/bot-navigation-map/index.html": {
+      "before": "443f615dadf3da42ec6111d1dd8cce9f81baf3ef723c9c826837fa33f15a3af8",
+      "after": "2ecb3cf0ebab3e9adfe69023fb8af87868d743cf4a7fc06439f3114c14730a08",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/bot-polish/index.html": {
+      "before": "6b115e1b6cec5ebfa60a2a9e74dc75255ad7bcd6289d738e045715d055e675fd",
+      "after": "944a1ef8215bc9fa38d9f9b1ab9586d0f795de9acba74045d8d861f2c437eedd",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/browser-extension-audit/index.html": {
+      "before": "baa468cb5ad9ba62996342c3184d278158a96194678173a373017a2d2a2f8c0f",
+      "after": "42229abd4546e1a4a84ea2eecc3756059052f4c3bd4ff94c89a2eb487da8a82a",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/browser-extension-polish/index.html": {
+      "before": "b5e0701f2ee8523561ec37fb5e680e345375cb014996d1636651bfa82e40d198",
+      "after": "3a854296fe01cc55e5cac5bb3f538ca6321acde95f0eb822315ebe32f2af6d89",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/build-supply-chain-audit/index.html": {
+      "before": "479c3222479cbb2ac53a1c63e6c44841a4c35b1a1010b2d9c146bf4a24126cf5",
+      "after": "067f9234ff3ec4ebbd58513686d41ac864dd66f6df30669e7c48cf8c1b3d11d8",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/build-supply-chain-polish/index.html": {
+      "before": "beb23ce1fc7a692f2d6792c064b053166c85fe115f746e9a64a6c46a18914ea8",
+      "after": "614cf5f87a3cb33f41a1093e6470362cd2641b4f305809c04c6237963ad299cc",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/cache-coherency-check/index.html": {
+      "before": "1e8917f31eb348396c78472801eea0b382336106a0ce4f2aeb4a84db22df43d8",
+      "after": "174d949d69cfdea5db0b9c5010c0f470012e5b8a001b733f5bed990a609e1246",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/cache-invalidation-audit/index.html": {
+      "before": "cc9484d7a7d813482874959fe673abf4e40a54e000c919022b3ca157a711b54d",
+      "after": "eba0d3614c25292f7f90744e919b87040bed9f5443ca3bccbdc70f58011d765f",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/cache-invalidation-polish/index.html": {
+      "before": "e1650a51722e518486338423ad983f6e83d76932d5f64622107bb06130aecb5e",
+      "after": "b5bbf59a94175a447bbc87d0c5ed1d9f168c555a93d98182c5cc96e1ae3aafc6",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/celery-delivery-shutdown-check/index.html": {
+      "before": "e84fca018683c0fb190c3e2dda4d69c3c106b113f2ceb8c904e0fb9a2c8a6004",
+      "after": "ea7a43edab74057d97a4132f703cd645ffa6f96f6ea2db8289d34ff0ae6e5667",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/celery-workers-audit/index.html": {
+      "before": "ff953d9fb89e43035448aaa9a541733ceb22a99fcec87172e46c1e0c925bca46",
+      "after": "d066998c24c0c51b2eb5df324f1b1a75af3875e6d653e692c9f50abaa023ff90",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/celery-workers-polish/index.html": {
+      "before": "f82574a533db30a5fc51b18e1b1f2a234f5a894ea26ddcee2ea1e37b1fc84c44",
+      "after": "46f8d6fe2c552837dcad268f645eb19d95f043deabbc9a75cde071b0ba75a459",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/clickhouse-audit/index.html": {
+      "before": "9d544526527ec8491b808f2b52a146897fde045504f2e75d8b679101bd09a4b5",
+      "after": "cfa10707aad8bdcb55b901493f9fe6b120e5315212502126eddfb442d600b8d4",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/clickhouse-ingestion-query-load-check/index.html": {
+      "before": "cdd73db51bbcb8d555bc136c1699f61a5e48ee662cea390bba5655dff769cdeb",
+      "after": "7c9bc7845171999c7248ee142100c62ed76fa05411f422f1d2b4b6e498d666c4",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/clickhouse-polish/index.html": {
+      "before": "f61a3a25757c2609d2b00417298d3229137cd8e26a7bbfa693ad494a12bd12fc",
+      "after": "d167485e6d11d2c1893b958dba3eaf690dab2aade152f30ed37b895ae131c9b2",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/compatibility-golden-master-check/index.html": {
+      "before": "1ed12b19b214fe0a9fd5627d7aef1aeeb479f8ddaa03fa80971716f1f95db473",
+      "after": "c7f26b0df668c93199c9bb56ae0625fdad217f245e045e17b0a2b8552309d144",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/consistency-invariants-audit/index.html": {
+      "before": "df6d58180242501fdec3b970ea4951acfc22ea1447bba263d216096225fae50e",
+      "after": "04c346f6d6c7dd042040a6c9912dc89f11ab66aa57ff6c59dc7bee43a1ce71ed",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/consistency-invariants-polish/index.html": {
+      "before": "7859d0d54e41cfea771daec7a2350ebe34844051dc0f0c9d2146a301d55f1f91",
+      "after": "9ea882e9f4bb3a57d0df574c34410411ce99c23c53af540726fb286c8fe5ff87",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/data-model-audit/index.html": {
+      "before": "aa6f9e98834f93bd9a7c5be84dd858cdd76a43cfcba685f588fc1de8efe66033",
+      "after": "f990da7345a90a29f9213ff63431e1386c5e54b6a3dffab8c90b9d664391af33",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/data-model-polish/index.html": {
+      "before": "2f7a439bac0f5fe3be09af8e8c412ced6382ff95604576c3facabda3ef40d6b8",
+      "after": "a780253db82cf746792d9202b1154b5575b5b9739296f0403a018523e7fe0e77",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/data-pipeline-quality-audit/index.html": {
+      "before": "578e14d989d1cc7296303b1bd4d8227428a5659029e522b2a575d58eb3763cd6",
+      "after": "426db62b34ff7989f81ca86a086abc1974a5887135113a492310154963d26494",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/data-pipeline-quality-polish/index.html": {
+      "before": "94bce06b6633b975d99344870929a5d1b93151b17f02213772c5ab2152cc5119",
+      "after": "3cdca4de26f9aa42dde7170c5e206951c1b84f3e09fcb79ed6deaaecf048ee50",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/delivery-recovery-audit/index.html": {
+      "before": "b6db7debb58bbd8b0840a8222440d23018be7922ecb3ba43f40057c9ec813e68",
+      "after": "346bee989ced11f489fc4b2c3a416bcdd447bb14da79ac5ca1373afe4531d98a",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/delivery-recovery-polish/index.html": {
+      "before": "c813b26d5fdd52d5a15762cc2213813879fbe85d9a136e14515c1315a63b0b62",
+      "after": "1bbb90f8eadfe2721a0ab6d1ab4dfdd17749464afe9954c609477e2257a25b1d",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/delivery-restore-rollback-check/index.html": {
+      "before": "74d907178a34358a33a5af6c644c29fedcff0ae72a6cb9da232fc2ed7573db65",
+      "after": "d8a920eb4c4d790f246585411472db95ead4c4e751cabf3ec96e2ac44b3c9573",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/deploy-bootstrap/index.html": {
+      "before": "4812d1ef87ad0a72123cf06bbf3821a029e7d8c60e6159a5be45c888b53081bc",
+      "after": "74c10ce61ebfb3d5458e4571cbfe9fe551ceb436a9d9300cb8e46fc1d1cba1bc",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/design-gen/index.html": {
+      "before": "bbcc97fc76328b5ceec4a03a991722fd61d7f768ac10389168c04b65c53baf78",
+      "after": "f7e69b20fa637dd3a89e691cb0c7fb93360b4e90b81fcf767d077d3a30a588a9",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/design-system-audit/index.html": {
+      "before": "63da5ffc810aab18c976a206eeec87c7da2715d4037d130450d28b92d840f6d5",
+      "after": "df81c924bba93b8c8bd726d2cb5ceb14c218d0649efcb019c202a1236f0d514d",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/design-system-polish/index.html": {
+      "before": "ed43f41da21a036a63ec880381b20f98603ad5c6c0428ccc0a32c20348a8bcac",
+      "after": "995647faa882a205a47314bbbd2f3732ed9dd541a9a00f4eb73f509218d7263e",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/desktop-app-audit/index.html": {
+      "before": "2258c572febb6465563ec8214f028e39da356628c2bfe7bb6d7462b580cb1022",
+      "after": "3c8bf4e2dec2e7201fbf075b8fd0270b12fb9af3f610ad99a41339ce92473edf",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/desktop-app-polish/index.html": {
+      "before": "1642298f8b7ff5350946373c0b9fa26e92b3eef02c5a86f361e9f5917810e189",
+      "after": "d02cac854b231e26b93db9852db826522ac9fa48284441f9c5018e624adcc3f1",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/documentation-sync-audit/index.html": {
+      "before": "be4c3002d60fe6f7f077c17a2828e562a5b465385cd8d50d02a56cc1562ad812",
+      "after": "7a06592ac4272fa607d8fd2e49fc9a5d8ff0a8a34df8ee5bc9a71448df178c4f",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/documentation-sync-polish/index.html": {
+      "before": "5a96e1b0cfafdf7e982ed90e8a484def4747039fa3279812a3cba0e32317e0d7",
+      "after": "b0a023342d8b74d335fe3008f451a0fc573c3db66a611fbf579a6da94ccc9962",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/domain-data-map/index.html": {
+      "before": "a968cee9b5e4a8ac51534b4120681e6e5a99402fb8f1ecdf60a7b7dad7d79013",
+      "after": "f35c9b3039470818958bb73ddab8259dcbe836a27d624948e1db12e30263bea4",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/evidence-normalization/index.html": {
+      "before": "de95b5adee629e7734973e79d5fd50ef1fc9171a143a60dd4fce755dcf2adbee",
+      "after": "4705fa497fc1ee17d8be2785ca2c30565b5a891024005ef641aed97b098cc15e",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/evolution-improvement/index.html": {
+      "before": "8f3df64a2d28f4b0d8e57186cbbfa6fa6f0ec0a3eb55ca0a6dee026a14fbc29f",
+      "after": "49bbd5b4d94e9c92e22cfd788d89653759860a835fbec200d330c868fcf08690",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/experiment-design-audit/index.html": {
+      "before": "8231b7eaaa1dc392cd0dbc93f8b5c2d51da59ff3dddd8f8988792e5e3a270067",
+      "after": "33075903a9affb44dd1b4334333df9f2950b58a9e4c0b2a6db7d82f5ef130bcc",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/experiment-design-polish/index.html": {
+      "before": "634a7bae0540ad63a0eee3a25da4eea1d96fdb49fd1946e1a7f327f16f7bf583",
+      "after": "73653cd739e5414d630757cbcb6c633752bd556c3e0d0e4a6e50b96bf3baae62",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/feature-flag-exposure-rollback-check/index.html": {
+      "before": "8ed6d21c6dd4cdfa40d53ca66e4303e1759f191d9ca9b2d8f0ec5cac886e245a",
+      "after": "c92c8c7f1ffa44bfb7be65b685a798139d8f52d9a6689ba90c61cc1fee5c87b2",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/feature-flags-rollout-audit/index.html": {
+      "before": "475309ab0661459241853905a7d33413b86cafffe6ac78c4440a21d3b6b1596f",
+      "after": "c39d6acf55ced3e16984029e84b8f478645b650e844bf4ae99dea1911bc061e5",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/feature-flags-rollout-polish/index.html": {
+      "before": "b53a1d08c943d22639f7655a7fdf4f4da482e23629041f034a7a716c192b75a0",
+      "after": "9ee72b73aa18cf33e6742cbfece7a91b89e0cff2a5cb83637ef42d939be06215",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/form-data-ui-audit/index.html": {
+      "before": "24003356e63d572a6670a3efa7b1b6800c23ca6a210551b35a064ae54f7a4896",
+      "after": "d40054610d380e27ddb63e70b84a289af2b6dc988981bd72741bb209de608c85",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/form-data-ui-polish/index.html": {
+      "before": "0c9279a358ec366b9f4e3c38a4b74cb21ddde7645dfaaeb2819cfe88a480dc37",
+      "after": "39aa0ae27b2f3aba76b9e9ddf0bc8c66dd34ce9837c20002fab23f0a8823a67f",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/go-rust-concurrency-shutdown-check/index.html": {
+      "before": "779010b590bbc4967c61de1de5b58b24e47f05c06b22b032e93838f8a278d3df",
+      "after": "6f49811fee7e9329c356cfe2c1892350b98865ac1fea891c0acdf7ace04f4a97",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/go-rust-microservices-audit/index.html": {
+      "before": "a56a5046a757a5913d4c9c0248b07701631a164b8d2c68384e9a56fdeb5e731f",
+      "after": "38e579f483ef99449faea5a02979f43f35c3a58601e7f12f3efd27511cb9e9de",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/go-rust-microservices-polish/index.html": {
+      "before": "e78d1f7239b7c95eec65a1b55093781968756d80f0625e4b42805eaae0e63d31",
+      "after": "ccf948e37021935bd78faf76e7777693b44fc069004a1d23c1642ec428cc19a1",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/idempotency-concurrency-audit/index.html": {
+      "before": "bc8c240adae583880fe9c5c93ff3df2237cb88056ce3335d46a5c4670a4891c8",
+      "after": "c7e3bdba1bf624bbcf9d92ec913716a8fcac7e50c65201a5b02478fe152a854a",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/idempotency-concurrency-polish/index.html": {
+      "before": "13f66e96d5119e9a7ac3016a555f228b5c57bc77d82e5c8140c05e5e7568e09f",
+      "after": "dd3a871e08e396eee8c9c1f44c448f8a8422e5dfd81b1990429685eca8787504",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/incident-recovery-check/index.html": {
+      "before": "17a05a4ee72b05f1f926aa3c146c07d74fde738d2f1734d3d47323e37cd11e6a",
+      "after": "43b097aaf031728ddaa72f5654ca8179175e2f7b2a62be982469f7421f97bbd3",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/incident-remediation-polish/index.html": {
+      "before": "961aba3d9a9de8c744abf746232369bc114438334b032b4e5c2c9e244e2ea8f7",
+      "after": "0f71f3d55ab29668998658e34bc91f0c7c79bd6eebf3615608163955c7f13343",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/incident-triage-audit/index.html": {
+      "before": "c6d98e54545529a04c9f8a438168b4b94970be560bb491c623539b6a1ecac2d5",
+      "after": "3fcc969acd4b0aed1cabaf630e79b33e1970f10bd81d331fa4a9e5e6f6487d2f",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/index.html": {
+      "before": "255bd79d31491db3c3fc9ccdecd49a15d977783f3809bd37c2c4604936166916",
+      "after": "6565508bfc9230f1f0d5b09a8024a3637b914ea9c518db5f8fd304699fa70e3c",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/infra-ops-audit/index.html": {
+      "before": "974e36e084135bd696c00bd2257c2accae901a25124741205a389bc771550796",
+      "after": "5b4a8aa33a569dd0783e7b14a26452d5afe911c5a8f78d7aac721e46b097e921",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/infra-ops-polish/index.html": {
+      "before": "7cc0252945bc37d9feac01777cb1daeb6493086eb9659333373229df6c963324",
+      "after": "cb7b194350033581705c3488b881bb8395ea1d51901a6b7549da7a2c60dc97ae",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/instant-architecture-probe/index.html": {
+      "before": "a107e21330c574b3419696731ed3f3d395b4b74baf440be430c42e47580c7307",
+      "after": "1374ae1e2bbb3c6792221e4a2fcbf69877d09fa2f90e4db4d914ed066f135fe6",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/instant-backend-probe/index.html": {
+      "before": "f7002e7f5417e6123999b7b7858db673f7c5417dd427d472fa9bb83d73b944b5",
+      "after": "2c467af862fdc6fb94dbe1c17672f72f7db718b5842dc58064a70a54df0a117d",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/instant-bug-fix-polish/index.html": {
+      "before": "6d7f32af2bf9697d8f0709fb9382ec128772a8e2969da6692b08a9a3fe3edb80",
+      "after": "f869b2b0869895e6d707a0a85cef4768738f7783370a5d2765e00cd35ecf6383",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/instant-frontend-probe/index.html": {
+      "before": "1d0499b556864525f9731a64e3c58ad12693e5229b0954f9a644674956156a6e",
+      "after": "4119094875a914f59de0ead3dc6d86c928c53e812041874f652f20a31f3879b5",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/instant-ui-ux-visual-probe/index.html": {
+      "before": "af2d275b1570d0412f75c4321b1d646dcffcea7505d809d374d434d349d75e56",
+      "after": "c04143fc2bd1e93c1b777941c5fa9a88459e60607ced3639029c9dccd90272ea",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/integration-map/index.html": {
+      "before": "e48aca775e6ab7cecc97538a88116e0dbf1266b8793dd9d0c6361bf157f338dc",
+      "after": "993e68101ba35a60eb8e3166aa2c4df18cb5d77bd00c31fab1cf4c8dbab87e61",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/iteration-closure/index.html": {
+      "before": "d9dd3bbfa1932f081bfd8569d7e23b1f45912e4f1ea0ae1b99ed6f812bffac3c",
+      "after": "a17c8347ba77c0ef303904addd8f2c88969c6ca136bd11f32b909abd5e480067",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/kafka-redpanda-audit/index.html": {
+      "before": "de93b77ee3675923981756090114f6d7d2bed751698f9cd55bc3c351c3fe880a",
+      "after": "c77303ff75ef309453aa746418a21a0fd0f6ac9c00a2fb666ccf0984b3e36d6b",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/kafka-redpanda-polish/index.html": {
+      "before": "9859b657be084f1810f621d4b32bc1abb1d9b484a0fe37bc63ada566455e0613",
+      "after": "15c0fba6d75ed927eec62c3c0a3399dc8bc4ddd80ff9e4b7af0c62e575f6d8a9",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/kafka-redpanda-rebalance-failure-check/index.html": {
+      "before": "30a4a494ebd2ad681b7b498d80425f7bafeb154ca2a7328a6dd3c19397e9dd54",
+      "after": "6d851c8331d71e26978cc5262a7c75f7e84e15bbd99e76024ff764835328f816",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/kubernetes-platform-audit/index.html": {
+      "before": "3e9d681905af3ae76a7f9d06a1cf98382f31c44159b7a96913794a8d2314ab17",
+      "after": "9176d6de9b3648e555619106ff84ff1c7d28da61188d2fb8f54386300a3a283a",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/kubernetes-platform-polish/index.html": {
+      "before": "0214412dcf5b71c2a0a74eb2a027300ebb460fe0d1a6d6f85dbe7282a64ee70e",
+      "after": "2c9cbc79a7e55b4381e98fa5305ba32912dc33a58c8ca341bc4012b746c5e6d8",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/kubernetes-rollout-failure-check/index.html": {
+      "before": "fea3366d64005837bf08df7a1b25e4fd04ade2e65e013eca405f31096f17eee6",
+      "after": "9bef82608fd75d2ca482be1414c3d5d2b4f13e1072ddd13375bef4da9812376c",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/llm-agent-tools-audit/index.html": {
+      "before": "e2416d88cf16c40138aa1373e01fa0843065e21f5f6efb12a8aca17b8fc80066",
+      "after": "f0577f8ee00f89e78d07603c2e7141bea8a1ba250c736b900fc137c61d78a70e",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/llm-agent-tools-polish/index.html": {
+      "before": "5d33fcc8e1253e7558868182b9c93fa7f2e2b2d80bc612cb7a27eb2eff5fc6e8",
+      "after": "dd503db79a4aab35574faeba012bee56f641ac14d08ec1b6f11951ebc215a54f",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/local-client-runtime-security-check/index.html": {
+      "before": "47db8fd4e9fcade0f5003de9af03422c1a88fbc1e7e8d194b1d8bff24cae38e0",
+      "after": "fcbbbff226eba7fa8aac472795bf611cd1c3bcf8da79e5e12be4287ffa37aded",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/localization-audit/index.html": {
+      "before": "c95ad93029a72791060fd17de9ed4aa669c27a90f701a5733a6a532b3ff84d01",
+      "after": "bdb5dc71a1b2d6456528c7ed57e9e0081e36ba2e3dd889dad4728a58b937c31d",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/localization-polish/index.html": {
+      "before": "ab7a22e5db32a7276d175b2dd8e8784662f66d9d796846f866e2dff29c878d99",
+      "after": "41b43e69ca606df44e52ce0b7501e25ceea099b9dff54942255c55903e12203c",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/map-refresh-polish/index.html": {
+      "before": "2e27cd0cc692c8b804d39fdb32de7be2b3e49f361813e25839647834fb71c04b",
+      "after": "1d7fcf11108bb3dea4a2fc7421a129836b187374a943058528fe907def1e6902",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/map-staleness-check/index.html": {
+      "before": "fade694299fac18dcf22307c695ff5bc2240b42e381557243d63af0320c4ba5f",
+      "after": "c90f693aa0fa8f13473451fc3b21f44c7b5665ac5ea38a51a2ff40d0bd8c5464",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/map-synthesis/index.html": {
+      "before": "7d64181057027649d84d4c6c1d39151d7564d90d5286fd1915cc6b0575cf6018",
+      "after": "14f5224f734a184bf4979bb128a2e62203f7125036545e81baad89ff14eb6a91",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/mcp-protocol-auth-check/index.html": {
+      "before": "cb7e6c2109d63f57471e35128a29ed275e8cc3717c5f68f5eca43b8bc2c50484",
+      "after": "f99b4f537318d1bb91976ba4aa7a39ddd2d993f930c7d90732102cfc769fae45",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/mcp-server-audit/index.html": {
+      "before": "fc10a179e7785724b32c30480389c8485ea461d4bfb23c13f71fd5bcebb7c863",
+      "after": "548518836bab6ffe409690ace2daa0b8bb3816c38007485bda604cde5613e156",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/mcp-server-polish/index.html": {
+      "before": "af018426242bb6bdddfbb53dcf09b5f90538892fe9572ec3d8938d8a558717a1",
+      "after": "75de1406a7bc8d1c5636aaa1159628b2a86884688b87d13dcf32906aa3175b7f",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/migration-refactor-plan/index.html": {
+      "before": "253a37432affe05d86f67ed328f9e68644fd959fb18274edf6d81fc8044b7d7a",
+      "after": "ac56474215dec1f5cb89040f53070142eabf56f559194dcb5c358363734e2cc2",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/ml-pipeline-audit/index.html": {
+      "before": "53f37146f6d478e834e54deaf511ad719af441b609a714e3354b1724a9b9d2ba",
+      "after": "639e325586a33a4265ba209ee3082710a843794e6703de2796ea2ee6febdbcd0",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/ml-pipeline-polish/index.html": {
+      "before": "700a763b1f13746ed9afa5e39220ca9a2c9120b64f4ef5182929472375b71028",
+      "after": "c3788583d1c841bb13a892a585ac00bec4d946fb53f32984919e3e4b3b55eed0",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/mobile-app-audit/index.html": {
+      "before": "4b0afd0e50317ebce2a23353a9be1e624572d0382e4b8ff7ec97663aec7da194",
+      "after": "e25065ea983bd62b132274e86bf99a4b06f7458624b0dd56965a7071007e6776",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/mobile-app-polish/index.html": {
+      "before": "b007bd4cc19c598f2f247cd114bba2d6c5827f8ff6248e55810c290422d80181",
+      "after": "36b9b091b6e271214cf7d58036de2542a1a70f1aae8d4b4b05c807dda63cbfb2",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/mobile-release-offline-check/index.html": {
+      "before": "1d78bcf02ad9608d56cce6ef72deb21ec73ee72fabae7b204684481e113e6cc2",
+      "after": "0afe1ffa825ae1882c99751a0d4e4419136071e9ca8dfb11de261701a8494587",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/model-serving-monitoring-audit/index.html": {
+      "before": "3aaa8b41ccabc6ffd36053e8897560f57705e304473785fcd31a60d3dca34ec2",
+      "after": "d7364d658d270c693cd7462c3b122883523adf66655130a0f93ec557132fefbc",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/model-serving-monitoring-polish/index.html": {
+      "before": "6105b4a5aca4bc5e3abc07e22781b2112dbbcbb198a56bf852446c29b34014ad",
+      "after": "d847119faa7fbe5f3301e753b03d7b89a7b5d5313abecf6e2f8e32655fbb677f",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/multi-tenant-isolation-audit/index.html": {
+      "before": "3ae7241600284ec044ad2f46562748df5b4f971b26d8d63d188a8d58e540d96d",
+      "after": "52c0d5324472fe93d98e4226ed516a07f4619658312d1727479025c02924d692",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/multi-tenant-isolation-polish/index.html": {
+      "before": "264af46da09f40d6e17caf0938b7b27224f56fe335435dadbcd493ee54f5d3e7",
+      "after": "1c8cdde7754c2690aff3d6d282ed49ef4da7148208b2227d13ff2c606b1d6518",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/network-integration-failure-check/index.html": {
+      "before": "7766e4a2235ae0f4ec8a0addd3dd3ca3dab3d2f48e9ea0c1654449ff92832cdd",
+      "after": "c53c635cd3d3c67433733c22334d5777ce2d8a0fb155a9cd9f0b1c292c2cda23",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/nosql-consistency-hot-partition-check/index.html": {
+      "before": "b613889dd12cf886945366996526ab5f0c51a39b3988ee1ef5a96bd3b95cd780",
+      "after": "cede9b5ab726c121af9325c393192a4ce612c1d56b5e8f57be3f40aa06cabc2f",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/nosql-databases-audit/index.html": {
+      "before": "e827fbd2a7c4e913dd92715138b82732729a4987aa408d06ac0624bf33dcc9cc",
+      "after": "f5f00ea073a575624083f747352792c3e1329d22cf7db6490040fbf86d266436",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/nosql-databases-polish/index.html": {
+      "before": "8dbe5f91de2f64cec97ae5cc46d2287ee633ebb294d7c8a1d02eaaf6fa858b46",
+      "after": "c4e3eb87ec8225ef7a721d51e9dc495ebd38856d5749cac01028ccaa83d95a8b",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/notebook-productionization-audit/index.html": {
+      "before": "45b84ebed2172b93dd345471c18c31e9e5176b7d0cf4b19b502ded3b8d7f6fb2",
+      "after": "75ea9a607b05034724e386125aa833970a0dccaa450b71c278b8b9df4319c114",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/notebook-productionization-polish/index.html": {
+      "before": "d9d4f69a798a2d986eef11ee708d7b2925de5cf349c5f6c7e42cc74ff3a755cf",
+      "after": "036d362bf2cace3c6f83618b8a3df2395e45e9ec45ba9db746493bbc823c20a3",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/notification-content-audit/index.html": {
+      "before": "c269b537d41ae74bb049db920b3e6fab3f40472b3de1f44118008ca08360e3c6",
+      "after": "5599a836970000a09a8315d771ed94dd4e513a590ff7e4c4bf4ff8760da41979",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/notification-content-polish/index.html": {
+      "before": "0f5a6c0053807509527674cee24cd83bccdc980f2c67a0b5255f42494b691a49",
+      "after": "3af769127a9baa0fd5584c93fef2ae1588ebf8bfaffe27a52b70463b94c18293",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/notification-delivery-audit/index.html": {
+      "before": "d5c3feb3718d57646af722fc988987c4f4d66e430494239506d360f7b2ca3b22",
+      "after": "23e9dc3b6f646850d627af37127e09f08477a83ad384ce14da53b4f2115c0708",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/notification-delivery-polish/index.html": {
+      "before": "3c3a18b7bb712db3ae5966e910bcd2b949ebcbb98db1ffb23cf1be38fd2890ac",
+      "after": "ff376e989a891b3a56961c56a2cca17e9ceab2554b61dbdb7f13b3cd3fb7f579",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/notification-failure-idempotency-check/index.html": {
+      "before": "5a9fa6f8064eeba6b40ee3f91811903b43f9dfd5eb03adf0e22f522cada1b623",
+      "after": "d913f0182098757daf5c380d468e33e602157980f7d3aa50be90c3c08de143f3",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/oauth-oidc-session-check/index.html": {
+      "before": "5997944096a86a5dafc3ae03181fbc78a8eab0a1029e40f1a3b6df4689e71e08",
+      "after": "f5e90a4fc73514e2dd93d316b2cbe64445b348f9e45cc2f95e3aaea370929fdc",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/object-storage-audit/index.html": {
+      "before": "4f7e6541d760736e1e2a4fc1b74d0103c34658e39128c46e89070f1f195fe1d5",
+      "after": "c88aba43664cba9027e999251acfe92e4f24992dd388ae39e9623d730db5531a",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/object-storage-integrity-recovery-check/index.html": {
+      "before": "212c675ff5b633caa5e03039fca31fb58f1ff9ddec617a5f6266f4ac2febc6c5",
+      "after": "f48e9296554aa713b946f0f178680a900adb2dc1e2c97dcef19216157f328205",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/object-storage-polish/index.html": {
+      "before": "a08d11884cd9491a584fb209387cf490675f0fa85cbd0032eef2113f417a123c",
+      "after": "8dcd6215ed79f4eeacaaf0c7cd4dff2cdb19bd7521c3128611bdd06521837f68",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/observability-semantics-cost-check/index.html": {
+      "before": "b501297774a755b494dbc59d5dc158eb30c6ed76ab7070cbe1b5e320478c7b40",
+      "after": "f6fa7cc48339535a084c87dd71a235ca418e34fd8d64ba94052089235fdaef5c",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/observability-stack-audit/index.html": {
+      "before": "16ec8b053cce748c5af2d6a7b20ddf99622933cd617cbb3fe065ce70793c1824",
+      "after": "084e2d7a59e1d638429df3b735c72b6ff314fa780007b60eaf7edae27d119ebd",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/observability-stack-polish/index.html": {
+      "before": "616b78150dcd6e78a38d684b882b39516b22055a33f984d67b3d41e1b5a43f93",
+      "after": "839e02f217075fe6017c685e4f8b885bac5dbb9cfb72c61aa80d99a8e85519af",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/ocr-document-ai-audit/index.html": {
+      "before": "644e1c19352f16462b0c4b563610bc738f207104a1c66b8766552d3fb635463a",
+      "after": "0b43e7b8d7e5d608f12a8be73da5d12e8c60333430cc7cd26c30791eaae98e96",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/ocr-document-ai-polish/index.html": {
+      "before": "3f41b46329f8245473a1604d446f92ef7750a4a7cab8dbb935085bca891e1f65",
+      "after": "d3165b342dd83926614da1a85151354ec88847307c386c6f874f1f2fbe4bf301",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/onboarding-activation-audit/index.html": {
+      "before": "ea6fccd83609f3d2c9651322b52898d9de61340d6730a5a4e1b8446981928391",
+      "after": "7949cc764334a43a1d2b9620c37363aff905f5be464137fa1804bc108f00b55e",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/onboarding-activation-polish/index.html": {
+      "before": "cbb25eaf8fb3b157f6ccd1bc416e7393ed4b91d165c75ac7fe5753b7706aa25d",
+      "after": "8ac4beabae29885c33065916aa8b4f4e0ff9a6e0e1becdfa33737a25c9799cef",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/ownership-invariant-map/index.html": {
+      "before": "ffe151cdb31727103daf6e771b64d3c7f3c6857ded1c3c62432159790d9d65f6",
+      "after": "a32548099554375288a68504e880268862dd79b49ad4eb5aff7ff998b0e34055",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/patch-checking/index.html": {
+      "before": "9304c274eeb4669c0ecdb8820a8870a3b368ccd136e2682b03be345cf5e9a714",
+      "after": "12548c5f65c3c6ee63792a7fb9abf9ba20dd7cae6367b7850d38caed172fe14a",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/payments-provider-audit/index.html": {
+      "before": "d9d54fc60ea63a6a89c38ffb5bbf9d2c502613c850f54ec03d49b2eb70ba210a",
+      "after": "1114a952b21e386f53964075712cba9ee9ea634afd6a72fff102e2fc83de0425",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/payments-provider-polish/index.html": {
+      "before": "fa5dc8f57ed309bfce07cc10bde78c70913747a61d499e1c22c2bb885d1b094c",
+      "after": "f743a4a8f9f3adc1c155930e5a300b56c0ee0a57275a9009b3764ebb16118b8c",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/payments-webhook-reconciliation-check/index.html": {
+      "before": "fece00bad21dd3229e235fd304b092eb2887ee7c1b89fbffd5d78b27f0857423",
+      "after": "c4f26b1dc3b13a4606e26df6f09fb10eac94254ed80c7568cdbf5134c69a79b5",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/performance-audit/index.html": {
+      "before": "3979eafcdeca7a14ae5833e859703820f4da4f0e7bfa7e0afc7757242f9916c1",
+      "after": "df24ed48d2fcff1c23e5a3c8c6cd3e54807f99f918fc477e2a649074087a0f76",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/performance-budget-audit/index.html": {
+      "before": "e88fca129a7742334fefb7dc7670aeb5a7f1613d4637225d33092d042b43364d",
+      "after": "40c090c1c032b94111216c1ea5908f99ed15200fcc29244b2d55d56b1aaf9e86",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/performance-budget-polish/index.html": {
+      "before": "66ff007dd2ccd65b7889893f400e2237b55a836d73816dbe4fc5047240649df1",
+      "after": "d7ee6d64e2abe3f2d2f9b19cc6e809bfdc4ba63ab29448b9a38e1730dbd99ace",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/performance-polish/index.html": {
+      "before": "66909c9f4cc3edab0d8d0e60d3dcaa70f74f8f89eedaee8d4a27998f0717ef52",
+      "after": "836544b6a75c78440db1c83e88eef0241169ea101612f36cd0944cc8deb2b52f",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/privacy-data-rights-audit/index.html": {
+      "before": "20fe9c0e12432cfce764a61dc0a22852b8f7b5f7daa9280d2f9ed90d5066beef",
+      "after": "5c176b9b32e3f213e87b841639012fb7dc08ee872c3abd9d5791e7ffe3107025",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/privacy-data-rights-check/index.html": {
+      "before": "089f4badca8d9e267c41a1984a5d026fc5cfacc55a10b10b77b41ae5d059f488",
+      "after": "830899d296a9f8fc8458320d32a61030f7df9f6cd178802968505ccd21db7531",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/privacy-data-rights-polish/index.html": {
+      "before": "8b81257848212416c5d32fc96aaac20864e0bbf35987a14813e57a1cce6b47b5",
+      "after": "eff60fb8f938cd7b0bb4012638e9e04d1c959ada3b4336efc9464ecd347cd9b5",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/product-acceptance-check/index.html": {
+      "before": "9bdff5404b843fd4c17b9164d2a55e222601e6168a53d033f31e4d30692a7080",
+      "after": "5da1b034b111954da0680bdddf2d63bba8df4b11b7a6647822d41b1024081244",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/product-analytics-audit/index.html": {
+      "before": "2590d876404799bbd480c81d4dfb1c44350f31bbcafafa2ac03b5dff96c2ad89",
+      "after": "0f3a9011ef1378be09f6921cc9a156a1e657b1e9855ef3c83580bd4c0d021956",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/product-analytics-polish/index.html": {
+      "before": "e6d0ac1c9e6d1b3c9df3abbb734ce4e2947f3d4e6abd0eba05a7c339afb3b4dd",
+      "after": "f2d1dcba68303720d424cc58b6dee63ca9f1ae4c25bc4b7f487ba391868cf174",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/product-capability-map/index.html": {
+      "before": "81f4f3ccb141c09c7bc62e5dc7f40c7b53a9797cc8e309d9500f66dd42be032a",
+      "after": "6fd0fbd8c807f331d72efa97e2773849189f9fc3aa29be9a4324c99a4fdd7340",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/product-decision-metrics-check/index.html": {
+      "before": "2c838664248640c0f28e3efa796203add03d93f1fdb5a63a79db7a16a61967e7",
+      "after": "e0b11936feec190b1f9a61a369e13522cdc4c660fb3be257ae792cd582249c48",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/product-journey-map/index.html": {
+      "before": "9da0c8c3303ca5099842ce3120634bb1d3320ed11f83066677367aed03417ccb",
+      "after": "29c6f8910a7c2e9a9ec86b4099dcc161b57f0b68b8ba1659f7844fa4dc77cbe5",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/product-landing-copy-audit/index.html": {
+      "before": "2ec4c6188e06dec5c44baf5303554653f77fe5defb670c288745f15d5ff19047",
+      "after": "8994db9ff21fda415a499169a6516ce723bb1a23669361dab4b5e8fcd6d6b79a",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/product-landing-copy-polish/index.html": {
+      "before": "19d166c9ce0568152006777d08245caab7ff457086293862c310009698cd67de",
+      "after": "48b9cce7c2518759bb8604b922bcc31661d148576c364acce92e7e90ff951a9b",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/product-metrics-events-map/index.html": {
+      "before": "554bd914a605109b76d30f516f1b5c6d75d39974fa0bc0f583e6bbfee860e943",
+      "after": "271358e48f92528097f07bacdb4d68021777fbcb583e1ba7d8e70a616753847b",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/product-requirements-audit/index.html": {
+      "before": "dc034dd73e31c7a2756e43e36463adbf19edb7f9e8ed0b7eaac616a907d25f79",
+      "after": "60376b5d571c03f3a89ae29524ab9ce21a895cb790ccab20ca48b1d0786449ca",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/product-requirements-map/index.html": {
+      "before": "c4a80629ee73f7eaaa9969162bec47f6b3fc14714d9ca1901d5dda61c572290d",
+      "after": "bd3ad25ba3f6ed9c4141fd06161c4867bb29afbec05454254d7d563275d1cd40",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/product-requirements-polish/index.html": {
+      "before": "553a59f83fef3fa95ed8ef0fc7461931c91d04c82439b644b69b186f52e958a6",
+      "after": "04e4e1c840f4be71f4750f65cb8370467c1f49f2c63c506882a229012b8433ac",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/product-ui-audit/index.html": {
+      "before": "674c032a05a71ec3ea0c7df2cd50228b4c423cad896e6ce05bad8c7bf8bdfc86",
+      "after": "b4c8670babb88ac91ea3021640f762828e22f41f9367e523d4800f7922c9c732",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/product-ui-polish/index.html": {
+      "before": "57f4f79538cbcdd8321b9284793433292bd45efcae242a9911ba7eb0e4bad828",
+      "after": "bbb0ab93c7f0dac703942a96d0bf554523b4886de7b292ecda0928ad7f51e506",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/project-atlas-map/index.html": {
+      "before": "2c18bcd497fab06111d3b1efae35249b1ca31236755288515a73a8bd9284c684",
+      "after": "e57125370b6f68f0252438ed6e2468c382e7bc5e8c95941a5ff4af34fe04e67b",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/prompt-skill-sync-audit/index.html": {
+      "before": "ea29309391dffae455378bff1e7f0166713b6500d51eb03a874ee157655aaa3f",
+      "after": "af7119d2566cf26009add5a755db8e5ca1fcee77bb479d2b48011dac2133b409",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/prompt-skill-sync-polish/index.html": {
+      "before": "0e4c78befec4107c36b3f254ef02e752be70facd0352d9038c9555e15eddd982",
+      "after": "54be1a4e5eb837bd4b960ecd2c25c92a7132ead5c5fba5ea8372c7c6e8974916",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/rabbitmq-audit/index.html": {
+      "before": "23f050a3e9bea1da452d9248d015f2918529eabaaa07b161a84bef4422d21843",
+      "after": "cc81c273b85e223c931b3b004d3c22585c446e4cf4d5af739dc86a812f1f4982",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/rabbitmq-polish/index.html": {
+      "before": "0f128cf309fe730528d8d286be078490dc657bb03acced34d5c3c30dc55ef972",
+      "after": "9b4c5c10154403abbcad5aa1fe77dcbf5dd2b9eae38094493ad9bb4aed2fc125",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/rabbitmq-redelivery-recovery-check/index.html": {
+      "before": "e16602e0a0076ac7d85332ac2686b535b8d5dc7de5df4b9c5044673b2f39531a",
+      "after": "74ec0e1ddbedaf17c6214d9a90c989dbaf6d5021af5234674f6f72a9e5e4eb3d",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/rag-audit/index.html": {
+      "before": "f35932e935bc3fc28bba23360c45151f6f1949dacd135b5f937ea267df29a954",
+      "after": "5f58e00800065b51342668f209859d113e4fa811567cf18255273987e2e888a7",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/rag-polish/index.html": {
+      "before": "7d9bf1e73b2b0b6a26362d5655fd30a2b8c21d793841a1855d4f0fca5e17fcb1",
+      "after": "08b258f2e6742455a5c4b598d21ea449e383fbfb9c7e77ec3576e2def972c23e",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/rbac-abac-matrix-check/index.html": {
+      "before": "5816ecccea0377f204cf048539a63764a7105642b79d71c86c044ab494cbd2e0",
+      "after": "4d0757715acd26299f789c307c1ede9acf08e2e28482de7d31da85c8b27e91e8",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/rbac-abac-policy-audit/index.html": {
+      "before": "4423a044ab99d27151a4ca610d774f718e067e9f0cfe8c1eb0838a31b29b8d10",
+      "after": "7fd8e23085424e379ead5ffc99f9ae4adc8ea2362b6aaf8ac2d35248807647ce",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/rbac-abac-policy-map/index.html": {
+      "before": "e9279529a762d3f8628af089ae483f6c8367bee1daf32365c93b2e6b48f80ea4",
+      "after": "095b16284db73801228aa83ae871d8325c89e900aa206dfc1a119b78d0147f0d",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/rbac-abac-policy-polish/index.html": {
+      "before": "6a9d7fdbf38bc0e0ac370f3bda6739db1f9bb135ef2ba868957bb5da96dd2c70",
+      "after": "f8ec822691b1454d9721db6ad6b657c67328854e5f1fec3c632c559a7a5e5cd5",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/readme-gen/index.html": {
+      "before": "9947498fa6ca88d568d2eb5143e7e87416c521acf9b587344dc60fc30f3818ef",
+      "after": "912f6d21543bb33acb78f59ae7e7f93b9b0747a9108851f41283a687090d3222",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/realtime-frontend-audit/index.html": {
+      "before": "8ed17119e7610450d3c12505b11d1768294bbc593ba3388da1228573c8ed1077",
+      "after": "e6923bc79b050e8398a0782ef3ed3a49ca52b326ff86bccd1ffdfaa4fbea0693",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/realtime-frontend-polish/index.html": {
+      "before": "6fd8a8a207149bb8562da15a31db26fda57d34ca8122d2d21f8c67b368a26653",
+      "after": "2e4aaf23b472537f5f21ef6f093514c20d8732bec7e265f0ad6c76af7de639a6",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/realtime-interface-profiling-recovery-check/index.html": {
+      "before": "a78f3a5e7864b765764b9586ff7e9e6ad6d59589739f138d837b9352cb67b4f2",
+      "after": "3488d86c706f057ee3b17a72bb70e4546afee7625a16d4b3a38864712466120e",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/redis-job-queues-audit/index.html": {
+      "before": "2892fdd2531edb91fd21b4ae456383633603b87f588c012e6dff7861776cf1fc",
+      "after": "6d888f698051c5aa5aee588a6c508ae746dfd25e4311a1a52d45256512ab6421",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/redis-job-queues-polish/index.html": {
+      "before": "fd73811f4f9775d8e8b6cd9153188b9f8423b520623cb94a0bee7cc96d6bf195",
+      "after": "0caec33ef7476f29c29795fca5b9b28b5e74f25620f3f0959fb87afca0bb6206",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/redis-queue-load-recovery-check/index.html": {
+      "before": "897cab98c4149d9b04622aacf12032f6e6bbc9de4622157f8c64697e918f52df",
+      "after": "661a161eb98b46e670409dcf65b2b86a9fb326a3ac5794ade3593ffe369769a8",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/refactor-boundary-audit/index.html": {
+      "before": "3d2790abcf7c91ebd4b1572728d16576a1ba0134e3f9e1d1542c3f34ed73032b",
+      "after": "338092f25a8543a7591193d0e0b1fe49221bc39b022c71d36f439536ab2a6188",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/refactor-boundary-polish/index.html": {
+      "before": "64d5c0ea572031d2336c693daa3a121152fde0fa17af5b963372a3b2eb90fa14",
+      "after": "72db6f38e4aa9eba75b6cfc8cf5ae8556c7989816b5deac413b22ec3f89a2d7b",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/release-artifact-trust-check/index.html": {
+      "before": "9e81c730378ba666395b703cd0ad17687cfeb960f097d8a89bf80bbc1a8aee55",
+      "after": "dbb46919605d091304e711a00d1608052ce70dba5d9d4b7f7f56b341e841edb4",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/release-readiness-audit/index.html": {
+      "before": "f76cd96e896f1b9789e5eb765df9a6725da5d729940f1778e02cb1903f23cfbd",
+      "after": "f8f5458d7ccbca786fa9ebdb14243496ca98f418c05bc4b8d9592ed915a9cc49",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/reliability-audit/index.html": {
+      "before": "147e2daba68645f6859f90ddbe38f94a5d0167707a410af5e66c72f7bfe644b0",
+      "after": "388836356df151799fb365c1621b68a471a37bba9f3c9ca11fbbfe5eb63d1786",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/reliability-polish/index.html": {
+      "before": "693eebe15d73d782293e14db558b05072f07de05a73544dbb8900fab3e2f60af",
+      "after": "cf444ceff0abfa4162f787dbc6ac6c3f328714fc07b91ae2ad1c4385cfd31256",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/reverse-engineering-audit/index.html": {
+      "before": "6fd2c35b273a259c35f5bfadb257afa6598ea011ec4cb950a7276f9b9d1206a7",
+      "after": "75092837e671046e935c773651867979699ed88133ee076aefcc0da746d79ab8",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/reverse-engineering-polish/index.html": {
+      "before": "a1d5f78eb405338ca1bf6027b6e27353fc2b532c72c2f047bf5a49fecf6c778f",
+      "after": "ab7b58a80e8fd559d48db62114f7f76ac7ecadb800ebc4fd9ae8131c7a45eee3",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/risk-release-map/index.html": {
+      "before": "9ae03c0b16d04fed3c176d8a492b45e947e2044d7cea7d160440515ca09db130",
+      "after": "452434e9dbb275d935e3cf24162120c86d1b9a803f83d11d607d2bd6200db1b0",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/runtime-flow-map/index.html": {
+      "before": "253516f9bc01cc3f9c4c7134978c6bdb434394734bca594a63dcf607917b7298",
+      "after": "0578f560f8df24b8d7bdc5afc7d0309c6969065ffd9d1fc867b10bbdb6c0ef1c",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/saas-navigation-map/index.html": {
+      "before": "0fec59d385b175cd58a5d65db4b94589247d372965172b6157b7a7ee21c9f9d5",
+      "after": "f5367f875604791c3aeefffb16366e546bb5ba38df14ea4c589aa2de2c3b9d9b",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/scoped-audit/index.html": {
+      "before": "c02f2aed9e64c658f8cf2ea2bb3844b58c994428ab44343a0b34852ccf97bbf0",
+      "after": "f9dcb60c7fa889ad7a33c785d0be7073960ca39e291410ef57268de47756dd51",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/scoped-polish/index.html": {
+      "before": "c3c1b4688062f2f6977099b47389620c6c1be697636416bbd1bd0297d8b7b020",
+      "after": "1e2c724b2025ec78220d9d26f056c13add414918bd07e10c3e787e88809b8282",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/search-index-audit/index.html": {
+      "before": "8aec52226964b4623237a5f2ce53db14c84f55ddcbacde266bd51457d6289fbb",
+      "after": "1fc539a081a82cdb62fb956e0037800c3a21808579f069a031b5e599e436b364",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/search-index-polish/index.html": {
+      "before": "f15b0ecd2674b96c096211c5d865df2f0726ac7a5defeb5ceffcca7898192062",
+      "after": "880563a9bbce0482865af8a06efbb4e1eccf33c6100aa294bfec1477cd69054a",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/search-recall-freshness-check/index.html": {
+      "before": "cc52b7471425f43db37c1152c85c5218af0410e9fd12aa9cf423b55845b7de40",
+      "after": "a2ce9b0c0e09beb2ad92ab59b6833e07bb81ff5cb57ce0c41fa5c754068a42de",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/security-abuse-defense-check/index.html": {
+      "before": "3484a53d982d44f618486d45b054660befb215268a49125d48972dc0b75e6ed6",
+      "after": "038433df1967286b9c3f97f765509bc131d273e12579bd5ceb94323c0aeb5c4d",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/security-audit/index.html": {
+      "before": "eb869f10a495b6ed33a4f4b9a53c86153579d457b32d6e325b4d8b003678f3fc",
+      "after": "0585cbe0684d99f306dd56af23a487b4ce3d0990a32fb8a09513da00139a35a9",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/security-polish/index.html": {
+      "before": "64378563dac9fa7b202e9c6d807940b79cde359eb2e15dbe592a607e2cf5fb10",
+      "after": "504862f1f1cb0fef40a30c82a4815cbe995f844eab50ce7475229ba9e28914f1",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/seo-geo-audit/index.html": {
+      "before": "627d9d340de821b8350c144ac970ad18a7e0d734a714e2d8fb301c3635200e40",
+      "after": "72e74f3a0041ff97c7318cc56a4a9c1fbb7078b79a4563e15ee3be4a10a0c9f3",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/seo-geo-polish/index.html": {
+      "before": "b0c85e26a36311323d4221a6862a24f751e1e42f366f707375bc39ecc1b0feab",
+      "after": "9e89d01a634f3c778814c59627d52a29c8f23e5acf8cb8b12380d1e80da8a69c",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/serverless-invocation-check/index.html": {
+      "before": "88871e88012ba8e2c5141a733b27aea6a1a3f3c1917c6a27eff03251f859d6aa",
+      "after": "e291091c18342509293a13e8f5b97e1dbedd44e478224696e6323d46c862ba46",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/serverless-runtime-audit/index.html": {
+      "before": "ba18cd070e7705c4ad7466f5b2b9ffbb63f18e2f764b6ab766fc339ee3e1e383",
+      "after": "4565f894727d4ed0311f54b24c49534e749d3e6edade925500205cb5d771e367",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/serverless-runtime-polish/index.html": {
+      "before": "1b49bba03cc8ba9e059deb700c8e29b46a5ec640d52af629a504700e5ef431ad",
+      "after": "3a30b986a20a07c709b612011ac596b06402efc21c32ff1b5bf5519c05cf69f0",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/sql-databases-audit/index.html": {
+      "before": "e6032bb120b2533f57fbc8c43a346d01da0740bcf556bd7283f8a667b8616b30",
+      "after": "2fbe3af8abbef0ced40bd2186494e6cf663c616809dae708ba3f3228e6df3440",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/sql-databases-polish/index.html": {
+      "before": "3bc0906415b3c51649b9304557d70b9a2b9e28fe5f0e6c3519ff364bb6b11c99",
+      "after": "e39654a8b5b5f1861c522d8116e3d12a4328c2501ae99f01495ed415667811fe",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/sql-load-lock-failover-check/index.html": {
+      "before": "a85bb4bf04d88948b7d0b1b5223c1f6278a81a87094c797e5a89f04009cf0cbf",
+      "after": "87c4dda81c2f16c265e0e305810fb8db6b6229d54920e7f609263bd0a14690ef",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/synthesis/index.html": {
+      "before": "a418c6427942dc3ac52abb90395305ba7320243b31862d85d0470a645a34440f",
+      "after": "3ca2df203ec20feb965a0ef6b156f9a6863f78defec1ad65609e3e04787b4480",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/system-security-hardening-audit/index.html": {
+      "before": "ec14836b5d732ef54411f52815f6b5f37fa3a375d39e62499733a32580bf8ef1",
+      "after": "49f53bc9535fe8e36bed55f474b1b704a6776990b8ec535d5c33b0ec2d134922",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/system-security-hardening-polish/index.html": {
+      "before": "6f4c887eb27823ed7d6677d228fa0acca78830265cfe42a8ed742c52fc81a9a0",
+      "after": "ee5b4b8d0a6dac9f6f844d50d42bda476774cb52abea61c81c2f0fac5b945c76",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/task-shaping/index.html": {
+      "before": "81b8f7aea8b8a745d7c3fc6a3e2bfe93a32479284a046dc204bd9413635c51ad",
+      "after": "efca8c655172893a94dc602c6b908ce62a340407771b0c820c78d66f9ca24287",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/temporal-replay-versioning-check/index.html": {
+      "before": "aaa52e3d9c1b63b9b8edfb2b39078ef279d692624dc4f60d56281690aab09d67",
+      "after": "fd6cd5a031f982483c0efd1fe7878e20f89ffd418bf126ddbc50e389d5da46d8",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/temporal-workflows-audit/index.html": {
+      "before": "5982b7b84500474fbfb826db77f47cdba9e04f1900a0cd81cbe249fa23841cb2",
+      "after": "361e73af80996dea3e59bc25624652f18e4cd3c6189ab99e43ed55bc4aa6f2b9",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/temporal-workflows-polish/index.html": {
+      "before": "a2915199a0947a65ec2dad3f66f387747711e4eb144fb6fa58f3c98126272f83",
+      "after": "adf1933065110d08526c4cb8176e912d2369ff090d037f4ffc0674690b7f38ad",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/tenant-isolation-check/index.html": {
+      "before": "0dde1228aeadd6bfeac509476b64214f6db20bd158f56eb9514c4f53743e43ff",
+      "after": "1b630a0ea9d063cb87a0c486bad722e4a0f2fed0c60cebd6f58c73870254608c",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/terraform-delivery-audit/index.html": {
+      "before": "513f9a54530fa391d7e97a821c3059e08edd92b3cd9b2e346014860ffd42662e",
+      "after": "aa27eb0ce348d00fd0805e882318916da84af9bfb7d9aa6ee65fee760c9e5bc2",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/terraform-delivery-polish/index.html": {
+      "before": "36885a7e0599acdf4bc294dd00be8cfd45be4383c0b661245cc204369c2399b9",
+      "after": "712be9edd99c6a60f8e48512810266991b74cf1fb5fb9e1f66be425f9a5eb56b",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/terraform-plan-state-check/index.html": {
+      "before": "45dfd553ee61322ee0aefdc7798a12183a9f0f1f7d04c99f8b408a6e17500d1e",
+      "after": "d52fdc3788fc1b8e6212018a326b1b0684739292a93bfb1968d0f27fd90fe5c7",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/test-coverage-audit/index.html": {
+      "before": "135a2b9c9d4a43cf3fdb2ddcae73bd0a5cdd34e6badd47f65d0362c029c78e02",
+      "after": "dcd85b07c060185a933b03f11cb1f05f4b05f7cf5f660249836197d33fc8a5ae",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/test-coverage-map/index.html": {
+      "before": "df8a4f398463b1759b79f697a5c59382faa33696071b624092969960fa479b06",
+      "after": "7d816c68e6849368a2f5cce83eb31b5270f9f938b67e7855a1ba0fd72f1f359b",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/test-harness-polish/index.html": {
+      "before": "1d7e3346e28d95c595f15378152f27595171202f16691df81ef80b36a0230a76",
+      "after": "23dc9217ed0aba3b214138314946fca1f245074c57dd1da248bf6263c947b481",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/traceability-map/index.html": {
+      "before": "3493edd41e13b022c461df349214229b9488498b8597cc7320bdffd07bc93f9a",
+      "after": "f8a3ad3266ab89f3cbcd677108bc9dedbc62d97c0d887280a273eacfd1b2e904",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/transactional-delivery-check/index.html": {
+      "before": "7852c33030c512206e045ba259ed6261602614f860c82ab04b5aaa0d74ec940d",
+      "after": "caa50cd1e63042dd4969faea4aeba26a6b5dffc4d6b304f48323feb59130caca",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/ux-flow-audit/index.html": {
+      "before": "dc8a01bb45d5a48050c728dcdfd6f3eb775f18dce240243cad7b29883e13f4d1",
+      "after": "f89fe4097b8ea2b699e90811ff020f71d448a86c3c55e6bc9f2e52059e0a2c92",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/ux-flow-polish/index.html": {
+      "before": "86a3ca3613e86240bb3279c5ec20d678423b3aedf5390156007bd48345097459",
+      "after": "8d9a954c28620c42de23bca9444f0155516e26ee8aee72563e0d7dbdc7f02fee",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/validation-clarification/index.html": {
+      "before": "bac6202d5dbc44d24e132c6fcc0d14b0dd7540e9fb3b3d77207aab63ed46262a",
+      "after": "c13979f65f08e7eab2f7e51395aaf1f6707163c59c032ba99facf3f18ee02d2b",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/vector-databases-audit/index.html": {
+      "before": "c1dceb824ee5c4d9513616a630d650a51820f1400e4e4eb7df336a8b57725817",
+      "after": "c8a00ff210680496cd852dd7f28bef56129e35c2a84476705745fc2414699f71",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/vector-databases-polish/index.html": {
+      "before": "6e2089aa9e8dd5e2625648fd53ac7f7de638dc9aa46a98b1083858e4e64ed3b0",
+      "after": "5fa207587a8cde24471832a5d544e161250f6fc9649757a49da9d58538159e1c",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/vector-recall-degradation-check/index.html": {
+      "before": "15e0e48ee3950571de44ade83e487b306ffe663cbfa99822c95569146d803cef",
+      "after": "341ae43caad1a6ddb61710500fb781f5b0419d60d4dd7165f5f546420a3ca4fe",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/visual-regression-check/index.html": {
+      "before": "29385cfbf877c0a76b2095fee293a5162dc8dccddc6698086fa7862b3b62ecc1",
+      "after": "2c5d8122351436c433fcef3a129bc11449e8c22b5ffbf13a4b2a75eae9eb1484",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/web-boundary-check/index.html": {
+      "before": "8e0d6606c26db9c18334a6c2e431e316f6fca48cd248c3300cc5cb5866b8a967",
+      "after": "468dd3a3b841ccafcd97a82e40cc720937b2a65d4ce4dd9b5623009a3cc48939",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/web-rendering-audit/index.html": {
+      "before": "dd29769c3960e9c25ea39bbaaf98e2b1b9e84aef72a629f82982c57080401d3a",
+      "after": "9516dbeb30e26940fa4a0582b89b88b524a6d3777369c99d143fd2e002ba27b7",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/web-rendering-polish/index.html": {
+      "before": "4208e70f4c80eb216af145881f2a850a67b0faa52b577a58689d49a85d62bcd6",
+      "after": "713184e43480fe208007498d94fec6eec12e370ddb18ac2d04d61442675bf628",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/workflows/workstream-decomposition/index.html": {
+      "before": "72e4d2638a8ae255320b1bd8433791230de4ff2021269d6d99e2f54df1dddbae",
+      "after": "4710eae9a74d5389557df797ccdfe6a01e66f17de3d129ee68801550a67d92fa",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/zh-CN/index.html": {
+      "before": "25e23c82512baa2079f0d48d91b65cefed20cdce62cd465dc67c11b80f515a82",
+      "after": "647823350a196b539d0c38cbe0f4d69b9b33caa347af862125d9b1a3027368cc",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/zh-CN/privacy.html": {
+      "before": "9b22eb86cedd5e850170caa304ac64cd9c77318958462d7545cd293f174df2a9",
+      "after": "d3ca618f207c7648459a6e15f617adf077a2abd69bb6b7800e61ab44faa2bf5f",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/zh-CN/terms.html": {
+      "before": "c704f983b29c113430688e7ef8cb2c149e5ac001bac1caa02857dc0d08368424",
+      "after": "11e9712ec2673342ba8dc6b09e2a8874412414d6b9f629e982cc3726cc8bbc67",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "docs/zh-CN/workflows/index.html": {
+      "before": "bd5260060556dceec1c0bd8c77c49e9d8ca98dee1920c3826eaa20f0c4764842",
+      "after": "5b519ea38966cddec9ee4d2c0c9fb965e0525f17333b78b7998b26cdbccb3216",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "scripts/build_site.py": {
+      "before": "60553deb7321e4bb281899d3952807619d80a17ed48a6c8645ebf0ddcc44afa8",
+      "after": "b7466ecfcea923f63c8388dd3185b5049b91422914514dcdc790656223f2dc1d",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "scripts/package_openai.py": {
+      "before": "f55bd3a31c990ead11c23040def784b6dc3404c9bc946723cb5a9e75029ec0f5",
+      "after": "7352be262a5c65dc2d9d0eb07985770e9db5d9c854c4181cf14c0ea8c43fbbf8",
+      "review": "Add the MCP edition and its marketplace/package verification while preserving the offline release and historical evidence."
+    },
+    "site/content.json": {
+      "before": "b7696461f98eedffb4dda9f06cbd0747e516e0c887cea0b27382ebba0882a2c7",
+      "after": "2c22fa88afd828db47cd98a22f6bafde505533e628ef24cce612a6bbb4c46d6e",
+      "review": "Add public MCP Library navigation and distinguish its data contract from the unchanged offline plugin."
+    },
+    "tests/test_evaluations.py": {
+      "before": "a671bbc122127d07eda69d86696e2d8c55bbf21eccab97c00c71fda714893cde",
+      "after": "c16e998d0258604e417dd580419c5181c0d54388c94b33ec542f64874d200520",
+      "review": "Add the MCP edition and its marketplace/package verification while preserving the offline release and historical evidence."
+    }
+  },
+  "new_files": {
+    ".github/workflows/mcp-library.yml": "cbcbb9fb4b42e78c591ce900a2a42bc0b58fb068f945b853f2754a2b28e6447b",
+    "mcp/README.md": "05c8c44d01d0087d817e34d72623f0690f51c054d0f029857f770517e6a68992",
+    "mcp/dev.js": "ab2194e6b5d008b9429ea5f4fc27fcdedf6163deed076335a79b19d3bfefced5",
+    "mcp/generate.py": "2fbcccb162c7f6be6dacfb084519cb9c2bb1911d61bbbee77e947f63254f5a7a",
+    "mcp/library.js": "0cc24fc830253ec4a55e6565d489fa2f3022b02b4fa1eb971a9cacb6cd50d0da",
+    "mcp/package-lock.json": "c3199bfb740b8d787f74dafd812be3c20e2193a76192e1f1f882e3de3511f27c",
+    "mcp/package.json": "5fcc0288e0bef4a3733f309c88c58c7017b9e57f21a793478f6a46f6a610dc17",
+    "mcp/review-cases.json": "2334e88c9c29aa71c1c17dcfe461a8b4657610e777e020ef7154b7410cee6b26",
+    "mcp/run-review.js": "d76e8a4237da6b0cad9ee5178504bbe56e5e2ed1343f3bf01c37d9c1df5ac4f4",
+    "mcp/server.js": "abd72d8a66623185d37616c095a3550330c851d53226f91ef7db5942697490ad",
+    "mcp/site/app/.well-known/openai-apps-challenge/route.ts": "f75c51a6a329b4c2df82efbc8772f09f9f738a091a2bc77e401ce0d644677872",
+    "mcp/site/app/demo.tsx": "ab34b5808c658080652e4fc1fdcfd9f88fba496aa1d3890861a39a482593cc09",
+    "mcp/site/app/globals.css": "098bb1029796f9c389375fe045e49d732bb2a336ac3b0b8e728b7ba368d37d49",
+    "mcp/site/app/health/route.ts": "3d47035514e424c83433c6d271ad2ca5cd0066d085b597edad948b63f7ad6fe6",
+    "mcp/site/app/layout.tsx": "6010a889e2ffa80602d51a4e442f4d0a1ab1dd2daf67af6fe59f344487b450c7",
+    "mcp/site/app/library/mcp/route.ts": "4d31b355d1018a897e10553d50ea686a4ed14001b7f7a9630515ddac0697a1b9",
+    "mcp/site/app/page.tsx": "91a037a8cae9a45c9ce0a586a9efd94ce8b0d85675b0b1cf47fb7693dae4da02",
+    "mcp/site/app/privacy/page.tsx": "53b9e50143f308ebb93be3d07db74278e0e2acf6777328cfaaabdf409ba1782a",
+    "mcp/site/app/terms/page.tsx": "b3d0c27af77ee543d309889dc028880bcc7122fa950ec72ffa09e660114109a7",
+    "mcp/stage-site.py": "6601340a810aee48d312dbb582bd258fdae5b697ef2eafa2162d372a37625703",
+    "mcp/tests/http.test.js": "7d48236b5185d43676100de481ffd154fad4ac934babbb0a3bf6312a4980da31",
+    "mcp/tests/library.test.js": "b8cc009956fcd26d61d7b09e704e8a328d376a3a239b44131c52367401e1b480",
+    "plugins/vibe-coding-library/.claude-plugin/plugin.json": "1e41a5e73b6c8ebd8625dced2c86590c0e58b6cb40f369fd31a4107d73e7f384",
+    "plugins/vibe-coding-library/.codex-plugin/plugin.json": "07144d630a319a4357f4c16f35ea7635b72b939ede92015ba97701c364b6e090",
+    "plugins/vibe-coding-library/.mcp.json": "dd7307c2d5b0f2c4413e680cdd57e2adaf827093569ecdf11b7481514139ea10",
+    "plugins/vibe-coding-library/LICENSE": "ae4121b168d050e0495117273967f338e52e5c177c38d4aaa60637f989e32d62",
+    "plugins/vibe-coding-library/README.md": "124fb49be793c3938e51478716b78763823a0c24878d14f0375f668022f17558",
+    "plugins/vibe-coding-library/assets/icon.png": "542c67dd39ad7113e556b1052f5cc61b3328aec0ed075a44c8479acf71fdc751",
+    "plugins/vibe-coding-library/mcp.json": "e6bdfc9b59791a5441718ed2cacf2144d256d0e8e2ef397cd5a9f61ad5a02e8f",
+    "plugins/vibe-coding-library/plugin.json": "da4882b7e7ad1585e6b05c7a09a81f1208660f9098f02821fb5e4effdda6be6b",
+    "plugins/vibe-coding-library/skills/vibe-library/SKILL.md": "6b17f2828c207c4eb7c5f908deb569d22c888f8aed9eed425edd05aca27320e7",
+    "plugins/vibe-coding-library/skills/vibe-library/agents/openai.yaml": "60ae532f04b94072179fa60b267f6263e764884448d28890b5e66736c73b4747",
+    "scripts/package_openai_mcp.py": "2d5f71bac69fd7e34c5a92da3157003396be450422106a71e60e5ea0826951c3",
+    "tests/test_mcp_distribution.py": "de0b1dd73d45e0b3e8fdb3802dc0bddbe32b9ea697f9a6deb9683920986bf748"
+  },
+  "checks": [
+    {
+      "id": "runtime-protocol-and-library",
+      "observed": "Nine Node tests pass: official MCP clients in both protocol eras over real loopback HTTP; all 241 contexts and their source hashes; four catalog languages; strict inputs, pagination and transport failures.",
+      "limits": "Deterministic SDK and tool behavior; no independent model selection evaluation."
+    },
+    {
+      "id": "production-review-cases",
+      "observed": "Five positive and three negative cases passed with the official MCP client against https://vibe-coding-library.swift-seal-1081.chatgpt.site/library/mcp using protocol 2026-07-28; the public browser console replayed all eight cases with actual responses.",
+      "limits": "Natural-language model routing is not established by scripted tool calls. Directory review and publication are verified separately."
+    },
+    {
+      "id": "package-and-host-format",
+      "observed": "The portable plugin and MCP configurations validate against the referenced Agent Plugins schemas. Claude Code 2.1.278 validates the new plugin and marketplace. The new selection skill passes the official skill validator.",
+      "limits": "Schema checks do not imply marketplace acceptance or publication."
+    },
+    {
+      "id": "repository-regressions",
+      "observed": "55 Python tests pass, including preserved historical records and the MCP distribution countercases.",
+      "limits": "Static and deterministic checks; no marketplace approval is claimed."
+    }
+  ],
+  "limits": [
+    "All 297 offline instruction files and release artifacts remain unchanged.",
+    "The new MCP edition uses a separate OpenAI draft; it does not claim to migrate or update the existing skills-only listing.",
+    "Application error logs exclude arguments and results; hosting-provider retention remains governed by provider policy."
+  ]
+}
