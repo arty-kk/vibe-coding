@@ -7,7 +7,7 @@ import {startServer} from './dev.js';
 const cases = JSON.parse(await readFile(new URL('./review-cases.json', import.meta.url)));
 const local = process.argv[2] ? null : await startServer();
 const endpoint = process.argv[2] || `http://127.0.0.1:${local.address().port}/mcp`;
-const client = new Client({name: 'vibe-library-review', version: '1.5.0'}, {versionNegotiation: {mode: 'auto'}});
+const client = new Client({name: 'vibe-library-review', version: '1.5.1'}, {versionNegotiation: {mode: 'auto'}});
 const results = [];
 try {
   await client.connect(new StreamableHTTPClientTransport(new URL(endpoint)));

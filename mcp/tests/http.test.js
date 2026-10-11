@@ -9,7 +9,7 @@ before(async () => {server = await startServer(); url = `http://127.0.0.1:${serv
 after(async () => {server.closeAllConnections(); await new Promise(resolve => server.close(resolve));});
 
 async function client(mode) {
-  const result = new Client({name: 'vibe-library-tests', version: '1.5.0'}, {versionNegotiation: {mode}});
+  const result = new Client({name: 'vibe-library-tests', version: '1.5.1'}, {versionNegotiation: {mode}});
   await result.connect(new StreamableHTTPClientTransport(new URL(url)));
   return result;
 }
@@ -60,7 +60,7 @@ test('Origin denial and malformed protocol do not look like successful tool call
 
 test('modern method, name and version headers must agree with the request body', async () => {
   const meta = {'io.modelcontextprotocol/protocolVersion': '2026-07-28',
-    'io.modelcontextprotocol/clientInfo': {name: 'header-tests', version: '1.5.0'},
+    'io.modelcontextprotocol/clientInfo': {name: 'header-tests', version: '1.5.1'},
     'io.modelcontextprotocol/clientCapabilities': {}};
   const body = JSON.stringify({jsonrpc: '2.0', id: 9, method: 'tools/call',
     params: {name: 'get_workflow', arguments: {id: 'api-audit'}, _meta: meta}});

@@ -14,7 +14,7 @@ async function rpc(call: Call): Promise<RecordResult> {
     'MCP-Protocol-Version': '2026-07-28', 'Mcp-Method': 'tools/call', 'Mcp-Name': call.name
   }, body: JSON.stringify({jsonrpc: '2.0', id: ++requestId, method: 'tools/call', params: {...call, _meta: {
     'io.modelcontextprotocol/protocolVersion': '2026-07-28',
-    'io.modelcontextprotocol/clientInfo': {name: 'vibe-library-console', version: '1.5.0'},
+    'io.modelcontextprotocol/clientInfo': {name: 'vibe-library-console', version: '1.5.1'},
     'io.modelcontextprotocol/clientCapabilities': {}
   }}})});
   return {call, response: await response.json(), status: response.status};

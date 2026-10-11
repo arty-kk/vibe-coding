@@ -12,7 +12,7 @@ destination = args.destination.resolve()
 if destination.is_relative_to(HERE.parent):
     parser.error('Use an isolated hosting checkout outside the public plugin repository.')
 manifest = destination / '.openai/hosting.json'
-if not manifest.is_file() or not json.loads(manifest.read_text()).get('project_id'):
+if not manifest.is_file() or not json.loads(manifest.read_text(encoding='utf-8')).get('project_id'):
     parser.error('Configure the Sites project and persist its ID before staging.')
 if not (HERE/'generated/library.json').is_file():
     parser.error('Run python3 mcp/generate.py before staging.')

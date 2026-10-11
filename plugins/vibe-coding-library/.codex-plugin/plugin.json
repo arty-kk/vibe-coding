@@ -1,6 +1,6 @@
 {
   "name": "vibe-coding-library",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "description": "Search 241 engineering workflows and load the selected working context through a public, read-only MCP server.",
   "author": {
     "name": "Arty S.",
@@ -44,7 +44,7 @@
   "extensions": {
     "com.openai": {
       "publication": {
-        "release_notes": "Vibe Coding Library 1.5.0 adds public MCP search and selected workflow retrieval, with bounded pagination, four catalog languages, complete versioned instruction bundles and read-only tool annotations. The audited instruction library remains version 1.4.1. The existing offline Vibe Coding package remains available separately.",
+        "release_notes": "Vibe Coding Library 1.5.1 fixes UTF-8 handling in the cross-platform package builder and snapshot generator, preserving localized metadata on Windows. The public MCP search and selected workflow retrieval use the unchanged audited instruction library 1.4.1. Both read-only tools, stable IDs, schemas and workflow content remain compatible with 1.5.0.",
         "translations": {
           "es-ES": {
             "subtitle": "Flujos de código bajo demanda",

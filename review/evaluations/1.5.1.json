@@ -1,0 +1,109 @@
+{
+  "version": 1,
+  "release": "1.5.1",
+  "date": "2026-10-11",
+  "baseline": {
+    "release": "1.5.0",
+    "file": "review/evaluations/1.5.0.json",
+    "sha256": "8ca3d7704dc19f7c58fae9abf4e21155353a30312c0209ae072504acf2f6e182"
+  },
+  "changes": {
+    "CHANGELOG.md": {
+      "before": "533e25aaa62944d0ccf04c44fa8b2717482ae2dd7bce6ce3a1e01735de139b83",
+      "after": "b86e4abbd4ad7be6cd57e98155faf41f53d5453ae87a66613331d07422e85db3",
+      "review": "Make UTF-8 decoding and LF generation explicit; advance the compatible MCP distribution to 1.5.1 and record the focused portability verification."
+    },
+    "mcp/generate.py": {
+      "before": "2fbcccb162c7f6be6dacfb084519cb9c2bb1911d61bbbee77e947f63254f5a7a",
+      "after": "80a27f328da052b374490b90243a80e1d4059d23b087140ccb5996560f74f782",
+      "review": "Make UTF-8 decoding and LF generation explicit; advance the compatible MCP distribution to 1.5.1 and record the focused portability verification."
+    },
+    "mcp/package-lock.json": {
+      "before": "c3199bfb740b8d787f74dafd812be3c20e2193a76192e1f1f882e3de3511f27c",
+      "after": "0c24c86bc1c74947e0293afd94cc272954732264cbc9f02293f734519695796d",
+      "review": "Make UTF-8 decoding and LF generation explicit; advance the compatible MCP distribution to 1.5.1 and record the focused portability verification."
+    },
+    "mcp/package.json": {
+      "before": "5fcc0288e0bef4a3733f309c88c58c7017b9e57f21a793478f6a46f6a610dc17",
+      "after": "d6adb2e3f82ddbaf9ccbe2c03abf872d1884eee6ce21ba84f8ece46924ab14c8",
+      "review": "Make UTF-8 decoding and LF generation explicit; advance the compatible MCP distribution to 1.5.1 and record the focused portability verification."
+    },
+    "mcp/run-review.js": {
+      "before": "d76e8a4237da6b0cad9ee5178504bbe56e5e2ed1343f3bf01c37d9c1df5ac4f4",
+      "after": "2e9010d8f323f6843d4d906dce759719c549e482fd55183bbe89bd64beb1cfc0",
+      "review": "Make UTF-8 decoding and LF generation explicit; advance the compatible MCP distribution to 1.5.1 and record the focused portability verification."
+    },
+    "mcp/site/app/demo.tsx": {
+      "before": "ab34b5808c658080652e4fc1fdcfd9f88fba496aa1d3890861a39a482593cc09",
+      "after": "12eefda8a2768637e23709bdb9e9d545130262be2ecbc27b4c5b3b048c2b0a30",
+      "review": "Make UTF-8 decoding and LF generation explicit; advance the compatible MCP distribution to 1.5.1 and record the focused portability verification."
+    },
+    "mcp/stage-site.py": {
+      "before": "6601340a810aee48d312dbb582bd258fdae5b697ef2eafa2162d372a37625703",
+      "after": "93b3aa66cb4de0e91bdcca4c60ad8ad59cad133f42336cba3b0c048d13b80dd3",
+      "review": "Make UTF-8 decoding and LF generation explicit; advance the compatible MCP distribution to 1.5.1 and record the focused portability verification."
+    },
+    "mcp/tests/http.test.js": {
+      "before": "7d48236b5185d43676100de481ffd154fad4ac934babbb0a3bf6312a4980da31",
+      "after": "02f8dddf3378e2e7357414d85d35d43967c113892675960d81200d2153607bac",
+      "review": "Make UTF-8 decoding and LF generation explicit; advance the compatible MCP distribution to 1.5.1 and record the focused portability verification."
+    },
+    "plugins/vibe-coding-library/.claude-plugin/plugin.json": {
+      "before": "1e41a5e73b6c8ebd8625dced2c86590c0e58b6cb40f369fd31a4107d73e7f384",
+      "after": "3406e62de262afe2d8baffaa81d3539e668d9ff3061b0d8f6c18b6d87420643c",
+      "review": "Make UTF-8 decoding and LF generation explicit; advance the compatible MCP distribution to 1.5.1 and record the focused portability verification."
+    },
+    "plugins/vibe-coding-library/.codex-plugin/plugin.json": {
+      "before": "07144d630a319a4357f4c16f35ea7635b72b939ede92015ba97701c364b6e090",
+      "after": "43e0a897f7203035d7cfdea5baba413a75776bbfcd8691c8b6fa6f13d1625498",
+      "review": "Make UTF-8 decoding and LF generation explicit; advance the compatible MCP distribution to 1.5.1 and record the focused portability verification."
+    },
+    "plugins/vibe-coding-library/README.md": {
+      "before": "124fb49be793c3938e51478716b78763823a0c24878d14f0375f668022f17558",
+      "after": "697b7fe98592b1c80cf6358c1a4cdc662eace27a702ab0a573a5a3830f0137da",
+      "review": "Make UTF-8 decoding and LF generation explicit; advance the compatible MCP distribution to 1.5.1 and record the focused portability verification."
+    },
+    "plugins/vibe-coding-library/plugin.json": {
+      "before": "da4882b7e7ad1585e6b05c7a09a81f1208660f9098f02821fb5e4effdda6be6b",
+      "after": "99ec62608b1f7218284be666f60c40023a9eef574e5e9402b1fd821cd670be5d",
+      "review": "Make UTF-8 decoding and LF generation explicit; advance the compatible MCP distribution to 1.5.1 and record the focused portability verification."
+    },
+    "scripts/package_openai_mcp.py": {
+      "before": "2d5f71bac69fd7e34c5a92da3157003396be450422106a71e60e5ea0826951c3",
+      "after": "f4d23307c01573d142c274430483a7801d6793a2f35f49de533ea06223f02423",
+      "review": "Make UTF-8 decoding and LF generation explicit; advance the compatible MCP distribution to 1.5.1 and record the focused portability verification."
+    },
+    "tests/test_evaluations.py": {
+      "before": "c16e998d0258604e417dd580419c5181c0d54388c94b33ec542f64874d200520",
+      "after": "74d046a88705a4ef9682e5ef9a602267f0e5198844bd5630e9fdb46b7129c975",
+      "review": "Make UTF-8 decoding and LF generation explicit; advance the compatible MCP distribution to 1.5.1 and record the focused portability verification."
+    },
+    "tests/test_mcp_distribution.py": {
+      "before": "de0b1dd73d45e0b3e8fdb3802dc0bddbe32b9ea697f9a6deb9683920986bf748",
+      "after": "9b19650e7aaffb5192edfe3f4c01949e02682e585ad1805bede2f59a781629a0",
+      "review": "Make UTF-8 decoding and LF generation explicit; advance the compatible MCP distribution to 1.5.1 and record the focused portability verification."
+    }
+  },
+  "checks": [
+    {
+      "id": "windows-regression",
+      "observed": "GitHub Actions run 38152472484 failed in Windows packaging because pathlib.read_text used cp1252 for a localized UTF-8 manifest. The builder, generator, staging helper and tests now declare UTF-8 explicitly. A subprocess package build under an ASCII default locale passes and preserves the Chinese subtitle.",
+      "limits": "Windows is verified by the subsequent CI run; the ASCII-local regression is an additional reproducible control."
+    },
+    {
+      "id": "runtime-unchanged",
+      "observed": "Nine MCP tests pass for both protocol eras and all 241 workflow contexts. The compiled 297-file instruction digest remains 6b7ab07ec96f22a60d135321fb448ab72ac6fe8e6b7597defc2938dcb5094f21.",
+      "limits": "No workflow instructions, tool names or schemas changed; the original live console walkthrough remains representative of the same tools."
+    }
+  ],
+  "limits": [
+    "Prior release and evaluation records remain immutable.",
+    "Marketplace approval is separate from source, runtime and package validation."
+  ],
+  "artifact": {
+    "file": "dist/vibe-coding-library-1.5.1.zip",
+    "bytes": 33452,
+    "sha256": "91de312c838cd3135b8e5a3eca1aaee5acfd7428db661ffbbae72cba0f4984b9",
+    "entries": 10
+  }
+}

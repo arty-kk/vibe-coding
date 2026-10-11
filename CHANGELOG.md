@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.5.1 — Vibe Coding Library
+
+- Read localized manifests, review cases and catalog resources as UTF-8 on every platform instead of the operating system's default encoding.
+- Add a package regression check under an ASCII locale; preserve the same tool schemas, workflow IDs and audited instruction bytes.
+
 ## 1.5.0 — Vibe Coding Library
 
 - Add a public read-only MCP distribution: search the 241-workflow catalog, then load the selected recipe, domain skill, working contract and required references.

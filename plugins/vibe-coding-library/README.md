@@ -1,6 +1,6 @@
 # Vibe Coding Library
 
-Search 241 engineering workflows and load one selected working context over MCP. The server returns the selected recipe, its domain skill, the working contract and directly required references. The audited instruction library is version 1.4.1; this MCP distribution is version 1.5.0.
+Search 241 engineering workflows and load one selected working context over MCP. The server returns the selected recipe, its domain skill, the working contract and directly required references. The audited instruction library is version 1.4.1; this MCP distribution is version 1.5.1.
 
 Use `$vibe-library` in Codex or `/vibe-coding-library:vibe-library` in Claude Code. The search catalog supports English, Spanish, Russian and Simplified Chinese; technical instructions are in English.
 

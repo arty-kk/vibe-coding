@@ -1,11 +1,21 @@
 {
   "name": "vibe-coding-library",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "description": "Search 241 engineering workflows and load the selected working context through a public, read-only MCP server.",
-  "author": {"name": "Arty S.", "url": "https://github.com/arty-kk"},
+  "author": {
+    "name": "Arty S.",
+    "url": "https://github.com/arty-kk"
+  },
   "repository": "https://github.com/arty-kk/vibe-coding",
   "homepage": "https://arty-kk.github.io/vibe-coding",
   "license": "MIT",
-  "keywords": ["engineering", "workflows", "coding", "mcp", "review", "debugging"],
+  "keywords": [
+    "engineering",
+    "workflows",
+    "coding",
+    "mcp",
+    "review",
+    "debugging"
+  ],
   "mcpServers": "./.mcp.json"
 }

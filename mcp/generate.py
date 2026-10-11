@@ -10,9 +10,9 @@ PLUGIN = HERE.parent / 'plugins/vibe-coding'
 
 
 def build_library():
-    catalog = json.loads((PLUGIN / 'catalog.json').read_text())
-    version = json.loads((PLUGIN / 'plugin.json').read_text())['version']
-    locales = {code: json.loads((PLUGIN / f'assets/catalog/locales/{code}.json').read_text())
+    catalog = json.loads((PLUGIN / 'catalog.json').read_text(encoding='utf-8'))
+    version = json.loads((PLUGIN / 'plugin.json').read_text(encoding='utf-8'))['version']
+    locales = {code: json.loads((PLUGIN / f'assets/catalog/locales/{code}.json').read_text(encoding='utf-8'))
                for code in ('en', 'es', 'ru', 'zh-CN')}
     files = {}
 
@@ -48,7 +48,7 @@ def build_library():
         row['dependencies'] = sorted(set(dependencies))
     digest = hashlib.sha256(''.join(f'{path}:{file["sha256"]}\n'
                                    for path, file in sorted(files.items())).encode()).hexdigest()
-    return {'version': json.loads((HERE / 'package.json').read_text())['version'],
+    return {'version': json.loads((HERE / 'package.json').read_text(encoding='utf-8'))['version'],
             'instructionVersion': version, 'digest': digest,
             'recipes': catalog['recipes'], 'skillCount': catalog['skills'], 'files': files,
             'locales': {code: {key: locale[key] for key in ('titles', 'summaries', 'categories', 'modes')}
@@ -59,11 +59,11 @@ if __name__ == '__main__':
     library = build_library()
     output = HERE / 'generated'
     output.mkdir(exist_ok=True)
-    (output / 'library.json').write_text(json.dumps(library, ensure_ascii=False, separators=(',', ':')) + '\n')
-    engine = (HERE.parent / 'site/catalog-engine.js').read_text()
+    (output / 'library.json').write_text(json.dumps(library, ensure_ascii=False, separators=(',', ':')) + '\n', encoding='utf-8', newline='\n')
+    engine = (HERE.parent / 'site/catalog-engine.js').read_text(encoding='utf-8')
     wrapper = "'use strict';\n(() => {\n"
     export = "  if (typeof module !== 'undefined' && module.exports) module.exports = engine;\n  else window.VibeCatalog = engine;\n})();\n"
     if not engine.startswith(wrapper) or not engine.endswith(export):
         raise ValueError('Catalog engine wrapper changed; review the ESM projection.')
-    (output / 'catalog-engine.js').write_text(engine[len(wrapper):-len(export)] + 'export default engine;\n')
+    (output / 'catalog-engine.js').write_text(engine[len(wrapper):-len(export)] + 'export default engine;\n', encoding='utf-8', newline='\n')
     print(f"Compiled {len(library['recipes'])} workflows, {len(library['files'])} instruction files; {library['digest']}")

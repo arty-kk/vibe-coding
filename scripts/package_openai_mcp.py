@@ -31,10 +31,10 @@ def package(output, demo_url, force=False):
         raise ValueError('Use an output outside the plugin and a public HTTPS video URL.')
     if output.exists() and not force:
         raise ValueError('Output exists; use --force to replace it.')
-    portable = json.loads((PLUGIN / 'plugin.json').read_text())
-    codex = json.loads((PLUGIN / '.codex-plugin/plugin.json').read_text())
-    mcp = json.loads((PLUGIN / 'mcp.json').read_text())
-    compatibility = json.loads((PLUGIN / '.mcp.json').read_text())
+    portable = json.loads((PLUGIN / 'plugin.json').read_text(encoding='utf-8'))
+    codex = json.loads((PLUGIN / '.codex-plugin/plugin.json').read_text(encoding='utf-8'))
+    mcp = json.loads((PLUGIN / 'mcp.json').read_text(encoding='utf-8'))
+    compatibility = json.loads((PLUGIN / '.mcp.json').read_text(encoding='utf-8'))
     servers = mcp.get('mcpServers', {})
     if list(servers) != ['vibe-library']:
         raise ValueError('This public distribution requires exactly one named MCP server.')
@@ -55,7 +55,7 @@ def package(output, demo_url, force=False):
         raise ValueError('\n'.join(errors))
     if any(key in codex for key in ('apps', 'hooks')) or 'screenshots' in codex['interface']:
         raise ValueError('This distribution has no apps, hooks or custom UI.')
-    cases = json.loads((REPO / 'mcp/review-cases.json').read_text())
+    cases = json.loads((REPO / 'mcp/review-cases.json').read_text(encoding='utf-8'))
     if len(cases['positive']) != 5 or len(cases['negative']) != 3:
         raise ValueError('Initial MCP review requires exactly five positive and three negative cases.')
     clean = {kind: [{key: value for key, value in case.items() if key != 'calls'} for case in rows]
@@ -79,7 +79,7 @@ def package(output, demo_url, force=False):
     finally:
         temporary.unlink(missing_ok=True)
     digest = hashlib.sha256(output.read_bytes()).hexdigest()
-    output.with_suffix('.sha256').write_text(f'{digest}  {output.name}\n')
+    output.with_suffix('.sha256').write_text(f'{digest}  {output.name}\n', encoding='utf-8')
     return {'path': str(output), 'version': portable['version'], 'sha256': digest, 'bytes': output.stat().st_size,
             'files': len(data), 'mcp_url': server['url'], 'positive_cases': 5, 'negative_cases': 3}
 

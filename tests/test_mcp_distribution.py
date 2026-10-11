@@ -1,7 +1,9 @@
 import hashlib
 import json
+import os
 from pathlib import Path
 import sys
+import subprocess
 import tempfile
 import unittest
 import zipfile
@@ -38,7 +40,7 @@ class MCPDistributionTests(unittest.TestCase):
                         self.assertTrue(case['prompt'])
                         self.assertTrue(case['expected_behavior'])
                 self.assertEqual(video, review['demo_recording_url'])
-                self.assertEqual('1.5.0', portable['version'])
+                self.assertEqual('1.5.1', portable['version'])
                 self.assertEqual(1, sum(name.endswith('/SKILL.md') for name in archive.namelist()))
                 self.assertEqual((distribution.PLUGIN/'skills/vibe-library/SKILL.md').read_bytes(),
                                  archive.read(prefix + 'skills/vibe-library/SKILL.md'))
@@ -51,8 +53,8 @@ class MCPDistributionTests(unittest.TestCase):
                     distribution.package(Path(directory)/'package.zip', url)
 
     def test_marketplaces_offer_both_variants_with_consistent_source_paths(self):
-        codex = json.loads((ROOT/'.agents/plugins/marketplace.json').read_text())
-        claude = json.loads((ROOT/'.claude-plugin/marketplace.json').read_text())
+        codex = json.loads((ROOT/'.agents/plugins/marketplace.json').read_text(encoding='utf-8'))
+        claude = json.loads((ROOT/'.claude-plugin/marketplace.json').read_text(encoding='utf-8'))
         expected = {'vibe-coding', 'vibe-coding-library'}
         self.assertEqual(expected, {row['name'] for row in codex['plugins']})
         self.assertEqual(expected, {row['name'] for row in claude['plugins']})
@@ -60,6 +62,18 @@ class MCPDistributionTests(unittest.TestCase):
             peer = next(item for item in codex['plugins'] if item['name'] == row['name'])
             self.assertEqual(row['source'], peer['source']['path'])
             self.assertTrue((ROOT/row['source']/'plugin.json').is_file())
+
+    def test_localized_package_builds_under_a_non_utf8_default_locale(self):
+        with tempfile.TemporaryDirectory() as directory:
+            output = Path(directory)/'library.zip'
+            environment = dict(os.environ, PYTHONUTF8='0', PYTHONCOERCECLOCALE='0', LC_ALL='C', LANG='C')
+            result = subprocess.run([sys.executable, str(ROOT/'scripts/package_openai_mcp.py'),
+                '--output', str(output), '--demo-url', 'https://example.invalid/demo.mp4'],
+                env=environment, capture_output=True, text=True, encoding='utf-8')
+            self.assertEqual(0, result.returncode, result.stderr)
+            with zipfile.ZipFile(output) as archive:
+                manifest = json.loads(archive.read('vibe-coding-library/plugin.json'))
+                self.assertEqual('按需加载开发工作流', manifest['extensions']['com.openai']['publication']['translations']['zh-CN']['subtitle'])
 
 
 if __name__ == '__main__':
