@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.4.1
+
+- Add the public support URL, classify the listing as Developer Tools and state Codex/Claude Code and language support explicitly.
+- Explain browser-preference retention, user controls and GitHub-hosted support data in all four privacy-policy languages.
+- Keep the 1.4.0 skill instructions unchanged; preserve its release and evaluation records.
+
 ## 1.4.0
 
 - Revise all 46 skill entrypoints and 241 workflows for precise scope, concrete procedures and observable results; retain stable skill names, workflow IDs and both host formats.

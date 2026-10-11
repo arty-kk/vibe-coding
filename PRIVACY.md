@@ -10,4 +10,6 @@ The public website is hosted on GitHub Pages. GitHub may process ordinary reques
 
 The website and offline catalog store only your selected language and assistant in your browser's local storage. These preferences are not sent to the publisher.
 
+The plugin does not collect or retain prompts or project files on a publisher server. Browser preferences remain until you change them or clear the corresponding browser storage. The maintainer uses information you voluntarily post in support threads to answer your request and investigate reported issues. Those posts remain on GitHub and can be edited or deleted using GitHub controls, subject to GitHub's retention policy. Hosting logs, support content and data-rights requests handled by GitHub are governed by the [GitHub Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement). Use your assistant's settings and support channels for access, retention or deletion of data processed by that assistant.
+
 Privacy questions can be raised at [https://github.com/arty-kk/vibe-coding/issues](https://github.com/arty-kk/vibe-coding/issues) without including sensitive details.

@@ -8,6 +8,7 @@ RECORD = ROOT/'review/evaluations/1.2.0.json'
 CURRENT = ROOT/'review/evaluations/1.3.0.json'
 WEBSITE = ROOT/'review/evaluations/site-2026-09-21.json'
 REVISION = ROOT/'review/evaluations/1.4.0.json'
+LISTING = ROOT/'review/evaluations/1.4.1.json'
 
 
 class EvaluationRecordTests(unittest.TestCase):
@@ -16,14 +17,23 @@ class EvaluationRecordTests(unittest.TestCase):
         self.current = json.loads(CURRENT.read_text(encoding='utf-8'))
         self.website = json.loads(WEBSITE.read_text(encoding='utf-8'))
         self.revision = json.loads(REVISION.read_text(encoding='utf-8'))
+        self.listing = json.loads(LISTING.read_text(encoding='utf-8'))
+
+    def listing_fingerprint(self, name, expected):
+        change = self.listing['changes'].get(name)
+        if change:
+            self.assertEqual(expected, change['before'], 'Listing revision must preserve the 1.4.0 baseline: '+name)
+            self.assertTrue(change['review'])
+            return change['after']
+        return expected
 
     def revised_fingerprint(self, name, expected):
         change = self.revision['changes'].get(name)
         if change:
             self.assertEqual(expected, change['before'], 'Revision must start from the recorded baseline: '+name)
             self.assertTrue(change['review'])
-            return change['after']
-        return expected
+            expected = change['after']
+        return self.listing_fingerprint(name, expected)
 
     def test_record_matches_current_instructions_inputs_and_artifacts(self):
         for section in ['instructions', 'inputs_and_artifacts']:
@@ -85,7 +95,7 @@ class EvaluationRecordTests(unittest.TestCase):
 
     def test_required_behavior_records_are_complete_and_bounded(self):
         manifest = json.loads((ROOT/'plugins/vibe-coding/plugin.json').read_text(encoding='utf-8'))
-        self.assertEqual(manifest['version'], self.revision['release'])
+        self.assertEqual(manifest['version'], self.listing['release'])
         cases = {row['id']: row for row in self.record['behaviors']}
         self.assertEqual({'serverless-required-write', 'mcp-http-readonly-control', 'react-hydration-preference'}, set(cases))
         for case in cases.values():
@@ -107,9 +117,22 @@ class EvaluationRecordTests(unittest.TestCase):
         self.assertEqual(set(self.revision['instructions']), set(self.revision['instruction_review']['paths']))
         for section in ('instructions', 'inputs_and_artifacts'):
             for name, expected in self.revision[section].items():
+                expected = self.listing_fingerprint(name, expected)
                 self.assertEqual(expected, hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
         self.assertTrue(self.revision['limits'])
         self.assertTrue(all(case['observed'] and case['limits'] for case in self.revision['checks']))
+
+    def test_listing_update_preserves_instruction_review_and_records_changed_artifacts(self):
+        self.assertEqual('1.4.0', self.listing['baseline']['release'])
+        self.assertEqual(hashlib.sha256(REVISION.read_bytes()).hexdigest(), self.listing['baseline']['sha256'])
+        self.assertFalse(set(self.listing['changes']) & set(self.revision['instructions']))
+        for name, change in self.listing['changes'].items():
+            path = (ROOT/name).resolve()
+            self.assertTrue(path.is_relative_to(ROOT))
+            self.assertEqual(change['after'], hashlib.sha256(path.read_bytes()).hexdigest(), name)
+            self.assertTrue(change['review'])
+        self.assertTrue(self.listing['limits'])
+        self.assertTrue(all(case['observed'] and case['limits'] for case in self.listing['checks']))
 
 
 if __name__ == '__main__':

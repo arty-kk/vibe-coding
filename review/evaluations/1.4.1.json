@@ -1,0 +1,1407 @@
+{
+  "version": 1,
+  "release": "1.4.1",
+  "date": "2026-10-11",
+  "method": "Listing and privacy-policy correction prompted by the current submission portal; deterministic package and manifest verification. No new skill behavior or independent model evaluation is claimed.",
+  "baseline": {
+    "release": "1.4.0",
+    "commit": "8e283b062ceb6472428f627b8cacf6b808bb267f",
+    "file": "review/evaluations/1.4.0.json",
+    "sha256": "2854a7fcbf6cbaffb5283b32ff4d563a60022240b73b409c3e90b379882a079b"
+  },
+  "changes": {
+    ".claude-plugin/plugin.json": {
+      "before": "8d0cb62eb718507a1171529bf25b2b48418607367a8fe43196f481cbf8cb1d28",
+      "after": "1f85134b6651dafd740d67f1aa807e48e209a96d47789f0c266f2dde4a264c1c",
+      "review": "Advance the release version; add the public support URL and the Developer Tools category to OpenAI interfaces and state actual host/language support."
+    },
+    "CHANGELOG.md": {
+      "before": "82a00c0ff210a41848ec8376c6a6bf73e2e453411e05d2d5f49f9a30e30ca252",
+      "after": "d8c72551d49505db924d876fe201b4414de834dd3cbcda97b44a1d9f646399e5",
+      "review": "Synchronize the package catalog, installation example or changelog with the metadata release."
+    },
+    "PRIVACY.md": {
+      "before": "138d454123a9c185d963193f12890c78e02578117120b8702e227f26be2206c4",
+      "after": "3f55ebbe44e40a196849b9999b6a8a95e06587a956f12eb320929e9f9751402b",
+      "review": "State preference retention and deletion controls and distinguish publisher, host and GitHub support-data handling in the policy."
+    },
+    "README.md": {
+      "before": "1f3a363c0a79885255bedd414f52735e54b40594d4962a0084dbc2211dba12d3",
+      "after": "e207cb5850c206bbba3178b4d8f897c18be107de28d6de0ba1d890d321f382c3",
+      "review": "Synchronize the package catalog, installation example or changelog with the metadata release."
+    },
+    "docs/404.html": {
+      "before": "4a2a4e38a86dcb36648fa8675e83cbc318c8c8672353c75d01e6c96c1ebb560e",
+      "after": "c333abf35a0b5e2a3fd17ef8ae50e45d638bcdea3d743ce52b8cad5f85e5a62a",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/es/index.html": {
+      "before": "22f0c656f9451a024726c1a8a4d319d378257780405955e46c863429130f8d0e",
+      "after": "b09921abc2144481a9053033e5e7732eaaca1ba637344b671b7aaccb03f43157",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/es/privacy.html": {
+      "before": "a517f7304a4c92151831603044a670cca30950e7221a7b5e42212e321dcdd486",
+      "after": "55cafd0d3594fcdad463fd8477640cf5e8e73bf9299b1c9d8a78acc04d3030bb",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/es/terms.html": {
+      "before": "bd529b6c25f194d3fd860db8a3f91ff242e1c5d1493032cad28c8b92a8b94623",
+      "after": "338566a6c995da23cf4b08321418339dae5f7b1200f971d9e70e5989de40a4b1",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/es/workflows/index.html": {
+      "before": "f79cd5bf4eec17f9643dbfd7845e9b7aabc02d5643fdecee7cc1344fd8e70a76",
+      "after": "a384af3b8e9389e992affc77937eae77486461712b0c0c819308385a46b7012c",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/index.html": {
+      "before": "e331594de077dd8f84045d886e1fd80cfbe1ffb063eca700b84be2799a311cba",
+      "after": "1afc2dc8912037b5500b10a926db0fa8c30d3f188de0504f3e1567d4a080a8be",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/privacy.html": {
+      "before": "38d3cc99f0f90497f0a1237fdb2d48952ec7ec9b3035d90707be7a4cb9a434c4",
+      "after": "4da38f45367f494fb98118c55d7c9e00ae6881f5ee68444f9d690f89a8173f98",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/ru/index.html": {
+      "before": "176850f4f20092fc114ab77f73ec5844c98e0565bedfa27723f925bfd890ba39",
+      "after": "eb4d4b0416bd92188af1d43f9cedfabf832e2af5e2208a96e42586c406e8cea1",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/ru/privacy.html": {
+      "before": "4ed2d8f29b3fa2e8cca6e8d98b91c24bf248bba9d477a5e37230ce405f224d83",
+      "after": "f742bf11fc4002732486c7574e6a042fafc7841b4fe08f43f79f5bc4e60f0807",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/ru/terms.html": {
+      "before": "b066e4dec9d78dd8c0415be03da82b73074f9649a85a4c7156bd4ba3e86a8ba5",
+      "after": "487d543ffb1ee728b573c8bf5c9bf3229725ebf468ed10d67eab9bf80b2a5b48",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/ru/workflows/index.html": {
+      "before": "e46d288a8badde445747d760116d14433d2d8e93fa2f62a81b1fc80f7aa2fc7a",
+      "after": "83e8218d88d8730f714f1058f4ad188b01d43cf54f5b4a930cbc3875ac2a5a02",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/terms.html": {
+      "before": "c0cf954f9aca8b5a6a4ad0ea20d0cf366f7e35f6926dde2c9ad78afcc7a10cd6",
+      "after": "bf5b52ef7a68f3da0ec0cfb47a6e8e52add60c057d1d8d6903996e67e8e0318a",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/accessibility-audit/index.html": {
+      "before": "bacb5a52ca6bb0fb8ec45827a3cc4bf2c3b62d97c1c1404d473c9d264134f810",
+      "after": "b0d746bdb756973695e766bac85cc83907026b9f87c3bd6d63843a6f53458155",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/accessibility-polish/index.html": {
+      "before": "486b170440a27169490733c48c5cd0b657c160f6bbc7d09f2578b49b78f1d630",
+      "after": "2a24472e46163ea30f22000bb6ef4ddb785bb86945790524c0cb4120ac5009a6",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/agent-harness-audit/index.html": {
+      "before": "ffaf3875234ae7a4998e2b44cdeafbc0a5468d8e9869fef9d247b6d21bedaecb",
+      "after": "b150ab614ca8cf3e89998db1eb987757b63e8b7664b69f48e9aff395f9f47095",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/agent-harness-polish/index.html": {
+      "before": "3db57e1f6365af4102e73dab0b2857e9801cf35fca7ecb792fa3b58b26cd34b7",
+      "after": "a9a1eaca234a1085c0270215cb310e5ac1531253f73042d5554f7cb7098a3394",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/agent-harness-replay-failure-check/index.html": {
+      "before": "af5b0f1a112238686963c421b533f3f68b0a6a10939639c6dd76c4e5a6ebd869",
+      "after": "95a7ce23ad564dfd10db260ce72b5cd70d7565d34ecbaef0693975feac731255",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/ai-evaluation-audit/index.html": {
+      "before": "f3fc91ad2878bb53ee546c42502daae60181ae85669ea388b48672097137fec8",
+      "after": "582a12c4a39c4ec7564518cd1576c2ee9f38a3b5d43f5d2a97e6bcebc3013aa7",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/ai-evaluation-polish/index.html": {
+      "before": "94263372e46cd333511576ed754a68c1f655c354c7d01ad2e59e0563ad95cffc",
+      "after": "6c188698bae3c21a055d77bdebf0e298dca49ed1d0fa532cd5a437cb2dbb26e6",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/ai-feature-audit/index.html": {
+      "before": "e6445e80fb1c50be057c821898b0289e2082e78434ffd64042c6767686f7326d",
+      "after": "88d3179c1c348d32c2400fc096278229ff78a1d6ec1097229485dac3fef36ccc",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/ai-feature-polish/index.html": {
+      "before": "56aa170c37328a686e97f0d2fa7f681e221efe908295cae187e5bb7980286f6d",
+      "after": "909ceae629d1d53ed4e87452511356e8e049751b9263f12f6fb8d3211a197741",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/ai-ml-problem-framing/index.html": {
+      "before": "df9b6a1ad85a485ad48ef6999b8b173652e8524c05ef65062ab86f3cf3fb7530",
+      "after": "0219be035871575fa4e98215c114a916c527c35a1646d331d8df5fe37f17f639",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/ai-navigation-map/index.html": {
+      "before": "474a2b4188905ba60b534fef85a30635b9dd577d5b18b50d7b987f1e436921bb",
+      "after": "3c9420559ca1544033388a881c457e4cffa7734a37e8f86290932ec50acd3eb4",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/ai-safety-governance-audit/index.html": {
+      "before": "5a453f2800c711439f47903ddfb69fe455e06ae90fde87475b580dd034b24562",
+      "after": "64a843a6443b7306dad9040f75eb0c04e3383eec9fccfd551be46bb6ea940641",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/ai-safety-governance-polish/index.html": {
+      "before": "f038a5a1a9009cd50e30edcce11e15ba7ed0278b456a3656d7a4b9f1ba1b21af",
+      "after": "97adf1d3819e66781e84af8c483ecee516845005f98d0bb37508a3ba13ec5d20",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/api-audit/index.html": {
+      "before": "6af584eb9cd3cdb9ca910a5355fea0f843424ffd1d3e91816fd287e8af26c425",
+      "after": "6385147196afffbc3cf65783c8855159fab6ef3daf1aa32c1833e0cb05bc4279",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/api-contract-compatibility-check/index.html": {
+      "before": "adf4a093cab59083d659b9547bb9ba12fefa9e7a3a669ecaba052dca0fc3dfd8",
+      "after": "4c1d8294ae65dbff958ee287db2de18bd0b34fd244f78de386abc6b0a756fedd",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/api-contract-evolution-audit/index.html": {
+      "before": "0a56342c5abf2f3d71b0e9f8649eddcd223415fc445515e4b679d371f2879034",
+      "after": "099628aecf85996d1f0a799c2a95c750254234c9c0cee0764fb78fc86952e6aa",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/api-contract-evolution-polish/index.html": {
+      "before": "db2ea321019b73010facf56f5a8b012f0446687008d7f2e944331e0f906dfef5",
+      "after": "0e71265d13de61134346c96715d8835d74ef0bd111f285ce4ba3a01061ec2bec",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/api-navigation-map/index.html": {
+      "before": "f27303542e34eabf6e82602fc6bec8e94078013089a70ee2163dc2f24c571ea7",
+      "after": "686d406b3697a03a1bc0e884b16a1709e4e5ecdf1cb535a71cc94e4e2e78c4c2",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/api-polish/index.html": {
+      "before": "79cd970cc180b5950d2a5021aeba32748924dde6a8ee4b4abb26a92ef3686647",
+      "after": "0281b78b5dbeb4e31feef64e056983a7aa4e224b87d5032c1c41f9140655f366",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/audit-logging-compliance-audit/index.html": {
+      "before": "2c7fbc8981f258e51a110cf2e9b18b996624a34a693a7a2f9a79811f8020a4cf",
+      "after": "3d43c081a0a1ba7d184c99086dc01a55708cb958a317f9c38e359207cfb25ebf",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/audit-logging-compliance-polish/index.html": {
+      "before": "7ec80402edd4b343df26bb6ef8d0f2fb1cff261ebb2b072c16a454c91282641d",
+      "after": "e702d3c75fc9d9298409931dc19c9da48393495ce2d5d5c7ca758f0278995657",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/audit-trail-integrity-check/index.html": {
+      "before": "f7dbd0d4e935d8705744f945ba38d29a6bc67edc2c51223965ea788b064d39aa",
+      "after": "ac17d889adcaa7bc249f9b02d87a72bc5d144dee39c89b670eac20b050699dab",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/auth-entitlements-map/index.html": {
+      "before": "caf20006cdf7154e49f23a02b59719d9285fb27fc041e077f65f22e87c414fe3",
+      "after": "4c01a9d2624498aa17694367c11e9f0290b8d34ea8ab4b4480bbbcdec602f328",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/auth-permissions-audit/index.html": {
+      "before": "d9d97ece8e04236011b2fde7fb76f908645cab018ffc521b8d6c603718b9c84d",
+      "after": "76a1b01f3c0f10ea68a96d3aa4f0251becfca2b92ce85857dae031b9636f6a4a",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/auth-permissions-polish/index.html": {
+      "before": "a046d19d5041c82c616b5ae0e9d4823c47abeec332d97a9c6f27dd854cbcde8d",
+      "after": "a56c8f2526a64f5e0e0622578cad9f6ed5db72a315a94a1d083afcff401515fd",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/backend-integrations-audit/index.html": {
+      "before": "0be39f4696918c9ad23a6999aad9b55a64da77db233f8ada3a6fecb988b2e6eb",
+      "after": "75b9e185d98d9ef83c741f1056d3dce0dbcf648355ca4c0a8920d6b4f5ea270a",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/backend-integrations-polish/index.html": {
+      "before": "e28cf9076b89e1c3e9133f153d782de4bf756fea3ea8f4455d15df257b8a907f",
+      "after": "7f1fc7979596216eff48b1aaf972bf91947581b1e7e32e5de5d36ce9c0f9222e",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/background-jobs-audit/index.html": {
+      "before": "4cf42f86b8a5fb7c652c6cd2575df7e19c4073ae2f899f1aff35d316e4f99caa",
+      "after": "9fad29ab0a323d8ffd1095428946077426434a354e00c41870f109ee63bdf692",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/background-jobs-polish/index.html": {
+      "before": "bb4ab25106361a7584418d12a4a81675a1887db81e11bfb59bbe29d434429ba5",
+      "after": "47e7f3cf828b26f20a4e9fa9ff19c9da4d91cfb6c8f391857626a5e21846d908",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/behavior-check/index.html": {
+      "before": "d806885b5cea7d08ad086fc1dd58251f956c2eff3396b6735cd1a3b659aacfab",
+      "after": "5bb3584a1a7539296bfa43e5f95ddf888c6aad1ac63f94302f2cf251087a78a8",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/billing-entitlements-audit/index.html": {
+      "before": "e694f9b6c294593a4e3f1264425d7b464b0aa7dae5b8f28f747ed9a6b946e9d3",
+      "after": "c492940ecb8d57d10f42ed707a52f7c9f2b8cfeda0fcc09e122e9f0e70720512",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/billing-entitlements-polish/index.html": {
+      "before": "572c9daaf2ae9699793fa6f340a59e2474ac62d48b8fe61dde137c89599525c2",
+      "after": "34c4687e8fdfac6677efd72272edc2d79f6146e18aaa7b6bbfaebfd61c1a0416",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/bot-audit/index.html": {
+      "before": "3892230e0f2241f60c574ac127ce3a9f9a783e5ace043bb0bf4f2d490834341e",
+      "after": "9bd92ba55faf6741e54a5bd453a794aa59e71da3a2cf7fbf363b0489ec193057",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/bot-navigation-map/index.html": {
+      "before": "d935c5586d9b5c35222465d3faafa1c353f4096af136542ed9b98e746a623c40",
+      "after": "443f615dadf3da42ec6111d1dd8cce9f81baf3ef723c9c826837fa33f15a3af8",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/bot-polish/index.html": {
+      "before": "e9a1f36be9ee030b77674cb30c63cbdb099b9b0d93ee3b1c99d2645f0a381078",
+      "after": "6b115e1b6cec5ebfa60a2a9e74dc75255ad7bcd6289d738e045715d055e675fd",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/browser-extension-audit/index.html": {
+      "before": "8d9dbc22d610693fdafbe659a7f87cf5bd404b5ac886397a3b56149234274059",
+      "after": "baa468cb5ad9ba62996342c3184d278158a96194678173a373017a2d2a2f8c0f",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/browser-extension-polish/index.html": {
+      "before": "51f6534005c648386460fb4c8b23cc7fe8150a1cb82110f295d5c6c1cb4a3ad4",
+      "after": "b5e0701f2ee8523561ec37fb5e680e345375cb014996d1636651bfa82e40d198",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/build-supply-chain-audit/index.html": {
+      "before": "3cfbcc31b2105bb2f7652f2e09abb8a8f74746874244acdaeebf3fdb759de685",
+      "after": "479c3222479cbb2ac53a1c63e6c44841a4c35b1a1010b2d9c146bf4a24126cf5",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/build-supply-chain-polish/index.html": {
+      "before": "521e334c01c3ee2bfe44740675c4ea6b5f73769af9cac08638fdb0c457547038",
+      "after": "beb23ce1fc7a692f2d6792c064b053166c85fe115f746e9a64a6c46a18914ea8",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/cache-coherency-check/index.html": {
+      "before": "355a406c8c5ec1f7b661786ef1930103eab07b5f745f091941870edbac060d72",
+      "after": "1e8917f31eb348396c78472801eea0b382336106a0ce4f2aeb4a84db22df43d8",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/cache-invalidation-audit/index.html": {
+      "before": "6291450eab5cfe73d4668d9cda79030ea0170c0b426c1c6188ecbfb48f464611",
+      "after": "cc9484d7a7d813482874959fe673abf4e40a54e000c919022b3ca157a711b54d",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/cache-invalidation-polish/index.html": {
+      "before": "866497692b9e8a3db668ab226031a34cec952d6b90070971c7c133ec81e1c693",
+      "after": "e1650a51722e518486338423ad983f6e83d76932d5f64622107bb06130aecb5e",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/celery-delivery-shutdown-check/index.html": {
+      "before": "e71849dddb68b102bc6940a0a2c14807211ad2d3ebdf89f7604454394afefa35",
+      "after": "e84fca018683c0fb190c3e2dda4d69c3c106b113f2ceb8c904e0fb9a2c8a6004",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/celery-workers-audit/index.html": {
+      "before": "0e4e135f50b56612e82507ed33e74938ed8ebadb7b0a2d84350a1aa8fe7ee602",
+      "after": "ff953d9fb89e43035448aaa9a541733ceb22a99fcec87172e46c1e0c925bca46",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/celery-workers-polish/index.html": {
+      "before": "793c4cbd2cf32ed0379c5acef36555a357895d9a9d6a48c83aa5586d75cfbf4e",
+      "after": "f82574a533db30a5fc51b18e1b1f2a234f5a894ea26ddcee2ea1e37b1fc84c44",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/clickhouse-audit/index.html": {
+      "before": "de44cfe094c01e0d47a30a215983525b03fa986e4dbccea1727f075988380893",
+      "after": "9d544526527ec8491b808f2b52a146897fde045504f2e75d8b679101bd09a4b5",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/clickhouse-ingestion-query-load-check/index.html": {
+      "before": "9f242b78eac377c7f9559285e0d2d1d84d278bfde7ba94230d49e84ed7a51c69",
+      "after": "cdd73db51bbcb8d555bc136c1699f61a5e48ee662cea390bba5655dff769cdeb",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/clickhouse-polish/index.html": {
+      "before": "f60946b7a8e49a9c08d3a2d3911d248b9a6b9545dbacf3b35ea3151fc388ea43",
+      "after": "f61a3a25757c2609d2b00417298d3229137cd8e26a7bbfa693ad494a12bd12fc",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/compatibility-golden-master-check/index.html": {
+      "before": "1e64cf17f0a55096898cc34e24abdf0f76b738b0a9e3cc91b067cd2fb104f099",
+      "after": "1ed12b19b214fe0a9fd5627d7aef1aeeb479f8ddaa03fa80971716f1f95db473",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/consistency-invariants-audit/index.html": {
+      "before": "cf6bed6fe89f40286c166de9b2c11e43487c8ddb761a6a1e3dc7b3e9cfcdfc29",
+      "after": "df6d58180242501fdec3b970ea4951acfc22ea1447bba263d216096225fae50e",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/consistency-invariants-polish/index.html": {
+      "before": "ca0ace0240f782aacfaa4ea0152c689f3ed3230a03367666f210651a3ca72998",
+      "after": "7859d0d54e41cfea771daec7a2350ebe34844051dc0f0c9d2146a301d55f1f91",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/data-model-audit/index.html": {
+      "before": "cf97ad31d9192e981da55be9218dd14c3ba1eba14504859477f769baa5278ac3",
+      "after": "aa6f9e98834f93bd9a7c5be84dd858cdd76a43cfcba685f588fc1de8efe66033",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/data-model-polish/index.html": {
+      "before": "ec3e856618229203bda673a6fd5f183d36f5c75ab6189a439a180758d6c070be",
+      "after": "2f7a439bac0f5fe3be09af8e8c412ced6382ff95604576c3facabda3ef40d6b8",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/data-pipeline-quality-audit/index.html": {
+      "before": "4b0e34034d86763f46fbfd2fd95639d0be1c029e2f25ee2c723d9a42f6f78ac1",
+      "after": "578e14d989d1cc7296303b1bd4d8227428a5659029e522b2a575d58eb3763cd6",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/data-pipeline-quality-polish/index.html": {
+      "before": "5bf6623fc5e28a09ad4f3689bd53966877ade031b8582c6f77f11c5017e6d4e1",
+      "after": "94bce06b6633b975d99344870929a5d1b93151b17f02213772c5ab2152cc5119",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/delivery-recovery-audit/index.html": {
+      "before": "006c5d7a1ab10dc7b97db2cc8fc88a53e85b8a79ac15e162335b8274ff54f38e",
+      "after": "b6db7debb58bbd8b0840a8222440d23018be7922ecb3ba43f40057c9ec813e68",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/delivery-recovery-polish/index.html": {
+      "before": "bf8c1ab11ed556680d50554b6d5d76535d420b24848cf0ddd85c2b49447c47e7",
+      "after": "c813b26d5fdd52d5a15762cc2213813879fbe85d9a136e14515c1315a63b0b62",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/delivery-restore-rollback-check/index.html": {
+      "before": "d6b3caa947d2cb2677f9059e232375a1d7bfa4978af6cc59e0ee69517d562956",
+      "after": "74d907178a34358a33a5af6c644c29fedcff0ae72a6cb9da232fc2ed7573db65",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/deploy-bootstrap/index.html": {
+      "before": "02241b8d2b9d811cc08c781e216a0b29ec7253b2864febe01f8c960cb4710643",
+      "after": "4812d1ef87ad0a72123cf06bbf3821a029e7d8c60e6159a5be45c888b53081bc",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/design-gen/index.html": {
+      "before": "dcaf2924720e3fdbf31d3f69969cb570943294d75c4d35a7fa56ac1b96b00626",
+      "after": "bbcc97fc76328b5ceec4a03a991722fd61d7f768ac10389168c04b65c53baf78",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/design-system-audit/index.html": {
+      "before": "caf9aac40c25e5fb6da6961cf87ebe27cbc31a648d455e0ec0caf8dab89d0036",
+      "after": "63da5ffc810aab18c976a206eeec87c7da2715d4037d130450d28b92d840f6d5",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/design-system-polish/index.html": {
+      "before": "e09f81968fad9fe3c20466bdeba42de2df02254bef359d697c3d74a5e40771d9",
+      "after": "ed43f41da21a036a63ec880381b20f98603ad5c6c0428ccc0a32c20348a8bcac",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/desktop-app-audit/index.html": {
+      "before": "58177470bc1efcb37cdd4a93b5cc2804f752c4988011d45f96b481c6cd0ac17a",
+      "after": "2258c572febb6465563ec8214f028e39da356628c2bfe7bb6d7462b580cb1022",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/desktop-app-polish/index.html": {
+      "before": "acaa4dc253a6461911e97906062f3e6f9e9c9b5b9f5b224954470aded8487fef",
+      "after": "1642298f8b7ff5350946373c0b9fa26e92b3eef02c5a86f361e9f5917810e189",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/documentation-sync-audit/index.html": {
+      "before": "3556d2cf67c717ddfb331a0767d968685edaf4f0011d843faecfa6a192f3a263",
+      "after": "be4c3002d60fe6f7f077c17a2828e562a5b465385cd8d50d02a56cc1562ad812",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/documentation-sync-polish/index.html": {
+      "before": "0cbc9109dd3af356ad54c7c26736e7648ef49c165b0663bbe4d7407cafbbe815",
+      "after": "5a96e1b0cfafdf7e982ed90e8a484def4747039fa3279812a3cba0e32317e0d7",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/domain-data-map/index.html": {
+      "before": "23856ff2b9b0157795c5fce2784035f263a2bdf0f1a85e089eae770744243e29",
+      "after": "a968cee9b5e4a8ac51534b4120681e6e5a99402fb8f1ecdf60a7b7dad7d79013",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/evidence-normalization/index.html": {
+      "before": "48a70b342f98eebbf7b24381486339b7d6d1bbb1bb60676733dbc6534246a424",
+      "after": "de95b5adee629e7734973e79d5fd50ef1fc9171a143a60dd4fce755dcf2adbee",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/evolution-improvement/index.html": {
+      "before": "f0f9b049176ed083f4b3bf1c6acace8bbefd7f5b3b2fc913e7b6057d100e7a26",
+      "after": "8f3df64a2d28f4b0d8e57186cbbfa6fa6f0ec0a3eb55ca0a6dee026a14fbc29f",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/experiment-design-audit/index.html": {
+      "before": "8eaf70a5380655c1d3149ae2db75e37bbea570ae7a48752339c999606f564414",
+      "after": "8231b7eaaa1dc392cd0dbc93f8b5c2d51da59ff3dddd8f8988792e5e3a270067",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/experiment-design-polish/index.html": {
+      "before": "1e1aee57bb216cba011bdab06963d72e91825c084e295dbb4fe7df1c17064775",
+      "after": "634a7bae0540ad63a0eee3a25da4eea1d96fdb49fd1946e1a7f327f16f7bf583",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/feature-flag-exposure-rollback-check/index.html": {
+      "before": "464bef70a2af0d0d8768f0d738dce5ab4e24a8f284d69b93d415e836e23c1439",
+      "after": "8ed6d21c6dd4cdfa40d53ca66e4303e1759f191d9ca9b2d8f0ec5cac886e245a",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/feature-flags-rollout-audit/index.html": {
+      "before": "9007ffd85e52cd41fc05af07139094db56c6df95d8e0d1ccb84dede55b20361b",
+      "after": "475309ab0661459241853905a7d33413b86cafffe6ac78c4440a21d3b6b1596f",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/feature-flags-rollout-polish/index.html": {
+      "before": "906248ef4782bf5b733c3e24536a0245c0ad911f833c52a950f283f4c96d6a00",
+      "after": "b53a1d08c943d22639f7655a7fdf4f4da482e23629041f034a7a716c192b75a0",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/form-data-ui-audit/index.html": {
+      "before": "1ab4b557f4d67eed3d1c21c5f6564675c7be148cc13436cf81c61bae80fecfab",
+      "after": "24003356e63d572a6670a3efa7b1b6800c23ca6a210551b35a064ae54f7a4896",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/form-data-ui-polish/index.html": {
+      "before": "1d137ffb8b622fffb1d95b01bbd566cdf7653a6bac719933853561762310b275",
+      "after": "0c9279a358ec366b9f4e3c38a4b74cb21ddde7645dfaaeb2819cfe88a480dc37",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/go-rust-concurrency-shutdown-check/index.html": {
+      "before": "a7e5aae9e7f60645d7567a1b1e0b342789344e02060cc689b2f7b01ed3306f26",
+      "after": "779010b590bbc4967c61de1de5b58b24e47f05c06b22b032e93838f8a278d3df",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/go-rust-microservices-audit/index.html": {
+      "before": "83fe85d1f7a5cb9f95990f85f2de10413f64269d9b4b102552be1deffd40df94",
+      "after": "a56a5046a757a5913d4c9c0248b07701631a164b8d2c68384e9a56fdeb5e731f",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/go-rust-microservices-polish/index.html": {
+      "before": "407dcdfb73b7c4b9823eee883d06e1572b6659ecccb9830732ce0841422e3c17",
+      "after": "e78d1f7239b7c95eec65a1b55093781968756d80f0625e4b42805eaae0e63d31",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/idempotency-concurrency-audit/index.html": {
+      "before": "b2b4233ddfd1c09209997095ce026ac5852d6bc48550addf8bd6b6cc41c295ad",
+      "after": "bc8c240adae583880fe9c5c93ff3df2237cb88056ce3335d46a5c4670a4891c8",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/idempotency-concurrency-polish/index.html": {
+      "before": "93264b17799bbcc159729ca43c56f2bb14472ee1500c7e2bce7d1a6546cd11bd",
+      "after": "13f66e96d5119e9a7ac3016a555f228b5c57bc77d82e5c8140c05e5e7568e09f",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/incident-recovery-check/index.html": {
+      "before": "c1d6a74546caf7a067e93ef1cc3eb19f987ff54f2175b20ae7eae960fbe1c403",
+      "after": "17a05a4ee72b05f1f926aa3c146c07d74fde738d2f1734d3d47323e37cd11e6a",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/incident-remediation-polish/index.html": {
+      "before": "c1bf65535c86e64eb5fc04139b08865e2eed3bbfa7a85e45573767431d75b092",
+      "after": "961aba3d9a9de8c744abf746232369bc114438334b032b4e5c2c9e244e2ea8f7",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/incident-triage-audit/index.html": {
+      "before": "84d698030618191e4dc200ee0dda23ff7e5244d7f127e58a07f0cf66ca1b945d",
+      "after": "c6d98e54545529a04c9f8a438168b4b94970be560bb491c623539b6a1ecac2d5",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/index.html": {
+      "before": "e1ecbf47bc5f8b5565abfd27c7cb105c6d630898ef9f070ae9a2b690b5d010d5",
+      "after": "255bd79d31491db3c3fc9ccdecd49a15d977783f3809bd37c2c4604936166916",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/infra-ops-audit/index.html": {
+      "before": "63c75bd39e88fba18a40c53bc4ed3382702e4b546e871539fcbd6ba42becd9f8",
+      "after": "974e36e084135bd696c00bd2257c2accae901a25124741205a389bc771550796",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/infra-ops-polish/index.html": {
+      "before": "d688cb9054f726fd55d484f98ae84047c5a4d9061f31b9390e3fd0d46ec5c4e8",
+      "after": "7cc0252945bc37d9feac01777cb1daeb6493086eb9659333373229df6c963324",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/instant-architecture-probe/index.html": {
+      "before": "9a7ce6f9e4675699e6ea6634df103285f9599c51682aff52f66b16c32cfc74bf",
+      "after": "a107e21330c574b3419696731ed3f3d395b4b74baf440be430c42e47580c7307",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/instant-backend-probe/index.html": {
+      "before": "0687e71b19c538025b14d3d436f4a464eaad400f6623e3f462f1d8e0896a1bdd",
+      "after": "f7002e7f5417e6123999b7b7858db673f7c5417dd427d472fa9bb83d73b944b5",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/instant-bug-fix-polish/index.html": {
+      "before": "58111720604769ebd80bddfa7e9bf39ea3d936e9edc8dfb0bdb5779d0bbc57aa",
+      "after": "6d7f32af2bf9697d8f0709fb9382ec128772a8e2969da6692b08a9a3fe3edb80",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/instant-frontend-probe/index.html": {
+      "before": "2acbfbd8f70347072ceb6c5898a960106d3a662b87ebb93a95bd8a86fad3cd24",
+      "after": "1d0499b556864525f9731a64e3c58ad12693e5229b0954f9a644674956156a6e",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/instant-ui-ux-visual-probe/index.html": {
+      "before": "c42b7fe93c25e691328ccfbc8b235a4a5cb8a1f1edc527d589f65cbfe9f21bc7",
+      "after": "af2d275b1570d0412f75c4321b1d646dcffcea7505d809d374d434d349d75e56",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/integration-map/index.html": {
+      "before": "0751749c6e1ef17b4782cbd3f7510258d7c90ad57426bffecd4400036298d4c5",
+      "after": "e48aca775e6ab7cecc97538a88116e0dbf1266b8793dd9d0c6361bf157f338dc",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/iteration-closure/index.html": {
+      "before": "b824fac875b64776982514531754fc197f6bce2da45a017e8ccaf18e0f7d11e2",
+      "after": "d9dd3bbfa1932f081bfd8569d7e23b1f45912e4f1ea0ae1b99ed6f812bffac3c",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/kafka-redpanda-audit/index.html": {
+      "before": "f015de96bcf901bab9d3d6cf84e4fbe30608cf768b402663f603f0536ac06c95",
+      "after": "de93b77ee3675923981756090114f6d7d2bed751698f9cd55bc3c351c3fe880a",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/kafka-redpanda-polish/index.html": {
+      "before": "6d3a79405f4aa36275a55b287861b0cc3fabdf9311ab1919557697d14e4fb08b",
+      "after": "9859b657be084f1810f621d4b32bc1abb1d9b484a0fe37bc63ada566455e0613",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/kafka-redpanda-rebalance-failure-check/index.html": {
+      "before": "fae6bb898681abc21ba771f781326f7ba145d7d55ef4fbe2c74f96327d379d16",
+      "after": "30a4a494ebd2ad681b7b498d80425f7bafeb154ca2a7328a6dd3c19397e9dd54",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/kubernetes-platform-audit/index.html": {
+      "before": "67d0be6f9c514e75b5d46151f72324fb3956861c1bf466a3515098dddad1d73d",
+      "after": "3e9d681905af3ae76a7f9d06a1cf98382f31c44159b7a96913794a8d2314ab17",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/kubernetes-platform-polish/index.html": {
+      "before": "2a6ddb92b0e39ad0a91f54083ed2a3686a37b910ebca7629a662fc73640a0457",
+      "after": "0214412dcf5b71c2a0a74eb2a027300ebb460fe0d1a6d6f85dbe7282a64ee70e",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/kubernetes-rollout-failure-check/index.html": {
+      "before": "8f28ab8bc53e9930820fa90e9c4bfed1f0247bcd34f50389241ff2e8ec8ff46c",
+      "after": "fea3366d64005837bf08df7a1b25e4fd04ade2e65e013eca405f31096f17eee6",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/llm-agent-tools-audit/index.html": {
+      "before": "bc1405764c792751b1d3eb4ae4dcb37f107f89ac916a2ce31a46bee6d7116297",
+      "after": "e2416d88cf16c40138aa1373e01fa0843065e21f5f6efb12a8aca17b8fc80066",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/llm-agent-tools-polish/index.html": {
+      "before": "54c19f6de0c582e781b7664f9ebdc00ee4a212a1ee93e2c1e36ee501d30922c6",
+      "after": "5d33fcc8e1253e7558868182b9c93fa7f2e2b2d80bc612cb7a27eb2eff5fc6e8",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/local-client-runtime-security-check/index.html": {
+      "before": "27c7117a86dede795f31758cbd62087d74d5eeaa9bcf9c750101db949316ce2a",
+      "after": "47db8fd4e9fcade0f5003de9af03422c1a88fbc1e7e8d194b1d8bff24cae38e0",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/localization-audit/index.html": {
+      "before": "63b501d42d568dd38c768c42154a197e2ebea2d86e6ca7b6d65909b6f7644f5f",
+      "after": "c95ad93029a72791060fd17de9ed4aa669c27a90f701a5733a6a532b3ff84d01",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/localization-polish/index.html": {
+      "before": "a7cb604015a7618ee6a3464d5ef395343bd916c07dfdeceb4b727bb220aaf95b",
+      "after": "ab7a22e5db32a7276d175b2dd8e8784662f66d9d796846f866e2dff29c878d99",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/map-refresh-polish/index.html": {
+      "before": "fb42c41c2a60d64ee22b19f3b95d16a734ce9228c335ca7f41ffd55ca5acd071",
+      "after": "2e27cd0cc692c8b804d39fdb32de7be2b3e49f361813e25839647834fb71c04b",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/map-staleness-check/index.html": {
+      "before": "613ea636a2cf6b1cea86edbff4e97d4a76bb793d29077102ebe9922582e4cdc2",
+      "after": "fade694299fac18dcf22307c695ff5bc2240b42e381557243d63af0320c4ba5f",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/map-synthesis/index.html": {
+      "before": "e03526c885121dd379c317dfbab4955840eb14a709b009adf0b9ac16f9f30864",
+      "after": "7d64181057027649d84d4c6c1d39151d7564d90d5286fd1915cc6b0575cf6018",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/mcp-protocol-auth-check/index.html": {
+      "before": "851652805e6868d0839bfcca5b81d91f24d6dd2acfd52ccf5c153a670507515b",
+      "after": "cb7e6c2109d63f57471e35128a29ed275e8cc3717c5f68f5eca43b8bc2c50484",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/mcp-server-audit/index.html": {
+      "before": "195fa968c66f5eff476f75198e1e6e86332b1aa2150995fc669dd5c56efb33be",
+      "after": "fc10a179e7785724b32c30480389c8485ea461d4bfb23c13f71fd5bcebb7c863",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/mcp-server-polish/index.html": {
+      "before": "db77b881bab2d0e65b4e1a5ea675876cd36f6b08cbcd0ee5f900c4f3ca9617b9",
+      "after": "af018426242bb6bdddfbb53dcf09b5f90538892fe9572ec3d8938d8a558717a1",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/migration-refactor-plan/index.html": {
+      "before": "7cde5dfb99de20119724ad3a8ac9a873c52913e50b44b7b008634cbf8d1d039e",
+      "after": "253a37432affe05d86f67ed328f9e68644fd959fb18274edf6d81fc8044b7d7a",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/ml-pipeline-audit/index.html": {
+      "before": "a06ab58250cce49a57e40390832c6cad335a389e90b2b41e086217047cb0cc84",
+      "after": "53f37146f6d478e834e54deaf511ad719af441b609a714e3354b1724a9b9d2ba",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/ml-pipeline-polish/index.html": {
+      "before": "db06ec0414e9aea821d405bd5f0c4ce9fe8e28cc6677fdc6cdd5648733948c4c",
+      "after": "700a763b1f13746ed9afa5e39220ca9a2c9120b64f4ef5182929472375b71028",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/mobile-app-audit/index.html": {
+      "before": "e0eb27f53d9336952c69508ea9e0dc21362e5198406a86d681f97155acf40bb6",
+      "after": "4b0afd0e50317ebce2a23353a9be1e624572d0382e4b8ff7ec97663aec7da194",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/mobile-app-polish/index.html": {
+      "before": "e975d894ada6c14e51cf734073bab904f7564cfcf01a90089d29cf096623969a",
+      "after": "b007bd4cc19c598f2f247cd114bba2d6c5827f8ff6248e55810c290422d80181",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/mobile-release-offline-check/index.html": {
+      "before": "6277354113810377319cfce1ef9b70dbb059fe3808e040e9a4dbc0c7b6014eab",
+      "after": "1d78bcf02ad9608d56cce6ef72deb21ec73ee72fabae7b204684481e113e6cc2",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/model-serving-monitoring-audit/index.html": {
+      "before": "555e418b8e85ccd7589433f9e7c44cca490290599901ae733ad65a772b778ea5",
+      "after": "3aaa8b41ccabc6ffd36053e8897560f57705e304473785fcd31a60d3dca34ec2",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/model-serving-monitoring-polish/index.html": {
+      "before": "1aff963d43fc94106c48d383dd6d8ff5449cf2d5df01f73e6aff6804047895d8",
+      "after": "6105b4a5aca4bc5e3abc07e22781b2112dbbcbb198a56bf852446c29b34014ad",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/multi-tenant-isolation-audit/index.html": {
+      "before": "70e36a4a24c7989d1d5c8a2c1a4b19c5f926e02d3c87cb58de2a15c9534f7472",
+      "after": "3ae7241600284ec044ad2f46562748df5b4f971b26d8d63d188a8d58e540d96d",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/multi-tenant-isolation-polish/index.html": {
+      "before": "2169248491180dc61ee0293a87f810d04fa618f382e2dd44969bd46148aa6386",
+      "after": "264af46da09f40d6e17caf0938b7b27224f56fe335435dadbcd493ee54f5d3e7",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/network-integration-failure-check/index.html": {
+      "before": "05a1b178bf8ad687c849a6e7ae5bf43939c3a11cd1a6af3b4cbf6c7662ce23d1",
+      "after": "7766e4a2235ae0f4ec8a0addd3dd3ca3dab3d2f48e9ea0c1654449ff92832cdd",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/nosql-consistency-hot-partition-check/index.html": {
+      "before": "7e08b189d2eb0a49ec7dc85d0f772bd27a6b9480f5cecdf7bbf38be99b48fd31",
+      "after": "b613889dd12cf886945366996526ab5f0c51a39b3988ee1ef5a96bd3b95cd780",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/nosql-databases-audit/index.html": {
+      "before": "33429f9a41e277e4e756fa11f3cfb3dd42199026d0c7ad78fc8b632eb1ac7088",
+      "after": "e827fbd2a7c4e913dd92715138b82732729a4987aa408d06ac0624bf33dcc9cc",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/nosql-databases-polish/index.html": {
+      "before": "a0f28ed3a6ec16db48ca328c8767f5585605b4dbd4ac077c0bb85658b136d682",
+      "after": "8dbe5f91de2f64cec97ae5cc46d2287ee633ebb294d7c8a1d02eaaf6fa858b46",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/notebook-productionization-audit/index.html": {
+      "before": "09cddf7163514928914b6fed5c4de5feec732b2b70f5bfe67e12f0d000d46c26",
+      "after": "45b84ebed2172b93dd345471c18c31e9e5176b7d0cf4b19b502ded3b8d7f6fb2",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/notebook-productionization-polish/index.html": {
+      "before": "2db3343fada83c2d5eb98f4507e6e2c5be0934b97fa19b4a1fe921da4dd5f351",
+      "after": "d9d4f69a798a2d986eef11ee708d7b2925de5cf349c5f6c7e42cc74ff3a755cf",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/notification-content-audit/index.html": {
+      "before": "c5865a612d8b03e24efd584e7fc6e4e5c10b2e395322fba45fd779b82ec20c61",
+      "after": "c269b537d41ae74bb049db920b3e6fab3f40472b3de1f44118008ca08360e3c6",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/notification-content-polish/index.html": {
+      "before": "6bb07d500a487f8c58132185413edf782cfd967c9e7880d79d409c8d94ccff37",
+      "after": "0f5a6c0053807509527674cee24cd83bccdc980f2c67a0b5255f42494b691a49",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/notification-delivery-audit/index.html": {
+      "before": "770b5f75421b6fd32ecde13d8175c7d7d6e96a9cb82b8a2b5c8fab42145ab19b",
+      "after": "d5c3feb3718d57646af722fc988987c4f4d66e430494239506d360f7b2ca3b22",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/notification-delivery-polish/index.html": {
+      "before": "48ddabe7ca59a4c121207b3d2d1b53ad4f95d6390c35d4851eea06da56ffcf64",
+      "after": "3c3a18b7bb712db3ae5966e910bcd2b949ebcbb98db1ffb23cf1be38fd2890ac",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/notification-failure-idempotency-check/index.html": {
+      "before": "155cca6fc653439447ea7f56f03347f2cba350d00a2c9807252ea84499fa42af",
+      "after": "5a9fa6f8064eeba6b40ee3f91811903b43f9dfd5eb03adf0e22f522cada1b623",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/oauth-oidc-session-check/index.html": {
+      "before": "9abe80bcd867b70fec5dbdb004551476327eb1db9fbde97dd71eb7aa895b80c1",
+      "after": "5997944096a86a5dafc3ae03181fbc78a8eab0a1029e40f1a3b6df4689e71e08",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/object-storage-audit/index.html": {
+      "before": "723426b73aeddc888984fb962f4985bdaa29df91fcff030aef391729d7735f5c",
+      "after": "4f7e6541d760736e1e2a4fc1b74d0103c34658e39128c46e89070f1f195fe1d5",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/object-storage-integrity-recovery-check/index.html": {
+      "before": "0d0264edbe781c55b7c7ca180c59fe9cc430da2bcafbb11f6973666fed9ba088",
+      "after": "212c675ff5b633caa5e03039fca31fb58f1ff9ddec617a5f6266f4ac2febc6c5",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/object-storage-polish/index.html": {
+      "before": "937fffa1da2057fad75900db0b38618e7c00bd33f25345ecca71c52a8cb99726",
+      "after": "a08d11884cd9491a584fb209387cf490675f0fa85cbd0032eef2113f417a123c",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/observability-semantics-cost-check/index.html": {
+      "before": "94b155c60df2db57f5c80eb005393d08d3a39db08df87a98768c937d5cf100e2",
+      "after": "b501297774a755b494dbc59d5dc158eb30c6ed76ab7070cbe1b5e320478c7b40",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/observability-stack-audit/index.html": {
+      "before": "857da790610d3a98baec40ef0be6be9cd22a0fa55576f686b5e5959dd1179b4f",
+      "after": "16ec8b053cce748c5af2d6a7b20ddf99622933cd617cbb3fe065ce70793c1824",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/observability-stack-polish/index.html": {
+      "before": "e76ab8299de526423bd4c4fb3db23954f5f7bbcbd93b197812e6a65d8e62cd13",
+      "after": "616b78150dcd6e78a38d684b882b39516b22055a33f984d67b3d41e1b5a43f93",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/ocr-document-ai-audit/index.html": {
+      "before": "e520638e67b4f3bd35f9ebebba768b11396ed912adea86c2434fe47996046973",
+      "after": "644e1c19352f16462b0c4b563610bc738f207104a1c66b8766552d3fb635463a",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/ocr-document-ai-polish/index.html": {
+      "before": "e326f822264283f63b4c7175e1f1265a73ebf2d8e34e6ce5d3c991094851252a",
+      "after": "3f41b46329f8245473a1604d446f92ef7750a4a7cab8dbb935085bca891e1f65",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/onboarding-activation-audit/index.html": {
+      "before": "a7fe2d59188e872e30b458076efc0aa3761bb1f9924b47795316f4d4b635a29f",
+      "after": "ea6fccd83609f3d2c9651322b52898d9de61340d6730a5a4e1b8446981928391",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/onboarding-activation-polish/index.html": {
+      "before": "fb25187a46167edda61fb50e1d9ef31020c4946c73ee8e021c9a14bda4aa702c",
+      "after": "cbb25eaf8fb3b157f6ccd1bc416e7393ed4b91d165c75ac7fe5753b7706aa25d",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/ownership-invariant-map/index.html": {
+      "before": "7d9ca2d29688d4f58955d7616e0dad336744ba6649c87b06c6f11f1f5240971d",
+      "after": "ffe151cdb31727103daf6e771b64d3c7f3c6857ded1c3c62432159790d9d65f6",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/patch-checking/index.html": {
+      "before": "8c927d03f7b0367ed5900a1ed8f58557dbfe3024106b078dd7a2b17cae4d9976",
+      "after": "9304c274eeb4669c0ecdb8820a8870a3b368ccd136e2682b03be345cf5e9a714",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/payments-provider-audit/index.html": {
+      "before": "4a1fe95525b40b3103b3ac2dd4b319e0eb538c05f46c9b5dd37a60106180d51c",
+      "after": "d9d54fc60ea63a6a89c38ffb5bbf9d2c502613c850f54ec03d49b2eb70ba210a",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/payments-provider-polish/index.html": {
+      "before": "e69004653b6504c20a09eefd6bdabedb17c9599cc7a68fca64bab6840d80ae84",
+      "after": "fa5dc8f57ed309bfce07cc10bde78c70913747a61d499e1c22c2bb885d1b094c",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/payments-webhook-reconciliation-check/index.html": {
+      "before": "35d7132adbbfecb464c8b46d48fc8be52b02da921fe8578b859e66dcf3cbe180",
+      "after": "fece00bad21dd3229e235fd304b092eb2887ee7c1b89fbffd5d78b27f0857423",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/performance-audit/index.html": {
+      "before": "a7c13cdc4c5b3b123558cd95981a742e4426f5f2b21f31c68815a9d5b15a8327",
+      "after": "3979eafcdeca7a14ae5833e859703820f4da4f0e7bfa7e0afc7757242f9916c1",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/performance-budget-audit/index.html": {
+      "before": "6a2c5714d20d2ce54ff15d1977f11fb8c36c27b45fe4ab5f9d1de04f4a80d814",
+      "after": "e88fca129a7742334fefb7dc7670aeb5a7f1613d4637225d33092d042b43364d",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/performance-budget-polish/index.html": {
+      "before": "bdba097dfbd502a44e4cefcd31cd89c9e3ca1b4d34b905ae27fb60449ba31733",
+      "after": "66ff007dd2ccd65b7889893f400e2237b55a836d73816dbe4fc5047240649df1",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/performance-polish/index.html": {
+      "before": "2905ac76bdab5166de980b03a0fa4475cb8644ac3abfee5d49060ad28461c270",
+      "after": "66909c9f4cc3edab0d8d0e60d3dcaa70f74f8f89eedaee8d4a27998f0717ef52",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/privacy-data-rights-audit/index.html": {
+      "before": "4ffc6b0b8ba869f87fd10bd26eb6b7564db734edf0eb4e0fad2027fa368329cd",
+      "after": "20fe9c0e12432cfce764a61dc0a22852b8f7b5f7daa9280d2f9ed90d5066beef",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/privacy-data-rights-check/index.html": {
+      "before": "2e86f9ac302b5d797e5dd9a2835c1c540aa566465f9b02c64386dc5722773c92",
+      "after": "089f4badca8d9e267c41a1984a5d026fc5cfacc55a10b10b77b41ae5d059f488",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/privacy-data-rights-polish/index.html": {
+      "before": "c795e8a9b230c29476c4c65398086ae853af40f2d184f119eac9065d6b502255",
+      "after": "8b81257848212416c5d32fc96aaac20864e0bbf35987a14813e57a1cce6b47b5",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/product-acceptance-check/index.html": {
+      "before": "82b8aee66e7bae7a0167cdcb676006d063b43bca4e90a981ef860a0d9116483b",
+      "after": "9bdff5404b843fd4c17b9164d2a55e222601e6168a53d033f31e4d30692a7080",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/product-analytics-audit/index.html": {
+      "before": "3b9047ff1e62e6e28e60a67961ed93247da0ebba456590e8b48551278aba0faa",
+      "after": "2590d876404799bbd480c81d4dfb1c44350f31bbcafafa2ac03b5dff96c2ad89",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/product-analytics-polish/index.html": {
+      "before": "5ec0ff74b7dc3640569ca345af7fad7ec9b70a95c702ce62e7933f2727611879",
+      "after": "e6d0ac1c9e6d1b3c9df3abbb734ce4e2947f3d4e6abd0eba05a7c339afb3b4dd",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/product-capability-map/index.html": {
+      "before": "f95ad8e9c3bacb2157303298ffaae4e83c84e1420382e9f0b24b2edcb0c863e6",
+      "after": "81f4f3ccb141c09c7bc62e5dc7f40c7b53a9797cc8e309d9500f66dd42be032a",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/product-decision-metrics-check/index.html": {
+      "before": "c2d5489ca2ef8566f8b8506b29af26f21a71c4189ef944b9ff97619ba8ca35fd",
+      "after": "2c838664248640c0f28e3efa796203add03d93f1fdb5a63a79db7a16a61967e7",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/product-journey-map/index.html": {
+      "before": "ae44f2f940abf1bda4e27175267850695cd1bece532d43fc8ac58847a619c89c",
+      "after": "9da0c8c3303ca5099842ce3120634bb1d3320ed11f83066677367aed03417ccb",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/product-landing-copy-audit/index.html": {
+      "before": "feb3747fc859991e42042da09e7db71df594ec58126d3eb826a1e5192a3f8bc2",
+      "after": "2ec4c6188e06dec5c44baf5303554653f77fe5defb670c288745f15d5ff19047",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/product-landing-copy-polish/index.html": {
+      "before": "5c0db661f7da5a6cf313d3af6f3474375a1637d6a1ec90aaf7c6c4c3cfbbd503",
+      "after": "19d166c9ce0568152006777d08245caab7ff457086293862c310009698cd67de",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/product-metrics-events-map/index.html": {
+      "before": "d18f3a1ea1066706aea27f65e67d99ad20c1b36ea949078b8dc7cde6d8b48e79",
+      "after": "554bd914a605109b76d30f516f1b5c6d75d39974fa0bc0f583e6bbfee860e943",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/product-requirements-audit/index.html": {
+      "before": "1db18fac875e516eb71650e29712df6189136ff20726b4b2f44b371905323f91",
+      "after": "dc034dd73e31c7a2756e43e36463adbf19edb7f9e8ed0b7eaac616a907d25f79",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/product-requirements-map/index.html": {
+      "before": "dab43dc45e58bce21e9266e827453900a53b5d6dc57997c638b67d0eb971569a",
+      "after": "c4a80629ee73f7eaaa9969162bec47f6b3fc14714d9ca1901d5dda61c572290d",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/product-requirements-polish/index.html": {
+      "before": "72973505b0e8c506f45e5df2590c2423697e541a83b298549172d401d3454cb5",
+      "after": "553a59f83fef3fa95ed8ef0fc7461931c91d04c82439b644b69b186f52e958a6",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/product-ui-audit/index.html": {
+      "before": "5bf3ab0319d6f8a11461a15af7a32e7fa0f9d1f7e71dea46fef460b7208d2ee9",
+      "after": "674c032a05a71ec3ea0c7df2cd50228b4c423cad896e6ce05bad8c7bf8bdfc86",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/product-ui-polish/index.html": {
+      "before": "44862ef4b0151a36e6acb4ce816f03f29ee5565bf957f859c34eefeb2e049e13",
+      "after": "57f4f79538cbcdd8321b9284793433292bd45efcae242a9911ba7eb0e4bad828",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/project-atlas-map/index.html": {
+      "before": "bbd738be3c5a735f44c27a14fa70ec9966d564b6e5202b3e02e434f6ab971353",
+      "after": "2c18bcd497fab06111d3b1efae35249b1ca31236755288515a73a8bd9284c684",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/prompt-skill-sync-audit/index.html": {
+      "before": "c0a9b15c34a626bec3323f8ae4b362c5d08c936586ad5c910a2f0064ffdadea7",
+      "after": "ea29309391dffae455378bff1e7f0166713b6500d51eb03a874ee157655aaa3f",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/prompt-skill-sync-polish/index.html": {
+      "before": "64897db3f99a5a3d2765ae236c8613cb92d0527624cde1dbb435a1d203d2d1b9",
+      "after": "0e4c78befec4107c36b3f254ef02e752be70facd0352d9038c9555e15eddd982",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/rabbitmq-audit/index.html": {
+      "before": "8133d2e892aa9a0855228c7804b99aeea656ba67e30b52ddd054961941f5a44c",
+      "after": "23f050a3e9bea1da452d9248d015f2918529eabaaa07b161a84bef4422d21843",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/rabbitmq-polish/index.html": {
+      "before": "6258e656c4b9f7e6bff029de7783bf01781202ebbb5e9cd35b325bb6fceb3e58",
+      "after": "0f128cf309fe730528d8d286be078490dc657bb03acced34d5c3c30dc55ef972",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/rabbitmq-redelivery-recovery-check/index.html": {
+      "before": "5026d397018c2147a952880ac933914936b0b95341e39be657de833407f93190",
+      "after": "e16602e0a0076ac7d85332ac2686b535b8d5dc7de5df4b9c5044673b2f39531a",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/rag-audit/index.html": {
+      "before": "b6c6bf217561c3d9a328da6c35e91a9c672a768329151e9d68ad939ab8c83cd8",
+      "after": "f35932e935bc3fc28bba23360c45151f6f1949dacd135b5f937ea267df29a954",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/rag-polish/index.html": {
+      "before": "302bd32b8cbfcc527ab37e4e7df5e05006fdff956b3e2a950e90a07eac31c627",
+      "after": "7d9bf1e73b2b0b6a26362d5655fd30a2b8c21d793841a1855d4f0fca5e17fcb1",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/rbac-abac-matrix-check/index.html": {
+      "before": "03a028034c37076906a3f2c1eb8cc634c701ecc97dd001e1956ab478b307facf",
+      "after": "5816ecccea0377f204cf048539a63764a7105642b79d71c86c044ab494cbd2e0",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/rbac-abac-policy-audit/index.html": {
+      "before": "ecc20c07401f115f35e6ce4cee90fe39a703578aa420501ec635b76ee5adff4c",
+      "after": "4423a044ab99d27151a4ca610d774f718e067e9f0cfe8c1eb0838a31b29b8d10",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/rbac-abac-policy-map/index.html": {
+      "before": "6d357c1faefb8ac5bebe687e142513f1f6af129931a6c6d9bc673be0bd2b1991",
+      "after": "e9279529a762d3f8628af089ae483f6c8367bee1daf32365c93b2e6b48f80ea4",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/rbac-abac-policy-polish/index.html": {
+      "before": "10132df4bd628b0198f49a220ea40f15acd0e1bec232c507ebe2f069aa856e96",
+      "after": "6a9d7fdbf38bc0e0ac370f3bda6739db1f9bb135ef2ba868957bb5da96dd2c70",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/readme-gen/index.html": {
+      "before": "d1a6bd5305dc7c6ba8b2bcb7c247d13b037486dc59a66154f39180075ad2d497",
+      "after": "9947498fa6ca88d568d2eb5143e7e87416c521acf9b587344dc60fc30f3818ef",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/realtime-frontend-audit/index.html": {
+      "before": "72d86af751cff356721acf9cf63de02e03aa97cfca025f3cf6e18a6afa403c51",
+      "after": "8ed17119e7610450d3c12505b11d1768294bbc593ba3388da1228573c8ed1077",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/realtime-frontend-polish/index.html": {
+      "before": "5e7852536b1d21da915e3e77b9ecf389768392606d6e59762e72a01143da144d",
+      "after": "6fd8a8a207149bb8562da15a31db26fda57d34ca8122d2d21f8c67b368a26653",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/realtime-interface-profiling-recovery-check/index.html": {
+      "before": "08749a41216c011fc690e7230524158002f167c6395a65276bce2914035eebbf",
+      "after": "a78f3a5e7864b765764b9586ff7e9e6ad6d59589739f138d837b9352cb67b4f2",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/redis-job-queues-audit/index.html": {
+      "before": "78a31fc9410c6cd70a05af6257f2484984a087fcb8f666d27b2d5a2857dc6b2c",
+      "after": "2892fdd2531edb91fd21b4ae456383633603b87f588c012e6dff7861776cf1fc",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/redis-job-queues-polish/index.html": {
+      "before": "a92978b0fd2b85864cdcd9e061aa36d12cbe4967989bcf453d31dba31f545b8b",
+      "after": "fd73811f4f9775d8e8b6cd9153188b9f8423b520623cb94a0bee7cc96d6bf195",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/redis-queue-load-recovery-check/index.html": {
+      "before": "ef21264b2c06ec12ab1f88c7f7dac31077475d49c5b36027606f0681d9e73296",
+      "after": "897cab98c4149d9b04622aacf12032f6e6bbc9de4622157f8c64697e918f52df",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/refactor-boundary-audit/index.html": {
+      "before": "99a4b3d1b4b7718fcb282a5cba735453e34c95ed588630796a252d0444d7ec21",
+      "after": "3d2790abcf7c91ebd4b1572728d16576a1ba0134e3f9e1d1542c3f34ed73032b",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/refactor-boundary-polish/index.html": {
+      "before": "59549eca9e1fd4225c1303cd82794fcc810db1d47f3d64a5e3b7358486ac304e",
+      "after": "64d5c0ea572031d2336c693daa3a121152fde0fa17af5b963372a3b2eb90fa14",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/release-artifact-trust-check/index.html": {
+      "before": "1e13f8f08f86a2145cfb5199e246207fe73960ee97bb0836455aeaf359a77165",
+      "after": "9e81c730378ba666395b703cd0ad17687cfeb960f097d8a89bf80bbc1a8aee55",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/release-readiness-audit/index.html": {
+      "before": "7e9d42e407b026cf7c3d35f28fcadd565b68d1d5dfc69930e14c32cb135414f9",
+      "after": "f76cd96e896f1b9789e5eb765df9a6725da5d729940f1778e02cb1903f23cfbd",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/reliability-audit/index.html": {
+      "before": "aa533ebed8fe302151df907c7d2ae01c93f3f107f076ea09446a8bfd51adc4f3",
+      "after": "147e2daba68645f6859f90ddbe38f94a5d0167707a410af5e66c72f7bfe644b0",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/reliability-polish/index.html": {
+      "before": "7555984fe97802a23a80c16b9b7846a0fa101882f637084d224b3a23483851a9",
+      "after": "693eebe15d73d782293e14db558b05072f07de05a73544dbb8900fab3e2f60af",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/reverse-engineering-audit/index.html": {
+      "before": "6abf1bd12c53316c1cd96038acbbf5d2d85b853473356a2fe4ef62ee48e00952",
+      "after": "6fd2c35b273a259c35f5bfadb257afa6598ea011ec4cb950a7276f9b9d1206a7",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/reverse-engineering-polish/index.html": {
+      "before": "b8402ce4196f498e72bf89d62029e2353c152bbe4f737f8c63ad54513efe43bf",
+      "after": "a1d5f78eb405338ca1bf6027b6e27353fc2b532c72c2f047bf5a49fecf6c778f",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/risk-release-map/index.html": {
+      "before": "8ac963791b1d6e91584119302123855e413015c20066727a03a8942b92f8e7b0",
+      "after": "9ae03c0b16d04fed3c176d8a492b45e947e2044d7cea7d160440515ca09db130",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/runtime-flow-map/index.html": {
+      "before": "6d3a7e1978292241bbd99e7816cbe97e6f4097b6fc0afccb670aafbc0a7e89bc",
+      "after": "253516f9bc01cc3f9c4c7134978c6bdb434394734bca594a63dcf607917b7298",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/saas-navigation-map/index.html": {
+      "before": "c128838be15d79701c67fff8a9f8540c9b7f73879af0b5da3c08e452d9f2fc02",
+      "after": "0fec59d385b175cd58a5d65db4b94589247d372965172b6157b7a7ee21c9f9d5",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/scoped-audit/index.html": {
+      "before": "9de1804ea49ee48d1c01edd927e1238f5bf7fb99060ddee2b70d6b7f859df70d",
+      "after": "c02f2aed9e64c658f8cf2ea2bb3844b58c994428ab44343a0b34852ccf97bbf0",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/scoped-polish/index.html": {
+      "before": "4c23c56934d93153b237fa1dd8397f055963d1d14b21b1d6b574228df7d22cb6",
+      "after": "c3c1b4688062f2f6977099b47389620c6c1be697636416bbd1bd0297d8b7b020",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/search-index-audit/index.html": {
+      "before": "bf5e3d2a0eb90864c1e09a88508a7e763d3e709e64be5ca9c027f3f8c8113ae5",
+      "after": "8aec52226964b4623237a5f2ce53db14c84f55ddcbacde266bd51457d6289fbb",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/search-index-polish/index.html": {
+      "before": "b2b5209f786612723694e069a6cb356510ed08a0e6f63e6d56ba86d5b4a1c80e",
+      "after": "f15b0ecd2674b96c096211c5d865df2f0726ac7a5defeb5ceffcca7898192062",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/search-recall-freshness-check/index.html": {
+      "before": "b8c551eed07c6945403b55ab6d253a3a63b5ca3a917cc5b98629e76a3775d415",
+      "after": "cc52b7471425f43db37c1152c85c5218af0410e9fd12aa9cf423b55845b7de40",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/security-abuse-defense-check/index.html": {
+      "before": "f41d703d744fcc7637dc10c28f4dfaec3ae9d5a6f1c31ffb37a7d671e01d5157",
+      "after": "3484a53d982d44f618486d45b054660befb215268a49125d48972dc0b75e6ed6",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/security-audit/index.html": {
+      "before": "6581206429f367998a765342434ea9b4eb474edc87d499700769415c17c472ef",
+      "after": "eb869f10a495b6ed33a4f4b9a53c86153579d457b32d6e325b4d8b003678f3fc",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/security-polish/index.html": {
+      "before": "8e5c972b772a4d5d32ebb3e0060e7747bff98d76fef8be7e7d9bee8dfdfdea93",
+      "after": "64378563dac9fa7b202e9c6d807940b79cde359eb2e15dbe592a607e2cf5fb10",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/seo-geo-audit/index.html": {
+      "before": "2f8807f54a50f7993e4b99d9f7c6204a64da191b9622b4261e6cd793895d7525",
+      "after": "627d9d340de821b8350c144ac970ad18a7e0d734a714e2d8fb301c3635200e40",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/seo-geo-polish/index.html": {
+      "before": "94a0a38cacb0fec531434c7373f5c9bba0053a442728d2269cf7636724251b16",
+      "after": "b0c85e26a36311323d4221a6862a24f751e1e42f366f707375bc39ecc1b0feab",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/serverless-invocation-check/index.html": {
+      "before": "bab6ae9473021779482f2c3337dfed9ca6f8fe68fb0063123c6737f5d8a1cb40",
+      "after": "88871e88012ba8e2c5141a733b27aea6a1a3f3c1917c6a27eff03251f859d6aa",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/serverless-runtime-audit/index.html": {
+      "before": "07ae9c4fc22aea89162abc812887657f9abee4b70df33293aa48b75351a8a84c",
+      "after": "ba18cd070e7705c4ad7466f5b2b9ffbb63f18e2f764b6ab766fc339ee3e1e383",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/serverless-runtime-polish/index.html": {
+      "before": "668c1bcbfdc4561b382ed64da5717fac43d05f3f4f53271a17c6d1e9d00b2c9c",
+      "after": "1b49bba03cc8ba9e059deb700c8e29b46a5ec640d52af629a504700e5ef431ad",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/sql-databases-audit/index.html": {
+      "before": "17a517941a533555605a1c9b42cdb4f8cc76d3010ac1bb406cd4f5746eb8f1e3",
+      "after": "e6032bb120b2533f57fbc8c43a346d01da0740bcf556bd7283f8a667b8616b30",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/sql-databases-polish/index.html": {
+      "before": "044bde7b2353094e2eabd9796983ef1573e3cc4d991cebd5d61fbcd7125cf9a5",
+      "after": "3bc0906415b3c51649b9304557d70b9a2b9e28fe5f0e6c3519ff364bb6b11c99",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/sql-load-lock-failover-check/index.html": {
+      "before": "8be551449e70409fd7bd3e902d523c5b55beb797ac4e295c67841e44b85f8e4b",
+      "after": "a85bb4bf04d88948b7d0b1b5223c1f6278a81a87094c797e5a89f04009cf0cbf",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/synthesis/index.html": {
+      "before": "fad928767baddc6d5f141a776053866eec72559a7f85f4aec9a47f1328347edb",
+      "after": "a418c6427942dc3ac52abb90395305ba7320243b31862d85d0470a645a34440f",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/system-security-hardening-audit/index.html": {
+      "before": "02f9d82c649100958f154314b86377d5ff28f6e6316e3103c1efbab8284c20e3",
+      "after": "ec14836b5d732ef54411f52815f6b5f37fa3a375d39e62499733a32580bf8ef1",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/system-security-hardening-polish/index.html": {
+      "before": "4da7aa704ca49768b857102b0789b28e1af380c1aef6790a3afcbd70615b0a47",
+      "after": "6f4c887eb27823ed7d6677d228fa0acca78830265cfe42a8ed742c52fc81a9a0",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/task-shaping/index.html": {
+      "before": "8e5d7c194db50a34627fa1673ea2d8b664352c1508a211fcf07e0814848f249e",
+      "after": "81b8f7aea8b8a745d7c3fc6a3e2bfe93a32479284a046dc204bd9413635c51ad",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/temporal-replay-versioning-check/index.html": {
+      "before": "42d63b18ca8e2c1afc5ba5d5f77f9174a00a37002e847555342da4eb7e3f88c1",
+      "after": "aaa52e3d9c1b63b9b8edfb2b39078ef279d692624dc4f60d56281690aab09d67",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/temporal-workflows-audit/index.html": {
+      "before": "52484e04baff0b61db843b3cfb17f74d906cf3a6442c7e003e44903228530c46",
+      "after": "5982b7b84500474fbfb826db77f47cdba9e04f1900a0cd81cbe249fa23841cb2",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/temporal-workflows-polish/index.html": {
+      "before": "ea436a5502ba60fb08443a739aa345f6fed8850aa7cf50f53314c94fb8514b44",
+      "after": "a2915199a0947a65ec2dad3f66f387747711e4eb144fb6fa58f3c98126272f83",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/tenant-isolation-check/index.html": {
+      "before": "0a2dbe8215011f2b739924dfde908d348981b571809f6e280b3febdb76b64211",
+      "after": "0dde1228aeadd6bfeac509476b64214f6db20bd158f56eb9514c4f53743e43ff",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/terraform-delivery-audit/index.html": {
+      "before": "72c6d7d74d090d53a261b50403f2218a2018bdd3e227753cce21ffa650b6355f",
+      "after": "513f9a54530fa391d7e97a821c3059e08edd92b3cd9b2e346014860ffd42662e",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/terraform-delivery-polish/index.html": {
+      "before": "10ce161f0e589d926110ef4462591d4b44961f13a6c994c577a10f19638355fe",
+      "after": "36885a7e0599acdf4bc294dd00be8cfd45be4383c0b661245cc204369c2399b9",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/terraform-plan-state-check/index.html": {
+      "before": "5fe39e4cd98bd7c2a8a10913b4180ae0d59a1625305261d36dde025e9e7f9d8c",
+      "after": "45dfd553ee61322ee0aefdc7798a12183a9f0f1f7d04c99f8b408a6e17500d1e",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/test-coverage-audit/index.html": {
+      "before": "b15f392b86ca3f95ad36ee78e927c48bfd31bfd486d3aaa593e7b0fec054f9c6",
+      "after": "135a2b9c9d4a43cf3fdb2ddcae73bd0a5cdd34e6badd47f65d0362c029c78e02",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/test-coverage-map/index.html": {
+      "before": "a2cfc381c52de196fb66d788abcdb8e1ffb5411c3d0ae984bf6809abfd2ec2d9",
+      "after": "df8a4f398463b1759b79f697a5c59382faa33696071b624092969960fa479b06",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/test-harness-polish/index.html": {
+      "before": "cebef1c445df770b760c5cd892f8e362ba06ca9edc1184c278175da55b3d252e",
+      "after": "1d7e3346e28d95c595f15378152f27595171202f16691df81ef80b36a0230a76",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/traceability-map/index.html": {
+      "before": "688e0896239f275d983936b7f7c324ef56f92391272eb42f9efe2a2bc8b5c805",
+      "after": "3493edd41e13b022c461df349214229b9488498b8597cc7320bdffd07bc93f9a",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/transactional-delivery-check/index.html": {
+      "before": "f5489dec090430484543e67f6f590eeacb5c5ca9837ed47207d15900571e76d1",
+      "after": "7852c33030c512206e045ba259ed6261602614f860c82ab04b5aaa0d74ec940d",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/ux-flow-audit/index.html": {
+      "before": "5d7e6a18643aba5756eafa6a2e9065f3329f66a2ccfa2f839a2cf2838f787616",
+      "after": "dc8a01bb45d5a48050c728dcdfd6f3eb775f18dce240243cad7b29883e13f4d1",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/ux-flow-polish/index.html": {
+      "before": "5862533310d80c80f9e26e302a6c0e16078d297f3d7611e603e4fb0583082a61",
+      "after": "86a3ca3613e86240bb3279c5ec20d678423b3aedf5390156007bd48345097459",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/validation-clarification/index.html": {
+      "before": "98d539ebf32c7b80fe55c907f1f813512f052156130c87c2d8dfbcb0438abd04",
+      "after": "bac6202d5dbc44d24e132c6fcc0d14b0dd7540e9fb3b3d77207aab63ed46262a",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/vector-databases-audit/index.html": {
+      "before": "46b6e31f4f5c451c1955a3dde1248b139c9363a3e91972671eda83bf18615317",
+      "after": "c1dceb824ee5c4d9513616a630d650a51820f1400e4e4eb7df336a8b57725817",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/vector-databases-polish/index.html": {
+      "before": "c24da961d582981f2ce13abdd525a42025e92353bad6f2b3d6f798fcd5556692",
+      "after": "6e2089aa9e8dd5e2625648fd53ac7f7de638dc9aa46a98b1083858e4e64ed3b0",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/vector-recall-degradation-check/index.html": {
+      "before": "049e20b9ab8cc9e413fe40e862901385fa51d05f854b69715cb7b00abd8f7fd8",
+      "after": "15e0e48ee3950571de44ade83e487b306ffe663cbfa99822c95569146d803cef",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/visual-regression-check/index.html": {
+      "before": "0db9bc0d19a7b95eebe9f97f208a330fd65c9205518c7a4cf0699dedbdbbd797",
+      "after": "29385cfbf877c0a76b2095fee293a5162dc8dccddc6698086fa7862b3b62ecc1",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/web-boundary-check/index.html": {
+      "before": "108ba628ee9280a20b6f45fb1a58cf13d2a43480858026662e58b681f6e487a7",
+      "after": "8e0d6606c26db9c18334a6c2e431e316f6fca48cd248c3300cc5cb5866b8a967",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/web-rendering-audit/index.html": {
+      "before": "be108b35e6ce61781cfb2d810903419377f36d5512108c5bb9497420d9416af6",
+      "after": "dd29769c3960e9c25ea39bbaaf98e2b1b9e84aef72a629f82982c57080401d3a",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/web-rendering-polish/index.html": {
+      "before": "48cf66a65f6f1a426df135a4e197f74e7fd7cebacf45aefdeb6ed944558347a6",
+      "after": "4208e70f4c80eb216af145881f2a850a67b0faa52b577a58689d49a85d62bcd6",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/workflows/workstream-decomposition/index.html": {
+      "before": "11392494664434823d6bd1e57b1601dcc227f8ea7988d683c120ed4081fe53ac",
+      "after": "72e4d2638a8ae255320b1bd8433791230de4ff2021269d6d99e2f54df1dddbae",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/zh-CN/index.html": {
+      "before": "6708eaf77e77a77469541f64b0838c95512bf3408da8ca6c2128b18920cea5ac",
+      "after": "25e23c82512baa2079f0d48d91b65cefed20cdce62cd465dc67c11b80f515a82",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/zh-CN/privacy.html": {
+      "before": "b9ee0f4ea20a0212bd431bf9b9594ceef4e8e1c631c478a6a372bb5d7ea3892a",
+      "after": "9b22eb86cedd5e850170caa304ac64cd9c77318958462d7545cd293f174df2a9",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/zh-CN/terms.html": {
+      "before": "6e4d87b5ae7d300de78faca3a32ebf0de4560bf0304e2fe4c0c4b31a38a070a0",
+      "after": "c704f983b29c113430688e7ef8cb2c149e5ac001bac1caa02857dc0d08368424",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "docs/zh-CN/workflows/index.html": {
+      "before": "59b1961a50a8cf4eb1b866788116140bdac1b0cd5c9e8e9de72e051bf0f1f8ca",
+      "after": "bd5260060556dceec1c0bd8c77c49e9d8ca98dee1920c3826eaa20f0c4764842",
+      "review": "Regenerate the static site from 1.4.1 metadata; retain the established language, canonical, directory and workflow structure."
+    },
+    "plugins/vibe-coding/.claude-plugin/plugin.json": {
+      "before": "3c7b1dc0794603fe6ae62795b4ac09fe29aaba2028cc7ccfa81a54ed1689127b",
+      "after": "a3bd7d84200df7a4af6820d76831f16eff2b6fc02caa85637d1aa773e69a1f39",
+      "review": "Advance the release version; add the public support URL and the Developer Tools category to OpenAI interfaces and state actual host/language support."
+    },
+    "plugins/vibe-coding/.codex-plugin/plugin.json": {
+      "before": "a4d40d2c5da709ae12a2752640cb21c01ec203751164316fe1bff3c8ae54ed71",
+      "after": "53cfe744e099313a0864e5226d84892ff190bc0d617cc7e4a4a3adeadd476593",
+      "review": "Advance the release version; add the public support URL and the Developer Tools category to OpenAI interfaces and state actual host/language support."
+    },
+    "plugins/vibe-coding/CATALOG.html": {
+      "before": "adc71b1be142257aa8d54fdbfb68f95e92f5bd9527bee7202cd6493896f5c411",
+      "after": "d44a9f3b83f6aab78a4005f1b4a0c3b13493d01e7a4577b3645b45e75cdcf52d",
+      "review": "Synchronize the package catalog, installation example or changelog with the metadata release."
+    },
+    "plugins/vibe-coding/assets/catalog/locales/en.json": {
+      "before": "aa414948b44f3b2afaa089759cfcc24676f79a0495f77464f0fd4ab93d372f13",
+      "after": "57f5b185fd7767e7a520972e73c3dd3e6546ecd75217f8ce18e97ffffe391cb6",
+      "review": "State preference retention and deletion controls and distinguish publisher, host and GitHub support-data handling in the policy."
+    },
+    "plugins/vibe-coding/assets/catalog/locales/es.json": {
+      "before": "8a758fd3cb6a2edc0a90d4bc0e187669f8c3f5e8e288f159a1b768504920dd9a",
+      "after": "af9e157bb11e25e2260314e81aee24c67d67791a9a2537ca318be8e3b2ba59ee",
+      "review": "State preference retention and deletion controls and distinguish publisher, host and GitHub support-data handling in the policy."
+    },
+    "plugins/vibe-coding/assets/catalog/locales/ru.json": {
+      "before": "355f98e0196be81f734da5a6af10d3d6096557b4273981e203d833a14ee04a01",
+      "after": "11a074ec34920efa93dd2be0a7437dd6a33bb07111919f140b171ce5641b42d9",
+      "review": "State preference retention and deletion controls and distinguish publisher, host and GitHub support-data handling in the policy."
+    },
+    "plugins/vibe-coding/assets/catalog/locales/zh-CN.json": {
+      "before": "8851a4b502575fe17324d9571468bae617a2dc0234b4b71830b41d404120a27b",
+      "after": "7ab181c3b0f98b1643601510a2f51a539be1d79f1adf355dd0be062ce3725788",
+      "review": "State preference retention and deletion controls and distinguish publisher, host and GitHub support-data handling in the policy."
+    },
+    "plugins/vibe-coding/docs/INSTALL.md": {
+      "before": "6d2acd5e3dec96a22633cf7528fc9925c2b67759815f9f487ed3eb87dfb66ff2",
+      "after": "78969cbef56aec2ea5efdcfe992373000a2075e9d9ea9a6ebde9398a49fb417a",
+      "review": "Synchronize the package catalog, installation example or changelog with the metadata release."
+    },
+    "plugins/vibe-coding/plugin.json": {
+      "before": "b2f7a47ac7fcb3c28aafe1e787660c091aab9d635e124ea883f6f01c1810cee4",
+      "after": "0158141d10c1644443c5c783386de622871be6ab28eb40da3ff5c7d9587a2b40",
+      "review": "Advance the release version; add the public support URL and the Developer Tools category to OpenAI interfaces and state actual host/language support."
+    },
+    "tests/test_evaluations.py": {
+      "before": "afdd988fba198ec0911e8d5725cbf6aeb7635e6450860e0ea0c4abc6f64f80bb",
+      "after": "a671bbc122127d07eda69d86696e2d8c55bbf21eccab97c00c71fda714893cde",
+      "review": "Resolve the new metadata revision without rewriting historical instruction fingerprints or behavior results."
+    }
+  },
+  "checks": [
+    {
+      "id": "instructions-unchanged",
+      "observed": "All 297 instruction fingerprints match the 1.4.0 record; no skill entrypoint, focused recipe or shared reference changed.",
+      "limits": "Carries forward the 1.4.0 source audit; does not rerun or relabel earlier model evaluations."
+    },
+    {
+      "id": "package-and-host-manifests",
+      "observed": "Package validator passes for 46 skills and 241 recipes. Official Claude Code 2.1.278 validates the root marketplace, root plugin manifest and self-contained plugin manifest.",
+      "limits": "Validates package discovery and schema, not all domain workflows or hosted publication eligibility."
+    },
+    {
+      "id": "reproducible-package",
+      "observed": "Two independent package builds produce the same 742390 bytes and SHA256 8def3160e2d87516995e7746cdeb69dc735dabc91741e2f5300a3bb26eede11c; archive CRC and contained entry paths pass.",
+      "limits": "Does not imply a marketplace review or publication. The 1.4.0 OpenAI draft reported a skills-only eligibility restriction; this record does not claim that listing metadata resolves it."
+    },
+    {
+      "id": "unit-and-site-regressions",
+      "observed": "42 Python tests and 8 Node search tests pass; extracted ZIP validation passes and git diff --check is clean.",
+      "limits": "These deterministic checks verify manifests, packaging, fingerprints, static site contracts and search semantics; they are not independent model executions."
+    }
+  ],
+  "limits": [
+    "The 1.4.0 instruction audit and prior behavior records remain immutable.",
+    "Marketplace status is verified separately against each provider; this package does not assert OpenAI or Anthropic approval.",
+    "Policy text describes implemented data handling and user controls; third-party retention and account data remain governed by those services."
+  ],
+  "artifact": {
+    "file": "dist/vibe-coding-1.4.1.zip",
+    "bytes": 742390,
+    "sha256": "8def3160e2d87516995e7746cdeb69dc735dabc91741e2f5300a3bb26eede11c",
+    "entries": 372
+  }
+}

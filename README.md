@@ -78,7 +78,7 @@ python3 plugins/vibe-coding/scripts/validate.py
 python3 -m unittest discover -s tests -v
 python3 plugins/vibe-coding/scripts/catalog.py search webhook --mode check
 python3 plugins/vibe-coding/scripts/catalog.py search MCP --lang es
-python3 plugins/vibe-coding/scripts/package.py --output dist/vibe-coding-1.4.0.zip
+python3 plugins/vibe-coding/scripts/package.py --output dist/vibe-coding-1.4.1.zip
 ```
 
 See [Contributing](CONTRIBUTING.md), [installation](plugins/vibe-coding/docs/INSTALL.md), [privacy](PRIVACY.md) and [license](LICENSE).
