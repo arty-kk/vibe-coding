@@ -2,15 +2,15 @@
 
 ## Operation
 
-Verify the selected invariant through bounded scenarios in an authorized environment. Do not turn verification into unrelated implementation. Return passed, failed or blocked, with actual evidence and any missing required scenario.
+Verify the selected behavior against explicit expected results; do not change product code.
 
 ## Goal
 
 Verify one payment webhook, state transition, or reconciliation invariant through safe duplicate, delayed, failed, and out-of-order scenarios.
 
-## Required input
+## Context
 
-Provide provider, selected event/state transition, implementation summary or patch boundary, expected local state/entitlement result, safe sandbox/mock environment, fixture events, and repository-native commands.
+Identify provider, selected event/state transition, implementation summary or patch boundary, expected local state/entitlement result, safe sandbox/mock environment, fixture events, and repository-native commands.
 
 ## Scenarios
 

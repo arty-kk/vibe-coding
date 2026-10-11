@@ -1,4 +1,4 @@
-# API Contract Evolution Polish
+# Improve API Contract Evolution
 
 ## Operation
 
@@ -7,12 +7,6 @@ Implement the selected schema evolution or compatibility repair with its directl
 ## Required input
 
 The changed schema/operation, encoding, authoritative source, old/new producer and consumer versions, supported compatibility window and rollout constraints. Identify a concrete payload or operation and the consumers that must keep working.
-
-Select the target from the user’s request and current evidence. Reconstruct ordinary missing context from the owning code. If a missing target, authority or environment changes correctness or safety, name that specific gap and leave the dependent action blocked; continue independent work. Do not invent requirements from existing tests.
-
-## Change contract
-
-Implement the smallest complete owner-layer correction, not merely the smallest diff. Carry it through directly affected producers, consumers, states, schemas/configuration, generated artifacts and operational behavior. Remove logic made obsolete by the change unless evidenced compatibility requires overlap. Preserve unrelated work; exclude independent cleanup, speculative abstractions and migrations. Each material change must serve a selected invariant and acceptance criterion.
 
 ## Domain invariants
 
@@ -48,11 +42,3 @@ Name the stage that permits new writers or removes an adapter. Where needed, dep
 Reproduce the original failure before the repair. Exercise old-to-new and new-to-old payloads for every supported direction, boundary values, absent/null fields, unknown enum values and relevant errors. Run native schema, generation, type and consumer tests. Verify semantic output and authorization, not only compilation. Include retained-event replay or a representative rollout/rollback fixture when the selected contract requires it.
 
 Report the changed source of truth, compatibility matrix, actual test results and remaining deployed-consumer gates. Stop when the authorized contract and direct consumers are complete.
-
-## Completion criteria
-
-The selected invariant holds at the authoritative owner and directly affected consumers; obsolete conflicting behavior is removed or intentionally retained for stated compatibility; the complete diff is reviewed; required available checks have actual results. A missing required environment or unresolved defect prevents a claim of verified completion. Continue authorized corrections within scope; stop when the requested contract is complete rather than searching for a different improvement.
-
-## Output contract
-
-Respond in the user’s language with the completed behavior first. Include the selected invariant and owner, changed scope/key files, evidence for the correction, the affected producer-to-consumer contract, actual verification commands/scenarios/results, and material rollout or rollback consequences. List required checks not run and unresolved assumptions explicitly. Distinguish implemented, locally verified and externally released states. A future plan cannot substitute for an executed change. Omit empty sections and unrelated process narration.

@@ -2,7 +2,7 @@
 
 ## Operation
 
-Inspect the named boundary and report supported findings. Do not edit product code. Include concrete evidence, impact, the owning source, one remediation direction and a meaningful validation route. Severity follows actual impact, not a category example.
+Inspect the selected behavior and report evidence-backed defects; do not change product code.
 
 ## Goal
 
@@ -22,18 +22,7 @@ Document loaders, parsers, chunkers, metadata extraction, embeddings, vector/sea
 - Operational behavior: high-cost retrieval loops, rate-limit gaps, slow hot paths, missing telemetry for empty/low-confidence retrieval, and absent operator recovery paths.
 - Evaluation: missing eval fixtures for representative queries, ACL filtering, citation correctness, stale-index behavior, or known answer regressions.
 
-## Priority model
-
-Cross-tenant/source leakage, unauthorized retrieval, answer path that can trigger destructive/paid/security decisions from unsupported context, broken critical answer flow, or stale/deleted content exposed as current.
-
-Important retrieval/citation/freshness defect with user-visible impact, missing critical RAG eval, duplicated retrieval/domain logic, unbounded cost/latency on reachable use, or ingestion state that misleads users/operators.
-
-Lower-risk but concrete RAG quality issue: weak metadata, unclear empty/low-confidence state, stale docs/map, minor eval gap, or source UI ambiguity that affects trust.
-
 ## Finding quality
 
-- Every finding must cite `path:line[-line]` evidence for the ingestion/retrieval/answer owner and affected surface, plus symbol when possible.
 - Include data source, index/retriever owner, ACL/freshness boundary, expected behavior, acceptance criteria, and validation/eval direction when discoverable.
-- Use one unambiguous fix direction per finding; explain a tradeoff only when it changes the decision.
-- Merge symptoms under the same retrieval owner unless fixes, rollout units, index migration, or eval strategy differ.
 - Do not recommend provider/model/vector database swaps unless current repo evidence proves the existing owner cannot satisfy the behavior.

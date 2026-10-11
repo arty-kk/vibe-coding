@@ -2,7 +2,7 @@
 
 ## Operation
 
-Inspect the named boundary and report supported findings. Do not edit product code. Include concrete evidence, impact, the owning source, one remediation direction and a meaningful validation route. Severity follows actual impact, not a category example.
+Inspect the selected behavior and report evidence-backed defects; do not change product code.
 
 ## Goal and scope
 
@@ -26,9 +26,3 @@ Audit RabbitMQ topology, publisher guarantees, acknowledgements, prefetch, quoru
 3. Trace unroutable publish, confirm timeout, connection/channel loss, consumer crash at ack boundaries, poison redelivery, and broker alarm behavior.
 4. Calculate in-flight capacity from consumers × prefetch × task footprint and compare it with downstream capacity and ordering requirements.
 5. Verify automatic recovery does not duplicate consumers or omit declarations and that shutdown cancels consumption and settles in-flight work deliberately.
-
-## Priority model
-
-- **P0:** message loss, duplicate irreversible effect, poison-loop outage, unsafe topology change, or quorum recovery failure.
-- **P1:** a material acknowledgement, redelivery, routing, dead-letter, capacity, or recovery defect.
-- **P2:** a lower-risk but concrete operability, observability, or efficiency issue.

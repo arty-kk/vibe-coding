@@ -2,7 +2,7 @@
 
 ## Operation
 
-Inspect the named boundary and report supported findings. Do not edit product code. Include concrete evidence, impact, the owning source, one remediation direction and a meaningful validation route. Severity follows actual impact, not a category example.
+Inspect the selected behavior and report evidence-backed defects; do not change product code.
 
 ## Goal and scope
 
@@ -26,9 +26,3 @@ Audit Celery task publication, acknowledgement, idempotency, retries, routing, c
 3. Inspect effective Celery settings and task decorators together, including inherited defaults and transport-specific visibility/redelivery behavior.
 4. Calculate reserved/executing work and connections from replicas × concurrency × prefetch; compare with task footprint and downstream limits.
 5. Check beat/ETA uniqueness, overlap, routing, clock, and long-delay behavior for the actual deployment model.
-
-## Priority model
-
-- **P0:** lost tasks, duplicate irreversible effects, unsafe shutdown, result corruption, or worker-fleet outage.
-- **P1:** a material acknowledgement, retry, prefetch, canvas, routing, or lifecycle defect.
-- **P2:** a lower-risk but concrete observability, fairness, or maintainability issue.

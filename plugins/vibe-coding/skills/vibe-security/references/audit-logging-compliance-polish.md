@@ -1,18 +1,18 @@
-# Audit Logging Compliance Polish
+# Improve Audit Logging Compliance
 
 ## Operation
 
-Implement the requested coherent change at the owning source and update directly affected consumers. An earlier audit is optional when the user and repository already establish the target. Validate the changed behavior, then stop when the requested scope is complete.
+Implement the requested change and verify its directly affected behavior.
 
 ## Goal
 
-Fix one coherent audit-log boundary for a selected material action or policy decision across owner-layer emission, storage/sink, metadata safety, tests, and docs/maps when used.
+Fix the selected audit-log boundary for a selected material action or policy decision across owner-layer emission, storage/sink, metadata safety, tests, and docs/maps when used.
 
 ## Scope selection
 
 Use the selected action/event, audit finding, failing test, compliance requirement supplied by the user, or explicit logging bug. Do not create a broad logging platform unless the selected fix requires a refactor plan.
 
-## Polish targets
+## Change targets
 
 - Owner-layer event emission and alternate paths such as worker, webhook, admin, bulk, retry, or rollback flows.
 - Event schema/metadata, correlation IDs, actor/resource/tenant scope, outcome/reason, and safe redaction.

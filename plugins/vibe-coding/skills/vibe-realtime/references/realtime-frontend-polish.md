@@ -1,12 +1,12 @@
-# Realtime Frontend Polish
+# Improve Realtime Frontend
 
 ## Operation
 
-Implement the requested coherent change at the owning source and update directly affected consumers. An earlier audit is optional when the user and repository already establish the target. Validate the changed behavior, then stop when the requested scope is complete.
+Implement the requested change and verify its directly affected behavior.
 
 ## Goal
 
-Implement one selected, evidence-backed Realtime Frontend improvement at the authoritative owner. Complete the directly affected contract without broad cleanup or redesign.
+Correct the selected client-state or subscription behavior under overlapping mutations, reconnect and identity changes.
 
 ## Domain rules
 

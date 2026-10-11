@@ -1,8 +1,8 @@
-# Reliability Polish
+# Improve Reliability
 
 ## Operation
 
-Implement the requested coherent change at the owning source and update directly affected consumers. An earlier audit is optional when the user and repository already establish the target. Validate the changed behavior, then stop when the requested scope is complete.
+Implement the requested change and verify its directly affected behavior.
 
 ## Goal
 
@@ -24,7 +24,6 @@ The selected failure path, its owner layer, direct callers/consumers, config/env
 ## Implementation principles
 
 - Fix the selected behavior at the owning layer/source of truth, not only at the visible symptom.
-- Keep the diff focused: update direct callers, tests, docs, config, generated artifacts, and runtime contracts only when affected.
 - Do not add hidden fallbacks, broad catch blocks, silent retries, speculative flags, new frameworks, or broad abstractions unless repository evidence requires them.
 - Preserve existing public/internal contracts unless the selected fix explicitly requires a contract change; update consumers when contracts change.
 - Make failure, consistency, idempotency, and performance behavior explicit enough to test or observe.

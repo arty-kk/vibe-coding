@@ -1,12 +1,12 @@
-# Billing Entitlements Polish
+# Improve Billing Entitlements
 
 ## Operation
 
-Implement the requested coherent change at the owning source and update directly affected consumers. An earlier audit is optional when the user and repository already establish the target. Validate the changed behavior, then stop when the requested scope is complete.
+Implement the requested change and verify its directly affected behavior.
 
 ## Goal
 
-Improve one coherent billing, plan, quota, entitlement, or lifecycle surface so UI, API, jobs, tests, and user-facing states align with the repository's actual source of truth.
+Improve the selected billing, plan, quota, entitlement, or lifecycle surface so UI, API, jobs, tests, and user-facing states align with the repository's actual source of truth.
 
 ## Scope selection
 
@@ -15,7 +15,7 @@ Improve one coherent billing, plan, quota, entitlement, or lifecycle surface so 
 - Include related UI copy/states, server enforcement, tests, docs, jobs, and instrumentation when they belong to the same entitlement problem.
 - Avoid new pricing policy, provider migration, broad billing redesign, or business-rule invention unless explicitly required and evidenced.
 
-## Polish targets
+## Change targets
 
 - Plan/quota/feature source of truth, provider mapping, route/API guards, UI gates, disabled/no-access/upgrade/over-quota states.
 - Subscription lifecycle: trial, upgrade, downgrade, cancel, reactivate, payment failure, grace period, webhook idempotency/order, and reconciliation.

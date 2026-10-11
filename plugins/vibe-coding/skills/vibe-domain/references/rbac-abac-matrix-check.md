@@ -2,15 +2,15 @@
 
 ## Operation
 
-Verify the selected invariant through bounded scenarios in an authorized environment. Do not turn verification into unrelated implementation. Return passed, failed or blocked, with actual evidence and any missing required scenario.
+Verify the selected behavior against explicit expected results; do not change product code.
 
 ## Goal
 
 Verify one RBAC/ABAC policy matrix or patch through bounded allow/deny scenarios. Prove the selected actor/resource/action/scope contract without reopening unrelated auth audit work.
 
-## Required input
+## Context
 
-Provide the selected role/attribute matrix, resource/action, expected allow/deny states, implementation summary or patch boundary, safe environment, fixtures/accounts, and repository-native commands.
+Identify the selected role/attribute matrix, resource/action, expected allow/deny states, implementation summary or patch boundary, safe environment, fixtures/accounts, and repository-native commands.
 
 ## Scenarios
 

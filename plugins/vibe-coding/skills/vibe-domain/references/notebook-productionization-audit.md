@@ -2,7 +2,7 @@
 
 ## Operation
 
-Inspect the named boundary and report supported findings. Do not edit product code. Include concrete evidence, impact, the owning source, one remediation direction and a meaningful validation route. Severity follows actual impact, not a category example.
+Inspect the selected behavior and report evidence-backed defects; do not change product code.
 
 ## Goal and scope
 
@@ -24,9 +24,3 @@ Audit a notebook or exploratory analysis before it becomes a repeatable pipeline
 3. Identify reusable transformations versus exploratory cells and locate the correct package/pipeline/service owner.
 4. Profile representative data volume, memory, runtime, retries, partial outputs, and restart behavior.
 5. Review tests, dependency lock, parameter contract, scheduler/publication path, privacy, retention, and documentation.
-
-## Priority model
-
-- **P0:** cross-tenant access, incorrect billing/entitlement, corrupted canonical data, or decision-critical analytical error.
-- **P1:** a material business-rule, data-quality, experiment, or analytics defect.
-- **P2:** a lower-risk but concrete lineage, instrumentation, reproducibility, or maintainability issue.

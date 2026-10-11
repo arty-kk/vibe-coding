@@ -1,16 +1,16 @@
-# Refactor Boundary Polish
+# Improve Refactor Boundary
 
 ## Operation
 
-Implement the requested coherent change at the owning source and update directly affected consumers. An earlier audit is optional when the user and repository already establish the target. Validate the changed behavior, then stop when the requested scope is complete.
+Implement the requested change and verify its directly affected behavior.
 
 ## Goal
 
-Implement one selected, evidence-backed Refactor Boundary improvement at the authoritative owner. Complete the directly affected contract without broad cleanup or redesign.
+Move the selected behavior to its intended owner and update direct dependents without changing unrelated contracts.
 
 ## Domain rules
 
-- Move behavior to one owner and update all directly affected consumers in the same coherent slice.
+- Move behavior to one owner and update all directly affected consumers as part of the same accepted change.
 - Preserve contracts by default; when changing them, provide explicit migration and remove obsolete paths when safe.
 - Avoid wrapper-only layers, duplicate adapters, temporary flags, and mass formatting/renames unrelated to the boundary.
 - Synchronize tests, docs, generated outputs, config, registration, and build/deploy references.

@@ -2,7 +2,7 @@
 
 ## Operation
 
-Inspect the named boundary and report supported findings. Do not edit product code. Include concrete evidence, impact, the owning source, one remediation direction and a meaningful validation route. Severity follows actual impact, not a category example.
+Inspect the selected behavior and report evidence-backed defects; do not change product code.
 
 ## Goal
 
@@ -22,16 +22,6 @@ Look for concrete, reachable release blockers or risks in:
 - Product readiness: missing loading/error/empty/no-access/no-plan/destructive states, misleading copy, unsupported public claims, broken onboarding/billing/permission edge.
 - Security/privacy readiness: secret/PII leakage, missing authorization enforcement, unsafe diagnostics, tenant isolation risk, or compliance-sensitive data retention/config issue.
 
-## Priority model
-
-Release can cause data loss/corruption, security/privacy breach, broken paid/core workflow, failed deploy/migration, or irreversible user harm.
-
-Meaningful release risk: missing tests/checks for high-impact behavior, operational blind spot, important UI state gap, integration drift, or rollback/recovery uncertainty.
-
-Lower-risk but concrete readiness issue: stale docs/runbook, minor config ambiguity, secondary test gap, weak copy/state, or maintainability issue likely to slow release support.
-
 ## Finding quality
 
-- Every finding must cite `path:line[-line]` evidence for the release risk and affected owner.
 - Include expected release-safe behavior, acceptance criteria, validation direction, and whether it blocks release or can follow after release.
-- Merge issues by release owner/source of truth when one fix validates them together.

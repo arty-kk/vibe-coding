@@ -1,13 +1,16 @@
-# Behavior Check
+# Verify a Behavior
 
-## Operation
+## Scope
 
-Verify the selected invariant through bounded scenarios in an authorized environment. Do not turn verification into unrelated implementation. Return passed, failed or blocked, with actual evidence and any missing required scenario.
+Verify the requested behavior when no specialized check applies. Establish the target, expected input/output or state transition, defining source and available environment from the request and repository.
 
-## Goal
+## Procedure
 
-Verify one selected behavior or patch through bounded, reproducible scenarios when no dedicated domain check exists.
+1. Translate required acceptance into relevant scenarios; specify expected results and allowed effects before running them.
+2. Find native commands or a controlled reproduction that reaches the real defining rule. Pair rejection/failure cases with a valid control.
+3. Compare the returned result and stored/externally observable state where side effects matter.
+4. Distinguish source inspection, local execution and external behavior. An unavailable required layer remains a verification gap.
 
-## Required specialization
+## Result
 
-Supply the implementation summary, exact invariant, scenarios, expected state transitions, safe environment, workload or failure bounds, and measurements. This check verifies behavior; it does not review source style or expand the patch contour.
+Return passed, failed or blocked with expected/observed evidence for required criteria, exact checks and the narrow next action for any failure or missing evidence. Do not turn verification into an unrequested implementation.

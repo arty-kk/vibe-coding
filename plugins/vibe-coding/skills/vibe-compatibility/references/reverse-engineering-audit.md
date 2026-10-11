@@ -2,7 +2,7 @@
 
 ## Operation
 
-Inspect the named boundary and report supported findings. Do not edit product code. Include concrete evidence, impact, the owning source, one remediation direction and a meaningful validation route. Severity follows actual impact, not a category example.
+Inspect the selected behavior and report evidence-backed defects; do not change product code.
 
 ## Goal and scope
 
@@ -26,9 +26,3 @@ Reconstruct an existing system's observable contract from authorized evidence an
 3. Infer the smallest model explaining observations and design discriminating experiments for competing hypotheses.
 4. Map every observed field/message/table/file element to producer, consumer, lifecycle, optionality, and compatibility behavior.
 5. Compare current implementation/reference fixtures and classify deterministic mismatch, nondeterminism, environment variance, and unsupported unknown.
-
-## Priority model
-
-- **P0:** compatibility break causing data corruption, unsafe commands, protocol desynchronization, or irreversible user impact.
-- **P1:** a material behavioral, wire-format, file-format, timing, or migration incompatibility.
-- **P2:** a lower-risk but concrete fidelity, diagnostics, or maintainability issue.

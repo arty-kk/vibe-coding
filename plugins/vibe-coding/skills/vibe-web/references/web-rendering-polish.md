@@ -1,4 +1,4 @@
-# Web Rendering Polish
+# Improve Web Rendering
 
 ## Operation
 
@@ -7,12 +7,6 @@ Implement one selected web rendering or server-action correction and verify the 
 ## Required input
 
 The selected route/action, framework/runtime version, rendering mode, affected user state, trusted session/data owner and expected initial and post-interaction behavior. Recover available facts from the repository and supplied reproduction.
-
-Select the target from the user’s request and current evidence. Reconstruct ordinary missing context from the owning code. If a missing target, authority or environment changes correctness or safety, name that specific gap and leave the dependent action blocked; continue independent work. Do not invent requirements from existing tests.
-
-## Change contract
-
-Implement the smallest complete owner-layer correction, not merely the smallest diff. Carry it through directly affected producers, consumers, states, schemas/configuration, generated artifacts and operational behavior. Remove logic made obsolete by the change unless evidenced compatibility requires overlap. Preserve unrelated work; exclude independent cleanup, speculative abstractions and migrations. Each material change must serve a selected invariant and acceptance criterion.
 
 ## Domain invariants
 
@@ -44,11 +38,3 @@ Name the route, rendering mode, framework/runtime versions and affected user sta
 Run the repository's relevant type/build checks and targeted tests. For hydration, exercise real server rendering and a browser reload with both default and non-default saved state; assert recoverable errors and rendered content, then operate the controls. A snapshot of a component function is insufficient. For actions, exercise legitimate ownership, forged identity, signed-out access, invalid input and observable persisted state; add HTTP/framework checks when the changed layer owns them.
 
 Report the owner changed, user-visible behavior restored, commands/results and untested deployment boundaries. Do not claim a warning-suppression flag fixes divergent content or that action-unit tests verify browser hydration.
-
-## Completion criteria
-
-The selected invariant holds at the authoritative owner and directly affected consumers; obsolete conflicting behavior is removed or intentionally retained for stated compatibility; the complete diff is reviewed; required available checks have actual results. A missing required environment or unresolved defect prevents a claim of verified completion. Continue authorized corrections within scope; stop when the requested contract is complete rather than searching for a different improvement.
-
-## Output contract
-
-Respond in the user’s language with the completed behavior first. Include the selected invariant and owner, changed scope/key files, evidence for the correction, the affected producer-to-consumer contract, actual verification commands/scenarios/results, and material rollout or rollback consequences. List required checks not run and unresolved assumptions explicitly. Distinguish implemented, locally verified and externally released states. A future plan cannot substitute for an executed change. Omit empty sections and unrelated process narration.

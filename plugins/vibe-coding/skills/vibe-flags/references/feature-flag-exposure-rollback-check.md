@@ -2,15 +2,15 @@
 
 ## Operation
 
-Verify the selected invariant through bounded scenarios in an authorized environment. Do not turn verification into unrelated implementation. Return passed, failed or blocked, with actual evidence and any missing required scenario.
+Verify the selected behavior against explicit expected results; do not change product code.
 
 ## Goal
 
 Verify one feature flag or rollout invariant through bounded on/off, targeted, rollback, missing-provider, and exposure-measurement scenarios.
 
-## Required input
+## Context
 
-Provide flag name, expected targeting/default/rollback behavior, implementation summary or patch boundary, safe environment, fixtures/accounts, and repository-native commands.
+Identify flag name, expected targeting/default/rollback behavior, implementation summary or patch boundary, safe environment, fixtures/accounts, and repository-native commands.
 
 ## Scenarios
 

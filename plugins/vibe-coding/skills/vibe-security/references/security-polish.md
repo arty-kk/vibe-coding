@@ -1,12 +1,12 @@
-# Security Polish
+# Improve Security
 
 ## Operation
 
-Implement the requested coherent change at the owning source and update directly affected consumers. An earlier audit is optional when the user and repository already establish the target. Validate the changed behavior, then stop when the requested scope is complete.
+Implement the requested change and verify its directly affected behavior.
 
 ## Goal
 
-Implement one selected, evidence-backed Security improvement at the authoritative owner. Complete the directly affected contract without broad cleanup or redesign.
+Close the demonstrated authorization or input-trust failure at the enforcing boundary and verify valid and denied paths.
 
 ## Domain rules
 

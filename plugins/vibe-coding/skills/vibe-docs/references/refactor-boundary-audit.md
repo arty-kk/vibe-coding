@@ -2,7 +2,7 @@
 
 ## Operation
 
-Inspect the named boundary and report supported findings. Do not edit product code. Include concrete evidence, impact, the owning source, one remediation direction and a meaningful validation route. Severity follows actual impact, not a category example.
+Inspect the selected behavior and report evidence-backed defects; do not change product code.
 
 ## Goal and scope
 
@@ -21,9 +21,3 @@ Audit a proposed or partial refactor for ownership, contract preservation, migra
 2. Define the proposed boundary and identify contract, rollout, migration, and validation deltas.
 3. Check cyclic dependencies, hidden initialization, generated code, reflection/registration, serialization, and performance-sensitive paths.
 4. Split independent refactors and reject broad cleanup without task value.
-
-## Priority model
-
-- **P0:** a migration or documentation defect that can cause data loss, unsafe operation, broken public contract, or unrecoverable rollout.
-- **P1:** a material ownership, compatibility, sequencing, or operator-guidance gap.
-- **P2:** a lower-risk but concrete boundary, drift, or maintainability issue.

@@ -4,11 +4,9 @@
 
 Verify the selected source-to-release-to-environment artifact contract without changing release state. Read [supply-chain boundaries](../../../references/supply-chain.md). Upstream exploit remediation belongs to Security; this check establishes what bytes are being promoted and whether they can be recovered safely.
 
-## Required input
+## Context
 
 The exact source commit, build identity, candidate artifact/digest, required CI and provenance policy, target environment and rollback contract. Identify which publication/promotion/restore checks are authorized and available.
-
-Select the target from the user’s request and current evidence. Reconstruct ordinary missing context from the owning code. If a missing target, authority or environment changes correctness or safety, name that specific gap and leave the dependent action blocked; continue independent work. Do not invent requirements from existing tests.
 
 ## Domain invariants
 
@@ -43,15 +41,3 @@ Use repository-native build, digest, archive and attestation tools. Rebuild only
 ## Evidence and limitations
 
 Report each link as verified, failed or not exercised with exact identifiers, commands and evidence. Separate local assembly, remote publication, environment promotion and recovery readiness. Tie failures to the owning source and one repair direction; do not infer production readiness solely from a green build or a locally valid ZIP.
-
-## Evidence and safety rules
-
-Define the required scenario matrix before execution from the selected invariant and current repository commands. Respect active test restrictions. Use the authorized environment and bounded workload/fault conditions. Record expected and observed state, identity/order/effect evidence and exact commands; passing harness output alone cannot override the intended contract. Pair negative cases with a valid control. Do not perform destructive drills, broaden implementation or infer provider/production behavior from local fixtures. An unavailable required scenario remains unavailable.
-
-## Verdict and completion
-
-Return **passed** only when every required criterion is supported by actual evidence. Return **failed** when a named invariant is violated, with the minimal reproduction and owner. Return **blocked** when required evidence cannot be obtained because the target, environment or safe operation is unavailable; name the missing gate. If a defect is already proven and other checks are blocked, report failed with those unexercised gates. Stop when the bounded matrix is resolved or cannot safely progress; never convert skipped work into a pass.
-
-## Output contract
-
-Respond in the user’s language and begin with passed, failed or blocked. Include: checked invariant and exact boundary/version; required scenario matrix with expected/observed state and per-case result; actual commands and bounded measurements; evidence anchors or minimal reproduction; residual risks; unavailable gates and their effect on the verdict. Separate inspected source from executed runtime evidence. Omit empty sections. Recommend the narrow owner correction for a failure without performing unrequested edits.

@@ -2,11 +2,13 @@
 
 ## Operation
 
-Create or refresh only the requested repository map. A map is a navigation index, not proof of correctness. Verify entries against current owners and preserve stable IDs. If the user asks for an explanation in chat, do not insist on writing a file.
+Map the requested area using current repository evidence.
 
 ## Goal
 
-Create or update `docs/auth_entitlements_map.md` as the evidence map connecting authentication, RBAC, ABAC, tenancy, plan/feature gates, quotas, UI affordances, API enforcement, jobs, and audit logs.
+Map identity, roles, attributes and entitlements to the backend decisions and UI/API/job enforcement that use them.
+
+Suggested saved map: `docs/auth_entitlements_map.md`.
 
 ## Inspect
 
@@ -16,8 +18,7 @@ Auth providers, session/membership models, role definitions, policy helpers, ABA
 
 ### Evidence and IDs
 
-- Write or update `docs/auth_entitlements_map.md` when possible. If writing is unavailable, print the complete markdown content in chat.
-- Use stable IDs and preserve existing IDs: role `ROLE-*`, permission/action `PERM-*`, ABAC rule `ABAC-*`, entitlement `ENTL-*`, gate `GATE-*`, scope `SCOPE-*`, quota `QUOTA-*`.
+- Suggested IDs for new entries: role `ROLE-*`, permission/action `PERM-*`, ABAC rule `ABAC-*`, entitlement `ENTL-*`, gate `GATE-*`, scope `SCOPE-*`, quota `QUOTA-*`.
 - Anchor every rule to owner evidence. Distinguish UI visibility from backend enforcement and policy source from duplicated consumer checks.
 
 ### Coverage
@@ -27,7 +28,3 @@ Cover identities, roles, attributes, tenant scopes, policy decision points, poli
 ### Entry details
 
 For each permission or entitlement, capture actor, resource, action, scope, attributes, plan/quota dependency, backend owner, UI consumers, API/jobs, error/no-access behavior, tests, audit log expectations, and known drift.
-
-## Markdown structure
-
-Use summary, identity/scope model, RBAC matrix, ABAC rules, entitlement/quota matrix, enforcement points, UI affordance map, jobs/integrations, audit logging, tests, gaps, assumptions.

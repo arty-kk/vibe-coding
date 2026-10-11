@@ -4,11 +4,9 @@
 
 Verify the selected login, callback, account-linking or refresh boundary without product edits. Use the implemented provider, library version, client type and flow. Distinguish OAuth resource authorization from OIDC identity and from the application's local session.
 
-## Required input
+## Context
 
 The selected login/callback/linking/refresh flow, provider and library versions, client type, issuer/redirect configuration, identity/session owner, expected outcomes and available synthetic issuer or provider sandbox.
-
-Select the target from the user’s request and current evidence. Reconstruct ordinary missing context from the owning code. If a missing target, authority or environment changes correctness or safety, name that specific gap and leave the dependent action blocked; continue independent work. Do not invent requirements from existing tests.
 
 ## Domain invariants
 
@@ -43,15 +41,3 @@ Verify the configured rotation or sender-binding policy, concurrent refresh atte
 Use synthetic identities, local test issuers or an existing provider sandbox. Pair denial cases with a valid control, report exact steps/results and map failures to `path:line` and the identity owner. Separate library-level, HTTP/cookie/browser and provider integration coverage. Report missing checks instead of declaring the whole login system verified.
 
 Select applicable requirements from [OAuth Security BCP](https://www.rfc-editor.org/rfc/rfc9700.html) and [OIDC validation](https://openid.net/specs/openid-connect-core-1_0.html#IDTokenValidation), plus version-matched provider documentation.
-
-## Evidence and safety rules
-
-Define the required scenario matrix before execution from the selected invariant and current repository commands. Respect active test restrictions. Use the authorized environment and bounded workload/fault conditions. Record expected and observed state, identity/order/effect evidence and exact commands; passing harness output alone cannot override the intended contract. Pair negative cases with a valid control. Do not perform destructive drills, broaden implementation or infer provider/production behavior from local fixtures. An unavailable required scenario remains unavailable.
-
-## Verdict and completion
-
-Return **passed** only when every required criterion is supported by actual evidence. Return **failed** when a named invariant is violated, with the minimal reproduction and owner. Return **blocked** when required evidence cannot be obtained because the target, environment or safe operation is unavailable; name the missing gate. If a defect is already proven and other checks are blocked, report failed with those unexercised gates. Stop when the bounded matrix is resolved or cannot safely progress; never convert skipped work into a pass.
-
-## Output contract
-
-Respond in the user’s language and begin with passed, failed or blocked. Include: checked invariant and exact boundary/version; required scenario matrix with expected/observed state and per-case result; actual commands and bounded measurements; evidence anchors or minimal reproduction; residual risks; unavailable gates and their effect on the verdict. Separate inspected source from executed runtime evidence. Omit empty sections. Recommend the narrow owner correction for a failure without performing unrequested edits.

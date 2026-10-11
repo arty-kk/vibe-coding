@@ -2,7 +2,7 @@
 
 ## Operation
 
-Inspect the named boundary and report supported findings. Do not edit product code. Include concrete evidence, impact, the owning source, one remediation direction and a meaningful validation route. Severity follows actual impact, not a category example.
+Inspect the selected behavior and report evidence-backed defects; do not change product code.
 
 ## Goal
 
@@ -22,18 +22,7 @@ AI entrypoints, model clients, prompt/message builders, structured-output schema
 - Product truthfulness: UI promises not backed by model behavior, generated claims without source evidence, missing citations/source labels when the feature presents factual answers.
 - Evaluation: missing or false eval coverage for critical prompts, RAG answers, OCR extraction, tool calls, structured outputs, safety boundaries, or known regressions.
 
-## Priority model
-
-Reachable data/tenant leakage, unsafe tool action, destructive or paid action driven by unvalidated AI output, secret/PII exposure, critical hallucination with product/legal/security impact, or AI behavior that breaks a public/internal contract.
-
-Important AI workflow with weak schema/tool validation, misleading UI state, non-idempotent retry/replay, missing eval for a critical behavior, cost/rate-limit risk on a reachable hot path, or duplicated prompt/domain logic that can diverge.
-
-Lower-risk but concrete quality issue: stale AI docs/map, weak diagnostics boundary, unclear generated-content labeling, localized copy drift, noisy logs, or minor eval gap with reachable regression value.
-
 ## Finding quality
 
-- Every finding must cite `path:line[-line]` evidence for the AI behavior, owner layer, and affected consumer or user state, plus symbol when possible.
 - Include model/prompt/tool/index/eval owner when relevant, expected behavior, acceptance criteria, and validation direction.
-- Use one unambiguous fix direction per finding; explain a tradeoff only when it changes the decision.
-- Merge symptoms under the same AI capability owner unless fixes, rollout units, eval strategy, or safety boundary differ.
 - Do not report abstract AI risks without current repo reachability, user impact, cost impact, or regression risk.

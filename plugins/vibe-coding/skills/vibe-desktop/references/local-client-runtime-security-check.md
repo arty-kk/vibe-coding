@@ -2,15 +2,15 @@
 
 ## Operation
 
-Verify the selected invariant through bounded scenarios in an authorized environment. Do not turn verification into unrelated implementation. Return passed, failed or blocked, with actual evidence and any missing required scenario.
+Verify the selected behavior against explicit expected results; do not change product code.
 
 ## Goal
 
 Verify one browser-extension or desktop-app local runtime security invariant through bounded permission, storage, messaging/IPC, update/restart, and failure scenarios.
 
-## Required input
+## Context
 
-Provide selected local-runtime boundary, expected security behavior, implementation summary or patch boundary, supported platform/browser, safe environment, fixtures/accounts, and commands/manual scenarios.
+Identify selected local-runtime boundary, expected security behavior, implementation summary or patch boundary, supported platform/browser, safe environment, fixtures/accounts, and commands/manual scenarios.
 
 ## Scenarios
 

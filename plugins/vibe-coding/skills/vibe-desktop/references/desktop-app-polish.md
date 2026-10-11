@@ -1,18 +1,18 @@
-# Desktop App Polish
+# Improve Desktop App
 
 ## Operation
 
-Implement the requested coherent change at the owning source and update directly affected consumers. An earlier audit is optional when the user and repository already establish the target. Validate the changed behavior, then stop when the requested scope is complete.
+Implement the requested change and verify its directly affected behavior.
 
 ## Goal
 
-Fix one coherent desktop app boundary across UI/native layers, IPC, local storage/files, backend integration, tests, and packaging/release config when directly affected.
+Fix the selected desktop app boundary across UI/native layers, IPC, local storage/files, backend integration, tests, and packaging/release config when directly affected.
 
 ## Scope selection
 
 Use the selected desktop feature, OS integration, local data issue, auto-update problem, audit finding, failing test, or packaging failure. Do not rewrite the app shell or update system unless required by the selected fix.
 
-## Polish targets
+## Change targets
 
 - Renderer/main/native process boundaries, IPC payload validation, OS permission requests, notifications, tray/menu/deep-link behavior.
 - Local storage, secrets, file access, cache, logs, crash reports, offline/sync, migrations, and cleanup.

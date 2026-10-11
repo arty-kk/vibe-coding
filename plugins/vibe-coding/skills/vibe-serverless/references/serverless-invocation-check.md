@@ -4,11 +4,9 @@
 
 Verify the selected invocation lifecycle and delivery guarantee without product edits. Read [serverless runtime boundaries](../../../references/serverless-runtime.md). Use cases matching the provider, runtime, trigger and business operation present in the repository.
 
-## Required input
+## Context
 
 The selected handler, provider/runtime and compatibility configuration, trigger, success/acknowledgment promise, authoritative effect and retry owner. Identify the concrete invocation state and permitted local/provider environment.
-
-Select the target from the user’s request and current evidence. Reconstruct ordinary missing context from the owning code. If a missing target, authority or environment changes correctness or safety, name that specific gap and leave the dependent action blocked; continue independent work. Do not invent requirements from existing tests.
 
 ## Domain invariants
 
@@ -45,15 +43,3 @@ Exercise bounded fan-out and resource cleanup under the relevant local harness. 
 Pair every negative case with a valid control so a permanently failing handler cannot pass. Record event/request identity, fault injection point, response/acknowledgment, durable state, command and pass/fail/not exercised status. Tie a failure to the handler or configuration owner with `path:line` and one correction direction.
 
 Conclude only for the tested invocation contract. Keep production credentials, destructive events and external side effects outside a local verification request. State remaining provider, downstream idempotency or deployment checks rather than claiming cloud correctness from a mock storage binding.
-
-## Evidence and safety rules
-
-Define the required scenario matrix before execution from the selected invariant and current repository commands. Respect active test restrictions. Use the authorized environment and bounded workload/fault conditions. Record expected and observed state, identity/order/effect evidence and exact commands; passing harness output alone cannot override the intended contract. Pair negative cases with a valid control. Do not perform destructive drills, broaden implementation or infer provider/production behavior from local fixtures. An unavailable required scenario remains unavailable.
-
-## Verdict and completion
-
-Return **passed** only when every required criterion is supported by actual evidence. Return **failed** when a named invariant is violated, with the minimal reproduction and owner. Return **blocked** when required evidence cannot be obtained because the target, environment or safe operation is unavailable; name the missing gate. If a defect is already proven and other checks are blocked, report failed with those unexercised gates. Stop when the bounded matrix is resolved or cannot safely progress; never convert skipped work into a pass.
-
-## Output contract
-
-Respond in the user’s language and begin with passed, failed or blocked. Include: checked invariant and exact boundary/version; required scenario matrix with expected/observed state and per-case result; actual commands and bounded measurements; evidence anchors or minimal reproduction; residual risks; unavailable gates and their effect on the verdict. Separate inspected source from executed runtime evidence. Omit empty sections. Recommend the narrow owner correction for a failure without performing unrequested edits.

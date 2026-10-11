@@ -2,11 +2,13 @@
 
 ## Operation
 
-Create or refresh only the requested repository map. A map is a navigation index, not proof of correctness. Verify entries against current owners and preserve stable IDs. If the user asks for an explanation in chat, do not insist on writing a file.
+Map the requested area using current repository evidence.
 
 ## Goal
 
-Create or update `docs/bot_navigation_map.md` as a current map of bot entry points, states, transitions, commands, keyboards, and recovery paths.
+Map the selected bot entries, commands, states, transitions and recovery paths.
+
+Suggested saved map: `docs/bot_navigation_map.md`.
 
 ## Inspect
 
@@ -16,11 +18,7 @@ Commands, message/callback handlers, routers, scenes/FSM states, keyboards, temp
 
 ### Evidence and IDs
 
-- Write or update `docs/bot_navigation_map.md` when the environment allows it. If writing is unavailable, print the complete markdown content in chat.
-- Use stable IDs and preserve existing IDs when refreshing: entry `E-*`, state `S-*`, transition `T-*`, keyboard `K-*`.
-- Anchor every entry to current repository evidence with `path:line[-line]` plus symbol when possible.
-- Distinguish source-of-truth implementation from generated docs, generated clients, stale docs, and inferred behavior.
-- Capture unknowns only when they affect future audit or implementation.
+- Suggested IDs for new entries: entry `E-*`, state `S-*`, transition `T-*`, keyboard `K-*`.
 
 ### Coverage
 
@@ -29,7 +27,3 @@ Separate user-facing, admin/staff, group/private, and system/proactive states wh
 ### Entry details
 
 For each entry/state/transition, capture trigger, owner symbol, guards/permissions, chat type, rendered copy or template source, keyboard/actions, next states, validation/errors, async/proactive behavior, persistence effects, tests, and known gaps.
-
-## Markdown structure
-
-Use a readable markdown hierarchy with summary first, then diagram or transition list, entry points, states, transitions, canonical commands per state, keyboards, cross-cutting behavior, reachability, unknowns, and assumptions. Omit sections that do not exist in the repo. Do not invent surfaces, states, commands, endpoints, or contracts.

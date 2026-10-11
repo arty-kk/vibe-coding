@@ -1,12 +1,12 @@
-# Design System Polish
+# Improve Design System
 
 ## Operation
 
-Implement the requested coherent change at the owning source and update directly affected consumers. An earlier audit is optional when the user and repository already establish the target. Validate the changed behavior, then stop when the requested scope is complete.
+Implement the requested change and verify its directly affected behavior.
 
 ## Goal
 
-Improve one coherent design-system owner: a token family, component family, layout primitive, interaction-state pattern, or documented variant set. The diff should reduce drift across consuming surfaces rather than locally polishing one page.
+Improve the selected design-system owner: a token family, component family, layout primitive, interaction-state pattern, or documented variant set. The diff should reduce drift across consuming surfaces rather than locally polishing one page.
 
 ## Scope selection
 
@@ -15,7 +15,7 @@ Improve one coherent design-system owner: a token family, component family, layo
 - Include directly affected usage updates, tests, stories, docs, snapshots, and i18n/copy where the repo expects them.
 - Avoid new design languages, broad theming rewrites, dependency changes, and visual redesigns not required by the selected system issue.
 
-## Polish targets
+## Change targets
 
 - Tokens: semantic names, theme config alignment, repeated values, dark/light/high-contrast variants where existing architecture supports them.
 - Components: variant API, state coverage, accessible defaults, responsive behavior, composition boundaries, owner exports, and dead local forks.

@@ -1,12 +1,12 @@
-# Go Rust Microservices Polish
+# Improve Go Rust Microservices
 
 ## Operation
 
-Implement the requested coherent change at the owning source and update directly affected consumers. An earlier audit is optional when the user and repository already establish the target. Validate the changed behavior, then stop when the requested scope is complete.
+Implement the requested change and verify its directly affected behavior.
 
 ## Goal
 
-Implement one selected, evidence-backed Go Rust Microservices improvement at the authoritative owner. Complete the directly affected contract without broad cleanup or redesign.
+Correct the selected Go or Rust service behavior, preserving task ownership, cancellation, resource bounds and shutdown.
 
 ## Domain rules
 

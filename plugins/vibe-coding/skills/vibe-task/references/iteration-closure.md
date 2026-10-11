@@ -1,22 +1,18 @@
-# Iteration Closure
+# Assess Completion
 
-## Operation
+## Scope
 
-Assess completion only against the selected objective, acceptance evidence and remaining gates. Return done, next slice, replan or blocked without reopening unrelated work.
+Assess the selected objective at the requested stage using its acceptance evidence and material remaining work. A local implementation, release and production recovery have different completion criteria.
 
-## Goal
+## Procedure
 
-Decide whether the selected implementation slice is complete, requires the next already-separated slice, must be replanned, or is blocked by an external gate. Do not reopen unrelated audit scope.
+Use the task, change and available verification results. Check required criteria against actual evidence; a passing suite alone cannot establish untested migration, user interaction or recovery behavior. Do not require a separate audit or review artifact when the requested stage does not need it.
 
-## Required evidence
+## Decision
 
-Supply the selected task or audit result, the implementation summary, the patch verdict, any domain-check evidence, and any release or production gates. Read the evidence; do not re-audit unrelated repository areas.
+- **DONE:** required behavior and verification for this stage are supported; any remaining work is explicitly outside it.
+- **NEXT_SLICE:** this part is complete and a previously identified dependent outcome remains.
+- **REPLAN:** new evidence changes the required behavior, owner, compatibility or rollout assumptions.
+- **BLOCKED:** a required decision, environment or safe action prevents completion.
 
-## Decision rules
-
-- `DONE`: every acceptance condition is evidenced, patch defects are resolved, and remaining gates are explicitly external/non-blocking for the requested stage.
-- `NEXT_SLICE`: the current slice is correct and complete, but a previously separated dependent slice remains.
-- `REPLAN`: evidence invalidates owner, invariant, compatibility, or rollout assumptions.
-- `BLOCKED`: completion depends on unavailable access, environment, business decision, or unsafe operation that cannot be simulated.
-
-Do not call work done because tests passed when the accepted behavior, migration, recovery, or operator path remains unproven.
+Name the criteria supporting the decision and the next necessary action. Keep unavailable evidence visible and do not reopen unrelated work.

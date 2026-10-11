@@ -2,7 +2,7 @@
 
 ## Operation
 
-Inspect the named boundary and report supported findings. Do not edit product code. Include concrete evidence, impact, the owning source, one remediation direction and a meaningful validation route. Severity follows actual impact, not a category example.
+Inspect the selected behavior and report evidence-backed defects; do not change product code.
 
 ## Goal and scope
 
@@ -26,9 +26,3 @@ Audit SQL access from pool/admission and query plans through transactions, migra
 3. Inspect representative explain/plan evidence, row estimates, scans, sorts, temp spill, index selectivity, and write/update cost for the changed query.
 4. Trace concurrent anomaly/deadlock scenarios and identify the exact database constraint, lock, isolation, or optimistic version that owns the invariant.
 5. Review migration/backfill under mixed versions, large tables, restart, replica lag, rollback, and tenant/role permissions.
-
-## Priority model
-
-- **P0:** data corruption or loss, cross-tenant exposure, deadlock-driven outage, unsafe failover, or connection-pool collapse.
-- **P1:** a material transaction, isolation, lock, index, query-load, replica, or pool defect.
-- **P2:** a lower-risk but concrete efficiency, observability, or schema-maintainability issue.

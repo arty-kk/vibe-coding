@@ -1,18 +1,18 @@
 ---
 name: vibe-notifications
-description: "Audit, fix or verify notification eligibility, consent, templates, queues, provider status, retry deduplication and delivery recovery. Code work is not authorization to contact real recipients."
+description: "Audit, repair or verify notification eligibility, provider delivery, retries and status. Template wording belongs to vibe-content."
 ---
 
 # Notification delivery
 
-Read [the shared workflow](../../references/workflow.md) once per task, then the one recipe matching the requested operation and boundary. Do not load every recipe. The user's request controls scope and whether edits are allowed.
+Apply [the working contract](../../references/workflow.md) once; read only the recipe for the requested result.
 
 ## Recipes
 
 | Recipe | Operation |
 |---|---|
 | [Notification Delivery Audit](references/notification-delivery-audit.md) | audit |
-| [Notification Delivery Polish](references/notification-delivery-polish.md) | implement |
+| [Improve Notification Delivery](references/notification-delivery-polish.md) | implement |
 | [Notification Failure & Idempotency Check](references/notification-failure-idempotency-check.md) | check |
 
-For an explicit multi-stage request, follow the necessary stages without discarding requested work. For a single stage, deliver that result and stop. Use [the catalog](../../references/catalog.md) only if the requested boundary belongs elsewhere.
+Eligibility, queue/provider delivery and status stay here; use [Content](../vibe-content/SKILL.md) for template wording and localization.

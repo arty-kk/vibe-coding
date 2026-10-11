@@ -8,8 +8,6 @@ Inspect the selected public or internal contract change without product edits. R
 
 The changed schema/operation, encoding, authoritative source, old/new producer and consumer versions, supported compatibility window and rollout constraints. Identify a concrete payload or operation and the consumers that must keep working.
 
-Select the target from the user’s request and current evidence. Reconstruct ordinary missing context from the owning code. If a missing target, authority or environment changes correctness or safety, name that specific gap and leave the dependent action blocked; continue independent work. Do not invent requirements from existing tests.
-
 ## Domain invariants
 
 - Every supported producer/consumer combination preserves the documented business meaning as well as wire acceptance.
@@ -46,25 +44,3 @@ An additive field is not automatically safe for strict clients; a wire-compatibl
 ## Evidence requirements
 
 Cite schema and consumer `path:line`, version/encoding pair, minimal payload or operation, expected and observed outcome, affected rollout stage, one repair direction and regression route. Group failures under their authoritative contract owner. State which versions and consumer modes were exercised, and keep missing deployment or replay evidence visible.
-
-## Priority model
-
-Use the repository’s severity scale if defined. Otherwise classify by demonstrated reachability and impact, not the presence of a keyword:
-
-- **P0:** critical or immediate supported consumers silently corrupting business data or losing critical access.
-- **P1:** A material mixed-version or replay failure.
-- **P2:** A concrete lower-impact schema/client drift.
-
-A potentially severe category without a supported reachable path remains an unverified concern, not a P0 finding.
-
-## Finding rules
-
-Accept a finding only when the evidence establishes the reachable trigger, authoritative owner, violated invariant, affected consumer/state and concrete impact. Separate source facts, observed runtime behavior and inference. Reject generic best practices, stylistic preferences, hypothetical scale failures and already-solved issues. Give one owner-layer remediation direction. Merge symptoms sharing the same owner and correction; split findings when owner, rollout, rollback or validation boundaries differ.
-
-## Completion criteria
-
-Finish when the selected path and applicable invariants have been examined, findings pass the evidence gate and material unknowns are named. No supported defect is a valid outcome. Do not expand scope or fabricate work to fill priority levels.
-
-## Output contract
-
-Respond in the user’s language. Return findings ordered by impact. Each finding contains: priority and concrete title; affected surface/actor/state; exact evidence anchors and nearest symbol; authoritative owner; violated invariant; expected versus observed behavior; reachable impact; one remediation direction; acceptance criteria; verification route; relevant rollout/rollback constraints and explicit exclusions. Use concise connected fields or prose, not empty template sections. If no finding qualifies, state that and bound the conclusion to the inspected scope. Report unresolved evidence separately. Do not create external tasks or edit code for an audit-only request.

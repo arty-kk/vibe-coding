@@ -1,4 +1,4 @@
-# Serverless Runtime Polish
+# Improve Serverless Runtime
 
 ## Operation
 
@@ -7,12 +7,6 @@ Implement the selected serverless/edge runtime correction and verify the affecte
 ## Required input
 
 The selected handler, provider/runtime and compatibility configuration, trigger, success/acknowledgment promise, authoritative effect and retry owner. Identify the concrete invocation state and permitted local/provider environment.
-
-Select the target from the user’s request and current evidence. Reconstruct ordinary missing context from the owning code. If a missing target, authority or environment changes correctness or safety, name that specific gap and leave the dependent action blocked; continue independent work. Do not invent requirements from existing tests.
-
-## Change contract
-
-Implement the smallest complete owner-layer correction, not merely the smallest diff. Carry it through directly affected producers, consumers, states, schemas/configuration, generated artifacts and operational behavior. Remove logic made obsolete by the change unless evidenced compatibility requires overlap. Preserve unrelated work; exclude independent cleanup, speculative abstractions and migrations. Each material change must serve a selected invariant and acceptance criterion.
 
 ## Domain invariants
 
@@ -24,7 +18,7 @@ Implement the smallest complete owner-layer correction, not merely the smallest 
 
 ## Goal and scope
 
-Complete one coherent correction across handler lifetime, response/acknowledgment, state ownership and the directly affected effect. Preserve the existing provider and trigger unless migration is explicitly requested. Do not replace an application's architecture to make a local emulator pass.
+Complete the selected correction across handler lifetime, response/acknowledgment, state ownership and the directly affected effect. Preserve the existing provider and trigger unless migration is explicitly requested. Do not replace an application's architecture to make a local emulator pass.
 
 ## Establish the contract
 
@@ -48,11 +42,3 @@ Apply the fix to the owner rather than adding sleeps, extending arbitrary timeou
 Demonstrate the original failure before the fix and success afterward. For lifetime changes, hold the storage/downstream promise unresolved and prove the response cannot claim completion; then reject it and verify failure propagation. For delivery changes, replay the same identity concurrently and across restart or partial-batch retry, checking durable effect counts. For reuse changes, run sequential invocations with different identities and inspect state isolation.
 
 Run available native/emulator checks and state which cases require the real provider. Report the changed contract, actual results and remaining deployment, quota or disconnect checks. Publish or alter cloud resources only within the user's existing authorization.
-
-## Completion criteria
-
-The selected invariant holds at the authoritative owner and directly affected consumers; obsolete conflicting behavior is removed or intentionally retained for stated compatibility; the complete diff is reviewed; required available checks have actual results. A missing required environment or unresolved defect prevents a claim of verified completion. Continue authorized corrections within scope; stop when the requested contract is complete rather than searching for a different improvement.
-
-## Output contract
-
-Respond in the user’s language with the completed behavior first. Include the selected invariant and owner, changed scope/key files, evidence for the correction, the affected producer-to-consumer contract, actual verification commands/scenarios/results, and material rollout or rollback consequences. List required checks not run and unresolved assumptions explicitly. Distinguish implemented, locally verified and externally released states. A future plan cannot substitute for an executed change. Omit empty sections and unrelated process narration.

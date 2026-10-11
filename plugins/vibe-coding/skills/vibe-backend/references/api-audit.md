@@ -2,7 +2,7 @@
 
 ## Operation
 
-Inspect the named boundary and report supported findings. Do not edit product code. Include concrete evidence, impact, the owning source, one remediation direction and a meaningful validation route. Severity follows actual impact, not a category example.
+Inspect the selected behavior and report evidence-backed defects; do not change product code.
 
 ## Goal
 
@@ -25,19 +25,7 @@ Audit the reachable API surface for behavior, contract, validation, security-adj
 - Versioning, deprecation, generated schema/client drift, and docs that would mislead consumers.
 - REST/GraphQL/RPC conventions where the repository already relies on them.
 
-## Priority model
-
-Consumer-breaking contract bug, auth/security leak, tenant isolation issue, data corruption, missing validation in sensitive path, unsafe status semantics, payment/webhook/idempotency failure.
-
-Reachable inconsistency causing client confusion, partial failures, duplicated API/domain logic, shallow critical coverage, pagination/filtering drift, or operational ambiguity.
-
-Lower-risk contract hygiene with clear consumer impact: misleading docs, minor envelope drift, weak deprecation handling, unclear optionality, or localized inconsistency.
-
 ## Finding quality
 
-- Every finding must cite `path:line[-line]` evidence for the problematic behavior/contract and the owner layer, plus symbol when possible.
 - Include reachable surface, affected actors/consumers/states, expected behavior, acceptance criteria, and validation direction when discoverable.
-- Use one unambiguous fix direction per finding; explain a tradeoff only when it changes the decision.
-- Merge symptoms under the same behavior owner/source of truth unless fixes, rollout units, or validation differ.
-- Do not report theoretical risks, stylistic preferences, or generic best practices without current repo impact.
 - Do not report generic REST purity issues unless the inconsistency creates current consumer or system impact.

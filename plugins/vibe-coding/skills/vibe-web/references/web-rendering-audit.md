@@ -8,8 +8,6 @@ Inspect the selected SSR, hydration or server-action boundary without product ed
 
 The selected route/action, framework/runtime version, rendering mode, affected user state, trusted session/data owner and expected initial and post-interaction behavior. Recover available facts from the repository and supplied reproduction.
 
-Select the target from the user’s request and current evidence. Reconstruct ordinary missing context from the owning code. If a missing target, authority or environment changes correctness or safety, name that specific gap and leave the dependent action blocked; continue independent work. Do not invent requirements from existing tests.
-
 ## Domain invariants
 
 - Server HTML and the first browser render use equivalent initial data; later preference updates preserve the product’s intended state.
@@ -45,25 +43,3 @@ Prioritize cross-user data exposure, unauthorized server actions and durable cor
 ## Evidence requirements
 
 Provide route, affected state/identity, `path:line` and symbol, reproduction, expected and observed output, one correction direction and a meaningful regression. Do not suppress hydration warnings as a proposed repair or report every use of browser APIs as defective. Bound negative conclusions to the routes and states inspected, and distinguish local rendering evidence from deployment/CDN behavior.
-
-## Priority model
-
-Use the repository’s severity scale if defined. Otherwise classify by demonstrated reachability and impact, not the presence of a keyword:
-
-- **P0:** critical or immediate personalized data exposure or unauthorized server mutation.
-- **P1:** A broken render, navigation or mutation path.
-- **P2:** A concrete bounded stale/error-state inconsistency.
-
-A potentially severe category without a supported reachable path remains an unverified concern, not a P0 finding.
-
-## Finding rules
-
-Accept a finding only when the evidence establishes the reachable trigger, authoritative owner, violated invariant, affected consumer/state and concrete impact. Separate source facts, observed runtime behavior and inference. Reject generic best practices, stylistic preferences, hypothetical scale failures and already-solved issues. Give one owner-layer remediation direction. Merge symptoms sharing the same owner and correction; split findings when owner, rollout, rollback or validation boundaries differ.
-
-## Completion criteria
-
-Finish when the selected path and applicable invariants have been examined, findings pass the evidence gate and material unknowns are named. No supported defect is a valid outcome. Do not expand scope or fabricate work to fill priority levels.
-
-## Output contract
-
-Respond in the user’s language. Return findings ordered by impact. Each finding contains: priority and concrete title; affected surface/actor/state; exact evidence anchors and nearest symbol; authoritative owner; violated invariant; expected versus observed behavior; reachable impact; one remediation direction; acceptance criteria; verification route; relevant rollout/rollback constraints and explicit exclusions. Use concise connected fields or prose, not empty template sections. If no finding qualifies, state that and bound the conclusion to the inspected scope. Report unresolved evidence separately. Do not create external tasks or edit code for an audit-only request.

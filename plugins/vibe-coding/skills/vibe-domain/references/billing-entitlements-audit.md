@@ -2,7 +2,7 @@
 
 ## Operation
 
-Inspect the named boundary and report supported findings. Do not edit product code. Include concrete evidence, impact, the owning source, one remediation direction and a meaningful validation route. Severity follows actual impact, not a category example.
+Inspect the selected behavior and report evidence-backed defects; do not change product code.
 
 ## Goal
 
@@ -21,16 +21,6 @@ Plan definitions, auth entitlement maps when present, billing provider integrati
 - Data safety: cross-tenant billing exposure, wrong invoice/account owner, destructive plan action without confirmation/audit trail.
 - Regression resistance: missing tests for plan matrix, webhook idempotency, quota boundaries, or UI/API gate alignment.
 
-## Priority model
-
-User can access paid/forbidden data/actions, loses paid access incorrectly, cross-tenant billing/data leak, unsafe webhook mutation, or destructive billing state corruption.
-
-Important entitlement drift, quota/plan race, misleading upgrade/no-access state, missing lifecycle handling, or missing tests for high-value billing paths.
-
-Lower-risk but concrete billing quality issue: stale docs, copy mismatch, minor plan matrix inconsistency, secondary lifecycle gap, or weak regression coverage.
-
 ## Finding quality
 
-- Every finding must cite `path:line[-line]` evidence for entitlement source of truth and at least one consuming surface.
 - Include affected plan/role/tenant state, expected behavior, acceptance criteria, and validation direction.
-- Merge issues by entitlement owner when one fix validates them together.

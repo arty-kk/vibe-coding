@@ -1,19 +1,19 @@
-# Object Storage Polish
+# Improve Object Storage
 
 ## Operation
 
-Implement the requested coherent change at the owning source and update directly affected consumers. An earlier audit is optional when the user and repository already establish the target. Validate the changed behavior, then stop when the requested scope is complete.
+Implement the requested change and verify its directly affected behavior.
 
 ## Goal
 
-Implement one selected, evidence-backed Object Storage improvement at the authoritative owner. Complete the directly affected contract without broad cleanup or redesign.
+Correct the selected object operation while preserving authorization, identity, integrity and recovery.
 
 ## Domain rules
 
 - Allocate stable object/version identity before retryable upload and use conditional operations or database version checks for concurrent writers.
 - Keep multipart state resumable, verify checksums using provider-supported algorithms, and ensure abort/lifecycle cleanup for abandoned uploads.
 - Issue short-lived least-scope presigned operations only after application authorization and validate metadata/content again at completion.
-- Treat events as hints and make consumers idempotent/reconciling; preserve object version in every downstream reference.
+- Treat events as hints and make consumers idempotent/reconciling; preserve the selected immutable key, version/generation or conditional validator in dependent references.
 - Stage lifecycle/versioning/retention changes with inventory and restore evidence; do not equate replication with backup.
 
 ## Validation

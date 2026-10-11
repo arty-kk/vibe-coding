@@ -1,12 +1,12 @@
-# Vector Databases Polish
+# Improve Vector Databases
 
 ## Operation
 
-Implement the requested coherent change at the owning source and update directly affected consumers. An earlier audit is optional when the user and repository already establish the target. Validate the changed behavior, then stop when the requested scope is complete.
+Implement the requested change and verify its directly affected behavior.
 
 ## Goal
 
-Implement one selected, evidence-backed Vector Databases improvement at the authoritative owner. Complete the directly affected contract without broad cleanup or redesign.
+Correct the selected embedding, indexing or retrieval behavior while preserving filter isolation, quality and freshness.
 
 ## Domain rules
 

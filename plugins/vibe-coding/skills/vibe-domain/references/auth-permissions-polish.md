@@ -1,21 +1,21 @@
-# Auth Permissions Polish
+# Improve Auth Permissions
 
 ## Operation
 
-Implement the requested coherent change at the owning source and update directly affected consumers. An earlier audit is optional when the user and repository already establish the target. Validate the changed behavior, then stop when the requested scope is complete.
+Implement the requested change and verify its directly affected behavior.
 
 ## Goal
 
-Fix one coherent authentication, authorization, tenancy, or permission-gated experience end to end. The patch should align owner-layer checks, API behavior, UI affordances, copy, and tests.
+Fix the selected authentication, authorization, tenancy, or permission-gated experience end to end. The patch should align owner-layer checks, API behavior, UI affordances, copy, and tests.
 
 ## Scope selection
 
-- If the user named a role, route, endpoint, workspace, plan state, invitation flow, or access bug, polish that boundary and directly affected surfaces.
+- If the user named a role, route, endpoint, workspace, plan state, invitation flow, or access bug, improve that boundary and directly affected surfaces.
 - If the request is broad, inspect permission seams and apply the highest-confidence improvement with security, correctness, or user-impact value.
 - Include related no-access UI, error/copy, redirects, audit logging, and tests when they belong to the same access contract.
 - Avoid broad auth rewrites, provider migrations, role-model redesigns, or entitlement changes unless required by the selected fix.
 
-## Polish targets
+## Change targets
 
 - Server-side owner checks for role, tenant/workspace/project ownership, membership, plan/entitlement, invitation token, and admin/impersonation context.
 - API/server action behavior: safe status codes, machine-readable errors, no data leakage in forbidden/not-found paths, and stable redirect/recovery behavior.
@@ -27,9 +27,7 @@ Fix one coherent authentication, authorization, tenancy, or permission-gated exp
 
 - Enforce permissions in the backend/owner layer, not only in UI.
 - Preserve least privilege and existing public contracts unless the task authorizes a contract change.
-- Reuse existing auth, membership, entitlement, route-guard, and test patterns.
 - Avoid leaking whether protected resources exist unless the repo already defines that behavior safely.
-- Update directly affected tests, fixtures, docs, generated types, and localization catalogs when the repo uses them.
 
 ## Validation
 

@@ -2,7 +2,7 @@
 
 ## Operation
 
-Inspect the named boundary and report supported findings. Do not edit product code. Include concrete evidence, impact, the owning source, one remediation direction and a meaningful validation route. Severity follows actual impact, not a category example.
+Inspect the selected behavior and report evidence-backed defects; do not change product code.
 
 ## Goal
 
@@ -23,21 +23,9 @@ Authentication, sessions, cookies, token handling, authorization policies, tenan
 - Abuse controls: rate limits, quota bypass, brute-force paths, spam/proactive messaging, background job amplification.
 - Dependency/deploy risk only when the repo exposes the vulnerable package/config/path or CI/deploy behavior makes it reachable.
 
-## Priority model
-
-Reachable unauthorized access, tenant/data leakage, credential/session compromise, payment/webhook trust failure, destructive action abuse, secret exposure, or direct injection path.
-
-Meaningful defense gap in an important flow, inconsistent authorization, insufficient boundary validation, weak rate limiting, sensitive logging, or missing security test for critical behavior.
-
-Lower-risk hardening with current reachability: misleading security config, weak diagnostics boundary, partial policy drift, or documented-but-not-enforced constraint.
-
 ## Finding quality
 
-- Every finding must cite `path:line[-line]` evidence for the problematic behavior/contract and the owner layer, plus symbol when possible.
 - Include reachable surface, affected actors/consumers/states, expected behavior, acceptance criteria, and validation direction when discoverable.
-- Use one unambiguous fix direction per finding; explain a tradeoff only when it changes the decision.
-- Merge symptoms under the same behavior owner/source of truth unless fixes, rollout units, or validation differ.
-- Do not report theoretical risks, stylistic preferences, or generic best practices without current repo impact.
 - Distinguish direct repo evidence from exploitability inference.
 - Prefer fixes at the owning boundary/policy layer over duplicated local guards.
 - Do not include exploit payloads beyond what is necessary to explain the risk.

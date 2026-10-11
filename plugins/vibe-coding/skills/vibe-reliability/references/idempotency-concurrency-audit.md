@@ -2,7 +2,7 @@
 
 ## Operation
 
-Inspect the named boundary and report supported findings. Do not edit product code. Include concrete evidence, impact, the owning source, one remediation direction and a meaningful validation route. Severity follows actual impact, not a category example.
+Inspect the selected behavior and report evidence-backed defects; do not change product code.
 
 ## Goal and scope
 
@@ -21,9 +21,3 @@ Audit one operation for duplicate execution, races, lost updates, lock/lease own
 2. Construct simultaneous, duplicate, delayed, timeout-after-success, crash, lease-expiry, and stale-worker interleavings.
 3. Inspect database constraints/transactions, compare-and-set/version fields, distributed lock semantics, and consumer ordering.
 4. Distinguish idempotent effect from deduplicated request and document retention window.
-
-## Priority model
-
-- **P0:** outage, data loss, duplicate irreversible effect, tenant breach, deadlock, request collapse, or runaway cost.
-- **P1:** a hot-path reliability, consistency, concurrency, or performance defect with clear impact.
-- **P2:** a lower-risk but concrete scaling, diagnosability, or secondary-path issue.

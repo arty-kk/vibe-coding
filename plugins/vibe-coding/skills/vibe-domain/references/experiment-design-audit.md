@@ -2,7 +2,7 @@
 
 ## Operation
 
-Inspect the named boundary and report supported findings. Do not edit product code. Include concrete evidence, impact, the owning source, one remediation direction and a meaningful validation route. Severity follows actual impact, not a category example.
+Inspect the selected behavior and report evidence-backed defects; do not change product code.
 
 ## Goal and scope
 
@@ -24,9 +24,3 @@ Audit a product experiment from estimand and randomization through exposure, out
 3. Inspect SRM, pre-period balance, missingness, exposure timing, event semantics, windows, outliers, repeated users, and clustering.
 4. Reproduce power/uncertainty and analysis choices, including sequential/multiple-comparison handling and sensitivity checks.
 5. Check rollback/rollout policy, operational guardrails, data freshness, and who owns the final decision.
-
-## Priority model
-
-- **P0:** cross-tenant access, incorrect billing/entitlement, corrupted canonical data, or decision-critical analytical error.
-- **P1:** a material business-rule, data-quality, experiment, or analytics defect.
-- **P2:** a lower-risk but concrete lineage, instrumentation, reproducibility, or maintainability issue.

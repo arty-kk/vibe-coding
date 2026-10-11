@@ -2,7 +2,7 @@
 
 ## Operation
 
-Inspect the named boundary and report supported findings. Do not edit product code. Include concrete evidence, impact, the owning source, one remediation direction and a meaningful validation route. Severity follows actual impact, not a category example.
+Inspect the selected behavior and report evidence-backed defects; do not change product code.
 
 ## Goal and scope
 
@@ -27,9 +27,3 @@ Audit reachable abuse paths across identity, credential attacks, authorization, 
 3. Trace URL/DNS/redirect/content parsing and host/container egress to the actual network boundary; test normalization and resource limits safely.
 4. Map secret/dependency/artifact provenance and rotation/revocation behavior through CI, runtime, backups, telemetry, and incident recovery.
 5. Validate only with non-destructive fixtures, owned test accounts, synthetic tokens/data, and bounded rates; do not perform uncontrolled scanning or credential attacks.
-
-## Priority model
-
-- **P0:** remote code execution, auth bypass, privilege escalation, secret theft, tenant escape, destructive abuse, or critical denial of service.
-- **P1:** a reachable hardening, brute-force, isolation, supply-chain, or detection defect with clear security impact.
-- **P2:** a lower-risk but concrete defense-in-depth, auditability, or recovery issue.

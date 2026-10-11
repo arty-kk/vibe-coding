@@ -1,18 +1,18 @@
-# Notification Delivery Polish
+# Improve Notification Delivery
 
 ## Operation
 
-Implement the requested coherent change at the owning source and update directly affected consumers. An earlier audit is optional when the user and repository already establish the target. Validate the changed behavior, then stop when the requested scope is complete.
+Implement the requested change and verify its directly affected behavior.
 
 ## Goal
 
-Fix one coherent notification delivery boundary across trigger, eligibility, template, queue/job, provider adapter, status handling, tests, and docs/maps when used.
+Correct the selected notification delivery path from eligibility through provider status and retry recovery.
 
 ## Scope selection
 
 Use the selected notification type, channel, provider event, audit finding, failing test, or explicit delivery bug. Do not redesign the whole messaging system unless required by a selected reliability or consent fix.
 
-## Polish targets
+## Change targets
 
 - Trigger ownership, deduplication/idempotency keys, consent/unsubscribe, preferences, and channel selection.
 - Template data, localization, safe redaction, and copy consistency.

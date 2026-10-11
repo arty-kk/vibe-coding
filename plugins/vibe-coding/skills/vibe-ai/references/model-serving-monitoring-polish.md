@@ -1,12 +1,12 @@
-# Model Serving & Monitoring Polish
+# Improve Model Serving & Monitoring
 
 ## Operation
 
-Implement the requested coherent change at the owning source and update directly affected consumers. An earlier audit is optional when the user and repository already establish the target. Validate the changed behavior, then stop when the requested scope is complete.
+Implement the requested change and verify its directly affected behavior.
 
 ## Goal
 
-Implement one selected, evidence-backed Model Serving & Monitoring improvement at the authoritative owner. Complete the directly affected contract without broad cleanup or redesign.
+Correct the selected model-serving path, preserving artifact identity, bounded load, fallback semantics and rollout checks.
 
 ## Domain rules
 

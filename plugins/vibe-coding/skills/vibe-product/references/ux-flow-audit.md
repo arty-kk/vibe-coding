@@ -2,7 +2,7 @@
 
 ## Operation
 
-Inspect the named boundary and report supported findings. Do not edit product code. Include concrete evidence, impact, the owning source, one remediation direction and a meaningful validation route. Severity follows actual impact, not a category example.
+Inspect the selected behavior and report evidence-backed defects; do not change product code.
 
 ## Goal
 
@@ -21,18 +21,7 @@ Routes, navigation, guards, onboarding, forms, tables, dialogs, loaders/actions,
 - Forms and validation: field order, required/optional ambiguity, validation timing, inline vs summary errors, disabled submit rules, and persisted draft behavior when present.
 - Measurement and regression: missing tests/analytics hooks for critical funnel steps where repo patterns require them, stale nav maps, or shallow smoke coverage.
 
-## Priority model
-
-Flow issue causing data loss, destructive mistake, permission/tenant/plan bypass or confusion with high impact, broken critical path, or public conversion blocker on a primary route.
-
-Important task-completion friction, misleading state, missing recovery, inconsistent permissions/plan UX, or missing regression coverage for a core journey.
-
-Lower-risk but concrete flow improvement: minor navigation ambiguity, weak microcopy, incomplete empty/error state, stale flow docs, or coupling that blocks safe UX iteration.
-
 ## Finding quality
 
-- Every finding must cite `path:line[-line]` evidence for the flow owner and affected route/component/state, plus symbol when possible.
 - Include actor, starting context, completion goal, expected result, acceptance criteria, and validation path.
-- Use one unambiguous fix direction per finding; explain a tradeoff only when it changes the decision.
-- Merge symptoms under the same journey owner unless fixes, rollout units, actors, or validation differ.
 - Do not report cosmetic preferences unless they affect comprehension, safety, conversion, accessibility, permissions, or task completion.

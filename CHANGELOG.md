@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.4.0
+
+- Revise all 46 skill entrypoints and 241 workflows for precise scope, concrete procedures and observable results; retain stable skill names, workflow IDs and both host formats.
+- Centralize shared operation, evidence, severity and completion rules. Load host details only when integration context needs them.
+- Replace repeated probe ledgers, taxonomies and process prohibitions with one selection/history contract and focused domain recipes; explicitly requested revisits are supported.
+- Add domain setup, selected scenarios and observable proof to previously scenario-only verification recipes.
+- Preserve requested chat/file output for maps and plans; remove compulsory artifact families, fixed phase counts and one-run/one-PR requirements.
+- Correct framework/provider and architecture assumptions in notebook, telemetry, release, queue, consistency, SEO and tool workflows. Use plain English implementation labels.
+
 ## 1.3.0
 
 - Support Claude Code with a native plugin manifest, a public GitHub marketplace and a repository-root entry for directory distribution. Keep all 46 skills and 241 workflows shared with Codex.

@@ -1,18 +1,18 @@
-# Privacy Data Rights Polish
+# Improve Privacy Data Rights
 
 ## Operation
 
-Implement the requested coherent change at the owning source and update directly affected consumers. An earlier audit is optional when the user and repository already establish the target. Validate the changed behavior, then stop when the requested scope is complete.
+Implement the requested change and verify its directly affected behavior.
 
 ## Goal
 
-Fix one coherent privacy/data-rights boundary across collection, storage, derived data, external providers, user/admin controls, tests, and documentation when directly affected.
+Fix the selected privacy/data-rights boundary across collection, storage, derived data, external providers, user/admin controls, tests, and documentation when directly affected.
 
 ## Scope selection
 
 Use the selected data field, consent setting, deletion/export flow, retention job, audit finding, failing test, or explicit privacy bug. Stop for missing legal/product decisions instead of inventing policy.
 
-## Polish targets
+## Change targets
 
 - Data collection/validation, storage schemas, access controls, retention/deletion/export jobs, and derived stores.
 - Provider adapters and webhooks that receive or delete the selected data.

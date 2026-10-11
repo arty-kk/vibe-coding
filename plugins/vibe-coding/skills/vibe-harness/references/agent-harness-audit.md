@@ -2,7 +2,7 @@
 
 ## Operation
 
-Inspect the named boundary and report supported findings. Do not edit product code. Include concrete evidence, impact, the owning source, one remediation direction and a meaningful validation route. Severity follows actual impact, not a category example.
+Inspect the selected behavior and report evidence-backed defects; do not change product code.
 
 ## Goal and scope
 
@@ -26,9 +26,3 @@ Audit the run state machine of an agent harness across loops, parallel branches,
 3. Inspect where concurrency is bounded and who owns child/task cancellation, result ordering, error aggregation, and cleanup.
 4. Compare persisted state with emitted events/traces and identify states that cannot be replayed or explained deterministically.
 5. Check approval and trust boundaries for tools, retrieved context, memory writes, and external side effects.
-
-## Priority model
-
-- **P0:** duplicate or unauthorized tool effects, lost run state, cross-run data exposure, runaway fan-out, or unrecoverable orchestration.
-- **P1:** a material ownership, checkpoint, replay, cancellation, concurrency, or persistence defect.
-- **P2:** a lower-risk but concrete observability, fairness, recovery, or maintainability issue.

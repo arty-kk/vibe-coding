@@ -1,16 +1,16 @@
-# Localization Polish
+# Improve Localization
 
 ## Operation
 
-Implement the requested coherent change at the owning source and update directly affected consumers. An earlier audit is optional when the user and repository already establish the target. Validate the changed behavior, then stop when the requested scope is complete.
+Implement the requested change and verify its directly affected behavior.
 
 ## Goal
 
-Improve a coherent localization surface: missing strings, inconsistent keys, hardcoded user-facing copy, pluralization, interpolation, locale formatting, and translated state coverage.
+Improve the selected localization surface: missing strings, inconsistent keys, hardcoded user-facing copy, pluralization, interpolation, locale formatting, and translated state coverage.
 
 ## Scope selection
 
-- If the user named a locale, surface, namespace, component, or issue, polish that area and directly affected states.
+- If the user named a locale, surface, namespace, component, or issue, improve that area and directly affected states.
 - If the request is broad, inspect high-traffic user-facing surfaces and i18n catalogs, then apply the highest-confidence fixes.
 - Include directly related empty/loading/error/no-access/validation/destructive copy when they belong to the same namespace or journey.
 - Avoid broad translation rewrites, new locales, vendor integrations, and tone changes unless requested.
@@ -28,10 +28,8 @@ Improve a coherent localization surface: missing strings, inconsistent keys, har
 
 ## Implementation principles
 
-- Reuse existing i18n library, namespace strategy, key style, formatting helpers, and content vocabulary.
 - Preserve business meaning and avoid unsupported marketing/product claims.
 - Keep untranslated placeholders explicit if a real translation cannot be safely inferred.
-- Update directly affected tests, snapshots, docs, and generated catalogs when the repo uses them.
 
 ## Validation
 

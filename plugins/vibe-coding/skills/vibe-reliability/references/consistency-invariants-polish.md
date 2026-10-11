@@ -1,12 +1,12 @@
-# Consistency Invariants Polish
+# Improve Consistency Invariants
 
 ## Operation
 
-Implement the requested coherent change at the owning source and update directly affected consumers. An earlier audit is optional when the user and repository already establish the target. Validate the changed behavior, then stop when the requested scope is complete.
+Implement the requested change and verify its directly affected behavior.
 
 ## Goal
 
-Implement one selected, evidence-backed Consistency Invariants improvement at the authoritative owner. Complete the directly affected contract without broad cleanup or redesign.
+Restore the selected business invariant across its authoritative state and directly affected projections or consumers.
 
 ## Domain rules
 
@@ -17,7 +17,7 @@ Implement one selected, evidence-backed Consistency Invariants improvement at th
 
 ## Validation
 
-- Keep the domain write and outbox intent in the same commit; coordinate inbox identity and consumer effect atomically, or identify the external idempotency/reconciliation owner.
+- When the selected design uses outbox/inbox delivery, verify atomic domain/write intent and consumer identity/effect commits, or identify the external idempotency/reconciliation owner.
 - Run failure-window tests around commit/publish/cache/status ordering.
 - Exercise duplicate, reorder, stale read, retry, restart, and reconciliation to prove convergence.
 - Record distributed/environment gates not reproducible locally.

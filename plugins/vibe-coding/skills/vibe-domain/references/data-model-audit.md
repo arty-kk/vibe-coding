@@ -2,7 +2,7 @@
 
 ## Operation
 
-Inspect the named boundary and report supported findings. Do not edit product code. Include concrete evidence, impact, the owning source, one remediation direction and a meaningful validation route. Severity follows actual impact, not a category example.
+Inspect the selected behavior and report evidence-backed defects; do not change product code.
 
 ## Goal
 
@@ -21,11 +21,3 @@ Database schemas, migrations, ORM models, generated types, repositories/DAOs, se
 - Query behavior: N+1 hot paths, unstable ordering/pagination, missing indexes for reachable filters, race conditions, transaction gaps, and cache/index invalidation drift.
 - Import/export/sync: partial failure handling, duplicate prevention, external ID stability, replay/idempotency, and stale derived artifacts.
 - Regression resistance: missing fixtures/tests for constraints, migrations, state transitions, concurrency, tenant isolation, and data repair/backfill.
-
-## Priority model
-
-Reachable data loss/corruption, cross-tenant data mix-up, migration that can break production data, unauthorized mutation through data boundary drift, or invalid state enabling destructive/paid/security impact.
-
-Important invariant or migration gap, query bug on a main path, duplicated data ownership likely to drift, missing critical data-model tests, or performance issue from schema/query mismatch.
-
-Lower-risk schema hygiene issue, stale generated type/docs, minor index/test gap, unclear ownership that does not currently break behavior, or maintainability coupling around data access.

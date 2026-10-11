@@ -2,7 +2,7 @@
 
 ## Operation
 
-Inspect the named boundary and report supported findings. Do not edit product code. Include concrete evidence, impact, the owning source, one remediation direction and a meaningful validation route. Severity follows actual impact, not a category example.
+Inspect the selected behavior and report evidence-backed defects; do not change product code.
 
 ## Goal
 
@@ -21,16 +21,7 @@ Public routes, auth flows, onboarding routes/components, empty states, setup wiz
 - Measurement: activation-critical events missing, duplicated, fired before success, leaking PII, or impossible to connect to funnel state using existing instrumentation patterns.
 - Regression resistance: no tests/previews for primary first-run path, stale docs, or route guards that make onboarding fragile.
 
-## Priority model
-
-Signup/onboarding path creates broken tenant/auth/plan state, loses data, blocks paid/core activation, or exposes data across tenants/roles.
-
-Important first-run friction, missing setup state, misleading plan/trial guidance, broken recovery, or measurement gap that prevents validating activation.
-
-Lower-risk but concrete activation improvement: weak empty-state copy, stale checklist/docs, minor redirect inconsistency, or missing test for a secondary onboarding state.
-
 ## Finding quality
 
-- Every finding must cite `path:line[-line]` evidence for route/state owner and affected activation step.
 - Include affected role/plan/tenant state, expected behavior, acceptance criteria, and validation direction.
 - Merge symptoms that share the same onboarding owner/source of truth.

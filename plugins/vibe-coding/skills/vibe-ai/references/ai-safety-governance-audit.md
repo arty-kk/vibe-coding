@@ -2,7 +2,7 @@
 
 ## Operation
 
-Inspect the named boundary and report supported findings. Do not edit product code. Include concrete evidence, impact, the owning source, one remediation direction and a meaningful validation route. Severity follows actual impact, not a category example.
+Inspect the selected behavior and report evidence-backed defects; do not change product code.
 
 ## Goal and scope
 
@@ -21,9 +21,3 @@ Audit an AI release for misuse, harmful output, privacy, accountability, evaluat
 2. Inspect policy implementation, refusal/guardrails, human review, overrides, logging, appeal/correction, and incident ownership.
 3. Review evaluation coverage by risk slice, adversarial inputs, false-positive/negative tradeoffs, and model/provider change.
 4. Check privacy, retention, consent, third-party terms, and cross-tenant exposure from repository evidence.
-
-## Priority model
-
-- **P0:** unsafe action, privacy or tenant leak, materially wrong irreversible decision, corrupted model/data lineage, or critical service failure.
-- **P1:** a reachable quality, grounding, evaluation, serving, cost, or governance defect with clear product impact.
-- **P2:** a lower-risk but concrete robustness, observability, dataset, or maintainability issue.

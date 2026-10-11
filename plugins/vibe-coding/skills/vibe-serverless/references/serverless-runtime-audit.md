@@ -8,8 +8,6 @@ Inspect the selected serverless or edge invocation boundary without product edit
 
 The selected handler, provider/runtime and compatibility configuration, trigger, success/acknowledgment promise, authoritative effect and retry owner. Identify the concrete invocation state and permitted local/provider environment.
 
-Select the target from the user’s request and current evidence. Reconstruct ordinary missing context from the owning code. If a missing target, authority or environment changes correctness or safety, name that specific gap and leave the dependent action blocked; continue independent work. Do not invent requirements from existing tests.
-
 ## Domain invariants
 
 - Success or acknowledgment is emitted only when work required by the business contract has reached its promised durability boundary.
@@ -46,25 +44,3 @@ Prioritize reported success with lost required work, cross-invocation identity/d
 ## Evidence requirements
 
 Cite handler/configuration `path:line`, trigger/runtime, affected event or user state, expected guarantee, observed result and durable-state evidence. Give one repair direction at the lifetime, identity, delivery or admission owner and a meaningful regression route. Distinguish local ordering evidence from production scheduling, quotas, disconnect and provider durability guarantees.
-
-## Priority model
-
-Use the repository’s severity scale if defined. Otherwise classify by demonstrated reachability and impact, not the presence of a keyword:
-
-- **P0:** critical or immediate lost acknowledged work, cross-invocation data leakage or duplicate irreversible effects.
-- **P1:** A material lifetime, batch or capacity failure.
-- **P2:** A concrete bounded runtime/configuration inconsistency.
-
-A potentially severe category without a supported reachable path remains an unverified concern, not a P0 finding.
-
-## Finding rules
-
-Accept a finding only when the evidence establishes the reachable trigger, authoritative owner, violated invariant, affected consumer/state and concrete impact. Separate source facts, observed runtime behavior and inference. Reject generic best practices, stylistic preferences, hypothetical scale failures and already-solved issues. Give one owner-layer remediation direction. Merge symptoms sharing the same owner and correction; split findings when owner, rollout, rollback or validation boundaries differ.
-
-## Completion criteria
-
-Finish when the selected path and applicable invariants have been examined, findings pass the evidence gate and material unknowns are named. No supported defect is a valid outcome. Do not expand scope or fabricate work to fill priority levels.
-
-## Output contract
-
-Respond in the user’s language. Return findings ordered by impact. Each finding contains: priority and concrete title; affected surface/actor/state; exact evidence anchors and nearest symbol; authoritative owner; violated invariant; expected versus observed behavior; reachable impact; one remediation direction; acceptance criteria; verification route; relevant rollout/rollback constraints and explicit exclusions. Use concise connected fields or prose, not empty template sections. If no finding qualifies, state that and bound the conclusion to the inspected scope. Report unresolved evidence separately. Do not create external tasks or edit code for an audit-only request.

@@ -1,18 +1,18 @@
-# Browser Extension Polish
+# Improve Browser Extension
 
 ## Operation
 
-Implement the requested coherent change at the owning source and update directly affected consumers. An earlier audit is optional when the user and repository already establish the target. Validate the changed behavior, then stop when the requested scope is complete.
+Implement the requested change and verify its directly affected behavior.
 
 ## Goal
 
-Fix one coherent browser extension boundary across manifest permissions, scripts, messaging, storage, backend/native integration, tests, and release packaging when directly affected.
+Fix the selected browser extension boundary across manifest permissions, scripts, messaging, storage, backend/native integration, tests, and release packaging when directly affected.
 
 ## Scope selection
 
 Use the selected extension feature, permission issue, messaging bug, audit finding, failing test, or packaging failure. Do not migrate manifest versions or redesign the extension globally unless required by the selected fix.
 
-## Polish targets
+## Change targets
 
 - Manifest permissions/host permissions, content/background scripts, injected scripts, popup/options UI, and message handlers.
 - Storage, tokens, cross-origin API calls, native messaging, clipboard/download/tab usage, and safe error states.

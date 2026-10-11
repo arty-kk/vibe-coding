@@ -2,7 +2,7 @@
 
 ## Operation
 
-Inspect the named boundary and report supported findings. Do not edit product code. Include concrete evidence, impact, the owning source, one remediation direction and a meaningful validation route. Severity follows actual impact, not a category example.
+Inspect the selected behavior and report evidence-backed defects; do not change product code.
 
 ## Goal and scope
 
@@ -26,9 +26,3 @@ Audit a NoSQL data path against the selected engine's real atomicity, partitioni
 3. Analyze partition-key distribution and query/index shape using representative cardinality/skew rather than uniform toy data.
 4. Inspect TTL/change-stream lag, resume-token loss, duplicate/out-of-order events, resync, and downstream idempotency.
 5. Calculate total pool and in-flight demand and verify timeout/retry layering under node loss or topology change.
-
-## Priority model
-
-- **P0:** data loss, cross-tenant exposure, consistency violation in a critical path, or hot-partition service collapse.
-- **P1:** a material partitioning, conditional-write, index, TTL, load, or recovery defect.
-- **P2:** a lower-risk but concrete efficiency, observability, or maintainability issue.

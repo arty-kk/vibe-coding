@@ -1,18 +1,18 @@
-# Payments Provider Polish
+# Improve Payments Provider
 
 ## Operation
 
-Implement the requested coherent change at the owning source and update directly affected consumers. An earlier audit is optional when the user and repository already establish the target. Validate the changed behavior, then stop when the requested scope is complete.
+Implement the requested change and verify its directly affected behavior.
 
 ## Goal
 
-Fix one coherent payments provider boundary across provider adapter, local billing state, webhook/reconciliation, entitlement updates, UI/API behavior, tests, and docs/maps when used.
+Correct the selected provider-event or billing transition while preserving authenticated ingestion, idempotency and local entitlements.
 
 ## Scope selection
 
 Use the selected checkout/subscription/invoice/webhook/refund/chargeback/reconciliation bug, audit finding, failing test, provider event sample, or explicit billing task. Do not migrate payment providers or redesign pricing unless required by the selected fix.
 
-## Polish targets
+## Change targets
 
 - Provider SDK/client wrapper, request construction, idempotency keys, timeouts/retries, and test/live configuration.
 - Local billing state machine, invoice/payment records, entitlement activation/deactivation, grace periods, and audit logs.

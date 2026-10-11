@@ -1,16 +1,16 @@
-# Bot Polish
+# Improve Bot
 
 ## Operation
 
-Implement the requested coherent change at the owning source and update directly affected consumers. An earlier audit is optional when the user and repository already establish the target. Validate the changed behavior, then stop when the requested scope is complete.
+Implement the requested change and verify its directly affected behavior.
 
 ## Goal
 
-Improve a coherent bot flow or set of related states across navigation, menus, copy, validation, recovery, permissions, and platform constraints. Solve the selected journey end-to-end rather than tweaking one message while adjacent states remain broken.
+Improve the selected bot flow or related states across navigation, menus, copy, validation, recovery, permissions, and platform constraints. Solve the selected journey end-to-end rather than tweaking one message while adjacent states remain broken.
 
 ## Scope selection
 
-- If the user named a command, state, flow, callback, role, chat type, or issue, polish that flow and directly affected states.
+- If the user named a command, state, flow, callback, role, chat type, or issue, improve that flow and directly affected states.
 - If the request is broad, inspect primary entry points and common bot journeys, then apply the highest-confidence improvements with visible user impact.
 - Include related copy, keyboard, validation, stale callback, recovery, and privacy fixes when they belong to the same journey.
 - Avoid unrelated features, new integrations, payment/business logic changes, and platform migrations unless the fix requires them.
@@ -26,10 +26,8 @@ Improve a coherent bot flow or set of related states across navigation, menus, c
 
 ## Implementation principles
 
-- Reuse existing routers, scenes/FSM patterns, keyboards, templates, i18n, guards, persistence, and telemetry patterns.
 - Fix the flow owner rather than scattering unrelated message edits.
-- Preserve current business rules unless the requested polish requires a behavior correction.
-- Update directly affected tests, fixtures, snapshots, docs, and localization catalogs when the repo uses them.
+- Preserve current business rules unless the requested improve requires a behavior correction.
 
 ## Validation
 

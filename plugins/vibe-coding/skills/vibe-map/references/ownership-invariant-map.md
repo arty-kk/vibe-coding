@@ -2,11 +2,13 @@
 
 ## Operation
 
-Create or refresh only the requested repository map. A map is a navigation index, not proof of correctness. Verify entries against current owners and preserve stable IDs. If the user asks for an explanation in chat, do not insist on writing a file.
+Map the requested area using current repository evidence.
 
 ## Goal
 
-Create or update `docs/owner_invariant_map.md` as the canonical navigation index for business, data, authorization, runtime, and operational invariants and their authoritative owners.
+Connect the selected business, data, permission or runtime rules to their defining source and direct producers/consumers.
+
+Suggested saved map: `docs/owner_invariant_map.md`.
 
 ## Inspect
 
@@ -16,8 +18,7 @@ Schemas/models, domain services, policy engines, state machines, validators, API
 
 ### Evidence and IDs
 
-- Write or update `docs/owner_invariant_map.md` when possible. If writing is unavailable, print the complete markdown content in chat.
-- Use stable IDs and preserve existing IDs: invariant `INV-*`, owner `OWN-*`, decision `DEC-*`, state machine `STM-*`, policy `POL-*`, producer/consumer edge `EDGE-*`.
+- Suggested IDs for new entries: invariant `INV-*`, owner `OWN-*`, decision `DEC-*`, state machine `STM-*`, policy `POL-*`, producer/consumer edge `EDGE-*`.
 - Anchor every invariant to its current owner with `path:line[-line]` plus symbol when possible.
 - A map entry is not proof by itself. Audits and implementation tasks must re-check the owner source when stale or risky.
 
@@ -28,7 +29,3 @@ Cover permissions, tenancy, plans/quotas, lifecycle state transitions, validatio
 ### Entry details
 
 For each invariant, capture the owner source, human-readable rule, producers, consumers, failure/error semantics, direct tests, docs/spec links, generated artifacts, rollout/rollback notes, and known drift or duplication. Mark owner ambiguity as a first-class risk.
-
-## Markdown structure
-
-Use summary, conventions, invariant index by domain, owner table, producer/consumer edges, duplicated logic, missing tests, stale docs, unknown owners, and assumptions.

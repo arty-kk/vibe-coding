@@ -2,7 +2,7 @@
 
 ## Operation
 
-Inspect the named boundary and report supported findings. Do not edit product code. Include concrete evidence, impact, the owning source, one remediation direction and a meaningful validation route. Severity follows actual impact, not a category example.
+Inspect the selected behavior and report evidence-backed defects; do not change product code.
 
 ## Goal and scope
 
@@ -26,9 +26,3 @@ Audit object identity, authorization, multipart integrity, overwrite/versioning,
 3. Trace retries and crashes around initiate/upload-part/complete, database commit, overwrite/delete, event delivery, and cleanup.
 4. Check tenant-prefix/key normalization, presigned scope, content validation, SSRF-like fetch paths, and KMS/bucket policy boundaries.
 5. Evaluate large-object streaming, connection/memory bounds, orphan multipart inventory, lifecycle age, and storage/egress cost signals.
-
-## Priority model
-
-- **P0:** object loss, unauthorized exposure, irreversible overwrite/delete, broken retention/legal hold, or unrecoverable multipart state.
-- **P1:** a material integrity, versioning, lifecycle, consistency, signing, replication, or recovery defect.
-- **P2:** a lower-risk but concrete cost, observability, or maintainability issue.

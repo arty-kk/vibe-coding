@@ -2,11 +2,11 @@
 
 ## Operation
 
-Inspect the named boundary and report supported findings. Do not edit product code. Include concrete evidence, impact, the owning source, one remediation direction and a meaningful validation route. Severity follows actual impact, not a category example.
+Inspect the selected behavior and report evidence-backed defects; do not change product code.
 
 ## Goal and scope
 
-Audit one privacy/data-rights boundary such as PII collection, consent, retention, deletion, export, account closure, data sharing, telemetry, or sensitive logging. This is repository correctness work, not legal advice.
+Audit one privacy/data-rights boundary such as PII collection, consent, retention, deletion, export, account closure, data sharing, telemetry, or sensitive logging. Use the supplied product/privacy policy as expected behavior; do not infer jurisdictional requirements from code.
 
 ## Domain invariants
 

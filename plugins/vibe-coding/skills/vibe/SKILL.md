@@ -1,6 +1,6 @@
 ---
 name: vibe
-description: "Use Vibe Coding when the user explicitly invokes the plugin without choosing a specialized skill, asks what it can do, or requests help choosing a workflow. Route by requested outcome and domain; do not trigger for every coding task."
+description: "Choose a Vibe Coding workflow when the user invokes the plugin or asks which skill to use. Do not activate for every coding task."
 ---
 
 # Vibe Coding

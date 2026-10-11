@@ -1,31 +1,16 @@
-# DESIGN GEN
+# Document the Design System
 
-## Operation
+## Scope
 
-Create or update the requested canonical documentation from current repository evidence. Verify commands and paths; do not create missing product requirements.
+Create or update the requested design/UX reference from the repository’s actual tokens, components, layouts and interaction contracts. Reuse the existing document format and language.
 
-## Goal
+## Procedure
 
-Create a practical design-system and UX reference for the current repository: tokens, components, layouts, interaction states, accessibility, content style, and implementation map.
+1. Inspect maintained theme/token sources, shared components and their variants, relevant routes, styles/assets, design references and previews where available.
+2. Identify token/component ownership, public variant API, responsive rules and reachable interaction states. Distinguish implemented behavior from declared design requirements.
+3. Document the useful implementation map: where to change a shared rule, its direct consumers and the relevant preview/test.
+4. Include keyboard/focus, semantics, content/localization and recovery states where they affect the selected interface. Do not invent a brand system or prescribe unimplemented components.
 
-## Inspect
+## Verification
 
-UI source, components, style/theme files, tokens, CSS/Tailwind/config, Storybook/docs if present, design assets, screenshots/public assets, route/page structure, forms/tables/modals, i18n/copy, tests, generated artifacts, and existing docs.
-
-## Content rules
-
-- Prefer current source over stale docs.
-- Do not invent colors, components, layouts, breakpoints, or design principles not evidenced in the repo.
-- Separate direct evidence from inferred conventions; cite important source facts with `path:line[-line]` plus symbol when possible.
-- Keep guidance actionable for future implementation, not a marketing description.
-- Write in the repository’s dominant documentation language unless the user requests another language.
-
-## Markdown structure
-
-Use sections that fit the repo and omit irrelevant ones: overview, design sources inspected, tokens, layout/responsiveness, components and variants, navigation/information architecture, forms and validation UI, tables/lists/data visualization, icons/assets/media, interaction states, accessibility, content style, implementation map, QA checklist, and open questions.
-
-Keep the artifact scannable: one H1, H2/H3 hierarchy, compact lists, small tables for token/component matrices, and no placeholder sections.
-
-## Validation
-
-After writing, verify references to files, classes, tokens, and components.
+Check referenced symbols, token names, file paths and actual variants. Use rendered evidence for visual claims and state any missing preview/device. Keep only sections useful for future implementation; omit universal design tutorials and placeholder matrices.

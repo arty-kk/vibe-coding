@@ -2,7 +2,7 @@
 
 ## Operation
 
-Inspect the named boundary and report supported findings. Do not edit product code. Include concrete evidence, impact, the owning source, one remediation direction and a meaningful validation route. Severity follows actual impact, not a category example.
+Inspect the selected behavior and report evidence-backed defects; do not change product code.
 
 ## Goal and scope
 
@@ -26,9 +26,3 @@ Audit ClickHouse table engines, partition/order keys, ingestion/deduplication, q
 3. Trace retry/duplicate windows, partial insert, async insert acknowledgement, replica failure, Distributed queue, and source checkpoint boundaries.
 4. Evaluate partition/key choices and materialized-view semantics against real filters, time ranges, tenant skew, late data, and update/delete requirements.
 5. Calculate concurrent connections/queries/ingestion, quotas, memory, disk, merge bandwidth, and mutation/backfill pressure.
-
-## Priority model
-
-- **P0:** data loss or duplication in decision-critical pipelines, cluster overload, cross-tenant exposure, or unrecoverable schema/replication failure.
-- **P1:** a material ingestion, partitioning, merge, query-load, distributed-table, or retention defect.
-- **P2:** a lower-risk but concrete efficiency, observability, or maintainability issue.

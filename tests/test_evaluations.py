@@ -7,6 +7,7 @@ ROOT = Path(__file__).resolve().parents[1]
 RECORD = ROOT/'review/evaluations/1.2.0.json'
 CURRENT = ROOT/'review/evaluations/1.3.0.json'
 WEBSITE = ROOT/'review/evaluations/site-2026-09-21.json'
+REVISION = ROOT/'review/evaluations/1.4.0.json'
 
 
 class EvaluationRecordTests(unittest.TestCase):
@@ -14,6 +15,15 @@ class EvaluationRecordTests(unittest.TestCase):
         self.record = json.loads(RECORD.read_text(encoding='utf-8'))
         self.current = json.loads(CURRENT.read_text(encoding='utf-8'))
         self.website = json.loads(WEBSITE.read_text(encoding='utf-8'))
+        self.revision = json.loads(REVISION.read_text(encoding='utf-8'))
+
+    def revised_fingerprint(self, name, expected):
+        change = self.revision['changes'].get(name)
+        if change:
+            self.assertEqual(expected, change['before'], 'Revision must start from the recorded baseline: '+name)
+            self.assertTrue(change['review'])
+            return change['after']
+        return expected
 
     def test_record_matches_current_instructions_inputs_and_artifacts(self):
         for section in ['instructions', 'inputs_and_artifacts']:
@@ -27,6 +37,7 @@ class EvaluationRecordTests(unittest.TestCase):
                         self.assertEqual(expected, change['before'])
                         self.assertTrue(change['review'])
                         expected = change['after']
+                    expected = self.revised_fingerprint(name, expected)
                     self.assertEqual(expected, hashlib.sha256(path.read_bytes()).hexdigest(), 'Evaluation is stale: re-evaluate affected behavior')
 
     def test_current_release_has_separate_evidence_and_complete_instruction_fingerprints(self):
@@ -41,6 +52,7 @@ class EvaluationRecordTests(unittest.TestCase):
                 if change:
                     self.assertEqual(expected, change['before'])
                     expected = change['after']
+                expected = self.revised_fingerprint(name, expected)
                 self.assertEqual(expected, hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
         self.assertTrue(all(case['observed'] and case['limits'] for case in self.current['checks']))
 
@@ -51,6 +63,7 @@ class EvaluationRecordTests(unittest.TestCase):
             self.assertEqual(self.current['inputs_and_artifacts'][name], change['before'])
             self.assertEqual(self.website['artifacts'][name], change['after'])
         for name, expected in self.website['artifacts'].items():
+            expected = self.revised_fingerprint(name, expected)
             self.assertEqual(expected, hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
         self.assertTrue(self.website['checks'])
         self.assertTrue(all(case['observed'] and case['limits'] for case in self.website['checks']))
@@ -72,7 +85,7 @@ class EvaluationRecordTests(unittest.TestCase):
 
     def test_required_behavior_records_are_complete_and_bounded(self):
         manifest = json.loads((ROOT/'plugins/vibe-coding/plugin.json').read_text(encoding='utf-8'))
-        self.assertEqual(manifest['version'], self.current['release'])
+        self.assertEqual(manifest['version'], self.revision['release'])
         cases = {row['id']: row for row in self.record['behaviors']}
         self.assertEqual({'serverless-required-write', 'mcp-http-readonly-control', 'react-hydration-preference'}, set(cases))
         for case in cases.values():
@@ -85,6 +98,18 @@ class EvaluationRecordTests(unittest.TestCase):
         self.assertEqual(2, cases['serverless-required-write']['before']['regression_tests_failed'])
         self.assertEqual(0, cases['serverless-required-write']['after']['tests_failed'])
         self.assertEqual({'dark':0, 'light':0}, cases['react-hydration-preference']['after_errors'])
+
+    def test_latest_revision_preserves_history_and_covers_current_instructions(self):
+        self.assertEqual(hashlib.sha256(CURRENT.read_bytes()).hexdigest(), self.revision['baseline']['sha256'])
+        self.assertEqual(hashlib.sha256(WEBSITE.read_bytes()).hexdigest(), self.revision['website_baseline']['sha256'])
+        files = list((ROOT/'plugins/vibe-coding/skills').rglob('*.md')) + list((ROOT/'plugins/vibe-coding/references').glob('*.md'))
+        self.assertEqual({p.relative_to(ROOT).as_posix() for p in files}, set(self.revision['instructions']))
+        self.assertEqual(set(self.revision['instructions']), set(self.revision['instruction_review']['paths']))
+        for section in ('instructions', 'inputs_and_artifacts'):
+            for name, expected in self.revision[section].items():
+                self.assertEqual(expected, hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
+        self.assertTrue(self.revision['limits'])
+        self.assertTrue(all(case['observed'] and case['limits'] for case in self.revision['checks']))
 
 
 if __name__ == '__main__':

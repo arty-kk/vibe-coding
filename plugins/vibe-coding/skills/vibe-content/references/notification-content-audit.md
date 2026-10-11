@@ -1,29 +1,16 @@
-# Notification Content Audit
+# Audit Notification Content
 
-## Operation
+## Scope
 
-Inspect the named boundary and report supported findings. Do not edit product code. Include concrete evidence, impact, the owning source, one remediation direction and a meaningful validation route. Severity follows actual impact, not a category example.
+Inspect the selected email, push, chat or in-app template against the event/state and audience it describes. Queue delivery, deduplication and provider status belong to the notification-delivery skill unless they cause the selected content defect.
 
-## Goal and scope
+## Procedure
 
-Audit product/email/push/chat notifications across trigger semantics, audience, deduplication, preferences, privacy, and destination.
+1. Locate the template and its data producer. Confirm recipient/context, message purpose, current state and CTA destination.
+2. Check required/missing values, stale claims, interpolation/escaping, locale/plural/format rules and channel limits.
+3. Verify that labels, success/failure wording and actions describe the actual product behavior, including denied or expired destinations.
+4. Inspect sensitive data, cross-tenant identifiers and public diagnostics in the body, subject and links. Use synthetic previews for the reachable states.
 
-## Domain invariants
+## Result
 
-- The notification trigger represents a durable semantic event and is not emitted twice by retries or competing owners.
-- Audience, tenant scope, preferences/consent, suppression, frequency, and channel fallback are authoritative.
-- Content describes current state, redacts sensitive data, localizes correctly, and links to an authorized destination.
-- Delivery, bounce/failure, retry, dedupe, unsubscribe, and operator observability are explicit.
-
-## Audit method
-
-1. Trace event production through template selection, audience resolution, provider call, delivery state, and deep link.
-2. Check duplicate/reordered events, stale state, preference changes, tenant boundaries, provider retry, and partial failure.
-3. Compare templates across channels and locales with the product state they claim.
-4. Identify transactional/marketing classification and any required approval boundary from repository evidence.
-
-## Priority model
-
-- **P0:** content that creates legal, security, billing, consent, or destructive-action risk.
-- **P1:** a material comprehension, conversion, localization, notification, or discoverability defect.
-- **P2:** a lower-risk but concrete consistency, tone, metadata, or secondary-content issue.
+Report the affected template/state, observed wording or payload, actual product contract and one correction with a rendering or state-based check. Content review does not authorize sending messages to real recipients.

@@ -2,7 +2,7 @@
 
 ## Operation
 
-Inspect the named boundary and report supported findings. Do not edit product code. Include concrete evidence, impact, the owning source, one remediation direction and a meaningful validation route. Severity follows actual impact, not a category example.
+Inspect the selected behavior and report evidence-backed defects; do not change product code.
 
 ## Goal and scope
 
@@ -26,9 +26,3 @@ Audit external API, DNS/TLS/proxy, webhook, WebSocket, and SSE boundaries across
 3. Validate webhook raw-body capture, signature/version/clock/replay state, event identity, durable ack boundary, and re-drive tooling.
 4. Trace WebSocket/SSE connect, auth refresh, heartbeat, message sequence, gap, slow consumer, reconnect/resume, and deploy termination.
 5. Check DNS/TLS/proxy failure and rotation behavior, trusted headers, redirects/egress constraints, and dependency-specific quotas.
-
-## Priority model
-
-- **P0:** request forgery or smuggling, TLS/auth bypass, data exposure, duplicate irreversible external effects, or dependency-driven outage.
-- **P1:** a material DNS, proxy, timeout, retry, webhook, connection-pool, protocol, or degradation defect.
-- **P2:** a lower-risk but concrete observability, compatibility, or efficiency issue.

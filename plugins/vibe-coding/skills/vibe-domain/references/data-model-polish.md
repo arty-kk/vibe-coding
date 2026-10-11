@@ -1,16 +1,16 @@
-# Data Model Polish
+# Improve Data Model
 
 ## Operation
 
-Implement the requested coherent change at the owning source and update directly affected consumers. An earlier audit is optional when the user and repository already establish the target. Validate the changed behavior, then stop when the requested scope is complete.
+Implement the requested change and verify its directly affected behavior.
 
 ## Goal
 
-Implement one selected, evidence-backed Data Model improvement at the authoritative owner. Complete the directly affected contract without broad cleanup or redesign.
+Correct the selected schema or persistence invariant, including required migration and reader/writer compatibility.
 
 ## Domain rules
 
-- Change the canonical model and update all directly affected contracts; do not create adapter-only shadow truth.
+- Change the canonical model and update all directly affected contracts; avoid a second mutable model or adapter that disagrees with the defining schema.
 - Use expand/migrate/contract for incompatible live changes and make backfills idempotent/resumable.
 - Add constraints only after validating/backfilling existing data and define violation handling.
 - Synchronize generated types, fixtures, analytics, docs, retention, and operator checks.

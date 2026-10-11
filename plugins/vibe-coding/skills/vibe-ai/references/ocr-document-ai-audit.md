@@ -2,7 +2,7 @@
 
 ## Operation
 
-Inspect the named boundary and report supported findings. Do not edit product code. Include concrete evidence, impact, the owning source, one remediation direction and a meaningful validation route. Severity follows actual impact, not a category example.
+Inspect the selected behavior and report evidence-backed defects; do not change product code.
 
 ## Goal
 
@@ -22,18 +22,7 @@ Upload/intake routes, file validators, storage, preprocessing, OCR engines, docu
 - Downstream sync: extracted data shape mismatches API/DB/export/contracts, stale docs/maps, and tests that assert fixtures but not observable behavior.
 - Evaluation: missing fixtures for representative document types, low-confidence cases, table extraction, locale parsing, and known regressions.
 
-## Priority model
-
-Cross-tenant document/data leakage, unsafe file handling with reachable exploitability, corrupted extraction feeding payments/legal/destructive decisions, PII/secret exposure, or broken critical document flow.
-
-Important extraction/correction/export defect, misleading confidence/status behavior, non-idempotent async processing, missing critical document eval, or downstream schema drift with user/operator impact.
-
-Lower-risk but concrete quality issue: unclear copy, incomplete low-confidence state, minor fixture gap, stale docs/map, or maintainability coupling that blocks safe document-pipeline changes.
-
 ## Finding quality
 
-- Every finding must cite `path:line[-line]` evidence for the document pipeline owner and affected user/system surface, plus symbol when possible.
 - Include document type, pipeline step, expected output/validation behavior, acceptance criteria, and eval/test direction when discoverable.
-- Use one unambiguous fix direction per finding; explain a tradeoff only when it changes the decision.
-- Merge symptoms under the same document-pipeline owner unless fixes, rollout units, fixtures, or validation strategy differ.
 - Do not recommend changing OCR providers/models unless current repo evidence proves the existing owner cannot satisfy the behavior.

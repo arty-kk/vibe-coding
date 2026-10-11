@@ -1,18 +1,18 @@
-# Mobile App Polish
+# Improve Mobile App
 
 ## Operation
 
-Implement the requested coherent change at the owning source and update directly affected consumers. An earlier audit is optional when the user and repository already establish the target. Validate the changed behavior, then stop when the requested scope is complete.
+Implement the requested change and verify its directly affected behavior.
 
 ## Goal
 
-Fix one coherent mobile app boundary across navigation/UI, offline/cache/sync, backend contract, platform permission, tests, and release config when directly affected.
+Correct the selected mobile flow across navigation, local state, backend behavior and relevant platform constraints.
 
 ## Scope selection
 
 Use the selected mobile feature, platform bug, deep link, push notification, offline issue, release failure, audit finding, or failing test. Do not rewrite navigation or state management globally unless required by the selected fix.
 
-## Polish targets
+## Change targets
 
 - Screens/components, navigation params, deep links/app links, loading/empty/error/offline states, and accessibility.
 - Local storage/cache, sync, conflict resolution, retry/backoff, and stale-state recovery.

@@ -1,17 +1,17 @@
-# Documentation Sync Polish
+# Improve Documentation Sync
 
 ## Operation
 
-Implement the requested coherent change at the owning source and update directly affected consumers. An earlier audit is optional when the user and repository already establish the target. Validate the changed behavior, then stop when the requested scope is complete.
+Implement the requested change and verify its directly affected behavior.
 
 ## Goal
 
-Implement one selected, evidence-backed Documentation Sync improvement at the authoritative owner. Complete the directly affected contract without broad cleanup or redesign.
+Synchronize the selected documentation or generator with current code, configuration and runnable commands.
 
 ## Domain rules
 
 - Update the nearest maintained document or generator source, not downstream generated output alone.
-- Keep examples executable/minimal and avoid inventing commands, flags, fields, or environment guarantees.
+- Keep examples executable/minimal and align them with the accepted contract. If implementation contradicts a requirement, identify the discrepancy rather than changing the requirement to match it.
 - Record version/environment assumptions and distinguish repository-proven behavior from external requirements.
 - Remove stale duplicate guidance when one canonical document now owns it.
 

@@ -1,4 +1,4 @@
-# Incident Remediation Polish
+# Improve Incident Remediation
 
 ## Operation
 
@@ -7,12 +7,6 @@ Implement the authorized correction or mitigation for the selected incident. Rea
 ## Required input
 
 The affected user operation and cohorts, incident window, available symptom/runtime evidence, known changes, investigation or intervention authority and recovery criteria. Mark unavailable telemetry and unresolved causality explicitly.
-
-Select the target from the user’s request and current evidence. Reconstruct ordinary missing context from the owning code. If a missing target, authority or environment changes correctness or safety, name that specific gap and leave the dependent action blocked; continue independent work. Do not invent requirements from existing tests.
-
-## Change contract
-
-Implement the smallest complete owner-layer correction, not merely the smallest diff. Carry it through directly affected producers, consumers, states, schemas/configuration, generated artifacts and operational behavior. Remove logic made obsolete by the change unless evidenced compatibility requires overlap. Preserve unrelated work; exclude independent cleanup, speculative abstractions and migrations. Each material change must serve a selected invariant and acceptance criterion.
 
 ## Domain invariants
 
@@ -48,11 +42,3 @@ Reproduce the failing behavior in the narrowest useful fixture or test environme
 Demonstrate that the original failure is blocked and normal behavior remains intact. Exercise the relevant load, retry, restart or partial-failure condition rather than relying only on a happy path. After an authorized rollout, verify fresh user-operation evidence, backlog/convergence and error/resource signals over the selected window. Passing local tests is not proof that production recovered.
 
 Report the correction, intervention scope, actual checks, current incident state and remaining repair or observation work. If only mitigation was achieved, say so and retain the concrete unresolved cause instead of closing the incident on a quiet alert.
-
-## Completion criteria
-
-The selected invariant holds at the authoritative owner and directly affected consumers; obsolete conflicting behavior is removed or intentionally retained for stated compatibility; the complete diff is reviewed; required available checks have actual results. A missing required environment or unresolved defect prevents a claim of verified completion. Continue authorized corrections within scope; stop when the requested contract is complete rather than searching for a different improvement.
-
-## Output contract
-
-Respond in the user’s language with the completed behavior first. Include the selected invariant and owner, changed scope/key files, evidence for the correction, the affected producer-to-consumer contract, actual verification commands/scenarios/results, and material rollout or rollback consequences. List required checks not run and unresolved assumptions explicitly. Distinguish implemented, locally verified and externally released states. A future plan cannot substitute for an executed change. Omit empty sections and unrelated process narration.

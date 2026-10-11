@@ -1,18 +1,18 @@
-# Multi Tenant Isolation Polish
+# Improve Multi Tenant Isolation
 
 ## Operation
 
-Implement the requested coherent change at the owning source and update directly affected consumers. An earlier audit is optional when the user and repository already establish the target. Validate the changed behavior, then stop when the requested scope is complete.
+Implement the requested change and verify its directly affected behavior.
 
 ## Goal
 
-Fix one coherent tenant/workspace/project isolation defect across authoritative query/policy/storage owners and directly affected consumers.
+Fix the selected tenant/workspace/project isolation defect across authoritative query/policy/storage owners and directly affected consumers.
 
 ## Scope selection
 
 Use the selected resource, endpoint, job, search path, object key, cache key, audit finding, failing test, or explicit isolation bug. Do not redesign tenancy globally unless the selected fix requires a migration/refactor plan.
 
-## Polish targets
+## Change targets
 
 - Owner-layer tenant scoping in queries, mutations, services, policies, storage keys, indexes, cache keys, and jobs.
 - API/UI behavior for wrong-tenant/no-access/not-found states.

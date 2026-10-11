@@ -1,41 +1,17 @@
-# Evolution & Improvement
+# Plan Improvements
 
-## Operation
+## Scope
 
-Analyze and return an actionable brief in the current conversation. Planning does not create a new assistant task or edit product code. Carry the full requested objective into the plan; separate independent work without silently discarding it.
+Prepare a prioritized improvement path for the requested project or area. Separate demonstrated defects from proposed new capabilities and uncertain opportunities.
 
-## Goal
+## Procedure
 
-Produce an optimal, realistic, repo-grounded improvement path for 1–3 iterations. The plan should increase correctness, product quality, regression resistance, delivery speed, or hot-path performance without inventing work just to fill a template.
+1. Inspect the relevant product/runtime paths, defining rules, existing validation and constraints. Use supplied goals as authority for new behavior.
+2. Identify concrete correctness, usability, data, delivery or performance outcomes. State assumptions where traffic, business priority or capacity is unmeasured.
+3. Compare impact, risk, effort and dependencies at the level the evidence supports. Do not invent numerical estimates or fill arbitrary phases.
+4. Group compatible changes into independently useful stages; preserve migrations and rollout order where contracts overlap.
+5. Recommend a direction for each actionable item. Explain alternatives when an unresolved decision genuinely needs a comparison.
 
-## Audit focus
+## Result
 
-Map the current project from repository evidence:
-
-- key domains/modules, source-of-truth layers, public surfaces, critical user/admin/system flows;
-- business invariants, state transitions, tenant/role/plan rules, integration contracts, migrations, jobs, and tests;
-- UX friction in core flows: unclear navigation, missing states, unsafe copy, form/table/destructive/action ambiguity;
-- regression risks: duplicated logic, weak tests, generated/docs drift, brittle boundaries;
-- performance and operability issues only when a reachable path is visible.
-
-## Planning rules
-
-- Every major recommendation and task spec must cite `path:line[-line]` evidence plus symbol when possible.
-- Distinguish direct evidence from inference. Do not present inferred traffic, business priority, or product intent as repo fact.
-- Do not elevate theoretical risks into plan items without a concrete reachable path, contract exposure, or observable inconsistency.
-- Collapse symptoms with the same behavior owner and authoritative fix unless separate rollout units are clearly required.
-- Use exactly one solution direction per task; no alternatives.
-- Optimize for maximum impact per unit of risk/cost, accounting for dependencies and incremental delivery.
-- Omit empty phases. If the audit finds no actionable items, state what was checked and say no actionable evolution items were found by static audit.
-
-## Artifact structure
-
-`evolution_plan.md` should be practical, compact, and scannable. Include sections that fit the repo:
-
-- **Baseline:** architecture map, critical flows, current pain points, constraints.
-- **North Star:** UX/domain/engineering outcomes, using measurable or proxy metrics when available.
-- **Roadmap:** 1–3 phases with goal, scope, deliverables, dependencies, validation, and rollback/migration notes when relevant.
-- **Task Specs:** atomic roadmap tasks with ID, priority, theme, problem, evidence, root cause, impact, fix direction, steps, acceptance criteria, and validation commands when they exist in the repo.
-- **Explicit Non-Goals:** what is intentionally excluded to avoid scope creep.
-
-Keep task specs implementation-ready, but these are roadmap specs, not task briefs output. If a future step needs task briefs, use [Synthesis](synthesis.md) or [Task Shaping](task-shaping.md).
+Use the requested format and planning horizon. Include the baseline/constraints, desired outcomes, ordered work, acceptance and verification, dependencies and material decisions. Save a plan file only when requested or when updating an existing plan. No separate audit, task creation or background run is mandatory.

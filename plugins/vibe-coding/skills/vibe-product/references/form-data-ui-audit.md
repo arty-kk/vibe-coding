@@ -2,7 +2,7 @@
 
 ## Operation
 
-Inspect the named boundary and report supported findings. Do not edit product code. Include concrete evidence, impact, the owning source, one remediation direction and a meaningful validation route. Severity follows actual impact, not a category example.
+Inspect the selected behavior and report evidence-backed defects; do not change product code.
 
 ## Goal and scope
 
@@ -21,9 +21,3 @@ Audit a form, editor, table, search, filter, pagination, or data-entry surface a
 2. Check client/server validation drift, timezone/locale/unit conversion, partial edit, refresh, back navigation, and conflicts.
 3. Inspect table identity, cursor/page semantics, selection across pages, and stale query behavior.
 4. Identify data loss, duplicate submission, misleading success, and inaccessible error recovery.
-
-## Priority model
-
-- **P0:** a reachable flow that causes data loss, unsafe action, access leakage, or blocks a critical user journey.
-- **P1:** a material task-completion, state, accessibility, or activation defect.
-- **P2:** a lower-risk but concrete comprehension, consistency, or secondary-flow issue.

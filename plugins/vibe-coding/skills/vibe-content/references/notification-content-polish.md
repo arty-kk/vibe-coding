@@ -1,22 +1,15 @@
-# Notification Content Polish
+# Improve Notification Content
 
-## Operation
+## Scope
 
-Implement the requested coherent change at the owning source and update directly affected consumers. An earlier audit is optional when the user and repository already establish the target. Validate the changed behavior, then stop when the requested scope is complete.
+Correct the selected template, language, interpolation or destination at its maintained source. Preserve eligibility, consent, channel and delivery semantics unless changing them is part of the request.
 
-## Goal
+## Procedure
 
-Implement one selected, evidence-backed Notification Content improvement at the authoritative owner. Complete the directly affected contract without broad cleanup or redesign.
+1. Establish the state/audience the message represents and the supported action. Fix false or stale claims against the actual producer.
+2. Update directly affected templates/locales with safe variable handling, escaping, plural rules and channel constraints.
+3. Keep sensitive payloads and internal diagnostics out of visible text and links. Ensure the destination remains authorized for the intended recipient.
 
-## Domain rules
+## Verification
 
-- Use a stable semantic event/idempotency identity and keep audience resolution at the authoritative owner.
-- Do not leak secrets, private payloads, cross-tenant identifiers, or internal diagnostics into templates or links.
-- Preserve preference, unsubscribe, consent, and suppression semantics across retries and channel fallback.
-- Update templates, preview fixtures, analytics, tests, provider metadata, and runbooks together.
-
-## Validation
-
-- Run event/template/render/link/provider-adapter tests and preview representative locales/channels.
-- Exercise duplicate event, preference denial, provider timeout/retry, stale target, and unauthorized deep link.
-- State live-provider deliverability or legal approval gates separately.
+Render representative synthetic inputs, missing/invalid values and selected success/failure/expired states in the affected channel/locales. Check links and accessibility where relevant. Report preview evidence and provider/channel rendering not exercised; do not send a live message to validate wording.

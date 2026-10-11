@@ -2,7 +2,7 @@
 
 ## Operation
 
-Inspect the named boundary and report supported findings. Do not edit product code. Include concrete evidence, impact, the owning source, one remediation direction and a meaningful validation route. Severity follows actual impact, not a category example.
+Inspect the selected behavior and report evidence-backed defects; do not change product code.
 
 ## Goal and scope
 
@@ -24,9 +24,3 @@ Audit an AI evaluation system as a release gate across task definition, datasets
 3. Re-run a representative subset to measure scorer determinism and compare judge/human labels by failure class.
 4. Check statistical unit, paired comparison, confidence/uncertainty, multiple variants, threshold selection, and test-set reuse.
 5. Compare offline failures with available online incidents/feedback without claiming causal equivalence.
-
-## Priority model
-
-- **P0:** unsafe action, privacy or tenant leak, materially wrong irreversible decision, corrupted model/data lineage, or critical service failure.
-- **P1:** a reachable quality, grounding, evaluation, serving, cost, or governance defect with clear product impact.
-- **P2:** a lower-risk but concrete robustness, observability, dataset, or maintainability issue.

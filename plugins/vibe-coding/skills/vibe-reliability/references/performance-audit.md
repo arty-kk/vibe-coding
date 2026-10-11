@@ -2,7 +2,7 @@
 
 ## Operation
 
-Inspect the named boundary and report supported findings. Do not edit product code. Include concrete evidence, impact, the owning source, one remediation direction and a meaningful validation route. Severity follows actual impact, not a category example.
+Inspect the selected behavior and report evidence-backed defects; do not change product code.
 
 ## Goal
 
@@ -21,21 +21,9 @@ Routes/pages/components, handlers/services, database queries, migrations/indexes
 - Build/deploy/runtime: cold-start cost, memory spikes, cache invalidation drift, health checks that mask degraded service.
 - Observability/testing: performance assumptions contradicted by code, missing guard tests/benchmarks for a critical path when a harness exists.
 
-## Priority model
-
-Performance issue that can cause outage, data loss, severe critical-path failure, request collapse, or runaway cost in a reachable production path.
-
-Hot-path latency/cost/reliability issue with clear user or operational impact.
-
-Lower-risk but real inefficiency that affects maintainability, future scaling, or a non-critical but reachable path.
-
 ## Finding quality
 
-- Every finding must cite `path:line[-line]` evidence for the problematic behavior/contract and the owner layer, plus symbol when possible.
 - Include reachable surface, affected actors/consumers/states, expected behavior, acceptance criteria, and validation direction when discoverable.
-- Use one unambiguous fix direction per finding; explain a tradeoff only when it changes the decision.
-- Merge symptoms under the same behavior owner/source of truth unless fixes, rollout units, or validation differ.
-- Do not report theoretical risks, stylistic preferences, or generic best practices without current repo impact.
 - Explain impact from repo-visible reachability and mark inferred traffic/scale assumptions clearly.
-- Prefer owner-layer fixes: query/index/pagination/caching/job structure/source-of-truth, not cosmetic local tweaks.
+- Prefer fix at the defining sourcees: query/index/pagination/caching/job structure/source-of-truth, not cosmetic local tweaks.
 - If validation commands/benchmarks are absent, specify observable checks that an execute run can add or perform.

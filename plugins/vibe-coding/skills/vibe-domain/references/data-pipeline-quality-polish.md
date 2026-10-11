@@ -1,19 +1,19 @@
-# Data Pipeline & Quality Polish
+# Improve Data Pipeline & Quality
 
 ## Operation
 
-Implement the requested coherent change at the owning source and update directly affected consumers. An earlier audit is optional when the user and repository already establish the target. Validate the changed behavior, then stop when the requested scope is complete.
+Implement the requested change and verify its directly affected behavior.
 
 ## Goal
 
-Implement one selected, evidence-backed Data Pipeline & Quality improvement at the authoritative owner. Complete the directly affected contract without broad cleanup or redesign.
+Correct the selected source-to-sink data guarantee, preserving schema, identity, retries, quality checks and recovery.
 
 ## Domain rules
 
 - Make stage outputs idempotent or atomically committed and use stable batch/event identities.
 - Version schemas and transforms; preserve mixed-version compatibility or gate cutover explicitly.
 - Fail or quarantine on material quality violations with operator-visible recovery; do not silently coerce bad data.
-- Convert production-owning notebook logic into parameterized code with tests, dependency lock, and reproducible inputs.
+- Make selected notebook steps parameterized, versioned and reproducible; extract code only when the required behavior or existing execution model needs it.
 
 ## Validation
 

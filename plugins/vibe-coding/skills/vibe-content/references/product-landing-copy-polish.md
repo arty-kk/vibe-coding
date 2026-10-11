@@ -1,12 +1,12 @@
-# Product & Landing Copy Polish
+# Improve Product & Landing Copy
 
 ## Operation
 
-Implement the requested coherent change at the owning source and update directly affected consumers. An earlier audit is optional when the user and repository already establish the target. Validate the changed behavior, then stop when the requested scope is complete.
+Implement the requested change and verify its directly affected behavior.
 
 ## Goal
 
-Implement one selected, evidence-backed Product & Landing Copy improvement at the authoritative owner. Complete the directly affected contract without broad cleanup or redesign.
+Improve the selected product wording or call to action while preserving factual claims, localization and destination behavior.
 
 ## Domain rules
 

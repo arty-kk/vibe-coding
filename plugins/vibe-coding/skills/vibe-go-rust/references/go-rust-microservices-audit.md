@@ -2,7 +2,7 @@
 
 ## Operation
 
-Inspect the named boundary and report supported findings. Do not edit product code. Include concrete evidence, impact, the owning source, one remediation direction and a meaningful validation route. Severity follows actual impact, not a category example.
+Inspect the selected behavior and report evidence-backed defects; do not change product code.
 
 ## Goal and scope
 
@@ -26,9 +26,3 @@ Audit Go and Rust services across request contracts, cancellation, task/goroutin
 3. Inspect effective transport/client timeout, pool, keepalive, retry, and connection settings across every deployment replica.
 4. Run or inspect race/deadlock/leak evidence and identify cancellation-unsafe critical sections or stale work after caller timeout.
 5. Map startup/readiness/SIGTERM/drain/forced termination and verify operator-visible state at each boundary.
-
-## Priority model
-
-- **P0:** memory-safety or race-driven corruption, request collapse, leaked critical resources, deadlock, or unsafe shutdown.
-- **P1:** a material cancellation, ownership, backpressure, concurrency, protocol, or lifecycle defect.
-- **P2:** a lower-risk but concrete efficiency, diagnostics, or maintainability issue.

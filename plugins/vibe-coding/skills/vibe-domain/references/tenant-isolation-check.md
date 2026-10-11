@@ -2,15 +2,15 @@
 
 ## Operation
 
-Verify the selected invariant through bounded scenarios in an authorized environment. Do not turn verification into unrelated implementation. Return passed, failed or blocked, with actual evidence and any missing required scenario.
+Verify the selected behavior against explicit expected results; do not change product code.
 
 ## Goal
 
 Verify one tenant/workspace/project isolation invariant through bounded cross-tenant scenarios. Prove the selected patch or behavior without broadening into unrelated auth or data audit work.
 
-## Required input
+## Context
 
-Provide the selected resource/action, tenant states, implementation summary or patch boundary, safe fixtures/accounts, and repository-native commands or manual scenarios.
+Identify the selected resource/action, tenant states, implementation summary or patch boundary, safe fixtures/accounts, and repository-native commands or manual scenarios.
 
 ## Scenarios
 

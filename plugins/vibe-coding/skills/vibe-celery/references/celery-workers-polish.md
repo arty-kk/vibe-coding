@@ -1,12 +1,12 @@
-# Celery Workers Polish
+# Improve Celery Workers
 
 ## Operation
 
-Implement the requested coherent change at the owning source and update directly affected consumers. An earlier audit is optional when the user and repository already establish the target. Validate the changed behavior, then stop when the requested scope is complete.
+Implement the requested change and verify its directly affected behavior.
 
 ## Goal
 
-Implement one selected, evidence-backed Celery Workers improvement at the authoritative owner. Complete the directly affected contract without broad cleanup or redesign.
+Correct the selected Celery delivery or worker-lifecycle behavior for the configured broker, backend and execution pool.
 
 ## Domain rules
 

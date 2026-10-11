@@ -2,11 +2,13 @@
 
 ## Operation
 
-Create or refresh only the requested repository map. A map is a navigation index, not proof of correctness. Verify entries against current owners and preserve stable IDs. If the user asks for an explanation in chat, do not insist on writing a file.
+Map the requested area using current repository evidence.
 
 ## Goal
 
-Create or update `docs/product_journey_map.md` as a map of user journeys and lifecycle states from entry/acquisition through activation, core value, retention, billing, support, and exit/deletion where present.
+Map the selected user journeys through observable states, decisions, completion and recovery.
+
+Suggested saved map: `docs/product_journey_map.md`.
 
 ## Inspect
 
@@ -14,8 +16,7 @@ Routes, navigation shells, onboarding flows, forms, email/notification triggers,
 
 ## Map rules
 
-- Write or update `docs/product_journey_map.md` when possible; otherwise print the full markdown.
-- Preserve stable IDs: journey `JNY-*`, step `STEP-*`, state `STATE-*`, decision `DEC-*`, event `EVT-*`, blocker `BLK-*`.
+- Suggested IDs for new entries: journey `JNY-*`, step `STEP-*`, state `STATE-*`, decision `DEC-*`, event `EVT-*`, blocker `BLK-*`.
 - Anchor steps to current repository evidence with `path:line[-line]` plus symbol when possible.
 - Model observable states and transitions; do not invent funnel assumptions or conversion claims that are not supported by code/docs/runtime evidence.
 - Treat analytics, screenshots, and docs as aids; verify critical behavior against owner code/config/tests.
@@ -23,7 +24,3 @@ Routes, navigation shells, onboarding flows, forms, email/notification triggers,
 ## Coverage
 
 Capture actor, trigger, entry point, step sequence, decisions, permissions/entitlements, loading/empty/error/no-access/no-plan/offline states, analytics events, notifications, cancellation/retry paths, support/recovery, tests, and open gaps.
-
-## Markdown structure
-
-Use summary, conventions, lifecycle overview, journey diagrams in markdown text where useful, journey detail sections, state/decision matrix, analytics/notification links, coverage gaps, and unknowns.

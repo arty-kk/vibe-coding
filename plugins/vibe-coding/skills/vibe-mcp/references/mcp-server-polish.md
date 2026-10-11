@@ -1,4 +1,4 @@
-# MCP Server Polish
+# Improve MCP Server
 
 ## Operation
 
@@ -7,12 +7,6 @@ Implement the selected MCP contract correction at its owner and verify the affec
 ## Required input
 
 The selected server/client, operation, supported protocol/SDK revisions, transport, affected principal/resource and expected result or effect. Establish these from the current repository and request; do not invent missing capabilities or a protocol migration.
-
-Select the target from the user’s request and current evidence. Reconstruct ordinary missing context from the owning code. If a missing target, authority or environment changes correctness or safety, name that specific gap and leave the dependent action blocked; continue independent work. Do not invent requirements from existing tests.
-
-## Change contract
-
-Implement the smallest complete owner-layer correction, not merely the smallest diff. Carry it through directly affected producers, consumers, states, schemas/configuration, generated artifacts and operational behavior. Remove logic made obsolete by the change unless evidenced compatibility requires overlap. Preserve unrelated work; exclude independent cleanup, speculative abstractions and migrations. Each material change must serve a selected invariant and acceptance criterion.
 
 ## Domain invariants
 
@@ -24,7 +18,7 @@ Implement the smallest complete owner-layer correction, not merely the smallest 
 
 ## Goal and scope
 
-Complete one coherent discovery-to-execution change: registration, schema, transport metadata, trusted identity, handler, result/error serialization and the direct client. A handler-only fix is incomplete when the client still misinterprets its result. Do not add arbitrary servers, extensions or an SDK upgrade to satisfy an unrelated example.
+Complete the selected discovery-to-execution change: registration, schema, transport metadata, trusted identity, handler, result/error serialization and the direct client. A handler-only fix is incomplete when the client still misinterprets its result. Do not add arbitrary servers, extensions or an SDK upgrade to satisfy an unrelated example.
 
 ## Establish the contract
 
@@ -48,11 +42,3 @@ Reuse the repository's SDK registration, verifier, error and test patterns. Upda
 Add a regression that fails for the demonstrated defect and passes after correction. Exercise normal discovery/call behavior, malformed arguments, unauthenticated and unauthorized calls, error serialization and the relevant retry or cancellation path. For HTTP metadata changes, send actual HTTP requests with matching, absent and conflicting fields. For stdio framing, inspect subprocess output. Validate declared structured output and the client's observable interpretation.
 
 Report the changed owner, preserved contract, actual commands/results and remaining SDK/host/provider checks. A local passing handler test does not establish OAuth, stream or desktop-host interoperability.
-
-## Completion criteria
-
-The selected invariant holds at the authoritative owner and directly affected consumers; obsolete conflicting behavior is removed or intentionally retained for stated compatibility; the complete diff is reviewed; required available checks have actual results. A missing required environment or unresolved defect prevents a claim of verified completion. Continue authorized corrections within scope; stop when the requested contract is complete rather than searching for a different improvement.
-
-## Output contract
-
-Respond in the user’s language with the completed behavior first. Include the selected invariant and owner, changed scope/key files, evidence for the correction, the affected producer-to-consumer contract, actual verification commands/scenarios/results, and material rollout or rollback consequences. List required checks not run and unresolved assumptions explicitly. Distinguish implemented, locally verified and externally released states. A future plan cannot substitute for an executed change. Omit empty sections and unrelated process narration.

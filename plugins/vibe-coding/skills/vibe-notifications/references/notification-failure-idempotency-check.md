@@ -2,15 +2,15 @@
 
 ## Operation
 
-Verify the selected invariant through bounded scenarios in an authorized environment. Do not turn verification into unrelated implementation. Return passed, failed or blocked, with actual evidence and any missing required scenario.
+Verify the selected behavior against explicit expected results; do not change product code.
 
 ## Goal
 
 Verify one notification delivery invariant through bounded success, failure, duplicate, retry, consent, and provider-status scenarios.
 
-## Required input
+## Context
 
-Provide notification type/channel, selected invariant, expected delivery/status behavior, implementation summary or patch boundary, safe sandbox/mock environment, fixtures, and repository-native commands.
+Identify notification type/channel, selected invariant, expected delivery/status behavior, implementation summary or patch boundary, safe sandbox/mock environment, fixtures, and repository-native commands.
 
 ## Scenarios
 

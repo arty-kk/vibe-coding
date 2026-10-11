@@ -2,7 +2,7 @@
 
 ## Operation
 
-Inspect the named boundary and report supported findings. Do not edit product code. Include concrete evidence, impact, the owning source, one remediation direction and a meaningful validation route. Severity follows actual impact, not a category example.
+Inspect the selected behavior and report evidence-backed defects; do not change product code.
 
 ## Goal and scope
 
@@ -26,9 +26,3 @@ Audit vector retrieval from embedding/version and collection schema through tena
 3. Build or use a representative evaluation set segmented by tenant, filter selectivity, language/domain, rare terms, and hard negatives.
 4. Measure recall/ranking and p50/p95/p99 latency across ANN parameters, dataset size, concurrent query/write load, and filtered cases.
 5. Trace partial ingestion, duplicate retry, deletion, index-build failure, snapshot/restore, cutover, and fallback behavior.
-
-## Priority model
-
-- **P0:** ACL or tenant leakage, destructive index/data loss, or materially unsafe retrieval in a critical path.
-- **P1:** a material embedding, filtering, recall, freshness, indexing, load, or degradation defect.
-- **P2:** a lower-risk but concrete evaluation, cost, observability, or maintainability issue.

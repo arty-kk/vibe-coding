@@ -2,11 +2,13 @@
 
 ## Operation
 
-Create or refresh only the requested repository map. A map is a navigation index, not proof of correctness. Verify entries against current owners and preserve stable IDs. If the user asks for an explanation in chat, do not insist on writing a file.
+Map the requested area using current repository evidence.
 
 ## Goal
 
-Create or update `docs/risk_release_map.md` as a map of material release, rollout, rollback, migration, security, privacy, data, provider, and operational risks tied to repository evidence and validation gates.
+Map material release risks and verification gates to their trigger, affected contract, owner and recovery path.
+
+Suggested saved map: `docs/risk_release_map.md`.
 
 ## Inspect
 
@@ -16,8 +18,7 @@ Release docs, CI/CD workflows, deployment manifests, migrations, feature flags, 
 
 ### Evidence and IDs
 
-- Write or update `docs/risk_release_map.md` when possible. If writing is unavailable, print the complete markdown content in chat.
-- Use stable IDs and preserve existing IDs: risk `RISK-*`, release gate `REL-*`, rollout `ROL-*`, rollback `RB-*`, migration `MIG-*`, operator action `OPS-*`.
+- Suggested IDs for new entries: risk `RISK-*`, release gate `REL-*`, rollout `ROL-*`, rollback `RB-*`, migration `MIG-*`, operator action `OPS-*`.
 - Anchor every risk or gate to current repository evidence. Do not invent production capacity, compliance status, SLA, or operator capability.
 
 ### Coverage
@@ -27,7 +28,3 @@ Cover migrations, mixed-version compatibility, rollback/forward-fix, feature fla
 ### Entry details
 
 For each risk, capture affected contract, owner, trigger, impact, likelihood only when evidence supports it, prevention/mitigation, validation gate, rollout/rollback/forward-fix path, and residual unknowns.
-
-## Markdown structure
-
-Use summary, release readiness matrix, risks by domain, rollout/rollback plan index, migration gates, operator checklist, external gates, unknowns, assumptions.

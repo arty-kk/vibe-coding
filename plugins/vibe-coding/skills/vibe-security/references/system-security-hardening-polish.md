@@ -1,16 +1,16 @@
-# System Security Hardening Polish
+# Improve System Security Hardening
 
 ## Operation
 
-Implement the requested coherent change at the owning source and update directly affected consumers. An earlier audit is optional when the user and repository already establish the target. Validate the changed behavior, then stop when the requested scope is complete.
+Implement the requested change and verify its directly affected behavior.
 
 ## Goal
 
-Implement one selected, evidence-backed System Security Hardening improvement at the authoritative owner. Complete the directly affected contract without broad cleanup or redesign.
+Correct the selected reachable abuse path using the application’s actual identity, input and runtime policy.
 
 ## Domain rules
 
-- Fix at the authoritative enforcement boundary and default-deny unknown identities, tenants, destinations, capabilities, formats, or states.
+- Enforce the established policy at the real operation boundary. Reject missing required trusted identity or authority while preserving documented public operations and accepted formats.
 - Make credential-abuse controls atomic/distributed, rate-aware, observable, and recoverable; avoid permanent global lockouts or IP-only controls that attackers can weaponize.
 - Normalize and validate before authorization/use, then re-check after redirects/resolution/decoding where the interpreted target can change.
 - Reduce privilege/attack surface instead of relying only on detection; rotate/revoke exposed secrets and preserve overlap for safe rollout.
@@ -20,4 +20,4 @@ Implement one selected, evidence-backed System Security Hardening improvement at
 
 - Run repository security/static/dependency/policy tests plus narrow authorization/tenant/session/abuse fixtures.
 - Exercise race, distributed replica, restart, counter expiry, revocation propagation, DNS/redirect/parser limits, privilege denial, and rotation overlap in a safe environment.
-- Record controls proven, residual assumptions, and production-only gates without publishing reusable exploit instructions.
+- Record the proven control, minimal reproduction, residual assumptions and production-only verification gaps.

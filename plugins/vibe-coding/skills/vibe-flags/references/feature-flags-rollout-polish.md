@@ -1,18 +1,18 @@
-# Feature Flags Rollout Polish
+# Improve Feature Flags Rollout
 
 ## Operation
 
-Implement the requested coherent change at the owning source and update directly affected consumers. An earlier audit is optional when the user and repository already establish the target. Validate the changed behavior, then stop when the requested scope is complete.
+Implement the requested change and verify its directly affected behavior.
 
 ## Goal
 
-Fix one coherent feature flag or rollout-control boundary across flag definition, server/client enforcement, analytics, tests, docs/maps, and cleanup when directly affected.
+Correct the selected flag or rollout behavior across targeting, enforcement, fallback and directly affected consumers.
 
 ## Scope selection
 
 Use the selected flag, rollout bug, stale flag, audit finding, failing test, experiment issue, or explicit release task. Do not migrate flag providers or redesign experimentation globally unless required by the selected fix.
 
-## Polish targets
+## Change targets
 
 - Flag definition/defaults, environment config, targeting, dependencies, and kill-switch behavior.
 - Backend gates, UI visibility, API/jobs, paid/security boundaries, and no-access states.

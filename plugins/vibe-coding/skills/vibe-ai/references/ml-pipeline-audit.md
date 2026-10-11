@@ -2,7 +2,7 @@
 
 ## Operation
 
-Inspect the named boundary and report supported findings. Do not edit product code. Include concrete evidence, impact, the owning source, one remediation direction and a meaningful validation route. Severity follows actual impact, not a category example.
+Inspect the selected behavior and report evidence-backed defects; do not change product code.
 
 ## Goal
 
@@ -21,18 +21,7 @@ Datasets/loaders, feature definitions, schemas, training scripts, notebooks only
 - Monitoring and operations: absent prediction/error metrics, drift signals, data-quality checks, alert/runbook gaps, and cost/latency hot paths.
 - Privacy/compliance: training or logs include sensitive data without repo-visible guardrails, retention/deletion mismatch, or cross-tenant data mixing.
 
-## Priority model
-
-Data/tenant leakage, model output corrupting payments/legal/security/destructive decisions, train/serve bug causing critical wrong predictions, unpinned model artifact in production-critical path, or privacy exposure.
-
-Important model quality/regression risk, missing critical eval, feature/schema drift, unsafe fallback, weak rollback, batch/online mismatch, or unobservable high-impact inference path.
-
-Lower-risk but concrete ML maintainability issue: stale docs, minor metric gap, unclear threshold owner, weak data-quality check, or coupling that blocks safe model updates.
-
 ## Finding quality
 
-- Every finding must cite `path:line[-line]` evidence for the data/feature/model/inference owner and affected consumer, plus symbol when possible.
 - Include model/artifact/version owner, expected behavior, acceptance criteria, and validation/eval direction when discoverable.
-- Use one unambiguous fix direction per finding; explain a tradeoff only when it changes the decision.
-- Merge symptoms under the same pipeline owner unless fixes, rollout units, eval strategy, or deployment boundary differ.
 - Do not propose research experiments, model-family swaps, or metric redesigns without repo-visible product need and validation path.

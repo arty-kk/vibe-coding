@@ -1,6 +1,6 @@
 ---
 name: vibe-web
-description: "Audit, fix or verify web server/client boundaries: SSR, hydration, serialized data, route caches, server actions and navigation in an existing framework. Use for rendering/runtime defects; product UX and visual design have separate skills."
+description: "Audit, repair or verify SSR, hydration, serialized data, route caches, server mutations and navigation in the actual framework."
 ---
 
 # Web rendering & server boundaries
@@ -10,7 +10,7 @@ Read [the shared workflow](../../references/workflow.md) once, then the recipe m
 | Request | Recipe |
 |---|---|
 | Inspect rendering, serialization or navigation | [Web Rendering Audit](references/web-rendering-audit.md) |
-| Fix the named rendering or server boundary | [Web Rendering Polish](references/web-rendering-polish.md) |
+| Fix the named rendering or server boundary | [Improve Web Rendering](references/web-rendering-polish.md) |
 | Verify initial render, private data or a server mutation | [Web Server/Client Boundary Check](references/web-boundary-check.md) |
 
 Use the shared [rendering boundaries](../../references/web-rendering.md) for the selected framework path. UI acceptance belongs to [Product](../vibe-product/SKILL.md); an explicit patch review belongs to [Review](../vibe-review/SKILL.md). Follow necessary contract edges without turning the task into a framework migration or redesign.

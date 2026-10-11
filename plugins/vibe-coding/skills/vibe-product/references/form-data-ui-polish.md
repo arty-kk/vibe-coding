@@ -1,12 +1,12 @@
-# Form & Data UI Polish
+# Improve Form & Data UI
 
 ## Operation
 
-Implement the requested coherent change at the owning source and update directly affected consumers. An earlier audit is optional when the user and repository already establish the target. Validate the changed behavior, then stop when the requested scope is complete.
+Implement the requested change and verify its directly affected behavior.
 
 ## Goal
 
-Implement one selected, evidence-backed Form & Data UI improvement at the authoritative owner. Complete the directly affected contract without broad cleanup or redesign.
+Correct the selected field or data operation from user input through validation, serialization and stored result.
 
 ## Domain rules
 

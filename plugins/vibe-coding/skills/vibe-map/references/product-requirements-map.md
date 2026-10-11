@@ -2,11 +2,13 @@
 
 ## Operation
 
-Create or refresh only the requested repository map. A map is a navigation index, not proof of correctness. Verify entries against current owners and preserve stable IDs. If the user asks for an explanation in chat, do not insist on writing a file.
+Map the requested area using current repository evidence.
 
 ## Goal
 
-Create or update `docs/product_requirements_map.md` as a traceable map of product intent, users, jobs-to-be-done, acceptance criteria, measurable outcomes, non-goals, and implemented surfaces.
+Connect supplied product requirements and accepted outcomes to implemented surfaces, owners and verification.
+
+Suggested saved map: `docs/product_requirements_map.md`.
 
 ## Inspect
 
@@ -16,8 +18,7 @@ Product specs, README/design docs, issue text supplied by the user, route/compon
 
 ### Evidence and IDs
 
-- Write or update `docs/product_requirements_map.md` when allowed. If writing is unavailable, print the complete markdown content in chat.
-- Use stable IDs and preserve existing IDs: requirement `REQ-*`, acceptance criterion `AC-*`, persona/actor `ACT-*`, job/outcome `JOB-*`, metric `MET-*`, product state `STATE-*`, non-goal `NG-*`.
+- Suggested IDs for new entries: requirement `REQ-*`, acceptance criterion `AC-*`, persona/actor `ACT-*`, job/outcome `JOB-*`, metric `MET-*`, product state `STATE-*`, non-goal `NG-*`.
 - Anchor each requirement to repository or supplied evidence. Distinguish canonical product decisions from inferred behavior and implementation details.
 - Do not invent product strategy, pricing, legal policy, launch date, or metric targets. Mark missing business decisions as unknowns.
 
@@ -28,7 +29,3 @@ Cover target actors, problem statement, expected behavior, user journeys, critic
 ### Entry details
 
 For each requirement, capture actor, trigger, expected user/system outcome, owner surface, impacted API/data/auth/runtime contracts, acceptance criteria, tests or validation route, metric/event links, release/rollout notes, and explicit exclusions.
-
-## Markdown structure
-
-Use summary first, then actor/job map, requirements table, acceptance criteria, implemented surfaces, metrics/events, release gates, non-goals, unknown decisions, and evidence appendix.

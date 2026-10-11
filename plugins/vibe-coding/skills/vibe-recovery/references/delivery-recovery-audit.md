@@ -2,7 +2,7 @@
 
 ## Operation
 
-Inspect the named boundary and report supported findings. Do not edit product code. Include concrete evidence, impact, the owning source, one remediation direction and a meaningful validation route. Severity follows actual impact, not a category example.
+Inspect the selected behavior and report evidence-backed defects; do not change product code.
 
 ## Goal and scope
 
@@ -10,9 +10,9 @@ Audit commit-to-artifact-to-environment delivery plus rollback, feature controls
 
 ## Domain invariants
 
-- Commit, dependencies/lockfiles, build inputs, toolchain, artifact digest/SBOM/provenance, deployment manifest, and runtime version are traceably linked.
+- Commit, dependencies/lockfiles, build inputs, toolchain, artifact digest and required inventory/provenance, deployment manifest, and runtime version are traceably linked.
 - CI gates run on the exact merge/release inputs, fail closed for required checks, protect secrets, and do not reuse untrusted artifacts/caches across trust boundaries.
-- Artifacts are immutable and promoted rather than rebuilt per environment; signatures/attestations and registry permissions follow the established supply-chain policy.
+- Each deployment identifies its exact immutable artifact. If environments require separate builds, record changed inputs and verify the resulting artifacts; signatures/attestations follow the established policy.
 - Rollout strategy defines cohorts, health signals, pause/abort thresholds, capacity, migration compatibility, and who may advance or roll back.
 - Feature flags/config changes have owner, default, targeting, fail behavior, observability, rollback role, expiry, and removal plan.
 - Rollback is validated against data/schema/event/config compatibility; when rollback is unsafe, a bounded forward-fix or restore strategy is explicit.
@@ -26,9 +26,3 @@ Audit commit-to-artifact-to-environment delivery plus rollback, feature controls
 3. Map rollout signals and abort decisions to directly affected service, schema, queue, client, and dependency contracts.
 4. Inventory backup coverage and dependencies, then walk the actual restore order, credentials, DNS/config, schema/version, integrity, and application verification.
 5. Compare stated RPO/RTO with observed backup frequency, replication lag, restore duration, data validation, and operator steps.
-
-## Priority model
-
-- **P0:** unrestorable data, destructive rollback, unavailable critical service, broken backup integrity, or unrecoverable deployment.
-- **P1:** a material restore, rollback, forward-fix, replication, RPO/RTO, or operator-procedure defect.
-- **P2:** a lower-risk but concrete recovery evidence, observability, or maintainability issue.

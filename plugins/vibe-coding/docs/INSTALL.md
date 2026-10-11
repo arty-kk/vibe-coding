@@ -22,7 +22,7 @@ To refresh a GitHub marketplace:
 codex plugin marketplace upgrade vibe-coding
 ```
 
-Install the updated plugin through the desktop Plugins Directory and start a new task. A source pinned with `--ref v1.3.0` stays on that release; select a newer ref to advance it. Directory-managed installations follow the host's update behavior.
+Install the updated plugin through the desktop Plugins Directory and start a new task. A source pinned with `--ref v1.4.0` stays on that release; select a newer ref to advance it. Directory-managed installations follow the host's update behavior.
 
 ## Claude Code
 

@@ -1,20 +1,20 @@
-# Delivery Recovery Polish
+# Improve Delivery Recovery
 
 ## Operation
 
-Implement the requested coherent change at the owning source and update directly affected consumers. An earlier audit is optional when the user and repository already establish the target. Validate the changed behavior, then stop when the requested scope is complete.
+Implement the requested change and verify its directly affected behavior.
 
 ## Goal
 
-Implement one selected, evidence-backed Delivery Recovery improvement at the authoritative owner. Complete the directly affected contract without broad cleanup or redesign.
+Correct the selected release, rollback or restore path and verify artifact identity and application-level recovery.
 
 ## Domain rules
 
-- Promote one immutable verified artifact and preserve digest/provenance through every environment and rollback reference.
+- Preserve exact tested artifact identity through promotion and rollback. For required environment-specific builds, record the inputs and verify each resulting artifact.
 - Keep release gates deterministic and least-privilege; invalidate or segregate caches/artifacts when trust or inputs change.
 - Stage rollout with explicit health/abort criteria and compatibility order; use flags only as owned temporary controls.
 - Coordinate schema/data changes with rollback reality and document forward-fix/restore when binary rollback cannot restore correctness.
-- Automate and regularly exercise restore with integrity/application checks; protect backups from the same credentials/failure domain as production.
+- Repair the selected restore procedure and verify integrity/application behavior in an authorized isolated environment. Protect backups from production credential and failure-domain loss.
 
 ## Validation
 

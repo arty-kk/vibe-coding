@@ -1,18 +1,18 @@
-# Cache Invalidation Polish
+# Improve Cache Invalidation
 
 ## Operation
 
-Implement the requested coherent change at the owning source and update directly affected consumers. An earlier audit is optional when the user and repository already establish the target. Validate the changed behavior, then stop when the requested scope is complete.
+Implement the requested change and verify its directly affected behavior.
 
 ## Goal
 
-Fix one coherent cache freshness or invalidation boundary across authoritative writes, cache keys, invalidation triggers, readers, tests, and docs/maps when used.
+Restore the selected cache freshness or invalidation guarantee from the authoritative write through directly affected readers.
 
 ## Scope selection
 
 Use the selected data/resource, stale-read bug, cache key, audit finding, failing test, or explicit performance/correctness task. Do not replace the whole caching strategy unless the selected fix requires a refactor plan.
 
-## Polish targets
+## Change targets
 
 - Cache key construction and tenant/identity/role/locale/plan dimensions.
 - Write-side invalidation, event-based refresh, TTL/stale-while-revalidate, optimistic update reconciliation, and rollback behavior.

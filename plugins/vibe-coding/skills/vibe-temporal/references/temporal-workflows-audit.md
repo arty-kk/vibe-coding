@@ -2,7 +2,7 @@
 
 ## Operation
 
-Inspect the named boundary and report supported findings. Do not edit product code. Include concrete evidence, impact, the owning source, one remediation direction and a meaningful validation route. Severity follows actual impact, not a category example.
+Inspect the selected behavior and report evidence-backed defects; do not change product code.
 
 ## Goal and scope
 
@@ -26,9 +26,3 @@ Audit Temporal workflow history compatibility, determinism, activities, retries,
 3. Trace Activity timeout/retry/heartbeat/cancel and crash windows, including ambiguous external success and compensation behavior.
 4. Inspect handler concurrency, workflow initialization, Continue-As-New, history growth, and pending message semantics for long-running workflows.
 5. Verify rollout/rollback compatibility across old/new workers and task routing rather than assuming source rollback can process histories created by new code.
-
-## Priority model
-
-- **P0:** nondeterministic replay that blocks histories, duplicate irreversible activity effects, lost signals, or unrecoverable workflow state.
-- **P1:** a material versioning, retry, timeout, cancellation, activity, or worker-rollout defect.
-- **P2:** a lower-risk but concrete history growth, observability, or maintainability issue.

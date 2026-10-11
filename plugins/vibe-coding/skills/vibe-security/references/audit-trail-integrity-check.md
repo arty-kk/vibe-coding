@@ -2,15 +2,15 @@
 
 ## Operation
 
-Verify the selected invariant through bounded scenarios in an authorized environment. Do not turn verification into unrelated implementation. Return passed, failed or blocked, with actual evidence and any missing required scenario.
+Verify the selected behavior against explicit expected results; do not change product code.
 
 ## Goal
 
 Verify one audit-trail invariant for a selected action, policy decision, or patch through bounded scenarios. Prove emitted events are complete, safe, durable enough for the repo-stated use case, and queryable when required.
 
-## Required input
+## Context
 
-Provide the selected action/event, expected audit schema, implementation summary or patch boundary, safe environment, fixtures/accounts, and repository-native commands or manual scenarios.
+Identify the selected action/event, expected audit schema, implementation summary or patch boundary, safe environment, fixtures/accounts, and repository-native commands or manual scenarios.
 
 ## Scenarios
 

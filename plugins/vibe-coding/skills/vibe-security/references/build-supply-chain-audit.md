@@ -8,8 +8,6 @@ Inspect the selected dependency, CI or build trust boundary without product edit
 
 The selected dependency/build/publishing workflow, trigger and ref, actor-controlled inputs, executing identity, available privileges and intended artifact. Identify the actual trust crossing and permitted publication policy.
 
-Select the target from the user’s request and current evidence. Reconstruct ordinary missing context from the owning code. If a missing target, authority or environment changes correctness or safety, name that specific gap and leave the dependent action blocked; continue independent work. Do not invent requirements from existing tests.
-
 ## Domain invariants
 
 - Untrusted source, scripts, cache entries and artifacts cannot execute with publishing authority merely because an earlier job succeeded.
@@ -46,25 +44,3 @@ Prioritize reachable credential theft, unauthorized publication, arbitrary code 
 Cite the triggering actor/event, exact workflow/source lines, controlled value, execution sink, available privilege and resulting impact. Provide a minimal safe reproduction or complete source trace, one correction at the trust owner and an observable regression. Do not execute an exploit against a live registry or transmit credentials to prove reachability.
 
 Bound the conclusion to inspected workflows and inputs. Keep checksum integrity, signer identity, build provenance and dependency inventory distinct; none individually proves every other property.
-
-## Priority model
-
-Use the repository’s severity scale if defined. Otherwise classify by demonstrated reachability and impact, not the presence of a keyword:
-
-- **P0:** critical or immediate credential theft or attacker-controlled publication through a reachable path.
-- **P1:** A material dependency/cache/artifact trust violation.
-- **P2:** A concrete bounded provenance or assembly defect.
-
-A potentially severe category without a supported reachable path remains an unverified concern, not a P0 finding.
-
-## Finding rules
-
-Accept a finding only when the evidence establishes the reachable trigger, authoritative owner, violated invariant, affected consumer/state and concrete impact. Separate source facts, observed runtime behavior and inference. Reject generic best practices, stylistic preferences, hypothetical scale failures and already-solved issues. Give one owner-layer remediation direction. Merge symptoms sharing the same owner and correction; split findings when owner, rollout, rollback or validation boundaries differ.
-
-## Completion criteria
-
-Finish when the selected path and applicable invariants have been examined, findings pass the evidence gate and material unknowns are named. No supported defect is a valid outcome. Do not expand scope or fabricate work to fill priority levels.
-
-## Output contract
-
-Respond in the user’s language. Return findings ordered by impact. Each finding contains: priority and concrete title; affected surface/actor/state; exact evidence anchors and nearest symbol; authoritative owner; violated invariant; expected versus observed behavior; reachable impact; one remediation direction; acceptance criteria; verification route; relevant rollout/rollback constraints and explicit exclusions. Use concise connected fields or prose, not empty template sections. If no finding qualifies, state that and bound the conclusion to the inspected scope. Report unresolved evidence separately. Do not create external tasks or edit code for an audit-only request.

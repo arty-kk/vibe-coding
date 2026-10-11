@@ -2,15 +2,15 @@
 
 ## Operation
 
-Analyze and return an actionable brief in the current conversation. Planning does not create a new assistant task or edit product code. Carry the full requested objective into the plan; separate independent work without silently discarding it.
+Return an actionable plan for the requested outcome.
 
 ## Goal
 
 Decompose one large, evidence-backed objective into the smallest dependency-ordered workstreams that can be implemented and validated independently without splitting a shared invariant across tasks.
 
-## Preconditions
+## Context
 
-The objective is already evidence-backed but cannot be completed as one coherent patch. Do not use decomposition to disguise uncertainty. If the target or ownership is unresolved, report the missing decision and stop. Use maps such as Project Atlas, Ownership & Invariant, Traceability, Runtime Flow, Auth Entitlements, Test Coverage, and Risk & Release only as discovery aids; preserve direct owner evidence in every workstream.
+Use the requested outcome and current defining sources to identify dependencies and acceptance. Split when independently useful stages are needed, not to meet a fixed number of tasks or pull requests. Keep unresolved decisions attached to the dependent stage; continue planning independent work. Existing maps are optional discovery aids.
 
 ## Decomposition rules
 

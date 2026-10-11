@@ -1,12 +1,12 @@
-# AI Safety & Governance Polish
+# Improve AI Safety & Governance
 
 ## Operation
 
-Implement the requested coherent change at the owning source and update directly affected consumers. An earlier audit is optional when the user and repository already establish the target. Validate the changed behavior, then stop when the requested scope is complete.
+Implement the requested change and verify its directly affected behavior.
 
 ## Goal
 
-Implement one selected, evidence-backed AI Safety & Governance improvement at the authoritative owner. Complete the directly affected contract without broad cleanup or redesign.
+Correct the selected AI safety or release-control behavior, with tested misuse cases and an owned disable or recovery path.
 
 ## Domain rules
 

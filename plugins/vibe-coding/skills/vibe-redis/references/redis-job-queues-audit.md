@@ -2,18 +2,18 @@
 
 ## Operation
 
-Inspect the named boundary and report supported findings. Do not edit product code. Include concrete evidence, impact, the owning source, one remediation direction and a meaningful validation route. Severity follows actual impact, not a category example.
+Inspect the selected behavior and report evidence-backed defects; do not change product code.
 
 ## Goal and scope
 
-Audit Redis-backed cache, Streams, BullMQ, and ARQ lifecycles across keys, atomicity, worker leases, retries, memory, persistence, and recovery.
+Audit the selected Redis-backed queue, stream or worker-lease behavior. Inspect shared cache/Redis configuration only where it affects delivery; application cache freshness belongs to the cache skill.
 
 ## Domain invariants
 
 - Key names encode environment/tenant/entity/version intentionally, have an ownership and TTL policy, and use compatible hash-tagging when cluster multi-key atomicity is required.
 - Connection pools, command/socket/connect timeouts, retry/backoff, health checks, and blocking commands are bounded per process and deployment replica.
 - Atomic state transitions use one Redis command, transaction, or reviewed script; partial multi-key updates cannot silently corrupt queue/cache state.
-- maxmemory/eviction and persistence/replication settings match whether data is reconstructible cache, durable-ish queue state, or coordination state.
+- maxmemory/eviction and persistence/replication settings match whether data is reconstructible cache, queue state with a stated persistence guarantee, or coordination state.
 - Redis Streams consumers acknowledge after processing, inspect pending entries, reclaim only stale ownership, and retain/trim data without losing required replay.
 - BullMQ job IDs, lock duration/renewal, stalled handling, attempts/backoff, flows, rate limits, delayed jobs, and cleanup preserve idempotency and parent/child completion semantics.
 - ARQ job uniqueness, retry/defer/cron, timeout, health, result retention, and worker shutdown match its delivery semantics rather than assuming Celery/BullMQ behavior.
@@ -26,9 +26,3 @@ Audit Redis-backed cache, Streams, BullMQ, and ARQ lifecycles across keys, atomi
 3. Inspect crash windows, duplicate job IDs, stale lock/consumer, retry storms, cron overlap, flow dependency failure, and Redis failover/reconnect.
 4. Compute connection and in-flight budgets across processes/replicas and compare queue concurrency with downstream capacity and Redis memory/CPU.
 5. Check scripts/transactions and cluster key-slot compatibility for every multi-key invariant.
-
-## Priority model
-
-- **P0:** lost jobs, duplicate irreversible effects, stale-worker writes, unbounded queue growth, or cross-tenant data exposure.
-- **P1:** a material lease, retry, deduplication, scheduling, backpressure, or recovery defect.
-- **P2:** a lower-risk but concrete fairness, observability, or efficiency issue.

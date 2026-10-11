@@ -2,7 +2,7 @@
 
 ## Operation
 
-Inspect the named boundary and report supported findings. Do not edit product code. Include concrete evidence, impact, the owning source, one remediation direction and a meaningful validation route. Severity follows actual impact, not a category example.
+Inspect the selected behavior and report evidence-backed defects; do not change product code.
 
 ## Goal and scope
 
@@ -21,9 +21,3 @@ Audit a selected route or component across data ownership, permissions, all reac
 2. Inspect every reachable state and race: slow response, stale request, double action, permission/plan change, and failure.
 3. Trace component and cache ownership to backend contracts and identify duplicated UI-only business rules.
 4. Use screenshots, previews, browser traces, or tests when available; do not claim visual correctness without them.
-
-## Priority model
-
-- **P0:** a reachable flow that causes data loss, unsafe action, access leakage, or blocks a critical user journey.
-- **P1:** a material task-completion, state, accessibility, or activation defect.
-- **P2:** a lower-risk but concrete comprehension, consistency, or secondary-flow issue.

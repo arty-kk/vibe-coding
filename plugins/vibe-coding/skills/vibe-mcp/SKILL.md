@@ -1,6 +1,6 @@
 ---
 name: vibe-mcp
-description: "Audit, fix or verify an MCP server or client: protocol-version compatibility, tool schemas/results, transport, discovery and authorization. Use for MCP integration defects; general agent planning and RAG belong to vibe-ai."
+description: "Audit, implement or verify MCP discovery, schemas, transport, result handling and authorization for supported versions."
 ---
 
 # MCP servers & clients
@@ -10,7 +10,7 @@ Read [the shared workflow](../../references/workflow.md) once, then the recipe m
 | Request | Recipe |
 |---|---|
 | Inspect a server/client contract without edits | [MCP Server Audit](references/mcp-server-audit.md) |
-| Fix or implement a named contract | [MCP Server Polish](references/mcp-server-polish.md) |
+| Fix or implement a named contract | [Improve MCP Server](references/mcp-server-polish.md) |
 | Verify protocol, tool results or authorization | [MCP Protocol & Authorization Check](references/mcp-protocol-auth-check.md) |
 
 The recipes share [version and trust boundaries](../../references/mcp-contract.md). Select the repository's supported SDK/protocol version before applying a rule. Do not treat an optional feature or a newer specification as an automatic migration requirement. An audit-and-fix request includes the correction and meaningful verification.

@@ -1,18 +1,18 @@
-# Search Index Polish
+# Improve Search Index
 
 ## Operation
 
-Implement the requested coherent change at the owning source and update directly affected consumers. An earlier audit is optional when the user and repository already establish the target. Validate the changed behavior, then stop when the requested scope is complete.
+Implement the requested change and verify its directly affected behavior.
 
 ## Goal
 
-Fix one coherent search/index boundary across indexing pipeline, document schema, query/filter logic, authorization, UI/API state, tests, and docs/maps when used.
+Fix the selected search/index boundary across indexing pipeline, document schema, query/filter logic, authorization, UI/API state, tests, and docs/maps when used.
 
 ## Scope selection
 
 Use the selected index/query/resource, stale/missing/unauthorized result bug, audit finding, failing test, or explicit search improvement task. Avoid broad ranking redesigns unless the selected product acceptance requires them.
 
-## Polish targets
+## Change targets
 
 - Index document construction, update/delete events, backfill/reindex scripts, and freshness markers.
 - Query builder, filters/facets/sorting/pagination, language/tokenization settings, and result hydration.

@@ -2,7 +2,7 @@
 
 ## Operation
 
-Inspect the named boundary and report supported findings. Do not edit product code. Include concrete evidence, impact, the owning source, one remediation direction and a meaningful validation route. Severity follows actual impact, not a category example.
+Inspect the selected behavior and report evidence-backed defects; do not change product code.
 
 ## Goal and scope
 
@@ -26,9 +26,3 @@ Audit a Kubernetes workload as a deployable runtime contract: rollout, probes, s
 3. Check scheduler fit, requests/limits, priority/affinity/topology spread, HPA inputs, stabilization, and minimum healthy capacity.
 4. Verify service selectors/ports, DNS names, TLS ownership, NetworkPolicy directions, and trusted proxy boundaries.
 5. For stateful work, inspect attach/mount/recovery/backup and data-consistency behavior after reschedule or partial failure.
-
-## Priority model
-
-- **P0:** cluster or service outage, privilege exposure, data loss, invalid rollout, or unrecoverable stateful workload failure.
-- **P1:** a material scheduling, probe, policy, resource, rollout, or capacity defect.
-- **P2:** a lower-risk but concrete operability, efficiency, or resilience issue.

@@ -4,11 +4,9 @@
 
 Verify the selected database-to-event-to-consumer invariant without product edits. Follow one business operation through its authoritative transaction, publication intent, broker delivery, consumer identity and final effect. Keep broker-specific protocol mechanics with the corresponding queue skill.
 
-## Required input
+## Context
 
 The selected business invariant, authoritative transaction, outbox/publisher, broker, consumer/inbox and final effect, with stable operation identity, recovery bounds and an authorized fault-injection environment.
-
-Select the target from the user’s request and current evidence. Reconstruct ordinary missing context from the owning code. If a missing target, authority or environment changes correctness or safety, name that specific gap and leave the dependent action blocked; continue independent work. Do not invent requirements from existing tests.
 
 ## Domain invariants
 
@@ -43,16 +41,4 @@ For an external non-transactional effect, identify the actual idempotency or rec
 
 ## Evidence and limitations
 
-Record the invariant, fault point, observed state before/after recovery, owner `path:line`, exact commands and pass/fail/not exercised outcome. A mocked publish failure does not establish real broker confirmation or database isolation behavior; name those gaps. Failures should lead to one coherent transaction, idempotency or repair correction rather than a blanket infrastructure replacement.
-
-## Evidence and safety rules
-
-Define the required scenario matrix before execution from the selected invariant and current repository commands. Respect active test restrictions. Use the authorized environment and bounded workload/fault conditions. Record expected and observed state, identity/order/effect evidence and exact commands; passing harness output alone cannot override the intended contract. Pair negative cases with a valid control. Do not perform destructive drills, broaden implementation or infer provider/production behavior from local fixtures. An unavailable required scenario remains unavailable.
-
-## Verdict and completion
-
-Return **passed** only when every required criterion is supported by actual evidence. Return **failed** when a named invariant is violated, with the minimal reproduction and owner. Return **blocked** when required evidence cannot be obtained because the target, environment or safe operation is unavailable; name the missing gate. If a defect is already proven and other checks are blocked, report failed with those unexercised gates. Stop when the bounded matrix is resolved or cannot safely progress; never convert skipped work into a pass.
-
-## Output contract
-
-Respond in the user’s language and begin with passed, failed or blocked. Include: checked invariant and exact boundary/version; required scenario matrix with expected/observed state and per-case result; actual commands and bounded measurements; evidence anchors or minimal reproduction; residual risks; unavailable gates and their effect on the verdict. Separate inspected source from executed runtime evidence. Omit empty sections. Recommend the narrow owner correction for a failure without performing unrequested edits.
+Record the invariant, fault point, observed state before/after recovery, owner `path:line`, exact commands and pass/fail/not exercised outcome. A mocked publish failure does not establish real broker confirmation or database isolation behavior; name those gaps. Failures should lead to the selected transaction, idempotency or repair correction rather than a blanket infrastructure replacement.

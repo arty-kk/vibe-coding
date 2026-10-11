@@ -1,18 +1,16 @@
 ---
 name: vibe-kafka
-description: "Audit, fix or verify Kafka/Redpanda ordering, producer guarantees, consumer offsets, rebalances, schema compatibility, retry and replay boundaries."
+description: "Audit, repair or verify Kafka/Redpanda delivery, ordering, offsets, schema compatibility, rebalance and replay."
 ---
 
 # Kafka & Redpanda
 
-Read [the shared workflow](../../references/workflow.md) once per task, then the one recipe matching the requested operation and boundary. Do not load every recipe. The user's request controls scope and whether edits are allowed.
+Apply [the working contract](../../references/workflow.md) once; read only the recipe for the requested result.
 
 ## Recipes
 
 | Recipe | Operation |
 |---|---|
 | [Kafka Redpanda Audit](references/kafka-redpanda-audit.md) | audit |
-| [Kafka Redpanda Polish](references/kafka-redpanda-polish.md) | implement |
+| [Improve Kafka Redpanda](references/kafka-redpanda-polish.md) | implement |
 | [Kafka Redpanda Rebalance & Failure Check](references/kafka-redpanda-rebalance-failure-check.md) | check |
-
-For an explicit multi-stage request, follow the necessary stages without discarding requested work. For a single stage, deliver that result and stop. Use [the catalog](../../references/catalog.md) only if the requested boundary belongs elsewhere.

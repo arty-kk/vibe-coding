@@ -1,11 +1,21 @@
 ---
 name: vibe-map
-description: "Create or refresh evidence-backed repository maps of product capabilities, navigation, owners, data, runtime, permissions, tests, and releases. Use for understanding a codebase or explicitly requested maps."
+description: "Explain a repository or create/update a requested map of capabilities, owners, data, runtime or verification."
 ---
 
 # Project mapping
 
-Read [the shared workflow](../../references/workflow.md) once per task, then the one recipe matching the requested operation and boundary. Do not load every recipe. The user's request controls scope and whether edits are allowed.
+Apply [the working contract](../../references/workflow.md) once; read only the recipe for the requested result.
+
+## Map contract
+
+Choose the map that answers the requested question. Project Atlas provides broad orientation; it does not require generating every detailed map.
+
+Use the requested output format. For a saved map, reuse the existing document/location and stable IDs; recipe paths and new-ID prefixes are defaults, not mandatory additions. An explanation can remain in chat.
+
+Trace the relevant entities and relationships to current code, schema, configuration or supplied product decisions. Each useful entry identifies its defining source and the edge or rule the reader needs next. Include optional fields only when they help navigation or the requested decision; omit inapplicable rows and placeholder unknowns. Distinguish stated requirements from observed implementation.
+
+Use a short overview and appropriate entity/relationship tables or lists. Verify references before finishing. A map indexes evidence; it does not establish runtime correctness.
 
 ## Recipes
 
@@ -29,5 +39,3 @@ Read [the shared workflow](../../references/workflow.md) once per task, then the
 | [SaaS Navigation Map](references/saas-navigation-map.md) | map |
 | [Test Coverage Map](references/test-coverage-map.md) | map |
 | [Traceability Map](references/traceability-map.md) | map |
-
-For an explicit multi-stage request, follow the necessary stages without discarding requested work. For a single stage, deliver that result and stop. Use [the catalog](../../references/catalog.md) only if the requested boundary belongs elsewhere.

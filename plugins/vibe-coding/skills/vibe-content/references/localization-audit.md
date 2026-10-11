@@ -2,7 +2,7 @@
 
 ## Operation
 
-Inspect the named boundary and report supported findings. Do not edit product code. Include concrete evidence, impact, the owning source, one remediation direction and a meaningful validation route. Severity follows actual impact, not a category example.
+Inspect the selected behavior and report evidence-backed defects; do not change product code.
 
 ## Goal and scope
 
@@ -23,9 +23,3 @@ Audit a selected localization surface for key ownership, interpolation safety, l
 2. Check all semantic variants, plural categories, markup, untrusted values, and locale-sensitive formatting.
 3. Identify duplicate keys, English-in-code, stale translations, and key reuse across incompatible meanings.
 4. Inspect layout and channel constraints for representative long and RTL locales where supported.
-
-## Priority model
-
-- **P0:** content that creates legal, security, billing, consent, or destructive-action risk.
-- **P1:** a material comprehension, conversion, localization, notification, or discoverability defect.
-- **P2:** a lower-risk but concrete consistency, tone, metadata, or secondary-content issue.

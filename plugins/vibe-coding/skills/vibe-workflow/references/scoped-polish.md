@@ -1,19 +1,16 @@
-# Scoped Polish
+# Implement a Scoped Change
 
-## Operation
+## Scope
 
-Implement the requested coherent change at the owning source and update directly affected consumers. An earlier audit is optional when the user and repository already establish the target. Validate the changed behavior, then stop when the requested scope is complete.
+Implement the named behavior when no specialized recipe applies. Use the user’s requirement or a supported finding to establish the target and intended result; a prior audit document is optional.
 
-## Goal
+## Procedure
 
-Implement one selected finding in a narrowly specified domain using explicitly supplied invariants and repository-native validation.
+1. Locate the defining code, schema or configuration and directly affected contracts. Recover ordinary implementation context from current sources.
+2. Define acceptance and the compatibility/failure behavior that matters to the change. Ask only for an unresolved decision that changes it.
+3. Correct the owner and necessary producers/consumers, generated outputs or migrations. Preserve unrelated behavior and architecture.
+4. Run the native checks or controlled reproduction that exercise the selected contract. Record actual outcomes and required missing evidence.
 
-## Scope selection
+## Result
 
-Supply one complete audit result or an equivalent task definition, plus the applicable domain invariants and repository-native validation. Do not select another finding or infer an undocumented platform guarantee.
-
-Ground the target in exact repository evidence. Stop rather than substitute a different improvement when the owner, invariant, or safe validation boundary cannot be established.
-
-## Change rules
-
-Implement the smallest complete owner-layer slice. Synchronize directly affected producers, consumers, state transitions, schemas/config, generated artifacts, tests, operations, and rollback. Preserve existing architecture and public behavior outside the selected invariant. Record unavailable external gates exactly.
+Report the implemented behavior, relevant changes, verification and remaining required work. Do not substitute another improvement when the target cannot be established.

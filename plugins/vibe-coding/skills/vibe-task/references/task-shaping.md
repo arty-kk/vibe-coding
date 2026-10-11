@@ -1,32 +1,22 @@
-# Task Shaping
+# Shape an Implementation Task
 
-## Operation
+## Scope
 
-Analyze and return an actionable brief in the current conversation. Planning does not create a new assistant task or edit product code. Carry the full requested objective into the plan; separate independent work without silently discarding it.
+Turn the request into a brief that an implementing agent can act on. Use the stated outcome and current repository; a new requested capability does not require evidence of an existing defect.
 
-## Goal
+## Procedure
 
-Turn the user request into implementation-ready in-chat briefs. Use one coherent brief when sufficient; preserve all explicitly requested outcomes when several are needed.
+1. Identify the actor/input, requested behavior and accepted outcome. Locate the code, schema or policy that should define it and directly affected consumers.
+2. Recover relevant constraints, existing patterns and commands from current sources. Mark unresolved product decisions rather than inventing them.
+3. Group changes that must be delivered together to satisfy one contract. Split only independently useful outcomes, preserving dependencies and the complete requested objective.
+4. Define observable acceptance: normal behavior, relevant failure or denied states and compatibility when a contract changes.
 
-## Inspect
+## Brief
 
-- User intent and the concrete behavior change or behavior problem.
-- Owner layer / source of truth for that behavior, using generated maps only as discovery aids when present.
-- Main affected modules, files, symbols, routes, commands, schemas, tests, docs, generated artifacts, or mapped contracts.
-- Reachable surface that matters for this task, including direct consumers and user/system states.
-- Existing maps or traceability docs only as discovery aids; verify risky or stale claims against current owner evidence.
-- Product requirement, actor/journey state, metric/event, policy decision, role/attribute/tenant/plan scope, or runtime flow when those dimensions affect acceptance.
+Include the problem/change, target and defining owner, necessary evidence, expected behavior, exclusions, dependencies and verification. Add domain-specific details only when they affect implementation:
 
-## Shaping rules
+- Access policy: subject, action, resource, attributes and scope, with backend enforcement.
+- API/integration: input/output/error contract, operation identity, supported consumers and side effects.
+- UI: entry/state/interaction, data contract, recovery and accessible behavior.
 
-- Ground the task in current repository evidence with `path:line[-line]` anchors plus symbol when possible. A map ID alone is not sufficient evidence for a task.
-- Distinguish direct repository facts from assumptions or inference.
-- Make the task atomic enough for one execute run / one PR, but complete enough to solve the behavior across directly affected surfaces.
-- Include problem/change, owner/source of truth, affected surface, expected result, acceptance criteria, validation, and out-of-scope boundaries in the task briefs content.
-- Preserve existing contracts and unrelated behavior unless the requested change explicitly requires a contract change.
-- For user-facing work, include relevant product requirement, UX/UI/copy expectations, analytics/metric implications, and affected states.
-- For access-policy work, express the decision as subject/action/resource/scope plus roles, attributes, relationships, plan/entitlement gates, and backend enforcement points.
-- For API/integration work, include contract, validation, error, idempotency, versioning, and consumer impact when relevant.
-- For new functionality, extend existing seams and patterns before introducing a new boundary.
-- If the request bundles independent fixes, separate them into coherent briefs and preserve the full requested objective.
-- Ask a concise clarifying question only when proceeding would be unsafe or would require a missing business/contract decision that the repo cannot resolve.
+Ask only for a missing decision that changes the result. Return the brief in the requested format; do not start separate agent conversations.

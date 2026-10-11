@@ -1,12 +1,12 @@
-# Performance Budget Polish
+# Improve Performance Budget
 
 ## Operation
 
-Implement the requested coherent change at the owning source and update directly affected consumers. An earlier audit is optional when the user and repository already establish the target. Validate the changed behavior, then stop when the requested scope is complete.
+Implement the requested change and verify its directly affected behavior.
 
 ## Goal
 
-Implement one selected, evidence-backed Performance Budget improvement at the authoritative owner. Complete the directly affected contract without broad cleanup or redesign.
+Bring the selected path within its evidenced latency, resource or cost budget while preserving correctness.
 
 ## Domain rules
 

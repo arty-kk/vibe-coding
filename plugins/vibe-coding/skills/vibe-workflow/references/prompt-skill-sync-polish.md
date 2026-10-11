@@ -1,4 +1,4 @@
-# Prompt Skill Sync Polish
+# Improve Prompt Skill Sync
 
 ## Scope
 

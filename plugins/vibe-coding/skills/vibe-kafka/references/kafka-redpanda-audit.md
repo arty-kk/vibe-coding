@@ -2,7 +2,7 @@
 
 ## Operation
 
-Inspect the named boundary and report supported findings. Do not edit product code. Include concrete evidence, impact, the owning source, one remediation direction and a meaningful validation route. Severity follows actual impact, not a category example.
+Inspect the selected behavior and report evidence-backed defects; do not change product code.
 
 ## Goal and scope
 
@@ -26,9 +26,3 @@ Audit a Kafka or Redpanda stream from topic/key/schema and producer durability t
 3. Inspect effective client and broker/topic settings together; reject guarantees inferred from one client flag in isolation.
 4. Evaluate key distribution, partition capacity, lag, poll duration, batching, retry amplification, and downstream backpressure using representative traffic evidence.
 5. Verify schema compatibility and operational migration behavior against both Kafka and Redpanda when portability is claimed.
-
-## Priority model
-
-- **P0:** record loss, duplicate irreversible effect, tenant/data leak, broken ordering invariant, or cluster-wide availability failure.
-- **P1:** a material partitioning, schema, offset, rebalance, replay, or backpressure defect.
-- **P2:** a lower-risk but concrete lag, observability, operability, or efficiency issue.
