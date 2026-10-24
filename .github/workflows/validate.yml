@@ -1,5 +1,6 @@
 name: Validate plugin
 on:
+  workflow_dispatch:
   push:
   pull_request:
 permissions:
@@ -10,9 +11,12 @@ jobs:
       matrix:
         python: ['3.10', '3.13']
         os: [ubuntu-latest, windows-latest]
-    runs-on: ${{ matrix.os }}
+    runs-on: ${{ matrix.os == 'ubuntu-latest' && (github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository) && fromJSON('["self-hosted","Linux","X64","a3d-linux-x64"]') || matrix.os }}
+    timeout-minutes: 360
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
       - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
         with:
           python-version: ${{ matrix.python }}
@@ -23,9 +27,12 @@ jobs:
       - run: python scripts/build_site.py
       - run: git diff --exit-code
   runtime-boundaries:
-    runs-on: ubuntu-latest
+    runs-on: ${{ (github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository) && fromJSON('["self-hosted","Linux","X64","a3d-linux-x64"]') || 'ubuntu-latest' }}
+    timeout-minutes: 360
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
       - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
         with:
           python-version: '3.13'
@@ -35,9 +42,12 @@ jobs:
       - run: python review/run_runtime_checks.py
       - run: node --test tests/test_site_search.cjs
   claude-compatibility:
-    runs-on: ubuntu-latest
+    runs-on: ${{ (github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository) && fromJSON('["self-hosted","Linux","X64","a3d-linux-x64"]') || 'ubuntu-latest' }}
+    timeout-minutes: 360
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
         with:
           node-version: '22'
