@@ -1,0 +1,1392 @@
+{
+  "version": 1,
+  "date": "2026-10-25",
+  "baseline": {
+    "file": "review/evaluations/1.5.1.json",
+    "sha256": "ff8800e3368b93eeeaa10449b1c589a17f2efae986044a15e17d785250ec585d"
+  },
+  "product_version": "1.5.1",
+  "instruction_version": "1.4.1",
+  "changes": {
+    "docs/404.html": {
+      "before": "e8aa92dfa25ad59d04bad15ec4bba7065dbf855c97a935d2519b214048b78b6e",
+      "after": "85206b8cc4fc2037c7e2bc66aab0a323b10397708a366ec15060a91d5a9bfa30",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/es/index.html": {
+      "before": "19fc8bf1ffaf6fca8b344e94eba41829ef80a67110ba89d60836b357d4cfbd4c",
+      "after": "c7a6ff9955603d0a64b44057f0751c5038270b5384e160b4324dc43412df3380",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/es/privacy.html": {
+      "before": "a5f9f0b677713e46823725aee278ad2a4822441fef7f2a442d1b0f383a689228",
+      "after": "2ca6383b5139f05a5febe7a29ae25e298b598fc23b99e379a2c88d9daf2cc317",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/es/terms.html": {
+      "before": "7cff5dc1138fc1ed17034b424f0202a95043dd583dd66913f7e8e08ebed9a07c",
+      "after": "17a1d5e13cca74e99e5ea56ddbb927264548e402a73a9015e345d5534c5d25c8",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/es/workflows/index.html": {
+      "before": "d804ec99bf3c96291b7cd5c17cf89158862dc9bd0e79d09912737e7c5f1ad3af",
+      "after": "0b33b3ed6dfdf36221cef7fabc07baffcf55dbf88a7a4206a4ee936daee321fe",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/index.html": {
+      "before": "26f3d27e5740e85c9c25be3af83d17b404ad0ba49706958efa34fc651f51281a",
+      "after": "b74d1806de97c97de4368e3508c85e5895d0976db124f7ea490aa7a938330f2b",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/privacy.html": {
+      "before": "aa13e54666fb63a2c868c52004f8ef11c02eeff1733e7e3f34445f4a2e109a95",
+      "after": "e3b156ad18b7d0050fd29d07da149c41c2cd6d5b5234fa1723b0233563ea0fdc",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/ru/index.html": {
+      "before": "bd814b67ed5a1d63449825bbe6c274de52972f046c1ecb4839765df0ebc51b63",
+      "after": "bf35ae708f30dc4d99d41201cee7d8a0f3e08d1b32df74483eae872de424e270",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/ru/privacy.html": {
+      "before": "1d4f95c0a86ba44365053f97829c53a0767deef96aae4f762a890d9e368f1d1b",
+      "after": "9c31330d5bd9b7f4209dd03796a98e0f1c30dd992dd49f19df1f8a33c48ed192",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/ru/terms.html": {
+      "before": "a02b6432382bbfefe94275d15e23ac651c46e9b5dc50869f4a2af22194e4aa90",
+      "after": "6d6a6139a6a42aee72ea841386584727eaa673058b7fa35a39a2353351e86392",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/ru/workflows/index.html": {
+      "before": "b86dd34c91bf666085f6b4ffdf5b926ccfa6e20987dc4fa376565e766d6672e5",
+      "after": "842ef73985f0e1ff5d404bd5d8529452f3a846388f05eed4c5a38a8f9a29d258",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/social-card.png": {
+      "before": "2ea8c4545bb9db58b9abca794eca099babdd10bf4c2db9ee85aa8ea2d3a1f70d",
+      "after": "08923c0fb527f7c5ce26700c4704e210fdc895ebcfa1579bc990864c5fb225d0",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/terms.html": {
+      "before": "a531e91d4f667a84bd6921be0c38ef8b16a314e683c8cba3cfc7e782118153ee",
+      "after": "0f624016fa756f601616fb4ca5d21977873cd7ca9cac84eb5fd4dcc21ea2d2b6",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/accessibility-audit/index.html": {
+      "before": "8a66ab9582d01dbbaf4e5e552252ebc7a2977c1bdc4d65c72c78627374179b92",
+      "after": "7f0359f73cc1d33524e5671b93f14bcd56399875a20ea667e743d68de109e5af",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/accessibility-polish/index.html": {
+      "before": "c8ae5990bf6ff803b51e4ff05d5b17f40cb2cebb4e397e2f53f8b46c1c51510b",
+      "after": "eb8cc9895383187ec10e342c3ac35cd9880c8fa345514a39bcbd55844e3c6001",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/agent-harness-audit/index.html": {
+      "before": "20a635306119deacfdf17fbef8c2f45b64949951db5c9cc8d665822ee534eb12",
+      "after": "5b858fb5b55b74224ede58b592516fade2ce285ff0a9a16906997ac679ac14cf",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/agent-harness-polish/index.html": {
+      "before": "592b971122681b6f6c6952337c6a2d293f96c57a15c3f3ce4e5ff1e95e67cfc3",
+      "after": "51160148640947960f1b93ad7282134d382783389660b612294037040033c3c0",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/agent-harness-replay-failure-check/index.html": {
+      "before": "5de28a19efa34d16bb9ac3fcf9c6cea784797426d19e62695afc52271fbf156c",
+      "after": "e1a5cf7785207640cca0d49210ebd92dd7747ca41aa396c039568fda20225349",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/ai-evaluation-audit/index.html": {
+      "before": "c027771ae560d284b2053d2ef73e0d9fe5288b276a1ba1f03ca95ec5aaca8960",
+      "after": "ccc60346b4d6499bee497d130f609d92dabbe6d36ac89f99e02689bfb253a5ad",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/ai-evaluation-polish/index.html": {
+      "before": "a03e24d68d4a71afc247bd39569283801f6a4ce7fd3702870357ad67418535e9",
+      "after": "c20e4ab5e44da010f781aafe8cfe41dcacc5a32d9d2d1651f5127ea96027d16d",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/ai-feature-audit/index.html": {
+      "before": "249e11cfe1bd0ee0c6cdf20740855065eb95491fbbe3ed193da2ec6009dd7995",
+      "after": "1d2af32a547501e3404a30d927a249084a392870a4b1546310c6bf5dc5b9dedb",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/ai-feature-polish/index.html": {
+      "before": "a5319a5774825a613b1581a78627172b91b0470e547bd0fe0930e31e61c73543",
+      "after": "3129257cef9e0aae498110addc24f77721275c2f8401685ba09af860f6c739de",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/ai-ml-problem-framing/index.html": {
+      "before": "24fd49b215eecf91dae7ecaf206926979489ba66580a54b0953f6060b78ed70d",
+      "after": "68eecc927214df8c02cb947ede521874debcab1eb8a236949c7f70fb414f8abd",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/ai-navigation-map/index.html": {
+      "before": "fc2da78dac675886059065b1973aaa82dffd638f65cdcab23e9ecb045c9c885e",
+      "after": "79b1f7a25e577b73be8cc7420862fb4833339d3d48f8c0380135d2c085369078",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/ai-safety-governance-audit/index.html": {
+      "before": "83e39934d350cd801447704202d9ce6a7540cff470f6c03213813504667553a9",
+      "after": "6bd083abaa162e634949e30dbab7a895d2f1f6f910cd0638b2fe73881d9e5fae",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/ai-safety-governance-polish/index.html": {
+      "before": "7a468db6194ec6f50feca0f74c8a8585497e2fca57741181320005b2e40da301",
+      "after": "71b495106c04ddfda9b5b53f74214aecb25fa347004a8bcca1b0b057e1c9d177",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/api-audit/index.html": {
+      "before": "9b424b9ca972148ee93c37d2df4c898e154a22dd108edfdebc44d20f1644112f",
+      "after": "663745b67d1b3ff69fcdc73a19387285cff0127f4944a31b0a2aebf00f36243e",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/api-contract-compatibility-check/index.html": {
+      "before": "bbc4f0499e62129e29d3b639204505d6e4128620e09965f2eb2ee05da393d9f3",
+      "after": "67ba42cd3eccad7405fa1917d0f1f2026a2809ef04ae80a89fbb0cc135b317fa",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/api-contract-evolution-audit/index.html": {
+      "before": "b51fc1aff6a74f9f2b8ad3f40891554dda9a1f019444ef7df8834ade05c51540",
+      "after": "3fde4e6b85049097f1af01c89ee359e3b606cf2ea9c6f941d1ef171ade8cfbbe",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/api-contract-evolution-polish/index.html": {
+      "before": "c1bec6442ba91d64e234159c7539869ea955c896053395f1c3136b0fde7a8f67",
+      "after": "8a5c5d495ab9e2d96d8b444634752c8180c4f7d81e3b2ecb19065e0f24b0a81a",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/api-navigation-map/index.html": {
+      "before": "2e7b2f2b841e39ed171bdbd7b0403e99d84d1c1942b4f32eff8fd49ae323b0ff",
+      "after": "c152a4308b39212607cdc1040889b7e12c28e101e8b935f8f12fb5ec373a5d3f",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/api-polish/index.html": {
+      "before": "dbb4946ce90de5fc373398288b27e8fca2ae06e0e68143bc0e9edce2bb79b504",
+      "after": "4caeed25991eb0795041dd26b9ff365ee8027b025a5a765bbc82af0f775c71fa",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/audit-logging-compliance-audit/index.html": {
+      "before": "b83c08dec8496ad1ebe5d3dd602a04916e7a8a1ecc758be9749fd4029266b7b3",
+      "after": "bfb8b37f1d9cb6fb49ccb08bc8529b13733e4923adc13af2ea2e12685d23479d",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/audit-logging-compliance-polish/index.html": {
+      "before": "c7ca42ec13f1c3d21e1b1c14d32f5e169e237b0b3436f92d25e447df37506ebe",
+      "after": "77a282e1cfbe3fc722a87cc5d218a4c712637326c082df7eea8da5cd368e0e70",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/audit-trail-integrity-check/index.html": {
+      "before": "c7ce75aa84d1fc3c8372746ba9dd768335b8814b1290483dd9fd903d190cb8b8",
+      "after": "d42ac2a1aecc570914110bc58c52c302e520f9bf11d0a09a5cf20b7cf54286fe",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/auth-entitlements-map/index.html": {
+      "before": "ae3f1830626fe23a447f84bc1f64320194326752929a07618ad09c583d335ac9",
+      "after": "2f36bf96923d629a30c7d8322820f7e98842081398475c010edd2810b32ea0c1",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/auth-permissions-audit/index.html": {
+      "before": "66330bc3476fe0cfc95e7cfa48cf08e3a22cbce97e2b9cfedc9a11fc0781467f",
+      "after": "7cb766c1491310a3ad1ca1cbd1a38c668ae3e9f128b24402fb53a8591c613ab7",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/auth-permissions-polish/index.html": {
+      "before": "2052f8d91cb75463ad180557252fb733749163ebf6f951e0ce79d6657f0bb93c",
+      "after": "6ce0a9a2731ee12192d1861ea60279f8a976d7f4ef6e7fb38698e3f036d68c9c",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/backend-integrations-audit/index.html": {
+      "before": "19dba2cdb60bd50e6057543430963eec8a1b2e13868176d5818df03eb17acfa5",
+      "after": "277e8f3cd1f4dcc3b81ce73de7267470d73d5d9515f49e2217e831f9ed4c5271",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/backend-integrations-polish/index.html": {
+      "before": "590654c47c80be8c51042d0f11189509762f66bd3c537373fa989e824b0a705c",
+      "after": "baa74e01591390717a3120d03c015d56542688163d26158bda8e45a3edc3286a",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/background-jobs-audit/index.html": {
+      "before": "643413418153874c106155cec7e35ba5df9c655e5ad2809f3bbd675d4e123bf3",
+      "after": "b54b866e2170ac1ca8c73b0d8364148351c40bb921bcec29db715627230408fe",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/background-jobs-polish/index.html": {
+      "before": "460f78a53320cd9248be34e5ea6dfadd433e6b83158453474a5413d171714af9",
+      "after": "3a72531ad54bb30d9d306fc42fa2da9ac538fdec1712b16236d6dc7993196b71",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/behavior-check/index.html": {
+      "before": "23e54433e40d3cad5748e9a0b380c22aca453131f241699dc347b20a6072310d",
+      "after": "9391998f357b184694d13e823592568fd4741cf7eb7b1cd4d09a4782148e88f0",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/billing-entitlements-audit/index.html": {
+      "before": "7ced98eeec527af2896295b85148dfda7150576bff42d16df41df82ffb9cce2c",
+      "after": "0a0e5aff0c8cebfe577322765ed60014df12569e6585b41a308fe92adcdf72f6",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/billing-entitlements-polish/index.html": {
+      "before": "a1f08713cec9145c52f450904766e6d18559c29c4850f67b9e4d46e8d90af778",
+      "after": "77b84b066e853a360123cf8ef3fbca16d4985d89add51e7f9a82ca3469966afc",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/bot-audit/index.html": {
+      "before": "8f817c1ab3e06ba4d4a5ee1f5797140113798d8645c3fa01a8a0d453eaa3e986",
+      "after": "755ae81c8b744bf5e90bfee17331550df401e6187263092079e43fcf16f646f9",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/bot-navigation-map/index.html": {
+      "before": "2ecb3cf0ebab3e9adfe69023fb8af87868d743cf4a7fc06439f3114c14730a08",
+      "after": "b5d6e9194eca34654618bdf77702a1107085e233f0a330142e9ed03087afc695",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/bot-polish/index.html": {
+      "before": "944a1ef8215bc9fa38d9f9b1ab9586d0f795de9acba74045d8d861f2c437eedd",
+      "after": "08cf82043eab3b9838e2bd524cd1012d7f8294993b7ba20b379ead6964afa3b4",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/browser-extension-audit/index.html": {
+      "before": "42229abd4546e1a4a84ea2eecc3756059052f4c3bd4ff94c89a2eb487da8a82a",
+      "after": "74d2f5ff5cfec1e8301298199f3fe623166eb859fb91c79b51405e478f4fc871",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/browser-extension-polish/index.html": {
+      "before": "3a854296fe01cc55e5cac5bb3f538ca6321acde95f0eb822315ebe32f2af6d89",
+      "after": "29a8d341c92ea674292ad4716bbaa6621921b6b356439ca5b17e2dbf6905e70a",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/build-supply-chain-audit/index.html": {
+      "before": "067f9234ff3ec4ebbd58513686d41ac864dd66f6df30669e7c48cf8c1b3d11d8",
+      "after": "2d5643e639cfd6a3c817a268879560eeea06e59b5bbd408f833ac8e8df3bdda8",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/build-supply-chain-polish/index.html": {
+      "before": "614cf5f87a3cb33f41a1093e6470362cd2641b4f305809c04c6237963ad299cc",
+      "after": "04db9b1c08b90703188d7774808d0809a6e34479fdf1f0afc4aa86800af5485e",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/cache-coherency-check/index.html": {
+      "before": "174d949d69cfdea5db0b9c5010c0f470012e5b8a001b733f5bed990a609e1246",
+      "after": "837faf26e8c731414f9b95d9cebeda718d5a4e989b72f2d9d526d912cb00e2df",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/cache-invalidation-audit/index.html": {
+      "before": "eba0d3614c25292f7f90744e919b87040bed9f5443ca3bccbdc70f58011d765f",
+      "after": "f5231c8c4a77ee836570f613f2cfb0a2066d8c3e6df7f2b98b4cc2d9f30d3ac9",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/cache-invalidation-polish/index.html": {
+      "before": "b5bbf59a94175a447bbc87d0c5ed1d9f168c555a93d98182c5cc96e1ae3aafc6",
+      "after": "c721fac57767b0084942ac8ef9977156ff2acafd862f15756e28753be90b94c5",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/celery-delivery-shutdown-check/index.html": {
+      "before": "ea7a43edab74057d97a4132f703cd645ffa6f96f6ea2db8289d34ff0ae6e5667",
+      "after": "131856a0bf2b684dde47b38ffd8f7ead9def193706aa0c71f6558ac533431d6a",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/celery-workers-audit/index.html": {
+      "before": "d066998c24c0c51b2eb5df324f1b1a75af3875e6d653e692c9f50abaa023ff90",
+      "after": "1c37d7445e82af2219822d4ae593cdf4476ea3a384f3fd52887fbdd328350614",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/celery-workers-polish/index.html": {
+      "before": "46f8d6fe2c552837dcad268f645eb19d95f043deabbc9a75cde071b0ba75a459",
+      "after": "9b8d29bfefda3e142f533ad7261158d5159dde177610b02b7579816bd6c39ade",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/clickhouse-audit/index.html": {
+      "before": "cfa10707aad8bdcb55b901493f9fe6b120e5315212502126eddfb442d600b8d4",
+      "after": "39fa23fc42874d6c4dbbb6d2e29cd3629bda5e24e7c3e1113ebee115b73acb5e",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/clickhouse-ingestion-query-load-check/index.html": {
+      "before": "7c9bc7845171999c7248ee142100c62ed76fa05411f422f1d2b4b6e498d666c4",
+      "after": "33a811804718c8945298fe4065cd89672f78078815595573759db9ec48bfba8f",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/clickhouse-polish/index.html": {
+      "before": "d167485e6d11d2c1893b958dba3eaf690dab2aade152f30ed37b895ae131c9b2",
+      "after": "d0b20ba56afa35c89c5c15d413a75bdc5ef91afad146b4a3157a4d591775166c",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/compatibility-golden-master-check/index.html": {
+      "before": "c7f26b0df668c93199c9bb56ae0625fdad217f245e045e17b0a2b8552309d144",
+      "after": "730ce3038d811bdc3748a3e874b7fa0b8056fea0573096951d4a0743c8c1b1f6",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/consistency-invariants-audit/index.html": {
+      "before": "04c346f6d6c7dd042040a6c9912dc89f11ab66aa57ff6c59dc7bee43a1ce71ed",
+      "after": "bff38ebc32e75a7d7a11e319ec342e032e182416e7971dd4886c289e6ceabcba",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/consistency-invariants-polish/index.html": {
+      "before": "9ea882e9f4bb3a57d0df574c34410411ce99c23c53af540726fb286c8fe5ff87",
+      "after": "bbe424e10430c819beca1b6267bb5d35eef063e7da08b2aa9a4adbaa4716805c",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/data-model-audit/index.html": {
+      "before": "f990da7345a90a29f9213ff63431e1386c5e54b6a3dffab8c90b9d664391af33",
+      "after": "edcbc923d62c36d9eed01904267942a4f3b597efb24e3653d7dcd54ea0287ca9",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/data-model-polish/index.html": {
+      "before": "a780253db82cf746792d9202b1154b5575b5b9739296f0403a018523e7fe0e77",
+      "after": "37233c25da3c1d0781cc9bb6af772ed19023e82b72767bf04b0e8821b2ddabd0",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/data-pipeline-quality-audit/index.html": {
+      "before": "426db62b34ff7989f81ca86a086abc1974a5887135113a492310154963d26494",
+      "after": "d2d4d890934ba1d5f8fa7a31adf7ee7b873a0092583bd04d70825944740dabef",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/data-pipeline-quality-polish/index.html": {
+      "before": "3cdca4de26f9aa42dde7170c5e206951c1b84f3e09fcb79ed6deaaecf048ee50",
+      "after": "7334d9d4eb0921ff1951d4ff997a57e5ac738f996b06e429f980f85f59c6644e",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/delivery-recovery-audit/index.html": {
+      "before": "346bee989ced11f489fc4b2c3a416bcdd447bb14da79ac5ca1373afe4531d98a",
+      "after": "45c6cb1976fae483a3ef4837d5573ac265bd675383fa36a439a5466362c1f372",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/delivery-recovery-polish/index.html": {
+      "before": "1bbb90f8eadfe2721a0ab6d1ab4dfdd17749464afe9954c609477e2257a25b1d",
+      "after": "4527e95b01e2526330bbb130604daf482cacf1542a26e3678806ef1c5ae24865",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/delivery-restore-rollback-check/index.html": {
+      "before": "d8a920eb4c4d790f246585411472db95ead4c4e751cabf3ec96e2ac44b3c9573",
+      "after": "fb8e8dd6f71cf4a367ae6ea9f4063c050caa140773d66a797d809ffc95d9ae5b",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/deploy-bootstrap/index.html": {
+      "before": "74c10ce61ebfb3d5458e4571cbfe9fe551ceb436a9d9300cb8e46fc1d1cba1bc",
+      "after": "45afa2ccf5564c40ab1010f595b131d845e19a35c222ca2e80b77deb65bd21d6",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/design-gen/index.html": {
+      "before": "f7e69b20fa637dd3a89e691cb0c7fb93360b4e90b81fcf767d077d3a30a588a9",
+      "after": "352f90e27bdf25f72123e38c0dc0424be5c933180d98c6edcbd0fc160133a5c8",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/design-system-audit/index.html": {
+      "before": "df81c924bba93b8c8bd726d2cb5ceb14c218d0649efcb019c202a1236f0d514d",
+      "after": "9146e522f0d2e8a7847a657c13a813ccbab449834631cfcf8aed291a2a827d70",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/design-system-polish/index.html": {
+      "before": "995647faa882a205a47314bbbd2f3732ed9dd541a9a00f4eb73f509218d7263e",
+      "after": "1cf9a4ccf549684b7bf22c1ebac01458e3b439a4661f7ac06bb28b12530c5687",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/desktop-app-audit/index.html": {
+      "before": "3c8bf4e2dec2e7201fbf075b8fd0270b12fb9af3f610ad99a41339ce92473edf",
+      "after": "52dbc65fd30bb1206241ff6f71a7066d90a5b617d2b12c63c121403576b47148",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/desktop-app-polish/index.html": {
+      "before": "d02cac854b231e26b93db9852db826522ac9fa48284441f9c5018e624adcc3f1",
+      "after": "084b7092b576b645c33e03d88f7e96cd2ff3aeaf82793f746212b97b66f65934",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/documentation-sync-audit/index.html": {
+      "before": "7a06592ac4272fa607d8fd2e49fc9a5d8ff0a8a34df8ee5bc9a71448df178c4f",
+      "after": "9626ee516d878789401dd5cdb804bc5de6d3c369cff8056c981a6291b7827b5f",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/documentation-sync-polish/index.html": {
+      "before": "b0a023342d8b74d335fe3008f451a0fc573c3db66a611fbf579a6da94ccc9962",
+      "after": "368bd8da1f824ecaacb8f22b7da1d02f967bd443d02e677af3340d438583cef6",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/domain-data-map/index.html": {
+      "before": "f35c9b3039470818958bb73ddab8259dcbe836a27d624948e1db12e30263bea4",
+      "after": "364b1fa024acbfd12e6c0b4aa9172dfd14eea4288a0e7de1c31ee8da761d16b0",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/evidence-normalization/index.html": {
+      "before": "4705fa497fc1ee17d8be2785ca2c30565b5a891024005ef641aed97b098cc15e",
+      "after": "62b76cb116a159204210b7a55f70b8d50c276537c004cb8104d0edb56682de98",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/evolution-improvement/index.html": {
+      "before": "49bbd5b4d94e9c92e22cfd788d89653759860a835fbec200d330c868fcf08690",
+      "after": "913fd26770dd88cc0f81bd1e143440baed3f161c9d37de382816c4898b9e2be5",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/experiment-design-audit/index.html": {
+      "before": "33075903a9affb44dd1b4334333df9f2950b58a9e4c0b2a6db7d82f5ef130bcc",
+      "after": "6e7321714db53e3e9bbdfbf252824ffd1426501dfec123e7fcfacd57b9ea94a3",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/experiment-design-polish/index.html": {
+      "before": "73653cd739e5414d630757cbcb6c633752bd556c3e0d0e4a6e50b96bf3baae62",
+      "after": "b3b89e77b7fa172abb10e6abd3f02a02b5b9f4a2276f0ce027941f9678310048",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/feature-flag-exposure-rollback-check/index.html": {
+      "before": "c92c8c7f1ffa44bfb7be65b685a798139d8f52d9a6689ba90c61cc1fee5c87b2",
+      "after": "b813ee6e0fb22dc38077a116bfc2c033e2d72e22a3525b4aff67413ae749683a",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/feature-flags-rollout-audit/index.html": {
+      "before": "c39d6acf55ced3e16984029e84b8f478645b650e844bf4ae99dea1911bc061e5",
+      "after": "a83632dee32d80c8d59e0afd7d52028545a1e82f1abb10b606483664bcedf5bb",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/feature-flags-rollout-polish/index.html": {
+      "before": "9ee72b73aa18cf33e6742cbfece7a91b89e0cff2a5cb83637ef42d939be06215",
+      "after": "2521faa46f4e97ac35f0fc005f050e616f24082ce41b1c7d816125197263d9f0",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/form-data-ui-audit/index.html": {
+      "before": "d40054610d380e27ddb63e70b84a289af2b6dc988981bd72741bb209de608c85",
+      "after": "1bf59a0f0e8dbb416313c15c7cd31b958035a731974f3c1e89dcdf8290f375d0",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/form-data-ui-polish/index.html": {
+      "before": "39aa0ae27b2f3aba76b9e9ddf0bc8c66dd34ce9837c20002fab23f0a8823a67f",
+      "after": "b973e5dfac17a1ecfa5ee2883ca7eebe53beaeb66b45144a0f7d0946c0fdd801",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/go-rust-concurrency-shutdown-check/index.html": {
+      "before": "6f49811fee7e9329c356cfe2c1892350b98865ac1fea891c0acdf7ace04f4a97",
+      "after": "d2ea1ee702a706aadab475ea848bb9bb56bec948ff273713b1f9b1bd6c773cf4",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/go-rust-microservices-audit/index.html": {
+      "before": "38e579f483ef99449faea5a02979f43f35c3a58601e7f12f3efd27511cb9e9de",
+      "after": "f9e058067abf0e6876a65c75dde9815c329ac4b536e94f365139c841becdefd3",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/go-rust-microservices-polish/index.html": {
+      "before": "ccf948e37021935bd78faf76e7777693b44fc069004a1d23c1642ec428cc19a1",
+      "after": "e2ab2f7344040c010ab5c5973357e35aae61c5dc819f52ab7a1da56b9d17685d",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/idempotency-concurrency-audit/index.html": {
+      "before": "c7e3bdba1bf624bbcf9d92ec913716a8fcac7e50c65201a5b02478fe152a854a",
+      "after": "6156848c86da6ac3d5ecdad88f1dbc043df8b6380522c8f9aff31f68b2fdc165",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/idempotency-concurrency-polish/index.html": {
+      "before": "dd3a871e08e396eee8c9c1f44c448f8a8422e5dfd81b1990429685eca8787504",
+      "after": "08f63d0b88fbabc3fdae67538f5bb5719af5cb5799f396197b3ce806b08b95ea",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/incident-recovery-check/index.html": {
+      "before": "43b097aaf031728ddaa72f5654ca8179175e2f7b2a62be982469f7421f97bbd3",
+      "after": "99ca823742c3b53b5ced9b7e55c5d04c01e425f9c6cd5f2307e47b2b58e07f18",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/incident-remediation-polish/index.html": {
+      "before": "0f71f3d55ab29668998658e34bc91f0c7c79bd6eebf3615608163955c7f13343",
+      "after": "796247bde1df9880bf8d94c164da8acbaf7e3cceb00f3824667aebbddad9d5a6",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/incident-triage-audit/index.html": {
+      "before": "3fcc969acd4b0aed1cabaf630e79b33e1970f10bd81d331fa4a9e5e6f6487d2f",
+      "after": "2aed909c888ce8d5ea4efcd337c3e454f68c41784e6375d87cf58ee686fb2b46",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/index.html": {
+      "before": "6565508bfc9230f1f0d5b09a8024a3637b914ea9c518db5f8fd304699fa70e3c",
+      "after": "1fbe3b6967f9161acb3e5d3b0c8caa4799d92b85a04769d25051e64b403a893e",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/infra-ops-audit/index.html": {
+      "before": "5b4a8aa33a569dd0783e7b14a26452d5afe911c5a8f78d7aac721e46b097e921",
+      "after": "e8cec768f62429e0a161012bc84de890b4094000613ba220a048d3042fe4798f",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/infra-ops-polish/index.html": {
+      "before": "cb7b194350033581705c3488b881bb8395ea1d51901a6b7549da7a2c60dc97ae",
+      "after": "1fabc58c202668bd3ec2f1bd0a8a0b244cecda826f56606a1967794bce40845b",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/instant-architecture-probe/index.html": {
+      "before": "1374ae1e2bbb3c6792221e4a2fcbf69877d09fa2f90e4db4d914ed066f135fe6",
+      "after": "463edb8d8075446ec59388805ef10b7cf5483978d0fcfdf837d227ef6a35cd40",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/instant-backend-probe/index.html": {
+      "before": "2c467af862fdc6fb94dbe1c17672f72f7db718b5842dc58064a70a54df0a117d",
+      "after": "b6a03f4061dafb8dbf797a64e730c683f90b14be33ae51ee7fff90f2e6ce4d1d",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/instant-bug-fix-polish/index.html": {
+      "before": "f869b2b0869895e6d707a0a85cef4768738f7783370a5d2765e00cd35ecf6383",
+      "after": "83c2bbb8cb62347f33aac185d73395664fa8481a3f8f7267f784b4f5a386545e",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/instant-frontend-probe/index.html": {
+      "before": "4119094875a914f59de0ead3dc6d86c928c53e812041874f652f20a31f3879b5",
+      "after": "03a58636053990e7ee5c6d89e84dd7aa18114112ad7ddb9b201c4a9048e73061",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/instant-ui-ux-visual-probe/index.html": {
+      "before": "c04143fc2bd1e93c1b777941c5fa9a88459e60607ced3639029c9dccd90272ea",
+      "after": "4ae88127e8ebf675fefe99958e582a9b5d56ff430b062dde424428c8b80cddc2",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/integration-map/index.html": {
+      "before": "993e68101ba35a60eb8e3166aa2c4df18cb5d77bd00c31fab1cf4c8dbab87e61",
+      "after": "c8f5eed1b075abec78927df5f96137e821f0d2f48cbf3070c35b4df732af564f",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/iteration-closure/index.html": {
+      "before": "a17c8347ba77c0ef303904addd8f2c88969c6ca136bd11f32b909abd5e480067",
+      "after": "ae2cf3a662538d62d7a6bec81906003b617eb0590170ad93e44577c28ca71d81",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/kafka-redpanda-audit/index.html": {
+      "before": "c77303ff75ef309453aa746418a21a0fd0f6ac9c00a2fb666ccf0984b3e36d6b",
+      "after": "c5a99565443cdb658bf78105c31674f6917e33bc91ce59de5e03522f178dd92a",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/kafka-redpanda-polish/index.html": {
+      "before": "15c0fba6d75ed927eec62c3c0a3399dc8bc4ddd80ff9e4b7af0c62e575f6d8a9",
+      "after": "52f4254dc5882508bf2ae6d622ab0df954004d9c6c93adf2ed3b5855fbe1b49a",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/kafka-redpanda-rebalance-failure-check/index.html": {
+      "before": "6d851c8331d71e26978cc5262a7c75f7e84e15bbd99e76024ff764835328f816",
+      "after": "b4ed119325d77eb2fb0363a5b09a0ed560387cd3f95bb1a186f83c488002b69e",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/kubernetes-platform-audit/index.html": {
+      "before": "9176d6de9b3648e555619106ff84ff1c7d28da61188d2fb8f54386300a3a283a",
+      "after": "f9b838bb57db0026a0c1b80ccd43da49e45bf9e6f23e1207e99157dbf2cb5c90",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/kubernetes-platform-polish/index.html": {
+      "before": "2c9cbc79a7e55b4381e98fa5305ba32912dc33a58c8ca341bc4012b746c5e6d8",
+      "after": "6b6f6d4b10fcc9745f354090c6f6a7992ce680eba71692d9e44bc6b9eeb33c90",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/kubernetes-rollout-failure-check/index.html": {
+      "before": "9bef82608fd75d2ca482be1414c3d5d2b4f13e1072ddd13375bef4da9812376c",
+      "after": "7921e30efcc0be38b3e0a88c6ad11c14906a609708d73776cfb2140eaecee253",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/llm-agent-tools-audit/index.html": {
+      "before": "f0577f8ee00f89e78d07603c2e7141bea8a1ba250c736b900fc137c61d78a70e",
+      "after": "bcad088fd5eef2f86ad22daf8cc9a216aac9284b11ed1eab5bf300f67f43381e",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/llm-agent-tools-polish/index.html": {
+      "before": "dd503db79a4aab35574faeba012bee56f641ac14d08ec1b6f11951ebc215a54f",
+      "after": "097b8302a2491b77679d776718e4a369137f4ca9199ff2fd8897a1519992c6b6",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/local-client-runtime-security-check/index.html": {
+      "before": "fcbbbff226eba7fa8aac472795bf611cd1c3bcf8da79e5e12be4287ffa37aded",
+      "after": "73735ac54f60a6920125e6a11e1e0822b161548dbb23d727ae1fdd71d620d8b1",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/localization-audit/index.html": {
+      "before": "bdb5dc71a1b2d6456528c7ed57e9e0081e36ba2e3dd889dad4728a58b937c31d",
+      "after": "5750282dc21780c5cc2697418a4a20f7c55705d7cb8e81577ba83c43bcf375bc",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/localization-polish/index.html": {
+      "before": "41b43e69ca606df44e52ce0b7501e25ceea099b9dff54942255c55903e12203c",
+      "after": "d498a38e94cb6a42fb96c495b32c6a91f027ba281b42f2d3b7ed2e9a754398f5",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/map-refresh-polish/index.html": {
+      "before": "1d7fcf11108bb3dea4a2fc7421a129836b187374a943058528fe907def1e6902",
+      "after": "6c2c38fceb0cf82def03fa4e30f51e90203f9ddbccf2b0ec66d7993bf9849621",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/map-staleness-check/index.html": {
+      "before": "c90f693aa0fa8f13473451fc3b21f44c7b5665ac5ea38a51a2ff40d0bd8c5464",
+      "after": "5834fba1432e75524d192660048a150c2b42de7ff056f5c98ef46f9d8c2e2888",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/map-synthesis/index.html": {
+      "before": "14f5224f734a184bf4979bb128a2e62203f7125036545e81baad89ff14eb6a91",
+      "after": "41106fbadc1c68f54c6e364b0b9e69837f936ba10f76e668ed1c5117009ffc16",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/mcp-protocol-auth-check/index.html": {
+      "before": "f99b4f537318d1bb91976ba4aa7a39ddd2d993f930c7d90732102cfc769fae45",
+      "after": "399b142409e40945e50014130938e1c82e9b6b486721ea8f5f2e3fdfb335acfa",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/mcp-server-audit/index.html": {
+      "before": "548518836bab6ffe409690ace2daa0b8bb3816c38007485bda604cde5613e156",
+      "after": "6b5d1c48a7f4f935124ed56f4adb1c1ab5f989b5c4dc2eef2d77b2f8b3e5956d",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/mcp-server-polish/index.html": {
+      "before": "75de1406a7bc8d1c5636aaa1159628b2a86884688b87d13dcf32906aa3175b7f",
+      "after": "4b696aa5df3d515bd0bf46f0cc85971dcce93eeadad6c01876a5195958099d84",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/migration-refactor-plan/index.html": {
+      "before": "ac56474215dec1f5cb89040f53070142eabf56f559194dcb5c358363734e2cc2",
+      "after": "ea4e157ff19df495e42009c9b5a1bcd9dfb2f4c21367859d550c99d6553bb04f",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/ml-pipeline-audit/index.html": {
+      "before": "639e325586a33a4265ba209ee3082710a843794e6703de2796ea2ee6febdbcd0",
+      "after": "4876577ef3d623d484f5324bff480d8cf0db7ae10c597a772cf033ce5d682502",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/ml-pipeline-polish/index.html": {
+      "before": "c3788583d1c841bb13a892a585ac00bec4d946fb53f32984919e3e4b3b55eed0",
+      "after": "cbd6287ba5ca26a3022536a7c57a3c1ddb7236427d22775299708316804c1251",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/mobile-app-audit/index.html": {
+      "before": "e25065ea983bd62b132274e86bf99a4b06f7458624b0dd56965a7071007e6776",
+      "after": "ee4d80eb5cd1e916ae13e92141950845c3e594bfb7e683556701b6a224d58399",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/mobile-app-polish/index.html": {
+      "before": "36b9b091b6e271214cf7d58036de2542a1a70f1aae8d4b4b05c807dda63cbfb2",
+      "after": "ea3d24d3fe5cf0849240a1b5359779c1e5dc0096a0350a89453538d5736afaad",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/mobile-release-offline-check/index.html": {
+      "before": "0afe1ffa825ae1882c99751a0d4e4419136071e9ca8dfb11de261701a8494587",
+      "after": "f7a12a45fd370cf22c87bb10e273dfb70fd1a7346c041506899ff3da544018e4",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/model-serving-monitoring-audit/index.html": {
+      "before": "d7364d658d270c693cd7462c3b122883523adf66655130a0f93ec557132fefbc",
+      "after": "aaf7d77568e70709eab191bf481adc76a17caf50a25fac65f85beb0bcb18d2c3",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/model-serving-monitoring-polish/index.html": {
+      "before": "d847119faa7fbe5f3301e753b03d7b89a7b5d5313abecf6e2f8e32655fbb677f",
+      "after": "98fe8bd263f8d71dc90560b14e3e8c1eee63e809fc48e370719a59e36c81cfc0",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/multi-tenant-isolation-audit/index.html": {
+      "before": "52c0d5324472fe93d98e4226ed516a07f4619658312d1727479025c02924d692",
+      "after": "c11d8a86b9d0ecc52354ba99bfcb700697c3d59e05a2e71cf8f8c4fe66b32aba",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/multi-tenant-isolation-polish/index.html": {
+      "before": "1c8cdde7754c2690aff3d6d282ed49ef4da7148208b2227d13ff2c606b1d6518",
+      "after": "a532cd04545c8951876bd93f3085c767cf34c2b278270ecac13b2b334a7c7806",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/network-integration-failure-check/index.html": {
+      "before": "c53c635cd3d3c67433733c22334d5777ce2d8a0fb155a9cd9f0b1c292c2cda23",
+      "after": "49cd02ea84d43b364c87a39d7801dbd8b8515f2c8f1e527efad555f4b904e25d",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/nosql-consistency-hot-partition-check/index.html": {
+      "before": "cede9b5ab726c121af9325c393192a4ce612c1d56b5e8f57be3f40aa06cabc2f",
+      "after": "071ec074c44fc3a7d34d3de50b03e80de86ce564484658dc9a4e63be10d68876",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/nosql-databases-audit/index.html": {
+      "before": "f5f00ea073a575624083f747352792c3e1329d22cf7db6490040fbf86d266436",
+      "after": "1d98a53d89604e2556bdb2f59df049d21485aa142316a321ee8bbde7ba89e09c",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/nosql-databases-polish/index.html": {
+      "before": "c4e3eb87ec8225ef7a721d51e9dc495ebd38856d5749cac01028ccaa83d95a8b",
+      "after": "e7f116efc26efd03601d3c614a1eedb37135b56102f7e7098e3ec3654827457b",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/notebook-productionization-audit/index.html": {
+      "before": "75ea9a607b05034724e386125aa833970a0dccaa450b71c278b8b9df4319c114",
+      "after": "f8ca907aac54dc17f4c11b3728b23c20f9b30f1ae83cf9d8a1089ef863e1980f",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/notebook-productionization-polish/index.html": {
+      "before": "036d362bf2cace3c6f83618b8a3df2395e45e9ec45ba9db746493bbc823c20a3",
+      "after": "e8c8845e89e14d57adbd37082ef0f3ffffd353286cd39bfc95ec72905a008f8e",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/notification-content-audit/index.html": {
+      "before": "5599a836970000a09a8315d771ed94dd4e513a590ff7e4c4bf4ff8760da41979",
+      "after": "f9161526ef0fd69119aab8eafa4a0905d684e29faae1a0e7b7e92fcd16f39a02",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/notification-content-polish/index.html": {
+      "before": "3af769127a9baa0fd5584c93fef2ae1588ebf8bfaffe27a52b70463b94c18293",
+      "after": "a3ec35b23cba106469246340f0c6609b01983096290c61678d29d77e3877ea0a",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/notification-delivery-audit/index.html": {
+      "before": "23e9dc3b6f646850d627af37127e09f08477a83ad384ce14da53b4f2115c0708",
+      "after": "31d7aae5a2871e6dbd4669c3fb6cc6adaa2931839c94bbca0a85bc6126f01d75",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/notification-delivery-polish/index.html": {
+      "before": "ff376e989a891b3a56961c56a2cca17e9ceab2554b61dbdb7f13b3cd3fb7f579",
+      "after": "f3e26754c8a759a3a129e1dd6de913fd7f59de37d1ba32de77256f90ffe166de",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/notification-failure-idempotency-check/index.html": {
+      "before": "d913f0182098757daf5c380d468e33e602157980f7d3aa50be90c3c08de143f3",
+      "after": "b693d4001745f4447a3c885e6e630d9d1fe39970ed8c7ad5640c13e2ada587e5",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/oauth-oidc-session-check/index.html": {
+      "before": "f5e90a4fc73514e2dd93d316b2cbe64445b348f9e45cc2f95e3aaea370929fdc",
+      "after": "e9a6f489faa5ce512927032a792314280cb482db846973dc3023dd9ff2e0c916",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/object-storage-audit/index.html": {
+      "before": "c88aba43664cba9027e999251acfe92e4f24992dd388ae39e9623d730db5531a",
+      "after": "c764a38036b2e7b934443f00d031379cef6b3359c6fe09d07a2c7d3cb79077d3",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/object-storage-integrity-recovery-check/index.html": {
+      "before": "f48e9296554aa713b946f0f178680a900adb2dc1e2c97dcef19216157f328205",
+      "after": "820f56489c590461872137cf7e62fe0ce11fda2bd32c932646ef243ed92a9293",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/object-storage-polish/index.html": {
+      "before": "8dcd6215ed79f4eeacaaf0c7cd4dff2cdb19bd7521c3128611bdd06521837f68",
+      "after": "3b3e813e820ce827be72f817b911f5e575df69c016a134add255f88c0e2a087d",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/observability-semantics-cost-check/index.html": {
+      "before": "f6fa7cc48339535a084c87dd71a235ca418e34fd8d64ba94052089235fdaef5c",
+      "after": "53873532008acefe21b655067c7d062d792ef410f2eac4386af8f2dab0bc3cb5",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/observability-stack-audit/index.html": {
+      "before": "084e2d7a59e1d638429df3b735c72b6ff314fa780007b60eaf7edae27d119ebd",
+      "after": "a925cb41dc7c7416a878ea91e95e7b15f5396b0d95c8c94c93dbff160c7ed092",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/observability-stack-polish/index.html": {
+      "before": "839e02f217075fe6017c685e4f8b885bac5dbb9cfb72c61aa80d99a8e85519af",
+      "after": "2bb44038027b5b428c92f0b4dcd935835191cfc3ef489eb299aa857665ff7ac2",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/ocr-document-ai-audit/index.html": {
+      "before": "0b43e7b8d7e5d608f12a8be73da5d12e8c60333430cc7cd26c30791eaae98e96",
+      "after": "b8c01440d69ed856abd16f8dc5f4b4be4e1474e14afbd399c16aa62db3514d27",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/ocr-document-ai-polish/index.html": {
+      "before": "d3165b342dd83926614da1a85151354ec88847307c386c6f874f1f2fbe4bf301",
+      "after": "5310fe11b420db743163e617bceb43f56799279d0b8f7b313946ddb918d6949f",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/onboarding-activation-audit/index.html": {
+      "before": "7949cc764334a43a1d2b9620c37363aff905f5be464137fa1804bc108f00b55e",
+      "after": "173b193ad3b82de2070c337a75c1cfab9687e12e513b8b628fea310819cfe818",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/onboarding-activation-polish/index.html": {
+      "before": "8ac4beabae29885c33065916aa8b4f4e0ff9a6e0e1becdfa33737a25c9799cef",
+      "after": "304f074f462d0934296e38af6b43f90cf8bb79b6112fc79f04226769ac4a889a",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/ownership-invariant-map/index.html": {
+      "before": "a32548099554375288a68504e880268862dd79b49ad4eb5aff7ff998b0e34055",
+      "after": "e209a0cbd7507040e297a2141148bd69263af90c4fb5641a7b1ee2852a865e69",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/patch-checking/index.html": {
+      "before": "12548c5f65c3c6ee63792a7fb9abf9ba20dd7cae6367b7850d38caed172fe14a",
+      "after": "3910d37d9e7b2d09927d98cbc0bc357e798572087b21afbf56b0702111c04be5",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/payments-provider-audit/index.html": {
+      "before": "1114a952b21e386f53964075712cba9ee9ea634afd6a72fff102e2fc83de0425",
+      "after": "e6cbaa85cb65bb78946b1ed3cd479209fc44c59ca80a7192015d43ff3bbdbb6d",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/payments-provider-polish/index.html": {
+      "before": "f743a4a8f9f3adc1c155930e5a300b56c0ee0a57275a9009b3764ebb16118b8c",
+      "after": "32222b2a621a2111365d25fd4a6fe46f9c7ec1eb211964e21b47e0d1d86cb56b",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/payments-webhook-reconciliation-check/index.html": {
+      "before": "c4f26b1dc3b13a4606e26df6f09fb10eac94254ed80c7568cdbf5134c69a79b5",
+      "after": "e2e76cf7130534cba1d0baac7882cf29e7d5f1d6bb82200d7bba2a1da16d1595",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/performance-audit/index.html": {
+      "before": "df24ed48d2fcff1c23e5a3c8c6cd3e54807f99f918fc477e2a649074087a0f76",
+      "after": "1449ffed5c10f086c4be5bb6b6bf845b79a9223becc2af10c9567522e0b86d03",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/performance-budget-audit/index.html": {
+      "before": "40c090c1c032b94111216c1ea5908f99ed15200fcc29244b2d55d56b1aaf9e86",
+      "after": "a445c7d53079e9f9fbadab8aabeebd69c05d864363fc066112cf4742f2bff1ae",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/performance-budget-polish/index.html": {
+      "before": "d7ee6d64e2abe3f2d2f9b19cc6e809bfdc4ba63ab29448b9a38e1730dbd99ace",
+      "after": "e085ce83bfddf9be88747a969cfad083bd00da3ab6a45032bbd80515fc163551",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/performance-polish/index.html": {
+      "before": "836544b6a75c78440db1c83e88eef0241169ea101612f36cd0944cc8deb2b52f",
+      "after": "c3a3f06eb6d54f9b7e6d99387d0d233e821c7c3ac06dcebdcf6d1c9d4e7b1047",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/privacy-data-rights-audit/index.html": {
+      "before": "5c176b9b32e3f213e87b841639012fb7dc08ee872c3abd9d5791e7ffe3107025",
+      "after": "d07999f2350242822b43ac38d4f1483947770cd283b685e3334fc93f7d3a1514",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/privacy-data-rights-check/index.html": {
+      "before": "830899d296a9f8fc8458320d32a61030f7df9f6cd178802968505ccd21db7531",
+      "after": "13e88546933898b79829cadbffd19cc5ded32a4794f8efeb96808ae909530679",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/privacy-data-rights-polish/index.html": {
+      "before": "eff60fb8f938cd7b0bb4012638e9e04d1c959ada3b4336efc9464ecd347cd9b5",
+      "after": "acb11d5c1fef3a089c3b2602f69076ba9e8f3a4600368bc4f19655a0fc4abdc5",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/product-acceptance-check/index.html": {
+      "before": "5da1b034b111954da0680bdddf2d63bba8df4b11b7a6647822d41b1024081244",
+      "after": "8ba2e05c40defaaabcd0158f5cd62d3628ada83e119310bd21a48a8e746f406c",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/product-analytics-audit/index.html": {
+      "before": "0f3a9011ef1378be09f6921cc9a156a1e657b1e9855ef3c83580bd4c0d021956",
+      "after": "a55b4c611a8c37e93969c5199cf8f5793e30b2e72485d773bd8efea026c7a499",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/product-analytics-polish/index.html": {
+      "before": "f2d1dcba68303720d424cc58b6dee63ca9f1ae4c25bc4b7f487ba391868cf174",
+      "after": "f49339a74cb73db743f7cc7b49c60e2af90c3f174d93c91878825f4189284eb0",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/product-capability-map/index.html": {
+      "before": "6fd0fbd8c807f331d72efa97e2773849189f9fc3aa29be9a4324c99a4fdd7340",
+      "after": "f950562b93b156a81b268bfb3630c80705fd4b3c6e120a48d8bde3c4983f2c90",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/product-decision-metrics-check/index.html": {
+      "before": "e0b11936feec190b1f9a61a369e13522cdc4c660fb3be257ae792cd582249c48",
+      "after": "d50e9aeb8856cea4cc347739c35dfe1080e970fcb90b69aa5ff6341cb9b1ddc2",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/product-journey-map/index.html": {
+      "before": "29c6f8910a7c2e9a9ec86b4099dcc161b57f0b68b8ba1659f7844fa4dc77cbe5",
+      "after": "bc891cdee4cb90e8d2563e9c92ab186577a143263dca7f62c69d6f1632a6af97",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/product-landing-copy-audit/index.html": {
+      "before": "8994db9ff21fda415a499169a6516ce723bb1a23669361dab4b5e8fcd6d6b79a",
+      "after": "370ff35a8dbbd154224e13be12f8c9ebcfd1d3ae734ba3ff3c336ada3ed8ed56",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/product-landing-copy-polish/index.html": {
+      "before": "48b9cce7c2518759bb8604b922bcc31661d148576c364acce92e7e90ff951a9b",
+      "after": "2267d5db81d09969c46b35a604c088a82bd816e86e83b3e71c7839df7c8817e2",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/product-metrics-events-map/index.html": {
+      "before": "271358e48f92528097f07bacdb4d68021777fbcb583e1ba7d8e70a616753847b",
+      "after": "661c9cb8ec588942d07bef514a8028cf9419732be4bd610690e1cd3b9cc7102f",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/product-requirements-audit/index.html": {
+      "before": "60376b5d571c03f3a89ae29524ab9ce21a895cb790ccab20ca48b1d0786449ca",
+      "after": "0e102249e952ade4b9a2b9266740427f3c8f21799879e50bcc4a634e25a60779",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/product-requirements-map/index.html": {
+      "before": "bd3ad25ba3f6ed9c4141fd06161c4867bb29afbec05454254d7d563275d1cd40",
+      "after": "8d4ccd8292e525624834e299fbf7e89a625ead7d5461a4feaaf45a48e10c7b39",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/product-requirements-polish/index.html": {
+      "before": "04e4e1c840f4be71f4750f65cb8370467c1f49f2c63c506882a229012b8433ac",
+      "after": "c71ce8bd3d4a6eb70d50f04d2db1856c5cc98b94f6ed44f5769108f86ab311a7",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/product-ui-audit/index.html": {
+      "before": "b4c8670babb88ac91ea3021640f762828e22f41f9367e523d4800f7922c9c732",
+      "after": "d1048bcfeaf59112d24980854f9de5fafab5199d06f23e98b44e41e3ade136b9",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/product-ui-polish/index.html": {
+      "before": "bbb0ab93c7f0dac703942a96d0bf554523b4886de7b292ecda0928ad7f51e506",
+      "after": "6e6901e10f277eb1415d16f55fd8fc9b15791c2e66493395806c3ac8e7c5dbc3",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/project-atlas-map/index.html": {
+      "before": "e57125370b6f68f0252438ed6e2468c382e7bc5e8c95941a5ff4af34fe04e67b",
+      "after": "9eb765decd84c7bd73d621aa91a212160bdb5ede776d9ae228dbf90df6ba48c1",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/prompt-skill-sync-audit/index.html": {
+      "before": "af7119d2566cf26009add5a755db8e5ca1fcee77bb479d2b48011dac2133b409",
+      "after": "e1749b82f17ceda84898c4bfbd2bdb06e85209d49709540235be2e92e6684f91",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/prompt-skill-sync-polish/index.html": {
+      "before": "54be1a4e5eb837bd4b960ecd2c25c92a7132ead5c5fba5ea8372c7c6e8974916",
+      "after": "d2128519c45afae530ade20624e37b79b77433abe8adc5fa9b779688c2a0f300",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/rabbitmq-audit/index.html": {
+      "before": "cc81c273b85e223c931b3b004d3c22585c446e4cf4d5af739dc86a812f1f4982",
+      "after": "20e45cb66fcacc3f68393b3d30edf518250dc3584453b3eaa0a8eb3ca4761843",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/rabbitmq-polish/index.html": {
+      "before": "9b4c5c10154403abbcad5aa1fe77dcbf5dd2b9eae38094493ad9bb4aed2fc125",
+      "after": "a1de1793f3e10629766b8370a05b0c6541e2e61f1d056368f89dee846f41368e",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/rabbitmq-redelivery-recovery-check/index.html": {
+      "before": "74ec0e1ddbedaf17c6214d9a90c989dbaf6d5021af5234674f6f72a9e5e4eb3d",
+      "after": "0880fad44dfb5275a3b0c9ff6848be8b47acbc46ded8c6f3523109ae845d2481",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/rag-audit/index.html": {
+      "before": "5f58e00800065b51342668f209859d113e4fa811567cf18255273987e2e888a7",
+      "after": "cb292f0b17b7a2715bb52846737a664fbed39f4a01ba17fd7e8c118e83f93cce",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/rag-polish/index.html": {
+      "before": "08b258f2e6742455a5c4b598d21ea449e383fbfb9c7e77ec3576e2def972c23e",
+      "after": "c7f7d61f64cd8555c0aa26e6f8ca05b64414bde1f054e19e6fd7668eb627ed44",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/rbac-abac-matrix-check/index.html": {
+      "before": "4d0757715acd26299f789c307c1ede9acf08e2e28482de7d31da85c8b27e91e8",
+      "after": "930102d6fc753f1155c71d7b34ee23b2a22cb2e92193ab53ebeba46d44125a5c",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/rbac-abac-policy-audit/index.html": {
+      "before": "7fd8e23085424e379ead5ffc99f9ae4adc8ea2362b6aaf8ac2d35248807647ce",
+      "after": "732993e40e9e8d53cd6c493103c2bd9d4da2554829123602da243623ac68a53f",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/rbac-abac-policy-map/index.html": {
+      "before": "095b16284db73801228aa83ae871d8325c89e900aa206dfc1a119b78d0147f0d",
+      "after": "9235a83464d518046b0c83555676e8b78f54d9a42e035f0ba57f53641bc9ca60",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/rbac-abac-policy-polish/index.html": {
+      "before": "f8ec822691b1454d9721db6ad6b657c67328854e5f1fec3c632c559a7a5e5cd5",
+      "after": "058cbc337f2ac3ce7fa2d226028f0a47123e55c741ce42897c199675163bea53",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/readme-gen/index.html": {
+      "before": "912f6d21543bb33acb78f59ae7e7f93b9b0747a9108851f41283a687090d3222",
+      "after": "19fbe774c3bf8112834249bf5fe0ef2215e82fecf56784d2725696c616973d96",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/realtime-frontend-audit/index.html": {
+      "before": "e6923bc79b050e8398a0782ef3ed3a49ca52b326ff86bccd1ffdfaa4fbea0693",
+      "after": "1ff3d2b9214bcbf2f45db907e55e70d0046567c5018b3d3f8cdbd1fbc9a27f52",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/realtime-frontend-polish/index.html": {
+      "before": "2e4aaf23b472537f5f21ef6f093514c20d8732bec7e265f0ad6c76af7de639a6",
+      "after": "68b8ec184957c2e6a434122eee76854ed88c41df2dfdf4cc00b965a1809aa707",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/realtime-interface-profiling-recovery-check/index.html": {
+      "before": "3488d86c706f057ee3b17a72bb70e4546afee7625a16d4b3a38864712466120e",
+      "after": "3792c5e283e956eaa08cb3307f7d6bfe811f84097b59b72ce6446ddbeffe469a",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/redis-job-queues-audit/index.html": {
+      "before": "6d888f698051c5aa5aee588a6c508ae746dfd25e4311a1a52d45256512ab6421",
+      "after": "e66815dba317b7a4cf5bef1c4d0581bd6330caf05e4d0296dce1d6df6d04a846",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/redis-job-queues-polish/index.html": {
+      "before": "0caec33ef7476f29c29795fca5b9b28b5e74f25620f3f0959fb87afca0bb6206",
+      "after": "146aaf9b6e4fea19c759fe0b87b87c44ace151662ec3277df02efd22b90bb11f",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/redis-queue-load-recovery-check/index.html": {
+      "before": "661a161eb98b46e670409dcf65b2b86a9fb326a3ac5794ade3593ffe369769a8",
+      "after": "d33764b48fe9acf2565236d4bbbef9655eef726156342f8b6198231909b6329c",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/refactor-boundary-audit/index.html": {
+      "before": "338092f25a8543a7591193d0e0b1fe49221bc39b022c71d36f439536ab2a6188",
+      "after": "88594f77767ceb334e434cb6fd6e95ca0b9d486c302183acc0ddd69df241ba6c",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/refactor-boundary-polish/index.html": {
+      "before": "72db6f38e4aa9eba75b6cfc8cf5ae8556c7989816b5deac413b22ec3f89a2d7b",
+      "after": "a77b846d148126909b57c7d1041bb8fab2a060384683fedeb164b6f083b386d3",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/release-artifact-trust-check/index.html": {
+      "before": "dbb46919605d091304e711a00d1608052ce70dba5d9d4b7f7f56b341e841edb4",
+      "after": "cff777a7df8818a23439d527fa2be2e99546ace88e92f020db413e490ebfa050",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/release-readiness-audit/index.html": {
+      "before": "f8f5458d7ccbca786fa9ebdb14243496ca98f418c05bc4b8d9592ed915a9cc49",
+      "after": "f33e9306b2c54530e8e156af9b5653d602ace3ccce950bf80c1c9890af6e8551",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/reliability-audit/index.html": {
+      "before": "388836356df151799fb365c1621b68a471a37bba9f3c9ca11fbbfe5eb63d1786",
+      "after": "3e1c98beb0466028eb94566e18f599c3854125689d158e8d15c4b4f1889833ca",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/reliability-polish/index.html": {
+      "before": "cf444ceff0abfa4162f787dbc6ac6c3f328714fc07b91ae2ad1c4385cfd31256",
+      "after": "bf5e53ff101b0f26f7a6ebd8fee3da3d27f43ca5ab7709083d35afdc9d65c76c",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/reverse-engineering-audit/index.html": {
+      "before": "75092837e671046e935c773651867979699ed88133ee076aefcc0da746d79ab8",
+      "after": "a58d103affb7cb6ed9c03d01d00f3259669ea75bab0faab326190c8f3c834236",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/reverse-engineering-polish/index.html": {
+      "before": "ab7b58a80e8fd559d48db62114f7f76ac7ecadb800ebc4fd9ae8131c7a45eee3",
+      "after": "9c761af91b9c1abf72781e76146791463de991c2e9a20693701807d98061a27e",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/risk-release-map/index.html": {
+      "before": "452434e9dbb275d935e3cf24162120c86d1b9a803f83d11d607d2bd6200db1b0",
+      "after": "e4ccac59576c6b3efeff86755b1d507e0389d83c1a22c7520dfcc9ad2e605294",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/runtime-flow-map/index.html": {
+      "before": "0578f560f8df24b8d7bdc5afc7d0309c6969065ffd9d1fc867b10bbdb6c0ef1c",
+      "after": "0b096c16bebe36ad55584f0e38c80a80d6d01bbc2aad10e7951388e32d60c286",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/saas-navigation-map/index.html": {
+      "before": "f5367f875604791c3aeefffb16366e546bb5ba38df14ea4c589aa2de2c3b9d9b",
+      "after": "37639daf1121c2e1e358dc51d84fcadf42dfaee4ae0599f30536034dafbccd1e",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/scoped-audit/index.html": {
+      "before": "f9dcb60c7fa889ad7a33c785d0be7073960ca39e291410ef57268de47756dd51",
+      "after": "f2992d78c66e51997c6d86f6275043f92f1798490a145039d77850dec14d1b08",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/scoped-polish/index.html": {
+      "before": "1e2c724b2025ec78220d9d26f056c13add414918bd07e10c3e787e88809b8282",
+      "after": "77ac78d5d1b343e01bc37c901ee08e265297b0464c843fadb4d033e8e6b9b3d2",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/search-index-audit/index.html": {
+      "before": "1fc539a081a82cdb62fb956e0037800c3a21808579f069a031b5e599e436b364",
+      "after": "bdd45db9f8f7c30fe26a2e175182bdbdf81c19cab0b8c0fea777ca2cda1949fd",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/search-index-polish/index.html": {
+      "before": "880563a9bbce0482865af8a06efbb4e1eccf33c6100aa294bfec1477cd69054a",
+      "after": "e51fb8772a6920501c6f982cc8ec986b82e3e2bd8bf11cfe2fd3fd7512ccea35",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/search-recall-freshness-check/index.html": {
+      "before": "a2ce9b0c0e09beb2ad92ab59b6833e07bb81ff5cb57ce0c41fa5c754068a42de",
+      "after": "a809a7900d2db5292bc7f0ecb7d1174d3fe51e476e5287581c8ff35d93b3f70d",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/security-abuse-defense-check/index.html": {
+      "before": "038433df1967286b9c3f97f765509bc131d273e12579bd5ceb94323c0aeb5c4d",
+      "after": "70f6d5823b0e831daaa537a8d30000089d60257f48d24de0b5b778e2dc7e1757",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/security-audit/index.html": {
+      "before": "0585cbe0684d99f306dd56af23a487b4ce3d0990a32fb8a09513da00139a35a9",
+      "after": "2756ee2c9209bb9776a807ee9569ba5d14abafa96c931a1d2cfecdf5828c469a",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/security-polish/index.html": {
+      "before": "504862f1f1cb0fef40a30c82a4815cbe995f844eab50ce7475229ba9e28914f1",
+      "after": "3a554038f5ea5319aaa1d836cd49931df2e69b21be3a77f5308afb3ae8283db9",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/seo-geo-audit/index.html": {
+      "before": "72e74f3a0041ff97c7318cc56a4a9c1fbb7078b79a4563e15ee3be4a10a0c9f3",
+      "after": "b344ec20cd029650fdb077b4d360fc720cedee4848375c9ad0cc72dff978ca05",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/seo-geo-polish/index.html": {
+      "before": "9e89d01a634f3c778814c59627d52a29c8f23e5acf8cb8b12380d1e80da8a69c",
+      "after": "230f99e91182375302facf5b12654898a256c33db566deb2f86c170a2ed452a8",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/serverless-invocation-check/index.html": {
+      "before": "e291091c18342509293a13e8f5b97e1dbedd44e478224696e6323d46c862ba46",
+      "after": "a52b8e503030a0b962ea4844d19236d472c722cc94e325c2d018d4e7edad5c49",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/serverless-runtime-audit/index.html": {
+      "before": "4565f894727d4ed0311f54b24c49534e749d3e6edade925500205cb5d771e367",
+      "after": "5578f8caa6ac4ccb0113175e96b1c688bffeda1692a9adc42246fa860cbd89db",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/serverless-runtime-polish/index.html": {
+      "before": "3a30b986a20a07c709b612011ac596b06402efc21c32ff1b5bf5519c05cf69f0",
+      "after": "3afa9f4597c3b2dc02ac3577cbf02e2ff182a7915f35db01ad2b1fac015797aa",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/sql-databases-audit/index.html": {
+      "before": "2fbe3af8abbef0ced40bd2186494e6cf663c616809dae708ba3f3228e6df3440",
+      "after": "224dccf6c92f6b065cedbd07ef786f80e880f46095bef3fc9f013b45470ddda4",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/sql-databases-polish/index.html": {
+      "before": "e39654a8b5b5f1861c522d8116e3d12a4328c2501ae99f01495ed415667811fe",
+      "after": "cd5fa9ad86824ea346bf1b951c7541448156f1b27cc1a7001e5bf212191a72e6",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/sql-load-lock-failover-check/index.html": {
+      "before": "87c4dda81c2f16c265e0e305810fb8db6b6229d54920e7f609263bd0a14690ef",
+      "after": "4b4dce0ec0cbc2ebb65ac4a87f4feb2fd58136ba03b0d4f7eff5668678a9b67e",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/synthesis/index.html": {
+      "before": "3ca2df203ec20feb965a0ef6b156f9a6863f78defec1ad65609e3e04787b4480",
+      "after": "47aad64dfdb86379e47dc5d8c2c198152bcff00cbd4f2f5642f8491eafa74e84",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/system-security-hardening-audit/index.html": {
+      "before": "49f53bc9535fe8e36bed55f474b1b704a6776990b8ec535d5c33b0ec2d134922",
+      "after": "340e9e965bf4c896d6a4d21e5afecab76e8c69d5b60257cfdf3e42ceb0e84bd4",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/system-security-hardening-polish/index.html": {
+      "before": "ee5b4b8d0a6dac9f6f844d50d42bda476774cb52abea61c81c2f0fac5b945c76",
+      "after": "60568a10c1be6b9e661461c2e245ac1c4db9940d79904f6cbe75a67a09828016",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/task-shaping/index.html": {
+      "before": "efca8c655172893a94dc602c6b908ce62a340407771b0c820c78d66f9ca24287",
+      "after": "846ecf056679e7f4b4156de171c5343424cb2591736cb7af786a688b3f6b2365",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/temporal-replay-versioning-check/index.html": {
+      "before": "fd6cd5a031f982483c0efd1fe7878e20f89ffd418bf126ddbc50e389d5da46d8",
+      "after": "886702f7a36302e44a37ae06fd32e14005ff804f5d98b0006510ca0890ae2a4a",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/temporal-workflows-audit/index.html": {
+      "before": "361e73af80996dea3e59bc25624652f18e4cd3c6189ab99e43ed55bc4aa6f2b9",
+      "after": "186e6cdb2a22c198945e00f85167d4631a0cd557a4ba90ecc6ccba7855b38725",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/temporal-workflows-polish/index.html": {
+      "before": "adf1933065110d08526c4cb8176e912d2369ff090d037f4ffc0674690b7f38ad",
+      "after": "1afdc855c02ec7dc5ba132b088cd6e323f074f8a7674b8f53809c86a37e39721",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/tenant-isolation-check/index.html": {
+      "before": "1b630a0ea9d063cb87a0c486bad722e4a0f2fed0c60cebd6f58c73870254608c",
+      "after": "58a22c6195ce10ac0c35ab06b813725db985a936d235b2d63a5c124420ce8cf6",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/terraform-delivery-audit/index.html": {
+      "before": "aa27eb0ce348d00fd0805e882318916da84af9bfb7d9aa6ee65fee760c9e5bc2",
+      "after": "46fc058633b9bbef70fd5e064aecb3705f33af641e7b2b70cf8d27fe10983d62",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/terraform-delivery-polish/index.html": {
+      "before": "712be9edd99c6a60f8e48512810266991b74cf1fb5fb9e1f66be425f9a5eb56b",
+      "after": "74bcb24d007dcb4fce476a1cd8a6c542829ba76c74c552dd8825a0d009c237d9",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/terraform-plan-state-check/index.html": {
+      "before": "d52fdc3788fc1b8e6212018a326b1b0684739292a93bfb1968d0f27fd90fe5c7",
+      "after": "e734475253b1598447a752021edc1a242c8b96534654db731ae94181a24c8749",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/test-coverage-audit/index.html": {
+      "before": "dcd85b07c060185a933b03f11cb1f05f4b05f7cf5f660249836197d33fc8a5ae",
+      "after": "1f907548aef72a084fddb8569e0d2d769a581d224fa997ec35fb21b128d11e25",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/test-coverage-map/index.html": {
+      "before": "7d816c68e6849368a2f5cce83eb31b5270f9f938b67e7855a1ba0fd72f1f359b",
+      "after": "7bb871fa3fd083c074e0ff94223eff49a43992b38448bb443f8c36c8a51f175f",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/test-harness-polish/index.html": {
+      "before": "23dc9217ed0aba3b214138314946fca1f245074c57dd1da248bf6263c947b481",
+      "after": "3df047176d30c919d422844a53e5bbfeb14320912376b9284a94e6a652f517f2",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/traceability-map/index.html": {
+      "before": "f8a3ad3266ab89f3cbcd677108bc9dedbc62d97c0d887280a273eacfd1b2e904",
+      "after": "8914fe2e77d601cc3475050bab04a88163fe0f4825000058ae4706eb6b83a426",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/transactional-delivery-check/index.html": {
+      "before": "caa50cd1e63042dd4969faea4aeba26a6b5dffc4d6b304f48323feb59130caca",
+      "after": "cb7b21128618ea5047a33766b9e3048c1b924dc9851f22aa3c50b8735a4f8ba3",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/ux-flow-audit/index.html": {
+      "before": "f89fe4097b8ea2b699e90811ff020f71d448a86c3c55e6bc9f2e52059e0a2c92",
+      "after": "e614758edb56bf8dd70acb193d1d7e379b619546966c36d993afb6215283a8c9",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/ux-flow-polish/index.html": {
+      "before": "8d9a954c28620c42de23bca9444f0155516e26ee8aee72563e0d7dbdc7f02fee",
+      "after": "1ae16f2dce8cd00cc91a4ba7d74c587dd205a5e4328d96a4b38a4f9e2e8da0ee",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/validation-clarification/index.html": {
+      "before": "c13979f65f08e7eab2f7e51395aaf1f6707163c59c032ba99facf3f18ee02d2b",
+      "after": "6b56ba01c610c82617cb6b2a67d620f8427c587929d74ee1ba73acb5197907c5",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/vector-databases-audit/index.html": {
+      "before": "c8a00ff210680496cd852dd7f28bef56129e35c2a84476705745fc2414699f71",
+      "after": "362b8fdddd6cefa029cc1672fa73fd958f251348dc7b9dd1ad595e1841fdc0f1",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/vector-databases-polish/index.html": {
+      "before": "5fa207587a8cde24471832a5d544e161250f6fc9649757a49da9d58538159e1c",
+      "after": "f3e30295dc037d0e6588707c855cff11aab6326708d0e416ea865954019ba48d",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/vector-recall-degradation-check/index.html": {
+      "before": "341ae43caad1a6ddb61710500fb781f5b0419d60d4dd7165f5f546420a3ca4fe",
+      "after": "407cd4c9f06ff99c799de5595a05840677892867f470b09b09a2c21c2da22540",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/visual-regression-check/index.html": {
+      "before": "2c5d8122351436c433fcef3a129bc11449e8c22b5ffbf13a4b2a75eae9eb1484",
+      "after": "9442eb6923d92ed77efd23495b3b89bc1dd42ed0b87ff80fc7eca9f2afa1fb00",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/web-boundary-check/index.html": {
+      "before": "468dd3a3b841ccafcd97a82e40cc720937b2a65d4ce4dd9b5623009a3cc48939",
+      "after": "24380aa4a2eec5dcb82c673dc0ab7c7f0b2467f355ff2b8375981e6ec620b138",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/web-rendering-audit/index.html": {
+      "before": "9516dbeb30e26940fa4a0582b89b88b524a6d3777369c99d143fd2e002ba27b7",
+      "after": "0dc7bf6c84749423c97d361ed6ec148c8073e9afe621b0e3704a4fac376aef22",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/web-rendering-polish/index.html": {
+      "before": "713184e43480fe208007498d94fec6eec12e370ddb18ac2d04d61442675bf628",
+      "after": "3f0a6250ead8ee4ea42bcb48c0dce29acd93cd3600804805222edfa04d3d2481",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/workflows/workstream-decomposition/index.html": {
+      "before": "4710eae9a74d5389557df797ccdfe6a01e66f17de3d129ee68801550a67d92fa",
+      "after": "eb087c62810e58438156f44a1751c27367d6825249736ca47346421d7d8f1734",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/zh-CN/index.html": {
+      "before": "647823350a196b539d0c38cbe0f4d69b9b33caa347af862125d9b1a3027368cc",
+      "after": "6b0b5375bbb1a17a4deafdc0a7a4b6a5a2c2533fe387911e1296f4ce61d1c2bc",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/zh-CN/privacy.html": {
+      "before": "d3ca618f207c7648459a6e15f617adf077a2abd69bb6b7800e61ab44faa2bf5f",
+      "after": "6d79508c0f67d568eee92b1c3e61a63816611b21218387095dc2afb1643e0886",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/zh-CN/terms.html": {
+      "before": "11e9712ec2673342ba8dc6b09e2a8874412414d6b9f629e982cc3726cc8bbc67",
+      "after": "ae867ad665440b4f123c5e140797c213ee40af235c829bd174cc03af48b504e2",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "docs/zh-CN/workflows/index.html": {
+      "before": "5b519ea38966cddec9ee4d2c0c9fb965e0525f17333b78b7998b26cdbccb3216",
+      "after": "83c7074a7a04b9d2186d4460af7d1b91430dbaf24f06be10745c0f1a957f386e",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "mcp/site/app/demo.tsx": {
+      "before": "12eefda8a2768637e23709bdb9e9d545130262be2ecbc27b4c5b3b048c2b0a30",
+      "after": "89f78d583ae94e7734f19d582cd0e562ef7bf4769d5ef6ba07a8d65a13a2b673",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "mcp/site/app/globals.css": {
+      "before": "098bb1029796f9c389375fe045e49d732bb2a336ac3b0b8e728b7ba368d37d49",
+      "after": "54992708c3a26a9a098ce76b5ca64020772609162b24effb455f266ec2d86a3a",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "mcp/site/app/page.tsx": {
+      "before": "91a037a8cae9a45c9ce0a586a9efd94ce8b0d85675b0b1cf47fb7693dae4da02",
+      "after": "2e9bc9f527ba652cccf734a36bf8fbec582b455b2ffe4ab481c650072d2d6652",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "scripts/build_site.py": {
+      "before": "b7466ecfcea923f63c8388dd3185b5049b91422914514dcdc790656223f2dc1d",
+      "after": "0a19e6a65c8e64e400090bac4d41c517480c3888d98a9805ef3628aeb2e2107e",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "site/README.md": {
+      "before": "6a0ce9e8868dbceb246a240aeace3129c6520ff8058a4b10357fff2355f5f525",
+      "after": "18678a510ded42d7b302148b6c0521617ca7cc6a4ea6e58fa138c5c779c5b79e",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "site/content.json": {
+      "before": "2c22fa88afd828db47cd98a22f6bafde505533e628ef24cce612a6bbb4c46d6e",
+      "after": "d032b09b9aefe98a62a0d5e76cb86f12c18241607ff5606dd1fffabce1b131c1",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "site/site.css": {
+      "before": "d7dedb1a74373195a90e0da8960d97ad1cce2d8fdc494e902dc415dee63ce482",
+      "after": "a892410d48c907b78b80b26a1c99858a5c4ec760850e9cd473701eed88d90f32",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "site/site.js": {
+      "before": "5600da7a726f2c8567f54cc6dbc68fb1a5f71d1b597d5523e2ad34a9bbaedd81",
+      "after": "5658a48f26a75ec95c29a9c0c0aa8aad46e3c4ef0fbab73110d511c0677d22e6",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "site/social-card.png": {
+      "before": "2ea8c4545bb9db58b9abca794eca099babdd10bf4c2db9ee85aa8ea2d3a1f70d",
+      "after": "08923c0fb527f7c5ce26700c4704e210fdc895ebcfa1579bc990864c5fb225d0",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "site/social-card.svg": {
+      "before": "d915818891b05e785fd717a50872216f5c9340835c4a84a4166eaaf8d5a7a4ce",
+      "after": "0a29ca8d918e2aa03793952bdceffe1eb16a487ce7ca2f457d93ce8e5526fd1b",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "tests/test_evaluations.py": {
+      "before": "74d046a88705a4ef9682e5ef9a602267f0e5198844bd5630e9fdb46b7129c975",
+      "after": "ceeebf5ae91617d7dcd8686c00d7cfb256919a52b7b771e78cedda0bbfd85d38",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    "tests/test_site.py": {
+      "before": "bd4c609b74f1464b9a1193f9641c64fab7d3f3187a1ec81c3640c856c006746b",
+      "after": "b6021939617474999ff181e731ded1ced370a3135384d7dfc13af081a0d04101",
+      "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    }
+  },
+  "new_files": {
+    "docs/assets/site.5658a48f26a7.js": "5658a48f26a75ec95c29a9c0c0aa8aad46e3c4ef0fbab73110d511c0677d22e6",
+    "docs/assets/site.59f594085a8e.js": "59f594085a8e8bd12aa0a24fd404552ebb2351e855ab5e9363adb463ed2d755b",
+    "docs/assets/site.a892410d48c9.css": "a892410d48c907b78b80b26a1c99858a5c4ec760850e9cd473701eed88d90f32",
+    "docs/assets/site.bb082574fe4c.css": "bb082574fe4c8dae8a3b2d6d755eb48cc35ce95ba404533d843b22b9cef36822",
+    "docs/assets/site.d41295db6883.css": "d41295db68830ed009d91a42b0f11fb620f262349063bca353e2e543d9c3a6ff",
+    "mcp/site/app/copy.ts": "4d404fc91e38818dd62299aabeab141c5be8361e9fe1ece4507c6d7aa5282597"
+  },
+  "checks": [
+    {
+      "id": "released-source-site",
+      "observed": "257 indexable pages were built from baseline 8870ddb plus website-only source; all 297 released instruction hashes were preserved.",
+      "limits": "The ongoing 1.6.0 skill work is excluded from this site-only release."
+    },
+    {
+      "id": "layout-and-languages",
+      "observed": "12 website tests, 8 shared search tests, console TypeScript and production build pass. Browser checks covered four languages at 320/390/768/1280 widths, filter intersection, URL/host prompts and language keyboard controls.",
+      "limits": "No general accessibility certification or indexing/ranking claim."
+    },
+    {
+      "id": "mcp-console-contract",
+      "observed": "Search/retrieval, localized feedback and expected invalid-ID rejection passed against the compiled Worker; API routes and instruction snapshot were unchanged.",
+      "limits": "Does not claim changed tool schemas or new domain workflows are deployed."
+    }
+  ]
+}

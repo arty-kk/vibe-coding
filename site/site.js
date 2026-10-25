@@ -32,6 +32,21 @@
     url.searchParams.delete('lang'); location.replace(url.href); return;
   }
   const languageMenu = document.querySelector('.language-menu');
+  if (languageMenu) {
+    const links = [...languageMenu.querySelectorAll('a')];
+    languageMenu.addEventListener('keydown', event => {
+      if (!['ArrowDown', 'ArrowUp', 'Home', 'End'].includes(event.key)) return;
+      event.preventDefault();
+      languageMenu.open = true;
+      const index = links.indexOf(document.activeElement);
+      const next = event.key === 'Home' ? 0 : event.key === 'End' ? links.length - 1
+        : event.key === 'ArrowDown' ? (index + 1) % links.length : (index - 1 + links.length) % links.length;
+      links[next].focus();
+    });
+    languageMenu.addEventListener('focusout', event => {
+      if (event.relatedTarget && !languageMenu.contains(event.relatedTarget)) languageMenu.open = false;
+    });
+  }
   document.addEventListener('click', event => {
     if (languageMenu && !languageMenu.contains(event.target)) languageMenu.open = false;
   });
@@ -44,7 +59,7 @@
     const host = $('demo-host'), prompt = $('demo-prompt');
     host.value = saved('vibe-coding-host') === 'claude' ? 'claude' : 'codex';
     const update = () => {
-      prompt.textContent = (host.value === 'claude' ? '/vibe-coding:vibe-review' : '$vibe-review') + '\n' + prompt.dataset.task;
+      prompt.textContent = (host.value === 'claude' ? '/vibe-coding-library:vibe-library' : '$vibe-library') + '\n' + prompt.dataset.task;
       prompt.parentElement.parentElement.querySelector('[role="status"]').textContent = '';
     };
     host.addEventListener('change', () => { save('vibe-coding-host', host.value); update(); });

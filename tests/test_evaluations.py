@@ -11,6 +11,7 @@ REVISION = ROOT/'review/evaluations/1.4.0.json'
 LISTING = ROOT/'review/evaluations/1.4.1.json'
 LIBRARY = ROOT/'review/evaluations/1.5.0.json'
 PORTABILITY = ROOT/'review/evaluations/1.5.1.json'
+SITE_REFRESH = ROOT/'review/evaluations/site-2026-10-25.json'
 
 
 class EvaluationRecordTests(unittest.TestCase):
@@ -22,14 +23,23 @@ class EvaluationRecordTests(unittest.TestCase):
         self.listing = json.loads(LISTING.read_text(encoding='utf-8'))
         self.library = json.loads(LIBRARY.read_text(encoding='utf-8'))
         self.portability = json.loads(PORTABILITY.read_text(encoding='utf-8'))
+        self.site_refresh = json.loads(SITE_REFRESH.read_text(encoding='utf-8'))
+
+    def site_refresh_fingerprint(self, name, expected):
+        change = self.site_refresh['changes'].get(name)
+        if change:
+            self.assertEqual(expected, change['before'], 'Website refresh must retain the released baseline: '+name)
+            self.assertTrue(change['review'])
+            return change['after']
+        return expected
 
     def portability_fingerprint(self, name, expected):
         change = self.portability['changes'].get(name)
         if change:
             self.assertEqual(expected, change['before'], 'Portability revision must retain the previous fingerprint: '+name)
             self.assertTrue(change['review'])
-            return change['after']
-        return expected
+            expected = change['after']
+        return self.site_refresh_fingerprint(name, expected)
 
     def library_fingerprint(self, name, expected):
         change = self.library['changes'].get(name)
@@ -175,8 +185,17 @@ class EvaluationRecordTests(unittest.TestCase):
         self.assertEqual('1.5.0', self.portability['baseline']['release'])
         self.assertFalse(set(self.portability['changes']) & set(self.revision['instructions']))
         for name, change in self.portability['changes'].items():
-            self.assertEqual(change['after'], hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
+            self.assertEqual(self.site_refresh_fingerprint(name, change['after']), hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
             self.assertTrue(change['review'])
+
+    def test_website_refresh_preserves_instruction_release_and_records_its_sources(self):
+        self.assertEqual(hashlib.sha256(PORTABILITY.read_bytes()).hexdigest(), self.site_refresh['baseline']['sha256'])
+        self.assertFalse(set(self.site_refresh['changes']) & set(self.revision['instructions']))
+        for name, change in self.site_refresh['changes'].items():
+            self.assertEqual(change['after'], hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
+        for name, expected in self.site_refresh['new_files'].items():
+            self.assertEqual(expected, hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
+        self.assertTrue(self.site_refresh['checks'])
 
 
 if __name__ == '__main__':

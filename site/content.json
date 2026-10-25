@@ -4,17 +4,17 @@
     "release": "Release notes",
     "source": "Source code",
     "skip": "Skip to content",
-    "title": "Vibe Coding — Engineering Skills for Codex & Claude Code",
-    "description": "An open-source library of {skills} skills and {recipes} workflows for Codex and Claude Code. Review code, find bugs and check your next release.",
-    "eyebrow": "For Codex & Claude Code",
-    "headline": "An engineering playbook",
-    "accent": "for your AI.",
-    "intro": "Vibe Coding is a free, open-source plugin for Codex and Claude Code. Use structured workflows to review code, find bugs and make changes with checks built in.",
+    "title": "Vibe Coding Library — Engineering Workflows via MCP",
+    "description": "Search {recipes} engineering workflows and load the selected instructions through two read-only MCP tools. Open source, with no account or API key required.",
+    "eyebrow": "Vibe Coding Library · MCP",
+    "headline": "Find the workflow.",
+    "accent": "Load what you need.",
+    "intro": "Vibe Coding Library gives your coding agent engineering workflows on demand. Search the catalog, then load the selected instructions through MCP for Codex, Claude Code or another compatible client.",
     "browse": "Find a workflow",
-    "install": "Get the plugin",
-    "facts": "Open source · Free to use · MIT license",
+    "install": "Connect the library",
+    "facts": "Open source · Free · No account or API key",
     "catalogTitle": "What are you working on?",
-    "catalogNote": "Find a workflow by topic, technology or task.",
+    "catalogNote": "Browse by topic, technology or task. Your agent can search the same catalog over MCP.",
     "search": "Search workflows",
     "searchPlaceholder": "Try API, Redis, accessibility…",
     "topic": "Topic",
@@ -34,14 +34,14 @@
     "searchLoading": "Searching the full instructions…",
     "searchFallback": "Full-text search is unavailable. Title and topic search still works. Turn the option off and on to retry.",
     "bodyMatch": "Matches inside the instructions",
-    "english": "Workflow instructions are in English. Prompts are available in four languages.",
-    "demoLabel": "A small prompt. A focused workflow.",
-    "demoTask": "Review a change",
-    "demoPrompt": "Review this branch. Find bugs, explain their impact, and point to the code.",
-    "demoNote": "The skill guides the review: scope, dependencies, evidence and checks.",
+    "english": "Catalog and prompts in four languages. Technical instructions in English.",
+    "demoLabel": "Ask your agent with Vibe Coding Library connected.",
+    "demoTask": "Review a code change",
+    "demoPrompt": "Find the Vibe Coding workflow for reviewing this branch. Load its instructions, then review the change and report actionable bugs.",
+    "demoNote": "search_workflows finds candidates. get_workflow loads the chosen recipe, domain instructions and working contract.",
     "copy": "Copy",
     "copied": "Copied",
-    "copyFallback": "Select and copy the command manually.",
+    "copyFallback": "Select and copy the text manually.",
     "quickLabel": "Start with",
     "quickLinks": [
       [
@@ -61,30 +61,30 @@
         "vibe-quality"
       ]
     ],
-    "installIntro": "One library. Your preferred assistant.",
-    "codexInstall": "Open Vibe Coding in the plugin directory, install it, then start a new task.",
-    "codexLink": "Install in Codex",
-    "claudeInstall": "Run these two commands in your terminal:",
-    "claudeStart": "Start a new Claude Code session, then describe your task:",
-    "docs": "Installation & updates",
-    "cost": "Vibe Coding is free. Your assistant’s subscription and model usage are separate.",
-    "faqTitle": "A few useful details",
+    "installIntro": "One selection skill. Two read-only tools. Instructions loaded on demand.",
+    "docs": "Plugin setup",
+    "cost": "The public library is free. Your coding agent’s subscription and model usage are separate.",
+    "faqTitle": "How the library works",
     "faq": [
       [
-        "What is Vibe Coding?",
-        "Vibe Coding is an open-source plugin with {skills} skills and {recipes} workflows for Codex and Claude Code. It covers code reviews, debugging, databases, accessibility, infrastructure and AI features. Each workflow defines the scope, steps, evidence and checks for a task."
+        "What is Vibe Coding Library?",
+        "The current MCP plugin provides {recipes} engineering workflows through search_workflows and get_workflow. It uses one bundled selection skill and retrieves the chosen instructions when needed. The separate offline distribution includes {skills} local skills."
       ],
       [
-        "How do I use a workflow?",
-        "Install the plugin, open a workflow here, and copy its prompt for Codex or Claude Code. Add the files, behavior or change you want the assistant to work on."
+        "What do the two tools do?",
+        "search_workflows returns workflow titles, summaries and stable IDs. get_workflow loads one selected recipe with its domain skill, working contract and required references. Your agent uses its own project tools to apply the guidance."
       ],
       [
         "Which languages are supported?",
-        "The website and prompts support English, Spanish, Russian and Simplified Chinese. The technical instructions are written in English; you can ask the assistant to respond in your language."
+        "The website, catalog metadata and prompts support English, Spanish, Russian and Simplified Chinese. Technical instructions remain in English. Ask your agent to respond in your language."
       ],
       [
-        "Does the plugin need its own account or API key?",
-        "The offline plugin uses your assistant’s existing tools and needs no publisher account or API key. Vibe Coding Library is an optional public MCP service that searches and retrieves selected instructions; it requires an internet connection."
+        "Does the service need an account or API key?",
+        "No. The public MCP endpoint uses Streamable HTTP without authentication. It needs an internet connection and returns public instructions. It cannot read or edit your repository."
+      ],
+      [
+        "Can I use the full library offline?",
+        "Yes. The original Vibe Coding plugin is a separate optional distribution with {skills} local skills and all {recipes} workflows. Its installation and invocation names differ from the MCP Library plugin."
       ]
     ],
     "countOne": "{count} workflow",
@@ -141,27 +141,44 @@
     "allWorkflows": "All workflows",
     "directoryTitle": "All {recipes} Engineering Workflows — Vibe Coding",
     "directoryHeading": "Explore every workflow.",
-    "directoryDescription": "Browse all {recipes} Vibe Coding workflows by engineering topic. Find code reviews, debugging, database, accessibility and release checks for Codex and Claude Code.",
-    "privacyDescription": "Privacy for the offline Vibe Coding plugin, browser preferences, assistant services and GitHub-hosted support. The optional MCP Library has its own privacy policy.",
+    "directoryDescription": "Browse all {recipes} Vibe Coding Library workflows by engineering topic. Find code review, debugging, database, accessibility and release workflows, also available through MCP.",
+    "privacyDescription": "Privacy for this website, browser preferences and the separate offline Vibe Coding plugin. The MCP Library service has its own privacy policy.",
     "termsDescription": "Vibe Coding’s MIT license, host service terms, warranty disclaimer and support policy. The plugin is free and open source.",
-    "mcpLabel": "Use the MCP library"
+    "mcpLabel": "Live MCP console",
+    "pluginTitle": "MCP plugin",
+    "clientTitle": "Any MCP client",
+    "endpointLabel": "Public MCP endpoint",
+    "consoleLink": "Try the live server",
+    "offlineTitle": "Prefer the offline bundle?",
+    "offlineNote": "The original Vibe Coding plugin is available separately with {skills} local skills and all {recipes} workflows.",
+    "offlineLink": "Offline plugin setup",
+    "workflowIntro": "With Vibe Coding Library connected, ask your agent to load this workflow. Choose your assistant and prompt language, then add your task details.",
+    "workflowPrompt": "Use Vibe Coding Library to load workflow “{title}” (ID: {id}). Follow its instructions for the task below. Report the result in English.",
+    "workflowPromptClaude": "/vibe-coding-library:vibe-library\nLoad workflow “{title}” (ID: {id}) and follow its instructions for the task below. Report the result in English.",
+    "libraryVersion": "MCP plugin",
+    "instructionVersion": "Instruction library",
+    "toolsLabel": "read-only tools",
+    "pluginInstall": "Use the MCP plugin for Codex or Claude Code. It includes the selection skill and the public server connection.",
+    "pluginLink": "Plugin files & setup",
+    "clientInstall": "Add this URL to a client that supports Streamable HTTP. Authentication: none.",
+    "clientStart": "Once connected, ask your agent to find and load a workflow for your task."
   },
   "es": {
     "maintained": "Mantenido por Arty S.",
     "release": "Notas de la versión",
     "source": "Código fuente",
     "skip": "Ir al contenido",
-    "title": "Vibe Coding — Habilidades para Codex y Claude Code",
-    "description": "Biblioteca de código abierto con {skills} habilidades y {recipes} flujos para Codex y Claude Code. Revisa código, encuentra errores y prepara tu próxima versión.",
-    "eyebrow": "Para Codex y Claude Code",
-    "headline": "Un manual de ingeniería",
-    "accent": "para tu IA.",
-    "intro": "Vibe Coding es un plugin gratuito y de código abierto para Codex y Claude Code. Sus flujos te ayudan a revisar código, encontrar errores e implementar cambios con pasos de verificación.",
+    "title": "Vibe Coding Library — Flujos de ingeniería por MCP",
+    "description": "Busca {recipes} flujos de ingeniería y carga las instrucciones elegidas con dos herramientas MCP de solo lectura. Código abierto, sin cuenta ni clave de API.",
+    "eyebrow": "Vibe Coding Library · MCP",
+    "headline": "Encuentra el flujo.",
+    "accent": "Carga lo necesario.",
+    "intro": "Vibe Coding Library ofrece a tu agente flujos de ingeniería bajo demanda. Busca en el catálogo y carga las instrucciones elegidas por MCP en Codex, Claude Code u otro cliente compatible.",
     "browse": "Buscar un flujo",
-    "install": "Obtener el plugin",
-    "facts": "Código abierto · Gratis · Licencia MIT",
+    "install": "Conectar la biblioteca",
+    "facts": "Código abierto · Gratis · Sin cuenta ni clave de API",
     "catalogTitle": "¿En qué estás trabajando?",
-    "catalogNote": "Busca un flujo por tema, tecnología o tarea.",
+    "catalogNote": "Explora por tema, tecnología o tarea. Tu agente puede buscar en este mismo catálogo por MCP.",
     "search": "Buscar flujos",
     "searchPlaceholder": "Prueba API, Redis, accesibilidad…",
     "topic": "Tema",
@@ -181,14 +198,14 @@
     "searchLoading": "Buscando en las instrucciones…",
     "searchFallback": "La búsqueda completa no está disponible. Puedes buscar por título y tema. Desactiva y vuelve a activar la opción para reintentar.",
     "bodyMatch": "Coincidencia dentro de las instrucciones",
-    "english": "Las instrucciones están en inglés. Los prompts están disponibles en cuatro idiomas.",
-    "demoLabel": "Un prompt breve. Un flujo concreto.",
-    "demoTask": "Revisar un cambio",
-    "demoPrompt": "Revisa esta rama. Encuentra errores, explica su impacto y señala el código.",
-    "demoNote": "La habilidad guía la revisión: alcance, dependencias, evidencias y comprobaciones.",
+    "english": "Catálogo y prompts en cuatro idiomas. Instrucciones técnicas en inglés.",
+    "demoLabel": "Pídeselo a tu agente con Vibe Coding Library conectado.",
+    "demoTask": "Revisar un cambio de código",
+    "demoPrompt": "Busca el flujo de Vibe Coding para revisar esta rama. Carga sus instrucciones, revisa el cambio e informa de errores concretos.",
+    "demoNote": "search_workflows busca opciones. get_workflow carga la receta elegida, las instrucciones del área y el contrato de trabajo.",
     "copy": "Copiar",
     "copied": "Copiado",
-    "copyFallback": "Selecciona y copia el comando manualmente.",
+    "copyFallback": "Selecciona y copia el texto manualmente.",
     "quickLabel": "Empieza por",
     "quickLinks": [
       [
@@ -208,30 +225,30 @@
         "vibe-quality"
       ]
     ],
-    "installIntro": "Una biblioteca. El asistente que prefieras.",
-    "codexInstall": "Abre Vibe Coding en el directorio de plugins, instálalo y empieza una tarea nueva.",
-    "codexLink": "Instalar en Codex",
-    "claudeInstall": "Ejecuta estos dos comandos en tu terminal:",
-    "claudeStart": "Abre una sesión nueva de Claude Code y describe tu tarea:",
-    "docs": "Instalación y actualizaciones",
-    "cost": "Vibe Coding es gratuito. La suscripción al asistente y el uso de modelos se pagan por separado.",
-    "faqTitle": "Algunos detalles útiles",
+    "installIntro": "Una habilidad de selección. Dos herramientas de solo lectura. Instrucciones bajo demanda.",
+    "docs": "Configurar el plugin",
+    "cost": "La biblioteca pública es gratuita. La suscripción al agente y el uso de modelos se pagan por separado.",
+    "faqTitle": "Cómo funciona la biblioteca",
     "faq": [
       [
-        "¿Qué es Vibe Coding?",
-        "Vibe Coding es un plugin de código abierto con {skills} habilidades y {recipes} flujos para Codex y Claude Code. Abarca revisión de código, depuración, bases de datos, accesibilidad, infraestructura e IA. Cada flujo define el alcance, los pasos, las pruebas que recopilar y las comprobaciones de la tarea."
+        "¿Qué es Vibe Coding Library?",
+        "El plugin MCP actual ofrece {recipes} flujos de ingeniería mediante search_workflows y get_workflow. Incluye una habilidad de selección y carga las instrucciones elegidas cuando hacen falta. La distribución sin conexión, disponible por separado, incluye {skills} habilidades locales."
       ],
       [
-        "¿Cómo utilizo un flujo?",
-        "Instala el plugin, abre un flujo y copia su prompt para Codex o Claude Code. Añade los archivos, el comportamiento o el cambio en el que quieres trabajar."
+        "¿Qué hacen las dos herramientas?",
+        "search_workflows devuelve títulos, resúmenes e identificadores estables. get_workflow carga una receta con la habilidad de su área, el contrato de trabajo y las referencias necesarias. El agente aplica las instrucciones con sus propias herramientas del proyecto."
       ],
       [
         "¿Qué idiomas admite?",
-        "La web y los prompts están en inglés, español, ruso y chino simplificado. Las instrucciones técnicas están escritas en inglés; puedes pedirle al asistente que responda en tu idioma."
+        "La web, los datos del catálogo y los prompts están en inglés, español, ruso y chino simplificado. Las instrucciones técnicas siguen en inglés. Puedes pedir al agente que responda en tu idioma."
       ],
       [
-        "¿Necesita una cuenta o clave API propia?",
-        "El plugin sin conexión utiliza las herramientas de tu asistente y no requiere cuenta del editor ni clave API. Vibe Coding Library es un servicio MCP público opcional que busca y carga las instrucciones seleccionadas; requiere conexión a internet."
+        "¿Necesita cuenta o clave de API?",
+        "No. El endpoint MCP público usa Streamable HTTP sin autenticación. Necesita conexión a internet y devuelve instrucciones públicas. No puede leer ni editar tu repositorio."
+      ],
+      [
+        "¿Puedo usar la biblioteca completa sin conexión?",
+        "Sí. El plugin original Vibe Coding es una distribución opcional y separada con {skills} habilidades locales y los {recipes} flujos. Su instalación y sus nombres de invocación son distintos de los del plugin MCP Library."
       ]
     ],
     "countOne": "{count} flujo",
@@ -288,27 +305,44 @@
     "allWorkflows": "Todos los flujos",
     "directoryTitle": "Los {recipes} flujos de ingeniería — Vibe Coding",
     "directoryHeading": "Explora todos los flujos.",
-    "directoryDescription": "Consulta los {recipes} flujos de Vibe Coding por tema: revisión de código, depuración, bases de datos, accesibilidad y publicación para Codex y Claude Code.",
-    "privacyDescription": "Privacidad del plugin Vibe Coding sin conexión, preferencias del navegador, servicios del asistente y soporte en GitHub. La biblioteca MCP opcional tiene su propia política de privacidad.",
+    "directoryDescription": "Explora los {recipes} flujos de Vibe Coding Library por tema de ingeniería. Encuentra flujos de revisión, depuración, bases de datos, accesibilidad y publicación, también disponibles por MCP.",
+    "privacyDescription": "Privacidad de esta web, preferencias del navegador y el plugin Vibe Coding sin conexión, disponible por separado. El servicio MCP Library tiene su propia política.",
     "termsDescription": "Licencia MIT, condiciones de los servicios del asistente, ausencia de garantías y soporte de Vibe Coding, un plugin gratuito y de código abierto.",
-    "mcpLabel": "Usar la biblioteca MCP"
+    "mcpLabel": "Consola MCP en directo",
+    "pluginTitle": "Plugin MCP",
+    "clientTitle": "Cualquier cliente MCP",
+    "endpointLabel": "Endpoint MCP público",
+    "consoleLink": "Probar el servidor",
+    "offlineTitle": "¿Prefieres el paquete sin conexión?",
+    "offlineNote": "El plugin original Vibe Coding está disponible por separado con {skills} habilidades locales y los {recipes} flujos.",
+    "offlineLink": "Configurar el plugin sin conexión",
+    "workflowIntro": "Con Vibe Coding Library conectado, pide al agente que cargue este flujo. Elige asistente e idioma del prompt y añade los detalles de tu tarea.",
+    "workflowPrompt": "Usa Vibe Coding Library para cargar el flujo «{title}» (ID: {id}). Sigue sus instrucciones para la tarea que aparece debajo. Responde en español.",
+    "workflowPromptClaude": "/vibe-coding-library:vibe-library\nCarga el flujo «{title}» (ID: {id}) y sigue sus instrucciones para la tarea que aparece debajo. Responde en español.",
+    "libraryVersion": "Plugin MCP",
+    "instructionVersion": "Biblioteca de instrucciones",
+    "toolsLabel": "herramientas de solo lectura",
+    "pluginInstall": "Usa el plugin MCP en Codex o Claude Code. Incluye la habilidad de selección y la conexión al servidor público.",
+    "pluginLink": "Archivos y configuración del plugin",
+    "clientInstall": "Añade esta URL a un cliente compatible con Streamable HTTP. Autenticación: ninguna.",
+    "clientStart": "Una vez conectado, pide al agente que busque y cargue un flujo para tu tarea."
   },
   "ru": {
     "maintained": "Автор: Arty S.",
     "release": "Изменения в релизе",
     "source": "Исходный код",
     "skip": "Перейти к содержанию",
-    "title": "Vibe Coding — навыки для Codex и Claude Code",
-    "description": "Открытая библиотека для Codex и Claude Code: навыки — {skills}, сценарии — {recipes}. Ревью кода, поиск багов и проверки перед релизом.",
-    "eyebrow": "Для Codex и Claude Code",
-    "headline": "Инженерный подход",
-    "accent": "для твоего AI.",
-    "intro": "Vibe Coding — бесплатный плагин с открытым кодом для Codex и Claude Code. Готовые сценарии помогают проводить ревью, находить баги и вносить изменения с проверкой результата.",
+    "title": "Vibe Coding Library — Инженерные сценарии через MCP",
+    "description": "Поиск инженерных сценариев ({recipes}) и загрузка выбранных инструкций двумя MCP-инструментами только для чтения. Открытый код, без аккаунта и API-ключа.",
+    "eyebrow": "Vibe Coding Library · MCP",
+    "headline": "Найдите сценарий.",
+    "accent": "Загрузите нужное.",
+    "intro": "Vibe Coding Library предоставляет вашему ассистенту инженерные сценарии по запросу. Найдите сценарий в каталоге и получите инструкции через MCP в Codex, Claude Code или другом совместимом клиенте.",
     "browse": "Найти сценарий",
-    "install": "Установить плагин",
-    "facts": "Открытый код · Бесплатно · Лицензия MIT",
+    "install": "Подключить библиотеку",
+    "facts": "Открытый код · Бесплатно · Без аккаунта и API-ключа",
     "catalogTitle": "Над чем работаешь?",
-    "catalogNote": "Найди сценарий по теме, технологии или задаче.",
+    "catalogNote": "Поиск по теме, технологии или задаче. Агент может искать в этом же каталоге через MCP.",
     "search": "Поиск сценариев",
     "searchPlaceholder": "Например: API, Redis, доступность…",
     "topic": "Тема",
@@ -328,14 +362,14 @@
     "searchLoading": "Ищем в полном тексте инструкций…",
     "searchFallback": "Полный текст недоступен. Поиск по названиям и темам работает. Выключи и снова включи опцию, чтобы повторить загрузку.",
     "bodyMatch": "Совпадение в тексте инструкции",
-    "english": "Технические инструкции — на английском. Промпты доступны на четырёх языках.",
-    "demoLabel": "Короткий запрос. Понятный сценарий.",
-    "demoTask": "Ревью изменений",
-    "demoPrompt": "Проведи ревью этой ветки. Найди баги, объясни последствия и укажи проблемные места в коде.",
-    "demoNote": "Навык задаёт порядок ревью: границы изменений, зависимости, доказательства и проверки.",
+    "english": "Каталог и промпты на четырёх языках. Технические инструкции — на английском.",
+    "demoLabel": "Попросите агента с подключённой Vibe Coding Library.",
+    "demoTask": "Проверить изменение кода",
+    "demoPrompt": "Найди сценарий Vibe Coding для проверки этой ветки. Загрузи инструкции, проверь изменения и сообщи о конкретных ошибках.",
+    "demoNote": "search_workflows находит варианты. get_workflow загружает выбранный сценарий, инструкции области и рабочий контракт.",
     "copy": "Копировать",
     "copied": "Скопировано",
-    "copyFallback": "Выдели команду и скопируй вручную.",
+    "copyFallback": "Выделите и скопируйте текст вручную.",
     "quickLabel": "Быстрый старт",
     "quickLinks": [
       [
@@ -355,30 +389,30 @@
         "vibe-quality"
       ]
     ],
-    "installIntro": "Одна библиотека. Твой привычный ассистент.",
-    "codexInstall": "Открой Vibe Coding в каталоге плагинов, установи и начни новую задачу.",
-    "codexLink": "Установить в Codex",
-    "claudeInstall": "Выполни две команды в терминале:",
-    "claudeStart": "Начни новую сессию Claude Code и опиши задачу:",
-    "docs": "Установка и обновления",
-    "cost": "Vibe Coding бесплатный. Подписка на ассистента и использование моделей оплачиваются отдельно.",
-    "faqTitle": "Что ещё нужно знать",
+    "installIntro": "Один навык выбора. Два инструмента только для чтения. Инструкции по запросу.",
+    "docs": "Настройка плагина",
+    "cost": "Публичная библиотека бесплатна. Подписка на агента и использование моделей оплачиваются отдельно.",
+    "faqTitle": "Как работает библиотека",
     "faq": [
       [
-        "Что такое Vibe Coding?",
-        "Vibe Coding — плагин с открытым кодом для Codex и Claude Code. Он содержит сценарии для ревью, отладки, баз данных, доступности, инфраструктуры и AI. Каждый сценарий задаёт рамки задачи, порядок работы, необходимые доказательства и проверки."
+        "Что такое Vibe Coding Library?",
+        "Текущий MCP-плагин предоставляет {recipes} инженерный сценарий через search_workflows и get_workflow. Он содержит один навык выбора и загружает выбранные инструкции по мере необходимости. Отдельная офлайн-версия содержит {skills} локальных навыков."
       ],
       [
-        "Как запустить сценарий?",
-        "Установи плагин, открой нужный сценарий и скопируй промпт для Codex или Claude Code. Добавь файлы, описание проблемы или изменения, с которыми нужно поработать."
+        "Что делают два инструмента?",
+        "search_workflows возвращает названия, описания и стабильные ID сценариев. get_workflow загружает один сценарий вместе с навыком области, рабочим контрактом и нужными справочными материалами. Агент применяет инструкции своими инструментами проекта."
       ],
       [
         "Какие языки поддерживаются?",
-        "Сайт и промпты доступны на английском, испанском, русском и упрощённом китайском. Технические инструкции написаны на английском. Ассистента можно попросить отвечать на твоём языке."
+        "Сайт, данные каталога и промпты доступны на английском, испанском, русском и упрощённом китайском. Технические инструкции остаются на английском. Попросите агента отвечать на вашем языке."
       ],
       [
-        "Нужен отдельный аккаунт или API-ключ?",
-        "Офлайн-плагин использует инструменты ассистента и не требует аккаунта издателя или API-ключа. Vibe Coding Library — дополнительный публичный MCP-сервис для поиска и загрузки выбранных инструкций; для него нужен интернет."
+        "Нужен аккаунт или API-ключ?",
+        "Нет. Публичный MCP endpoint работает через Streamable HTTP без авторизации. Требуется интернет; сервис возвращает публичные инструкции. Он не может читать или редактировать ваш репозиторий."
+      ],
+      [
+        "Можно использовать всю библиотеку офлайн?",
+        "Да. Исходный плагин Vibe Coding доступен как отдельный необязательный пакет с {skills} локальными навыками и всеми {recipes} сценариями. Его установка и имена вызова отличаются от MCP-плагина Library."
       ]
     ],
     "countOne": "Найдено: {count}",
@@ -435,27 +469,44 @@
     "allWorkflows": "Все сценарии",
     "directoryTitle": "Все сценарии разработки: {recipes} — Vibe Coding",
     "directoryHeading": "Все сценарии по темам.",
-    "directoryDescription": "Каталог Vibe Coding для Codex и Claude Code: ревью кода, отладка, базы данных, доступность и проверка релизов. Всего сценариев — {recipes}.",
-    "privacyDescription": "Конфиденциальность офлайн-плагина Vibe Coding, настройки браузера, сервисы ассистента и поддержка в GitHub. У дополнительной MCP-библиотеки своя политика конфиденциальности.",
+    "directoryDescription": "Инженерные сценарии Vibe Coding Library по темам: ревью кода, отладка, базы данных, доступность и подготовка релиза. Всего в каталоге: {recipes}. Доступны также через MCP.",
+    "privacyDescription": "Конфиденциальность сайта, настроек браузера и отдельного офлайн-плагина Vibe Coding. У сервиса MCP Library своя политика конфиденциальности.",
     "termsDescription": "Условия использования Vibe Coding: лицензия MIT, сервисы ассистента, ограничение гарантий и поддержка бесплатного плагина с открытым кодом.",
-    "mcpLabel": "Библиотека через MCP"
+    "mcpLabel": "Консоль MCP",
+    "pluginTitle": "MCP-плагин",
+    "clientTitle": "Любой MCP-клиент",
+    "endpointLabel": "Публичный MCP endpoint",
+    "consoleLink": "Проверить сервер",
+    "offlineTitle": "Нужна офлайн-библиотека?",
+    "offlineNote": "Исходный плагин Vibe Coding доступен отдельно с {skills} локальными навыками и полным каталогом сценариев ({recipes}).",
+    "offlineLink": "Установка офлайн-плагина",
+    "workflowIntro": "Подключите Vibe Coding Library и попросите агента загрузить этот сценарий. Выберите ассистента и язык промпта, затем добавьте детали задачи.",
+    "workflowPrompt": "Используй Vibe Coding Library, чтобы загрузить сценарий «{title}» (ID: {id}). Следуй его инструкциям для задачи ниже. Ответь на русском языке.",
+    "workflowPromptClaude": "/vibe-coding-library:vibe-library\nЗагрузи сценарий «{title}» (ID: {id}) и следуй его инструкциям для задачи ниже. Ответь на русском языке.",
+    "libraryVersion": "MCP-плагин",
+    "instructionVersion": "Библиотека инструкций",
+    "toolsLabel": "инструмента только для чтения",
+    "pluginInstall": "Используйте MCP-плагин в Codex или Claude Code. Он содержит навык выбора сценария и подключение к публичному серверу.",
+    "pluginLink": "Файлы и настройка плагина",
+    "clientInstall": "Добавьте этот URL в клиент с поддержкой Streamable HTTP. Авторизация не требуется.",
+    "clientStart": "После подключения попросите агента найти и загрузить сценарий для вашей задачи."
   },
   "zh-CN": {
     "maintained": "由 Arty S. 维护",
     "release": "版本说明",
     "source": "源代码",
     "skip": "跳转到内容",
-    "title": "Vibe Coding — Codex 与 Claude Code 工程技能",
-    "description": "适用于 Codex 和 Claude Code 的开源库，包含 {skills} 项技能和 {recipes} 个工作流，用于代码审查、查找缺陷和发布检查。",
-    "eyebrow": "适用于 Codex 与 Claude Code",
-    "headline": "让你的 AI",
-    "accent": "按工程方法工作。",
-    "intro": "Vibe Coding 是适用于 Codex 和 Claude Code 的免费开源插件。通过包含验证步骤的工作流，审查代码、查找缺陷并实施变更。",
+    "title": "Vibe Coding Library — 通过 MCP 获取工程工作流",
+    "description": "使用两个只读 MCP 工具搜索 {recipes} 个工程工作流，按需加载所选说明。开源，无需账户或 API 密钥。",
+    "eyebrow": "Vibe Coding Library · MCP",
+    "headline": "找到合适的工作流。",
+    "accent": "按需加载说明。",
+    "intro": "Vibe Coding Library 按需为你的编程智能体提供工程工作流。搜索目录，再通过 MCP 在 Codex、Claude Code 或其他兼容客户端中加载所选说明。",
     "browse": "查找工作流",
-    "install": "安装插件",
-    "facts": "开源 · 免费使用 · MIT 许可证",
+    "install": "连接工作流库",
+    "facts": "开源 · 免费 · 无需账户或 API 密钥",
     "catalogTitle": "你正在处理什么任务？",
-    "catalogNote": "按主题、技术或任务查找工作流。",
+    "catalogNote": "按主题、技术或任务浏览。智能体也可以通过 MCP 搜索同一目录。",
     "search": "搜索工作流",
     "searchPlaceholder": "例如：API、Redis、无障碍…",
     "topic": "主题",
@@ -475,14 +526,14 @@
     "searchLoading": "正在搜索指令全文…",
     "searchFallback": "全文搜索暂不可用，仍可按标题和主题搜索。关闭并重新开启此选项即可重试。",
     "bodyMatch": "匹配到指令中的内容",
-    "english": "技术指令以英文编写，提示词支持四种语言。",
-    "demoLabel": "简短的提示词，明确的工作流。",
-    "demoTask": "审查变更",
-    "demoPrompt": "审查这个分支，查找缺陷，说明影响，并指出相关代码。",
-    "demoNote": "技能为审查提供步骤：确定范围、检查依赖、寻找证据并验证结果。",
+    "english": "目录和提示词支持四种语言，技术说明为英语。",
+    "demoLabel": "连接 Vibe Coding Library 后，向智能体提出请求。",
+    "demoTask": "审查代码变更",
+    "demoPrompt": "查找用于审查此分支的 Vibe Coding 工作流。加载说明，检查变更，并报告可操作的缺陷。",
+    "demoNote": "search_workflows 查找候选项。get_workflow 加载所选工作流、领域说明和工作约定。",
     "copy": "复制",
     "copied": "已复制",
-    "copyFallback": "请手动选中并复制命令。",
+    "copyFallback": "请手动选中并复制文本。",
     "quickLabel": "快速开始",
     "quickLinks": [
       [
@@ -502,30 +553,30 @@
         "vibe-quality"
       ]
     ],
-    "installIntro": "同一套工作流，使用你熟悉的助手。",
-    "codexInstall": "在插件目录中打开 Vibe Coding，安装后开始一个新任务。",
-    "codexLink": "在 Codex 中安装",
-    "claudeInstall": "在终端中运行这两条命令：",
-    "claudeStart": "开始新的 Claude Code 会话，然后描述你的任务：",
-    "docs": "安装与更新",
-    "cost": "Vibe Coding 免费使用。助手订阅及模型用量另行计费。",
-    "faqTitle": "你可能还想了解",
+    "installIntro": "一个选择技能，两个只读工具，按需加载说明。",
+    "docs": "插件设置",
+    "cost": "公共工作流库免费提供。编程智能体的订阅和模型使用费用另计。",
+    "faqTitle": "工作流库如何运作",
     "faq": [
       [
-        "Vibe Coding 是什么？",
-        "Vibe Coding 是适用于 Codex 和 Claude Code 的开源插件，包含 {skills} 项技能和 {recipes} 个工作流，涵盖代码审查、调试、数据库、无障碍、基础设施和 AI 功能。每个工作流都规定任务范围、执行步骤、所需证据和验证方法。"
+        "什么是 Vibe Coding Library？",
+        "当前 MCP 插件通过 search_workflows 和 get_workflow 提供 {recipes} 个工程工作流。插件仅内置一个选择技能，按需获取所选说明。另行提供的离线版本包含 {skills} 个本地技能。"
       ],
       [
-        "如何使用工作流？",
-        "安装插件后，打开所需工作流，复制适用于 Codex 或 Claude Code 的提示词，并补充文件、问题描述或需要处理的变更。"
+        "两个工具分别做什么？",
+        "search_workflows 返回工作流标题、摘要和稳定 ID。get_workflow 加载一个工作流及其领域技能、工作约定和必要参考资料。智能体使用自身的项目工具来应用这些说明。"
       ],
       [
         "支持哪些语言？",
-        "网站和提示词支持英语、西班牙语、俄语和简体中文。技术指令以英文编写；你可以要求助手用你偏好的语言回答。"
+        "网站、目录信息和提示词支持英语、西班牙语、俄语及简体中文。技术说明保留英语。你可以要求智能体用你的语言回答。"
       ],
       [
-        "需要单独的账户或 API 密钥吗？",
-        "离线插件使用助手现有的工具，无需开发者账户或 API 密钥。Vibe Coding Library 是可选的公共 MCP 服务，用于搜索并加载所选说明，需要互联网连接。"
+        "需要账户或 API 密钥吗？",
+        "不需要。公共 MCP 端点通过 Streamable HTTP 提供服务，无需身份验证。连接需要网络，返回内容为公共说明。服务不能读取或修改你的代码仓库。"
+      ],
+      [
+        "可以离线使用完整工作流库吗？",
+        "可以。原版 Vibe Coding 插件是单独提供的可选版本，包含 {skills} 个本地技能和全部 {recipes} 个工作流。其安装方式和调用名称与 MCP Library 插件不同。"
       ]
     ],
     "countOne": "找到 {count} 个工作流",
@@ -582,9 +633,26 @@
     "allWorkflows": "全部工作流",
     "directoryTitle": "全部 {recipes} 个工程工作流 — Vibe Coding",
     "directoryHeading": "按主题浏览全部工作流。",
-    "directoryDescription": "按工程主题浏览 Vibe Coding 的全部 {recipes} 个工作流，涵盖代码审查、调试、数据库、无障碍和发布检查，适用于 Codex 和 Claude Code。",
-    "privacyDescription": "离线 Vibe Coding 插件、浏览器偏好、助手服务及 GitHub 支持的隐私说明。可选 MCP 工作流库有自己的隐私政策。",
+    "directoryDescription": "按工程主题浏览 Vibe Coding Library 的全部 {recipes} 个工作流，包括代码审查、调试、数据库、无障碍和发布检查，也可通过 MCP 获取。",
+    "privacyDescription": "本网站、浏览器偏好设置及单独提供的 Vibe Coding 离线插件的隐私说明。MCP Library 服务另有隐私政策。",
     "termsDescription": "Vibe Coding 的 MIT 许可证、助手服务条款、免责声明和支持政策。插件免费且开源。",
-    "mcpLabel": "使用 MCP 工作流库"
+    "mcpLabel": "MCP 在线控制台",
+    "pluginTitle": "MCP 插件",
+    "clientTitle": "任意 MCP 客户端",
+    "endpointLabel": "公共 MCP 端点",
+    "consoleLink": "试用在线服务器",
+    "offlineTitle": "需要离线版本？",
+    "offlineNote": "原版 Vibe Coding 插件另行提供，包含 {skills} 个本地技能和全部 {recipes} 个工作流。",
+    "offlineLink": "离线插件设置",
+    "workflowIntro": "连接 Vibe Coding Library 后，请智能体加载此工作流。选择助手和提示词语言，再补充任务详情。",
+    "workflowPrompt": "使用 Vibe Coding Library 加载“{title}”工作流（ID：{id}），按照说明完成下方任务。请用简体中文回答。",
+    "workflowPromptClaude": "/vibe-coding-library:vibe-library\n加载“{title}”工作流（ID：{id}），按照说明完成下方任务。请用简体中文回答。",
+    "libraryVersion": "MCP 插件",
+    "instructionVersion": "说明库",
+    "toolsLabel": "个只读工具",
+    "pluginInstall": "在 Codex 或 Claude Code 中使用 MCP 插件。插件包含工作流选择技能和公共服务器连接配置。",
+    "pluginLink": "插件文件与设置",
+    "clientInstall": "将此 URL 添加到支持 Streamable HTTP 的客户端。无需身份验证。",
+    "clientStart": "连接后，请智能体查找并加载适合当前任务的工作流。"
   }
 }

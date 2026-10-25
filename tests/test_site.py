@@ -61,6 +61,26 @@ class SiteTests(unittest.TestCase):
         broken=copy.deepcopy(self.locales);broken['zh-CN']['ui']['promptClaude']='Use {skill}.'
         with self.assertRaisesRegex(ValueError,'mismatched placeholders'): site.validate_locales(broken,self.rows)
 
+    def test_library_product_version_is_separate_from_instruction_sources(self):
+        product=json.loads((site.LIBRARY_PLUGIN/'plugin.json').read_text(encoding='utf-8'))['version']
+        instructions=json.loads((site.PLUGIN/'plugin.json').read_text(encoding='utf-8'))['version']
+        for lang in self.locales:
+            page=self.pages[site.route(lang)+'index.html'];doc=self.documents[site.route(lang)+'index.html']
+            self.assertIn('v'+product,page)
+            software=next(item for item in doc.json[0]['@graph'] if item['@type']=='SoftwareSourceCode')
+            self.assertEqual(product,software['version'])
+            self.assertEqual('Vibe Coding Library',software['name'])
+            self.assertIn(site.MCP_ENDPOINT,page)
+            self.assertIn('search_workflows',page);self.assertIn('get_workflow',page)
+            self.assertIn('claude plugin install vibe-coding-library@vibe-coding',page)
+            self.assertNotIn('chatgpt.com/plugins/',page)
+        article=self.documents[site.workflow_route(self.rows[0])+'index.html']
+        metadata=next(item for item in article.json[0]['@graph'] if item['@type']=='TechArticle')
+        self.assertEqual(instructions,metadata['version'])
+        for lang,values in self.content.items():
+            for key in ('workflowPrompt','workflowPromptClaude'):
+                self.assertEqual({'title','id'},set(re.findall(r'\{(\w+)\}',values[key])),(lang,key))
+
     def test_all_languages_are_static_self_canonical_and_reciprocal(self):
         for lang,locale in self.locales.items():
             for suffix in ('','workflows/','privacy.html','terms.html'):
