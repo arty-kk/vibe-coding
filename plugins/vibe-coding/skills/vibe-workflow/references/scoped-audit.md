@@ -11,3 +11,5 @@ Trace input through its defining code, schema or configuration to direct consume
 ## Result
 
 Return supported defects with source evidence, impact, one correction and an observable acceptance criterion. If the expected behavior depends on an unresolved decision, identify it; continue independent inspection rather than requiring a prewritten audit input package.
+
+For an authorized audit-and-fix request, pass the selected defect, owner, expected behavior and reproducing case to Improve Scoped. An audit-only request ends with findings. If the investigation identifies a specialized domain invariant, use its existing domain workflow rather than copying that domain's checklist into this generic audit.

@@ -1,8 +1,8 @@
 # Working contract
 
-Apply this once per task. Read only the selected domain recipe and references needed for that behavior. Resolve their links from the installed skill directory; work on project code in the task's repository.
+Apply this once per task. Execute the selected workflow one prompt step at a time and load only the current recipe and required references. Resolve their links from the installed skill directory; work on project code in the task's repository. For MCP retrieval, returned file paths label library resources: use the returned text and fetch subsequent prompt IDs as their handoffs become ready.
 
-Follow the active project instructions: `AGENTS.md` in Codex; `CLAUDE.md` and loaded rules in Claude. For invocation syntax, reference paths or Cowork/cloud capabilities, consult [host integration](hosts.md) when needed.
+Follow the current agent's active project instructions and permission model. Examples include `AGENTS.md` in Codex and `CLAUDE.md` plus loaded rules in Claude; other MCP clients use their own project rules. For those hosts' invocation syntax, reference paths or Cowork/cloud capabilities, consult [host integration](hosts.md) when needed. Generic MCP use requires neither host's files nor its native skill installation.
 
 ## Scope and inputs
 
@@ -26,6 +26,8 @@ For verification, **passed** means every required criterion has evidence; **fail
 For findings, use the repository's severity scale. Otherwise use **P0** for demonstrated critical or urgent impact, **P1** for material functional or operational failure, and **P2** for a contained defect. A domain keyword or missing optional tool is not a severity determination. Merge findings that need the same correction; give one repair direction and an observable acceptance criterion.
 
 ## Result and completion
+
+For an authorized change, carry the resulting patch and domain-check evidence into Patch Checking. Repeat review after any correction, preserving the original comparison boundary, until a full unchanged pass can issue its clean marker or a real gate stops the cycle. When already executing Patch Checking, continue its internal loop rather than recursively starting another workflow. A requested audit, map, plan or check ends with its own result unless further stages were requested; composition does not expand permission.
 
 Report in the user's language, starting with the result:
 

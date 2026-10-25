@@ -3,7 +3,7 @@ import './globals.css';
 
 export const metadata: Metadata = {
   title: 'Vibe Coding Library — Engineering workflows via MCP',
-  description: 'Search 241 engineering workflows and load only the selected working context. A public, read-only MCP server for Codex, Claude Code and compatible clients.',
+  description: 'Engineering workflows for MCP-compatible coding agents. Connect the public Streamable HTTP endpoint with no authentication or library API key.',
   metadataBase: new URL('https://vibe-coding-library.swift-seal-1081.chatgpt.site'),
   alternates: {canonical: '/'},
   icons: {icon: '/icon.png', shortcut: '/icon.png'}

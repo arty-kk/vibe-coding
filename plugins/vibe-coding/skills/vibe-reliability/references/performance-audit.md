@@ -1,9 +1,5 @@
 # Performance Audit
 
-## Operation
-
-Inspect the selected behavior and report evidence-backed defects; do not change product code.
-
 ## Goal
 
 Find reachable performance problems that affect user experience, throughput, cost, reliability, or operational stability. Keep issues where current repository evidence shows a concrete hot path or high-risk path.
@@ -25,5 +21,9 @@ Routes/pages/components, handlers/services, database queries, migrations/indexes
 
 - Include reachable surface, affected actors/consumers/states, expected behavior, acceptance criteria, and validation direction when discoverable.
 - Explain impact from repo-visible reachability and mark inferred traffic/scale assumptions clearly.
-- Prefer fix at the defining sourcees: query/index/pagination/caching/job structure/source-of-truth, not cosmetic local tweaks.
+- Identify the limiting query/index/pagination/cache/job or rendering owner before recommending an optimization.
 - If validation commands/benchmarks are absent, specify observable checks that an execute run can add or perform.
+
+## Measure and hand off
+
+Fix the user operation, input/cardinality/concurrency shape and observation environment. Attribute elapsed time, memory, calls or work to the actual limiting boundary before choosing cache, batching or parallelism. Pass the baseline measurement, dominant owner, expected tradeoff and preserved correctness/failure criteria to Improve Performance. Separate measured improvement from an unexecuted complexity estimate.

@@ -22,3 +22,7 @@ Agent loops, tool/function schemas, tool routers, system/developer prompts, stru
 - Cost and operations: missing rate limits, no per-run budget, high-cost tools on hot paths, weak traceability, and absent diagnostics for low-confidence/failed tool calls.
 - Existing user authorization can cover a bounded routine mutation; do not demand a new confirmation for every write solely because it changes state.
 - Evaluation: missing tool-choice evals, mutation safety fixtures, adversarial prompt-injection cases, tenant isolation tests, and golden traces for critical workflows.
+
+## Trace and hand off
+
+Choose an allowed task and a closely related denied/out-of-scope task. Trace model-visible tool metadata → selected name/arguments → runtime authorization → actual effect/result → continuation or terminal state. Inspect persisted effects and attempts independently of the narration. Pass the failing decision or execution boundary, principal, request identity and expected effect count to Improve LLM Agent Tools. Keep protocol/transport defects with the MCP workflow and durable replay defects with Harness when those layers own the failure.

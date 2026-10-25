@@ -1,9 +1,5 @@
 # Performance Budget Audit
 
-## Operation
-
-Inspect the selected behavior and report evidence-backed defects; do not change product code.
-
 ## Goal
 
 Find concrete performance-budget risks and regression gaps in hot paths, especially where latency, throughput, memory, bundle size, database cost, provider cost, or job duration can grow without a guardrail.
@@ -23,8 +19,12 @@ Hot routes/pages/actions, rendering boundaries, data fetching, database queries/
 
 ## Evidence rules
 
-- Prefer fix at the defining sourcees over local guards, cosmetic rewrites, broad catch blocks, or hidden fallbacks.
+- Trace the evidenced budget to its workload and limiting resource owner; a missing arbitrary threshold alone is not a defect.
 
 ## Work item quality
 
 - If validation commands or harnesses are absent, specify observable checks that an execute run can add or perform.
+
+## Handoff
+
+Retain the source of the limit/relative goal, workload distribution, candidate environment and resource/cost observation that exceeds or can violate it. Identify the input/concurrency dimension driving growth and pass that boundary to Improve Performance Budget. Keep unmeasured traffic, hardware and provider assumptions explicit instead of inventing an SLO to justify a change.

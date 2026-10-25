@@ -20,3 +20,5 @@ Correct the selected model-serving path, preserving artifact identity, bounded l
 - Run load/concurrency/cancel/fallback/artifact-compatibility tests with representative inputs.
 - Verify readiness, rollout, rollback/disable, and one degraded-dependency trace.
 - Report production traffic, hardware, provider quota, and long-window drift gates separately.
+
+Apply the correction at the violating routing, admission, batching, artifact-load or fallback owner. Replay the original request class under a bounded workload, inspect cancellation/resource cleanup and verify the actual loaded identity. Keep quality and latency comparisons separate. A failed recovery or compatibility case returns to that owner; accepted behavior proceeds to Patch Checking without claiming unmeasured production capacity.

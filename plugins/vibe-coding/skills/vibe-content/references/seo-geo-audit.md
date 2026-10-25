@@ -16,3 +16,5 @@ Inspect the selected public routes for crawlable content, accurate metadata and 
 ## Result
 
 Give the route and defining source, expected/observed output, concrete public impact and one repair with validation. Bound source, rendering, crawler and account observations separately. Consult current [Google AI-search guidance](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide) and engine-specific documentation for eligibility; do not manufacture rankings from technical compliance.
+
+Pass the actual fetched/rendered route, status, canonical/locale relationships and violated content/metadata expectation into Improve Search Visibility. Keep public-output defects separate from unavailable console data or optional enhancements. A successful local build does not close a failed deployed route or prove that a search engine has indexed it.

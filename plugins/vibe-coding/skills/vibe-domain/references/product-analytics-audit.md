@@ -1,9 +1,5 @@
 # Product Analytics Audit
 
-## Operation
-
-Inspect the selected behavior and report evidence-backed defects; do not change product code.
-
 ## Goal
 
 Audit product analytics and instrumentation quality for existing user/product flows: event taxonomy, firing points, properties, privacy, deduplication, funnel usefulness, tests, and docs. Keep only issues supported by repository evidence; do not recommend adding a new vendor unless the repo already has an explicit direction.
@@ -24,3 +20,7 @@ Analytics wrappers, telemetry clients, event constants/types, product metrics/ev
 ## Finding quality
 
 - Include expected event semantics, privacy boundary, acceptance criteria, and validation direction.
+
+## Trace and hand off
+
+Choose the product action/state the event claims to measure and follow its producer, payload identity/grain, delivery/retry, transformation and consuming metric. Compare a normal success with failure/cancel/duplicate or consent conditions relevant to that claim. Pass the first semantic mismatch and expected raw-to-consumer observation into Improve Product Analytics; a dashboard value cannot establish correct event timing.

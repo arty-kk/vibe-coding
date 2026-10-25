@@ -10,6 +10,10 @@ Connect supplied product requirements and accepted outcomes to implemented surfa
 
 Suggested saved map: `docs/product_requirements_map.md`.
 
+## Build the view
+
+Extract each requirement from the accepted decision or supplied request, preserving actor, condition and expected outcome. Link it to the implementation owner and a check of that exact outcome. Mark absent implementation, missing acceptance evidence and conflicts with current behavior as different gaps. Do not derive a new requirement from a convenient existing component or erase a requirement because the current code violates it.
+
 ## Inspect
 
 Product specs, README/design docs, issue text supplied by the user, route/component/API behavior, analytics events, feature flags, tests, copy/localization, onboarding states, pricing/plan docs, release notes, and existing traceability or project maps.

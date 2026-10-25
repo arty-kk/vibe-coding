@@ -1,9 +1,5 @@
 # Redis Job Queues Audit
 
-## Operation
-
-Inspect the selected behavior and report evidence-backed defects; do not change product code.
-
 ## Goal and scope
 
 Audit the selected Redis-backed queue, stream or worker-lease behavior. Inspect shared cache/Redis configuration only where it affects delivery; application cache freshness belongs to the cache skill.
@@ -26,3 +22,7 @@ Audit the selected Redis-backed queue, stream or worker-lease behavior. Inspect 
 3. Inspect crash windows, duplicate job IDs, stale lock/consumer, retry storms, cron overlap, flow dependency failure, and Redis failover/reconnect.
 4. Compute connection and in-flight budgets across processes/replicas and compare queue concurrency with downstream capacity and Redis memory/CPU.
 5. Check scripts/transactions and cluster key-slot compatibility for every multi-key invariant.
+
+## Handoff
+
+Retain framework-native job/entry and business operation identity, key/slot layout, effective lease/retention settings and the failing effect/completion order. Distinguish duplicate attempts from duplicate business effects, and retained-job uniqueness from long-lived operation deduplication. Pass the first violated guarantee to Improve Redis Job Queues rather than mixing another framework's acknowledgement model.

@@ -1,9 +1,5 @@
 # Improve Payments Provider
 
-## Operation
-
-Implement the requested change and verify its directly affected behavior.
-
 ## Goal
 
 Correct the selected provider-event or billing transition while preserving authenticated ingestion, idempotency and local entitlements.
@@ -21,7 +17,7 @@ Use the selected checkout/subscription/invoice/webhook/refund/chargeback/reconci
 
 ## Implementation principles
 
-- Make local state transitions explicit and monotonic where provider events can arrive late or duplicated.
+- Make local transitions explicit and version/reconciliation-aware so late or duplicate events cannot overwrite the accepted newer state; preserve legitimate lifecycle transitions such as reactivation.
 - Never trust unauthenticated webhooks or client-only payment success.
 - Preserve existing customer/subscription data compatibility and define forward-fix for unsafe rollback.
 - Avoid touching unrelated pricing, plans, coupons, or tax behavior.
@@ -29,3 +25,5 @@ Use the selected checkout/subscription/invoice/webhook/refund/chargeback/reconci
 ## Validation
 
 Run repository-native tests and safe sandbox/provider-mock scenarios for the selected path: success, failure, duplicate event, delayed event, out-of-order event, refund/chargeback/cancellation when relevant. Report live-provider, tax, or managed-service gates honestly.
+
+Correct the request identity, authenticated event mapping or local transaction/reconciliation owner using a fixed event corpus. Preserve customer/subscription identity and the accepted business policy. Feed the candidate and expected billing/entitlement/effect sequence into the reconciliation check. A failed state returns to that owner; accepted evidence proceeds to Patch Checking without invoking real monetary operations.

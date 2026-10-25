@@ -1,9 +1,5 @@
 # Improve Audit Logging Compliance
 
-## Operation
-
-Implement the requested change and verify its directly affected behavior.
-
 ## Goal
 
 Fix the selected audit-log boundary for a selected material action or policy decision across owner-layer emission, storage/sink, metadata safety, tests, and docs/maps when used.
@@ -29,3 +25,5 @@ Use the selected action/event, audit finding, failing test, compliance requireme
 ## Validation
 
 Run targeted tests or safe scenarios proving the selected action creates the correct audit record, denied paths are handled as expected, metadata is redacted, and query/sink behavior works. Report unavailable sinks as gates.
+
+Correct owner-layer emission, transactional/outbox linkage, safe schema or sink/query ownership using the same material action. Inspect the authoritative action and durable event independently, including directly affected alternate/retry paths. Feed the correlation/state and expected records to Audit Trail Integrity Check. Recheck failed completeness/integrity/privacy at that owner, then finish Patch Checking.

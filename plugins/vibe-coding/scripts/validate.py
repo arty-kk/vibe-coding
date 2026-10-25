@@ -10,6 +10,7 @@ from urllib.parse import unquote, urlsplit
 from catalog_site import render_catalog
 from metadata import skill_metadata, ui_metadata, catalog_errors
 from release_files import release_files
+from workflow_graph import load_workflows
 
 ROOT=Path(__file__).resolve().parents[1]
 
@@ -49,6 +50,10 @@ def validate(root=ROOT):
             check(25<=len(values.get('short_description',''))<=64,f'UI short description length: {name}')
             check('$'+name in values.get('default_prompt',''),f'Default prompt does not invoke skill: {name}')
     rows=catalog.get('recipes',[]);ids=[r['id'] for r in rows];paths=[r['path'] for r in rows]
+    try:
+        load_workflows(root, rows)
+    except (OSError, ValueError, KeyError, TypeError) as exc:
+        errors.append('Invalid workflow composition: '+str(exc))
     check(len(ids)==len(set(ids)),'Duplicate recipe IDs');check(len(paths)==len(set(paths)),'Duplicate recipe paths')
     for r in rows:
         p=inside(r['path']);check(p is not None and p.is_file(),f'Missing/escaping recipe: {r["id"]}')

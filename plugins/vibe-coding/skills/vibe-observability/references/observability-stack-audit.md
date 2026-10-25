@@ -1,9 +1,5 @@
 # Observability Stack Audit
 
-## Operation
-
-Inspect the selected behavior and report evidence-backed defects; do not change product code.
-
 ## Goal and scope
 
 Audit metrics, logs, dashboards, alerts, and correlation as one signal contract with bounded cardinality, cost, tenancy, and operator actionability.
@@ -26,3 +22,7 @@ Audit metrics, logs, dashboards, alerts, and correlation as one signal contract 
 3. Evaluate rule expressions for aggregation, counter reset, histogram buckets, absent/no-data, evaluation window, flap, and multi-tenant labels.
 4. Render/provision Grafana resources and verify datasource UID, variables, units, links, permissions, and alert ownership.
 5. Inspect VictoriaLogs stream/field extraction, tenant routing, retention, query shape, ingestion failures, and backpressure/cost evidence.
+
+## Handoff
+
+Retain the event/metric identity, type/units/label meaning, datasource/tenant and observation window. Show the first difference between emitted facts and the queried/operator-visible result, including reset or missing-data behavior when relevant. Pass that violated signal contract into Improve Observability Stack; an attractive graph or fewer alerts cannot establish correct measurement.

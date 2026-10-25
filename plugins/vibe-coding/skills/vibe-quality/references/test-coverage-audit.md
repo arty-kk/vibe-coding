@@ -28,3 +28,9 @@ Tests, test utilities, fixtures, mocks, snapshots, coverage config, CI workflows
 - Cite both the behavior owner and the missing/weak test evidence.
 - Make each finding about adding or repairing tests for one behavior owner and state the expected observable assertion.
 - Do not create product-code change tasks unless the code is untestable because of a demonstrated behavior-boundary problem.
+
+## Trace and hand off
+
+Choose the required behavior and a reachable violating input/state. Follow the existing test's setup, exercised production path and assertions to determine whether it would detect that violation. Distinguish no coverage from an ineffective assertion, an inaccurate fixture and a CI path that never runs the test.
+
+Pass Improve Test Harness the behavior owner, expected assertion, missing scenario and the narrow test boundary when changes are requested. Existing correct behavior may need added coverage without a product-code fix. Do not generate tests solely to repeat implementation text or increase coverage percentages.

@@ -1,9 +1,5 @@
 # Consistency Invariants Audit
 
-## Operation
-
-Inspect the selected behavior and report evidence-backed defects; do not change product code.
-
 ## Goal
 
 Find reachable consistency defects where one business rule, state transition, permission, quota, schema, cache, generated type, or external contract can drift across layers or over time.
@@ -23,8 +19,10 @@ Domain models, validators, permissions, plan/quota rules, API schemas, database 
 
 ## Evidence rules
 
-- Prefer fix at the defining sourcees over local guards, cosmetic rewrites, broad catch blocks, or hidden fallbacks.
+- Locate the authoritative rule and direct projections/consumers before recommending the correction.
 
 ## Work item quality
 
 - If validation commands or harnesses are absent, specify observable checks that an execute run can add or perform.
+
+Trace one logical operation through authoritative write/commit, publication/projection and consumer observation. Retain identities, versions and the first disagreement, distinguishing an accepted stale interval from a violated invariant. Pass that sequence and convergence criterion to Improve Consistency Invariants; a second mutable rule copy is not a repair for owner drift.

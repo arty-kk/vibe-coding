@@ -25,3 +25,7 @@ Datasets/loaders, feature definitions, schemas, training scripts, notebooks only
 
 - Include model/artifact/version owner, expected behavior, acceptance criteria, and validation/eval direction when discoverable.
 - Do not propose research experiments, model-family swaps, or metric redesigns without repo-visible product need and validation path.
+
+## Trace and hand off
+
+Follow one observation from its prediction/generation time through data extraction, split assignment, feature transforms, training artifact and served prediction. Verify that the same feature has the same meaning and availability at training and inference time. Pass the violated data/artifact boundary, time/split identity and a reproducing row/slice to Improve ML Pipeline; a better training metric cannot resolve leakage or train/serve skew.

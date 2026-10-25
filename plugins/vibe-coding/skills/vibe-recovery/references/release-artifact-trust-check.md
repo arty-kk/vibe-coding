@@ -41,3 +41,5 @@ Use repository-native build, digest, archive and attestation tools. Rebuild only
 ## Evidence and limitations
 
 Report each link as verified, failed or not exercised with exact identifiers, commands and evidence. Separate local assembly, remote publication, environment promotion and recovery readiness. Tie failures to the owning source and one repair direction; do not infer production readiness solely from a green build or a locally valid ZIP.
+
+Pass a failed link with candidate/downloaded/runtime digest, expected builder/policy identity and the violated inventory/compatibility condition into the authorized owning repair. Repeat that same comparison after correction and review any changed source patch. New publication, promotion or restore is not an automatic next step of an inspection-only result.

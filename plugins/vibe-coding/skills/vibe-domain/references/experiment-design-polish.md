@@ -1,9 +1,5 @@
 # Improve Experiment Design
 
-## Operation
-
-Implement the requested change and verify its directly affected behavior.
-
 ## Goal
 
 Correct the selected assignment, exposure or analysis contract before interpreting the experiment result.
@@ -21,3 +17,5 @@ Correct the selected assignment, exposure or analysis contract before interpreti
 - Run assignment determinism/allocation/SRM and event-semantic tests on representative identities and windows.
 - Reproduce analysis from versioned inputs and compare sensitivity to exclusions, clustering, windows, and missing data.
 - Exercise treatment delivery/exposure failure and rollback; list duration/seasonality/business-signoff gates separately.
+
+Correct assignment, exposure or metric ownership before recomputing an effect. Reproduce the same versioned analysis after the data-quality gates pass, preserving the declared unit, exclusions and stopping rule. Do not repeatedly change windows or filters until significance appears. A failed validity check returns to its owner; a rollout conclusion stays with the decision owner, while code/configuration changes finish through Patch Checking.

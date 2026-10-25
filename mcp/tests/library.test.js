@@ -2,7 +2,8 @@ import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
 import library from '../generated/library.json' with {type: 'json'};
-import {searchWorkflows, getWorkflow, libraryStatus} from '../library.js';
+import {readFileSync} from 'node:fs';
+import {searchWorkflows, getWorkflow, libraryStatus, INSTRUCTION_VERSION} from '../library.js';
 
 test('English, Spanish, Russian and Chinese search selects real workflow IDs', () => {
   for (const [query, expected] of [['API', 'api-audit'], ['auditoría SQL', 'sql-databases-audit'],
@@ -42,9 +43,72 @@ test('all 241 bundles preserve exact source bytes and load a bounded relevant co
     assert.equal(result.files.some(file => file.path === 'references/hosts.md'), false);
     for (const file of result.files) {
       assert.equal(createHash('sha256').update(file.text).digest('hex'), file.sha256);
-      assert.ok(file.source_url.startsWith('https://github.com/arty-kk/vibe-coding/blob/v1.4.1/'));
+      assert.ok(file.source_url.startsWith(`https://github.com/arty-kk/vibe-coding/blob/v${INSTRUCTION_VERSION}/`));
     }
   }
+});
+
+const judged = JSON.parse(readFileSync(new URL('../../review/search-cases-1.6.0.json', import.meta.url)));
+test('judged task goals and cross-domain negatives keep the correct workflow within the accepted rank', () => {
+  for (const row of judged.cases) {
+    const found = searchWorkflows({query: row.query, language: row.language, limit: 10});
+    const top = found.workflows.slice(0, row.max_rank).map(item => item.id);
+    assert.ok(row.expected.some(id => top.includes(id)), row.id + ': ' + JSON.stringify(top));
+    assert.ok(found.workflows.every(item => item.purpose && item.match.kind));
+  }
+  for (const row of judged.negative_cases) assert.equal(searchWorkflows(row).total, 0, JSON.stringify(row));
+});
+
+test('every stable ID and translated title is directly discoverable', () => {
+  for (const row of library.recipes) {
+    assert.equal(searchWorkflows({query: row.id}).workflows[0].id, row.id);
+    for (const locale of Object.values(library.locales)) {
+      assert.equal(searchWorkflows({query: locale.titles[row.id]}).workflows[0].id, row.id, locale.titles[row.id]);
+    }
+  }
+});
+
+test('read-only requests, known fixes and composed corrections keep distinct stages', () => {
+  const inspect = getWorkflow({id: 'mcp-server-audit'});
+  assert.deepEqual(inspect.execution.steps.map(step => step.id), ['mcp-server-audit']);
+  const compose = getWorkflow({id: 'mcp-server-audit', intent: 'improve'});
+  assert.deepEqual(compose.execution.steps.map(step => step.id),
+    ['mcp-server-audit', 'mcp-server-polish', 'mcp-protocol-auth-check', 'patch-checking']);
+  assert.equal(compose.files.filter(file => /\/references\//.test(file.path) && file.path.startsWith('skills/')).length, 1);
+  const fix = getWorkflow({id: 'mcp-server-polish'});
+  assert.deepEqual(fix.execution.steps.map(step => step.id), ['mcp-server-polish', 'mcp-protocol-auth-check', 'patch-checking']);
+  assert.deepEqual(getWorkflow({id: 'mcp-protocol-auth-check'}).execution.steps.map(step => step.id), ['mcp-protocol-auth-check']);
+  const freshness = getWorkflow({id: 'map-staleness-check'}).execution;
+  assert.deepEqual(freshness.steps.map(step => step.id), ['map-staleness-check']);
+  assert.ok(!freshness.transitions.some(edge => edge.to === 'map-staleness-check'));
+  assert.deepEqual(getWorkflow({id: 'task-shaping'}).execution.steps.map(step => step.id), ['task-shaping', 'validation-clarification']);
+  assert.equal(compose.execution.status, 'instructions_only');
+  assert.ok(!('verdict' in compose.execution));
+});
+
+test('patch review repeats corrections and exits on findings, missing evidence or no progress', () => {
+  const result = getWorkflow({id: 'patch-checking'});
+  const edges = result.execution.transitions;
+  assert.ok(edges.some(edge => edge.outcome === 'corrections_applied' && edge.to === 'patch-checking'));
+  assert.ok(edges.some(edge => edge.outcome === 'clean' && edge.to === null));
+  assert.ok(edges.some(edge => edge.outcome === 'blocked' && edge.to === null));
+  assert.ok(edges.some(edge => edge.outcome === 'findings_without_repair_authority' && edge.to === null));
+  assert.equal(result.execution.completion.clean_marker, '✅ Everything is fine. No changes required 👌');
+  for (const row of library.recipes) {
+    const flow = getWorkflow({id: row.id, intent: 'improve'}).execution;
+    for (const edge of flow.transitions) {
+      assert.ok(edge.to === null || flow.steps.some(step => step.id === edge.to), row.id);
+      assert.ok(flow.steps.some(step => step.id === edge.from), row.id);
+    }
+  }
+});
+
+test('later same-domain steps reuse context while retaining specialized instructions', () => {
+  const first = getWorkflow({id: 'mcp-server-audit', host: 'generic'});
+  const later = getWorkflow({id: 'mcp-server-polish', include_context: false});
+  assert.ok(later.words < first.words);
+  assert.ok(later.files.every(file => file.path !== 'references/workflow.md' && file.path !== 'references/cycles.md' && !file.path.endsWith('/SKILL.md')));
+  assert.ok(later.files.some(file => file.path === 'references/mcp-contract.md'));
 });
 
 test('host context is opt-in and unknown IDs cannot read arbitrary files or URLs', () => {

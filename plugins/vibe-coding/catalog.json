@@ -12,8 +12,9 @@
       "category": "AI, RAG & ML",
       "summary": "AI features, document retrieval and quality evaluation.",
       "example": "Use $vibe-ai, workflow “AI Evaluation Audit” (ID: ai-evaluation-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "3eeffc852fbd9535e694dfacf6f562586a86e2afaa51e67f3ab65aa103006d92",
-      "keywords": []
+      "sha256": "ece7a245df0b4637f14d0f0c084bb7b657bf24b57ae2d1e57a2a182bdf4ca856",
+      "keywords": [],
+      "purpose": "Audit an AI evaluation system as a release gate across task definition, datasets, scorers/judges, uncertainty, slices, regressions, and online correlation."
     },
     {
       "title": "Improve AI Evaluation",
@@ -25,8 +26,9 @@
       "category": "AI, RAG & ML",
       "summary": "AI features, document retrieval and quality evaluation.",
       "example": "Use $vibe-ai, workflow “Improve AI Evaluation” (ID: ai-evaluation-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "11213cee465adb9e9bed740fa06a563392e1142718aafb3260fcaa38035b0afc",
-      "keywords": []
+      "sha256": "b3bcf2fb22e8d25f8ef4ecb8af4b199d0865b42dc3d886e07bb47f6d8d806048",
+      "keywords": [],
+      "purpose": "Improve evaluation of the selected AI behavior with valid datasets, calibrated scoring and interpretable release criteria."
     },
     {
       "title": "AI Feature Audit",
@@ -38,8 +40,9 @@
       "category": "AI, RAG & ML",
       "summary": "AI features, document retrieval and quality evaluation.",
       "example": "Use $vibe-ai, workflow “AI Feature Audit” (ID: ai-feature-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "a81931d4f12cb9f1bc88efaa72ae5e31fb291930fa03a358b2b8a5a2acb73443",
-      "keywords": []
+      "sha256": "29608726f923210e311469e47b40f4073c9fc385209c0dd1c5ee6b9488700c1e",
+      "keywords": [],
+      "purpose": "Audit AI-assisted product behavior for correctness, safety, cost, reliability, privacy, and regression risk. Keep only issues supported by current repository evidence, not generic AI best practices."
     },
     {
       "title": "Improve AI Feature",
@@ -51,8 +54,9 @@
       "category": "AI, RAG & ML",
       "summary": "AI features, document retrieval and quality evaluation.",
       "example": "Use $vibe-ai, workflow “Improve AI Feature” (ID: ai-feature-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "2b7c9dff00547900fc4ba62807116fa052d5f3e7688fc83287f59e0c18fbad6e",
-      "keywords": []
+      "sha256": "8b42c3abd5fe435b8cd13599fc4088ac68aa578902a1f3271fb398eedf8ddfec",
+      "keywords": [],
+      "purpose": "Implement the selected AI feature change while preserving output validation, authorization, bounded execution and truthful user states."
     },
     {
       "title": "AI ML Problem Framing",
@@ -64,8 +68,9 @@
       "category": "AI, RAG & ML",
       "summary": "AI features, document retrieval and quality evaluation.",
       "example": "Use $vibe-ai, workflow “AI ML Problem Framing” (ID: ai-ml-problem-framing). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "ab9a22ae0cc808425ffdc70aa4c3c2ddf93c8f9a721f0561ae1c8e77c1035955",
-      "keywords": []
+      "sha256": "361b81ecd71c9e53d267de975281b7a7f23b62e3313c60730b0dfa470f2f0295",
+      "keywords": [],
+      "purpose": "Determine whether the requested AI/ML/DS behavior is a well-defined product or decision problem before selecting a model, dataset, retrieval system, or evaluation stack."
     },
     {
       "title": "AI Safety & Governance Audit",
@@ -77,8 +82,9 @@
       "category": "AI, RAG & ML",
       "summary": "AI features, document retrieval and quality evaluation.",
       "example": "Use $vibe-ai, workflow “AI Safety & Governance Audit” (ID: ai-safety-governance-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "10e3cff7c9dd3ec373e21a7633ca00efc88954fcd04a40e8f5fd7038321ce14b",
-      "keywords": []
+      "sha256": "0b926299075ec8ddd975c6a8a4ea0b64194d1fece31c03095c1dca7f014b3f0a",
+      "keywords": [],
+      "purpose": "Audit an AI release for misuse, harmful output, privacy, accountability, evaluation evidence, human control, and rollback governance."
     },
     {
       "title": "Improve AI Safety & Governance",
@@ -90,8 +96,9 @@
       "category": "AI, RAG & ML",
       "summary": "AI features, document retrieval and quality evaluation.",
       "example": "Use $vibe-ai, workflow “Improve AI Safety & Governance” (ID: ai-safety-governance-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "607cfd511d2fd5d3f2e2d35320a86cd9570c91da730e3362a4a707c0a884d170",
-      "keywords": []
+      "sha256": "c3358905cd169c9f21751457afccad135160be81a48ed5fc3ec21c02c97dbbb8",
+      "keywords": [],
+      "purpose": "Correct the selected AI safety or release-control behavior, with tested misuse cases and an owned disable or recovery path."
     },
     {
       "title": "LLM Agent Tools Audit",
@@ -103,8 +110,9 @@
       "category": "AI, RAG & ML",
       "summary": "AI features, document retrieval and quality evaluation.",
       "example": "Use $vibe-ai, workflow “LLM Agent Tools Audit” (ID: llm-agent-tools-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "c40bf42384bd6e8db98a77630d462199d7f9c81228df58bf8b462cf1e61719f0",
-      "keywords": []
+      "sha256": "6227fe2073f0bf251294bd42e865d0e7cb5150d99e23e6ac9750e42c265aa141",
+      "keywords": [],
+      "purpose": "Audit agentic AI flows that let an LLM choose tools, call functions, mutate data, browse/search, run code, or orchestrate multi-step work. Keep only reachable issues that affect correctness, safety, permissions, cost, observability, or eval coverage."
     },
     {
       "title": "Improve LLM Agent Tools",
@@ -116,8 +124,9 @@
       "category": "AI, RAG & ML",
       "summary": "AI features, document retrieval and quality evaluation.",
       "example": "Use $vibe-ai, workflow “Improve LLM Agent Tools” (ID: llm-agent-tools-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "2c362e83de58c89dc621e6fce93ef55c51cea0a15e2aa172ac3eb73919c12391",
-      "keywords": []
+      "sha256": "9bba4edcd5942a30f799b2326f22510c721a722b65861b02c048616e1f45d5e6",
+      "keywords": [],
+      "purpose": "Correct the selected model-to-tool interaction, preserving tool authorization, bounded execution and safe replay of effects."
     },
     {
       "title": "ML Pipeline Audit",
@@ -129,8 +138,9 @@
       "category": "AI, RAG & ML",
       "summary": "AI features, document retrieval and quality evaluation.",
       "example": "Use $vibe-ai, workflow “ML Pipeline Audit” (ID: ml-pipeline-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "b5bbc35aab8add0968a629a86f181a4f49b9d4f1a302605428d1178e3619e861",
-      "keywords": []
+      "sha256": "8cfd4598ef850c35208ab630f0fe675db4e4abcaa0ed1dd425d7fd3be9fe3ea5",
+      "keywords": [],
+      "purpose": "Audit machine-learning pipeline behavior across data contracts, feature generation, training, inference, evaluation, deployment, monitoring, and rollback. Keep only issues with current repository impact; do not turn generic ML advice into tasks."
     },
     {
       "title": "Improve ML Pipeline",
@@ -142,8 +152,9 @@
       "category": "AI, RAG & ML",
       "summary": "AI features, document retrieval and quality evaluation.",
       "example": "Use $vibe-ai, workflow “Improve ML Pipeline” (ID: ml-pipeline-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "dea9708e242eeba4f7456625b2e459656390941712118b63b3a3c376c5bba5d3",
-      "keywords": []
+      "sha256": "02e4163d9ef5b2098f974074f932dd4d2dc00b758d24fd44b0de042ff3c174fa",
+      "keywords": [],
+      "purpose": "Correct the selected data, training or inference path while preserving reproducible inputs and compatible model artifacts."
     },
     {
       "title": "Model Serving & Monitoring Audit",
@@ -155,8 +166,9 @@
       "category": "AI, RAG & ML",
       "summary": "AI features, document retrieval and quality evaluation.",
       "example": "Use $vibe-ai, workflow “Model Serving & Monitoring Audit” (ID: model-serving-monitoring-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "575ece210e86889ec8b86f3eaa9ba05091f3b31e1fd2188d2f229e1c57cadb13",
-      "keywords": []
+      "sha256": "f3d3a92325fd126a19356d2ae851407b1bbe12f2b21990d2047f84f1056721ef",
+      "keywords": [],
+      "purpose": "Audit model serving across artifact identity, preprocessing, routing, batching, concurrency, fallback, observability, and safe rollout."
     },
     {
       "title": "Improve Model Serving & Monitoring",
@@ -168,8 +180,9 @@
       "category": "AI, RAG & ML",
       "summary": "AI features, document retrieval and quality evaluation.",
       "example": "Use $vibe-ai, workflow “Improve Model Serving & Monitoring” (ID: model-serving-monitoring-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "5279363e71d2448e4df9f93b4bde7a988efd5da6a75729bcd87968994f6e9259",
-      "keywords": []
+      "sha256": "910a30082029daf23d8a994302038960fbda721fee73917049d2ddd72368d67b",
+      "keywords": [],
+      "purpose": "Correct the selected model-serving path, preserving artifact identity, bounded load, fallback semantics and rollout checks."
     },
     {
       "title": "OCR Document AI Audit",
@@ -181,8 +194,9 @@
       "category": "AI, RAG & ML",
       "summary": "AI features, document retrieval and quality evaluation.",
       "example": "Use $vibe-ai, workflow “OCR Document AI Audit” (ID: ocr-document-ai-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "79e62a24a324ed26dce36d8836a9829a8d77a12321c8aa26721875c3ea73d819",
-      "keywords": []
+      "sha256": "e4d776a52cceb316cbce1a03903a43462ef4109098b690ade6fd0ffb1c55d47b",
+      "keywords": [],
+      "purpose": "Audit OCR and document-AI behavior from upload/intake to extracted data, correction, export, storage, and downstream use. Keep only reachable issues that affect extraction correctness, safety, privacy, workflow completion, or regression resistance."
     },
     {
       "title": "Improve OCR Document AI",
@@ -194,8 +208,9 @@
       "category": "AI, RAG & ML",
       "summary": "AI features, document retrieval and quality evaluation.",
       "example": "Use $vibe-ai, workflow “Improve OCR Document AI” (ID: ocr-document-ai-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "c46774c7a2bfa303ea112a31ea3914d76be7beb82d31441de8436debaa044ded",
-      "keywords": []
+      "sha256": "acbc27f0e069988f0d2fbb342f29fd13df0c42ec68a8031ac63ce5550fe626fe",
+      "keywords": [],
+      "purpose": "Correct the selected document-processing contract across intake, extraction, confidence, correction or export and its directly affected states. The required behavior determines the size of the correction; a single parser or label fix is valid when it resolves the observed defect."
     },
     {
       "title": "RAG Audit",
@@ -207,8 +222,9 @@
       "category": "AI, RAG & ML",
       "summary": "AI features, document retrieval and quality evaluation.",
       "example": "Use $vibe-ai, workflow “RAG Audit” (ID: rag-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "a567bc872222975adfe92e3094d4b881048c103709cb90f378c1a162c54dd88c",
-      "keywords": []
+      "sha256": "3773f88bcb46ed6751edad453c09e7e4b2db22b0ac096b7e52a8c550b0d83a83",
+      "keywords": [],
+      "purpose": "Audit retrieval-augmented generation behavior from ingestion to answer rendering. Keep only reachable issues that affect answer correctness, source grounding, access control, freshness, latency/cost, or regression resistance."
     },
     {
       "title": "Improve RAG",
@@ -220,8 +236,9 @@
       "category": "AI, RAG & ML",
       "summary": "AI features, document retrieval and quality evaluation.",
       "example": "Use $vibe-ai, workflow “Improve RAG” (ID: rag-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "aeff0f41ba5c4557e06ab8114557bf84fde4c2118c46128cd252a15120874f1f",
-      "keywords": []
+      "sha256": "67ed3f9c8ba04845e105daba659bec55f6128da4c49266b0411f059a073fe9c5",
+      "keywords": [],
+      "purpose": "Correct the selected retrieval/answer contract across the directly affected ingestion, access, ranking, context, citation or failure states. A small prompt or filter correction is sufficient when it resolves the demonstrated failure and its acceptance is verified."
     },
     {
       "title": "API Audit",
@@ -233,13 +250,14 @@
       "category": "APIs & bots",
       "summary": "API contracts and bot interaction flows.",
       "example": "Use $vibe-backend, workflow “API Audit” (ID: api-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "e93ea15e0bb73d751e6ef26bc5c5adc9ac1f14f2b1b24922d7acf7796d7d6cd9",
+      "sha256": "b1643717f6f018ebfa99022878aba6242ea714e388d589ab43ad613b5968904c",
       "keywords": [
         "GraphQL",
         "OpenAPI",
         "CORS",
         "CSRF"
-      ]
+      ],
+      "purpose": "Audit the reachable API surface for behavior, contract, validation, security-adjacent, and integration defects. Keep only issues supported by current repository evidence."
     },
     {
       "id": "api-contract-compatibility-check",
@@ -251,7 +269,7 @@
       "category": "APIs & bots",
       "summary": "API contracts and bot interaction flows.",
       "example": "Use $vibe-backend, workflow “API Contract Compatibility Check” (ID: api-contract-compatibility-check). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "e9437c60fdfe9053098ec212f439fe8fbcb7fec78843dc1f56e7354c4ea3ba65",
+      "sha256": "7eccb397298ba8c73681705400cb73389ea8a8ed04fc8bb66af1e9e536434d41",
       "keywords": [
         "GraphQL",
         "OpenAPI",
@@ -262,7 +280,8 @@
         "совместимость",
         "esquemas",
         "协议兼容"
-      ]
+      ],
+      "purpose": "Verify request, response, error and version compatibility for the selected API producer and its supported consumers."
     },
     {
       "id": "api-contract-evolution-audit",
@@ -274,7 +293,7 @@
       "category": "APIs & bots",
       "summary": "API contracts and bot interaction flows.",
       "example": "Use $vibe-backend, workflow “API Contract Evolution Audit” (ID: api-contract-evolution-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "7c1f86d62fe8a07fa567009d218f782f06690261e39bc909b7ca7ff677760038",
+      "sha256": "df7ade18042860d4e83bb27488bb6e7eff16122501cc84a60b2764c49bf6ea99",
       "keywords": [
         "GraphQL",
         "OpenAPI",
@@ -285,7 +304,8 @@
         "совместимость",
         "esquemas",
         "协议兼容"
-      ]
+      ],
+      "purpose": "Determine whether old and new producers/consumers can coexist through the actual rollout, replay and rollback window. Include the schema owner, serializer/resolver, generated clients and directly affected callers. Keep database storage migrations and authorized reference reconstruction with their own owners unless they directly constrain this contract."
     },
     {
       "id": "api-contract-evolution-polish",
@@ -297,7 +317,7 @@
       "category": "APIs & bots",
       "summary": "API contracts and bot interaction flows.",
       "example": "Use $vibe-backend, workflow “Improve API Contract Evolution” (ID: api-contract-evolution-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "8c1cfad99860336bec2d4ac50839bd5e893d303d396c2ca71b61791a71d6ca8d",
+      "sha256": "44469fcdca1c5e3a3c1f6db0c7dc9510c24fad4ca31e7a0a72ae5845f14c6235",
       "keywords": [
         "GraphQL",
         "OpenAPI",
@@ -308,7 +328,8 @@
         "совместимость",
         "esquemas",
         "协议兼容"
-      ]
+      ],
+      "purpose": "Complete a coherent change from schema source through runtime validation/serialization, generated artifacts, consumers and rollout. Resolve the demonstrated incompatibility at its owner rather than maintaining contradictory hand-written copies. Avoid unrelated API redesign, generator upgrades or database rewrites."
     },
     {
       "title": "Improve API",
@@ -320,8 +341,9 @@
       "category": "APIs & bots",
       "summary": "API contracts and bot interaction flows.",
       "example": "Use $vibe-backend, workflow “Improve API” (ID: api-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "c112140aac59b80c576d1e5ca2bd137f0524a7c1b1c7ace492798e96edd4fb90",
-      "keywords": []
+      "sha256": "16db62c1dd478fd21cddcbcb99794739dcc46da2786c4ef617990dfb9bda7454",
+      "keywords": [],
+      "purpose": "Complete the selected API contract from its defining schema/handler through directly affected persistence, errors and consumers. The correction may be small; it is complete when the same accepted behavior holds at every affected boundary."
     },
     {
       "title": "Bot Audit",
@@ -333,8 +355,9 @@
       "category": "APIs & bots",
       "summary": "API contracts and bot interaction flows.",
       "example": "Use $vibe-backend, workflow “Bot Audit” (ID: bot-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "28e1a0b432fdbc923b560b73308ffd5d1d85c18012f90ffe9f8ebb4b8e49a822",
-      "keywords": []
+      "sha256": "b9aaf3bdcbfcc5739b3454f55750041795e6b5fbce1af01961214a725058bae3",
+      "keywords": [],
+      "purpose": "Audit bot flows, commands, state transitions, keyboards, copy, permissions, and platform constraints. Keep issues that affect user completion, safety, correctness, or operability."
     },
     {
       "title": "Improve Bot",
@@ -346,8 +369,9 @@
       "category": "APIs & bots",
       "summary": "API contracts and bot interaction flows.",
       "example": "Use $vibe-backend, workflow “Improve Bot” (ID: bot-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "04dfd8c7cd9da82b5078ab820f0923678b29cfb035d7d79582295cd928ff1395",
-      "keywords": []
+      "sha256": "cf157280a02330a0d0bdae003e855a6fdfad0ed55d9fccd50f991a11e5e1b9c5",
+      "keywords": [],
+      "purpose": "Improve the selected bot flow or related states across navigation, menus, copy, validation, recovery, permissions, and platform constraints. Solve the selected journey end-to-end rather than tweaking one message while adjacent states remain broken."
     },
     {
       "title": "Cache Coherency Check",
@@ -359,8 +383,9 @@
       "category": "Caching & freshness",
       "summary": "Cache keys, invalidation and data freshness.",
       "example": "Use $vibe-cache, workflow “Cache Coherency Check” (ID: cache-coherency-check). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "81a6f36eac1bef2a2201241cbb690cbbf2527f1a62cbf9e468011fc899e2285b",
-      "keywords": []
+      "sha256": "220e44fb34138d7b903ef1f8421a90a32d2d8066e37816122bcbfd7a1ecf04b7",
+      "keywords": [],
+      "purpose": "Verify one cache coherency invariant through bounded write/read/invalidation/permission scenarios without broadening into performance tuning or unrelated refactors."
     },
     {
       "title": "Cache Invalidation Audit",
@@ -372,8 +397,9 @@
       "category": "Caching & freshness",
       "summary": "Cache keys, invalidation and data freshness.",
       "example": "Use $vibe-cache, workflow “Cache Invalidation Audit” (ID: cache-invalidation-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "3eaaf166c76e32a4276d4c08d3330bc772c9738d4ba8ba2022810e35eff5c39c",
-      "keywords": []
+      "sha256": "303c795f7262348e54354452f65060305acde6b4b291a32544b6993a10b37f16",
+      "keywords": [],
+      "purpose": "Audit one cache, CDN, browser cache, server cache, query cache, materialized view, or invalidation boundary for correctness, tenant safety, freshness, and failure behavior."
     },
     {
       "title": "Improve Cache Invalidation",
@@ -385,8 +411,9 @@
       "category": "Caching & freshness",
       "summary": "Cache keys, invalidation and data freshness.",
       "example": "Use $vibe-cache, workflow “Improve Cache Invalidation” (ID: cache-invalidation-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "db12d17999ebcd5bcc3cf731c1dd91bc12bafacbe0e908ed8ffacf5e60d0c9e2",
-      "keywords": []
+      "sha256": "be455d0fc5bf653df037f9ed6b4ff738a46063ea1b56fe2d77f174d533077f52",
+      "keywords": [],
+      "purpose": "Restore the selected cache freshness or invalidation guarantee from the authoritative write through directly affected readers."
     },
     {
       "title": "Celery Delivery & Shutdown Check",
@@ -398,8 +425,9 @@
       "category": "Celery",
       "summary": "Celery task delivery, retries and worker shutdown.",
       "example": "Use $vibe-celery, workflow “Celery Delivery & Shutdown Check” (ID: celery-delivery-shutdown-check). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "fd470a975417cdac9f1d4d8983e6a9b4fd6aa0c2128a6f8256cb5c9373c557a6",
-      "keywords": []
+      "sha256": "eeacd50b5f1549f6db8ec251c69bb1bff3bb058fb209663dde4341059d5817cd",
+      "keywords": [],
+      "purpose": "Verify the selected task’s publication, processing or shutdown guarantee under the configured acknowledgment and retry policy."
     },
     {
       "title": "Celery Workers Audit",
@@ -411,8 +439,9 @@
       "category": "Celery",
       "summary": "Celery task delivery, retries and worker shutdown.",
       "example": "Use $vibe-celery, workflow “Celery Workers Audit” (ID: celery-workers-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "aa8c991d81f1426cbbe1d64dc834f75d6bc9ca68c55a126d8b596d626c439090",
-      "keywords": []
+      "sha256": "02137185ef6a19b009d993b5cab74f0481ddc674f26de5cb36a08fb1712c41dc",
+      "keywords": [],
+      "purpose": "Audit Celery task publication, acknowledgement, idempotency, retries, routing, concurrency, scheduling, and worker shutdown against the chosen broker/backend."
     },
     {
       "title": "Improve Celery Workers",
@@ -424,8 +453,9 @@
       "category": "Celery",
       "summary": "Celery task delivery, retries and worker shutdown.",
       "example": "Use $vibe-celery, workflow “Improve Celery Workers” (ID: celery-workers-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "e44ddbb384a7bd0375441dfd753aaa096861ad3c313bf61d5f306fe3267b99be",
-      "keywords": []
+      "sha256": "7db51bc3ca89b4c6fa70c14aa7a6bee94bf1edf0fdf40ef521f18fee9b3f3ecf",
+      "keywords": [],
+      "purpose": "Correct the selected Celery delivery or worker-lifecycle behavior for the configured broker, backend and execution pool."
     },
     {
       "title": "ClickHouse Audit",
@@ -437,8 +467,9 @@
       "category": "ClickHouse",
       "summary": "Data ingestion, table engines and query cost.",
       "example": "Use $vibe-clickhouse, workflow “ClickHouse Audit” (ID: clickhouse-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "053020536896bb232139d2b995bf18990b4e5a2deba49ad61bd1c520f6828468",
-      "keywords": []
+      "sha256": "a4221ce2e575b3e08065763ca5e4acd6b5bead01dcf7e0f12850bb3fe0ae4d2c",
+      "keywords": [],
+      "purpose": "Audit ClickHouse table engines, partition/order keys, ingestion/deduplication, query pruning, replication/mutations, and workload limits as one analytics contract."
     },
     {
       "title": "ClickHouse Ingestion & Query Load Check",
@@ -450,8 +481,9 @@
       "category": "ClickHouse",
       "summary": "Data ingestion, table engines and query cost.",
       "example": "Use $vibe-clickhouse, workflow “ClickHouse Ingestion & Query Load Check” (ID: clickhouse-ingestion-query-load-check). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "128829f53d81d6ad907341b1396778426bab132e339328c0527ac7a6fbd5e22c",
-      "keywords": []
+      "sha256": "3e05904a92d4f62b50be715408f63f2fc3072f79e9e928e05ac8e5a8680fe37f",
+      "keywords": [],
+      "purpose": "Verify the selected ingestion identity, visible query result or resource budget using the actual table and topology."
     },
     {
       "title": "Improve ClickHouse",
@@ -463,8 +495,9 @@
       "category": "ClickHouse",
       "summary": "Data ingestion, table engines and query cost.",
       "example": "Use $vibe-clickhouse, workflow “Improve ClickHouse” (ID: clickhouse-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "6de9e7bc1f4f987dfc20d45ce34752bbbe253e0ff67eabbaea78b32bd5e8243e",
-      "keywords": []
+      "sha256": "a8f7426aa065c10e7f0b39ddb4924238c910ec9b59edb3104cf657d44e48ae0c",
+      "keywords": [],
+      "purpose": "Correct the selected ClickHouse ingestion, table or query behavior using its actual engine, keys and merge semantics."
     },
     {
       "title": "Compatibility Golden Master Check",
@@ -476,8 +509,9 @@
       "category": "Compatibility & protocols",
       "summary": "Compatibility contracts and reference comparisons.",
       "example": "Use $vibe-compatibility, workflow “Compatibility Golden Master Check” (ID: compatibility-golden-master-check). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "d9f17b43b161e5819aae0ab491f17741d3db70cf3133d1af0362fcdc10415c77",
-      "keywords": []
+      "sha256": "0b35f2815565ba5e5586fe668de12948c3e48d098a7c1a0b21a9dfe4cabb94b5",
+      "keywords": [],
+      "purpose": "Verify that the candidate preserves the selected reference behavior across the supported input and version corpus."
     },
     {
       "title": "Reverse Engineering Audit",
@@ -489,8 +523,9 @@
       "category": "Compatibility & protocols",
       "summary": "Compatibility contracts and reference comparisons.",
       "example": "Use $vibe-compatibility, workflow “Reverse Engineering Audit” (ID: reverse-engineering-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "cd9616150d1044d7c3a57e226bd4dc9e3e155946c23b21b0a75a4c3479dadd95",
-      "keywords": []
+      "sha256": "c096eada4cbb28dbf0dd2b06dba4a61cfd41bf99fae7abaa32747d315cabe42d",
+      "keywords": [],
+      "purpose": "Reconstruct an existing system's observable contract from authorized evidence and preserve compatibility through differential and golden-master validation."
     },
     {
       "title": "Improve Reverse Engineering",
@@ -502,8 +537,9 @@
       "category": "Compatibility & protocols",
       "summary": "Compatibility contracts and reference comparisons.",
       "example": "Use $vibe-compatibility, workflow “Improve Reverse Engineering” (ID: reverse-engineering-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "88ff1013525c088e22d1649786cc3db58644a66be8dffb9b0341d244f6e6a8c2",
-      "keywords": []
+      "sha256": "766b4f46f644c1a7d7ec0a26018dda52ca427c2e9262acd7f4dba5c093f4cbfb",
+      "keywords": [],
+      "purpose": "Implement the selected compatibility behavior against an authorized reference and a reproducible comparison corpus."
     },
     {
       "title": "Localization Audit",
@@ -515,8 +551,9 @@
       "category": "Copy, localization & SEO",
       "summary": "Product copy, localization and search visibility.",
       "example": "Use $vibe-content, workflow “Localization Audit” (ID: localization-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "740764293e56559163e8b45e2d869cc12d9843199cc95e46312c12b9597b8af6",
-      "keywords": []
+      "sha256": "e2a44dfb2427e9017f9aaa7aebe64a6a39a46c4a64bb4c94113789904b4c4839",
+      "keywords": [],
+      "purpose": "Audit a selected localization surface for key ownership, interpolation safety, locale semantics, fallback, and layout impact."
     },
     {
       "title": "Improve Localization",
@@ -528,8 +565,9 @@
       "category": "Copy, localization & SEO",
       "summary": "Product copy, localization and search visibility.",
       "example": "Use $vibe-content, workflow “Improve Localization” (ID: localization-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "f2c33b47e4df6dd31d997583d10ba09335d94b856a6e18afac64fbd09c0914f2",
-      "keywords": []
+      "sha256": "9531936354e956723c8752998a2b416e6b088074f16bbea8d9d0ea43b5998971",
+      "keywords": [],
+      "purpose": "Improve the selected localization surface: missing strings, inconsistent keys, hardcoded user-facing copy, pluralization, interpolation, locale formatting, and translated state coverage."
     },
     {
       "title": "Notification Content Audit",
@@ -541,8 +579,9 @@
       "category": "Copy, localization & SEO",
       "summary": "Product copy, localization and search visibility.",
       "example": "Use $vibe-content, workflow “Notification Content Audit” (ID: notification-content-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "4d60e2133be7362b76bbbb0ab75898032591246ef03fbcf0e0507a5e689ce71f",
-      "keywords": []
+      "sha256": "bba530b7a6e3c2172c31024921afd0a22d4dc09e231dfd63ac3b47258b955129",
+      "keywords": [],
+      "purpose": "Find misleading, missing or wrongly localized notification content at the actual event, audience and channel boundary."
     },
     {
       "title": "Improve Notification Content",
@@ -554,8 +593,9 @@
       "category": "Copy, localization & SEO",
       "summary": "Product copy, localization and search visibility.",
       "example": "Use $vibe-content, workflow “Improve Notification Content” (ID: notification-content-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "8f1425ffe8a538f53e212598de7bc2bb2116ae949afae2ff39382f3217aa378a",
-      "keywords": []
+      "sha256": "c31c4df62ee0047df42c21eec6a6044e7a09702a35e19c2da6959775b51c555b",
+      "keywords": [],
+      "purpose": "Correct notification wording, variables and action links while preserving event meaning, audience and channel constraints."
     },
     {
       "title": "Product & Landing Copy Audit",
@@ -567,8 +607,9 @@
       "category": "Copy, localization & SEO",
       "summary": "Product copy, localization and search visibility.",
       "example": "Use $vibe-content, workflow “Product & Landing Copy Audit” (ID: product-landing-copy-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "4e4452c6404676fd3ea1830cd5c412773563637cfa84732283ffde1668e5b539",
-      "keywords": []
+      "sha256": "6f4dd9551876a41ff1b2cb9ce1d16dfa828b8b0b082c56c023da5cb68848e10b",
+      "keywords": [],
+      "purpose": "Audit selected product or landing copy against actual behavior, audience intent, evidence, and conversion path."
     },
     {
       "title": "Improve Product & Landing Copy",
@@ -580,8 +621,9 @@
       "category": "Copy, localization & SEO",
       "summary": "Product copy, localization and search visibility.",
       "example": "Use $vibe-content, workflow “Improve Product & Landing Copy” (ID: product-landing-copy-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "7e858beeafb7203cb6d0ed4c3d952594f834e71ea4841c105b91a95814234f42",
-      "keywords": []
+      "sha256": "eb133e9a9e1b9a8365200f24f96ac51ad8dbe1fc28688ed7e42372c82e77f614",
+      "keywords": [],
+      "purpose": "Improve the selected product wording or call to action while preserving factual claims, localization and destination behavior."
     },
     {
       "title": "SEO GEO Audit",
@@ -593,8 +635,9 @@
       "category": "Copy, localization & SEO",
       "summary": "Product copy, localization and search visibility.",
       "example": "Use $vibe-content, workflow “SEO GEO Audit” (ID: seo-geo-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "ca68e88df40b52ba1776cde38721de9406a219172f05d7cb13b5a0d1adffc16b",
-      "keywords": []
+      "sha256": "1625056e9e90ad028f7d231e84d5a159ad2c635f4a8a559246b25fbacb546260",
+      "keywords": [],
+      "purpose": "Inspect crawlability, indexing, canonical and language signals, structured data and evidence-backed page content for search and answer engines."
     },
     {
       "title": "Improve SEO GEO",
@@ -606,8 +649,9 @@
       "category": "Copy, localization & SEO",
       "summary": "Product copy, localization and search visibility.",
       "example": "Use $vibe-content, workflow “Improve SEO GEO” (ID: seo-geo-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "7c44337cd035476d358fe4e8d15bb1003393a7054d6e88cd290f9dc97a6f3dca",
-      "keywords": []
+      "sha256": "306f67ac55bacd0ee7d65d94b09fe95a66ec7e9c65a62e219f00dba37041bc28",
+      "keywords": [],
+      "purpose": "Repair demonstrated crawl, indexing, canonical, localization or structured-data defects and improve supported page answers without inventing ranking results."
     },
     {
       "title": "Accessibility Audit",
@@ -619,8 +663,9 @@
       "category": "Design & accessibility",
       "summary": "Design systems, keyboard navigation, focus and accessibility.",
       "example": "Use $vibe-design, workflow “Accessibility Audit” (ID: accessibility-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "8aed998eaff21182a58d85f23049f9f743427868e639bcd866978747fa797bc6",
-      "keywords": []
+      "sha256": "4394677f4f605b45be0965b2582d094396cb62aca99eec441a0130896ace3121",
+      "keywords": [],
+      "purpose": "Audit reachable accessibility defects in critical user/admin/public paths. Keep only issues supported by repository evidence and observable behavior; do not produce generic WCAG checklists without an owner and affected surface."
     },
     {
       "title": "Improve Accessibility",
@@ -632,8 +677,9 @@
       "category": "Design & accessibility",
       "summary": "Design systems, keyboard navigation, focus and accessibility.",
       "example": "Use $vibe-design, workflow “Improve Accessibility” (ID: accessibility-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "4fd463664078737aa630641ea8483b45064f1456049feb46e9b661b1b0212af2",
-      "keywords": []
+      "sha256": "1bc24e1a72ea0483d7d69017484ba65c3ffcda716e8b5b06e6987eb0054f7089",
+      "keywords": [],
+      "purpose": "Improve the selected accessible path or shared accessible component behavior. The diff should make the selected interaction perceivable, operable, understandable, and regression-resistant without introducing speculative abstractions."
     },
     {
       "title": "Design System Audit",
@@ -645,8 +691,9 @@
       "category": "Design & accessibility",
       "summary": "Design systems, keyboard navigation, focus and accessibility.",
       "example": "Use $vibe-design, workflow “Design System Audit” (ID: design-system-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "f4ece85a37026cba1a48aece277f2237e9570d4164ca10df394ae725d4901226",
-      "keywords": []
+      "sha256": "cf540ae36d99f297aaad212e7f35cb4b92498c1de7b1cbc5b24432943bf5ffc7",
+      "keywords": [],
+      "purpose": "Audit the implementation design system: tokens, components, variants, styles, layout primitives, interaction states, documentation, and test/story coverage. Keep only repo-visible issues that make UI work slower, inconsistent, inaccessible, fragile, or visibly divergent."
     },
     {
       "title": "Improve Design System",
@@ -658,8 +705,9 @@
       "category": "Design & accessibility",
       "summary": "Design systems, keyboard navigation, focus and accessibility.",
       "example": "Use $vibe-design, workflow “Improve Design System” (ID: design-system-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "237a13f48a0da00d617bbec456eff1149e7f8911f2c91b865d232317d2b9b2b0",
-      "keywords": []
+      "sha256": "783fd2776d8d2e1b69112548c99288c61381ac3d3c1dc2b71e27e44ae085d0d8",
+      "keywords": [],
+      "purpose": "Improve the selected design-system owner: a token family, component family, layout primitive, interaction-state pattern, or documented variant set. The diff should reduce drift across consuming surfaces rather than locally polishing one page."
     },
     {
       "title": "Browser Extension Audit",
@@ -671,8 +719,9 @@
       "category": "Desktop & extensions",
       "summary": "Desktop apps, browser extensions and IPC.",
       "example": "Use $vibe-desktop, workflow “Browser Extension Audit” (ID: browser-extension-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "2031a932f44fb9177a6b6be7b087c8d26d71688e468e6f82806e7326e5f4df18",
-      "keywords": []
+      "sha256": "754242437c5944485d26324106d0e2dc723c6e3707bdd9f09aca3b482c3270e4",
+      "keywords": [],
+      "purpose": "Audit one browser extension boundary such as permissions, content scripts, background/service worker, messaging, storage, native messaging, page injection, update behavior, or external API access."
     },
     {
       "title": "Improve Browser Extension",
@@ -684,8 +733,9 @@
       "category": "Desktop & extensions",
       "summary": "Desktop apps, browser extensions and IPC.",
       "example": "Use $vibe-desktop, workflow “Improve Browser Extension” (ID: browser-extension-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "0fe7aaa222c0a39fcdf0c6a184444fa4c4dec4d7a0afa01f3b2d90e49015b738",
-      "keywords": []
+      "sha256": "5d971a1539a21af9db5e2a8cf17b4947940a77f8798b4360d88f3360d5a2c054",
+      "keywords": [],
+      "purpose": "Fix the selected browser extension boundary across manifest permissions, scripts, messaging, storage, backend/native integration, tests, and release packaging when directly affected."
     },
     {
       "title": "Desktop App Audit",
@@ -697,8 +747,9 @@
       "category": "Desktop & extensions",
       "summary": "Desktop apps, browser extensions and IPC.",
       "example": "Use $vibe-desktop, workflow “Desktop App Audit” (ID: desktop-app-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "442c8a8b7c081c8ffbf071b5157e481bfd36ee145261ba6d986dd7e4ff7589c9",
-      "keywords": []
+      "sha256": "f715c243bb50fffb0025f5b4bb239314615a2e6b27510b5ea3c97c0a4dbabc59",
+      "keywords": [],
+      "purpose": "Audit one desktop app boundary such as local storage, auto-update, IPC, native shell access, offline sync, file system permissions, notifications, packaging, or backend integration."
     },
     {
       "title": "Improve Desktop App",
@@ -710,8 +761,9 @@
       "category": "Desktop & extensions",
       "summary": "Desktop apps, browser extensions and IPC.",
       "example": "Use $vibe-desktop, workflow “Improve Desktop App” (ID: desktop-app-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "8a570ae937bb7b24cdf290d32d7a1595bf08c4d7302742ed158e6ea86fc5d870",
-      "keywords": []
+      "sha256": "c7e384382a8b189ada7a1e48b0cc9987d7ace7b0cbd0c5724df9d25e66361b30",
+      "keywords": [],
+      "purpose": "Fix the selected desktop app boundary across UI/native layers, IPC, local storage/files, backend integration, tests, and packaging/release config when directly affected."
     },
     {
       "title": "Local Client Runtime Security Check",
@@ -723,8 +775,9 @@
       "category": "Desktop & extensions",
       "summary": "Desktop apps, browser extensions and IPC.",
       "example": "Use $vibe-desktop, workflow “Local Client Runtime Security Check” (ID: local-client-runtime-security-check). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "b63c351df221fb781181f64a5dc8dbc11ebafb16b81cbfd6eb6789915d24ae60",
-      "keywords": []
+      "sha256": "a6c3ed8e7d587e39c2024fad8631e474ba4e79f00824309b533992d69debcb42",
+      "keywords": [],
+      "purpose": "Verify one browser-extension or desktop-app local runtime security invariant through bounded permission, storage, messaging/IPC, update/restart, and failure scenarios."
     },
     {
       "title": "Document the Design System",
@@ -736,8 +789,9 @@
       "category": "Documentation & refactoring",
       "summary": "READMEs, design documents and refactoring boundaries.",
       "example": "Use $vibe-docs, workflow “Document the Design System” (ID: design-gen). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "25e09f0a37d2c2a8edd5593aed41c75ba91323af5568be5ffcc9229add41618f",
-      "keywords": []
+      "sha256": "46df8fb60b1fbeca228d1881cf4bffb6de2e7afd2efab2fe830846248a159d71",
+      "keywords": [],
+      "purpose": "Document the current system design, ownership boundaries and important decisions from repository evidence in the requested artifact."
     },
     {
       "title": "Documentation Sync Audit",
@@ -749,8 +803,9 @@
       "category": "Documentation & refactoring",
       "summary": "READMEs, design documents and refactoring boundaries.",
       "example": "Use $vibe-docs, workflow “Documentation Sync Audit” (ID: documentation-sync-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "438a37a79d166ca8c9ca65a13aa8d60378a042f8d2d412cfafcab2445a4f29e2",
-      "keywords": []
+      "sha256": "136505eb6af5d0c5e84112087a5894495da2135601f5f96a98415a7587a763a9",
+      "keywords": [],
+      "purpose": "Audit repository documentation against authoritative code, configuration, schemas, commands, runtime behavior, and generated references."
     },
     {
       "title": "Improve Documentation Sync",
@@ -762,8 +817,9 @@
       "category": "Documentation & refactoring",
       "summary": "READMEs, design documents and refactoring boundaries.",
       "example": "Use $vibe-docs, workflow “Improve Documentation Sync” (ID: documentation-sync-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "24eeeed2bafbdc663b5142643337469542768f47d85c00aa36867fa567c362f7",
-      "keywords": []
+      "sha256": "3f3f8cbbc1286c53d3865cefce823df78c1120250488f5f49ba4647c4dbc5237",
+      "keywords": [],
+      "purpose": "Synchronize the selected documentation or generator with current code, configuration and runnable commands."
     },
     {
       "title": "Migration & Refactor Plan",
@@ -775,8 +831,9 @@
       "category": "Documentation & refactoring",
       "summary": "READMEs, design documents and refactoring boundaries.",
       "example": "Use $vibe-docs, workflow “Migration & Refactor Plan” (ID: migration-refactor-plan). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "e5b949e9a92c64ba19c7d2e5e3311bd6074114ba7204138af7aadcb33b9db4d9",
-      "keywords": []
+      "sha256": "482a58309e2bfd8429dfbb206ea588c0d3721d430635e8a34746b6060104e1c1",
+      "keywords": [],
+      "purpose": "Produce an implementation-ready migration or refactor plan that preserves behavior, data, compatibility, rollout safety, and rollback or forward-fix options. Do not edit product code."
     },
     {
       "title": "Document the Repository",
@@ -788,8 +845,9 @@
       "category": "Documentation & refactoring",
       "summary": "READMEs, design documents and refactoring boundaries.",
       "example": "Use $vibe-docs, workflow “Document the Repository” (ID: readme-gen). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "0cc0a482f5b347af71bb05ad1fd6163f2750f9898e851c57edc6ee71c650c90f",
-      "keywords": []
+      "sha256": "b2b2032f6c4e13b948e581f727b053b5c0abb780456b5080d519103ba9d411ec",
+      "keywords": [],
+      "purpose": "Write or update a README with verified setup, usage and project boundaries for its intended reader."
     },
     {
       "title": "Refactor Boundary Audit",
@@ -801,8 +859,9 @@
       "category": "Documentation & refactoring",
       "summary": "READMEs, design documents and refactoring boundaries.",
       "example": "Use $vibe-docs, workflow “Refactor Boundary Audit” (ID: refactor-boundary-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "352e60b5f9b55a6a668182d1448c9c76c403f0d2817065366d0992559c52bd37",
-      "keywords": []
+      "sha256": "45296c49a7cc66227f111c7d8470f6d54053d4daf5ac680b709862611d3b8b21",
+      "keywords": [],
+      "purpose": "Audit a proposed or partial refactor for ownership, contract preservation, migration completeness, and removal of duplicate paths."
     },
     {
       "title": "Improve Refactor Boundary",
@@ -814,8 +873,9 @@
       "category": "Documentation & refactoring",
       "summary": "READMEs, design documents and refactoring boundaries.",
       "example": "Use $vibe-docs, workflow “Improve Refactor Boundary” (ID: refactor-boundary-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "a10860117100183c2735edca720292ee2618c36468921cced091a9d6524c4c96",
-      "keywords": []
+      "sha256": "1633baa6acc53645d977711dbf3d187ba821fc3026a561b28ffa5365b81c2327",
+      "keywords": [],
+      "purpose": "Move the selected behavior to its intended owner and update direct dependents without changing unrelated contracts."
     },
     {
       "title": "Auth Permissions Audit",
@@ -827,8 +887,9 @@
       "category": "Permissions, data & business rules",
       "summary": "Access control, data, billing plans and product events.",
       "example": "Use $vibe-domain, workflow “Auth Permissions Audit” (ID: auth-permissions-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "0e80e0c83c49ed107f25cca27ebe0e0ae49cba58c75cc1c7e8d16965d9180b7c",
-      "keywords": []
+      "sha256": "de3dbc89623cb19d3c63c1c5d5869557a3e435d2545cad553fc717925899bf0c",
+      "keywords": [],
+      "purpose": "Audit authentication, authorization, tenancy, roles, session boundaries, and permission-gated UI/API behavior. Keep only reachable issues that can cause unauthorized access, user confusion, broken legitimate access, or maintainability drift in permission logic."
     },
     {
       "title": "Improve Auth Permissions",
@@ -840,8 +901,9 @@
       "category": "Permissions, data & business rules",
       "summary": "Access control, data, billing plans and product events.",
       "example": "Use $vibe-domain, workflow “Improve Auth Permissions” (ID: auth-permissions-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "ef222a1e423fea9042618772a9726887e2e2ebb41628a7f96456eefb5d873e0a",
-      "keywords": []
+      "sha256": "be0bf0dc800d7f1e6c877142cbfd7cee9dcf32ad1f1bf431e5de5b80fc451547",
+      "keywords": [],
+      "purpose": "Fix the selected authentication, authorization, tenancy, or permission-gated experience end to end. The patch should align owner-layer checks, API behavior, UI affordances, copy, and tests."
     },
     {
       "title": "Billing Entitlements Audit",
@@ -853,8 +915,9 @@
       "category": "Permissions, data & business rules",
       "summary": "Access control, data, billing plans and product events.",
       "example": "Use $vibe-domain, workflow “Billing Entitlements Audit” (ID: billing-entitlements-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "5251bf7ccc1f925110c2b7ef132ebaabe24a494687bfbef4eecf1f969eb51780",
-      "keywords": []
+      "sha256": "a6ecdf69af077516de11d2fd6f46318aa08d14f326b1010a2cff2e2a22c02969",
+      "keywords": [],
+      "purpose": "Audit billing, plan, quota, entitlement, tenant, and permission behavior for correctness and user-visible consistency. Keep only issues with repository evidence; do not invent pricing rules, plan names, provider behavior, or business policy."
     },
     {
       "title": "Improve Billing Entitlements",
@@ -866,8 +929,9 @@
       "category": "Permissions, data & business rules",
       "summary": "Access control, data, billing plans and product events.",
       "example": "Use $vibe-domain, workflow “Improve Billing Entitlements” (ID: billing-entitlements-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "ac20b7a0e0064dfdd222158abc3c03ca864836bd1ac2bf0f008cd60b195c5c1c",
-      "keywords": []
+      "sha256": "1bbe7fd94c0e9cadbcc020286e4bb6490bd816521143f4fa2a0ddabb40050327",
+      "keywords": [],
+      "purpose": "Improve the selected billing, plan, quota, entitlement, or lifecycle surface so UI, API, jobs, tests, and user-facing states align with the repository's actual source of truth."
     },
     {
       "title": "Data Model Audit",
@@ -879,8 +943,9 @@
       "category": "Permissions, data & business rules",
       "summary": "Access control, data, billing plans and product events.",
       "example": "Use $vibe-domain, workflow “Data Model Audit” (ID: data-model-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "e0d124b2bb053a0d0f8a0eb9eaeb724a5cac5663cfe3c44dd5b43edf2e47c3f1",
-      "keywords": []
+      "sha256": "731799dcb8809c5337b636d72cb5ae8d8fa65b2752a446fabc62b9b574145b1a",
+      "keywords": [],
+      "purpose": "Audit persistence models, schema invariants, migrations, query boundaries, and domain data ownership. Keep only reachable issues that can cause data corruption, inconsistent behavior, broken migrations, query bugs, or unsafe future changes."
     },
     {
       "title": "Improve Data Model",
@@ -892,8 +957,9 @@
       "category": "Permissions, data & business rules",
       "summary": "Access control, data, billing plans and product events.",
       "example": "Use $vibe-domain, workflow “Improve Data Model” (ID: data-model-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "6ed5ddab78b1fb0c8d3a9db45be38b4240f0e5900e4fc7766b6cc37ecde97f36",
-      "keywords": []
+      "sha256": "66a594967c79704f6a133f29e4005caa1a57056dfb6538e3fc33832a3842283f",
+      "keywords": [],
+      "purpose": "Correct the selected schema or persistence invariant, including required migration and reader/writer compatibility."
     },
     {
       "title": "Data Pipeline & Quality Audit",
@@ -905,8 +971,9 @@
       "category": "Permissions, data & business rules",
       "summary": "Access control, data, billing plans and product events.",
       "example": "Use $vibe-domain, workflow “Data Pipeline & Quality Audit” (ID: data-pipeline-quality-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "14a6e94154827dd725ada49b0863cae1b9466ac1e3f39843e7cb37349f5ccd2a",
-      "keywords": []
+      "sha256": "e8d7fc7862aebb7950ec05e7c8845e441eb34f19e7ba06c0262e84908fd9152e",
+      "keywords": [],
+      "purpose": "Audit a batch/stream/ELT/notebook pipeline across lineage, contracts, quality, retries, late data, reproducibility, and operational ownership."
     },
     {
       "title": "Improve Data Pipeline & Quality",
@@ -918,8 +985,9 @@
       "category": "Permissions, data & business rules",
       "summary": "Access control, data, billing plans and product events.",
       "example": "Use $vibe-domain, workflow “Improve Data Pipeline & Quality” (ID: data-pipeline-quality-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "de1f5c35e5452762ea99e7bee929a24ef29b73a3c72899455731e0ee0ca0072d",
-      "keywords": []
+      "sha256": "211386fa383ea857958afa5d9ac2034262d3626305c826b7494273918dc465f7",
+      "keywords": [],
+      "purpose": "Correct the selected source-to-sink data guarantee, preserving schema, identity, retries, quality checks and recovery."
     },
     {
       "title": "Experiment Design Audit",
@@ -931,8 +999,9 @@
       "category": "Permissions, data & business rules",
       "summary": "Access control, data, billing plans and product events.",
       "example": "Use $vibe-domain, workflow “Experiment Design Audit” (ID: experiment-design-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "7aeffc14539462a42202db51bf2491723ab7b61d4666768feca8c18f555f32de",
-      "keywords": []
+      "sha256": "dae341be910c3e3f508ea4e3d183a3f304779907e84ae91cf793e476570754db",
+      "keywords": [],
+      "purpose": "Audit a product experiment from estimand and randomization through exposure, outcomes, guardrails, analysis, and rollout decision."
     },
     {
       "title": "Improve Experiment Design",
@@ -944,8 +1013,9 @@
       "category": "Permissions, data & business rules",
       "summary": "Access control, data, billing plans and product events.",
       "example": "Use $vibe-domain, workflow “Improve Experiment Design” (ID: experiment-design-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "b240cf4e3bb8113105997a14abc138bd96d799e5678baf130da86db01e4da675",
-      "keywords": []
+      "sha256": "9b02891d75b1b6d7819359dd9fa4c919f88f3c04e41bb40c0ac8656980606b9f",
+      "keywords": [],
+      "purpose": "Correct the selected assignment, exposure or analysis contract before interpreting the experiment result."
     },
     {
       "title": "Multi Tenant Isolation Audit",
@@ -957,8 +1027,9 @@
       "category": "Permissions, data & business rules",
       "summary": "Access control, data, billing plans and product events.",
       "example": "Use $vibe-domain, workflow “Multi Tenant Isolation Audit” (ID: multi-tenant-isolation-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "70d995d77b2a52ce3e74a86fbf9db94d8c9176a52e349aa8785e8eeaea2f2d82",
-      "keywords": []
+      "sha256": "53a9b72106a5b3e723460c9e357edfe84648d9c511adda3aceb342c1447604cf",
+      "keywords": [],
+      "purpose": "Audit one tenant, workspace, organization, project, or account isolation boundary across API, data, cache, search, jobs, analytics, storage, and UI behavior. Limit scope to the selected boundary and direct producers/consumers."
     },
     {
       "title": "Improve Multi Tenant Isolation",
@@ -970,8 +1041,9 @@
       "category": "Permissions, data & business rules",
       "summary": "Access control, data, billing plans and product events.",
       "example": "Use $vibe-domain, workflow “Improve Multi Tenant Isolation” (ID: multi-tenant-isolation-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "c0f09bfef217d0e5abb588904e9f81866fd568384cc3378131d8306640bc4d6d",
-      "keywords": []
+      "sha256": "3c366b91246deb086fadc635762a1fd3f53528b59ab71742986e0e4500316d23",
+      "keywords": [],
+      "purpose": "Fix the selected tenant/workspace/project isolation defect across authoritative query/policy/storage owners and directly affected consumers."
     },
     {
       "title": "Notebook Productionization Audit",
@@ -983,8 +1055,9 @@
       "category": "Permissions, data & business rules",
       "summary": "Access control, data, billing plans and product events.",
       "example": "Use $vibe-domain, workflow “Notebook Productionization Audit” (ID: notebook-productionization-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "9668836c5035c90475abc87d4c61d4e85a43052031ad27fc3a93c9f72ede0536",
-      "keywords": []
+      "sha256": "c4fcdc7b122d8f9558da830ef7fe9e3f0473ce427235a95ed26381f9c762524a",
+      "keywords": [],
+      "purpose": "Audit a notebook or exploratory analysis before it becomes a repeatable pipeline, service, report, or decision artifact."
     },
     {
       "title": "Improve Notebook Productionization",
@@ -996,8 +1069,9 @@
       "category": "Permissions, data & business rules",
       "summary": "Access control, data, billing plans and product events.",
       "example": "Use $vibe-domain, workflow “Improve Notebook Productionization” (ID: notebook-productionization-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "0a35e83c17654522fa60706cb8c2c45c66d262a8460438b05f8438025bd00feb",
-      "keywords": []
+      "sha256": "fd00093dff4e124d524dbf6990b85070dee9ed9bf303d9321f92a68e41bc0c8b",
+      "keywords": [],
+      "purpose": "Make the selected notebook workflow reproducible, parameterized and verifiable in its intended execution environment."
     },
     {
       "title": "OAuth OIDC Session Check",
@@ -1009,8 +1083,9 @@
       "category": "Permissions, data & business rules",
       "summary": "Access control, data, billing plans and product events.",
       "example": "Use $vibe-domain, workflow “OAuth OIDC Session Check” (ID: oauth-oidc-session-check). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "0b4d6534353192dedeed9aea20676b1556e8e88d5c7058482f89c80c0bc7ab2b",
-      "keywords": []
+      "sha256": "3dde88a937118840bb4c1c91531425f542df8381024ce24874f334d1493ce883",
+      "keywords": [],
+      "purpose": "Verify OAuth/OIDC redirects, tokens and session lifecycle at the supported provider and trusted identity boundary."
     },
     {
       "title": "Product Analytics Audit",
@@ -1022,8 +1097,9 @@
       "category": "Permissions, data & business rules",
       "summary": "Access control, data, billing plans and product events.",
       "example": "Use $vibe-domain, workflow “Product Analytics Audit” (ID: product-analytics-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "e5c8901dc4f6a32915c9a693b6d6941d67065a88fc3ec47f40d2cc26f167b08f",
-      "keywords": []
+      "sha256": "cd08167310bc60acc963624ddccb12446d94034131e1762fe5bd5a8e3512eb4c",
+      "keywords": [],
+      "purpose": "Audit product analytics and instrumentation quality for existing user/product flows: event taxonomy, firing points, properties, privacy, deduplication, funnel usefulness, tests, and docs. Keep only issues supported by repository evidence; do not recommend adding a new vendor unless the repo already has an explicit direction."
     },
     {
       "title": "Improve Product Analytics",
@@ -1035,8 +1111,9 @@
       "category": "Permissions, data & business rules",
       "summary": "Access control, data, billing plans and product events.",
       "example": "Use $vibe-domain, workflow “Improve Product Analytics” (ID: product-analytics-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "f3f047334f6b12896ad614e3743d22953dbd47548f3fc9b17d41c8414a05a34c",
-      "keywords": []
+      "sha256": "bd680b1d36a898dbaa0bf38c64c751254c89b0cf760f8826630d068ee6a57704",
+      "keywords": [],
+      "purpose": "Correct the selected event or metric from its producer through the relevant transformation and consumer."
     },
     {
       "title": "RBAC ABAC Matrix Check",
@@ -1048,8 +1125,9 @@
       "category": "Permissions, data & business rules",
       "summary": "Access control, data, billing plans and product events.",
       "example": "Use $vibe-domain, workflow “RBAC ABAC Matrix Check” (ID: rbac-abac-matrix-check). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "c54b18ae65a71b274cd5fb7261eab1dec5930f35ae618e8703ca1f8b3b080fc6",
-      "keywords": []
+      "sha256": "95129caa39a154894fa84d0e2909f83c800f1f1556373223790e9538cf8450e4",
+      "keywords": [],
+      "purpose": "Verify one RBAC/ABAC policy matrix or patch through bounded allow/deny scenarios. Prove the selected actor/resource/action/scope contract without reopening unrelated auth audit work."
     },
     {
       "title": "RBAC ABAC Policy Audit",
@@ -1061,8 +1139,9 @@
       "category": "Permissions, data & business rules",
       "summary": "Access control, data, billing plans and product events.",
       "example": "Use $vibe-domain, workflow “RBAC ABAC Policy Audit” (ID: rbac-abac-policy-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "fcff311e0263190542175540b0a9da92add69813a9b93d77ba134c056162bfcc",
-      "keywords": []
+      "sha256": "678a5521394c12400136d435b04dd9025a941fcc0b0dd8d6509b4f5ee152c1c5",
+      "keywords": [],
+      "purpose": "Audit one RBAC/ABAC policy boundary, role matrix, resource-action contract, tenant scope, or entitlement decision path. Limit the audit to evidence-backed policy behavior and directly affected consumers."
     },
     {
       "title": "Improve RBAC ABAC Policy",
@@ -1074,8 +1153,9 @@
       "category": "Permissions, data & business rules",
       "summary": "Access control, data, billing plans and product events.",
       "example": "Use $vibe-domain, workflow “Improve RBAC ABAC Policy” (ID: rbac-abac-policy-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "12b790b2b7e72c25fea8e896d35298c94cbd5aa86926abaeb78797b60ea7e7e8",
-      "keywords": []
+      "sha256": "417d4e29b1edfc2cf081d15f6edd911d2ac5cf7c29ec8195e2bcd0f60288b1dd",
+      "keywords": [],
+      "purpose": "Fix the selected RBAC/ABAC policy boundary end to end across the authoritative policy owner, enforcement points, UI affordances, tests, docs, and maps when used."
     },
     {
       "title": "Tenant Isolation Check",
@@ -1087,8 +1167,9 @@
       "category": "Permissions, data & business rules",
       "summary": "Access control, data, billing plans and product events.",
       "example": "Use $vibe-domain, workflow “Tenant Isolation Check” (ID: tenant-isolation-check). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "30829fc2c207e9c1748543c432db42d2741f2b8d17bf8cbf20af000273238366",
-      "keywords": []
+      "sha256": "51ffa8acd040218cb1865f7144106e87d58cc8f074f23dc7591ad3d46cd58794",
+      "keywords": [],
+      "purpose": "Verify one tenant/workspace/project isolation invariant through bounded cross-tenant scenarios. Prove the selected patch or behavior without broadening into unrelated auth or data audit work."
     },
     {
       "title": "Feature Flag Exposure & Rollback Check",
@@ -1100,8 +1181,9 @@
       "category": "Feature flags & rollouts",
       "summary": "Feature flags, audiences and rollbacks.",
       "example": "Use $vibe-flags, workflow “Feature Flag Exposure & Rollback Check” (ID: feature-flag-exposure-rollback-check). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "6c1148d812e04b9783b0d4e20d6dafe05531d18653c05c1fd4c9741c103197ae",
-      "keywords": []
+      "sha256": "e0d9a5facdf1ec95819c01a8c2331aeff77c07178f07c82f7a578c70001ee012",
+      "keywords": [],
+      "purpose": "Verify one feature flag or rollout invariant through bounded on/off, targeted, rollback, missing-provider, and exposure-measurement scenarios."
     },
     {
       "title": "Feature Flags Rollout Audit",
@@ -1113,8 +1195,9 @@
       "category": "Feature flags & rollouts",
       "summary": "Feature flags, audiences and rollbacks.",
       "example": "Use $vibe-flags, workflow “Feature Flags Rollout Audit” (ID: feature-flags-rollout-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "f80db6a24b32b479988354645e1548d68f282976046d4f5486538721c5be0c4b",
-      "keywords": []
+      "sha256": "f772ef0ab4b57bf47082e25b2733308c09f1d3a45da9005227613835867e011b",
+      "keywords": [],
+      "purpose": "Audit one feature flag, rollout control, experiment gate, kill switch, environment flag, or gradual-release boundary for consistency, safety, ownership, and cleanup."
     },
     {
       "title": "Improve Feature Flags Rollout",
@@ -1126,8 +1209,9 @@
       "category": "Feature flags & rollouts",
       "summary": "Feature flags, audiences and rollbacks.",
       "example": "Use $vibe-flags, workflow “Improve Feature Flags Rollout” (ID: feature-flags-rollout-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "b333b6364c27ff99be643e9ff6a6117772d5e16bd5a33a1f7d04addb330791a8",
-      "keywords": []
+      "sha256": "5fd70463abe03bf7e10c30e45e357f76193ce93def12180c9c7fe1f45cfdcea6",
+      "keywords": [],
+      "purpose": "Correct the selected flag or rollout behavior across targeting, enforcement, fallback and directly affected consumers."
     },
     {
       "title": "Go Rust Concurrency & Shutdown Check",
@@ -1139,8 +1223,9 @@
       "category": "Go & Rust services",
       "summary": "Concurrency and shutdown in Go and Rust services.",
       "example": "Use $vibe-go-rust, workflow “Go Rust Concurrency & Shutdown Check” (ID: go-rust-concurrency-shutdown-check). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "ecffa8cb56ae351f82ca205d8cbe2625d5e984cb049e4c65bd3b660b013104bb",
-      "keywords": []
+      "sha256": "1bbcc5482e388a13337ce5a78849013a8462e4ccd6f954f3f26aca2a61a451bc",
+      "keywords": [],
+      "purpose": "Verify the selected service’s cancellation, task ownership, resource bound or shutdown guarantee."
     },
     {
       "title": "Go Rust Microservices Audit",
@@ -1152,8 +1237,9 @@
       "category": "Go & Rust services",
       "summary": "Concurrency and shutdown in Go and Rust services.",
       "example": "Use $vibe-go-rust, workflow “Go Rust Microservices Audit” (ID: go-rust-microservices-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "188b88506138db29011d593d91e36fd3fd5e0d3dda0f300870f4dc241cb99035",
-      "keywords": []
+      "sha256": "6560fed2d8ab7cc1c4f0d2541105dc2bc841606b7ed7605aed6bbbab1756fdca",
+      "keywords": [],
+      "purpose": "Audit Go and Rust services across request contracts, cancellation, task/goroutine ownership, connection pools, backpressure, errors, unsafe code, and graceful shutdown."
     },
     {
       "title": "Improve Go Rust Microservices",
@@ -1165,8 +1251,9 @@
       "category": "Go & Rust services",
       "summary": "Concurrency and shutdown in Go and Rust services.",
       "example": "Use $vibe-go-rust, workflow “Improve Go Rust Microservices” (ID: go-rust-microservices-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "1f9e7f14012b60673deac7e4f2a285c6aea309467c94ebd4bf03abd1cba1e9d7",
-      "keywords": []
+      "sha256": "26fdf48e7fae733b76d12eca620038d9d26d8a7f9b88e53c8c17941040621c19",
+      "keywords": [],
+      "purpose": "Correct the selected Go or Rust service behavior, preserving task ownership, cancellation, resource bounds and shutdown."
     },
     {
       "title": "Agent Harness Audit",
@@ -1178,8 +1265,9 @@
       "category": "Agent execution",
       "summary": "Agent state, recovery and replay.",
       "example": "Use $vibe-harness, workflow “Agent Harness Audit” (ID: agent-harness-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "4c305fbd5a15a3908d99f23ced5821d3e8474a75ff8473dc07e28b3a7ffaa46a",
-      "keywords": []
+      "sha256": "a0d8e581b0dc445967d4b4bbac675819c7f770c505dd4f2106bf73649ae3c9bc",
+      "keywords": [],
+      "purpose": "Audit the run state machine of an agent harness across loops, parallel branches, persistence, tools, recovery, and replay."
     },
     {
       "title": "Improve Agent Harness",
@@ -1191,8 +1279,9 @@
       "category": "Agent execution",
       "summary": "Agent state, recovery and replay.",
       "example": "Use $vibe-harness, workflow “Improve Agent Harness” (ID: agent-harness-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "49c9350ce29130165bc529db98ab7555f56b2c7def19f245ce6edd0c15a7fdea",
-      "keywords": []
+      "sha256": "01171625eb5c2a39d49c7ce4b949184f3622842fa2b94aa6a1e37f41cdbcb117",
+      "keywords": [],
+      "purpose": "Correct the selected agent-run transition, checkpoint or recovery path without repeating committed effects."
     },
     {
       "title": "Agent Harness Replay & Failure Check",
@@ -1204,8 +1293,9 @@
       "category": "Agent execution",
       "summary": "Agent state, recovery and replay.",
       "example": "Use $vibe-harness, workflow “Agent Harness Replay & Failure Check” (ID: agent-harness-replay-failure-check). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "ee668508f0c546fa54a4384ba088e6c7050f96b3f56db8e47aca6b6e016bed57",
-      "keywords": []
+      "sha256": "bb2825e729786b612bcadc444d1d6b66faec7ee4c18dded6d9bf0c56a2253a4e",
+      "keywords": [],
+      "purpose": "Verify that the selected run can resume or replay without losing required state or repeating protected effects."
     },
     {
       "title": "Backend Integrations Audit",
@@ -1217,8 +1307,9 @@
       "category": "Integrations & networking",
       "summary": "External APIs, webhooks, timeouts and network failures.",
       "example": "Use $vibe-integrations, workflow “Backend Integrations Audit” (ID: backend-integrations-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "13d3564dee4790f7f48d783048a42fa9890bcfee56526b879b56711eb62646be",
-      "keywords": []
+      "sha256": "ae8233c5e43ab4a8fe8e629d7a507ddbe1124460d05d23371807a027c566f272",
+      "keywords": [],
+      "purpose": "Audit external API, DNS/TLS/proxy, webhook, WebSocket, and SSE boundaries across identity, timeouts, retries, pooling, signatures, ordering, backpressure, and recovery."
     },
     {
       "title": "Improve Backend Integrations",
@@ -1230,8 +1321,9 @@
       "category": "Integrations & networking",
       "summary": "External APIs, webhooks, timeouts and network failures.",
       "example": "Use $vibe-integrations, workflow “Improve Backend Integrations” (ID: backend-integrations-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "dde23b5fe7b712ac2ebb44a5951e711c80b58ea55970609bec792984515a1be7",
-      "keywords": []
+      "sha256": "1485492d96e30fb01cbf07342ca5afae350052fff9ddbd722a9613ea00c0966d",
+      "keywords": [],
+      "purpose": "Correct the selected external-call, webhook or stream contract across authentication, retry, completion and recovery."
     },
     {
       "title": "Network Integration Failure Check",
@@ -1243,8 +1335,9 @@
       "category": "Integrations & networking",
       "summary": "External APIs, webhooks, timeouts and network failures.",
       "example": "Use $vibe-integrations, workflow “Network Integration Failure Check” (ID: network-integration-failure-check). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "f03ad49dc7778ca67d2d3b078d873e9d859b2b01adde92edf194ecf79500b16b",
-      "keywords": []
+      "sha256": "ca6db97fc397f0cf50e03b81b4e699cf10a596ca11d18082e398a059a8248509",
+      "keywords": [],
+      "purpose": "Verify the selected external-call, webhook or stream behavior under its relevant failure and recovery conditions."
     },
     {
       "title": "Kafka Redpanda Audit",
@@ -1256,8 +1349,9 @@
       "category": "Kafka & Redpanda",
       "summary": "Events, offsets, redelivery and rebalancing.",
       "example": "Use $vibe-kafka, workflow “Kafka Redpanda Audit” (ID: kafka-redpanda-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "2e6dc2e2654a87e7a42eb090c050b47488d1cb05b7243188df7736f665557668",
-      "keywords": []
+      "sha256": "08e93ea7cd37c3c13bf435d182e7210cfe233844e0976137f92e5a9abc7975d0",
+      "keywords": [],
+      "purpose": "Audit a Kafka or Redpanda stream from topic/key/schema and producer durability through consumer offsets, retries, rebalance, and replay."
     },
     {
       "title": "Improve Kafka Redpanda",
@@ -1269,8 +1363,9 @@
       "category": "Kafka & Redpanda",
       "summary": "Events, offsets, redelivery and rebalancing.",
       "example": "Use $vibe-kafka, workflow “Improve Kafka Redpanda” (ID: kafka-redpanda-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "6d928981e8cf71b2c9021626f2024896bba7671dfc3309f3c813e333a14b6bf0",
-      "keywords": []
+      "sha256": "8e505ff19df0ff6250bcafb5df5c206dfa3c98380c1818a3ead0315086bc3fc0",
+      "keywords": [],
+      "purpose": "Correct the selected Kafka/Redpanda delivery contract across record identity, offsets, ordering and replay."
     },
     {
       "title": "Kafka Redpanda Rebalance & Failure Check",
@@ -1282,8 +1377,9 @@
       "category": "Kafka & Redpanda",
       "summary": "Events, offsets, redelivery and rebalancing.",
       "example": "Use $vibe-kafka, workflow “Kafka Redpanda Rebalance & Failure Check” (ID: kafka-redpanda-rebalance-failure-check). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "e095167d4b3f270caeafe6513b7bec0e0d8aec620874146484702592a69b6a09",
-      "keywords": []
+      "sha256": "10baaa069527e282b073ca28dc189bda13d1b0a1f3be3ac3a196a4c536a1ba43",
+      "keywords": [],
+      "purpose": "Verify the selected record delivery, ordering and processing guarantee across required crash or rebalance windows."
     },
     {
       "title": "Kubernetes Platform Audit",
@@ -1295,8 +1391,9 @@
       "category": "Kubernetes",
       "summary": "Kubernetes deployments, resources and recovery.",
       "example": "Use $vibe-kubernetes, workflow “Kubernetes Platform Audit” (ID: kubernetes-platform-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "5f8979452d05249c6d7943dc626021fcb3e6a681c53f436c91bf5050188309f7",
-      "keywords": []
+      "sha256": "cf1ca32beb664849385100099f1b6aaffa1bc85dcec36959d4ffc5f728ee06f7",
+      "keywords": [],
+      "purpose": "Audit a Kubernetes workload as a deployable runtime contract: rollout, probes, scheduling, networking, storage, policy, and operator recovery."
     },
     {
       "title": "Improve Kubernetes Platform",
@@ -1308,8 +1405,9 @@
       "category": "Kubernetes",
       "summary": "Kubernetes deployments, resources and recovery.",
       "example": "Use $vibe-kubernetes, workflow “Improve Kubernetes Platform” (ID: kubernetes-platform-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "15564bb76dcedd1dd8727140cd63ccee956d57d4b3c2f81402bdbc04ef313332",
-      "keywords": []
+      "sha256": "1d335007285ffe45611caa87ae9e4497f06f49a13f4f1a0ff611f24ec98606c7",
+      "keywords": [],
+      "purpose": "Correct the selected rendered workload or rollout behavior for its actual environment and dependent resources."
     },
     {
       "title": "Kubernetes Rollout & Failure Check",
@@ -1321,8 +1419,9 @@
       "category": "Kubernetes",
       "summary": "Kubernetes deployments, resources and recovery.",
       "example": "Use $vibe-kubernetes, workflow “Kubernetes Rollout & Failure Check” (ID: kubernetes-rollout-failure-check). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "50f7abfe602d79b01a9f2f0ded4c91c26aaffbb66a2111539f16e5b8e2283a3f",
-      "keywords": []
+      "sha256": "ce4bda4b33cd44ce8234fba7ffcb817b3993e768c253911fa0d40d9ec3b6f506",
+      "keywords": [],
+      "purpose": "Verify the selected workload’s rendered contract, availability or state recovery during its required lifecycle transitions."
     },
     {
       "title": "AI Navigation Map",
@@ -1334,8 +1433,9 @@
       "category": "Project mapping",
       "summary": "Project structure, connections and contract ownership.",
       "example": "Use $vibe-map, workflow “AI Navigation Map” (ID: ai-navigation-map). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "b47daa664123b18e98f85b27b98bc403b681cc0c39982bf5a32abcbae72eeafc",
-      "keywords": []
+      "sha256": "e8718b251f00e0499dd8002ec5f1395174d2a4cefb4932bd8577e24bbce7b49d",
+      "keywords": [],
+      "purpose": "Map the selected AI capabilities from input and model calls through prompts, tools or retrieval to outputs and evaluation."
     },
     {
       "title": "API Navigation Map",
@@ -1347,13 +1447,14 @@
       "category": "Project mapping",
       "summary": "Project structure, connections and contract ownership.",
       "example": "Use $vibe-map, workflow “API Navigation Map” (ID: api-navigation-map). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "9e100e03122fdec4e8712d249b26be914dff69929be0b0dab4329a12daa95a98",
+      "sha256": "954a206bd559ce462564eda6af7e899a73321f7ecec8f00aadd71b2e28ad4465",
       "keywords": [
         "GraphQL",
         "OpenAPI",
         "CORS",
         "CSRF"
-      ]
+      ],
+      "purpose": "Map the selected API endpoints, validation and authorization, data effects and direct consumers."
     },
     {
       "title": "Auth Entitlements Map",
@@ -1365,8 +1466,9 @@
       "category": "Project mapping",
       "summary": "Project structure, connections and contract ownership.",
       "example": "Use $vibe-map, workflow “Auth Entitlements Map” (ID: auth-entitlements-map). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "98d0f3fab976c263b8af5e324c790b0ec6125468ae4538ef573722573cd70014",
-      "keywords": []
+      "sha256": "4993d96e7322b0ad085ab1dd1940d9dc50acb6d92d7adfacf08e15efb871b949",
+      "keywords": [],
+      "purpose": "Map identity, roles, attributes and entitlements to the backend decisions and UI/API/job enforcement that use them."
     },
     {
       "title": "Bot Navigation Map",
@@ -1378,8 +1480,9 @@
       "category": "Project mapping",
       "summary": "Project structure, connections and contract ownership.",
       "example": "Use $vibe-map, workflow “Bot Navigation Map” (ID: bot-navigation-map). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "ddbf96d42e6fda2c4aa3526322c884c9ff3c0c4db1c26188ea912fa4d8f1c15c",
-      "keywords": []
+      "sha256": "4035fb4c2d826b5c97890eb4f7a932082a06f50a53577d615a5228fe9d374890",
+      "keywords": [],
+      "purpose": "Map the selected bot entries, commands, states, transitions and recovery paths."
     },
     {
       "title": "Domain Data Map",
@@ -1391,8 +1494,9 @@
       "category": "Project mapping",
       "summary": "Project structure, connections and contract ownership.",
       "example": "Use $vibe-map, workflow “Domain Data Map” (ID: domain-data-map). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "8e7fcec238d6b253ed1cb8b92ff813015311ed0561cbe64363c7a72b805ad0c0",
-      "keywords": []
+      "sha256": "8d46fdbb0b3454c5e75449a42044dd9408c747dbff3c011bfeb9e325a44a2284",
+      "keywords": [],
+      "purpose": "Map domain entities, relationships, state transitions, persistence owners and relevant data-lifecycle rules."
     },
     {
       "title": "Integration Map",
@@ -1404,8 +1508,9 @@
       "category": "Project mapping",
       "summary": "Project structure, connections and contract ownership.",
       "example": "Use $vibe-map, workflow “Integration Map” (ID: integration-map). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "b000eba3419268ff3aed683985fbca99df053e7326c4d648c419ca885b199dc3",
-      "keywords": []
+      "sha256": "86ea580c92980af7dc1a12dbb7d5157f14869dc3034a0f71693a5ad89b0561fa",
+      "keywords": [],
+      "purpose": "Map the selected provider or service contracts, adapters, configuration ownership and failure/retry paths."
     },
     {
       "title": "Ownership & Invariant Map",
@@ -1417,8 +1522,9 @@
       "category": "Project mapping",
       "summary": "Project structure, connections and contract ownership.",
       "example": "Use $vibe-map, workflow “Ownership & Invariant Map” (ID: ownership-invariant-map). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "d992b4a6d88df669ebc649a0de86b61f29654b1b621e2b396aed77ef7e1f1cac",
-      "keywords": []
+      "sha256": "b75ef25a3de0c844abb10fef44d48fd1672f220cecc7ac80f140625121dcbd5a",
+      "keywords": [],
+      "purpose": "Connect the selected business, data, permission or runtime rules to their defining source and direct producers/consumers."
     },
     {
       "title": "Product Capability Map",
@@ -1430,8 +1536,9 @@
       "category": "Project mapping",
       "summary": "Project structure, connections and contract ownership.",
       "example": "Use $vibe-map, workflow “Product Capability Map” (ID: product-capability-map). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "3bbcc734ef0f5ee37c8745653a4399272f7ca0541d89a762d3d4c657bc627e36",
-      "keywords": []
+      "sha256": "81c4a29589241e7d7517f214874be0db831ad7529f0a924650bf1acd4ed67aff",
+      "keywords": [],
+      "purpose": "Map product capabilities to actors, entry points, accepted outcomes and implementation owners."
     },
     {
       "title": "Product Journey Map",
@@ -1443,8 +1550,9 @@
       "category": "Project mapping",
       "summary": "Project structure, connections and contract ownership.",
       "example": "Use $vibe-map, workflow “Product Journey Map” (ID: product-journey-map). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "4ea41e06da8106f227024c5e256a7a87b6342b06c45279db9158020d296c7237",
-      "keywords": []
+      "sha256": "e0fa5a63e984045a9e6702e9c3f59d48c822c3236be4072ae8df350ab53c5562",
+      "keywords": [],
+      "purpose": "Map the selected user journeys through observable states, decisions, completion and recovery."
     },
     {
       "title": "Product Metrics Events Map",
@@ -1456,8 +1564,9 @@
       "category": "Project mapping",
       "summary": "Project structure, connections and contract ownership.",
       "example": "Use $vibe-map, workflow “Product Metrics Events Map” (ID: product-metrics-events-map). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "6315a4cfcf9c75ce875db3be144ddc75efe4643f45def8cf2aef4740db1d4379",
-      "keywords": []
+      "sha256": "0ec18625cd3d11748a736a3e794d1f6643b79b6b65042b983429cbfcfea00337",
+      "keywords": [],
+      "purpose": "Map selected product metrics and events to their producers, semantics, privacy boundary and downstream consumers."
     },
     {
       "title": "Product Requirements Map",
@@ -1469,8 +1578,9 @@
       "category": "Project mapping",
       "summary": "Project structure, connections and contract ownership.",
       "example": "Use $vibe-map, workflow “Product Requirements Map” (ID: product-requirements-map). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "2e1949260afe797bdd66cf7cde63e99602058432f5888f1a257aab6c96043a0e",
-      "keywords": []
+      "sha256": "73cfb1855a52134b2632e1ae08489dbf14525a56ee9083fbd28ad572532ed01d",
+      "keywords": [],
+      "purpose": "Connect supplied product requirements and accepted outcomes to implemented surfaces, owners and verification."
     },
     {
       "title": "Project Atlas Map",
@@ -1482,8 +1592,9 @@
       "category": "Project mapping",
       "summary": "Project structure, connections and contract ownership.",
       "example": "Use $vibe-map, workflow “Project Atlas Map” (ID: project-atlas-map). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "81ed8ac75e0422cf97e094ffcbe279b9fc57cb96738a1effca1211db88e8adad",
-      "keywords": []
+      "sha256": "502fee72ecbe49bc72f3601c68b6149cd761f7028490c693f89a8228702acff0",
+      "keywords": [],
+      "purpose": "Explain the product, major modules, runtime entry points, data owners and useful detailed references for repository orientation."
     },
     {
       "title": "RBAC ABAC Policy Map",
@@ -1495,8 +1606,9 @@
       "category": "Project mapping",
       "summary": "Project structure, connections and contract ownership.",
       "example": "Use $vibe-map, workflow “RBAC ABAC Policy Map” (ID: rbac-abac-policy-map). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "6409f3fde6017829536bd809d00329a89f84bf3892f095615379d9ab6007ab27",
-      "keywords": []
+      "sha256": "728db50ebdcf4ba1b5fdf6c261be6f1fcaf3e6bb5214ad6bebca7b0a1a838b87",
+      "keywords": [],
+      "purpose": "Map selected access decisions across subject, action, resource, attributes, scope and backend enforcement."
     },
     {
       "title": "Risk & Release Map",
@@ -1508,8 +1620,9 @@
       "category": "Project mapping",
       "summary": "Project structure, connections and contract ownership.",
       "example": "Use $vibe-map, workflow “Risk & Release Map” (ID: risk-release-map). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "df1e68fc102a693320d5295c09683af264a05f6ae355d1c2a2c233a13809ec3e",
-      "keywords": []
+      "sha256": "31904e425b945c12a24f4a3cfde2fdcdc7c0c593e2d64513e714efff8f5d0d74",
+      "keywords": [],
+      "purpose": "Map material release risks and verification gates to their trigger, affected contract, owner and recovery path."
     },
     {
       "title": "Runtime Flow Map",
@@ -1521,8 +1634,9 @@
       "category": "Project mapping",
       "summary": "Project structure, connections and contract ownership.",
       "example": "Use $vibe-map, workflow “Runtime Flow Map” (ID: runtime-flow-map). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "8358916ad1a7ac071cfdeab03f039b059a5ae4956062a1eed16641a4e9ffeb42",
-      "keywords": []
+      "sha256": "ab47dcde6150096c6a5354ddf852931d486d5104e19046be6ce0457dabad144f",
+      "keywords": [],
+      "purpose": "Trace selected requests, events or jobs from entry through state/effects to completion, failure and recovery."
     },
     {
       "title": "SaaS Navigation Map",
@@ -1534,8 +1648,9 @@
       "category": "Project mapping",
       "summary": "Project structure, connections and contract ownership.",
       "example": "Use $vibe-map, workflow “SaaS Navigation Map” (ID: saas-navigation-map). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "af2feea9413a25533199e9f359cf0b8d3c7a705c4254e379fd44e32c679b8646",
-      "keywords": []
+      "sha256": "08a4fc2159bf53cf24bfe946afd0dbb27d67ecee6b456a5027be20cdf592cfa8",
+      "keywords": [],
+      "purpose": "Map selected routes and UI surfaces to navigation, data, role/plan/tenant gates and reachable states."
     },
     {
       "title": "Test Coverage Map",
@@ -1547,8 +1662,9 @@
       "category": "Project mapping",
       "summary": "Project structure, connections and contract ownership.",
       "example": "Use $vibe-map, workflow “Test Coverage Map” (ID: test-coverage-map). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "334f80d8d0f658888e6979d1f129dec19806616eb902dc1361b6f452f55c2d0f",
-      "keywords": []
+      "sha256": "04a34aea6f2b70339986058952149ffc8a5923b782907c7b1cfe99a9f9b7359c",
+      "keywords": [],
+      "purpose": "Connect selected behaviors and acceptance criteria to the assertions, fixtures, commands and unverified gates that cover them."
     },
     {
       "title": "Traceability Map",
@@ -1560,8 +1676,9 @@
       "category": "Project mapping",
       "summary": "Project structure, connections and contract ownership.",
       "example": "Use $vibe-map, workflow “Traceability Map” (ID: traceability-map). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "1f0cb8739f7b757d44b6566dfd431e5b041c3a44d43be152eae033412f53fb2f",
-      "keywords": []
+      "sha256": "9ed0c20ddba4f75bb66f36b2d58f3694a284242099b11cc232816b7e2f710ea8",
+      "keywords": [],
+      "purpose": "Connect selected requirements or decisions to defining code, direct contracts, tests, documentation and release gates."
     },
     {
       "title": "MCP Protocol & Authorization Check",
@@ -1573,8 +1690,9 @@
       "category": "MCP servers & clients",
       "summary": "MCP versions, tool contracts, transport and authorization.",
       "example": "Use $vibe-mcp, workflow “MCP Protocol & Authorization Check” (ID: mcp-protocol-auth-check). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "f7c3a4a387acb2db10ddc72750e0496c1182a4271b3bb7593d15db902faffd0f",
-      "keywords": []
+      "sha256": "d0148917aa127f4ee9718204c8d6d065ec9e3d8a285b1ddbb9a9aa2444dd87b9",
+      "keywords": [],
+      "purpose": "Verify MCP discovery, schemas, real transport, errors and authorization for the selected server and supported clients."
     },
     {
       "title": "MCP Server Audit",
@@ -1586,8 +1704,9 @@
       "category": "MCP servers & clients",
       "summary": "MCP versions, tool contracts, transport and authorization.",
       "example": "Use $vibe-mcp, workflow “MCP Server Audit” (ID: mcp-server-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "32af155734dcb2bff26335fd590d3bea3ca17ea65f077b1917631dfa6ace5d1d",
-      "keywords": []
+      "sha256": "119fc4a7e1fa91d3416aff71050046866b7c660772f3a12ff9c631df34e95af6",
+      "keywords": [],
+      "purpose": "Establish whether an advertised capability survives discovery, transport, validation, authorization, execution and serialization with the same meaning. Select the tools, resources or prompts relevant to the request; inspect their direct middleware and consumers rather than every integration in the repository."
     },
     {
       "title": "Improve MCP Server",
@@ -1599,8 +1718,9 @@
       "category": "MCP servers & clients",
       "summary": "MCP versions, tool contracts, transport and authorization.",
       "example": "Use $vibe-mcp, workflow “Improve MCP Server” (ID: mcp-server-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "0db9a5e5ea4a5c5ca9a49f0396201368e5c776c616bd01c1a8e4dca46d4e158c",
-      "keywords": []
+      "sha256": "22d7f3d0bf9b3600c3e42b5bf273579cbac8da367e34b2b4159ba3e74c39e9e7",
+      "keywords": [],
+      "purpose": "Complete the selected discovery-to-execution change: registration, schema, transport metadata, trusted identity, handler, result/error serialization and the direct client. A handler-only fix is incomplete when the client still misinterprets its result. Do not add arbitrary servers, extensions or an SDK upgrade to satisfy an unrelated example."
     },
     {
       "title": "Mobile App Audit",
@@ -1612,8 +1732,9 @@
       "category": "Mobile apps",
       "summary": "Navigation, offline behavior, permissions and releases.",
       "example": "Use $vibe-mobile, workflow “Mobile App Audit” (ID: mobile-app-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "e476d46a3fb5b2951adabe120f5fc14e91288578b85f19638401b43c089f1b28",
-      "keywords": []
+      "sha256": "91c4e7af8ecc2428482cb2ddc202fe931f7701a9aad36eeae129c4887517d877",
+      "keywords": [],
+      "purpose": "Audit one mobile app feature, navigation flow, offline/sync path, permission boundary, deep link, push notification, release config, or platform-specific behavior for iOS/Android or cross-platform mobile apps."
     },
     {
       "title": "Improve Mobile App",
@@ -1625,8 +1746,9 @@
       "category": "Mobile apps",
       "summary": "Navigation, offline behavior, permissions and releases.",
       "example": "Use $vibe-mobile, workflow “Improve Mobile App” (ID: mobile-app-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "1a4db4083355b646a23bcbc222d2999f901df4380cf1de91999e903787677807",
-      "keywords": []
+      "sha256": "6d2fbec8e887058c10e0c0ff6ecc19813351dc2abb5342e89915278e8419ab34",
+      "keywords": [],
+      "purpose": "Correct the selected mobile flow across navigation, local state, backend behavior and relevant platform constraints."
     },
     {
       "title": "Mobile Release & Offline Check",
@@ -1638,8 +1760,9 @@
       "category": "Mobile apps",
       "summary": "Navigation, offline behavior, permissions and releases.",
       "example": "Use $vibe-mobile, workflow “Mobile Release & Offline Check” (ID: mobile-release-offline-check). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "04a0ed7c701c805c072cf2320a5e98d09afd92c69f8be87c4e919dcc30b0504a",
-      "keywords": []
+      "sha256": "9584c0c59f818d3756dbe548d30e424613a9583d0db62737b5fdcd5d970b95b8",
+      "keywords": [],
+      "purpose": "Verify one mobile release, navigation, offline/sync, permission, push, or deep-link invariant through bounded simulator/device or repository-native scenarios."
     },
     {
       "title": "NoSQL Consistency & Hot Partition Check",
@@ -1651,8 +1774,9 @@
       "category": "NoSQL",
       "summary": "Keys, indexes, consistency and hot partitions.",
       "example": "Use $vibe-nosql, workflow “NoSQL Consistency & Hot Partition Check” (ID: nosql-consistency-hot-partition-check). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "976083c545dd3c52bb4b70266bdf24af76076f64db96abab276af8fbfb439a7d",
-      "keywords": []
+      "sha256": "cbc741c8d316aaadca48e91c36f1a086b92a038d2c9772b925566ccda610e183",
+      "keywords": [],
+      "purpose": "Verify the selected data invariant and access/resource behavior using the engine’s actual atomicity and partition model."
     },
     {
       "title": "NoSQL Databases Audit",
@@ -1664,8 +1788,9 @@
       "category": "NoSQL",
       "summary": "Keys, indexes, consistency and hot partitions.",
       "example": "Use $vibe-nosql, workflow “NoSQL Databases Audit” (ID: nosql-databases-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "c3ed6739b220c83a6212d934cb338f239e3dda2ec90e7c7aee86b6c269cf9d89",
-      "keywords": []
+      "sha256": "3ca9b1be5f4c881f9893c860daf91d9650f5bae74047f5e78622246bcd71178b",
+      "keywords": [],
+      "purpose": "Audit a NoSQL data path against the selected engine's real atomicity, partitioning, index, consistency, TTL, change-stream, and connection capabilities."
     },
     {
       "title": "Improve NoSQL Databases",
@@ -1677,8 +1802,9 @@
       "category": "NoSQL",
       "summary": "Keys, indexes, consistency and hot partitions.",
       "example": "Use $vibe-nosql, workflow “Improve NoSQL Databases” (ID: nosql-databases-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "52d4ca5cb0ed8fe4bd44ce578b24d8fa400942a4b17dd726a106f9fa0bc4fe27",
-      "keywords": []
+      "sha256": "5dd4f376899fe5c69a9ac39de4da02e007eb3feb3198a362a5a308b0be253411",
+      "keywords": [],
+      "purpose": "Correct the selected NoSQL data path using the engine’s actual key, atomicity, consistency and indexing guarantees."
     },
     {
       "title": "Notification Delivery Audit",
@@ -1690,8 +1816,9 @@
       "category": "Notification delivery",
       "summary": "Notifications, consent, delivery and deduplication.",
       "example": "Use $vibe-notifications, workflow “Notification Delivery Audit” (ID: notification-delivery-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "16e3dd7cc058c1da7f5445efa253b8a948b2f9c7f11796af4f1646975cae7771",
-      "keywords": []
+      "sha256": "08e652e77e844582aa4cdf5949a954b0407e5273b183cf95d52e2f12c727f8b7",
+      "keywords": [],
+      "purpose": "Audit one notification delivery boundary across email, SMS, push, in-app, webhook, or provider delivery status. Focus on correctness, consent, deduplication, retries, localization, observability, and user-visible state."
     },
     {
       "title": "Improve Notification Delivery",
@@ -1703,8 +1830,9 @@
       "category": "Notification delivery",
       "summary": "Notifications, consent, delivery and deduplication.",
       "example": "Use $vibe-notifications, workflow “Improve Notification Delivery” (ID: notification-delivery-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "ea6cfbbb32cb4dac8b317e23877d11f7f85d420047265b3ddcd78c1740fabea4",
-      "keywords": []
+      "sha256": "dcd46928d66d98366fbecc52e9a833c005f9ced82ebbc1ba2be6181a7a2da826",
+      "keywords": [],
+      "purpose": "Correct the selected notification delivery path from eligibility through provider status and retry recovery."
     },
     {
       "title": "Notification Failure & Idempotency Check",
@@ -1716,8 +1844,9 @@
       "category": "Notification delivery",
       "summary": "Notifications, consent, delivery and deduplication.",
       "example": "Use $vibe-notifications, workflow “Notification Failure & Idempotency Check” (ID: notification-failure-idempotency-check). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "78ed042f89afba71eb5e393def9346e410f82968094a994d0f406654990d5c28",
-      "keywords": []
+      "sha256": "d17cdc6a89a4e6178d11da4480eef9eab049e076c2e1d50d2631cdc6e942d578",
+      "keywords": [],
+      "purpose": "Verify one notification delivery invariant through bounded success, failure, duplicate, retry, consent, and provider-status scenarios."
     },
     {
       "title": "Observability Semantics & Cost Check",
@@ -1729,8 +1858,9 @@
       "category": "Metrics, logs & alerts",
       "summary": "Metrics, logs, dashboards and actionable alerts.",
       "example": "Use $vibe-observability, workflow “Observability Semantics & Cost Check” (ID: observability-semantics-cost-check). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "792585fa0f0b414bc06100a57fb1d7d885a9d1dc5237efdc63bc6fedc1b52c26",
-      "keywords": []
+      "sha256": "9a5d568c5f1e4bc8b38ae925796e67c238edc1228bdfc83911c62c038bbba3cd",
+      "keywords": [],
+      "purpose": "Verify that the selected telemetry path represents the intended signal within its identity, freshness and cardinality limits."
     },
     {
       "title": "Observability Stack Audit",
@@ -1742,8 +1872,9 @@
       "category": "Metrics, logs & alerts",
       "summary": "Metrics, logs, dashboards and actionable alerts.",
       "example": "Use $vibe-observability, workflow “Observability Stack Audit” (ID: observability-stack-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "d2b36b5b0d6bc7e5b9a776b00079abd3e2c2ebb8d5cf04c6b1940c6adda8a6a4",
-      "keywords": []
+      "sha256": "ec268f5975c9a2ec311b51897b9c6153ad7d77a47c860f56a2fbc4354f3503dd",
+      "keywords": [],
+      "purpose": "Audit metrics, logs, dashboards, alerts, and correlation as one signal contract with bounded cardinality, cost, tenancy, and operator actionability."
     },
     {
       "title": "Improve Observability Stack",
@@ -1755,8 +1886,9 @@
       "category": "Metrics, logs & alerts",
       "summary": "Metrics, logs, dashboards and actionable alerts.",
       "example": "Use $vibe-observability, workflow “Improve Observability Stack” (ID: observability-stack-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "e909c3f150393ca084a0574892ff6c760445900bddc46ddd29074dd7c439c019",
-      "keywords": []
+      "sha256": "2b3073e71971c12717955bd5236119e06bf91ab47ca2ebd94a0d87523b35350f",
+      "keywords": [],
+      "purpose": "Correct the selected signal from instrumentation through storage, query, dashboard or alert interpretation."
     },
     {
       "title": "Background Jobs Audit",
@@ -1768,8 +1900,9 @@
       "category": "Infrastructure & background jobs",
       "summary": "CI/CD, configuration and background jobs.",
       "example": "Use $vibe-ops, workflow “Background Jobs Audit” (ID: background-jobs-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "17172c9569aa37a58bcebbe6d980365626eda7584cff365a501a44e2f66b265c",
-      "keywords": []
+      "sha256": "939c309de44261d194313b2df3e5e3de9f5b089daa14bad46aa9bb993f6068e1",
+      "keywords": [],
+      "purpose": "Audit background work: queues, workers, cron/scheduled jobs, webhooks, retries, idempotency, locks, concurrency, long-running tasks, cleanup, and observability. Keep only repository-visible issues with correctness, data, cost, reliability, or operational impact."
     },
     {
       "title": "Improve Background Jobs",
@@ -1781,8 +1914,9 @@
       "category": "Infrastructure & background jobs",
       "summary": "CI/CD, configuration and background jobs.",
       "example": "Use $vibe-ops, workflow “Improve Background Jobs” (ID: background-jobs-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "426c81dbaf99e757f9c0cad585d45da20762e69e97f959a3dad44176f129bc0f",
-      "keywords": []
+      "sha256": "2c43322f32747da275b311b6832a75d128a9c73e12079e0d1099876eb9b2c84e",
+      "keywords": [],
+      "purpose": "Improve the selected async workflow end to end: enqueue trigger, payload contract, worker execution, idempotency, retries, failure recovery, observability, and user/admin visibility where relevant."
     },
     {
       "title": "Deploy Bootstrap",
@@ -1794,8 +1928,9 @@
       "category": "Infrastructure & background jobs",
       "summary": "CI/CD, configuration and background jobs.",
       "example": "Use $vibe-ops, workflow “Deploy Bootstrap” (ID: deploy-bootstrap). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "b0e071ffdc3ecc470089d7c2c4f48d5c6107e4da7a4c4454482c95b0953364b6",
-      "keywords": []
+      "sha256": "87c5c81fee14253237105e4b38ec90afd2982646408c7f53ac0cb160f7080bf6",
+      "keywords": [],
+      "purpose": "Prepare deployment configuration and verification for the selected existing runtime and provider; preparation does not execute a deployment."
     },
     {
       "id": "incident-recovery-check",
@@ -1807,7 +1942,7 @@
       "category": "Infrastructure & background jobs",
       "summary": "CI/CD, configuration and background jobs.",
       "example": "Use $vibe-ops, workflow “Incident Recovery Check” (ID: incident-recovery-check). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "40128a6fec4f3f7fe4951d0d8bf91c83b8bb21ba2a597749a2a54a29594c0b71",
+      "sha256": "99373280265886d0b9708b749108415a5a733d47babb80cf784c25c74a650840",
       "keywords": [
         "incident",
         "triage",
@@ -1817,7 +1952,8 @@
         "расследование",
         "incidente",
         "故障"
-      ]
+      ],
+      "purpose": "Verify incident mitigation and recovery against the affected artifact, cohort, operation and observed recovery window."
     },
     {
       "id": "incident-remediation-polish",
@@ -1829,7 +1965,7 @@
       "category": "Infrastructure & background jobs",
       "summary": "CI/CD, configuration and background jobs.",
       "example": "Use $vibe-ops, workflow “Improve Incident Remediation” (ID: incident-remediation-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "c7ff799e9a2d6c86d8fa0562a09629398d7fb4b675138a79674c6e30c6d813f1",
+      "sha256": "6720253e504f9ecdfed72b0116b8f7c5564fed66023ebf48df808bf4470f4f28",
       "keywords": [
         "incident",
         "triage",
@@ -1839,7 +1975,8 @@
         "расследование",
         "incidente",
         "故障"
-      ]
+      ],
+      "purpose": "Restore the affected user operation and prevent the demonstrated failure path from recurring. Keep the intervention at the runtime/code/configuration owner and include directly affected retry, cleanup, data repair and recovery checks. Avoid unrelated refactoring while the incident scope remains unresolved."
     },
     {
       "id": "incident-triage-audit",
@@ -1851,7 +1988,7 @@
       "category": "Infrastructure & background jobs",
       "summary": "CI/CD, configuration and background jobs.",
       "example": "Use $vibe-ops, workflow “Incident Triage Audit” (ID: incident-triage-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "f26adbc2ca05b65f18e1cd22d91fc40269c0debeea29a3d51f727827d120a4f9",
+      "sha256": "a4899b23fb8827772cffc5614f80cb5ad0f358336915ca536aeb7c15ad59460c",
       "keywords": [
         "incident",
         "triage",
@@ -1861,7 +1998,8 @@
         "расследование",
         "incidente",
         "故障"
-      ]
+      ],
+      "purpose": "Establish what user operation is failing, where the first demonstrated divergence occurs and which explanations fit the evidence. Keep the investigation bounded by the incident's services, tenants, time window and dependencies. Do not broaden a single degraded operation into a repository-wide cleanup."
     },
     {
       "title": "Infra Ops Audit",
@@ -1873,8 +2011,9 @@
       "category": "Infrastructure & background jobs",
       "summary": "CI/CD, configuration and background jobs.",
       "example": "Use $vibe-ops, workflow “Infra Ops Audit” (ID: infra-ops-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "9e6a26a85b383120ec1bc65de966fd5b38a6992d0f2066198eb04a3dd747d6e1",
-      "keywords": []
+      "sha256": "635d7bba3d2d9a1a4fd8176b458c133071f403997242c528919e6ebe91ada396",
+      "keywords": [],
+      "purpose": "Audit operational readiness across CI/CD, runtime config, deployment, migrations, jobs, health checks, secrets, backups, observability, and recovery. This complements Deploy Bootstrap: it finds repo-proven ops tasks instead of bootstrapping one opinionated deploy path."
     },
     {
       "title": "Improve Infra Ops",
@@ -1886,8 +2025,9 @@
       "category": "Infrastructure & background jobs",
       "summary": "CI/CD, configuration and background jobs.",
       "example": "Use $vibe-ops, workflow “Improve Infra Ops” (ID: infra-ops-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "ac7e9e57790b6ae4ba1da5825242edfa27651f3e7072985092d51b2e22108aa4",
-      "keywords": []
+      "sha256": "ba67cbb12dc4952f76c478cd2c60300ea49c66d81c2fa5d738bd3cb7361ff616",
+      "keywords": [],
+      "purpose": "Correct the selected runtime configuration or delivery path and verify the affected startup, failure or recovery behavior."
     },
     {
       "title": "Payments Provider Audit",
@@ -1899,8 +2039,9 @@
       "category": "Payments",
       "summary": "Payment events, reconciliation and plan entitlements.",
       "example": "Use $vibe-payments, workflow “Payments Provider Audit” (ID: payments-provider-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "ebdc9d3582ea0825aeb44363439bf096d0bfbc882233820d2c7510ede1621af8",
-      "keywords": []
+      "sha256": "e6a3791369ab326dd6c99b626c9a83a4de23f980fa3733e1fe8314fe657ee4ed",
+      "keywords": [],
+      "purpose": "Audit one payments provider boundary such as checkout, subscription lifecycle, invoice state, webhook ingestion, entitlement activation, refund, chargeback, reconciliation, or tax/payment status mapping."
     },
     {
       "title": "Improve Payments Provider",
@@ -1912,8 +2053,9 @@
       "category": "Payments",
       "summary": "Payment events, reconciliation and plan entitlements.",
       "example": "Use $vibe-payments, workflow “Improve Payments Provider” (ID: payments-provider-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "aaf783a34bdbbb7cbd84e7401475502a1efd08d58800ee28e60867a40aaaecb3",
-      "keywords": []
+      "sha256": "e8847ffc988668e2a20abd051551af387e7ff6f9626b942afcc97275b8ccf819",
+      "keywords": [],
+      "purpose": "Correct the selected provider-event or billing transition while preserving authenticated ingestion, idempotency and local entitlements."
     },
     {
       "title": "Payments Webhook & Reconciliation Check",
@@ -1925,8 +2067,9 @@
       "category": "Payments",
       "summary": "Payment events, reconciliation and plan entitlements.",
       "example": "Use $vibe-payments, workflow “Payments Webhook & Reconciliation Check” (ID: payments-webhook-reconciliation-check). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "d074054a242e6183274fdcbfcdd30872059c4947022f3eedb8fcd7e29cabf126",
-      "keywords": []
+      "sha256": "03bcc9e2e59da8f22e77e9ced3ee8de14ed29429fee5d44ce81391772a8707ca",
+      "keywords": [],
+      "purpose": "Verify one payment webhook, state transition, or reconciliation invariant through safe duplicate, delayed, failed, and out-of-order scenarios."
     },
     {
       "title": "Instant Architecture Probe",
@@ -1938,8 +2081,9 @@
       "category": "Quick bug discovery",
       "summary": "One area, one proven bug and a verified fix.",
       "example": "Use $vibe-probe, workflow “Instant Architecture Probe” (ID: instant-architecture-probe). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "fb4090fb49e273864359d6fcaac2097af3219d12760b0151c42128f81c5df1e9",
-      "keywords": []
+      "sha256": "0e6e8bd63e4bdcc6e8598d850c075682c6907fb9999b79ab802ed7cc874f4093",
+      "keywords": [],
+      "purpose": "Inspect one unvisited architecture path for a demonstrated owner or contract defect and repair it only when authorized."
     },
     {
       "title": "Instant Backend Probe",
@@ -1951,8 +2095,9 @@
       "category": "Quick bug discovery",
       "summary": "One area, one proven bug and a verified fix.",
       "example": "Use $vibe-probe, workflow “Instant Backend Probe” (ID: instant-backend-probe). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "813b262eb475dbf8c6c4e9954796974d90d0df22c5825921df293a3c65572978",
-      "keywords": []
+      "sha256": "31baf6a6c0eb503e03af97c20e8a00f48e6a995f6a5ee55abc9dc9b65b037db0",
+      "keywords": [],
+      "purpose": "Trace one backend operation for a reachable defect, verify its durable effects and repair it only when authorized."
     },
     {
       "title": "Find and Fix One Bug",
@@ -1964,8 +2109,9 @@
       "category": "Quick bug discovery",
       "summary": "One area, one proven bug and a verified fix.",
       "example": "Use $vibe-probe, workflow “Find and Fix One Bug” (ID: instant-bug-fix-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "b0a93ee39220f276f763c2fb0bd113bc677c9978c1d7eddbbeda01a44f29301c",
-      "keywords": []
+      "sha256": "8cd932b92f505d12863142f8174b773d462fd6afb1d9ab80c083ba036e0d78ae",
+      "keywords": [],
+      "purpose": "Find and, when authorized, fix one demonstrated bug at its defining owner, then verify the failure and a valid control."
     },
     {
       "title": "Instant Frontend Probe",
@@ -1977,8 +2123,9 @@
       "category": "Quick bug discovery",
       "summary": "One area, one proven bug and a verified fix.",
       "example": "Use $vibe-probe, workflow “Instant Frontend Probe” (ID: instant-frontend-probe). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "9b3043a4657e8707cea98ef903e3c958f1b2288c52de72e68a264f919ec69d82",
-      "keywords": []
+      "sha256": "dbd4d4bad4d01179ad9e8a222a0177c1f218b2cfa93d12176ab0ae68eb03314a",
+      "keywords": [],
+      "purpose": "Inspect one frontend state or interaction for a real user-visible defect and repair it only when authorized."
     },
     {
       "title": "Instant UI-UX Visual Probe",
@@ -1990,8 +2137,9 @@
       "category": "Quick bug discovery",
       "summary": "One area, one proven bug and a verified fix.",
       "example": "Use $vibe-probe, workflow “Instant UI-UX Visual Probe” (ID: instant-ui-ux-visual-probe). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "3a657d4ec93d0408888c79bb547234cab5a76750638e89622d3e1ca1ffa83d9e",
-      "keywords": []
+      "sha256": "943fd2a7f61b82b902d8b3626064f8aa5d2912ec8355ef160e39b924b3a322cd",
+      "keywords": [],
+      "purpose": "Render and inspect one interface state for a demonstrated visual or interaction defect, with before/after evidence for an authorized repair."
     },
     {
       "title": "Form & Data UI Audit",
@@ -2003,8 +2151,9 @@
       "category": "Product & UX",
       "summary": "Requirements, interfaces and user journeys.",
       "example": "Use $vibe-product, workflow “Form & Data UI Audit” (ID: form-data-ui-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "481c0214a7194fd0647d8cc6dfeb323eb39606bf9d28c66e8219888ea4597c98",
-      "keywords": []
+      "sha256": "8ff8cd8e7722d60a0e2be49ea2cc26361c9a156da85585819919daeeade2961e",
+      "keywords": [],
+      "purpose": "Audit a form, editor, table, search, filter, pagination, or data-entry surface against validation and persistence contracts."
     },
     {
       "title": "Improve Form & Data UI",
@@ -2016,8 +2165,9 @@
       "category": "Product & UX",
       "summary": "Requirements, interfaces and user journeys.",
       "example": "Use $vibe-product, workflow “Improve Form & Data UI” (ID: form-data-ui-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "b8086ddec1dacf22c94e177bf151701147e89fdeda161f5ecbdd43bd80e5f83a",
-      "keywords": []
+      "sha256": "641e5f8b52450734da80d7d526ad956f49fc59f9021fe30cc75b496b521ef230",
+      "keywords": [],
+      "purpose": "Correct the selected field or data operation from user input through validation, serialization and stored result."
     },
     {
       "title": "Onboarding Activation Audit",
@@ -2029,8 +2179,9 @@
       "category": "Product & UX",
       "summary": "Requirements, interfaces and user journeys.",
       "example": "Use $vibe-product, workflow “Onboarding Activation Audit” (ID: onboarding-activation-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "f89d928d691436caa8dd63520ac6d0bdb31bcb85635a4bf89bf3a540fbbda31b",
-      "keywords": []
+      "sha256": "9c8458b79c7f45c830c0996483ef3f2c81dd890c6c136c4de596fdaef4439ea1",
+      "keywords": [],
+      "purpose": "Audit the path from first entry to meaningful activation: public entry, signup/login, first-run state, workspace/project setup, permissions, plan gates, sample data, checklist/progress, handoff into core workflow, and activation measurement. Keep only issues supported by repository evidence."
     },
     {
       "title": "Improve Onboarding Activation",
@@ -2042,8 +2193,9 @@
       "category": "Product & UX",
       "summary": "Requirements, interfaces and user journeys.",
       "example": "Use $vibe-product, workflow “Improve Onboarding Activation” (ID: onboarding-activation-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "c1c2d5a2f25296120c9a287a18e91978f19d005cdaf11356214d86f8ce44e0c3",
-      "keywords": []
+      "sha256": "c3c9980543004c6b03f07790f527f9ed9bd8754ec86c859578faf427c2e90d6b",
+      "keywords": [],
+      "purpose": "Improve the selected first-run or activation path so a new or returning user reaches the next meaningful product value state safely and clearly. The diff should connect entry point, setup state, copy, navigation, permissions/plan context, recovery, and validation."
     },
     {
       "title": "Product Acceptance Check",
@@ -2055,8 +2207,9 @@
       "category": "Product & UX",
       "summary": "Requirements, interfaces and user journeys.",
       "example": "Use $vibe-product, workflow “Product Acceptance Check” (ID: product-acceptance-check). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "e7a3300e57e998da83a0449d6805537bb963b887420c29ca67d1f537feac60c1",
-      "keywords": []
+      "sha256": "48c1136ae7cccc3726f6ca6935e23cecb2b3b8499c6b4b59d0b258621bee2d85",
+      "keywords": [],
+      "purpose": "Verify one selected product requirement, acceptance criterion, or release slice through bounded, reproducible evidence without reopening broad product discovery or unrelated implementation work."
     },
     {
       "title": "Product Decision & Metrics Check",
@@ -2068,8 +2221,9 @@
       "category": "Product & UX",
       "summary": "Requirements, interfaces and user journeys.",
       "example": "Use $vibe-product, workflow “Product Decision & Metrics Check” (ID: product-decision-metrics-check). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "812cdb3c17e90d0220cc00566f6761f94b69d4c04a12abde32eca79d6d6f3dfc",
-      "keywords": []
+      "sha256": "34983d2df2c8b6d79179778f9a6b68b87fb4dd8e7a311a4958b1707dfb79d9dc",
+      "keywords": [],
+      "purpose": "Verify one selected product decision, requirement, journey step, or metric/event contract through bounded evidence. This check proves alignment; it does not redesign the product or perform a broad audit."
     },
     {
       "title": "Product Requirements Audit",
@@ -2081,8 +2235,9 @@
       "category": "Product & UX",
       "summary": "Requirements, interfaces and user journeys.",
       "example": "Use $vibe-product, workflow “Product Requirements Audit” (ID: product-requirements-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "996a4811b7b1f5fee041831efa3dd8081df6583cb58ed47a3b4c511e5a6bcfc0",
-      "keywords": []
+      "sha256": "f26e18051605dfd0646ccfa373ecde98d2e950f40bdf878aa5bb3a287ce7850b",
+      "keywords": [],
+      "purpose": "Audit one product requirement, feature slice, journey, or release objective for clarity, traceability, acceptance, measurable outcome, and implementation consistency. Limit the audit to the selected product surface and current repository/supplied evidence."
     },
     {
       "title": "Improve Product Requirements",
@@ -2094,8 +2249,9 @@
       "category": "Product & UX",
       "summary": "Requirements, interfaces and user journeys.",
       "example": "Use $vibe-product, workflow “Improve Product Requirements” (ID: product-requirements-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "3579d5dce4cbdb1b614f1ececcd4d78ac747086694b007a9708fab0b6ec97506",
-      "keywords": []
+      "sha256": "19588f93374a8bbed2847afea136950a760ef77592781f68efb000909f700b01",
+      "keywords": [],
+      "purpose": "Align the selected product requirement or journey with repository behavior, acceptance criteria, tests, and documentation. The patch may update product docs, UI/API behavior, copy, analytics, tests, or maps only when they belong to the same change at the defining source."
     },
     {
       "title": "Product UI Audit",
@@ -2107,8 +2263,9 @@
       "category": "Product & UX",
       "summary": "Requirements, interfaces and user journeys.",
       "example": "Use $vibe-product, workflow “Product UI Audit” (ID: product-ui-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "63cd7815df3527bb0e8d67235dfadfeaace44fcdb35cdd4f7d8272b831ef0917",
-      "keywords": []
+      "sha256": "dd393030781d67be014771128a8c4d5bee079f78ada64f0c59f35b4001fdb0c7",
+      "keywords": [],
+      "purpose": "Audit a selected route or component across data ownership, permissions, all reachable states, accessibility, and user-visible behavior."
     },
     {
       "title": "Improve Product UI",
@@ -2120,8 +2277,9 @@
       "category": "Product & UX",
       "summary": "Requirements, interfaces and user journeys.",
       "example": "Use $vibe-product, workflow “Improve Product UI” (ID: product-ui-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "d82b4453f0c1168c557efd2e1413059961f7fd577b27565827bda6877ec9d6e5",
-      "keywords": []
+      "sha256": "69144ac2e1530bdfc5150fd3ea205ace241f4a507e66685c19222074519fbb25",
+      "keywords": [],
+      "purpose": "Correct the selected user interaction across state, data, permissions and directly affected rendered states."
     },
     {
       "title": "UX Flow Audit",
@@ -2133,8 +2291,9 @@
       "category": "Product & UX",
       "summary": "Requirements, interfaces and user journeys.",
       "example": "Use $vibe-product, workflow “UX Flow Audit” (ID: ux-flow-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "9964f93477620ef86f16ae437177db2d104d4808eba27a3dabde4c18d79eddd7",
-      "keywords": []
+      "sha256": "7e53007d3638c3d6ecd771b1bc37b9c2ecaec98346276bf209ccb9203495135c",
+      "keywords": [],
+      "purpose": "Audit an end-to-end user/admin/system flow from entry point to completion, including permissions, state transitions, copy, recovery, and post-action feedback. Keep only issues that affect task completion, safety, clarity, conversion, or regression resistance."
     },
     {
       "title": "Improve UX Flow",
@@ -2146,8 +2305,9 @@
       "category": "Product & UX",
       "summary": "Requirements, interfaces and user journeys.",
       "example": "Use $vibe-product, workflow “Improve UX Flow” (ID: ux-flow-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "27e160094ef7d0c2931b9b8e41ec8e934b5914b9c59067a2f03046fde1a8cc4f",
-      "keywords": []
+      "sha256": "9ee82c3a75bfcd4b7ab0971b1b15d5a2d2ae1a41068e15bc5bf7ce80698603d1",
+      "keywords": [],
+      "purpose": "Improve the selected user/admin journey from entry to completion. The diff should close the actual flow gap across navigation, state, copy, permissions, validation, and feedback rather than polishing isolated UI fragments."
     },
     {
       "title": "Release Readiness Audit",
@@ -2159,8 +2319,9 @@
       "category": "Quality & readiness",
       "summary": "Test coverage and release readiness.",
       "example": "Use $vibe-quality, workflow “Release Readiness Audit” (ID: release-readiness-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "982dc74704f6ff853698047cafa6cd0d266503b56cc59e476ad0deb924efd8f0",
-      "keywords": []
+      "sha256": "5bc350cfe8f005c08561b0dfae8624b86536863f7fd89e1971aaac2b47e3325e",
+      "keywords": [],
+      "purpose": "Audit whether a repository or selected feature is ready to ship: correctness, tests, migrations, config, deploy path, observability, security/privacy, UI states, docs, and rollback/recovery. Keep only issues supported by repository evidence and relevant to release risk."
     },
     {
       "title": "Test Coverage Audit",
@@ -2172,8 +2333,9 @@
       "category": "Quality & readiness",
       "summary": "Test coverage and release readiness.",
       "example": "Use $vibe-quality, workflow “Test Coverage Audit” (ID: test-coverage-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "bb406929299ea21aa58ac9621073844392f5335232b20176e5fc147d5a6f148c",
-      "keywords": []
+      "sha256": "05fa0e2bae170adb0d12edb7c79097097c8f25e0a14c632a3762f67b02c72595",
+      "keywords": [],
+      "purpose": "Find critical behavior that is untested, falsely tested, or fragile enough to allow regressions. Keep coverage gaps that matter to correctness, contracts, security, UX, or operability."
     },
     {
       "title": "Improve Test Harness",
@@ -2185,8 +2347,9 @@
       "category": "Quality & readiness",
       "summary": "Test coverage and release readiness.",
       "example": "Use $vibe-quality, workflow “Improve Test Harness” (ID: test-harness-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "4338d9019fbfca97dfb8c410846eacac915fb3899b6316f8bf7db475983c65ae",
-      "keywords": []
+      "sha256": "d5096bd05efe1dc2a4ff33f9c592143c86ca0a096f2746afedfb70c5efb99a77",
+      "keywords": [],
+      "purpose": "Repair or add the test that proves the selected behavior, using controlled inputs and observable assertions."
     },
     {
       "title": "Visual Regression Check",
@@ -2198,8 +2361,9 @@
       "category": "Quality & readiness",
       "summary": "Test coverage and release readiness.",
       "example": "Use $vibe-quality, workflow “Visual Regression Check” (ID: visual-regression-check). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "df0083b655cbe5a60712bf3ea108aa70f4b3f19b5116d294dfdac76342d6843f",
-      "keywords": []
+      "sha256": "4e256044bce4dde33fc19d6458dabc902672cf57af3c0e0407be9292bf1d4271",
+      "keywords": [],
+      "purpose": "Verify the selected rendered change against accepted behavior and visual references for supported states and viewports."
     },
     {
       "title": "RabbitMQ Audit",
@@ -2211,8 +2375,9 @@
       "category": "RabbitMQ",
       "summary": "Routing, acknowledgements and redelivery.",
       "example": "Use $vibe-rabbitmq, workflow “RabbitMQ Audit” (ID: rabbitmq-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "4b40ee7765b66992eeb569bbb3d1160b32859a6d9cf19887068e1fbeff16ba63",
-      "keywords": []
+      "sha256": "66f51ad58f7eb7f7acffdb030c232447caf6c9e7867af15d48595913e4f7679a",
+      "keywords": [],
+      "purpose": "Audit RabbitMQ topology, publisher guarantees, acknowledgements, prefetch, quorum durability, dead lettering, and recovery as one delivery contract."
     },
     {
       "title": "Improve RabbitMQ",
@@ -2224,8 +2389,9 @@
       "category": "RabbitMQ",
       "summary": "Routing, acknowledgements and redelivery.",
       "example": "Use $vibe-rabbitmq, workflow “Improve RabbitMQ” (ID: rabbitmq-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "00a79ae2d6228811c9266a47777d114b7765a07669d5b0761e7d2394f5a9a53c",
-      "keywords": []
+      "sha256": "52dccf5d2e1d526710659e348544579303fb5018c3e7edda5d92a490e1f9e18d",
+      "keywords": [],
+      "purpose": "Correct the selected RabbitMQ publish or consumption behavior across routing, confirms, effects and acknowledgments."
     },
     {
       "title": "RabbitMQ Redelivery & Recovery Check",
@@ -2237,8 +2403,9 @@
       "category": "RabbitMQ",
       "summary": "Routing, acknowledgements and redelivery.",
       "example": "Use $vibe-rabbitmq, workflow “RabbitMQ Redelivery & Recovery Check” (ID: rabbitmq-redelivery-recovery-check). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "50fd9d7c675d3548e7481a30a9fa630b352773b30483fcb5ce8a528aa2cf0583",
-      "keywords": []
+      "sha256": "98871d7d672cd61356ee6d56c693f3c6099119eedb435cf09c9afc8b37f2b737",
+      "keywords": [],
+      "purpose": "Verify the selected publish or processing guarantee through routing, acknowledgment uncertainty and redelivery."
     },
     {
       "title": "Realtime Frontend Audit",
@@ -2250,8 +2417,9 @@
       "category": "Realtime interfaces",
       "summary": "Client caches, optimistic updates and reconnection.",
       "example": "Use $vibe-realtime, workflow “Realtime Frontend Audit” (ID: realtime-frontend-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "08553b6d3c8df11dd551c0ba684dc59eb92454a5f776f4fae28b25948ebd99df",
-      "keywords": []
+      "sha256": "2813a74b76baf8294dfe69538485e7297de7d55c33cb58a8b7cbd81cac8ca1f5",
+      "keywords": [],
+      "purpose": "Audit the existing query-state library and real-time UI behavior (including TanStack Query when present) across cache identity, mutations, optimistic state, subscriptions, reconnect/offline persistence, rendering, and recovery."
     },
     {
       "title": "Improve Realtime Frontend",
@@ -2263,8 +2431,9 @@
       "category": "Realtime interfaces",
       "summary": "Client caches, optimistic updates and reconnection.",
       "example": "Use $vibe-realtime, workflow “Improve Realtime Frontend” (ID: realtime-frontend-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "b0fd2e846abf0ce6f3b7749d7b7e7950594f994ed66cc44ab335c703196e9acd",
-      "keywords": []
+      "sha256": "cd056784ce45508c9e008daee1d6b0a4a6d0c62f0975ee8f8086256a05b56482",
+      "keywords": [],
+      "purpose": "Correct the selected client-state or subscription behavior under overlapping mutations, reconnect and identity changes."
     },
     {
       "title": "Realtime Interface Profiling & Recovery Check",
@@ -2276,8 +2445,9 @@
       "category": "Realtime interfaces",
       "summary": "Client caches, optimistic updates and reconnection.",
       "example": "Use $vibe-realtime, workflow “Realtime Interface Profiling & Recovery Check” (ID: realtime-interface-profiling-recovery-check). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "678d65a34dca7001a857caeeea99207f54757e3d1752097ce2c3d30c4801ff5c",
-      "keywords": []
+      "sha256": "2e7ac3b3fcc67321ffe7325e8b01682ca5e45ecc4ef0b3aa72ad1e2c7a2d4ef6",
+      "keywords": [],
+      "purpose": "Verify the selected interface’s state convergence and measured responsiveness under concurrent changes or reconnect."
     },
     {
       "title": "Delivery Recovery Audit",
@@ -2289,8 +2459,9 @@
       "category": "Delivery & recovery",
       "summary": "Releases, backups, rollbacks and recovery.",
       "example": "Use $vibe-recovery, workflow “Delivery Recovery Audit” (ID: delivery-recovery-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "8b0ce432ddc445fd58c3f4ec5013435b31a66500b721bae7c0c78f74e79c96f1",
-      "keywords": []
+      "sha256": "cb7f3bbd1f83b8d0724f36c98d3b8d1a32df9028fbb7bd6e8456c171eab70c3c",
+      "keywords": [],
+      "purpose": "Audit commit-to-artifact-to-environment delivery plus rollback, feature controls, backup, restore, and disaster recovery as one executable release contract."
     },
     {
       "title": "Improve Delivery Recovery",
@@ -2302,8 +2473,9 @@
       "category": "Delivery & recovery",
       "summary": "Releases, backups, rollbacks and recovery.",
       "example": "Use $vibe-recovery, workflow “Improve Delivery Recovery” (ID: delivery-recovery-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "e95353fa8a4b1c18efc47dffb7ab7437280381a5ae4da4134e02be6cd9b83788",
-      "keywords": []
+      "sha256": "153448e4cf68ddcf772df8caefbd4eb4adf6df8a38bbfb25dcf49143559b15df",
+      "keywords": [],
+      "purpose": "Correct the selected release, rollback or restore path and verify artifact identity and application-level recovery."
     },
     {
       "title": "Delivery Restore & Rollback Check",
@@ -2315,8 +2487,9 @@
       "category": "Delivery & recovery",
       "summary": "Releases, backups, rollbacks and recovery.",
       "example": "Use $vibe-recovery, workflow “Delivery Restore & Rollback Check” (ID: delivery-restore-rollback-check). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "e8e456f4a4f168c572c46528f15bec8715108703f5121d48d6c35e7fbe6db789",
-      "keywords": []
+      "sha256": "70223b864623be37126ac3925a5bf38875551c67ef700e9e2bf623326beb59ed",
+      "keywords": [],
+      "purpose": "Verify the selected release or recovery path against exact artifact identity, compatible state and agreed recovery criteria."
     },
     {
       "id": "release-artifact-trust-check",
@@ -2328,7 +2501,7 @@
       "category": "Delivery & recovery",
       "summary": "Releases, backups, rollbacks and recovery.",
       "example": "Use $vibe-recovery, workflow “Release Artifact Trust Check” (ID: release-artifact-trust-check). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "6729a3ac75ebb778d81825639c03bfa283ac68fea6b9aa8118069a7891871019",
+      "sha256": "ff9cb71978d779c961f92b419bc9100c4d4b59a7ee16b950e6d42d897ab43b94",
       "keywords": [
         "artifact",
         "release",
@@ -2338,7 +2511,8 @@
         "артефакт",
         "artefacto",
         "制品"
-      ]
+      ],
+      "purpose": "Verify final release bytes, expected digest, signature or provenance and the trusted build/publication identity."
     },
     {
       "title": "Redis Job Queues Audit",
@@ -2350,8 +2524,9 @@
       "category": "Redis & queues",
       "summary": "Redis Streams, BullMQ, ARQ and job recovery.",
       "example": "Use $vibe-redis, workflow “Redis Job Queues Audit” (ID: redis-job-queues-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "ded3b360b9c4a8b4355968ea964b113a7697a27176be27228613f7ee86eef5c2",
-      "keywords": []
+      "sha256": "032954173abce26c183be3ee10d56dba2c814214340c4dbe6467c854b3ff4483",
+      "keywords": [],
+      "purpose": "Audit the selected Redis-backed queue, stream or worker-lease behavior. Inspect shared cache/Redis configuration only where it affects delivery; application cache freshness belongs to the cache skill."
     },
     {
       "title": "Improve Redis Job Queues",
@@ -2363,8 +2538,9 @@
       "category": "Redis & queues",
       "summary": "Redis Streams, BullMQ, ARQ and job recovery.",
       "example": "Use $vibe-redis, workflow “Improve Redis Job Queues” (ID: redis-job-queues-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "8d955443e5d9ef32ff28469fca63ca4107c7d8ce4bbfaa153b6c474ac046807f",
-      "keywords": []
+      "sha256": "175d932a0e1d72d7db5a7096731f8bd87df834a2e2b2bb5c1d44352f2b6eb482",
+      "keywords": [],
+      "purpose": "Correct the selected Redis-backed queue or stream behavior using its actual framework delivery and recovery semantics."
     },
     {
       "title": "Redis Queue Load & Recovery Check",
@@ -2376,8 +2552,9 @@
       "category": "Redis & queues",
       "summary": "Redis Streams, BullMQ, ARQ and job recovery.",
       "example": "Use $vibe-redis, workflow “Redis Queue Load & Recovery Check” (ID: redis-queue-load-recovery-check). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "d5723796cd505c2935674ed3000ca78c7ada56643c5629847fd4d83b6c685bb1",
-      "keywords": []
+      "sha256": "199c6118b4a1774242b62284070f539c3451caf94a2d20c3a8d1a31b1b00f6f3",
+      "keywords": [],
+      "purpose": "Verify the selected Redis-backed job or stream’s effect, lease and recovery guarantee within its resource limits."
     },
     {
       "title": "Consistency Invariants Audit",
@@ -2389,8 +2566,9 @@
       "category": "Reliability & performance",
       "summary": "Failures, race conditions, consistency and performance.",
       "example": "Use $vibe-reliability, workflow “Consistency Invariants Audit” (ID: consistency-invariants-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "043d95d2f200f0c2de635c1dd476d7e20bb7148aafa84063dab00fad4c730780",
-      "keywords": []
+      "sha256": "572d591f35c8bdebb684f380c595e9150fcc985ae463bd2634c6a09c8dcfb92d",
+      "keywords": [],
+      "purpose": "Find reachable consistency defects where one business rule, state transition, permission, quota, schema, cache, generated type, or external contract can drift across layers or over time."
     },
     {
       "title": "Improve Consistency Invariants",
@@ -2402,8 +2580,9 @@
       "category": "Reliability & performance",
       "summary": "Failures, race conditions, consistency and performance.",
       "example": "Use $vibe-reliability, workflow “Improve Consistency Invariants” (ID: consistency-invariants-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "801e2c9107441a3f2dd81efc6c715a78d8e0c74397be8ab252df5ccd6ebeaa7a",
-      "keywords": []
+      "sha256": "0f204025882bd3e92567bc2caed2da4522662eae3e306ae5df0071b5673c756e",
+      "keywords": [],
+      "purpose": "Restore the selected business invariant across its authoritative state and directly affected projections or consumers."
     },
     {
       "title": "Idempotency & Concurrency Audit",
@@ -2415,8 +2594,9 @@
       "category": "Reliability & performance",
       "summary": "Failures, race conditions, consistency and performance.",
       "example": "Use $vibe-reliability, workflow “Idempotency & Concurrency Audit” (ID: idempotency-concurrency-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "5fd77729251c1902c714ca50690c1c0e6b84c70b61281bd4609afeab1431bbaa",
-      "keywords": []
+      "sha256": "3ccf30a8cc46eb6e9862cf6b058cc7c1fa81eb16d197adf1d9d4c37a1782714c",
+      "keywords": [],
+      "purpose": "Audit one operation for duplicate execution, races, lost updates, lock/lease ownership, ordering, and stale completion."
     },
     {
       "title": "Improve Idempotency & Concurrency",
@@ -2428,8 +2608,9 @@
       "category": "Reliability & performance",
       "summary": "Failures, race conditions, consistency and performance.",
       "example": "Use $vibe-reliability, workflow “Improve Idempotency & Concurrency” (ID: idempotency-concurrency-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "1382c662f2be71741e992341567ae17b6a2c3bf5327f2e551986cc84b320c7c9",
-      "keywords": []
+      "sha256": "ffeadd73e692d8587eb14b341e3b3e01187e35127f4eb3f0409374551c1760b5",
+      "keywords": [],
+      "purpose": "Correct the selected duplicate or concurrent operation so final state and effects satisfy the intended contract."
     },
     {
       "title": "Performance Audit",
@@ -2441,8 +2622,9 @@
       "category": "Reliability & performance",
       "summary": "Failures, race conditions, consistency and performance.",
       "example": "Use $vibe-reliability, workflow “Performance Audit” (ID: performance-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "0439763e661eb59431d801038bd2ef0b1f372b607eb1f19968df3694263c38b7",
-      "keywords": []
+      "sha256": "947dded2c99a1e302c6fbae2fbcf36ce4925d6936fdac6f917d9e2ee4e1d6d49",
+      "keywords": [],
+      "purpose": "Find reachable performance problems that affect user experience, throughput, cost, reliability, or operational stability. Keep issues where current repository evidence shows a concrete hot path or high-risk path."
     },
     {
       "title": "Performance Budget Audit",
@@ -2454,8 +2636,9 @@
       "category": "Reliability & performance",
       "summary": "Failures, race conditions, consistency and performance.",
       "example": "Use $vibe-reliability, workflow “Performance Budget Audit” (ID: performance-budget-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "c8168f333e4e77bf94007eb15025646dba71f5a08a97a575089156f740b614d3",
-      "keywords": []
+      "sha256": "2a503087f6ba622387d4900146d0a2085dab610f9cc72e1bb1308500038f1dbe",
+      "keywords": [],
+      "purpose": "Find concrete performance-budget risks and regression gaps in hot paths, especially where latency, throughput, memory, bundle size, database cost, provider cost, or job duration can grow without a guardrail."
     },
     {
       "title": "Improve Performance Budget",
@@ -2467,8 +2650,9 @@
       "category": "Reliability & performance",
       "summary": "Failures, race conditions, consistency and performance.",
       "example": "Use $vibe-reliability, workflow “Improve Performance Budget” (ID: performance-budget-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "0904542e2a3c49e9b51c798f69b796c9382ed4aaf08ad58bd814a3485174c148",
-      "keywords": []
+      "sha256": "f233998f671bea52f6d2e52bccd2ba6cd96d0e7d57282ee25a5994a2b8ac05c9",
+      "keywords": [],
+      "purpose": "Bring the selected path within its evidenced latency, resource or cost budget while preserving correctness."
     },
     {
       "title": "Improve Performance",
@@ -2480,8 +2664,9 @@
       "category": "Reliability & performance",
       "summary": "Failures, race conditions, consistency and performance.",
       "example": "Use $vibe-reliability, workflow “Improve Performance” (ID: performance-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "7da08339b45f62341243892eee125f1194ec0cc88bf984e63e00d2df449cd3de",
-      "keywords": []
+      "sha256": "74a17e07ce89472317a787b428056d5e1ca2aba91ce7807ad079fd17d24d1536",
+      "keywords": [],
+      "purpose": "Improve the measured bottleneck in the selected path and compare equivalent before/after workloads."
     },
     {
       "title": "Reliability Audit",
@@ -2493,8 +2678,9 @@
       "category": "Reliability & performance",
       "summary": "Failures, race conditions, consistency and performance.",
       "example": "Use $vibe-reliability, workflow “Reliability Audit” (ID: reliability-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "d0dacb9b146a1ef491382fdae225e44454234f403834224610736a1397179fc7",
-      "keywords": []
+      "sha256": "8b75de9b042346b436556fbea4d19c76123de58dc9f6772484b7bfe7231fd030",
+      "keywords": [],
+      "purpose": "Find reachable reliability risks where production behavior can fail, degrade, retry incorrectly, or become undiagnosable under realistic dependency, network, process, deploy, or data-shape failures."
     },
     {
       "title": "Improve Reliability",
@@ -2506,8 +2692,9 @@
       "category": "Reliability & performance",
       "summary": "Failures, race conditions, consistency and performance.",
       "example": "Use $vibe-reliability, workflow “Improve Reliability” (ID: reliability-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "c130f51f35d9d2d2553224301ab6551587ef152785d7a474e2328ddb0828f8af",
-      "keywords": []
+      "sha256": "3eee12c72a14a81c86a3b5ff3f94aaf52934434aab882ee7fa5f1a840fc969e2",
+      "keywords": [],
+      "purpose": "Implement one selected reliability fix at the owner layer without broad redesign, making failure handling explicit, safe, observable, and validated."
     },
     {
       "id": "transactional-delivery-check",
@@ -2519,7 +2706,7 @@
       "category": "Reliability & performance",
       "summary": "Failures, race conditions, consistency and performance.",
       "example": "Use $vibe-reliability, workflow “Transactional Delivery Check” (ID: transactional-delivery-check). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "a0b3b8a38316cf25d1c623a9be0b0d9eb5a33845b2d376ff2192389767fabf9e",
+      "sha256": "5f9c48b70081912d239217b42c972b661f7bc15108af5c54488752752559cd28",
       "keywords": [
         "outbox",
         "inbox",
@@ -2530,7 +2717,8 @@
         "события",
         "entrega",
         "事务"
-      ]
+      ],
+      "purpose": "Establish that a committed business change is eventually delivered without losing required work or repeating a non-repeatable effect. Name the operation identity, transaction boundaries, authoritative state and promised convergence time. Do not infer end-to-end exactly-once behavior from a broker option or a deduplication table alone."
     },
     {
       "title": "Patch Checking",
@@ -2542,8 +2730,9 @@
       "category": "Change review",
       "summary": "Full patch review and affected contracts.",
       "example": "Use $vibe-review, workflow “Patch Checking” (ID: patch-checking). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "96b3fe53586f8f0f9fb8fe65bdd2086f229720c0a85903e9139105ec19e4da51",
-      "keywords": []
+      "sha256": "05e545a7042acbcc2c3e94bd72acf9fc3071350684efe2ec2a9143aac0be0580",
+      "keywords": [],
+      "purpose": "Review the complete resulting patch against intended behavior and its original comparison base; repeat after authorized corrections until clean or blocked."
     },
     {
       "title": "Search Index Audit",
@@ -2555,8 +2744,9 @@
       "category": "Search indexes",
       "summary": "Search indexes, result freshness and permissions.",
       "example": "Use $vibe-search, workflow “Search Index Audit” (ID: search-index-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "45fa2494d26c41f5fcedfa41be18f76043e1458a6577ad1b1e3f609a6c594891",
-      "keywords": []
+      "sha256": "7bce34356aeadb3cd8e13b7bb92b68b06369f2c15de64013915c4f8f61674e4e",
+      "keywords": [],
+      "purpose": "Audit one search, full-text, faceted, autocomplete, permissions-filtered, or indexing boundary for relevance, freshness, authorization, consistency, and failure behavior."
     },
     {
       "title": "Improve Search Index",
@@ -2568,8 +2758,9 @@
       "category": "Search indexes",
       "summary": "Search indexes, result freshness and permissions.",
       "example": "Use $vibe-search, workflow “Improve Search Index” (ID: search-index-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "07a262ff928ec6f33566a8fef51e9bbd22c484b9dc6ca064f4cbec53fdd04888",
-      "keywords": []
+      "sha256": "4c28d2111c7d71d78c365d8b2ba1dcf55e5e2366b10215aab14a503dbdce4c3f",
+      "keywords": [],
+      "purpose": "Fix the selected search/index boundary across indexing pipeline, document schema, query/filter logic, authorization, UI/API state, tests, and docs/maps when used."
     },
     {
       "title": "Search Recall & Freshness Check",
@@ -2581,8 +2772,9 @@
       "category": "Search indexes",
       "summary": "Search indexes, result freshness and permissions.",
       "example": "Use $vibe-search, workflow “Search Recall & Freshness Check” (ID: search-recall-freshness-check). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "838b7d1f202adc280e309bdef85745883a452b4240f5fdfc01228a8c9b669e64",
-      "keywords": []
+      "sha256": "dd5039cb6d242a651c6d5001f6a6993d02e67938dd77f6321f8355d7a3e74673",
+      "keywords": [],
+      "purpose": "Verify one search/index invariant through bounded indexing, freshness, deletion, permission, and query scenarios."
     },
     {
       "title": "Audit Logging Compliance Audit",
@@ -2594,8 +2786,9 @@
       "category": "Security & privacy",
       "summary": "Security, privacy and audit logs.",
       "example": "Use $vibe-security, workflow “Audit Logging Compliance Audit” (ID: audit-logging-compliance-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "bb2fc465dea00cce1c78f62af5d33181965ce4d3974d2cbd73145cad3e0c4f90",
-      "keywords": []
+      "sha256": "185dc889cd20b2f5d0bb498479b7744bb6c7becba15831f3c791a21c03783b51",
+      "keywords": [],
+      "purpose": "Audit one security, compliance, financial, admin, or data-governance audit-log boundary. Focus on event completeness, integrity, privacy, retention, queryability, and operational usefulness."
     },
     {
       "title": "Improve Audit Logging Compliance",
@@ -2607,8 +2800,9 @@
       "category": "Security & privacy",
       "summary": "Security, privacy and audit logs.",
       "example": "Use $vibe-security, workflow “Improve Audit Logging Compliance” (ID: audit-logging-compliance-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "a31fc2ab63b7d75cc66002b15c262279d692abb471c334e4f5ea80987751d82d",
-      "keywords": []
+      "sha256": "42a6a51c1e50da0dfc4ce2e3968fbe6a5c6b5c4b12f01df11b28767030a70bdf",
+      "keywords": [],
+      "purpose": "Fix the selected audit-log boundary for a selected material action or policy decision across owner-layer emission, storage/sink, metadata safety, tests, and docs/maps when used."
     },
     {
       "title": "Audit Trail Integrity Check",
@@ -2620,8 +2814,9 @@
       "category": "Security & privacy",
       "summary": "Security, privacy and audit logs.",
       "example": "Use $vibe-security, workflow “Audit Trail Integrity Check” (ID: audit-trail-integrity-check). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "aa799c0000e06f976272f1190a55419d3db9e0487c70da1f2cba89b45cae83cd",
-      "keywords": []
+      "sha256": "9af65fbd88aa73600c54e41dfb93e742acebafb8266d94532d4c6d8992f4b8c2",
+      "keywords": [],
+      "purpose": "Verify one audit-trail invariant for a selected action, policy decision, or patch through bounded scenarios. Prove emitted events are complete, safe, durable enough for the repo-stated use case, and queryable when required."
     },
     {
       "id": "build-supply-chain-audit",
@@ -2633,7 +2828,7 @@
       "category": "Security & privacy",
       "summary": "Security, privacy and audit logs.",
       "example": "Use $vibe-security, workflow “Build Supply Chain Audit” (ID: build-supply-chain-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "cac7ecbdcb461b725b35d93b561f7418cdcc23b3f5ed33a9a8af7ecc20b11f90",
+      "sha256": "17da8d55b1781402014c65db76e0465c55cff0b5a3211ab23aad37489537e9aa",
       "keywords": [
         "supply chain",
         "dependencies",
@@ -2644,7 +2839,8 @@
         "сборка",
         "dependencias",
         "供应链"
-      ]
+      ],
+      "purpose": "Determine who controls each build input, where code executes and which identity can publish the result. Follow one actual workflow or dependency installation from trigger to artifact. Keep final promotion/rollback verification with Recovery, while inspecting upstream trust violations that can taint its inputs."
     },
     {
       "id": "build-supply-chain-polish",
@@ -2656,7 +2852,7 @@
       "category": "Security & privacy",
       "summary": "Security, privacy and audit logs.",
       "example": "Use $vibe-security, workflow “Improve Build Supply Chain” (ID: build-supply-chain-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "c35ecebbf2511ead1a3ab0abb99839a5d402330a69096b54428fac996607f17c",
+      "sha256": "25371feec2a4cbaba0ff170e5dabd904532977af025e01a1c92749bc5a513ab4",
       "keywords": [
         "supply chain",
         "dependencies",
@@ -2667,7 +2863,8 @@
         "сборка",
         "dependencias",
         "供应链"
-      ]
+      ],
+      "purpose": "Remove the specific route by which untrusted input gains execution privileges or enters approved release bytes. Complete directly affected workflow permissions, input validation, artifact handling, inventory and verification so the same behavior cannot bypass the fix through another step in the selected path."
     },
     {
       "title": "Privacy Data Rights Audit",
@@ -2679,8 +2876,9 @@
       "category": "Security & privacy",
       "summary": "Security, privacy and audit logs.",
       "example": "Use $vibe-security, workflow “Privacy Data Rights Audit” (ID: privacy-data-rights-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "71aba891a6dd631cb0a6219e9820fc59eb0025e3de942d27994ce576452a732c",
-      "keywords": []
+      "sha256": "edbd7036cf1cc454b64d1904ebd42b6b81e39f5e5a06c6576c3240496a0c7a29",
+      "keywords": [],
+      "purpose": "Audit one privacy/data-rights boundary such as PII collection, consent, retention, deletion, export, account closure, data sharing, telemetry, or sensitive logging. Use the supplied product/privacy policy as expected behavior; do not infer jurisdictional requirements from code."
     },
     {
       "title": "Privacy Data Rights Check",
@@ -2692,8 +2890,9 @@
       "category": "Security & privacy",
       "summary": "Security, privacy and audit logs.",
       "example": "Use $vibe-security, workflow “Privacy Data Rights Check” (ID: privacy-data-rights-check). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "a8e55860205858a8ecfcd184469efa1bdd317acc3278e33429b7ab339631b25d",
-      "keywords": []
+      "sha256": "3bdcec5006dc3f644deb0adb72c7659f4c35df557387c71361a40ad16f8ac535",
+      "keywords": [],
+      "purpose": "Verify one privacy/data-rights invariant through bounded, safe scenarios. Prove the selected collection, consent, export, deletion, retention, logging, or provider behavior without broadening into legal review."
     },
     {
       "title": "Improve Privacy Data Rights",
@@ -2705,8 +2904,9 @@
       "category": "Security & privacy",
       "summary": "Security, privacy and audit logs.",
       "example": "Use $vibe-security, workflow “Improve Privacy Data Rights” (ID: privacy-data-rights-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "dd31d9b612c2ffbadf5252ed9cade3cbc68472d7d32a207c2a00534d61c7a6ac",
-      "keywords": []
+      "sha256": "6b133c8b95909d65ed2c1680dd4bfc92fb0d60f29040e63587e4c90ccac9eb5d",
+      "keywords": [],
+      "purpose": "Fix the selected privacy/data-rights boundary across collection, storage, derived data, external providers, user/admin controls, tests, and documentation when directly affected."
     },
     {
       "title": "Security Abuse Defense Check",
@@ -2718,8 +2918,9 @@
       "category": "Security & privacy",
       "summary": "Security, privacy and audit logs.",
       "example": "Use $vibe-security, workflow “Security Abuse Defense Check” (ID: security-abuse-defense-check). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "11f843cc9530b99c9c3de9e4a5f611cb7f99177027025e834c0f2de17238ad18",
-      "keywords": []
+      "sha256": "57f7d231ffc6f06a8773c3ca145a553f8a831b64193d905cb4ef434be57eed0c",
+      "keywords": [],
+      "purpose": "Verify the selected access or abuse-defense control rejects the defined attack without blocking legitimate use."
     },
     {
       "title": "Security Audit",
@@ -2731,8 +2932,9 @@
       "category": "Security & privacy",
       "summary": "Security, privacy and audit logs.",
       "example": "Use $vibe-security, workflow “Security Audit” (ID: security-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "68d3ba3a23a3e2ad6455094d2306bdaf667aae2a6b2141daa882093eb1b3c30b",
-      "keywords": []
+      "sha256": "cc6e397c7da18c4d1b54cf653c3e1acbbbc5b0b299b35a205d1f37f687cf0dc2",
+      "keywords": [],
+      "purpose": "Find reachable security issues with concrete repository evidence and produce remediation findings. Do not inflate theoretical patterns into vulnerabilities."
     },
     {
       "title": "Improve Security",
@@ -2744,8 +2946,9 @@
       "category": "Security & privacy",
       "summary": "Security, privacy and audit logs.",
       "example": "Use $vibe-security, workflow “Improve Security” (ID: security-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "110f46d4ba90d2e979779c6706e1c626257488e4fc50c51754062431bc95e101",
-      "keywords": []
+      "sha256": "80b01e46b407e8c2dafe1addd910d406b92cdcf98ab820f349396431244f29fb",
+      "keywords": [],
+      "purpose": "Close the demonstrated authorization or input-trust failure at the enforcing boundary and verify valid and denied paths."
     },
     {
       "title": "System Security Hardening Audit",
@@ -2757,8 +2960,9 @@
       "category": "Security & privacy",
       "summary": "Security, privacy and audit logs.",
       "example": "Use $vibe-security, workflow “System Security Hardening Audit” (ID: system-security-hardening-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "b2983d40159d1e0e8373f990afb7265263d27825a9629bb76d4b4899098d2e0b",
-      "keywords": []
+      "sha256": "3879f7fb35fd8a82f5f00a0d7290aa8c38370b088179b0839cabaad9bf388e19",
+      "keywords": [],
+      "purpose": "Audit reachable abuse paths across identity, credential attacks, authorization, sessions, egress/parsers, host/container runtime, secrets, dependencies, and detection."
     },
     {
       "title": "Improve System Security Hardening",
@@ -2770,8 +2974,9 @@
       "category": "Security & privacy",
       "summary": "Security, privacy and audit logs.",
       "example": "Use $vibe-security, workflow “Improve System Security Hardening” (ID: system-security-hardening-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "89c59f0b87d9a9e2ec6b0359ef99d1269431d24fa35e17a1c454d29d9be356e1",
-      "keywords": []
+      "sha256": "98779833af86db05b631804fb33cff433b55e65231b5784370534baf2d75fd48",
+      "keywords": [],
+      "purpose": "Correct the selected reachable abuse path using the application’s actual identity, input and runtime policy."
     },
     {
       "id": "serverless-invocation-check",
@@ -2783,7 +2988,7 @@
       "category": "Serverless & edge",
       "summary": "Invocation lifetime, duplicate events and runtime limits.",
       "example": "Use $vibe-serverless, workflow “Serverless Invocation Check” (ID: serverless-invocation-check). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "db98d5be8d5f95e4d1ad4f51b0397868b2eab4157451cab74e2bfba8c91bd8ee",
+      "sha256": "d9e0a0ab1f96e597970fb4732b2ac7225e3e416a571430810daa19734e625a20",
       "keywords": [
         "Lambda",
         "Workers",
@@ -2795,7 +3000,8 @@
         "sin servidor",
         "无服务器",
         "серверлесс"
-      ]
+      ],
+      "purpose": "Verify required and deferred work, response lifetime, retries and effects on the actual serverless adapter/runtime boundary."
     },
     {
       "id": "serverless-runtime-audit",
@@ -2807,7 +3013,7 @@
       "category": "Serverless & edge",
       "summary": "Invocation lifetime, duplicate events and runtime limits.",
       "example": "Use $vibe-serverless, workflow “Serverless Runtime Audit” (ID: serverless-runtime-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "4e91e0a0a5892ad968a46c8dc80305f76fafd90b8a01be7f11a53f8931b5aaa7",
+      "sha256": "89ffbe4951231da13f2d9af6fa95198ca4ea28161c33a73bec5d85cf4e84eae3",
       "keywords": [
         "Lambda",
         "Workers",
@@ -2819,7 +3025,8 @@
         "sin servidor",
         "无服务器",
         "серверлесс"
-      ]
+      ],
+      "purpose": "Determine whether invocation completion, acknowledgment and durable effects preserve the promised business behavior under reuse, retry, cancellation and resource limits. Follow one handler and its direct trigger, bindings and downstream operations. Keep general infrastructure provisioning and framework rendering with their owners unless they directly determine invocation correctness."
     },
     {
       "id": "serverless-runtime-polish",
@@ -2831,7 +3038,7 @@
       "category": "Serverless & edge",
       "summary": "Invocation lifetime, duplicate events and runtime limits.",
       "example": "Use $vibe-serverless, workflow “Improve Serverless Runtime” (ID: serverless-runtime-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "12a81be158ec754dbf2186efccd2ee5fd3b28e2d0aa2098ac95bcb76aaf1eee7",
+      "sha256": "48b6fa52d33dca0161e1c3f81a481eb3a1e945be3da8013d31df43dc884836f6",
       "keywords": [
         "Lambda",
         "Workers",
@@ -2843,7 +3050,8 @@
         "sin servidor",
         "无服务器",
         "серверлесс"
-      ]
+      ],
+      "purpose": "Complete the selected correction across handler lifetime, response/acknowledgment, state ownership and the directly affected effect. Preserve the existing provider and trigger unless migration is explicitly requested. Do not replace an application's architecture to make a local emulator pass."
     },
     {
       "title": "SQL Databases Audit",
@@ -2855,14 +3063,15 @@
       "category": "SQL & connections",
       "summary": "SQL queries, migrations, locks and connection pools.",
       "example": "Use $vibe-sql, workflow “SQL Databases Audit” (ID: sql-databases-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "57a6e6ac2b8b1be9ba7602a04c992f2a7fc04400029cc917b55f3fe8fcc392aa",
+      "sha256": "d6cf75bdef2f332cbae7f54482e51f18ef8ae3cb2c390ead2d476625020254e7",
       "keywords": [
         "backfill",
         "migration",
         "миграция",
         "migración",
         "迁移"
-      ]
+      ],
+      "purpose": "Audit SQL access from pool/admission and query plans through transactions, migrations, replicas, failover, and tenant permissions."
     },
     {
       "title": "Improve SQL Databases",
@@ -2874,14 +3083,15 @@
       "category": "SQL & connections",
       "summary": "SQL queries, migrations, locks and connection pools.",
       "example": "Use $vibe-sql, workflow “Improve SQL Databases” (ID: sql-databases-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "b50f07f016fc69bb677bb281af2422d99b3482282a2eea82af7304fcacaf8de7",
+      "sha256": "79496daec15ef39d289949a104f059ba6b83d38457970aa7dd9af972f8f04041",
       "keywords": [
         "backfill",
         "migration",
         "миграция",
         "migración",
         "迁移"
-      ]
+      ],
+      "purpose": "Correct the selected SQL query, transaction, migration or connection behavior for the supported database and deployment."
     },
     {
       "title": "SQL Load Lock & Failover Check",
@@ -2893,14 +3103,15 @@
       "category": "SQL & connections",
       "summary": "SQL queries, migrations, locks and connection pools.",
       "example": "Use $vibe-sql, workflow “SQL Load Lock & Failover Check” (ID: sql-load-lock-failover-check). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "0a019f5ac3bf8550356a73e975ea52a51f2ad8e023a5f81fb2ff7b509a407954",
+      "sha256": "32cf3df78f07082b32ad7c9800da7ea8c8027919e15e0461b4e974f18a9b0478",
       "keywords": [
         "backfill",
         "migration",
         "миграция",
         "migración",
         "迁移"
-      ]
+      ],
+      "purpose": "Verify the selected query or transaction invariant and resource/recovery behavior under supported database conditions."
     },
     {
       "title": "Object Storage Audit",
@@ -2912,8 +3123,9 @@
       "category": "Object storage",
       "summary": "File uploads, versions, access and recovery.",
       "example": "Use $vibe-storage, workflow “Object Storage Audit” (ID: object-storage-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "f0a7d62faeef38913d17948eeeb478d1b8eeb4ce19cfff859a88e56bf026d9ed",
-      "keywords": []
+      "sha256": "d9331c53c972f33d72efc6d491f3b71f184fd847dd3616b36814683b473ffc24",
+      "keywords": [],
+      "purpose": "Audit object identity, authorization, multipart integrity, overwrite/versioning, lifecycle/retention, events, and recovery for the selected object-store provider."
     },
     {
       "title": "Object Storage Integrity & Recovery Check",
@@ -2925,8 +3137,9 @@
       "category": "Object storage",
       "summary": "File uploads, versions, access and recovery.",
       "example": "Use $vibe-storage, workflow “Object Storage Integrity & Recovery Check” (ID: object-storage-integrity-recovery-check). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "3cc07557ff6375266f59c2a03b432c4d73f8efda3d7f2386921ad25113d3e4a4",
-      "keywords": []
+      "sha256": "c30c65a4819b7f6d61b1d8c9ee3ba80b71025df66454be6110beeb69e90f7796",
+      "keywords": [],
+      "purpose": "Verify the selected object operation preserves authorized identity, bytes and recoverability under its supported retry or lifecycle behavior."
     },
     {
       "title": "Improve Object Storage",
@@ -2938,8 +3151,9 @@
       "category": "Object storage",
       "summary": "File uploads, versions, access and recovery.",
       "example": "Use $vibe-storage, workflow “Improve Object Storage” (ID: object-storage-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "ae9323fa3538c0daacf443eda34f6c63e1447c5474301b30473afe69439cea1b",
-      "keywords": []
+      "sha256": "463050631bb9a348ea35759a65b6e5ea98406f3f6efe6e7f73151658d2c55aa3",
+      "keywords": [],
+      "purpose": "Correct the selected object operation while preserving authorization, identity, integrity and recovery."
     },
     {
       "title": "Evolution & Improvement",
@@ -2951,8 +3165,9 @@
       "category": "Tasks & synthesis",
       "summary": "Task definition, decomposition and synthesis of findings.",
       "example": "Use $vibe-task, workflow “Evolution & Improvement” (ID: evolution-improvement). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "2f9ab8f3b65f3b141b4f93b4df62ddbf5e6f87ceb2a84499b0c7971b63ecb45e",
-      "keywords": []
+      "sha256": "b5dd90eac17182f06ef6f92d3f99d0bf635263bc5690039c45c9ebf0d36b9f4b",
+      "keywords": [],
+      "purpose": "Prioritize evidence-backed improvement opportunities with an expected outcome, tradeoffs and an actionable next decision."
     },
     {
       "title": "Iteration Closure",
@@ -2964,8 +3179,9 @@
       "category": "Tasks & synthesis",
       "summary": "Task definition, decomposition and synthesis of findings.",
       "example": "Use $vibe-task, workflow “Iteration Closure” (ID: iteration-closure). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "457a1330a96dee61ffab73af0786d16f769ed6f3e47b3a4e94ca9ca32b80da56",
-      "keywords": []
+      "sha256": "45e4b3cbff124e21030ef6850ed71d3eabf8618e963b86a9e2130441a1531323",
+      "keywords": [],
+      "purpose": "Assess the selected iteration against acceptance evidence and return done, next slice, replan or blocked."
     },
     {
       "title": "Map Synthesis",
@@ -2977,8 +3193,9 @@
       "category": "Tasks & synthesis",
       "summary": "Task definition, decomposition and synthesis of findings.",
       "example": "Use $vibe-task, workflow “Map Synthesis” (ID: map-synthesis). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "f3e965ad80f09d4f6d87bbe496d35f22e4e07479fa56ada9fe2d867690cfc82b",
-      "keywords": []
+      "sha256": "4e6cc71ca682e1f32eadfa0d019fd023b2307c06eb37c3bb385da0cb180d7a3b",
+      "keywords": [],
+      "purpose": "Reconcile repository maps against current source owners while preserving stable IDs and exposing conflicting or stale claims."
     },
     {
       "title": "Synthesis",
@@ -2990,8 +3207,9 @@
       "category": "Tasks & synthesis",
       "summary": "Task definition, decomposition and synthesis of findings.",
       "example": "Use $vibe-task, workflow “Synthesis” (ID: synthesis). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "8b1db007dad745f6b9715edf3d8c392fb803a3db422c4506b8cc0a0cdabba87f",
-      "keywords": []
+      "sha256": "0d3263fbc51e66387b587b8760a65c50bbdbe41d23d0a58b3e9cd0b83d1a067b",
+      "keywords": [],
+      "purpose": "Consolidate overlapping findings into distinct corrections with acceptance evidence, dependencies and unresolved decisions."
     },
     {
       "title": "Task Shaping",
@@ -3003,8 +3221,9 @@
       "category": "Tasks & synthesis",
       "summary": "Task definition, decomposition and synthesis of findings.",
       "example": "Use $vibe-task, workflow “Task Shaping” (ID: task-shaping). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "e44a5b9fe085421195a0553bab01fea68127351e6d0c31cfb39cae95c00d90f6",
-      "keywords": []
+      "sha256": "2a86adc8c471c5c57800156359a900e696a08449bc6ccbb9c9d10645a2bebe9f",
+      "keywords": [],
+      "purpose": "Turn a requested outcome into an executable brief with scope, owner, acceptance, dependencies and a verification plan."
     },
     {
       "title": "Validation & Clarification",
@@ -3016,8 +3235,9 @@
       "category": "Tasks & synthesis",
       "summary": "Task definition, decomposition and synthesis of findings.",
       "example": "Use $vibe-task, workflow “Validation & Clarification” (ID: validation-clarification). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "814f8e409b310f8e39a3b27e289a125c2d71a4fd17e7246689badf168407a72d",
-      "keywords": []
+      "sha256": "da3af2397cd3024b2c05d12c9ae1f0370153717d55b396819afcf371b2747ab6",
+      "keywords": [],
+      "purpose": "Validate whether a brief is ready to execute; resolve available facts and expose only decisions or evidence that actually block it."
     },
     {
       "title": "Workstream Decomposition",
@@ -3029,8 +3249,9 @@
       "category": "Tasks & synthesis",
       "summary": "Task definition, decomposition and synthesis of findings.",
       "example": "Use $vibe-task, workflow “Workstream Decomposition” (ID: workstream-decomposition). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "7293ed3610e666c661e4ed5434908d6f9491ec7f7c812be6a82aff404d8710fd",
-      "keywords": []
+      "sha256": "434a7d0afc1a6526da4c6596310ef74d1ada0230b68a4f8a075d941334ac21c3",
+      "keywords": [],
+      "purpose": "Decompose one large, evidence-backed objective into the smallest dependency-ordered workstreams that can be implemented and validated independently without splitting a shared invariant across tasks."
     },
     {
       "title": "Temporal Replay & Versioning Check",
@@ -3042,8 +3263,9 @@
       "category": "Temporal",
       "summary": "Workflow determinism, replay and version compatibility.",
       "example": "Use $vibe-temporal, workflow “Temporal Replay & Versioning Check” (ID: temporal-replay-versioning-check). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "a57184398a7651dd17987ad143db615f406426602ef21b7a2d56b6d3439506d4",
-      "keywords": []
+      "sha256": "2ee80518538cd596e0236b02d5cf746a3c8b3abbd71020eb73b0c16ed41d834c",
+      "keywords": [],
+      "purpose": "Verify the selected workflow’s replay, Activity effects and state transitions across supported histories and worker versions."
     },
     {
       "title": "Temporal Workflows Audit",
@@ -3055,8 +3277,9 @@
       "category": "Temporal",
       "summary": "Workflow determinism, replay and version compatibility.",
       "example": "Use $vibe-temporal, workflow “Temporal Workflows Audit” (ID: temporal-workflows-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "874e437de9835ed678af63b8229ef9c4119c318b7ab78effe59def1ac4d7cdd2",
-      "keywords": []
+      "sha256": "174041fd5596dc4e780940cdd4b8d233f4e89ae11b9a8689a110b330f96b95a0",
+      "keywords": [],
+      "purpose": "Audit Temporal workflow history compatibility, determinism, activities, retries, signals/updates, versioning, deployment, and long-run lifecycle."
     },
     {
       "title": "Improve Temporal Workflows",
@@ -3068,8 +3291,9 @@
       "category": "Temporal",
       "summary": "Workflow determinism, replay and version compatibility.",
       "example": "Use $vibe-temporal, workflow “Improve Temporal Workflows” (ID: temporal-workflows-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "5e319c525c7d5884469687dd0913e4525099bdcabfef254d9c328abd93ac73d2",
-      "keywords": []
+      "sha256": "3351a39112054d69bcc42daa66235251f623eb8a16095740a0fce93917ec0ff4",
+      "keywords": [],
+      "purpose": "Correct the selected Temporal workflow or Activity behavior while preserving replay and worker-version compatibility."
     },
     {
       "title": "Terraform Delivery Audit",
@@ -3081,8 +3305,9 @@
       "category": "Terraform",
       "summary": "Terraform plans, state and resource moves.",
       "example": "Use $vibe-terraform, workflow “Terraform Delivery Audit” (ID: terraform-delivery-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "7a24112219a4ead8a3644c5ec05dcf06adb4cc1303ba9575a07bb5c7ed7cfd57",
-      "keywords": []
+      "sha256": "8580f06211866c03f58a113e2ac526925aae9020b4eb80259ec339acded70b0d",
+      "keywords": [],
+      "purpose": "Audit Terraform ownership from configuration and module contracts through state, plan review, apply serialization, refactor, and recovery."
     },
     {
       "title": "Improve Terraform Delivery",
@@ -3094,8 +3319,9 @@
       "category": "Terraform",
       "summary": "Terraform plans, state and resource moves.",
       "example": "Use $vibe-terraform, workflow “Improve Terraform Delivery” (ID: terraform-delivery-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "2c3626413ad3969ba11cc0d73faf775e9ae57633a11ff06ecf7c7aaf704af6d5",
-      "keywords": []
+      "sha256": "1de324d2ca04a47e66450be09fde1605b9e29e4adb218c072f6db7ee3d9aaffc",
+      "keywords": [],
+      "purpose": "Correct the selected Terraform configuration or resource-address contract while preserving intended remote resource identity."
     },
     {
       "title": "Terraform Plan & State Check",
@@ -3107,8 +3333,9 @@
       "category": "Terraform",
       "summary": "Terraform plans, state and resource moves.",
       "example": "Use $vibe-terraform, workflow “Terraform Plan & State Check” (ID: terraform-plan-state-check). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "b39fcd38e0dc4011c622a2d9c55bee034c0b7d97017343e00aec2a98a06ba130",
-      "keywords": []
+      "sha256": "1dafa7879dc12a94d4f7c8383ef06b676f2e7b74e203e7b54fc2415c6d24f7ce",
+      "keywords": [],
+      "purpose": "Verify the selected Terraform plan preserves approved actions, backend identity and intended remote resource ownership."
     },
     {
       "title": "Vector Databases Audit",
@@ -3120,8 +3347,9 @@
       "category": "Vector databases",
       "summary": "Vector search, ACLs, recall and reindexing.",
       "example": "Use $vibe-vectors, workflow “Vector Databases Audit” (ID: vector-databases-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "835fdb4382118a505f02de0f8f2265bed95a6e02a01e370cc2d4c081a1f9de00",
-      "keywords": []
+      "sha256": "1ef9412a02a1abb7b435bec1c2596865e870312ea26c8c9497a9e9975215c56c",
+      "keywords": [],
+      "purpose": "Audit vector retrieval from embedding/version and collection schema through tenant filtering, ingestion, ANN recall/latency, reindex, snapshot, and fallback."
     },
     {
       "title": "Improve Vector Databases",
@@ -3133,8 +3361,9 @@
       "category": "Vector databases",
       "summary": "Vector search, ACLs, recall and reindexing.",
       "example": "Use $vibe-vectors, workflow “Improve Vector Databases” (ID: vector-databases-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "3130512883fcc1afb0376090ab43ca6c27e8652f757b01d25f166c0e03ecd753",
-      "keywords": []
+      "sha256": "87f69a7cad9dbfb3b338d6fe7d3ab2abc6f8436b1a440e14cc3281e2cd771423",
+      "keywords": [],
+      "purpose": "Correct the selected embedding, indexing or retrieval behavior while preserving filter isolation, quality and freshness."
     },
     {
       "title": "Vector Recall & Degradation Check",
@@ -3146,8 +3375,9 @@
       "category": "Vector databases",
       "summary": "Vector search, ACLs, recall and reindexing.",
       "example": "Use $vibe-vectors, workflow “Vector Recall & Degradation Check” (ID: vector-recall-degradation-check). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "b98a344767b104246b4ed9bfca94b3c4dd358c1b32caa2581d43f0e9a093bf6f",
-      "keywords": []
+      "sha256": "4e768117bbeb410198d5ca3242ddb36505a8b9d1804c932b2e04268331869613",
+      "keywords": [],
+      "purpose": "Verify the selected vector retrieval contract preserves authorization, source freshness and the agreed quality/resource floor."
     },
     {
       "title": "Web Server/Client Boundary Check",
@@ -3159,8 +3389,9 @@
       "category": "Web rendering & server boundaries",
       "summary": "SSR, hydration, serialized data, caches and server actions.",
       "example": "Use $vibe-web, workflow “Web Server/Client Boundary Check” (ID: web-boundary-check). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "f4a1f34042e171f7d10d043e0e0dd2b299929e97260af1facee7aa17130ba34e",
-      "keywords": []
+      "sha256": "0dda3bdb66c965254cb174bf41b81cf9f3f3bc758ccf2512acc8ec7b93b76ee8",
+      "keywords": [],
+      "purpose": "Verify server HTML, hydration, navigation, serialized data, trusted server actions and directly affected caches in the actual framework."
     },
     {
       "title": "Web Rendering Audit",
@@ -3172,8 +3403,9 @@
       "category": "Web rendering & server boundaries",
       "summary": "SSR, hydration, serialized data, caches and server actions.",
       "example": "Use $vibe-web, workflow “Web Rendering Audit” (ID: web-rendering-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "ed68bb30644e7f487a25fab7dce64226cb0084d8ecd9a25dba367656b43559a1",
-      "keywords": []
+      "sha256": "4ad5c7ce2c4eb3428c4d923331f3884f638fc277f843f35da129bb80a38987d4",
+      "keywords": [],
+      "purpose": "Find concrete failures between server-rendered data, serialized payload, first browser render, client effects and subsequent mutations. Include the route's directly shared layout, cache and authorization owner. Keep general design, unrelated client state and backend redesign outside the selected boundary."
     },
     {
       "title": "Improve Web Rendering",
@@ -3185,8 +3417,9 @@
       "category": "Web rendering & server boundaries",
       "summary": "SSR, hydration, serialized data, caches and server actions.",
       "example": "Use $vibe-web, workflow “Improve Web Rendering” (ID: web-rendering-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "32bfba9495cd10d1e6a1438f71cfad7fe483a91bfff1778c0da6bbbdbf121b04",
-      "keywords": []
+      "sha256": "6077e6530e845d295b246bdbfeee28a268f8398fc4280f6e9ea992e7a70a6015",
+      "keywords": [],
+      "purpose": "Restore the contract from server inputs through initial HTML, hydration, interaction and authoritative mutation. Include directly affected serialization, cache invalidation, error handling and tests. Keep independent component redesign, routing migrations and framework upgrades out of the change unless required by the defect."
     },
     {
       "title": "Behavior Check",
@@ -3198,8 +3431,9 @@
       "category": "Workflow checks & maintenance",
       "summary": "Evidence checks, map updates and plugin maintenance.",
       "example": "Use $vibe-workflow, workflow “Behavior Check” (ID: behavior-check). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "cf76073ee7637f5fe5d19aa04b05a1a816a89a1e5f64aad47a963ce9b3ec2f0b",
-      "keywords": []
+      "sha256": "10209f3247d13e9b313954ad690d9a94e1e7facaa034f48e90821f616f1bab1d",
+      "keywords": [],
+      "purpose": "Verify the selected behavior using explicit criteria, a distinguishing failing case, a valid control and observable results."
     },
     {
       "title": "Evidence Normalization",
@@ -3211,8 +3445,9 @@
       "category": "Workflow checks & maintenance",
       "summary": "Evidence checks, map updates and plugin maintenance.",
       "example": "Use $vibe-workflow, workflow “Evidence Normalization” (ID: evidence-normalization). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "6cd4dfb8fed0a80d37e9f5f6dade154016156c45ca185e969fe69ea57b9b9621",
-      "keywords": []
+      "sha256": "b2995eeec8900b6199c30a55676f257151245288e9a84bfc296de93b9a94763e",
+      "keywords": [],
+      "purpose": "Convert heterogeneous repository findings, logs, traces, tickets, and audit outputs into a deduplicated evidence set suitable for synthesis without changing priority or inventing missing facts."
     },
     {
       "title": "Improve Map Refresh",
@@ -3224,8 +3459,9 @@
       "category": "Workflow checks & maintenance",
       "summary": "Evidence checks, map updates and plugin maintenance.",
       "example": "Use $vibe-workflow, workflow “Improve Map Refresh” (ID: map-refresh-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "16da05a7fa8a05504b5b1317865a75e6a136d592b6cdee0e5d88d6d10eabcf57",
-      "keywords": []
+      "sha256": "d9ed4e53d241ff88a8bf45fb0c852ce06999bdfb4face055e63a1b380b5cb5b6",
+      "keywords": [],
+      "purpose": "Correct proven stale map entries against current sources while preserving useful structure and stable IDs."
     },
     {
       "title": "Map Staleness Check",
@@ -3237,8 +3473,9 @@
       "category": "Workflow checks & maintenance",
       "summary": "Evidence checks, map updates and plugin maintenance.",
       "example": "Use $vibe-workflow, workflow “Map Staleness Check” (ID: map-staleness-check). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "55156887dd21353d9a76e0fad7d4efca89cb55edd5231ed8e8195d7b0923e65d",
-      "keywords": []
+      "sha256": "9ebaf5b5d762a619d8bb5461014ff2edfaccdf56935d9b425521d43fd5d83951",
+      "keywords": [],
+      "purpose": "Compare selected map entries with current source owners and classify their freshness with evidence."
     },
     {
       "title": "Prompt Skill Sync Audit",
@@ -3250,8 +3487,9 @@
       "category": "Workflow checks & maintenance",
       "summary": "Evidence checks, map updates and plugin maintenance.",
       "example": "Use $vibe-workflow, workflow “Prompt Skill Sync Audit” (ID: prompt-skill-sync-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "e0e3fc53cd44f251b42c9ec27fb30cec51d0c098237325ba8ee386c8b5fae47b",
-      "keywords": []
+      "sha256": "9f7532d851ed13b527ec8cb7522c6ff5c98cacfdbb1a21dfce70c3bb2666cbe7",
+      "keywords": [],
+      "purpose": "Inspect this plugin for drift between prompt intent, skill triggers, workflow transitions, retrieval contracts and packaged content."
     },
     {
       "title": "Improve Prompt Skill Sync",
@@ -3263,8 +3501,9 @@
       "category": "Workflow checks & maintenance",
       "summary": "Evidence checks, map updates and plugin maintenance.",
       "example": "Use $vibe-workflow, workflow “Improve Prompt Skill Sync” (ID: prompt-skill-sync-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "5ec4d3c9cab66aac17329e78dfaf65ce68b85f77efb9297d2e152667733b8393",
-      "keywords": []
+      "sha256": "a46ea130533973fd7fc24d267a4c0c4e2910bc5e0f71bcbf06a87d5dbe87fb22",
+      "keywords": [],
+      "purpose": "Repair demonstrated prompt, skill, composition or retrieval drift while preserving useful domain instructions and stable identities."
     },
     {
       "title": "Scoped Audit",
@@ -3276,8 +3515,9 @@
       "category": "Workflow checks & maintenance",
       "summary": "Evidence checks, map updates and plugin maintenance.",
       "example": "Use $vibe-workflow, workflow “Scoped Audit” (ID: scoped-audit). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "0f181827e2654c0465cdb03aa51f3037a61b0a380a6b7cfbd5af5b33d583570f",
-      "keywords": []
+      "sha256": "8c0ee151b65106ec3db2b292e5937043d560bf40c98c9a4cdc5327792ef7279f",
+      "keywords": [],
+      "purpose": "Find concrete defects in a selected behavior when no more specific domain workflow fits; hand off its owner, failure and acceptance check."
     },
     {
       "title": "Improve Scoped",
@@ -3289,8 +3529,9 @@
       "category": "Workflow checks & maintenance",
       "summary": "Evidence checks, map updates and plugin maintenance.",
       "example": "Use $vibe-workflow, workflow “Improve Scoped” (ID: scoped-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "b8984a571f6d00f2d930da9bca22bb3cf1e5f5fabcb537f627ed04706e100d98",
-      "keywords": []
+      "sha256": "d96805eb2d46b7d5a794b7949b6d2a8db8dd4e739cf289ad7363ea636d9b737a",
+      "keywords": [],
+      "purpose": "Implement a selected, already-authorized correction at its owning boundary and synchronize directly affected contracts."
     }
   ]
 }

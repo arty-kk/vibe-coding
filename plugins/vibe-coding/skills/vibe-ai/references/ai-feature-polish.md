@@ -20,3 +20,5 @@ Implement the selected AI feature change while preserving output validation, aut
 - Run deterministic unit/integration/eval fixtures plus malformed output, timeout, refusal, fallback, auth, and schema cases.
 - Repeat stochastic evaluations enough to report variance rather than one lucky sample.
 - Record live-provider/model-version, safety review, cost, and production telemetry gates separately.
+
+First reproduce the failed boundary using the smallest safe case. Correct the owning parser, prompt, context builder, policy or product-state transition, then replay the same input and its relevant refusal/error control. Compare semantic changes on the same evaluation inputs rather than a newly favourable example. A failed case returns to that owner; supported acceptance proceeds to Patch Checking on the full change.

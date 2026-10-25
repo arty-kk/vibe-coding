@@ -14,3 +14,5 @@ Inspect one server-side operation: request handler, domain rule, data transactio
 ## Verification
 
 Run the closest native owner/consumer check or a controlled request/job reproduction. Include a valid control beside rejection or failure cases. Qualify unavailable databases, queues and providers. Apply the selection/history and result rules in the parent skill.
+
+Carry the principal/input, initial stored state, expected effect identity and observed final state into patch review. If a response is correct but the persisted effect is still wrong or duplicated, return to the same owning transaction/adapter; do not mark the probe fixed.

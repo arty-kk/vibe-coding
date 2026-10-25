@@ -1,9 +1,5 @@
 # Payments Provider Audit
 
-## Operation
-
-Inspect the selected behavior and report evidence-backed defects; do not change product code.
-
 ## Goal and scope
 
 Audit one payments provider boundary such as checkout, subscription lifecycle, invoice state, webhook ingestion, entitlement activation, refund, chargeback, reconciliation, or tax/payment status mapping.
@@ -19,3 +15,5 @@ Audit one payments provider boundary such as checkout, subscription lifecycle, i
 ## Audit method
 
 Trace the selected payment flow from user/API action through provider request, local persistence, webhook/reconciliation, entitlement changes, notifications, audit logs, UI state, and tests. Separate provider assumptions from repository evidence.
+
+Use a synthetic operation/event sequence and expected local state. Compare provider acknowledgement, authenticated event, transaction commit and entitlement outcome, including the selected duplicate/out-of-order case. Pass the failing identity/transition, governing provider contract and expected durable effect to Improve Payments Provider; do not infer payment completion from a client redirect.

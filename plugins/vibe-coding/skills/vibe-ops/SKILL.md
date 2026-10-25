@@ -5,7 +5,20 @@ description: "Audit or repair runtime configuration, jobs, CI/CD or an incident.
 
 # Infrastructure & background jobs
 
-Apply [the working contract](../../references/workflow.md) once; read only the recipe for the requested result.
+Apply [the working contract](../../references/workflow.md) once. Separate source/configuration work, live intervention and evidence of recovery.
+
+## Workflows
+
+- **Incident:** Incident Triage Audit when the cause/target is unresolved → Improve Incident Remediation for an authorized mitigation/correction → Incident Recovery Check → [Patch Checking](../vibe-review/references/patch-checking.md) for changed source/configuration. A credible known incident target can start at remediation. Keep immediate mitigation and root-cause closure distinct.
+- **Background job:** Background Jobs Audit → Improve Background Jobs → controlled enqueue/worker/retry/effect verification → Patch Checking. Prefer the actual queue engine's specialized workflow when its delivery/lifecycle semantics own the failure.
+- **Operational path:** Infra Ops Audit → Improve Infra Ops → render/config/startup/degraded/drain checks relevant to the target → Patch Checking.
+- **New deployment setup:** Deploy Bootstrap for the selected host/runtime → validate generated workflow/config/artifact and document missing external inputs. Preparation alone does not deploy.
+
+## Handoff and completion
+
+Carry immutable artifact/config identity, affected operation/cohort, failure timeline, accepted recovery criteria and actual intervention authority between steps. A queue/job handoff also carries payload/operation identity and the durable completion boundary.
+
+Return a failed startup, effect or recovery observation to the owning configuration/runtime/worker step and repeat the affected check. Review a changed patch again after corrections. Do not call production recovered from a local build, idle traffic or a quiet alert; leave required live rollout, repair and recurrence-window evidence explicit. Use existing providers and identities rather than selecting a new platform to satisfy a generic template.
 
 ## Recipes
 

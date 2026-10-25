@@ -1,9 +1,5 @@
 # Object Storage Audit
 
-## Operation
-
-Inspect the selected behavior and report evidence-backed defects; do not change product code.
-
 ## Goal and scope
 
 Audit object identity, authorization, multipart integrity, overwrite/versioning, lifecycle/retention, events, and recovery for the selected object-store provider.
@@ -26,3 +22,7 @@ Audit object identity, authorization, multipart integrity, overwrite/versioning,
 3. Trace retries and crashes around initiate/upload-part/complete, database commit, overwrite/delete, event delivery, and cleanup.
 4. Check tenant-prefix/key normalization, presigned scope, content validation, SSRF-like fetch paths, and KMS/bucket policy boundaries.
 5. Evaluate large-object streaming, connection/memory bounds, orphan multipart inventory, lifecycle age, and storage/egress cost signals.
+
+## Handoff
+
+Retain the object/upload/operation identity, version/validator, expected bytes and the failing complete/commit/event/lifecycle sequence. Identify the first mismatch among provider state, database reference and authorized consumer. Pass that case and its integrity/recovery criterion to Improve Object Storage; a provider-compatible request fixture cannot establish unobserved managed consistency or retention.

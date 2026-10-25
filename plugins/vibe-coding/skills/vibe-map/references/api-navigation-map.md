@@ -10,6 +10,10 @@ Map the selected API endpoints, validation and authorization, data effects and d
 
 Suggested saved map: `docs/api_map.md`.
 
+## Build the view
+
+Enumerate the selected endpoints from actual router/schema registration. Trace each registration into middleware, handler, validation, state effects and the response consumed by a client. Compare generated contracts with their source schemas and direct callers; distinguish a declared endpoint from a reachable route. Use method/path and schema identity to join entries, then verify errors, permission scope and compatibility at their defining owners.
+
 ## Inspect
 
 Routes, controllers/handlers/resolvers, schemas/DTOs, serializers, middleware, auth guards, rate limiters, webhooks, jobs that expose/consume API contracts, OpenAPI/GraphQL/RPC files, generated clients, tests, migrations/models, docs, and deployment/runtime config that affects public behavior.

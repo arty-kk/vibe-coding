@@ -57,9 +57,10 @@
   });
   if ($('demo-host')) {
     const host = $('demo-host'), prompt = $('demo-prompt');
-    host.value = saved('vibe-coding-host') === 'claude' ? 'claude' : 'codex';
+    host.value = ['codex', 'claude'].includes(saved('vibe-coding-host')) ? saved('vibe-coding-host') : 'generic';
     const update = () => {
-      prompt.textContent = (host.value === 'claude' ? '/vibe-coding-library:vibe-library' : '$vibe-library') + '\n' + prompt.dataset.task;
+      const invocation = host.value === 'claude' ? '/vibe-coding-library:vibe-library\n' : host.value === 'codex' ? '$vibe-library\n' : '';
+      prompt.textContent = invocation + prompt.dataset.task;
       prompt.parentElement.parentElement.querySelector('[role="status"]').textContent = '';
     };
     host.addEventListener('change', () => { save('vibe-coding-host', host.value); update(); });
@@ -74,7 +75,7 @@
 
   if ($('catalog-data')) {
     const data = JSON.parse($('catalog-data').textContent);
-    const entries = engine.prepare(data.entries, data.topics, data.actions);
+    const entries = engine.prepare(data.entries, data.topics, data.actions, data.searchLexicon);
     const rows = new Map([...document.querySelectorAll('#rows .row')].map(row => [row.dataset.id, row]));
     const query = $('query'), category = $('category'), mode = $('mode'), full = $('full-text');
     const status = $('search-status'), container = $('catalog');
@@ -166,7 +167,7 @@
       render();
     }
     function change(push = false) {
-      state.q = query.value.slice(0,160); state.topic = category.value; state.action = mode.value; state.full = full.checked; state.page = 1;
+      state.q = query.value.slice(0,240); state.topic = category.value; state.action = mode.value; state.full = full.checked; state.page = 1;
       render(push); fullText();
     }
     query.addEventListener('compositionstart', () => { composing = true; clearTimeout(timer); });
@@ -220,11 +221,12 @@
       }
     }
     document.querySelector('.prompt-options').hidden = false;
-    host.value = saved('vibe-coding-host') === 'claude' ? 'claude' : 'codex';
+    host.value = ['codex', 'claude'].includes(saved('vibe-coding-host')) ? saved('vibe-coding-host') : 'generic';
     language.value = languages.includes(requested) ? requested : languages.includes(saved('vibe-coding-language')) ? saved('vibe-coding-language') : 'en';
     function updatePrompt() {
       const ui = data.locales[language.value];
-      prompt.value = format(ui[host.value === 'claude' ? 'promptClaude' : 'prompt'], {skill:data.skill,id:data.id,title:ui.title});
+      const variant = host.value === 'claude' ? 'promptClaude' : host.value === 'codex' ? 'prompt' : 'promptGeneric';
+      prompt.value = format(ui[variant], {skill:data.skill,id:data.id,title:ui.title});
       prompt.lang = language.value; $('copy').textContent = ui.copy; $('copy').hidden = false; $('copy-status').textContent = '';
     }
     host.addEventListener('change', () => { save('vibe-coding-host',host.value); updatePrompt(); });

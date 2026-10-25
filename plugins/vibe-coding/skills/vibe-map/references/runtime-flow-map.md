@@ -10,6 +10,10 @@ Trace selected requests, events or jobs from entry through state/effects to comp
 
 Suggested saved map: `docs/runtime_flow_map.md`.
 
+## Build the view
+
+Follow one selected input/event from its entry through validation, state reads, commit boundary, publication and resulting effects. Mark asynchronous boundaries and the identities that survive retries or replay. Trace failure and cancellation separately from success. Derive ordering from transactions, acknowledgements and runtime configuration; adjacent lines of enqueue/write code do not establish durable ordering by themselves.
+
 ## Inspect
 
 Routes/API handlers, services, transactions, queues, workers, workflow definitions, cron jobs, event producers/consumers, realtime/SSE/WebSocket code, object storage, cache, database writes, locks/leases, retry policies, idempotency keys, observability, deployment config, and tests.

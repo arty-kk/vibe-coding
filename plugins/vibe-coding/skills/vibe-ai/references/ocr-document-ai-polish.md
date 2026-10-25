@@ -6,7 +6,7 @@ Implement the requested change and verify its directly affected behavior.
 
 ## Goal
 
-Improve the selected document-processing surface across intake, extraction contract, confidence handling, human review, export, and validation. The diff should make the selected document workflow safer and more complete, not merely rename a label or tweak one parser branch.
+Correct the selected document-processing contract across intake, extraction, confidence, correction or export and its directly affected states. The required behavior determines the size of the correction; a single parser or label fix is valid when it resolves the observed defect.
 
 ## Scope selection
 
@@ -32,3 +32,5 @@ Improve the selected document-processing surface across intake, extraction contr
 ## Validation
 
 Run relevant repository-native checks and any document/OCR eval or fixture test that protects the changed path. If real document fixtures, provider keys, or queues are unavailable, run deterministic tests and state the exact gap.
+
+Replay the same page/region and expected field state after correction, including persistence/export when a human correction was involved. Distinguish a correct extracted value from a value that only looks correct in the review UI. Return failures to the owning pipeline/schema, then review the accepted patch through Patch Checking.

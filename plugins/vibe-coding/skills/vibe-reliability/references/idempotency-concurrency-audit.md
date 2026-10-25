@@ -1,9 +1,5 @@
 # Idempotency & Concurrency Audit
 
-## Operation
-
-Inspect the selected behavior and report evidence-backed defects; do not change product code.
-
 ## Goal and scope
 
 Audit one operation for duplicate execution, races, lost updates, lock/lease ownership, ordering, and stale completion.
@@ -21,3 +17,7 @@ Audit one operation for duplicate execution, races, lost updates, lock/lease own
 2. Construct simultaneous, duplicate, delayed, timeout-after-success, crash, lease-expiry, and stale-worker interleavings.
 3. Inspect database constraints/transactions, compare-and-set/version fields, distributed lock semantics, and consumer ordering.
 4. Distinguish idempotent effect from deduplicated request and document retention window.
+
+## Handoff
+
+Retain the logical operation key, initial state/version, exact concurrent or timeout-after-success sequence and expected effect/duplicate response. Identify which authoritative write or external effect can escape deduplication, lease or version ownership. Feed that smallest violating interleaving into Improve Idempotency & Concurrency; one local request record does not prove an external effect was protected.

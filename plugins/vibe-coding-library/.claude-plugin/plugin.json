@@ -1,7 +1,7 @@
 {
   "name": "vibe-coding-library",
-  "version": "1.5.1",
-  "description": "Search 241 engineering workflows and load the selected working context through a public, read-only MCP server.",
+  "version": "1.6.0",
+  "description": "Engineering playbooks for any MCP coding agent: find a method, load its current prompt and follow its verification workflow.",
   "author": {
     "name": "Arty S.",
     "url": "https://github.com/arty-kk"

@@ -42,3 +42,5 @@ For an external non-transactional effect, identify the actual idempotency or rec
 ## Evidence and limitations
 
 Record the invariant, fault point, observed state before/after recovery, owner `path:line`, exact commands and pass/fail/not exercised outcome. A mocked publish failure does not establish real broker confirmation or database isolation behavior; name those gaps. Failures should lead to the selected transaction, idempotency or repair correction rather than a blanket infrastructure replacement.
+
+Return passed, failed or blocked for the selected operation and convergence window. Feed a failed atomic intent/effect/deduplication link and its crash history into the authorized consistency repair. Replay that same history and valid control after correction, then run Patch Checking on the resulting source change. A transport receipt or a fetched check prompt cannot substitute for the observed business invariant.

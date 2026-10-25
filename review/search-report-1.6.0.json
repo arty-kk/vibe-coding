@@ -1,0 +1,20 @@
+{
+  "version": "1.6.0",
+  "instruction_version": "1.6.0",
+  "digest": "10a7222c527a1c77a187980314eb006ecbf043155a59295f33c3daaf49613861",
+  "query_cases": 71,
+  "top1": 69,
+  "accepted_rank": 71,
+  "negative_cases": 5,
+  "exact_id_and_title_cases": 1205,
+  "context": {
+    "max_words": 2761,
+    "average_words": 2026,
+    "max_files": 5,
+    "average_later_words": 304
+  },
+  "limits": [
+    "Author-judged retrieval cases and structural workflow/HTTP checks; no independent model-selection or domain execution evaluation.",
+    "Word counts measure supplied instruction text, not client-specific tokenization or mirrored structured/text serialization."
+  ]
+}

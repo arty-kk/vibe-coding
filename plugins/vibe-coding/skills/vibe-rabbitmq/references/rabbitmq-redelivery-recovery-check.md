@@ -1,9 +1,5 @@
 # RabbitMQ Redelivery & Recovery Check
 
-## Operation
-
-Verify the selected behavior against explicit expected results; do not change product code.
-
 ## Goal
 
 Verify the selected publish or processing guarantee through routing, acknowledgment uncertainty and redelivery.
@@ -25,3 +21,11 @@ Select the cases that test the requested guarantee. Define expected state/effect
 ## Verification
 
 Compare routing/returns/confirms, durable effects, acknowledgments, redelivery and topology recovery; distinguish broker receipt from processing completion.
+
+## Execute and decide
+
+Use dedicated topology/consumers and deterministic messages with business operation IDs. Establish routed completion and the configured unroutable control. Synchronize the selected confirm, effect or consumer-ack boundary before connection loss, worker interruption or controlled re-drive.
+
+Observe returns/confirms, queue/unacked state, authoritative effects, attempts and recovered topology/subscriptions independently. A queue draining because messages were lost is not success. For flow-control/resource checks, record the actual QoS scope, concurrency, footprint and observation window.
+
+Return passed, failed or blocked with identities, event order, effects and missing broker layers. Pass failures to the authorized owner repair, replay their control/sequence after correction and finish Patch Checking for source changes. Broker alarms, restarts and topology migration require a suitable test environment.

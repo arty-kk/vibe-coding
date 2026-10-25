@@ -1,9 +1,5 @@
 # Improve Idempotency & Concurrency
 
-## Operation
-
-Implement the requested change and verify its directly affected behavior.
-
 ## Goal
 
 Correct the selected duplicate or concurrent operation so final state and effects satisfy the intended contract.
@@ -20,3 +16,5 @@ Correct the selected duplicate or concurrent operation so final state and effect
 - Run deterministic concurrent/duplicate/crash/timeout/stale-worker tests and repository race detectors where available.
 - Verify side-effect count, final state/version, lock/lease cleanup, and duplicate response.
 - List distributed timing or multi-node gates not exercised.
+
+Use controlled barriers to reproduce the conflicting read/write or ambiguous effect before changing the owning constraint, transaction, version or operation key. Replay the same interleaving with a normal control and inspect final state, effect count and duplicate result separately. Recheck failed ownership/effect criteria after correction and finish Patch Checking. Local fencing must not be presented as an external atomicity guarantee it cannot enforce.

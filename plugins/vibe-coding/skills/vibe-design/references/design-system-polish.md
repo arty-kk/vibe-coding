@@ -1,9 +1,5 @@
 # Improve Design System
 
-## Operation
-
-Implement the requested change and verify its directly affected behavior.
-
 ## Goal
 
 Improve the selected design-system owner: a token family, component family, layout primitive, interaction-state pattern, or documented variant set. The diff should reduce drift across consuming surfaces rather than locally polishing one page.
@@ -33,3 +29,5 @@ Improve the selected design-system owner: a token family, component family, layo
 ## Validation
 
 Run relevant repository-native checks. Use Storybook/preview/screenshot tooling when available; otherwise state the limitation. Verify at least one owner component and one consuming surface when possible.
+
+Fix the selected token, primitive or variant at its maintained owner, update direct consumers and remove superseded overrides only after checking their intended states. Render the owner and a representative consumer with the same data/state/viewport as the failure, then check affected narrow/wide and focus/disabled states. A remaining consumer divergence returns to its owner; accepted rendering/interaction evidence proceeds to Patch Checking. A changed token value alone is not proof that the product now uses it correctly.

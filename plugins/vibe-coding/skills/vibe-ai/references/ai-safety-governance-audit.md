@@ -21,3 +21,7 @@ Audit an AI release for misuse, harmful output, privacy, accountability, evaluat
 2. Inspect policy implementation, refusal/guardrails, human review, overrides, logging, appeal/correction, and incident ownership.
 3. Review evaluation coverage by risk slice, adversarial inputs, false-positive/negative tradeoffs, and model/provider change.
 4. Check privacy, retention, consent, third-party terms, and cross-tenant exposure from repository evidence.
+
+## Handoff
+
+For each selected risk, identify the actor/input, reachable harmful effect, enforcing boundary and observable allowed/denied outcome. Distinguish technical controls from policy/legal decisions requiring an owner. Feed the technical correction and its safe misuse/control scenarios into Improve AI Safety & Governance; do not substitute an extra refusal sentence for absent runtime control.

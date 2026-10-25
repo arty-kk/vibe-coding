@@ -10,6 +10,10 @@ Connect selected behaviors and acceptance criteria to the assertions, fixtures, 
 
 Suggested saved map: `docs/test_map.md`.
 
+## Build the view
+
+Start from a required behavior and locate the assertions that can detect its violation. Trace the test setup through mocks/fixtures to the production path it actually reaches, then record the command and execution environment. Mark expected but unasserted states, skipped scenarios and external boundaries separately. Test count, file names and line coverage are navigation clues, not evidence that acceptance is verified.
+
 ## Inspect
 
 Unit/integration/e2e tests, fixtures, factories, snapshots, golden masters, contract tests, generated clients, CI workflows, package scripts, test docs, runtime check prompts, coverage reports if present, and recent patch evidence supplied by the user.

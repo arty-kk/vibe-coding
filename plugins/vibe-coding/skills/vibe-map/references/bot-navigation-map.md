@@ -10,6 +10,10 @@ Map the selected bot entries, commands, states, transitions and recovery paths.
 
 Suggested saved map: `docs/bot_navigation_map.md`.
 
+## Build the view
+
+Start from registered commands, callbacks and deep-link entries. Follow reachable state transitions, their guards, keyboard actions and persisted state. Trace cancellation, restart and stale callbacks back to the state they can actually recover. Mark handlers without a reachable entry separately from supported user paths. Source inspection does not require sending messages to real users or chats.
+
 ## Inspect
 
 Commands, message/callback handlers, routers, scenes/FSM states, keyboards, templates, middleware, auth/permissions, scheduled/proactive messages, deep links, persistence, tests, docs, platform config, and generated maps if present.

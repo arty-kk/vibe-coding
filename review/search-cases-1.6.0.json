@@ -1,0 +1,667 @@
+{
+  "version": 1,
+  "method": "Author-judged discovery cases; task goals, operation hints and cross-domain negatives. These are retrieval checks, not independent model or production task evaluations.",
+  "cases": [
+    {
+      "id": "query-001",
+      "language": "en",
+      "query": "I need to review my patch",
+      "expected": [
+        "patch-checking"
+      ],
+      "max_rank": 1
+    },
+    {
+      "id": "query-002",
+      "language": "en",
+      "query": "Help me shape a task brief",
+      "expected": [
+        "task-shaping"
+      ],
+      "max_rank": 1
+    },
+    {
+      "id": "query-003",
+      "language": "en",
+      "query": "Map this repository",
+      "expected": [
+        "project-atlas-map"
+      ],
+      "max_rank": 3
+    },
+    {
+      "id": "query-004",
+      "language": "en",
+      "query": "Fix stale cache after a write",
+      "expected": [
+        "cache-invalidation-polish"
+      ],
+      "max_rank": 1
+    },
+    {
+      "id": "query-005",
+      "language": "en",
+      "query": "Verify Kafka consumer rebalance",
+      "expected": [
+        "kafka-redpanda-rebalance-failure-check"
+      ],
+      "max_rank": 1
+    },
+    {
+      "id": "query-006",
+      "language": "en",
+      "query": "Fix SSR hydration mismatch",
+      "expected": [
+        "web-rendering-polish"
+      ],
+      "max_rank": 1
+    },
+    {
+      "id": "query-007",
+      "language": "en",
+      "query": "Improve MCP tool descriptions",
+      "expected": [
+        "mcp-server-polish"
+      ],
+      "max_rank": 1
+    },
+    {
+      "id": "query-008",
+      "language": "en",
+      "query": "Verify duplicate payment webhook retry",
+      "expected": [
+        "payments-webhook-reconciliation-check"
+      ],
+      "max_rank": 1
+    },
+    {
+      "id": "query-009",
+      "language": "en",
+      "query": "Audit AI evaluation",
+      "expected": [
+        "ai-evaluation-audit"
+      ],
+      "max_rank": 1
+    },
+    {
+      "id": "query-010",
+      "language": "en",
+      "query": "Audit API contract evolution",
+      "expected": [
+        "api-contract-evolution-audit"
+      ],
+      "max_rank": 1
+    },
+    {
+      "id": "query-011",
+      "language": "en",
+      "query": "Verify Celery worker shutdown",
+      "expected": [
+        "celery-delivery-shutdown-check"
+      ],
+      "max_rank": 1
+    },
+    {
+      "id": "query-012",
+      "language": "en",
+      "query": "Audit ClickHouse ingestion",
+      "expected": [
+        "clickhouse-audit"
+      ],
+      "max_rank": 3
+    },
+    {
+      "id": "query-013",
+      "language": "en",
+      "query": "Verify compatibility golden master",
+      "expected": [
+        "compatibility-golden-master-check"
+      ],
+      "max_rank": 1
+    },
+    {
+      "id": "query-014",
+      "language": "en",
+      "query": "Improve localization",
+      "expected": [
+        "localization-polish"
+      ],
+      "max_rank": 1
+    },
+    {
+      "id": "query-015",
+      "language": "en",
+      "query": "Improve accessibility",
+      "expected": [
+        "accessibility-polish"
+      ],
+      "max_rank": 1
+    },
+    {
+      "id": "query-016",
+      "language": "en",
+      "query": "Audit browser extension",
+      "expected": [
+        "browser-extension-audit"
+      ],
+      "max_rank": 1
+    },
+    {
+      "id": "query-017",
+      "language": "en",
+      "query": "Update the README",
+      "expected": [
+        "readme-gen"
+      ],
+      "max_rank": 3
+    },
+    {
+      "id": "query-018",
+      "language": "en",
+      "query": "Verify tenant isolation",
+      "expected": [
+        "tenant-isolation-check"
+      ],
+      "max_rank": 1
+    },
+    {
+      "id": "query-019",
+      "language": "en",
+      "query": "Verify feature flag rollback",
+      "expected": [
+        "feature-flag-exposure-rollback-check"
+      ],
+      "max_rank": 1
+    },
+    {
+      "id": "query-020",
+      "language": "en",
+      "query": "Verify Go Rust concurrency shutdown",
+      "expected": [
+        "go-rust-concurrency-shutdown-check"
+      ],
+      "max_rank": 1
+    },
+    {
+      "id": "query-021",
+      "language": "en",
+      "query": "Audit agent harness replay",
+      "expected": [
+        "agent-harness-audit"
+      ],
+      "max_rank": 3
+    },
+    {
+      "id": "query-022",
+      "language": "en",
+      "query": "Verify network integration failure",
+      "expected": [
+        "network-integration-failure-check"
+      ],
+      "max_rank": 1
+    },
+    {
+      "id": "query-023",
+      "language": "en",
+      "query": "Verify Kubernetes rollout failure",
+      "expected": [
+        "kubernetes-rollout-failure-check"
+      ],
+      "max_rank": 1
+    },
+    {
+      "id": "query-024",
+      "language": "en",
+      "query": "Verify mobile offline upgrade",
+      "expected": [
+        "mobile-release-offline-check"
+      ],
+      "max_rank": 1
+    },
+    {
+      "id": "query-025",
+      "language": "en",
+      "query": "Verify NoSQL hot partition consistency",
+      "expected": [
+        "nosql-consistency-hot-partition-check"
+      ],
+      "max_rank": 1
+    },
+    {
+      "id": "query-026",
+      "language": "en",
+      "query": "Verify notification delivery retry",
+      "expected": [
+        "notification-failure-idempotency-check"
+      ],
+      "max_rank": 1
+    },
+    {
+      "id": "query-027",
+      "language": "en",
+      "query": "Verify observability metrics cost",
+      "expected": [
+        "observability-semantics-cost-check"
+      ],
+      "max_rank": 3
+    },
+    {
+      "id": "query-028",
+      "language": "en",
+      "query": "Verify incident recovery",
+      "expected": [
+        "incident-recovery-check"
+      ],
+      "max_rank": 1
+    },
+    {
+      "id": "query-029",
+      "language": "en",
+      "query": "Improve onboarding activation",
+      "expected": [
+        "onboarding-activation-polish"
+      ],
+      "max_rank": 1
+    },
+    {
+      "id": "query-030",
+      "language": "en",
+      "query": "Audit test coverage",
+      "expected": [
+        "test-coverage-audit"
+      ],
+      "max_rank": 1
+    },
+    {
+      "id": "query-031",
+      "language": "en",
+      "query": "Verify RabbitMQ redelivery recovery",
+      "expected": [
+        "rabbitmq-redelivery-recovery-check"
+      ],
+      "max_rank": 1
+    },
+    {
+      "id": "query-032",
+      "language": "en",
+      "query": "Verify realtime interface recovery",
+      "expected": [
+        "realtime-interface-profiling-recovery-check"
+      ],
+      "max_rank": 1
+    },
+    {
+      "id": "query-033",
+      "language": "en",
+      "query": "Verify release artifact provenance",
+      "expected": [
+        "release-artifact-trust-check"
+      ],
+      "max_rank": 1
+    },
+    {
+      "id": "query-034",
+      "language": "en",
+      "query": "Verify Redis queue recovery",
+      "expected": [
+        "redis-queue-load-recovery-check"
+      ],
+      "max_rank": 1
+    },
+    {
+      "id": "query-035",
+      "language": "en",
+      "query": "Fix idempotency concurrency",
+      "expected": [
+        "idempotency-concurrency-polish"
+      ],
+      "max_rank": 1
+    },
+    {
+      "id": "query-036",
+      "language": "en",
+      "query": "Verify search recall freshness",
+      "expected": [
+        "search-recall-freshness-check"
+      ],
+      "max_rank": 1
+    },
+    {
+      "id": "query-037",
+      "language": "en",
+      "query": "Audit privacy data rights",
+      "expected": [
+        "privacy-data-rights-audit"
+      ],
+      "max_rank": 1
+    },
+    {
+      "id": "query-038",
+      "language": "en",
+      "query": "Verify serverless invocation",
+      "expected": [
+        "serverless-invocation-check"
+      ],
+      "max_rank": 1
+    },
+    {
+      "id": "query-039",
+      "language": "en",
+      "query": "Verify SQL locks failover",
+      "expected": [
+        "sql-load-lock-failover-check"
+      ],
+      "max_rank": 1
+    },
+    {
+      "id": "query-040",
+      "language": "en",
+      "query": "Verify object storage upload recovery",
+      "expected": [
+        "object-storage-integrity-recovery-check"
+      ],
+      "max_rank": 1
+    },
+    {
+      "id": "query-041",
+      "language": "en",
+      "query": "Verify Temporal replay versioning",
+      "expected": [
+        "temporal-replay-versioning-check"
+      ],
+      "max_rank": 1
+    },
+    {
+      "id": "query-042",
+      "language": "en",
+      "query": "Verify Terraform plan state",
+      "expected": [
+        "terraform-plan-state-check"
+      ],
+      "max_rank": 1
+    },
+    {
+      "id": "query-043",
+      "language": "en",
+      "query": "Verify vector recall degradation",
+      "expected": [
+        "vector-recall-degradation-check"
+      ],
+      "max_rank": 1
+    },
+    {
+      "id": "query-044",
+      "language": "en",
+      "query": "Check behavior",
+      "expected": [
+        "behavior-check"
+      ],
+      "max_rank": 1
+    },
+    {
+      "id": "query-045",
+      "language": "es",
+      "query": "Necesito corregir la hidratación SSR",
+      "expected": [
+        "web-rendering-polish"
+      ],
+      "max_rank": 1
+    },
+    {
+      "id": "query-046",
+      "language": "es",
+      "query": "Verificar reintentos de pagos",
+      "expected": [
+        "payments-webhook-reconciliation-check"
+      ],
+      "max_rank": 1
+    },
+    {
+      "id": "query-047",
+      "language": "es",
+      "query": "Mejorar la localización",
+      "expected": [
+        "localization-polish"
+      ],
+      "max_rank": 1
+    },
+    {
+      "id": "query-048",
+      "language": "es",
+      "query": "Auditar permisos de inquilinos",
+      "expected": [
+        "multi-tenant-isolation-audit"
+      ],
+      "max_rank": 3
+    },
+    {
+      "id": "query-049",
+      "language": "es",
+      "query": "Verificar recuperación de Redis",
+      "expected": [
+        "redis-queue-load-recovery-check"
+      ],
+      "max_rank": 1
+    },
+    {
+      "id": "query-050",
+      "language": "es",
+      "query": "Verificar rebalanceo del consumidor Kafka",
+      "expected": [
+        "kafka-redpanda-rebalance-failure-check"
+      ],
+      "max_rank": 1
+    },
+    {
+      "id": "query-051",
+      "language": "es",
+      "query": "Mejorar descripciones de herramientas MCP",
+      "expected": [
+        "mcp-server-polish"
+      ],
+      "max_rank": 1
+    },
+    {
+      "id": "query-052",
+      "language": "es",
+      "query": "Revisión del parche",
+      "expected": [
+        "patch-checking"
+      ],
+      "max_rank": 1
+    },
+    {
+      "id": "query-053",
+      "language": "ru",
+      "query": "Нужно исправить гидратацию SSR",
+      "expected": [
+        "web-rendering-polish"
+      ],
+      "max_rank": 1
+    },
+    {
+      "id": "query-054",
+      "language": "ru",
+      "query": "Проверить изоляцию тенантов",
+      "expected": [
+        "tenant-isolation-check"
+      ],
+      "max_rank": 1
+    },
+    {
+      "id": "query-055",
+      "language": "ru",
+      "query": "Проверить повторные платежи вебхука",
+      "expected": [
+        "payments-webhook-reconciliation-check"
+      ],
+      "max_rank": 1
+    },
+    {
+      "id": "query-056",
+      "language": "ru",
+      "query": "Улучшить локализацию",
+      "expected": [
+        "localization-polish"
+      ],
+      "max_rank": 1
+    },
+    {
+      "id": "query-057",
+      "language": "ru",
+      "query": "Проверить ребалансировку консьюмера Kafka",
+      "expected": [
+        "kafka-redpanda-rebalance-failure-check"
+      ],
+      "max_rank": 1
+    },
+    {
+      "id": "query-058",
+      "language": "ru",
+      "query": "Проверить остановку воркера Celery",
+      "expected": [
+        "celery-delivery-shutdown-check"
+      ],
+      "max_rank": 1
+    },
+    {
+      "id": "query-059",
+      "language": "ru",
+      "query": "Исправить кэш после записи",
+      "expected": [
+        "cache-invalidation-polish"
+      ],
+      "max_rank": 1
+    },
+    {
+      "id": "query-060",
+      "language": "ru",
+      "query": "Проверка патча",
+      "expected": [
+        "patch-checking"
+      ],
+      "max_rank": 1
+    },
+    {
+      "id": "query-061",
+      "language": "zh-CN",
+      "query": "请修复 SSR 水合",
+      "expected": [
+        "web-rendering-polish"
+      ],
+      "max_rank": 1
+    },
+    {
+      "id": "query-062",
+      "language": "zh-CN",
+      "query": "验证 Kafka 消费者重平衡",
+      "expected": [
+        "kafka-redpanda-rebalance-failure-check"
+      ],
+      "max_rank": 1
+    },
+    {
+      "id": "query-063",
+      "language": "zh-CN",
+      "query": "帮我修复重复扣款",
+      "expected": [
+        "payments-provider-polish"
+      ],
+      "max_rank": 1
+    },
+    {
+      "id": "query-064",
+      "language": "zh-CN",
+      "query": "验证租户隔离",
+      "expected": [
+        "tenant-isolation-check"
+      ],
+      "max_rank": 1
+    },
+    {
+      "id": "query-065",
+      "language": "zh-CN",
+      "query": "改进本地化",
+      "expected": [
+        "localization-polish"
+      ],
+      "max_rank": 1
+    },
+    {
+      "id": "query-066",
+      "language": "zh-CN",
+      "query": "验证 Redis 队列恢复",
+      "expected": [
+        "redis-queue-load-recovery-check"
+      ],
+      "max_rank": 1
+    },
+    {
+      "id": "query-067",
+      "language": "zh-CN",
+      "query": "补丁检查",
+      "expected": [
+        "patch-checking"
+      ],
+      "max_rank": 1
+    },
+    {
+      "id": "query-068",
+      "language": "zh-CN",
+      "query": "验证对象存储上传恢复",
+      "expected": [
+        "object-storage-integrity-recovery-check"
+      ],
+      "max_rank": 1
+    },
+    {
+      "id": "query-069",
+      "language": "en",
+      "query": "PatchCheck",
+      "expected": [
+        "patch-checking"
+      ],
+      "max_rank": 1
+    },
+    {
+      "id": "query-070",
+      "language": "en",
+      "query": "PatchChecking",
+      "expected": [
+        "patch-checking"
+      ],
+      "max_rank": 1
+    },
+    {
+      "id": "query-071",
+      "language": "en",
+      "query": "Patch Check",
+      "expected": [
+        "patch-checking"
+      ],
+      "max_rank": 1
+    }
+  ],
+  "negative_cases": [
+    {
+      "query": "zzzz-no-such-workflow"
+    },
+    {
+      "query": "SQL",
+      "skill": "vibe-nosql"
+    },
+    {
+      "query": "API",
+      "skill": "vibe-cache"
+    },
+    {
+      "query": "cache",
+      "mode": "review"
+    },
+    {
+      "query": "MCP",
+      "skill": "vibe-redis",
+      "mode": "check"
+    }
+  ]
+}

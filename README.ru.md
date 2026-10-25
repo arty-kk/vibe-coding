@@ -2,13 +2,13 @@
 
 **Разберись в коде. Внеси изменение. Проверь результат.**
 
-46 навыков и 241 инженерный сценарий для Codex и Claude Code: карты проекта, постановка задач, ревью, поиск ошибок, реализация и проверка готовности к выпуску.
+Инженерная библиотека для кодинговых агентов с MCP: карты проекта, задачи, ревью, поиск ошибок, реализация и проверка результата. В каталоге 241 точка входа; отдельный офлайн-пакет содержит 46 навыков для Codex и Claude Code.
 
 [Каталог сценариев](https://arty-kk.github.io/vibe-coding) · [English](README.md) · [Релизы](https://github.com/arty-kk/vibe-coding/releases) · [Поддержка](https://github.com/arty-kk/vibe-coding/issues)
 
 ## Установка
 
-[Vibe Coding Library](https://vibe-coding-library.swift-seal-1081.chatgpt.site/) ищет по тем же 241 сценарию и загружает выбранный рабочий контекст через MCP. В этом варианте один навык выбора и два инструмента только на чтение. Нужен интернет; аккаунт и API-ключ не требуются. Полный офлайн-плагин ниже содержит все 46 навыков локально.
+[Vibe Coding Library](https://vibe-coding-library.swift-seal-1081.chatgpt.site/) работает с кодинговыми агентами, поддерживающими MCP через Streamable HTTP. Два тула находят метод по задаче и загружают текущий промпт, нужный контекст и условную цепочку следующих шагов. Нужен интернет; аккаунт, токен и API-ключ издателя не требуются. Прямое MCP-подключение не требует установки Codex или Claude.
 
 Адрес Streamable HTTP для совместимого MCP-клиента:
 
@@ -23,7 +23,7 @@ claude plugin marketplace add arty-kk/vibe-coding
 claude plugin install vibe-coding-library@vibe-coding
 ```
 
-Вызов: `/vibe-coding-library:vibe-library` в Claude Code или `$vibe-library` в Codex. Заявка Library в каталог OpenAI оформляется отдельно от существующего офлайн-плагина.
+В другом агенте добавь этот адрес, выбери Streamable HTTP и отсутствие авторизации. Установленные native-пакеты предоставляют `/vibe-coding-library:vibe-library` в Claude Code и `$vibe-library` в Codex. Инструкции и пакеты версии 1.6.0 используют передачу свидетельств между шагами, релевантные проверки и повторный Patch Checking до чистого результата или конкретной блокировки. Получение инструкции само по себе не является выполненной проверкой.
 
 ```sh
 codex plugin marketplace add arty-kk/vibe-coding

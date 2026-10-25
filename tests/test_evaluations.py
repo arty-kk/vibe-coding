@@ -13,6 +13,7 @@ LIBRARY = ROOT/'review/evaluations/1.5.0.json'
 PORTABILITY = ROOT/'review/evaluations/1.5.1.json'
 SITE_REFRESH = ROOT/'review/evaluations/site-2026-10-25.json'
 SITE_POLICIES = ROOT/'review/evaluations/site-policies-2026-10-25.json'
+POLISHING = ROOT/'review/evaluations/1.6.0.json'
 
 
 class EvaluationRecordTests(unittest.TestCase):
@@ -26,14 +27,23 @@ class EvaluationRecordTests(unittest.TestCase):
         self.portability = json.loads(PORTABILITY.read_text(encoding='utf-8'))
         self.site_refresh = json.loads(SITE_REFRESH.read_text(encoding='utf-8'))
         self.site_policies = json.loads(SITE_POLICIES.read_text(encoding='utf-8'))
+        self.polishing = json.loads(POLISHING.read_text(encoding='utf-8'))
+
+    def polishing_fingerprint(self, name, expected):
+        change = self.polishing['changes'].get(name)
+        if change:
+            self.assertEqual(expected, change['before'], 'Workflow revision must preserve the current published baseline: '+name)
+            self.assertTrue(change['review'])
+            return change['after']
+        return expected
 
     def site_policy_fingerprint(self, name, expected):
         change = self.site_policies['changes'].get(name)
         if change:
             self.assertEqual(expected, change['before'], 'Policy correction must retain its website baseline: '+name)
             self.assertTrue(change['review'])
-            return change['after']
-        return expected
+            expected = change['after']
+        return self.polishing_fingerprint(name, expected)
 
     def site_refresh_fingerprint(self, name, expected):
         change = self.site_refresh['changes'].get(name)
@@ -135,7 +145,7 @@ class EvaluationRecordTests(unittest.TestCase):
 
     def test_required_behavior_records_are_complete_and_bounded(self):
         manifest = json.loads((ROOT/'plugins/vibe-coding/plugin.json').read_text(encoding='utf-8'))
-        self.assertEqual(manifest['version'], self.listing['release'])
+        self.assertEqual(manifest['version'], self.polishing['release'])
         cases = {row['id']: row for row in self.record['behaviors']}
         self.assertEqual({'serverless-required-write', 'mcp-http-readonly-control', 'react-hydration-preference'}, set(cases))
         for case in cases.values():
@@ -211,10 +221,26 @@ class EvaluationRecordTests(unittest.TestCase):
         self.assertEqual(hashlib.sha256(SITE_REFRESH.read_bytes()).hexdigest(), self.site_policies['baseline']['sha256'])
         self.assertFalse(set(self.site_policies['changes']) & set(self.revision['instructions']))
         for name, change in self.site_policies['changes'].items():
-            self.assertEqual(change['after'], hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
+            self.assertEqual(self.polishing_fingerprint(name, change['after']), hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
         for name, expected in self.site_policies['new_files'].items():
-            self.assertEqual(expected, hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
+            self.assertEqual(self.polishing_fingerprint(name, expected), hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
         self.assertTrue(self.site_policies['checks'])
+
+    def test_workflow_revision_has_sequential_review_and_current_fingerprints(self):
+        self.assertEqual(hashlib.sha256(SITE_POLICIES.read_bytes()).hexdigest(), self.polishing['baseline']['sha256'])
+        for name, change in self.polishing['changes'].items():
+            self.assertEqual(change['after'], hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
+            self.assertTrue(change['review'])
+        for name, expected in self.polishing['new_files'].items():
+            self.assertEqual(expected, hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
+        ledger = json.loads((ROOT/'review/skill-polish-1.6.0.json').read_text(encoding='utf-8'))
+        self.assertEqual(ledger['order'], ledger['completed'])
+        self.assertEqual(47, len(ledger['completed']))
+        self.assertIsNone(ledger['current'])
+        for record in ledger['records'].values():
+            for name, expected in record['fingerprints'].items():
+                self.assertEqual(expected, hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
+        self.assertTrue(self.polishing['limits'])
 
 
 if __name__ == '__main__':

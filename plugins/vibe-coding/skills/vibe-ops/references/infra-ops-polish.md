@@ -1,9 +1,5 @@
 # Improve Infra Ops
 
-## Operation
-
-Implement the requested change and verify its directly affected behavior.
-
 ## Goal
 
 Correct the selected runtime configuration or delivery path and verify the affected startup, failure or recovery behavior.
@@ -20,3 +16,5 @@ Correct the selected runtime configuration or delivery path and verify the affec
 - Run repository-native config/build/smoke/lifecycle checks and render generated deployment artifacts.
 - Exercise restart, missing config/secret, degraded dependency, drain, and rollback where safe.
 - List environment-only IAM/network/provider gates precisely.
+
+Correct the maintained configuration, delivery script or runtime lifecycle owner and regenerate direct artifacts. Validate the same candidate/target inputs and replay its selected startup/dependency/drain failure with a healthy control. Recheck failures at that owner, then finish Patch Checking. Execute a live release or state-changing recovery only through the user's authorized mechanism; otherwise return the validated setup and exact remaining external action.

@@ -14,3 +14,5 @@ Inspect one client-state or browser behavior: fetch lifecycle, cache, form, rout
 ## Verification
 
 Use the closest component/integration/browser check to replay the trigger and a normal interaction. For hydration, use the actual server HTML and browser; a component snapshot is insufficient. Report unexercised APIs or browsers. Apply the selection/history and result rules in the parent skill.
+
+Where the bug depends on time or identity, preserve the event/response order in the reproduction: replay the stale completion after a newer request or identity switch and inspect the visible state. Feed that sequence and the corrected owner into patch review so a successful happy path cannot conceal the original race.

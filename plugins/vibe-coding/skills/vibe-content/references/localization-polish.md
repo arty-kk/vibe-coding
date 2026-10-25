@@ -1,9 +1,5 @@
 # Improve Localization
 
-## Operation
-
-Implement the requested change and verify its directly affected behavior.
-
 ## Goal
 
 Improve the selected localization surface: missing strings, inconsistent keys, hardcoded user-facing copy, pluralization, interpolation, locale formatting, and translated state coverage.
@@ -29,10 +25,12 @@ Improve the selected localization surface: missing strings, inconsistent keys, h
 ## Implementation principles
 
 - Preserve business meaning and avoid unsupported marketing/product claims.
-- Keep untranslated placeholders explicit if a real translation cannot be safely inferred.
+- Preserve the product's readable fallback when a translation cannot be established. Report the untranslated coverage and required language/policy review; do not expose raw key names or scaffold placeholders as finished UI.
 
 ## Validation
 
 Run relevant repository-native checks. When explaining non-obvious repo facts, skipped adjacent work, or detected behavior, cite `path:line[-line]` where useful.
 
 Verify the reported locale and the default path. For a selector or routing change, include a saved preference, an explicit language link and the affected search or generated prompt. Inspect a representative long translation on the supported narrow layout when text expansion can affect the change.
+
+Correct the maintained key, formatting or locale-selection owner and regenerate direct artifacts. Replay the same locale/state/value case, then the explicit default and fallback controls. Return remaining drift or overflow to that owner; once the supported language paths agree, finish Patch Checking without claiming unreviewed specialist/legal wording as approved.

@@ -1,9 +1,5 @@
 # Improve Browser Extension
 
-## Operation
-
-Implement the requested change and verify its directly affected behavior.
-
 ## Goal
 
 Fix the selected browser extension boundary across manifest permissions, scripts, messaging, storage, backend/native integration, tests, and release packaging when directly affected.
@@ -28,3 +24,5 @@ Use the selected extension feature, permission issue, messaging bug, audit findi
 ## Validation
 
 Run repository-native extension tests/builds and bounded manual/browser scenarios for the selected feature, including permission denial/revocation and reload/update behavior when relevant.
+
+Correct the manifest, sender validation, background lifecycle or storage owner that violates the selected contract. Rebuild and load the actual supported extension mode in the authorized test environment, then replay allowed/denied messages and the affected worker/reload path. Pass the built identity, permissions and effect observations into the local-runtime check. A failure returns to that boundary; accepted evidence proceeds to Patch Checking without widening host access to hide the error.

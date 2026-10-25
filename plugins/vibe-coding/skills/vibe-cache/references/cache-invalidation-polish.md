@@ -29,3 +29,5 @@ Use the selected data/resource, stale-read bug, cache key, audit finding, failin
 ## Validation
 
 Run repository-native tests and bounded scenarios for write → read freshness, stale cache, concurrent update, permission/tenant change, logout/session change, and rollback where relevant. Report CDN/managed-cache gates honestly.
+
+Correct key construction, write-side invalidation or refresh/version ownership at the first violating boundary. Reproduce the old fill/commit/read ordering with controlled time or synchronization; observe actual cached and authoritative versions separately. Feed the resulting patch and sequence into Cache Coherency Check. A failure returns to the same owner; a passing scenario proceeds to Patch Checking without broad production flushes.

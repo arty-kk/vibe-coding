@@ -1,9 +1,5 @@
 # UX Flow Audit
 
-## Operation
-
-Inspect the selected behavior and report evidence-backed defects; do not change product code.
-
 ## Goal
 
 Audit an end-to-end user/admin/system flow from entry point to completion, including permissions, state transitions, copy, recovery, and post-action feedback. Keep only issues that affect task completion, safety, clarity, conversion, or regression resistance.
@@ -25,3 +21,7 @@ Routes, navigation, guards, onboarding, forms, tables, dialogs, loaders/actions,
 
 - Include actor, starting context, completion goal, expected result, acceptance criteria, and validation path.
 - Do not report cosmetic preferences unless they affect comprehension, safety, conversion, accessibility, permissions, or task completion.
+
+## Handoff
+
+Choose the actor's start context and accepted completion/recovery state, then trace actual navigation, action commits and feedback. Record the first dead end, lost state, contradictory decision or missing recovery path, with the governing source. Feed that bounded journey and failing transition into Improve UX Flow; do not infer a measured conversion effect from a usability observation alone.

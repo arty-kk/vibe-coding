@@ -10,6 +10,10 @@ Map selected routes and UI surfaces to navigation, data, role/plan/tenant gates 
 
 Suggested saved map: `docs/saas_navigation_map.md`.
 
+## Build the view
+
+Start from registered routes and actual navigation entries. Trace each selected surface's loader/data contract, actions, tenant context and access/plan gates into observable states. Distinguish reachable UI from unused components or disabled routes. Follow failed submission, denied access and retry paths back to the state that the user sees; do not infer accessibility or recovery from a component name.
+
 ## Inspect
 
 Routing, layouts, pages, guards, loaders/actions, API hooks, state stores, forms, tables, dialogs, navigation components, auth/RBAC, plan/billing/quota code, tenant/workspace/project context, i18n, analytics/observability, tests, docs, and generated route maps.

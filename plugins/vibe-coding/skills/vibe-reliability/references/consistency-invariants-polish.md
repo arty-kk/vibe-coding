@@ -1,9 +1,5 @@
 # Improve Consistency Invariants
 
-## Operation
-
-Implement the requested change and verify its directly affected behavior.
-
 ## Goal
 
 Restore the selected business invariant across its authoritative state and directly affected projections or consumers.
@@ -23,3 +19,5 @@ Restore the selected business invariant across its authoritative state and direc
 - Record distributed/environment gates not reproducible locally.
 
 For database-to-event delivery, select relevant cases from [Transactional Delivery Check](transactional-delivery-check.md).
+
+Correct the authoritative transaction, publication intent, projection or reconciliation owner using a fixed operation and expected state. Preserve identity/version across retry and observe authoritative and derived values independently. Feed the original failure window and convergence bounds into the selected check. A remaining divergence returns to that owner; supported convergence proceeds to Patch Checking.

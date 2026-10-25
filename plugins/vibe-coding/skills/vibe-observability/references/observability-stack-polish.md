@@ -1,9 +1,5 @@
 # Improve Observability Stack
 
-## Operation
-
-Implement the requested change and verify its directly affected behavior.
-
 ## Goal
 
 Correct the selected signal from instrumentation through storage, query, dashboard or alert interpretation.
@@ -21,3 +17,5 @@ Correct the selected signal from instrumentation through storage, query, dashboa
 - Run repository rule tests, metric linting, dashboard/provisioning validation, and representative VictoriaLogs ingest/query fixtures where available.
 - Measure series/stream growth and query cost under representative dimensions; report estimates separately from observed production data.
 - Trigger and recover a representative alert, including no-data and dependency-loss behavior, and verify owner/runbook annotations.
+
+Correct the emitter/extraction, aggregation, rule or provisioned resource owner and update its direct consumers. Replay a fixed signal series/log corpus with known units and events; compare actual queried values and alert transitions before and after the candidate. Feed evidence and dimension/resource bounds to the semantics/cost check. Recheck failed observations at their owner, then run Patch Checking without claiming unmeasured production cardinality or sending an unapproved real page.

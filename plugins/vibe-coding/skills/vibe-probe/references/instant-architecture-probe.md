@@ -14,3 +14,5 @@ Inspect one dependency or ownership relationship. Establish the governing rule f
 ## Verification
 
 Run the relevant existing boundary/type/build/generation checks and inspect affected imports or consumers. If execution is unavailable, report the rule and source evidence inspected, with the unverified build/runtime consequence. Apply the selection/history and result rules in the parent skill.
+
+Pass the governing dependency rule, previous violating edge and new owner/consumer path to Patch Checking. A passing boundary linter does not by itself establish that dynamic registration or instance lifetime remains correct; include that path when it caused the defect.

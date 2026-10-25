@@ -13,4 +13,13 @@ Check whether the proposed task has a clear outcome, correct owner and verifiabl
 
 ## Result
 
-Return a refined brief when ready, evidence that the outcome is already met, or the specific decision/evidence needed before dependent work can proceed. Cite current sources for non-obvious conclusions. A missing formal specification or existing bug is not itself grounds to block a new user requirement.
+Return one result with the revised brief or supporting evidence:
+
+- `TASK_READY`: outcome, owner, acceptance, dependencies and verification are sufficient to start the authorized work.
+- `TASK_REVISE`: a material contradiction or incomplete contract can be corrected from available evidence. Revise the affected part and validate it again; preserve everything still valid.
+- `TASK_BLOCKED`: name the missing decision or evidence, who can supply it and which work depends on it. Continue independent work when the user's task includes it.
+- `ALREADY_SATISFIED`: show evidence that the requested outcome is already met; do not create a redundant implementation task.
+
+Pass a ready brief to the appropriate domain implementation step only when changes are authorized. Return to Task Shaping when the goal or workstream boundary needs restructuring, not for cosmetic wording. Stop revising once the brief is ready or the same unresolved decision prevents progress.
+
+Cite current sources for non-obvious conclusions. A missing formal specification or existing bug is not itself grounds to block a new user requirement.

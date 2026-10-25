@@ -14,3 +14,5 @@ Create or update the requested design/UX reference from the repository’s actua
 ## Verification
 
 Check referenced symbols, token names, file paths and actual variants. Use rendered evidence for visual claims and state any missing preview/device. Keep only sections useful for future implementation; omit universal design tutorials and placeholder matrices.
+
+The resulting reference should let another agent locate a shared rule, identify its public variants and find the preview/assertion needed before changing it. Keep intended design decisions separate from observed rendering. Recheck source anchors after generation; if saved files changed, finish their documentation patch through Patch Checking without changing the design system merely to match the document.

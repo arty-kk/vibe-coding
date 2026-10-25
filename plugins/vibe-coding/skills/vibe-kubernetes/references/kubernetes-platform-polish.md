@@ -1,9 +1,5 @@
 # Improve Kubernetes Platform
 
-## Operation
-
-Implement the requested change and verify its directly affected behavior.
-
 ## Goal
 
 Correct the selected rendered workload or rollout behavior for its actual environment and dependent resources.
@@ -19,5 +15,7 @@ Correct the selected rendered workload or rollout behavior for its actual enviro
 ## Validation
 
 - Run repository-native render/schema/policy checks and inspect the complete rendered delta for the target environment.
-- Where a cluster is available, use dry-run/apply diff plus rollout, endpoint, event, and metrics evidence without destructive production experiments.
+- Where a cluster is available and access is authorized, use suitable dry-run/diff checks and observed rollout, endpoint, event and metric evidence. An actual apply is a separate authorized mutation.
 - Test startup delay, dependency unavailability, SIGTERM/drain, unavailable replica, node disruption, and rollback compatibility as applicable.
+
+Correct the maintained target source and render the complete affected resource set before runtime verification. Preserve selector/reference consistency and the actual rollout/data transition; Deployment rollback does not restore incompatible data by itself. Feed the rendered candidate and selected availability/recovery scenario to the rollout check, repair failures at their owner and finish Patch Checking once supported.

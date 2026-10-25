@@ -21,3 +21,5 @@ Correct the selected ClickHouse ingestion, table or query behavior using its act
 - Run DDL/query/ingestion integration tests against the supported ClickHouse version/topology and inspect system tables/query logs.
 - Exercise duplicate/retried batches, partial failure, late data, replica/distributed-queue disruption, merge pressure, mutation/backfill, and query concurrency.
 - Measure scanned rows/bytes, memory/spill, parts, merge backlog, insert/query latency, and result correctness with representative data shape.
+
+Pin the failing insert/query and its expected logical result before changing the table, query or workload setting. Preserve source identity across retry and stage physical-layout changes with their actual migration cost. Feed the candidate DDL/settings, fixture and query to the ingestion/load check. Compare pre/post-merge visibility when it matters, without forcing a production merge as a test. A failed result or budget returns to that owner; accepted evidence proceeds to Patch Checking.

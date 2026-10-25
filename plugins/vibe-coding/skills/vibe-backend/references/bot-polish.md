@@ -34,3 +34,5 @@ Improve the selected bot flow or related states across navigation, menus, copy, 
 Run relevant repository-native checks. When explaining non-obvious repo facts, skipped adjacent work, or detected behavior, cite `path:line[-line]` where useful.
 
 Manually trace the changed bot flow from entry to completion/recovery using code paths or available tests.
+
+Implement the selected transition at its state/router/handler owner, then synchronize its buttons, prompts, persistence and direct callback consumers. Replay the original actor/chat/state combination, a normal path and the affected stale/denied/recovery path using fixtures or an authorized test chat. Code work is not permission to contact real recipients. Return failed transitions to the same owner and finish the resulting patch through repeated Patch Checking.

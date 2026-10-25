@@ -1,9 +1,5 @@
 # Improve Onboarding Activation
 
-## Operation
-
-Implement the requested change and verify its directly affected behavior.
-
 ## Goal
 
 Improve the selected first-run or activation path so a new or returning user reaches the next meaningful product value state safely and clearly. The diff should connect entry point, setup state, copy, navigation, permissions/plan context, recovery, and validation.
@@ -27,9 +23,11 @@ Improve the selected first-run or activation path so a new or returning user rea
 
 - Reuse existing route guards, auth/session state, setup components, plan/permission helpers, i18n, and analytics patterns.
 - Keep visible promises aligned with implemented product behavior and entitlements.
-- Prefer fix at the defining sourcees for first-run detection and setup state over local page workarounds.
+- Correct the defining source for first-run detection and setup state rather than adding local page workarounds.
 - Preserve existing users' state and migration safety.
 
 ## Validation
 
 Run relevant repository-native checks. When possible, trace the path from entry to activation across success, partial, and failure states. Use preview/screenshot tooling when available.
+
+Replay the original actor/setup state after correction, then a returning-user or partial-retry control. Verify created resources, role/tenant/plan context and the actual next-value destination independently of progress labels. Return failed state handoffs to their owner, use the selected product acceptance check and finish Patch Checking. Do not reset existing users or invent activation metrics to obtain a successful demo.

@@ -1,9 +1,5 @@
 # Realtime Interface Profiling & Recovery Check
 
-## Operation
-
-Verify the selected behavior against explicit expected results; do not change product code.
-
 ## Goal
 
 Verify the selected interface’s state convergence and measured responsiveness under concurrent changes or reconnect.
@@ -25,3 +21,11 @@ Select the cases that test the requested guarantee. Define expected state/effect
 ## Verification
 
 Compare final authoritative and displayed state, failed-operation rollback, reconnect continuity, request count and measured framework/browser work.
+
+## Execute and decide
+
+Use deterministic server/entity versions and controllable response/event order. Establish a normal query/mutation/render control, then hold one selected response or event while a newer operation completes, fails or changes identity. Inspect the displayed entity, pending operations and cache under that exact order.
+
+For reconnect, retain the last accepted sequence/resume identity and authoritative snapshot; inject the selected duplicate or gap and verify the actual continuity/resync result. For performance, preserve data size, event rate, device/browser and observation window, and attribute network/cache/render work separately.
+
+Return passed, failed or blocked with the interleaving, expected/observed state and measured resource evidence. Feed a failure into the authorized owner repair, rerun its control/sequence and finish Patch Checking for changed code. A deterministic component fixture does not establish unmeasured browser responsiveness.

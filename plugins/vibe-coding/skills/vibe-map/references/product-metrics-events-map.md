@@ -10,6 +10,10 @@ Map selected product metrics and events to their producers, semantics, privacy b
 
 Suggested saved map: `docs/product_metrics_events_map.md`.
 
+## Build the view
+
+Trace a selected metric backward from its query/definition to event grain, producers, identity keys and qualifying product actions. Then trace forward through deduplication, filtering and aggregation to its consumers. Record when an event fires and whether retries, sampling or consent alter its meaning. A dashboard label does not define a metric; keep missing definitions and unmeasured targets explicit.
+
 ## Inspect
 
 Analytics SDK setup, event emitters, tracking helpers, server-side events, data warehouse/ClickHouse/db tables, experiment flags, dashboard configs, docs, tests, privacy/consent gates, retention configs, generated clients, and product surfaces that trigger events.

@@ -1,9 +1,5 @@
 # Data Pipeline & Quality Audit
 
-## Operation
-
-Inspect the selected behavior and report evidence-backed defects; do not change product code.
-
 ## Goal and scope
 
 Audit a batch/stream/ELT/notebook pipeline across lineage, contracts, quality, retries, late data, reproducibility, and operational ownership.
@@ -21,3 +17,7 @@ Audit a batch/stream/ELT/notebook pipeline across lineage, contracts, quality, r
 2. Check checkpoint/offset ownership, partition overwrite/append semantics, duplicate/late data, partial commit, and retry/resume.
 3. Inspect schema contracts, lineage metadata, data tests, alerts, quarantine, reconciliation, and privacy/retention.
 4. Identify hidden notebook/manual steps and environment/dependency drift.
+
+## Handoff
+
+Retain a representative source batch/event, logical key, window/watermark, checkpoint and expected sink result. Locate the first extraction, transform, commit or quality gate that loses or reinterprets that identity. Pass the failing partition/sequence and reconciliation criterion to Improve Data Pipeline & Quality; job success and equal total row counts alone cannot establish correct records or values.

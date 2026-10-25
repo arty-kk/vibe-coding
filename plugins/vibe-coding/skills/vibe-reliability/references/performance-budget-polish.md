@@ -1,9 +1,5 @@
 # Improve Performance Budget
 
-## Operation
-
-Implement the requested change and verify its directly affected behavior.
-
 ## Goal
 
 Bring the selected path within its evidenced latency, resource or cost budget while preserving correctness.
@@ -20,3 +16,5 @@ Bring the selected path within its evidenced latency, resource or cost budget wh
 - Re-run the same workload and report before/after distributions, resource use, and variance.
 - Run correctness/failure tests for changed caching, batching, concurrency, or query behavior.
 - State production topology/traffic/hardware assumptions not proven.
+
+Correct the limiting owner using the same input distribution, concurrency and measurement window as the baseline. Inspect admission, cancellation, fairness, output correctness and downstream amplification while measuring the candidate against the selected budget. A lower average that violates tail/resource/correctness criteria does not pass. Recheck failures at their owner, then finish Patch Checking.

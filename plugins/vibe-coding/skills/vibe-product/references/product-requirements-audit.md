@@ -1,9 +1,5 @@
 # Product Requirements Audit
 
-## Operation
-
-Inspect the selected behavior and report evidence-backed defects; do not change product code.
-
 ## Goal and scope
 
 Audit one product requirement, feature slice, journey, or release objective for clarity, traceability, acceptance, measurable outcome, and implementation consistency. Limit the audit to the selected product surface and current repository/supplied evidence.
@@ -22,3 +18,7 @@ Audit one product requirement, feature slice, journey, or release objective for 
 2. Trace requirement → surfaces → contracts → states → acceptance → validation.
 3. Compare user-visible behavior with implementation owners and tests.
 4. Identify missing product decisions separately from code defects.
+
+## Handoff
+
+Pass the accepted requirement/decision, actor/state, actual mismatch, implementation owner and observable acceptance to Improve Product Requirements. Keep missing decisions attached to their dependent work rather than silently deriving them from existing UI. A requested new capability can be valid without evidence of a pre-existing bug.

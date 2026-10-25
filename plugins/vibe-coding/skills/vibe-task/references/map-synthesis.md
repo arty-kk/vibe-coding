@@ -14,3 +14,5 @@ Compare the supplied or explicitly selected maps. Use only related source code, 
 ## Result
 
 Return reconciled relationships, specific stale/conflicting entries and remaining decisions in the requested format. Recommend the next relevant source or skill where useful. Do not generate absent map families or implementation tasks unless requested.
+
+Carry verified owner/source anchors into any requested task synthesis. Keep unresolved map contradictions out of ready implementation briefs. If the user requested the maps themselves to be updated, return the reconciled artifact through the relevant map workflow; reconciling relationships alone does not update the maintained files.

@@ -1,9 +1,5 @@
 # Audit Logging Compliance Audit
 
-## Operation
-
-Inspect the selected behavior and report evidence-backed defects; do not change product code.
-
 ## Goal and scope
 
 Audit one security, compliance, financial, admin, or data-governance audit-log boundary. Focus on event completeness, integrity, privacy, retention, queryability, and operational usefulness.
@@ -18,3 +14,7 @@ Audit one security, compliance, financial, admin, or data-governance audit-log b
 ## Audit method
 
 Trace the selected action across API/UI/jobs/webhooks/admin paths, policy decisions, persistence, event emission, log sinks, retention, query surfaces, and tests. Separate application audit logs from generic debug logs.
+
+## Handoff
+
+Choose a material allowed and denied action and trace its authoritative decision/commit into the required audit sink/query. Retain action/correlation identity, expected event fields and policy-required presence or absence. Pass the first missing, unsafe or undurable event boundary to Improve Audit Logging Compliance; a debug line does not establish the required trail.

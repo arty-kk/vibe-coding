@@ -1,9 +1,5 @@
 # Improve Multi Tenant Isolation
 
-## Operation
-
-Implement the requested change and verify its directly affected behavior.
-
 ## Goal
 
 Fix the selected tenant/workspace/project isolation defect across authoritative query/policy/storage owners and directly affected consumers.
@@ -30,3 +26,5 @@ Use the selected resource, endpoint, job, search path, object key, cache key, au
 ## Validation
 
 Run repository-native tests and targeted scenarios proving no cross-tenant read, write, list, search, job, export, or object access for the selected boundary. Report missing fixtures or external services as gates.
+
+Repair trusted tenant propagation and authoritative query/policy/key ownership, then replay the same two-tenant case through the direct readers, writers and asynchronous consumers affected. Feed those identities, initial records and observed effects into Tenant Isolation Check. A failed edge returns to its owner; a passing selected boundary proceeds to Patch Checking without redesigning unrelated tenancy.

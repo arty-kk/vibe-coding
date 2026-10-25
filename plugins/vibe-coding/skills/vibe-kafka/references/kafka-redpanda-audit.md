@@ -1,9 +1,5 @@
 # Kafka Redpanda Audit
 
-## Operation
-
-Inspect the selected behavior and report evidence-backed defects; do not change product code.
-
 ## Goal and scope
 
 Audit a Kafka or Redpanda stream from topic/key/schema and producer durability through consumer offsets, retries, rebalance, and replay.
@@ -26,3 +22,7 @@ Audit a Kafka or Redpanda stream from topic/key/schema and producer durability t
 3. Inspect effective client and broker/topic settings together; reject guarantees inferred from one client flag in isolation.
 4. Evaluate key distribution, partition capacity, lag, poll duration, batching, retry amplification, and downstream backpressure using representative traffic evidence.
 5. Verify schema compatibility and operational migration behavior against both Kafka and Redpanda when portability is claimed.
+
+## Handoff
+
+Retain topic/partition/offset/key, schema and business operation identities separately. Capture the failing send/effect/commit/rebalance order and expected consumer result. Feed the first violated durability, ownership or replay boundary into Improve Kafka Redpanda. Do not infer business deduplication from a repeated key or one idempotent-producer flag.

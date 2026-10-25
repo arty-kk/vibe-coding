@@ -1,4 +1,6 @@
 interface:
   display_name: "Vibe Coding Library"
-  short_description: "Find and load a selected coding workflow"
-  default_prompt: "Use $vibe-library to find the engineering workflow for my task and load its instructions."
+  short_description: "Apply a workflow for coding, review or verification"
+  default_prompt: "Use $vibe-library to choose and follow the engineering workflow for my task, including its relevant verification."
+policy:
+  allow_implicit_invocation: true

@@ -8,11 +8,13 @@
     "README.md",
     "assets/catalog/catalog.html",
     "assets/catalog/catalog.js",
+    "assets/catalog/engine.js",
     "assets/catalog/language.js",
     "assets/catalog/locales/en.json",
     "assets/catalog/locales/es.json",
     "assets/catalog/locales/ru.json",
     "assets/catalog/locales/zh-CN.json",
+    "assets/catalog/search-lexicon.json",
     "assets/catalog/style.css",
     "assets/icon.png",
     "assets/icon.svg",
@@ -40,6 +42,7 @@
     "scripts/release_files.py",
     "scripts/search_index.py",
     "scripts/validate.py",
+    "scripts/workflow_graph.py",
     "skills/vibe-ai/SKILL.md",
     "skills/vibe-ai/agents/openai.yaml",
     "skills/vibe-ai/references/ai-evaluation-audit.md",
@@ -372,6 +375,7 @@
     "skills/vibe-workflow/references/scoped-audit.md",
     "skills/vibe-workflow/references/scoped-polish.md",
     "skills/vibe/SKILL.md",
-    "skills/vibe/agents/openai.yaml"
+    "skills/vibe/agents/openai.yaml",
+    "workflows.json"
   ]
 }

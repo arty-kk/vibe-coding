@@ -1,9 +1,5 @@
 # Improve Temporal Workflows
 
-## Operation
-
-Implement the requested change and verify its directly affected behavior.
-
 ## Goal
 
 Correct the selected Temporal workflow or Activity behavior while preserving replay and worker-version compatibility.
@@ -15,6 +11,17 @@ Correct the selected Temporal workflow or Activity behavior while preserving rep
 - Introduce compatible workflow changes with the repository's supported patching or worker-versioning pattern and retain old branches until histories are safe.
 - Bound history with Continue-As-New while transferring only durable workflow state and accounting for pending signals/updates.
 - Deploy task-queue/build changes in a staged sequence with replay evidence and an explicit rollback/forward-fix policy.
+
+## Repair sequence
+
+1. Reproduce the failing history or Activity/message interleaving and record the expected durable state and external effect count.
+2. Change the owner of the defect. Preserve old command behavior through the SDK's supported compatibility mechanism; keep network access outside Workflow execution. For ambiguous Activity success, reconcile or deduplicate the operation before retrying the effect.
+3. For Continue-As-New, transfer the required state and pending intent and finish in-progress handlers at the SDK-supported boundary. Check whether message deduplication must span runs rather than assuming a new run inherits it.
+4. Replay the affected history corpus and exercise the changed Activity or handler with an appropriate worker integration. A mock that always succeeds cannot verify a lost heartbeat, duplicate external effect or task-routing failure.
+
+## Handoff
+
+Give the check step the original failing case, old/new worker identities, changed compatibility branch, effect identity and observed results. Record deployment actions separately from the patch; perform them only within the authorized rollout scope. Pass the complete resulting patch and any unverified cases to Patch Checking.
 
 ## Validation
 

@@ -42,3 +42,5 @@ Name the stage that permits new writers or removes an adapter. Where needed, dep
 Reproduce the original failure before the repair. Exercise old-to-new and new-to-old payloads for every supported direction, boundary values, absent/null fields, unknown enum values and relevant errors. Run native schema, generation, type and consumer tests. Verify semantic output and authorization, not only compilation. Include retained-event replay or a representative rollout/rollback fixture when the selected contract requires it.
 
 Report the changed source of truth, compatibility matrix, actual test results and remaining deployed-consumer gates. Stop when the authorized contract and direct consumers are complete.
+
+Feed the resulting source/generated artifacts and unchanged supported-version matrix into API Contract Compatibility Check. On failure, use its encoding/version pair and interpreted value to correct the owning schema, adapter or rollout stage, then rerun that combination and affected controls. Once the matrix is supported, finish Patch Checking; a generated client compiling does not close the compatibility cycle.

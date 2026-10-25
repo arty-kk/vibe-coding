@@ -1,9 +1,5 @@
 # Improve Feature Flags Rollout
 
-## Operation
-
-Implement the requested change and verify its directly affected behavior.
-
 ## Goal
 
 Correct the selected flag or rollout behavior across targeting, enforcement, fallback and directly affected consumers.
@@ -30,3 +26,5 @@ Use the selected flag, rollout bug, stale flag, audit finding, failing test, exp
 ## Validation
 
 Run repository-native tests and targeted scenarios for flag on/off, missing config/provider, targeted user, wrong plan/role, rollback/kill switch, and analytics exposure where relevant.
+
+Correct the definition, context construction, enforcement, exposure or cleanup owner that violates the selected policy. Preserve the intended fallback instead of choosing fail-open/fail-closed from convention alone. Feed the candidate, targeting fixtures and on→off state into the exposure/rollback check. Recheck failures at that boundary, then run Patch Checking; changing a live rollout or deleting a shared flag still requires the corresponding authorized environment/action.

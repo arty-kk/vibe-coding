@@ -40,7 +40,7 @@ class MCPDistributionTests(unittest.TestCase):
                         self.assertTrue(case['prompt'])
                         self.assertTrue(case['expected_behavior'])
                 self.assertEqual(video, review['demo_recording_url'])
-                self.assertEqual('1.5.1', portable['version'])
+                self.assertEqual('1.6.0', portable['version'])
                 self.assertEqual(1, sum(name.endswith('/SKILL.md') for name in archive.namelist()))
                 self.assertEqual((distribution.PLUGIN/'skills/vibe-library/SKILL.md').read_bytes(),
                                  archive.read(prefix + 'skills/vibe-library/SKILL.md'))

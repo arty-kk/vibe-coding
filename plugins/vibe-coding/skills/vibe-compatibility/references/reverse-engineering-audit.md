@@ -1,9 +1,5 @@
 # Reverse Engineering Audit
 
-## Operation
-
-Inspect the selected behavior and report evidence-backed defects; do not change product code.
-
 ## Goal and scope
 
 Reconstruct an existing system's observable contract from authorized evidence and preserve compatibility through differential and golden-master validation.
@@ -26,3 +22,7 @@ Reconstruct an existing system's observable contract from authorized evidence an
 3. Infer the smallest model explaining observations and design discriminating experiments for competing hypotheses.
 4. Map every observed field/message/table/file element to producer, consumer, lifecycle, optionality, and compatibility behavior.
 5. Compare current implementation/reference fixtures and classify deterministic mismatch, nondeterminism, environment variance, and unsupported unknown.
+
+## Handoff
+
+For each selected behavior, supply the authorized capture, reference version/config, input identity, observed output/state/effect and the narrowest supported interpretation. Preserve competing hypotheses with the experiment that would distinguish them. Feed supported behavior and unresolved branches to Improve Reverse Engineering; a plausible inferred schema is not evidence that unobserved branches are compatible.

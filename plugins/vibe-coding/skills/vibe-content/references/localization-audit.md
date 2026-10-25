@@ -1,9 +1,5 @@
 # Localization Audit
 
-## Operation
-
-Inspect the selected behavior and report evidence-backed defects; do not change product code.
-
 ## Goal and scope
 
 Audit a selected localization surface for key ownership, interpolation safety, locale semantics, fallback, and layout impact.
@@ -23,3 +19,7 @@ Audit a selected localization surface for key ownership, interpolation safety, l
 2. Check all semantic variants, plural categories, markup, untrusted values, and locale-sensitive formatting.
 3. Identify duplicate keys, English-in-code, stale translations, and key reuse across incompatible meanings.
 4. Inspect layout and channel constraints for representative long and RTL locales where supported.
+
+## Handoff
+
+Pass the source key, locale-selection path, interpolation values and failing rendered state to Improve Localization. Separate wrong translation, wrong locale precedence, unsafe interpolation and layout overflow so the repair targets their actual owners. Check metadata, accessible names and generated/copyable prompts separately from the visible heading; a partially translated interface is not complete localization.

@@ -42,3 +42,5 @@ Reproduce the failing behavior in the narrowest useful fixture or test environme
 Demonstrate that the original failure is blocked and normal behavior remains intact. Exercise the relevant load, retry, restart or partial-failure condition rather than relying only on a happy path. After an authorized rollout, verify fresh user-operation evidence, backlog/convergence and error/resource signals over the selected window. Passing local tests is not proof that production recovered.
 
 Report the correction, intervention scope, actual checks, current incident state and remaining repair or observation work. If only mitigation was achieved, say so and retain the concrete unresolved cause instead of closing the incident on a quiet alert.
+
+Pass the intervention/artifact identity, exact affected operation, current backlog/state and agreed recurrence window into Incident Recovery Check. A failed or insufficiently observed result returns to the same owning intervention or its explicit missing evidence. Changes to source/configuration still require Patch Checking; recovery observations and patch correctness remain separate conclusions.

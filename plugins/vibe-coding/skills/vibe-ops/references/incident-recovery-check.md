@@ -42,3 +42,5 @@ Name the incident, affected operation/cohorts, intervention identity and deploym
 Classify the result as recovered, mitigated with remaining work, failed or not sufficiently observed. Support it with exact queries/checks, timestamps, observed values and remaining criteria. Tie a failing code/configuration condition to its owner when the source supports that conclusion; keep external causes as evidence-backed hypotheses.
 
 Do not infer causality solely because two graphs changed together, or declare full recovery because alerts stopped. State which user guarantees are restored and which data repair, recurrence, provider or longer-window checks remain open. Recommend the smallest next investigation or authorized repair rather than expanding into unrelated operations.
+
+Carry a failed criterion back with fresh timestamps, cohort, actual runtime/intervention identity and expected/observed behavior. An authorized remediation can then correct the same boundary and repeat the affected check. Retain mitigated/insufficient-observation states until their remaining criteria are supported; do not change thresholds or disable the signal merely to close the incident.

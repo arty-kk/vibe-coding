@@ -25,3 +25,11 @@ Select the cases that test the requested guarantee. Define expected state/effect
 ## Verification
 
 Compare source/checkpoint identity, visible rows and duplicates, query results, scanned rows/bytes, parts, memory and recovery for the selected cases.
+
+## Execute and decide
+
+Use an isolated table/cluster or an authorized workload. Record engine/DDL/settings and create a deterministic dataset whose logical keys, versions and expected aggregates are known. Establish a normal insert/query control.
+
+For ingestion, place the selected retry/failure at the acknowledgement or source-checkpoint boundary and compare physical rows with the expected consumer result. For merge-sensitive engines, observe the supported query semantics before and after merge rather than assuming immediate uniqueness. For load, preserve filter/time range, cardinality, skew, concurrency and measurement window; report sample limits with latency/resource results.
+
+Return passed, failed or blocked against the selected guarantee. Pass a failure with batch/query identity and observed result to the owning repair, rerun affected cases after correction and review a changed patch through Patch Checking. Faults, mutations and backfills require a suitable authorized environment.

@@ -7,6 +7,11 @@ let activeRecipe;
 try { host.value = localStorage.getItem('vibe-coding-host') === 'claude' ? 'claude' : 'codex'; } catch {}
 const invocation = skill => host.value === 'claude' ? '/vibe-coding:' + skill : '$' + skill;
 const searchIndex = JSON.parse($('search-data').textContent);
+const engine = window.VibeCatalog;
+const searchLexicon = JSON.parse($('search-lexicon').textContent);
+const searchEntries = engine.prepare(recipes.map(row => ({...row, titles: searchIndex[row.id].titles})),
+  Object.fromEntries(recipes.map(row => [row.skill, searchIndex[row.id].topics])),
+  Object.fromEntries(recipes.map(row => [row.mode, searchIndex[row.id].actions])), searchLexicon);
 
 function node(tag, className, text) {
   const el = document.createElement(tag);
@@ -15,17 +20,9 @@ function node(tag, className, text) {
   return el;
 }
 
-function fold(text) {
-  return text.normalize('NFKD').replace(/\p{M}/gu, '').toLowerCase();
-}
-
 function render() {
-  const terms = fold(query.value).trim().split(/\s+/).filter(Boolean);
-  const list = recipes.filter(r => (!category.value || r.skill === category.value)
-    && (!mode.value || r.mode === mode.value)
-    && terms.every(term => searchIndex[r.id].primary.includes(term) || searchIndex[r.id].body.includes(term)))
-    .map(r => ({row: r, score: terms.reduce((n, term) => n + (searchIndex[r.id].primary.includes(term) ? 3 : 1), 0)}))
-    .sort((a, b) => b.score - a.score).map(item => item.row);
+  const list = engine.select(searchEntries, {q: query.value, topic: category.value, action: mode.value, full: true}, searchIndex)
+    .matches.map(item => item.entry);
   $('count').textContent = formatMessage(locale.ui.count, {count: list.length, total: recipes.length});
   $('empty').hidden = list.length !== 0;
   const fragment = document.createDocumentFragment();

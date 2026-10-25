@@ -25,3 +25,7 @@ Select the cases that test the requested guarantee. Define expected state/effect
 ## Verification
 
 Report actual rendered differences and interaction results; identify any missing renderer or baseline. A code-only inspection cannot establish visual equivalence.
+
+Fix the candidate, data, viewport and expected behavior before capturing evidence. Compare the failed state and a nearby normal state using the same rendering conditions. Separate intentional changes from regressions by the accepted interaction/design contract, rather than accepting every new screenshot.
+
+Pass a failed result to the component/token/state owner with its reproduction, rendered evidence and expected observation. If repair is authorized, rerun that state after correction and check directly affected interactions before Patch Checking. If no comparison baseline exists, report the rendered constraints actually verified instead of claiming pixel equivalence.

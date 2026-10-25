@@ -1,9 +1,5 @@
 # SQL Databases Audit
 
-## Operation
-
-Inspect the selected behavior and report evidence-backed defects; do not change product code.
-
 ## Goal and scope
 
 Audit SQL access from pool/admission and query plans through transactions, migrations, replicas, failover, and tenant permissions.
@@ -26,3 +22,7 @@ Audit SQL access from pool/admission and query plans through transactions, migra
 3. Inspect representative explain/plan evidence, row estimates, scans, sorts, temp spill, index selectivity, and write/update cost for the changed query.
 4. Trace concurrent anomaly/deadlock scenarios and identify the exact database constraint, lock, isolation, or optimistic version that owns the invariant.
 5. Review migration/backfill under mixed versions, large tables, restart, replica lag, rollback, and tenant/role permissions.
+
+## Handoff
+
+Retain the query/transaction, engine/isolation/application role, representative records/plan and exact lock/commit/read sequence. Identify the first violated invariant, budget or supported compatibility state and pass it to Improve SQL Databases. Separate a reproducible concurrency anomaly from a speculative index or capacity recommendation.

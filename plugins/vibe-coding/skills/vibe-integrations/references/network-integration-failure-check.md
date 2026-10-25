@@ -1,9 +1,5 @@
 # Network Integration Failure Check
 
-## Operation
-
-Verify the selected behavior against explicit expected results; do not change product code.
-
 ## Goal
 
 Verify the selected external-call, webhook or stream behavior under its relevant failure and recovery conditions.
@@ -25,3 +21,11 @@ Select the cases that test the requested guarantee. Define expected state/effect
 ## Verification
 
 Compare response/status, durable effects, retry attempts, stream sequence/resync, resource bounds and recovery for the selected failure.
+
+## Execute and decide
+
+Use a controlled endpoint/provider fixture and fixed identities. Establish normal completion, then inject the selected failure at a precise connect/read, receipt/effect, acknowledgement or stream-sequence boundary. Record actual attempts and total elapsed budget across the caller's layers.
+
+For an ambiguous response, inspect the effect store independently of client error. For signatures, use valid and invalid provider-version vectors over the exact defined representation. For streams, compare resume/resync with the last accepted sequence and authoritative snapshot, including a slow/closed consumer when relevant.
+
+Return passed, failed or blocked with the event order, expected/observed effect or resumed state, resource bounds and missing provider layers. Pass a failure to the authorized owner repair, repeat that case/control after correction and finish Patch Checking for changed code. Do not induce faults against unapproved live services.

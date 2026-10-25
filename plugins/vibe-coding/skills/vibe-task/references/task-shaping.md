@@ -20,3 +20,9 @@ Include the problem/change, target and defining owner, necessary evidence, expec
 - UI: entry/state/interaction, data contract, recovery and accessible behavior.
 
 Ask only for a missing decision that changes the result. Return the brief in the requested format; do not start separate agent conversations.
+
+## Handoff
+
+Pass the brief to Validation & Clarification with the source request intact. Make each acceptance criterion observable: identify the action/input, expected state or response and the check that distinguishes success from the prior behavior. Carry unresolved decisions explicitly; an implementing agent should not have to infer a product choice from a suggested file path.
+
+If the request already supplied an implementable brief, refine only material gaps. Do not rewrite it into a new project or add discovery artifacts that do not change the implementation decision.

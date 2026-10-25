@@ -8,14 +8,6 @@ Implement the selected serverless/edge runtime correction and verify the affecte
 
 The selected handler, provider/runtime and compatibility configuration, trigger, success/acknowledgment promise, authoritative effect and retry owner. Identify the concrete invocation state and permitted local/provider environment.
 
-## Domain invariants
-
-- Success or acknowledgment is emitted only when work required by the business contract has reached its promised durability boundary.
-- Deferred work uses the actual provider lifetime mechanism; best-effort continuation is not represented as durable delivery.
-- Invocation-specific identity and mutable user state cannot survive into another invocation; reusable infrastructure clients remain separately owned.
-- Duplicate, concurrent and partial-batch delivery preserve stable operation identity and cannot repeat a non-repeatable committed effect.
-- Runtime API use, resource cleanup, fan-out and downstream admission respect the deployed configuration and supported provider semantics.
-
 ## Goal and scope
 
 Complete the selected correction across handler lifetime, response/acknowledgment, state ownership and the directly affected effect. Preserve the existing provider and trigger unless migration is explicitly requested. Do not replace an application's architecture to make a local emulator pass.
@@ -42,3 +34,5 @@ Apply the fix to the owner rather than adding sleeps, extending arbitrary timeou
 Demonstrate the original failure before the fix and success afterward. For lifetime changes, hold the storage/downstream promise unresolved and prove the response cannot claim completion; then reject it and verify failure propagation. For delivery changes, replay the same identity concurrently and across restart or partial-batch retry, checking durable effect counts. For reuse changes, run sequential invocations with different identities and inspect state isolation.
 
 Run available native/emulator checks and state which cases require the real provider. Report the changed contract, actual results and remaining deployment, quota or disconnect checks. Publish or alter cloud resources only within the user's existing authorization.
+
+Feed the same input identity, required-work boundary and corrected handler/configuration into Serverless Invocation Check. Recheck a failed response/acknowledgement or retained-identity case at its owner, then review the full resulting patch until clean or blocked. Do not turn optional provider experiments into required infrastructure creation.

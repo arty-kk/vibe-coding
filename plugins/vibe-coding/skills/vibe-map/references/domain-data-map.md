@@ -10,6 +10,10 @@ Map domain entities, relationships, state transitions, persistence owners and re
 
 Suggested saved map: `docs/domain_data_map.md`.
 
+## Build the view
+
+Establish entity/key identity and enforced constraints from schemas and migrations. Trace writers and state-transition code before describing lifecycle rules, then connect authoritative records to caches, indexes, analytics and other projections. A status column or ORM relation does not by itself define legal transitions or deletion behavior. Verify representative read/write paths and mark projection freshness, ownership and lifecycle edges at their actual sources.
+
 ## Inspect
 
 Database schemas, migrations, ORM models, NoSQL collections, object keys, search/vector indexes, generated clients/types, serializers, fixtures, factories, seed data, retention/deletion jobs, import/export code, API schemas, analytics tables, and docs.

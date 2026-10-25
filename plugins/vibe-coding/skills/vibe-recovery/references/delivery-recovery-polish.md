@@ -1,9 +1,5 @@
 # Improve Delivery Recovery
 
-## Operation
-
-Implement the requested change and verify its directly affected behavior.
-
 ## Goal
 
 Correct the selected release, rollback or restore path and verify artifact identity and application-level recovery.
@@ -21,3 +17,5 @@ Correct the selected release, rollback or restore path and verify artifact ident
 - Run CI/build tests from clean inputs where supported and verify artifact digest/provenance/manifest linkage.
 - Exercise staged rollout/abort/rollback or a faithful rehearsal, including config/flag and schema compatibility.
 - Restore representative backups into an isolated environment and verify integrity, application behavior, observed RPO/RTO, and operator runbook.
+
+Correct the owning build/promotion, compatibility transition or restore procedure while preserving the original candidate/state identities. Rehearse the selected failure and recovery in the authorized environment, then feed actual artifact, restored data and timing evidence into the restore/rollback check. Return failed links to their owner before Patch Checking. Preserve old recoverable artifacts and evidence; cleanup is not a substitute for reconciliation.

@@ -10,6 +10,10 @@ Map material release risks and verification gates to their trigger, affected con
 
 Suggested saved map: `docs/risk_release_map.md`.
 
+## Build the view
+
+Fix the release/artifact and environment being considered. Follow changed contracts through mixed versions, migrations, rollout gates and recovery owners. For each material risk, identify the trigger, observable failure, preventive check and an evidenced rollback or forward-fix path. Distinguish a written recovery procedure from a successful recovery drill; do not mark an operator capability verified merely because a runbook names it.
+
 ## Inspect
 
 Release docs, CI/CD workflows, deployment manifests, migrations, feature flags, config/env changes, schemas, API/event contracts, data jobs, observability, runbooks, backup/restore docs, incident notes supplied by the user, and tests/checks.

@@ -39,8 +39,22 @@ for (const mode of ['legacy', 'auto']) {
         const invalid = await connection.callTool({name: 'get_workflow', arguments: args});
         assert.equal(invalid.isError, true);
       }
-      const overflow = await connection.callTool({name: 'search_workflows', arguments: {query: 'a'.repeat(161)}});
+      const overflow = await connection.callTool({name: 'search_workflows', arguments: {query: 'a'.repeat(241)}});
       assert.equal(overflow.isError, true);
+      const composed = await connection.callTool({name: 'get_workflow', arguments: {id: 'mcp-server-audit', intent: 'improve', host: 'generic', response_format: 'workflow'}});
+      assert.equal(composed.isError, undefined);
+      assert.equal(composed.structuredContent.execution.status, 'instructions_only');
+      assert.deepEqual(composed.structuredContent.execution.steps.map(step => step.id),
+        ['mcp-server-audit', 'mcp-server-polish', 'mcp-protocol-auth-check', 'patch-checking']);
+      const next = await connection.callTool({name: 'get_workflow', arguments: {id: 'mcp-server-polish', include_context: false, response_format: 'workflow'}});
+      assert.equal(next.structuredContent.context_included, false);
+      assert.ok(!next.structuredContent.files.some(file => file.path === 'references/workflow.md'));
+      // Exact keys from the strict 1.5.1 output contract.
+      assert.deepEqual(Object.keys(fetched.structuredContent).sort(),
+        ['version','instruction_version','instruction_language','language','host','workflow','files','words'].sort());
+      for (const metadata of [result.structuredContent.workflows[0], fetched.structuredContent.workflow]) {
+        assert.deepEqual(Object.keys(metadata).sort(), ['id','title','skill','mode','category','summary','url'].sort());
+      }
     } finally {await connection.close();}
   });
 }

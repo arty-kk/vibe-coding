@@ -21,3 +21,7 @@ Audit model serving across artifact identity, preprocessing, routing, batching, 
 2. Check artifact/config skew, cold start, overload, partial batch, timeout, cancellation, provider outage, fallback, and mixed-version rollout.
 3. Inspect health/readiness semantics, autoscaling signals, cache identity, canary/shadow evaluation, alerts, and operator disable.
 4. Separate performance evidence from quality/drift evidence.
+
+## Handoff
+
+Return the request class, loaded model/preprocessing/config identity, queue/routing path and the observed contract violation. Pair an overloaded, canceled or degraded request with a normal control. Pass the violated admission, batching, artifact or fallback boundary and an observable recovery criterion into Improve Model Serving & Monitoring.

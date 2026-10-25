@@ -46,3 +46,5 @@ For a code defect cite `path:line`, the reachable state and its operational evid
 ## Evidence requirements
 
 Report impact, verified timeline, supported cause or ranked hypotheses, owner, immediate repair/mitigation direction and recovery criteria. Clearly distinguish known facts from unresolved causality. If there is no demonstrated code defect, say what evidence would resolve the next decision instead of fabricating a patch.
+
+For authorized mitigation/correction, feed the affected cohort/operation, attributable timeline, known runtime identity, selected hypothesis and measurable recovery criteria into Incident Remediation. Preserve competing causes until a discriminator resolves them; a later quiet period is not proof that the chosen hypothesis was correct.

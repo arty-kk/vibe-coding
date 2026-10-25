@@ -4,13 +4,17 @@ import json
 import re
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
+import sys
 
 HERE = Path(__file__).resolve().parent
 PLUGIN = HERE.parent / 'plugins/vibe-coding'
+sys.path.insert(0, str(PLUGIN/'scripts'))
+from workflow_graph import load_workflows
 
 
 def build_library():
     catalog = json.loads((PLUGIN / 'catalog.json').read_text(encoding='utf-8'))
+    workflows = load_workflows(PLUGIN, catalog['recipes'])
     version = json.loads((PLUGIN / 'plugin.json').read_text(encoding='utf-8'))['version']
     locales = {code: json.loads((PLUGIN / f'assets/catalog/locales/{code}.json').read_text(encoding='utf-8'))
                for code in ('en', 'es', 'ru', 'zh-CN')}
@@ -34,25 +38,44 @@ def build_library():
         if files[row['path']]['sha256'] != row['sha256']:
             raise ValueError(f'Stale catalog digest: {row["id"]}')
         dependencies = []
-        for link in re.findall(r'\[[^\]]*\]\(([^)]+)\)', files[row['path']]['text']):
-            if urlsplit(link).scheme or link.startswith('#'):
-                continue
-            resolved = ((PLUGIN / row['path']).parent / unquote(link.split('#')[0])).resolve()
-            if not resolved.is_relative_to(PLUGIN) or not resolved.is_file():
-                raise ValueError(f'Broken recipe link: {row["id"]}: {link}')
-            name = resolved.relative_to(PLUGIN).as_posix()
-            # Alternative recipes remain discoverable, not automatically loaded.
-            if name.startswith('references/') and name not in ('references/catalog.md', 'references/hosts.md'):
-                include(name)
-                dependencies.append(name)
+        sources = [row['path'], f"skills/{row['skill']}/SKILL.md", 'references/workflow.md', 'references/cycles.md']
+        for source in sources:
+            for link in re.findall(r'\[[^\]]*\]\(([^)]+)\)', files[source]['text']):
+                if urlsplit(link).scheme or link.startswith('#'):
+                    continue
+                resolved = ((PLUGIN / source).parent / unquote(link.split('#')[0])).resolve()
+                if not resolved.is_relative_to(PLUGIN) or not resolved.is_file():
+                    raise ValueError(f'Broken recipe link: {row["id"]}: {link}')
+                name = resolved.relative_to(PLUGIN).as_posix()
+                # Alternative recipes remain discoverable, not automatically loaded.
+                if name.startswith('references/') and name not in ('references/catalog.md', 'references/hosts.md'):
+                    include(name)
+                    dependencies.append(name)
         row['dependencies'] = sorted(set(dependencies))
-    digest = hashlib.sha256(''.join(f'{path}:{file["sha256"]}\n'
-                                   for path, file in sorted(files.items())).encode()).hexdigest()
-    return {'version': json.loads((HERE / 'package.json').read_text(encoding='utf-8'))['version'],
-            'instructionVersion': version, 'digest': digest,
+    config_hashes = {name: hashlib.sha256((PLUGIN/name).read_bytes()).hexdigest()
+                     for name in ('workflows.json', 'assets/catalog/search-lexicon.json', 'assets/catalog/engine.js')}
+    snapshot = {'version': json.loads((HERE / 'package.json').read_text(encoding='utf-8'))['version'],
+            'instructionVersion': version,
             'recipes': catalog['recipes'], 'skillCount': catalog['skills'], 'files': files,
+            'workflowSpec': workflows,
+            'searchLexicon': json.loads((PLUGIN/'assets/catalog/search-lexicon.json').read_text(encoding='utf-8')),
+            'configDigests': config_hashes,
             'locales': {code: {key: locale[key] for key in ('titles', 'summaries', 'categories', 'modes')}
                         for code, locale in locales.items()}}
+    snapshot['digest'] = hashlib.sha256(json.dumps(snapshot, ensure_ascii=False, sort_keys=True,
+                                                  separators=(',', ':')).encode()).hexdigest()
+    return snapshot
+
+
+def build_engine():
+    engine = (PLUGIN/'assets/catalog/engine.js').read_text(encoding='utf-8')
+    if engine != (HERE.parent/'site/catalog-engine.js').read_text(encoding='utf-8'):
+        raise ValueError('Public and offline search engines differ; synchronize the canonical engine.')
+    wrapper = "'use strict';\n(() => {\n"
+    export = "  if (typeof module !== 'undefined' && module.exports) module.exports = engine;\n  else window.VibeCatalog = engine;\n})();\n"
+    if not engine.startswith(wrapper) or not engine.endswith(export):
+        raise ValueError('Catalog engine wrapper changed; review the ESM projection.')
+    return engine[len(wrapper):-len(export)] + 'export default engine;\n'
 
 
 if __name__ == '__main__':
@@ -60,10 +83,5 @@ if __name__ == '__main__':
     output = HERE / 'generated'
     output.mkdir(exist_ok=True)
     (output / 'library.json').write_text(json.dumps(library, ensure_ascii=False, separators=(',', ':')) + '\n', encoding='utf-8', newline='\n')
-    engine = (HERE.parent / 'site/catalog-engine.js').read_text(encoding='utf-8')
-    wrapper = "'use strict';\n(() => {\n"
-    export = "  if (typeof module !== 'undefined' && module.exports) module.exports = engine;\n  else window.VibeCatalog = engine;\n})();\n"
-    if not engine.startswith(wrapper) or not engine.endswith(export):
-        raise ValueError('Catalog engine wrapper changed; review the ESM projection.')
-    (output / 'catalog-engine.js').write_text(engine[len(wrapper):-len(export)] + 'export default engine;\n', encoding='utf-8', newline='\n')
+    (output / 'catalog-engine.js').write_text(build_engine(), encoding='utf-8', newline='\n')
     print(f"Compiled {len(library['recipes'])} workflows, {len(library['files'])} instruction files; {library['digest']}")

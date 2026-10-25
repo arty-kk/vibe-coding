@@ -1,9 +1,5 @@
 # Improve Notebook Productionization
 
-## Operation
-
-Implement the requested change and verify its directly affected behavior.
-
 ## Goal
 
 Make the selected notebook workflow reproducible, parameterized and verifiable in its intended execution environment.
@@ -21,3 +17,5 @@ Make the selected notebook workflow reproducible, parameterized and verifiable i
 - Run top-to-bottom from a clean environment and compare deterministic outputs or documented stochastic tolerance.
 - Run the relevant transformation or notebook tests and selected resource/restart/partial-failure scenarios.
 - Verify published artifact lineage, freshness, privacy, and consumer compatibility; list unavailable data/scheduler gates.
+
+Start from a clean execution that exposes the selected hidden input or partial-output failure. Correct its parameter, data/environment identity, transform or publication owner in the project's supported execution model. Run the same ordered notebook/pipeline twice under its documented deterministic or stochastic tolerance, then exercise the selected restart case. Recheck failures at that owner and finish Patch Checking on the notebook/code/config change.

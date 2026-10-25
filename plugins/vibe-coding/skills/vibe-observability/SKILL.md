@@ -5,7 +5,17 @@ description: "Audit, repair or verify metric/log semantics, dashboards, alerts, 
 
 # Metrics, logs & alerts
 
-Apply [the working contract](../../references/workflow.md) once; read only the recipe for the requested result.
+Apply [the working contract](../../references/workflow.md) once.
+
+## Workflow
+
+Observability Stack Audit → Improve Observability Stack → Observability Semantics & Cost Check → [Patch Checking](../vibe-review/references/patch-checking.md).
+
+Carry the measured phenomenon, emitter, units/type/labels, tenant/datasource, time window and expected operator interpretation between prompts. A known rule/instrumentation defect starts at correction; verification-only work uses the check without modifying live alerts.
+
+Trace a controlled product event through ingestion, query/rule and visible dashboard/alert state. Correct the first semantic, freshness, cardinality or tenant boundary rather than merely changing a graph label or silencing the symptom.
+
+Return failed values, reset/no-data transitions or resource growth to their owning instrumentation/query/rule, rerun affected cases and finish patch review. Distinguish observed dimensions from cardinality estimates and a test alert transition from actual paging/delivery. Real notifications or live provisioning require the corresponding authorization.
 
 ## Recipes
 

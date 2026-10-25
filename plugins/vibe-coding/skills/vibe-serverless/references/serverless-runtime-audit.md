@@ -8,14 +8,6 @@ Inspect the selected serverless or edge invocation boundary without product edit
 
 The selected handler, provider/runtime and compatibility configuration, trigger, success/acknowledgment promise, authoritative effect and retry owner. Identify the concrete invocation state and permitted local/provider environment.
 
-## Domain invariants
-
-- Success or acknowledgment is emitted only when work required by the business contract has reached its promised durability boundary.
-- Deferred work uses the actual provider lifetime mechanism; best-effort continuation is not represented as durable delivery.
-- Invocation-specific identity and mutable user state cannot survive into another invocation; reusable infrastructure clients remain separately owned.
-- Duplicate, concurrent and partial-batch delivery preserve stable operation identity and cannot repeat a non-repeatable committed effect.
-- Runtime API use, resource cleanup, fan-out and downstream admission respect the deployed configuration and supported provider semantics.
-
 ## Goal and scope
 
 Determine whether invocation completion, acknowledgment and durable effects preserve the promised business behavior under reuse, retry, cancellation and resource limits. Follow one handler and its direct trigger, bindings and downstream operations. Keep general infrastructure provisioning and framework rendering with their owners unless they directly determine invocation correctness.
@@ -44,3 +36,5 @@ Prioritize reported success with lost required work, cross-invocation identity/d
 ## Evidence requirements
 
 Cite handler/configuration `path:line`, trigger/runtime, affected event or user state, expected guarantee, observed result and durable-state evidence. Give one repair direction at the lifetime, identity, delivery or admission owner and a meaningful regression route. Distinguish local ordering evidence from production scheduling, quotas, disconnect and provider durability guarantees.
+
+Pass the original event/principal, runtime configuration, selected pending/rejected/replayed boundary and expected response/effect into Improve Serverless Runtime. Preserve which layers were actually exercised; a familiar provider name or successful emulator result is not evidence for unobserved lifetime behaviour.

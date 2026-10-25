@@ -4,6 +4,7 @@
 import argparse
 import hashlib
 import json
+import re
 import sys
 from pathlib import Path
 from catalog_site import load_locales, render_catalog, LANGUAGES
@@ -32,7 +33,16 @@ def search(rows, query='', mode=None, skill=None):
         if skill and row['skill'] != skill: continue
         score = match_score(index[row['id']], query)
         if score is not None: result.append((score, row))
-    return [row for _, row in sorted(result, key=lambda item: -item[0])]
+    return [row for _, row in sorted(result, key=lambda item: (-item[0],
+        item[1]['mode'] != 'audit' if query.strip() else False, item[1]['id'] if query.strip() else ''))]
+
+
+def purpose(text, title):
+    section = re.search(r'^## (?:Goal(?: and scope)?|Purpose|Scenario|Objective)\s*\n+(.+?)(?=\n\n|\n## |\Z)', text, re.M|re.S)
+    if not section:
+        return title
+    value = re.sub(r'\[([^]]+)\]\([^)]+\)', r'\1', section[1])
+    return ' '.join(value.replace('`', '').split())
 
 
 def render_html(rows):
@@ -42,10 +52,12 @@ def render_html(rows):
 def refresh():
     catalog=load_catalog()
     english = load_locales()['en']
+    purposes = json.loads((ROOT/'assets/catalog/search-lexicon.json').read_text(encoding='utf-8'))['purposes']
     for row in catalog['recipes']:
         row['title'] = english['titles'][row['id']]
         row['category'] = english['categories'][row['skill']]
         row['summary'] = english['summaries'][row['skill']]
+        row['purpose'] = purposes.get(row['id']) or purpose(contained_path(row['path']).read_text(encoding='utf-8'), row['title'])
         row['example'] = english['ui']['prompt'].format(skill=row['skill'], title=row['title'], id=row['id'])
         row['sha256']=hashlib.sha256(contained_path(row['path']).read_bytes()).hexdigest()
     catalog['skills']=len(list((ROOT/'skills').glob('*/SKILL.md')))

@@ -13,10 +13,10 @@
     {
       "name": "vibe-coding-library",
       "source": "./plugins/vibe-coding-library",
-      "description": "Search 241 engineering workflows and load selected guidance through a public, read-only MCP server."
+      "description": "Engineering methods for any MCP coding agent, with current-step retrieval, evidence handoffs and verification."
     }
   ],
   "metadata": {
-    "description": "Vibe Coding: engineering skills and workflows for Claude Code and Codex."
+    "description": "Engineering workflows through universal MCP, with native skill packages for Claude Code and Codex."
   }
 }

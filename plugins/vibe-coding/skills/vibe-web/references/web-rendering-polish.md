@@ -8,14 +8,6 @@ Implement one selected web rendering or server-action correction and verify the 
 
 The selected route/action, framework/runtime version, rendering mode, affected user state, trusted session/data owner and expected initial and post-interaction behavior. Recover available facts from the repository and supplied reproduction.
 
-## Domain invariants
-
-- Server HTML and the first browser render use equivalent initial data; later preference updates preserve the product’s intended state.
-- Serialized payloads and personalized caches expose only data authorized for the current request identity.
-- Server mutations enforce validation and object/tenant authorization using trusted identity independently of browser controls.
-- A committed mutation and its directly affected rendered/cached view agree under the selected freshness contract.
-- Loading, failure, navigation and retry states preserve usable interaction and do not create unauthorized or duplicate durable effects.
-
 ## Goal and scope
 
 Restore the contract from server inputs through initial HTML, hydration, interaction and authoritative mutation. Include directly affected serialization, cache invalidation, error handling and tests. Keep independent component redesign, routing migrations and framework upgrades out of the change unless required by the defect.
@@ -38,3 +30,5 @@ Name the route, rendering mode, framework/runtime versions and affected user sta
 Run the repository's relevant type/build checks and targeted tests. For hydration, exercise real server rendering and a browser reload with both default and non-default saved state; assert recoverable errors and rendered content, then operate the controls. A snapshot of a component function is insufficient. For actions, exercise legitimate ownership, forged identity, signed-out access, invalid input and observable persisted state; add HTTP/framework checks when the changed layer owns them.
 
 Report the owner changed, user-visible behavior restored, commands/results and untested deployment boundaries. Do not claim a warning-suppression flag fixes divergent content or that action-unit tests verify browser hydration.
+
+Hand the boundary check the original fixture, expected initial/eventual states, changed rendering or mutation owner, authorized and rejected HTTP cases, and any directly affected cache reads. After a correction, rerun the failed route/state and an unchanged control before Patch Checking. A newly changed serialization, session or cache boundary invalidates earlier evidence for that boundary.

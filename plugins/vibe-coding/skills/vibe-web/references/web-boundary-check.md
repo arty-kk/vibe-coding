@@ -8,14 +8,6 @@ Verify the selected server/browser boundary against concrete acceptance criteria
 
 The selected route/action, framework/runtime version, rendering mode, affected user state, trusted session/data owner and expected initial and post-interaction behavior. Recover available facts from the repository and supplied reproduction.
 
-## Domain invariants
-
-- Server HTML and the first browser render use equivalent initial data; later preference updates preserve the product’s intended state.
-- Serialized payloads and personalized caches expose only data authorized for the current request identity.
-- Server mutations enforce validation and object/tenant authorization using trusted identity independently of browser controls.
-- A committed mutation and its directly affected rendered/cached view agree under the selected freshness contract.
-- Loading, failure, navigation and retry states preserve usable interaction and do not create unauthorized or duplicate durable effects.
-
 ## Establish evidence
 
 Record the route, framework/runtime versions, SSR/static/streaming mode, expected initial data, trusted identity source and supported browser. Identify server render, serialized payload, first client render, later effects, mutation and cache owner. State which of these layers the available environment can exercise.
@@ -40,3 +32,5 @@ For personalized caches, compare two identities and check the relevant post-writ
 For each criterion record the actual route/state, request or UI steps, expected output, observed output and pass/fail/not exercised status. Tie failures to `path:line` and the responsible contract when source evidence supports it. If the environment lacks the framework server, credentials, browser or deployment layer, keep those checks open instead of inferring success from static inspection.
 
 End with the supported conclusion and the narrow next repair or integration check. Do not broaden a verification request into a redesign or unrequested deployment.
+
+For an implementation workflow, return a failed route/state with the first divergent layer to the repair step. Carry passing evidence and remaining deployment limits to Patch Checking. After any correction, verify the changed boundary again; a clean build alone cannot close an unexercised browser, HTTP-authorization or shared-cache criterion.

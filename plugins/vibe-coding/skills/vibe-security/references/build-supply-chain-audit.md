@@ -44,3 +44,5 @@ Prioritize reachable credential theft, unauthorized publication, arbitrary code 
 Cite the triggering actor/event, exact workflow/source lines, controlled value, execution sink, available privilege and resulting impact. Provide a minimal safe reproduction or complete source trace, one correction at the trust owner and an observable regression. Do not execute an exploit against a live registry or transmit credentials to prove reachability.
 
 Bound the conclusion to inspected workflows and inputs. Keep checksum integrity, signer identity, build provenance and dependency inventory distinct; none individually proves every other property.
+
+Pass the controlling actor/trigger/ref, exact execution sink, available privileges and synthetic input to Improve Build Supply Chain. Preserve a valid contribution/build control so the proposed correction can be judged against required release behavior. Do not replace a demonstrated path with a generic tool/registry recommendation.

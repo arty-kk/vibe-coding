@@ -1,9 +1,5 @@
 # Improve Reverse Engineering
 
-## Operation
-
-Implement the requested change and verify its directly affected behavior.
-
 ## Goal
 
 Implement the selected compatibility behavior against an authorized reference and a reproducible comparison corpus.
@@ -21,3 +17,5 @@ Implement the selected compatibility behavior against an authorized reference an
 - Run deterministic fixture/golden tests and differential tests against an authorized reference where available.
 - Exercise version skew, malformed/truncated/unknown fields, duplicate/retry, concurrent operations, restart, and representative data scale.
 - Verify fixture redaction, provenance, deterministic normalization, and absence of unsupported claims.
+
+First preserve the reference capture and a failing differential case. Correct the parser, adapter or state owner at the observed boundary, then replay the same corpus without changing expectations to fit the candidate. Pass candidate/reference identities and allowed normalization to the golden-master check. A semantic mismatch returns to that owner; an unsupported reference branch remains unknown. After accepted comparison, finish Patch Checking on the resulting change.

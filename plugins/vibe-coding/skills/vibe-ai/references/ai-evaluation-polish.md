@@ -21,3 +21,5 @@ Improve evaluation of the selected AI behavior with valid datasets, calibrated s
 - Re-run the same versioned evaluation and verify reproducibility or report measured stochastic variance.
 - Validate scorer/judge behavior against labelled cases and report disagreement by slice/failure class.
 - Run paired baseline/candidate comparison with uncertainty, latency, cost, and safety evidence; list private/online gates separately.
+
+Start with labelled examples on which the existing scorer/judge disagrees with the accepted decision contract. Repair the dataset/scoring boundary, test known acceptable and unacceptable outputs, then rerun a fixed paired candidate/baseline set. Keep training/tuning data separate from release evidence. If a required slice still fails, correct that owner or retain the gate; once the selected evaluation contract is supported, finish Patch Checking.

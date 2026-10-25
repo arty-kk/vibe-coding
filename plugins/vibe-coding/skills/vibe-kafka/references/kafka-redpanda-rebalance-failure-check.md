@@ -1,9 +1,5 @@
 # Kafka Redpanda Rebalance & Failure Check
 
-## Operation
-
-Verify the selected behavior against explicit expected results; do not change product code.
-
 ## Goal
 
 Verify the selected record delivery, ordering and processing guarantee across required crash or rebalance windows.
@@ -25,3 +21,11 @@ Select the cases that test the requested guarantee. Define expected state/effect
 ## Verification
 
 Compare records, offsets, partition order, business effect count and recovery lag at the actual selected acknowledgment/commit boundary.
+
+## Execute and decide
+
+Use a dedicated topic/group and deterministic records carrying both ordering keys and operation IDs. Establish normal send/process/commit behavior, then synchronize one selected ack, side-effect or offset boundary before interrupting or rebalancing the consumer.
+
+After recovery, inspect the actual record/offset sequence, assignment ownership and authoritative business effect, not only group lag or successful poll calls. Distinguish valid distinct records sharing a key from retries of the same operation. For transactional flows, inspect the supported reader isolation and the actual transaction's scope.
+
+Return passed, failed or blocked for the stated guarantee with record identities, event order and effects. Pass a failed case into the authorized repair, repeat it with its control and finish Patch Checking for code/config changes. Cluster faults and replay into effectful consumers require an appropriate test environment.

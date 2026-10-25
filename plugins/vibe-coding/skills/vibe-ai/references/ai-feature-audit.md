@@ -26,3 +26,7 @@ AI entrypoints, model clients, prompt/message builders, structured-output schema
 
 - Include model/prompt/tool/index/eval owner when relevant, expected behavior, acceptance criteria, and validation direction.
 - Do not report abstract AI risks without current repo reachability, user impact, cost impact, or regression risk.
+
+## Trace and hand off
+
+Replay one representative input through context construction, model response, parsing, state/effects and the displayed result. Locate the first boundary where observed behavior diverges from the accepted contract. Preserve the input, version/config identity, raw-to-typed transition and expected observation for Improve AI Feature. Separate a deterministic parser/policy defect from model-quality variance; they require different corrections and evidence.

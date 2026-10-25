@@ -1,9 +1,5 @@
 # Realtime Frontend Audit
 
-## Operation
-
-Inspect the selected behavior and report evidence-backed defects; do not change product code.
-
 ## Goal and scope
 
 Audit the existing query-state library and real-time UI behavior (including TanStack Query when present) across cache identity, mutations, optimistic state, subscriptions, reconnect/offline persistence, rendering, and recovery.
@@ -26,3 +22,7 @@ Audit the existing query-state library and real-time UI behavior (including TanS
 3. Trace overlapping mutation success/failure, delayed response, duplicate/out-of-order event, sequence gap, reconnect, focus, offline hydration, logout/login, and component unmount.
 4. Profile representative interaction and sustained event stream using commit duration/count, long tasks, network requests, cache notifications, memory, and reconnect attempts.
 5. Separate server/network latency, query scheduling, cache churn, reconciliation, render cost, and browser work before proposing optimization.
+
+## Handoff
+
+Retain query/entity/principal keys, initial server version, pending operation IDs and the exact response/event interleaving. Identify the first cache, rollback, sequence or rendering owner that violates the displayed-state contract. Pass that trace and expected authoritative-plus-pending result into Improve Realtime Frontend; incidental rerenders or duplicate caches are findings only when their behavior/cost consequence is demonstrated.

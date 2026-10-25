@@ -1,9 +1,5 @@
 # Improve Product Requirements
 
-## Operation
-
-Implement the requested change and verify its directly affected behavior.
-
 ## Goal
 
 Align the selected product requirement or journey with repository behavior, acceptance criteria, tests, and documentation. The patch may update product docs, UI/API behavior, copy, analytics, tests, or maps only when they belong to the same change at the defining source.
@@ -30,3 +26,5 @@ Use the selected requirement, audit finding, product map row, or explicit user t
 ## Validation
 
 Run repository-native checks for the changed product path, including relevant tests, type checks, lint/build, storybook/preview/screenshot checks, analytics assertions, or manual acceptance scenarios when available. Report unavailable gates honestly.
+
+Implement the accepted outcome at its defining decision/behavior owner and synchronize direct surfaces, tests and documentation. Feed the same requirement, actor/state and evidence into Product Acceptance Check, or Product Decision & Metrics Check when the selected metric/event meaning is part of acceptance. A failure returns to its owner; after correction and recheck, finish Patch Checking without rewriting the requirement to match a bug.

@@ -1,9 +1,5 @@
 # Redis Queue Load & Recovery Check
 
-## Operation
-
-Verify the selected behavior against explicit expected results; do not change product code.
-
 ## Goal
 
 Verify the selected Redis-backed job or stream’s effect, lease and recovery guarantee within its resource limits.
@@ -25,3 +21,11 @@ Select the cases that test the requested guarantee. Define expected state/effect
 ## Verification
 
 Compare job/stream state, durable effect count, pending or stalled ownership, connection/memory bounds and recovery using the selected framework’s semantics.
+
+## Execute and decide
+
+Use dedicated keys/queues and a controlled durable effect keyed by logical operation. Establish normal enqueue/processing/completion, then hold the selected effect/ack/lock-renewal boundary before interruption, expiry or reclaim.
+
+After recovery, inspect framework ownership/status, actual attempts, business effects and retained deduplication state. A stale worker's completion being rejected does not prove its external effect was prevented. If cleanup permits job-ID reuse, compare that behavior with the separate business-operation contract. For load, preserve payload distribution, concurrency and measurement window.
+
+Return passed, failed or blocked with framework, event order, effects and resource evidence. Pass a failure to the authorized owner repair, replay its control/history after correction and finish Patch Checking. Failover, retention mutation and backlog drills require a suitable test environment.

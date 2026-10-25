@@ -10,6 +10,10 @@ Map selected access decisions across subject, action, resource, attributes, scop
 
 Suggested saved map: `docs/rbac_abac_policy_map.md`.
 
+## Build the view
+
+Choose representative subject/action/resource/scope combinations and follow attribute construction, rule composition and final enforcement. Record precedence when roles, attributes, ownership or explicit denies conflict. Join API, UI and job decisions by the evaluated policy inputs, preserving different principals. Expose unknown default/deny behavior as an unresolved decision; a role enum or frontend guard is not proof of enforcement.
+
 ## Inspect
 
 Policy helpers/engines, role enums, permission tables, membership/resource ownership models, attribute sources, feature/plan gates, admin/staff/impersonation, API handlers, server actions, frontend guards, workers, migrations, tests, seeds, docs, audit logs, and existing auth maps.

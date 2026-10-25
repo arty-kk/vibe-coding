@@ -97,6 +97,8 @@ def render_catalog(rows, root=ROOT, offline=True):
         '__DOMAINS__': str(len({row['group'] for row in rows})),
         '__RECIPE_DATA__': script_json(expanded),
         '__SEARCH_DATA__': script_json(build_index(rows, locales, root)),
+        '__SEARCH_LEXICON__': script_json(json.loads((source/'search-lexicon.json').read_text(encoding='utf-8'))),
+        '__ENGINE_JS__': (source/'engine.js').read_text(encoding='utf-8'),
         '__LOCALE_DATA__': script_json({code: {k: v for k, v in data.items() if k != 'policy'} for code, data in locales.items()}),
         '__CATALOG_JS__': (source/'catalog.js').read_text(encoding='utf-8'),
     }

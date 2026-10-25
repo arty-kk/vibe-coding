@@ -10,6 +10,10 @@ Map the selected provider or service contracts, adapters, configuration ownershi
 
 Suggested saved map: `docs/integration_map.md`.
 
+## Build the view
+
+Start at a business caller and follow its adapter, request/response mapping, configuration, callback and retry boundary. Connect timeouts and idempotency to the operation that can create an external effect. Separate provider guarantees evidenced by version/configuration from application assumptions and test-double behavior. Record credential names and ownership only; never read or reproduce secret values to fill the map.
+
 ## Inspect
 
 API clients, SDK wrappers, env/config files, secrets references, webhooks, callback routes, background jobs, provider-specific adapters, generated clients, mocks/fakes, tests, rate limit code, retry policies, observability, docs, and deployment manifests.

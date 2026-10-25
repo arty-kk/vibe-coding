@@ -33,7 +33,10 @@ class PackageTests(unittest.TestCase):
         self.assertTrue(found)
         self.assertTrue(all(r['mode']=='check' for r in found))
         self.assertEqual([], catalog.search(rows, 'no-matching-recipe-47291'))
-        self.assertEqual(3, len(catalog.search(rows, 'платежи')))
+        payments = catalog.search(rows, 'платежи')
+        self.assertEqual({'payments-provider-audit', 'payments-provider-polish', 'payments-webhook-reconciliation-check'},
+                         {row['id'] for row in payments[:3]})
+        self.assertEqual(3, len(catalog.search(rows, 'платежи', skill='vibe-payments')))
 
     def test_reading_outside_plugin_is_rejected(self):
         with self.assertRaises(ValueError):

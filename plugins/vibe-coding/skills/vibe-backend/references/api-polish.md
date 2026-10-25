@@ -6,7 +6,7 @@ Implement the requested change and verify its directly affected behavior.
 
 ## Goal
 
-Improve the selected API surface end to end: route/handler, validation, domain/service boundary, persistence side effects, errors, docs, tests, and direct consumers. Do not merely rename fields or tidy controllers while the contract remains ambiguous or inconsistent.
+Complete the selected API contract from its defining schema/handler through directly affected persistence, errors and consumers. The correction may be small; it is complete when the same accepted behavior holds at every affected boundary.
 
 ## Scope selection
 
@@ -33,3 +33,5 @@ Improve the selected API surface end to end: route/handler, validation, domain/s
 ## Validation
 
 Run repository-native checks for the touched API surface. Prefer endpoint/unit/integration tests that exercise success, validation failure, auth/permission failure, conflict/idempotency, and consumer behavior. If external services or credentials block full validation, state exactly what was not exercised.
+
+First pin the failing request/state and expected consumer interpretation. Correct the authoritative schema, validation, service, transaction or serializer; regenerate dependent clients from their source when needed. Replay the original case and valid control, inspecting effects independently of status codes. A remaining compatibility failure enters the contract-evolution workflow; accepted behavior proceeds to Patch Checking on the full resulting change.

@@ -5,7 +5,18 @@ description: "Review or edit product copy, localization, notification templates 
 
 # Copy, localization & SEO
 
-Apply [the working contract](../../references/workflow.md) once; read only the recipe for the requested result.
+Apply [the working contract](../../references/workflow.md) once. Select the content owner and the user state before rewriting a sentence.
+
+## Workflows
+
+- **Product/landing copy:** Product & Landing Copy Audit → Improve Product & Landing Copy → verify the claim, action destination and rendered state → [Patch Checking](../vibe-review/references/patch-checking.md).
+- **Localization:** Localization Audit → Improve Localization → replay explicit locale/default/fallback and affected formatting/rendering paths → Patch Checking.
+- **Notification wording:** Notification Content Audit → Improve Notification Content → synthetic channel/locale previews and destination checks → Patch Checking. Sending a real message is not part of this content workflow.
+- **Search visibility:** SEO GEO Audit → Improve SEO GEO → built and, when authorized, deployed route/metadata/link checks → Patch Checking. Indexing, rankings and AI citations require separate account/field evidence.
+
+An established wording/translation defect can enter correction directly. Audit-only work stops at findings; a requested change carries the exact claim/key/template/route, its defining product fact and expected observation into the next prompt.
+
+Recheck failed copy in its actual state and renderer after correction. When several artifacts expose the same fact/version, update their maintained source or synchronization boundary. Finish with truthful visible content and verified destinations; unsupported product promises or missing policy decisions remain gates rather than creative copy.
 
 ## Recipes
 

@@ -1,7 +1,7 @@
 {
   "name": "vibe-coding-library",
-  "version": "1.5.1",
-  "description": "Search 241 engineering workflows and load the selected working context through a public, read-only MCP server.",
+  "version": "1.6.0",
+  "description": "Engineering playbooks for any MCP coding agent: find a method, load its current prompt and follow its verification workflow.",
   "author": {
     "name": "Arty S.",
     "url": "https://github.com/arty-kk"
@@ -22,16 +22,16 @@
   "interface": {
     "displayName": "Vibe Coding Library",
     "shortDescription": "Coding workflows on demand",
-    "longDescription": "Vibe Coding Library searches 241 public engineering workflows and loads the selected recipe with its domain skill, working contract and required references. Search and catalog metadata support English, Spanish, Russian and Simplified Chinese; technical instructions are in English. Workflows cover repository mapping, planning, code review, API contracts, data, infrastructure, AI and release checks. One bundled skill guides workflow selection. The read-only MCP tools require no account or API key. Your agent applies retrieved guidance using its project tools and permissions.",
+    "longDescription": "Vibe Coding Library supplies engineering methods to any coding agent supporting MCP over Streamable HTTP. Search from a bug, implementation goal, planning task, patch review or verification need without knowing a workflow name. The two read-only tools find among 241 workflow entries and load the current prompt, domain instructions and a conditional execution outline. Follow evidence handoffs through repair, relevant verification and repeated Patch Checking; later prompt bodies load only when reached. Search supports English, Spanish, Russian and Simplified Chinese; technical instructions are English. No publisher account or API key is required. Your agent uses its own project tools, rules and permissions; the service does not inspect or modify your repository.",
     "developerName": "Arty S.",
     "category": "Developer Tools",
     "capabilities": [
       "Read"
     ],
     "defaultPrompt": [
-      "Find a workflow for checking MCP protocol and authorization.",
-      "Find an SQL audit workflow and load its instructions.",
-      "Find a cache audit workflow and load its instructions."
+      "Fix stale cache after a write using the relevant engineering workflow.",
+      "Review this patch and verify the resulting change.",
+      "Verify MCP tool discovery and authorization."
     ],
     "websiteURL": "https://arty-kk.github.io/vibe-coding",
     "supportURL": "https://github.com/arty-kk/vibe-coding/issues",
@@ -44,19 +44,19 @@
   "extensions": {
     "com.openai": {
       "publication": {
-        "release_notes": "Vibe Coding Library 1.5.1 fixes UTF-8 handling in the cross-platform package builder and snapshot generator, preserving localized metadata on Windows. The public MCP search and selected workflow retrieval use the unchanged audited instruction library 1.4.1. Both read-only tools, stable IDs, schemas and workflow content remain compatible with 1.5.0.",
+        "release_notes": "Vibe Coding Library 1.6.0 revises every skill and prompt workflow, adds explicit audit/repair/check handoffs and bounded repeated Patch Checking, and improves task-driven MCP discovery for any compatible coding agent. Search adds natural technical goals, exact-name aliases, multilingual concepts, individual purposes and match reasons. Retrieval exposes a conditional step outline and context reuse while preserving the two tool names and all 241 IDs. Instructions and client packages now share version 1.6.0. The website presents universal MCP connection alongside Codex and Claude examples.",
         "translations": {
           "es-ES": {
             "subtitle": "Flujos de código bajo demanda",
-            "description": "Busca 241 flujos de ingeniería y carga la receta seleccionada con las instrucciones de su área, el contrato de trabajo y las referencias necesarias. Catálogo en inglés, español, ruso y chino simplificado; instrucciones técnicas en inglés. Las herramientas MCP son de solo lectura y no requieren cuenta ni clave de API."
+            "description": "Métodos de ingeniería para cualquier agente de código con MCP por Streamable HTTP. Busca entre 241 entradas por objetivo o síntoma y carga el paso actual, sus instrucciones y una secuencia condicional de reparación y verificación. Búsqueda en inglés, español, ruso y chino simplificado; instrucciones técnicas en inglés. Herramientas de solo lectura, sin cuenta ni clave API del editor."
           },
           "ru-RU": {
             "subtitle": "Сценарии разработки по запросу",
-            "description": "Поиск по 241 инженерному сценарию и загрузка выбранного сценария с инструкциями области, рабочим контрактом и необходимыми справочными материалами. Каталог поддерживает английский, испанский, русский и упрощённый китайский; технические инструкции написаны на английском. MCP-инструменты работают только на чтение и не требуют аккаунта или ключа API."
+            "description": "Инженерные workflow для кодинговых агентов с MCP через Streamable HTTP. Поиск среди 241 сценария по задаче или симптому и загрузка текущего промпта с инструкциями и условной цепочкой исправления и проверок. Поиск на английском, испанском, русском и упрощённом китайском; технические инструкции на английском. Два тула работают только на чтение, аккаунт и API-ключ издателя не нужны."
           },
           "zh-CN": {
             "subtitle": "按需加载开发工作流",
-            "description": "搜索 241 个工程工作流，按需加载所选工作流、领域技能、工作约定及必要参考资料。目录支持英语、西班牙语、俄语和简体中文，技术说明为英语。MCP 工具仅提供只读访问，无需账户或 API 密钥。"
+            "description": "适用于支持 MCP Streamable HTTP 的编码代理。根据任务目标或故障症状搜索 241 个工程入口，加载当前提示、领域说明及带条件的修复与验证步骤。搜索支持英语、西班牙语、俄语和简体中文，技术说明为英语。两个工具仅提供只读指导，无需发布者账户或 API 密钥。"
           }
         }
       }

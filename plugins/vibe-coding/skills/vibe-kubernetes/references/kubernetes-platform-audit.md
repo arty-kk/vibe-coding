@@ -1,9 +1,5 @@
 # Kubernetes Platform Audit
 
-## Operation
-
-Inspect the selected behavior and report evidence-backed defects; do not change product code.
-
 ## Goal and scope
 
 Audit a Kubernetes workload as a deployable runtime contract: rollout, probes, scheduling, networking, storage, policy, and operator recovery.
@@ -26,3 +22,7 @@ Audit a Kubernetes workload as a deployable runtime contract: rollout, probes, s
 3. Check scheduler fit, requests/limits, priority/affinity/topology spread, HPA inputs, stabilization, and minimum healthy capacity.
 4. Verify service selectors/ports, DNS names, TLS ownership, NetworkPolicy directions, and trusted proxy boundaries.
 5. For stateful work, inspect attach/mount/recovery/backup and data-consistency behavior after reschedule or partial failure.
+
+## Handoff
+
+Return source/render identities, the failing resource relationship or lifecycle transition, expected traffic/state guarantee and actual evidence. Distinguish a voluntary Eviction API constraint from controller rollout settings or involuntary node loss; a PDB is not a universal availability shield. Pass the violated boundary into Improve Kubernetes Platform. Use the target version's [disruption semantics](https://kubernetes.io/docs/concepts/workloads/pods/disruptions/).

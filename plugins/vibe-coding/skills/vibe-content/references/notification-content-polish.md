@@ -13,3 +13,5 @@ Correct the selected template, language, interpolation or destination at its mai
 ## Verification
 
 Render representative synthetic inputs, missing/invalid values and selected success/failure/expired states in the affected channel/locales. Check links and accessibility where relevant. Report preview evidence and provider/channel rendering not exercised; do not send a live message to validate wording.
+
+Use the same event/recipient fixture before and after the correction, including the supported destination/expiry condition. Verify the rendered body and actual link target, not only the translation key. A failed preview returns to the template/data mapping owner; accepted wording proceeds to Patch Checking. Consent or delivery changes remain with their own authorized workflow.

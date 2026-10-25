@@ -1,9 +1,5 @@
 # Improve Realtime Frontend
 
-## Operation
-
-Implement the requested change and verify its directly affected behavior.
-
 ## Goal
 
 Correct the selected client-state or subscription behavior under overlapping mutations, reconnect and identity changes.
@@ -21,3 +17,5 @@ Correct the selected client-state or subscription behavior under overlapping mut
 - Run component/integration tests with deterministic query client, network/event fixtures, fake time where appropriate, and real browser profiling for performance claims.
 - Exercise overlapping mutations, rollback, duplicate/out-of-order/gap events, reconnect/focus/offline, persisted-cache user switch, unmount, and slow consumer behavior.
 - Compare before/after request count, cache transitions, commit duration/count, long tasks, memory, event lag, and recovery.
+
+Repair the key, operation-scoped rollback, version/continuity or lifecycle owner without adding a second mutable server-state store. Replay the original interleaving and inspect accepted server state plus remaining optimistic operations, then feed that sequence and any measured workload to the profiling/recovery check. Recheck failures at their owner and finish Patch Checking; do not discard newer independent work merely to restore an old snapshot.

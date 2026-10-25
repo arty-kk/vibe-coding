@@ -5,7 +5,29 @@ description: "Audit, repair or verify application identity, access policy, tenan
 
 # Permissions, data & business rules
 
-Apply [the working contract](../../references/workflow.md) once; read only the recipe for the requested result.
+Apply [the working contract](../../references/workflow.md) once. Choose the business decision/data owner before selecting a technical fix.
+
+## Workflows
+
+| Boundary | Prompt chain and acceptance evidence |
+|---|---|
+| Identity/session and general access | Auth Permissions Audit → Improve Auth Permissions → allowed/denied session/access cases; OAuth OIDC Session Check when that protocol owns the selected flow |
+| Role/attribute policy | RBAC ABAC Policy Audit → Improve RBAC ABAC Policy → RBAC ABAC Matrix Check |
+| Tenant resource isolation | Multi Tenant Isolation Audit → Improve Multi Tenant Isolation → Tenant Isolation Check |
+| Local plan, quota and entitlement | Billing Entitlements Audit → Improve Billing Entitlements → plan/lifecycle/quota cases; policy matrix check where the changed access decision needs it |
+| Persistence/state model | Data Model Audit → Improve Data Model → schema/constraint, migration and reader/writer acceptance |
+| Source-to-sink data | Data Pipeline & Quality Audit → Improve Data Pipeline & Quality → identity/window/checkpoint reconciliation and retry recovery |
+| Repeatable notebook | Notebook Productionization Audit → Improve Notebook Productionization → clean ordered execution, artifact lineage and selected restart/resource checks |
+| Product event/metric | Product Analytics Audit → Improve Product Analytics → producer → event grain/identity → transform → consumer value |
+| Experiment decision | Experiment Design Audit → Improve Experiment Design → assignment/exposure/data-quality and versioned analysis checks |
+
+Start at implementation for a known defect or clear requirement, or at a named check for verification-only work. Audits and plans do not authorize changes. Carry the subject/resource/state or dataset/window identity, expected decision/value, authoritative owner and distinguishing input into the next prompt.
+
+## Recheck and completion
+
+An access rejection is verified only when it prevents the protected effect and a permitted control works. A data/metric result is verified at its consumer with the relevant grain, time and lineage, not merely by a successful job. Failed acceptance returns to the corresponding policy, transaction, transform or analysis owner; repeat the affected cases after repair.
+
+For every changed patch, finish [Patch Checking](../vibe-review/references/patch-checking.md) until clean or blocked. Keep missing product/legal decisions, private datasets and external identity/payment/scheduler behavior as explicit gates. Do not invent pricing, policy or experiment success to close the workflow.
 
 For OAuth/OIDC verification, select the session check. For a requested authentication fix, use Auth Permissions Polish and apply the relevant protocol checks during verification.
 

@@ -1,9 +1,5 @@
 # Improve Reliability
 
-## Operation
-
-Implement the requested change and verify its directly affected behavior.
-
 ## Goal
 
 Implement one selected reliability fix at the owner layer without broad redesign, making failure handling explicit, safe, observable, and validated.
@@ -32,3 +28,5 @@ The selected failure path, its owner layer, direct callers/consumers, config/env
 ## Validation
 
 Run repository-native checks for the changed slice. Prefer tests that exercise the owner invariant or hot path, then directly affected integration/build/type checks. If a check cannot run, state the concrete limitation.
+
+Correct the owning deadline, retry, effect commit or recovery path using the original operation and failure sequence. Replay the failed case and a normal control, inspecting durable state, unfinished work and error/recovery visibility. Return failed acceptance to that owner, then finish Patch Checking once supported. Keep mitigation and full recovery distinct when an external rollout or observation window remains required.

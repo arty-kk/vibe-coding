@@ -1,9 +1,5 @@
 # Experiment Design Audit
 
-## Operation
-
-Inspect the selected behavior and report evidence-backed defects; do not change product code.
-
 ## Goal and scope
 
 Audit a product experiment from estimand and randomization through exposure, outcomes, guardrails, analysis, and rollout decision.
@@ -24,3 +20,7 @@ Audit a product experiment from estimand and randomization through exposure, out
 3. Inspect SRM, pre-period balance, missingness, exposure timing, event semantics, windows, outliers, repeated users, and clustering.
 4. Reproduce power/uncertainty and analysis choices, including sequential/multiple-comparison handling and sensitivity checks.
 5. Check rollback/rollout policy, operational guardrails, data freshness, and who owns the final decision.
+
+## Handoff
+
+Return the estimand/unit, affected assignment or exposure path, analysis window and concrete data-quality/decision violation. Retain configuration/data identity and the discriminator for contamination, missingness or unit mismatch. Pass these to Improve Experiment Design; an attractive treatment effect is not evidence that the assignment/exposure contract is valid.

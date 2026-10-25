@@ -14,3 +14,5 @@ Update the existing maps affected by the requested change, supplied diff or fres
 ## Verification
 
 Check updated file/symbol links, IDs and relationships. Review the map diff for accidental unrelated rewrites. Complete all requested map updates; name a real missing decision or environment rather than stopping after an arbitrary subset. Product code and other documentation are outside a map-only update.
+
+Feed the changed entries and source revision into Map Staleness Check again. Repair remaining stale links or claims from that check, then repeat it. Once the maintained maps agree with the required source state, review the resulting documentation patch with Patch Checking. Stop blocked when a required product decision or inaccessible source cannot be resolved; do not replace the missing fact with a plausible description.

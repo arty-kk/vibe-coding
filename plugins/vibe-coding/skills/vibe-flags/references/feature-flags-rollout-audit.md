@@ -1,9 +1,5 @@
 # Feature Flags Rollout Audit
 
-## Operation
-
-Inspect the selected behavior and report evidence-backed defects; do not change product code.
-
 ## Goal and scope
 
 Audit one feature flag, rollout control, experiment gate, kill switch, environment flag, or gradual-release boundary for consistency, safety, ownership, and cleanup.
@@ -19,3 +15,5 @@ Audit one feature flag, rollout control, experiment gate, kill switch, environme
 ## Audit method
 
 Trace the selected flag from definition/config/provider through server checks, client checks, API behavior, jobs, analytics, tests, deployment, docs, and cleanup references.
+
+Select a targeted and untargeted principal plus the actual default/degraded-provider policy. Follow evaluation identity into feature effects and the point where exposure is emitted. Inspect state created while enabled and what old/off consumers do with it. Pass the failed context/evaluation/transition and expected behavior to Improve Feature Flags Rollout rather than assuming that flipping the boolean alone restores safety.

@@ -29,7 +29,7 @@ export default async function Home({searchParams}: PageProps) {
       <p className="lead">{c.lead}</p>
       <div className="facts"><span><b>{status.workflows}</b> {c.workflows}</span><span><b>2</b> {c.tools}</span><span><b>4</b> {c.languages}</span></div>
     </section>
-    <section className="connection" aria-labelledby="connect-title"><div><h2 className="eyebrow" id="connect-title">{c.connect}</h2><code>{endpoint}</code><p>{c.connection}</p></div><CopyEndpoint endpoint={endpoint} c={c} /></section>
+    <section className="connection" id="connect" aria-labelledby="connect-title"><div><h2 className="eyebrow" id="connect-title">{c.connect}</h2><code>{endpoint}</code><p>{c.connection}</p><p>{c.connectionHelp}</p></div><CopyEndpoint endpoint={endpoint} c={c} /></section>
     <Demo modes={MODES} language={language} version={status.version} />
     <section className="about"><h2>{c.aboutTitle}</h2><div className="tool-grid"><article><h3><code>search_workflows</code></h3><p>{c.searchAbout}</p></article><article><h3><code>get_workflow</code></h3><p>{c.getAbout}</p></article></div><p>{c.about}</p><p>{text(c.offline, {skills: status.skills})} <a href="https://github.com/arty-kk/vibe-coding/blob/main/plugins/vibe-coding/docs/INSTALL.md">{c.offlineLink} →</a></p><a className="setup-link" href="https://github.com/arty-kk/vibe-coding/blob/main/plugins/vibe-coding-library/README.md">{c.setup} →</a></section>
     <footer><span>{c.service} {status.version} · {c.instructionVersion} {status.instruction_version}</span><a href="https://github.com/arty-kk/vibe-coding">{c.source}</a><a href="https://github.com/arty-kk/vibe-coding/issues">{c.support}</a><a href="/privacy">{c.privacy}</a><a href="/terms">{c.terms}</a></footer>

@@ -44,3 +44,5 @@ An additive field is not automatically safe for strict clients; a wire-compatibl
 ## Evidence requirements
 
 Cite schema and consumer `path:line`, version/encoding pair, minimal payload or operation, expected and observed outcome, affected rollout stage, one repair direction and regression route. Group failures under their authoritative contract owner. State which versions and consumer modes were exercised, and keep missing deployment or replay evidence visible.
+
+Pass the supported matrix, failing pair and payload, semantic expectation and rollout constraint to Improve API Contract Evolution. The implementation must preserve that matrix unless the user explicitly changes the compatibility promise. An uncertain consumer inventory is a named scope decision; it is not evidence that old consumers no longer exist.

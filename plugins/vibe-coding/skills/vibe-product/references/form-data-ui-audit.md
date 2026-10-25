@@ -1,9 +1,5 @@
 # Form & Data UI Audit
 
-## Operation
-
-Inspect the selected behavior and report evidence-backed defects; do not change product code.
-
 ## Goal and scope
 
 Audit a form, editor, table, search, filter, pagination, or data-entry surface against validation and persistence contracts.
@@ -21,3 +17,7 @@ Audit a form, editor, table, search, filter, pagination, or data-entry surface a
 2. Check client/server validation drift, timezone/locale/unit conversion, partial edit, refresh, back navigation, and conflicts.
 3. Inspect table identity, cursor/page semantics, selection across pages, and stale query behavior.
 4. Identify data loss, duplicate submission, misleading success, and inaccessible error recovery.
+
+## Handoff
+
+Retain field/record/query identity, initial draft/page state, exact user input, serialized payload and expected stored value. Locate the first representation, validation, mutation or query-state mismatch and feed it to Improve Form & Data UI. A success toast is not evidence of the persisted contract or stable selection across pages.

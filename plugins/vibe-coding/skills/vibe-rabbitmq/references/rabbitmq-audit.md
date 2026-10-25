@@ -1,9 +1,5 @@
 # RabbitMQ Audit
 
-## Operation
-
-Inspect the selected behavior and report evidence-backed defects; do not change product code.
-
 ## Goal and scope
 
 Audit RabbitMQ topology, publisher guarantees, acknowledgements, prefetch, quorum durability, dead lettering, and recovery as one delivery contract.
@@ -24,5 +20,9 @@ Audit RabbitMQ topology, publisher guarantees, acknowledgements, prefetch, quoru
 1. Map publish → exchange/binding → queue type/policy → delivery → side effect → ack/nack/requeue → DLX/re-drive.
 2. Inspect effective broker policy and client declaration together, including quorum arguments, TTL, delivery limit, overflow, and dead-letter routing.
 3. Trace unroutable publish, confirm timeout, connection/channel loss, consumer crash at ack boundaries, poison redelivery, and broker alarm behavior.
-4. Calculate in-flight capacity from consumers × prefetch × task footprint and compare it with downstream capacity and ordering requirements.
+4. Establish in-flight capacity from the effective QoS scope, consumer concurrency and observed message footprint; qualify unbounded/shared limits rather than applying one universal multiplication. Compare with downstream capacity and ordering requirements.
 5. Verify automatic recovery does not duplicate consumers or omit declarations and that shutdown cancels consumption and settles in-flight work deliberately.
+
+## Handoff
+
+Retain the exchange/binding/queue policy, operation identity and failing route/confirm/effect/ack sequence. Separate publisher uncertainty from consumer redelivery and from the business effect's deduplication owner. Pass the first violated guarantee and observable acceptance to Improve RabbitMQ; an empty queue or broker ack alone cannot establish completed work.

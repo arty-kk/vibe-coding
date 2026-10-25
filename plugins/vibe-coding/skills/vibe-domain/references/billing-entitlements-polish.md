@@ -1,9 +1,5 @@
 # Improve Billing Entitlements
 
-## Operation
-
-Implement the requested change and verify its directly affected behavior.
-
 ## Goal
 
 Improve the selected billing, plan, quota, entitlement, or lifecycle surface so UI, API, jobs, tests, and user-facing states align with the repository's actual source of truth.
@@ -33,3 +29,5 @@ Improve the selected billing, plan, quota, entitlement, or lifecycle surface so 
 ## Validation
 
 Run relevant repository-native checks. When possible, trace at least one allowed and one restricted plan/role state plus one lifecycle edge. State any inability to verify external provider behavior.
+
+Correct the owning plan mapping, entitlement rule, quota transaction or lifecycle transition, then replay the original state sequence with permitted/restricted controls. Observe quota/state effects under the selected retry or concurrent boundary. Reuse the policy matrix check for affected access decisions; keep provider fixtures distinct from live payment evidence. Recheck failures at their owner, then finish Patch Checking.

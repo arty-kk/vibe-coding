@@ -1,9 +1,5 @@
 # Agent Harness Replay & Failure Check
 
-## Operation
-
-Verify the selected behavior against explicit expected results; do not change product code.
-
 ## Goal
 
 Verify that the selected run can resume or replay without losing required state or repeating protected effects.
@@ -25,3 +21,11 @@ Select the cases that test the requested guarantee. Define expected state/effect
 ## Verification
 
 Compare durable state and versions, protected effect count, child cleanup and terminal outcomes after the selected crash/replay windows.
+
+## Execute and decide
+
+Use controlled stores/tools and a fixed run/input history. Establish normal completion, then hold one selected boundary before or after effect commit, receipt/checkpoint persistence, join or terminal publication. Interrupt/resume or lose the lease there and retain the same operation identity.
+
+Inspect the authoritative effect store alongside run versions, receipts, child lifetimes and emitted outcomes. A single local terminal record cannot conceal duplicate remote effects, and a replay that skips required work is not success. Select only the histories necessary for the stated guarantee.
+
+Return passed, failed or blocked with the interleaving, expected/observed effects and durable state. Feed a failure into the authorized owner repair, repeat the history/control after correction and finish Patch Checking for changed code. Synthetic tool receipts do not prove an untested provider's replay behavior.

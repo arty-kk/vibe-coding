@@ -19,5 +19,9 @@ Determine whether the requested AI/ML/DS behavior is a well-defined product or d
 
 - Ground repository facts with exact `path:line[-line]` anchors plus symbol when possible.
 - Separate desired business outcome, observable user behavior, statistical objective, operational constraints, and assumptions.
-- Reject an ML solution when deterministic logic, search, rules, or product changes satisfy the requirement more safely or cheaply.
+- Compare the model approach with a deterministic/search/manual baseline. Preserve an explicit research or model choice; explain its tradeoffs rather than silently replacing the user's objective.
 - Do not invent data availability, labels, consent, latency, cost, or deployment guarantees.
+
+## Handoff
+
+Return the decision contract, decision-time data boundary, baseline, acceptable output/failure, evaluation design and unresolved feasibility gates. Feed the selected feature/pipeline workflow only after the user requested implementation; framing alone does not select a provider, purchase compute or start training.

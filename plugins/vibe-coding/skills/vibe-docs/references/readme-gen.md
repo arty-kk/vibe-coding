@@ -15,3 +15,5 @@ Create or update the requested README using current repository evidence. Preserv
 ## Verification
 
 Check documented paths and links, commands and examples, configuration names and supported capabilities. Run safe relevant examples where possible; identify external prerequisites not exercised. Omit invented features, secrets, placeholder sections and duplicated agent policies from `AGENTS.md` or `CLAUDE.md`.
+
+Make the handoff useful to a new maintainer: they should know what the project does, which maintained entry to use, how to run the relevant checks and where deeper operating constraints live. Correct failed examples at their maintained owner and recheck them. A saved README change finishes through Patch Checking; an explanation requested in chat does not create an unsolicited documentation file.

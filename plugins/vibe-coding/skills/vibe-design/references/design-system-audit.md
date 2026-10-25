@@ -1,9 +1,5 @@
 # Design System Audit
 
-## Operation
-
-Inspect the selected behavior and report evidence-backed defects; do not change product code.
-
 ## Goal
 
 Audit the implementation design system: tokens, components, variants, styles, layout primitives, interaction states, documentation, and test/story coverage. Keep only repo-visible issues that make UI work slower, inconsistent, inaccessible, fragile, or visibly divergent.
@@ -25,3 +21,7 @@ Theme config, tokens, CSS/Tailwind/styled-system files, shared components, page-
 
 - Include expected system behavior, affected surfaces, acceptance criteria, and validation direction including preview/story/screenshot when available.
 - Do not report taste-only preferences without system consistency, accessibility, maintainability, or user-impact evidence.
+
+## Trace and hand off
+
+Choose the repeated rule or variant and inspect its token/component definition alongside actual route consumers. Compare the same state, density and viewport before calling a difference drift. Distinguish intentional local variation from duplicated ownership, stale docs and a shared defect. Pass the governing visual/interaction rule, affected consumers and an observable comparison to Improve Design System.

@@ -1,9 +1,5 @@
 # Security Audit
 
-## Operation
-
-Inspect the selected behavior and report evidence-backed defects; do not change product code.
-
 ## Goal
 
 Find reachable security issues with concrete repository evidence and produce remediation findings. Do not inflate theoretical patterns into vulnerabilities.
@@ -29,3 +25,7 @@ Authentication, sessions, cookies, token handling, authorization policies, tenan
 - Distinguish direct repo evidence from exploitability inference.
 - Prefer fixes at the owning boundary/policy layer over duplicated local guards.
 - Do not include exploit payloads beyond what is necessary to explain the risk.
+
+## Handoff
+
+Trace the selected controlled input/principal from a reachable entry through validation and enforcement to its protected effect. Retain the expected policy, first violated boundary and minimal safe reproduction or complete source trace. Feed that evidence into Improve Security when repair is authorized; a dangerous-looking API or absent optional control alone is not a vulnerability.

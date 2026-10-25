@@ -44,3 +44,5 @@ Schema drift, wrong result discriminator, ignored `isError`, protocol errors dis
 Prioritize unauthorized data/effects and corrupted durable state, then failures blocking supported clients, then lower-impact contract inconsistencies with demonstrated consumers. Optional capabilities, unused legacy behavior and a newer published specification are not defects by themselves.
 
 Each finding needs `path:line`, the owning symbol, affected revision/client, request and observed result, violated contract, impact, one repair direction and a regression route. Merge symptoms with one owner. If no defect is supported, identify the inspected path and remaining transport/provider gaps without claiming universal conformance.
+
+Pass the advertised operation, version/transport, minimal request, trusted principal and expected envelope/result/effect to Improve MCP Server. Include what the client actually consumed: a declared schema or HTTP 200 is insufficient if the consumer ignores a tool error or cannot use the result. Ambiguous tool metadata needs a concrete discovery/selection failure, not a cosmetic description preference.

@@ -1,9 +1,5 @@
 # Improve UX Flow
 
-## Operation
-
-Implement the requested change and verify its directly affected behavior.
-
 ## Goal
 
 Improve the selected user/admin journey from entry to completion. The diff should close the actual flow gap across navigation, state, copy, permissions, validation, and feedback rather than polishing isolated UI fragments.
@@ -32,3 +28,5 @@ Improve the selected user/admin journey from entry to completion. The diff shoul
 ## Validation
 
 Run relevant repository-native checks. For UI changes, use preview/screenshot tooling when available; otherwise state the limitation. Report the changed outcome and the journey states actually checked.
+
+Repair the selected navigation/state/permission owner and directly affected copy/controls. Replay entry → action → persisted result → completion or recovery using the same actor/context, including the failed branch and a normal control. Verify that moving a dead end has not merely relocated it to the next step. Recheck failed transitions and finish the accepted journey patch through Patch Checking.

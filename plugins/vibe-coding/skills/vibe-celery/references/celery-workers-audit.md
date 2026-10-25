@@ -24,5 +24,9 @@ Audit Celery task publication, acknowledgement, idempotency, retries, routing, c
 1. Map producer → broker route → reservation/prefetch → execution/side effect → ack/retry/failure → result/event/cleanup for the configured transport and pool.
 2. Trace publish ambiguity, worker crash before/after side effect, acknowledgement, timeout, retry countdown, broker reconnect, and warm/cold shutdown.
 3. Inspect effective Celery settings and task decorators together, including inherited defaults and transport-specific visibility/redelivery behavior.
-4. Calculate reserved/executing work and connections from replicas × concurrency × prefetch; compare with task footprint and downstream limits.
+4. Establish reserved/executing work from effective worker/QoS settings and observations. Inspect actual connection pools separately; task prefetch is not a connection-count formula. Compare both with task footprint and downstream limits.
 5. Check beat/ETA uniqueness, overlap, routing, clock, and long-delay behavior for the actual deployment model.
+
+## Handoff
+
+Return the task/operation identity, effective settings, failing event order and expected durable effect. Identify which publication, acknowledgement, retry or lifecycle owner violates the selected contract. Feed that evidence into Improve Celery Workers; do not solve a duplicate-effect defect solely by suppressing task events or changing the result state.

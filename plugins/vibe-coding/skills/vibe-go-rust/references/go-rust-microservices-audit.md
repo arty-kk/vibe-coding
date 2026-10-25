@@ -1,9 +1,5 @@
 # Go Rust Microservices Audit
 
-## Operation
-
-Inspect the selected behavior and report evidence-backed defects; do not change product code.
-
 ## Goal and scope
 
 Audit Go and Rust services across request contracts, cancellation, task/goroutine ownership, connection pools, backpressure, errors, unsafe code, and graceful shutdown.
@@ -26,3 +22,7 @@ Audit Go and Rust services across request contracts, cancellation, task/goroutin
 3. Inspect effective transport/client timeout, pool, keepalive, retry, and connection settings across every deployment replica.
 4. Run or inspect race/deadlock/leak evidence and identify cancellation-unsafe critical sections or stale work after caller timeout.
 5. Map startup/readiness/SIGTERM/drain/forced termination and verify operator-visible state at each boundary.
+
+## Handoff
+
+Retain the spawn/join/cancellation graph, selected wait/commit point, expected durable effect and observed resource lifetime. Distinguish intentionally detached durable work from an unowned child and a retained pool from a leak. Pass the violating ownership/order/budget guarantee and reproducing interleaving to Improve Go Rust Microservices.

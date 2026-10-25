@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.6.0 — composed workflows and universal MCP
+
+- Review all 46 domain skills and the MCP entry skill sequentially, preserving the 241 stable prompt IDs and domain foundations. Each workflow defines evidence handoffs, focused repair and relevant verification.
+- Restore repeated Patch Checking against the original comparison base, with distinct clean, findings, recheck, blocked and no-patch outcomes.
+- Add 79 explicit audit/repair families and focused planning, map, probe and verification entries. MCP returns an instructions-only outline and loads only the reached prompt; later steps can reuse available context.
+- Make tool discovery explain when and how any MCP coding agent can use the library from a coding goal, without requiring a known library or workflow name.
+- Improve multilingual task search with exact IDs/titles/aliases, individual purposes, shared concept normalization and match reasons. Preserve explicit filters and opt-in body search.
+- Align native packages, MCP runtime and instruction sources at 1.6.0. Present universal Streamable HTTP setup and generic prompts alongside Codex and Claude examples; refine responsive layouts and localized copy.
+- Keep earlier release evidence immutable. New checks cover retrieval ranking, workflow scope/loops, context budgets, source hashes and both MCP protocol eras; no independent model-selection result is claimed.
+
 ## 1.5.1 — Vibe Coding Library
 
 - Read localized manifests, review cases and catalog resources as UTF-8 on every platform instead of the operating system's default encoding.

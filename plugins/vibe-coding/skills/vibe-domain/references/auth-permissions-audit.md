@@ -1,9 +1,5 @@
 # Auth Permissions Audit
 
-## Operation
-
-Inspect the selected behavior and report evidence-backed defects; do not change product code.
-
 ## Goal
 
 Audit authentication, authorization, tenancy, roles, session boundaries, and permission-gated UI/API behavior. Keep only reachable issues that can cause unauthorized access, user confusion, broken legitimate access, or maintainability drift in permission logic.
@@ -20,3 +16,7 @@ Auth middleware/guards, session/JWT/cookie handling, route protection, server ac
 - Session lifecycle: weak logout/session invalidation, invitation/recovery token handling, refresh behavior, impersonation escape, missing CSRF protection where relevant, or unsafe redirect handling.
 - UX/API mismatch: UI hides/shows actions incorrectly, backend rejects valid actions without recovery, forbidden states have misleading copy, or plan gates conflict with entitlements.
 - Regression resistance: missing tests for role boundaries, tenant isolation, forbidden mutations, invitation flows, ownership transfer, and no-access UI states.
+
+## Trace and hand off
+
+Choose a legitimate principal/resource/action and a closely related denied case. Follow identity/session establishment, trusted scope construction, owner decision, enforcement and resulting data/effect. Record the first disagreement, including UI recovery only when directly affected. Pass the principal/state, violated rule and observable allowed/denied result into Improve Auth Permissions; a hidden action is not proof of backend denial.

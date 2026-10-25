@@ -26,3 +26,7 @@ Audit ClickHouse table engines, partition/order keys, ingestion/deduplication, q
 3. Trace retry/duplicate windows, partial insert, async insert acknowledgement, replica failure, Distributed queue, and source checkpoint boundaries.
 4. Evaluate partition/key choices and materialized-view semantics against real filters, time ranges, tenant skew, late data, and update/delete requirements.
 5. Calculate concurrent connections/queries/ingestion, quotas, memory, disk, merge bandwidth, and mutation/backfill pressure.
+
+## Handoff
+
+Retain DDL/settings, source checkpoint/batch identity, query and representative data shape. Identify the first mismatch between acknowledged ingestion, engine-visible rows, interpreted result and required budget. Feed that boundary and observable acceptance into Improve ClickHouse. A resource counter or delayed merge alone is not a defect until it violates the selected query/lifecycle contract.

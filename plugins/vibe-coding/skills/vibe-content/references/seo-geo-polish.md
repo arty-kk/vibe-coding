@@ -15,3 +15,5 @@ Correct the selected public content or crawl/metadata defect using its maintaine
 ## Verification
 
 Build and inspect the affected output: status, content, head metadata, links, locale alternatives and applicable schema. Check the deployed artifact when deployment is authorized. Report measured results and unverified indexing/citation or real-user performance separately. Use current [Google AI-search guidance](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide); special files or phrasing do not guarantee visibility.
+
+Re-fetch the same affected route and its relevant redirect/locale peers after the maintained-source correction. Reconcile visible claims, structured metadata and canonical/sitemap targets against that output. A failed route or mismatch returns to its generator/rendering owner, followed by the same check and Patch Checking for the change. Do not tune copy or add hidden markup merely to obtain an unsupported visibility claim.

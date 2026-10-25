@@ -5,7 +5,17 @@ description: "Explain a repository or create/update a requested map of capabilit
 
 # Project mapping
 
-Apply [the working contract](../../references/workflow.md) once; read only the recipe for the requested result.
+Apply [the working contract](../../references/workflow.md) once. Load the map recipe that answers the user's question; the list below is a choice of views, not an instruction to generate all of them.
+
+## Workflow
+
+1. Define the question and output: repository orientation, one surface/flow, a rule's owner, or a maintained map update. Reuse the supplied scope and existing artifact before choosing a new map.
+2. Start from an authoritative entry: registration, schema, policy, accepted requirement or test assertion. Trace the recipe's concrete relationships outward to their direct owners and consumers. Separate reachable behavior from declarations that are not wired into runtime.
+3. Build the requested view with source anchors and only the fields needed to navigate or decide. Mark an unresolved relationship at the missing edge; do not fill it with an architectural guess.
+4. Reopen representative source links, verify renamed/deleted symbols and check the relationships against the same source state. Repair stale entries and repeat this reference check before handing the map off.
+5. For several maps, use [Map Synthesis](../vibe-task/references/map-synthesis.md) to reconcile shared entities and contradictory owners. For subsequent work, carry source anchors and open questions into the chosen audit/task workflow. A map alone does not authorize implementation or prove correctness.
+
+An explanation can end in chat. A maintained-file update ends with the requested map complete and its documentation patch reviewed through [Patch Checking](../vibe-review/references/patch-checking.md). Do not start a product audit merely because the map exposes an unverified edge.
 
 ## Map contract
 

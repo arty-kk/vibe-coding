@@ -1,9 +1,5 @@
 # Background Jobs Audit
 
-## Operation
-
-Inspect the selected behavior and report evidence-backed defects; do not change product code.
-
 ## Goal
 
 Audit background work: queues, workers, cron/scheduled jobs, webhooks, retries, idempotency, locks, concurrency, long-running tasks, cleanup, and observability. Keep only repository-visible issues with correctness, data, cost, reliability, or operational impact.
@@ -24,3 +20,7 @@ Queue/job definitions, worker entry points, schedulers/cron, webhook handlers, r
 ## Finding quality
 
 - Include expected lifecycle behavior, failure/retry/idempotency contract, acceptance criteria, and validation direction.
+
+## Handoff
+
+Trace one logical operation from producer payload/version through reservation, authoritative effect, acknowledgement/status and retry/recovery. Retain its identity, tenant context, failing event order and expected durable result for Improve Background Jobs. Distinguish a scheduling defect from an engine-specific delivery guarantee; use that engine's workflow when it owns the failure.

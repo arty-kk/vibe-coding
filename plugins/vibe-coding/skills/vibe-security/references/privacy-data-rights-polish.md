@@ -1,9 +1,5 @@
 # Improve Privacy Data Rights
 
-## Operation
-
-Implement the requested change and verify its directly affected behavior.
-
 ## Goal
 
 Fix the selected privacy/data-rights boundary across collection, storage, derived data, external providers, user/admin controls, tests, and documentation when directly affected.
@@ -30,3 +26,5 @@ Use the selected data field, consent setting, deletion/export flow, retention jo
 ## Validation
 
 Run targeted tests and safe scenarios for collection, consent/opt-out, export/deletion/retention, derived stores, logs, and provider behavior relevant to the selected boundary. Report unavailable managed-provider or backup checks as gates.
+
+Correct the owning collector, access/retention rule, export/delete transaction or provider adapter using distinguishable synthetic subject data. Replay the original lifecycle and inspect primary, derived and provider/log output according to the accepted policy. Feed that evidence into the data-rights check; unresolved policy or provider behavior stays a gate. Finish Patch Checking after supported acceptance, without turning technical tests into a legal-compliance claim.

@@ -5,7 +5,17 @@ description: "Audit, repair or verify mobile navigation, offline/sync, permissio
 
 # Mobile apps
 
-Apply [the working contract](../../references/workflow.md) once; read only the recipe for the requested result.
+Apply [the working contract](../../references/workflow.md) once.
+
+## Workflow
+
+Mobile App Audit → Improve Mobile App → Mobile Release & Offline Check → [Patch Checking](../vibe-review/references/patch-checking.md).
+
+Carry the platform/build mode, entry/deep link, account/permission state, local data version and expected navigation/sync outcome into correction. A known mobile defect starts at implementation; a verification-only request does not change product code or store settings.
+
+Trace the first mismatch between navigation, local queue/cache, server state and OS lifecycle. Correct that owner, then replay the same cold/warm, online/offline or permission transition with a normal control. Preserve the accepted conflict policy; reconnect is not proof that queued work or duplicate effects converged.
+
+A failed device state returns to its owner, followed by the relevant simulator/device check and final patch review. Keep unavailable physical-device, push, signing and store evidence distinct from a successful development build. Offline support is tested where the feature promises it, not invented as an unrelated requirement.
 
 ## Recipes
 

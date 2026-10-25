@@ -1,9 +1,5 @@
 # Browser Extension Audit
 
-## Operation
-
-Inspect the selected behavior and report evidence-backed defects; do not change product code.
-
 ## Goal and scope
 
 Audit one browser extension boundary such as permissions, content scripts, background/service worker, messaging, storage, native messaging, page injection, update behavior, or external API access.
@@ -19,3 +15,5 @@ Audit one browser extension boundary such as permissions, content scripts, backg
 ## Audit method
 
 Trace the selected extension flow through manifest, content/background scripts, message handlers, storage, API clients, injected code, native messaging, UI/popup/options page, tests, and release packaging.
+
+Compare a permitted sender/origin and operation with the selected untrusted or permission-denied case. Identify where the browser's verified sender/permission state is replaced by an untrusted payload claim, or where restart/update loses required state. Pass manifest/runtime settings, message identity and observed local effect to Improve Browser Extension; a popup message alone does not establish that protected work was denied.

@@ -41,3 +41,5 @@ Verify the configured rotation or sender-binding policy, concurrent refresh atte
 Use synthetic identities, local test issuers or an existing provider sandbox. Pair denial cases with a valid control, report exact steps/results and map failures to `path:line` and the identity owner. Separate library-level, HTTP/cookie/browser and provider integration coverage. Report missing checks instead of declaring the whole login system verified.
 
 Select applicable requirements from [OAuth Security BCP](https://www.rfc-editor.org/rfc/rfc9700.html) and [OIDC validation](https://openid.net/specs/openid-connect-core-1_0.html#IDTokenValidation), plus version-matched provider documentation.
+
+Return passed, failed or blocked for the stated transaction/identity/session boundary and verifier layers. Pass a failure with synthetic principal, transaction state, expected identity/effect and owning validation layer into Auth Permissions Polish when repair is authorized. Repeat the failed case and valid login/control after correction, then review the changed patch. Provider-session logout or cryptographic verification remains unverified if the fixture exercises only local session code.

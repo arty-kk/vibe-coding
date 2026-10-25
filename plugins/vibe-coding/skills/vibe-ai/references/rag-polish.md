@@ -6,7 +6,7 @@ Implement the requested change and verify its directly affected behavior.
 
 ## Goal
 
-Improve the selected RAG surface across retrieval quality, source grounding, citation behavior, empty/low-confidence states, freshness, and validation. The diff should make the selected answer path materially more trustworthy, not merely tweak a prompt string.
+Correct the selected retrieval/answer contract across the directly affected ingestion, access, ranking, context, citation or failure states. A small prompt or filter correction is sufficient when it resolves the demonstrated failure and its acceptance is verified.
 
 ## Scope selection
 
@@ -33,3 +33,5 @@ Improve the selected RAG surface across retrieval quality, source grounding, cit
 ## Validation
 
 Run relevant repository-native checks and any RAG eval/test script that protects the changed path. If live indexes, provider keys, or fixtures are unavailable, run the deterministic parts and state the exact gap.
+
+Keep the failing query and expected authorized/deleted/stale sources fixed during comparison. Change the first violating owner, then inspect both retrieved context and the claims/citations it supports. Recheck denied and empty-context cases when affected. Return failed observations to that same boundary; after acceptance, run Patch Checking. Do not repair missing or unauthorized retrieval by teaching the generator to sound more certain.

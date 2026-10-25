@@ -24,3 +24,7 @@ Audit an AI evaluation system as a release gate across task definition, datasets
 3. Re-run a representative subset to measure scorer determinism and compare judge/human labels by failure class.
 4. Check statistical unit, paired comparison, confidence/uncertainty, multiple variants, threshold selection, and test-set reuse.
 5. Compare offline failures with available online incidents/feedback without claiming causal equivalence.
+
+## Handoff
+
+Return the mismeasured product decision, affected dataset/slice, scorer or judge owner, and a labelled example that exposes the problem. Identify whether the correction belongs to data validity, scoring, uncertainty or the release decision. Feed that evidence into Improve AI Evaluation; a higher aggregate score is not a correction when the scorer still rewards the wrong outcome.

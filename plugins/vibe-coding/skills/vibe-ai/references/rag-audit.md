@@ -26,3 +26,7 @@ Document loaders, parsers, chunkers, metadata extraction, embeddings, vector/sea
 
 - Include data source, index/retriever owner, ACL/freshness boundary, expected behavior, acceptance criteria, and validation/eval direction when discoverable.
 - Do not recommend provider/model/vector database swaps unless current repo evidence proves the existing owner cannot satisfy the behavior.
+
+## Trace and hand off
+
+Choose a query with an expected authorized source, plus a source that must not be used. Trace ingestion/version → indexed identity → filters/candidates → ranking → assembled context → answer/citations. Determine whether failure begins at coverage, access filtering, freshness, ranking, context construction or unsupported generation. Pass the query class, source/version anchors, failing boundary and expected observation to Improve RAG; do not treat a fluent answer as evidence of successful retrieval.

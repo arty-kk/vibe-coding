@@ -1,0 +1,1785 @@
+{
+  "version": 1,
+  "date": "2026-10-25",
+  "base_commit": "8870ddb5288f5d0c79513ab21b048f8f23acb13a",
+  "order": [
+    "vibe-review",
+    "vibe-task",
+    "vibe-workflow",
+    "vibe-map",
+    "vibe-docs",
+    "vibe-probe",
+    "vibe-quality",
+    "vibe",
+    "vibe-ai",
+    "vibe-backend",
+    "vibe-cache",
+    "vibe-celery",
+    "vibe-clickhouse",
+    "vibe-compatibility",
+    "vibe-content",
+    "vibe-design",
+    "vibe-desktop",
+    "vibe-domain",
+    "vibe-flags",
+    "vibe-go-rust",
+    "vibe-harness",
+    "vibe-integrations",
+    "vibe-kafka",
+    "vibe-kubernetes",
+    "vibe-mcp",
+    "vibe-mobile",
+    "vibe-nosql",
+    "vibe-notifications",
+    "vibe-observability",
+    "vibe-ops",
+    "vibe-payments",
+    "vibe-product",
+    "vibe-rabbitmq",
+    "vibe-realtime",
+    "vibe-recovery",
+    "vibe-redis",
+    "vibe-reliability",
+    "vibe-search",
+    "vibe-security",
+    "vibe-serverless",
+    "vibe-sql",
+    "vibe-storage",
+    "vibe-temporal",
+    "vibe-terraform",
+    "vibe-vectors",
+    "vibe-web",
+    "vibe-library"
+  ],
+  "current": null,
+  "completed": [
+    "vibe-review",
+    "vibe-task",
+    "vibe-workflow",
+    "vibe-map",
+    "vibe-docs",
+    "vibe-probe",
+    "vibe-quality",
+    "vibe",
+    "vibe-ai",
+    "vibe-backend",
+    "vibe-cache",
+    "vibe-celery",
+    "vibe-clickhouse",
+    "vibe-compatibility",
+    "vibe-content",
+    "vibe-design",
+    "vibe-desktop",
+    "vibe-domain",
+    "vibe-flags",
+    "vibe-go-rust",
+    "vibe-harness",
+    "vibe-integrations",
+    "vibe-kafka",
+    "vibe-kubernetes",
+    "vibe-mcp",
+    "vibe-mobile",
+    "vibe-nosql",
+    "vibe-notifications",
+    "vibe-observability",
+    "vibe-ops",
+    "vibe-payments",
+    "vibe-product",
+    "vibe-rabbitmq",
+    "vibe-realtime",
+    "vibe-recovery",
+    "vibe-redis",
+    "vibe-reliability",
+    "vibe-search",
+    "vibe-security",
+    "vibe-serverless",
+    "vibe-sql",
+    "vibe-storage",
+    "vibe-temporal",
+    "vibe-terraform",
+    "vibe-vectors",
+    "vibe-web",
+    "vibe-library"
+  ],
+  "records": {
+    "vibe-review": {
+      "status": "complete",
+      "read": [
+        "SKILL.md",
+        "references/patch-checking.md"
+      ],
+      "changes": [
+        "Restored the original clean sentinel and explicit recheck loop.",
+        "Kept the original review baseline across corrective commits.",
+        "Separated review-only findings, authorized corrections, required gates and stalled loops."
+      ],
+      "validation": {
+        "skill_validator": "passed",
+        "local_references": "passed",
+        "scenario_walkthroughs": [
+          {
+            "input": "review only; a concrete defect is found",
+            "outcome": "FINDINGS, no edits or clean marker"
+          },
+          {
+            "input": "authorized fix; first pass corrects a consumer defect",
+            "outcome": "RECHECK on the same original delta; CLEAN only after a subsequent unchanged pass with required checks passed"
+          },
+          {
+            "input": "required environment missing or the same check fails without new evidence",
+            "outcome": "BLOCKED with the missing condition, no fabricated clean verdict"
+          },
+          {
+            "input": "no patch or review target exists",
+            "outcome": "exact no-patch sentinel and stop"
+          }
+        ],
+        "limits": "Instruction and branch walkthrough validation, not an independent model execution."
+      },
+      "fingerprints": {
+        "plugins/vibe-coding/skills/vibe-review/SKILL.md": "fc49dd613ceb93667ac9bae01dd91c7ace4e7f742fd2f4e74ffa8ca5dcb64152",
+        "plugins/vibe-coding/skills/vibe-review/references/patch-checking.md": "05e545a7042acbcc2c3e94bd72acf9fc3071350684efe2ec2a9143aac0be0580"
+      }
+    },
+    "vibe-task": {
+      "status": "complete",
+      "read": [
+        "SKILL.md",
+        "references/iteration-closure.md",
+        "references/synthesis.md",
+        "references/validation-clarification.md",
+        "references/workstream-decomposition.md",
+        "references/map-synthesis.md",
+        "references/task-shaping.md",
+        "references/evolution-improvement.md"
+      ],
+      "changes": [
+        "Added request-to-brief validation, synthesis and dependency handoffs.",
+        "Defined TASK_READY/REVISE/BLOCKED and ALREADY_SATISFIED outcomes.",
+        "Bound iteration closure to the final patch state and the actual requested completion stage."
+      ],
+      "validation": {
+        "skill_validator": "passed",
+        "local_references": "passed",
+        "scenario_walkthroughs": [
+          "Planning-only request returns a validated brief without product edits.",
+          "A known fix skips unnecessary shaping; a changed outcome returns to shaping.",
+          "Two incompatible audit fixes become one resolved owner contract, not parallel tasks.",
+          "A patch changed after review cannot close as DONE on the old clean verdict."
+        ],
+        "limits": "Manual instruction walkthroughs, not independent model execution."
+      },
+      "fingerprints": {
+        "plugins/vibe-coding/skills/vibe-task/SKILL.md": "41a6e0415b96c5ab3a9d2223be17353307d5e7041a02a90f6736a1c7eccc73fa",
+        "plugins/vibe-coding/skills/vibe-task/references/iteration-closure.md": "45e4b3cbff124e21030ef6850ed71d3eabf8618e963b86a9e2130441a1531323",
+        "plugins/vibe-coding/skills/vibe-task/references/synthesis.md": "0d3263fbc51e66387b587b8760a65c50bbdbe41d23d0a58b3e9cd0b83d1a067b",
+        "plugins/vibe-coding/skills/vibe-task/references/validation-clarification.md": "da3af2397cd3024b2c05d12c9ae1f0370153717d55b396819afcf371b2747ab6",
+        "plugins/vibe-coding/skills/vibe-task/references/workstream-decomposition.md": "434a7d0afc1a6526da4c6596310ef74d1ada0230b68a4f8a075d941334ac21c3",
+        "plugins/vibe-coding/skills/vibe-task/references/map-synthesis.md": "4e6cc71ca682e1f32eadfa0d019fd023b2307c06eb37c3bb385da0cb180d7a3b",
+        "plugins/vibe-coding/skills/vibe-task/references/task-shaping.md": "2a86adc8c471c5c57800156359a900e696a08449bc6ccbb9c9d10645a2bebe9f",
+        "plugins/vibe-coding/skills/vibe-task/references/evolution-improvement.md": "b5dd90eac17182f06ef6f92d3f99d0bf635263bc5690039c45c9ebf0d36b9f4b"
+      }
+    },
+    "vibe-workflow": {
+      "status": "complete",
+      "read": [
+        "SKILL.md",
+        "references/map-refresh-polish.md",
+        "references/prompt-skill-sync-polish.md",
+        "references/evidence-normalization.md",
+        "references/behavior-check.md",
+        "references/prompt-skill-sync-audit.md",
+        "references/scoped-polish.md",
+        "references/scoped-audit.md",
+        "references/map-staleness-check.md"
+      ],
+      "changes": [
+        "Separated package maintenance, map freshness, evidence normalization and uncovered behavior into explicit chains.",
+        "Added evidence-preserving handoffs and repair/recheck transitions.",
+        "Extended package maintenance to actual MCP discovery, ranking, snapshot and context behavior."
+      ],
+      "validation": {
+        "skill_validator": "passed",
+        "local_references": "passed",
+        "scenario_walkthroughs": [
+          "A failed check returns to repair only when changes are authorized.",
+          "A stale map is refreshed and checked again; an absent map does not trigger map creation.",
+          "A passing local fixture does not erase a conflicting production observation.",
+          "An edited prompt is not claimed live until the built MCP snapshot is verified."
+        ],
+        "limits": "Manual instruction walkthroughs; no independent model behavior is claimed."
+      },
+      "fingerprints": {
+        "plugins/vibe-coding/skills/vibe-workflow/SKILL.md": "041cad7384cee23c9290c8627bcad076a03b6beab36d44e00a2eabad82c1cc11",
+        "plugins/vibe-coding/skills/vibe-workflow/references/map-refresh-polish.md": "d9ed4e53d241ff88a8bf45fb0c852ce06999bdfb4face055e63a1b380b5cb5b6",
+        "plugins/vibe-coding/skills/vibe-workflow/references/prompt-skill-sync-polish.md": "a46ea130533973fd7fc24d267a4c0c4e2910bc5e0f71bcbf06a87d5dbe87fb22",
+        "plugins/vibe-coding/skills/vibe-workflow/references/evidence-normalization.md": "b2995eeec8900b6199c30a55676f257151245288e9a84bfc296de93b9a94763e",
+        "plugins/vibe-coding/skills/vibe-workflow/references/behavior-check.md": "10209f3247d13e9b313954ad690d9a94e1e7facaa034f48e90821f616f1bab1d",
+        "plugins/vibe-coding/skills/vibe-workflow/references/prompt-skill-sync-audit.md": "9f7532d851ed13b527ec8cb7522c6ff5c98cacfdbb1a21dfce70c3bb2666cbe7",
+        "plugins/vibe-coding/skills/vibe-workflow/references/scoped-polish.md": "d96805eb2d46b7d5a794b7949b6d2a8db8dd4e739cf289ad7363ea636d9b737a",
+        "plugins/vibe-coding/skills/vibe-workflow/references/scoped-audit.md": "8c0ee151b65106ec3db2b292e5937043d560bf40c98c9a4cdc5327792ef7279f",
+        "plugins/vibe-coding/skills/vibe-workflow/references/map-staleness-check.md": "9ebaf5b5d762a619d8bb5461014ff2edfaccdf56935d9b425521d43fd5d83951"
+      }
+    },
+    "vibe-map": {
+      "status": "complete",
+      "read": [
+        "SKILL.md",
+        "references/product-metrics-events-map.md",
+        "references/product-journey-map.md",
+        "references/product-requirements-map.md",
+        "references/api-navigation-map.md",
+        "references/test-coverage-map.md",
+        "references/traceability-map.md",
+        "references/auth-entitlements-map.md",
+        "references/bot-navigation-map.md",
+        "references/rbac-abac-policy-map.md",
+        "references/ownership-invariant-map.md",
+        "references/risk-release-map.md",
+        "references/product-capability-map.md",
+        "references/domain-data-map.md",
+        "references/project-atlas-map.md",
+        "references/ai-navigation-map.md",
+        "references/runtime-flow-map.md",
+        "references/integration-map.md",
+        "references/saas-navigation-map.md"
+      ],
+      "changes": [
+        "Turned mapping into an entry-source, relationship-trace, artifact and reference-validation workflow.",
+        "Added a concrete domain tracing method to each of the 18 map recipes.",
+        "Preserved requested output, existing IDs and the distinction between evidence indexes and runtime verification."
+      ],
+      "validation": {
+        "skill_validator": "passed",
+        "local_references": "passed",
+        "scenario_walkthroughs": [
+          "Repository orientation produces the requested atlas, not 18 mandatory map files.",
+          "A registered API route and a dead controller are distinguished by actual reachability.",
+          "A role enum or dashboard label cannot substitute for enforcement or metric semantics.",
+          "A map conflict preserves product intent and missing evidence rather than redefining the requirement.",
+          "A saved map update receives reference validation and patch review without changing product code."
+        ],
+        "limits": "Manual instruction walkthroughs; no independent model behavior is claimed."
+      },
+      "fingerprints": {
+        "plugins/vibe-coding/skills/vibe-map/SKILL.md": "6e554f1c9f79749df16938c96c3020344a42ba89d9d6618a5378ddfabab8038f",
+        "plugins/vibe-coding/skills/vibe-map/references/product-metrics-events-map.md": "0ec18625cd3d11748a736a3e794d1f6643b79b6b65042b983429cbfcfea00337",
+        "plugins/vibe-coding/skills/vibe-map/references/product-journey-map.md": "e0fa5a63e984045a9e6702e9c3f59d48c822c3236be4072ae8df350ab53c5562",
+        "plugins/vibe-coding/skills/vibe-map/references/product-requirements-map.md": "73cfb1855a52134b2632e1ae08489dbf14525a56ee9083fbd28ad572532ed01d",
+        "plugins/vibe-coding/skills/vibe-map/references/api-navigation-map.md": "954a206bd559ce462564eda6af7e899a73321f7ecec8f00aadd71b2e28ad4465",
+        "plugins/vibe-coding/skills/vibe-map/references/test-coverage-map.md": "04a34aea6f2b70339986058952149ffc8a5923b782907c7b1cfe99a9f9b7359c",
+        "plugins/vibe-coding/skills/vibe-map/references/traceability-map.md": "9ed0c20ddba4f75bb66f36b2d58f3694a284242099b11cc232816b7e2f710ea8",
+        "plugins/vibe-coding/skills/vibe-map/references/auth-entitlements-map.md": "4993d96e7322b0ad085ab1dd1940d9dc50acb6d92d7adfacf08e15efb871b949",
+        "plugins/vibe-coding/skills/vibe-map/references/bot-navigation-map.md": "4035fb4c2d826b5c97890eb4f7a932082a06f50a53577d615a5228fe9d374890",
+        "plugins/vibe-coding/skills/vibe-map/references/rbac-abac-policy-map.md": "728db50ebdcf4ba1b5fdf6c261be6f1fcaf3e6bb5214ad6bebca7b0a1a838b87",
+        "plugins/vibe-coding/skills/vibe-map/references/ownership-invariant-map.md": "b75ef25a3de0c844abb10fef44d48fd1672f220cecc7ac80f140625121dcbd5a",
+        "plugins/vibe-coding/skills/vibe-map/references/risk-release-map.md": "31904e425b945c12a24f4a3cfde2fdcdc7c0c593e2d64513e714efff8f5d0d74",
+        "plugins/vibe-coding/skills/vibe-map/references/product-capability-map.md": "81c4a29589241e7d7517f214874be0db831ad7529f0a924650bf1acd4ed67aff",
+        "plugins/vibe-coding/skills/vibe-map/references/domain-data-map.md": "8d46fdbb0b3454c5e75449a42044dd9408c747dbff3c011bfeb9e325a44a2284",
+        "plugins/vibe-coding/skills/vibe-map/references/project-atlas-map.md": "502fee72ecbe49bc72f3601c68b6149cd761f7028490c693f89a8228702acff0",
+        "plugins/vibe-coding/skills/vibe-map/references/ai-navigation-map.md": "e8718b251f00e0499dd8002ec5f1395174d2a4cefb4932bd8577e24bbce7b49d",
+        "plugins/vibe-coding/skills/vibe-map/references/runtime-flow-map.md": "ab47dcde6150096c6a5354ddf852931d486d5104e19046be6ce0457dabad144f",
+        "plugins/vibe-coding/skills/vibe-map/references/integration-map.md": "86ea580c92980af7dc1a12dbb7d5157f14869dc3034a0f71693a5ad89b0561fa",
+        "plugins/vibe-coding/skills/vibe-map/references/saas-navigation-map.md": "08a4fc2159bf53cf24bfe946afd0dbb27d67ecee6b456a5027be20cdf592cfa8"
+      }
+    },
+    "vibe-docs": {
+      "status": "complete",
+      "read": [
+        "SKILL.md",
+        "references/readme-gen.md",
+        "references/documentation-sync-audit.md",
+        "references/refactor-boundary-polish.md",
+        "references/migration-refactor-plan.md",
+        "references/refactor-boundary-audit.md",
+        "references/design-gen.md",
+        "references/documentation-sync-polish.md"
+      ],
+      "changes": [
+        "Separated documentation creation/synchronization from boundary refactoring and migration.",
+        "Added maintained-source repair, example verification and compatibility handoffs to all seven prompts.",
+        "Qualified adapter/shim use by actual migration needs instead of a blanket prohibition."
+      ],
+      "validation": {
+        "skill_validator": "passed",
+        "local_references": "passed",
+        "scenario_walkthroughs": [
+          "A stale generated README is fixed in its generator, not only in the generated file.",
+          "An implementation contradicting an accepted requirement is not concealed by rewriting documentation.",
+          "A compatible known move skips an unnecessary migration plan; a mixed-version transition supplies its acceptance gate.",
+          "A documented production command is checked safely without implicitly deploying."
+        ],
+        "limits": "Manual instruction walkthroughs; no independent model behavior is claimed."
+      },
+      "fingerprints": {
+        "plugins/vibe-coding/skills/vibe-docs/SKILL.md": "5664258be7128e3da26aa99108512af9258403b3fe61f09ca25db7b454ada14b",
+        "plugins/vibe-coding/skills/vibe-docs/references/readme-gen.md": "b2b2032f6c4e13b948e581f727b053b5c0abb780456b5080d519103ba9d411ec",
+        "plugins/vibe-coding/skills/vibe-docs/references/documentation-sync-audit.md": "136505eb6af5d0c5e84112087a5894495da2135601f5f96a98415a7587a763a9",
+        "plugins/vibe-coding/skills/vibe-docs/references/refactor-boundary-polish.md": "1633baa6acc53645d977711dbf3d187ba821fc3026a561b28ffa5365b81c2327",
+        "plugins/vibe-coding/skills/vibe-docs/references/migration-refactor-plan.md": "482a58309e2bfd8429dfbb206ea588c0d3721d430635e8a34746b6060104e1c1",
+        "plugins/vibe-coding/skills/vibe-docs/references/refactor-boundary-audit.md": "45296c49a7cc66227f111c7d8470f6d54053d4daf5ac680b709862611d3b8b21",
+        "plugins/vibe-coding/skills/vibe-docs/references/design-gen.md": "46df8fb60b1fbeca228d1881cf4bffb6de2e7afd2efab2fe830846248a159d71",
+        "plugins/vibe-coding/skills/vibe-docs/references/documentation-sync-polish.md": "3f3f8cbbc1286c53d3865cefce823df78c1120250488f5f49ba4647c4dbc5237"
+      }
+    },
+    "vibe-probe": {
+      "status": "complete",
+      "read": [
+        "SKILL.md",
+        "references/instant-bug-fix-polish.md",
+        "references/instant-backend-probe.md",
+        "references/instant-architecture-probe.md",
+        "references/instant-frontend-probe.md",
+        "references/instant-ui-ux-visual-probe.md"
+      ],
+      "changes": [
+        "Restored the one-owner probe → repair → verification → repeated Patch Checking cycle.",
+        "Added distinct stable outcomes for found, fixed, blocked, clean-area and exhausted-area states.",
+        "Added domain-specific evidence handoffs to all five probes without creating an endless bug hunt."
+      ],
+      "validation": {
+        "skill_validator": "passed",
+        "local_references": "passed",
+        "scenario_walkthroughs": [
+          "A fixed backend response with a duplicated stored effect remains unresolved.",
+          "A frontend race must replay the stale completion, not only a happy path.",
+          "No finding in one area stops the probe rather than searching more areas for a manufactured bug.",
+          "An explicit revisit is allowed; an unspecified next probe respects all visible prior owners.",
+          "A patch-review correction is rechecked before BUG_FOUND_FIXED is issued."
+        ],
+        "limits": "Manual instruction walkthroughs; no independent model behavior is claimed."
+      },
+      "fingerprints": {
+        "plugins/vibe-coding/skills/vibe-probe/SKILL.md": "39ac991c182f205c584cae448bc0a5cac31245a5a78f5d49cded6277bbc377bc",
+        "plugins/vibe-coding/skills/vibe-probe/references/instant-bug-fix-polish.md": "8cd932b92f505d12863142f8174b773d462fd6afb1d9ab80c083ba036e0d78ae",
+        "plugins/vibe-coding/skills/vibe-probe/references/instant-backend-probe.md": "31baf6a6c0eb503e03af97c20e8a00f48e6a995f6a5ee55abc9dc9b65b037db0",
+        "plugins/vibe-coding/skills/vibe-probe/references/instant-architecture-probe.md": "0e6e8bd63e4bdcc6e8598d850c075682c6907fb9999b79ab802ed7cc874f4093",
+        "plugins/vibe-coding/skills/vibe-probe/references/instant-frontend-probe.md": "dbd4d4bad4d01179ad9e8a222a0177c1f218b2cfa93d12176ab0ae68eb03314a",
+        "plugins/vibe-coding/skills/vibe-probe/references/instant-ui-ux-visual-probe.md": "943fd2a7f61b82b902d8b3626064f8aa5d2912ec8355ef160e39b924b3a322cd"
+      }
+    },
+    "vibe-quality": {
+      "status": "complete",
+      "read": [
+        "SKILL.md",
+        "references/visual-regression-check.md",
+        "references/test-coverage-audit.md",
+        "references/release-readiness-audit.md",
+        "references/test-harness-polish.md"
+      ],
+      "changes": [
+        "Defined coverage, harness, visual and release assessment chains with concrete evidence handoffs.",
+        "Bound release readiness to candidate/environment-specific gates and patch rechecks.",
+        "Required distinguishing assertions and healthy controls rather than counts or implementation-mirroring tests."
+      ],
+      "validation": {
+        "skill_validator": "passed",
+        "local_references": "passed",
+        "scenario_walkthroughs": [
+          "A green smoke suite cannot establish an untested migration or store approval.",
+          "A rejected request is not a valid denial test when its healthy control also fails.",
+          "Coverage of already-correct behavior does not require fabricating a historical product defect.",
+          "Missing screenshot baseline permits specific rendered assertions but not a visual-equivalence claim.",
+          "A changed release candidate invalidates the affected earlier readiness evidence."
+        ],
+        "limits": "Manual instruction walkthroughs; no independent model behavior is claimed."
+      },
+      "fingerprints": {
+        "plugins/vibe-coding/skills/vibe-quality/SKILL.md": "f4341fb21801bbbd724d5b2975769f796aa27af44b7fa16a04e91b1e669b0cfb",
+        "plugins/vibe-coding/skills/vibe-quality/references/visual-regression-check.md": "4e256044bce4dde33fc19d6458dabc902672cf57af3c0e0407be9292bf1d4271",
+        "plugins/vibe-coding/skills/vibe-quality/references/test-coverage-audit.md": "05fa0e2bae170adb0d12edb7c79097097c8f25e0a14c632a3762f67b02c72595",
+        "plugins/vibe-coding/skills/vibe-quality/references/release-readiness-audit.md": "5bc350cfe8f005c08561b0dfae8624b86536863f7fd89e1971aaac2b47e3325e",
+        "plugins/vibe-coding/skills/vibe-quality/references/test-harness-polish.md": "d5096bd05efe1dc2a4ff33f9c592143c86ca0a096f2746afedfb70c5efb99a77"
+      }
+    },
+    "vibe": {
+      "status": "complete",
+      "read": [
+        "SKILL.md"
+      ],
+      "changes": [
+        "Made the entry skill select an actual workflow and current prompt by requested result and owning contract.",
+        "Restored composed multi-prompt handoffs and the final Patch Checking loop in shared cycles.",
+        "Clarified progressive retrieval, permission boundaries and internal review repetition without recursive workflows."
+      ],
+      "validation": {
+        "skill_validator": "passed",
+        "local_references": "passed",
+        "scenario_walkthroughs": [
+          "A precise fix starts at implementation, while an unknown cause starts at the matching audit.",
+          "Audit-only and planning-only requests stop at their requested artifacts.",
+          "A post-fix patch is re-reviewed against the original base until clean or blocked.",
+          "MCP-returned library paths are not treated as files in the user's repository."
+        ],
+        "limits": "Manual instruction walkthroughs; no independent model behavior is claimed."
+      },
+      "fingerprints": {
+        "plugins/vibe-coding/skills/vibe/SKILL.md": "cf82a2bc80bc953c3ea0d467635ecf9a720f2f6858c612c6b08c437229c6b450"
+      }
+    },
+    "vibe-ai": {
+      "status": "complete",
+      "read": [
+        "SKILL.md",
+        "references/ai-ml-problem-framing.md",
+        "references/ml-pipeline-audit.md",
+        "references/llm-agent-tools-polish.md",
+        "references/rag-audit.md",
+        "references/model-serving-monitoring-polish.md",
+        "references/ai-safety-governance-audit.md",
+        "references/ai-feature-audit.md",
+        "references/ocr-document-ai-polish.md",
+        "references/rag-polish.md",
+        "references/ai-feature-polish.md",
+        "references/ai-evaluation-polish.md",
+        "references/ai-safety-governance-polish.md",
+        "references/ml-pipeline-polish.md",
+        "references/ocr-document-ai-audit.md",
+        "references/ai-evaluation-audit.md",
+        "references/model-serving-monitoring-audit.md",
+        "references/llm-agent-tools-audit.md"
+      ],
+      "changes": [
+        "Defined nine outcome-specific AI workflows with the appropriate data/model/tool evaluation boundary.",
+        "Added concrete trace and repair handoffs to all 17 prompt steps.",
+        "Separated deterministic controls from stochastic quality evidence and removed arbitrary change-size/model-choice constraints."
+      ],
+      "validation": {
+        "skill_validator": "passed",
+        "local_references": "passed",
+        "scenario_walkthroughs": [
+          "A fluent RAG answer does not pass when its authorized source was never retrieved.",
+          "A correct OCR UI value does not pass while the persisted export remains stale.",
+          "A tool-choice prompt fix cannot replace runtime authorization or effect deduplication.",
+          "A higher metric does not fix leakage, train/serve skew or an invalid scorer.",
+          "A live-provider or private-data gap remains explicit instead of becoming a model-quality claim."
+        ],
+        "limits": "Manual instruction walkthroughs; no independent model behavior is claimed."
+      },
+      "fingerprints": {
+        "plugins/vibe-coding/skills/vibe-ai/SKILL.md": "5c61143c87d9a02175c3b5d82fc77b27e0e150089350accf60585e291c7fd90d",
+        "plugins/vibe-coding/skills/vibe-ai/references/ai-ml-problem-framing.md": "361b81ecd71c9e53d267de975281b7a7f23b62e3313c60730b0dfa470f2f0295",
+        "plugins/vibe-coding/skills/vibe-ai/references/ml-pipeline-audit.md": "8cfd4598ef850c35208ab630f0fe675db4e4abcaa0ed1dd425d7fd3be9fe3ea5",
+        "plugins/vibe-coding/skills/vibe-ai/references/llm-agent-tools-polish.md": "9bba4edcd5942a30f799b2326f22510c721a722b65861b02c048616e1f45d5e6",
+        "plugins/vibe-coding/skills/vibe-ai/references/rag-audit.md": "3773f88bcb46ed6751edad453c09e7e4b2db22b0ac096b7e52a8c550b0d83a83",
+        "plugins/vibe-coding/skills/vibe-ai/references/model-serving-monitoring-polish.md": "910a30082029daf23d8a994302038960fbda721fee73917049d2ddd72368d67b",
+        "plugins/vibe-coding/skills/vibe-ai/references/ai-safety-governance-audit.md": "0b926299075ec8ddd975c6a8a4ea0b64194d1fece31c03095c1dca7f014b3f0a",
+        "plugins/vibe-coding/skills/vibe-ai/references/ai-feature-audit.md": "29608726f923210e311469e47b40f4073c9fc385209c0dd1c5ee6b9488700c1e",
+        "plugins/vibe-coding/skills/vibe-ai/references/ocr-document-ai-polish.md": "acbc27f0e069988f0d2fbb342f29fd13df0c42ec68a8031ac63ce5550fe626fe",
+        "plugins/vibe-coding/skills/vibe-ai/references/rag-polish.md": "67ed3f9c8ba04845e105daba659bec55f6128da4c49266b0411f059a073fe9c5",
+        "plugins/vibe-coding/skills/vibe-ai/references/ai-feature-polish.md": "8b42c3abd5fe435b8cd13599fc4088ac68aa578902a1f3271fb398eedf8ddfec",
+        "plugins/vibe-coding/skills/vibe-ai/references/ai-evaluation-polish.md": "b3bcf2fb22e8d25f8ef4ecb8af4b199d0865b42dc3d886e07bb47f6d8d806048",
+        "plugins/vibe-coding/skills/vibe-ai/references/ai-safety-governance-polish.md": "c3358905cd169c9f21751457afccad135160be81a48ed5fc3ec21c02c97dbbb8",
+        "plugins/vibe-coding/skills/vibe-ai/references/ml-pipeline-polish.md": "02e4163d9ef5b2098f974074f932dd4d2dc00b758d24fd44b0de042ff3c174fa",
+        "plugins/vibe-coding/skills/vibe-ai/references/ocr-document-ai-audit.md": "e4d776a52cceb316cbce1a03903a43462ef4109098b690ade6fd0ffb1c55d47b",
+        "plugins/vibe-coding/skills/vibe-ai/references/ai-evaluation-audit.md": "ece7a245df0b4637f14d0f0c084bb7b657bf24b57ae2d1e57a2a182bdf4ca856",
+        "plugins/vibe-coding/skills/vibe-ai/references/model-serving-monitoring-audit.md": "f3d3a92325fd126a19356d2ae851407b1bbe12f2b21990d2047f84f1056721ef",
+        "plugins/vibe-coding/skills/vibe-ai/references/llm-agent-tools-audit.md": "6227fe2073f0bf251294bd42e865d0e7cb5150d99e23e6ac9750e42c265aa141"
+      }
+    },
+    "vibe-backend": {
+      "status": "complete",
+      "read": [
+        "SKILL.md",
+        "references/api-contract-evolution-polish.md",
+        "references/api-contract-compatibility-check.md",
+        "references/api-contract-evolution-audit.md",
+        "references/api-audit.md",
+        "references/bot-audit.md",
+        "references/bot-polish.md",
+        "references/api-polish.md"
+      ],
+      "changes": [
+        "Defined separate endpoint, contract-evolution and bot-journey workflows.",
+        "Added concrete request/state/version handoffs and the compatibility repair/recheck cycle to all seven prompts.",
+        "Tied acceptance to persisted effects and consumer interpretation rather than status or schema compilation alone."
+      ],
+      "validation": {
+        "skill_validator": "passed",
+        "local_references": "passed",
+        "scenario_walkthroughs": [
+          "An additive schema field still fails when a supported strict client rejects it.",
+          "A wire-compatible value with changed business meaning does not pass compatibility.",
+          "A 200 response with the wrong stored effect returns to the same owning repair.",
+          "Bot callback replay is checked in an authorized fixture/test chat, not against real recipients.",
+          "A known endpoint fix skips broad diagnosis and still receives final Patch Checking."
+        ],
+        "limits": "Manual instruction walkthroughs; no independent model behavior is claimed."
+      },
+      "fingerprints": {
+        "plugins/vibe-coding/skills/vibe-backend/SKILL.md": "09f6fcafef39ac0d97fdfa95c49dcc37f54ebaa3705ef9b9d17c14183bde4737",
+        "plugins/vibe-coding/skills/vibe-backend/references/api-contract-evolution-polish.md": "44469fcdca1c5e3a3c1f6db0c7dc9510c24fad4ca31e7a0a72ae5845f14c6235",
+        "plugins/vibe-coding/skills/vibe-backend/references/api-contract-compatibility-check.md": "7eccb397298ba8c73681705400cb73389ea8a8ed04fc8bb66af1e9e536434d41",
+        "plugins/vibe-coding/skills/vibe-backend/references/api-contract-evolution-audit.md": "df7ade18042860d4e83bb27488bb6e7eff16122501cc84a60b2764c49bf6ea99",
+        "plugins/vibe-coding/skills/vibe-backend/references/api-audit.md": "b1643717f6f018ebfa99022878aba6242ea714e388d589ab43ad613b5968904c",
+        "plugins/vibe-coding/skills/vibe-backend/references/bot-audit.md": "b9aaf3bdcbfcc5739b3454f55750041795e6b5fbce1af01961214a725058bae3",
+        "plugins/vibe-coding/skills/vibe-backend/references/bot-polish.md": "cf157280a02330a0d0bdae003e855a6fdfad0ed55d9fccd50f991a11e5e1b9c5",
+        "plugins/vibe-coding/skills/vibe-backend/references/api-polish.md": "16db62c1dd478fd21cddcbcb99794739dcc46da2786c4ef617990dfb9bda7454"
+      }
+    },
+    "vibe-cache": {
+      "status": "complete",
+      "read": [
+        "SKILL.md",
+        "references/cache-coherency-check.md",
+        "references/cache-invalidation-polish.md",
+        "references/cache-invalidation-audit.md"
+      ],
+      "changes": [
+        "Defined the authoritative-write → invalidation → read verification workflow and repair loop.",
+        "Added an executable coherency method with controlled time, in-flight stale fills and principal variants.",
+        "Qualified key dimensions and permitted stale windows by the actual result/access contract."
+      ],
+      "validation": {
+        "skill_validator": "passed",
+        "local_references": "passed",
+        "scenario_walkthroughs": [
+          "An old in-flight fill cannot repopulate a disallowed version after invalidation.",
+          "Intentional stale-while-revalidate within its promised window is not a false defect.",
+          "A one-time cache clear is not accepted as proof of a fixed invalidation owner.",
+          "A public cache is not needlessly fragmented by unrelated user dimensions."
+        ],
+        "limits": "Manual instruction walkthroughs; no independent model behavior is claimed."
+      },
+      "fingerprints": {
+        "plugins/vibe-coding/skills/vibe-cache/SKILL.md": "fedc326e7a64a8326d362fab291ce40727fc027b7aa017d9b61ff6f5b2cdfef8",
+        "plugins/vibe-coding/skills/vibe-cache/references/cache-coherency-check.md": "220e44fb34138d7b903ef1f8421a90a32d2d8066e37816122bcbfd7a1ecf04b7",
+        "plugins/vibe-coding/skills/vibe-cache/references/cache-invalidation-polish.md": "be455d0fc5bf653df037f9ed6b4ff738a46063ea1b56fe2d77f174d533077f52",
+        "plugins/vibe-coding/skills/vibe-cache/references/cache-invalidation-audit.md": "303c795f7262348e54354452f65060305acde6b4b291a32544b6993a10b37f16"
+      }
+    },
+    "vibe-celery": {
+      "status": "complete",
+      "read": [
+        "SKILL.md",
+        "references/celery-delivery-shutdown-check.md",
+        "references/celery-workers-polish.md",
+        "references/celery-workers-audit.md"
+      ],
+      "changes": [
+        "Made broker/pool/settings and durable operation identity the handoff across the task lifecycle workflow.",
+        "Added controlled publication/commit/ack and shutdown verification rather than scenario names alone.",
+        "Separated task prefetch from connection-pool measurement and retained transport-specific guarantees."
+      ],
+      "validation": {
+        "skill_validator": "passed",
+        "local_references": "passed",
+        "scenario_walkthroughs": [
+          "Eager-mode success cannot establish worker-loss or broker redelivery behavior.",
+          "A successful result-backend status cannot hide a duplicated durable effect.",
+          "Expected crash behavior comes from the effective acknowledgement policy, not a universal delivery assumption.",
+          "Failure injection uses a dedicated test queue/worker rather than shared production workers."
+        ],
+        "limits": "Manual instruction walkthroughs; no independent model behavior is claimed."
+      },
+      "fingerprints": {
+        "plugins/vibe-coding/skills/vibe-celery/SKILL.md": "0d204194e8a2d68c999572547d16e9753770ea4d24f339fcee8c80feeda419c4",
+        "plugins/vibe-coding/skills/vibe-celery/references/celery-delivery-shutdown-check.md": "eeacd50b5f1549f6db8ec251c69bb1bff3bb058fb209663dde4341059d5817cd",
+        "plugins/vibe-coding/skills/vibe-celery/references/celery-workers-polish.md": "7db51bc3ca89b4c6fa70c14aa7a6bee94bf1edf0fdf40ef521f18fee9b3f3ecf",
+        "plugins/vibe-coding/skills/vibe-celery/references/celery-workers-audit.md": "02137185ef6a19b009d993b5cab74f0481ddc674f26de5cb36a08fb1712c41dc"
+      }
+    },
+    "vibe-clickhouse": {
+      "status": "complete",
+      "read": [
+        "SKILL.md",
+        "references/clickhouse-ingestion-query-load-check.md",
+        "references/clickhouse-polish.md",
+        "references/clickhouse-audit.md"
+      ],
+      "changes": [
+        "Defined ingestion/table/query-budget workflow inputs and ownership handoffs.",
+        "Added a controlled fixture and workload method for the domain check.",
+        "Separated physical rows and merge visibility from required logical query results and measured capacity."
+      ],
+      "validation": {
+        "skill_validator": "passed",
+        "local_references": "passed",
+        "scenario_walkthroughs": [
+          "Physical duplicate rows are judged against actual engine/query semantics, not assumed immediate uniqueness.",
+          "A successful insert acknowledgement alone does not prove the source checkpoint/result contract.",
+          "A small local dataset cannot establish production p99 or merge capacity.",
+          "A DDL or settings correction is checked with the same fixture/query before final Patch Checking."
+        ],
+        "limits": "Manual instruction walkthroughs; no independent model behavior is claimed."
+      },
+      "fingerprints": {
+        "plugins/vibe-coding/skills/vibe-clickhouse/SKILL.md": "e0ba53cc938ca0b834552a961f9a3e30b6376e90642653b17cdb40726299513a",
+        "plugins/vibe-coding/skills/vibe-clickhouse/references/clickhouse-ingestion-query-load-check.md": "3e05904a92d4f62b50be715408f63f2fc3072f79e9e928e05ac8e5a8680fe37f",
+        "plugins/vibe-coding/skills/vibe-clickhouse/references/clickhouse-polish.md": "a8f7426aa065c10e7f0b39ddb4924238c910ec9b59edb3104cf657d44e48ae0c",
+        "plugins/vibe-coding/skills/vibe-clickhouse/references/clickhouse-audit.md": "a4221ce2e575b3e08065763ca5e4acd6b5bead01dcf7e0f12850bb3fe0ae4d2c"
+      }
+    },
+    "vibe-compatibility": {
+      "status": "complete",
+      "read": [
+        "SKILL.md",
+        "references/reverse-engineering-audit.md",
+        "references/reverse-engineering-polish.md",
+        "references/compatibility-golden-master-check.md"
+      ],
+      "changes": [
+        "Defined the authorized reference → inferred contract → adapter → differential check workflow.",
+        "Added frozen corpus, valid-control and raw/normalized comparison handoffs.",
+        "Protected semantic differences and unknown branches from being hidden by golden regeneration."
+      ],
+      "validation": {
+        "skill_validator": "passed",
+        "local_references": "passed",
+        "scenario_walkthroughs": [
+          "Sorting output cannot mask an ordering contract the reference exposes.",
+          "An unavailable reference branch remains unknown rather than compatible.",
+          "Candidate-derived expected output does not repair a failing golden test.",
+          "An intentional deviation requires a contract decision instead of being labelled accidental compatibility."
+        ],
+        "limits": "Manual instruction walkthroughs; no independent model behavior is claimed."
+      },
+      "fingerprints": {
+        "plugins/vibe-coding/skills/vibe-compatibility/SKILL.md": "8b89931d524a5d09bf582eb1a59a0146ec3db6f63da429c122e573ea4dc96308",
+        "plugins/vibe-coding/skills/vibe-compatibility/references/reverse-engineering-audit.md": "c096eada4cbb28dbf0dd2b06dba4a61cfd41bf99fae7abaa32747d315cabe42d",
+        "plugins/vibe-coding/skills/vibe-compatibility/references/reverse-engineering-polish.md": "766b4f46f644c1a7d7ec0a26018dda52ca427c2e9262acd7f4dba5c093f4cbfb",
+        "plugins/vibe-coding/skills/vibe-compatibility/references/compatibility-golden-master-check.md": "0b35f2815565ba5e5586fe668de12948c3e48d098a7c1a0b21a9dfe4cabb94b5"
+      }
+    },
+    "vibe-content": {
+      "status": "complete",
+      "read": [
+        "SKILL.md",
+        "references/seo-geo-polish.md",
+        "references/notification-content-audit.md",
+        "references/product-landing-copy-polish.md",
+        "references/notification-content-polish.md",
+        "references/product-landing-copy-audit.md",
+        "references/localization-polish.md",
+        "references/seo-geo-audit.md",
+        "references/localization-audit.md"
+      ],
+      "changes": [
+        "Defined claim/translation/template/SEO workflows with actual state and destination evidence.",
+        "Added precise audit-to-correction handoffs and rendered rechecks for all eight prompts.",
+        "Replaced exposed untranslated placeholders with readable fallback plus explicit coverage reporting."
+      ],
+      "validation": {
+        "skill_validator": "passed",
+        "local_references": "passed",
+        "scenario_walkthroughs": [
+          "A heading translated into Russian does not establish translated search, metadata or accessible names.",
+          "A new product version is taken from its maintained manifest instead of copied manually into several pages.",
+          "A success message whose destination is expired still fails the content contract.",
+          "A local SEO build cannot prove indexing or deployed route correctness.",
+          "Notification preview work does not authorize sending real messages."
+        ],
+        "limits": "Manual instruction walkthroughs; no independent model behavior is claimed."
+      },
+      "fingerprints": {
+        "plugins/vibe-coding/skills/vibe-content/SKILL.md": "bb82f5a895698dbb82c187b7529d7313299c3f9ace31028739e977b6d2f135a5",
+        "plugins/vibe-coding/skills/vibe-content/references/seo-geo-polish.md": "306f67ac55bacd0ee7d65d94b09fe95a66ec7e9c65a62e219f00dba37041bc28",
+        "plugins/vibe-coding/skills/vibe-content/references/notification-content-audit.md": "bba530b7a6e3c2172c31024921afd0a22d4dc09e231dfd63ac3b47258b955129",
+        "plugins/vibe-coding/skills/vibe-content/references/product-landing-copy-polish.md": "eb133e9a9e1b9a8365200f24f96ac51ad8dbe1fc28688ed7e42372c82e77f614",
+        "plugins/vibe-coding/skills/vibe-content/references/notification-content-polish.md": "c31c4df62ee0047df42c21eec6a6044e7a09702a35e19c2da6959775b51c555b",
+        "plugins/vibe-coding/skills/vibe-content/references/product-landing-copy-audit.md": "6f4dd9551876a41ff1b2cb9ce1d16dfa828b8b0b082c56c023da5cb68848e10b",
+        "plugins/vibe-coding/skills/vibe-content/references/localization-polish.md": "9531936354e956723c8752998a2b416e6b088074f16bbea8d9d0ea43b5998971",
+        "plugins/vibe-coding/skills/vibe-content/references/seo-geo-audit.md": "1625056e9e90ad028f7d231e84d5a159ad2c635f4a8a559246b25fbacb546260",
+        "plugins/vibe-coding/skills/vibe-content/references/localization-audit.md": "e2a44dfb2427e9017f9aaa7aebe64a6a39a46c4a64bb4c94113789904b4c4839"
+      }
+    },
+    "vibe-design": {
+      "status": "complete",
+      "read": [
+        "SKILL.md",
+        "references/accessibility-polish.md",
+        "references/accessibility-audit.md",
+        "references/design-system-polish.md",
+        "references/design-system-audit.md"
+      ],
+      "changes": [
+        "Separated accessible task completion from shared token/variant consistency workflows.",
+        "Added reproducible interaction/state/viewport handoffs to all four prompts.",
+        "Bound verification to actual consumers and distinguished screenshots, semantics and assistive-technology evidence."
+      ],
+      "validation": {
+        "skill_validator": "passed",
+        "local_references": "passed",
+        "scenario_walkthroughs": [
+          "A screenshot that looks correct does not prove keyboard focus return works.",
+          "A local density difference is not automatically shared design-system drift.",
+          "An unused corrected token cannot establish a fixed product surface.",
+          "A hidden or disabled failing action is not accepted as an accessibility repair."
+        ],
+        "limits": "Manual instruction walkthroughs; no independent model behavior is claimed."
+      },
+      "fingerprints": {
+        "plugins/vibe-coding/skills/vibe-design/SKILL.md": "72c0f8d24986183e953df63e33b64cc3cd7b5f35aaef8607c06eeb35a6f3127f",
+        "plugins/vibe-coding/skills/vibe-design/references/accessibility-polish.md": "1bc24e1a72ea0483d7d69017484ba65c3ffcda716e8b5b06e6987eb0054f7089",
+        "plugins/vibe-coding/skills/vibe-design/references/accessibility-audit.md": "4394677f4f605b45be0965b2582d094396cb62aca99eec441a0130896ace3121",
+        "plugins/vibe-coding/skills/vibe-design/references/design-system-polish.md": "783fd2776d8d2e1b69112548c99288c61381ac3d3c1dc2b71e27e44ae085d0d8",
+        "plugins/vibe-coding/skills/vibe-design/references/design-system-audit.md": "cf540ae36d99f297aaad212e7f35cb4b92498c1de7b1cbc5b24432943bf5ffc7"
+      }
+    },
+    "vibe-desktop": {
+      "status": "complete",
+      "read": [
+        "SKILL.md",
+        "references/local-client-runtime-security-check.md",
+        "references/browser-extension-polish.md",
+        "references/desktop-app-polish.md",
+        "references/desktop-app-audit.md",
+        "references/browser-extension-audit.md"
+      ],
+      "changes": [
+        "Defined separate extension and desktop boundary workflows with runtime/permission evidence.",
+        "Added actual sender/build/local-state handoffs and allowed/denied controls.",
+        "Made restart/update effects and platform/signing limitations explicit without widening access."
+      ],
+      "validation": {
+        "skill_validator": "passed",
+        "local_references": "passed",
+        "scenario_walkthroughs": [
+          "A denied IPC response after a protected write still fails.",
+          "A popup or development renderer cannot prove native/background enforcement.",
+          "A worker restart that loses required permission/state returns to its lifecycle owner.",
+          "Package/signing evidence is scoped to the selected distribution rather than inferred from local UI."
+        ],
+        "limits": "Manual instruction walkthroughs; no independent model behavior is claimed."
+      },
+      "fingerprints": {
+        "plugins/vibe-coding/skills/vibe-desktop/SKILL.md": "240b9d6517f69c4c9e6e78e65f2d2d5ecbd18626e79dc3b2c0a602f982fc118e",
+        "plugins/vibe-coding/skills/vibe-desktop/references/local-client-runtime-security-check.md": "a6c3ed8e7d587e39c2024fad8631e474ba4e79f00824309b533992d69debcb42",
+        "plugins/vibe-coding/skills/vibe-desktop/references/browser-extension-polish.md": "5d971a1539a21af9db5e2a8cf17b4947940a77f8798b4360d88f3360d5a2c054",
+        "plugins/vibe-coding/skills/vibe-desktop/references/desktop-app-polish.md": "c7e384382a8b189ada7a1e48b0cc9987d7ace7b0cbd0c5724df9d25e66361b30",
+        "plugins/vibe-coding/skills/vibe-desktop/references/desktop-app-audit.md": "f715c243bb50fffb0025f5b4bb239314615a2e6b27510b5ea3c97c0a4dbabc59",
+        "plugins/vibe-coding/skills/vibe-desktop/references/browser-extension-audit.md": "754242437c5944485d26324106d0e2dc723c6e3707bdd9f09aca3b482c3270e4"
+      }
+    },
+    "vibe-domain": {
+      "status": "complete",
+      "read": [
+        "SKILL.md",
+        "references/notebook-productionization-audit.md",
+        "references/rbac-abac-matrix-check.md",
+        "references/experiment-design-audit.md",
+        "references/billing-entitlements-audit.md",
+        "references/auth-permissions-audit.md",
+        "references/product-analytics-audit.md",
+        "references/data-model-audit.md",
+        "references/data-model-polish.md",
+        "references/multi-tenant-isolation-polish.md",
+        "references/tenant-isolation-check.md",
+        "references/oauth-oidc-session-check.md",
+        "references/multi-tenant-isolation-audit.md",
+        "references/billing-entitlements-polish.md",
+        "references/notebook-productionization-polish.md",
+        "references/rbac-abac-policy-polish.md",
+        "references/data-pipeline-quality-audit.md",
+        "references/experiment-design-polish.md",
+        "references/data-pipeline-quality-polish.md",
+        "references/rbac-abac-policy-audit.md",
+        "references/product-analytics-polish.md",
+        "references/auth-permissions-polish.md"
+      ],
+      "changes": [
+        "Defined nine business-rule/data workflow families and their concrete acceptance handoffs.",
+        "Added controlled principal/matrix/two-tenant verification methods and data/analysis repair loops across all 21 prompts.",
+        "Corrected notebook execution-order wording, client event ownership and authorized global-tenant policy distinctions."
+      ],
+      "validation": {
+        "skill_validator": "passed",
+        "local_references": "passed",
+        "scenario_walkthroughs": [
+          "A denial returned after an unauthorized effect still fails; a healthy permitted control must work.",
+          "An OAuth fixture testing local sessions cannot claim provider logout or cryptographic verification.",
+          "A valid ordered notebook is not considered defective merely for requiring sequential cells.",
+          "An experiment effect is not interpreted before assignment/exposure/data-quality validity.",
+          "Authorized global administrator aggregation is checked against policy, not automatically classified as a leak.",
+          "A client-rendered event can be authoritative for rendering without claiming a durable server effect."
+        ],
+        "limits": "Manual instruction walkthroughs; no independent model behavior is claimed."
+      },
+      "fingerprints": {
+        "plugins/vibe-coding/skills/vibe-domain/SKILL.md": "4e8a6a04d5cc28419b4bdd3a5967dc8db72793a7c521a397dd1245833d450832",
+        "plugins/vibe-coding/skills/vibe-domain/references/notebook-productionization-audit.md": "c4fcdc7b122d8f9558da830ef7fe9e3f0473ce427235a95ed26381f9c762524a",
+        "plugins/vibe-coding/skills/vibe-domain/references/rbac-abac-matrix-check.md": "95129caa39a154894fa84d0e2909f83c800f1f1556373223790e9538cf8450e4",
+        "plugins/vibe-coding/skills/vibe-domain/references/experiment-design-audit.md": "dae341be910c3e3f508ea4e3d183a3f304779907e84ae91cf793e476570754db",
+        "plugins/vibe-coding/skills/vibe-domain/references/billing-entitlements-audit.md": "a6ecdf69af077516de11d2fd6f46318aa08d14f326b1010a2cff2e2a22c02969",
+        "plugins/vibe-coding/skills/vibe-domain/references/auth-permissions-audit.md": "de3dbc89623cb19d3c63c1c5d5869557a3e435d2545cad553fc717925899bf0c",
+        "plugins/vibe-coding/skills/vibe-domain/references/product-analytics-audit.md": "cd08167310bc60acc963624ddccb12446d94034131e1762fe5bd5a8e3512eb4c",
+        "plugins/vibe-coding/skills/vibe-domain/references/data-model-audit.md": "731799dcb8809c5337b636d72cb5ae8d8fa65b2752a446fabc62b9b574145b1a",
+        "plugins/vibe-coding/skills/vibe-domain/references/data-model-polish.md": "66a594967c79704f6a133f29e4005caa1a57056dfb6538e3fc33832a3842283f",
+        "plugins/vibe-coding/skills/vibe-domain/references/multi-tenant-isolation-polish.md": "3c366b91246deb086fadc635762a1fd3f53528b59ab71742986e0e4500316d23",
+        "plugins/vibe-coding/skills/vibe-domain/references/tenant-isolation-check.md": "51ffa8acd040218cb1865f7144106e87d58cc8f074f23dc7591ad3d46cd58794",
+        "plugins/vibe-coding/skills/vibe-domain/references/oauth-oidc-session-check.md": "3dde88a937118840bb4c1c91531425f542df8381024ce24874f334d1493ce883",
+        "plugins/vibe-coding/skills/vibe-domain/references/multi-tenant-isolation-audit.md": "53a9b72106a5b3e723460c9e357edfe84648d9c511adda3aceb342c1447604cf",
+        "plugins/vibe-coding/skills/vibe-domain/references/billing-entitlements-polish.md": "1bbe7fd94c0e9cadbcc020286e4bb6490bd816521143f4fa2a0ddabb40050327",
+        "plugins/vibe-coding/skills/vibe-domain/references/notebook-productionization-polish.md": "fd00093dff4e124d524dbf6990b85070dee9ed9bf303d9321f92a68e41bc0c8b",
+        "plugins/vibe-coding/skills/vibe-domain/references/rbac-abac-policy-polish.md": "417d4e29b1edfc2cf081d15f6edd911d2ac5cf7c29ec8195e2bcd0f60288b1dd",
+        "plugins/vibe-coding/skills/vibe-domain/references/data-pipeline-quality-audit.md": "e8d7fc7862aebb7950ec05e7c8845e441eb34f19e7ba06c0262e84908fd9152e",
+        "plugins/vibe-coding/skills/vibe-domain/references/experiment-design-polish.md": "9b02891d75b1b6d7819359dd9fa4c919f88f3c04e41bb40c0ac8656980606b9f",
+        "plugins/vibe-coding/skills/vibe-domain/references/data-pipeline-quality-polish.md": "211386fa383ea857958afa5d9ac2034262d3626305c826b7494273918dc465f7",
+        "plugins/vibe-coding/skills/vibe-domain/references/rbac-abac-policy-audit.md": "678a5521394c12400136d435b04dd9025a941fcc0b0dd8d6509b4f5ee152c1c5",
+        "plugins/vibe-coding/skills/vibe-domain/references/product-analytics-polish.md": "bd680b1d36a898dbaa0bf38c64c751254c89b0cf760f8826630d068ee6a57704",
+        "plugins/vibe-coding/skills/vibe-domain/references/auth-permissions-polish.md": "be0bf0dc800d7f1e6c877142cbfd7cee9dcf32ad1f1bf431e5de5b80fc451547"
+      }
+    },
+    "vibe-flags": {
+      "status": "complete",
+      "read": [
+        "SKILL.md",
+        "references/feature-flags-rollout-audit.md",
+        "references/feature-flag-exposure-rollback-check.md",
+        "references/feature-flags-rollout-polish.md"
+      ],
+      "changes": [
+        "Defined context, fallback and post-disable state handoffs across the rollout workflow.",
+        "Added actual targeting, treatment-exposure and on→off verification steps.",
+        "Separated flag booleans from authorization, exposure and durable rollback effects."
+      ],
+      "validation": {
+        "skill_validator": "passed",
+        "local_references": "passed",
+        "scenario_walkthroughs": [
+          "A client-side flag does not establish backend authorization.",
+          "A flag lookup or assignment does not prove treatment exposure.",
+          "A kill switch that leaves incompatible enabled-state data does not pass rollback.",
+          "Provider-failure fallback follows the accepted policy rather than an invented default."
+        ],
+        "limits": "Manual instruction walkthroughs; no independent model behavior is claimed."
+      },
+      "fingerprints": {
+        "plugins/vibe-coding/skills/vibe-flags/SKILL.md": "92b6af90bc198dcdecf1d4d6876cc7c4ca19aace5edff17420cd3d3e335c08ad",
+        "plugins/vibe-coding/skills/vibe-flags/references/feature-flags-rollout-audit.md": "f772ef0ab4b57bf47082e25b2733308c09f1d3a45da9005227613835867e011b",
+        "plugins/vibe-coding/skills/vibe-flags/references/feature-flag-exposure-rollback-check.md": "e0d9a5facdf1ec95819c01a8c2331aeff77c07178f07c82f7a578c70001ee012",
+        "plugins/vibe-coding/skills/vibe-flags/references/feature-flags-rollout-polish.md": "5fd70463abe03bf7e10c30e45e357f76193ce93def12180c9c7fe1f45cfdcea6"
+      }
+    },
+    "vibe-go-rust": {
+      "status": "complete",
+      "read": [
+        "SKILL.md",
+        "references/go-rust-microservices-audit.md",
+        "references/go-rust-concurrency-shutdown-check.md",
+        "references/go-rust-microservices-polish.md"
+      ],
+      "changes": [
+        "Defined cancellation/ownership/resource handoffs across the service workflow.",
+        "Added a controlled interleaving and shutdown measurement method.",
+        "Separated task abortion from effect rollback and retained pools from actual leaks."
+      ],
+      "validation": {
+        "skill_validator": "passed",
+        "local_references": "passed",
+        "scenario_walkthroughs": [
+          "A canceled caller with a committed durable effect is judged by the stated contract, not assumed rollback.",
+          "A child that escapes its owner remains a failure even if the response returned.",
+          "A retained connection pool is compared with its lifecycle budget rather than required to reach zero.",
+          "Unsupported race/runtime instrumentation remains a limitation, not a fabricated pass."
+        ],
+        "limits": "Manual instruction walkthroughs; no independent model behavior is claimed."
+      },
+      "fingerprints": {
+        "plugins/vibe-coding/skills/vibe-go-rust/SKILL.md": "c93efa3ad68936f1d5e51ff2c4ad98360c8fe58246c1024842ec4a11cacb639e",
+        "plugins/vibe-coding/skills/vibe-go-rust/references/go-rust-microservices-audit.md": "6560fed2d8ab7cc1c4f0d2541105dc2bc841606b7ed7605aed6bbbab1756fdca",
+        "plugins/vibe-coding/skills/vibe-go-rust/references/go-rust-concurrency-shutdown-check.md": "1bbcc5482e388a13337ce5a78849013a8462e4ccd6f954f3f26aca2a61a451bc",
+        "plugins/vibe-coding/skills/vibe-go-rust/references/go-rust-microservices-polish.md": "26fdf48e7fae733b76d12eca620038d9d26d8a7f9b88e53c8c17941040621c19"
+      }
+    },
+    "vibe-harness": {
+      "status": "complete",
+      "read": [
+        "SKILL.md",
+        "references/agent-harness-polish.md",
+        "references/agent-harness-replay-failure-check.md",
+        "references/agent-harness-audit.md"
+      ],
+      "changes": [
+        "Defined run/transition/effect handoffs and controlled replay verification.",
+        "Separated application orchestration from assistant task delegation.",
+        "Clarified versioned terminal transitions and the limits of local fencing for external effects."
+      ],
+      "validation": {
+        "skill_validator": "passed",
+        "local_references": "passed",
+        "scenario_walkthroughs": [
+          "One local terminal result cannot hide two remote protected effects.",
+          "A stale completion rejected locally does not prove the remote call was fenced.",
+          "A retry must preserve operation identity and cannot silently reopen an accepted terminal state.",
+          "A harness audit instruction does not authorize spawning assistant agents."
+        ],
+        "limits": "Manual instruction walkthroughs; no independent model behavior is claimed."
+      },
+      "fingerprints": {
+        "plugins/vibe-coding/skills/vibe-harness/SKILL.md": "65a58d726411ef0831d73690cf482f67cae19c4860329598916d0a9502cd7a58",
+        "plugins/vibe-coding/skills/vibe-harness/references/agent-harness-polish.md": "01171625eb5c2a39d49c7ce4b949184f3622842fa2b94aa6a1e37f41cdbcb117",
+        "plugins/vibe-coding/skills/vibe-harness/references/agent-harness-replay-failure-check.md": "bb2825e729786b612bcadc444d1d6b66faec7ee4c18dded6d9bf0c56a2253a4e",
+        "plugins/vibe-coding/skills/vibe-harness/references/agent-harness-audit.md": "a0d8e581b0dc445967d4b4bbac675819c7f770c505dd4f2106bf73649ae3c9bc"
+      }
+    },
+    "vibe-integrations": {
+      "status": "complete",
+      "read": [
+        "SKILL.md",
+        "references/network-integration-failure-check.md",
+        "references/backend-integrations-audit.md",
+        "references/backend-integrations-polish.md"
+      ],
+      "changes": [
+        "Defined operation/vector/sequence and layered-budget handoffs across the network workflow.",
+        "Added controlled ambiguity, signature and stream recovery verification.",
+        "Removed a one-size-fits-all raw-body/HMAC assumption in favour of the actual provider signing contract."
+      ],
+      "validation": {
+        "skill_validator": "passed",
+        "local_references": "passed",
+        "scenario_walkthroughs": [
+          "A caller timeout does not establish that the provider effect was rolled back.",
+          "A webhook is verified against its actual provider representation, not an invented universal preimage.",
+          "Reconnect without filling or resynchronizing an event gap remains a failure.",
+          "A retry fix is judged by total attempts/effects across layers, not one client setting."
+        ],
+        "limits": "Manual instruction walkthroughs; no independent model behavior is claimed."
+      },
+      "fingerprints": {
+        "plugins/vibe-coding/skills/vibe-integrations/SKILL.md": "fb4e39af02bf6635ef97a3310f40a6994592d4e94d41a299ccf36ce24425fa03",
+        "plugins/vibe-coding/skills/vibe-integrations/references/network-integration-failure-check.md": "ca6db97fc397f0cf50e03b81b4e699cf10a596ca11d18082e398a059a8248509",
+        "plugins/vibe-coding/skills/vibe-integrations/references/backend-integrations-audit.md": "ae8233c5e43ab4a8fe8e629d7a507ddbe1124460d05d23371807a027c566f272",
+        "plugins/vibe-coding/skills/vibe-integrations/references/backend-integrations-polish.md": "1485492d96e30fb01cbf07342ca5afae350052fff9ddbd722a9613ea00c0966d"
+      }
+    },
+    "vibe-kafka": {
+      "status": "complete",
+      "read": [
+        "SKILL.md",
+        "references/kafka-redpanda-polish.md",
+        "references/kafka-redpanda-rebalance-failure-check.md",
+        "references/kafka-redpanda-audit.md"
+      ],
+      "changes": [
+        "Defined record/partition/operation identity and actual completion-boundary handoffs.",
+        "Added controlled crash/rebalance observation of offsets, ordering and business effects.",
+        "Distinguished repeated keys, producer idempotence and external-effect deduplication."
+      ],
+      "validation": {
+        "skill_validator": "passed",
+        "local_references": "passed",
+        "scenario_walkthroughs": [
+          "Two distinct events sharing a key are not silently discarded as duplicates.",
+          "Broker exactly-once processing does not claim arbitrary external effects are atomic.",
+          "Low lag cannot conceal an incorrectly committed unprocessed operation.",
+          "A rebalance failure is repaired at assignment/commit ownership and replayed before patch review."
+        ],
+        "limits": "Manual instruction walkthroughs; no independent model behavior is claimed."
+      },
+      "fingerprints": {
+        "plugins/vibe-coding/skills/vibe-kafka/SKILL.md": "d40d3931e4644da47291850a3a07863a1e16d27ca54c0a6e7e50e340749f1c70",
+        "plugins/vibe-coding/skills/vibe-kafka/references/kafka-redpanda-polish.md": "8e505ff19df0ff6250bcafb5df5c206dfa3c98380c1818a3ead0315086bc3fc0",
+        "plugins/vibe-coding/skills/vibe-kafka/references/kafka-redpanda-rebalance-failure-check.md": "10baaa069527e282b073ca28dc189bda13d1b0a1f3be3ac3a196a4c536a1ba43",
+        "plugins/vibe-coding/skills/vibe-kafka/references/kafka-redpanda-audit.md": "08e93ea7cd37c3c13bf435d182e7210cfe233844e0976137f92e5a9abc7975d0"
+      }
+    },
+    "vibe-kubernetes": {
+      "status": "complete",
+      "read": [
+        "SKILL.md",
+        "references/kubernetes-rollout-failure-check.md",
+        "references/kubernetes-platform-audit.md",
+        "references/kubernetes-platform-polish.md"
+      ],
+      "changes": [
+        "Defined exact source/render/cluster and workload lifecycle handoffs.",
+        "Added observed rollout, traffic/drain and state-recovery verification.",
+        "Corrected PDB versus involuntary loss/controller rollout assumptions and separated dry-run from actual apply."
+      ],
+      "validation": {
+        "skill_validator": "passed",
+        "local_references": "passed",
+        "scenario_walkthroughs": [
+          "A valid render cannot establish a successful rollout or drain.",
+          "A PDB is not expected to prevent involuntary node loss or replace rollout policy.",
+          "A workload rollback does not imply incompatible data was restored.",
+          "A missing test cluster remains a runtime gate while valid static evidence is retained."
+        ],
+        "limits": "Manual instruction walkthroughs; no independent model behavior is claimed."
+      },
+      "fingerprints": {
+        "plugins/vibe-coding/skills/vibe-kubernetes/SKILL.md": "2175c36e90bbc6f121e1cd2fb01665d0ed3ef01a6dce9cb35834909bac331b23",
+        "plugins/vibe-coding/skills/vibe-kubernetes/references/kubernetes-rollout-failure-check.md": "ce4bda4b33cd44ce8234fba7ffcb817b3993e768c253911fa0d40d9ec3b6f506",
+        "plugins/vibe-coding/skills/vibe-kubernetes/references/kubernetes-platform-audit.md": "cf1ca32beb664849385100099f1b6aaffa1bc85dcec36959d4ffc5f728ee06f7",
+        "plugins/vibe-coding/skills/vibe-kubernetes/references/kubernetes-platform-polish.md": "1d335007285ffe45611caa87ae9e4497f06f49a13f4f1a0ff611f24ec98606c7"
+      }
+    },
+    "vibe-mcp": {
+      "status": "complete",
+      "read": [
+        "SKILL.md",
+        "references/mcp-server-polish.md",
+        "references/mcp-server-audit.md",
+        "references/mcp-protocol-auth-check.md"
+      ],
+      "changes": [
+        "Defined discovery-to-client interpretation as the MCP workflow with version/principal/effect handoffs.",
+        "Added the repair/recheck transition and preserved deliberately public noauth boundaries.",
+        "Separated successful retrieval/transport from actual agent workflow completion."
+      ],
+      "validation": {
+        "skill_validator": "passed",
+        "local_references": "passed",
+        "scenario_walkthroughs": [
+          "HTTP 200 with an ignored tool error does not pass consumer behavior.",
+          "A public read-only tool is not forced into OAuth without a private-data/action requirement.",
+          "A legacy supported client is not dropped just because a newer protocol exists.",
+          "Fetching the Patch Checking prompt cannot itself establish a clean patch verdict."
+        ],
+        "limits": "Manual instruction walkthroughs; no independent model behavior is claimed."
+      },
+      "fingerprints": {
+        "plugins/vibe-coding/skills/vibe-mcp/SKILL.md": "e7b9d755dde5b19acafbf36af47d0ad0e28c8d6abc35bca5f90454078d79493a",
+        "plugins/vibe-coding/skills/vibe-mcp/references/mcp-server-polish.md": "22d7f3d0bf9b3600c3e42b5bf273579cbac8da367e34b2b4159ba3e74c39e9e7",
+        "plugins/vibe-coding/skills/vibe-mcp/references/mcp-server-audit.md": "119fc4a7e1fa91d3416aff71050046866b7c660772f3a12ff9c631df34e95af6",
+        "plugins/vibe-coding/skills/vibe-mcp/references/mcp-protocol-auth-check.md": "d0148917aa127f4ee9718204c8d6d065ec9e3d8a285b1ddbb9a9aa2444dd87b9"
+      }
+    },
+    "vibe-mobile": {
+      "status": "complete",
+      "read": [
+        "SKILL.md",
+        "references/mobile-release-offline-check.md",
+        "references/mobile-app-polish.md",
+        "references/mobile-app-audit.md"
+      ],
+      "changes": [
+        "Defined platform/build/local-state handoffs and mobile lifecycle repair/recheck.",
+        "Added controlled online/offline, permission and cold/warm transition verification.",
+        "Separated durable sync, secure-storage failures and store/device evidence from local UI success."
+      ],
+      "validation": {
+        "skill_validator": "passed",
+        "local_references": "passed",
+        "scenario_walkthroughs": [
+          "A resumed screen cannot conceal a lost or duplicated offline operation.",
+          "A feature without offline support is checked for its promised behavior, not redesigned by default.",
+          "Secure-storage failure cannot silently become plaintext token persistence.",
+          "Simulator/build success does not imply physical-device, push or store approval."
+        ],
+        "limits": "Manual instruction walkthroughs; no independent model behavior is claimed."
+      },
+      "fingerprints": {
+        "plugins/vibe-coding/skills/vibe-mobile/SKILL.md": "7fb2fcd40befc8a21606d791814e5c07e02ef47855398bda8bbf3c14d3d8f43a",
+        "plugins/vibe-coding/skills/vibe-mobile/references/mobile-release-offline-check.md": "9584c0c59f818d3756dbe548d30e424613a9583d0db62737b5fdcd5d970b95b8",
+        "plugins/vibe-coding/skills/vibe-mobile/references/mobile-app-polish.md": "6d2fbec8e887058c10e0c0ff6ecc19813351dc2abb5342e89915278e8419ab34",
+        "plugins/vibe-coding/skills/vibe-mobile/references/mobile-app-audit.md": "91c4e7af8ecc2428482cb2ddc202fe931f7701a9aad36eeae129c4887517d877"
+      }
+    },
+    "vibe-nosql": {
+      "status": "complete",
+      "read": [
+        "SKILL.md",
+        "references/nosql-databases-polish.md",
+        "references/nosql-consistency-hot-partition-check.md",
+        "references/nosql-databases-audit.md"
+      ],
+      "changes": [
+        "Defined engine/key/invariant/access-path handoffs and controlled conflict/recovery checking.",
+        "Separated logical expiry from cleanup and CDC/index visibility.",
+        "Bound resource and consistency conclusions to actual engine/topology evidence."
+      ],
+      "validation": {
+        "skill_validator": "passed",
+        "local_references": "passed",
+        "scenario_walkthroughs": [
+          "Another NoSQL engine's transaction or TTL semantics are not imported into the selected contract.",
+          "An ambiguous retry is judged by final records and operation identity, not request count.",
+          "A resume token does not prove a retention gap was recovered.",
+          "Uniform toy data cannot establish hot-partition capacity under real skew."
+        ],
+        "limits": "Manual instruction walkthroughs; no independent model behavior is claimed."
+      },
+      "fingerprints": {
+        "plugins/vibe-coding/skills/vibe-nosql/SKILL.md": "64c770e6be428d1438a2899d31940b6e7a4a277c7128970317066033eca4c20b",
+        "plugins/vibe-coding/skills/vibe-nosql/references/nosql-databases-polish.md": "5dd4f376899fe5c69a9ac39de4da02e007eb3feb3198a362a5a308b0be253411",
+        "plugins/vibe-coding/skills/vibe-nosql/references/nosql-consistency-hot-partition-check.md": "cbc741c8d316aaadca48e91c36f1a086b92a038d2c9772b925566ccda610e183",
+        "plugins/vibe-coding/skills/vibe-nosql/references/nosql-databases-audit.md": "3ca9b1be5f4c881f9893c860daf91d9650f5bae74047f5e78622246bcd71178b"
+      }
+    },
+    "vibe-notifications": {
+      "status": "complete",
+      "read": [
+        "SKILL.md",
+        "references/notification-failure-idempotency-check.md",
+        "references/notification-delivery-audit.md",
+        "references/notification-delivery-polish.md"
+      ],
+      "changes": [
+        "Defined notification identity, eligibility and provider-status handoffs.",
+        "Added controlled duplicate/ambiguous-send/status verification with an allowed control.",
+        "Separated queued/accepted/delivered evidence and avoided exactly-once claims from local rows alone."
+      ],
+      "validation": {
+        "skill_validator": "passed",
+        "local_references": "passed",
+        "scenario_walkthroughs": [
+          "An accepted provider request is not automatically a delivered message.",
+          "A provider timeout can conceal a committed send and must preserve operation identity.",
+          "Suppressing every send does not prove the eligibility rule works.",
+          "Code verification uses synthetic recipients unless a real send is explicitly authorized."
+        ],
+        "limits": "Manual instruction walkthroughs; no independent model behavior is claimed."
+      },
+      "fingerprints": {
+        "plugins/vibe-coding/skills/vibe-notifications/SKILL.md": "ccce4855da0aeb43aded842dbcce1a1e2ccc7125157818fe1fedf5d896a7982d",
+        "plugins/vibe-coding/skills/vibe-notifications/references/notification-failure-idempotency-check.md": "d17cdc6a89a4e6178d11da4480eef9eab049e076c2e1d50d2631cdc6e942d578",
+        "plugins/vibe-coding/skills/vibe-notifications/references/notification-delivery-audit.md": "08e652e77e844582aa4cdf5949a954b0407e5273b183cf95d52e2f12c727f8b7",
+        "plugins/vibe-coding/skills/vibe-notifications/references/notification-delivery-polish.md": "dcd46928d66d98366fbecc52e9a833c005f9ced82ebbc1ba2be6181a7a2da826"
+      }
+    },
+    "vibe-observability": {
+      "status": "complete",
+      "read": [
+        "SKILL.md",
+        "references/observability-semantics-cost-check.md",
+        "references/observability-stack-polish.md",
+        "references/observability-stack-audit.md"
+      ],
+      "changes": [
+        "Defined emitter-to-operator semantics and resource handoffs across the workflow.",
+        "Added fixed signal/window replay with reset, no-data, tenant and cardinality evidence.",
+        "Separated controlled alert verification from real paging and measured series from theoretical bounds."
+      ],
+      "validation": {
+        "skill_validator": "passed",
+        "local_references": "passed",
+        "scenario_walkthroughs": [
+          "A missing signal cannot silently be interpreted as health unless the defined policy establishes it.",
+          "Changing graph units cannot repair an emitter/query semantic mismatch.",
+          "The product of possible labels is an estimate, not measured production cardinality.",
+          "A controlled alert transition is tested without unauthorized real recipient notifications."
+        ],
+        "limits": "Manual instruction walkthroughs; no independent model behavior is claimed."
+      },
+      "fingerprints": {
+        "plugins/vibe-coding/skills/vibe-observability/SKILL.md": "18ca1f80f8af89e851501de50471617f839cf71ff230b670bb82647e9123c075",
+        "plugins/vibe-coding/skills/vibe-observability/references/observability-semantics-cost-check.md": "9a5d568c5f1e4bc8b38ae925796e67c238edc1228bdfc83911c62c038bbba3cd",
+        "plugins/vibe-coding/skills/vibe-observability/references/observability-stack-polish.md": "2b3073e71971c12717955bd5236119e06bf91ab47ca2ebd94a0d87523b35350f",
+        "plugins/vibe-coding/skills/vibe-observability/references/observability-stack-audit.md": "ec268f5975c9a2ec311b51897b9c6153ad7d77a47c860f56a2fbc4354f3503dd"
+      }
+    },
+    "vibe-ops": {
+      "status": "complete",
+      "read": [
+        "SKILL.md",
+        "references/deploy-bootstrap.md",
+        "references/incident-triage-audit.md",
+        "references/background-jobs-audit.md",
+        "references/incident-remediation-polish.md",
+        "references/infra-ops-polish.md",
+        "references/incident-recovery-check.md",
+        "references/infra-ops-audit.md",
+        "references/background-jobs-polish.md"
+      ],
+      "changes": [
+        "Separated incident, job, operational-path and deployment-setup workflows.",
+        "Added immutable identity, timeline, effect and recovery handoffs across all eight prompts.",
+        "Kept patch acceptance, authorized live intervention and observed production recovery as separate evidence."
+      ],
+      "validation": {
+        "skill_validator": "passed",
+        "local_references": "passed",
+        "scenario_walkthroughs": [
+          "A quiet alert or idle service cannot establish incident recovery.",
+          "A validated deployment setup does not silently deploy or change secrets.",
+          "An enqueue/worker success state cannot hide duplicate durable job effects.",
+          "A live candidate must match the tested immutable artifact rather than a moving branch.",
+          "A mitigation retains its unresolved root cause or recurrence window instead of being labelled fully recovered."
+        ],
+        "limits": "Manual instruction walkthroughs; no independent model behavior is claimed."
+      },
+      "fingerprints": {
+        "plugins/vibe-coding/skills/vibe-ops/SKILL.md": "359cce1e99dc1a830294555be47506733fbed88d1b5df3446d84f4b60f9c89c8",
+        "plugins/vibe-coding/skills/vibe-ops/references/deploy-bootstrap.md": "87c5c81fee14253237105e4b38ec90afd2982646408c7f53ac0cb160f7080bf6",
+        "plugins/vibe-coding/skills/vibe-ops/references/incident-triage-audit.md": "a4899b23fb8827772cffc5614f80cb5ad0f358336915ca536aeb7c15ad59460c",
+        "plugins/vibe-coding/skills/vibe-ops/references/background-jobs-audit.md": "939c309de44261d194313b2df3e5e3de9f5b089daa14bad46aa9bb993f6068e1",
+        "plugins/vibe-coding/skills/vibe-ops/references/incident-remediation-polish.md": "6720253e504f9ecdfed72b0116b8f7c5564fed66023ebf48df808bf4470f4f28",
+        "plugins/vibe-coding/skills/vibe-ops/references/infra-ops-polish.md": "ba67cbb12dc4952f76c478cd2c60300ea49c66d81c2fa5d738bd3cb7361ff616",
+        "plugins/vibe-coding/skills/vibe-ops/references/incident-recovery-check.md": "99373280265886d0b9708b749108415a5a733d47babb80cf784c25c74a650840",
+        "plugins/vibe-coding/skills/vibe-ops/references/infra-ops-audit.md": "635d7bba3d2d9a1a4fd8176b458c133071f403997242c528919e6ebe91ada396",
+        "plugins/vibe-coding/skills/vibe-ops/references/background-jobs-polish.md": "2c43322f32747da275b311b6832a75d128a9c73e12079e0d1099876eb9b2c84e"
+      }
+    },
+    "vibe-payments": {
+      "status": "complete",
+      "read": [
+        "SKILL.md",
+        "references/payments-provider-polish.md",
+        "references/payments-webhook-reconciliation-check.md",
+        "references/payments-provider-audit.md"
+      ],
+      "changes": [
+        "Defined provider/operation/event and local billing/entitlement handoffs.",
+        "Added controlled authenticated-event, partial-commit and reconciliation verification.",
+        "Replaced blanket monotonic-state wording with legal version-aware lifecycle transitions."
+      ],
+      "validation": {
+        "skill_validator": "passed",
+        "local_references": "passed",
+        "scenario_walkthroughs": [
+          "Client checkout success cannot activate access without authoritative payment reconciliation.",
+          "A delayed event cannot overwrite the accepted newer state, while legitimate reactivation remains allowed.",
+          "A duplicate local billing row or effect is checked independently of the webhook response.",
+          "Sandbox/code verification does not execute real charges, refunds or transfers."
+        ],
+        "limits": "Manual instruction walkthroughs; no independent model behavior is claimed."
+      },
+      "fingerprints": {
+        "plugins/vibe-coding/skills/vibe-payments/SKILL.md": "ad1668ab3181d3d59f4171abb9c047efdc8f2ea19a2095e7dad1ae2f4d81b44f",
+        "plugins/vibe-coding/skills/vibe-payments/references/payments-provider-polish.md": "e8847ffc988668e2a20abd051551af387e7ff6f9626b942afcc97275b8ccf819",
+        "plugins/vibe-coding/skills/vibe-payments/references/payments-webhook-reconciliation-check.md": "03bcc9e2e59da8f22e77e9ced3ee8de14ed29429fee5d44ce81391772a8707ca",
+        "plugins/vibe-coding/skills/vibe-payments/references/payments-provider-audit.md": "e6a3791369ab326dd6c99b626c9a83a4de23f980fa3733e1fe8314fe657ee4ed"
+      }
+    },
+    "vibe-product": {
+      "status": "complete",
+      "read": [
+        "SKILL.md",
+        "references/ux-flow-polish.md",
+        "references/form-data-ui-polish.md",
+        "references/product-acceptance-check.md",
+        "references/product-decision-metrics-check.md",
+        "references/product-requirements-audit.md",
+        "references/onboarding-activation-audit.md",
+        "references/ux-flow-audit.md",
+        "references/onboarding-activation-polish.md",
+        "references/product-ui-polish.md",
+        "references/product-requirements-polish.md",
+        "references/product-ui-audit.md",
+        "references/form-data-ui-audit.md"
+      ],
+      "changes": [
+        "Defined six outcome-specific requirement, interaction, form, journey, activation and metrics workflows.",
+        "Added concrete actor/state/request/persisted-result handoffs to all twelve prompts.",
+        "Replaced scenario-only acceptance checks with execution and repair/recheck methods."
+      ],
+      "validation": {
+        "skill_validator": "passed",
+        "local_references": "passed",
+        "scenario_walkthroughs": [
+          "An optimistic success state cannot conceal an unsaved form or duplicate effect.",
+          "A completed onboarding checklist is not invented as the product's activation definition.",
+          "A requirement is not rewritten merely to match a current implementation bug.",
+          "A usability observation cannot be presented as measured conversion uplift.",
+          "A failed metric/event criterion returns to its actual producer/consumer owner without reopening product strategy."
+        ],
+        "limits": "Manual instruction walkthroughs; no independent model behavior is claimed."
+      },
+      "fingerprints": {
+        "plugins/vibe-coding/skills/vibe-product/SKILL.md": "c6f0bb1d7920343b85b38dd1a73d18dd74bf433b23cbc06abdf45ceb2fbb225e",
+        "plugins/vibe-coding/skills/vibe-product/references/ux-flow-polish.md": "9ee82c3a75bfcd4b7ab0971b1b15d5a2d2ae1a41068e15bc5bf7ce80698603d1",
+        "plugins/vibe-coding/skills/vibe-product/references/form-data-ui-polish.md": "641e5f8b52450734da80d7d526ad956f49fc59f9021fe30cc75b496b521ef230",
+        "plugins/vibe-coding/skills/vibe-product/references/product-acceptance-check.md": "48c1136ae7cccc3726f6ca6935e23cecb2b3b8499c6b4b59d0b258621bee2d85",
+        "plugins/vibe-coding/skills/vibe-product/references/product-decision-metrics-check.md": "34983d2df2c8b6d79179778f9a6b68b87fb4dd8e7a311a4958b1707dfb79d9dc",
+        "plugins/vibe-coding/skills/vibe-product/references/product-requirements-audit.md": "f26e18051605dfd0646ccfa373ecde98d2e950f40bdf878aa5bb3a287ce7850b",
+        "plugins/vibe-coding/skills/vibe-product/references/onboarding-activation-audit.md": "9c8458b79c7f45c830c0996483ef3f2c81dd890c6c136c4de596fdaef4439ea1",
+        "plugins/vibe-coding/skills/vibe-product/references/ux-flow-audit.md": "7e53007d3638c3d6ecd771b1bc37b9c2ecaec98346276bf209ccb9203495135c",
+        "plugins/vibe-coding/skills/vibe-product/references/onboarding-activation-polish.md": "c3c9980543004c6b03f07790f527f9ed9bd8754ec86c859578faf427c2e90d6b",
+        "plugins/vibe-coding/skills/vibe-product/references/product-ui-polish.md": "69144ac2e1530bdfc5150fd3ea205ace241f4a507e66685c19222074519fbb25",
+        "plugins/vibe-coding/skills/vibe-product/references/product-requirements-polish.md": "19588f93374a8bbed2847afea136950a760ef77592781f68efb000909f700b01",
+        "plugins/vibe-coding/skills/vibe-product/references/product-ui-audit.md": "dd393030781d67be014771128a8c4d5bee079f78ada64f0c59f35b4001fdb0c7",
+        "plugins/vibe-coding/skills/vibe-product/references/form-data-ui-audit.md": "8ff8cd8e7722d60a0e2be49ea2cc26361c9a156da85585819919daeeade2961e"
+      }
+    },
+    "vibe-rabbitmq": {
+      "status": "complete",
+      "read": [
+        "SKILL.md",
+        "references/rabbitmq-polish.md",
+        "references/rabbitmq-redelivery-recovery-check.md",
+        "references/rabbitmq-audit.md"
+      ],
+      "changes": [
+        "Defined topology/policy, operation and publish/effect/ack handoffs.",
+        "Added controlled routing, ambiguity, redelivery and recovery verification.",
+        "Qualified QoS/resource estimation and distinguished drained queues from completed effects."
+      ],
+      "validation": {
+        "skill_validator": "passed",
+        "local_references": "passed",
+        "scenario_walkthroughs": [
+          "A publisher confirm is not a completed consumer operation.",
+          "An empty queue caused by lost work does not pass recovery.",
+          "Connection recovery must not duplicate subscriptions or forget required topology.",
+          "QoS scope and actual concurrency determine the resource bound rather than a universal prefetch product."
+        ],
+        "limits": "Manual instruction walkthroughs; no independent model behavior is claimed."
+      },
+      "fingerprints": {
+        "plugins/vibe-coding/skills/vibe-rabbitmq/SKILL.md": "a0dfd4966baeb31271a6fff4b11cfcc2da32236064205d139e0e3acf97eef2e0",
+        "plugins/vibe-coding/skills/vibe-rabbitmq/references/rabbitmq-polish.md": "52dccf5d2e1d526710659e348544579303fb5018c3e7edda5d92a490e1f9e18d",
+        "plugins/vibe-coding/skills/vibe-rabbitmq/references/rabbitmq-redelivery-recovery-check.md": "98871d7d672cd61356ee6d56c693f3c6099119eedb435cf09c9afc8b37f2b737",
+        "plugins/vibe-coding/skills/vibe-rabbitmq/references/rabbitmq-audit.md": "66f51ad58f7eb7f7acffdb030c232447caf6c9e7867af15d48595913e4f7679a"
+      }
+    },
+    "vibe-realtime": {
+      "status": "complete",
+      "read": [
+        "SKILL.md",
+        "references/realtime-frontend-polish.md",
+        "references/realtime-frontend-audit.md",
+        "references/realtime-interface-profiling-recovery-check.md"
+      ],
+      "changes": [
+        "Defined query/principal/operation/version interleaving handoffs.",
+        "Added controlled optimistic rollback, event-gap and resync verification.",
+        "Separated authoritative state convergence from measured network/cache/render performance."
+      ],
+      "validation": {
+        "skill_validator": "passed",
+        "local_references": "passed",
+        "scenario_walkthroughs": [
+          "Rolling back failed operation A cannot erase successful independent operation B.",
+          "Reconnect without proven continuity must perform the accepted resync.",
+          "Persisted cache after a user/tenant switch cannot expose the previous principal's state.",
+          "A component fixture or faster screenshot cannot prove browser performance under sustained events."
+        ],
+        "limits": "Manual instruction walkthroughs; no independent model behavior is claimed."
+      },
+      "fingerprints": {
+        "plugins/vibe-coding/skills/vibe-realtime/SKILL.md": "8191e9908b5139c358e83df54be8e8588fffa269c77ef09ff154964f4e7175be",
+        "plugins/vibe-coding/skills/vibe-realtime/references/realtime-frontend-polish.md": "cd056784ce45508c9e008daee1d6b0a4a6d0c62f0975ee8f8086256a05b56482",
+        "plugins/vibe-coding/skills/vibe-realtime/references/realtime-frontend-audit.md": "2813a74b76baf8294dfe69538485e7297de7d55c33cb58a8b7cbd81cac8ca1f5",
+        "plugins/vibe-coding/skills/vibe-realtime/references/realtime-interface-profiling-recovery-check.md": "2e7ac3b3fcc67321ffe7325e8b01682ca5e45ecc4ef0b3aa72ad1e2c7a2d4ef6"
+      }
+    },
+    "vibe-recovery": {
+      "status": "complete",
+      "read": [
+        "SKILL.md",
+        "references/release-artifact-trust-check.md",
+        "references/delivery-recovery-polish.md",
+        "references/delivery-restore-rollback-check.md",
+        "references/delivery-recovery-audit.md"
+      ],
+      "changes": [
+        "Separated delivery/restore workflow from read-only release identity inspection.",
+        "Added immutable identity, consistency point and measured recovery handoffs to all four prompts.",
+        "Bound restore/rehearsal results to usable application state and the authorized recovery stage."
+      ],
+      "validation": {
+        "skill_validator": "passed",
+        "local_references": "passed",
+        "scenario_walkthroughs": [
+          "Matching bytes do not prove an authorized builder or publisher.",
+          "A successful backup/extraction job cannot establish application restoration or RPO/RTO.",
+          "A binary rollback with incompatible current data remains unsafe.",
+          "Inspection-only artifact verification does not silently publish or restore state."
+        ],
+        "limits": "Manual instruction walkthroughs; no independent model behavior is claimed."
+      },
+      "fingerprints": {
+        "plugins/vibe-coding/skills/vibe-recovery/SKILL.md": "4a7d2976ad93c7f1ef89f836c669a1dfb3743623f7ec7d1d5185d2007e208ed0",
+        "plugins/vibe-coding/skills/vibe-recovery/references/release-artifact-trust-check.md": "ff9cb71978d779c961f92b419bc9100c4d4b59a7ee16b950e6d42d897ab43b94",
+        "plugins/vibe-coding/skills/vibe-recovery/references/delivery-recovery-polish.md": "153448e4cf68ddcf772df8caefbd4eb4adf6df8a38bbfb25dcf49143559b15df",
+        "plugins/vibe-coding/skills/vibe-recovery/references/delivery-restore-rollback-check.md": "70223b864623be37126ac3925a5bf38875551c67ef700e9e2bf623326beb59ed",
+        "plugins/vibe-coding/skills/vibe-recovery/references/delivery-recovery-audit.md": "cb7f3bbd1f83b8d0724f36c98d3b8d1a32df9028fbb7bd6e8456c171eab70c3c"
+      }
+    },
+    "vibe-redis": {
+      "status": "complete",
+      "read": [
+        "SKILL.md",
+        "references/redis-job-queues-polish.md",
+        "references/redis-job-queues-audit.md",
+        "references/redis-queue-load-recovery-check.md"
+      ],
+      "changes": [
+        "Defined framework-specific job/operation/lease/retention handoffs.",
+        "Added controlled effect/ack/expiry verification with independent effect observation.",
+        "Separated framework status and retained job-ID uniqueness from durable business-effect safety."
+      ],
+      "validation": {
+        "skill_validator": "passed",
+        "local_references": "passed",
+        "scenario_walkthroughs": [
+          "A reclaimed lease does not prove a stale worker's external effect was prevented.",
+          "A removed completed job ID cannot guarantee indefinite operation deduplication.",
+          "Streams, BullMQ and ARQ do not share one assumed acknowledgement model.",
+          "Queue recovery is not proven by globally disabling cache eviction or extending every lock."
+        ],
+        "limits": "Manual instruction walkthroughs; no independent model behavior is claimed."
+      },
+      "fingerprints": {
+        "plugins/vibe-coding/skills/vibe-redis/SKILL.md": "7495d54388c3dcd86487d2afb46cd40438cdb5ee240b2715c330b1a604e85b63",
+        "plugins/vibe-coding/skills/vibe-redis/references/redis-job-queues-polish.md": "175d932a0e1d72d7db5a7096731f8bd87df834a2e2b2bb5c1d44352f2b6eb482",
+        "plugins/vibe-coding/skills/vibe-redis/references/redis-job-queues-audit.md": "032954173abce26c183be3ee10d56dba2c814214340c4dbe6467c854b3ff4483",
+        "plugins/vibe-coding/skills/vibe-redis/references/redis-queue-load-recovery-check.md": "199c6118b4a1774242b62284070f539c3451caf94a2d20c3a8d1a31b1b00f6f3"
+      }
+    },
+    "vibe-reliability": {
+      "status": "complete",
+      "read": [
+        "SKILL.md",
+        "references/performance-budget-audit.md",
+        "references/reliability-polish.md",
+        "references/performance-polish.md",
+        "references/performance-budget-polish.md",
+        "references/consistency-invariants-polish.md",
+        "references/consistency-invariants-audit.md",
+        "references/reliability-audit.md",
+        "references/idempotency-concurrency-polish.md",
+        "references/transactional-delivery-check.md",
+        "references/performance-audit.md",
+        "references/idempotency-concurrency-audit.md"
+      ],
+      "changes": [
+        "Defined failure, consistency, concurrency, bottleneck and resource-budget workflows.",
+        "Added operation/interleaving and equivalent-workload handoffs across all eleven prompts.",
+        "Removed vague source-owner boilerplate and tied verdicts to effects, convergence and actual measurements."
+      ],
+      "validation": {
+        "skill_validator": "passed",
+        "local_references": "passed",
+        "scenario_walkthroughs": [
+          "A deduplicated request row cannot establish external-effect atomicity.",
+          "Disabling retries or quieting errors cannot prove required work completed.",
+          "A faster average cannot conceal a correctness, tail-latency or resource regression.",
+          "An arbitrary new SLO is not invented to justify a performance change.",
+          "A failed transactional delivery window returns to its intent/effect owner and is replayed before patch review."
+        ],
+        "limits": "Manual instruction walkthroughs; no independent model behavior is claimed."
+      },
+      "fingerprints": {
+        "plugins/vibe-coding/skills/vibe-reliability/SKILL.md": "61cc95e93a8fd3d5255bc1ad8487c167970ce93ba863da2765bb33d974b69757",
+        "plugins/vibe-coding/skills/vibe-reliability/references/performance-budget-audit.md": "2a503087f6ba622387d4900146d0a2085dab610f9cc72e1bb1308500038f1dbe",
+        "plugins/vibe-coding/skills/vibe-reliability/references/reliability-polish.md": "3eee12c72a14a81c86a3b5ff3f94aaf52934434aab882ee7fa5f1a840fc969e2",
+        "plugins/vibe-coding/skills/vibe-reliability/references/performance-polish.md": "74a17e07ce89472317a787b428056d5e1ca2aba91ce7807ad079fd17d24d1536",
+        "plugins/vibe-coding/skills/vibe-reliability/references/performance-budget-polish.md": "f233998f671bea52f6d2e52bccd2ba6cd96d0e7d57282ee25a5994a2b8ac05c9",
+        "plugins/vibe-coding/skills/vibe-reliability/references/consistency-invariants-polish.md": "0f204025882bd3e92567bc2caed2da4522662eae3e306ae5df0071b5673c756e",
+        "plugins/vibe-coding/skills/vibe-reliability/references/consistency-invariants-audit.md": "572d591f35c8bdebb684f380c595e9150fcc985ae463bd2634c6a09c8dcfb92d",
+        "plugins/vibe-coding/skills/vibe-reliability/references/reliability-audit.md": "8b75de9b042346b436556fbea4d19c76123de58dc9f6772484b7bfe7231fd030",
+        "plugins/vibe-coding/skills/vibe-reliability/references/idempotency-concurrency-polish.md": "ffeadd73e692d8587eb14b341e3b3e01187e35127f4eb3f0409374551c1760b5",
+        "plugins/vibe-coding/skills/vibe-reliability/references/transactional-delivery-check.md": "5f9c48b70081912d239217b42c972b661f7bc15108af5c54488752752559cd28",
+        "plugins/vibe-coding/skills/vibe-reliability/references/performance-audit.md": "947dded2c99a1e302c6fbae2fbcf36ce4925d6936fdac6f917d9e2ee4e1d6d49",
+        "plugins/vibe-coding/skills/vibe-reliability/references/idempotency-concurrency-audit.md": "3ccf30a8cc46eb6e9862cf6b058cc7c1fa81eb16d197adf1d9d4c37a1782714c"
+      }
+    },
+    "vibe-search": {
+      "status": "complete",
+      "read": [
+        "SKILL.md",
+        "references/search-index-polish.md",
+        "references/search-recall-freshness-check.md",
+        "references/search-index-audit.md"
+      ],
+      "changes": [
+        "Defined source/index/query/relevance/filter handoffs across the search workflow.",
+        "Added versioned exact-ID, natural-language, alias/language and misleading-neighbour replay methodology.",
+        "Made freshness, hydration, facets and pagination part of the actual result contract."
+      ],
+      "validation": {
+        "skill_validator": "passed",
+        "local_references": "passed",
+        "scenario_walkthroughs": [
+          "A non-empty list cannot pass when the expected relevant document is missing or ranked below misleading results.",
+          "Explicit filters are not silently dropped to manufacture matches.",
+          "Display language is not misrepresented as an index-language filter.",
+          "Protected result rows being hidden cannot conceal leaked snippets/facet counts.",
+          "One exact-ID lookup cannot establish natural-language retrieval quality."
+        ],
+        "limits": "Manual instruction walkthroughs; no independent model behavior is claimed."
+      },
+      "fingerprints": {
+        "plugins/vibe-coding/skills/vibe-search/SKILL.md": "ba318e88b575db8b554ad4e16ba6e272254dd2e861af949df3f15e84193078b5",
+        "plugins/vibe-coding/skills/vibe-search/references/search-index-polish.md": "4c28d2111c7d71d78c365d8b2ba1dcf55e5e2366b10215aab14a503dbdce4c3f",
+        "plugins/vibe-coding/skills/vibe-search/references/search-recall-freshness-check.md": "dd5039cb6d242a651c6d5001f6a6993d02e67938dd77f6321f8355d7a3e74673",
+        "plugins/vibe-coding/skills/vibe-search/references/search-index-audit.md": "7bce34356aeadb3cd8e13b7bb92b68b06369f2c15de64013915c4f8f61674e4e"
+      }
+    },
+    "vibe-security": {
+      "status": "complete",
+      "read": [
+        "SKILL.md",
+        "references/audit-logging-compliance-polish.md",
+        "references/audit-trail-integrity-check.md",
+        "references/privacy-data-rights-check.md",
+        "references/privacy-data-rights-audit.md",
+        "references/audit-logging-compliance-audit.md",
+        "references/system-security-hardening-audit.md",
+        "references/security-audit.md",
+        "references/system-security-hardening-polish.md",
+        "references/security-polish.md",
+        "references/privacy-data-rights-polish.md",
+        "references/build-supply-chain-audit.md",
+        "references/security-abuse-defense-check.md",
+        "references/build-supply-chain-polish.md"
+      ],
+      "changes": [
+        "Defined five trust, hardening, CI, privacy and audit-trail workflow families.",
+        "Added actor/input/effect and data-lifecycle handoffs plus controlled check methods across all thirteen prompts.",
+        "Separated technical enforcement evidence from optional controls, legal decisions, real credential actions and disabled-feature false passes."
+      ],
+      "validation": {
+        "skill_validator": "passed",
+        "local_references": "passed",
+        "scenario_walkthroughs": [
+          "A dangerous-looking API is not a vulnerability without a reachable trust path.",
+          "Denying all valid use cannot pass a selected defense.",
+          "A deletion success response cannot hide retained derived/provider data when policy requires its removal.",
+          "A debug log line is not proof of a complete durable audit trail.",
+          "An SBOM, checksum or one green job cannot establish every build-trust property.",
+          "Fixture controls do not authorize live credential attacks or real data/secret changes."
+        ],
+        "limits": "Manual instruction walkthroughs; no independent model behavior is claimed."
+      },
+      "fingerprints": {
+        "plugins/vibe-coding/skills/vibe-security/SKILL.md": "7f902fc20ae48d8cca74c917998c23d3b8c4f1163acd3f3fd1355ad677dc1422",
+        "plugins/vibe-coding/skills/vibe-security/references/audit-logging-compliance-polish.md": "42a6a51c1e50da0dfc4ce2e3968fbe6a5c6b5c4b12f01df11b28767030a70bdf",
+        "plugins/vibe-coding/skills/vibe-security/references/audit-trail-integrity-check.md": "9af65fbd88aa73600c54e41dfb93e742acebafb8266d94532d4c6d8992f4b8c2",
+        "plugins/vibe-coding/skills/vibe-security/references/privacy-data-rights-check.md": "3bdcec5006dc3f644deb0adb72c7659f4c35df557387c71361a40ad16f8ac535",
+        "plugins/vibe-coding/skills/vibe-security/references/privacy-data-rights-audit.md": "edbd7036cf1cc454b64d1904ebd42b6b81e39f5e5a06c6576c3240496a0c7a29",
+        "plugins/vibe-coding/skills/vibe-security/references/audit-logging-compliance-audit.md": "185dc889cd20b2f5d0bb498479b7744bb6c7becba15831f3c791a21c03783b51",
+        "plugins/vibe-coding/skills/vibe-security/references/system-security-hardening-audit.md": "3879f7fb35fd8a82f5f00a0d7290aa8c38370b088179b0839cabaad9bf388e19",
+        "plugins/vibe-coding/skills/vibe-security/references/security-audit.md": "cc6e397c7da18c4d1b54cf653c3e1acbbbc5b0b299b35a205d1f37f687cf0dc2",
+        "plugins/vibe-coding/skills/vibe-security/references/system-security-hardening-polish.md": "98779833af86db05b631804fb33cff433b55e65231b5784370534baf2d75fd48",
+        "plugins/vibe-coding/skills/vibe-security/references/security-polish.md": "80b01e46b407e8c2dafe1addd910d406b92cdcf98ab820f349396431244f29fb",
+        "plugins/vibe-coding/skills/vibe-security/references/privacy-data-rights-polish.md": "6b133c8b95909d65ed2c1680dd4bfc92fb0d60f29040e63587e4c90ccac9eb5d",
+        "plugins/vibe-coding/skills/vibe-security/references/build-supply-chain-audit.md": "17da8d55b1781402014c65db76e0465c55cff0b5a3211ab23aad37489537e9aa",
+        "plugins/vibe-coding/skills/vibe-security/references/security-abuse-defense-check.md": "57f7d231ffc6f06a8773c3ca145a553f8a831b64193d905cb4ef434be57eed0c",
+        "plugins/vibe-coding/skills/vibe-security/references/build-supply-chain-polish.md": "25371feec2a4cbaba0ff170e5dabd904532977af025e01a1c92749bc5a513ab4"
+      }
+    },
+    "vibe-serverless": {
+      "status": "complete",
+      "read": [
+        "SKILL.md",
+        "references/serverless-runtime-polish.md",
+        "references/serverless-runtime-audit.md",
+        "references/serverless-invocation-check.md"
+      ],
+      "changes": [
+        "Defined runtime/trigger/required-work and effect/retry handoffs across the workflow.",
+        "Added explicit repair/check/review continuation without requiring cloud creation.",
+        "Removed duplicated invariant blocks already owned by the required shared runtime-boundary reference."
+      ],
+      "validation": {
+        "skill_validator": "passed",
+        "local_references": "passed",
+        "scenario_walkthroughs": [
+          "A pending required effect prevents a false success response.",
+          "A reused environment cannot retain the previous invocation's identity.",
+          "Best-effort deferral is not labelled durable delivery.",
+          "An emulator or promise fixture cannot establish production scheduling, quotas or disconnect semantics.",
+          "Fetching invocation instructions does not mean the described work was executed."
+        ],
+        "limits": "Manual instruction walkthroughs; no independent model behavior is claimed."
+      },
+      "fingerprints": {
+        "plugins/vibe-coding/skills/vibe-serverless/SKILL.md": "029d6a1ba012270586976730c739efb69b9d8c377bac69219c4e264b12c57c76",
+        "plugins/vibe-coding/skills/vibe-serverless/references/serverless-runtime-polish.md": "48b6fa52d33dca0161e1c3f81a481eb3a1e945be3da8013d31df43dc884836f6",
+        "plugins/vibe-coding/skills/vibe-serverless/references/serverless-runtime-audit.md": "89ffbe4951231da13f2d9af6fa95198ca4ea28161c33a73bec5d85cf4e84eae3",
+        "plugins/vibe-coding/skills/vibe-serverless/references/serverless-invocation-check.md": "d9e0a0ab1f96e597970fb4732b2ac7225e3e416a571430810daa19734e625a20"
+      }
+    },
+    "vibe-sql": {
+      "status": "complete",
+      "read": [
+        "SKILL.md",
+        "references/sql-load-lock-failover-check.md",
+        "references/sql-databases-audit.md",
+        "references/sql-databases-polish.md"
+      ],
+      "changes": [
+        "Defined query/transaction/role and committed-invariant handoffs.",
+        "Added coordinated-session, plan/load and ambiguous-commit verification.",
+        "Qualified retry safety and engine/role/topology limits rather than relying on mocked or administrator controls."
+      ],
+      "validation": {
+        "skill_validator": "passed",
+        "local_references": "passed",
+        "scenario_walkthroughs": [
+          "An ambiguous commit cannot be blindly repeated as if no effect occurred.",
+          "A migration/admin role cannot prove application-role RLS enforcement.",
+          "A successful response cannot hide an open transaction or leaked pooled connection.",
+          "An in-memory engine or small uniform dataset cannot establish production isolation or plan capacity."
+        ],
+        "limits": "Manual instruction walkthroughs; no independent model behavior is claimed."
+      },
+      "fingerprints": {
+        "plugins/vibe-coding/skills/vibe-sql/SKILL.md": "f7a6e3db5952142609c3b89f390332a3e6cd7f617a2f9464160b87b5f908832d",
+        "plugins/vibe-coding/skills/vibe-sql/references/sql-load-lock-failover-check.md": "32cf3df78f07082b32ad7c9800da7ea8c8027919e15e0461b4e974f18a9b0478",
+        "plugins/vibe-coding/skills/vibe-sql/references/sql-databases-audit.md": "d6cf75bdef2f332cbae7f54482e51f18ef8ae3cb2c390ead2d476625020254e7",
+        "plugins/vibe-coding/skills/vibe-sql/references/sql-databases-polish.md": "79496daec15ef39d289949a104f059ba6b83d38457970aa7dd9af972f8f04041"
+      }
+    },
+    "vibe-storage": {
+      "status": "complete",
+      "read": [
+        "SKILL.md",
+        "references/object-storage-integrity-recovery-check.md",
+        "references/object-storage-polish.md",
+        "references/object-storage-audit.md"
+      ],
+      "changes": [
+        "Defined object/upload/operation/version and integrity/recovery handoffs.",
+        "Added controlled multipart/race/reference and actual-byte verification.",
+        "Corrected provider-assigned version timing and kept ETag/replication distinct from content/backup proof."
+      ],
+      "validation": {
+        "skill_validator": "passed",
+        "local_references": "passed",
+        "scenario_walkthroughs": [
+          "A provider-assigned version is captured from actual completion rather than invented beforehand.",
+          "A successful response or ETag cannot conceal wrong assembled bytes or a stale database reference.",
+          "Duplicate/out-of-order object events reconcile against the intended version.",
+          "Lifecycle/restore checks use an authorized test bucket and preserve real production data."
+        ],
+        "limits": "Manual instruction walkthroughs; no independent model behavior is claimed."
+      },
+      "fingerprints": {
+        "plugins/vibe-coding/skills/vibe-storage/SKILL.md": "686e37beea77989f20fefa38b9064e175280c388f011ecd1de286124969c5964",
+        "plugins/vibe-coding/skills/vibe-storage/references/object-storage-integrity-recovery-check.md": "c30c65a4819b7f6d61b1d8c9ee3ba80b71025df66454be6110beeb69e90f7796",
+        "plugins/vibe-coding/skills/vibe-storage/references/object-storage-polish.md": "463050631bb9a348ea35759a65b6e5ea98406f3f6efe6e7f73151658d2c55aa3",
+        "plugins/vibe-coding/skills/vibe-storage/references/object-storage-audit.md": "d9331c53c972f33d72efc6d491f3b71f184fd847dd3616b36814683b473ffc24"
+      }
+    },
+    "vibe-temporal": {
+      "status": "complete",
+      "read": [
+        "SKILL.md",
+        "references/temporal-workflows-audit.md",
+        "references/temporal-workflows-polish.md",
+        "references/temporal-replay-versioning-check.md"
+      ],
+      "changes": [
+        "Composed history-specific audit, repair, replay/versioning verification and repeated patch review with explicit evidence handoffs.",
+        "Distinguished replay compatibility from Activity effects and business deduplication across run boundaries; made handler completion and blocked integration explicit."
+      ],
+      "validation": {
+        "skill_validator": "passed",
+        "local_references": "passed",
+        "scenario_walkthroughs": [
+          "An old history fails on a changed command: audit identifies its event/version, repair retains a compatible branch, replay checks old and failing histories before patch review.",
+          "An Activity succeeds externally before worker loss: replay alone cannot claim deduplication; integration observes the business effect through retries and any required run boundary.",
+          "Continue-As-New interrupts a pending Update: repair waits at the supported boundary and verifies transferred intent; unavailable histories remain a gap."
+        ],
+        "limits": "Manual instruction walkthroughs; no independent model behavior is claimed."
+      },
+      "fingerprints": {
+        "plugins/vibe-coding/skills/vibe-temporal/SKILL.md": "6437e66c63d89f801f180ea0156632364b73817b0b7b037ac2160fb4167ef9fe",
+        "plugins/vibe-coding/skills/vibe-temporal/references/temporal-workflows-audit.md": "174041fd5596dc4e780940cdd4b8d233f4e89ae11b9a8689a110b330f96b95a0",
+        "plugins/vibe-coding/skills/vibe-temporal/references/temporal-workflows-polish.md": "3351a39112054d69bcc42daa66235251f623eb8a16095740a0fce93917ec0ff4",
+        "plugins/vibe-coding/skills/vibe-temporal/references/temporal-replay-versioning-check.md": "2ee80518538cd596e0236b02d5cf746a3c8b3abbd71020eb73b0c16ed41d834c"
+      }
+    },
+    "vibe-terraform": {
+      "status": "complete",
+      "read": [
+        "SKILL.md",
+        "references/terraform-plan-state-check.md",
+        "references/terraform-delivery-audit.md",
+        "references/terraform-delivery-polish.md"
+      ],
+      "changes": [
+        "Composed environment-specific audit, configuration repair, plan/state verification and patch review with exact plan identity and allowed-action handoffs.",
+        "Separated provider locks from module source versions, resource moves from replacement, and verified plans from apply/state mutation."
+      ],
+      "validation": {
+        "skill_validator": "passed",
+        "local_references": "passed",
+        "scenario_walkthroughs": [
+          "A module address rename plans a replacement: audit identifies remote identity, repair introduces a supported move, check compares old/new addresses and dependent resources without applying.",
+          "A valid plan targets the wrong workspace: configuration syntax cannot pass the environment-identity gate.",
+          "An allowed computed attribute remains unknown while resource actions are assessable: verification reports it without inventing a defect; a changed patch requires a fresh plan."
+        ],
+        "limits": "Manual instruction walkthroughs; no independent model behavior is claimed."
+      },
+      "fingerprints": {
+        "plugins/vibe-coding/skills/vibe-terraform/SKILL.md": "49a862df17d5be854553604cfbad1b86a746a6d2a53563941059858ed28f1703",
+        "plugins/vibe-coding/skills/vibe-terraform/references/terraform-plan-state-check.md": "1dafa7879dc12a94d4f7c8383ef06b676f2e7b74e203e7b54fc2415c6d24f7ce",
+        "plugins/vibe-coding/skills/vibe-terraform/references/terraform-delivery-audit.md": "8580f06211866c03f58a113e2ac526925aae9020b4eb80259ec339acded70b0d",
+        "plugins/vibe-coding/skills/vibe-terraform/references/terraform-delivery-polish.md": "1de324d2ca04a47e66450be09fde1605b9e29e4adb218c072f6db7ee3d9aaffc"
+      }
+    },
+    "vibe-vectors": {
+      "status": "complete",
+      "read": [
+        "SKILL.md",
+        "references/vector-databases-audit.md",
+        "references/vector-recall-degradation-check.md",
+        "references/vector-databases-polish.md"
+      ],
+      "changes": [
+        "Composed source-to-result diagnosis, focused repair, fixed-corpus verification and repeated patch review with version/filter/evidence handoffs.",
+        "Separated approximate-neighbor agreement from judged relevance, embedding dimension from space compatibility, and authorized public/global scopes from protected isolation."
+      ],
+      "validation": {
+        "skill_validator": "passed",
+        "local_references": "passed",
+        "scenario_walkthroughs": [
+          "A relevant source is absent after reindex: trace source/chunk/version before tuning ANN; migration completeness is required before cutover.",
+          "ANN matches an exact baseline but relevance is poor: the workflow diagnoses embedding/ranking quality rather than declaring usefulness from ANN recall.",
+          "A selective tenant filter loses a document or exposes forbidden snippets: compare identically scoped queries and an allowed control; do not remove scope to improve recall."
+        ],
+        "limits": "Manual instruction walkthroughs; no independent model behavior is claimed."
+      },
+      "fingerprints": {
+        "plugins/vibe-coding/skills/vibe-vectors/SKILL.md": "4806bad8bba8ecba26fcf4285aca0c5c241ed22c6a30e8ea4ebbc2eac787df59",
+        "plugins/vibe-coding/skills/vibe-vectors/references/vector-databases-audit.md": "1ef9412a02a1abb7b435bec1c2596865e870312ea26c8c9497a9e9975215c56c",
+        "plugins/vibe-coding/skills/vibe-vectors/references/vector-recall-degradation-check.md": "4e768117bbeb410198d5ca3242ddb36505a8b9d1804c932b2e04268331869613",
+        "plugins/vibe-coding/skills/vibe-vectors/references/vector-databases-polish.md": "87f69a7cad9dbfb3b338d6fe7d3ab2abc6f8436b1a440e14cc3281e2cd771423"
+      }
+    },
+    "vibe-web": {
+      "status": "complete",
+      "read": [
+        "SKILL.md",
+        "references/web-boundary-check.md",
+        "references/web-rendering-audit.md",
+        "references/web-rendering-polish.md"
+      ],
+      "changes": [
+        "Composed actual-framework audit, focused rendering/server-boundary repair, route/state verification and repeated patch review with reproduction and evidence handoffs.",
+        "Removed three repeated invariant blocks already supplied by the required rendering reference; retained domain-specific browser/HTTP methods and verification limits."
+      ],
+      "validation": {
+        "skill_validator": "passed",
+        "local_references": "passed",
+        "scenario_walkthroughs": [
+          "A saved theme diverges on first hydration: trace the initial value and eventual preference separately, verify real SSR/browser reload and controls before patch review.",
+          "A server action commits correctly but a shared route serves another identity or stale data: identify the actual cache/session owner and compare identities plus post-write reads.",
+          "Only action-unit tests are available: report their result while browser hydration and framework HTTP authorization remain unverified."
+        ],
+        "limits": "Manual instruction walkthroughs; no independent model behavior is claimed."
+      },
+      "fingerprints": {
+        "plugins/vibe-coding/skills/vibe-web/SKILL.md": "efa709e7119ccf9a2ac26c39f3a984199013c1678eca154850cd9e4343d158d0",
+        "plugins/vibe-coding/skills/vibe-web/references/web-boundary-check.md": "0dda3bdb66c965254cb174bf41b81cf9f3f3bc758ccf2512acc8ec7b93b76ee8",
+        "plugins/vibe-coding/skills/vibe-web/references/web-rendering-audit.md": "4ad5c7ce2c4eb3428c4d923331f3884f638fc277f843f35da129bb80a38987d4",
+        "plugins/vibe-coding/skills/vibe-web/references/web-rendering-polish.md": "6077e6530e845d295b246bdbfeee28a268f8398fc4280f6e9ea992e7a70a6015"
+      }
+    },
+    "vibe-library": {
+      "status": "complete",
+      "read": [
+        "SKILL.md",
+        "agents/openai.yaml"
+      ],
+      "changes": [
+        "Changed discovery from explicit library-name invocation to coding-task goals across MCP agents, preserving user operation and explicit filters.",
+        "Aligned selection with actual purposes/match reasons, instructions-only composition, reached-step retrieval, context reuse and bounded review outcomes.",
+        "Made generic project rules the default, enabled implicit invocation, and explicitly requested the workflow response format while retaining the published 1.5.1 result contract for older clients."
+      ],
+      "validation": {
+        "skill_validator": "passed",
+        "local_references": "passed",
+        "scenario_walkthroughs": [
+          "A generic MCP coding agent receives a cache repair goal without a library name: search in workflow format supplies its purpose and ID, then get supplies the current prompt and check/review outline.",
+          "Audit-only loads one audit stage; improve composes repair only for already-authorized changes. A known implementation starts at its own ID.",
+          "Later context reuse retains specialized references; instruction retrieval and the clean marker definition never count as an executed check.",
+          "Clients with the 1.5.1 strict schema omit the new response-format option and continue receiving exactly the old result keys with updated public content; new callers request the workflow format.",
+          "Unavailable evidence or repeated unchanged failure remains a concrete gate; explicit domain and operation filters are retained."
+        ],
+        "limits": "Manual instruction walkthroughs; no independent model behavior is claimed."
+      },
+      "fingerprints": {
+        "plugins/vibe-coding-library/skills/vibe-library/SKILL.md": "31d6e45dfde01e61e5323df69c9ff7f6a840bfaf36f72f910fb925ec7f88d729",
+        "plugins/vibe-coding-library/skills/vibe-library/agents/openai.yaml": "f45d25199f0bc3a04b8785c44862b8c1822e040c5fa9d9c528811ffaa93c4dc1"
+      }
+    }
+  }
+}

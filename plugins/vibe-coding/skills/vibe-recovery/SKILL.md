@@ -5,7 +5,18 @@ description: "Audit, repair or verify exact release artifacts, rollout/rollback 
 
 # Delivery & recovery
 
-Apply [the working contract](../../references/workflow.md) once; read only the recipe for the requested result.
+Apply [the working contract](../../references/workflow.md) once.
+
+## Workflows
+
+- **Inspect or repair delivery/recovery:** Delivery Recovery Audit → Improve Delivery Recovery → Delivery Restore & Rollback Check → [Patch Checking](../vibe-review/references/patch-checking.md) for changed source/configuration.
+- **Verify release bytes/identity:** Release Artifact Trust Check directly on the exact candidate and authorized publication/promotion evidence. Route a broken build trust boundary to Security or the owning delivery repair; do not mutate release state during inspection.
+
+Carry source/build/artifact/configuration identities, current data/schema compatibility, backup/restore point and agreed recovery criteria between prompts. A known failing procedure can start at correction; a check-only request performs only the authorized rehearsal/inspection.
+
+Compare actual published/promoted bytes and application state rather than substituting one green build or backup job for the whole chain. Failed identity, compatibility or restore behavior returns to its owning procedure/source, followed by the same check and patch re-review.
+
+Finish at the requested, evidenced delivery/recovery stage. A checksum is not builder authorization, binary rollback is not data rollback, and an unexercised RPO/RTO remains a gate. Restores, failover and production promotion require their own suitable authorized environment.
 
 ## Recipes
 

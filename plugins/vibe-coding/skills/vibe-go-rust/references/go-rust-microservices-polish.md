@@ -1,9 +1,5 @@
 # Improve Go Rust Microservices
 
-## Operation
-
-Implement the requested change and verify its directly affected behavior.
-
 ## Goal
 
 Correct the selected Go or Rust service behavior, preserving task ownership, cancellation, resource bounds and shutdown.
@@ -21,3 +17,5 @@ Correct the selected Go or Rust service behavior, preserving task ownership, can
 - Run repository tests plus Go race/vet/static checks or Rust clippy/test/loom/miri/sanitizer checks where already supported and applicable.
 - Exercise cancellation, deadline, downstream stall, connection loss, concurrent shutdown, panic/error propagation, and repeated start/stop.
 - Measure live goroutines/tasks, queue depth, memory, connections, latency, and drain completion under representative concurrency.
+
+Correct the owning spawn/join, admission, cancellation or shutdown boundary while preserving already committed effects and supported response semantics. Replay the controlled wait/I/O/commit interleaving and feed its lifecycle/resource observations to the concurrency check. A failed child cleanup or drain returns to that owner; supported acceptance proceeds to Patch Checking. Do not substitute arbitrary sleeps or broader parallelism for the missing ownership guarantee.

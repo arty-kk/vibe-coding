@@ -1,9 +1,5 @@
 # Reliability Audit
 
-## Operation
-
-Inspect the selected behavior and report evidence-backed defects; do not change product code.
-
 ## Goal
 
 Find reachable reliability risks where production behavior can fail, degrade, retry incorrectly, or become undiagnosable under realistic dependency, network, process, deploy, or data-shape failures.
@@ -23,8 +19,10 @@ Request handlers, service boundaries, workers, schedulers, queues, webhooks, ext
 
 ## Evidence rules
 
-- Prefer fix at the defining sourcees over local guards, cosmetic rewrites, broad catch blocks, or hidden fallbacks.
+- Identify the defining failure, completion or recovery owner rather than recommending a symptom-level workaround.
 
 ## Work item quality
 
 - If validation commands or harnesses are absent, specify observable checks that an execute run can add or perform.
+
+Trace a normal operation and selected dependency/process/data failure through deadline, effect, acknowledgement and recovery. Retain its logical identity, failure order, expected terminal/durable state and missing observations. Pass the first demonstrated violation to Improve Reliability; silence, disabled retry or a process health response cannot prove required work completed.

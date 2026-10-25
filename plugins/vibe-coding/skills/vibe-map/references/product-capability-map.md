@@ -10,6 +10,10 @@ Map product capabilities to actors, entry points, accepted outcomes and implemen
 
 Suggested saved map: `docs/product_capability_map.md`.
 
+## Build the view
+
+Begin with an actor's goal and identify the entry, required state and accepted outcome. Trace the UI/API/job owners that deliver that outcome, including access and plan decisions. Compare documented capability with implemented reachability; mark partial or absent support without inventing a new product promise. Group by user outcome so one capability spanning several folders remains visible as one connected path.
+
 ## Inspect
 
 Product routes, navigation, feature modules, copy, onboarding, settings, billing/plan gates, permissions, analytics events, experiments, docs/PRDs, tests, API contracts, workers, and existing product maps. Use repository behavior as the primary evidence source.

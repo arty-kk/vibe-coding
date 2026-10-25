@@ -1,6 +1,10 @@
 # Vibe Coding Library MCP service
 
-Two read-only tools provide the 241-workflow public library without requiring repository uploads or user accounts. Search returns up to ten concise records. Retrieval returns one complete recipe, its domain skill, the working contract and directly linked shared references; host guidance is opt-in. The compiled instruction bytes and SHA-256 hashes come from the unchanged offline library version 1.4.1.
+Two read-only tools provide engineering methods to any coding agent supporting MCP over Streamable HTTP. Discovery descriptions explain task-driven use without a prior library name or native skill installation. Search returns up to ten concise records with individual purposes and match reasons. Retrieval returns the current prompt, required context and an instructions-only conditional workflow. Client and instruction versions are aligned at 1.6.0.
+
+Explicit composition in `plugins/vibe-coding/workflows.json` preserves all 241 IDs. Read-only requests stay read-only; authorized corrections carry evidence through repair, relevant checks and repeated Patch Checking. Later prompts load when reached. `include_context:false` reuses available same-version foundations. Missing required evidence and repeated unchanged failure cannot become a clean verdict.
+
+The canonical browser engine is `plugins/vibe-coding/assets/catalog/engine.js`; `site/catalog-engine.js` is its identical public-site copy. Shared concepts and aliases live in `assets/catalog/search-lexicon.json`. CLI ranking uses the equivalent Python implementation. Metadata search uses titles, purposes and curated discovery data; body search is explicit in MCP and the public site. The offline catalog/CLI retain body search for compatibility.
 
 The official TypeScript MCP SDK 2.3.1 serves both 2025 initialization-era clients and MCP 2026-07-28 self-contained requests. Inputs are strict and bounded. The HTTP entry rejects conflicting protocol headers, invalid origins and bodies over 64 KiB. There is no runtime outbound lookup or filesystem access. Errors are logged without arguments or results.
 
@@ -14,7 +18,7 @@ node mcp/run-review.js
 node mcp/dev.js
 ```
 
-The local endpoint binds to `127.0.0.1:3105/mcp`. `generate.py` validates catalog hashes and projects the same search engine used by the website into an ES module. `run-review.js` executes the five positive and three negative tool cases with the official client, using a real loopback server by default. Give it a public endpoint and optional report path to check deployment. This harness tests tool behavior, not natural-language model selection.
+The local endpoint binds to `127.0.0.1:3105/mcp`. `generate.py` validates catalog hashes and workflow ownership and projects the same search engine used by the website into an ES module. `run-review.js` executes the five positive and three negative tool cases with the official client, using a real loopback server by default. Give it a public endpoint and optional report path to check deployment. This harness tests tool behavior, not natural-language model selection.
 
 ## Hosting
 
@@ -32,3 +36,5 @@ After deployment, verify the production endpoint with the same review harness, i
 ## Review contract
 
 `review-cases.json` contains five positive cases and three negative cases, with exact tool inputs for deterministic replay. The package builder imports the reviewer fields and excludes the replay-only `calls` field. The walkthrough demonstrates live MCP requests and their responses through the public console. Reviewers can inspect the raw requests, source links and exact hashes.
+
+Use `response_format:workflow` on both tools for the current purposes and structured outline. Calls that omit the option retain the exact 1.5.1 response shape while still using current search and instruction content; this keeps previously published schemas working during continuous review.

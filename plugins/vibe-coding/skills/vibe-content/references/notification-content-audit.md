@@ -14,3 +14,5 @@ Inspect the selected email, push, chat or in-app template against the event/stat
 ## Result
 
 Report the affected template/state, observed wording or payload, actual product contract and one correction with a rendering or state-based check. Content review does not authorize sending messages to real recipients.
+
+Feed the event state, synthetic recipient context, template/key, expected action and reachable destination into Improve Notification Content. If the problem begins in eligibility, event ordering or provider status rather than wording, route that specific finding to notification delivery instead of making the template claim a different state.

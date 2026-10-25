@@ -14,3 +14,5 @@ Use this fallback when no domain is selected. Choose one primary operation from 
 ## Verification
 
 Report the primary owner, defect/evidence, correction and actual checks. If the selected area has no qualifying defect, finish that probe. Name any required missing evidence; do not substitute another improvement. Apply the selection/history and result rules in the parent skill.
+
+The next step consumes the actual resulting patch and the original failure/control evidence. Continue through the parent skill's Patch Checking loop when code changed; if no patch was created, preserve the current area's outcome and stop.

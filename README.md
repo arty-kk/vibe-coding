@@ -2,7 +2,7 @@
 
 **Understand the code. Make the change. Verify the result.**
 
-46 skills and 241 focused engineering workflows for Codex and Claude Code: project mapping, planning, code review, debugging, implementation and release checks.
+Engineering workflows for coding agents with MCP: project mapping, planning, code review, debugging, implementation and verification. The library offers 241 focused entry points; native offline packages provide 46 skills for Codex and Claude Code.
 
 [Browse the catalog](https://arty-kk.github.io/vibe-coding) · [Русский](README.ru.md) · [Releases](https://github.com/arty-kk/vibe-coding/releases) · [Support](https://github.com/arty-kk/vibe-coding/issues)
 
@@ -10,7 +10,7 @@
 
 ### Vibe Coding Library via MCP
 
-[Vibe Coding Library](https://vibe-coding-library.swift-seal-1081.chatgpt.site/) searches the same 241 workflows and loads one selected working context on demand. This distribution has one selection skill and two read-only MCP tools. It requires an internet connection; no account or API key is required. The complete offline plugin below keeps all 46 skills locally.
+[Vibe Coding Library](https://vibe-coding-library.swift-seal-1081.chatgpt.site/) works with any coding agent supporting MCP through Streamable HTTP. Its two read-only tools select a method from the task goal and load the current prompt, required context and conditional next steps. No publisher account, token or API key is required. Direct MCP use needs no Codex or Claude installation; the optional native distribution adds a selection skill.
 
 Add this Streamable HTTP endpoint to a compatible MCP client:
 
@@ -25,7 +25,7 @@ claude plugin marketplace add arty-kk/vibe-coding
 claude plugin install vibe-coding-library@vibe-coding
 ```
 
-Use `/vibe-coding-library:vibe-library` in Claude Code or `$vibe-library` in Codex. See the [Library package](plugins/vibe-coding-library/README.md) for the tool and privacy contracts. Its OpenAI directory submission is separate from the existing offline listing.
+For other agents, select transport **Streamable HTTP** and authentication **None**. The tools describe when to use the library; no native skill command is required. Native packages expose `/vibe-coding-library:vibe-library` in Claude Code and `$vibe-library` in Codex. See the [Library package](plugins/vibe-coding-library/README.md) for the tool and privacy contracts.
 
 ### Codex
 
@@ -65,7 +65,7 @@ Use Vibe Coding. Map this repository and explain its main contracts.
 | Verify an MCP integration | `$vibe-mcp` | Audit the tool contract and authorization for the supported protocol version. |
 | Fix web rendering | `$vibe-web` | Fix the hydration failure and verify the server/client boundary. |
 
-Use the plugin picker if your host displays names as `vibe-coding:<skill>`. Requests can be written in English, Spanish, Russian or Chinese. The [web catalog](https://arty-kk.github.io/vibe-coding/) and bundled offline catalog default to English and include Español, Русский and 简体中文. The public site has separate language URLs; the offline catalog remembers your language choice. Both provide localized search, workflow titles, descriptions and prompts. Choose Codex or Claude Code before copying a prompt. Technical recipe instructions are in English.
+Use the plugin picker if your host displays names as `vibe-coding:<skill>`. Requests can be written in English, Spanish, Russian or Chinese. The [web catalog](https://arty-kk.github.io/vibe-coding/) and bundled offline catalog default to English and include Español, Русский and 简体中文. The public site has separate language URLs; the offline catalog remembers your language choice. Both provide localized search, workflow titles, descriptions and prompts. The public site includes a generic MCP prompt alongside the Codex and Claude examples. Technical recipe instructions are in English.
 
 ## Engineering coverage
 
@@ -79,11 +79,13 @@ Use the plugin picker if your host displays names as `vibe-coding:<skill>`. Requ
 
 ## How it works
 
-The entry skill selects the relevant domain and operation. The assistant reads the selected recipe, follows current code to the owner of the contract, performs the requested work and verifies the affected behavior. Detailed recipes load only when needed.
+Search from a technical goal or symptom, then load the selected ID. An authorized correction carries evidence from audit to repair, relevant verification and repeated Patch Checking. A known fix starts at repair. Only the reached prompt body is loaded; its result becomes the input to the next step.
+
+Patch Checking retains the original review base across corrections. A correction requires validation and another review of the complete resulting patch. Only an unchanged final pass with no qualifying findings and all required evidence may produce the clean marker. Missing evidence or repeated failure without progress stays blocked. Retrieving instructions never counts as executing a check.
 
 Audit and review requests produce findings. Implementation requests authorize relevant changes. A bug probe examines one area per run and records its outcome. Repository instructions and the user's requested scope govern the work.
 
-The [host integration](plugins/vibe-coding/references/hosts.md) respects Codex `AGENTS.md` and Claude Code `CLAUDE.md`/scoped rules without changing project instructions or host settings.
+Every agent retains its own project rules and permissions. The optional [host integration](plugins/vibe-coding/references/hosts.md) explains Codex `AGENTS.md` and Claude Code `CLAUDE.md`/scoped rules; those files are not required for generic MCP use.
 
 The offline plugin uses the host's existing tools and adds no server or account connection. The optional Library distribution connects to the public MCP service. Individual projects may require their normal dependencies and credentials.
 
@@ -97,7 +99,7 @@ python3 plugins/vibe-coding/scripts/validate.py
 python3 -m unittest discover -s tests -v
 python3 plugins/vibe-coding/scripts/catalog.py search webhook --mode check
 python3 plugins/vibe-coding/scripts/catalog.py search MCP --lang es
-python3 plugins/vibe-coding/scripts/package.py --output dist/vibe-coding-1.4.1.zip
+python3 plugins/vibe-coding/scripts/package.py --output dist/vibe-coding-1.6.0.zip
 ```
 
 See [Contributing](CONTRIBUTING.md), [installation](plugins/vibe-coding/docs/INSTALL.md), [privacy](PRIVACY.md) and [license](LICENSE).

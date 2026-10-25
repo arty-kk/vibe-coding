@@ -20,3 +20,5 @@ Correct the selected model-to-tool interaction, preserving tool authorization, b
 - Run tool-schema/policy tests plus injection, denied approval, duplicate, timeout, cancel, partial-success, and max-step cases.
 - Verify side-effect count and persisted run state after interruption/replay.
 - List live tool credentials, external approvals, and provider behavior not exercised.
+
+Correct the owning metadata/schema, selection context, runtime policy or continuation rule, then replay the same allowed and denied tasks. A prompt improvement cannot replace call-time authorization or effect deduplication. Verify the returned result and persisted effect after retry/interruption before another model step consumes them. Once the selected interaction passes, run Patch Checking; a failed protocol or replay boundary returns to its specialized owner rather than accumulating prompt prohibitions.

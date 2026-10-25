@@ -1,6 +1,6 @@
 {
   "name": "vibe-coding",
-  "version": "1.4.1",
+  "version": "1.6.0",
   "description": "Evidence-based coding workflows: 46 skills, 241 domain recipes, scoped implementation and verification.",
   "author": {
     "name": "Arty S.",
@@ -20,8 +20,8 @@
       "Find and fix one backend bug, then verify the change."
     ],
     "websiteURL": "https://arty-kk.github.io/vibe-coding",
-    "privacyPolicyURL": "https://arty-kk.github.io/vibe-coding/privacy.html",
-    "termsOfServiceURL": "https://arty-kk.github.io/vibe-coding/terms.html",
+    "privacyPolicyURL": "https://github.com/arty-kk/vibe-coding/blob/main/PRIVACY.md",
+    "termsOfServiceURL": "https://github.com/arty-kk/vibe-coding/blob/main/TERMS.md",
     "brandColor": "#537E1B",
     "composerIcon": "./assets/icon.png",
     "logo": "./assets/icon.png",

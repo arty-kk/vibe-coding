@@ -1,9 +1,5 @@
 # Billing Entitlements Audit
 
-## Operation
-
-Inspect the selected behavior and report evidence-backed defects; do not change product code.
-
 ## Goal
 
 Audit billing, plan, quota, entitlement, tenant, and permission behavior for correctness and user-visible consistency. Keep only issues with repository evidence; do not invent pricing rules, plan names, provider behavior, or business policy.
@@ -24,3 +20,7 @@ Plan definitions, auth entitlement maps when present, billing provider integrati
 ## Finding quality
 
 - Include affected plan/role/tenant state, expected behavior, acceptance criteria, and validation direction.
+
+## Trace and hand off
+
+Trace the selected subscription/plan state into the local entitlement decision, quota update, backend action and displayed state. Separate provider event truth from the application's local policy. Preserve the actor/tenant, lifecycle sequence and expected allowed/denied or quota outcome for Improve Billing Entitlements. Route a signed-event or provider reconciliation defect to Payments rather than inventing local plan rules to conceal it.

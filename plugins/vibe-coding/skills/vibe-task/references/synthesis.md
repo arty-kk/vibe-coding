@@ -15,3 +15,5 @@ Reconcile the supplied audit reports into a prioritized set of actionable tasks.
 ## Result
 
 For each retained task give the expected behavior, defining owner and evidence, one recommended correction, acceptance and verification. Preserve dependencies and every requested outcome. Follow the user’s requested number of priorities or output format; do not create new conversations or background work.
+
+Retain enough input references to trace each task back to its findings. If two reports propose incompatible fixes for the same invariant, resolve the owning contract before choosing a correction; do not output both as independently executable tasks. Pass an incomplete retained task to Task Shaping, then Validation & Clarification. A brief that already meets that contract can go directly to validation.

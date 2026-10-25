@@ -79,8 +79,11 @@ class SiteTests(unittest.TestCase):
         metadata=next(item for item in article.json[0]['@graph'] if item['@type']=='TechArticle')
         self.assertEqual(instructions,metadata['version'])
         for lang,values in self.content.items():
-            for key in ('workflowPrompt','workflowPromptClaude'):
+            for key in ('workflowPrompt','workflowPromptClaude','workflowPromptGeneric'):
                 self.assertEqual({'title','id'},set(re.findall(r'\{(\w+)\}',values[key])),(lang,key))
+            self.assertNotIn('$vibe',values['workflowPromptGeneric'])
+            self.assertNotIn('/vibe-coding',values['workflowPromptGeneric'])
+            self.assertIn('value="generic"',self.pages[site.route(lang)+'index.html'])
 
     def test_all_languages_are_static_self_canonical_and_reciprocal(self):
         for lang,locale in self.locales.items():
@@ -102,7 +105,8 @@ class SiteTests(unittest.TestCase):
                     self.assertEqual(len(self.rows),len(links))
                     self.assertEqual({site.PREFIX+site.workflow_route(row) for row in self.rows},{a['href'] for a in links})
                     self.assertNotIn('recipe-data',doc.ids)
-                    self.assertLess(len(page.encode()),310_000)
+                    # Complete static cards plus multilingual titles, purposes and search lexicon.
+                    self.assertLess(len(page.encode()),400_000)
 
     def test_workflows_have_full_instructions_and_truthful_metadata(self):
         descriptions=[]
@@ -168,7 +172,7 @@ class SiteTests(unittest.TestCase):
             self.assertEqual(1,len(doc.json))
             graph=doc.json[0]['@graph']
             software=next(item for item in graph if item['@type']=='SoftwareSourceCode')
-            self.assertEqual(['Codex','Claude Code'],software['runtimePlatform'])
+            self.assertEqual(['MCP clients with Streamable HTTP support'],software['runtimePlatform'])
             self.assertEqual(site.REPO,software['codeRepository'])
             self.assertNotIn('aggregateRating',software)
 

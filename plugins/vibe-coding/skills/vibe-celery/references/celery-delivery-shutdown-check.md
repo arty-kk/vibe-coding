@@ -25,3 +25,11 @@ Select the cases that test the requested guarantee. Define expected state/effect
 ## Verification
 
 Compare task identity/status, durable effect count, retries, acknowledgments and unfinished work after recovery or shutdown.
+
+## Execute and decide
+
+Use a dedicated queue/worker and a controlled durable effect with an observable operation ID. Record effective task/decorator/worker settings and establish a successful completion control. Place synchronization points around the selected publication, effect commit and acknowledgement boundary; introduce only the failure needed for that guarantee.
+
+After recovery or shutdown, inspect broker reservation/redelivery, task attempts, the authoritative effect record and outstanding work. Derive expected duplication/loss from the configured policy and application requirement instead of assuming every pool/transport behaves alike. For scheduled work, retain schedule/time identity and overlap evidence.
+
+Return passed, failed or blocked with the event order and expected/observed effects. Pass a failure to its owning repair when authorized; rerun the failed sequence and control after correction. A completed implementation then receives Patch Checking.

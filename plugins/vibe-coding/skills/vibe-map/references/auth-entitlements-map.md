@@ -10,6 +10,10 @@ Map identity, roles, attributes and entitlements to the backend decisions and UI
 
 Suggested saved map: `docs/auth_entitlements_map.md`.
 
+## Build the view
+
+Trace identity/session → membership and tenant context → entitlement or permission decision → enforcement in the selected UI, API and jobs. Join those surfaces by the same action/resource/scope, not by similar role labels. Show whether a UI gate merely hides an action or shares a backend decision. Keep plan eligibility, quota consumption and authorization as distinct rules even when one function evaluates them together.
+
 ## Inspect
 
 Auth providers, session/membership models, role definitions, policy helpers, ABAC attribute sources, tenant/workspace/project scopes, entitlement/plan/quota code, route guards, API handlers, UI conditionals, feature flags, background jobs, generated clients, tests, audit logs, and docs.

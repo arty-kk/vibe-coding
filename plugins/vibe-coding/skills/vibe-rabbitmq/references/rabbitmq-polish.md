@@ -1,9 +1,5 @@
 # Improve RabbitMQ
 
-## Operation
-
-Implement the requested change and verify its directly affected behavior.
-
 ## Goal
 
 Correct the selected RabbitMQ publish or consumption behavior across routing, confirms, effects and acknowledgments.
@@ -21,3 +17,5 @@ Correct the selected RabbitMQ publish or consumption behavior across routing, co
 - Run topology declaration and integration tests against a supported RabbitMQ version and policy profile.
 - Exercise unroutable publish, confirm ambiguity, consumer crash, repeated redelivery, connection/channel recovery, blocked broker, and graceful shutdown.
 - Verify queue depth/age, unacked count, duplicates, ordering scope, DLQ metadata, and recovery without destructive production testing.
+
+Repair the maintained topology, publisher acknowledgement handling, consumer completion or connection/channel recovery owner using a fixed message/operation. Preserve immutable queue-argument compatibility and its migration strategy. Feed the candidate settings and original event order to the recovery check; repair remaining routing/effect/subscription failures before Patch Checking rather than suppressing returns or dropping unacked work.

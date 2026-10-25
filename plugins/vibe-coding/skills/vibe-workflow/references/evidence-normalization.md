@@ -2,7 +2,7 @@
 
 ## Operation
 
-Return an actionable plan for the requested outcome.
+Normalize the supplied evidence without changing the product or selecting an implementation.
 
 ## Goal
 
@@ -18,3 +18,5 @@ Return the narrowest applicable artifact: intake summary, audit result, task def
 - Mark each statement as direct evidence, inference, assumption, or unavailable fact.
 - Merge only identical observations; keep contradictory evidence side by side for [Synthesis](../../vibe-task/references/synthesis.md).
 - Remove prose that does not change owner, invariant, impact, acceptance, validation, dependency, or exclusion.
+
+Keep each observation attached to its source revision/environment and the claim it actually supports. A successful local fixture does not cancel a production failure from another environment. The handoff to Synthesis contains deduplicated observations, unresolved contradictions and missing discriminators; it does not label hypotheses as implementation-ready findings.

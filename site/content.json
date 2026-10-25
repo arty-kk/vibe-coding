@@ -5,14 +5,14 @@
     "source": "Source code",
     "skip": "Skip to content",
     "title": "Vibe Coding Library — Engineering Workflows via MCP",
-    "description": "Search {recipes} engineering workflows and load the selected instructions through two read-only MCP tools. Open source, with no account or API key required.",
-    "eyebrow": "Vibe Coding Library · MCP",
+    "description": "Engineering workflows for MCP-compatible coding agents. Search {recipes} workflows over Streamable HTTP; no authentication or library API key required.",
+    "eyebrow": "For MCP-compatible coding agents",
     "headline": "Find the workflow.",
     "accent": "Load what you need.",
-    "intro": "Vibe Coding Library gives your coding agent engineering workflows on demand. Search the catalog, then load the selected instructions through MCP for Codex, Claude Code or another compatible client.",
+    "intro": "Vibe Coding Library gives MCP-compatible coding agents engineering workflows on demand. Connect the public Streamable HTTP endpoint, search the catalog and load the guidance for your task.",
     "browse": "Find a workflow",
     "install": "Connect the library",
-    "facts": "Open source · Free · No account or API key",
+    "facts": "Streamable HTTP · No auth · No library API key",
     "catalogTitle": "What are you working on?",
     "catalogNote": "Browse by topic, technology or task. Your agent can search the same catalog over MCP.",
     "search": "Search workflows",
@@ -35,10 +35,10 @@
     "searchFallback": "Full-text search is unavailable. Title and topic search still works. Turn the option off and on to retry.",
     "bodyMatch": "Matches inside the instructions",
     "english": "Catalog and prompts in four languages. Technical instructions in English.",
-    "demoLabel": "Ask your agent with Vibe Coding Library connected.",
+    "demoLabel": "Ask your coding agent with the MCP library connected.",
     "demoTask": "Review a code change",
-    "demoPrompt": "Find the Vibe Coding workflow for reviewing this branch. Load its instructions, then review the change and report actionable bugs.",
-    "demoNote": "search_workflows finds candidates. get_workflow loads the chosen recipe, domain instructions and working contract.",
+    "demoPrompt": "Use the connected Vibe Coding Library MCP tools to find a workflow for reviewing this branch. Load its guidance, then review the change and report actionable bugs.",
+    "demoNote": "search_workflows finds candidates. get_workflow loads the selected guidance. Your agent uses its own project tools and permissions.",
     "copy": "Copy",
     "copied": "Copied",
     "copyFallback": "Select and copy the text manually.",
@@ -61,18 +61,22 @@
         "vibe-quality"
       ]
     ],
-    "installIntro": "One selection skill. Two read-only tools. Instructions loaded on demand.",
-    "docs": "Plugin setup",
-    "cost": "The public library is free. Your coding agent’s subscription and model usage are separate.",
+    "installIntro": "Connect an MCP-compatible coding agent with Streamable HTTP. No authentication or library API key.",
+    "docs": "Connection details",
+    "cost": "The public library is free and needs no API key of its own. Your agent and model provider have their own account requirements and usage costs.",
     "faqTitle": "How the library works",
     "faq": [
       [
         "What is Vibe Coding Library?",
-        "The current MCP plugin provides {recipes} engineering workflows through search_workflows and get_workflow. It uses one bundled selection skill and retrieves the chosen instructions when needed. The separate offline distribution includes {skills} local skills."
+        "A public, read-only MCP library with {recipes} engineering workflows. MCP-compatible coding agents search with search_workflows and retrieve selected guidance with get_workflow. Codex and Claude Code have ready-made plugin setups; other agents can connect to the same endpoint."
+      ],
+      [
+        "Which agents can connect?",
+        "Use a coding agent or client that supports remote MCP servers over Streamable HTTP. Add the public endpoint with authentication set to none. The library does not require its own API key. Your agent or model provider may have separate setup requirements."
       ],
       [
         "What do the two tools do?",
-        "search_workflows returns workflow titles, summaries and stable IDs. get_workflow loads one selected recipe with its domain skill, working contract and required references. Your agent uses its own project tools to apply the guidance."
+        "search_workflows returns workflow titles, summaries and stable IDs. get_workflow loads the guidance for the selected workflow step. Your coding agent applies it with its own project tools and keeps the context needed for later steps."
       ],
       [
         "Which languages are supported?",
@@ -80,11 +84,11 @@
       ],
       [
         "Does the service need an account or API key?",
-        "No. The public MCP endpoint uses Streamable HTTP without authentication. It needs an internet connection and returns public instructions. It cannot read or edit your repository."
+        "No. The public MCP endpoint uses Streamable HTTP without authentication. It needs an internet connection and returns public instructions. It cannot read or edit your repository. Your agent and model provider manage their own accounts and keys."
       ],
       [
         "Can I use the full library offline?",
-        "Yes. The original Vibe Coding plugin is a separate optional distribution with {skills} local skills and all {recipes} workflows. Its installation and invocation names differ from the MCP Library plugin."
+        "Yes. The original Vibe Coding plugin is a separate optional distribution for Codex and Claude Code, with {skills} local skills and all {recipes} workflows. Its native commands differ from the universal MCP connection."
       ]
     ],
     "countOne": "{count} workflow",
@@ -141,27 +145,29 @@
     "allWorkflows": "All workflows",
     "directoryTitle": "All {recipes} Engineering Workflows — Vibe Coding",
     "directoryHeading": "Explore every workflow.",
-    "directoryDescription": "Browse all {recipes} Vibe Coding Library workflows by engineering topic. Find code review, debugging, database, accessibility and release workflows, also available through MCP.",
+    "directoryDescription": "Browse all {recipes} Vibe Coding Library workflows by engineering topic. Connect an MCP-compatible coding agent over Streamable HTTP to retrieve the guidance.",
     "privacyDescription": "Privacy for the Vibe Coding Library website and public MCP service: browser preferences, shared URLs, requests, hosting providers and support.",
     "termsDescription": "Terms for the Vibe Coding Library website and public MCP service: MIT license, use of guidance, third-party services, availability and support.",
     "mcpLabel": "Live MCP console",
-    "pluginTitle": "MCP plugin",
-    "clientTitle": "Any MCP client",
+    "pluginTitle": "Ready-made Codex and Claude Code setup",
+    "clientTitle": "Any MCP-compatible coding agent",
     "endpointLabel": "Public MCP endpoint",
     "consoleLink": "Try the live server",
     "offlineTitle": "Prefer the offline bundle?",
-    "offlineNote": "The original Vibe Coding plugin is available separately with {skills} local skills and all {recipes} workflows.",
+    "offlineNote": "The separate offline plugin includes {skills} local skills and all {recipes} workflows, with native support for Codex and Claude Code.",
     "offlineLink": "Offline plugin setup",
-    "workflowIntro": "With Vibe Coding Library connected, ask your agent to load this workflow. Choose your assistant and prompt language, then add your task details.",
-    "workflowPrompt": "Use Vibe Coding Library to load workflow “{title}” (ID: {id}). Follow its instructions for the task below. Report the result in English.",
+    "workflowIntro": "Connect Vibe Coding Library to a coding agent that supports MCP over Streamable HTTP. Choose Other / MCP agent for a neutral prompt, or a ready-made Codex or Claude Code invocation. Add your task details below.",
+    "workflowPrompt": "$vibe-library\nLoad workflow “{title}” (ID: {id}) and follow the returned guidance for the task below. Report the result in English.",
     "workflowPromptClaude": "/vibe-coding-library:vibe-library\nLoad workflow “{title}” (ID: {id}) and follow its instructions for the task below. Report the result in English.",
-    "libraryVersion": "MCP plugin",
+    "libraryVersion": "Library release",
     "instructionVersion": "Instruction library",
     "toolsLabel": "read-only tools",
-    "pluginInstall": "Use the MCP plugin for Codex or Claude Code. It includes the selection skill and the public server connection.",
-    "pluginLink": "Plugin files & setup",
-    "clientInstall": "Add this URL to a client that supports Streamable HTTP. Authentication: none.",
-    "clientStart": "Once connected, ask your agent to find and load a workflow for your task."
+    "pluginInstall": "These example setups bundle the server connection and one selection skill. Other MCP agents can use the same public URL directly.",
+    "pluginLink": "Codex & Claude Code setup",
+    "clientInstall": "Add the public URL below as a remote MCP server. Select Streamable HTTP and no authentication.",
+    "clientStart": "Then ask your agent to find and load a workflow. The Other / MCP agent prompt works without a host-specific plugin command.",
+    "genericHost": "Other / MCP agent",
+    "workflowPromptGeneric": "Use the connected Vibe Coding Library MCP tools to load workflow “{title}” (ID: {id}). Follow the returned guidance for the task below. Report the result in English."
   },
   "es": {
     "maintained": "Mantenido por Arty S.",
@@ -169,14 +175,14 @@
     "source": "Código fuente",
     "skip": "Ir al contenido",
     "title": "Vibe Coding Library — Flujos de ingeniería por MCP",
-    "description": "Busca {recipes} flujos de ingeniería y carga las instrucciones elegidas con dos herramientas MCP de solo lectura. Código abierto, sin cuenta ni clave de API.",
-    "eyebrow": "Vibe Coding Library · MCP",
+    "description": "Flujos de ingeniería para agentes de programación compatibles con MCP. Busca {recipes} flujos por Streamable HTTP, sin autenticación ni clave de API de la biblioteca.",
+    "eyebrow": "Para agentes de programación con MCP",
     "headline": "Encuentra el flujo.",
     "accent": "Carga lo necesario.",
-    "intro": "Vibe Coding Library ofrece a tu agente flujos de ingeniería bajo demanda. Busca en el catálogo y carga las instrucciones elegidas por MCP en Codex, Claude Code u otro cliente compatible.",
+    "intro": "Vibe Coding Library ofrece flujos de ingeniería bajo demanda a agentes de programación compatibles con MCP. Conecta el endpoint público por Streamable HTTP, busca en el catálogo y carga las instrucciones para tu tarea.",
     "browse": "Buscar un flujo",
     "install": "Conectar la biblioteca",
-    "facts": "Código abierto · Gratis · Sin cuenta ni clave de API",
+    "facts": "Streamable HTTP · Sin autenticación · Sin clave de API propia",
     "catalogTitle": "¿En qué estás trabajando?",
     "catalogNote": "Explora por tema, tecnología o tarea. Tu agente puede buscar en este mismo catálogo por MCP.",
     "search": "Buscar flujos",
@@ -199,10 +205,10 @@
     "searchFallback": "La búsqueda completa no está disponible. Puedes buscar por título y tema. Desactiva y vuelve a activar la opción para reintentar.",
     "bodyMatch": "Coincidencia dentro de las instrucciones",
     "english": "Catálogo y prompts en cuatro idiomas. Instrucciones técnicas en inglés.",
-    "demoLabel": "Pídeselo a tu agente con Vibe Coding Library conectado.",
+    "demoLabel": "Pídeselo a tu agente con la biblioteca MCP conectada.",
     "demoTask": "Revisar un cambio de código",
-    "demoPrompt": "Busca el flujo de Vibe Coding para revisar esta rama. Carga sus instrucciones, revisa el cambio e informa de errores concretos.",
-    "demoNote": "search_workflows busca opciones. get_workflow carga la receta elegida, las instrucciones del área y el contrato de trabajo.",
+    "demoPrompt": "Usa las herramientas MCP conectadas de Vibe Coding Library para buscar un flujo que revise esta rama. Carga sus instrucciones, revisa el cambio e informa de errores concretos.",
+    "demoNote": "search_workflows busca opciones. get_workflow carga las instrucciones elegidas. Tu agente usa sus propias herramientas y permisos del proyecto.",
     "copy": "Copiar",
     "copied": "Copiado",
     "copyFallback": "Selecciona y copia el texto manualmente.",
@@ -225,18 +231,22 @@
         "vibe-quality"
       ]
     ],
-    "installIntro": "Una habilidad de selección. Dos herramientas de solo lectura. Instrucciones bajo demanda.",
-    "docs": "Configurar el plugin",
-    "cost": "La biblioteca pública es gratuita. La suscripción al agente y el uso de modelos se pagan por separado.",
+    "installIntro": "Conecta un agente de programación compatible con MCP y Streamable HTTP. Sin autenticación ni clave de API propia.",
+    "docs": "Detalles de conexión",
+    "cost": "La biblioteca pública es gratuita y no necesita una clave de API propia. Tu agente y el proveedor del modelo tienen sus propios requisitos de cuenta y costes de uso.",
     "faqTitle": "Cómo funciona la biblioteca",
     "faq": [
       [
         "¿Qué es Vibe Coding Library?",
-        "El plugin MCP actual ofrece {recipes} flujos de ingeniería mediante search_workflows y get_workflow. Incluye una habilidad de selección y carga las instrucciones elegidas cuando hacen falta. La distribución sin conexión, disponible por separado, incluye {skills} habilidades locales."
+        "Una biblioteca MCP pública y de solo lectura con {recipes} flujos de ingeniería. Los agentes compatibles buscan con search_workflows y obtienen las instrucciones elegidas con get_workflow. Codex y Claude Code tienen configuraciones de plugin preparadas; otros agentes pueden conectar al mismo endpoint."
+      ],
+      [
+        "¿Qué agentes pueden conectarse?",
+        "Usa un agente o cliente que admita servidores MCP remotos por Streamable HTTP. Añade el endpoint público sin autenticación. La biblioteca no requiere una clave de API propia. El agente o proveedor del modelo puede tener requisitos de configuración independientes."
       ],
       [
         "¿Qué hacen las dos herramientas?",
-        "search_workflows devuelve títulos, resúmenes e identificadores estables. get_workflow carga una receta con la habilidad de su área, el contrato de trabajo y las referencias necesarias. El agente aplica las instrucciones con sus propias herramientas del proyecto."
+        "search_workflows devuelve títulos, resúmenes e identificadores estables. get_workflow carga las instrucciones del paso elegido. Tu agente las aplica con sus herramientas del proyecto y conserva el contexto necesario para los pasos posteriores."
       ],
       [
         "¿Qué idiomas admite?",
@@ -244,11 +254,11 @@
       ],
       [
         "¿Necesita cuenta o clave de API?",
-        "No. El endpoint MCP público usa Streamable HTTP sin autenticación. Necesita conexión a internet y devuelve instrucciones públicas. No puede leer ni editar tu repositorio."
+        "No. El endpoint MCP público usa Streamable HTTP sin autenticación. Necesita internet y devuelve instrucciones públicas. No puede leer ni editar tu repositorio. El agente y el proveedor del modelo gestionan sus propias cuentas y claves."
       ],
       [
         "¿Puedo usar la biblioteca completa sin conexión?",
-        "Sí. El plugin original Vibe Coding es una distribución opcional y separada con {skills} habilidades locales y los {recipes} flujos. Su instalación y sus nombres de invocación son distintos de los del plugin MCP Library."
+        "Sí. El plugin original Vibe Coding es una distribución opcional y separada para Codex y Claude Code, con {skills} habilidades locales y los {recipes} flujos. Sus comandos nativos son distintos de la conexión MCP universal."
       ]
     ],
     "countOne": "{count} flujo",
@@ -305,27 +315,29 @@
     "allWorkflows": "Todos los flujos",
     "directoryTitle": "Los {recipes} flujos de ingeniería — Vibe Coding",
     "directoryHeading": "Explora todos los flujos.",
-    "directoryDescription": "Explora los {recipes} flujos de Vibe Coding Library por tema de ingeniería. Encuentra flujos de revisión, depuración, bases de datos, accesibilidad y publicación, también disponibles por MCP.",
+    "directoryDescription": "Explora los {recipes} flujos de Vibe Coding Library por tema de ingeniería. Conecta un agente de programación compatible con MCP por Streamable HTTP para obtener las instrucciones.",
     "privacyDescription": "Privacidad del sitio web y el servicio MCP público de Vibe Coding Library: preferencias, URL compartidas, peticiones, alojamiento y soporte.",
     "termsDescription": "Condiciones del sitio web y el servicio MCP público de Vibe Coding Library: licencia MIT, uso de las instrucciones, terceros, disponibilidad y soporte.",
     "mcpLabel": "Consola MCP en directo",
-    "pluginTitle": "Plugin MCP",
-    "clientTitle": "Cualquier cliente MCP",
+    "pluginTitle": "Configuración preparada para Codex y Claude Code",
+    "clientTitle": "Cualquier agente de programación con MCP",
     "endpointLabel": "Endpoint MCP público",
     "consoleLink": "Probar el servidor",
     "offlineTitle": "¿Prefieres el paquete sin conexión?",
-    "offlineNote": "El plugin original Vibe Coding está disponible por separado con {skills} habilidades locales y los {recipes} flujos.",
+    "offlineNote": "El plugin sin conexión es una distribución separada con {skills} habilidades locales y los {recipes} flujos, con soporte nativo para Codex y Claude Code.",
     "offlineLink": "Configurar el plugin sin conexión",
-    "workflowIntro": "Con Vibe Coding Library conectado, pide al agente que cargue este flujo. Elige asistente e idioma del prompt y añade los detalles de tu tarea.",
-    "workflowPrompt": "Usa Vibe Coding Library para cargar el flujo «{title}» (ID: {id}). Sigue sus instrucciones para la tarea que aparece debajo. Responde en español.",
+    "workflowIntro": "Conecta Vibe Coding Library a un agente que admita MCP por Streamable HTTP. Elige Otro agente MCP para un prompt neutro, o una invocación preparada para Codex o Claude Code. Añade los detalles de tu tarea debajo.",
+    "workflowPrompt": "$vibe-library\nCarga el flujo «{title}» (ID: {id}) y sigue las instrucciones devueltas para la tarea que aparece debajo. Responde en español.",
     "workflowPromptClaude": "/vibe-coding-library:vibe-library\nCarga el flujo «{title}» (ID: {id}) y sigue sus instrucciones para la tarea que aparece debajo. Responde en español.",
-    "libraryVersion": "Plugin MCP",
+    "libraryVersion": "Versión de la biblioteca",
     "instructionVersion": "Biblioteca de instrucciones",
     "toolsLabel": "herramientas de solo lectura",
-    "pluginInstall": "Usa el plugin MCP en Codex o Claude Code. Incluye la habilidad de selección y la conexión al servidor público.",
-    "pluginLink": "Archivos y configuración del plugin",
-    "clientInstall": "Añade esta URL a un cliente compatible con Streamable HTTP. Autenticación: ninguna.",
-    "clientStart": "Una vez conectado, pide al agente que busque y cargue un flujo para tu tarea."
+    "pluginInstall": "Estas configuraciones de ejemplo incluyen la conexión al servidor y una habilidad de selección. Otros agentes MCP pueden usar directamente la misma URL pública.",
+    "pluginLink": "Configurar Codex y Claude Code",
+    "clientInstall": "Añade la URL pública como servidor MCP remoto. Selecciona Streamable HTTP y ninguna autenticación.",
+    "clientStart": "Después pide al agente que busque y cargue un flujo. El prompt de Otro agente MCP no requiere un comando de plugin específico.",
+    "genericHost": "Otro agente MCP",
+    "workflowPromptGeneric": "Usa las herramientas MCP conectadas de Vibe Coding Library para cargar el flujo «{title}» (ID: {id}). Sigue las instrucciones devueltas para la tarea que aparece debajo. Responde en español."
   },
   "ru": {
     "maintained": "Автор: Arty S.",
@@ -333,14 +345,14 @@
     "source": "Исходный код",
     "skip": "Перейти к содержанию",
     "title": "Vibe Coding Library — Инженерные сценарии через MCP",
-    "description": "Поиск инженерных сценариев ({recipes}) и загрузка выбранных инструкций двумя MCP-инструментами только для чтения. Открытый код, без аккаунта и API-ключа.",
-    "eyebrow": "Vibe Coding Library · MCP",
+    "description": "Инженерные сценарии для кодинговых агентов с MCP. В каталоге: {recipes}. Через Streamable HTTP, без авторизации и API-ключа библиотеки.",
+    "eyebrow": "Для кодинговых агентов с MCP",
     "headline": "Найдите сценарий.",
     "accent": "Загрузите нужное.",
-    "intro": "Vibe Coding Library предоставляет вашему ассистенту инженерные сценарии по запросу. Найдите сценарий в каталоге и получите инструкции через MCP в Codex, Claude Code или другом совместимом клиенте.",
+    "intro": "Vibe Coding Library загружает инженерные сценарии по запросу для кодинговых агентов с поддержкой MCP. Подключите публичный endpoint через Streamable HTTP, найдите сценарий и загрузите инструкции для задачи.",
     "browse": "Найти сценарий",
     "install": "Подключить библиотеку",
-    "facts": "Открытый код · Бесплатно · Без аккаунта и API-ключа",
+    "facts": "Streamable HTTP · Без авторизации · Без своего API-ключа",
     "catalogTitle": "Над чем работаешь?",
     "catalogNote": "Поиск по теме, технологии или задаче. Агент может искать в этом же каталоге через MCP.",
     "search": "Поиск сценариев",
@@ -363,10 +375,10 @@
     "searchFallback": "Полный текст недоступен. Поиск по названиям и темам работает. Выключи и снова включи опцию, чтобы повторить загрузку.",
     "bodyMatch": "Совпадение в тексте инструкции",
     "english": "Каталог и промпты на четырёх языках. Технические инструкции — на английском.",
-    "demoLabel": "Попросите агента с подключённой Vibe Coding Library.",
+    "demoLabel": "Попросите агента с подключённой MCP-библиотекой.",
     "demoTask": "Проверить изменение кода",
-    "demoPrompt": "Найди сценарий Vibe Coding для проверки этой ветки. Загрузи инструкции, проверь изменения и сообщи о конкретных ошибках.",
-    "demoNote": "search_workflows находит варианты. get_workflow загружает выбранный сценарий, инструкции области и рабочий контракт.",
+    "demoPrompt": "Используй подключённые MCP-инструменты Vibe Coding Library, чтобы найти сценарий проверки этой ветки. Загрузи инструкции, проверь изменения и сообщи о конкретных ошибках.",
+    "demoNote": "search_workflows находит варианты. get_workflow загружает выбранные инструкции. Агент использует свои инструменты и разрешения проекта.",
     "copy": "Копировать",
     "copied": "Скопировано",
     "copyFallback": "Выделите и скопируйте текст вручную.",
@@ -389,18 +401,22 @@
         "vibe-quality"
       ]
     ],
-    "installIntro": "Один навык выбора. Два инструмента только для чтения. Инструкции по запросу.",
-    "docs": "Настройка плагина",
-    "cost": "Публичная библиотека бесплатна. Подписка на агента и использование моделей оплачиваются отдельно.",
+    "installIntro": "Подключите кодингового агента с поддержкой MCP и Streamable HTTP. Авторизация и собственный API-ключ библиотеки не нужны.",
+    "docs": "Подробности подключения",
+    "cost": "Публичная библиотека бесплатна и не требует собственного API-ключа. У агента и провайдера модели свои требования к аккаунту и плата за использование.",
     "faqTitle": "Как работает библиотека",
     "faq": [
       [
         "Что такое Vibe Coding Library?",
-        "Текущий MCP-плагин предоставляет {recipes} инженерный сценарий через search_workflows и get_workflow. Он содержит один навык выбора и загружает выбранные инструкции по мере необходимости. Отдельная офлайн-версия содержит {skills} локальных навыков."
+        "Публичная MCP-библиотека только для чтения: {recipes} инженерный сценарий. Совместимые агенты ищут сценарии через search_workflows и получают инструкции через get_workflow. Для Codex и Claude Code есть готовые настройки плагина; другие агенты могут подключиться к тому же endpoint."
+      ],
+      [
+        "Какие агенты могут подключиться?",
+        "Используйте агента или клиент с поддержкой удалённых MCP-серверов через Streamable HTTP. Добавьте публичный endpoint без авторизации. Библиотека не требует собственного API-ключа. У агента и провайдера модели могут быть отдельные требования к настройке."
       ],
       [
         "Что делают два инструмента?",
-        "search_workflows возвращает названия, описания и стабильные ID сценариев. get_workflow загружает один сценарий вместе с навыком области, рабочим контрактом и нужными справочными материалами. Агент применяет инструкции своими инструментами проекта."
+        "search_workflows возвращает названия, описания и стабильные ID. get_workflow загружает инструкции выбранного шага. Агент применяет их своими инструментами проекта и сохраняет контекст, нужный для следующих шагов."
       ],
       [
         "Какие языки поддерживаются?",
@@ -408,11 +424,11 @@
       ],
       [
         "Нужен аккаунт или API-ключ?",
-        "Нет. Публичный MCP endpoint работает через Streamable HTTP без авторизации. Требуется интернет; сервис возвращает публичные инструкции. Он не может читать или редактировать ваш репозиторий."
+        "Нет. Публичный MCP endpoint работает через Streamable HTTP без авторизации. Требуется интернет; сервис возвращает публичные инструкции. Он не может читать или редактировать ваш репозиторий. Аккаунты и ключи агента и провайдера модели настраиваются отдельно."
       ],
       [
         "Можно использовать всю библиотеку офлайн?",
-        "Да. Исходный плагин Vibe Coding доступен как отдельный необязательный пакет с {skills} локальными навыками и всеми {recipes} сценариями. Его установка и имена вызова отличаются от MCP-плагина Library."
+        "Да. Исходный плагин Vibe Coding — отдельный необязательный пакет для Codex и Claude Code с {skills} локальными навыками и полным каталогом сценариев ({recipes}). Его нативные команды отличаются от универсального подключения MCP."
       ]
     ],
     "countOne": "Найдено: {count}",
@@ -469,27 +485,29 @@
     "allWorkflows": "Все сценарии",
     "directoryTitle": "Все сценарии разработки: {recipes} — Vibe Coding",
     "directoryHeading": "Все сценарии по темам.",
-    "directoryDescription": "Инженерные сценарии Vibe Coding Library по темам: ревью кода, отладка, базы данных, доступность и подготовка релиза. Всего в каталоге: {recipes}. Доступны также через MCP.",
+    "directoryDescription": "Инженерные сценарии Vibe Coding Library по темам. Всего: {recipes}. Подключите кодингового агента с MCP через Streamable HTTP, чтобы получать инструкции.",
     "privacyDescription": "Конфиденциальность сайта и публичного MCP-сервиса Vibe Coding Library: настройки браузера, ссылки поиска, запросы, хостинг и поддержка.",
     "termsDescription": "Условия сайта и публичного MCP-сервиса Vibe Coding Library: лицензия MIT, использование инструкций, сторонние сервисы, доступность и поддержка.",
     "mcpLabel": "Консоль MCP",
-    "pluginTitle": "MCP-плагин",
-    "clientTitle": "Любой MCP-клиент",
+    "pluginTitle": "Готовая настройка Codex и Claude Code",
+    "clientTitle": "Любой кодинговый агент с MCP",
     "endpointLabel": "Публичный MCP endpoint",
     "consoleLink": "Проверить сервер",
     "offlineTitle": "Нужна офлайн-библиотека?",
-    "offlineNote": "Исходный плагин Vibe Coding доступен отдельно с {skills} локальными навыками и полным каталогом сценариев ({recipes}).",
+    "offlineNote": "Отдельный офлайн-плагин содержит {skills} локальных навыков и полный каталог сценариев ({recipes}). Его нативные интеграции поддерживают Codex и Claude Code.",
     "offlineLink": "Установка офлайн-плагина",
-    "workflowIntro": "Подключите Vibe Coding Library и попросите агента загрузить этот сценарий. Выберите ассистента и язык промпта, затем добавьте детали задачи.",
-    "workflowPrompt": "Используй Vibe Coding Library, чтобы загрузить сценарий «{title}» (ID: {id}). Следуй его инструкциям для задачи ниже. Ответь на русском языке.",
+    "workflowIntro": "Подключите Vibe Coding Library к агенту с поддержкой MCP через Streamable HTTP. Выберите «Другой MCP-агент» для нейтрального промпта или готовый вызов для Codex либо Claude Code. Добавьте детали задачи ниже.",
+    "workflowPrompt": "$vibe-library\nЗагрузи сценарий «{title}» (ID: {id}) и следуй полученным инструкциям для задачи ниже. Ответь на русском языке.",
     "workflowPromptClaude": "/vibe-coding-library:vibe-library\nЗагрузи сценарий «{title}» (ID: {id}) и следуй его инструкциям для задачи ниже. Ответь на русском языке.",
-    "libraryVersion": "MCP-плагин",
+    "libraryVersion": "Версия библиотеки",
     "instructionVersion": "Библиотека инструкций",
     "toolsLabel": "инструмента только для чтения",
-    "pluginInstall": "Используйте MCP-плагин в Codex или Claude Code. Он содержит навык выбора сценария и подключение к публичному серверу.",
-    "pluginLink": "Файлы и настройка плагина",
-    "clientInstall": "Добавьте этот URL в клиент с поддержкой Streamable HTTP. Авторизация не требуется.",
-    "clientStart": "После подключения попросите агента найти и загрузить сценарий для вашей задачи."
+    "pluginInstall": "Эти готовые варианты подключения содержат настройки сервера и один навык выбора. Другие MCP-агенты могут использовать тот же публичный URL напрямую.",
+    "pluginLink": "Настройка Codex и Claude Code",
+    "clientInstall": "Добавьте публичный URL как удалённый MCP-сервер. Выберите Streamable HTTP и подключение без авторизации.",
+    "clientStart": "Затем попросите агента найти и загрузить сценарий. Промпт «Другой MCP-агент» не требует команды конкретного плагина.",
+    "genericHost": "Другой MCP-агент",
+    "workflowPromptGeneric": "Используй подключённые MCP-инструменты Vibe Coding Library, чтобы загрузить сценарий «{title}» (ID: {id}). Следуй полученным инструкциям для задачи ниже. Ответь на русском языке."
   },
   "zh-CN": {
     "maintained": "由 Arty S. 维护",
@@ -497,14 +515,14 @@
     "source": "源代码",
     "skip": "跳转到内容",
     "title": "Vibe Coding Library — 通过 MCP 获取工程工作流",
-    "description": "使用两个只读 MCP 工具搜索 {recipes} 个工程工作流，按需加载所选说明。开源，无需账户或 API 密钥。",
-    "eyebrow": "Vibe Coding Library · MCP",
+    "description": "面向 MCP 兼容编程智能体的工程工作流。通过 Streamable HTTP 搜索 {recipes} 个工作流，无需身份验证或工作流库专用 API 密钥。",
+    "eyebrow": "面向支持 MCP 的编程智能体",
     "headline": "找到合适的工作流。",
     "accent": "按需加载说明。",
-    "intro": "Vibe Coding Library 按需为你的编程智能体提供工程工作流。搜索目录，再通过 MCP 在 Codex、Claude Code 或其他兼容客户端中加载所选说明。",
+    "intro": "Vibe Coding Library 按需为兼容 MCP 的编程智能体提供工程工作流。通过 Streamable HTTP 连接公共端点，搜索目录并加载任务所需的说明。",
     "browse": "查找工作流",
     "install": "连接工作流库",
-    "facts": "开源 · 免费 · 无需账户或 API 密钥",
+    "facts": "Streamable HTTP · 无需身份验证 · 无需专用 API 密钥",
     "catalogTitle": "你正在处理什么任务？",
     "catalogNote": "按主题、技术或任务浏览。智能体也可以通过 MCP 搜索同一目录。",
     "search": "搜索工作流",
@@ -527,10 +545,10 @@
     "searchFallback": "全文搜索暂不可用，仍可按标题和主题搜索。关闭并重新开启此选项即可重试。",
     "bodyMatch": "匹配到指令中的内容",
     "english": "目录和提示词支持四种语言，技术说明为英语。",
-    "demoLabel": "连接 Vibe Coding Library 后，向智能体提出请求。",
+    "demoLabel": "连接 MCP 工作流库后，向编程智能体提出请求。",
     "demoTask": "审查代码变更",
-    "demoPrompt": "查找用于审查此分支的 Vibe Coding 工作流。加载说明，检查变更，并报告可操作的缺陷。",
-    "demoNote": "search_workflows 查找候选项。get_workflow 加载所选工作流、领域说明和工作约定。",
+    "demoPrompt": "使用已连接的 Vibe Coding Library MCP 工具查找用于审查此分支的工作流。加载说明，检查变更，并报告可操作的缺陷。",
+    "demoNote": "search_workflows 查找候选项，get_workflow 加载所选说明。智能体使用自身的项目工具和权限。",
     "copy": "复制",
     "copied": "已复制",
     "copyFallback": "请手动选中并复制文本。",
@@ -553,18 +571,22 @@
         "vibe-quality"
       ]
     ],
-    "installIntro": "一个选择技能，两个只读工具，按需加载说明。",
-    "docs": "插件设置",
-    "cost": "公共工作流库免费提供。编程智能体的订阅和模型使用费用另计。",
+    "installIntro": "连接支持 MCP 和 Streamable HTTP 的编程智能体。无需身份验证或工作流库专用 API 密钥。",
+    "docs": "连接详情",
+    "cost": "公共工作流库免费提供，无需专用 API 密钥。智能体及模型提供方的账户要求和使用费用另计。",
     "faqTitle": "工作流库如何运作",
     "faq": [
       [
         "什么是 Vibe Coding Library？",
-        "当前 MCP 插件通过 search_workflows 和 get_workflow 提供 {recipes} 个工程工作流。插件仅内置一个选择技能，按需获取所选说明。另行提供的离线版本包含 {skills} 个本地技能。"
+        "这是提供 {recipes} 个工程工作流的公共只读 MCP 工作流库。兼容的智能体通过 search_workflows 搜索，再通过 get_workflow 获取所选说明。Codex 和 Claude Code 有现成的插件配置，其他智能体可连接相同端点。"
+      ],
+      [
+        "哪些智能体可以连接？",
+        "使用支持通过 Streamable HTTP 访问远程 MCP 服务器的编程智能体或客户端。添加公共端点，并将身份验证设为无。工作流库不需要专用 API 密钥，智能体或模型提供方可能有各自的设置要求。"
       ],
       [
         "两个工具分别做什么？",
-        "search_workflows 返回工作流标题、摘要和稳定 ID。get_workflow 加载一个工作流及其领域技能、工作约定和必要参考资料。智能体使用自身的项目工具来应用这些说明。"
+        "search_workflows 返回工作流标题、摘要和稳定 ID。get_workflow 加载所选步骤的说明。智能体通过自身项目工具应用说明，并保留后续步骤需要的上下文。"
       ],
       [
         "支持哪些语言？",
@@ -572,11 +594,11 @@
       ],
       [
         "需要账户或 API 密钥吗？",
-        "不需要。公共 MCP 端点通过 Streamable HTTP 提供服务，无需身份验证。连接需要网络，返回内容为公共说明。服务不能读取或修改你的代码仓库。"
+        "不需要。公共 MCP 端点通过 Streamable HTTP 提供服务，无需身份验证。连接需要网络，返回公共说明，不能读取或修改你的代码仓库。智能体和模型提供方的账户与密钥需单独配置。"
       ],
       [
         "可以离线使用完整工作流库吗？",
-        "可以。原版 Vibe Coding 插件是单独提供的可选版本，包含 {skills} 个本地技能和全部 {recipes} 个工作流。其安装方式和调用名称与 MCP Library 插件不同。"
+        "可以。原版 Vibe Coding 是面向 Codex 和 Claude Code 的独立可选插件，包含 {skills} 个本地技能和全部 {recipes} 个工作流。其原生命令与通用 MCP 连接方式不同。"
       ]
     ],
     "countOne": "找到 {count} 个工作流",
@@ -633,26 +655,28 @@
     "allWorkflows": "全部工作流",
     "directoryTitle": "全部 {recipes} 个工程工作流 — Vibe Coding",
     "directoryHeading": "按主题浏览全部工作流。",
-    "directoryDescription": "按工程主题浏览 Vibe Coding Library 的全部 {recipes} 个工作流，包括代码审查、调试、数据库、无障碍和发布检查，也可通过 MCP 获取。",
+    "directoryDescription": "按工程主题浏览 Vibe Coding Library 的全部 {recipes} 个工作流。通过 Streamable HTTP 连接兼容 MCP 的编程智能体即可获取说明。",
     "privacyDescription": "Vibe Coding Library 网站和公共 MCP 服务的隐私政策，涵盖浏览器偏好设置、分享的 URL、请求、托管提供方及支持。",
     "termsDescription": "Vibe Coding Library 网站和公共 MCP 服务的条款，涵盖 MIT 许可证、指导的使用、第三方服务、可用性及支持。",
     "mcpLabel": "MCP 在线控制台",
-    "pluginTitle": "MCP 插件",
-    "clientTitle": "任意 MCP 客户端",
+    "pluginTitle": "Codex 与 Claude Code 的现成配置",
+    "clientTitle": "任何支持 MCP 的编程智能体",
     "endpointLabel": "公共 MCP 端点",
     "consoleLink": "试用在线服务器",
     "offlineTitle": "需要离线版本？",
-    "offlineNote": "原版 Vibe Coding 插件另行提供，包含 {skills} 个本地技能和全部 {recipes} 个工作流。",
+    "offlineNote": "独立提供的离线插件包含 {skills} 个本地技能和全部 {recipes} 个工作流，其原生集成支持 Codex 与 Claude Code。",
     "offlineLink": "离线插件设置",
-    "workflowIntro": "连接 Vibe Coding Library 后，请智能体加载此工作流。选择助手和提示词语言，再补充任务详情。",
-    "workflowPrompt": "使用 Vibe Coding Library 加载“{title}”工作流（ID：{id}），按照说明完成下方任务。请用简体中文回答。",
+    "workflowIntro": "将 Vibe Coding Library 连接到支持 MCP 与 Streamable HTTP 的编程智能体。选择“其他 MCP 智能体”使用中性提示词，或选择 Codex、Claude Code 的现成调用方式，再补充任务详情。",
+    "workflowPrompt": "$vibe-library\n加载“{title}”工作流（ID：{id}），按照返回的说明完成下方任务。请用简体中文回答。",
     "workflowPromptClaude": "/vibe-coding-library:vibe-library\n加载“{title}”工作流（ID：{id}），按照说明完成下方任务。请用简体中文回答。",
-    "libraryVersion": "MCP 插件",
+    "libraryVersion": "工作流库版本",
     "instructionVersion": "说明库",
     "toolsLabel": "个只读工具",
-    "pluginInstall": "在 Codex 或 Claude Code 中使用 MCP 插件。插件包含工作流选择技能和公共服务器连接配置。",
-    "pluginLink": "插件文件与设置",
-    "clientInstall": "将此 URL 添加到支持 Streamable HTTP 的客户端。无需身份验证。",
-    "clientStart": "连接后，请智能体查找并加载适合当前任务的工作流。"
+    "pluginInstall": "这些示例配置包含服务器连接和一个选择技能。其他 MCP 智能体可直接使用相同的公共 URL。",
+    "pluginLink": "Codex 与 Claude Code 设置",
+    "clientInstall": "将公共 URL 添加为远程 MCP 服务器，选择 Streamable HTTP，并将身份验证设为无。",
+    "clientStart": "然后请智能体查找并加载工作流。“其他 MCP 智能体”提示词不需要特定插件的调用命令。",
+    "genericHost": "其他 MCP 智能体",
+    "workflowPromptGeneric": "使用已连接的 Vibe Coding Library MCP 工具加载“{title}”工作流（ID：{id}），按照返回的说明完成下方任务。请用简体中文回答。"
   }
 }

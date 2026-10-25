@@ -1,9 +1,5 @@
 # Improve Accessibility
 
-## Operation
-
-Implement the requested change and verify its directly affected behavior.
-
 ## Goal
 
 Improve the selected accessible path or shared accessible component behavior. The diff should make the selected interaction perceivable, operable, understandable, and regression-resistant without introducing speculative abstractions.
@@ -34,3 +30,5 @@ Improve the selected accessible path or shared accessible component behavior. Th
 ## Validation
 
 Run relevant repository-native checks. When possible, perform a keyboard trace for the changed path and use preview/accessibility tooling. State any screen-reader or browser limitations plainly.
+
+Correct the control, association or focus/state owner before adding local ARIA workarounds. Replay the same task from its entry through success or recovery using the affected input method; include focus return and asynchronous transitions when involved. Inspect a normal control so a disabled or hidden path cannot appear fixed. Recheck failed states after correction, then run Patch Checking without claiming unperformed assistive-technology coverage.

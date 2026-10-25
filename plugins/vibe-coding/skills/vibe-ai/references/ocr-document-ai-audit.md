@@ -26,3 +26,7 @@ Upload/intake routes, file validators, storage, preprocessing, OCR engines, docu
 
 - Include document type, pipeline step, expected output/validation behavior, acceptance criteria, and eval/test direction when discoverable.
 - Do not recommend changing OCR providers/models unless current repo evidence proves the existing owner cannot satisfy the behavior.
+
+## Trace and hand off
+
+Use a permitted representative document and expected field/table output. Follow page/region identity through preprocessing, extraction, typed confidence/missing states, human correction, persistence and export. Compare the final consumer value with the source region and any accepted correction. Pass the document class, failing pipeline step, expected typed state and reproducing fixture to Improve OCR Document AI; retain privacy-safe references instead of raw sensitive documents in reports.

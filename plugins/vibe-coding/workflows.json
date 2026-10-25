@@ -1,0 +1,1057 @@
+{
+  "version": 1,
+  "families": [
+    {
+      "id": "ai-evaluation",
+      "audit": "ai-evaluation-audit",
+      "implement": "ai-evaluation-polish",
+      "checks": [
+        {
+          "id": "behavior-check",
+          "when": "For the explicit affected behavior and its distinguishing failure/control case."
+        }
+      ]
+    },
+    {
+      "id": "ai-feature",
+      "audit": "ai-feature-audit",
+      "implement": "ai-feature-polish",
+      "checks": [
+        {
+          "id": "behavior-check",
+          "when": "For the explicit affected behavior and its distinguishing failure/control case."
+        }
+      ]
+    },
+    {
+      "id": "ai-safety-governance",
+      "audit": "ai-safety-governance-audit",
+      "implement": "ai-safety-governance-polish",
+      "checks": [
+        {
+          "id": "behavior-check",
+          "when": "For the explicit affected behavior and its distinguishing failure/control case."
+        }
+      ]
+    },
+    {
+      "id": "llm-agent-tools",
+      "audit": "llm-agent-tools-audit",
+      "implement": "llm-agent-tools-polish",
+      "checks": [
+        {
+          "id": "behavior-check",
+          "when": "For the explicit affected behavior and its distinguishing failure/control case."
+        }
+      ]
+    },
+    {
+      "id": "ml-pipeline",
+      "audit": "ml-pipeline-audit",
+      "implement": "ml-pipeline-polish",
+      "checks": [
+        {
+          "id": "behavior-check",
+          "when": "For the explicit affected behavior and its distinguishing failure/control case."
+        }
+      ]
+    },
+    {
+      "id": "model-serving-monitoring",
+      "audit": "model-serving-monitoring-audit",
+      "implement": "model-serving-monitoring-polish",
+      "checks": [
+        {
+          "id": "behavior-check",
+          "when": "For the explicit affected behavior and its distinguishing failure/control case."
+        }
+      ]
+    },
+    {
+      "id": "ocr-document-ai",
+      "audit": "ocr-document-ai-audit",
+      "implement": "ocr-document-ai-polish",
+      "checks": [
+        {
+          "id": "behavior-check",
+          "when": "For the explicit affected behavior and its distinguishing failure/control case."
+        }
+      ]
+    },
+    {
+      "id": "rag",
+      "audit": "rag-audit",
+      "implement": "rag-polish",
+      "checks": [
+        {
+          "id": "behavior-check",
+          "when": "For the explicit affected behavior and its distinguishing failure/control case."
+        }
+      ]
+    },
+    {
+      "id": "api",
+      "audit": "api-audit",
+      "implement": "api-polish",
+      "checks": [
+        {
+          "id": "api-contract-compatibility-check",
+          "when": "For the changed request/response/error or versioned API contract."
+        }
+      ]
+    },
+    {
+      "id": "api-contract-evolution",
+      "audit": "api-contract-evolution-audit",
+      "implement": "api-contract-evolution-polish",
+      "checks": [
+        {
+          "id": "api-contract-compatibility-check",
+          "when": "For the changed request/response/error or versioned API contract."
+        }
+      ]
+    },
+    {
+      "id": "bot",
+      "audit": "bot-audit",
+      "implement": "bot-polish",
+      "checks": [
+        {
+          "id": "behavior-check",
+          "when": "For the explicit affected behavior and its distinguishing failure/control case."
+        }
+      ]
+    },
+    {
+      "id": "cache-invalidation",
+      "audit": "cache-invalidation-audit",
+      "implement": "cache-invalidation-polish",
+      "checks": [
+        {
+          "id": "cache-coherency-check",
+          "when": "For the selected changed domain contract; exercise only relevant scenarios."
+        }
+      ]
+    },
+    {
+      "id": "celery-workers",
+      "audit": "celery-workers-audit",
+      "implement": "celery-workers-polish",
+      "checks": [
+        {
+          "id": "celery-delivery-shutdown-check",
+          "when": "For the selected changed domain contract; exercise only relevant scenarios."
+        }
+      ]
+    },
+    {
+      "id": "clickhouse",
+      "audit": "clickhouse-audit",
+      "implement": "clickhouse-polish",
+      "checks": [
+        {
+          "id": "clickhouse-ingestion-query-load-check",
+          "when": "For the selected changed domain contract; exercise only relevant scenarios."
+        }
+      ]
+    },
+    {
+      "id": "reverse-engineering",
+      "audit": "reverse-engineering-audit",
+      "implement": "reverse-engineering-polish",
+      "checks": [
+        {
+          "id": "compatibility-golden-master-check",
+          "when": "For the selected changed domain contract; exercise only relevant scenarios."
+        }
+      ]
+    },
+    {
+      "id": "localization",
+      "audit": "localization-audit",
+      "implement": "localization-polish",
+      "checks": [
+        {
+          "id": "behavior-check",
+          "when": "For the explicit affected behavior and its distinguishing failure/control case."
+        }
+      ]
+    },
+    {
+      "id": "notification-content",
+      "audit": "notification-content-audit",
+      "implement": "notification-content-polish",
+      "checks": [
+        {
+          "id": "behavior-check",
+          "when": "For the explicit affected behavior and its distinguishing failure/control case."
+        }
+      ]
+    },
+    {
+      "id": "product-landing-copy",
+      "audit": "product-landing-copy-audit",
+      "implement": "product-landing-copy-polish",
+      "checks": [
+        {
+          "id": "behavior-check",
+          "when": "For the explicit affected behavior and its distinguishing failure/control case."
+        }
+      ]
+    },
+    {
+      "id": "seo-geo",
+      "audit": "seo-geo-audit",
+      "implement": "seo-geo-polish",
+      "checks": [
+        {
+          "id": "behavior-check",
+          "when": "For the explicit affected behavior and its distinguishing failure/control case."
+        }
+      ]
+    },
+    {
+      "id": "accessibility",
+      "audit": "accessibility-audit",
+      "implement": "accessibility-polish",
+      "checks": [
+        {
+          "id": "behavior-check",
+          "when": "For the explicit affected behavior and its distinguishing failure/control case."
+        }
+      ]
+    },
+    {
+      "id": "design-system",
+      "audit": "design-system-audit",
+      "implement": "design-system-polish",
+      "checks": [
+        {
+          "id": "behavior-check",
+          "when": "For the explicit affected behavior and its distinguishing failure/control case."
+        }
+      ]
+    },
+    {
+      "id": "browser-extension",
+      "audit": "browser-extension-audit",
+      "implement": "browser-extension-polish",
+      "checks": [
+        {
+          "id": "local-client-runtime-security-check",
+          "when": "When the changed local-client path crosses a runtime, IPC, permission or update boundary."
+        }
+      ]
+    },
+    {
+      "id": "desktop-app",
+      "audit": "desktop-app-audit",
+      "implement": "desktop-app-polish",
+      "checks": [
+        {
+          "id": "local-client-runtime-security-check",
+          "when": "When the changed local-client path crosses a runtime, IPC, permission or update boundary."
+        }
+      ]
+    },
+    {
+      "id": "documentation-sync",
+      "audit": "documentation-sync-audit",
+      "implement": "documentation-sync-polish",
+      "checks": [
+        {
+          "id": "behavior-check",
+          "when": "For the explicit affected behavior and its distinguishing failure/control case."
+        }
+      ]
+    },
+    {
+      "id": "refactor-boundary",
+      "audit": "refactor-boundary-audit",
+      "implement": "refactor-boundary-polish",
+      "checks": [
+        {
+          "id": "behavior-check",
+          "when": "For the explicit affected behavior and its distinguishing failure/control case."
+        }
+      ]
+    },
+    {
+      "id": "auth-permissions",
+      "audit": "auth-permissions-audit",
+      "implement": "auth-permissions-polish",
+      "checks": [
+        {
+          "id": "oauth-oidc-session-check",
+          "when": "When OAuth, OIDC or session lifecycle is part of the changed identity flow."
+        }
+      ]
+    },
+    {
+      "id": "billing-entitlements",
+      "audit": "billing-entitlements-audit",
+      "implement": "billing-entitlements-polish",
+      "checks": [
+        {
+          "id": "behavior-check",
+          "when": "For the explicit affected behavior and its distinguishing failure/control case."
+        }
+      ]
+    },
+    {
+      "id": "data-model",
+      "audit": "data-model-audit",
+      "implement": "data-model-polish",
+      "checks": [
+        {
+          "id": "behavior-check",
+          "when": "For the explicit affected behavior and its distinguishing failure/control case."
+        }
+      ]
+    },
+    {
+      "id": "data-pipeline-quality",
+      "audit": "data-pipeline-quality-audit",
+      "implement": "data-pipeline-quality-polish",
+      "checks": [
+        {
+          "id": "behavior-check",
+          "when": "For the explicit affected behavior and its distinguishing failure/control case."
+        }
+      ]
+    },
+    {
+      "id": "experiment-design",
+      "audit": "experiment-design-audit",
+      "implement": "experiment-design-polish",
+      "checks": [
+        {
+          "id": "behavior-check",
+          "when": "For the explicit affected behavior and its distinguishing failure/control case."
+        }
+      ]
+    },
+    {
+      "id": "multi-tenant-isolation",
+      "audit": "multi-tenant-isolation-audit",
+      "implement": "multi-tenant-isolation-polish",
+      "checks": [
+        {
+          "id": "tenant-isolation-check",
+          "when": "For the selected changed domain contract; exercise only relevant scenarios."
+        }
+      ]
+    },
+    {
+      "id": "notebook-productionization",
+      "audit": "notebook-productionization-audit",
+      "implement": "notebook-productionization-polish",
+      "checks": [
+        {
+          "id": "behavior-check",
+          "when": "For the explicit affected behavior and its distinguishing failure/control case."
+        }
+      ]
+    },
+    {
+      "id": "product-analytics",
+      "audit": "product-analytics-audit",
+      "implement": "product-analytics-polish",
+      "checks": [
+        {
+          "id": "behavior-check",
+          "when": "For the explicit affected behavior and its distinguishing failure/control case."
+        }
+      ]
+    },
+    {
+      "id": "rbac-abac-policy",
+      "audit": "rbac-abac-policy-audit",
+      "implement": "rbac-abac-policy-polish",
+      "checks": [
+        {
+          "id": "rbac-abac-matrix-check",
+          "when": "For the selected changed domain contract; exercise only relevant scenarios."
+        }
+      ]
+    },
+    {
+      "id": "feature-flags-rollout",
+      "audit": "feature-flags-rollout-audit",
+      "implement": "feature-flags-rollout-polish",
+      "checks": [
+        {
+          "id": "feature-flag-exposure-rollback-check",
+          "when": "For the selected changed domain contract; exercise only relevant scenarios."
+        }
+      ]
+    },
+    {
+      "id": "go-rust-microservices",
+      "audit": "go-rust-microservices-audit",
+      "implement": "go-rust-microservices-polish",
+      "checks": [
+        {
+          "id": "go-rust-concurrency-shutdown-check",
+          "when": "For the selected changed domain contract; exercise only relevant scenarios."
+        }
+      ]
+    },
+    {
+      "id": "agent-harness",
+      "audit": "agent-harness-audit",
+      "implement": "agent-harness-polish",
+      "checks": [
+        {
+          "id": "agent-harness-replay-failure-check",
+          "when": "For the selected changed domain contract; exercise only relevant scenarios."
+        }
+      ]
+    },
+    {
+      "id": "backend-integrations",
+      "audit": "backend-integrations-audit",
+      "implement": "backend-integrations-polish",
+      "checks": [
+        {
+          "id": "network-integration-failure-check",
+          "when": "For the selected changed domain contract; exercise only relevant scenarios."
+        }
+      ]
+    },
+    {
+      "id": "kafka-redpanda",
+      "audit": "kafka-redpanda-audit",
+      "implement": "kafka-redpanda-polish",
+      "checks": [
+        {
+          "id": "kafka-redpanda-rebalance-failure-check",
+          "when": "For the selected changed domain contract; exercise only relevant scenarios."
+        }
+      ]
+    },
+    {
+      "id": "kubernetes-platform",
+      "audit": "kubernetes-platform-audit",
+      "implement": "kubernetes-platform-polish",
+      "checks": [
+        {
+          "id": "kubernetes-rollout-failure-check",
+          "when": "For the selected changed domain contract; exercise only relevant scenarios."
+        }
+      ]
+    },
+    {
+      "id": "mcp-server",
+      "audit": "mcp-server-audit",
+      "implement": "mcp-server-polish",
+      "checks": [
+        {
+          "id": "mcp-protocol-auth-check",
+          "when": "For the selected changed domain contract; exercise only relevant scenarios."
+        }
+      ]
+    },
+    {
+      "id": "mobile-app",
+      "audit": "mobile-app-audit",
+      "implement": "mobile-app-polish",
+      "checks": [
+        {
+          "id": "mobile-release-offline-check",
+          "when": "For the affected device, offline, upgrade or release behavior."
+        }
+      ]
+    },
+    {
+      "id": "nosql-databases",
+      "audit": "nosql-databases-audit",
+      "implement": "nosql-databases-polish",
+      "checks": [
+        {
+          "id": "nosql-consistency-hot-partition-check",
+          "when": "For the selected changed domain contract; exercise only relevant scenarios."
+        }
+      ]
+    },
+    {
+      "id": "notification-delivery",
+      "audit": "notification-delivery-audit",
+      "implement": "notification-delivery-polish",
+      "checks": [
+        {
+          "id": "notification-failure-idempotency-check",
+          "when": "For the selected changed domain contract; exercise only relevant scenarios."
+        }
+      ]
+    },
+    {
+      "id": "observability-stack",
+      "audit": "observability-stack-audit",
+      "implement": "observability-stack-polish",
+      "checks": [
+        {
+          "id": "observability-semantics-cost-check",
+          "when": "For the selected changed domain contract; exercise only relevant scenarios."
+        }
+      ]
+    },
+    {
+      "id": "background-jobs",
+      "audit": "background-jobs-audit",
+      "implement": "background-jobs-polish",
+      "checks": [
+        {
+          "id": "behavior-check",
+          "when": "For the explicit affected behavior and its distinguishing failure/control case."
+        }
+      ]
+    },
+    {
+      "id": "incident-triage",
+      "audit": "incident-triage-audit",
+      "implement": "incident-remediation-polish",
+      "checks": [
+        {
+          "id": "incident-recovery-check",
+          "when": "For the selected changed domain contract; exercise only relevant scenarios."
+        }
+      ]
+    },
+    {
+      "id": "infra-ops",
+      "audit": "infra-ops-audit",
+      "implement": "infra-ops-polish",
+      "checks": [
+        {
+          "id": "behavior-check",
+          "when": "For the explicit affected behavior and its distinguishing failure/control case."
+        }
+      ]
+    },
+    {
+      "id": "payments-provider",
+      "audit": "payments-provider-audit",
+      "implement": "payments-provider-polish",
+      "checks": [
+        {
+          "id": "payments-webhook-reconciliation-check",
+          "when": "For the selected changed domain contract; exercise only relevant scenarios."
+        }
+      ]
+    },
+    {
+      "id": "form-data-ui",
+      "audit": "form-data-ui-audit",
+      "implement": "form-data-ui-polish",
+      "checks": [
+        {
+          "id": "product-acceptance-check",
+          "when": "For the selected user/role/state and required completion or recovery outcome."
+        }
+      ]
+    },
+    {
+      "id": "onboarding-activation",
+      "audit": "onboarding-activation-audit",
+      "implement": "onboarding-activation-polish",
+      "checks": [
+        {
+          "id": "product-acceptance-check",
+          "when": "For the selected user/role/state and required completion or recovery outcome."
+        }
+      ]
+    },
+    {
+      "id": "product-requirements",
+      "audit": "product-requirements-audit",
+      "implement": "product-requirements-polish",
+      "checks": [
+        {
+          "id": "product-acceptance-check",
+          "when": "For the selected user/role/state and required completion or recovery outcome."
+        }
+      ]
+    },
+    {
+      "id": "product-ui",
+      "audit": "product-ui-audit",
+      "implement": "product-ui-polish",
+      "checks": [
+        {
+          "id": "product-acceptance-check",
+          "when": "For the selected user/role/state and required completion or recovery outcome."
+        }
+      ]
+    },
+    {
+      "id": "ux-flow",
+      "audit": "ux-flow-audit",
+      "implement": "ux-flow-polish",
+      "checks": [
+        {
+          "id": "product-acceptance-check",
+          "when": "For the selected user/role/state and required completion or recovery outcome."
+        }
+      ]
+    },
+    {
+      "id": "test-coverage",
+      "audit": "test-coverage-audit",
+      "implement": "test-harness-polish",
+      "checks": [
+        {
+          "id": "behavior-check",
+          "when": "For the explicit affected behavior and its distinguishing failure/control case."
+        }
+      ]
+    },
+    {
+      "id": "rabbitmq",
+      "audit": "rabbitmq-audit",
+      "implement": "rabbitmq-polish",
+      "checks": [
+        {
+          "id": "rabbitmq-redelivery-recovery-check",
+          "when": "For the selected changed domain contract; exercise only relevant scenarios."
+        }
+      ]
+    },
+    {
+      "id": "realtime-frontend",
+      "audit": "realtime-frontend-audit",
+      "implement": "realtime-frontend-polish",
+      "checks": [
+        {
+          "id": "realtime-interface-profiling-recovery-check",
+          "when": "For the selected changed domain contract; exercise only relevant scenarios."
+        }
+      ]
+    },
+    {
+      "id": "delivery-recovery",
+      "audit": "delivery-recovery-audit",
+      "implement": "delivery-recovery-polish",
+      "checks": [
+        {
+          "id": "delivery-restore-rollback-check",
+          "when": "For the selected changed domain contract; exercise only relevant scenarios."
+        }
+      ]
+    },
+    {
+      "id": "redis-job-queues",
+      "audit": "redis-job-queues-audit",
+      "implement": "redis-job-queues-polish",
+      "checks": [
+        {
+          "id": "redis-queue-load-recovery-check",
+          "when": "For the selected changed domain contract; exercise only relevant scenarios."
+        }
+      ]
+    },
+    {
+      "id": "consistency-invariants",
+      "audit": "consistency-invariants-audit",
+      "implement": "consistency-invariants-polish",
+      "checks": [
+        {
+          "id": "transactional-delivery-check",
+          "when": "For the selected changed domain contract; exercise only relevant scenarios."
+        }
+      ]
+    },
+    {
+      "id": "idempotency-concurrency",
+      "audit": "idempotency-concurrency-audit",
+      "implement": "idempotency-concurrency-polish",
+      "checks": [
+        {
+          "id": "behavior-check",
+          "when": "For the explicit affected behavior and its distinguishing failure/control case."
+        }
+      ]
+    },
+    {
+      "id": "performance",
+      "audit": "performance-audit",
+      "implement": "performance-polish",
+      "checks": [
+        {
+          "id": "behavior-check",
+          "when": "For the explicit affected behavior and its distinguishing failure/control case."
+        }
+      ]
+    },
+    {
+      "id": "performance-budget",
+      "audit": "performance-budget-audit",
+      "implement": "performance-budget-polish",
+      "checks": [
+        {
+          "id": "behavior-check",
+          "when": "For the explicit affected behavior and its distinguishing failure/control case."
+        }
+      ]
+    },
+    {
+      "id": "reliability",
+      "audit": "reliability-audit",
+      "implement": "reliability-polish",
+      "checks": [
+        {
+          "id": "behavior-check",
+          "when": "For the explicit affected behavior and its distinguishing failure/control case."
+        }
+      ]
+    },
+    {
+      "id": "search-index",
+      "audit": "search-index-audit",
+      "implement": "search-index-polish",
+      "checks": [
+        {
+          "id": "search-recall-freshness-check",
+          "when": "For the selected changed domain contract; exercise only relevant scenarios."
+        }
+      ]
+    },
+    {
+      "id": "audit-logging-compliance",
+      "audit": "audit-logging-compliance-audit",
+      "implement": "audit-logging-compliance-polish",
+      "checks": [
+        {
+          "id": "audit-trail-integrity-check",
+          "when": "For the selected changed domain contract; exercise only relevant scenarios."
+        }
+      ]
+    },
+    {
+      "id": "build-supply-chain",
+      "audit": "build-supply-chain-audit",
+      "implement": "build-supply-chain-polish",
+      "checks": [
+        {
+          "id": "release-artifact-trust-check",
+          "when": "When produced artifact bytes, provenance or publication identity are part of the change."
+        }
+      ]
+    },
+    {
+      "id": "privacy-data-rights",
+      "audit": "privacy-data-rights-audit",
+      "implement": "privacy-data-rights-polish",
+      "checks": [
+        {
+          "id": "privacy-data-rights-check",
+          "when": "For the selected changed domain contract; exercise only relevant scenarios."
+        }
+      ]
+    },
+    {
+      "id": "security",
+      "audit": "security-audit",
+      "implement": "security-polish",
+      "checks": [
+        {
+          "id": "security-abuse-defense-check",
+          "when": "For the selected changed domain contract; exercise only relevant scenarios."
+        }
+      ]
+    },
+    {
+      "id": "system-security-hardening",
+      "audit": "system-security-hardening-audit",
+      "implement": "system-security-hardening-polish",
+      "checks": [
+        {
+          "id": "security-abuse-defense-check",
+          "when": "For the selected changed domain contract; exercise only relevant scenarios."
+        }
+      ]
+    },
+    {
+      "id": "serverless-runtime",
+      "audit": "serverless-runtime-audit",
+      "implement": "serverless-runtime-polish",
+      "checks": [
+        {
+          "id": "serverless-invocation-check",
+          "when": "For the selected changed domain contract; exercise only relevant scenarios."
+        }
+      ]
+    },
+    {
+      "id": "sql-databases",
+      "audit": "sql-databases-audit",
+      "implement": "sql-databases-polish",
+      "checks": [
+        {
+          "id": "sql-load-lock-failover-check",
+          "when": "For the selected changed domain contract; exercise only relevant scenarios."
+        }
+      ]
+    },
+    {
+      "id": "object-storage",
+      "audit": "object-storage-audit",
+      "implement": "object-storage-polish",
+      "checks": [
+        {
+          "id": "object-storage-integrity-recovery-check",
+          "when": "For the selected changed domain contract; exercise only relevant scenarios."
+        }
+      ]
+    },
+    {
+      "id": "temporal-workflows",
+      "audit": "temporal-workflows-audit",
+      "implement": "temporal-workflows-polish",
+      "checks": [
+        {
+          "id": "temporal-replay-versioning-check",
+          "when": "For the selected changed domain contract; exercise only relevant scenarios."
+        }
+      ]
+    },
+    {
+      "id": "terraform-delivery",
+      "audit": "terraform-delivery-audit",
+      "implement": "terraform-delivery-polish",
+      "checks": [
+        {
+          "id": "terraform-plan-state-check",
+          "when": "For the selected changed domain contract; exercise only relevant scenarios."
+        }
+      ]
+    },
+    {
+      "id": "vector-databases",
+      "audit": "vector-databases-audit",
+      "implement": "vector-databases-polish",
+      "checks": [
+        {
+          "id": "vector-recall-degradation-check",
+          "when": "For the selected changed domain contract; exercise only relevant scenarios."
+        }
+      ]
+    },
+    {
+      "id": "web-rendering",
+      "audit": "web-rendering-audit",
+      "implement": "web-rendering-polish",
+      "checks": [
+        {
+          "id": "web-boundary-check",
+          "when": "For the selected changed domain contract; exercise only relevant scenarios."
+        }
+      ]
+    },
+    {
+      "id": "prompt-skill-sync",
+      "audit": "prompt-skill-sync-audit",
+      "implement": "prompt-skill-sync-polish",
+      "checks": [
+        {
+          "id": "behavior-check",
+          "when": "For the explicit affected behavior and its distinguishing failure/control case."
+        }
+      ]
+    },
+    {
+      "id": "scoped",
+      "audit": "scoped-audit",
+      "implement": "scoped-polish",
+      "checks": [
+        {
+          "id": "behavior-check",
+          "when": "For the explicit affected behavior and its distinguishing failure/control case."
+        }
+      ]
+    }
+  ],
+  "focused": [
+    "agent-harness-replay-failure-check",
+    "ai-ml-problem-framing",
+    "ai-navigation-map",
+    "api-contract-compatibility-check",
+    "api-navigation-map",
+    "audit-trail-integrity-check",
+    "auth-entitlements-map",
+    "behavior-check",
+    "bot-navigation-map",
+    "cache-coherency-check",
+    "celery-delivery-shutdown-check",
+    "clickhouse-ingestion-query-load-check",
+    "compatibility-golden-master-check",
+    "delivery-restore-rollback-check",
+    "deploy-bootstrap",
+    "design-gen",
+    "domain-data-map",
+    "evidence-normalization",
+    "evolution-improvement",
+    "feature-flag-exposure-rollback-check",
+    "go-rust-concurrency-shutdown-check",
+    "incident-recovery-check",
+    "instant-architecture-probe",
+    "instant-backend-probe",
+    "instant-bug-fix-polish",
+    "instant-frontend-probe",
+    "instant-ui-ux-visual-probe",
+    "integration-map",
+    "iteration-closure",
+    "kafka-redpanda-rebalance-failure-check",
+    "kubernetes-rollout-failure-check",
+    "local-client-runtime-security-check",
+    "map-refresh-polish",
+    "map-staleness-check",
+    "map-synthesis",
+    "mcp-protocol-auth-check",
+    "migration-refactor-plan",
+    "mobile-release-offline-check",
+    "network-integration-failure-check",
+    "nosql-consistency-hot-partition-check",
+    "notification-failure-idempotency-check",
+    "oauth-oidc-session-check",
+    "object-storage-integrity-recovery-check",
+    "observability-semantics-cost-check",
+    "ownership-invariant-map",
+    "patch-checking",
+    "payments-webhook-reconciliation-check",
+    "privacy-data-rights-check",
+    "product-acceptance-check",
+    "product-capability-map",
+    "product-decision-metrics-check",
+    "product-journey-map",
+    "product-metrics-events-map",
+    "product-requirements-map",
+    "project-atlas-map",
+    "rabbitmq-redelivery-recovery-check",
+    "rbac-abac-matrix-check",
+    "rbac-abac-policy-map",
+    "readme-gen",
+    "realtime-interface-profiling-recovery-check",
+    "redis-queue-load-recovery-check",
+    "release-artifact-trust-check",
+    "release-readiness-audit",
+    "risk-release-map",
+    "runtime-flow-map",
+    "saas-navigation-map",
+    "search-recall-freshness-check",
+    "security-abuse-defense-check",
+    "serverless-invocation-check",
+    "sql-load-lock-failover-check",
+    "synthesis",
+    "task-shaping",
+    "temporal-replay-versioning-check",
+    "tenant-isolation-check",
+    "terraform-plan-state-check",
+    "test-coverage-map",
+    "traceability-map",
+    "transactional-delivery-check",
+    "validation-clarification",
+    "vector-recall-degradation-check",
+    "visual-regression-check",
+    "web-boundary-check",
+    "workstream-decomposition"
+  ],
+  "sequences": {
+    "task-shaping": [
+      {
+        "id": "validation-clarification",
+        "when": "Validate the shaped brief before handing it to the selected implementation workflow."
+      }
+    ],
+    "synthesis": [
+      {
+        "id": "task-shaping",
+        "when": "When a consolidated finding still needs an executable brief."
+      },
+      {
+        "id": "validation-clarification",
+        "when": "Validate the next actionable brief; planning does not authorize execution."
+      }
+    ],
+    "workstream-decomposition": [
+      {
+        "id": "validation-clarification",
+        "when": "Validate the next dependency-ready brief."
+      }
+    ],
+    "evidence-normalization": [
+      {
+        "id": "synthesis",
+        "when": "When the request includes consolidating evidence into actionable tasks."
+      }
+    ],
+    "map-staleness-check": [
+      {
+        "id": "map-refresh-polish",
+        "when": "Only for proven stale entries and an already-authorized map correction."
+      },
+      {
+        "id": "map-staleness-check",
+        "when": "Recheck the updated sources after a map correction."
+      }
+    ],
+    "map-refresh-polish": [
+      {
+        "id": "map-staleness-check",
+        "when": "Check only the changed map entries against their current source owners."
+      }
+    ]
+  },
+  "handoffs": {
+    "audit": [
+      "selected target and authoritative owner",
+      "trigger, expected behavior and observed violation",
+      "source anchors, distinguishing case and verification gaps"
+    ],
+    "implement": [
+      "resulting patch and original comparison base",
+      "preserved contracts and corrected owner",
+      "actual checks, affected-case results and remaining gates"
+    ],
+    "check": [
+      "criterion, environment and exact input/state",
+      "expected and observed behavior including durable effects",
+      "pass/fail/not-exercised evidence and owning repair target"
+    ],
+    "review": [
+      "original review boundary and current resulting patch",
+      "findings, corrections and actual validation",
+      "clean/findings/recheck/blocked outcome for this pass"
+    ],
+    "plan": [
+      "objective, constraints and current evidence",
+      "next dependency-ready brief with acceptance and verification",
+      "unresolved decisions and authority needed for execution"
+    ],
+    "map": [
+      "requested area, stable IDs and current source anchors",
+      "evidenced relationships and freshness limits"
+    ],
+    "document": [
+      "intended audience, current source/configuration and requested artifact",
+      "verified commands/examples and directly affected documentation"
+    ],
+    "probe": [
+      "selected unvisited operation and its authoritative owner",
+      "one demonstrated bug or the bounded no-bug/blocked outcome",
+      "authorized correction, failure/control checks and any resulting patch"
+    ],
+    "closure": [
+      "requested stage and acceptance evidence",
+      "DONE/NEXT_SLICE/REPLAN/BLOCKED with its concrete reason"
+    ]
+  },
+  "patch_check": {
+    "id": "patch-checking",
+    "clean_marker": "✅ Everything is fine. No changes required 👌",
+    "findings_marker": "PATCH_CHECK: FINDINGS",
+    "blocked_marker": "PATCH_CHECK: BLOCKED",
+    "recheck_marker": "PATCH_CHECK: RECHECK",
+    "no_patch_marker": "Patch not found: no changed files or review target visible."
+  }
+}

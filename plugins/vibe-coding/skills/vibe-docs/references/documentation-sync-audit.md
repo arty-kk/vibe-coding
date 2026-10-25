@@ -21,3 +21,7 @@ Audit repository documentation against authoritative code, configuration, schema
 2. Check stale commands, dead paths, renamed symbols, incompatible examples, missing failure/rollback, and duplicated truth.
 3. Inspect generation sources and whether manual edits would be overwritten.
 4. Separate factual drift from broader editorial improvement.
+
+## Handoff
+
+For each discrepancy, provide the selected statement/example, expected contract, actual source and which maintained document or generator owns the repair. Distinguish stale prose, a broken generated pipeline and an implementation that violates accepted requirements. Pass supported documentation repairs to Improve Documentation Sync only when edits are requested; otherwise return the findings.

@@ -1,9 +1,5 @@
 # Onboarding Activation Audit
 
-## Operation
-
-Inspect the selected behavior and report evidence-backed defects; do not change product code.
-
 ## Goal
 
 Audit the path from first entry to meaningful activation: public entry, signup/login, first-run state, workspace/project setup, permissions, plan gates, sample data, checklist/progress, handoff into core workflow, and activation measurement. Keep only issues supported by repository evidence.
@@ -25,3 +21,7 @@ Public routes, auth flows, onboarding routes/components, empty states, setup wiz
 
 - Include affected role/plan/tenant state, expected behavior, acceptance criteria, and validation direction.
 - Merge symptoms that share the same onboarding owner/source of truth.
+
+## Handoff
+
+Start with a specific new/returning actor and initial setup/plan/tenant state. Follow the actual entry, setup commits, next-step navigation and defined activation outcome, including one partial/failure path. Pass the lost state or broken handoff, authoritative owner and observable completion criterion to Improve Onboarding Activation. A checklist completion event is not proof of meaningful value unless the product defines it that way.

@@ -19,3 +19,5 @@ Coordinate migrations with old/new application compatibility and a truthful roll
 ## Validate and hand off
 
 Check actual workflow/script syntax, container build/config and rendered configuration where tools exist. Record unavailable runtime checks. Return created files, verified commands and required external setup. Preparing the setup does not itself authorize connecting to a server, changing secrets or deploying; execute such actions only within the user's authorization.
+
+Review the resulting delivery/configuration patch through Patch Checking before presenting the source setup as complete. If deployment is also authorized, carry its immutable artifact identity and health/abort criteria into that deployment, then verify the observed runtime identity and affected operation. A failed rollout returns to the owning configuration/script; it is not repaired by deploying an unreviewed moving branch head.

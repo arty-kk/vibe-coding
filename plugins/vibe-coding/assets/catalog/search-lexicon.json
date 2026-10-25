@@ -1,0 +1,1248 @@
+{
+  "version": 1,
+  "terms": {
+    "cache": [
+      "caching",
+      "caches",
+      "cached",
+      "кэш",
+      "кеш",
+      "кэша",
+      "кеша",
+      "кэшем",
+      "кешем",
+      "кэширование",
+      "кеширование",
+      "caché",
+      "almacenamiento en cache",
+      "缓存"
+    ],
+    "api": [
+      "apis",
+      "interface api",
+      "апи",
+      "интерфейс api",
+      "接口"
+    ],
+    "authentication": [
+      "auth",
+      "authenticate",
+      "login",
+      "sign in",
+      "аутентификация",
+      "аутентификации",
+      "вход",
+      "авторизация входа",
+      "autenticación",
+      "inicio de sesión",
+      "身份验证",
+      "登录"
+    ],
+    "authorization": [
+      "permissions",
+      "permission",
+      "access control",
+      "доступ",
+      "доступа",
+      "прав доступа",
+      "разрешения",
+      "разрешений",
+      "autorización",
+      "permisos",
+      "权限",
+      "授权"
+    ],
+    "tenant": [
+      "tenants",
+      "tenancy",
+      "мультитенантность",
+      "тенант",
+      "тенанта",
+      "арендатора",
+      "inquilino",
+      "multiinquilino",
+      "租户",
+      "多租户",
+      "тенантов",
+      "тенантами",
+      "inquilinos"
+    ],
+    "payment": [
+      "payments",
+      "charge",
+      "charges",
+      "платеж",
+      "платежи",
+      "платежей",
+      "оплата",
+      "списание",
+      "списания",
+      "pagos",
+      "pago",
+      "cobro",
+      "cobros",
+      "支付",
+      "扣款"
+    ],
+    "webhook": [
+      "webhooks",
+      "вебхук",
+      "вебхуки",
+      "вебхуков",
+      "网络钩子",
+      "вебхука"
+    ],
+    "retry": [
+      "retries",
+      "retried",
+      "повторная попытка",
+      "повторные попытки",
+      "повторных попыток",
+      "ретраи",
+      "ретраях",
+      "reintentos",
+      "reintento",
+      "重试"
+    ],
+    "duplicate": [
+      "duplicates",
+      "duplicated",
+      "repeated",
+      "дубли",
+      "дубликаты",
+      "дублирование",
+      "дублируется",
+      "повторные",
+      "duplicado",
+      "duplicados",
+      "duplicadas",
+      "重复"
+    ],
+    "queue": [
+      "queues",
+      "очередь",
+      "очереди",
+      "очередей",
+      "очередью",
+      "cola",
+      "colas",
+      "队列"
+    ],
+    "delivery": [
+      "delivered",
+      "доставка",
+      "доставки",
+      "entrega",
+      "entregas",
+      "投递",
+      "交付"
+    ],
+    "shutdown": [
+      "shut down",
+      "остановка",
+      "остановки",
+      "завершение работы",
+      "apagado",
+      "cierre del worker",
+      "关闭",
+      "остановку"
+    ],
+    "worker": [
+      "workers",
+      "воркер",
+      "воркера",
+      "воркеров",
+      "trabajador",
+      "trabajadores",
+      "工作进程"
+    ],
+    "rollback": [
+      "roll back",
+      "откат",
+      "отката",
+      "откатить",
+      "reversión",
+      "revertir",
+      "回滚"
+    ],
+    "recovery": [
+      "recover",
+      "restore",
+      "restoration",
+      "восстановление",
+      "восстановления",
+      "восстановить",
+      "recuperación",
+      "restauración",
+      "恢复"
+    ],
+    "freshness": [
+      "stale",
+      "staleness",
+      "устаревшие",
+      "устаревший",
+      "устаревшие данные",
+      "актуальность",
+      "frescura",
+      "obsoletos",
+      "obsoletas",
+      "新鲜度",
+      "过期"
+    ],
+    "search": [
+      "searching",
+      "поиск",
+      "поиска",
+      "поиске",
+      "поисковый",
+      "búsqueda",
+      "buscar",
+      "搜索",
+      "检索"
+    ],
+    "vector": [
+      "vectors",
+      "embedding",
+      "embeddings",
+      "вектор",
+      "векторы",
+      "векторной",
+      "эмбеддинги",
+      "vectorial",
+      "vectores",
+      "向量",
+      "嵌入"
+    ],
+    "index": [
+      "indexes",
+      "indexing",
+      "индекс",
+      "индекса",
+      "индексация",
+      "índice",
+      "índices",
+      "indexación",
+      "索引"
+    ],
+    "localization": [
+      "localisation",
+      "i18n",
+      "l10n",
+      "translation",
+      "translations",
+      "локализация",
+      "локализации",
+      "локализацию",
+      "переводы",
+      "переводов",
+      "localización",
+      "traducción",
+      "traducciones",
+      "本地化",
+      "翻译"
+    ],
+    "accessibility": [
+      "a11y",
+      "доступность интерфейса",
+      "доступность",
+      "accesibilidad",
+      "无障碍",
+      "可访问性"
+    ],
+    "hydration": [
+      "hydrate",
+      "hydrating",
+      "гидратация",
+      "гидратации",
+      "гидратацию",
+      "hidratación",
+      "水合"
+    ],
+    "web": [
+      "website",
+      "websites",
+      "веб",
+      "сайта",
+      "sitio web",
+      "网站"
+    ],
+    "notification": [
+      "notifications",
+      "уведомление",
+      "уведомления",
+      "уведомлений",
+      "notificación",
+      "notificaciones",
+      "通知",
+      "уведомлений"
+    ],
+    "observability": [
+      "наблюдаемость",
+      "наблюдаемости",
+      "observabilidad",
+      "可观测性"
+    ],
+    "logs": [
+      "logging",
+      "log",
+      "логи",
+      "логов",
+      "журналирование",
+      "registros",
+      "日志"
+    ],
+    "metrics": [
+      "metric",
+      "метрики",
+      "метрик",
+      "метрика",
+      "métrica",
+      "métricas",
+      "指标"
+    ],
+    "performance": [
+      "производительность",
+      "производительности",
+      "rendimiento",
+      "性能"
+    ],
+    "latency": [
+      "задержка",
+      "задержки",
+      "latencia",
+      "延迟"
+    ],
+    "concurrency": [
+      "concurrent",
+      "конкурентность",
+      "конкурентных",
+      "параллельные",
+      "concurrencia",
+      "concurrentes",
+      "并发"
+    ],
+    "idempotency": [
+      "idempotent",
+      "идемпотентность",
+      "идемпотентности",
+      "idempotencia",
+      "幂等"
+    ],
+    "consistency": [
+      "consistent",
+      "консистентность",
+      "согласованность",
+      "согласованности",
+      "consistencia",
+      "一致性"
+    ],
+    "migration": [
+      "migrations",
+      "миграция",
+      "миграции",
+      "migración",
+      "migraciones",
+      "迁移"
+    ],
+    "backup": [
+      "backups",
+      "резервная копия",
+      "резервные копии",
+      "бэкапы",
+      "copia de seguridad",
+      "copias de seguridad",
+      "备份"
+    ],
+    "privacy": [
+      "приватность",
+      "персональные данные",
+      "конфиденциальность",
+      "privacidad",
+      "隐私"
+    ],
+    "security": [
+      "безопасность",
+      "безопасности",
+      "seguridad",
+      "安全"
+    ],
+    "workflow": [
+      "workflows",
+      "воркфлоу",
+      "flujo de trabajo",
+      "flujos de trabajo",
+      "工作流"
+    ],
+    "plan": [
+      "planning",
+      "план",
+      "планирование",
+      "планирования",
+      "planificación",
+      "规划"
+    ],
+    "replay": [
+      "воспроизведение истории",
+      "реплей",
+      "reproducción de historial",
+      "历史重放",
+      "重放"
+    ],
+    "serverless": [
+      "server less",
+      "sin servidor",
+      "серверлесс",
+      "бессерверный",
+      "бессерверных",
+      "无服务器"
+    ],
+    "object storage": [
+      "s3",
+      "object stores",
+      "объектное хранилище",
+      "объектного хранилища",
+      "almacenamiento de objetos",
+      "对象存储"
+    ],
+    "sql": [
+      "postgres",
+      "postgresql",
+      "mysql",
+      "реляционная база",
+      "реляционной базы",
+      "关系数据库"
+    ],
+    "nosql": [
+      "mongodb",
+      "dynamodb",
+      "cassandra",
+      "нереляционная база",
+      "非关系数据库"
+    ],
+    "kubernetes": [
+      "k8s",
+      "кубернетес",
+      "кубернетеса"
+    ],
+    "kafka": [
+      "redpanda",
+      "кафка",
+      "кафки"
+    ],
+    "rabbitmq": [
+      "rabbit mq",
+      "рэббит"
+    ],
+    "celery": [
+      "селери"
+    ],
+    "redis": [
+      "bullmq",
+      "редис",
+      "редиса"
+    ],
+    "clickhouse": [
+      "click house",
+      "кликхаус"
+    ],
+    "mcp": [
+      "model context protocol",
+      "мсп"
+    ],
+    "ai": [
+      "artificial intelligence",
+      "искусственный интеллект",
+      "inteligencia artificial",
+      "人工智能"
+    ],
+    "rag": [
+      "retrieval augmented generation",
+      "rag pipeline",
+      "检索增强生成"
+    ],
+    "ocr": [
+      "document ai",
+      "распознавание документов",
+      "reconocimiento de documentos",
+      "文档识别"
+    ],
+    "mobile": [
+      "мобильное приложение",
+      "мобильных приложений",
+      "aplicación móvil",
+      "移动应用"
+    ],
+    "desktop": [
+      "десктоп",
+      "настольное приложение",
+      "aplicación de escritorio",
+      "桌面应用"
+    ],
+    "extension": [
+      "browser extension",
+      "расширение браузера",
+      "extensión del navegador",
+      "浏览器扩展"
+    ],
+    "feature flag": [
+      "feature flags",
+      "фича флаг",
+      "фичефлаги",
+      "bandera de función",
+      "功能开关"
+    ],
+    "form": [
+      "forms",
+      "форма",
+      "формы",
+      "formulario",
+      "formularios",
+      "表单"
+    ],
+    "onboarding": [
+      "онбординг",
+      "incorporación",
+      "用户引导"
+    ],
+    "experiment": [
+      "experiments",
+      "эксперимент",
+      "эксперимента",
+      "experimento",
+      "实验"
+    ],
+    "analytics": [
+      "аналитика",
+      "аналитики",
+      "analítica",
+      "分析"
+    ],
+    "billing": [
+      "entitlements",
+      "биллинг",
+      "биллинга",
+      "facturación",
+      "计费"
+    ],
+    "contract": [
+      "contracts",
+      "контракт",
+      "контракта",
+      "контрактов",
+      "contrato",
+      "contratos",
+      "契约"
+    ],
+    "invariant": [
+      "invariants",
+      "инвариант",
+      "инварианта",
+      "invariante",
+      "invariantes",
+      "不变量"
+    ],
+    "patch": [
+      "патч",
+      "патча",
+      "parche",
+      "补丁"
+    ],
+    "release": [
+      "releases",
+      "релиз",
+      "релиза",
+      "lanzamiento",
+      "发布"
+    ],
+    "framework": [
+      "фреймворк",
+      "фреймворка",
+      "框架"
+    ],
+    "query": [
+      "queries",
+      "запрос",
+      "запросы",
+      "consulta",
+      "consultas",
+      "查询"
+    ],
+    "failure": [
+      "failures",
+      "failed",
+      "ошибка",
+      "ошибки",
+      "сбой",
+      "сбоя",
+      "fallo",
+      "fallos",
+      "故障"
+    ],
+    "deploy": [
+      "deployment",
+      "развертывание",
+      "деплой",
+      "despliegue",
+      "部署"
+    ],
+    "database": [
+      "databases",
+      "база данных",
+      "базы данных",
+      "базе данных",
+      "base de datos",
+      "bases de datos",
+      "数据库"
+    ],
+    "isolation": [
+      "изолировать",
+      "изоляция",
+      "изоляции",
+      "изоляцию",
+      "aislamiento",
+      "aislar",
+      "隔离"
+    ],
+    "consumer": [
+      "consumers",
+      "консьюмер",
+      "консьюмера",
+      "консьюмеров",
+      "потребитель",
+      "потребителя",
+      "consumidor",
+      "consumidores",
+      "消费者"
+    ],
+    "rebalance": [
+      "rebalancing",
+      "ребалансировка",
+      "ребалансировки",
+      "ребалансировку",
+      "rebalanceo",
+      "reequilibrio",
+      "重平衡"
+    ],
+    "ssr": [
+      "server side rendering",
+      "server rendering",
+      "серверный рендеринг",
+      "серверного рендеринга",
+      "renderizado del servidor",
+      "服务端渲染",
+      "服务器渲染"
+    ],
+    "write": [
+      "writes",
+      "запись",
+      "записи",
+      "записью",
+      "escritura",
+      "escrituras",
+      "写入"
+    ],
+    "read": [
+      "reads",
+      "чтение",
+      "чтения",
+      "lectura",
+      "lecturas",
+      "读取"
+    ],
+    "delete": [
+      "deletion",
+      "deleted",
+      "deletes",
+      "удаление",
+      "удаления",
+      "eliminar",
+      "eliminación",
+      "删除"
+    ],
+    "crash": [
+      "crashes",
+      "crashed",
+      "падение",
+      "падения",
+      "caída",
+      "caídas",
+      "崩溃"
+    ],
+    "state": [
+      "states",
+      "состояние",
+      "состояния",
+      "estado",
+      "estados",
+      "状态"
+    ],
+    "session": [
+      "sessions",
+      "сессия",
+      "сессии",
+      "сессию",
+      "sesión",
+      "sesiones",
+      "会话"
+    ],
+    "upgrade": [
+      "upgrades",
+      "обновление",
+      "обновления",
+      "actualización",
+      "升级"
+    ],
+    "upload": [
+      "uploads",
+      "загрузка файла",
+      "загрузки файла",
+      "carga de archivos",
+      "subida",
+      "上传"
+    ],
+    "flag": [
+      "flags",
+      "флаг",
+      "флага",
+      "bandera",
+      "标志"
+    ],
+    "tool": [
+      "tools",
+      "herramienta",
+      "herramientas",
+      "инструмент",
+      "инструментов",
+      "тул",
+      "тулов",
+      "工具"
+    ],
+    "description": [
+      "descriptions",
+      "descripción",
+      "descripciones",
+      "описание",
+      "описания",
+      "描述"
+    ],
+    "partition": [
+      "partitions",
+      "партиция",
+      "раздел",
+      "partición",
+      "分区"
+    ],
+    "lock": [
+      "locks",
+      "locking",
+      "блокировка",
+      "bloqueo",
+      "锁"
+    ],
+    "ingestion": [
+      "ingest",
+      "ingesting",
+      "ingesta",
+      "загрузка данных",
+      "摄取"
+    ]
+  },
+  "intents": {
+    "audit": [
+      "audit",
+      "auditing",
+      "auditoría",
+      "auditar",
+      "аудит",
+      "проаудировать",
+      "检查缺陷",
+      "审计"
+    ],
+    "implement": [
+      "implement",
+      "implementation",
+      "fix",
+      "repair",
+      "improve",
+      "polish",
+      "исправь",
+      "исправить",
+      "почини",
+      "починить",
+      "улучши",
+      "улучшить",
+      "реализуй",
+      "реализовать",
+      "исправление",
+      "implementación",
+      "implementar",
+      "arreglar",
+      "corrige",
+      "corregir",
+      "mejorar",
+      "mejora",
+      "reparar",
+      "修复",
+      "改进",
+      "实现"
+    ],
+    "check": [
+      "check",
+      "verify",
+      "verification",
+      "validate",
+      "validation",
+      "проверь",
+      "проверить",
+      "проверка",
+      "проверки",
+      "верификация",
+      "verifica",
+      "verificar",
+      "comprobar",
+      "comprobación",
+      "validar",
+      "验证",
+      "检查"
+    ],
+    "review": [
+      "review",
+      "ревью",
+      "revisión",
+      "评审"
+    ],
+    "map": [
+      "map",
+      "mapping",
+      "карта",
+      "карту",
+      "картирование",
+      "mapa",
+      "地图"
+    ],
+    "plan": [
+      "plan",
+      "planning",
+      "план",
+      "планирование",
+      "планировать",
+      "planificación",
+      "planificar",
+      "规划",
+      "shape",
+      "shaping"
+    ],
+    "probe": [
+      "probe",
+      "find one bug",
+      "найди один баг",
+      "encontrar un error",
+      "查找一个错误"
+    ],
+    "document": [
+      "document",
+      "documentation",
+      "документация",
+      "документировать",
+      "documentar",
+      "documentación",
+      "文档",
+      "update the readme"
+    ],
+    "closure": [
+      "closure",
+      "close iteration",
+      "закрытие итерации",
+      "cierre de iteración",
+      "迭代收尾"
+    ]
+  },
+  "stopwords": [
+    "a",
+    "about",
+    "after",
+    "agent",
+    "agents",
+    "al",
+    "already",
+    "an",
+    "and",
+    "are",
+    "as",
+    "at",
+    "ayuda",
+    "ayudar",
+    "be",
+    "been",
+    "before",
+    "being",
+    "biblioteca",
+    "by",
+    "can",
+    "code",
+    "coding",
+    "como",
+    "con",
+    "correct",
+    "correctly",
+    "could",
+    "cómo",
+    "de",
+    "del",
+    "des",
+    "do",
+    "does",
+    "during",
+    "el",
+    "en",
+    "engineering",
+    "existing",
+    "favor",
+    "find",
+    "flujo",
+    "flujos",
+    "for",
+    "from",
+    "get",
+    "getting",
+    "give",
+    "has",
+    "have",
+    "help",
+    "how",
+    "i",
+    "improve",
+    "in",
+    "into",
+    "is",
+    "issue",
+    "it",
+    "its",
+    "keeps",
+    "kept",
+    "la",
+    "las",
+    "library",
+    "los",
+    "me",
+    "mi",
+    "mis",
+    "my",
+    "necesito",
+    "need",
+    "nuestra",
+    "nuestro",
+    "o",
+    "of",
+    "on",
+    "or",
+    "our",
+    "para",
+    "please",
+    "por",
+    "porfavor",
+    "problem",
+    "properly",
+    "que",
+    "quiero",
+    "really",
+    "repeatedly",
+    "should",
+    "sin",
+    "task",
+    "that",
+    "the",
+    "these",
+    "this",
+    "those",
+    "to",
+    "trabajo",
+    "un",
+    "una",
+    "unas",
+    "unexpectedly",
+    "unos",
+    "update",
+    "use",
+    "used",
+    "using",
+    "want",
+    "was",
+    "we",
+    "well",
+    "what",
+    "when",
+    "where",
+    "which",
+    "while",
+    "why",
+    "with",
+    "workflow",
+    "workflows",
+    "would",
+    "y",
+    "your",
+    "агент",
+    "агента",
+    "библиотека",
+    "в",
+    "во",
+    "где",
+    "для",
+    "до",
+    "и",
+    "из",
+    "или",
+    "использовать",
+    "используй",
+    "к",
+    "как",
+    "какая",
+    "какие",
+    "какой",
+    "ко",
+    "когда",
+    "мне",
+    "моей",
+    "моем",
+    "мой",
+    "на",
+    "надо",
+    "найди",
+    "найти",
+    "нам",
+    "наш",
+    "нормально",
+    "нужно",
+    "о",
+    "об",
+    "от",
+    "перед",
+    "по",
+    "пожалуйста",
+    "помоги",
+    "после",
+    "постоянно",
+    "почему",
+    "правильно",
+    "при",
+    "проблема",
+    "проблемой",
+    "проверить",
+    "проект",
+    "проекте",
+    "работает",
+    "работать",
+    "с",
+    "скилл",
+    "скиллы",
+    "со",
+    "у",
+    "хочу",
+    "что",
+    "эта",
+    "эти",
+    "это",
+    "этот",
+    "代理",
+    "代码",
+    "使用",
+    "如何",
+    "工作流",
+    "工程",
+    "帮我",
+    "库",
+    "怎么",
+    "我的",
+    "请",
+    "请帮我",
+    "这个",
+    "问题",
+    "需要"
+  ],
+  "aliases": {
+    "patch-checking": [
+      "Patch Check",
+      "PatchCheck",
+      "PatchChecking",
+      "code review",
+      "review my patch",
+      "проверка патча",
+      "ревью патча",
+      "revisión del parche",
+      "补丁检查"
+    ],
+    "task-shaping": [
+      "shape a task",
+      "task brief",
+      "постановка задачи",
+      "формулировка задачи",
+      "definir una tarea",
+      "任务定义"
+    ],
+    "project-atlas-map": [
+      "repository map",
+      "repo map",
+      "карта проекта",
+      "mapa del proyecto",
+      "项目地图"
+    ]
+  },
+  "discovery": {
+    "payments-webhook-reconciliation-check": [
+      "duplicate payment webhook retry reconciliation",
+      "повторное списание",
+      "cobros duplicados",
+      "重复扣款"
+    ],
+    "payments-provider-polish": [
+      "fix duplicate charge payment webhook",
+      "исправить повторное списание",
+      "corregir cobros duplicados"
+    ],
+    "idempotency-concurrency-audit": [
+      "race condition double effect stale owner conflicting writes"
+    ],
+    "idempotency-concurrency-polish": [
+      "fix race condition duplicate effects conflicting writes"
+    ],
+    "web-rendering-audit": [
+      "SSR hydration mismatch saved theme locale timezone"
+    ],
+    "web-rendering-polish": [
+      "fix hydration mismatch saved theme locale timezone",
+      "SSR hydration first server client render"
+    ],
+    "web-boundary-check": [
+      "verify SSR hydration server action cache identity"
+    ],
+    "cache-invalidation-polish": [
+      "fix stale cache invalidation old value after write"
+    ],
+    "cache-coherency-check": [
+      "verify stale cache invalidation after write"
+    ],
+    "search-index-audit": [
+      "missing search results wrong ranking relevant documents"
+    ],
+    "search-index-polish": [
+      "fix search results ranking recall freshness"
+    ],
+    "mcp-server-audit": [
+      "MCP tool discovery description schema model tool choice"
+    ],
+    "mcp-server-polish": [
+      "improve MCP tool descriptions discovery model tool choice"
+    ],
+    "llm-agent-tools-audit": [
+      "agent wrong tool choice tool selection ignores tools"
+    ],
+    "llm-agent-tools-polish": [
+      "fix agent tool selection wrong arguments ignored tools"
+    ],
+    "agent-harness-audit": [
+      "agent execution resume crash durable state replay"
+    ],
+    "agent-harness-polish": [
+      "fix agent execution resume crash durable state"
+    ],
+    "rag-audit": [
+      "retrieval sources citations unsupported answers"
+    ],
+    "rag-polish": [
+      "fix retrieval sources citations unsupported answers"
+    ],
+    "rbac-abac-matrix-check": [
+      "verify role permission policy allowed denied matrix"
+    ],
+    "auth-permissions-audit": [
+      "login session token refresh logout authentication authorization"
+    ],
+    "auth-permissions-polish": [
+      "fix login session token refresh logout"
+    ],
+    "object-storage-integrity-recovery-check": [
+      "verify object upload checksum version restore"
+    ],
+    "celery-delivery-shutdown-check": [
+      "verify Celery acknowledgement worker shutdown retry duplicate"
+    ],
+    "kafka-redpanda-rebalance-failure-check": [
+      "verify Kafka consumer rebalance offset replay duplicate"
+    ],
+    "rabbitmq-redelivery-recovery-check": [
+      "verify RabbitMQ acknowledgement connection loss redelivery"
+    ],
+    "redis-queue-load-recovery-check": [
+      "verify Redis BullMQ stalled worker reclaim duplicate"
+    ],
+    "feature-flag-exposure-rollback-check": [
+      "verify feature flag exposure kill switch rollback"
+    ],
+    "mobile-release-offline-check": [
+      "verify mobile offline sync upgrade migration device"
+    ],
+    "local-client-runtime-security-check": [
+      "verify desktop extension IPC sender permission update"
+    ],
+    "product-landing-copy-polish": [
+      "rewrite landing page copy headline positioning"
+    ],
+    "seo-geo-polish": [
+      "improve SEO GEO structured data canonical crawler indexing"
+    ],
+    "performance-budget-audit": [
+      "latency memory CPU cost resource budget regression"
+    ],
+    "release-artifact-trust-check": [
+      "verify SBOM provenance signature final artifact digest"
+    ],
+    "iteration-closure": [
+      "close completed iteration acceptance done remaining work"
+    ],
+    "multi-tenant-isolation-audit": [
+      "tenant isolation cross tenant data authorization"
+    ],
+    "multi-tenant-isolation-polish": [
+      "fix tenant isolation cross tenant data authorization"
+    ],
+    "tenant-isolation-check": [
+      "verify tenant isolation cross tenant data authorization"
+    ]
+  },
+  "purposes": {
+    "api-contract-compatibility-check": "Verify request, response, error and version compatibility for the selected API producer and its supported consumers.",
+    "notification-content-audit": "Find misleading, missing or wrongly localized notification content at the actual event, audience and channel boundary.",
+    "notification-content-polish": "Correct notification wording, variables and action links while preserving event meaning, audience and channel constraints.",
+    "seo-geo-audit": "Inspect crawlability, indexing, canonical and language signals, structured data and evidence-backed page content for search and answer engines.",
+    "seo-geo-polish": "Repair demonstrated crawl, indexing, canonical, localization or structured-data defects and improve supported page answers without inventing ranking results.",
+    "design-gen": "Document the current system design, ownership boundaries and important decisions from repository evidence in the requested artifact.",
+    "readme-gen": "Write or update a README with verified setup, usage and project boundaries for its intended reader.",
+    "oauth-oidc-session-check": "Verify OAuth/OIDC redirects, tokens and session lifecycle at the supported provider and trusted identity boundary.",
+    "mcp-protocol-auth-check": "Verify MCP discovery, schemas, real transport, errors and authorization for the selected server and supported clients.",
+    "deploy-bootstrap": "Prepare deployment configuration and verification for the selected existing runtime and provider; preparation does not execute a deployment.",
+    "incident-recovery-check": "Verify incident mitigation and recovery against the affected artifact, cohort, operation and observed recovery window.",
+    "instant-architecture-probe": "Inspect one unvisited architecture path for a demonstrated owner or contract defect and repair it only when authorized.",
+    "instant-backend-probe": "Trace one backend operation for a reachable defect, verify its durable effects and repair it only when authorized.",
+    "instant-bug-fix-polish": "Find and, when authorized, fix one demonstrated bug at its defining owner, then verify the failure and a valid control.",
+    "instant-frontend-probe": "Inspect one frontend state or interaction for a real user-visible defect and repair it only when authorized.",
+    "instant-ui-ux-visual-probe": "Render and inspect one interface state for a demonstrated visual or interaction defect, with before/after evidence for an authorized repair.",
+    "release-artifact-trust-check": "Verify final release bytes, expected digest, signature or provenance and the trusted build/publication identity.",
+    "patch-checking": "Review the complete resulting patch against intended behavior and its original comparison base; repeat after authorized corrections until clean or blocked.",
+    "serverless-invocation-check": "Verify required and deferred work, response lifetime, retries and effects on the actual serverless adapter/runtime boundary.",
+    "evolution-improvement": "Prioritize evidence-backed improvement opportunities with an expected outcome, tradeoffs and an actionable next decision.",
+    "iteration-closure": "Assess the selected iteration against acceptance evidence and return done, next slice, replan or blocked.",
+    "map-synthesis": "Reconcile repository maps against current source owners while preserving stable IDs and exposing conflicting or stale claims.",
+    "synthesis": "Consolidate overlapping findings into distinct corrections with acceptance evidence, dependencies and unresolved decisions.",
+    "task-shaping": "Turn a requested outcome into an executable brief with scope, owner, acceptance, dependencies and a verification plan.",
+    "validation-clarification": "Validate whether a brief is ready to execute; resolve available facts and expose only decisions or evidence that actually block it.",
+    "web-boundary-check": "Verify server HTML, hydration, navigation, serialized data, trusted server actions and directly affected caches in the actual framework.",
+    "behavior-check": "Verify the selected behavior using explicit criteria, a distinguishing failing case, a valid control and observable results.",
+    "map-refresh-polish": "Correct proven stale map entries against current sources while preserving useful structure and stable IDs.",
+    "map-staleness-check": "Compare selected map entries with current source owners and classify their freshness with evidence.",
+    "prompt-skill-sync-audit": "Inspect this plugin for drift between prompt intent, skill triggers, workflow transitions, retrieval contracts and packaged content.",
+    "prompt-skill-sync-polish": "Repair demonstrated prompt, skill, composition or retrieval drift while preserving useful domain instructions and stable identities.",
+    "scoped-audit": "Find concrete defects in a selected behavior when no more specific domain workflow fits; hand off its owner, failure and acceptance check.",
+    "scoped-polish": "Implement a selected, already-authorized correction at its owning boundary and synchronize directly affected contracts."
+  }
+}

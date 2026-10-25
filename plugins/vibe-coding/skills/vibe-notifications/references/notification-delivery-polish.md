@@ -1,9 +1,5 @@
 # Improve Notification Delivery
 
-## Operation
-
-Implement the requested change and verify its directly affected behavior.
-
 ## Goal
 
 Correct the selected notification delivery path from eligibility through provider status and retry recovery.
@@ -29,3 +25,7 @@ Use the selected notification type, channel, provider event, audit finding, fail
 ## Validation
 
 Run repository-native tests and safe sandbox/mock scenarios for success, failure, duplicate trigger, retry/redelivery, opt-out/no-consent, locale, and provider webhook states relevant to the selected boundary.
+
+Repair the authoritative trigger/eligibility, enqueue/effect identity or status/recovery transition. Preserve the same logical notification across retry and reconcile an ambiguous provider response according to its real idempotency/status capabilities; do not promise exactly-once delivery from a local unique row alone.
+
+Feed fixed event/recipient/channel identities, candidate state transitions and provider vectors into the failure/idempotency check. Recheck failed effects or statuses at their owner, then finish Patch Checking. Use sandbox or synthetic recipients unless the user explicitly authorized a real send.

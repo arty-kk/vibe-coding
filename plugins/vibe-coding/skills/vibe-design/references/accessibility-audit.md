@@ -1,9 +1,5 @@
 # Accessibility Audit
 
-## Operation
-
-Inspect the selected behavior and report evidence-backed defects; do not change product code.
-
 ## Goal
 
 Audit reachable accessibility defects in critical user/admin/public paths. Keep only issues supported by repository evidence and observable behavior; do not produce generic WCAG checklists without an owner and affected surface.
@@ -25,3 +21,7 @@ Routes/pages, layouts, shared components, forms, modals/drawers/popovers, tables
 
 - Include affected user path, expected accessible behavior, acceptance criteria, and validation direction such as keyboard trace, accessibility test, preview, or screenshot.
 - Do not report purely theoretical standard violations without reachable product impact.
+
+## Trace and hand off
+
+Reproduce the selected task with its actual entry, state and input method. Follow semantic control/name relationships, focus movement and state announcements alongside rendered presentation. Identify where an actual user cannot perceive, operate or recover the interaction. Pass that state, expected behavior, DOM/component owner and keyboard/semantic/rendered evidence to Improve Accessibility; do not turn every tool warning into an unrelated rewrite.

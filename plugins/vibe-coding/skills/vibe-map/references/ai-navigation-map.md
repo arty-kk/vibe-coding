@@ -10,6 +10,10 @@ Map the selected AI capabilities from input and model calls through prompts, too
 
 Suggested saved map: `docs/ai_map.md`.
 
+## Build the view
+
+Trace one actual feature entry through input preparation, retrieval/tool selection, model invocation, parsing and the consuming surface. Follow the prompt and schema owners rather than grouping everything under the SDK wrapper. Connect each claimed quality/safety property to the evaluation or enforcement path that observes it; an evaluation file's existence does not establish a passing result. Expand to other requested capabilities using this same trace, with model/index versions and unverified edges explicit.
+
 ## Inspect
 
 Model invocation sites, SDK clients, prompt templates, system/developer/user message builders, tool/function schemas, structured-output parsers, streaming handlers, retry/cache layers, rate-limit code, queues/jobs, RAG ingestion/retrieval, vector indexes, OCR/document processing, ML model artifacts, feature stores, eval scripts, fixtures, tests, telemetry/logging, config/env validation, docs, and generated artifacts.

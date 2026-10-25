@@ -1,9 +1,5 @@
 # Improve Search Index
 
-## Operation
-
-Implement the requested change and verify its directly affected behavior.
-
 ## Goal
 
 Fix the selected search/index boundary across indexing pipeline, document schema, query/filter logic, authorization, UI/API state, tests, and docs/maps when used.
@@ -29,3 +25,5 @@ Use the selected index/query/resource, stale/missing/unauthorized result bug, au
 ## Validation
 
 Run repository-native tests and bounded indexing/query scenarios for create/update/delete, stale index, permission filter, empty/error state, and reindex/backfill where relevant. Report managed search gates honestly.
+
+Fix the document/normalization/ranking/filter or freshness owner using a versioned query corpus with known relevance judgments and misleading neighbours. Keep explicit restrictions intact and preserve public query/ID contracts. Rebuild the required projection when its schema changes, then feed the same corpus and update/delete sequence into the recall/freshness check. Recheck failures at that owner before Patch Checking; tuning only a few attractive queries is not evidence of broad retrieval quality.

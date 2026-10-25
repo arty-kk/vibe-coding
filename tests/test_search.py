@@ -27,7 +27,7 @@ class SearchTests(unittest.TestCase):
         self.assertGreater(match_score({'primary': 'graphql', 'body': ''}, 'GraphQL'),
                            match_score({'primary': '', 'body': 'graphql'}, 'GraphQL'))
         self.assertIsNone(match_score({'primary': 'graphql', 'body': ''}, 'graphql absent'))
-        self.assertEqual(3, match_score({'primary': 'hidratacion', 'body': ''}, 'HIDRATACIÓN'))
+        self.assertEqual(40, match_score({'primary': 'hidratacion', 'body': ''}, 'HIDRATACIÓN'))
 
     def test_multilingual_keywords_and_filters(self):
         for query in ['серверлесс', 'sin servidor', '无服务器']:

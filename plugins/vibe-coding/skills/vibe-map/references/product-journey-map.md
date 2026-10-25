@@ -10,6 +10,10 @@ Map the selected user journeys through observable states, decisions, completion 
 
 Suggested saved map: `docs/product_journey_map.md`.
 
+## Build the view
+
+Choose the actor's initial state and completion criterion. Follow the actual navigation and state-transition owners through the selected journey, branching at decisions, denial and recovery paths. Tie each observable state to its rendering/data source and the action that leaves it. Keep implemented events separate from measured funnel results; code alone cannot establish conversion or drop-off rates.
+
 ## Inspect
 
 Routes, navigation shells, onboarding flows, forms, email/notification triggers, billing/upgrade/downgrade states, account/team flows, settings, admin/support paths, analytics, experiments, tests, docs, feature flags, and permission/plan guards.

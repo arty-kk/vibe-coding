@@ -1,9 +1,5 @@
 # Product & Landing Copy Audit
 
-## Operation
-
-Inspect the selected behavior and report evidence-backed defects; do not change product code.
-
 ## Goal and scope
 
 Audit selected product or landing copy against actual behavior, audience intent, evidence, and conversion path.
@@ -21,3 +17,7 @@ Audit selected product or landing copy against actual behavior, audience intent,
 2. Identify conflicting terminology across UI, docs, emails, pricing, metadata, and support surfaces.
 3. Check audience, intent, evidence, legal/privacy sensitivity, localization constraints, and accessibility.
 4. Separate messaging opportunities from factual contract defects.
+
+## Handoff
+
+For each selected claim or CTA, retain its visible wording, product/version/state source, actual destination and expected user outcome. Pass the concrete mismatch into Improve Product & Landing Copy. A preferred tone is an editorial choice; a wrong version, unsupported capability or misleading success label is a factual defect with an observable repair criterion.

@@ -1,9 +1,5 @@
 # Security Abuse Defense Check
 
-## Operation
-
-Verify the selected behavior against explicit expected results; do not change product code.
-
 ## Goal
 
 Verify the selected access or abuse-defense control rejects the defined attack without blocking legitimate use.
@@ -25,3 +21,11 @@ Select the cases that test the requested guarantee. Define expected state/effect
 ## Verification
 
 Prove valid use succeeds and the selected abuse is rejected before protected effects; inspect counters, credential scope, audit evidence and recovery without exposing secrets.
+
+## Execute and decide
+
+Record asset, trusted policy, controlled attacker capability, synthetic principals/resources and bounded test rates. Establish legitimate use first, then vary only the principal, target/input or interleaving that should be denied.
+
+Observe the actual enforcing boundary and protected effect/store, not only the response. For races or restart/rotation cases, preserve identity and inspect counter/version/credential propagation in the exercised layers. A permanently disabled feature or always-failing harness cannot prove a valid defense.
+
+Return passed, failed or blocked for the selected control and environments with minimal redacted reproduction and permitted control. Feed a remaining reachable violation into the authorized owner repair, repeat that case and finish Patch Checking for changed code. Keep live attack, privileged host change and real credential actions outside this bounded fixture unless explicitly authorized.

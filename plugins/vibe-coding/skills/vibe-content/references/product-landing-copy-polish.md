@@ -1,9 +1,5 @@
 # Improve Product & Landing Copy
 
-## Operation
-
-Implement the requested change and verify its directly affected behavior.
-
 ## Goal
 
 Improve the selected product wording or call to action while preserving factual claims, localization and destination behavior.
@@ -20,3 +16,5 @@ Improve the selected product wording or call to action while preserving factual 
 - Run content/catalog/link/build/render checks.
 - Inspect changed copy in every reachable state and representative narrow/wide layout.
 - Verify claims against current repository behavior/config and list external legal/product approvals not obtained.
+
+Trace the selected claim or action to its maintained product/content source, update the directly affected languages and artifacts, then render the same user state. Check both what the text promises and what its destination actually does. Prefer deriving shared versions/capabilities from their authoritative manifest/config over manually repeating values. Recheck failures at that source, then finish Patch Checking.

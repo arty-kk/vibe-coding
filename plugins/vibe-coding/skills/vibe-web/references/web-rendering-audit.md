@@ -8,14 +8,6 @@ Inspect the selected SSR, hydration or server-action boundary without product ed
 
 The selected route/action, framework/runtime version, rendering mode, affected user state, trusted session/data owner and expected initial and post-interaction behavior. Recover available facts from the repository and supplied reproduction.
 
-## Domain invariants
-
-- Server HTML and the first browser render use equivalent initial data; later preference updates preserve the product’s intended state.
-- Serialized payloads and personalized caches expose only data authorized for the current request identity.
-- Server mutations enforce validation and object/tenant authorization using trusted identity independently of browser controls.
-- A committed mutation and its directly affected rendered/cached view agree under the selected freshness contract.
-- Loading, failure, navigation and retry states preserve usable interaction and do not create unauthorized or duplicate durable effects.
-
 ## Goal and scope
 
 Find concrete failures between server-rendered data, serialized payload, first browser render, client effects and subsequent mutations. Include the route's directly shared layout, cache and authorization owner. Keep general design, unrelated client state and backend redesign outside the selected boundary.
@@ -43,3 +35,5 @@ Prioritize cross-user data exposure, unauthorized server actions and durable cor
 ## Evidence requirements
 
 Provide route, affected state/identity, `path:line` and symbol, reproduction, expected and observed output, one correction direction and a meaningful regression. Do not suppress hydration warnings as a proposed repair or report every use of browser APIs as defective. Bound negative conclusions to the routes and states inspected, and distinguish local rendering evidence from deployment/CDN behavior.
+
+Hand the repair step the first divergent value or decision in the request → HTML/payload → first render → interaction path, with the same fixture needed to reproduce it. For stale or exposed data, name the cache that actually served it and a second identity or post-write read that distinguishes the defect from a normal cache hit. Missing browser or HTTP evidence stays an open verification item.

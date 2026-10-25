@@ -1,9 +1,5 @@
 # Improve Agent Harness
 
-## Operation
-
-Implement the requested change and verify its directly affected behavior.
-
 ## Goal
 
 Correct the selected agent-run transition, checkpoint or recovery path without repeating committed effects.
@@ -21,3 +17,5 @@ Correct the selected agent-run transition, checkpoint or recovery path without r
 - Run deterministic state-transition tests with injected crash points before/after side effects and checkpoints.
 - Exercise duplicate delivery, stale worker, partial fan-out, child failure, timeout, cancellation, and resume from each durable boundary.
 - Verify one terminal result, bounded live work, no orphan tasks, no duplicate protected effect, and replay/trace correlation.
+
+Repair the conditional transition, effect owner or receipt/checkpoint boundary before adjusting retries. Where an external effect cannot enforce a fence, preserve its operation identity and supported deduplication/compensation contract instead of claiming a local lease check prevents all remote work. Replay the same history and feed durable records/effects to the failure check. A remaining mismatch returns to that owner; accepted recovery proceeds to Patch Checking.

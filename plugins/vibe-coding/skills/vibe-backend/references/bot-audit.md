@@ -27,3 +27,7 @@ Commands, message/callback handlers, routers, scenes/FSM states, keyboards, temp
 - Include reachable surface, affected actors/consumers/states, expected behavior, acceptance criteria, and validation direction when discoverable.
 - Include affected user role, chat type, state, command, or callback when relevant.
 - Do not create tasks for platform features the repo does not currently use or expose.
+
+## Trace and hand off
+
+Choose a registered entry with a known actor/chat type and initial persisted state. Follow command/message/callback routing, guards, state writes, generated buttons and the reachable next/recovery state. Reproduce stale/duplicate callback or restart behavior where it affects that journey. Pass the failing transition, callback/state identity, expected next state and governing owner to Improve Bot; do not repair an unreachable handler merely because its label looks inconsistent.

@@ -1,9 +1,5 @@
 # Improve RBAC ABAC Policy
 
-## Operation
-
-Implement the requested change and verify its directly affected behavior.
-
 ## Goal
 
 Fix the selected RBAC/ABAC policy boundary end to end across the authoritative policy owner, enforcement points, UI affordances, tests, docs, and maps when used.
@@ -30,3 +26,5 @@ Use the selected role/resource/action, ABAC rule, auth map row, audit finding, f
 ## Validation
 
 Run repository-native checks for allowed, forbidden, unauthenticated, wrong-tenant, wrong-attribute, no-plan/over-quota, and admin/impersonation states relevant to the selected boundary. Report unavailable fixtures or credentials as gates.
+
+Correct the policy or trusted attribute owner, update direct enforcement/UI consumers and preserve intended deny/error semantics. Pass the same representative matrix rows and protected effect assertions into RBAC ABAC Matrix Check. A remaining mismatch returns to that owner; after supported acceptance, finish Patch Checking. Do not widen permissions merely to make an allowed-control test pass.

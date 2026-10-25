@@ -1,9 +1,5 @@
 # Vector Recall & Degradation Check
 
-## Operation
-
-Verify the selected behavior against explicit expected results; do not change product code.
-
 ## Goal
 
 Verify the selected vector retrieval contract preserves authorization, source freshness and the agreed quality/resource floor.
@@ -25,3 +21,7 @@ Select the cases that test the requested guarantee. Define expected state/effect
 ## Verification
 
 Compare filtered result identities, recall/ranking, source/delete convergence, latency/resource measurements and migration completeness for the selected contract.
+
+Run baseline and candidate over the same corpus, embedding space and filter scope. Record expected/actual relevant IDs, ANN agreement, relevance judgments and latency with sample count and load conditions; aggregate scores must not hide a failing protected tenant, language or selective filter.
+
+Check forbidden documents and their counts/snippets as well as a valid allowed control. During migration, distinguish missing chunks, stale source versions and approximate-neighbor loss. A failing segment returns its query/version and first divergent stage to the repair step. Missing judgments or a small local corpus cannot establish production recall or tail latency; report that limit and hand the verified patch to Patch Checking.

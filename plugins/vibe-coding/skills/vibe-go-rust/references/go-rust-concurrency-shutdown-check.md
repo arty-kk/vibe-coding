@@ -1,9 +1,5 @@
 # Go Rust Concurrency & Shutdown Check
 
-## Operation
-
-Verify the selected behavior against explicit expected results; do not change product code.
-
 ## Goal
 
 Verify the selected service’s cancellation, task ownership, resource bound or shutdown guarantee.
@@ -25,3 +21,11 @@ Select the cases that test the requested guarantee. Define expected state/effect
 ## Verification
 
 Compare final effect/state, live tasks or goroutines, held resources, admission/recovery and shutdown deadline for the exercised path.
+
+## Execute and decide
+
+Establish a normal request and steady resource baseline with the actual runtime. Use controlled barriers or an existing failure harness to hold the selected child/I/O/commit boundary, then trigger caller cancellation, saturation or the supported shutdown signal.
+
+Observe response/ack, child completion, committed effects, queued work, held locks/connections and readiness until the stated deadline. Compare retained resources with the intended pool/lifecycle policy rather than demanding every count become zero. Use race/leak instrumentation only where supported, alongside the actual interleaving.
+
+Return passed, failed or blocked for the selected guarantee with event order and observed effects/resources. Pass a failure to the authorized lifecycle repair, rerun its sequence/control after correction and finish Patch Checking for changed code. Process termination and load tests need a suitable isolated environment.

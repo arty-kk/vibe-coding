@@ -149,7 +149,7 @@ def project_listing(root):
         "Russian and Simplified Chinese; technical instructions are in English."
     )
     changelog = (PLUGIN.parents[1] / 'CHANGELOG.md').read_text(encoding='utf-8')
-    section = re.search(rf'^## {re.escape(codex["version"])}\s*\n(.*?)(?=^## |\Z)', changelog, re.M | re.S)
+    section = re.search(rf'^## {re.escape(codex["version"])}(?:[ \t]+[^\n]*)?\n(.*?)(?=^## |\Z)', changelog, re.M | re.S)
     if not section:
         raise ValueError('Add the current version to CHANGELOG.md before packaging.')
     publication = {'release_notes': f'Version {codex["version"]}\n\n' + section[1].strip()}

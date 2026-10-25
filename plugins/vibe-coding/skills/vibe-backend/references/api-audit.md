@@ -29,3 +29,7 @@ Audit the reachable API surface for behavior, contract, validation, security-adj
 
 - Include reachable surface, affected actors/consumers/states, expected behavior, acceptance criteria, and validation direction when discoverable.
 - Do not report generic REST purity issues unless the inconsistency creates current consumer or system impact.
+
+## Trace and hand off
+
+Choose a representative endpoint, principal and input. Follow registration/middleware → validation → rule owner → stored effect → serialization → actual consumer interpretation. Pair a valid request with the selected invalid, denied, duplicate or conflicting case. Locate the first violated boundary and pass its minimal request, initial state, expected response/effect and consumer consequence to Improve API when repair is authorized.

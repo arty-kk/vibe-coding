@@ -15,4 +15,12 @@ Read [the shared workflow](../../references/workflow.md) once, then the recipe m
 
 Use the shared [rendering boundaries](../../references/web-rendering.md) for the selected framework path. UI acceptance belongs to [Product](../vibe-product/SKILL.md); an explicit patch review belongs to [Review](../vibe-review/SKILL.md). Follow necessary contract edges without turning the task into a framework migration or redesign.
 
+## Workflow
+
+For an unexplained first-render, stale-route or server-action failure, run **Web Rendering Audit**. Hand the first divergent server/browser value, authorization decision or cache read to **Improve Web Rendering**. Start directly with that repair recipe when the user already supplied the failing boundary and expected result.
+
+After repair, run **Web Server/Client Boundary Check** for the affected route and states, then [Patch Checking](../vibe-review/references/patch-checking.md). Repeat review after corrections under [the cycle contract](../../references/cycles.md). A read-only audit or verification ends at its requested conclusion.
+
+Carry the framework/version, route, rendering mode, initial-state fixture, trusted identity/cache owner and before/after browser or HTTP evidence. The handoff must distinguish first-render agreement, eventual preference, persisted mutation and post-write freshness; success in one does not establish the others.
+
 Invocation lifetime and provider execution limits belong to [Serverless](../vibe-serverless/SKILL.md); optimistic client reconciliation belongs to [Realtime](../vibe-realtime/SKILL.md). Use [Cache](../vibe-cache/SKILL.md) for shared invalidation independent of rendering.

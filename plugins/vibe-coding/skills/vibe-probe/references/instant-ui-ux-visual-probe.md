@@ -14,3 +14,5 @@ Inspect one reachable presentation or accessible-interaction failure at a suppor
 ## Verification
 
 Replay the failing viewport/state and a nearby normal state; exercise keyboard behavior when affected. Check generated styles and component/visual tests where available. Computed contrast or layout arithmetic is source evidence; report missing renderer/baseline rather than claiming visual equivalence. Apply the selection/history and result rules in the parent skill.
+
+Carry the before/after rendered state, viewport, affected interaction and source owner into patch review. If an overflow disappears only by hiding required content, or pointer use works while keyboard use fails, the same probe remains unresolved.

@@ -20,3 +20,9 @@ Synchronize the selected documentation or generator with current code, configura
 - Run doc generators, link/lint/example/command checks available in the repository.
 - Compare generated diff and verify referenced paths/symbols/configs exist.
 - List external service or deployment behavior not executable from the worktree.
+
+## Repair cycle
+
+Trace each selected drift finding to the maintained source, update the statement/example there and regenerate its direct outputs. Verify a safe command/example against the defining script or a controlled execution; documenting a production/deployment command does not authorize running it.
+
+Recheck the corrected claims against code/configuration and inspect the generated diff. A failed example returns to its owner; a conflict with a product requirement remains a decision or product defect, not a prose rewrite. Once the selected drift is resolved, run Patch Checking on the documentation/generator patch. Report external prerequisites that still prevent a required example from being verified.

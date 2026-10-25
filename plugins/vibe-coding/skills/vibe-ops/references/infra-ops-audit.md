@@ -1,9 +1,5 @@
 # Infra Ops Audit
 
-## Operation
-
-Inspect the selected behavior and report evidence-backed defects; do not change product code.
-
 ## Goal
 
 Audit operational readiness across CI/CD, runtime config, deployment, migrations, jobs, health checks, secrets, backups, observability, and recovery. This complements [Deploy Bootstrap](deploy-bootstrap.md): it finds repo-proven ops tasks instead of bootstrapping one opinionated deploy path.
@@ -25,3 +21,7 @@ CI workflows, deploy scripts, Docker/Compose/IaC files, package/build scripts, e
 
 - Include expected operational behavior, acceptance criteria, validation command or manual verification direction, and rollback/recovery note when relevant.
 - Do not propose new infrastructure platforms, vendors, or broad observability stacks without repo/user evidence.
+
+## Handoff
+
+Follow the exact release/configuration identity through CI, generated artifact, runtime loading and the selected health/failure path. Identify the first divergence between configured intent and actual startup/operation/recovery. Pass the failing trigger, maintained source, observed runtime identity and expected gate into Improve Infra Ops; a green process check cannot establish a working dependent user operation.

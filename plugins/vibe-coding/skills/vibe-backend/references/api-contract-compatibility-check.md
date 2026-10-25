@@ -44,3 +44,5 @@ For each failure retain the minimal payload or operation, version/encoding pair,
 ## Evidence and limitations
 
 Report each required combination as passed, failed or not exercised, with exact commands and fixture identities. State the tested compatibility window and any missing mobile, external partner, registry, deployment or retained-data checks. Recommend the smallest adapter, staged rollout or source correction supported by the evidence. Do not edit production contracts or publish a new version during a verification-only request.
+
+Use a passed, failed or blocked verdict for the stated window. Pass failures back with their minimal payload, version/encoding pair and expected interpreted value; a parser that accepts the bytes but changes their meaning still fails. For an authorized repair workflow, repeat the affected combinations after correction and proceed to Patch Checking only on supported acceptance. Missing required deployed/replay evidence remains a gate.

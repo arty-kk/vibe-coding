@@ -1,9 +1,5 @@
 # Improve Background Jobs
 
-## Operation
-
-Implement the requested change and verify its directly affected behavior.
-
 ## Goal
 
 Improve the selected async workflow end to end: enqueue trigger, payload contract, worker execution, idempotency, retries, failure recovery, observability, and user/admin visibility where relevant.
@@ -33,3 +29,5 @@ Improve the selected async workflow end to end: enqueue trigger, payload contrac
 ## Validation
 
 Run repository-native checks for the touched job path. Prefer tests or local commands that exercise enqueue and worker execution. If the queue provider, cron runtime, or credentials are unavailable, state the exact unverified runtime behavior and manual validation path.
+
+Correct the producer contract, domain effect, completion or recovery owner using the same logical operation. Replay its normal and selected duplicate/partial/retry sequence with a controlled worker/queue and inspect effects separately from local status. A failed guarantee returns to that owner; an accepted change proceeds to Patch Checking. Do not replay effectful production jobs or contact recipients merely because the worker code was repaired.

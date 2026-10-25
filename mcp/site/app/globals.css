@@ -158,3 +158,27 @@ footer span { margin-right: auto; }
 @media (max-width: 360px) {
   h1 { font-size: 32px; }
 }
+.retrieval-options { display: grid; grid-template-columns: minmax(190px,260px) minmax(0,1fr); align-items: end; gap: 16px; margin-top: 18px; }
+.retrieval-options label { display: grid; min-width: 0; gap: 7px; font-size: 12px; font-weight: 600; }
+.retrieval-options .hint { margin: 0 0 10px; }
+.metadata-label, .match-terms, .suggested-action { font-size: 12px; color: var(--muted); }
+.instruction-outline { margin-top: 20px; border: 1px solid var(--line); border-radius: 8px; padding: 20px; }
+.instruction-outline > h3 { margin-bottom: 8px; }
+.outline-steps { display: grid; gap: 12px; padding-left: 24px; margin: 20px 0; }
+.outline-steps > li { min-width: 0; padding: 16px; border: 1px solid var(--line); border-radius: 6px; }
+.outline-steps > li[aria-current="step"] { border-inline-start: 3px solid #557e31; background: #f8faf4; }
+.outline-step-heading { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; }
+.outline-step-heading code, .outline-transitions code { font-size: 12px; overflow-wrap: anywhere; }
+.current-instructions { font-size: 10px; font-weight: 650; color: var(--green); }
+.instruction-outline p, .instruction-outline li { font-size: 13px; }
+.instruction-outline .outline-role { margin: 7px 0 0; font-size: 11px; color: var(--muted); }
+.instruction-outline ul { padding-left: 20px; }
+.instruction-outline button { margin-top: 10px; font-size: 12px; }
+.outline-transitions { display: grid; gap: 12px; }
+.outline-transitions p { margin: 4px 0; color: var(--muted); }
+@media (max-width: 650px) {
+  .retrieval-options { grid-template-columns: minmax(0,1fr); gap: 10px; }
+  .retrieval-options .hint { margin-bottom: 0; }
+  .instruction-outline { padding: 16px; }
+  .outline-steps { padding-left: 19px; }
+}

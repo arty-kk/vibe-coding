@@ -1,9 +1,5 @@
 # NoSQL Databases Audit
 
-## Operation
-
-Inspect the selected behavior and report evidence-backed defects; do not change product code.
-
 ## Goal and scope
 
 Audit a NoSQL data path against the selected engine's real atomicity, partitioning, index, consistency, TTL, change-stream, and connection capabilities.
@@ -26,3 +22,7 @@ Audit a NoSQL data path against the selected engine's real atomicity, partitioni
 3. Analyze partition-key distribution and query/index shape using representative cardinality/skew rather than uniform toy data.
 4. Inspect TTL/change-stream lag, resume-token loss, duplicate/out-of-order events, resync, and downstream idempotency.
 5. Calculate total pool and in-flight demand and verify timeout/retry layering under node loss or topology change.
+
+## Handoff
+
+Retain engine/version, key/document boundary, expected invariant and the conflict/retry/query sequence that violates it. Separate logical expiry, physical deletion and downstream/index visibility using the selected engine's contract. Feed the first violated atomicity, consistency, access-path or recovery boundary into Improve NoSQL Databases; another engine's behaviour is not a repair criterion.

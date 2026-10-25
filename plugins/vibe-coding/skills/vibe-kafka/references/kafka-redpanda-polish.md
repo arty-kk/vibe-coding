@@ -1,9 +1,5 @@
 # Improve Kafka Redpanda
 
-## Operation
-
-Implement the requested change and verify its directly affected behavior.
-
 ## Goal
 
 Correct the selected Kafka/Redpanda delivery contract across record identity, offsets, ordering and replay.
@@ -21,3 +17,5 @@ Correct the selected Kafka/Redpanda delivery contract across record identity, of
 - Run serializer/schema compatibility and repository integration tests against the supported broker implementation(s).
 - Exercise duplicate delivery, process crash at commit boundaries, consumer rebalance, poison record, partition unavailability, and graceful shutdown.
 - Report observed loss/duplicate/order/lag/recovery behavior and any broker-level gates not reproduced locally.
+
+Fix the producer, consumer commit, state/effect identity or assignment lifecycle owner using the original record/sequence. Preserve supported partition ordering and reader/schema combinations through the transition. Feed candidate settings, record corpus and observed offsets/effects to the failure check. A mismatch returns to that owner; supported evidence proceeds to Patch Checking without silently moving the completion boundary to hide lost work.

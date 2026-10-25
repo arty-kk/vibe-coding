@@ -78,7 +78,7 @@ def catalog_errors(data):
     if data.get('version') != 1 or type(data.get('skills')) is not int or not isinstance(data.get('recipes'), list):
         return ['catalog.json: expected version 1, integer skills and recipes array']
     errors = []
-    strings = {'id', 'title', 'skill', 'mode', 'path', 'category', 'summary', 'example', 'sha256'}
+    strings = {'id', 'title', 'skill', 'mode', 'path', 'category', 'summary', 'purpose', 'example', 'sha256'}
     for i, row in enumerate(data['recipes']):
         label = f'catalog.json: recipes[{i}]'
         if not isinstance(row, dict):

@@ -1,9 +1,5 @@
 # Improve Auth Permissions
 
-## Operation
-
-Implement the requested change and verify its directly affected behavior.
-
 ## Goal
 
 Fix the selected authentication, authorization, tenancy, or permission-gated experience end to end. The patch should align owner-layer checks, API behavior, UI affordances, copy, and tests.
@@ -32,3 +28,5 @@ Fix the selected authentication, authorization, tenancy, or permission-gated exp
 ## Validation
 
 Run repository-native checks for allowed, forbidden, unauthenticated, wrong-tenant/wrong-owner, and relevant plan/role states. If a state cannot be exercised because fixtures/credentials are unavailable, state the limitation and the exact manual verification path.
+
+Repair trusted identity/scope construction or the authoritative access decision before adjusting its UI consumer. Replay the same allowed and denied cases and inspect protected state/effects, session transitions and recovery. Use the OAuth/OIDC session check only for the implemented protocol boundary. A remaining violation returns to that owner; supported acceptance proceeds to Patch Checking.

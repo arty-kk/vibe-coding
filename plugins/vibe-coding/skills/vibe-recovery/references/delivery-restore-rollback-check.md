@@ -1,9 +1,5 @@
 # Delivery Restore & Rollback Check
 
-## Operation
-
-Verify the selected behavior against explicit expected results; do not change product code.
-
 ## Goal
 
 Verify the selected release or recovery path against exact artifact identity, compatible state and agreed recovery criteria.
@@ -25,3 +21,11 @@ Select the cases that test the requested guarantee. Define expected state/effect
 ## Verification
 
 Compare restored application data and behavior, artifact/configuration identity, lost work and measured recovery time; list unexercised deployment or disaster-recovery stages.
+
+## Execute and decide
+
+Fix the tested release/configuration, current state compatibility, backup/consistency point and recovery criteria before rehearsal. Establish a normal application/data control, then perform only the selected authorized promotion, abort, rollback or isolated restore sequence.
+
+Verify the actual running artifact/configuration and restored business invariants, not merely process health or archive extraction. Measure lost acknowledged work and elapsed time from the agreed recovery start to usable application state, including required dependencies/operator steps. Separate observed timings from an unexercised full disaster scenario.
+
+Return passed, failed or blocked for the stated recovery stage. Pass a failed identity/state/procedure link to the authorized owner repair, repeat its rehearsal/control after correction and finish Patch Checking for changed source. A missing backup, environment or safe action remains an explicit gate.

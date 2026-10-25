@@ -1,9 +1,5 @@
 # RBAC ABAC Policy Audit
 
-## Operation
-
-Inspect the selected behavior and report evidence-backed defects; do not change product code.
-
 ## Goal and scope
 
 Audit one RBAC/ABAC policy boundary, role matrix, resource-action contract, tenant scope, or entitlement decision path. Limit the audit to evidence-backed policy behavior and directly affected consumers.
@@ -22,3 +18,7 @@ Audit one RBAC/ABAC policy boundary, role matrix, resource-action contract, tena
 2. Trace selected actor/resource/action through decision owner and all direct enforcement points.
 3. Compare matrix/docs/maps with implementation evidence and mark drift.
 4. Identify duplicated policy logic and owner ambiguity.
+
+## Handoff
+
+Retain actor/resource/action/scope, trusted attribute sources and the exact allow/deny expectation. Follow conflicting or stale attributes through policy composition and direct enforcement; do not infer precedence from role names. Feed the violating matrix row, owner and observed effect to Improve RBAC ABAC Policy.

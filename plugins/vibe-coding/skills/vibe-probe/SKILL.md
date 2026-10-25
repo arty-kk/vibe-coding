@@ -25,4 +25,18 @@ Prioritize a supplied reproduction, failing test or trace, then a changed contra
 
 If a fix is authorized, correct one proven defect and verify its direct effects. If no defect qualifies, stop after the selected area; do not search another area to manufacture a finding. If a required decision or environment is missing, identify it and finish independent inspection.
 
-Report **fixed**, **no qualifying defect found**, or **blocked**, with the primary area/owner, evidence, changed behavior and verification. Keep the area and result visible so a later probe can reconstruct history. An explicit request for several probes is a bounded set of these operations, not permission for an indefinite loop.
+## Probe → repair → patch review
+
+Carry the selected owner, expected invariant and reproducing input into the repair; then replay the failure and a normal control. When a meaningful patch was created, run [Patch Checking](../vibe-review/references/patch-checking.md) on the resulting change. A correction made during that review requires another review pass before the clean marker. Keep repairs tied to the selected invariant and the patch's direct consequences.
+
+Only after this cycle is accepted can a requested next probe choose another unvisited primary owner. A failed required check returns to the current repair; a missing decision/environment or stalled correction stops this probe rather than switching areas.
+
+Report one outcome with its primary area/owner, evidence and actual verification:
+
+- `BUG_FOUND_FIXED`: the selected defect was repaired, its acceptance verified and the resulting patch reviewed clean.
+- `BUG_FOUND`: a defect was established in inspection-only mode; no repair was authorized.
+- `BUG_FOUND_BLOCKED`: a necessary fix or required verification is unresolved; distinguish changes already made from remaining work.
+- `NO_BUG_FOUND_IN_NEW_AREA`: the bounded area yielded no qualifying defect; this is not a whole-repository clean verdict.
+- `NO_NEW_UNVISITED_AREA`: no suitable new area is available from the visible context.
+
+Keep the outcome in the visible conversation so the next probe can reconstruct history; do not create a repository ledger unless requested. An explicit request for several probes is a bounded set of these operations, not permission for an indefinite search.

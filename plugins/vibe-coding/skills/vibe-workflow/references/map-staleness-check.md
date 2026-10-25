@@ -14,3 +14,5 @@ Inspect the existing maps selected by the user or referenced by the changed beha
 ## Result
 
 Report affected map entries, direct source evidence and the narrow required update; or no stale entries within the inspected scope. Name unresolved evidence. Do not edit maps or product files during this check.
+
+Use `MAPS_FRESH`, `MAPS_STALE`, `NO_MAINTAINED_MAPS`, or `MAP_CHECK_BLOCKED`. Pass stale entry IDs/sections, the contradicting source and the required description change to Map Refresh. NO_MAINTAINED_MAPS is not an instruction to create maps. A fresh verdict applies only to the inspected maps and source state.

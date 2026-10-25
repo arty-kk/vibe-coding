@@ -42,3 +42,5 @@ Update the workflow or script that owns the boundary, plus directly dependent co
 Show the original synthetic case fails before the correction and is rejected afterward, while the valid control still builds. Verify permissions/ref selection where possible, release inventory and archive bytes, deterministic assembly when promised, and relevant CI on the actual changed commit. For a dependency change run the necessary native checks; for packaging verify no final or partial artifact survives validation failure.
 
 Report the repaired trust path, evidence, checks run and remaining hosted-runner or registry checks. Publish only within the user's existing authorization and the repository's applicable controls.
+
+Replay the original synthetic input at the same trigger/ref/artifact boundary and confirm rejection before privileged execution or publishable bytes, while the valid control remains usable. Use Release Artifact Trust Check for the selected output inventory/digest/identity chain when needed. Return failed bypasses to the trust owner, repeat that boundary and finish Patch Checking without weakening gates to obtain a green job.
