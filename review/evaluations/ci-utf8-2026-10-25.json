@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-25",
+  "baseline": {
+    "file": "review/evaluations/1.6.0.json",
+    "sha256": "2f8b1d94ac0db7704280292ee17aecd5d8fa53117abd3de4216343be6f68953e"
+  },
+  "changes": {
+    "tests/test_workflows.py": {
+      "before": "c6dff1cb70dc7d8b6af355c89b00a7ce3e0ea41cb6ae44f20b710e92b0d1ba90",
+      "after": "bcf7865358a456475d4ca672d103699ced6f82d79261b9aedbff4eacb067db1c",
+      "review": "Portable UTF-8 regression inputs and immutable fingerprint-chain extension."
+    },
+    "tests/search_parity.py": {
+      "before": "fa87ad7293e3e651fd75489fa5d9e10a28978bbd0a2bfa1231272da549cadb09",
+      "after": "f4cfc1d7d32fb849c4f2bfa7dc7ba3e4f34a2dbae090e663e4b906793b30e71c",
+      "review": "Portable UTF-8 regression inputs and immutable fingerprint-chain extension."
+    },
+    "tests/test_site_search.cjs": {
+      "before": "81897d0769fbb5e0c06cd2f55cd21a6e244e1498fa3794290c93dc2d61e82010",
+      "after": "d616c45dfe924022deedebc202544dab4c929c69a41664bbe83756da078bc2b6",
+      "review": "Portable UTF-8 regression inputs and immutable fingerprint-chain extension."
+    },
+    "tests/test_evaluations.py": {
+      "before": "ca282199f25028509d1369c052355f5ed96ac8666663beb2b8b8bcb80f5495d5",
+      "after": "09c74975ed2c163396e1c53c002a43c2a813a6d5724b9739b4adff7d30f60861",
+      "review": "Portable UTF-8 regression inputs and immutable fingerprint-chain extension."
+    }
+  },
+  "observed": "Windows CI failed only the four new workflow validator tests at UTF-8 catalog decoding under cp1252. Read fixture and parity inputs explicitly as UTF-8; choose the setup-python command on Windows.",
+  "limits": "Only test infrastructure changes; published ZIPs, instructions, manifests and MCP runtime remain exactly version 1.6.0."
+}

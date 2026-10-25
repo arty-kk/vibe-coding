@@ -13,7 +13,7 @@ from workflow_graph import load_workflows
 
 class WorkflowCompositionTests(unittest.TestCase):
     def setUp(self):
-        self.rows = json.loads((PLUGIN/'catalog.json').read_text())['recipes']
+        self.rows = json.loads((PLUGIN/'catalog.json').read_text(encoding='utf-8'))['recipes']
         self.spec = load_workflows(PLUGIN, self.rows)
 
     def reject(self, mutate):

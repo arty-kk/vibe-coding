@@ -14,6 +14,7 @@ PORTABILITY = ROOT/'review/evaluations/1.5.1.json'
 SITE_REFRESH = ROOT/'review/evaluations/site-2026-10-25.json'
 SITE_POLICIES = ROOT/'review/evaluations/site-policies-2026-10-25.json'
 POLISHING = ROOT/'review/evaluations/1.6.0.json'
+CI_UTF8 = ROOT/'review/evaluations/ci-utf8-2026-10-25.json'
 
 
 class EvaluationRecordTests(unittest.TestCase):
@@ -28,14 +29,22 @@ class EvaluationRecordTests(unittest.TestCase):
         self.site_refresh = json.loads(SITE_REFRESH.read_text(encoding='utf-8'))
         self.site_policies = json.loads(SITE_POLICIES.read_text(encoding='utf-8'))
         self.polishing = json.loads(POLISHING.read_text(encoding='utf-8'))
+        self.ci_utf8 = json.loads(CI_UTF8.read_text(encoding='utf-8'))
+
+    def ci_fingerprint(self, name, expected):
+        change = self.ci_utf8['changes'].get(name)
+        if change:
+            self.assertEqual(expected, change['before'], 'CI correction must retain its released source baseline: '+name)
+            return change['after']
+        return expected
 
     def polishing_fingerprint(self, name, expected):
         change = self.polishing['changes'].get(name)
         if change:
             self.assertEqual(expected, change['before'], 'Workflow revision must preserve the current published baseline: '+name)
             self.assertTrue(change['review'])
-            return change['after']
-        return expected
+            expected = change['after']
+        return self.ci_fingerprint(name, expected)
 
     def site_policy_fingerprint(self, name, expected):
         change = self.site_policies['changes'].get(name)
@@ -229,10 +238,10 @@ class EvaluationRecordTests(unittest.TestCase):
     def test_workflow_revision_has_sequential_review_and_current_fingerprints(self):
         self.assertEqual(hashlib.sha256(SITE_POLICIES.read_bytes()).hexdigest(), self.polishing['baseline']['sha256'])
         for name, change in self.polishing['changes'].items():
-            self.assertEqual(change['after'], hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
+            self.assertEqual(self.ci_fingerprint(name, change['after']), hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
             self.assertTrue(change['review'])
         for name, expected in self.polishing['new_files'].items():
-            self.assertEqual(expected, hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
+            self.assertEqual(self.ci_fingerprint(name, expected), hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
         ledger = json.loads((ROOT/'review/skill-polish-1.6.0.json').read_text(encoding='utf-8'))
         self.assertEqual(ledger['order'], ledger['completed'])
         self.assertEqual(47, len(ledger['completed']))
@@ -241,6 +250,12 @@ class EvaluationRecordTests(unittest.TestCase):
             for name, expected in record['fingerprints'].items():
                 self.assertEqual(expected, hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
         self.assertTrue(self.polishing['limits'])
+
+    def test_ci_encoding_correction_preserves_the_product_release(self):
+        self.assertEqual(hashlib.sha256(POLISHING.read_bytes()).hexdigest(), self.ci_utf8['baseline']['sha256'])
+        self.assertTrue(all(name.startswith('tests/') for name in self.ci_utf8['changes']))
+        for name, change in self.ci_utf8['changes'].items():
+            self.assertEqual(change['after'], hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
 
 
 if __name__ == '__main__':
