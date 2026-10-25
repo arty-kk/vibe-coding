@@ -1,0 +1,2086 @@
+{
+  "version": 1,
+  "keyword_language": "en",
+  "topics": {
+    "ai-evaluation": {
+      "primary": [
+        "evaluation",
+        "ai"
+      ],
+      "keywords": [
+        "evaluation",
+        "ai",
+        "benchmarks",
+        "judgments",
+        "quality",
+        "test datasets"
+      ]
+    },
+    "ai-feature": {
+      "primary": [
+        "ai"
+      ],
+      "keywords": [
+        "ai",
+        "model output",
+        "typed responses",
+        "refusal",
+        "fallback"
+      ]
+    },
+    "ai-safety-governance": {
+      "primary": [
+        "ai safety"
+      ],
+      "keywords": [
+        "ai safety",
+        "misuse",
+        "release controls",
+        "model risk",
+        "disable path"
+      ]
+    },
+    "llm-agent-tools": {
+      "primary": [
+        "llm",
+        "tools"
+      ],
+      "keywords": [
+        "llm",
+        "tools",
+        "tool selection",
+        "arguments",
+        "agent permissions",
+        "tool effects"
+      ]
+    },
+    "ml-pipeline": {
+      "primary": [
+        "ml",
+        "training"
+      ],
+      "keywords": [
+        "ml",
+        "training",
+        "features",
+        "data leakage",
+        "splits",
+        "model artifacts"
+      ]
+    },
+    "model-serving-monitoring": {
+      "primary": [
+        "model serving"
+      ],
+      "keywords": [
+        "model serving",
+        "inference",
+        "routing",
+        "model versions",
+        "latency",
+        "fallback"
+      ]
+    },
+    "ocr-document-ai": {
+      "primary": [
+        "ocr",
+        "document extraction"
+      ],
+      "keywords": [
+        "ocr",
+        "document extraction",
+        "parsing",
+        "fields",
+        "document regions",
+        "export"
+      ]
+    },
+    "rag": {
+      "primary": [
+        "rag"
+      ],
+      "keywords": [
+        "rag",
+        "retrieval",
+        "sources",
+        "citations",
+        "grounded answers"
+      ]
+    },
+    "api": {
+      "primary": [
+        "api"
+      ],
+      "keywords": [
+        "api",
+        "request validation",
+        "response contracts",
+        "errors",
+        "endpoints"
+      ]
+    },
+    "api-contract-evolution": {
+      "primary": [
+        "api",
+        "compatibility"
+      ],
+      "keywords": [
+        "api",
+        "compatibility",
+        "schema evolution",
+        "versioning",
+        "client compatibility"
+      ]
+    },
+    "bot": {
+      "primary": [
+        "bot"
+      ],
+      "keywords": [
+        "bot",
+        "chat commands",
+        "bot callbacks",
+        "conversation state"
+      ]
+    },
+    "cache-invalidation": {
+      "primary": [
+        "cache"
+      ],
+      "keywords": [
+        "cache",
+        "invalidation",
+        "freshness",
+        "stale reads",
+        "cache keys"
+      ]
+    },
+    "celery-workers": {
+      "primary": [
+        "celery"
+      ],
+      "keywords": [
+        "celery",
+        "queues",
+        "acknowledgments",
+        "worker shutdown",
+        "retry effects"
+      ]
+    },
+    "clickhouse": {
+      "primary": [
+        "clickhouse"
+      ],
+      "keywords": [
+        "clickhouse",
+        "ingestion",
+        "merge tree",
+        "query load",
+        "data retention"
+      ]
+    },
+    "reverse-engineering": {
+      "primary": [
+        "compatibility"
+      ],
+      "keywords": [
+        "compatibility",
+        "reference behavior",
+        "golden master",
+        "fixtures",
+        "protocol parity"
+      ]
+    },
+    "localization": {
+      "primary": [
+        "localization"
+      ],
+      "keywords": [
+        "localization",
+        "translations",
+        "locale",
+        "plural forms",
+        "fallback"
+      ]
+    },
+    "notification-content": {
+      "primary": [
+        "notification content"
+      ],
+      "keywords": [
+        "notification content",
+        "wording",
+        "variables",
+        "audience",
+        "message links"
+      ]
+    },
+    "product-landing-copy": {
+      "primary": [
+        "landing copy"
+      ],
+      "keywords": [
+        "landing copy",
+        "positioning",
+        "headlines",
+        "calls to action",
+        "product claims"
+      ]
+    },
+    "seo-geo": {
+      "primary": [
+        "seo",
+        "geo"
+      ],
+      "keywords": [
+        "seo",
+        "geo",
+        "crawlability",
+        "canonical urls",
+        "structured data",
+        "search visibility"
+      ]
+    },
+    "accessibility": {
+      "primary": [
+        "accessibility"
+      ],
+      "keywords": [
+        "accessibility",
+        "keyboard",
+        "focus",
+        "semantics",
+        "assistive technology"
+      ]
+    },
+    "design-system": {
+      "primary": [
+        "design system"
+      ],
+      "keywords": [
+        "design system",
+        "tokens",
+        "components",
+        "visual consistency",
+        "interaction states"
+      ]
+    },
+    "browser-extension": {
+      "primary": [
+        "extension"
+      ],
+      "keywords": [
+        "extension",
+        "browser permissions",
+        "message sender",
+        "content scripts",
+        "updates"
+      ]
+    },
+    "desktop-app": {
+      "primary": [
+        "desktop"
+      ],
+      "keywords": [
+        "desktop",
+        "ipc",
+        "local state",
+        "permissions",
+        "updates"
+      ]
+    },
+    "documentation-sync": {
+      "primary": [
+        "documentation"
+      ],
+      "keywords": [
+        "documentation",
+        "code drift",
+        "examples",
+        "generated docs",
+        "current commands"
+      ]
+    },
+    "refactor-boundary": {
+      "primary": [
+        "refactor"
+      ],
+      "keywords": [
+        "refactor",
+        "ownership",
+        "compatibility",
+        "consumer boundaries",
+        "migration"
+      ]
+    },
+    "auth-permissions": {
+      "primary": [
+        "authentication",
+        "authorization"
+      ],
+      "keywords": [
+        "authentication",
+        "authorization",
+        "login",
+        "session",
+        "permissions",
+        "oauth",
+        "oidc",
+        "token refresh",
+        "user",
+        "password"
+      ]
+    },
+    "billing-entitlements": {
+      "primary": [
+        "billing",
+        "entitlements"
+      ],
+      "keywords": [
+        "billing",
+        "entitlements",
+        "plans",
+        "quotas",
+        "subscriptions",
+        "access grants"
+      ]
+    },
+    "data-model": {
+      "primary": [
+        "data model"
+      ],
+      "keywords": [
+        "data model",
+        "schema",
+        "constraints",
+        "migrations",
+        "readers",
+        "writers"
+      ]
+    },
+    "data-pipeline-quality": {
+      "primary": [
+        "data pipeline"
+      ],
+      "keywords": [
+        "data pipeline",
+        "data quality",
+        "lineage",
+        "checkpoints",
+        "reconciliation"
+      ]
+    },
+    "experiment-design": {
+      "primary": [
+        "experiment"
+      ],
+      "keywords": [
+        "experiment",
+        "assignment",
+        "exposure",
+        "statistics",
+        "decision criteria"
+      ]
+    },
+    "multi-tenant-isolation": {
+      "primary": [
+        "tenant",
+        "isolation"
+      ],
+      "keywords": [
+        "tenant",
+        "isolation",
+        "cross-tenant access",
+        "resource ownership",
+        "data boundaries"
+      ]
+    },
+    "notebook-productionization": {
+      "primary": [
+        "notebook"
+      ],
+      "keywords": [
+        "notebook",
+        "reproducibility",
+        "cell order",
+        "artifacts",
+        "production jobs"
+      ]
+    },
+    "product-analytics": {
+      "primary": [
+        "analytics"
+      ],
+      "keywords": [
+        "analytics",
+        "events",
+        "metrics",
+        "identity",
+        "grain",
+        "measurement"
+      ]
+    },
+    "rbac-abac-policy": {
+      "primary": [
+        "authorization",
+        "rbac",
+        "abac",
+        "role"
+      ],
+      "keywords": [
+        "authorization",
+        "rbac",
+        "abac",
+        "permissions",
+        "roles",
+        "attributes",
+        "policy decisions",
+        "role"
+      ]
+    },
+    "feature-flags-rollout": {
+      "primary": [
+        "feature flag"
+      ],
+      "keywords": [
+        "feature flag",
+        "rollout",
+        "exposure",
+        "kill switch",
+        "rollback"
+      ]
+    },
+    "go-rust-microservices": {
+      "primary": [
+        "go",
+        "rust"
+      ],
+      "keywords": [
+        "go",
+        "rust",
+        "concurrency",
+        "shutdown",
+        "ownership",
+        "cancellation"
+      ]
+    },
+    "agent-harness": {
+      "primary": [
+        "agent",
+        "harness"
+      ],
+      "keywords": [
+        "agent",
+        "harness",
+        "execution state",
+        "resume",
+        "checkpoint",
+        "replay",
+        "delegation"
+      ]
+    },
+    "backend-integrations": {
+      "primary": [
+        "integration"
+      ],
+      "keywords": [
+        "integration",
+        "provider contracts",
+        "webhooks",
+        "timeouts",
+        "remote effects"
+      ]
+    },
+    "kafka-redpanda": {
+      "primary": [
+        "kafka"
+      ],
+      "keywords": [
+        "kafka",
+        "redpanda",
+        "consumer offsets",
+        "rebalance",
+        "delivery"
+      ]
+    },
+    "kubernetes-platform": {
+      "primary": [
+        "kubernetes"
+      ],
+      "keywords": [
+        "kubernetes",
+        "pods",
+        "rollouts",
+        "disruptions",
+        "capacity"
+      ]
+    },
+    "mcp-server": {
+      "primary": [
+        "mcp"
+      ],
+      "keywords": [
+        "mcp",
+        "tools",
+        "discovery",
+        "schema",
+        "transport",
+        "authorization",
+        "protocol"
+      ]
+    },
+    "mobile-app": {
+      "primary": [
+        "mobile"
+      ],
+      "keywords": [
+        "mobile",
+        "devices",
+        "offline sync",
+        "upgrades",
+        "permissions"
+      ]
+    },
+    "nosql-databases": {
+      "primary": [
+        "nosql"
+      ],
+      "keywords": [
+        "nosql",
+        "consistency",
+        "partitions",
+        "document stores",
+        "access patterns"
+      ]
+    },
+    "notification-delivery": {
+      "primary": [
+        "notification"
+      ],
+      "keywords": [
+        "notification",
+        "delivery",
+        "deduplication",
+        "channels",
+        "provider retries"
+      ]
+    },
+    "observability-stack": {
+      "primary": [
+        "observability"
+      ],
+      "keywords": [
+        "observability",
+        "metrics",
+        "logs",
+        "traces",
+        "alerts",
+        "telemetry cost"
+      ]
+    },
+    "background-jobs": {
+      "primary": [
+        "background jobs"
+      ],
+      "keywords": [
+        "background jobs",
+        "enqueue",
+        "workers",
+        "retries",
+        "durable completion"
+      ]
+    },
+    "incident-triage": {
+      "primary": [
+        "incident"
+      ],
+      "keywords": [
+        "incident",
+        "timeline",
+        "mitigation",
+        "root cause",
+        "recovery"
+      ]
+    },
+    "infra-ops": {
+      "primary": [
+        "infrastructure"
+      ],
+      "keywords": [
+        "infrastructure",
+        "configuration",
+        "startup",
+        "deployments",
+        "drain"
+      ]
+    },
+    "payments-provider": {
+      "primary": [
+        "payment"
+      ],
+      "keywords": [
+        "payment",
+        "webhooks",
+        "reconciliation",
+        "refunds",
+        "provider retries"
+      ]
+    },
+    "form-data-ui": {
+      "primary": [
+        "form",
+        "data interface"
+      ],
+      "keywords": [
+        "form",
+        "data interface",
+        "validation",
+        "tables",
+        "request state",
+        "persisted result"
+      ]
+    },
+    "onboarding-activation": {
+      "primary": [
+        "onboarding"
+      ],
+      "keywords": [
+        "onboarding",
+        "first use",
+        "activation",
+        "partial setup",
+        "returning user"
+      ]
+    },
+    "product-requirements": {
+      "primary": [
+        "requirements"
+      ],
+      "keywords": [
+        "requirements",
+        "acceptance",
+        "product decisions",
+        "scope",
+        "traceability"
+      ]
+    },
+    "product-ui": {
+      "primary": [
+        "product interface"
+      ],
+      "keywords": [
+        "product interface",
+        "ui states",
+        "rendered interactions",
+        "component behavior"
+      ]
+    },
+    "ux-flow": {
+      "primary": [
+        "user journey"
+      ],
+      "keywords": [
+        "user journey",
+        "navigation",
+        "multi-step flows",
+        "completion",
+        "recovery"
+      ]
+    },
+    "test-coverage": {
+      "primary": [
+        "test coverage"
+      ],
+      "keywords": [
+        "test coverage",
+        "regression",
+        "assertions",
+        "fixtures",
+        "meaningful tests"
+      ]
+    },
+    "rabbitmq": {
+      "primary": [
+        "rabbitmq"
+      ],
+      "keywords": [
+        "rabbitmq",
+        "acknowledgments",
+        "redelivery",
+        "routing",
+        "connection loss"
+      ]
+    },
+    "realtime-frontend": {
+      "primary": [
+        "realtime"
+      ],
+      "keywords": [
+        "realtime",
+        "optimistic state",
+        "reconnect",
+        "ordering",
+        "resynchronization"
+      ]
+    },
+    "delivery-recovery": {
+      "primary": [
+        "recovery"
+      ],
+      "keywords": [
+        "recovery",
+        "backups",
+        "restore",
+        "rollbacks",
+        "rpo",
+        "rto"
+      ]
+    },
+    "redis-job-queues": {
+      "primary": [
+        "redis"
+      ],
+      "keywords": [
+        "redis",
+        "bullmq",
+        "job queues",
+        "reclaim",
+        "stalled workers"
+      ]
+    },
+    "consistency-invariants": {
+      "primary": [
+        "consistency"
+      ],
+      "keywords": [
+        "consistency",
+        "invariants",
+        "transactions",
+        "convergence",
+        "repair"
+      ]
+    },
+    "idempotency-concurrency": {
+      "primary": [
+        "idempotency",
+        "concurrency"
+      ],
+      "keywords": [
+        "idempotency",
+        "concurrency",
+        "duplicate effects",
+        "races",
+        "stale owners",
+        "retries"
+      ]
+    },
+    "performance": {
+      "primary": [
+        "performance"
+      ],
+      "keywords": [
+        "performance",
+        "bottlenecks",
+        "profiling",
+        "latency",
+        "cpu",
+        "memory"
+      ]
+    },
+    "performance-budget": {
+      "primary": [
+        "performance budget"
+      ],
+      "keywords": [
+        "performance budget",
+        "resource limits",
+        "cost",
+        "latency distributions",
+        "equivalent workload"
+      ]
+    },
+    "reliability": {
+      "primary": [
+        "reliability"
+      ],
+      "keywords": [
+        "reliability",
+        "failure handling",
+        "timeouts",
+        "retries",
+        "degraded operation"
+      ]
+    },
+    "search-index": {
+      "primary": [
+        "search"
+      ],
+      "keywords": [
+        "search",
+        "index",
+        "relevance",
+        "ranking",
+        "recall",
+        "freshness"
+      ]
+    },
+    "audit-logging-compliance": {
+      "primary": [
+        "audit trail",
+        "logging"
+      ],
+      "keywords": [
+        "audit trail",
+        "logging",
+        "actor identity",
+        "durable evidence",
+        "log integrity"
+      ]
+    },
+    "build-supply-chain": {
+      "primary": [
+        "supply chain"
+      ],
+      "keywords": [
+        "supply chain",
+        "dependencies",
+        "ci trust",
+        "provenance",
+        "build inputs"
+      ]
+    },
+    "privacy-data-rights": {
+      "primary": [
+        "privacy"
+      ],
+      "keywords": [
+        "privacy",
+        "personal data",
+        "retention",
+        "deletion",
+        "access requests"
+      ]
+    },
+    "security": {
+      "primary": [
+        "security"
+      ],
+      "keywords": [
+        "security",
+        "vulnerabilities",
+        "attacks",
+        "trust boundaries",
+        "abuse"
+      ]
+    },
+    "system-security-hardening": {
+      "primary": [
+        "hardening",
+        "security"
+      ],
+      "keywords": [
+        "hardening",
+        "security",
+        "systemic abuse",
+        "defense controls",
+        "attack paths"
+      ]
+    },
+    "serverless-runtime": {
+      "primary": [
+        "serverless"
+      ],
+      "keywords": [
+        "serverless",
+        "invocation lifetime",
+        "required writes",
+        "deferred work",
+        "retries"
+      ]
+    },
+    "sql-databases": {
+      "primary": [
+        "sql"
+      ],
+      "keywords": [
+        "sql",
+        "transactions",
+        "locks",
+        "connection pools",
+        "failover"
+      ]
+    },
+    "object-storage": {
+      "primary": [
+        "object storage"
+      ],
+      "keywords": [
+        "object storage",
+        "uploads",
+        "checksums",
+        "versions",
+        "deletion",
+        "restore"
+      ]
+    },
+    "temporal-workflows": {
+      "primary": [
+        "temporal"
+      ],
+      "keywords": [
+        "temporal",
+        "activities",
+        "determinism",
+        "replay",
+        "worker versions"
+      ]
+    },
+    "terraform-delivery": {
+      "primary": [
+        "terraform"
+      ],
+      "keywords": [
+        "terraform",
+        "plans",
+        "state",
+        "resource identity",
+        "drift"
+      ]
+    },
+    "vector-databases": {
+      "primary": [
+        "vector"
+      ],
+      "keywords": [
+        "vector",
+        "embeddings",
+        "ann",
+        "recall",
+        "filtering",
+        "reindex"
+      ]
+    },
+    "web-rendering": {
+      "primary": [
+        "ssr",
+        "hydration",
+        "rendering"
+      ],
+      "keywords": [
+        "ssr",
+        "hydration",
+        "rendering",
+        "server components",
+        "server actions",
+        "navigation",
+        "serialized data",
+        "route cache"
+      ]
+    },
+    "prompt-skill-sync": {
+      "primary": [
+        "skill maintenance"
+      ],
+      "keywords": [
+        "skill maintenance",
+        "workflow composition",
+        "retrieval",
+        "triggers",
+        "package drift"
+      ]
+    },
+    "scoped": {
+      "primary": [
+        "scoped behavior"
+      ],
+      "keywords": [
+        "scoped behavior",
+        "uncovered domain",
+        "contract owner",
+        "targeted repair",
+        "verification"
+      ]
+    },
+    "agent-harness-replay-failure-check": {
+      "primary": [
+        "agent",
+        "harness"
+      ],
+      "keywords": [
+        "agent",
+        "harness",
+        "replay",
+        "failure"
+      ]
+    },
+    "ai-ml-problem-framing": {
+      "primary": [
+        "ai",
+        "ml",
+        "problem"
+      ],
+      "keywords": [
+        "ai",
+        "ml",
+        "problem",
+        "framing"
+      ]
+    },
+    "ai-navigation-map": {
+      "primary": [
+        "ai",
+        "navigation"
+      ],
+      "keywords": [
+        "ai",
+        "navigation"
+      ]
+    },
+    "api-contract-compatibility-check": {
+      "primary": [
+        "api",
+        "compatibility"
+      ],
+      "keywords": [
+        "api",
+        "compatibility",
+        "contract"
+      ]
+    },
+    "api-navigation-map": {
+      "primary": [
+        "api",
+        "navigation"
+      ],
+      "keywords": [
+        "api",
+        "navigation"
+      ]
+    },
+    "audit-trail-integrity-check": {
+      "primary": [
+        "audit trail",
+        "logging"
+      ],
+      "keywords": [
+        "audit trail",
+        "logging",
+        "trail",
+        "integrity"
+      ]
+    },
+    "auth-entitlements-map": {
+      "primary": [
+        "authorization",
+        "entitlements"
+      ],
+      "keywords": [
+        "authorization",
+        "entitlements",
+        "identity",
+        "policy ownership",
+        "access paths"
+      ]
+    },
+    "behavior-check": {
+      "primary": [
+        "behavior verification"
+      ],
+      "keywords": [
+        "behavior verification",
+        "expected result",
+        "actual result",
+        "valid control"
+      ]
+    },
+    "bot-navigation-map": {
+      "primary": [
+        "bot",
+        "navigation"
+      ],
+      "keywords": [
+        "bot",
+        "navigation"
+      ]
+    },
+    "cache-coherency-check": {
+      "primary": [
+        "cache"
+      ],
+      "keywords": [
+        "cache",
+        "coherency"
+      ]
+    },
+    "celery-delivery-shutdown-check": {
+      "primary": [
+        "celery"
+      ],
+      "keywords": [
+        "celery",
+        "delivery",
+        "shutdown"
+      ]
+    },
+    "clickhouse-ingestion-query-load-check": {
+      "primary": [
+        "clickhouse"
+      ],
+      "keywords": [
+        "clickhouse",
+        "ingestion",
+        "query",
+        "load"
+      ]
+    },
+    "compatibility-golden-master-check": {
+      "primary": [
+        "compatibility"
+      ],
+      "keywords": [
+        "compatibility",
+        "golden",
+        "master"
+      ]
+    },
+    "delivery-restore-rollback-check": {
+      "primary": [
+        "recovery"
+      ],
+      "keywords": [
+        "recovery",
+        "delivery",
+        "restore",
+        "rollback"
+      ]
+    },
+    "deploy-bootstrap": {
+      "primary": [
+        "deployment setup"
+      ],
+      "keywords": [
+        "deployment setup",
+        "configuration",
+        "runtime",
+        "provider",
+        "delivery artifacts"
+      ]
+    },
+    "design-gen": {
+      "primary": [
+        "design"
+      ],
+      "keywords": [
+        "design"
+      ]
+    },
+    "domain-data-map": {
+      "primary": [
+        "domain",
+        "data"
+      ],
+      "keywords": [
+        "domain",
+        "data"
+      ]
+    },
+    "evidence-normalization": {
+      "primary": [
+        "evidence"
+      ],
+      "keywords": [
+        "evidence",
+        "contradictions",
+        "source identity",
+        "uncertainty"
+      ]
+    },
+    "evolution-improvement": {
+      "primary": [
+        "evolution",
+        "improvement"
+      ],
+      "keywords": [
+        "evolution",
+        "improvement"
+      ]
+    },
+    "feature-flag-exposure-rollback-check": {
+      "primary": [
+        "feature flag"
+      ],
+      "keywords": [
+        "feature flag",
+        "feature",
+        "flag",
+        "exposure",
+        "rollback"
+      ]
+    },
+    "go-rust-concurrency-shutdown-check": {
+      "primary": [
+        "go",
+        "rust"
+      ],
+      "keywords": [
+        "go",
+        "rust",
+        "concurrency",
+        "shutdown"
+      ]
+    },
+    "incident-recovery-check": {
+      "primary": [
+        "incident"
+      ],
+      "keywords": [
+        "incident",
+        "recovery"
+      ]
+    },
+    "instant-architecture-probe": {
+      "primary": [
+        "architecture"
+      ],
+      "keywords": [
+        "architecture",
+        "ownership",
+        "contract boundaries",
+        "one bug"
+      ]
+    },
+    "instant-backend-probe": {
+      "primary": [
+        "backend"
+      ],
+      "keywords": [
+        "backend",
+        "debugging",
+        "diagnosis",
+        "bug",
+        "service failures"
+      ]
+    },
+    "instant-bug-fix-polish": {
+      "primary": [
+        "bug"
+      ],
+      "keywords": [
+        "bug",
+        "debugging",
+        "diagnosis",
+        "reproduction"
+      ]
+    },
+    "instant-frontend-probe": {
+      "primary": [
+        "frontend"
+      ],
+      "keywords": [
+        "frontend",
+        "debugging",
+        "ui state",
+        "interaction",
+        "rendering"
+      ]
+    },
+    "instant-ui-ux-visual-probe": {
+      "primary": [
+        "visual interface"
+      ],
+      "keywords": [
+        "visual interface",
+        "rendered defects",
+        "screenshots",
+        "interaction"
+      ]
+    },
+    "integration-map": {
+      "primary": [
+        "integration"
+      ],
+      "keywords": [
+        "integration"
+      ]
+    },
+    "iteration-closure": {
+      "primary": [
+        "iteration closure"
+      ],
+      "keywords": [
+        "iteration closure",
+        "done",
+        "next slice",
+        "replan",
+        "blocked"
+      ]
+    },
+    "kafka-redpanda-rebalance-failure-check": {
+      "primary": [
+        "kafka"
+      ],
+      "keywords": [
+        "kafka",
+        "redpanda",
+        "rebalance",
+        "failure"
+      ]
+    },
+    "kubernetes-rollout-failure-check": {
+      "primary": [
+        "kubernetes"
+      ],
+      "keywords": [
+        "kubernetes",
+        "rollout",
+        "failure"
+      ]
+    },
+    "local-client-runtime-security-check": {
+      "primary": [
+        "extension",
+        "desktop"
+      ],
+      "keywords": [
+        "extension",
+        "desktop",
+        "local",
+        "client",
+        "runtime",
+        "security"
+      ]
+    },
+    "map-refresh-polish": {
+      "primary": [
+        "refresh"
+      ],
+      "keywords": [
+        "refresh"
+      ]
+    },
+    "map-staleness-check": {
+      "primary": [
+        "staleness"
+      ],
+      "keywords": [
+        "staleness"
+      ]
+    },
+    "map-synthesis": {
+      "primary": [
+        "synthesis"
+      ],
+      "keywords": [
+        "synthesis"
+      ]
+    },
+    "mcp-protocol-auth-check": {
+      "primary": [
+        "mcp"
+      ],
+      "keywords": [
+        "mcp",
+        "protocol",
+        "discovery",
+        "authorization",
+        "transport",
+        "tool schema"
+      ]
+    },
+    "migration-refactor-plan": {
+      "primary": [
+        "migration",
+        "refactor",
+        "plan"
+      ],
+      "keywords": [
+        "migration",
+        "refactor",
+        "plan"
+      ]
+    },
+    "mobile-release-offline-check": {
+      "primary": [
+        "mobile"
+      ],
+      "keywords": [
+        "mobile",
+        "release",
+        "offline"
+      ]
+    },
+    "network-integration-failure-check": {
+      "primary": [
+        "integration"
+      ],
+      "keywords": [
+        "integration",
+        "network",
+        "failure"
+      ]
+    },
+    "nosql-consistency-hot-partition-check": {
+      "primary": [
+        "nosql"
+      ],
+      "keywords": [
+        "nosql",
+        "consistency",
+        "hot",
+        "partition"
+      ]
+    },
+    "notification-failure-idempotency-check": {
+      "primary": [
+        "notification"
+      ],
+      "keywords": [
+        "notification",
+        "failure",
+        "idempotency"
+      ]
+    },
+    "oauth-oidc-session-check": {
+      "primary": [
+        "authentication",
+        "oauth",
+        "oidc"
+      ],
+      "keywords": [
+        "authentication",
+        "oauth",
+        "oidc",
+        "login",
+        "sessions",
+        "tokens",
+        "redirects"
+      ]
+    },
+    "object-storage-integrity-recovery-check": {
+      "primary": [
+        "object storage"
+      ],
+      "keywords": [
+        "object storage",
+        "object",
+        "storage",
+        "integrity",
+        "recovery"
+      ]
+    },
+    "observability-semantics-cost-check": {
+      "primary": [
+        "observability"
+      ],
+      "keywords": [
+        "observability",
+        "semantics",
+        "cost"
+      ]
+    },
+    "ownership-invariant-map": {
+      "primary": [
+        "ownership",
+        "invariant"
+      ],
+      "keywords": [
+        "ownership",
+        "invariant"
+      ]
+    },
+    "patch-checking": {
+      "primary": [
+        "patch"
+      ],
+      "keywords": [
+        "patch",
+        "review",
+        "branch delta",
+        "regression",
+        "corrections"
+      ]
+    },
+    "payments-webhook-reconciliation-check": {
+      "primary": [
+        "payment"
+      ],
+      "keywords": [
+        "payment",
+        "payments",
+        "webhook",
+        "reconciliation"
+      ]
+    },
+    "privacy-data-rights-check": {
+      "primary": [
+        "privacy"
+      ],
+      "keywords": [
+        "privacy",
+        "data",
+        "rights"
+      ]
+    },
+    "product-acceptance-check": {
+      "primary": [
+        "form",
+        "data interface",
+        "onboarding",
+        "requirements"
+      ],
+      "keywords": [
+        "form",
+        "data interface",
+        "onboarding",
+        "requirements",
+        "product",
+        "acceptance"
+      ]
+    },
+    "product-capability-map": {
+      "primary": [
+        "product",
+        "capability"
+      ],
+      "keywords": [
+        "product",
+        "capability"
+      ]
+    },
+    "product-decision-metrics-check": {
+      "primary": [
+        "product",
+        "decision",
+        "metrics"
+      ],
+      "keywords": [
+        "product",
+        "decision",
+        "metrics"
+      ]
+    },
+    "product-journey-map": {
+      "primary": [
+        "product",
+        "journey"
+      ],
+      "keywords": [
+        "product",
+        "journey"
+      ]
+    },
+    "product-metrics-events-map": {
+      "primary": [
+        "product",
+        "metrics",
+        "events"
+      ],
+      "keywords": [
+        "product",
+        "metrics",
+        "events"
+      ]
+    },
+    "product-requirements-map": {
+      "primary": [
+        "product",
+        "requirements"
+      ],
+      "keywords": [
+        "product",
+        "requirements"
+      ]
+    },
+    "project-atlas-map": {
+      "primary": [
+        "repository map"
+      ],
+      "keywords": [
+        "repository map",
+        "architecture",
+        "ownership",
+        "navigation"
+      ]
+    },
+    "rabbitmq-redelivery-recovery-check": {
+      "primary": [
+        "rabbitmq"
+      ],
+      "keywords": [
+        "rabbitmq",
+        "redelivery",
+        "recovery"
+      ]
+    },
+    "rbac-abac-matrix-check": {
+      "primary": [
+        "authorization",
+        "rbac",
+        "abac",
+        "role"
+      ],
+      "keywords": [
+        "authorization",
+        "rbac",
+        "abac",
+        "permissions",
+        "roles",
+        "attributes",
+        "allowed and denied",
+        "role"
+      ]
+    },
+    "rbac-abac-policy-map": {
+      "primary": [
+        "rbac",
+        "abac",
+        "policy"
+      ],
+      "keywords": [
+        "rbac",
+        "abac",
+        "policy"
+      ]
+    },
+    "readme-gen": {
+      "primary": [
+        "readme"
+      ],
+      "keywords": [
+        "readme"
+      ]
+    },
+    "realtime-interface-profiling-recovery-check": {
+      "primary": [
+        "realtime"
+      ],
+      "keywords": [
+        "realtime",
+        "interface",
+        "profiling",
+        "recovery"
+      ]
+    },
+    "redis-queue-load-recovery-check": {
+      "primary": [
+        "redis"
+      ],
+      "keywords": [
+        "redis",
+        "queue",
+        "load",
+        "recovery"
+      ]
+    },
+    "release-artifact-trust-check": {
+      "primary": [
+        "supply chain"
+      ],
+      "keywords": [
+        "supply chain",
+        "release",
+        "artifact",
+        "trust"
+      ]
+    },
+    "release-readiness-audit": {
+      "primary": [
+        "release",
+        "readiness"
+      ],
+      "keywords": [
+        "release",
+        "readiness"
+      ]
+    },
+    "risk-release-map": {
+      "primary": [
+        "risk",
+        "release"
+      ],
+      "keywords": [
+        "risk",
+        "release"
+      ]
+    },
+    "runtime-flow-map": {
+      "primary": [
+        "runtime",
+        "flow"
+      ],
+      "keywords": [
+        "runtime",
+        "flow"
+      ]
+    },
+    "saas-navigation-map": {
+      "primary": [
+        "saas",
+        "navigation"
+      ],
+      "keywords": [
+        "saas",
+        "navigation"
+      ]
+    },
+    "search-recall-freshness-check": {
+      "primary": [
+        "search"
+      ],
+      "keywords": [
+        "search",
+        "recall",
+        "freshness"
+      ]
+    },
+    "security-abuse-defense-check": {
+      "primary": [
+        "security",
+        "hardening"
+      ],
+      "keywords": [
+        "security",
+        "hardening",
+        "abuse",
+        "defense"
+      ]
+    },
+    "serverless-invocation-check": {
+      "primary": [
+        "serverless"
+      ],
+      "keywords": [
+        "serverless",
+        "invocation"
+      ]
+    },
+    "sql-load-lock-failover-check": {
+      "primary": [
+        "sql"
+      ],
+      "keywords": [
+        "sql",
+        "load",
+        "lock",
+        "failover"
+      ]
+    },
+    "synthesis": {
+      "primary": [
+        "task synthesis"
+      ],
+      "keywords": [
+        "task synthesis",
+        "findings",
+        "deduplication",
+        "priorities",
+        "acceptance"
+      ]
+    },
+    "task-shaping": {
+      "primary": [
+        "task shaping"
+      ],
+      "keywords": [
+        "task shaping",
+        "implementation brief",
+        "scope",
+        "constraints",
+        "acceptance"
+      ]
+    },
+    "temporal-replay-versioning-check": {
+      "primary": [
+        "temporal"
+      ],
+      "keywords": [
+        "temporal",
+        "replay",
+        "versioning"
+      ]
+    },
+    "tenant-isolation-check": {
+      "primary": [
+        "tenant",
+        "isolation"
+      ],
+      "keywords": [
+        "tenant",
+        "isolation"
+      ]
+    },
+    "terraform-plan-state-check": {
+      "primary": [
+        "terraform"
+      ],
+      "keywords": [
+        "terraform",
+        "plan",
+        "state"
+      ]
+    },
+    "test-coverage-map": {
+      "primary": [
+        "test",
+        "coverage"
+      ],
+      "keywords": [
+        "test",
+        "coverage"
+      ]
+    },
+    "traceability-map": {
+      "primary": [
+        "traceability"
+      ],
+      "keywords": [
+        "traceability"
+      ]
+    },
+    "transactional-delivery-check": {
+      "primary": [
+        "consistency"
+      ],
+      "keywords": [
+        "consistency",
+        "transactional",
+        "delivery"
+      ]
+    },
+    "validation-clarification": {
+      "primary": [
+        "task validation"
+      ],
+      "keywords": [
+        "task validation",
+        "acceptance",
+        "ready to execute",
+        "blocking decisions"
+      ]
+    },
+    "vector-recall-degradation-check": {
+      "primary": [
+        "vector"
+      ],
+      "keywords": [
+        "vector",
+        "recall",
+        "degradation"
+      ]
+    },
+    "visual-regression-check": {
+      "primary": [
+        "visual regression"
+      ],
+      "keywords": [
+        "visual regression",
+        "rendering",
+        "screenshots",
+        "layout",
+        "comparison"
+      ]
+    },
+    "web-boundary-check": {
+      "primary": [
+        "ssr",
+        "hydration",
+        "rendering"
+      ],
+      "keywords": [
+        "ssr",
+        "hydration",
+        "rendering",
+        "web",
+        "boundary"
+      ]
+    },
+    "workstream-decomposition": {
+      "primary": [
+        "task decomposition"
+      ],
+      "keywords": [
+        "task decomposition",
+        "dependencies",
+        "workstreams",
+        "execution briefs"
+      ]
+    }
+  },
+  "recipe_keywords": {
+    "api-audit": [
+      "GraphQL",
+      "OpenAPI",
+      "CORS",
+      "CSRF"
+    ],
+    "api-contract-compatibility-check": [
+      "GraphQL",
+      "OpenAPI",
+      "gRPC",
+      "Protobuf",
+      "schema evolution",
+      "контракты",
+      "совместимость",
+      "esquemas",
+      "协议兼容"
+    ],
+    "api-contract-evolution-audit": [
+      "GraphQL",
+      "OpenAPI",
+      "gRPC",
+      "Protobuf",
+      "schema evolution",
+      "контракты",
+      "совместимость",
+      "esquemas",
+      "协议兼容"
+    ],
+    "api-contract-evolution-polish": [
+      "GraphQL",
+      "OpenAPI",
+      "gRPC",
+      "Protobuf",
+      "schema evolution",
+      "контракты",
+      "совместимость",
+      "esquemas",
+      "协议兼容"
+    ],
+    "api-navigation-map": [
+      "GraphQL",
+      "OpenAPI",
+      "CORS",
+      "CSRF"
+    ],
+    "incident-recovery-check": [
+      "incident",
+      "triage",
+      "root cause",
+      "postmortem",
+      "инцидент",
+      "расследование",
+      "incidente",
+      "故障"
+    ],
+    "incident-remediation-polish": [
+      "incident",
+      "triage",
+      "root cause",
+      "postmortem",
+      "инцидент",
+      "расследование",
+      "incidente",
+      "故障"
+    ],
+    "incident-triage-audit": [
+      "incident",
+      "triage",
+      "root cause",
+      "postmortem",
+      "инцидент",
+      "расследование",
+      "incidente",
+      "故障"
+    ],
+    "release-artifact-trust-check": [
+      "artifact",
+      "release",
+      "SBOM",
+      "provenance",
+      "подпись",
+      "артефакт",
+      "artefacto",
+      "制品"
+    ],
+    "transactional-delivery-check": [
+      "outbox",
+      "inbox",
+      "transaction",
+      "commit publish",
+      "saga",
+      "транзакции",
+      "события",
+      "entrega",
+      "事务"
+    ],
+    "build-supply-chain-audit": [
+      "supply chain",
+      "dependencies",
+      "CI",
+      "lockfile",
+      "SBOM",
+      "зависимости",
+      "сборка",
+      "dependencias",
+      "供应链"
+    ],
+    "build-supply-chain-polish": [
+      "supply chain",
+      "dependencies",
+      "CI",
+      "lockfile",
+      "SBOM",
+      "зависимости",
+      "сборка",
+      "dependencias",
+      "供应链"
+    ],
+    "serverless-invocation-check": [
+      "Lambda",
+      "Workers",
+      "edge",
+      "waitUntil",
+      "cold start",
+      "serverless",
+      "бессерверные",
+      "sin servidor",
+      "无服务器",
+      "серверлесс"
+    ],
+    "serverless-runtime-audit": [
+      "Lambda",
+      "Workers",
+      "edge",
+      "waitUntil",
+      "cold start",
+      "serverless",
+      "бессерверные",
+      "sin servidor",
+      "无服务器",
+      "серверлесс"
+    ],
+    "serverless-runtime-polish": [
+      "Lambda",
+      "Workers",
+      "edge",
+      "waitUntil",
+      "cold start",
+      "serverless",
+      "бессерверные",
+      "sin servidor",
+      "无服务器",
+      "серверлесс"
+    ],
+    "sql-databases-audit": [
+      "backfill",
+      "migration",
+      "миграция",
+      "migración",
+      "迁移"
+    ],
+    "sql-databases-polish": [
+      "backfill",
+      "migration",
+      "миграция",
+      "migración",
+      "迁移"
+    ],
+    "sql-load-lock-failover-check": [
+      "backfill",
+      "migration",
+      "миграция",
+      "migración",
+      "迁移"
+    ]
+  }
+}

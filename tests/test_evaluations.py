@@ -15,6 +15,7 @@ SITE_REFRESH = ROOT/'review/evaluations/site-2026-10-25.json'
 SITE_POLICIES = ROOT/'review/evaluations/site-policies-2026-10-25.json'
 POLISHING = ROOT/'review/evaluations/1.6.0.json'
 CI_UTF8 = ROOT/'review/evaluations/ci-utf8-2026-10-25.json'
+SEARCH_KEYS = ROOT/'review/evaluations/1.6.1.json'
 
 
 class EvaluationRecordTests(unittest.TestCase):
@@ -30,13 +31,21 @@ class EvaluationRecordTests(unittest.TestCase):
         self.site_policies = json.loads(SITE_POLICIES.read_text(encoding='utf-8'))
         self.polishing = json.loads(POLISHING.read_text(encoding='utf-8'))
         self.ci_utf8 = json.loads(CI_UTF8.read_text(encoding='utf-8'))
+        self.search_keys = json.loads(SEARCH_KEYS.read_text(encoding='utf-8'))
+
+    def search_key_fingerprint(self, name, expected):
+        change = self.search_keys['changes'].get(name)
+        if change:
+            self.assertEqual(expected, change['before'], 'Search revision must retain the preceding source baseline: '+name)
+            return change['after']
+        return expected
 
     def ci_fingerprint(self, name, expected):
         change = self.ci_utf8['changes'].get(name)
         if change:
             self.assertEqual(expected, change['before'], 'CI correction must retain its released source baseline: '+name)
-            return change['after']
-        return expected
+            expected = change['after']
+        return self.search_key_fingerprint(name, expected)
 
     def polishing_fingerprint(self, name, expected):
         change = self.polishing['changes'].get(name)
@@ -154,7 +163,7 @@ class EvaluationRecordTests(unittest.TestCase):
 
     def test_required_behavior_records_are_complete_and_bounded(self):
         manifest = json.loads((ROOT/'plugins/vibe-coding/plugin.json').read_text(encoding='utf-8'))
-        self.assertEqual(manifest['version'], self.polishing['release'])
+        self.assertEqual(manifest['version'], self.search_keys['release'])
         cases = {row['id']: row for row in self.record['behaviors']}
         self.assertEqual({'serverless-required-write', 'mcp-http-readonly-control', 'react-hydration-preference'}, set(cases))
         for case in cases.values():
@@ -248,14 +257,21 @@ class EvaluationRecordTests(unittest.TestCase):
         self.assertIsNone(ledger['current'])
         for record in ledger['records'].values():
             for name, expected in record['fingerprints'].items():
-                self.assertEqual(expected, hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
+                self.assertEqual(self.search_key_fingerprint(name, expected), hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
         self.assertTrue(self.polishing['limits'])
 
     def test_ci_encoding_correction_preserves_the_product_release(self):
         self.assertEqual(hashlib.sha256(POLISHING.read_bytes()).hexdigest(), self.ci_utf8['baseline']['sha256'])
         self.assertTrue(all(name.startswith('tests/') for name in self.ci_utf8['changes']))
         for name, change in self.ci_utf8['changes'].items():
+            self.assertEqual(self.search_key_fingerprint(name, change['after']), hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
+
+    def test_key_catalog_revision_retains_history_and_current_inputs(self):
+        self.assertEqual(hashlib.sha256(CI_UTF8.read_bytes()).hexdigest(), self.search_keys['baseline']['sha256'])
+        for name, change in self.search_keys['changes'].items():
             self.assertEqual(change['after'], hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
+        for name, expected in self.search_keys['new_files'].items():
+            self.assertEqual(expected, hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
 
 
 if __name__ == '__main__':

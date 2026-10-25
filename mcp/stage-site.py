@@ -23,7 +23,7 @@ if (HERE/'generated/catalog-engine.js').read_text(encoding='utf-8') != build_eng
 shutil.copytree(HERE/'site/app', destination/'app', dirs_exist_ok=True)
 target = destination/'lib/vibe'
 target.mkdir(parents=True, exist_ok=True)
-for name in ('server.js', 'library.js', 'workflow.js', 'review-cases.json'):
+for name in ('server.js', 'library.js', 'workflow.js', 'discovery.js', 'review-cases.json'):
     shutil.copyfile(HERE/name, target/name)
 (target/'generated').mkdir(exist_ok=True)
 for name in ('library.json', 'catalog-engine.js'):

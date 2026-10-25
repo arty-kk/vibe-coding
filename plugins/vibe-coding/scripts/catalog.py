@@ -9,6 +9,8 @@ import sys
 from pathlib import Path
 from catalog_site import load_locales, render_catalog, LANGUAGES
 from search_index import build_index, match_score
+from workflow_graph import load_workflows
+from topic_index import build_topics
 
 ROOT = Path(__file__).resolve().parents[1]
 MODE_NAMES = load_locales()['en']['modes']
@@ -25,12 +27,13 @@ def contained_path(raw):
     return p
 
 
-def search(rows, query='', mode=None, skill=None):
+def search(rows, query='', mode=None, skill=None, topic=None):
     index = build_index(rows, load_locales(), ROOT)
     result = []
     for row in rows:
         if mode and row['mode'] != mode: continue
         if skill and row['skill'] != skill: continue
+        if topic and row.get('topic_key') != topic: continue
         score = match_score(index[row['id']], query)
         if score is not None: result.append((score, row))
     return [row for _, row in sorted(result, key=lambda item: (-item[0],
@@ -53,11 +56,17 @@ def refresh():
     catalog=load_catalog()
     english = load_locales()['en']
     purposes = json.loads((ROOT/'assets/catalog/search-lexicon.json').read_text(encoding='utf-8'))['purposes']
+    discovery = build_topics(ROOT, catalog['recipes'], load_workflows(ROOT, catalog['recipes']))
+    by_recipe = {identity: topic for topic in discovery['topics'] for identity in topic['recipe_ids']}
     for row in catalog['recipes']:
         row['title'] = english['titles'][row['id']]
         row['category'] = english['categories'][row['skill']]
         row['summary'] = english['summaries'][row['skill']]
         row['purpose'] = purposes.get(row['id']) or purpose(contained_path(row['path']).read_text(encoding='utf-8'), row['title'])
+        topic = by_recipe[row['id']]
+        row['topic_key'] = topic['key']
+        row['primary_keywords'] = topic['primary']
+        row['keywords'] = sorted(set(discovery['recipe_keywords'].get(row['id'], [])) | set(topic['keywords']))
         row['example'] = english['ui']['prompt'].format(skill=row['skill'], title=row['title'], id=row['id'])
         row['sha256']=hashlib.sha256(contained_path(row['path']).read_bytes()).hexdigest()
     catalog['skills']=len(list((ROOT/'skills').glob('*/SKILL.md')))
@@ -77,16 +86,29 @@ def main():
     parser=argparse.ArgumentParser(description=__doc__)
     sub=parser.add_subparsers(dest='command',required=True)
     p=sub.add_parser('search');p.add_argument('query',nargs='?',default='');p.add_argument('--mode',choices=MODE_NAMES);p.add_argument('--skill');p.add_argument('--json',action='store_true');p.add_argument('--lang',choices=LANGUAGES,default='en');p.add_argument('--host',choices=['codex','claude'],default='codex')
+    p.add_argument('--topic',help='Exact topic key from the topics command')
+    p=sub.add_parser('topics');p.add_argument('--skill');p.add_argument('--json',action='store_true');p.add_argument('--lang',choices=LANGUAGES,default='en')
     p=sub.add_parser('show');p.add_argument('id')
     sub.add_parser('refresh')
     args=parser.parse_args()
     if args.command=='refresh':refresh();return
     rows=load_catalog()['recipes']
+    if args.command=='topics':
+        data=build_topics(ROOT, rows, load_workflows(ROOT, rows))
+        values=[topic for topic in data['topics'] if topic['skill']==args.skill] if args.skill else data['domains']
+        locale=load_locales()[args.lang]
+        if args.json: print(json.dumps(values,ensure_ascii=False,indent=2))
+        else:
+            by_id={row['id']:row for row in rows}
+            for entry in values:
+                label=locale['titles'][entry['recipe_ids'][0]] if args.skill else locale['categories'][entry['key']]
+                print(entry['key']+' | '+label+' | '+', '.join(entry['keywords']))
+        return
     if args.command=='show':
         matches=[r for r in rows if r['id']==args.id]
         if not matches:parser.error('Unknown recipe ID. Use search first.')
         print(contained_path(matches[0]['path']).read_text(encoding='utf-8'));return
-    rows=search(rows,args.query,args.mode,args.skill)
+    rows=search(rows,args.query,args.mode,args.skill,args.topic)
     locale = load_locales()[args.lang]
     rows = [{**r, 'title': locale['titles'][r['id']], 'category': locale['categories'][r['skill']], 'summary': locale['summaries'][r['skill']], 'example': locale['ui']['promptClaude' if args.host=='claude' else 'prompt'].format(skill=r['skill'], title=locale['titles'][r['id']], id=r['id'])} for r in rows]
     if args.json:print(json.dumps(rows,ensure_ascii=False,indent=2))
@@ -94,6 +116,7 @@ def main():
         for row in rows:
             command = '/vibe-coding:'+row['skill'] if args.host=='claude' else '$'+row['skill']
             print(f'{row["id"]} | {command} | {locale["modes"][row["mode"]]}\n  {row["title"]} — {row["category"]}')
+        if not rows: print('No matches under these filters. Use the topics command to inspect available domain/topic keys.')
         print(f'Found: {len(rows)}')
 
 

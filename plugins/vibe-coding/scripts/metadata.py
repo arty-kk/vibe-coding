@@ -78,7 +78,7 @@ def catalog_errors(data):
     if data.get('version') != 1 or type(data.get('skills')) is not int or not isinstance(data.get('recipes'), list):
         return ['catalog.json: expected version 1, integer skills and recipes array']
     errors = []
-    strings = {'id', 'title', 'skill', 'mode', 'path', 'category', 'summary', 'purpose', 'example', 'sha256'}
+    strings = {'id', 'title', 'skill', 'mode', 'path', 'category', 'summary', 'purpose', 'topic_key', 'example', 'sha256'}
     for i, row in enumerate(data['recipes']):
         label = f'catalog.json: recipes[{i}]'
         if not isinstance(row, dict):
@@ -91,4 +91,7 @@ def catalog_errors(data):
             errors.append(f'{label}: missing or invalid group')
         if 'keywords' in row and (not isinstance(row['keywords'], list) or not all(isinstance(k, str) and k.strip() for k in row['keywords'])):
             errors.append(f'{label}: keywords must be nonempty strings')
+        primary = row.get('primary_keywords')
+        if not isinstance(primary, list) or not primary or not all(isinstance(k, str) and k.strip() for k in primary):
+            errors.append(f'{label}: primary_keywords must be nonempty strings')
     return errors

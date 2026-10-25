@@ -1,0 +1,126 @@
+{
+  "version": "1.6.1",
+  "instruction_version": "1.6.1",
+  "digest": "1118d54b88be57c334d66e85ef607960b4da70c8bcfa4f976cd94c11434867d1",
+  "domains": 45,
+  "topics": 162,
+  "workflows": 241,
+  "before_public": [
+    {
+      "query": "авторизация",
+      "version": "1.6.0",
+      "total": 0,
+      "ids": []
+    },
+    {
+      "query": "authorization",
+      "version": "1.6.0",
+      "total": 56,
+      "ids": [
+        "auth-permissions-audit",
+        "auth-permissions-polish",
+        "mcp-protocol-auth-check",
+        "billing-entitlements-audit",
+        "bot-audit"
+      ]
+    }
+  ],
+  "frozen_1_6_0_cases": {
+    "cases": 71,
+    "top1": 69,
+    "accepted_rank": 71
+  },
+  "regressions": [
+    {
+      "query": "авторизация",
+      "total": 63,
+      "ids": [
+        "auth-permissions-audit",
+        "rbac-abac-policy-audit",
+        "auth-entitlements-map",
+        "auth-permissions-polish",
+        "rbac-abac-matrix-check"
+      ]
+    },
+    {
+      "query": "авторизаця",
+      "total": 63,
+      "ids": [
+        "auth-permissions-audit",
+        "rbac-abac-policy-audit",
+        "auth-entitlements-map",
+        "auth-permissions-polish",
+        "rbac-abac-matrix-check"
+      ]
+    },
+    {
+      "query": "авторзиация",
+      "total": 63,
+      "ids": [
+        "auth-permissions-audit",
+        "rbac-abac-policy-audit",
+        "auth-entitlements-map",
+        "auth-permissions-polish",
+        "rbac-abac-matrix-check"
+      ]
+    },
+    {
+      "query": "бекенд глючит",
+      "total": 20,
+      "ids": [
+        "instant-backend-probe",
+        "backend-integrations-audit",
+        "backend-integrations-polish",
+        "api-audit",
+        "api-contract-evolution-audit"
+      ]
+    },
+    {
+      "query": "бэкэнд глюичт",
+      "total": 20,
+      "ids": [
+        "instant-backend-probe",
+        "backend-integrations-audit",
+        "backend-integrations-polish",
+        "api-audit",
+        "api-contract-evolution-audit"
+      ]
+    },
+    {
+      "query": "блин что-то бэкэнд глючит",
+      "total": 20,
+      "ids": [
+        "instant-backend-probe",
+        "backend-integrations-audit",
+        "backend-integrations-polish",
+        "api-audit",
+        "api-contract-evolution-audit"
+      ]
+    },
+    {
+      "query": "debug backend",
+      "total": 20,
+      "ids": [
+        "instant-backend-probe",
+        "backend-integrations-audit",
+        "backend-integrations-polish",
+        "api-audit",
+        "api-contract-evolution-audit"
+      ]
+    },
+    {
+      "query": "kubernets",
+      "total": 3,
+      "ids": [
+        "kubernetes-platform-audit",
+        "kubernetes-platform-polish",
+        "kubernetes-rollout-failure-check"
+      ]
+    }
+  ],
+  "lookup_contract": "Every supplied catalog key and supported mode resolves to actual owned members; exact key/ID arguments are not fuzzy-corrected.",
+  "limits": [
+    "Deterministic lookup and protocol checks, not an independent LLM routing score.",
+    "Free text uses registered vocabulary and bounded one-edit repair; the caller interprets user intent before selecting a catalog key."
+  ]
+}

@@ -10,11 +10,13 @@ HERE = Path(__file__).resolve().parent
 PLUGIN = HERE.parent / 'plugins/vibe-coding'
 sys.path.insert(0, str(PLUGIN/'scripts'))
 from workflow_graph import load_workflows
+from topic_index import build_topics
 
 
 def build_library():
     catalog = json.loads((PLUGIN / 'catalog.json').read_text(encoding='utf-8'))
     workflows = load_workflows(PLUGIN, catalog['recipes'])
+    discovery = build_topics(PLUGIN, catalog['recipes'], workflows)
     version = json.loads((PLUGIN / 'plugin.json').read_text(encoding='utf-8'))['version']
     locales = {code: json.loads((PLUGIN / f'assets/catalog/locales/{code}.json').read_text(encoding='utf-8'))
                for code in ('en', 'es', 'ru', 'zh-CN')}
@@ -53,11 +55,12 @@ def build_library():
                     dependencies.append(name)
         row['dependencies'] = sorted(set(dependencies))
     config_hashes = {name: hashlib.sha256((PLUGIN/name).read_bytes()).hexdigest()
-                     for name in ('workflows.json', 'assets/catalog/search-lexicon.json', 'assets/catalog/engine.js')}
+                     for name in ('workflows.json', 'assets/catalog/search-lexicon.json', 'assets/catalog/search-topics.json', 'assets/catalog/engine.js')}
     snapshot = {'version': json.loads((HERE / 'package.json').read_text(encoding='utf-8'))['version'],
             'instructionVersion': version,
             'recipes': catalog['recipes'], 'skillCount': catalog['skills'], 'files': files,
             'workflowSpec': workflows,
+            'discovery': discovery,
             'searchLexicon': json.loads((PLUGIN/'assets/catalog/search-lexicon.json').read_text(encoding='utf-8')),
             'configDigests': config_hashes,
             'locales': {code: {key: locale[key] for key in ('titles', 'summaries', 'categories', 'modes')}

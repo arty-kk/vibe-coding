@@ -30,6 +30,18 @@ test('word-prefix matching does not match API in rapid or SQL in NoSQL', () => {
   assert.equal(engine.select(sample,state({q:'rapid'})).matches.length,1);
 });
 
+test('typo correction is bounded, rejects ambiguous terms and never turns content into a stopword', () => {
+  const sample = engine.prepare([
+    {id:'state',titles:['State'],skill:'data',mode:'check',keywords:['state']},
+    {id:'store',titles:['Store'],skill:'data',mode:'check',keywords:['store']},
+    {id:'worker',titles:['Worker'],skill:'data',mode:'check',keywords:['worker']}
+  ],{},{},{stopwords:['would']});
+  assert.deepEqual(ids(engine.select(sample,state({q:'staet'}))),['state']);
+  assert.deepEqual(ids(engine.select(sample,state({q:'stroe'}))),['store']);
+  assert.deepEqual(ids(engine.select(sample,state({q:'stare'}))),[]);
+  assert.deepEqual(ids(engine.select(sample,state({q:'world'}))),[]);
+});
+
 test('search uses all four title languages and folds accents/case', () => {
   for (const q of ['API','аудит API','caché','缓存','KUBERNETES']) assert.ok(engine.select(entries,state({q})).matches.length > 0,q);
   assert.deepEqual(ids(engine.select(entries,state({q:'caché'}))),ids(engine.select(entries,state({q:'cache'}))));

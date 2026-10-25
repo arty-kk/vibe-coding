@@ -1,0 +1,1558 @@
+{
+  "release": "1.6.1",
+  "date": "2026-10-25",
+  "baseline": {
+    "file": "review/evaluations/ci-utf8-2026-10-25.json",
+    "sha256": "1ff454db15bb1ba23375edc3efa7dc92ce7cc22091f93d528f23e6bd84e8b2fe",
+    "commit": "df336e29a1e7bdecaf967b47bd76281c8e6c9717"
+  },
+  "changes": {
+    ".claude-plugin/plugin.json": {
+      "before": "8db1d25c9cdffe471f3165e297b77ff91cd0308b050758167600a9049b28a654",
+      "after": "1409cb8084a81808c79c0bc85565ae68d9fa114f90c0fb2b91d46e6863f365ab",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "CHANGELOG.md": {
+      "before": "522817cf52ed1866e84f8f470735399022e01dd3edd58022031fd8022677668b",
+      "after": "6739dff1b80fb4f86816bd7ccb045e78180ca934bfb90088635bc0e11fbc8c96",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "README.md": {
+      "before": "4836bfc5549843c710294243190ac2507f8405bbcba03b153d792c312f58fe5b",
+      "after": "242920bcd2b8eb7a8fa084954bb90c378b6d30616c22770941e1268df003541d",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "README.ru.md": {
+      "before": "cbdccb878be777a97a072759fdc623fa02649f96c8b8ba82943e14d6c63e16d6",
+      "after": "3e7dd38fcbf39f4c43647b360ea7bfd16ff5febf022d6e71d9da4af8139a02e5",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/404.html": {
+      "before": "d191ff2dda7ac8439744ce78beb49c3826c4312ecd0b197a2abba84d125d7690",
+      "after": "6c01bd492d750b680283f0ebc0a22d7f6c19b27cc13000ca0470d46e9f06de10",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/es/index.html": {
+      "before": "3b14c5a48c51547254f88d731d67f689b76b8cff83caa674075d8102179421b5",
+      "after": "ab04b6525c5174039bdd508c4b314f3fabc2dd7f6ea128668a56994bf8a10be6",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/es/privacy.html": {
+      "before": "d1c48a0744b36243ce72309fbc089209f606620e0bb360815975d9a873a6d45f",
+      "after": "d10db6ae5f1500c03a4cb14cf41d8b48e23a65bc60e058cf65bea661a8f5c3c6",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/es/terms.html": {
+      "before": "8b72907a3ddcc9ca837f323197b4f1e80da2fe50975001192af174f2d2bbf853",
+      "after": "18551a8c988c49520e93b3698315637a3207dbc045c69ff3757e16a475bca6b3",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/es/workflows/index.html": {
+      "before": "916ab404f3d14879b952cc7b01c381085eb1825aff4a2f42ed136174d5c73bcb",
+      "after": "93d2a5b078c53fbd92425e6415c5d82d7ae819c2cf370dc589bf09d02e6152a1",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/index.html": {
+      "before": "fb027c8c7ebb3e8235ba480fd1edb33ac47acfce4a5a84e4b75754082cf6298e",
+      "after": "e0773dcf6b565a4edb9227e7d34512176b5c724e59a054ed3d9c52d05a3de679",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/privacy.html": {
+      "before": "e9e942541b81b2aef873343eb000532f0c895484973a166e66fd7b1ac14c9850",
+      "after": "b7f48c3215f4cce5b3bd4f96e5b22a6d2284480e69b246c39352cfad3352156e",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/ru/index.html": {
+      "before": "6e8957a949e2c104adcb3ecae6f30eab4cbc84784304a08c57ac6aadf63e633d",
+      "after": "0ea236bbdfa4f7846e0213705cbfd41e5eb0b774d39a72eec591d69ce4026b66",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/ru/privacy.html": {
+      "before": "5962b4e6cc1f114c95109dbf56fe335ae08596003ba18ffe4ae0cac9cbc1b2a1",
+      "after": "3d8a703df74d3742c0bc80003e2a93f6426391aad15dd0c09c784608959605e3",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/ru/terms.html": {
+      "before": "965a20729439b35d8d98c7f55edf7030bf464237674cde3ad47fcdb93882b271",
+      "after": "5f72dbdf43c92514ddc38af3722ef0506279aac8d7a7fe08d7bf66cfb57ecf86",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/ru/workflows/index.html": {
+      "before": "849d073c1a3a6e6443c534bf3bbefb04b7797fce6a3af82ab5cfe33a2da6426e",
+      "after": "666eee2d43b6eb2310da77810fa53091fba7a7e1da75ef7cf4b8a9f23c47e058",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/terms.html": {
+      "before": "4106ddacaa7679d61e72e80f80f59771f29ad76832bb575c8650e3aa5e637791",
+      "after": "de3de10bb90ebb1ef17620c0f6837016fb713c922210882044d92962fc5e3ed7",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/accessibility-audit/index.html": {
+      "before": "2b01a8e5f28e7d123f87221958ef466666eb138255d9bc42dd411419a1a8c586",
+      "after": "9b26bb9cf3785ff2b5454415ce001d94c84526f038d0bd510241400c69ee255e",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/accessibility-polish/index.html": {
+      "before": "e87ac0a5dddfbb8a5b4505f0c55dfd5398ac31d6d77bc120acdc57db1bbb49bb",
+      "after": "c0d9e03c53d53e9355d5276d06c64a7f5ad5d6118ffc91a46cbc5e3729e5ceb5",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/agent-harness-audit/index.html": {
+      "before": "2ebb12b480605b94367229bc71a6eec12754d5e759bdd81011d1d4989e947b71",
+      "after": "8f3c14121dc66d4c745caae8ba8375a7b44797b9be033abf51c888016d5266f6",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/agent-harness-polish/index.html": {
+      "before": "f1c93cee15c331e498238485f2820eb3344cd010c141a3b52766c3226c4107c1",
+      "after": "96d2c6f3e7d7421b1ed1b36020f3c601c6e2a1414d0fd57c75dffb72197a2a26",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/agent-harness-replay-failure-check/index.html": {
+      "before": "5590b9ea8ab6a3e6412f6cb37a49d47df24990cc8e24adab3f5cceda1b3ad1e4",
+      "after": "9e2a8d304a36d758d4c258546d744c4ad659edead8440b344b40748fcb3f22d6",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/ai-evaluation-audit/index.html": {
+      "before": "3838e563088cef9fe849dc33485558d1e5c9edb118adeb17dcbf241f009ffe9f",
+      "after": "5bf5102e6931c38c71bbb950625577ac59a6599402ae9bc55e8e4e9038784362",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/ai-evaluation-polish/index.html": {
+      "before": "ab0065020d9691ce6042916febe2c21dc0233da20b62b1f42b56bb4084400513",
+      "after": "419360ee7dc6f665ccf85b471c5c9a0ae9607a0fb868e389ed15c4f9573cf08f",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/ai-feature-audit/index.html": {
+      "before": "32ac1980ff3dd018a0a3cfa2a7fe312dfa9d466fed8f9e798d10a3dd487e3233",
+      "after": "19434f7839ab1494bc7d0807318052449cf24f02563f6798f5f2339286fa12e5",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/ai-feature-polish/index.html": {
+      "before": "411a605a878fe35ae80e245e84d1fe815d10f7db79b1bd7d8111ca1af732baea",
+      "after": "e9e440dfac6ee3c8f8a1b0f808dead980f628ce22b8cafe1582b80d757c6c949",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/ai-ml-problem-framing/index.html": {
+      "before": "05d49f47bc60706261fdcfe8f2fff645029c86e07a48c8cdfcd40406b6acf959",
+      "after": "8da48f8af733b0cd11d08ff18e9ec9dba33f6bdc9842b9cd0f5183c4fd933421",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/ai-navigation-map/index.html": {
+      "before": "d0913e698e15580a2cbb2828fb37b37a67435b9df61eeacadde894f6a11a170c",
+      "after": "ab9374bbad5e7f382b25043689c8b9ddfddc7583918b6068d55daf40cc04e4dc",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/ai-safety-governance-audit/index.html": {
+      "before": "636232d4cdc7bb2958a8720d32f9bc0258e10b19dc495bdd80daf210bec5a14b",
+      "after": "1a0e0c150f794fd2a050d50d9ce6383b353060ba317226102b74c8f4fd904d06",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/ai-safety-governance-polish/index.html": {
+      "before": "c402d6e0ec071c4900a9d73fe062fb1be9ae8a77a95266e3f62710ed059cfbaf",
+      "after": "916926352b4595b70e9879da74f47040feb96923138885c2bd853838cdd6e5f5",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/api-audit/index.html": {
+      "before": "b48563f51fd9c4126aa596f31c1dc54717e3c80fcdcbe63609d658dd19cf354f",
+      "after": "87996560a25dfbf930699e0abb2ff42ccce0caf05d2fddc799bee28f19e4096c",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/api-contract-compatibility-check/index.html": {
+      "before": "3516cf9521553cffb05e945adacbdaf28066941b9e1dae14ae66dd860b2f04c6",
+      "after": "afd35c159069215d318f90c74ed812f09660d2fbbe97fab34640ad5779ee1596",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/api-contract-evolution-audit/index.html": {
+      "before": "12264e9f57228ad73cd017e09171245c638bcc981410899f5a7fbc3705e0b400",
+      "after": "abb2b1d5ddcfa7227b9fc3eaf749fd3c3801da333255d9f6c8209f853200d1ec",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/api-contract-evolution-polish/index.html": {
+      "before": "c162c4797d6c4adb72dbb1913409fc7f978568f9fe1712f74d028027417183f0",
+      "after": "3f9477a4c6cf99e420ee89a8ca490e5324a58c30e3392d04a5a787cefc468acd",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/api-navigation-map/index.html": {
+      "before": "717309cbe1fe3cb106ff786374bb13cbd517635b07c2ad27ad68631ba95053c0",
+      "after": "caca4da24b98538bf19e87755d3565270df2ebbd2566279fef47e8d238afa10c",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/api-polish/index.html": {
+      "before": "dce62eabafe2d687f9ba7ebe0d07b954c976b848c0d7a6ff46bd38031d29c472",
+      "after": "b417b3f4e03acc93496b8ad6703b5c1bc792cb774c8857cb5761f43db8524be4",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/audit-logging-compliance-audit/index.html": {
+      "before": "676ec80ae6a79d1b52da8541475e98547a9020fa7bb2ad9865d2e6616799e7df",
+      "after": "e062ec60200e4e40a7ea01ff5108466fb95269dc570d494ffc32a63e4deb65d0",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/audit-logging-compliance-polish/index.html": {
+      "before": "6a02831556ac77928a9cf571079d61fd8086008aa1a0f20d5fa2e6c400f132f3",
+      "after": "32a98abba8ae06cae366b51f292bda22f1fffde99e2e839eea6fd7531f30a675",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/audit-trail-integrity-check/index.html": {
+      "before": "f40f080e5a1b895f0ab1d95c0ea28636eee825ef8999decf334798cfc6c216a0",
+      "after": "8a65dbf10c0477f6780e284fb81821fbc16deb51578397faee059ddb05b9e47c",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/auth-entitlements-map/index.html": {
+      "before": "a0af510eef2a163845a9fb7a886144a1e2482a82e8a27c2a43a7a9b4b7959254",
+      "after": "752b722626add8aeaa2427ba414953371d26a5461169305569af916b72230298",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/auth-permissions-audit/index.html": {
+      "before": "4cba1d289c1c280d3bf0428ac2eaa0f676ab025b20715082eaa37f4b8e8dba64",
+      "after": "09fce3893cbeec158cb95f59bcf22fc2d0a5c2be052f4be0a35ec4456a8b3859",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/auth-permissions-polish/index.html": {
+      "before": "5e46c493ad9acfb578b68671677eed4806c9f58f8c45f336c9ee3c831dffb894",
+      "after": "1af4870a3ed094ba9d1364d584d103dfd43e1f1eb508b748cdc7c562c6ad77d6",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/backend-integrations-audit/index.html": {
+      "before": "8b2a8c8b6851759fc3d641afeae2079eed50f311a208b73762c4267a716e694c",
+      "after": "f8aa0ed3f61ee0aefce996ac33a41ad77cb7cece0304180967212101f7d14a75",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/backend-integrations-polish/index.html": {
+      "before": "3c732b66a1716107e8c249dbdb351f7481e75f1872912a47801fbd48d6c3d278",
+      "after": "ddd78daca58469a2aabb7c691709be4a36a7fdd4ff3876610db32c11579d6d0a",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/background-jobs-audit/index.html": {
+      "before": "18d9a9afbc5a14451de630ab184f65e1b9cb114a4626dbc0b9f6914969314bcd",
+      "after": "c38ad5063a0104a672fc2c98cf2e02de678ff8038f9142ebba27f95e4682cafc",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/background-jobs-polish/index.html": {
+      "before": "3b5f5a86f9874083e102f4f729845f50019d125c4aa725ef3d9cb90b1fba9c61",
+      "after": "f3663152889633c190da952d8ef11de4b8f050eefac9340ec3eca29fed6dd6ee",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/behavior-check/index.html": {
+      "before": "78129e4d508443c7718a425239563396d44d31b15f6ff3d56ae5210bbdce8561",
+      "after": "9ae21ff4ed6be59a0ef0d28deb4136434acbd6f2bf4df10b324bbd6c4db1f0d5",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/billing-entitlements-audit/index.html": {
+      "before": "3c59aef7956b7ac37762f1a5a592a633c933d28160b40b5b106e9256f277e05b",
+      "after": "7a4c5dc8d7e29d03a5ea3fcac07850ababb9a3646876b39c63fe480ec9d2a369",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/billing-entitlements-polish/index.html": {
+      "before": "421397b7623d50e98a7f35789ba6160642c0386f7b35977bb0e391970ba6284c",
+      "after": "5c21748c42321a5b10123895c6a794ef601f70e6577f2f2e1a93f3135a945f1f",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/bot-audit/index.html": {
+      "before": "347c22fed3a6d7f095c97889f19f2eba76f26eb2dc042a8497564b0f2c7b29a2",
+      "after": "3bdb17158a24571261b7263eebdd519d641282fef4239a168e77bd3598f1d8c6",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/bot-navigation-map/index.html": {
+      "before": "6c51bbbe77afe7b4875483a513263cd5f872530ddade0197a2cb0428b792e1bc",
+      "after": "907a8a95ab64cbd2291fc41ec20d033c80bde90b295c12117fd46ed7a8303c33",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/bot-polish/index.html": {
+      "before": "6c9a4f3729e2c70ec0c33aa5f76fa293f31d720c46e3f291bafb711f343f2774",
+      "after": "6f11b578f450032327edb097a3ffa1b50b3f7f797a2ad44dd7a4a5c632b75ae3",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/browser-extension-audit/index.html": {
+      "before": "a31c03932dd9e1f69fa701f43037726ce7778679d54c7b0cfe668f968879057c",
+      "after": "d0cc7f06bf7dab935c380aa4d02bdd4065d9dfc6983c9a3ba8535efd3d8243d3",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/browser-extension-polish/index.html": {
+      "before": "9ee8bb6098333b979446e20832de1fef800788f484555fc842a4355dd119dfb5",
+      "after": "7973259eda2a326246972fc6a2d8e9adbc95325a71b879971f4f8811b3140d5e",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/build-supply-chain-audit/index.html": {
+      "before": "e4898fc2ad0ae86204736fdb46541cced6b4fedb54b6eb78a211db50ad21adb9",
+      "after": "4f8b97bb36282601a265b077de7461bb7f4a36f52f48db9e0fc316690cb27b64",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/build-supply-chain-polish/index.html": {
+      "before": "a607f2fe02f6789577f5fdaefd77d42343484c46cf0fe800b72adfd0a97f1a24",
+      "after": "2254c169e859ee3fe535fd31bab247c9377b640217bc8d235c08dc37fea774bb",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/cache-coherency-check/index.html": {
+      "before": "bc5e7a4c0a6d431540e045427f184a6c3ba622e5837f23ec367e56f914a2762c",
+      "after": "d6e270be6054e8a74fa764eb8a67dc8000f1496c8583dba7d6fdf52743390bb9",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/cache-invalidation-audit/index.html": {
+      "before": "e8d77d1fb424fe979eaad7fe350779ec28fa6e11c31e1bda74b4e3aee8535a0b",
+      "after": "29342404c1e7e8d12c82e385c3e1ca1a26a5c858b08c17e54fcb49353f43fcba",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/cache-invalidation-polish/index.html": {
+      "before": "5031d4e3d043fccf773d560664b1d3e75ab7f3035cfebe73f8171f0f7daef97e",
+      "after": "4bf54239900c17a6bf3d04c42286dcdb49a8b387f2d94c509eea4b675422abc2",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/celery-delivery-shutdown-check/index.html": {
+      "before": "b9b2fc2082ff7867089a6a47c7ca1782cdf3d92383155184e8d1cf3c395dc9d2",
+      "after": "4128f0c24c55677080276ce848481469767862ddc49b442681226d831aa1e665",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/celery-workers-audit/index.html": {
+      "before": "58056107caa9e8970f845e9cfa0233e6f351f0a784db6ca0d6030799c9484b39",
+      "after": "7ff6418d1c524122641d07bdaa9a022ead9ef118290ab54c7fd1b8ec3109cf63",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/celery-workers-polish/index.html": {
+      "before": "90a64ec0983b5fcb5779d8a9527ca52a769d4e6f29fd504fed0beda08981ab02",
+      "after": "4648ac3bbcbdc07ecd81f0888fbd35a365b4881fc7e31cd50c909a50050e1e12",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/clickhouse-audit/index.html": {
+      "before": "4f8a9fc16110aa150516157e89b31bbe3aaf99cef7c3886e5c22b5c6941b361f",
+      "after": "b35042ca228e2f5ea0cd7511e98905d03bf210ee706983013e33878536ba34dd",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/clickhouse-ingestion-query-load-check/index.html": {
+      "before": "95000ae36fd762607e5f1a22f82a9c0de665b01750ecb446c1ad815c5503e59a",
+      "after": "0ba979581a8aa0414ae60ffc3f51e8f27237f485d29bd4341b8dc57c157be7a6",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/clickhouse-polish/index.html": {
+      "before": "b3fc90b2db7bc5944bfe7415d4add402ce4ba82a58c16bb536e1f712cf97c72a",
+      "after": "e33a1e97b5c1d59e00a3abe4b2d8e139acb72583d075723d23768e4fe380cd4d",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/compatibility-golden-master-check/index.html": {
+      "before": "e887fe7f1613fb013a10740eea5644705ae03583223b838b126c6759a6c4e9a3",
+      "after": "8779fae98dd6b5bae093373bafedd28f1bbcb5af3fc8c84acddee49b06abefc9",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/consistency-invariants-audit/index.html": {
+      "before": "d516f72934d9298dea82a95f37ee500930e5eb8be98527d73b57b1fdc3dfc924",
+      "after": "c558b51cc3cbba3d73c15422dd9854ddd3bc20c8dda2a7c32d8350374521632e",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/consistency-invariants-polish/index.html": {
+      "before": "72607c31de6914514a1d83b8e0e80fe8853c9319a5185afa989854cb6dbc7f11",
+      "after": "6dd302a9a1e4f5fd36e04114a4a394a23fe638c50c0a688718b604288c35765a",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/data-model-audit/index.html": {
+      "before": "9f00440479c50f24ffe1e4a7d83f22fcd3e1c1d84833fccaf1467d75f11b63ee",
+      "after": "925d27a78fc7e41f59bf4e83eb71d8a381b25d75a026ef56cd470d705620c973",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/data-model-polish/index.html": {
+      "before": "1a62f45c5132bf64c7ecda65c214e52c3e128c780a1de7693f8b0654be16be2b",
+      "after": "bc27fb9632e31d61862d06060f8d72e335ee7e5131475d660ac705602f522175",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/data-pipeline-quality-audit/index.html": {
+      "before": "7fc1ff79653541ad2df40b2a89dfca11d533c25bdc10fa30a17963497edf6958",
+      "after": "c3522d3e201a3039c921b3d04ec76de42fc31c7dfaf1701116dc9fe4b0a51393",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/data-pipeline-quality-polish/index.html": {
+      "before": "39cfa5eed3ed102871dacc0b969eff848de3f7d0af11ba57aad85e61704c7704",
+      "after": "62d1048ea19ff8c57df7b0ddac6ee9987e308a2e042900e807b54cc98867a536",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/delivery-recovery-audit/index.html": {
+      "before": "ef378480a716d4927025e15378c40400620423051573373e77104a2c0eef237b",
+      "after": "5d1763917902f1df5f7361f21c63a5a14df47913e0d05cf93979a2149a7da066",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/delivery-recovery-polish/index.html": {
+      "before": "b694f6906d2a7729c72908ba0da70613a798eeed01d8fc29ee6b543ea75b90a6",
+      "after": "b5d1ee8f5f72aaed4c30489f7d2bd851b13589fd9142c0e5bf4561ce8a1f0212",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/delivery-restore-rollback-check/index.html": {
+      "before": "c2c57b2f7f39e020106458575afe6b2a5e85a065da839d342597f2ce1bad55e4",
+      "after": "b03c3c4b46b184ec9ec62136877826e62bc554414c9111b25ad9d43b24c99ffe",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/deploy-bootstrap/index.html": {
+      "before": "76dd62985088fc2247f549ded557d8b0f3cb3df27496164ebc1422dd948cc41a",
+      "after": "fff4af06fcd3717755eda1626042e20266348dff54a0cf106841312b45c2f16e",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/design-gen/index.html": {
+      "before": "2d88e2d0023f5c6511cdf4f6a5f5fd53fbfca0fc635c3fb4ed92c62187f43682",
+      "after": "dfd490c4027c4b7c7f3d02c8f3c2597d6e18cb151610ba84b1b92365c08783c9",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/design-system-audit/index.html": {
+      "before": "c510540476cabb00ada3eed507f435c0a132cdc67a07d5a6bb257512b9fc6c40",
+      "after": "21653c6dc6766b4245d023441110bed75fa1986525d90599352a4560f3eec615",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/design-system-polish/index.html": {
+      "before": "c96701eaa4368b9d3bd21cbfda7e69f0761d3b12af14fa6c0ef67773725f7803",
+      "after": "5e316a78bd2cc088f2c70fa2a1cdbcc813956c40609244d70bb3ee0b03126ee7",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/desktop-app-audit/index.html": {
+      "before": "be9f4f9be4ee793ee9f62a2dee3f98fc70d9165f485c45a2e0e35fda8a610797",
+      "after": "2ef0aea390cfb4198045e767fc8b7854fe2b3c5baa73cbef1ce9f79c4d73e4f1",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/desktop-app-polish/index.html": {
+      "before": "79c5dc7fc50e30ea6cfe2df36aa0770d79c0d370f182fbbf0f0a7a9144098e54",
+      "after": "be2d48f74e841354941e7b87e4ecf5cbc2cd9ab279c59d495a87be13c6fe048d",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/documentation-sync-audit/index.html": {
+      "before": "5cdae73cd7b15ed7e36fd27d7beb2dd1834442e834f3714441d08d0d67275868",
+      "after": "a48cb649983c60f471a6ab8f5d42ca7211c70794458e1e708ac0a5df9513ad47",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/documentation-sync-polish/index.html": {
+      "before": "7c6a1dc4c7bf9473248a1358d67f3d19a6f02a61565d27aba401378d6a27403c",
+      "after": "337f7d9072fef160e2dabdbb2fc18b5c611d168261ea7414c4fd7901df198074",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/domain-data-map/index.html": {
+      "before": "dcf7c90b2a0c9b5936cfb626facefcce070ab82b81173776aacfca11726b3a90",
+      "after": "e97dbd67b7f42802c1514e70c99b20bc69af644498a6a9eb8bd747172c29c04d",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/evidence-normalization/index.html": {
+      "before": "9bccdb7f249f83f0c0fbe737416fde1b0e13705578d0dbbec05559fa86893437",
+      "after": "b4727c741e52109d56ec1e26bd6dec627b70bda4c071832185c5fbb728421f6b",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/evolution-improvement/index.html": {
+      "before": "7ae4162152c8db0491283cb57ff9386e5ffbd2f530c672d3eaa6928e56b7afea",
+      "after": "34e00fcd52131185ea11fcc22e323df2569540aa573f66a5656c31e233cd186b",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/experiment-design-audit/index.html": {
+      "before": "d5123bf43938363e7b31ccc3973f56a61af09705d26588abf29d92273ccf1b7b",
+      "after": "c736caae2b54b6b809593fe6e6ecab71b16f438628a0ade5fe0c7b2cdd4e252e",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/experiment-design-polish/index.html": {
+      "before": "5845df1d35eabfce68e629fce8fa0c7fc668733dcd8ea7f37f131798f241119e",
+      "after": "37480dc293e7e8067102963799d435080ad4e5aa3052fbfd10e9b152475e2d5d",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/feature-flag-exposure-rollback-check/index.html": {
+      "before": "5a4b93acafc1884957b3498217205bce9b93b0d9b5e4085b96307e7d36ae4214",
+      "after": "e99826021dd005e4da5f4267acbefe848c3913ca5aca8f29182f23c98509c800",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/feature-flags-rollout-audit/index.html": {
+      "before": "20a2ba02422f432babbc1967d0c4adbcf0175530a1b6a1904e98fa12eee53ac2",
+      "after": "56e140cbbd36274dec07d792413317ccf193ad9254f218b156a35555ab1b4262",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/feature-flags-rollout-polish/index.html": {
+      "before": "8e59801422095f80f84b8a485985ab32d85f38c70f3f27c4494f1cfc6a303d9d",
+      "after": "b0a2476d8ad60f9d6a38f90779e3abc9f4011536ea36babb6134c3504df77cf3",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/form-data-ui-audit/index.html": {
+      "before": "a44711082206eeb0005f4e4089d2ba67436c0683494670c31a1794e161e30179",
+      "after": "b0bc45381d9f4e4581d895edadaf12aed27ff93a5a6f8168091124542ab7f92a",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/form-data-ui-polish/index.html": {
+      "before": "11da9621cef8943d5ee4414987ea8a15fae26f9b142d1342758ffa2c46822540",
+      "after": "a54aeba447c2154044c4d932f3700e551750316aea36b1b70302e5f5012e5f29",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/go-rust-concurrency-shutdown-check/index.html": {
+      "before": "0cb1c265b8b41eb056379ce2283de69041b948768ea8222e1e30897d17b9287f",
+      "after": "76895c9930277f5c66983da638ec8f11debe33be6d865832c60699cd0a3090c1",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/go-rust-microservices-audit/index.html": {
+      "before": "df0c33ba47c4bd69238a98983dc7011f0b392f1070d12a4b56c520bc17574198",
+      "after": "a1c88e9f0407c8790276d3a4afadbb6f86472347523d89652c3b722d63b52885",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/go-rust-microservices-polish/index.html": {
+      "before": "63b0cb64e3f33998a4242973f2eb14db73e20da17be12e93e1f5fad72dfb5f75",
+      "after": "975ca481bd70762bf292e34593736a80f3ed07fe8c74912cec3dbf79b10a5972",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/idempotency-concurrency-audit/index.html": {
+      "before": "719e84b7189f826b507a2aef40aaf9c8c7ddf812d4618c208dd9260ca40518ff",
+      "after": "89292bf62517b5e31a4d22aaba70c6b54450b39aecbb9eaa25bbb80a3a0ea673",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/idempotency-concurrency-polish/index.html": {
+      "before": "27115d58ba9599a1d138b1f023e6c237601ad18513735020c5ff197d86a0b0a4",
+      "after": "bb061f3cf4d2257a1e3aca1b1de3e9bf0eb5e0f885e5e9804b5934b35d14fbcc",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/incident-recovery-check/index.html": {
+      "before": "60b692d4266d4e5636fad99ddbf0c2a356659073ab030aafdfc5b7cfd059049f",
+      "after": "49cb9825ac45b8cac3b723474fa79c938bb2f4f1e115c7678ab3bf0c539384f0",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/incident-remediation-polish/index.html": {
+      "before": "e4b87f114d40ed839ff212ecdb5fc8d9871c280ed5fe1089a96a494c80c4a1d5",
+      "after": "0a0abfb5e64104d1b2d97aea4d6c5ed3a2db77ce52eeaaeaaab12e1ff6df4f5e",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/incident-triage-audit/index.html": {
+      "before": "a01ce095b443de7ae2de482553a6660ce880ae7793ff3a07784158eb6ac1af8b",
+      "after": "5d3d0ece4a0740668448125e410587b5e0aca33741182ed51dc06057aaf9a6a0",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/index.html": {
+      "before": "ff6d57b47a339ea85e1330251a6dd83db5e472035937e954dabca264627652d2",
+      "after": "c4152cc4563eca6bfa119cd99ee581a8ef8f18f133bde048f34fcc877ea15ba4",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/infra-ops-audit/index.html": {
+      "before": "0d3e547d8141f4df179f8855174647add41a185e2a855e12f86ca294fcd6397f",
+      "after": "660a4be7068d25facf4deb1905b57e54bb8e80e1b741f3012693f7383caec780",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/infra-ops-polish/index.html": {
+      "before": "4f61e7a49dc07b4f9e980a35601ab0b26e02f2a7fab3a31db40fe60e213d0f1e",
+      "after": "4e37ef81190e2b2d85e764c81b2a23af35260f8ca3859b01b01e598f6f8d8141",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/instant-architecture-probe/index.html": {
+      "before": "857a5d252f093d1595b70af3d224d7df3672f1018c069795ea4f7b965c7120e1",
+      "after": "7a850ccae6313166925b47bf28adbc7ed2834b5c5cd10a0f81678ffffee4128c",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/instant-backend-probe/index.html": {
+      "before": "6d4b99974e746f542a4e40a5069a2e35c934201ebef90c22b58cbc752e9b2561",
+      "after": "4bc5571cf76cfde8d886edafa5a5053e0294d6040e9994ef6965481c04f28cf2",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/instant-bug-fix-polish/index.html": {
+      "before": "235262e78e6647874debe3b8724de6552837173d4f3cba5834fbabc6c7bc854a",
+      "after": "5988b3b6b1d6ddf1626c81a19754d03927102fee4bf8f2a97f9670edb7969c24",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/instant-frontend-probe/index.html": {
+      "before": "e13caf6d3c797fa5a7d986e6b59b0cfc92ee6c133e3658b3ca3a42160a63e593",
+      "after": "d0bb0d158f072a6ea2b12a74c4b5d8cdea3377d2efc4895ccec8ac5e9d7231d5",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/instant-ui-ux-visual-probe/index.html": {
+      "before": "808e65e83d9ef32489ce7eb7d3064cce9fff1e948cf50e1b3d77dcc58cf83520",
+      "after": "156f7f1a649911743338bd1eb97b4c84f5509139eab4532ba964a3d6947ec04b",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/integration-map/index.html": {
+      "before": "7c9b1ba26ce14cd9592c7ef1a0f95646f4018f8ba9f4598d2e77db445514b8d3",
+      "after": "b30e18fbb3dcb0fc7a1d4f31f24ea9ee3be0561c4c9264c79655e62ea6fec78f",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/iteration-closure/index.html": {
+      "before": "d563e117e2e9c28e4ae737030ee86b57febfbaa26913459962e63b62328172ed",
+      "after": "f8efdd72cea3cc2f20bdb283ef662637dd80c4ea63e9d674b3cb43b557a38689",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/kafka-redpanda-audit/index.html": {
+      "before": "eb9a66a8b76d56dbfd2a4b0a00a338298fc2254e8c3f73f61b864b0e9e5599f7",
+      "after": "73d524940710338b23d6f957bfdb28361e6a506b7c0070791e1f166801b6a652",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/kafka-redpanda-polish/index.html": {
+      "before": "ecec50cfd377e8b72ba27d0f14f6b9ca641fa3400927706c9bbcb218b01f68ac",
+      "after": "74e4f3561c68a8784f5e0818828549d8d6773b27e8c2c411a8c8cdf7e3df1422",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/kafka-redpanda-rebalance-failure-check/index.html": {
+      "before": "ce39a3bf9c5e4423a314e8c85de906f2943d4d4803cfad5669b7ad162a785f21",
+      "after": "dfd4887c92911e47995433326bf4bfe3b9c5c22c5ade4d81f367742c762f0045",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/kubernetes-platform-audit/index.html": {
+      "before": "b6d5fe1c54db5291c3127d4ae70315aba6c18871961bb7088805ca6c3154845b",
+      "after": "fd348a5a140b416cc1f60dc6139cfdba5e172a1734d0936c4dc7107fb6f87d4e",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/kubernetes-platform-polish/index.html": {
+      "before": "e3037cdb541e2a5d179e1a1342fb8394e7acb72c55c90c5fe27c2e650d84e36d",
+      "after": "46693844f68c8512ee42e0e52d7efe445f53a80cf6c5a05809ae63fc0ca4e73b",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/kubernetes-rollout-failure-check/index.html": {
+      "before": "a9927ee1fd7bcd220ce0f74a65091fba214de4b1ef06c283cd19b3147a59ceb1",
+      "after": "334df5b5e4c005cccb0e3becd4090d7e778262aefdcb6b6986e29fdb5aa8f61c",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/llm-agent-tools-audit/index.html": {
+      "before": "040d2e77a5c6fef6ed936698fd8f6c44d054cf3dd9b9d937b08dd65e72faae27",
+      "after": "1669779254f2246f352849985bced051734404af0ee97aaf4cec5af3ebe7d387",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/llm-agent-tools-polish/index.html": {
+      "before": "0b7336e526c1a1f0931ab8b67998475d83661a0d3c37c3dcf0022b35858dba00",
+      "after": "eeb7198613af668908f0678fcb4776f925cdda34cca0a0e747466d56137785a2",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/local-client-runtime-security-check/index.html": {
+      "before": "cd024e9f75d1f8314bca6833386108d278f0152eaff9a88f696e3312d9e8d8cd",
+      "after": "3c3a74858e3560907ed4dfcd35fc20193d5ccdf1266d8c23ef5b86b579dccfef",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/localization-audit/index.html": {
+      "before": "c5a3ae6f724994102b9119784e6add8c9263cb9c106a0a15ac7b8ec52fc53768",
+      "after": "6fc75aedfb4e35aa0d08ea1621a237a58a7dbde1f73c06b0073e5c0d17127ae0",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/localization-polish/index.html": {
+      "before": "064c6ab6dbf5f9944d4b99225d062bb4229ade20b2d3152807b5e89a40ed3c67",
+      "after": "3843e6b92f36679f14476a5a328dc91c6702a321456e9bb2dc7e718482699c6f",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/map-refresh-polish/index.html": {
+      "before": "66dedb82633028ac5ae7fb25c33a3f85acbc2602257aa375eeac5b8aa1d6072d",
+      "after": "04a15141517a21fe5edbb5521f7969847a7ff7bc5f2b92801efc824b49c54e27",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/map-staleness-check/index.html": {
+      "before": "8c0c778f24ad436f8ab38b8072915ce4058ebb5d7c3ea8067ee4e2f4fe49dee9",
+      "after": "7e3b938b1c16738c7354fddc0d9383357677bf667922013ece9bd42ea914322d",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/map-synthesis/index.html": {
+      "before": "80646fb83ce341daa60fa871284d2367fb4054aba74b3173e95f0d8628e983fc",
+      "after": "a8fb2022136a5691c7f935122597f95c443a53b0c68f330c2962b9d2207f61b8",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/mcp-protocol-auth-check/index.html": {
+      "before": "2417ec9710927058b2cbabd3001eeb48d4ea6b3191608caad71cf89ef7bff0f9",
+      "after": "d9c8e0f8ffbe8f4ab5d4466163a504735502b6c43027e1ee1482c6d6037c2e6e",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/mcp-server-audit/index.html": {
+      "before": "1bf50ed5a5b45eebd8bfd9fdb76dd6794ee48e7b2f46710eb268e7afa2a9b0a5",
+      "after": "d65398cc592fc2770dfacee07d87443f62c6cf3e2aa60c6383fafe37ca3e019c",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/mcp-server-polish/index.html": {
+      "before": "d1ced8b208d5a86b469de1b736a397dc329a61d59cf57f9ca7208f9259b45554",
+      "after": "f1ebc29dea657584145e336e870ed8add5ca5db13d985c675b3e7cdb0f9c68b5",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/migration-refactor-plan/index.html": {
+      "before": "cc351aabce0d043b36429daba93dc1b8f8af1feeb42d932a3697d8f9449e3a8f",
+      "after": "ceb61b6c6a65b10bb9cf45d6759a3384965ccb61b50e9a256ce2d84c42081b1b",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/ml-pipeline-audit/index.html": {
+      "before": "80d0f229858748f4385bbc39880b423437ac0d00134393039060a7dcf4686dff",
+      "after": "8484523d5cf11df4b2f6451be7ef7d4017a61675b9402079d5ef44b10f3a5d2e",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/ml-pipeline-polish/index.html": {
+      "before": "c43619a60ff3d90e48782de987207f4adf8852e18a8b68ca6bc3ec4451a608bf",
+      "after": "b39cfa089d1fdaab09e35ae82314d039c267d04ee281100b0188a054d922ba5c",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/mobile-app-audit/index.html": {
+      "before": "22694b5b2d823b16f99975916410bfffceed477c9f96bac5eb3698dd6b272dbc",
+      "after": "5ab22fb2fbfad5cc94f1f5ae0064247b1a0603d8f3c4fd1d9f39e28853c97942",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/mobile-app-polish/index.html": {
+      "before": "ed4d1dd2d761f9b8d026106b000d2fc772e79097d6ea595da26f5c781edf424b",
+      "after": "99298bfd53fcb8b410c265af701725dd6b36a3d46e1d709efa7139073709b5d5",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/mobile-release-offline-check/index.html": {
+      "before": "c2657b9aae1a3f55520fa03c7da08dcbd6022455a3d7c2e3ed69ff5b7b6da09c",
+      "after": "7e443c64fb4522f16a58d8eab29ee179fffa8f7b7a816b6b789bb3821582a284",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/model-serving-monitoring-audit/index.html": {
+      "before": "952cbec0ff545fbb124b3111da77ed5707dbc9e89359bdefa02330460d0c44f4",
+      "after": "08c56cb845bfff117583082ec06912b04049b44a1d778e7a8fd6ffa20e9235d6",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/model-serving-monitoring-polish/index.html": {
+      "before": "6ef46183add99d47a90ae9eb234554f272a77a5c9558dca113adace947b4c957",
+      "after": "5d83254b7c429bd3f8a89a1056870b776cb707180423324deb7e4f1fb3369ee7",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/multi-tenant-isolation-audit/index.html": {
+      "before": "9b328d9342d6a2adec9e4744780d9fbd85a794d7c30ed353bcc66e9bff5938ad",
+      "after": "63d0a24c8ed2426a40ab475498062aa5fe186348396e15f642c7ad5f2af0e17c",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/multi-tenant-isolation-polish/index.html": {
+      "before": "f52fac87b5a55b145f1015ec29debb6e5064b0ed86edf11a782fd27d0df6ceb3",
+      "after": "3ef0ffeccdb1d67f11a0f941e9a9f8f7bc5b51f844dea444480e7feeb357c1c9",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/network-integration-failure-check/index.html": {
+      "before": "07fc77ab236f24a417e09052d894371c3afb6f7874cbb36216354d7af86c6077",
+      "after": "c431bc79be5ba1eac06bcdea905e11ec6695fb35e3f523f0e50b86d4f0c0f6c6",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/nosql-consistency-hot-partition-check/index.html": {
+      "before": "7a21eecffe807e1dde9a88dba6b91bc4d513a9027524cca4d9624584866f401e",
+      "after": "bd014f9f939dd861a03421644d2d22efbc0b69bef8b7b3756a17b9998ac30008",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/nosql-databases-audit/index.html": {
+      "before": "e659e215c2b502ddde40b2cba7ef3a58275dc16ee65749eb61eab064e9f9c4f6",
+      "after": "771be0e111ee19a121607f8207cd1afc02f733a9ad832ba5763b0b450658251f",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/nosql-databases-polish/index.html": {
+      "before": "9ecb3704c804e18bef993e6607159e620873d32aca98afbdcb9ef1550bc472da",
+      "after": "333028086fa039e20a224db654de194a7c01c012dc096ea55f41168418b38d23",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/notebook-productionization-audit/index.html": {
+      "before": "ce15a9bd10fa0986d73a1e385aadb1aa672a5fcbb39dc873e09d6124cba39a31",
+      "after": "bee2ca54b8023f0107bf3611100ff260f9ac2358669a74e96e3351d448ee22c2",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/notebook-productionization-polish/index.html": {
+      "before": "157454c0413020c21b94362facc5533ae849354c652edafd0e975a61ca5de058",
+      "after": "b716769a45047e48b186cac87eb61bcefeed5e31c9c6aebb1eeba5d2ada58ba9",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/notification-content-audit/index.html": {
+      "before": "fc9120a903135ef9d5d813f6c4837ce32a222c5a06deb464ad409ca969e344fe",
+      "after": "50e2aeab4b71b3d41f4a084b70342529c1a93d8a5de34e90fa584fca9134784a",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/notification-content-polish/index.html": {
+      "before": "92d0a1889974274e2e139f897c61d12ddc7368f17a42c181de72cb1dec02ab34",
+      "after": "001b04fea1f6a02fb2b17a13f41f99e4bfd396c6d1c94c5c43c7b73f52d9809b",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/notification-delivery-audit/index.html": {
+      "before": "b8eb6126b6f69de999e5529f499a4212f2300219924b37517a2c942fad3c0a9d",
+      "after": "1dafc7a34aed6ed0a82cc9584c60a9d30327ede2b719ccf2a170f40b636362aa",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/notification-delivery-polish/index.html": {
+      "before": "3a3c54bf261501ec51f44338a2f4efc99c1afc3bcd6144870628b181dd6813f3",
+      "after": "ddc49d05ac5f55b585c3b871d6486ba3c4fc4f7b668fcd0fcfb4874b83f1901e",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/notification-failure-idempotency-check/index.html": {
+      "before": "db09ddd3684a94e377c9cf139c28d1fa4c45608044522537651c6b484c9891f4",
+      "after": "144b35563d4aae093984af0c123109c546e83c1432b82748221b392d48b948d9",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/oauth-oidc-session-check/index.html": {
+      "before": "0aa748258ed43556a69d9d2e191e204778a25c2e7ae5d75716d4216b7612ff96",
+      "after": "dd27caf39b722b31be007750ef2ec5ed30e89d79dab863b11a417eaf04fb11a6",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/object-storage-audit/index.html": {
+      "before": "4ec131ce98544811a0c3482898f146dcba683928bfffd102dd4f94858d379dc8",
+      "after": "e888eb06d977768d0ecebb224cd3c1449b733d08d260aeebd85692eab1b1320d",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/object-storage-integrity-recovery-check/index.html": {
+      "before": "4fb33ba0b5fb125a183343df85a2ca1814de8bb29aec7e9c995ace820f536b8a",
+      "after": "65a9087538c7322017f1da643aa6d36155c86907845f7f554ab7ea6eb2497e7f",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/object-storage-polish/index.html": {
+      "before": "896f5d7a7b7cd77d8e8a54f3884561571283d47bd68f875f434e7ed8812bd51e",
+      "after": "78fcc0783afa750c0becee38c483311b0a1a136e67cf4912677c69293d385221",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/observability-semantics-cost-check/index.html": {
+      "before": "6c5a1fd0b37781471e3209692739c8316d32e2a9e79e52ec9ca48e6a24a3b064",
+      "after": "8db5dd62646ce8721c8bed36862b3f371ec5a0d26158fffb565b7ce06f589a75",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/observability-stack-audit/index.html": {
+      "before": "b106c4cf4f739748f93dfa3618cc0912613c97f2662e1e1d44f72514cfd11010",
+      "after": "e970c3f27c00d3838214871cd5be80c59acbfc13e86d92701d385afe3c380d46",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/observability-stack-polish/index.html": {
+      "before": "6c30be71282a92fd9243934c5dec066059dced1066df14f3808541429c312360",
+      "after": "ac8b24141c952fcd08c958315650b414eef61415a91fe7284f770fa621084c9d",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/ocr-document-ai-audit/index.html": {
+      "before": "a7f99659d043b2056bc07104e3c7fe6290231802485b607c5819c4d82d0b7cf6",
+      "after": "872ea998c33d1c2a9da0ac5b1aec45f4a78c3a0b57c2160b22e033997dc63338",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/ocr-document-ai-polish/index.html": {
+      "before": "e4d53f8fa290f8102611271622c8983cb1360a1d86ac542f5fd842a4753c9b16",
+      "after": "3fd58e4dee8cd512bd92d2fb317bd1097e07e6b6ee8fdbc3d9df7672d438f374",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/onboarding-activation-audit/index.html": {
+      "before": "23f17f9b74a3960a68a38b8ca71809e8416d5b06938e91a0dc4e8604c260ca50",
+      "after": "2def214de3051ad004f2a6508a50835971077d67228193ab0f76e271f084a20b",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/onboarding-activation-polish/index.html": {
+      "before": "0fdf8f94f94300a91335fb86901cc1c237e54b983d24047b3f71aa94a498ebfd",
+      "after": "6d28e9804022e4e71b308a2153216e642f7118e253e78cb3467985125246cc14",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/ownership-invariant-map/index.html": {
+      "before": "98706ac01497ebb14091133d6952e6afdbe401e27d9ea5b774ca1b20a12e96ce",
+      "after": "c17e9db2fb841b4a89a1937429d0e9d7ee52b33efc7f7f04d37b8ec8dfd0239a",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/patch-checking/index.html": {
+      "before": "6d300402a51cdf85592de5d0b369a34de1bfa78e81516afb3bfb270325179aba",
+      "after": "951def56e94d989f4b60fbcdcfcb22127f1ccf43b1538339c5f74ab5faef07a0",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/payments-provider-audit/index.html": {
+      "before": "00e5863a38c0a4a7e6a35dccb92c57bb1286e1738e8bdf4a4e84a52fec519b22",
+      "after": "abfec5794c42fbf5d7103d2c55a2d9856264aa579df293f5dfe77c6aff9d5729",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/payments-provider-polish/index.html": {
+      "before": "299f874100b0245b1b847b8bc147f2e3b3311ded69073156370fd874b902e0cc",
+      "after": "beadfc59e46c151125f7a3f11057813c081d80de0c3ee4082d35abb0fc13ce9e",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/payments-webhook-reconciliation-check/index.html": {
+      "before": "d8124547f33c281a120884c6464f7cb6040a881e223a919640a603190bd2a396",
+      "after": "f6dec71d52b81248c8a95ab1dbb776c2441592269c325d3cb50f9c6e469a88ac",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/performance-audit/index.html": {
+      "before": "8752e7b5789be550fa3c783f312bda0e196fbbccd1619e4de44155912afc13de",
+      "after": "ce4a8a330792d921f650055ffd1992f9914b9766f3c08252dbc40c4e0206d006",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/performance-budget-audit/index.html": {
+      "before": "403a70798a42fdb0a668833b61a66951e8bfccafd55d955dff64e34f3a9d584a",
+      "after": "b42c48095a948b82c9e33f1a98bc7673c3662edf766e067fd5223006b2a5db06",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/performance-budget-polish/index.html": {
+      "before": "be2c74cdc362f467a284d01155e848f323ca9d271fff7e2a417caa2f90c20f8e",
+      "after": "1a3730485e51d9c011941d8992ec6704942df9fa15851dc19ddda62aef9eccac",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/performance-polish/index.html": {
+      "before": "bb359b8ba9ae150feb0d995dfa6538ec98bffee270aaacb1038697d24f0da2fb",
+      "after": "0772b643dff213abeace569e719e324ac107da94995f2ca6eb27c4c113f96447",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/privacy-data-rights-audit/index.html": {
+      "before": "fe01dee825d5bb689965551c9a51eaf89124e13ffccb2e8334ec916ef6737e13",
+      "after": "0a763a07fb2610cea7f79b64810e7f7353b25524fcb1e3e0c7ef1fe14a26b1cd",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/privacy-data-rights-check/index.html": {
+      "before": "9f63b34a5f15df473e8d1e4580fa5b070d45d3b582ab60c79f4cf548806b9329",
+      "after": "64aaf3fc6f26a59f96eb115db6071cd37edaf93892966635c96c53a049c97e6a",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/privacy-data-rights-polish/index.html": {
+      "before": "15b0dd4575006d9af9aa881c00033b3703ea32032484ad83886f73726aa8cb99",
+      "after": "ea9642c6c9afcec8e401135af04797e878a3e7043abf47006e48f4f43d73db93",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/product-acceptance-check/index.html": {
+      "before": "890049c30c417b8a3d8e9ac4e9de45a3b47b45bf8f6c7a5c4f3ad0cbd5386dd1",
+      "after": "ff4b39c743de3d8de095c0c28c7ff988ea108c7be39e09a90c4cf857affe416f",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/product-analytics-audit/index.html": {
+      "before": "ae41dd2468d65a8f396f4f8d4d2ad1864be500e634966786c4a27d3902c8a612",
+      "after": "2ee76f8049d5f7ead0ef6292681c9a88f611558be170a05f3001da7ccdf6613e",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/product-analytics-polish/index.html": {
+      "before": "5f01209090483ac2cb2416d035dc59dcf0d9768a2243a558c27340b72f131461",
+      "after": "0df906ac58035ab7a6e6900855d5e530b53c839c3cce4dbee4654fd109feef4c",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/product-capability-map/index.html": {
+      "before": "d5674ebc636245971d07571785feb51266a2314dffcb722cff0e92563d1287bb",
+      "after": "cc642e6f54df97d6ee42128b4e4a967219165f80aadfeeff02b85e826256408c",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/product-decision-metrics-check/index.html": {
+      "before": "a2d87410c21071385ff5ef694234d0c5c0140811ab93fa8b433397d3854b9994",
+      "after": "fd477d9ef9ab91a4f39f360c75c75241c0c056607f12722814976d78c01d22e9",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/product-journey-map/index.html": {
+      "before": "1c9d9e2bfb3b51ca22cac23e87b489f587f18036dd9fc88e17bbcc9821d577f2",
+      "after": "b3fee7c0eb169c18aa4949f9bb3a125661ea91071a32426c25cfd760dc5a0cf7",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/product-landing-copy-audit/index.html": {
+      "before": "40482726f50e2b738a27f9c56bb496b99effd2acada52039f0a6c859237ed148",
+      "after": "8645d25facda3f2c4c73628684c698e8e2ca2d495500e4e2319fde700c80ac48",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/product-landing-copy-polish/index.html": {
+      "before": "54e41a7d9c5d6c16fdfa9ad2e5e7f042df9d12dd2f4d7fd804d1148fbf132d91",
+      "after": "664b5aa6c6d79bf727818c29f56aab847d265d4f3cc4842d57dbde9474c70f9c",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/product-metrics-events-map/index.html": {
+      "before": "aaf625954a392eb30b81bc6a582f2f625e04a18917ddab962bfff5f7b27f9efa",
+      "after": "eb418308b2936818528535bd5ade436f33348e290abd297f87be48d019944fc2",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/product-requirements-audit/index.html": {
+      "before": "247dcabfca436dd08903d1efa3af673cc8109fea1caa8c135981b69ed8f27542",
+      "after": "e91d113201f8dd375f7f876bdce669b85800db3541e8bd5eba411bd2d96f3c8a",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/product-requirements-map/index.html": {
+      "before": "d5940808d0f49bbd2dcb78f4cc6449666136239dd9a7f6b61967436bf74571cf",
+      "after": "68b0dd2ebb224540dade7c1ac0a763c00f8956ff805db25d2011f01249e5da5a",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/product-requirements-polish/index.html": {
+      "before": "5c8e42966230c374646a7a357dcfc32b4f82caf42f01a501d9aab51460452467",
+      "after": "09f97e8638e2bcfd206eadb46897e6c9e426e286bdf24d1392f6a7643cf8fe42",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/product-ui-audit/index.html": {
+      "before": "dc75db09cff1e4621041d7d527e85cb7abf070559f2b75e7388082d638429ea7",
+      "after": "33cf310693bc60abff693c332609e20e2d4bc5daf1805d15faa0da5bfeeca5d0",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/product-ui-polish/index.html": {
+      "before": "7dd0d280528805de7d48eca2f5a8697e6c9e4f8df0732d364a4925287abfea82",
+      "after": "d0842c8280a262332cd04743621b0b16ec055239ab0ae6a40d3842b697f442a4",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/project-atlas-map/index.html": {
+      "before": "833d226a002c6810877664d389da64430d169ae9e4231d61715aad0aec979f6d",
+      "after": "c3f9a222c068619f80c8df1f752bfc742ddb371d5aefbb078267f25c1a2be2ec",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/prompt-skill-sync-audit/index.html": {
+      "before": "96f9dedefaa6df9c7ffacc416324611c7d9811788c37aa658840abb83d4b81cc",
+      "after": "8e74919cee8facf3351de0b4651eb74a3136d7c8590d14619ee25fed5ebb1e66",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/prompt-skill-sync-polish/index.html": {
+      "before": "7c235c62649c460bb883955bfb5ee0567b7f3e54af089fff8664537bb6b10fcc",
+      "after": "f3b47f2737771a877c43517db79c0ff95cefb819959b8a1ebd49833da9506e14",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/rabbitmq-audit/index.html": {
+      "before": "180b919a8e1a69d367ea7fe6fa917b482d8b5708fb65db73e01950c16a74def3",
+      "after": "4d0ea4296bfc8b5fbbb6522d0a017f54aa0e57a17503df9df828084de4ed36d9",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/rabbitmq-polish/index.html": {
+      "before": "cd1a63fc9c5d77ec3ead3a20858a53cef20aa9dd23f93f4fe631c46acdc1d45a",
+      "after": "40c6b4077667addba018174db4532a6f679bd1b3d8ca39973308296a16779b5c",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/rabbitmq-redelivery-recovery-check/index.html": {
+      "before": "448199a9663d738328bbfef914fd0236ccb51e296f23d0c76520d56154d87c86",
+      "after": "eb058d161993101afe3777df6b3467a4ae8eef755bf1a5688daaeda3184348e0",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/rag-audit/index.html": {
+      "before": "4df8c25f588186bdefdeeb9f540e7e1baa51fd4eb2fdec634e1e1c9a8741d5f7",
+      "after": "4ca4583e577de0d2eeffae41a8771d0430e07b3a297bcd1134bf9de978d1ef5a",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/rag-polish/index.html": {
+      "before": "295120419125278d66ef288f8dc7a959cf53719a283ea47395010bcfa440ec2e",
+      "after": "c26759d38c6cde6fc7234e3b1a33efd03c3cdd02edfb2c65847b5d3756ea1866",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/rbac-abac-matrix-check/index.html": {
+      "before": "c20a27efe957566b9200d8c6c15b5f729e86f73dba3c9cd41cd2ea6eec3aaa8e",
+      "after": "8389805a20f75656e02be87891c4dfaf183fb0e2a3c40847e747089fa04c0ce9",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/rbac-abac-policy-audit/index.html": {
+      "before": "c0966551a92bbf256e1f5215472ccdbbdbdde360ead399a05c09e7f843665975",
+      "after": "1828140c2764a6c16c6d6932983220d03ea1410459766866d4055ee74cda2cb7",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/rbac-abac-policy-map/index.html": {
+      "before": "2350b160e0f6e1b44397b9a2f98656460e564dad2adc02861e97eea39f7aa621",
+      "after": "e36c8fd721815a7c47e10a4400ee5f32b25c2fabc766698722203604054c287f",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/rbac-abac-policy-polish/index.html": {
+      "before": "7c645db312447d242593c8847b5379e717bd096305e61bb39ecf1bdd642c664d",
+      "after": "040062767c1baf4a589ea61989ab216346660ee7317f5b05e641832fa434b84e",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/readme-gen/index.html": {
+      "before": "e89e1ff5d6e24d73b5f21f609326a3c882573962a75287fdbdd60ae61f7aa025",
+      "after": "7e9aeb5522548384437d102db03bd0bd3b3bd892a8dbe5efba038b7bdf9cf55d",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/realtime-frontend-audit/index.html": {
+      "before": "f8784b001b56a8f530e73054efe422094dfacc38e8c743b0f0543aeb097d18b3",
+      "after": "8911b463697e60e8ad69926d4cf7ae007e925948da595d8d56ad9fcf69087c2e",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/realtime-frontend-polish/index.html": {
+      "before": "36f1db9330a854e46f5f08ff625c9f0a4c79cdd0de4d262de1361988202a7c1c",
+      "after": "6321a455bae3eed2e1c9d238a7813b321fc8da9167ead31738dfbfdf43190801",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/realtime-interface-profiling-recovery-check/index.html": {
+      "before": "623fed18edf578c0e49d75c4872167ff956f1e49b0cff89d56b0360cecbe00ea",
+      "after": "057dd4db96de44c7b35e82cc890874e02dfbbcd500cf6ab301e6f2b0571db11d",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/redis-job-queues-audit/index.html": {
+      "before": "065e8c65ff2775cf04aef8d8cdb7b4efef1335aefeccd27ef5748e686fbaa84d",
+      "after": "5f782c2b46df956a4ed8710defc2d6aaffe39a5fb119f51716aaa4ed8aa2accb",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/redis-job-queues-polish/index.html": {
+      "before": "bc9d69254fe83366950c722a1db7a5203f0411aa4cd01249ecb6117da42f3b11",
+      "after": "f56d28c6f97833c02e1ecb49987d75dcaf8b2b29d2f1f5cc99f3c05dc27609e4",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/redis-queue-load-recovery-check/index.html": {
+      "before": "8359f25f3e3d6a107789ac547ed43536ec5c9d6e452b6895277af96211ed4834",
+      "after": "6611d6cd2c164e24bbe6e962604d836ad9f8aa4a44142d4e1902c1531712ef86",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/refactor-boundary-audit/index.html": {
+      "before": "34312ee1b554ef0928d7e1a17fe6604cff313542c7bfae957535a8aa56d80ba9",
+      "after": "9204db34d35e93fafd9999337cca0df48716ef1db0520ee7cb601714d60e6c20",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/refactor-boundary-polish/index.html": {
+      "before": "611861e1344dbc78cad314aed65145b51fa0ea2e0cc81b7a29e31ad43d04be7b",
+      "after": "5f84d47170da11bc0ba50921312a0e709352a5e634077def70943a20cadea26b",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/release-artifact-trust-check/index.html": {
+      "before": "58528c0c7045b9f6717327473897a9e38bf12f9ee7f153010cdbc741866a0cf5",
+      "after": "43533283d94101fa1cda3c51c06c3f9c1927fe0ed03584a17195a1bfb2fc0c33",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/release-readiness-audit/index.html": {
+      "before": "974b277b904efab7cbeaa4d32737a1c033ecc977ca84f19fb319a1f1af8a0f36",
+      "after": "67b79160299e4fe7b1f32c38d59ba1a3a4e217df1a457503f003c0e84a0a06ef",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/reliability-audit/index.html": {
+      "before": "e2f93affd90c2119636458b82ec071d7eee4fe7304e282eced00b873bc9c5771",
+      "after": "a815ddff9aedb5289699169360635e49dc5c302621ca824098207dbe1bb88146",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/reliability-polish/index.html": {
+      "before": "59e6c356692d00ffb82830adbb78ad3545a61784e0db4ad4d9103c992b669561",
+      "after": "fbf6b84b8c7292cae3d9dcdced986d084a4771aa1289ab7ac7b07bea71aeddac",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/reverse-engineering-audit/index.html": {
+      "before": "5a5d38101cf36e2072d28c469d46847bcfc0e5b2632deab52ba26245e92ec97d",
+      "after": "f7c86422e35a0d4feaf9b44ac4b061ee7b71e839be878ec3c68822df275d83f5",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/reverse-engineering-polish/index.html": {
+      "before": "04ba01e0621a989f8f61d55aae3fca4cba38bbf12b666c50dea69166d39bdea7",
+      "after": "71ac8dc74f769db22118b528d8e9e9571eb83718ecf9729ffd2a32169151e7f2",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/risk-release-map/index.html": {
+      "before": "8f2b977a1cbb06a31422d184aa3af265ae9ad8406cd529ad0465131d0930cc62",
+      "after": "0d85ab8255634e1981275ba055c8a84f5362f1ded6fcd6265e83d954058bb9be",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/runtime-flow-map/index.html": {
+      "before": "d0976ff38a1888ad1fc11c3ac2a7daea1d60b3cf73298416bd0cd5efd8076cae",
+      "after": "349f69568499a3ba4df3bcfb5a72464293dda3a0e5f88bcbac1077d46c41807f",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/saas-navigation-map/index.html": {
+      "before": "bdfa31eb7372a4c1fb583a908ef6f32358b20335a293f81c037f25b25cc0041f",
+      "after": "f5bc11ecace56a92264b2ae91f88f73a33c6dc0b027d3867bfa541d9f2a51b02",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/scoped-audit/index.html": {
+      "before": "7f370d8aa51ab2c8434dfb6c17ceaaaf55c0675ef4aea088fc6f0f31e6ead8f2",
+      "after": "5eade858cd99d89c8ec0f50271742ee9ffb9b365f7c047a507a59648468e90e8",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/scoped-polish/index.html": {
+      "before": "21cfbff1dd7310348330d135eacdd71d5ed3f15335a1eadaca32b404417f6bc8",
+      "after": "37fa24773b79762f4e0a8559955f0ac7e839e5c0361688cb931f0bcb2eb254b6",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/search-index-audit/index.html": {
+      "before": "e900b592b92473ef204d84f25d68dfcd479804526a99accb4a65e8d0bdae75a8",
+      "after": "3044145a03fc9be3b63d8eada96e1a458f5528048e417d5acce4b54185aa7b56",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/search-index-polish/index.html": {
+      "before": "51fcccc4ed514011e9c7ed07d4387be19208412ea53adc61823a958360da3e39",
+      "after": "9facb6cfb529d064e7c01cc218e6942d63c2a77169289e2aad8cce8d31b2018b",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/search-recall-freshness-check/index.html": {
+      "before": "6de7952bd3ea1642fc6f9ed84a6036e22f816be790ceb3d15e114c3049bd03ae",
+      "after": "6ec469be283bfd0f9218d10820ea82aaabfd3c7d058147d93a78e4627480af3c",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/security-abuse-defense-check/index.html": {
+      "before": "f9fabb71a2ed15ba0f2368315e5d3582325058a3d74a76936c2305949a7e5371",
+      "after": "14c8d3f56dfa7906541b0314616990a02a8452eeeffa0e9110f33d70dd2feca6",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/security-audit/index.html": {
+      "before": "888d124abbebbcd5d3bd334f24f1294fb3fc546f183e13ffca675f521f957f71",
+      "after": "f1c3e385fa461a8d7a2800345c90f3dbe25f541a42dc3e7db31cb8b0089f7ac8",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/security-polish/index.html": {
+      "before": "e164c08024d3098eece4271e24cd9643355997e0bdc2b4ab96deae436dafd5a6",
+      "after": "179d68445ff61c4eaa893ae5893eb08f16b4fafe5a74ef0a63cdff6f2ce7aca7",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/seo-geo-audit/index.html": {
+      "before": "aeaa74f154fb9920d615825b75b21f8b326dfe26b39c42f84970861b62369e98",
+      "after": "65a35deb043631806dcb71449c130ec096bd64fa16af08c87559f890e7f72a0d",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/seo-geo-polish/index.html": {
+      "before": "517e737efc4999cb09a4876769688074e82964a23e85f7b44517a270f85f87c6",
+      "after": "5bbfce3dd5907b15b6c8da308d799424453a809ebf82c99a29b6fd2a58405439",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/serverless-invocation-check/index.html": {
+      "before": "0a8cd418a6c0fa4993a022a518a5c89ba0375acb80d82fc69df9b401c0222960",
+      "after": "f96b211c52ff68a214853da6564797351fba4134f202102430e5548c4780e3b7",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/serverless-runtime-audit/index.html": {
+      "before": "43e42cdcbabc5491900e2419530a214ce65e37fb7bbd8ee8312979321cde51f7",
+      "after": "39cd9583f66f69aefb075303de00ae9218ee9624063dfed6f5ef92cbe986deb3",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/serverless-runtime-polish/index.html": {
+      "before": "e6e923557dece32079d368a0f291863b97c651e9f92af6e20714c760af423417",
+      "after": "8b7dbaa0387fc664523edfccbe15a8af2a60d8303055d51de10ec12b72ecacd9",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/sql-databases-audit/index.html": {
+      "before": "0512878009d039cae31f0bb5c442389dbc7ce47b00e6ebff11206d5201584f00",
+      "after": "622bb7d2249e93c393ac24d30543983875952ed4f752adcc60cc9190e44c7de1",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/sql-databases-polish/index.html": {
+      "before": "20ffd48b26229bc9f3159263fdfb6a629a42a2748410219083e3d89054ea9a00",
+      "after": "6edc2cd89654c69172a9b18266b676136876563c5017ee7a7aedef975871f32f",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/sql-load-lock-failover-check/index.html": {
+      "before": "055bb8fb884bb46f51dc2baeb53220c75a87a5825143b21c2d5e351614621a1b",
+      "after": "0ba8d050b81d08c72a2cc6b32b03c5208c581dfe99ee4031b152c28a960e92b9",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/synthesis/index.html": {
+      "before": "a5643a58607986f8c87ee165d3404b908e7bfbb8bdb607d99cd229220f254d71",
+      "after": "186559365c85100411aa51db87f372af674617b1352fee9a0e29cfbcc40b83bc",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/system-security-hardening-audit/index.html": {
+      "before": "7bf79fb0927f07d39925371ab1a880ea507b14b337a6b1c335d14954709af332",
+      "after": "107578593e4117aeeb6fe6d9ece471c27f6d906eb141c6cebef46c74c997f05f",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/system-security-hardening-polish/index.html": {
+      "before": "63e99626e4a38d33f7048131821e09974981437e42080c95766ecd55f4de1db5",
+      "after": "4dba14c3153b12afc7785f11ca2975781090f08736f35542ffa2e54af47a6e49",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/task-shaping/index.html": {
+      "before": "404e6fe174291dc2e41138aacbe2da1402790490d157d737d91850487ae020c5",
+      "after": "ed77fe2239b746f127b7fc2c8f4adfda75c5047e655c39d1d9a01853e02665b8",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/temporal-replay-versioning-check/index.html": {
+      "before": "e3bc8d81f2ed3e0613ebd2a4835ad36aeead6075157149dc81752319d7235579",
+      "after": "99370f98d9e8ebd639832af122b82453e077f0aa13cbad815b35f9eaaac6df0c",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/temporal-workflows-audit/index.html": {
+      "before": "2c0533e0ac1a156842f285c6f6821afd5cdaacaeebae6c74483968874c5bb90d",
+      "after": "fcb6a8533a9f8e7bddcc57213dc604d0e2ea5b64b2a7e0da882d4edb47a6fed0",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/temporal-workflows-polish/index.html": {
+      "before": "b5fda768f9e187f762c9406c8c2f672df13daf02d9d7fe1213a5ae43e8e30f99",
+      "after": "e7e58826bb26d9eb5cef7eb4f70238697cae83d267b9df97720c1f341b3ae614",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/tenant-isolation-check/index.html": {
+      "before": "211814ea6d0ed759f3c356650f6dbf6aa65f83df981cb032826d2827f6840a30",
+      "after": "7f7a4261892c65cd2e9c1a2e2b3516bd4083eda5aef00ccd73c9bf34ac444293",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/terraform-delivery-audit/index.html": {
+      "before": "4d75fa2f9adc420086bb4ac75ca87fcf04ecf9bd03f64846ad43e302c1cadc13",
+      "after": "298d1ebf3d45484dfffe1d9e597a5075ce12c5ee10e71c53e489670c8bb4c33f",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/terraform-delivery-polish/index.html": {
+      "before": "65fa8a1db3998780cff80bc6538ea4a7a8a5c92841a91d086532d2bb9b4749a2",
+      "after": "f3d31792da4f18a18c6b7911fab8cfa59075f735cf302a0adcc31b2c28fdfafb",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/terraform-plan-state-check/index.html": {
+      "before": "514aa0c2c178b902d1bbfecb960c35e4e0f9cc9740af0f1d57b00619e8b5ed3d",
+      "after": "6f750ef91128c7781f12368eccccaa62dc5a06de636f0bf32f084e40e8edc72f",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/test-coverage-audit/index.html": {
+      "before": "ab914bfff6484bd4916cc5a9176c2092bf7aca6d0883dac0bc7a52b794fd3496",
+      "after": "3bef13ed75c71462d2758b493bcd9ee59a7f916c18facd03f85dda96b668133d",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/test-coverage-map/index.html": {
+      "before": "fa9da4944cd000c9f63004f4adba48bb644fa617d7c712183d091544d3c5d398",
+      "after": "86421032273336848eab8d5a9630c7eaa6052b54c4f896754687269e22dc5de7",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/test-harness-polish/index.html": {
+      "before": "1d562bc07b5cf98bd20d269548656927665daa113d0eea21f9e8ca56355504e0",
+      "after": "dd6f50d0371ffe0740811edc0bdf411b2acf1bbe157ee884373f02148332514f",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/traceability-map/index.html": {
+      "before": "5e1bc24586bc40f358d6b72aa290dc0b965f4a4b0c7afe38804e68acf9a55309",
+      "after": "7afd43ab467ee7a135ae136e8eeee1d3059bd2a7e659efb9b05c2a54fe40c8a3",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/transactional-delivery-check/index.html": {
+      "before": "e7c7b9ec34329cd823fc148a6090a13d4306befd94c95d682f7ee0295e51b3d9",
+      "after": "785d9be30ba1979e1f936ac4be11b34543ac75b800788d87d59fb53825dfe9dc",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/ux-flow-audit/index.html": {
+      "before": "f46aad1335eb3f0dbd7a536c079ab9fe02dfdfaee2bae9a9830163e9d917c54f",
+      "after": "e71cf8db7ef40f8b469293230065ab23e20156bbbad51e63b123ea7c08c8fd62",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/ux-flow-polish/index.html": {
+      "before": "6934414097e0a59b9d58a97f5531e3ea1c9be6a6dd49b0c5ca8abebcef9d2915",
+      "after": "99d1bc353a79703a2275ef3a73a76b6121a8676a3d1c52d2b2bea8be3554cc8e",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/validation-clarification/index.html": {
+      "before": "280613f963cced55f1cfbdbcd8342f77594185771f2460aeef0070c0b9de7741",
+      "after": "3a68450fd80b48e07bdb1950ed2e9634805cb21f7de62a9e8cb791ead38c314a",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/vector-databases-audit/index.html": {
+      "before": "0109807468a284e2d67591f4b91c89e0c618d9b8713e0c4ce961c8fbe85e2a85",
+      "after": "f3e709f7141334d2ca3e398534f46d5e5c60c18e1e76b78e6cc177731da1f295",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/vector-databases-polish/index.html": {
+      "before": "4698fdbe6f48993c11429176f35cddb1f863f466dc49773177bfeea946dcf8f5",
+      "after": "4909e65ccfbc4b671ddbc6c837ca385179e3a9d3bed555e5427f81a64d2343ac",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/vector-recall-degradation-check/index.html": {
+      "before": "3948e347df410e4fdddffa70417d48680a094380fee1e31466931480e4bbba54",
+      "after": "6fb87da6bd4037c32eef1721b228f20f0311c6cd44bf40c687de318f89dd95e4",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/visual-regression-check/index.html": {
+      "before": "9be9609253f44cce999a956e09387cb0a5d1ff83742f1c7e8785518ec3b84654",
+      "after": "df4f3fcfe77d6150cad0659257515366d5e1e70eb6246d80eec63648ae5d07f4",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/web-boundary-check/index.html": {
+      "before": "4cfa5d7d8e724cbf179611ef05bccc2a0eed08c2e75a9ba8731fd32aca33c96b",
+      "after": "415d128c028e0ee3840ce4557125b8f37369fd8f61a2cf2eeb45485dfa857eaf",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/web-rendering-audit/index.html": {
+      "before": "dc9a52ccd580a4d2c9724aa758185d84122a4c68873e9715d348936dc62d418e",
+      "after": "76ad07ef74ef701b2194ea56dda01f06b34fb46813eb63bf0f52fb73a585463a",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/web-rendering-polish/index.html": {
+      "before": "305e678f230473cb584004e8876af62ed9b7836bd8760b003a62a9c0c304c554",
+      "after": "361c35885c5679f8b42884591b92ff9ced962cd4bf7541ad34d51dfe975a7762",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/workflows/workstream-decomposition/index.html": {
+      "before": "4230c43ca0a30fa195bbd1c21d8817efcbf2728805e2198a7026f5255fed2853",
+      "after": "d487591168456ddc35a4a58b1d67c6fcfcb40a806df11e1411c2c2bedbf19b50",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/zh-CN/index.html": {
+      "before": "b8e3ef683f073afff3b7a7248512cdf24b4b9e2c89ab7fd866885ac6e4a908bf",
+      "after": "798b3b7a5c667a4d61f71e38e42d7121ba6336c9e3cc213b913abfdf806e2e22",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/zh-CN/privacy.html": {
+      "before": "bed0c04c4165b0cf30dddf0b15e6c20bc604b13751b60852bc4db1103462373a",
+      "after": "9ad10cbe1c1772d8d7b070b4bd5a93ded7465c4c0e2eb6a21858030eb6e49fbb",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/zh-CN/terms.html": {
+      "before": "e4748ce1424c231f838c7fe62eb570ca3815583c943f218f28e3c72d80a265ba",
+      "after": "65ff9fbd5586fc6161277d3f213897063627f8316fe2441c79dd5c0387a65560",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "docs/zh-CN/workflows/index.html": {
+      "before": "e37c7d33c00fca7413aae6842b1b393cd8b9895b5c9185379cd0ace762c5bd61",
+      "after": "f8469a0fad7d955af3a4590e2cdc2488a64b8aed6dafd50cb792b0487b71e429",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "mcp/README.md": {
+      "before": "1b98e3d3a79484050a58bb9f8effc2c168c2b37b672a9cc96540a1e71cf4f4f6",
+      "after": "08c685700fb9f2ed46ebd0f2f01ad25b1addc606d04dcdec2b9f728434ca83ea",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "mcp/generate.py": {
+      "before": "a5cd8fe8ba23ee3476f58a3a057b4f96e5f28be51c74863f1ac4bbb69473def0",
+      "after": "acfa3c833b4e8a8b5b761be0a6fcd137371ceb191567235ec3bf480fe8a3803a",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "mcp/library.js": {
+      "before": "bc7c933c9eb206369ba4434615b174f20fa5cd7c4dbd0421ad446ec3b4f42f64",
+      "after": "9b7845a1b51608cd840ac26663a451a525914a93fb1528e96a74a6fbc153e058",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "mcp/package-lock.json": {
+      "before": "07df4be76767a53066aa8f2b9a73cc8561b4a64079fd76967178caf91930a02d",
+      "after": "daa165213912ecf413905d7604f360cb88b52078935c26e04508a57cdda34188",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "mcp/package.json": {
+      "before": "570b0a4ff0774b7371e5d036a77f71b6ba5285b2b1ab659abd23963ceb9208dd",
+      "after": "e6bdd68c8bf7a4e347aeb866c42c6740403277a583e17f80ba7afdcc2b282259",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "mcp/review-cases.json": {
+      "before": "48471e77b6eaa4f290a2de13093787fd17dfd166c709c5f06af3096742c8fbdc",
+      "after": "31c6a7510173e5057c6d2f777cdbf7957a343ac5fdec9845f838545446c4c107",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "mcp/run-review.js": {
+      "before": "9a9160cf94611bf5c9770a045cfe67e8f03873f7261026d70a37bceaba1d2f31",
+      "after": "b6959a9663c72b4782135b759698a038e83ba3252bd936832caefb12a2d97233",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "mcp/server.js": {
+      "before": "d610574649c6ceeace5d041b84896bcb8867e1d58323663bdb622c1ebf10d455",
+      "after": "71ab0639ad2f036e7d8899ee335fec03ad4ef6c31faf7ef076e4521c5029a14a",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "mcp/site/app/copy.ts": {
+      "before": "0c4821bc9ced35292086db0fa2daf7c2ed65cc8311600a4081fecbe2e04b8f3b",
+      "after": "a341e9ecc5008115ff14be66d9a8ded58543c36b6c462334236da8766d512bb7",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "mcp/site/app/demo.tsx": {
+      "before": "7f737659573d6901e1bbcfefa4c620eace19092f5ebc96f07aa9e4ad4fcf810b",
+      "after": "8649d28707f8bfae5d2ebab9cdab8c62a98b4da714eec121d7e09e69f771745a",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "mcp/site/app/globals.css": {
+      "before": "e58c07b432e3c80e29f29a193f074d01a6f0a7a542c50698f09537a02a8a9804",
+      "after": "8cdbaa51475b07944b23597340e70752f3b1961a9d3b490671fc5701810a26ce",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "mcp/stage-site.py": {
+      "before": "4f955dc51212f17cbe0867050f4adb7f55804cc858eeedb87779e22720f42e35",
+      "after": "f341518274b01017cf25dac05016270fa116f3573485b5997bc9a1b995250f90",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "mcp/tests/http.test.js": {
+      "before": "3ee5cd110a3088e326f843c88c3952001df98dba94daedb5c01bbca19f2d0d6e",
+      "after": "7479b64bf9ba1d6a05cc6a8cceca6520ec63cae9a2d91708b67cd8d976dc2c42",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "plugins/vibe-coding-library/.claude-plugin/plugin.json": {
+      "before": "acc3a8286144a29bff17d66082eab56ac5220d6a024f96c7d5316f03e9c90ed4",
+      "after": "a710bf421384cb2dd2343a071045c577a998cda3109a7226ee7d472d6adf382d",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "plugins/vibe-coding-library/.codex-plugin/plugin.json": {
+      "before": "5aa894232106471401f703b98ff066a67e6ba98c92d0a3afd5b260486dc134ed",
+      "after": "c109806d108cb8a6ac8c603f686c5178da5e7c4b0efa354248a088dda93c71de",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "plugins/vibe-coding-library/README.md": {
+      "before": "8d724d0a878e6d77b812bb111055505c22f21beeeba2866804560ba55d1c2e4a",
+      "after": "481cdbca28a01a3094b31a6f9af5096b678429c5021edc1d0962d56312e3db5f",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "plugins/vibe-coding-library/plugin.json": {
+      "before": "94e893e5b58287959bf3486876ac6d26765f93327f325c316814c4346acc6666",
+      "after": "37f9dd7086d0bfb48619a7e319a376b1b162a1cee6dfc40639a1ea0393118914",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "plugins/vibe-coding-library/skills/vibe-library/SKILL.md": {
+      "before": "31d6e45dfde01e61e5323df69c9ff7f6a840bfaf36f72f910fb925ec7f88d729",
+      "after": "8846305b55d0b944a5b47b7da0fc6f1cc63704e50af65b284c44bdc137beaffd",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "plugins/vibe-coding/.claude-plugin/plugin.json": {
+      "before": "9c2caa6361ce7f27b5a3cc576b0a4a784071c43e0879248388c71ff422df5d8f",
+      "after": "95cbd0807af16c5dc0c8129bd37e169bdd0e78f28aeb04fab734ea33aaeb8dce",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "plugins/vibe-coding/.codex-plugin/plugin.json": {
+      "before": "2475ca8f86e5c867acd5e2a3b79de869d6283cc6af1b507c583ed9908181e80b",
+      "after": "01fa53c16d716dd9677db960ed079e07e6f458b33bb2a03b694429662b9c7686",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "plugins/vibe-coding/CATALOG.html": {
+      "before": "dab94d66ffdba548fd0576ccd816d00e9eac0314868809757121e8e1ef3b0690",
+      "after": "a2dc0a17232115e2e829561ed245231ea6be2e00761c412babce582667955299",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "plugins/vibe-coding/assets/catalog/engine.js": {
+      "before": "6df3a5d3d41b77fe2f7cf86d6cd26ee1371379a16c41f936abff8efba1112f8d",
+      "after": "4992cfd6e830be0e994591a406e375e390c4accf9f3d179662608fde7cfac190",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "plugins/vibe-coding/assets/catalog/search-lexicon.json": {
+      "before": "bf6526392540918f03025560c16428ceb45f2df589f45dbc695e0b9382ea721b",
+      "after": "469f7e78f251b15a9b3296eb72618129a0d3e9123c6db748aeeb2662a5ece691",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "plugins/vibe-coding/catalog.json": {
+      "before": "4da979be80581025b1035d93915fab46f36dbf9a867defc8816eefc2cdd8eef3",
+      "after": "583a762b3b511ad171fdaa4daa3e3a17ea5b6822304c28b91a678a87e96cacfd",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "plugins/vibe-coding/package-files.json": {
+      "before": "b99efbeedbb2dee58fd6086dd042b0dcdbcb9c53711d2bfd759b4d61d0f07113",
+      "after": "2a84b14c168cc26ba81578ae976e5a7209d6e47402e3df238ce08fa8c61b882b",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "plugins/vibe-coding/plugin.json": {
+      "before": "3c2d2d2fadb665c24666f746d43b46769e16f60a706923d0778cfc7cd6d5146c",
+      "after": "e8b1b5367f6019d902f11fcd1dbf120f660b43ae181ac26397d914db075dde00",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "plugins/vibe-coding/scripts/catalog.py": {
+      "before": "6cf2754d679a2d1460e398ffb815dc5e44b21626860a6322050852f8f3226742",
+      "after": "b11707ab6aa7675aa9babb5f67b0974598c9aefc9fbe3a42137c30821365023c",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "plugins/vibe-coding/scripts/metadata.py": {
+      "before": "dde13fb9e2bf7c45a845b51af293e96bf6272031262b172c67f1539cb8dd3f9e",
+      "after": "25df5e11c33c7db84e760d9a83a9931639d88b03c29a23a21df453294537d5dd",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "plugins/vibe-coding/scripts/search_index.py": {
+      "before": "61589013ceeb1b801db68f6d4f465a312c3bfa5e57f6331674147ab10cc225ad",
+      "after": "6fe1f3ef240715ac3017984b46f7781b490208df841120f3d1e6c527bd751c9e",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "plugins/vibe-coding/scripts/validate.py": {
+      "before": "6c9457a625fa83212efffe2d91a7c2b1fc2109113428f4310dd8286d58ad33ad",
+      "after": "9459af9c4399678eba40d27bc80b006adafdb3712b6c813077b9d50b29fcfc7b",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "scripts/build_site.py": {
+      "before": "8316b1874059dec22cdd4a12670b88bfe9d3a8d985753234cd33ab7724f4bbbb",
+      "after": "72fe6e5981f05c07fabaff61528026668b21bbbf0d1c03511297617d8463db2b",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "site/catalog-engine.js": {
+      "before": "6df3a5d3d41b77fe2f7cf86d6cd26ee1371379a16c41f936abff8efba1112f8d",
+      "after": "4992cfd6e830be0e994591a406e375e390c4accf9f3d179662608fde7cfac190",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "site/content.json": {
+      "before": "b133955655128681dc326f0106a07d416864380ae5be6bc1f9f2770784f75ffc",
+      "after": "ab8e5ddbf157160e59cb682c9ace940f705d5886e74ccef6686e71a2181df262",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "tests/test_evaluations.py": {
+      "before": "09c74975ed2c163396e1c53c002a43c2a813a6d5724b9739b4adff7d30f60861",
+      "after": "e85e3228c681229740f37732daeb8a08ba2db6b4d952f7596fa80dc74abfd93e",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "tests/test_mcp_distribution.py": {
+      "before": "b2a07ca818e5039b127af22ea32ccc6d3e9b414d629ba2567bb15da2e384eb6d",
+      "after": "3ceb7c90a8b5e7b0f280d2ad153dbc5cc57a18260303653818342ada517010bd",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    },
+    "tests/test_site_search.cjs": {
+      "before": "d616c45dfe924022deedebc202544dab4c929c69a41664bbe83756da078bc2b6",
+      "after": "c5c3cc0bf77009b6b2e1f915fd53d87e9e8d3ce2f591640e832ad235d453377e",
+      "review": "Catalog-first discovery, closed topic membership, safe one-edit query repair, compatible contracts or synchronized release/site validation."
+    }
+  },
+  "new_files": {
+    "docs/assets/catalog-engine.4992cfd6e830.js": "4992cfd6e830be0e994591a406e375e390c4accf9f3d179662608fde7cfac190",
+    "docs/assets/search.f31676308cfd.json": "f31676308cfdc3cb4b3500b7c2c26134ec5fb202094ed84eea745ab26cf2cff9",
+    "mcp/discovery.js": "17374676a312db37d11993cdc9ea3c4d496343c208cdd2c4d251cbe1d2ef7c75",
+    "mcp/site/app/catalog.tsx": "50ab34bd09fe9188d6b5f42ba2ccc6a31c720b25e43e8fc64413276313552745",
+    "mcp/tests/discovery.test.js": "d1b0b87943db8747b959c6d7026a89b9cddd0fb3b51d94d6113827772e9252fe",
+    "plugins/vibe-coding/assets/catalog/search-topics.json": "759ebca3bc9d8ecd6680e329531d65efc35fc14d2af9b8c09c138331f50ad1a9",
+    "plugins/vibe-coding/scripts/topic_index.py": "8d9b3cc4e9e9a19cfc7901216b5fc35a1dffeccfcc810f3a6b30b8c4ebff40ed",
+    "review/search-report-1.6.1.json": "928201921740e792759e5e1aa2b7a12289c226db9e535f104bf1d7e08af0c353",
+    "tests/test_topics.py": "b08979d97f41311c81507c6daca3fa507b88870081fbc7d3b9f513826b968daf"
+  },
+  "checks": [
+    {
+      "id": "reported-regression",
+      "observed": "The public 1.6.0 endpoint returned zero workflows for авторизация. Local 1.6.1 returns the owning authentication/authorization and RBAC workflows, with subject tags ranked ahead of incidental mentions.",
+      "limits": "Free-text search is curated lexical/concept matching, not a general-purpose multilingual embedding model."
+    },
+    {
+      "id": "closed-catalog-lookup",
+      "observed": "All 45 domain keys and 162 topic keys round-trip to the actual 241 workflow IDs and their supported modes in all four catalog languages. Unknown topic keys return a recoverable catalog; explicit filters are preserved.",
+      "limits": "The caller interprets user intent and chooses a supplied key. Tests validate deterministic lookup, not an independent LLM routing score."
+    },
+    {
+      "id": "protocol-compatibility",
+      "observed": "Both official SDK protocol modes exercise catalog discovery, exact topic retrieval, legacy result keys and normal workflow loading over real HTTP.",
+      "limits": "New optional catalog/topic inputs are only used when advertised; previous request shapes remain supported."
+    },
+    {
+      "id": "vague-and-misspelled-input",
+      "observed": "Registered-vocabulary one-edit repair and diagnostic intent route бекенд глючит and бэкэнд глюичт to instant-backend-probe; authorization misspellings reach the permission workflows. Ambiguous corrections, short acronyms and exact topic/ID arguments are protected.",
+      "limits": "This is bounded lexical repair plus catalog-first guidance, not a universal language-understanding guarantee."
+    },
+    {
+      "id": "guided-browser-and-packaging",
+      "observed": "All eight language/viewport guided flows passed without horizontal overflow. Empty-search recovery, exact topic lookup, current-step loading, five positive and three negative console cases passed against the compiled Worker. Both native Claude manifests validated.",
+      "limits": "The new 84-second video is an edited walkthrough of actual Worker preview screenshots, not autonomous model task execution."
+    }
+  ],
+  "limits": [
+    "No embedding model, third-party inference API, new credential, or external query transfer is introduced.",
+    "All 297 core instruction Markdown files retain their reviewed content; the MCP entry skill is revised for catalog-first discovery.",
+    "Production deployment and marketplace state are recorded separately after validation."
+  ],
+  "artifacts": {
+    "vibe-coding-1.6.1.zip": {
+      "sha256": "0fbc9e7a5e93cf9bb692dab7ae1a59d388fd161341c80fb4ca1655428e85003b",
+      "bytes": 981678
+    },
+    "vibe-coding-library-1.6.1.zip": {
+      "sha256": "8a167a6f015a5d93d8b6c85a7a7f6297f2c8fdbc5d45b1f23165fafbcf60a036",
+      "bytes": 37121
+    },
+    "vibe-coding-library-demo-1.6.1.mp4": {
+      "sha256": "070285453fc5256a69b7023d5c8dc62e05312bcb6f1b0e362b859c6bc7720206",
+      "bytes": 893940
+    }
+  }
+}

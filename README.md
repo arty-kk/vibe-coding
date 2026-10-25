@@ -79,6 +79,8 @@ Use the plugin picker if your host displays names as `vibe-coding:<skill>`. Requ
 
 ## How it works
 
+Agents can discover actual keys before searching: call `search_workflows` with `view:catalog`, choose a domain, then list its topics with `view:catalog, skill:<key>`. Select a returned `topic` and the requested `mode` to retrieve exact workflow members. English keys are stable; labels support all four catalog languages. A free-text miss leads back to this catalog rather than an invented keyword or a missing-capability claim.
+
 Search from a technical goal or symptom, then load the selected ID. An authorized correction carries evidence from audit to repair, relevant verification and repeated Patch Checking. A known fix starts at repair. Only the reached prompt body is loaded; its result becomes the input to the next step.
 
 Patch Checking retains the original review base across corrections. A correction requires validation and another review of the complete resulting patch. Only an unchanged final pass with no qualifying findings and all required evidence may produce the clean marker. Missing evidence or repeated failure without progress stays blocked. Retrieving instructions never counts as executing a check.
@@ -99,7 +101,7 @@ python3 plugins/vibe-coding/scripts/validate.py
 python3 -m unittest discover -s tests -v
 python3 plugins/vibe-coding/scripts/catalog.py search webhook --mode check
 python3 plugins/vibe-coding/scripts/catalog.py search MCP --lang es
-python3 plugins/vibe-coding/scripts/package.py --output dist/vibe-coding-1.6.0.zip
+python3 plugins/vibe-coding/scripts/package.py --output dist/vibe-coding-1.6.1.zip
 ```
 
 See [Contributing](CONTRIBUTING.md), [installation](plugins/vibe-coding/docs/INSTALL.md), [privacy](PRIVACY.md) and [license](LICENSE).

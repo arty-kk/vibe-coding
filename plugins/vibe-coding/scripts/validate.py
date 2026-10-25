@@ -11,6 +11,7 @@ from catalog_site import render_catalog
 from metadata import skill_metadata, ui_metadata, catalog_errors
 from release_files import release_files
 from workflow_graph import load_workflows
+from topic_index import build_topics
 
 ROOT=Path(__file__).resolve().parents[1]
 
@@ -51,7 +52,15 @@ def validate(root=ROOT):
             check('$'+name in values.get('default_prompt',''),f'Default prompt does not invoke skill: {name}')
     rows=catalog.get('recipes',[]);ids=[r['id'] for r in rows];paths=[r['path'] for r in rows]
     try:
-        load_workflows(root, rows)
+        graph = load_workflows(root, rows)
+        discovery = build_topics(root, rows, graph)
+        expected_topics = {identity: topic for topic in discovery['topics'] for identity in topic['recipe_ids']}
+        for row in rows:
+            topic = expected_topics[row['id']]
+            check(row.get('topic_key') == topic['key'], 'Stale workflow topic key: '+row['id'])
+            check(row.get('primary_keywords') == topic['primary'], 'Stale primary search tags: '+row['id'])
+            tags = set(topic['keywords']) | set(discovery['recipe_keywords'].get(row['id'], []))
+            check(set(row.get('keywords', [])) == tags, 'Stale topic search tags: '+row['id'])
     except (OSError, ValueError, KeyError, TypeError) as exc:
         errors.append('Invalid workflow composition: '+str(exc))
     check(len(ids)==len(set(ids)),'Duplicate recipe IDs');check(len(paths)==len(set(paths)),'Duplicate recipe paths')

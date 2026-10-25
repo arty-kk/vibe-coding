@@ -1,15 +1,32 @@
 {
   "positive": [
     {
-      "description": "Discover a verification method from an engineering task without requiring the library name.",
+      "description": "Discover actual library keys before selecting and loading an MCP verification workflow.",
       "prompt": "I need to verify MCP tool discovery, protocol errors and authorization for my coding project. Find the appropriate method and load its instructions before I run it.",
       "tools_triggered": "search_workflows, get_workflow",
-      "expected_behavior": "Search MCP with mode check; return mcp-protocol-auth-check. Load that ID and return the working contract, vibe-mcp skill, selected recipe and mcp-contract reference. No repository access or edits.",
+      "expected_behavior": "List actual domains, choose vibe-mcp, list that domain’s actual topic keys, then search topic mcp-protocol-auth-check with mode check and load the returned workflow ID. Catalog replies contain metadata only. No project steps are executed.",
       "calls": [
         {
           "name": "search_workflows",
           "arguments": {
-            "query": "MCP",
+            "view": "catalog",
+            "mode": "check",
+            "response_format": "workflow"
+          }
+        },
+        {
+          "name": "search_workflows",
+          "arguments": {
+            "view": "catalog",
+            "skill": "vibe-mcp",
+            "mode": "check",
+            "response_format": "workflow"
+          }
+        },
+        {
+          "name": "search_workflows",
+          "arguments": {
+            "topic": "mcp-protocol-auth-check",
             "mode": "check",
             "response_format": "workflow"
           }

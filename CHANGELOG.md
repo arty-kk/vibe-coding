@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.6.1 — catalog-first search
+
+- Fix Russian authorization forms and common login/access expressions. Primary subject tags rank owning workflows ahead of incidental permission mentions.
+- Add a compact two-level catalog: 45 domain keys and 162 topic keys, backed by all 241 existing workflow IDs. Topic lookup returns exact members and supported operations.
+- Make MCP discovery and the entry skill browse actual keys before guessing a query; return a recoverable catalog for unknown keys and preserve explicit filters.
+- Add guided topic selection and useful empty-search recovery to the four-language console. Keep existing tool names, workflow IDs, legacy response shapes and instruction bodies compatible.
+- No embedding service, model download, API key or query transfer to an AI provider is introduced.
+
 ## 1.6.0 — composed workflows and universal MCP
 
 - Review all 46 domain skills and the MCP entry skill sequentially, preserving the 241 stable prompt IDs and domain foundations. Each workflow defines evidence handoffs, focused repair and relevant verification.

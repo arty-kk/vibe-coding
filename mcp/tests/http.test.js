@@ -49,6 +49,19 @@ for (const mode of ['legacy', 'auto']) {
       const next = await connection.callTool({name: 'get_workflow', arguments: {id: 'mcp-server-polish', include_context: false, response_format: 'workflow'}});
       assert.equal(next.structuredContent.context_included, false);
       assert.ok(!next.structuredContent.files.some(file => file.path === 'references/workflow.md'));
+      const rootCatalog = await connection.callTool({name:'search_workflows', arguments:{view:'catalog',language:'ru'}});
+      assert.equal(rootCatalog.isError,undefined);
+      assert.equal(rootCatalog.structuredContent.catalog.domains.length,45);
+      assert.equal(rootCatalog.structuredContent.workflows.length,0);
+      const scopedCatalog = await connection.callTool({name:'search_workflows',arguments:{view:'catalog',skill:'vibe-domain',mode:'implement'}});
+      const authTopic = scopedCatalog.structuredContent.catalog.topics.find(topic=>topic.keywords.includes('authorization') && topic.key==='auth-permissions');
+      assert.ok(authTopic);
+      const exactTopic = await connection.callTool({name:'search_workflows',arguments:{topic:authTopic.key,mode:'implement',response_format:'workflow'}});
+      assert.deepEqual(exactTopic.structuredContent.workflows.map(row=>row.id),['auth-permissions-polish']);
+      const unknownTopic = await connection.callTool({name:'search_workflows',arguments:{topic:'invented-key',skill:'vibe-domain'}});
+      assert.equal(unknownTopic.isError,undefined);
+      assert.equal(unknownTopic.structuredContent.catalog.status,'unknown_topic');
+      assert.ok(!('catalog' in result.structuredContent));
       // Exact keys from the strict 1.5.1 output contract.
       assert.deepEqual(Object.keys(fetched.structuredContent).sort(),
         ['version','instruction_version','instruction_language','language','host','workflow','files','words'].sort());

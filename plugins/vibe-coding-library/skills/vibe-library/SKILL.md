@@ -1,6 +1,6 @@
 ---
 name: vibe-library
-description: "Select and apply an engineering workflow for bug diagnosis, implementation, patch review, task planning or verification using Vibe Coding's MCP library. Search from the task's goal or a named recipe, load the current prompt and follow its evidence handoffs. Works with any MCP coding agent."
+description: "Select and apply an engineering workflow for bug diagnosis, implementation, patch review, task planning or verification using Vibe Coding's MCP library. Discover actual topic keys, select a workflow for the task and follow its evidence handoffs. Works with any MCP coding agent."
 ---
 
 # Vibe Coding Library
@@ -11,9 +11,13 @@ Set `response_format:workflow` on both tools to request purposes, match reasons 
 
 Use the task itself to find a relevant method; the user need not mention the library. Examples include a repeated payment effect, broken hydration, an unfamiliar API change, a patch needing review or a release guarantee needing verification. A precise named workflow or ID takes precedence over inferred routing.
 
-1. Identify the requested result and owning domain. Audit/review inspect; implementation makes an already-requested change; checks verify; plans prepare work. An audit-only request does not become a repair because related prompts exist.
-2. Call `search_workflows` with a short technical goal or symptom, such as `fix stale cache after a write`, `verify Kafka consumer rebalance` or `Patch Check`. Set `mode` only when clear and `skill` only for an established domain. `language` localizes results without filtering out other corpus languages. Use `full_text:true` for an instruction-body term when metadata is insufficient. Send no source code, secrets or personal data.
-3. Compare each result's purpose, operation and domain, using its match reason to distinguish an exact name from a body-only match. Load the best stable ID with `get_workflow`; ask only when alternatives require a decision that changes the outcome. Keep `host:generic` for other coding agents. Use `intent:improve` only when diagnosis and correction are already authorized; otherwise retain `requested`. A known fix may start at its implementation ID.
+1. Identify the requested operation. Audit/review inspect; implementation makes an already-requested change; checks verify; plans prepare work. A precise known workflow ID can be loaded directly.
+2. When the topic is unknown, call `search_workflows` with `view:catalog` and an empty query. Select a returned domain key by the meaning of the user's task, then request `view:catalog, skill:<that key>`. This returns that domain's real topic keys, canonical English keywords, supported operations and workflow IDs without prompt bodies. Reuse the catalog for the same library version.
+3. Copy a returned `topic` key and select the intended `mode` to retrieve its exact workflow members. Alternatively, load a listed workflow ID directly when its operation is clear. Do not invent a search keyword as a topic key. Match the user's language to the catalog's meaning; English keys remain stable while `language` localizes labels.
+4. Free-text search is available for a named recipe or technical phrase. If it finds nothing, use the actual catalog rather than concluding that the capability is absent or repeating arbitrary words. Preserve user-specified filters; correct your own inferred filter only when the task and catalog support that correction. Use `full_text:true` for a term genuinely needed from an instruction body.
+5. Compare the selected purpose, operation and domain before `get_workflow`. Keep `host:generic` for other coding agents. Use `intent:improve` only when diagnosis and correction are already authorized; otherwise retain `requested`. Send no source code, credentials or personal data.
+
+If the live schema does not advertise `view` or `topic`, omit those arguments and browse with an empty query plus an established domain/operation filter. Do not send unsupported parameters. A catalog that does not cover the task is an explicit coverage limit, not permission to force an unrelated method.
 
 ## Execute one prompt at a time
 
@@ -25,4 +29,4 @@ For an authorized repair, continue through the relevant check and Patch Checking
 
 Report the actual result, changed behavior, checks and material limits in the user's language. The service supplies methods; it has not read or acted on the project.
 
-For empty results, refine the technical terms or enable body search; preserve an explicit filter unless it was mistaken. For an unknown ID, search before retrying. If retrieval is unavailable, use an installed offline workflow when available and state the limitation; do not invent retrieved text or successful checks.
+For empty results, inspect the topic catalog and the available operations; preserve an explicit user filter. For an unknown ID, search before retrying. If retrieval is unavailable, use an installed offline workflow when available and state the limitation; do not invent retrieved text or successful checks.

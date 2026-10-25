@@ -10,6 +10,49 @@
     : haystack.some(word => word === term || (term.length >= 3 && word.startsWith(term)));
   const compiled = new WeakMap(), bodyCache = new WeakMap();
 
+  function oneEdit(a, b) {
+    if (Math.abs(a.length - b.length) > 1) return false;
+    if (a === b) return true;
+    let i = 0;
+    while (i < Math.min(a.length, b.length) && a[i] === b[i]) i++;
+    if (a.length === b.length) return a.slice(i + 1) === b.slice(i + 1)
+      || i + 1 < a.length && a[i] === b[i + 1] && a[i + 1] === b[i]
+        && a.slice(i + 2) === b.slice(i + 2);
+    return a.length > b.length ? a.slice(i + 1) === b.slice(i) : a.slice(i) === b.slice(i + 1);
+  }
+
+  function typoCorrector(rules, entries) {
+    const forms = new Set(Object.values(rules.lexicon.terms || {}).flat()
+      .concat(Object.keys(rules.lexicon.terms || {}), Object.values(rules.lexicon.intents || {}).flat()));
+    for (const entry of entries) {
+      for (const text of [entry.id, entry.skill, ...entry.titles, ...(entry.keywords || [])]) {
+        for (const word of words(text)) forms.add(word);
+      }
+    }
+    const exact = new Set([...forms].flatMap(words).concat([...rules.stops]));
+    const deletions = new Map(), signature = word => rules.signature(word);
+    for (const word of exact) {
+      if (rules.stops.has(word) || word.length < 5 || word.length > 48 || cjk(word) || !/^\p{L}+$/u.test(word)) continue;
+      for (let i = 0; i < word.length; i++) {
+        const key = word.slice(0, i) + word.slice(i + 1);
+        if (!deletions.has(key)) deletions.set(key, new Set());
+        deletions.get(key).add(word);
+      }
+    }
+    return value => fold(value).replace(/[\p{L}\p{N}+#]+/gu, word => {
+      if (exact.has(word) || word.length < 5 || word.length > 48 || cjk(word) || !/^\p{L}+$/u.test(word)) return word;
+      const candidates = new Set(deletions.get(word) || []);
+      for (let i = 0; i < word.length; i++) {
+        const key = word.slice(0, i) + word.slice(i + 1);
+        if (exact.has(key) && !rules.stops.has(key)) candidates.add(key);
+        for (const item of deletions.get(key) || []) candidates.add(item);
+      }
+      const matches = [...candidates].filter(item => item.length >= 5 && item[0] === word[0] && oneEdit(word, item));
+      if (!matches.length || new Set(matches.map(signature)).size !== 1) return word;
+      return matches.sort()[0];
+    });
+  }
+
   function replacer(groups) {
     const table = new Map();
     for (const [target, variants] of Object.entries(groups || {})) {
@@ -33,9 +76,10 @@
         return text;
       };
       compiled.set(lexicon, {lexicon, stops,
+        signature: value => intents(concepts(fold(value))).trim(),
         tokens: value => words(concepts(fold(value))),
-        query: value => {
-          const text = intents(concepts(fold(value)));
+        query: (value, correct) => {
+          const text = intents(concepts(correct ? correct(value) : fold(value)));
           const hints = [...text.matchAll(/intent_([a-z]+)/g)].map(match => match[1]);
           const terms = words(cleanCjk(text.replace(/intent_[a-z]+/g, ' '))).filter(term => !stops.has(term));
           return {terms: [...new Set(terms)], hints: [...new Set(hints)]};
@@ -45,9 +89,12 @@
   }
 
   function prepare(entries, topics, actions, lexicon = {}) {
-    const rules = rulesFor(lexicon);
+    const base = rulesFor(lexicon);
+    const correct = typoCorrector(base, entries);
+    const rules = {...base, query: value => base.query(value, correct)};
     return entries.map((entry, order) => ({...entry, order, rules,
       titleWords: rules.tokens(entry.titles.join(' ')),
+      subjects: (entry.primary_keywords || []).map(value => rules.tokens(value)),
       keywordWords: rules.tokens([entry.id, entry.skill, entry.purpose || '', ...(entry.keywords || []),
         ...(lexicon.discovery?.[entry.id] || [])].join(' ')),
       topicWords: rules.tokens((topics[entry.skill] || []).join(' ')),
@@ -72,7 +119,9 @@
     if (exact) return {score: exact === 'exact_id' ? 20000 : 15000, bodyOnly: false, kind: exact, terms: analysis.terms};
     let total = 0, bodyOnly = false;
     for (const term of analysis.terms) {
-      if (contains(entry.titleWords, term)) total += 40;
+      if (entry.subjects.some(subject => contains(subject, term)
+        && subject.every(part => analysis.terms.some(queryTerm => contains([part], queryTerm))))) total += 60;
+      else if (contains(entry.titleWords, term)) total += 40;
       else if (contains(entry.keywordWords, term)) total += 20;
       else if (contains(entry.topicWords, term)) total += 8;
       else if (bodies && contains(bodyWords(entry, bodies), term)) {total += 1; bodyOnly = true;}

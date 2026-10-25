@@ -1,6 +1,6 @@
 {
   "name": "vibe-coding-library",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "description": "Engineering playbooks for any MCP coding agent: find a method, load its current prompt and follow its verification workflow.",
   "author": {
     "name": "Arty S.",
@@ -22,7 +22,7 @@
   "interface": {
     "displayName": "Vibe Coding Library",
     "shortDescription": "Coding workflows on demand",
-    "longDescription": "Vibe Coding Library supplies engineering methods to any coding agent supporting MCP over Streamable HTTP. Search from a bug, implementation goal, planning task, patch review or verification need without knowing a workflow name. The two read-only tools find among 241 workflow entries and load the current prompt, domain instructions and a conditional execution outline. Follow evidence handoffs through repair, relevant verification and repeated Patch Checking; later prompt bodies load only when reached. Search supports English, Spanish, Russian and Simplified Chinese; technical instructions are English. No publisher account or API key is required. Your agent uses its own project tools, rules and permissions; the service does not inspect or modify your repository.",
+    "longDescription": "Vibe Coding Library helps coding agents choose engineering workflows over MCP Streamable HTTP. Discover actual domains and canonical English topic keys, select the requested operation, and load the current prompt with its required context and conditional next steps. All 241 workflow IDs are backed by validated topic membership. Free-text search supports four catalog languages and conservative typo repair for registered vocabulary. The calling agent interprets the user’s goal and applies the retrieved method with its own tools, rules and permissions. Relevant verification and repeated Patch Checking preserve evidence between stages. The two read-only tools require no publisher account or API key and do not inspect or modify a repository. Technical instructions are English.",
     "developerName": "Arty S.",
     "category": "Developer Tools",
     "capabilities": [
@@ -44,7 +44,7 @@
   "extensions": {
     "com.openai": {
       "publication": {
-        "release_notes": "Vibe Coding Library 1.6.0 revises every skill and prompt workflow, adds explicit audit/repair/check handoffs and bounded repeated Patch Checking, and improves task-driven MCP discovery for any compatible coding agent. Search adds natural technical goals, exact-name aliases, multilingual concepts, individual purposes and match reasons. Retrieval exposes a conditional step outline and context reuse while preserving the two tool names and all 241 IDs. Instructions and client packages now share version 1.6.0. The website presents universal MCP connection alongside Codex and Claude examples.",
+        "release_notes": "Vibe Coding Library 1.6.1 fixes missing authorization synonyms and adds catalog-first discovery. Agents can enumerate actual domains and canonical English topic keys, then retrieve exact workflow members without inventing query words. All 241 workflows have validated subject tags; subject matches rank ahead of incidental mentions. Free-text search and all previous request/result formats remain compatible. The console offers guided topic selection and a recovery path for empty text results. No embedding provider, API key or user-query transfer to an AI service is added. Registered-vocabulary spelling repair accepts one unambiguous edit or adjacent transposition. Exact topic/ID arguments remain strict, and ambiguous text corrections are left for catalog selection.",
         "translations": {
           "es-ES": {
             "subtitle": "Flujos de código bajo demanda",

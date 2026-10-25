@@ -1,6 +1,6 @@
 {
   "name": "vibe-coding-library",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "description": "Engineering playbooks for any MCP coding agent: find a method, load its current prompt and follow its verification workflow.",
   "author": {
     "name": "Arty S.",

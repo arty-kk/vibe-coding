@@ -31,6 +31,11 @@ try {
             assert.equal(data.workflow.id, call.arguments.id);
             for (const file of data.files) assert.equal(createHash('sha256').update(file.text).digest('hex'), file.sha256);
             assert.equal(data.files.some(file => file.path === 'references/hosts.md'), call.arguments.host === 'claude');
+          } else if (call.arguments.view === 'catalog') {
+            assert.ok(data.catalog);
+            assert.equal(data.workflows.length, 0);
+            const expected = call.arguments.skill ? 'mcp-protocol-auth-check' : 'vibe-mcp';
+            assert.ok([...data.catalog.domains, ...data.catalog.topics].some(row => row.key === expected));
           } else if (index < 4) {
             const expected = ['mcp-protocol-auth-check', 'sql-databases-audit', 'mcp-server-audit', 'cache-invalidation-audit'][index];
             assert.ok(data.workflows.some(row => row.id === expected), scenario.description);
