@@ -40,6 +40,7 @@ class SiteTests(unittest.TestCase):
     def setUpClass(cls):
         cls.temp=tempfile.TemporaryDirectory();cls.destination=Path(cls.temp.name)
         cls.locales=site.load_locales()
+        cls.policies=site.load_site_policies()
         cls.content=json.loads((ROOT/'site/content.json').read_text(encoding='utf-8'))
         cls.rows=json.loads((site.PLUGIN/'catalog.json').read_text(encoding='utf-8'))['recipes']
         site.build(cls.destination)
@@ -94,7 +95,7 @@ class SiteTests(unittest.TestCase):
                     self.assertEqual(site.BASE+site.route(other,suffix),alternates[other])
                 self.assertEqual(site.BASE+suffix,alternates['x-default'])
                 if suffix.endswith('.html'):
-                    self.assertIn(site.policy_html(locale['policy'][suffix[:-5]]),page)
+                    self.assertIn(site.MD.render(self.policies[lang][suffix[:-5]]),page)
                 elif not suffix:
                     self.assertIn('Claude Code',page)
                     links=[a for a in doc.matching('a',hreflang='en') if 'data-id' in a]
@@ -210,6 +211,33 @@ class SiteTests(unittest.TestCase):
                 doc=self.documents[site.route(lang,policy)]
                 entity=next(item for item in doc.json[0]['@graph'] if item['@type']=='WebPage')
                 self.assertNotIn('mainEntity',entity)
+
+    def test_site_policies_cover_the_website_and_mcp_independently_of_offline_notices(self):
+        for lang, locale in self.locales.items():
+            for name in ('privacy', 'terms'):
+                page=self.pages[site.route(lang,name+'.html')]
+                self.assertNotIn(site.policy_html(locale['policy'][name]),page)
+                self.assertIn('mailto:artemsatsuk@proton.me',page)
+                self.assertIn(site.MCP_SITE+name,page)
+            privacy=self.pages[site.route(lang,'privacy.html')]
+            for text in ('GitHub Pages','OpenAI Sites','Cloudflare','vibe-coding-host','vibe-coding-language'):
+                self.assertIn(text,privacy)
+            for url in ('https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement',
+                        'https://openai.com/policies/privacy-policy/', 'https://www.cloudflare.com/privacypolicy/'):
+                self.assertIn(url,privacy)
+            self.assertIn(site.REPO+'/blob/main/PRIVACY.md',privacy)
+            self.assertIn(site.REPO+'/blob/main/TERMS.md',self.pages[site.route(lang,'terms.html')])
+
+    def test_site_policy_translations_require_both_notices_and_one_title(self):
+        target=self.destination/'policy-validation.json'
+        for change, message in ((lambda data:data.pop('zh-CN'), 'site policy locale'),
+                                (lambda data:data['es'].pop('terms'), 'Incomplete site policies'),
+                                (lambda data:data['ru'].update(privacy=''), 'Empty site policy'),
+                                (lambda data:data['en'].update(terms='# Terms\n\n# Another title'), 'one site policy title')):
+            broken=copy.deepcopy(self.policies);change(broken)
+            target.write_text(json.dumps(broken),encoding='utf-8')
+            with self.assertRaisesRegex(ValueError,message):site.load_site_policies(target)
+        target.unlink()
 
     def test_build_is_deterministic_and_keeps_assets_for_open_tabs(self):
         first={p.relative_to(self.destination).as_posix():p.read_bytes() for p in self.destination.rglob('*') if p.is_file()}

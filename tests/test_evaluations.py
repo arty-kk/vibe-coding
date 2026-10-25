@@ -12,6 +12,7 @@ LISTING = ROOT/'review/evaluations/1.4.1.json'
 LIBRARY = ROOT/'review/evaluations/1.5.0.json'
 PORTABILITY = ROOT/'review/evaluations/1.5.1.json'
 SITE_REFRESH = ROOT/'review/evaluations/site-2026-10-25.json'
+SITE_POLICIES = ROOT/'review/evaluations/site-policies-2026-10-25.json'
 
 
 class EvaluationRecordTests(unittest.TestCase):
@@ -24,14 +25,23 @@ class EvaluationRecordTests(unittest.TestCase):
         self.library = json.loads(LIBRARY.read_text(encoding='utf-8'))
         self.portability = json.loads(PORTABILITY.read_text(encoding='utf-8'))
         self.site_refresh = json.loads(SITE_REFRESH.read_text(encoding='utf-8'))
+        self.site_policies = json.loads(SITE_POLICIES.read_text(encoding='utf-8'))
+
+    def site_policy_fingerprint(self, name, expected):
+        change = self.site_policies['changes'].get(name)
+        if change:
+            self.assertEqual(expected, change['before'], 'Policy correction must retain its website baseline: '+name)
+            self.assertTrue(change['review'])
+            return change['after']
+        return expected
 
     def site_refresh_fingerprint(self, name, expected):
         change = self.site_refresh['changes'].get(name)
         if change:
             self.assertEqual(expected, change['before'], 'Website refresh must retain the released baseline: '+name)
             self.assertTrue(change['review'])
-            return change['after']
-        return expected
+            expected = change['after']
+        return self.site_policy_fingerprint(name, expected)
 
     def portability_fingerprint(self, name, expected):
         change = self.portability['changes'].get(name)
@@ -192,10 +202,19 @@ class EvaluationRecordTests(unittest.TestCase):
         self.assertEqual(hashlib.sha256(PORTABILITY.read_bytes()).hexdigest(), self.site_refresh['baseline']['sha256'])
         self.assertFalse(set(self.site_refresh['changes']) & set(self.revision['instructions']))
         for name, change in self.site_refresh['changes'].items():
-            self.assertEqual(change['after'], hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
+            self.assertEqual(self.site_policy_fingerprint(name, change['after']), hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
         for name, expected in self.site_refresh['new_files'].items():
-            self.assertEqual(expected, hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
+            self.assertEqual(self.site_policy_fingerprint(name, expected), hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
         self.assertTrue(self.site_refresh['checks'])
+
+    def test_site_policy_correction_preserves_the_published_website_record(self):
+        self.assertEqual(hashlib.sha256(SITE_REFRESH.read_bytes()).hexdigest(), self.site_policies['baseline']['sha256'])
+        self.assertFalse(set(self.site_policies['changes']) & set(self.revision['instructions']))
+        for name, change in self.site_policies['changes'].items():
+            self.assertEqual(change['after'], hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
+        for name, expected in self.site_policies['new_files'].items():
+            self.assertEqual(expected, hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
+        self.assertTrue(self.site_policies['checks'])
 
 
 if __name__ == '__main__':

@@ -1,0 +1,97 @@
+{
+  "version": 1,
+  "date": "2026-10-25",
+  "baseline": {
+    "file": "review/evaluations/site-2026-10-25.json",
+    "sha256": "0fb87bee621c3aed3151ee759c369ea8bc5eb657e3ccc09de8481046e8626f66"
+  },
+  "product_version": "1.5.1",
+  "instruction_version": "1.4.1",
+  "changes": {
+    "site/content.json": {
+      "before": "d032b09b9aefe98a62a0d5e76cb86f12c18241607ff5606dd1fffabce1b131c1",
+      "after": "5368fbda6bb6cdcc2ef6cf439584fcbbd76fb86f21ee4b16347ea0961a742624",
+      "review": "Correct public MCP website policy scope and search language microcopy without changing released instructions."
+    },
+    "site/README.md": {
+      "before": "18678a510ded42d7b302148b6c0521617ca7cc6a4ea6e58fa138c5c779c5b79e",
+      "after": "34a49e6256805c5a1f7caa245e75405d304cf7d51d5554a48b256bafc88a4f18",
+      "review": "Correct public MCP website policy scope and search language microcopy without changing released instructions."
+    },
+    "scripts/build_site.py": {
+      "before": "0a19e6a65c8e64e400090bac4d41c517480c3888d98a9805ef3628aeb2e2107e",
+      "after": "036114ca4d6ebc95a5ed77ab9f396f901b5bf48a67b0a5f5a26bd2766dd0eaf4",
+      "review": "Correct public MCP website policy scope and search language microcopy without changing released instructions."
+    },
+    "tests/test_site.py": {
+      "before": "b6021939617474999ff181e731ded1ced370a3135384d7dfc13af081a0d04101",
+      "after": "9e372e99c1b9a5435409e04180e76dd8c4e33a167eb9ce64f2b0f1da54be75f7",
+      "review": "Correct public MCP website policy scope and search language microcopy without changing released instructions."
+    },
+    "mcp/site/app/copy.ts": {
+      "before": "4d404fc91e38818dd62299aabeab141c5be8361e9fe1ece4507c6d7aa5282597",
+      "after": "0cd10a1f45a78fd8350d21e96fab85c851c6c5085f1e55266eef71d2c693ceae",
+      "review": "Correct public MCP website policy scope and search language microcopy without changing released instructions."
+    },
+    "docs/es/privacy.html": {
+      "before": "2ca6383b5139f05a5febe7a29ae25e298b598fc23b99e379a2c88d9daf2cc317",
+      "after": "f5f36676879d90aaf43717be8d7a48e058306f5ad2bc0e4242020c58a19e639b",
+      "review": "Correct public MCP website policy scope and search language microcopy without changing released instructions."
+    },
+    "docs/es/terms.html": {
+      "before": "17a1d5e13cca74e99e5ea56ddbb927264548e402a73a9015e345d5534c5d25c8",
+      "after": "203ce244c1743174c7d88b863f79e556381184a95ecd01d44f098f125a324f88",
+      "review": "Correct public MCP website policy scope and search language microcopy without changing released instructions."
+    },
+    "docs/privacy.html": {
+      "before": "e3b156ad18b7d0050fd29d07da149c41c2cd6d5b5234fa1723b0233563ea0fdc",
+      "after": "ee51707746fd40c93c2b60365841dd4859b2d55982a67e01db1d1c861b466446",
+      "review": "Correct public MCP website policy scope and search language microcopy without changing released instructions."
+    },
+    "docs/ru/privacy.html": {
+      "before": "9c31330d5bd9b7f4209dd03796a98e0f1c30dd992dd49f19df1f8a33c48ed192",
+      "after": "ab0e008e6e910e1f830e03ff385cf545962a40db5ca82ba1b9b7043f3205c5e8",
+      "review": "Correct public MCP website policy scope and search language microcopy without changing released instructions."
+    },
+    "docs/ru/terms.html": {
+      "before": "6d6a6139a6a42aee72ea841386584727eaa673058b7fa35a39a2353351e86392",
+      "after": "f6aa8b4baa1ba02ffecd885a4ee139b9c2a62a8575a01164d39ab32a8ba4bd05",
+      "review": "Correct public MCP website policy scope and search language microcopy without changing released instructions."
+    },
+    "docs/terms.html": {
+      "before": "0f624016fa756f601616fb4ca5d21977873cd7ca9cac84eb5fd4dcc21ea2d2b6",
+      "after": "fd9a254316bc1b81d429636fbc27729a27ff8282b89acc75ae6b5b94d3d851f8",
+      "review": "Correct public MCP website policy scope and search language microcopy without changing released instructions."
+    },
+    "docs/zh-CN/privacy.html": {
+      "before": "6d79508c0f67d568eee92b1c3e61a63816611b21218387095dc2afb1643e0886",
+      "after": "fcbf616996165357aeee78ad72a35737bed6014eec4cf91fc7c77c10a9ac186b",
+      "review": "Correct public MCP website policy scope and search language microcopy without changing released instructions."
+    },
+    "docs/zh-CN/terms.html": {
+      "before": "ae867ad665440b4f123c5e140797c213ee40af235c829bd174cc03af48b504e2",
+      "after": "e2ef7b36fda5d1862542e4b7f432715eaa702be7ee00cf1bfe48596ea56cb1ed",
+      "review": "Correct public MCP website policy scope and search language microcopy without changing released instructions."
+    },
+    "tests/test_evaluations.py": {
+      "before": "ceeebf5ae91617d7dcd8686c00d7cfb256919a52b7b771e78cedda0bbfd85d38",
+      "after": "065bcfdfcec24bcc507ff61988bb9e70fd5c70ed705daaf63cf72d6550c5f6c5",
+      "review": "Extend the fingerprint chain with this policy correction while retaining immutable earlier evaluation records."
+    }
+  },
+  "new_files": {
+    "site/policies.json": "d05c608cc6e058254931d309cb6343dda5361bd1b0e7997e5d8de47c0b67b860"
+  },
+  "checks": [
+    {
+      "id": "localized-policies",
+      "observed": "14 website tests, 8 search tests, TypeScript and 16 browser page checks passed on the isolated released snapshot. Exactly eight generated policy pages changed.",
+      "limits": "Provider processing follows provider policies; no retention or legal-compliance certification is claimed."
+    },
+    {
+      "id": "separate-distributions",
+      "observed": "Website notices describe the public MCP service and browser behavior independently of offline package notices. All released instruction files and offline policies are unchanged.",
+      "limits": "The pending 1.6.0 instruction revision is excluded from this website publication."
+    }
+  ]
+}

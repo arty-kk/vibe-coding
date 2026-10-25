@@ -273,6 +273,22 @@ def placeholders(value):
     return set(re.findall(r'\{(\w+)\}', value)) if isinstance(value, str) else None
 
 
+def load_site_policies(source=None):
+    policies = json.loads(Path(source or ROOT/'site/policies.json').read_text(encoding='utf-8'))
+    if not isinstance(policies, dict) or set(policies) != set(LANGUAGES):
+        raise ValueError('Missing or unexpected site policy locale')
+    for language, values in policies.items():
+        if not isinstance(values, dict) or set(values) != {'privacy', 'terms'}:
+            raise ValueError(f'Incomplete site policies: {language}')
+        for name, text in values.items():
+            if not isinstance(text, str) or not text.strip():
+                raise ValueError(f'Empty site policy: {language}.{name}')
+            headings = [token for token in MD.parse(text) if token.type == 'heading_open' and token.tag == 'h1']
+            if not text.startswith('# ') or len(headings) != 1:
+                raise ValueError(f'Expected one site policy title: {language}.{name}')
+    return policies
+
+
 def build(destination=SITE):
     destination = Path(destination)
     destination.mkdir(parents=True, exist_ok=True)
@@ -289,9 +305,7 @@ def build(destination=SITE):
         if set(values['featured']) != set(content['en']['featured']): raise ValueError(f'Incomplete featured workflows: {language}')
         if not set(values['featured']) <= {row['id'] for row in rows}: raise ValueError(f'Unknown featured workflow: {language}')
         if placeholders(values) != placeholders(content['en']): raise ValueError(f'Mismatched site placeholders: {language}')
-    for name in ('privacy','terms'):
-        if locales['en']['policy'][name] != (ROOT/f'{name.upper()}.md').read_text(encoding='utf-8'):
-            raise ValueError(f'Update policy translations after changing {name.upper()}.md')
+    policies = load_site_policies()
     resources = {'locales':locales, 'content':content, 'skills':skills,
         'css':asset(destination,'site.css',(ROOT/'site/site.css').read_text(encoding='utf-8')),
         'engine':asset(destination,'catalog-engine.js',(ROOT/'site/catalog-engine.js').read_text(encoding='utf-8')),
@@ -310,8 +324,8 @@ def build(destination=SITE):
         for name in ('privacy','terms'):
             path = route(lang,name+'.html')
             description = content[lang][name+'Description']
-            body = '<article class="policy">'+policy_html(locale['policy'][name])+f'<p><a href="{PREFIX}{route(lang)}">{e(locale["ui"]["back"])}</a></p></article>'
-            output = page(lang,path,locale['ui'][name]+' — Vibe Coding',description,body,content,resources,version,{code:route(code,name+'.html') for code in LANGUAGES}|{'x-default':name+'.html'})
+            body = '<article class="policy">'+MD.render(policies[lang][name])+f'<p><a href="{PREFIX}{route(lang)}">{e(locale["ui"]["back"])}</a></p></article>'
+            output = page(lang,path,locale['ui'][name]+' — Vibe Coding Library',description,body,content,resources,version,{code:route(code,name+'.html') for code in LANGUAGES}|{'x-default':name+'.html'})
             write(destination,path,output); paths.append(path)
     for row in rows:
         rendered, toc, source = recipe_markdown(row,instruction_version)
