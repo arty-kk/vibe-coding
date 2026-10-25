@@ -1362,6 +1362,21 @@
       "before": "bd4c609b74f1464b9a1193f9641c64fab7d3f3187a1ec81c3640c856c006746b",
       "after": "b6021939617474999ff181e731ded1ced370a3135384d7dfc13af081a0d04101",
       "review": "Present the released MCP product and correct responsive controls/localized microcopy while preserving released instruction content."
+    },
+    ".github/workflows/mcp-library.yml": {
+      "before": "cbcbb9fb4b42e78c591ce900a2a42bc0b58fb068f945b853f2754a2b28e6447b",
+      "after": "55d7582e21eea26d1d249c5ebf9b6183f0c7effba089bd39001694253b32f6b5",
+      "review": "Preserve upstream f6008ec owner-selected A3D runner/delivery configuration and reconcile its previously unrecorded fingerprints during integration."
+    },
+    ".github/workflows/openai-distribution.yml": {
+      "before": "dd2fe81c5b8f51ae880e09a602a2fb8462e5521f9b2dff16dfc00255ebfb31d9",
+      "after": "805c9ca72cf2a555ce01a8630d079ec2991fc5cb371e59a5eb2b62c932a2bad4",
+      "review": "Preserve upstream f6008ec owner-selected A3D runner/delivery configuration and reconcile its previously unrecorded fingerprints during integration."
+    },
+    ".github/workflows/validate.yml": {
+      "before": "1dd33f50281b2a7b9b3dbf830bff69821513b079e996c3d91faee372ba761d8f",
+      "after": "24b734ade6aba1cbdaffe17aceef6694d300721149d7d568ae2dda70d9b3d0dc",
+      "review": "Preserve upstream f6008ec owner-selected A3D runner/delivery configuration and reconcile its previously unrecorded fingerprints during integration."
     }
   },
   "new_files": {
@@ -1388,5 +1403,6 @@
       "observed": "Search/retrieval, localized feedback and expected invalid-ID rejection passed against the compiled Worker; API routes and instruction snapshot were unchanged.",
       "limits": "Does not claim changed tool schemas or new domain workflows are deployed."
     }
-  ]
+  ],
+  "upstream_commit": "f6008ec"
 }
