@@ -34,4 +34,7 @@ jobs:
           python-version: '3.13'
       - run: pip install -r plugins/vibe-coding/requirements.txt
       - run: python -m unittest discover -s tests -p test_openai_distribution.py -v
-      - run: python scripts/package_openai.py --output /tmp/vibe-coding-openai.zip
+      - name: Build distribution in a unique job directory
+        run: |
+          package_directory=$(mktemp -d "$RUNNER_TEMP/vibe-openai.XXXXXX")
+          python scripts/package_openai.py --output "$package_directory/vibe-coding-openai.zip"

@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-25",
+  "baseline": {
+    "file": "review/evaluations/1.6.1.json",
+    "sha256": "f4fd60540719abbe77eaec89c25a311742d482eb472cc4c3abfb40d193605f03",
+    "commit": "098ccca6d72e960ad92ca0eaf38424c9afd186d3"
+  },
+  "changes": {
+    ".github/workflows/openai-distribution.yml": {
+      "before": "805c9ca72cf2a555ce01a8630d079ec2991fc5cb371e59a5eb2b62c932a2bad4",
+      "after": "c81edf11375921966d19e8b6587ffbd3632f901355f81dad45331399ddf37ee4",
+      "review": "Isolate CI package output from files left by previous jobs; extend the immutable evaluation chain."
+    },
+    "tests/test_evaluations.py": {
+      "before": "e85e3228c681229740f37732daeb8a08ba2db6b4d952f7596fa80dc74abfd93e",
+      "after": "820eab08e0227d3cc4be66f864751a56abe6b711d3783177d15a4ae9ea20437a",
+      "review": "Isolate CI package output from files left by previous jobs; extend the immutable evaluation chain."
+    }
+  },
+  "observed": "OpenAI distribution run 40214340646 passed all nine distribution tests, then failed because /tmp/vibe-coding-openai.zip already existed on the persistent self-hosted runner. Use mktemp under RUNNER_TEMP for each packaging step.",
+  "limits": "CI infrastructure only. Version 1.6.1 runtime, prompts, published release assets, tag and evaluation remain unchanged."
+}

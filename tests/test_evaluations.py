@@ -16,6 +16,7 @@ SITE_POLICIES = ROOT/'review/evaluations/site-policies-2026-10-25.json'
 POLISHING = ROOT/'review/evaluations/1.6.0.json'
 CI_UTF8 = ROOT/'review/evaluations/ci-utf8-2026-10-25.json'
 SEARCH_KEYS = ROOT/'review/evaluations/1.6.1.json'
+CI_TEMP = ROOT/'review/evaluations/ci-temp-2026-10-25.json'
 
 
 class EvaluationRecordTests(unittest.TestCase):
@@ -32,13 +33,21 @@ class EvaluationRecordTests(unittest.TestCase):
         self.polishing = json.loads(POLISHING.read_text(encoding='utf-8'))
         self.ci_utf8 = json.loads(CI_UTF8.read_text(encoding='utf-8'))
         self.search_keys = json.loads(SEARCH_KEYS.read_text(encoding='utf-8'))
+        self.ci_temp = json.loads(CI_TEMP.read_text(encoding='utf-8'))
+
+    def ci_temp_fingerprint(self, name, expected):
+        change = self.ci_temp['changes'].get(name)
+        if change:
+            self.assertEqual(expected, change['before'], 'CI directory correction must retain its released baseline: '+name)
+            return change['after']
+        return expected
 
     def search_key_fingerprint(self, name, expected):
         change = self.search_keys['changes'].get(name)
         if change:
             self.assertEqual(expected, change['before'], 'Search revision must retain the preceding source baseline: '+name)
-            return change['after']
-        return expected
+            expected = change['after']
+        return self.ci_temp_fingerprint(name, expected)
 
     def ci_fingerprint(self, name, expected):
         change = self.ci_utf8['changes'].get(name)
@@ -269,9 +278,13 @@ class EvaluationRecordTests(unittest.TestCase):
     def test_key_catalog_revision_retains_history_and_current_inputs(self):
         self.assertEqual(hashlib.sha256(CI_UTF8.read_bytes()).hexdigest(), self.search_keys['baseline']['sha256'])
         for name, change in self.search_keys['changes'].items():
-            self.assertEqual(change['after'], hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
+            self.assertEqual(self.ci_temp_fingerprint(name, change['after']), hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
         for name, expected in self.search_keys['new_files'].items():
-            self.assertEqual(expected, hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
+            self.assertEqual(self.ci_temp_fingerprint(name, expected), hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
+        self.assertEqual(hashlib.sha256(SEARCH_KEYS.read_bytes()).hexdigest(), self.ci_temp['baseline']['sha256'])
+        self.assertEqual({'.github/workflows/openai-distribution.yml', 'tests/test_evaluations.py'}, set(self.ci_temp['changes']))
+        for name, change in self.ci_temp['changes'].items():
+            self.assertEqual(change['after'], hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
 
 
 if __name__ == '__main__':
