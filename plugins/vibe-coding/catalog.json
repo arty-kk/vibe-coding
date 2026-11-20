@@ -6162,7 +6162,7 @@
       "summary": "Real references/assets, original identity, typography, color, components, materials and motion.",
       "purpose": "Specify concrete type, semantic colors, grid, components, surfaces/elevation, borders and responsive/material rules from the chosen direction.",
       "example": "Use $vibe-web-art-direction, workflow “Web Visual System” (ID: web-visual-system). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "00fa4ac72da049ade0f3399d999f3a3838fe54d3e94251da9ba2a647b6bec2da",
+      "sha256": "0849a0a11f285ca9a10c877dd9664ae7b6296a1dbe66238553f3887e2ff1d812",
       "keywords": [
         "border",
         "components",
@@ -6362,7 +6362,7 @@
       "summary": "New builds, completion/redesign, modular architecture, geometry/navigation/states, SEO and loading.",
       "purpose": "Build a complete new homepage or landing experience from its real brief, with modular components, useful interactions and evidenced acceptance.",
       "example": "Use $vibe-landing, workflow “Build Homepage & Landing Page” (ID: homepage-landing-build). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "1a7e9c7cc2334d53f04546d095d9b808ca14a4a7c16c810c02c732e3a112fdac",
+      "sha256": "ab4fa798a158e0faa6077bebf1124210a7711fdeb3fa735d47d1fa3e0c2176cb",
       "keywords": [
         "calculator",
         "components",
@@ -6440,7 +6440,7 @@
       "summary": "New builds, completion/redesign, modular architecture, geometry/navigation/states, SEO and loading.",
       "purpose": "Finish a partial site, correct its supported defects or implement an authorized redesign while preserving required working content, routes and effects.",
       "example": "Use $vibe-landing, workflow “Improve Homepage & Landing Page” (ID: homepage-landing-polish). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "18450bef0465a93576fc6700df8648402c0ca629f2085895b3679ac8a7959cf8",
+      "sha256": "456190adf1d5b81bc1a751139cab8b16d84fe0f4bc88f997de26327c31290674",
       "keywords": [
         "components",
         "composition",
@@ -6479,7 +6479,7 @@
       "summary": "New builds, completion/redesign, modular architecture, geometry/navigation/states, SEO and loading.",
       "purpose": "Verify actual page/component hierarchy, optical alignment, spacing, typography and material accents across relevant rendered states and viewports.",
       "example": "Use $vibe-landing, workflow “Web Visual Hierarchy & Geometry Check” (ID: web-visual-hierarchy-check). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "4255300ce1f3227514f95a9750fbeda2753ad59c525d1dc65fb69b8f5282d4f3",
+      "sha256": "66d2bef139add1326537efdc749180f00d5683443700b4b86be1df3bd5b5795d",
       "keywords": [
         "alignment",
         "border",
@@ -6559,7 +6559,7 @@
       "summary": "New builds, completion/redesign, modular architecture, geometry/navigation/states, SEO and loading.",
       "purpose": "Verify selected modules, actual timing/effects, accessible and reduced-motion/static controls, material states and bounded resource lifecycle.",
       "example": "Use $vibe-landing, workflow “Web Interaction & Motion Check” (ID: web-interaction-motion-check). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "79839987412fc1bdccbe35763cf81a3367b9c19453b38cedd0990238930519be",
+      "sha256": "0d07da4374072e05789671a17f84e2db77b6955c4d8d96b21728c709daaa8799",
       "keywords": [
         "3d",
         "button",
@@ -6640,7 +6640,7 @@
       "summary": "New builds, completion/redesign, modular architecture, geometry/navigation/states, SEO and loading.",
       "purpose": "Reconcile the complete actual page with required outcomes and domain evidence; omitted assets, unavailable actions and unverified gates remain open.",
       "example": "Use $vibe-landing, workflow “Web Page Acceptance Check” (ID: web-page-acceptance-check). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "45cd6c642f3c841f03e6552ead5883c03cbcb4776e1d707771e003e8bd3ce0ac",
+      "sha256": "ffb6f519f3c7a2901f0df039fd4c8b4b66b7bb5c2f302f67e28165b03c1706f1",
       "keywords": [
         "acceptance",
         "brand identity",

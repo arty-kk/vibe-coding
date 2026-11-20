@@ -19,6 +19,8 @@ Use the navigation/state check for shared path/focus issues; avoid duplicating a
 
 Observe the actual timeline and transitions, including interruption and re-entry. Important copy/actions are available without a reveal observer succeeding. No layout shifts, forced scrolling, overlapping entrances, distracting repetitive movement or input blocked by an effect undermines the storyboard. Repeated sections need the intended pacing rather than the same animation indiscriminately applied everywhere.
 
+For a requested effect, trigger the actual control in ordinary motion and observe the changed layer at the start, in flight and after it settles. Repeat with reduced motion and verify the same resulting content and controls. Keep the level of movement within the user's stated limit.
+
 Test reduced-motion/static and keyboard/touch paths, relevant narrow/short screens and failed media/effect loading. Confirm useful state feedback remains available. Ongoing auto-moving/updating content has the controls its behavior requires. A screenshot is insufficient evidence for pause, timing, focus or a media preference; identify unavailable runtime evidence honestly.
 
 For canvas/WebGL/3D or other procedural work, verify resize and bounded resolution/device-pixel ratio, loading/poster/failure fallback, offscreen/hidden-tab pause and cleanup after unmount/navigation. Inspect active loops/listeners/resources and representative CPU/GPU/main-thread behavior using available tools. Test context loss or unsupported rendering with a safe local control when relevant. A heavy effect cannot delay the offer or leave a blank hero when unavailable.

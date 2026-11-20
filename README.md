@@ -12,12 +12,12 @@ For a new homepage, start with `web-offer-synthesis` to prepare a proposal or `h
 
 ### Vibe Coding Library via MCP
 
-[Vibe Coding Library](https://vibe-coding-library.swift-seal-1081.chatgpt.site/) works with any coding agent supporting MCP through Streamable HTTP. Its two read-only tools select a method from the task goal and load the current prompt, required context and conditional next steps. No publisher account, token or API key is required. Direct MCP use needs no Codex or Claude installation; the optional native distribution adds a selection skill.
+[Vibe Coding Library](https://vibe-coding-library.artem-satsuk.chatgpt.site/) works with any coding agent supporting MCP through Streamable HTTP. Its two read-only tools select a method from the task goal and load the current prompt, required context and conditional next steps. No publisher account, token or API key is required. Direct MCP use needs no Codex or Claude installation; the optional native distribution adds a selection skill.
 
 Add this Streamable HTTP endpoint to a compatible MCP client:
 
 ```text
-https://vibe-coding-library.swift-seal-1081.chatgpt.site/library/mcp
+https://vibe-coding-library.artem-satsuk.chatgpt.site/library/mcp
 ```
 
 For Claude Code, the public repository marketplace also provides the Library distribution:
@@ -107,7 +107,7 @@ python3 plugins/vibe-coding/scripts/validate.py
 python3 -m unittest discover -s tests -v
 python3 plugins/vibe-coding/scripts/catalog.py search webhook --mode check
 python3 plugins/vibe-coding/scripts/catalog.py search MCP --lang es
-python3 plugins/vibe-coding/scripts/package.py --output dist/vibe-coding-1.7.0.zip
+python3 plugins/vibe-coding/scripts/package.py --output dist/vibe-coding-1.7.1.zip
 ```
 
 See [Contributing](CONTRIBUTING.md), [installation](plugins/vibe-coding/docs/INSTALL.md), [privacy](PRIVACY.md) and [license](LICENSE).

@@ -1,6 +1,6 @@
 # Vibe Coding Library MCP service
 
-Two read-only tools provide engineering methods to any coding agent supporting MCP over Streamable HTTP. Discovery descriptions explain task-driven use without a prior library name or native skill installation. Search returns up to ten concise records with individual purposes and match reasons. Retrieval returns the current prompt, required context and an instructions-only conditional workflow. Client and instruction versions are aligned at 1.7.0.
+Two read-only tools provide engineering methods to any coding agent supporting MCP over Streamable HTTP. Discovery descriptions explain task-driven use without a prior library name or native skill installation. Search returns up to ten concise records with individual purposes and match reasons. Retrieval returns the current prompt, required context and an instructions-only conditional workflow. Client and instruction versions are aligned at 1.7.1.
 
 Explicit composition in `plugins/vibe-coding/workflows.json` preserves all 260 IDs. Read-only requests stay read-only; authorized corrections carry evidence through repair, relevant checks and repeated Patch Checking. Later prompts load when reached. `include_context:false` reuses available same-version foundations. Missing required evidence and repeated unchanged failure cannot become a clean verdict.
 
@@ -22,7 +22,7 @@ The local endpoint binds to `127.0.0.1:3105/mcp`. `generate.py` validates catalo
 
 ## Hosting
 
-The deployed public endpoint is `https://vibe-coding-library.swift-seal-1081.chatgpt.site/library/mcp`. `site/app` contains the reviewed routes, console and policies for a Sites Vinext checkout. Set up the standard Sites starter in an isolated checkout, retain its build integration and configure `@modelcontextprotocol/server` 2.3.1 and Zod 4.3.6. Persist the Site's returned project ID, then stage with:
+The deployed public endpoint is `https://vibe-coding-library.artem-satsuk.chatgpt.site/library/mcp`. `site/app` contains the reviewed routes, console and policies for a Sites Vinext checkout. Set up the standard Sites starter in an isolated checkout, retain its build integration and configure `@modelcontextprotocol/server` 2.3.1 and Zod 4.3.6. Persist the Site's returned project ID, then stage with:
 
 ```sh
 python3 mcp/generate.py

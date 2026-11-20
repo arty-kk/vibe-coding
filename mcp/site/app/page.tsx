@@ -4,7 +4,7 @@ import Demo, {CopyEndpoint, LanguageSwitcher} from './demo';
 import {COPY, LANGUAGES, text, type Language} from './copy';
 
 type PageProps = {searchParams: Promise<{lang?: string}>};
-const endpoint = 'https://vibe-coding-library.swift-seal-1081.chatgpt.site/library/mcp';
+const endpoint = 'https://vibe-coding-library.artem-satsuk.chatgpt.site/library/mcp';
 const languageFor = (value?: string): Language => value && Object.hasOwn(LANGUAGES, value) ? value as Language : 'en';
 
 export async function generateMetadata({searchParams}: PageProps): Promise<Metadata> {

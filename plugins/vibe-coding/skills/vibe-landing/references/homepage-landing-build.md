@@ -10,6 +10,12 @@ Read the actual request, repository/project rules and current implementation pac
 
 Retain the original requirement ledger. Define the requested route(s), deliverable, necessary integrations, accepted visual/composition rules and measurable acceptance cases. Differentiate a production build from an explicitly requested prototype. An illustrative dataset or test adapter must not become a claim about a real business or delivered enquiry.
 
+## Establish the visual relationship
+
+For a new homepage or a broad redesign, carry the user's visual preferences and intensity limits into a small rendered slice. Inspect the opening and its primary action on desktop and on a narrow phone before repeating the design. Use the actual copy and media. Decide what should stand out, where the light comes from, and which visible cue separates each important surface.
+
+Treat a request for shadows, contours or glass as a relationship between layers. Choose one dominant cue per boundary. For example, give a raised panel a soft external shadow and a faint upper reflection, and give its inner prompt a darker fill with a shallow inset shadow. Use line contrast where a divider or control needs it. Keep ordinary surfaces quiet and reserve the strongest accent for the primary action or current state. Inspect the sum of the treatments at normal scale and remove cues that repeat an effect the fill, light or shadow already provides.
+
 ## Build the experience
 
 1. Establish the selected modular workspace, actual package/runtime versions, rendering boundaries, content/token ownership and working commands. Create the needed structure rather than empty speculative packages. Keep app sections, shared primitives, domain rules and server adapters at their intended owners.

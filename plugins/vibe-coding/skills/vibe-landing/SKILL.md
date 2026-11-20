@@ -7,6 +7,8 @@ description: "Create a homepage or landing page from scratch, finish a partial s
 
 Apply [the working contract](../../references/workflow.md) once. Identify the requested result and current stage. A broad request such as “make a great website for my studio” needs the offer and page concept derived from available facts; it does not require the user to know design terms or workflow names.
 
+For a visual request, read the intended impression, the focal element and the requested degree of change together. Treat “soft”, “barely visible” and “without overdoing it” as limits on the effect. A request to adjust one relationship such as the boundary between a panel and its background starts with that existing composition and the focused redesign recipe.
+
 | Requested result | Entry |
 |---|---|
 | Synthesize the offer and full proposal from a general request | [Web Offer Synthesis](../vibe-web-strategy/references/web-offer-synthesis.md), then its planning handoffs |

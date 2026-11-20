@@ -2,7 +2,7 @@
   "mcpServers": {
     "vibe-library": {
       "type": "http",
-      "url": "https://vibe-coding-library.swift-seal-1081.chatgpt.site/library/mcp"
+      "url": "https://vibe-coding-library.artem-satsuk.chatgpt.site/library/mcp"
     }
   }
 }

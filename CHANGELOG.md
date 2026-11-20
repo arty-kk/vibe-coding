@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.7.1 — visual restraint and material depth
+
+- Carry the requested degree of visual change into the entry recipe and verify it in a rendered view.
+- Use one lead cue per surface boundary. Give the homepage preview a visible soft shadow, a partial rim light and a quieter inset.
+- Point native packages and the console at the current direct MCP endpoint.
+
 ## 1.7.0 — homepage design and delivery
 
 - Add 19 workflows for planning, building, finishing and redesigning homepages and landing pages.

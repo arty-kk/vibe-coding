@@ -1,6 +1,6 @@
 {
   "name": "vibe-coding-library",
-  "version": "1.7.0",
+  "version": "1.7.1",
   "description": "Engineering playbooks for any MCP coding agent: find a method, load its current prompt and follow its verification workflow.",
   "author": {
     "name": "Arty S.",
@@ -35,8 +35,8 @@
     ],
     "websiteURL": "https://arty-kk.github.io/vibe-coding",
     "supportURL": "https://github.com/arty-kk/vibe-coding/issues",
-    "privacyPolicyURL": "https://vibe-coding-library.swift-seal-1081.chatgpt.site/privacy",
-    "termsOfServiceURL": "https://vibe-coding-library.swift-seal-1081.chatgpt.site/terms",
+    "privacyPolicyURL": "https://vibe-coding-library.artem-satsuk.chatgpt.site/privacy",
+    "termsOfServiceURL": "https://vibe-coding-library.artem-satsuk.chatgpt.site/terms",
     "brandColor": "#537E1B",
     "composerIcon": "./assets/icon.png",
     "logo": "./assets/icon.png"
@@ -44,7 +44,7 @@
   "extensions": {
     "com.openai": {
       "publication": {
-        "release_notes": "Adds 19 homepage and landing workflows for offer strategy, copy, identity, art direction, components, implementation and verification. Create a new site, finish an existing one or redesign its presentation. Includes optional local design-kit and requirement-coverage helpers. Existing workflow IDs and the two MCP tools remain compatible.",
+        "release_notes": "Refines the visual entry and acceptance steps for websites. User-defined restraint carries through a focused material correction, and a single leading cue separates each surface. Updates the packaged MCP address to the current direct endpoint. All workflow IDs remain stable.",
         "translations": {
           "es-ES": {
             "subtitle": "Flujos de código bajo demanda",

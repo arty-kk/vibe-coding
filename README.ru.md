@@ -10,12 +10,12 @@
 
 ## Установка
 
-[Vibe Coding Library](https://vibe-coding-library.swift-seal-1081.chatgpt.site/) работает с кодинговыми агентами, поддерживающими MCP через Streamable HTTP. Два тула находят метод по задаче и загружают текущий промпт, нужный контекст и условную цепочку следующих шагов. Нужен интернет; аккаунт, токен и API-ключ издателя не требуются. Прямое MCP-подключение не требует установки Codex или Claude.
+[Vibe Coding Library](https://vibe-coding-library.artem-satsuk.chatgpt.site/) работает с кодинговыми агентами, поддерживающими MCP через Streamable HTTP. Два тула находят метод по задаче и загружают текущий промпт, нужный контекст и условную цепочку следующих шагов. Нужен интернет; аккаунт, токен и API-ключ издателя не требуются. Прямое MCP-подключение не требует установки Codex или Claude.
 
 Адрес Streamable HTTP для совместимого MCP-клиента:
 
 ```text
-https://vibe-coding-library.swift-seal-1081.chatgpt.site/library/mcp
+https://vibe-coding-library.artem-satsuk.chatgpt.site/library/mcp
 ```
 
 В Claude Code вариант Library устанавливается из того же публичного репозитория:
@@ -25,7 +25,7 @@ claude plugin marketplace add arty-kk/vibe-coding
 claude plugin install vibe-coding-library@vibe-coding
 ```
 
-В другом агенте добавь этот адрес, выбери Streamable HTTP и отсутствие авторизации. Установленные native-пакеты предоставляют `/vibe-coding-library:vibe-library` в Claude Code и `$vibe-library` в Codex. Инструкции и пакеты версии 1.7.0 используют передачу свидетельств между шагами, релевантные проверки и повторный Patch Checking до чистого результата или конкретной блокировки. Получение инструкции само по себе не является выполненной проверкой.
+В другом агенте добавь этот адрес, выбери Streamable HTTP и отсутствие авторизации. Установленные native-пакеты предоставляют `/vibe-coding-library:vibe-library` в Claude Code и `$vibe-library` в Codex. Инструкции и пакеты версии 1.7.1 используют передачу свидетельств между шагами, релевантные проверки и повторный Patch Checking до чистого результата или конкретной блокировки. Получение инструкции само по себе не является выполненной проверкой.
 
 ```sh
 codex plugin marketplace add arty-kk/vibe-coding

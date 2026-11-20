@@ -1,0 +1,1563 @@
+{
+  "release": "1.7.1",
+  "date": "2026-11-20",
+  "baseline": {
+    "file": "review/evaluations/site-redesign-2026-11-20.json",
+    "sha256": "d1ce05e273a299821daaa2f19c1b057bf9f403fcd322b237a166a01b5d9c2f1c",
+    "commit": "33d8c49b23c457e4d918a29f60a52fbacbf2213b"
+  },
+  "observed": {
+    "before": "Bright thin outlines on the outer demo and most nested controls competed with a shadow on a dark background.",
+    "after": "The raised demo has a soft cast shadow and a localized upper rim. The prompt is recessed by a darker tone and inset shadow. Choice chips use fill and keep distinct focus."
+  },
+  "checks": [
+    "Rendered desktop, phone sizes down to 320 px, four locales and short landscape in Chrome.",
+    "Verified keyboard sample changes, exact article, both motion settings, prompt and endpoint copy actions, filter and locale return and no-script catalog.",
+    "Refreshed all 260 workflow IDs and validated the shipped instruction hashes."
+  ],
+  "limits": [
+    "This visual correction checks the rendered material relationships of this site. It is not a claim about an agent taste in other projects.",
+    "Current direct endpoint configured in the published native formats. Existing connectors may cache their own metadata."
+  ],
+  "changes": {
+    ".claude-plugin/plugin.json": {
+      "before": "75ed38dcedd24be9676a9a7ef0597e5dd8603f26cb00b75d67e51a1ee70aa612",
+      "after": "468608e1262d2c17de1c263aa84f604e6ca5fbb23aaa7deb4748bf1010f28cca",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "CHANGELOG.md": {
+      "before": "bae5b81f52fb51b604857c15ad279cb18dbd25ad93cfa4381f8bfc2aa40a70f0",
+      "after": "9ce2ef93a13404b731945d1daae4c0cc80127ebe204ea47eba2ccc90ccad92fb",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "README.md": {
+      "before": "fe7f2e85047bc6622ddba74d0297c1977769a7a41d3e966c1289f07b9e3beca4",
+      "after": "972798cff927bc486ce1fe4154f11fe0ee352352bfd6c630a64d245eefc23f61",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "README.ru.md": {
+      "before": "61c7537d3ad6fc10e532655c09566d36fea1b020fff080dfb5974afb8e11f7ba",
+      "after": "ccde050bda3da14e6138799cb0eaf1ff27711213ab9317be6e00699c888c1be3",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/404.html": {
+      "before": "bfc8856330712fffa486104a4842b8973c98ad9a47c2637dd8ab3f4fc26ae45e",
+      "after": "b01e047c5661a8d31711db3ee6e5ee68f49136a69decb51df2b5e6eda657479c",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/es/index.html": {
+      "before": "292431abf7b07005f079ad673638872e2ea3d4bd2620c208a37090c914df5971",
+      "after": "8027234560d6074d0eab49520cbf0ab426973590a53dc4493e5e954c5137df9a",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/es/privacy.html": {
+      "before": "175b197fdef13492c759aaa424b2fcd346004e99e4903373647160fa202dc4ed",
+      "after": "f2f3b65ab1d6cde6fb87bb418849c906dc4cb8fd51077968f876413cce321e40",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/es/terms.html": {
+      "before": "2ab6606277e3b8d8608a40004e59709f54d74a05cb41791792bdfdf40fe26abe",
+      "after": "d7403f53b8bc366ecc2eb1a3ce9005f073ff3d8db8265a05cfffdd13542494ac",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/es/workflows/index.html": {
+      "before": "b2151099b0f01039f391ae5f178dece0516fb8073bd539091555ea6caf45d27b",
+      "after": "ce638d2074a530a7cd9928639f55d5027cfc2f6edcd7375d8e3997f097e7f75d",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/index.html": {
+      "before": "acbc46f855ef751f6702a292c51798a7d3822b8278af64a5ce6a36694ecf4f7c",
+      "after": "c4e7f821bb6cec32e0275be9c131b17c084a9259b1132ab514515cf8c69a191a",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/privacy.html": {
+      "before": "33f316c4d055fcebe24214d83e4f99c7737a82e2ab190c1df75498323297707c",
+      "after": "03e34ccd046988671247235e35db4a5a7c3bc90f30767b08a5b3901516400872",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/ru/index.html": {
+      "before": "dce9e3bd3e0109b61322e80295a9af9aa21ec1750b4da47dade0ee81f81fcf4e",
+      "after": "24ab884e854a0047afc58a4ee4bf13b35df0f29a319429edfa88cc79e297ac05",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/ru/privacy.html": {
+      "before": "121c2b3d3da19f9710e4b0735b186c1a6fb2a20fa6b2610d162bfa2a87fb2e24",
+      "after": "f3e63bcbe09bcfc0741498ad028242b295eacad3dc614c75915a4eba62e017ca",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/ru/terms.html": {
+      "before": "68bae9395c97416f39ca950c1ef3add4d74587202ad56611c15a2bac2ebffd03",
+      "after": "0c24bfc8846e5e13072181de092bd340ced70a87c90307afb663dc0f547ce3c6",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/ru/workflows/index.html": {
+      "before": "20222ddc2b1e7ae95b679b3924e1b15086d8136dc3231b229c46e49d8bcd30f2",
+      "after": "90a27692feeea35042bce84cdeff5955163b697755f0d70cb39077a2d91728c6",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/terms.html": {
+      "before": "de87c42e57681143c16659f825640e561ecbaae472ba7ab5105d5e281666242a",
+      "after": "c74878266e48a8b259f6cdb0c37c07a8901df65def1ea82e2b7033634c386398",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/accessibility-audit/index.html": {
+      "before": "842d1b25eac81dea42dc0bdf6fff0465e9733f98094acf43fd2979279172d14b",
+      "after": "c47eb2b0356138bf0799d3599a3069ec5f8aefd46788e6f043b43f96472888f0",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/accessibility-polish/index.html": {
+      "before": "d4a16ec43b3ea491d8f9bebc13585423abbfc60a8eadf5adfb92523a03ad4ac7",
+      "after": "d8e82ae7363a6b579f497101ce0ace48321411d322a920ffca0cc139e895ddf7",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/agent-harness-audit/index.html": {
+      "before": "dd14d94601e07966cdcee91e314bb494f6864c39c403c7e25fc424f90095af63",
+      "after": "6cf17490e5dbd330a6370253667c95360a10d5e15051142cc3113798c31cbd15",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/agent-harness-polish/index.html": {
+      "before": "a0040d01710c82377c6c90ce4859a219c2b723173e942408b1c024ce4e519915",
+      "after": "eae1fdf4d0208897c64a857acdd51b144a023e98224bc818f5e4b9830485229c",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/agent-harness-replay-failure-check/index.html": {
+      "before": "75e5a0206d9b459e33a1f8a867fded5df7d2213884009550e383f64a4a95ae4a",
+      "after": "e8313a6ead82c904d57548ab75c0997ed9fb37d497313734f50d99e1fbc328d9",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/ai-evaluation-audit/index.html": {
+      "before": "242fde5f2c6d4c17482409da8049243c6602468d90a6988bd72e0d0a31748474",
+      "after": "18fab2bb17ab23466b62e7104451e431fc6da0627638904361e720ba60cfab3a",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/ai-evaluation-polish/index.html": {
+      "before": "1c353804ae77263463a355c760f82debc595e21627cc6d71c415584431287624",
+      "after": "b5ef6f4c8e3efb1ee19763a0a5b607cec2136284d8369a91a8d7e40197343431",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/ai-feature-audit/index.html": {
+      "before": "a017adf4b4edccfecb21f0c06229ed3af9023224059b01fe0b91d06e20c6261e",
+      "after": "69015e40f2122e2ed75fa5f964a418a5aed71c70e75bebad7aa9cbd625451d57",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/ai-feature-polish/index.html": {
+      "before": "462437c44e1f8c2d7e28b9c1d13cfea58c7137829855c576f02adba06db97e5d",
+      "after": "1820403c510422a2eb1d1359e2924f1eec1a717332065fc7cae2cc1409c5b059",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/ai-ml-problem-framing/index.html": {
+      "before": "73f83216d129c0c3ca5515db4781baee505ce33c5028f21bc507d098d884d425",
+      "after": "7d7908a8d3690467f57f3b5eea03b6ec15c2c602d5810ad731e59dc9f1a8306d",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/ai-navigation-map/index.html": {
+      "before": "83754497bba444bd16579fb5893d2d806d254d6dbacf99afcf167267c0be5e23",
+      "after": "769c1ec12d26745f9c553a512e999abfe3e11e8b469fd1dbe5bd7e5eebf80c31",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/ai-safety-governance-audit/index.html": {
+      "before": "e517a2fb245da388b718f41d5e537eb0cbb11f934c95d4d829f8d486699c05d2",
+      "after": "a373d4da8e53f38547708843ca30e5e13157763a66e1d72dfdf835cd5fbeea5f",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/ai-safety-governance-polish/index.html": {
+      "before": "9e38495af05c1976cd038fafad28d2e726e2285105d768f04940c3b2c623420c",
+      "after": "f4d40bed47fa7335834a8186424bdfc92074676043d8a277f729233753343b6c",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/api-audit/index.html": {
+      "before": "130a639ee96fa715dd985a4a515cad7ce22efa6a1329be9516476a3f3ad03d34",
+      "after": "b52dd3ca0c12532ded4875a4d0dca286082a2142400372249261b4aef0f501a8",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/api-contract-compatibility-check/index.html": {
+      "before": "b29cbd53a94d6dd0119b477d18785126a0b13db2a1a168d154e49f40139a08c4",
+      "after": "f40814ada2b1271fae73292af0de39b146776ac6bee74a37c8e3fdcc1a34f2bf",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/api-contract-evolution-audit/index.html": {
+      "before": "6d6dd87303ae164ee55d920e575e02de6a6675a4b40072c28c7f4cf28a91a238",
+      "after": "d4b80cadb02f8b6393f35d8b8818e233c6ce3693f56f7fb58a0e57792813bcce",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/api-contract-evolution-polish/index.html": {
+      "before": "800de8df1346413f06e76101b7dbc88233fd53ab3dfef9937c4c5602f09880b4",
+      "after": "d89120824f6f56f84d59a1fd772cf6cea25e980b0a5bd331cbd4822b782be61f",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/api-navigation-map/index.html": {
+      "before": "552beff92e614478ade45891d7f24d47a1ca41a327e27cdb80f1b9ad53aec831",
+      "after": "786e1a4ac8d5fea1cce9cd9cea1a2c9db3fc3509cfabd5d3887f79c849e39300",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/api-polish/index.html": {
+      "before": "f0eb12a4c1ec4058c43b4eeee406ef5c285eb023c342d3135f76a0e5671dc822",
+      "after": "e2bd05d50ec963dd4339e9c3afe599f44b05ab8708a323ec42f218469dc24e4b",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/audit-logging-compliance-audit/index.html": {
+      "before": "d8a6361753826186118b8e85c341c97aa57b9a937d827778af75797cee1672e7",
+      "after": "0bac01fbac843107a87a84a63bae97bbc4d41da9b26519367cfbea2d9685d51c",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/audit-logging-compliance-polish/index.html": {
+      "before": "1cff9121431bb23a61660bd13d3e0486cf1ed0b01b601aa653aecd40cf2c8a60",
+      "after": "605d91103feeb042923639c74f0bfbc6cedb0bd8ccbd328370ab88db70549124",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/audit-trail-integrity-check/index.html": {
+      "before": "3a5b61390af1a5abe2f0d7016ed7b85ae0e0864375fbf16d869c1d3a7607bf1e",
+      "after": "e58ff49cb7ff3addfeb687f8de0f0d047a30520af201170283c49558471b2c02",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/auth-entitlements-map/index.html": {
+      "before": "7953e74188134584ffbe7351e5061fdffbb1fdb132732f1be79d2d7612413c26",
+      "after": "9833f571ff90425ab70365d56eb96bdba8ff95feb9d59add31d82bd72faa5555",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/auth-permissions-audit/index.html": {
+      "before": "2a1c6577068b761a3abc1c2616d6dc603802fb5b7271a3cb69aa61fd0f195cf8",
+      "after": "af88a4689f2c853fd897c269b76d06ec93b0de7da7e609d74cb0ded07c035ccf",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/auth-permissions-polish/index.html": {
+      "before": "8e79d55046646d23eabee7bab7a10ae14aedcf0c79655ae6397c9d770c7215ae",
+      "after": "2e8bfa7d8bf9a839435a7215b5cda9e3d86472264550613044735735afc10efe",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/backend-integrations-audit/index.html": {
+      "before": "cc6162308099a699805d6c40920f2b16c99ad86964aea1505ea3bc326c08a0d7",
+      "after": "947394c74cb7546c9241ea3f9d05458c651a1f17403465c6c97dab61de9b4de9",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/backend-integrations-polish/index.html": {
+      "before": "c0acb412f7d74c64ea6c71cc18d7c5be600b7d9999c3802747ddb8cae2bccbfd",
+      "after": "d94716f0c265ce85a459cff0728026bf153ef8d4d056acf324547a19f43cf4bc",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/background-jobs-audit/index.html": {
+      "before": "6b2e630a0055ab68f9cc3853d46832751a889a50b7f7fa5758291300dbf4997f",
+      "after": "00826f9d3c246a8be334382f68bd2efafd82fc47d12770144f7df72205413e69",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/background-jobs-polish/index.html": {
+      "before": "fcef065396b107d7dc01e6634d0bf820cef3686d139b66fbdc4b2c9c53a0b096",
+      "after": "1f13062e47b6772f6e3d1a66780234d15e2fec44201789e12e92f94d974faa24",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/behavior-check/index.html": {
+      "before": "b03420f67a6d8d662a81130b376660a6c2b851ecc4c91359c7ea559b9fc16fb8",
+      "after": "a670262962371a12cc2ef2e61b1cdfe349f0ddd9c828e99dbdc1ed0a80244f8b",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/billing-entitlements-audit/index.html": {
+      "before": "2f473d8494ef45cd0040751ced955b6763054e7427027ab8ff209c298dc2f861",
+      "after": "03bc2485f04b09efd52003a79960f8c5c40d42528fa963526540d106af12461a",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/billing-entitlements-polish/index.html": {
+      "before": "21785c57e55ef719539f5a6e35777ba004d8ca193eb4d6bd92d759c724f263f2",
+      "after": "ab0af6b9ee25915a0984583e35c8a88e09052ea9fd170555b231f605954e5a13",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/bot-audit/index.html": {
+      "before": "de23ca1ba3fd5882f4460437d36f71af228874b014acb128fb01167fb2a919a4",
+      "after": "9d58bcf5b7519195ec9c601831b1c22e3e57198c757c19dda1bbe5ac975bc594",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/bot-navigation-map/index.html": {
+      "before": "5dfc9a11d43ff328b36363db0fbc0e007ffb41ade234648addfb57269845ca16",
+      "after": "750af2390fa768723a0cf9b45385f4de84d958306f818756a094a8cb84ce9a65",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/bot-polish/index.html": {
+      "before": "238f3b0c1e14316206577bc8a263e86bdbfe4202d70bd037e3c06953cd633926",
+      "after": "db255918159c4de225717734b59f56d3edb9199c8d664f1e5113fd1c1b5b00da",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/browser-extension-audit/index.html": {
+      "before": "750d190a79d450d0fd7773f5376a6ee3abbe3d85dc224fe011cd6c3b27e29654",
+      "after": "b57eb89918fabe120befff56f73c532baf7fcc78dcd1d5be1b9d0a1f36fde799",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/browser-extension-polish/index.html": {
+      "before": "2d9467d80c30c4e1db512a98c4ff94f51c7765d4ad048a164366336ba674e686",
+      "after": "7b88310ebbe9a01b438f0fdf4b9be8dc16cef1640c94a523f97a7d980a4d13d0",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/build-supply-chain-audit/index.html": {
+      "before": "ae4391d3f592f1d98ae52d57547b302d904e39cd718afd5675198a814720b937",
+      "after": "6b30af7076d5c1cf30dbd88116ba2716558cf54731ac0bf3d9352d8b381f1950",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/build-supply-chain-polish/index.html": {
+      "before": "808914880e87a1cbe84483504cf5787791ce09bb8b119890cfd84697394fe430",
+      "after": "980391488fcbed5856f41472ed9e890c8a806f10df7069835bcf537c8e2c5752",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/cache-coherency-check/index.html": {
+      "before": "1a986c1ff665b40725d1ecb728ee99470150fae443d4684c36476309c30176b4",
+      "after": "b6109f9d76c7b8dfaab5109d603fd9991fe63b28aaaadbfccee83aacfef40dfc",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/cache-invalidation-audit/index.html": {
+      "before": "25ebd8c788952c1b5b946ca73e86f3a23ca6e55955c6a910b9e41588aab0a88c",
+      "after": "e654406985c7e67a6368eb0312cee997cc8c947084826a2cccb8c45b3a36a903",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/cache-invalidation-polish/index.html": {
+      "before": "b3945029b6d12e831ca78377d00b4924f1cac2e81a03a4844a990e34e84ae19a",
+      "after": "fa6821dd73491d51331c9be9fb8dc8310a85a3e4a00eb63781b61d851279cfc6",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/celery-delivery-shutdown-check/index.html": {
+      "before": "4a6cf3dddbe13955e08f2858cb22cb5c44ff6dc9b00ae7ac1724666c02fcf2c2",
+      "after": "2d9f63f116d3c739b97c35cb5ccbd0c976b4f6f5160cc2b6f14ab27abd5588a3",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/celery-workers-audit/index.html": {
+      "before": "701d20e7fa16ad5b8f31be4494c5f740158cb92687f4d3480a8a4d2b22e7fe99",
+      "after": "f734a05a1b7f02afdf3e44f9cdedec25b6dfddac4731d55d44e47a89dc2217b4",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/celery-workers-polish/index.html": {
+      "before": "f5547a7307607f3ec7d2723c8128aeb4f05694ff4d87e02ef7e379e5f19a2efc",
+      "after": "51d593336ed402b7204954e21db176af853b30e0537244031d1d8a2149d50219",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/clickhouse-audit/index.html": {
+      "before": "5a83fa707a8d43d0bdbd5dc325caa10885dbd41d60b4d6f2b0308c7e2a3c418c",
+      "after": "36977a82eb46ec589d65c2b7df1d7d50dc1d5eff5098bda144294f647f973588",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/clickhouse-ingestion-query-load-check/index.html": {
+      "before": "69698a84924bed2702ce416c7ac2c11e5eeb7bd078977eb7efb8f6afc1cf6e5d",
+      "after": "7f914ba82333d6416034159dd7aa9ad76056194e9ad584dfda20e874f45f7a4c",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/clickhouse-polish/index.html": {
+      "before": "0e6678afa8a6666fa526a8fa0bcbfb4808aafb0675f73972fa9a7c092e361a1e",
+      "after": "3ace154d597c3dac961bfdda37d29aaf2940d9d9267f1859acf11f84228bd238",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/compatibility-golden-master-check/index.html": {
+      "before": "6ce109ff9d7aa8693a9d5db7e18f03622331000f79a252525b12b9506f0e9837",
+      "after": "0e8227ac8b92dd03cc873e97b16c319ca05b68599b9e43007a20fa6dab1bbda9",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/consistency-invariants-audit/index.html": {
+      "before": "68f7a492c2e7367ff87f321c06edac1e9ac3ac7bb8f76b33d156e44369451346",
+      "after": "3238228feceab2f0ec07afb39dae2f226edbff5868b1e499695fe96f3a8c14b5",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/consistency-invariants-polish/index.html": {
+      "before": "cd2d1dd021c36ee782e42f5259a0d107100f6de07aed181f6eeb21fd93332287",
+      "after": "781666d3e6ff073872b9237a2134b654071a424c0bf727c3177e8e189923c373",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/data-model-audit/index.html": {
+      "before": "15ebca67545624b00e571b5aee6fcece52774bc9158629c000fceb8a45cab552",
+      "after": "3aa3f2692b8f17474218533cc2c6294dfd46d8756336a015c43e2448d08946ea",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/data-model-polish/index.html": {
+      "before": "445057f1e6c46e70eec7203b13a87e6f241f405400869170d8377f1d5b33aa28",
+      "after": "a84c0f1b4cbd1b2bcecfd082978094595522004bbe24508c45076b919c2d6d01",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/data-pipeline-quality-audit/index.html": {
+      "before": "90c1b8d20150a20bcecdcef23c7babdcf928b1cfbc917b7f773d2b05b4d4dc63",
+      "after": "ebe4b867d1fb6d5d2cb77067d092b36ba17077ea4e7395f993900cea13de4054",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/data-pipeline-quality-polish/index.html": {
+      "before": "4032ea8835090b69435daca44e91e23426549894fca5a44f887b4b65944c6a6f",
+      "after": "c489de20a965c040ea1005d0c9965dc2bab485320d85360a828c47b0029252c3",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/delivery-recovery-audit/index.html": {
+      "before": "6ee77bc81ca64110c6331136e817b4d7dbdd28c5ec89cb3861c7a484c95af0e3",
+      "after": "4d267504ee82f34308bd199cf3c326fd884dc601dab692db54497a6ecd9642a8",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/delivery-recovery-polish/index.html": {
+      "before": "d91f163151c79365c18987d5585793824cb7889b4336499248d71b3740d4f53c",
+      "after": "fed3fc3c2390b0c96a04dde3df3d6019d6bffdbc8e941147f7a6b6c1c802d9bb",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/delivery-restore-rollback-check/index.html": {
+      "before": "56731dd70f52b10658d1194153239dbcc9371a5dd90f02e3a4bbdd0596235364",
+      "after": "91b796df568113b1fef3babe5fee63e7434c2d04b38a86e6e0e7142e7ded3c08",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/deploy-bootstrap/index.html": {
+      "before": "84b46cbedd25a58f692236a5fa07de9fbba9d4f6a4934d430c8ba68509421569",
+      "after": "8db1475bf7be816dc4eb165c48f68acf9074e3120daf971a2d7b2244a7ffbb52",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/design-gen/index.html": {
+      "before": "c3ca16ca9658d1b7b3e2621b0a1093db82510f6a99a928818e64c9db6dc51098",
+      "after": "c5c7705058a7387e0eeb162e3c8ca106039227064b9fe5aca489235377d5949f",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/design-system-audit/index.html": {
+      "before": "b6996d0f42345101e714f1b287b7891c5378d3892ad090c9d179912ce6ba4bfe",
+      "after": "9bc6566a072a1bb466edd61992d9c7f1ad2df00450366d6460d89f91a6f7f2c6",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/design-system-polish/index.html": {
+      "before": "874e8a9c3ff69ed141fe20f21e85cbf72e7569f7dbe2257ffe7529f2e5dc5c19",
+      "after": "abcd414ecb4ef01ed14c540e11894bee6bd3dfaaaa83dfb0dbe73ce846ad7f7f",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/desktop-app-audit/index.html": {
+      "before": "86a13866d29eaa52ea78effc673d97c1ab84ed7882cc7b4bc72c5d05ee454882",
+      "after": "afd7a28a1660c56f8b95777467725147b359a3aa6a4627255e9acd7ec2669f39",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/desktop-app-polish/index.html": {
+      "before": "04d2eb92bd0a0834c720dcbd441fa306a58d5a9e5727f3037ce0d4ad596c2b73",
+      "after": "e8b0989816455af30002fa0198c3f65175e454ad8b4c577833a4f805630a60a3",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/documentation-sync-audit/index.html": {
+      "before": "2e9be805115243edd9299c01da4673e09b77b955b7c74127c8cfa69f74aa2ae5",
+      "after": "f8156d36431d36776021318250a49986e4c1441c3d5ca9a7fdd45a1a4d689619",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/documentation-sync-polish/index.html": {
+      "before": "4e58b4d3dc6a1d02e965dca58ab14044997e5595bfc842cbaa997e4347e177db",
+      "after": "c7cfe3187eedba8bf4c85431588a6c64c5f870bdeb62918a516b3f7191688a8b",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/domain-data-map/index.html": {
+      "before": "9d09a6ee163161374cac8e8a30101bfcbe469060603463600da4fe6757cea989",
+      "after": "9cf3489d98e6f44db9c62132793741b355716439113fdd07ed4fde4e90b9e285",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/evidence-normalization/index.html": {
+      "before": "0dc678cd0f7efe85ce50fc0c6f20ac199eb902c5aa416490f43510e26537fb24",
+      "after": "724bd44fd0c41039085a97944c1cc78d7e0dc60a4d7649bd19f3d524b303c526",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/evolution-improvement/index.html": {
+      "before": "ad6524a56548a1e4ccff8304057bbef5ab70efc1673bc88827045e43f7f5f78e",
+      "after": "61fcf3ec4f3f5f6525d5159ee5f6551a68f73e5fb112328c084129faa20a2e17",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/experiment-design-audit/index.html": {
+      "before": "794a368906f29f53d396b77e1b2f306b0bc8e3b6e985bcc84e148f25a8e514e5",
+      "after": "082a1c78bf8800d8a2cecb2f922ebd4369b817054821ae37750c49bc6c8bd2e2",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/experiment-design-polish/index.html": {
+      "before": "7a8047eff50b6509a9ad7a131046ed5359c28755dd7f60003c6ac3da8b88156d",
+      "after": "3d364951d7cff68a663491d854afe4dbbf261105f4019798c25f946535f2e599",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/feature-flag-exposure-rollback-check/index.html": {
+      "before": "ed6fea5b38f8b4b22a5b6b31cef6c4565e328b5e555152c01a7290e8ec137872",
+      "after": "f372e57de8dbb3f2fe166dbfa469427bb81545df3a5d537a1e5f9fe29b97d8d0",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/feature-flags-rollout-audit/index.html": {
+      "before": "6410816a895af818be39117bb24438ebf433b7e56b112bc82892865ce5d5d0e5",
+      "after": "888ea0aef375e61c1029af84b0c8205a7537f95a4bee00595f8d2c4e68f304b5",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/feature-flags-rollout-polish/index.html": {
+      "before": "ba856392f2995622e739926d1c16f3f212476c7dd0972cd6e8a739e8c651026b",
+      "after": "3bbddf6cf8db473daf931609146ad574942bf78d63999a7a538f31afe0fec788",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/form-data-ui-audit/index.html": {
+      "before": "50b826503521ea7231ec86920096e0ccd993a76b78dba9b169fa225a09fd2b6a",
+      "after": "e4c00dbdbf5823bffa18127b78dc37979bcea385c9770dc3c07e430f4a954e0e",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/form-data-ui-polish/index.html": {
+      "before": "6d18545f8e961c568065b21d5470a89426d64a3e39a4a254ee392ce676b7fd2b",
+      "after": "ae02c225f1b29a74c8701ed70737527554baa67c8aa0e0034221fb57e6bbb6a3",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/go-rust-concurrency-shutdown-check/index.html": {
+      "before": "20333d328d22a4dbc9169ea03cd40206b5f653502e54156d53d7d89df1711cbc",
+      "after": "4acc832ff0562a78dd23873a0171b9646cf84f3b33fc773e023120efafbf18d2",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/go-rust-microservices-audit/index.html": {
+      "before": "9b0a331e9234cadfca9ff5478dbe1e2b98d7bfd71f335e85730e70dd0e9a9f2e",
+      "after": "fe4052cf5ef3bcfc352e3ddb2ccc5ece946d5e9309ae138a089b18e512a8a588",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/go-rust-microservices-polish/index.html": {
+      "before": "6bbe95b71fdf3643b09b3e23f6725405d35b83f1107060b4c9e97c354b9caeb6",
+      "after": "397962924c8f4f6639e3f56c7c3365fc4cdd22fdb0efba4b56eb1f0f70fd426a",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/homepage-landing-audit/index.html": {
+      "before": "ad2a205a2950da51baa80347eccc42fc0b794906853b5f30b72132fb4616b3ac",
+      "after": "0484edcdbfb1ff6b0fe27124645ca2e2eb9bdba474960c34d33c75930821cd33",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/homepage-landing-build/index.html": {
+      "before": "86b54468bb5aadd92e1e8781d444d60677ee0bd7dcbbbd7d4cd72457f29e28b1",
+      "after": "65d6972a55728cb4f82f30eefd1de3a48d5c7671888007d5797d8a981811e326",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/homepage-landing-polish/index.html": {
+      "before": "e589c19b73f71d64cdb39c4a4f26056589ea3685ec56834a71ccac535c7707f7",
+      "after": "abef2f99b73a3b4c491e40ed5776cad3a39c0697d19f61c332111f969bca419a",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/idempotency-concurrency-audit/index.html": {
+      "before": "33511f624f42edc3d4ea6571e5aa95ccdbb33d3035af19c82131fa86ec07155a",
+      "after": "6d990304c75b750e24600508290c1a529f9903c7e2c6b864c181a949cc5d2c5a",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/idempotency-concurrency-polish/index.html": {
+      "before": "8d030b35fdcd80b37260df7abe75cc33a5bf35468a222b2f81f158ce5c8992a5",
+      "after": "71ba36fbd8042e754b49a75c5779b8e7841c8e131a622a5a17c54e05e37b32bf",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/incident-recovery-check/index.html": {
+      "before": "805e64fee02484b02c469f8dd621448cb6fb4d72fa2ebccfd8d5e1889c5d80db",
+      "after": "1bf72230810d2505390b78be97acb3484a8a5e786df277e45def1b06e822f102",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/incident-remediation-polish/index.html": {
+      "before": "97eb072ea9b3e9936cdf3a2a7a9b75f35402bfd9e6d52bcf06daa2a6699fa29f",
+      "after": "8317d8bcb00e1f4577b113ee44a78b1308ab1b9a315f96da1d542bf9112966b3",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/incident-triage-audit/index.html": {
+      "before": "aefad2130ccb4370eb37624551c8484ac3cc44e8ba445a3e1de605528be13ae3",
+      "after": "57911d017d98648c94474e49cc6811e957e71b265169a469c1e1fd01a3958395",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/index.html": {
+      "before": "a2f16bcea4799d9f8d458321041f02347ba2adeda5498312578b548907a47005",
+      "after": "d0e7267b2236836e7a41f8bc5d33a3a6c7b5e0fa314c5ace208fb407d7c7f508",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/infra-ops-audit/index.html": {
+      "before": "19235f68cae189158d3f8f1cace9f7f988f64d286d4cd580e99dfd702e3a8c4f",
+      "after": "caa7c1a993ef295a932174c9ca735bd4ab3949c12763fe160eb07e92fcbf17be",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/infra-ops-polish/index.html": {
+      "before": "7beb2364d839b9d15afc5429f977689dbad89eac78101dec8901e575e20197c9",
+      "after": "3571567fe8375d9c8d534a3c5744e4afa01030d5c5da8efc2b61490f75779061",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/instant-architecture-probe/index.html": {
+      "before": "970576a66dfc5f13375ded729eb6e7ee34625f06d697a396fc38bc90083f5112",
+      "after": "f645b793d035d0d96e3044a0c8179ead336c70088745c9bdcf518f1ce9834ba5",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/instant-backend-probe/index.html": {
+      "before": "afa8dc85903e7ca467417ddf562706d64d124c95ca15c41689ccad45f03c03e0",
+      "after": "e3f85415d6f4860b90086bc25e17d47fd00befd1f3b0f3683dbd5d818b4b95df",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/instant-bug-fix-polish/index.html": {
+      "before": "73915303d0a602d299feae080d01eeee57df219ab48fd680548352fbe8655136",
+      "after": "bb00c4b4b5791199c6dabe43bf07b191ef598760cc36cc330c4ad084e8adec89",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/instant-frontend-probe/index.html": {
+      "before": "9c0cae09e62fec476ddb8f74e63f037a2872a18aed5f9cf380aac8ff1da99776",
+      "after": "d1f3b87bd908d114ca73aa84ddb78b70c2503d1367b6f04f95063e78e5641721",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/instant-ui-ux-visual-probe/index.html": {
+      "before": "8e775e41ed5f7b8c522fea4cf8bdd732eb3ce2822793409564835901c5d58785",
+      "after": "f004dcfef8f077bff855104017d4a111410074d9a20757fdbacafd7341c5b033",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/integration-map/index.html": {
+      "before": "1fddc3d070e5ac221b7964b655af7e2de447f4fc6d011f974c532aed97030c6f",
+      "after": "4a47d9e24f3d4e825ef06fccadeef31a7ff3364eb90509f32805063f5124ac99",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/iteration-closure/index.html": {
+      "before": "0f2163440df4e670fe80d346c3743527ddf5406d6c4e6eae72076b1ce344103b",
+      "after": "19bd5b6c15c124c760dbd0f8ef855b21578a9ff9d09b0dd324f096116cf52e11",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/kafka-redpanda-audit/index.html": {
+      "before": "c56f2a0ede9417c10d37c3acf04fb8dcabfa14985ada287861941d673a894b27",
+      "after": "8293ceaa9b5df604abc7316c1e5562c4a065ac861e99c277d87979179d9a132a",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/kafka-redpanda-polish/index.html": {
+      "before": "2c5412ec186ccf1da526eb7675f1222ceef3574bf80d2929df299ae42f17f11e",
+      "after": "2745046c61563a39385a5aab6072a166bf33ebb2885f6e04763f41ddebe50856",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/kafka-redpanda-rebalance-failure-check/index.html": {
+      "before": "d549c0b380d7521a7b1d6a76ba16e48b51f4f837b68b67d8949109338be17305",
+      "after": "240e5bd116f4d2d0de25052e8f249e1e2a0c9296fd794ba650b5aec492b3f6c4",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/kubernetes-platform-audit/index.html": {
+      "before": "534b5fdb5bbd86d019dff2ff708767e2e7f9684351fa21edc3646787c3356bd4",
+      "after": "dccf0f5ba9e2793da5938b50ed488b447c0f53ea3582ae321c57f12bc5b844d7",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/kubernetes-platform-polish/index.html": {
+      "before": "993866e878b05bd3744cbac4c3148bd1257884c323fd32d21b5fe0acbcb7d634",
+      "after": "097b11854a07571dbdf8853a66cf307b52dda2aa2be160657e71657ccd2f215e",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/kubernetes-rollout-failure-check/index.html": {
+      "before": "ee56225fa423dced32c8f29f9deb4407e3424cc0bf00d50bdc6022c21a34c5c2",
+      "after": "c4cd85455d8d222abb71a3e19c4a74bef853150d04d99f3b86b42e86e984c37b",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/llm-agent-tools-audit/index.html": {
+      "before": "69504720dceeeb5fe9850907342bb84e4b0014c033bb0bc474e603bcc8b9b1ea",
+      "after": "9d70d9601eb1e07f13bfc1b55192f1affba5fd395233ca41fb52f01eba351b51",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/llm-agent-tools-polish/index.html": {
+      "before": "0d3731f93d1939ff54c1c3e99b562ad4c16549546bf75b14dd96f8e0ce25ccca",
+      "after": "cc787a12df2cdd19f90837a3f841255875130d93b362e1b0f8a06aa0f0c68b97",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/local-client-runtime-security-check/index.html": {
+      "before": "e87bb5324dd11ae53d5cd33f50837301686a718483048c3ea3a3179f5ee576a6",
+      "after": "60b20d4325c11dc874dbbe154ea7af5300efaf45abeca339fe3022ff6bc39588",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/localization-audit/index.html": {
+      "before": "50af3d7767a50ecfc0c2e3d4aff906f3ed0973fba1b6d04c4421be647c26dd84",
+      "after": "a737926148c849a04085f881fdf9c5707224f554a45151568cf37f2f614e926e",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/localization-polish/index.html": {
+      "before": "6e4835e6e37116a3bf70c534374e756d949fc63d2dd5a27e1aa562cadb6d722e",
+      "after": "5de60dbf9e5d4939cb30c98bbc0e99f4ca234e6a355aa4769ee74371586f87b7",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/map-refresh-polish/index.html": {
+      "before": "29ff13307d830885b764fd0fe007a4824e6c3cec2ecae6c034aef1d0a07974c6",
+      "after": "97e2b19d2f62c73c54ffedf3e532606f0f157c4883894ded4e23d9f5da9fbe43",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/map-staleness-check/index.html": {
+      "before": "d2f0787d8c583c5f57f4ae5574fbc92dc2f2b718b8b1a498d89a5501259b818d",
+      "after": "00387007c1ffc4082c8887f9c5173151446ff1a55330beff8e5e8458e8d058a4",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/map-synthesis/index.html": {
+      "before": "3f3099610921d1a002175eb4348dfa8f7414747136818de82c9d8839240e5501",
+      "after": "da0363467ae6ae69bbbdf77e7c419a3254a86db02528786c8fed356851efe23e",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/mcp-protocol-auth-check/index.html": {
+      "before": "4de98cf5e3727b0dcca476d1726ab566e2f9beda91e6c274f8d9f23a6da23fb0",
+      "after": "65e63fadbc46e69f48004f8750c5e87cf574a7088d96ece915b6fc4c5d7a8ca9",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/mcp-server-audit/index.html": {
+      "before": "9263952787e68416fa1ef7383a575396e68130bff9c7053d68e4ece43e20645e",
+      "after": "ce442c632d65c9b4a7320432a6d639f5ca5683411556b112f3e3b549780330f0",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/mcp-server-polish/index.html": {
+      "before": "cba6d5cfb117672a291dbd7551bc955b5bf6ea14a135f13284aacaf5071c0e7f",
+      "after": "e06a3e7edbcfbcd23b91598aa1c1deda61efa90f2c7e80aa75d415aec64a07e9",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/migration-refactor-plan/index.html": {
+      "before": "2d194075a3276b5593625e501e45aeddaeb2a64cd05efe29d89abaca4665a917",
+      "after": "0e71c5c4db80f50f5d4d20276677e4fb84d0f7337f8cd892bf99311bd09f9bea",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/ml-pipeline-audit/index.html": {
+      "before": "f2c2ca8d2033c8eff73b32f4ed801fd2af7602e154ffc0aceae00a156e1ec3a3",
+      "after": "f8479ecba32b3f35fd00e464d90ec8462a13e7487912040664c47c73bf193709",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/ml-pipeline-polish/index.html": {
+      "before": "48af90f204197fc71ce6b650eb652d9445ca4157dd3173fbd40d3413f5a551da",
+      "after": "0877e70b6de3b813bc8badd5f8067a9e8d595bcf7a95c5cf9f6b8a8fd31c0b79",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/mobile-app-audit/index.html": {
+      "before": "8c47d1539e5a636571f841afdde9c973a8adc18ab21d92d492d13ae65f1d89fd",
+      "after": "8d66021052d089b777673a31f53d1122dc756794fb968b7aa8d5a38ae5e5f870",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/mobile-app-polish/index.html": {
+      "before": "3b0f63f6e7e1cc2528752a57583d4d79727e89e0854c2018be92239e8c08958a",
+      "after": "5ab54c51b6aa29767e9196eb773217c6f342fc0d397580b57db217afccabb8f8",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/mobile-release-offline-check/index.html": {
+      "before": "a4a8c38109fff261b57bab1a679223bb60ff316217032f090e81585c80093d87",
+      "after": "16c5bda53024687c8a1d618bedc952a352c92f01d434c49090e3ade993fbb6a8",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/model-serving-monitoring-audit/index.html": {
+      "before": "630baf10dc2bd7a52ca5ad9fd18d49072c8542b8fb1132a5df9a00c35fdf2fa7",
+      "after": "f73014522e2b71f78554020dd2eac33f182ced4b0e8537fcb06beaa170e85769",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/model-serving-monitoring-polish/index.html": {
+      "before": "2d4e22896635b0efa6801a7f747805cefd8914fea9e4569c91799d9eb367fc33",
+      "after": "43ad7a027df827719b146b022b16e5d832bfef7f6d0bcbc993ccd2f737c02eba",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/multi-tenant-isolation-audit/index.html": {
+      "before": "97698a11df92189b8b450902f042d20bf34d017c2f5fe188927b0af63dfdad0c",
+      "after": "c275c0f5a569687cee8886b548e88796fb815fba554f46ad8b7ddf24330afa1b",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/multi-tenant-isolation-polish/index.html": {
+      "before": "6b7ce04a6e894bc04079669f0700a98fba46541711e2e2eed78c76a82abd6dfb",
+      "after": "0255eee04db386e5522abdf3a5b54354a926ddf61855e379b97b1f25146e210b",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/network-integration-failure-check/index.html": {
+      "before": "0c28b5f7231bf4f2da9a5bea92b40fcbba6133e686b2abff997a410ed2e3d7b2",
+      "after": "66fbdb5fb07ea331702683e810a0e5f6f519276a959bbd94abfa4692061797cc",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/nosql-consistency-hot-partition-check/index.html": {
+      "before": "02b25fc324972d964307a436415349db2c89adc170e2d7edbd8a7ab513aa7bb3",
+      "after": "cdd133547ff59fe7c1ae5cda4b274d470443d864ae0efdf9ad338bb628b698ab",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/nosql-databases-audit/index.html": {
+      "before": "451289e231c72b6e08e3ad4645d0bf46f779c074ab95ed6cf2c2aa1dbc0d2678",
+      "after": "501eba4d1477ad13e1d97cabb403378ef309781e8f97ed66669d351ba110aab4",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/nosql-databases-polish/index.html": {
+      "before": "461b984ee89c4dad27d1ddff2070fe01ebaa9413a8f09e3ec8817672379db541",
+      "after": "80afab2664637f61bd9703a2a1fe611b679b40719757def115804b6f174e3bd7",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/notebook-productionization-audit/index.html": {
+      "before": "14ebdfa01a08ed3e3fc7ee77cf711d4530e6a6c87c338670c887754ae9a6e5f1",
+      "after": "8f4b05eb1d1c13c7ece01a6e2f778e5ef58dc6d071ef60afe5e1d3294b601998",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/notebook-productionization-polish/index.html": {
+      "before": "ce3584ce8cc2dc25e9c55af774f564f6096a588557db45745237a46acc64e8e9",
+      "after": "f84253a7ee32e17b97a5ad1e3fe0ab78c6300a85a013a2b423a38be0a86d0d93",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/notification-content-audit/index.html": {
+      "before": "af3329b15d185fdf0449d153b4a5fc293dd8569b2f270e9bd57bc94c7570b809",
+      "after": "1ae329888981a3538e6c0fd9ec246a7d41e66229cd2333bfd87ae1b575a580d7",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/notification-content-polish/index.html": {
+      "before": "2130661056906337b6d7e99107e8d73efd4d9886e64fc3d37a95e6d497993675",
+      "after": "b96a1863ad041ba08406669d648ad22412890a278034294e31ffed60e331b1ad",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/notification-delivery-audit/index.html": {
+      "before": "6e77a758a140d81be5b636917dbc6610f5393463ad90299bb20ae663cb01ecab",
+      "after": "815e2649c6e000660ffed0b8d2c9f081970b307137f87167bb162a33d094dbce",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/notification-delivery-polish/index.html": {
+      "before": "8519dc36305ec30975ffd938c99a2353b8f2119a185827623d791fda94abec70",
+      "after": "591166ca1c61f96e0991c1b321110c94f6cb3d2974a127ff1791f843d0dc843d",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/notification-failure-idempotency-check/index.html": {
+      "before": "41e03d1fdeb5fd96252483123186e388f6c06e76c7de98a67acb1040df8576f2",
+      "after": "8186599b5bb107d3f76caf615b20303fc9ea7e210986b5406db637194fa46435",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/oauth-oidc-session-check/index.html": {
+      "before": "2d660b504889dfc3a56ace14ed1410c62dce1a3d2743a9d8ee6685eccc92c4d8",
+      "after": "63b36b65f15ff585688205460938e7bd5e467c34f8f1c46f3ae487af0a04e9f6",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/object-storage-audit/index.html": {
+      "before": "f50fe04bea87519fccb0f789c52eeae433ff06d26a599cd2c67d184db0e670a5",
+      "after": "a05633f6ba22dfbed356d27db3fd32a07a367189ed690d293fe55c36c53b35ff",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/object-storage-integrity-recovery-check/index.html": {
+      "before": "2f35d85e0814d21ac09d84e0ff162b0a130f4f5740839704bef62bdc12f5ede9",
+      "after": "9badd9d9cd454e462be3dc1b53edcaeae77e15fd7321547644a592c4b154d775",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/object-storage-polish/index.html": {
+      "before": "78bc9b9a23cfb4d06564473c8dbacedf39bb46c5c655cc61492b0a39c173070c",
+      "after": "04d57f300023eaf6d26e10a4e65150625cf2b91f8e535e7d998538bf4fe76294",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/observability-semantics-cost-check/index.html": {
+      "before": "3f0cefaec1b518bace150d473c0e947733344d79e2c59006b56c9003f106a1e3",
+      "after": "c1b63da7ca6a05781381c5a21145fa991b0ee94363e8176557050772e15b4076",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/observability-stack-audit/index.html": {
+      "before": "d86cbd8f2234adaf9677927dba54326657c8f90b32d44cd33b9f0e482ee80490",
+      "after": "7f19ef681ca603db6ee524d186575495434eca7c543c19f064036ba7941a2d30",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/observability-stack-polish/index.html": {
+      "before": "87a1498212c8fadc48ab841bc7aa69c1f94ac11a3643e20a8b8143d0d318aad3",
+      "after": "2742d9c38e5b7d0aff6c084bd408daf06cd997f232f4fb0e5e36b34fc12d20a2",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/ocr-document-ai-audit/index.html": {
+      "before": "555611f8ef430745162677792dca32633ae0cd74388d5a2a36ccf13e07d313f8",
+      "after": "3cba4b00da28314ab5cfe5c9435b0d72310e4ebe68b70cee686083b2dde8290c",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/ocr-document-ai-polish/index.html": {
+      "before": "f718886780c390b1e0267ef82ce992cc3060f476e6566768f0a7225ab738058c",
+      "after": "4d91d909df11030bc031f0d7460ba0c195a1bbea0cec54a7f3a8627fa3fa5a97",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/onboarding-activation-audit/index.html": {
+      "before": "b1d89fb759d9583f92bce07dcc45ddf294bbf34fdc0adc96eaa0007e9f4b2471",
+      "after": "73b12db34ac4a45b7bb4a76acf67c6e4151d8d8a99248ee968927368007a3da2",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/onboarding-activation-polish/index.html": {
+      "before": "27ca47822d660f55c762b81ff4ee3d02bf840fb9e2915f223a7b150cb4e43e68",
+      "after": "d63f7446d5303f3824722a87a94af71c5893c82d2a3f98ba3e3a36460e78d090",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/ownership-invariant-map/index.html": {
+      "before": "55c89782819fe7219a349f12001072f182353f48b5b8e7e5415c9166d2511381",
+      "after": "3411cd3db69d036b80df08add6a604fb837aaf8cc26dd591346023a3542e33a0",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/patch-checking/index.html": {
+      "before": "1145407a0c00fe45c1d322dd9aea243c2938b201ba3a8716b94e0e644ed5dac1",
+      "after": "2c25369c6eb85048ff77b88e2a3564ff51e71b91dc737c420540792dbfd6ca82",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/payments-provider-audit/index.html": {
+      "before": "ac8d14f96afb6f317132c5da726ce4e8a6324a57f5059452b361d853be7ef379",
+      "after": "4223f00f37be2794fdeb98e4af50bd67e326ce96b8e3164e598179b89e8e3951",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/payments-provider-polish/index.html": {
+      "before": "0b811eca0b5fbfdf09f8cc5e7fb23d3c7931dacf87be3b6bf2f99b39547bc4de",
+      "after": "a0d910467bf5cbd6d1a900f173d2c021af78e109074ed9fa5f41312475963357",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/payments-webhook-reconciliation-check/index.html": {
+      "before": "1ba1e92407efd9147092fa7890889428b404082fe0a106c05f496662dd42f651",
+      "after": "b09d4a66c496a1b6e0fcfc3fa6fbe5b9164b9768edc577b046fdd7fd35ab3ee2",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/performance-audit/index.html": {
+      "before": "bd3416aed713540bad02af3953553db7745854bb026c8bada350cad9e32e2936",
+      "after": "73bf29e0ae5f0e434a7b924345dc055058b16c61fe66d690bbf47f18f1e0dce2",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/performance-budget-audit/index.html": {
+      "before": "6c67d59431c796129970b8df94473eb4ab962b21642fd1f19c5abf50e1df1742",
+      "after": "8b3e34be8e7eb90f7ecb433f55724881751d56ec70c6a2570782da30093dab85",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/performance-budget-polish/index.html": {
+      "before": "04ffe75208c57eb4cb30c3890e719da6712f4e408e2afee24765b085e011827f",
+      "after": "480a8a765255c9a4c9cefdc1f25ca0f0dc754dc578d3141d097254f3b463cc28",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/performance-polish/index.html": {
+      "before": "aa949d78ad2aa5903e48eec90af0dea404182beaa9ab8f696cfc2fe88821a54f",
+      "after": "1c18d6fc71001bea58547ae5ae9dc723a0cd6d71fbd907b547db74ddcf2f147a",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/privacy-data-rights-audit/index.html": {
+      "before": "093f8a4ce02aee113726c5ccad12fef9a8d361905dda86c677c7f9c87575de8f",
+      "after": "7d18fe529b3ef374dd0c75f905506d9febaf8de82794ec5df964b747035a0fee",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/privacy-data-rights-check/index.html": {
+      "before": "4480bcd672d7fca2857fc41ba242b078aac56fb024e5739ccbe80c413ef02c50",
+      "after": "1d47c443324b47a2f8d1bfb6bc3509abcc2e7ae9dc5b8bd6ee295d90fd8e5723",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/privacy-data-rights-polish/index.html": {
+      "before": "c34b0aca5e51543440ff278d477fb02520b34efccaa1944066a6b71d1d791dc6",
+      "after": "e784c118ef4b32efbc344d36a46e7e178b855f8a329cd2c568ae667383563722",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/product-acceptance-check/index.html": {
+      "before": "16997db3686544237ca5abf5f49211484ecb650b3ddefe03b04e3a3090e9a8b1",
+      "after": "0005b192e116c510d20ec05ceb79aa2fb7f965c343901f95439030ebe6bbd9bf",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/product-analytics-audit/index.html": {
+      "before": "ab9fe393865333269b0b3c942e576239af0ab102bb714425da3d4d6d57bf7ea0",
+      "after": "9ff42c2ad06111c63fa9fc7785f2881cc8326cec9186eb35b237c4080cff028c",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/product-analytics-polish/index.html": {
+      "before": "d0898e1d7e4362cdf24ab640a606b21c4648304ab74d774697f5ff7a12a28c80",
+      "after": "bd3d2b799e144d7fb79ec4dd23b216c39db07be71ca27b517b7c3ac0995fab34",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/product-capability-map/index.html": {
+      "before": "fd79dc99f7d4157395d2bc226258f20e07d692e962dc6397b84f9be0655eb7a1",
+      "after": "32c40826f9be671f7e7e71ae264be283ef907b479c17c889196b68ad04fe0216",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/product-decision-metrics-check/index.html": {
+      "before": "819387aafe713fa2b588d459c9ff08f045a7e506a23f4fa000f75179a0b358d8",
+      "after": "c9dd6734de19bb214e05f969e6b9db91d0a6b898dbaab08feeb5ef0c50bd161d",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/product-journey-map/index.html": {
+      "before": "c1dbd09252665374d18529ad89fd9097b51e5da21f5c6d8203303a6368099777",
+      "after": "c5b9ef7139e1840ab21dbecab3d64d34030ff1e906ef623bda385d44b160da3d",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/product-landing-copy-audit/index.html": {
+      "before": "0dda82e899e594cbb20be4373c99bdf08918fa4eba2ad7ad44382bc142b175a6",
+      "after": "c09de517698a2172a1b7d28ab16b81ecc4b2fcaeed8669f1779f1c6f15725d25",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/product-landing-copy-polish/index.html": {
+      "before": "6b46c385f985e323b226f58502e230510cc5fd70a08f33c533529a960868d9c6",
+      "after": "61059e6774634f29b76a072ee48bf5662611f3cddc93b84ee331e2e17dcbf8cf",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/product-metrics-events-map/index.html": {
+      "before": "09114ae84858699a7f1eb77c0db452ce82eecf6afc3e48017d99b786efa583d7",
+      "after": "2404f50050a73c291831bbe095f2322e56d2df03e984f13701cf9286f5a1d1a7",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/product-requirements-audit/index.html": {
+      "before": "990d32a7aeb7b764d21ca2819f1dcdb485e4b107c769e6587e2841751ac99335",
+      "after": "244d64a380c9465b7e54f1eca6409fcf9a68031e2847bfcf81bbc533822bcb48",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/product-requirements-map/index.html": {
+      "before": "f72f549fbaadb8d4baa8ad09fd036de88878c5279ab00b494367947db70641ab",
+      "after": "578eb74527b9899826e7575ff6dce286799a4410c7b5339758b66fc6fec94a0c",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/product-requirements-polish/index.html": {
+      "before": "aa7d220da180a9ee454759b01ef24b35dcc03e2fb3f71136a1dc27de92f393ae",
+      "after": "1bee48df7444ee62bea37762063187fe99abef8e0ca8e4974c59a590183c8bbc",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/product-ui-audit/index.html": {
+      "before": "91ab4290d5118b3f03e22357b50584a2877bbb90c9fb56ab02beb06784b6e993",
+      "after": "ce41fb792d05c1a52ab16349bedf1545e3b888bf8d30e2de6c0ccc0cde2ca3fb",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/product-ui-polish/index.html": {
+      "before": "60e0aa3fd890e4dd8a2bd8e0ca782f0c016a680f143762b94179c8a1bb6c1eb2",
+      "after": "4cdfcc2e2beff3ce9bd2bfdfde6d51c0de66158ffe71c3a6f70e8a7e49485f64",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/project-atlas-map/index.html": {
+      "before": "efa68b9649cad784b8f1540bbd967dd41fea5d74e1940e3635a63ed448ddfcd8",
+      "after": "102cc22304b75c107513ae3809d436a029fdad197b7e4c5dbaf8d0e1e85894ed",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/prompt-skill-sync-audit/index.html": {
+      "before": "13fe1095767f2d3fef2c221fd64ba119b4193842d5b346dabef54082a6a3ec82",
+      "after": "94b2c05f27ec439bf87efa62a81be68d7367dcf0f562f28dd7e649a027b07ede",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/prompt-skill-sync-polish/index.html": {
+      "before": "d57a2813f384d7389a04a4bcba490a277b625ae907dda582f7d6cd3f7be333af",
+      "after": "f9aeb8009eec743d14742b7219457ee60db2c64f39363b6d55752c8a93abc70f",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/rabbitmq-audit/index.html": {
+      "before": "a0faaaa16092873957f57eec249932dc5c64a947e5c09432c5f0703f8c60b5d7",
+      "after": "9ecfbe0ba6bbb60399c01d5db4c7898294d5093112f7ee7cc86d58a5f465d1fb",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/rabbitmq-polish/index.html": {
+      "before": "89ea1f7318d7ebca46d3ee729178d2e122064c187b1b8e7819003cc8f3129c11",
+      "after": "7e158ed522e9889c227d7886f145ac9ee0495beac08f28eb1bc8994a97dab095",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/rabbitmq-redelivery-recovery-check/index.html": {
+      "before": "8a96d480f163f16147a78ff638fc94bb17667e00ee5999df4706a30047fe9850",
+      "after": "8d40112f6a32b714d00326491ecda53873d74c0999db87b289869f37b9d46589",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/rag-audit/index.html": {
+      "before": "d36033e376d969d8688947dd21cfce7adf9aec208b34ffbc967cf9486b8f65bd",
+      "after": "da24e7a57242b069d29a028de77d78ad7eb4c7e34867b1287bdfcc8e25ec98b1",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/rag-polish/index.html": {
+      "before": "b3b45e2f07b7617af58851525dec46979efbabe82e1f9408f377c37903d5e670",
+      "after": "796899e5fcf74d428b28c8e6a6f743f8bdd10b519079e7549d1a83b2b8fde1b7",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/rbac-abac-matrix-check/index.html": {
+      "before": "429de73baf259f4d2819fc02aea021b94bac9a6aed312b7f008873c72f03b4fe",
+      "after": "05282afa9d5a8742cba53e6d0dbb6157a3da93da0d766e4eb2482af7ff1797b1",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/rbac-abac-policy-audit/index.html": {
+      "before": "3799a47044b25ee680e7b66a11b09f7e7d2569ddd6c396d35e3f6364926da78d",
+      "after": "527456a20828f83399d4bcd772fe40e3e7f58079b9a44d5fddcc177163b4f563",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/rbac-abac-policy-map/index.html": {
+      "before": "fdbd44272cf638ff3cdcad316b6c6d0c413ebb5ab249c7d374cdc1116df2cb72",
+      "after": "dd75508b6349ecc725f2e94f1aadca42c443889470ac62318c66a509dc600880",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/rbac-abac-policy-polish/index.html": {
+      "before": "ab71be7bfd863eec5a7d3a3cd33d1291950a027fed359d6800cfd330b8bdb772",
+      "after": "081b815cc86f339a69f0bdac96c51f8d51ec7f2b2580dfa7128e668017829baf",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/readme-gen/index.html": {
+      "before": "d55259d167830a21b9d4e47b07495d057c45d831e7419f8b7253cf800148066a",
+      "after": "2a4a934460e7a268aeca671b184551525141fb9492b4c1b2a3240dc0c2d64817",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/realtime-frontend-audit/index.html": {
+      "before": "a72340ca39293a07c216cd95f176f44392e1c980c7fd33e1fad57e07b403f8d6",
+      "after": "cff0fbcd70f01f0f252b194bff2d81c8b555a82b9f423decb6a4ddfd1ff4ce4b",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/realtime-frontend-polish/index.html": {
+      "before": "400c416188f2a37622012f538bd6a3d7b7931ba67b0054ee561ee3391b70ac60",
+      "after": "e50f2add80d5038dfcb4141801e602f54c9d6ca61ba94e92796f1cf636f9039e",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/realtime-interface-profiling-recovery-check/index.html": {
+      "before": "119d368de914260d7f243f8473fd0b88a9ea2dfc5197e48079b90e96eea2d6ae",
+      "after": "7ac19451b10f6ba153be9dd469a2ff775bccddb34348ff3b6ca0001494510c28",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/redis-job-queues-audit/index.html": {
+      "before": "62068f38a822ecb4eb86429450e18e807cd624ddddc2d52fb232089264343834",
+      "after": "c93b12698a10e40bcf3b64258d6262ec47810ab0f1cf83dfc785c8ec3eb4cea3",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/redis-job-queues-polish/index.html": {
+      "before": "7c0b5c0fe38c25fdd05b6503fac507944991443c91fe546d3d52d8d6f791165c",
+      "after": "1c1071ec092e25ec9ffa659ee60990adc84efe088b17b27ebdd2bc6cc334703a",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/redis-queue-load-recovery-check/index.html": {
+      "before": "74ea53dcf143ae10cb64993ddd992215c45d2170e55c396513593ab010f18bc7",
+      "after": "724b90a2e11e871633da0463a82059183e665e977eced906428260dfe6df19fc",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/refactor-boundary-audit/index.html": {
+      "before": "d0939536d4c83c10935618feb7a7644efcd35ef18ce2f2ac068822e3835a7efe",
+      "after": "fddde1328bb21a4dbc8a6090415b9cbfbc215012042e1f570ed80e2fda17b964",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/refactor-boundary-polish/index.html": {
+      "before": "67205b69fb5bf0dc71cece5233f8e583fc3b898923bebea60df6b0816df42e4a",
+      "after": "7fd5463c1018411bd496a0ea4d5525b33d41306c46ae51b893bce1a44b7a2587",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/release-artifact-trust-check/index.html": {
+      "before": "ee42da19e507f40a5aa84968153c18aef4bcc279dca9e6a1221d6281ffd0f1d7",
+      "after": "9641b075376d7f88759213278ca69817fd74700e93219f5f27edd0c71da2245b",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/release-readiness-audit/index.html": {
+      "before": "2fbf5a6fdbafb5690165b3d588352e6d557663f439886bf40d71589813fde0ee",
+      "after": "f43b5e6465016fea5353ad5f7c6816f9aaed6e889aa50ef284cbc88464eb5bf2",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/reliability-audit/index.html": {
+      "before": "a578766b658044e85616f136d73604a4043beeb44c565bcf46492e3869964d3f",
+      "after": "f4b233151f4d557d9cc2d84bedfd86028663185488b84248029c69849eb171f8",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/reliability-polish/index.html": {
+      "before": "28844a761ff0a3be0f3d43c9d08a9627aa9c19943d12b6c68d82b4bd38e445e3",
+      "after": "204a8299e8bf324c3b0431aa58f66ead442a07621fae1d967a401b40bd1039fd",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/reverse-engineering-audit/index.html": {
+      "before": "c3cfd994692ef52447eb8fbf3568611f0703d348f6bb3c105b23d75482e8eea0",
+      "after": "779bf5d82d69d8c4994ce9011eb273583b7aadd95d0151a29872216ec167258a",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/reverse-engineering-polish/index.html": {
+      "before": "52ca0ed75f65e1c9d78c64e4beb9bd929c35d9b80264b728904aecbafb035c3a",
+      "after": "a32ea9b6ae92d5e3aaad9b38acb3635d04c5613e457d4307d7ddbaa48efb3815",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/risk-release-map/index.html": {
+      "before": "1b17f4bc0f6e1a2f2d216bbea175da63197709cdfc21da8c1d53a551d71f3881",
+      "after": "16544d5cece31641768ba1f72306c84b27e4e92b09b4bea7a614c863161ee849",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/runtime-flow-map/index.html": {
+      "before": "c57e8951b14bb2996b9a8ba38993992a6b6090cfbe5573db2f2e63f1f38a23d7",
+      "after": "809734c5242f36f2539ea6c9ceb72ba0de547039addbb1c60514dbda3e2552f8",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/saas-navigation-map/index.html": {
+      "before": "854977788e3cd82ab040d8e9ff2194a10e2c4a39ed1db1c8a654d3a747b7473f",
+      "after": "17d294f4c24cf0f838632dcf65495279143b01057d60e7dd1bde6163f5ca37e6",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/scoped-audit/index.html": {
+      "before": "f4410030afc5e35c405dab719c61e7007d6e5018e70b73b32a6a8929a5aad595",
+      "after": "4a9a2e8147d081ede7c6200511e4b2d39bd98de796c62e32430bdb99b1c4a658",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/scoped-polish/index.html": {
+      "before": "9de55d82e7c6f7af5773f4b205a92c81dfa327b5e7ed1e064c38323b5a848e20",
+      "after": "f0faed88c320fa2067f606f5cf4be6bec6fbebb478f35c13f91c097f56cfc8f3",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/search-index-audit/index.html": {
+      "before": "91d8ac357e25f387dcc0afd241b828c536540fd3c44b37df5bd374ea16070c0c",
+      "after": "f0b3c94e57c352ca2785bef2577f8655f8d133711e3b596759dd26bdf211ff2d",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/search-index-polish/index.html": {
+      "before": "b93b176727d0995a4e1a93cfd1574496b7bef9d1761c9b31fa1a430d96fab3c2",
+      "after": "f8e54e89d266790c1670961bc431b0edffb9d78e25647ff075a586a480f57e41",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/search-recall-freshness-check/index.html": {
+      "before": "713e381a9b0a412aeb9a6cc9397099e17052cc0569de6dcccc02eadf134a0e59",
+      "after": "4b5f9a94e54d45eb33b71f59535ba2aa201a34dad87b2f33c384512c8dbfec6b",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/security-abuse-defense-check/index.html": {
+      "before": "cc869aa2df2732fa81b88fa5447d71a26377cdcf773fedda2c7ac4467f5d9838",
+      "after": "763f4ff2c2f8b8449a4bfe7cc58ff9f1a8454b9a9a8cd3db9bb89a62836d2f72",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/security-audit/index.html": {
+      "before": "1bec1041dbdde7a3ebbead183d3d41f408b15b87701defb6d3905c9c5146938a",
+      "after": "aa59ce7291150148f8d2ab5244d0fa7389d82ec068ad30a59d0bd1491c884787",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/security-polish/index.html": {
+      "before": "7caf486e5bf2e41921a0ae40cd9ae08a7cf4c42095d2cb6c244825e40d1fc67c",
+      "after": "e0f5fbf12928d0ad59e1e4b8415f9022fa4844753ab2c99d0201ca0b8cf639e8",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/seo-geo-audit/index.html": {
+      "before": "bfd25aae3de8ff163a38579e5170accf5dce2009353a5725a23c6cc41520984f",
+      "after": "e063bcbbb2ff5caab4bceef47ad0d501899f20dfe903a4a70f5d7b99043e60c9",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/seo-geo-polish/index.html": {
+      "before": "07dcf867f2e1f9a0bdb2ea060425868c1fe5c80898b4eb6d90f8ddc98cfefb65",
+      "after": "ed1387eb537b44672b6a79b23b5bd125043800ce60976e762f3119f3ca0b1e87",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/serverless-invocation-check/index.html": {
+      "before": "1263dade850fd957b089b8be4ea9dde213a97b30987a16e1b171ce72cbade910",
+      "after": "41b92be1afe906e897f99b679a779eaa2c3a2f9b3cfbfeaffee422ac749a4dc7",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/serverless-runtime-audit/index.html": {
+      "before": "4ede42a7d2700fb737ea8d424add681bb5d77282dfb43bf2866daf49b022ca6e",
+      "after": "2c7f71f3eed3db9ffd2736f06172fd8e9eb99d3d126a2827ecf0340c8e580849",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/serverless-runtime-polish/index.html": {
+      "before": "ef4b5720b005750245f0fa81fab38ef465da418db24d0c5d5c208327fe91df86",
+      "after": "2b94ce235b0722802972796196357e618db2aec5a8ae9609c988bb14a6514566",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/sql-databases-audit/index.html": {
+      "before": "ce0b06111809b2bcd6bb488fbdff088b5bad1417342aff376a0bff194eb0b440",
+      "after": "b46c209a10c59682df9bc166fad926a2ed4dbc450a1f4ccc55ec0585f83a80b7",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/sql-databases-polish/index.html": {
+      "before": "416ddcdf3f50547c7b9bb7aac4a25d888bdc9096bd1e276ca7517d7029fb01ce",
+      "after": "ff812ed2991a99d13dcba15989a0f4781287d6712fedce079da8a8cdda229f28",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/sql-load-lock-failover-check/index.html": {
+      "before": "77df4695ee8cefd68abb8a17357edd12bf2c4f30d7be13c05f83d5e723411a52",
+      "after": "451e480a056d1937befa90209562aa9dabfce97f21ca28ecdf5b85e7a41fb835",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/synthesis/index.html": {
+      "before": "0162efc0efdcbc870731ac7fbba39571ac002a39718322b1cb8d727836b41aa7",
+      "after": "69823f58377c4c1ca055f08ac6a90f44be564e27e648abe08b42723728edd06c",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/system-security-hardening-audit/index.html": {
+      "before": "4d492c9a7c2284c17964b960c64e933840df54793deafdbde29a3bed20a242d6",
+      "after": "4f14bd10036446857682d355d636c8fd5dc28853a4dd5455038db64b74718fdb",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/system-security-hardening-polish/index.html": {
+      "before": "9769a591e8cff8063526f8fdc9436338544686040a46ab8ac2e408ec35f6ca4c",
+      "after": "f35d0dc5d7b18552a3b4c3b8b57152f653d7ff68ed5ed72aaa1df6967a537d6f",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/task-shaping/index.html": {
+      "before": "506c679a69e1f33d8a4805bb04e53ffd433b2a5bd8de3070011c614a50ac6952",
+      "after": "b7189473c117955c30efbd91e5397ee4c927d903f5376b013037cec4cff0e745",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/temporal-replay-versioning-check/index.html": {
+      "before": "1afd7ad9888d53551982abd58e88b454056c1387c31434487ba16e2d7aea2c38",
+      "after": "74ee756128c78f7c4dfea0d3dc59c3625469c0a69f267a1d0d46aca432f516bd",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/temporal-workflows-audit/index.html": {
+      "before": "5a5f05feada4d83fe47122d516010db636da4b65089444b20fcaedec10ac5562",
+      "after": "045da8dd97765d0db17ae60407435aa1e6ddcc174364d5a4e8e8c7cf6b2cdd92",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/temporal-workflows-polish/index.html": {
+      "before": "4ca017a7e252ad02d0411fe572bb82d5715b5b82c66d0607402c434e5a652200",
+      "after": "ac1ca2ad2d5c052d2c273181452770f61731f7c0eb5ae456e46a1b5d8a7efd0e",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/tenant-isolation-check/index.html": {
+      "before": "a7a2276ef8c49e9d8cd8a90162a890ef7be5a9243ab8232d9cda1fb79ab13ce4",
+      "after": "9f5963828bc6c189d1f44aff21ee64086c24626c9dca29da3f58590d5e6cdd5b",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/terraform-delivery-audit/index.html": {
+      "before": "2bcd9b60c2b693bbb458fe776015b84e591c3ebcd060fe5e49cfeeefc1e5d315",
+      "after": "e08e1120d2ae3df1c869fac1b2be7a84cb29bded34056663f5b2650ff2661d2b",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/terraform-delivery-polish/index.html": {
+      "before": "e7b9a28602d7d58675be3e46cf22dbcc2f945ee0fd97b793878dd2a0466b00da",
+      "after": "603b130af44c8ecff72702590b81b84d03b73235acfc5d3522a18e68748576ef",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/terraform-plan-state-check/index.html": {
+      "before": "93e2373f1ba99152493d87e5df9993257b6fce7bd1c952e4340c7deb936a4e15",
+      "after": "b230e98ef59b3c21ac404a6dca356b8cf85286ef832ebc57ac014fb4e99fefee",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/test-coverage-audit/index.html": {
+      "before": "d73a799fc0c2d8c14fd3f2619e886eabb83b29c05e9af49e14388a9742bc894a",
+      "after": "9892a56a7f684f7bab48d75c07c34ccac290d42973045c1ae73ec0cb9898df2c",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/test-coverage-map/index.html": {
+      "before": "58066d2dac2ce9f2efece89fc1494d86c77eefe5f682dc19391145318166a65a",
+      "after": "a27f65708021e196927ef5dc8d29fa52b55cb7ed97e250fbc7b7d63ade46d7d3",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/test-harness-polish/index.html": {
+      "before": "496014783f863b1c38fc2813ea366709254a22c532ac04941f0098bb91ce3393",
+      "after": "5a7af750283b682b966ad680ff222fd5092e935138da2f817e46df7edbe1f063",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/traceability-map/index.html": {
+      "before": "cd178a86261d53fc143b64bdea3a4ef429f6ca1be684fb91a27b793e02183b23",
+      "after": "89f75113e92dc9e072670f431421015187053ae8c27edcbffb2491028702547c",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/transactional-delivery-check/index.html": {
+      "before": "1090fcedb964bc45777a2a16a544416123e0240d9d2794960aa9097b8f08e72a",
+      "after": "c5b49a01a85ffc2957c9b3c484c4ed4b39cb4cc205136968eaf855528427dd8b",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/ux-flow-audit/index.html": {
+      "before": "db9943bb4d4dafd181d5e0f03762708a1e814639d3c133721403c5e6e77824f0",
+      "after": "20b681ffb1112b5bce5a2d0c316e245766b5a0fd3de50b13e6ea3a793fc1f99e",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/ux-flow-polish/index.html": {
+      "before": "d3f58c12060cfe034aa4e166e2b0f02bb314f4747300bf74de2f159959800cfd",
+      "after": "14bc95de24f3736732d010457cb0592f50de194b7c01fda4f43e7d98b74f4f44",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/validation-clarification/index.html": {
+      "before": "6e166dc36f759c24f246272613b30d7f81e137742ab5409da0c585b0a59beb3b",
+      "after": "d80eace7cbf44b9eddf484edf8128fdd3fdba6745d415384a95a40e536ce2ff2",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/vector-databases-audit/index.html": {
+      "before": "764059fe44a313b376d7ec1fda2bf529a108eb6dc82c96f6cb2b87ff52697af1",
+      "after": "25d3b67ebf836157c3decbedd603b199586e82c36da0edfdc3897db8671b1eda",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/vector-databases-polish/index.html": {
+      "before": "2a22b287bd256f4e18cbd69ba331f9bdc27f24389b44d73bc3d4d425292ea559",
+      "after": "e2e1dec2b8ff8b1f6e15e3f2f4637c6afbce0c86de0b755df6de6da09dfe2920",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/vector-recall-degradation-check/index.html": {
+      "before": "4ead0ba03971b943995bddad8c1dfd01531b5583c6d76fb0263d67ec59cd5e07",
+      "after": "b5d8fc0e69873f7ce66265a745c5338ece652087a51405e0e6746425f1e8e817",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/visual-regression-check/index.html": {
+      "before": "0a6435c6a832146e1566b03e1b7ea90ca04904bde0a0ec439d11f6ebe1bb1cfb",
+      "after": "38177b8228ed7087491d55b4487e748d0491ebb427a77010629a2616704f5f3a",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/web-art-direction/index.html": {
+      "before": "5f5b3879ea8af7ac601f7f75ec726c378ab4d8014d8f9661af822fc376949a20",
+      "after": "eee8d4faf224cfeafd742a719e9400c77cc046e5c96a994846b1f2687ba5f40a",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/web-boundary-check/index.html": {
+      "before": "906adab8bb848b64a11a35ea4172b8c5a38545ba3a047d8547cb4ccc981a297d",
+      "after": "b1cff862e830fa7ef3cec44d0ac791112b90d972a8e46a8e1d1dc750fcab1d77",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/web-brand-assets/index.html": {
+      "before": "8a05dbd2da428ff3a303994d177fbec2d9f1ad023601dacdc794404c1ee76fb1",
+      "after": "5651fd127ea1d6a295fd13dc93eb6304a65108e7214301022b0a691fc064d298",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/web-design-kit/index.html": {
+      "before": "5d923ae810ebcf4a874af49cba95b48a988fdc4f6dd3cce8c6b19da392b9a7fe",
+      "after": "afb90f2861b7f2fcca8add144a128a10d566bc6d97d857ce9eecdf03cbd7b2a5",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/web-experience-brief/index.html": {
+      "before": "4584d6f8f65095109ef75da632601a8335715727d30f4a26dc14f3198b27145f",
+      "after": "d7dcc160f87cbcf2497f7ef2c1230ef633eac5eeeca4fc6f5d830d0357c9f65a",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/web-interaction-motion-check/index.html": {
+      "before": "cc8b83dde816599a7857d9c6d861489c5a0350d978947624423c1453fcef0d54",
+      "after": "dce2b44aaf39fef169d9a67e1e7852544726bedd17cf3b3e7b7834033ef0d72a",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/web-interaction-storyboard/index.html": {
+      "before": "2044f8698b59600dab7e2fe67eef08beb719f61315931c9b94d7b620be8747f3",
+      "after": "f10c0796a57cd28b8ea89684294a5335dfbff03e9ac96297994823a520112f34",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/web-navigation-state-check/index.html": {
+      "before": "4be4512b0afd727337515c1b0a467d4a3979895993816a094848321b336d1461",
+      "after": "2c221c1af5be3e8d42f4b5e9d99e279c6c1febab53754149dd6d127b36fb094c",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/web-offer-synthesis/index.html": {
+      "before": "14f85b042faac676098d4565f7e3334be2e8c86894d7ce527b71674aa255d147",
+      "after": "0b66455e16122d382d5269e9121c3074d0498f0c0d933cfe482d1ea405912a99",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/web-page-acceptance-check/index.html": {
+      "before": "5c0356993755d12af60c9c8d085b6cd9938ff1f3c4b300757d21a413843b9d5f",
+      "after": "cb3808ceffea8e8057a5390a9a86d4a7bdf4ccf13d46292d6f0a97f738d27686",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/web-page-architecture/index.html": {
+      "before": "d4bb08806a1cc5ff9741d8e208c5316eea0736a80bbebff46e6722a551953293",
+      "after": "3bdf39984f06d9ba36d3caf7c3495a8417046dfd253c638eda65b65616bcf616",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/web-page-copy/index.html": {
+      "before": "574cbf18b2cac9c4db8aa262b1cfae89bf15a5bc6f0a27a36fd1b17d6c17f31b",
+      "after": "586ef028ecbbce6b15d54ba18c034c954aab3d831d6386c630b07f25dca132bc",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/web-project-architecture/index.html": {
+      "before": "94ee279f2dd729e785b89d04b3f2ab579dc057db4684ae691e40e9b1dbd6568b",
+      "after": "7587f93ae6a104830d5424208ed682283c75584dd6a7262389662e4bb0a9e55e",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/web-reference-research/index.html": {
+      "before": "668aaacb6d1c48f6565c828174840ad4528df0b053c74085205da7059905f306",
+      "after": "863a3a154796ebfb82cfc0d48d33b709ae08d3f6989f8135c0388601419fa6c7",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/web-rendering-audit/index.html": {
+      "before": "11ae7f4b0a38dd786467b864049f11272be8456a487427247d874f1eac229353",
+      "after": "b4a2260237b476cd8689061da8dc89b52f0f6d3504c183c00a0fa5a9003a1bc6",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/web-rendering-polish/index.html": {
+      "before": "19fde7e63c8bf710368842bf33769a3b8fceddf9601061484d3b40a8f08e5bd4",
+      "after": "eb7338e2ff866871104c44aa80c986cfa7bf2348e26cdfd76f848ccbd83c1f89",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/web-search-performance-check/index.html": {
+      "before": "cae691c092e2004ee1a5bf1002c42b473796403957c4fbce8fc611b17c46b097",
+      "after": "95f563244b6b99a60cb28bc842b0eafe2c4a5a3e86c11fdd31482a2445c9ce06",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/web-visual-hierarchy-check/index.html": {
+      "before": "5b5ceb9854e262e35be3a3abc692a8aecc7960b64a5adc4732fe847d0748ce08",
+      "after": "c086bbab48aa7505c6ca4d58a0d47090e927b931c421527ce3e01dd66707c91a",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/web-visual-system/index.html": {
+      "before": "6fe4117376073e5c20d3dfed51df088cb90841fb398a629b323d69be9bb6af87",
+      "after": "0b261f3d66896239e80f28fa853c91baa504e4e539ee2812b7a4a56979a57c53",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/workflows/workstream-decomposition/index.html": {
+      "before": "75f290ab6a0a8ad7658fef7a9d1fbcdb914fbbffc544481765810cc0f2c88417",
+      "after": "52aeb10c2af0e3ce78d7988ebec26842a3ad1d9b31f62ae19ac6ac37304b4241",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/zh-CN/index.html": {
+      "before": "18d0f00daa9a905273cfb1cdd8a054e161ca85fd311b11e230b7290dde848527",
+      "after": "ca93d0cf86e56ce1c517959e12d052c3d4302fe27a2ba46c0c5980f644cdfbc4",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/zh-CN/privacy.html": {
+      "before": "a0702dbfb33dd6c8b08de13fe6152d779706a6fb07d9a62b74382c0dcef78496",
+      "after": "d41ee72686d2128ddd84116a68d4f5a65e06cb287779e96791be64144ea11adf",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/zh-CN/terms.html": {
+      "before": "dd44d7f6a2f2723995ba0a79a9219bb6482355aede084f6b8003a4160ac188a9",
+      "after": "d4e7988e6bee7755704ec6c552f9d25f727bf1a2ac29347ff11fe6b607216efc",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "docs/zh-CN/workflows/index.html": {
+      "before": "e173c9252fa0c20a612d68928bd09dbe6bb51bb562a1d232a719dd499592f202",
+      "after": "46031137d85f0e41f347a07358386683722ebf90bd866dfc419d7d4b3daf26d5",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "mcp/README.md": {
+      "before": "0c1a6f843a4f2304fa904e7b7ff7564d4b3ab35162799b222bc90a141d3110d0",
+      "after": "5cdde06ee9a5fb1b02dd78963d646c7d8364978c4d9858d0bec6a31b4a29331c",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "mcp/package-lock.json": {
+      "before": "d64a69a280447141ba19e6762e71e08a8cb92fa386afea3a1246d4e430475238",
+      "after": "7c71483b5255e92207c0e7844f4e18d9b5f186bf2b1ef3b7a18280ce53e2f5e2",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "mcp/package.json": {
+      "before": "b46e3d0e3b4ca2a8baf7eb6b4e751c93e10d9e0273edad9cd32cfbb36029c3df",
+      "after": "87079c1c65fe45cc54d968e76c46fe0008320d4d6d3f91ca4725e52f86fc2454",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "mcp/site/app/layout.tsx": {
+      "before": "a477f7379de8e26483f61a354cb345c42614437f03aab30a24c59f484043fa96",
+      "after": "225935d90a9dffb5cc87c2d121281962f023537a89313e54932515e52f536687",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "mcp/site/app/page.tsx": {
+      "before": "ecad023f68c270b97d90c66556a58bb3df97b2fc6afc3d14f648358228aeed53",
+      "after": "17012b5e14214bf461678bdb9878384123ce28f0e4994f6f04749cc668dc3bdc",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "plugins/vibe-coding-library/.claude-plugin/plugin.json": {
+      "before": "085988658971ed503ca8bb48b14078e0a866828a678eb91cc96a776e2bf847a7",
+      "after": "61a5a310f92bec192129c7c687e95abd3284471e416bd92214cdc636644eba27",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "plugins/vibe-coding-library/.codex-plugin/plugin.json": {
+      "before": "9b605249d800f301e18fbf3533bbc4bb8562ecacb2c13a58e8177c6057c42b0a",
+      "after": "4d39de31121393a676013e4a567960311188c12a731348457950e18f6ef7e731",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "plugins/vibe-coding-library/.mcp.json": {
+      "before": "dd7307c2d5b0f2c4413e680cdd57e2adaf827093569ecdf11b7481514139ea10",
+      "after": "1e522bc1968ccb380f3e39cee3a6dd1fb60127a0097f8c87d9cdf419d9909056",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "plugins/vibe-coding-library/README.md": {
+      "before": "1bb93847106034ac12d6a7901384e99dc4d95a2b32f936b9b827e3122bb5cd30",
+      "after": "a958c194c60c3114c17724cdaed40839388cd38a89dabc3947029598b1fb1c24",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "plugins/vibe-coding-library/mcp.json": {
+      "before": "e6bdfc9b59791a5441718ed2cacf2144d256d0e8e2ef397cd5a9f61ad5a02e8f",
+      "after": "b8e1ebbd68d4b77dce9994ca666c697ce5d1f437ecb59e599e22a1a1231dff56",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "plugins/vibe-coding-library/plugin.json": {
+      "before": "4365439e933c0ac84b33c9551a6b5f3ef31b1a958ae65d57f8a370b362c3154f",
+      "after": "e56d026bb0ab1577f03295750055e1c2782e6df8804f34165a20bc6f6885d95b",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "plugins/vibe-coding-library/skills/vibe-library/SKILL.md": {
+      "before": "0fc32ffa5750c7b85a5b6e43964c50bc4dcf79d174e99c1f9c70f17e84609477",
+      "after": "a7fc774ece701e2e252df10899ce4d88ff8305965a2e116fd67ffa7a29910ce6",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "plugins/vibe-coding/.claude-plugin/plugin.json": {
+      "before": "cd80c216c542db80a05dc20fd8c0e03652b570a8fbd67184e0bea97a1c582e88",
+      "after": "e124531399612ac1483bbbb409873959c5fc59ee32fc17c816af1f50503ddcb4",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "plugins/vibe-coding/.codex-plugin/plugin.json": {
+      "before": "c77b63998ce12a676a24a9ae41ce539ac04fad8faf52c8bbfea1f6fe8724af17",
+      "after": "1ea9981736abf3e5ed0cb6e9e9867349d8287293c6071f9fcd8662e58cf85d36",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "plugins/vibe-coding/CATALOG.html": {
+      "before": "f85dbb1a50096e6871c72c2386003120386928f5b662d7de03670de2b551361a",
+      "after": "2215554c53c6f8d1aaeeadd6b8567c40c4af536ec2cbf77b02a22abffbee3a1b",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "plugins/vibe-coding/catalog.json": {
+      "before": "53dad74d08b91bccd5769c889760554bb5d5890c86bc3a7e35b8a8c03a3a8271",
+      "after": "86e67a76dc43775c9e0e7167a6031b583e8f298f58bdd57f8ca7a9fe3b3df3eb",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "plugins/vibe-coding/plugin.json": {
+      "before": "84f67124628f2894db8e5a64eb0125150867f55bf2467b602575bef8d165ae65",
+      "after": "065ed04807f95fff7a915444eb0bb666dba0e8321c371a34110f50efbc6145d0",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "plugins/vibe-coding/skills/vibe-landing/SKILL.md": {
+      "before": "a740c6ff96ef5b01eb83a566bf76c9826c41742eebd9265f5d20deec89e8ed78",
+      "after": "18f0182a9da1c1b8892d5509c7ac6b27372af4d80ade95e591e0cc3c6f0a1fa9",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "plugins/vibe-coding/skills/vibe-landing/references/homepage-landing-build.md": {
+      "before": "1a7e9c7cc2334d53f04546d095d9b808ca14a4a7c16c810c02c732e3a112fdac",
+      "after": "ab4fa798a158e0faa6077bebf1124210a7711fdeb3fa735d47d1fa3e0c2176cb",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "plugins/vibe-coding/skills/vibe-landing/references/homepage-landing-polish.md": {
+      "before": "18450bef0465a93576fc6700df8648402c0ca629f2085895b3679ac8a7959cf8",
+      "after": "456190adf1d5b81bc1a751139cab8b16d84fe0f4bc88f997de26327c31290674",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "plugins/vibe-coding/skills/vibe-landing/references/web-interaction-motion-check.md": {
+      "before": "79839987412fc1bdccbe35763cf81a3367b9c19453b38cedd0990238930519be",
+      "after": "0d07da4374072e05789671a17f84e2db77b6955c4d8d96b21728c709daaa8799",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "plugins/vibe-coding/skills/vibe-landing/references/web-page-acceptance-check.md": {
+      "before": "45cd6c642f3c841f03e6552ead5883c03cbcb4776e1d707771e003e8bd3ce0ac",
+      "after": "ffb6f519f3c7a2901f0df039fd4c8b4b66b7bb5c2f302f67e28165b03c1706f1",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "plugins/vibe-coding/skills/vibe-landing/references/web-visual-hierarchy-check.md": {
+      "before": "4255300ce1f3227514f95a9750fbeda2753ad59c525d1dc65fb69b8f5282d4f3",
+      "after": "66d2bef139add1326537efdc749180f00d5683443700b4b86be1df3bd5b5795d",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "plugins/vibe-coding/skills/vibe-web-art-direction/references/web-visual-system.md": {
+      "before": "00fa4ac72da049ade0f3399d999f3a3838fe54d3e94251da9ba2a647b6bec2da",
+      "after": "0849a0a11f285ca9a10c877dd9664ae7b6296a1dbe66238553f3887e2ff1d812",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "site/site.css": {
+      "before": "491e3caa1f62a492aec03d493a06dcfa778f7f011b1ea663a70abd869e449c02",
+      "after": "55f068e572d54b17fb594e8eb0e914fa34a9ab5e17edaf70edee8a86bc2b4cda",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    },
+    "tests/test_evaluations.py": {
+      "before": "ca9247f69df5c96ecda370c127a60834f6ad63c55bb739e94b10112114d604a4",
+      "after": "925afe5eaae87f5fd8db439f20cd0db797bb6731e8c6cf5129ce22ccb48f633d",
+      "review": "Bounded material and visual entry correction with current direct endpoint"
+    }
+  },
+  "new_files": {
+    "docs/assets/search.3b5807562da4.json": "3b5807562da49f28addd2279020b886d37c7d5335737b250dcf63907c6a0b9b9",
+    "docs/assets/site.55f068e572d5.css": "55f068e572d54b17fb594e8eb0e914fa34a9ab5e17edaf70edee8a86bc2b4cda"
+  }
+}

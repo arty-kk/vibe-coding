@@ -18,6 +18,8 @@ Use the accepted direction/system, exact copy/assets, component/state inventory,
 - **Accents and surfaces:** check primary/secondary action emphasis, borders/dividers, elevation/shadow direction, transparency, gradients, highlights and focus/error/selected states. Use fill transparency without accidentally fading all child content. Inspect the worst reading backgrounds and the intended solid/reduced-effect fallback. Decorative separators and required control boundaries have different contrast responsibilities.
 - **Identity and graphics:** verify logo variants, favicon-scale source/export quality, icon family/stroke consistency, real-image treatment and meaningful procedural/3D composition. A busy effect must leave the planned reading area usable. Check image loading and crop changes, not just the unloaded placeholder.
 
+For a material or contrast correction, compare before and after at the same route, viewport and state. Check that the intended shadow is visible against its background and that nested edges recede at normal scale. If a complete ring around each component dominates the composition, return the surface treatment for a reduction even when all requested CSS effects exist. Verify selected and focus-visible states separately.
+
 DOM measurements can establish misaligned edges or overflow; a screenshot can establish composition at that moment. Neither alone proves focus behavior, animation timing, conversion or loading performance. Preserve deliberate asymmetry and optical exceptions that are part of the direction. Do not turn an unfamiliar aesthetic into a defect without a violated requirement or demonstrated task impact.
 
 ## Verdict and handoff

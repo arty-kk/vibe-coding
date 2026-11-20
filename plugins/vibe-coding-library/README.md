@@ -1,13 +1,13 @@
 # Vibe Coding Library
 
-Engineering methods for any coding agent supporting MCP over Streamable HTTP. Search 260 workflow entries from the task goal and load the current prompt with its domain instructions, required references and conditional next steps. Instructions and client distribution share version 1.7.0.
+Engineering methods for any coding agent supporting MCP over Streamable HTTP. Search 260 workflow entries from the task goal and load the current prompt with its domain instructions, required references and conditional next steps. Instructions and client distribution share version 1.7.1.
 
 Direct MCP use needs no native skill installation. The optional native packages expose `$vibe-library` in Codex and `/vibe-coding-library:vibe-library` in Claude Code. Search supports English, Spanish, Russian and Simplified Chinese; technical purposes and instructions are English.
 
 The public Streamable HTTP endpoint is:
 
 ```text
-https://vibe-coding-library.swift-seal-1081.chatgpt.site/library/mcp
+https://vibe-coding-library.artem-satsuk.chatgpt.site/library/mcp
 ```
 
 Select transport **Streamable HTTP**, authentication **None**. No publisher account, token or API key is required. Your agent or model provider retains its normal settings and charges.
@@ -22,7 +22,7 @@ After a server update, reconnect or refresh discovery in clients that cache tool
 
 The MCP server reads its compiled public library. It has no repository, local-file or connected-account access, and does not edit or deploy code. Do not send source code, credentials, personal data or confidential information as search input.
 
-[Live server and examples](https://vibe-coding-library.swift-seal-1081.chatgpt.site/) · [Catalog](https://arty-kk.github.io/vibe-coding/) · [Source](https://github.com/arty-kk/vibe-coding) · [Support](https://github.com/arty-kk/vibe-coding/issues) · [Privacy](https://vibe-coding-library.swift-seal-1081.chatgpt.site/privacy) · [Terms](https://vibe-coding-library.swift-seal-1081.chatgpt.site/terms)
+[Live server and examples](https://vibe-coding-library.artem-satsuk.chatgpt.site/) · [Catalog](https://arty-kk.github.io/vibe-coding/) · [Source](https://github.com/arty-kk/vibe-coding) · [Support](https://github.com/arty-kk/vibe-coding/issues) · [Privacy](https://vibe-coding-library.artem-satsuk.chatgpt.site/privacy) · [Terms](https://vibe-coding-library.artem-satsuk.chatgpt.site/terms)
 
 The complete offline Vibe Coding plugin remains available separately, with 49 local skills and all 260 recipes. The Library distribution uses one selection skill and retrieves the chosen instructions on demand.
 

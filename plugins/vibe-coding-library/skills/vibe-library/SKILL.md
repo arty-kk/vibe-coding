@@ -19,6 +19,8 @@ Use the task itself to find a relevant method; the user need not mention the lib
 
 If the live schema does not advertise `view` or `topic`, omit those arguments and browse with an empty query plus an established domain/operation filter. Do not send unsupported parameters. A catalog that does not cover the task is an explicit coverage limit, not permission to force an unrelated method.
 
+If a visible domain key is rejected by a cached connector enum, search by a short goal without the inferred `skill` argument. Use at most ten hits. Preserve explicit user constraints by checking the returned method's domain and operation before loading it.
+
 ## Execute one prompt at a time
 
 Read the returned working contract, domain instructions, current recipe and required references. `files[].path` labels a library resource: apply its text rather than looking for that path in the user's repository. Versioned source links and hashes identify the instructions used. Follow the current agent's active project rules and permissions; Codex and Claude file names and native skill commands apply only to those hosts.

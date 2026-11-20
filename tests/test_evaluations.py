@@ -19,6 +19,7 @@ SEARCH_KEYS = ROOT/'review/evaluations/1.6.1.json'
 CI_TEMP = ROOT/'review/evaluations/ci-temp-2026-10-25.json'
 WEB = ROOT/'review/evaluations/1.7.0.json'
 SITE_REDESIGN = ROOT/'review/evaluations/site-redesign-2026-11-20.json'
+MATERIAL = ROOT/'review/evaluations/1.7.1.json'
 
 
 class EvaluationRecordTests(unittest.TestCase):
@@ -39,13 +40,21 @@ class EvaluationRecordTests(unittest.TestCase):
 
         self.web = json.loads(WEB.read_text(encoding='utf-8'))
         self.redesign = json.loads(SITE_REDESIGN.read_text(encoding='utf-8'))
+        self.material = json.loads(MATERIAL.read_text(encoding='utf-8'))
+
+    def material_fingerprint(self, name, expected):
+        change = self.material['changes'].get(name)
+        if change:
+            self.assertEqual(expected, change['before'], name)
+            return change['after']
+        return expected
 
     def redesign_fingerprint(self, name, expected):
         change = self.redesign['changes'].get(name)
         if change:
             self.assertEqual(expected, change['before'], name)
-            return change['after']
-        return expected
+            expected = change['after']
+        return self.material_fingerprint(name, expected)
 
     def web_fingerprint(self, name, expected):
         change = self.web['changes'].get(name)
@@ -194,7 +203,7 @@ class EvaluationRecordTests(unittest.TestCase):
 
     def test_required_behavior_records_are_complete_and_bounded(self):
         manifest = json.loads((ROOT/'plugins/vibe-coding/plugin.json').read_text(encoding='utf-8'))
-        self.assertEqual(manifest['version'], self.web['release'])
+        self.assertEqual(manifest['version'], self.material['release'])
         cases = {row['id']: row for row in self.record['behaviors']}
         self.assertEqual({'serverless-required-write', 'mcp-http-readonly-control', 'react-hydration-preference'}, set(cases))
         for case in cases.values():
@@ -321,9 +330,18 @@ class EvaluationRecordTests(unittest.TestCase):
         approved = ('site/', 'docs/', 'scripts/build_site.py', 'tests/test_evaluations.py', 'tests/test_site.py')
         for name, value in self.redesign['changes'].items():
             self.assertTrue(name.startswith(approved), name)
-            self.assertEqual(value['after'], hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
+            self.assertEqual(self.material_fingerprint(name, value['after']), hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
         for name, value in self.redesign['new_files'].items():
             self.assertTrue(name.startswith(approved), name)
+            self.assertEqual(self.material_fingerprint(name, value), hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
+
+
+    def test_material_release_has_current_fingerprints(self):
+        self.assertEqual(hashlib.sha256(SITE_REDESIGN.read_bytes()).hexdigest(), self.material['baseline']['sha256'])
+        self.assertTrue(self.material['checks'])
+        for name, value in self.material['changes'].items():
+            self.assertEqual(value['after'], hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
+        for name, value in self.material['new_files'].items():
             self.assertEqual(value, hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
 
 
