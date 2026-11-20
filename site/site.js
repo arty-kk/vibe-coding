@@ -39,7 +39,7 @@
       languageMenu.open = true;
       const index = links.indexOf(document.activeElement);
       const next = event.key === 'Home' ? 0 : event.key === 'End' ? links.length - 1
-        : event.key === 'ArrowDown' ? (index + 1) % links.length : (index - 1 + links.length) % links.length;
+        : event.key === 'ArrowDown' ? (index + 1) % links.length : (index <= 0 ? links.length - 1 : index - 1);
       links[next].focus();
     });
     languageMenu.addEventListener('focusout', event => {
@@ -90,7 +90,17 @@
     const status = button.dataset.copyStatus ? $(button.dataset.copyStatus) : container.querySelector('[role="status"]');
     container.hidden = false;
     button.addEventListener('click', async () => {
-      const success = await copy($(button.dataset.copyTarget).textContent);
+      const source = $(button.dataset.copyTarget);
+      const value = source.textContent;
+      const success = await copy(value);
+      if (source.textContent !== value) return;
+      if (!success) {
+        const selection = window.getSelection();
+        const range = document.createRange();
+        range.selectNodeContents(source);
+        selection?.removeAllRanges();
+        selection?.addRange(range);
+      }
       status.textContent = button.dataset[success ? 'success' : 'failure'];
     });
   }

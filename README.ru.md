@@ -25,7 +25,7 @@ claude plugin marketplace add arty-kk/vibe-coding
 claude plugin install vibe-coding-library@vibe-coding
 ```
 
-В другом агенте добавь этот адрес, выбери Streamable HTTP и отсутствие авторизации. Установленные native-пакеты предоставляют `/vibe-coding-library:vibe-library` в Claude Code и `$vibe-library` в Codex. Инструкции и пакеты версии 1.7.1 используют передачу свидетельств между шагами, релевантные проверки и повторный Patch Checking до чистого результата или конкретной блокировки. Получение инструкции само по себе не является выполненной проверкой.
+В другом агенте добавь этот адрес, выбери Streamable HTTP и отсутствие авторизации. Установленные native-пакеты предоставляют `/vibe-coding-library:vibe-library` в Claude Code и `$vibe-library` в Codex. Инструкции и пакеты версии 1.7.2 используют передачу свидетельств между шагами, релевантные проверки и повторный Patch Checking до чистого результата или конкретной блокировки. Получение инструкции само по себе не является выполненной проверкой.
 
 ```sh
 codex plugin marketplace add arty-kk/vibe-coding

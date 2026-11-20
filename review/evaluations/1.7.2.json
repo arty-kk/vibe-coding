@@ -1,0 +1,1466 @@
+{
+  "release": "1.7.2",
+  "date": "2026-11-21",
+  "baseline": {
+    "record": "review/evaluations/site-controls-2026-11-21.json",
+    "sha256": "057b95c041ee4d7fd76ea6877dbf80e32a3701878e17af328a76b05d3e680791",
+    "commit": "bfc380327e2a16604a168d95f5a70f36136a597b"
+  },
+  "checks": {
+    "browser": "Chromium 157.0.8103.79",
+    "scenarios": [
+      {
+        "name": "Site navigation, hero, setup, FAQ and workflow copy",
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "touch": false,
+        "pass": true,
+        "observations": {
+          "langPath": "",
+          "nativeSelectPopup": "opened and dismissed",
+          "copied": {
+            "demo": {
+              "exact": true,
+              "manualFallback": true,
+              "retry": true
+            },
+            "mcp-endpoint": {
+              "exact": true,
+              "manualFallback": true,
+              "retry": true,
+              "boundary": {
+                "idle": 9.73,
+                "hover": 12.91
+              }
+            },
+            "codex-mcp": {
+              "exact": true,
+              "manualFallback": true,
+              "retry": true,
+              "boundary": {
+                "idle": 9.11,
+                "hover": 12.1
+              }
+            },
+            "claude-mcp": {
+              "exact": true,
+              "manualFallback": true,
+              "retry": true,
+              "boundary": {
+                "idle": 9.11,
+                "hover": 12.1
+              }
+            },
+            "claude-install": {
+              "exact": true,
+              "manualFallback": true,
+              "retry": true,
+              "boundary": {
+                "idle": 9.11,
+                "hover": 12.1
+              }
+            },
+            "recipe": {
+              "exact": true,
+              "manualFallback": true,
+              "retry": true
+            }
+          }
+        }
+      },
+      {
+        "name": "Site navigation, hero, setup, FAQ and workflow copy",
+        "viewport": {
+          "width": 320,
+          "height": 740
+        },
+        "touch": true,
+        "pass": true,
+        "observations": {
+          "langPath": "ru/",
+          "nativeSelectPopup": "not observable on touch profile",
+          "copied": {
+            "demo": {
+              "exact": true,
+              "manualFallback": true,
+              "retry": true
+            },
+            "mcp-endpoint": {
+              "exact": true,
+              "manualFallback": true,
+              "retry": true,
+              "boundary": {
+                "idle": 9.73
+              }
+            },
+            "codex-mcp": {
+              "exact": true,
+              "manualFallback": true,
+              "retry": true,
+              "boundary": {
+                "idle": 9.11
+              }
+            },
+            "claude-mcp": {
+              "exact": true,
+              "manualFallback": true,
+              "retry": true,
+              "boundary": {
+                "idle": 9.11
+              }
+            },
+            "claude-install": {
+              "exact": true,
+              "manualFallback": true,
+              "retry": true,
+              "boundary": {
+                "idle": 9.11
+              }
+            },
+            "recipe": {
+              "exact": true,
+              "manualFallback": true,
+              "retry": true
+            }
+          }
+        }
+      },
+      {
+        "name": "Catalog recovery, directory, policies and missing page",
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "touch": false,
+        "pass": true,
+        "observations": {
+          "langPath": "es/",
+          "filters": 0,
+          "entries": 261,
+          "recovered": true,
+          "policies": 2
+        }
+      },
+      {
+        "name": "Catalog recovery, directory, policies and missing page",
+        "viewport": {
+          "width": 320,
+          "height": 740
+        },
+        "touch": true,
+        "pass": true,
+        "observations": {
+          "langPath": "zh-CN/",
+          "filters": 0,
+          "entries": 261,
+          "recovered": true,
+          "policies": 2
+        }
+      },
+      {
+        "name": "Console controls, topic discovery, results, instructions and copy",
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "touch": false,
+        "pass": true,
+        "observations": {
+          "language": "en",
+          "copy": {
+            "exact": true,
+            "manualFallback": true,
+            "retry": true,
+            "boundary": {
+              "idle": 9.73,
+              "hover": 12.91
+            }
+          },
+          "hoverContrast": 14.32,
+          "browsed": true,
+          "loaded": true,
+          "policies": 2
+        }
+      },
+      {
+        "name": "Console controls, topic discovery, results, instructions and copy",
+        "viewport": {
+          "width": 320,
+          "height": 740
+        },
+        "touch": true,
+        "pass": true,
+        "observations": {
+          "language": "ru",
+          "copy": {
+            "exact": true,
+            "manualFallback": true,
+            "retry": true,
+            "boundary": {
+              "idle": 9.73
+            }
+          },
+          "browsed": true,
+          "loaded": true,
+          "policies": 2
+        }
+      },
+      {
+        "name": "All four locale routes and no overflow",
+        "viewport": {
+          "width": 320,
+          "height": 740
+        },
+        "touch": true,
+        "pass": true,
+        "observations": {
+          "locales": [
+            "en",
+            "es",
+            "ru",
+            "zh-CN"
+          ]
+        }
+      },
+      {
+        "name": "Setup remains readable with scripts disabled",
+        "viewport": {
+          "width": 320,
+          "height": 740
+        },
+        "touch": true,
+        "pass": true,
+        "observations": {
+          "staticLinks": 260,
+          "manualCopy": true
+        }
+      }
+    ],
+    "limits": [
+      "Mobile Chrome touch emulation at 320 CSS pixels. The operating system native select popup is unobserved in the touch profile.",
+      "Clipboard writes captured at the browser API boundary. The host clipboard was isolated.",
+      "This pass covers distinct page and control templates and samples localized UI. All generated routes are validated separately."
+    ]
+  },
+  "changes": {
+    ".claude-plugin/plugin.json": {
+      "before": "468608e1262d2c17de1c263aa84f604e6ca5fbb23aaa7deb4748bf1010f28cca",
+      "after": "6a8641fffc83f2d350b7e80013209aec807f66a777fc1f1cda608a455d4ffa6f"
+    },
+    "CHANGELOG.md": {
+      "before": "9ce2ef93a13404b731945d1daae4c0cc80127ebe204ea47eba2ccc90ccad92fb",
+      "after": "c378550c522060fa9dfa6fee9e39eb8c01f61fb307802ce0aeda2bbfa66be4ed"
+    },
+    "README.md": {
+      "before": "972798cff927bc486ce1fe4154f11fe0ee352352bfd6c630a64d245eefc23f61",
+      "after": "010f7f241d5ae887c8476d9ae12a4c9026f8da0ba4ed79b49803dfdfec11b589"
+    },
+    "README.ru.md": {
+      "before": "ccde050bda3da14e6138799cb0eaf1ff27711213ab9317be6e00699c888c1be3",
+      "after": "590c36ce93dba678cf09ce80c5ca6cb70b539d774fda37222662b41069537009"
+    },
+    "docs/404.html": {
+      "before": "8bd3d70c78990ae207ebe426365eaf4dc05666012fe12acd2202e1eb8bf336dc",
+      "after": "fa619c2cef6b2d9d1b346b3d27781ec1958eeff57c3eca1d76be2a4a44f43799"
+    },
+    "docs/es/index.html": {
+      "before": "ded19a2f30ecc51a468769e447fcba25865fc58a1cb8ad81dc8ef7dc4141ae36",
+      "after": "54d5fde498c8e5da39f5e3f3c8867f92595f2a8213e7a1355e7b6181c52c2049"
+    },
+    "docs/es/privacy.html": {
+      "before": "f314b293786e366925722a7c14245555f7e85ab510b1e1bf03e35e8794c42e6c",
+      "after": "e9a6e5b1e4f17270481a96a90e1686e4ab809bf8e93d8c763150cd977f6e01bb"
+    },
+    "docs/es/terms.html": {
+      "before": "7c664cbdbfd11112650374eacd909094bac59de9b27d2857df62e2b5f241c1a7",
+      "after": "e6312448b42356e295d6ea8c24222ed1ea5277daa53ef914931eec5dbf70d93f"
+    },
+    "docs/es/workflows/index.html": {
+      "before": "48d028d3f2f28ddf6bd350d6355b64b8358fe87ea74a7885022131614f986b9f",
+      "after": "b83e0f892145d77479be21a784b9b79e4b837689aeee043dc8df00de78a8c97c"
+    },
+    "docs/index.html": {
+      "before": "a1eed7eabda1e04bd6b284b32cdbd28c308c7cb8050acf2c4efe82344be6407d",
+      "after": "453ee614779a8e3808988a47a3534d77a151cdf870dce6050f11a11163a52889"
+    },
+    "docs/privacy.html": {
+      "before": "f3b2ba8f9e518219303879ca0c5de4673e2b0ebee83ea1133416220bad87276b",
+      "after": "3a1bd0287c9cf858c99b53915b94b1d4d3987c3c89c712c04c6b059ee152cb02"
+    },
+    "docs/ru/index.html": {
+      "before": "e673338b73ba9f7d030cdb7411a8dae881f68cc5496d6fae3da18d9c721a0e0d",
+      "after": "364563cd750a6c438f1e42a4ab8139cb7d5827ab9cad731425f9d3a11ab60c45"
+    },
+    "docs/ru/privacy.html": {
+      "before": "3d087a636cb38fff0a69c8d19166a39c8c427b407bd811cf4451ae79ba4df463",
+      "after": "8dba887d911609b6dff68e1c5acf237513cf507d3aab2297f34df98646d20f0e"
+    },
+    "docs/ru/terms.html": {
+      "before": "7cec2c87b8694de08af94316d22d3eae3caabe5f112b2c8a553310d2157c5334",
+      "after": "ca04c6bbe5518c93f4e3d867dd2f143c43b226ae0d78141407aa50415c39fa79"
+    },
+    "docs/ru/workflows/index.html": {
+      "before": "3c1da12c1d374968e6412ca049f36e34b4734d8305bd11543a40fcc5d8622b71",
+      "after": "6d0d0f0ded47b4a415c222657b1994174ef96a3644d589389bad489cbabb6f49"
+    },
+    "docs/terms.html": {
+      "before": "06df7f5947c893b7277ba868e73ec99c3cd7345e1a02960911843373663cedb7",
+      "after": "a3cf9ce829e7c713aea6ed2a7902657012bb85158bcc8a5a40da2788a6a25347"
+    },
+    "docs/workflows/accessibility-audit/index.html": {
+      "before": "ecbb98064ac6f05706672ebf45f3c46760ffbacad54334318224885fa0cdb5a2",
+      "after": "5f53cd54e9fb5040ccab74ee428a152ea5c739f2558f1cf580db06cf8affd8e5"
+    },
+    "docs/workflows/accessibility-polish/index.html": {
+      "before": "725a137c916cf86fc64aaaee9c084c5959ef58af5d2393924c6ee4878cc71346",
+      "after": "afeefdd569d32290d5be1385dd537bde952062758b393f58fb3e1c96eb8dafb8"
+    },
+    "docs/workflows/agent-harness-audit/index.html": {
+      "before": "4ef687b32e16c2c2c668f264426b87b4921651109fca300739a1650a84042396",
+      "after": "1760aa64211bb9d2a10c9cb09b8ab7d8951f9491ebb0660e2da80e370d3291b3"
+    },
+    "docs/workflows/agent-harness-polish/index.html": {
+      "before": "6847f7bbc6f1ae560330572b1fdf3fd3bd61d4217d46318636f021db0f0a42fd",
+      "after": "207a64d98dc404fb5c35d3d8881a911f61393dc64d99e4e3d433c7df9de071f5"
+    },
+    "docs/workflows/agent-harness-replay-failure-check/index.html": {
+      "before": "cf86294930258d88c41638ca27f130d2710eeec6e1e81e24f0c95c9b0240da75",
+      "after": "e70feb035d8d643947ea29494b54cbba6d55ccb31df8cffd14cc8e509086d419"
+    },
+    "docs/workflows/ai-evaluation-audit/index.html": {
+      "before": "79697c464884a9672ebd0fc311c173c134e0d1069c47b5505eacdd384fc7f684",
+      "after": "ab84069f2b7f79020eda38b942dcef004ef2be18c42a4c5cda6126ee86600ae4"
+    },
+    "docs/workflows/ai-evaluation-polish/index.html": {
+      "before": "fddd1fce3e39d6764607a86f9e28c6ad43d8cef6d073866d951745878f27a4cc",
+      "after": "759ea9c1c5356d0632ea396199aa2d99bacbdcfe835a9fc15d1c932e9df2bd53"
+    },
+    "docs/workflows/ai-feature-audit/index.html": {
+      "before": "396fe42e4b07c1c822cad42811c99acae6e8816185e5f8ee7a2b4104cd30760b",
+      "after": "95cc3844dbb86bbc05b02f36a71f3c53b1fad493746c6fa4e391392a68b56167"
+    },
+    "docs/workflows/ai-feature-polish/index.html": {
+      "before": "a59a860ee567e91a5818c3a27e956fa99438dd7c9566df042f980db183ab6597",
+      "after": "1ac9b2329a0e43e248da86c95adebc81ecbab029623c5a19a3d2d908e6a839eb"
+    },
+    "docs/workflows/ai-ml-problem-framing/index.html": {
+      "before": "798183ead3c0d3d5b72271053734ada8ac9a0f9643ace726d0c899c423cafa84",
+      "after": "d2954e658e4c50f7eac8df6983fa86461537ecc07a0de2f3aac7bac60f8e4af3"
+    },
+    "docs/workflows/ai-navigation-map/index.html": {
+      "before": "aaa8cd2fdc343e9595fe1a751a3f465c7bbe9c525b5652179f9f16b47755af5e",
+      "after": "bdfc93c63a0862e98780313508ad36007150fa2b63d4be721aa34da36d4d46ad"
+    },
+    "docs/workflows/ai-safety-governance-audit/index.html": {
+      "before": "d6a4fd4f4e48516cfe6fdb79c01e8bebcf2391c8c022fb6ec8e97e4ee1e42595",
+      "after": "33062d426a649a4aa84a472d3c982eb2ed255568255011f7427be71acc0e00de"
+    },
+    "docs/workflows/ai-safety-governance-polish/index.html": {
+      "before": "d6714e6689a50c0fa5d3db4282ac93ce5e9c9204f48fd6097601a43f243f79ef",
+      "after": "8e3467fad331f485dea1ef87b7cb0b78faf38887da502537ed3d32c9737fac64"
+    },
+    "docs/workflows/api-audit/index.html": {
+      "before": "25d7c7ed4a15ff9201b6e8f7537d6dfef3472ae4a6b9f8c90c104c60b7cb0f3a",
+      "after": "fe11135463d7f6cae16fe30cff9b68882c617e767f45efa323ea81d42879b182"
+    },
+    "docs/workflows/api-contract-compatibility-check/index.html": {
+      "before": "9c4127c5ba7c65e6c222380bde85b54b71732b42746c676d34f59442c60abac9",
+      "after": "7dd10fb21eccad2f8f464c96397a35583c70213099ab0f22e53f5d602cfc1256"
+    },
+    "docs/workflows/api-contract-evolution-audit/index.html": {
+      "before": "d54798f3a022799aae5cc2fa4425eb35984db24d2ba4ce6d9429d0cd75d4818f",
+      "after": "086746af987c227073e7bf32ae17d596591a223c719bf060570ad546ab593dca"
+    },
+    "docs/workflows/api-contract-evolution-polish/index.html": {
+      "before": "6e2b751dce2bfda42f6a70fe613d6770cdeb0f98ec9fd7dfad92703c5599a79c",
+      "after": "7cc0508c02a652706bcee1623d0d9faf344bcf4e045399eaeac1356f9849944e"
+    },
+    "docs/workflows/api-navigation-map/index.html": {
+      "before": "51e508581d1db4a5831433a9347394f7000b25f5329bfe65a30341cddd91a542",
+      "after": "fd7322ab75b0a1895368e4a9554ceeb9a5471372c4029f7e2137467d53a44260"
+    },
+    "docs/workflows/api-polish/index.html": {
+      "before": "c8cb4416997b5a11a26069f9d797860356cb2f3ed83a5dbb7641a4baa4e84df3",
+      "after": "d2452072a84f0c7fceb1f4c40ac4f59f218689f8f69b247b6187ff562c1361f1"
+    },
+    "docs/workflows/audit-logging-compliance-audit/index.html": {
+      "before": "6591bdcf8d76f3b1968e7e308252d7798bb7aedc312936750c47283fd1b388e7",
+      "after": "6ba21a751d122190b8a76e9eb7cab9cb7ffb92245ef68b1c34887553bf50b3f9"
+    },
+    "docs/workflows/audit-logging-compliance-polish/index.html": {
+      "before": "feaf11553acb01a707daa436eb3054d1b63d1eb448e71151650c12f309372704",
+      "after": "ee3984e353a2e7f9da15d0954b810fd6dcb369578aaeb960e14ba451919e21e7"
+    },
+    "docs/workflows/audit-trail-integrity-check/index.html": {
+      "before": "fe640dc16b1d8cffd2fb6db104365fde4ee8d5aa940a510ee689f4410389106a",
+      "after": "1d51686e1739a61a489daa36dcf25160bc610ecce2969cd728b4ace5c1c2ff2f"
+    },
+    "docs/workflows/auth-entitlements-map/index.html": {
+      "before": "b26ce6cc94abd8dd07d3d887a2e1c7d1fc46e65c49bfebb4fba7bb026605f63b",
+      "after": "9f461a373a3e7ca05096aa5aa4d544ff8c8f119a9b9454196163278d87d563fe"
+    },
+    "docs/workflows/auth-permissions-audit/index.html": {
+      "before": "34251e9553822a5c95f0b500aa6a4814f40fe5cab4829766971a70638c578681",
+      "after": "134c64513d27070143f9ecbb84411be520fad862bbc819c5bfc5266df1822439"
+    },
+    "docs/workflows/auth-permissions-polish/index.html": {
+      "before": "532e26fc9fd4b986730e30dd64ce9d350c2b71ae4ea75a11bc1b0a9e6e8a3c31",
+      "after": "cde3db71329e0e365aa29bc26638a2dfce372456847b7b7124660df98f8ab14a"
+    },
+    "docs/workflows/backend-integrations-audit/index.html": {
+      "before": "7347e657e70ac64c45ae150cd59b86a5c07f6b4a364a8a8a273e0fe2ef7d14a5",
+      "after": "cda1062a5f014bf20aae9fe8a8e8e2d1b0985e7de9e9a27628065e32c6736016"
+    },
+    "docs/workflows/backend-integrations-polish/index.html": {
+      "before": "4dd6bd7329207d037e8f8bb85f10641804f081f34a2af0eb92826b569325740d",
+      "after": "b7c9153616e800e540ff6a97271714e26db0c71a2b8a90058496306b842d1816"
+    },
+    "docs/workflows/background-jobs-audit/index.html": {
+      "before": "fe72cfdd1220c9c8339d7c32fb78ece6531af331af9df527ff18db703ac61278",
+      "after": "2718e8d380503b63190c77a8f0721682877d8e62b79a7545923836795101ac00"
+    },
+    "docs/workflows/background-jobs-polish/index.html": {
+      "before": "6c94146d11e74f1b9362111855a31a31c9aaeaa048d728cc8d4661ef99455478",
+      "after": "e6351111941fca142844ce559c0c3abdc02ad2e2cb0ee387f3507b6be47e331f"
+    },
+    "docs/workflows/behavior-check/index.html": {
+      "before": "e65b032b60a5491b1d05d4f4939fa4133def0538f62884e6c0c98673bc403d8a",
+      "after": "9e7f15a74149f0cd6bc65f045e9dd31b307c4e1c8c133f1ca17f669936d0910d"
+    },
+    "docs/workflows/billing-entitlements-audit/index.html": {
+      "before": "27c15dfb93c9ab86448e3039ee1c147dc9f84acd2c6c217b3a782416a3df04f4",
+      "after": "393173f8bfe7b7374c539f579cf678f7d3cbc28de1264ec7079b7d15b315f89c"
+    },
+    "docs/workflows/billing-entitlements-polish/index.html": {
+      "before": "123ce92eb6caf9520c159d0fb6d9d00961e9d17ebd42d5ec0395af01ddc887f2",
+      "after": "7b25a3afcfb79b2cc4ede6881c70279a98441daa3d0c1b068d50cc7608c8faf6"
+    },
+    "docs/workflows/bot-audit/index.html": {
+      "before": "90bebf6a563e5bf400b6490b804d5429d199444f5fb07663548f549df47d4647",
+      "after": "4819658ae7d6bb67f8317e7ca05af855f0736ce4d1f5d828cf9e6c647ff35baa"
+    },
+    "docs/workflows/bot-navigation-map/index.html": {
+      "before": "6c39043b8c2c7f2fb651056838831be63bcd36d747649f6184bebc81f73a6a4c",
+      "after": "693c5b7eaf32cb50934032a22a8241063db4f32df7f01174ba5910f06d1def3d"
+    },
+    "docs/workflows/bot-polish/index.html": {
+      "before": "1f6c0e3086f3f9eaad711f3a343149174dc499c7afaf9d3e7a7520d2eccc12c4",
+      "after": "e971d680717fdb29de557fda2b952cfedf939b4e69b0c33e19895c5033640879"
+    },
+    "docs/workflows/browser-extension-audit/index.html": {
+      "before": "e220662a92deacc1b95832c6b46f53fae6872b78dfb933ddf223034310dd4c91",
+      "after": "ae97513573a33a4f9caa156d1b0e8e599e542eb89cfd064b8b9e65675503c0a5"
+    },
+    "docs/workflows/browser-extension-polish/index.html": {
+      "before": "18e45c07d688a5f9d3073346f1abf675fbc8a7edc5ee4eecc2c6bb0f9951b885",
+      "after": "4da88055ede51f7d9730477b2894794e74074ff0dad78f937083c0216f666e3b"
+    },
+    "docs/workflows/build-supply-chain-audit/index.html": {
+      "before": "55383eabca365c2bae1ad1cd0c64f4bca023cd248fea12652ad26ea3ec39fba3",
+      "after": "4565b73778f1641d018772222f6eff64665330377dbd40fe37d121537bafa0b3"
+    },
+    "docs/workflows/build-supply-chain-polish/index.html": {
+      "before": "6aea4ea058b9676b88adc5e1596f7f2dbcaebf68caf176ee1240c47be80b6ea6",
+      "after": "ba027099db50f3c32f88535ac104e566d6e0b0226b28fdd6094b97b34f641bcf"
+    },
+    "docs/workflows/cache-coherency-check/index.html": {
+      "before": "fc69b4bebd3434daf465392a0cf80328e19e24b79b40d9fb419f68f0697950ba",
+      "after": "777322fb5aee767ce84b893defb8ff063f6d9fdf499219831e7c5b5c7f155706"
+    },
+    "docs/workflows/cache-invalidation-audit/index.html": {
+      "before": "7bb1c19f3ef25184f05ef5ce62a07d487904a66206bc2b54e59dc5016f7b63d0",
+      "after": "f9b13f2b69034dd012e1b67380da090f75449a44590f87a5c775b9cea3c93023"
+    },
+    "docs/workflows/cache-invalidation-polish/index.html": {
+      "before": "ed339a2c035aeb0ad7451126c12c00000854e28c9b2e5d8c61c2fdc0c9049a7c",
+      "after": "83ffbec3f9d129a64a65dc727abd1c18b64f23314d8b538cb1b6dbc8f7121613"
+    },
+    "docs/workflows/celery-delivery-shutdown-check/index.html": {
+      "before": "8288049f69a8455e70abeb34f3d6f5160ed31902ed11226f67911508eae07115",
+      "after": "00d7cd688960c1736515d97a6111c95b2638baf9e89cd9fdbc1c611b27055710"
+    },
+    "docs/workflows/celery-workers-audit/index.html": {
+      "before": "d700a05d9c81cf94fd0f5a2fce6ebe432f6829a5c1a6f41e5a53af99fdb342f6",
+      "after": "e08ab1ed903a04cf7d457e43fd5f1aab6be0690b481ae1dcd6792c6edb095b9a"
+    },
+    "docs/workflows/celery-workers-polish/index.html": {
+      "before": "032833d12c67c7d61a12153dd465895e36cb745a110daa1ff8966efc09027169",
+      "after": "96500bae77c7d8e02d35707c8c07c069b1b717a313a7274df10d5a5a37b56b54"
+    },
+    "docs/workflows/clickhouse-audit/index.html": {
+      "before": "6d0cc20a30a85034cbc0d729263d2d0eb4c0c6dfb07b696f1d9681951fbcd291",
+      "after": "f43229ce2b28ead587014ce9e5ec1751fc36d5b24ce8143270422595a6f05f2c"
+    },
+    "docs/workflows/clickhouse-ingestion-query-load-check/index.html": {
+      "before": "ec7c11d5e39892a2c1c2127f92c31bbacbd1dd2b95a02e9d3fc108d7ffc8e299",
+      "after": "ea362dee723f462cfb151660d61331b32d09d62d6c9e2bf9d811ca1fb42716b4"
+    },
+    "docs/workflows/clickhouse-polish/index.html": {
+      "before": "ffe63e963b5cf8399b4fe4fc8ba5a97a2bde8cd83e61360524dc2694c1f4381e",
+      "after": "12b8fad4a922231296be76f5df0c2f63aaaa735fcad33ec6c37daa367c7b922f"
+    },
+    "docs/workflows/compatibility-golden-master-check/index.html": {
+      "before": "0fd875aadbdfbf0c06751f5faaa89f9c9d17708e44d6f35fe5558287d51b2c8f",
+      "after": "1eaa59c865f85b0dd0e0e8574ebc02dfa76df348f08b45e46517e6d297dd14e4"
+    },
+    "docs/workflows/consistency-invariants-audit/index.html": {
+      "before": "265825a5ae8eaf76114bb9fb71cd243079726c2214c76cd433fa18155240bc53",
+      "after": "216c8e8dad64b2092849ccec8695bb1fde0afbe54137e62d173fb8b7c4c73d4c"
+    },
+    "docs/workflows/consistency-invariants-polish/index.html": {
+      "before": "6339ecda5ee893660c38f6ef4602c14c28e132b52ab4062b3e8e807e96351c4b",
+      "after": "2b3e63f1ab242c810d47396b8c5596456e5ddbde25de08662950218e034813c6"
+    },
+    "docs/workflows/data-model-audit/index.html": {
+      "before": "1fb7b5e5da4cbbb9a2eaace2078a90b2b69a07cb2676647d5e69f01621d54dfc",
+      "after": "f883fe7b9a4a926287a3c5e86486e0981f5481cc4d7b21de69e022913425eeb9"
+    },
+    "docs/workflows/data-model-polish/index.html": {
+      "before": "046f82fb3f48af0100b0a8267bebc0e425e2b605049d7f1b6c55aaaecdfbe53a",
+      "after": "9eaebb411d50d799cefca0e031b6f8246177a8103d57f0a43cc38c9ae1df2af7"
+    },
+    "docs/workflows/data-pipeline-quality-audit/index.html": {
+      "before": "18810465f517e640ff12a652298a99898186a7291fa50856af98d7cd4bb1eabc",
+      "after": "7530479ef8ffea846f91686c6e3e53cb95aa0748e0c970ebe8a63aec5cd97072"
+    },
+    "docs/workflows/data-pipeline-quality-polish/index.html": {
+      "before": "e45dc52937dabde2e034a7ced6c74ba9915cd85b5b49f453d151c0c046fad947",
+      "after": "14bff6f5fec27ef95c97918e00565472af68adfcc342b823ccfe434b8a9cdc4e"
+    },
+    "docs/workflows/delivery-recovery-audit/index.html": {
+      "before": "29dc63579ff35b28b83cc45d1834797e8319d3428c969d445a131b3c49a3df37",
+      "after": "883f47ec6f60ea0d87590ac5ce45f34b1181ffeb99869bb22f1c62bcd2be7f82"
+    },
+    "docs/workflows/delivery-recovery-polish/index.html": {
+      "before": "f8259bf57c27a44ba0da66bec051277f05c776e9afca42fd104cec5ebe0348ac",
+      "after": "e8ea90e1d7d71e83a5b753b0b3cef5139d7c48c0186885642d092c663d50f5cd"
+    },
+    "docs/workflows/delivery-restore-rollback-check/index.html": {
+      "before": "8e2370f2e2c6c01ebb5310c2af9e867c8131dd04b6f87743311cf8b43fa37dc4",
+      "after": "43af632d183bb69a924a0e6135c64b486bc65df1fb8d25c8276e37fbe957273e"
+    },
+    "docs/workflows/deploy-bootstrap/index.html": {
+      "before": "b62f735e7a5f6d5d8c0e5249c0b2ef30153a64d63393162d22dd04a47ed75032",
+      "after": "fb1722a6a8a490139eacb1f5d4ac781cb2f84a6bdfe1358975f5df90736880d4"
+    },
+    "docs/workflows/design-gen/index.html": {
+      "before": "55378622c664dd8152d990d9b660d599b0964c9f9c72eaf32aea798b1c6262d8",
+      "after": "ff162c526d52ce80571224900769c49245f11aaa4328c47aa7d4a9062eb357fa"
+    },
+    "docs/workflows/design-system-audit/index.html": {
+      "before": "9576a97c8b92bb7ba44dc192d4926ed1ecb1b8f63e44a5418691cacb711c4443",
+      "after": "167a27796160945be23381b0bc706b3e1e69e53d7bf13ea54a37252b6e7e0d04"
+    },
+    "docs/workflows/design-system-polish/index.html": {
+      "before": "4d039fbd7a391409f1246265a523f02d0efb1287cb9b4c731d9c30ee6e75854d",
+      "after": "75bded94ac9c9b0b1bf31a046778255c075667c8bd1bf6dbb2fd1d070a4ed061"
+    },
+    "docs/workflows/desktop-app-audit/index.html": {
+      "before": "9b24e580e7204a95ce4ee466169a6a3299ac9de9ffeabe2d1b83f20e7df52a36",
+      "after": "659e2888f7777211418da4ed9d1403475dfea9328fe60a9f3febdc3904ada5ff"
+    },
+    "docs/workflows/desktop-app-polish/index.html": {
+      "before": "1dd2d6f246ee94b586c7e6580c07ae74e28ea05c083d93c149c4b0ece49b9b43",
+      "after": "c30b0f5fafcb3f34229850a9b35464c15ca9b06ee22585591088a3527db3eb8b"
+    },
+    "docs/workflows/documentation-sync-audit/index.html": {
+      "before": "e8d041f3740dbdb94a51d2746819387f9d16457b6198ed9a2e165e60f2228552",
+      "after": "fc21c8c1b7e75724fb799e11a2b3c3a709eaf18f0a1c1432a4400c9aa839d49b"
+    },
+    "docs/workflows/documentation-sync-polish/index.html": {
+      "before": "dea5c4123245bcaa3a9fe425f9ce8f29a1e5868b8e57265c0d83f493a00c2b2c",
+      "after": "4e23b1eb51b2509aca4db4f8c53071875717c7affb71061dd4406b10ddfaff23"
+    },
+    "docs/workflows/domain-data-map/index.html": {
+      "before": "72b781a59f741c4a71ffd4946ce935422194b1e70841319c2e4dd848bffea2bc",
+      "after": "9353ab71bd825cfdbd9cfb606c13fc37681858914aed4cac165a48de7a53889e"
+    },
+    "docs/workflows/evidence-normalization/index.html": {
+      "before": "3c27e1557f744034686ad12ecabb44cbe0caae267fdfc354ddcc111de80f1395",
+      "after": "ce8babd2293ab08a97b53bef6329a62e1eebe1ff7b6518d924f458674e7c48af"
+    },
+    "docs/workflows/evolution-improvement/index.html": {
+      "before": "ee015455929d50658732ee89109c9db2e29eb8d875f008dee4e4b0f0047d59e5",
+      "after": "0c45a019d6ce9560628bcd8fe17678ac7ad7488351b7e01998c1c88782bf9652"
+    },
+    "docs/workflows/experiment-design-audit/index.html": {
+      "before": "6e1cf31b16b10af86de96b6a5346043139e16fd259270527e55666b360571019",
+      "after": "c4e43bac6514b901ebf70caf5071c8bb85c8d0507c7ac75c0735df145f6154d6"
+    },
+    "docs/workflows/experiment-design-polish/index.html": {
+      "before": "05cf9a3a2056d05393ad327a0f54233eb61b9d2a2c3f73850c515e5814eb5ed2",
+      "after": "58263b6926ff51bd61fb63d8d8bd375fe1bee0669ec4ef8ce68a2ef69fae6a7e"
+    },
+    "docs/workflows/feature-flag-exposure-rollback-check/index.html": {
+      "before": "e73ce73df52e32b1631bad3d712c94546322145db2fe0f199960c310a7e9641c",
+      "after": "1d703d28a361a4bf3584930f4629610fe577c909536c44aaeb2d8efbe98ccce0"
+    },
+    "docs/workflows/feature-flags-rollout-audit/index.html": {
+      "before": "fd78b09dc9845161f3d1ea78328c16fe1351e770c24bbefcb53f7944908554ba",
+      "after": "b1f063f78c5fbcaae7210cde15b24e1b8e8b1ffc76280390ecca051224da24b6"
+    },
+    "docs/workflows/feature-flags-rollout-polish/index.html": {
+      "before": "fb42e7d4d4c8a2ca17aa1c188633a0bafd37438d15de8957641e62924ab09f6a",
+      "after": "a54b84a565f636f83ecbc696107c6f72e501f6af9779f9909ddce9561a82715b"
+    },
+    "docs/workflows/form-data-ui-audit/index.html": {
+      "before": "2d82033ba9823d8456efbc9945b3db6e41f2dbe0571d9aad092603a33cf0de4e",
+      "after": "2990f7e778f3f526e51dacdc4d2b4045bc3be895ea183bf0429a73ac78fdd709"
+    },
+    "docs/workflows/form-data-ui-polish/index.html": {
+      "before": "570db1c8f10636e3c878cb87db9c89bed5082254a6c7563c02a8a0bdbbc1fc4a",
+      "after": "bda80fd0ff2edda3fa428a8eb64b351a40af2227d646ad9975813946c988b7bd"
+    },
+    "docs/workflows/go-rust-concurrency-shutdown-check/index.html": {
+      "before": "a58a17e8d70b6c166fad7ec46ec1c3f1ccdce8cd9f4824c71f7ed360ef4a2685",
+      "after": "198b582c5bcaf257f9b965e07a80aaaa27c7d1bdc3a54e3ca0d73c8845da01e8"
+    },
+    "docs/workflows/go-rust-microservices-audit/index.html": {
+      "before": "73f87280d283dc1a913f837ecf746cb1bb09ee02f20e0cc84ea5cd1432620aea",
+      "after": "a1fd823c0ee19a1e5955594b21192bfd4e60a112f5ba3133ae04fa52f73fe258"
+    },
+    "docs/workflows/go-rust-microservices-polish/index.html": {
+      "before": "1514a8438ca654dd4ba10c571e3145fdea148b58a3dc0fe836df892124756137",
+      "after": "ff937e902998d088eed89172905a4d9508c745452f5b95fc6014849aed419dc9"
+    },
+    "docs/workflows/homepage-landing-audit/index.html": {
+      "before": "08967de46c3871242285a0961b61e552371b25dac159b3f59965e78aea902003",
+      "after": "ecd6bbf9b2d85e7dcbca246f066c9590883597b7eb09829f55e716f065d7d700"
+    },
+    "docs/workflows/homepage-landing-build/index.html": {
+      "before": "88a0d38d0facdfe5e176b7eb7c25b74ec14e56bd004f6690ae8f29b6c8be87bc",
+      "after": "f2895f51018d3ca35e43ec97a749cb0b857d544110641004d6e1ba1b1113205e"
+    },
+    "docs/workflows/homepage-landing-polish/index.html": {
+      "before": "5717e499af3a60d8f9227ff6d657766bb824aea644d15e71d63fb36b6fb63377",
+      "after": "c369a27648349b5199ae59ea5cfced3ee5566f0a0ca7344c756dac5ebc0641bf"
+    },
+    "docs/workflows/idempotency-concurrency-audit/index.html": {
+      "before": "e8cbd65a6be829e0d80450fca5f2eb652a477d6f64b7b449fbf69043e8d393c5",
+      "after": "2f9161e8b61e9067a99f968441297277897fce3c7fc700e0df4b631f7248bb3f"
+    },
+    "docs/workflows/idempotency-concurrency-polish/index.html": {
+      "before": "4a139ea2ba530b8ff4b060775fc68b737271d26d3f67d78d42f7581f354766e5",
+      "after": "0a7d06abdf5d04bfe1255eb6bf277808cb5aa4268afd77fa3de2b18f5ff0a096"
+    },
+    "docs/workflows/incident-recovery-check/index.html": {
+      "before": "5e5bda7b5ada934a2ed81928d4121bc198eaffdbd7c57d0667d25536543e5b8e",
+      "after": "c176d38b97caecf287a1e2e1e653e55500f3542c3959c6a6b5843606eeff5607"
+    },
+    "docs/workflows/incident-remediation-polish/index.html": {
+      "before": "28f41545988bebe9405d5183e0c4bdc786a2745952eaaa9a4e7565474c066dd6",
+      "after": "f29ae88d3b6cf8b911f28acf8108c46a53c11a80e631e934a4fbe1fe6ee79001"
+    },
+    "docs/workflows/incident-triage-audit/index.html": {
+      "before": "5d958652097d6034cd7f9b33192a0d7a32a20b74807601ccb301608d373d1894",
+      "after": "5c1e360886fd3f05b4ac5ec23f593ece49e5cde2abb12e6de1db5d762b37953b"
+    },
+    "docs/workflows/index.html": {
+      "before": "b70b71c8ad829bdc781a3c8e7fd35d39e6f0e91843692e21dded73e55b29a16f",
+      "after": "9b0c3c643500789646b7511caa584667bf269b8ea875284fb891b4112fc8b107"
+    },
+    "docs/workflows/infra-ops-audit/index.html": {
+      "before": "ad9d02decb276e7d3b7566acb0aaadfc05beb0be450ba9b385a9f6c57ae9e093",
+      "after": "a402ca1be6cff5fa9b12feac09ed05ffe2927d779e45bd89a838ee8f994add49"
+    },
+    "docs/workflows/infra-ops-polish/index.html": {
+      "before": "148c2cd69d5c2d288cb3d3bf57d609d53db7b69e5919332f6330553dcc577b08",
+      "after": "d8ad936225425d8865317e5b19c1bc03ae50ca0f177fd49a65d4631ada6677ee"
+    },
+    "docs/workflows/instant-architecture-probe/index.html": {
+      "before": "9ed886141eb32b488ecb79450a6955e9f095550c7eedbb4d7ae3b02b7b3c12fd",
+      "after": "1d07ef3e80ac4e85e0cd37fb53ea96ec7543840ab202a7822f0f60cb3b373223"
+    },
+    "docs/workflows/instant-backend-probe/index.html": {
+      "before": "0e452aec7a5e466f0052fdad2eee7f9000b092e5c3fb372dbe5c5e9bde819e78",
+      "after": "f2df85f3047976dc1d39f524cf01ed2207a2bc18f0c03f4a8fe237a87d22f3d4"
+    },
+    "docs/workflows/instant-bug-fix-polish/index.html": {
+      "before": "3870570ff73a67ba1edd740a9f5a43aff0eb71b519a9310581e594c4a6fedf17",
+      "after": "379933032911ae61b9be6a6647439ce0c820e2abad7c1b9b4acca996d023eeef"
+    },
+    "docs/workflows/instant-frontend-probe/index.html": {
+      "before": "5410a9f49a0cba5bba7f81d4f666348ba19028a57654b3aa2aed7127590e3fee",
+      "after": "48babc0cd6aa179464c5019a92c8d8dc11c20f676413e87c106c3b83605e8a75"
+    },
+    "docs/workflows/instant-ui-ux-visual-probe/index.html": {
+      "before": "669afc422bf4895c9a2792a52398b593b7440ba2236e4221b9a8c581656d4f0f",
+      "after": "90c7fb0d963b568bb338096821efae338dc58b0b5ea28e6417fd759ae10f0990"
+    },
+    "docs/workflows/integration-map/index.html": {
+      "before": "9b1139952d182cd64ff472270e7ce8fcef3e9a4c5fe7488b579667af219d7a44",
+      "after": "42a5ba17c6e10b39bade897ce3ba1cb4baaf46515a9f13e00f45c2e954d24ff5"
+    },
+    "docs/workflows/iteration-closure/index.html": {
+      "before": "0cf08417af89dcd566a07f9ee2c6a09f55288cf56c757acaa6201633e1f1ff86",
+      "after": "1395dd5d77a4fe16ffb3e5fb9201c5f62a4f20a6967545ce79cc53ec75b5d1eb"
+    },
+    "docs/workflows/kafka-redpanda-audit/index.html": {
+      "before": "92d119429429eb5172be881b12635a7bc6c7341aed16c67476738bafe04ee1b6",
+      "after": "e5fed477186ab6f846689e9c77a4ef090658068b9a1470becd1089c0166a9b87"
+    },
+    "docs/workflows/kafka-redpanda-polish/index.html": {
+      "before": "e8c53b9c475f80b8debfc341e7db8d9f245a6a3819207b932c43cb4522830339",
+      "after": "8ee152d2af2e258b799be979e222403f369ace33805275220bb9b252769f87b3"
+    },
+    "docs/workflows/kafka-redpanda-rebalance-failure-check/index.html": {
+      "before": "2c87ae622abc1caedcd155fd04673e7a727ba1a408b9379c1a97272269bf52d3",
+      "after": "89744ae4412e308e8c7a83dbdff5c3c894e4a4942f82d70f464806c26366b723"
+    },
+    "docs/workflows/kubernetes-platform-audit/index.html": {
+      "before": "1f357c3cf999df65b800821aca7a6daa5ea7b636b706707cf2d8ca15ef5d350a",
+      "after": "fb792a8f63be412cf3eaa7271d46af3b423d8a84f61346eb796fe10a48962cc7"
+    },
+    "docs/workflows/kubernetes-platform-polish/index.html": {
+      "before": "78b4dea95c54ab83373e4b1491514fa4a87e0531e1b3c4ab50774df3cdcb3b60",
+      "after": "2e3137d21ef1de017458cd79770b67a0e8fe25c2793d972643246abe72eb0890"
+    },
+    "docs/workflows/kubernetes-rollout-failure-check/index.html": {
+      "before": "072a00e0fc787bb21714b4cac5518264ee42881a3bb2745a9e5128e9107d65c4",
+      "after": "c351f72be5f6ca220207594845125656292df8ba05d43871f3bf214c4d79c0d3"
+    },
+    "docs/workflows/llm-agent-tools-audit/index.html": {
+      "before": "7fdf2b893a8dc620f0c02b2813acb348a33a48d9a661fb05e9f52edd70d25885",
+      "after": "85c46655401c8a786c71e1544a7dd57baaecb4b2fca4686bfc0189e5784db907"
+    },
+    "docs/workflows/llm-agent-tools-polish/index.html": {
+      "before": "05defa5effae4c89f51a0c07ed360d653be2ddd502432c3e6bc35239a74cd0bf",
+      "after": "aef59969cbcc33a6f9fd925a1ba7651a7ba61e0328d79f6e1463821920a36281"
+    },
+    "docs/workflows/local-client-runtime-security-check/index.html": {
+      "before": "8564c3ea2417b495bd810ac730842aa8fa38cc26ff03a4171ca8fa4876c2afe4",
+      "after": "1eec0f3d253cdac80b41a35945242603c661519b9124dbce2e97cbc74e31639c"
+    },
+    "docs/workflows/localization-audit/index.html": {
+      "before": "3cd90daebac884e94603339b440f6d36673fc8b0f44617666fdccf85f7f934f0",
+      "after": "3edcf249c46ef26b48f0becaba78a674abd9292ad8653b0baa1e0e0308419b27"
+    },
+    "docs/workflows/localization-polish/index.html": {
+      "before": "424b790887ecba0bec6779417fd45db24cfede1052cdc49b29bc92e8ba171182",
+      "after": "3e269f05ec40283f5366ca646dbfc20b645e84cee3ac7a3f7b5fe00d1ada5067"
+    },
+    "docs/workflows/map-refresh-polish/index.html": {
+      "before": "5035071f6e179beae47e640ae59324e6f0d128b95063cf97419fea6a340a9ac9",
+      "after": "719299900615ef29e6dcc2d682f9b5aa90ed069fd064481d96290cc51da8ffe4"
+    },
+    "docs/workflows/map-staleness-check/index.html": {
+      "before": "5bb5100300b9de919cff790d83e412ee92f8020d116143dc90b90a8442796dc4",
+      "after": "fa99fd0259dfb6b5efcdde64348f42c76d189733aa9496a06850f64b439e9f48"
+    },
+    "docs/workflows/map-synthesis/index.html": {
+      "before": "7a7420e9fb8fdaf3c60a20fad52e474ce5c59b6bb46e6911a23e76c827b25925",
+      "after": "a39df59a33c4365d2dcdc60a575918d11f9ce0948ba395149295db0e25a3c916"
+    },
+    "docs/workflows/mcp-protocol-auth-check/index.html": {
+      "before": "6c89e06c39481a18d566f462110d4c47665e5af334d901c0398e24e420664062",
+      "after": "3dd68c3fa0a6ffbe45140bcf89f3120a08b14f51112268a89f3d84c92f20a946"
+    },
+    "docs/workflows/mcp-server-audit/index.html": {
+      "before": "c26fff636fcb274f4decb4af30f7fd3d03dc44d5c6a17719c07c2c9a55e41462",
+      "after": "b8e0d78e6bd09fc7b8eb06648fba02a688f21169eddf92138ba2c4bd3bbfcbb6"
+    },
+    "docs/workflows/mcp-server-polish/index.html": {
+      "before": "bd6457409e894d3128eb8d3eaa3606e463d3490db383a9e581c383473de9a255",
+      "after": "3b8d148c05865906cd46dfa302cb8b3380cbc3249616525a6dd5dbb96aea7e2f"
+    },
+    "docs/workflows/migration-refactor-plan/index.html": {
+      "before": "1760ce12db848014b2a588b0da0e79685cce33e82885d72638672bf27f50ca25",
+      "after": "3e666d13bfbd27ee3b1031dc21da8b313e08c05559a9d94a72f6135844735c3a"
+    },
+    "docs/workflows/ml-pipeline-audit/index.html": {
+      "before": "2f045f70e52d76fe16efa25343467978c50f4a7afcae56c88515344b8d8010de",
+      "after": "55d1fc5f63bfc26cfb98313d19f85d0c93b2c3215cfec283300cba68be1256ba"
+    },
+    "docs/workflows/ml-pipeline-polish/index.html": {
+      "before": "9e902a437703f260a80c4341b0215b1758a26cf8f8f8a301db805b7beeb5a04e",
+      "after": "2fcc9760a5a58bdd6b855caf3130d0adf8d720024c7dc3363eb4498440e81924"
+    },
+    "docs/workflows/mobile-app-audit/index.html": {
+      "before": "9dee4575345d9f926a0deb31835599bdc1986361c1e3e87436013b36ced5ec6b",
+      "after": "ae5923f2b4791289f4306fb08ec6f160a7ae49454cf16c3bbcbde0736afaea7c"
+    },
+    "docs/workflows/mobile-app-polish/index.html": {
+      "before": "ec47f8b1ed1e87fd77c6a9836a899dd4fdd57ad9a0cf5ca2af550cb2bedbdcef",
+      "after": "26faef9a5c520433254aa666d19eccf2a33d3fcaee69cbfb5c246bfab6737555"
+    },
+    "docs/workflows/mobile-release-offline-check/index.html": {
+      "before": "23595e78c9aa767e4c2f7a596d0e1eff735fc7a6c391b9d5efb4b5d7d048a7f3",
+      "after": "8054ef7fba4365ad64b242fa68b6042d7921172d1a08f422fcf98cc2ef5cf63b"
+    },
+    "docs/workflows/model-serving-monitoring-audit/index.html": {
+      "before": "966ba996dffa066e085341eff1314a07639c288f711c8668a517c89ce3345560",
+      "after": "2b7bd43fd58b84a10dd82ae851184bc5223b1c7f93fd849dcea2cfcb8a990049"
+    },
+    "docs/workflows/model-serving-monitoring-polish/index.html": {
+      "before": "2b362e6589b0ca2b79d1ad9ba854dbd3e505e8600428646acd27539bb320ea10",
+      "after": "1f6b13246e5642e13fe2f1cecc89bdd798ddb0733bbc460118203f01f81ba573"
+    },
+    "docs/workflows/multi-tenant-isolation-audit/index.html": {
+      "before": "f3c92b006b5b61c8d3a9b783cc6b5d8dc357d16158b67dad2a95728cd72d9660",
+      "after": "519666cdb0504d7f208450adb7a8bab1b85e0ce958b8cd21a9b821171c971397"
+    },
+    "docs/workflows/multi-tenant-isolation-polish/index.html": {
+      "before": "fee43974d1154f996a8472253765e871a954212863c02f2e7a84859a9ded9d83",
+      "after": "82106fe54b2b3a6dca7ebf423fe40360eeefe3c4f360002f4d2715342c051574"
+    },
+    "docs/workflows/network-integration-failure-check/index.html": {
+      "before": "b6b9b1178610dbdc9d2c8ad0e6bf92040813f7ba222bc8af608501dc37e25180",
+      "after": "916b53faeaa825093a8957c7c73fb0f9bfa81411bcc4e2728b6111e178d2024c"
+    },
+    "docs/workflows/nosql-consistency-hot-partition-check/index.html": {
+      "before": "f6bbc58bea3feed04afc71ac43dba8ddea2761973040c8816ed4828bef991c6f",
+      "after": "5d285ebf4d00c55c98ca2b850467204092d3f5dfe8a35f646dafb2957e503282"
+    },
+    "docs/workflows/nosql-databases-audit/index.html": {
+      "before": "b72db73b605f1c43b52e5e98ddde683c20c3cfc6024e3a6ba2cff0594d7ed70e",
+      "after": "97bd99aad68d17fc5a773333c9538dd5130018c8d4697728feed4f1f1a65a395"
+    },
+    "docs/workflows/nosql-databases-polish/index.html": {
+      "before": "638ef8ec0e44f0aba4d90e61d753545a5e20e07dc93463dfec0546186c1813e4",
+      "after": "3e8554523c78d1ee0c0a4efd5ed25cd0d9cd5c69f2b407832f072f2695ae25af"
+    },
+    "docs/workflows/notebook-productionization-audit/index.html": {
+      "before": "91b639a8054325d16d807314eeb3fa4b09b4b33b9385ad95bb7c164b92003417",
+      "after": "33b76d8b52ec81a4a2d4b70935cb03d9a1b32d47edc69aeb5d44f750331cab3c"
+    },
+    "docs/workflows/notebook-productionization-polish/index.html": {
+      "before": "54b09e9536395e8edc887fdb9e3ca244c6d1a8fe3a7a071137fc5dd9b5328f4f",
+      "after": "53f22bcfed210f2895c7c53094505f75db33bd775a3c63f64c63f71b3968d27d"
+    },
+    "docs/workflows/notification-content-audit/index.html": {
+      "before": "bf96d629bff8c09854c9d0a229cb86735c196a052f77b5a576770817b232131e",
+      "after": "f77bb3db1770ab9fd45e9269abb3f3d215ee177d35fdaea1ef45334a219b2d03"
+    },
+    "docs/workflows/notification-content-polish/index.html": {
+      "before": "20de9bd041d234ea02e460dbc3759b6d0875a9c9f87cb3e91003797b16171423",
+      "after": "6ffed8ffdc21f2ba931e0bfb07a5ce95247c02634fab72cb881c755fe475d42c"
+    },
+    "docs/workflows/notification-delivery-audit/index.html": {
+      "before": "6f3544314ec26b8c7d6997aab7df3c0a9c5841ff294e528504978e81725ec389",
+      "after": "ef287c4c70a99330b2c08cd6e824bd77075a0b430ffc5e8b4495229d3eff1af0"
+    },
+    "docs/workflows/notification-delivery-polish/index.html": {
+      "before": "bb99ff75b9aa49d9cb1c3de8c2541253640cc89ac316da91824c1cb1c347f94d",
+      "after": "7f119375fe39d8a573e0f6e6687eff48a882cba902864dd2b6a4ae72a2903f01"
+    },
+    "docs/workflows/notification-failure-idempotency-check/index.html": {
+      "before": "523546c517d3b04ed5b05a3c5a26f8bb46aecfcbb0a9b9fd0df3bc3891f7515b",
+      "after": "a7d8f0e4c737d327f61ddbfd89aa7ce28553d0007c83d23730be4c8d241ead52"
+    },
+    "docs/workflows/oauth-oidc-session-check/index.html": {
+      "before": "da48203b3c62496422f8e746b976164a5b2e499310fe4018b0d14f0c75fc5b46",
+      "after": "fc5dc1b0abf961fee895a6023a3cfa608ececcccd7748c58185abd630e3d2c95"
+    },
+    "docs/workflows/object-storage-audit/index.html": {
+      "before": "8611843248b5ff3c89273fa40c0c2950b96d2a7fc94dab9f5f591de95e4bb0ce",
+      "after": "2bfc3b53f6c6602b4d7867e6c2cf44946216b70d34a68c0af6be559e8350e2f7"
+    },
+    "docs/workflows/object-storage-integrity-recovery-check/index.html": {
+      "before": "7b82316543fc54fe702cf737c355016482111fac4f6217be25aabf7ce7d0d1bd",
+      "after": "4a629f5726eb8432a756c819b85f02794686fc9edee5b3dab2eece74a02d1b0a"
+    },
+    "docs/workflows/object-storage-polish/index.html": {
+      "before": "051b7502f928d95b333132fcf89f9d6ba212919233abd1163d93275c973ba22b",
+      "after": "cdd1cb158aa72995a7b14254a6423e11fbc6e4d57b3e03f10f0410b091875aac"
+    },
+    "docs/workflows/observability-semantics-cost-check/index.html": {
+      "before": "e6df8defbed9fd4dd535b355e14e1c4a828fe3d11c04f72d379d36cfb80b2824",
+      "after": "2d7bb4f4f0df627b03223292f80b8340022895096b27824823b4dad898934120"
+    },
+    "docs/workflows/observability-stack-audit/index.html": {
+      "before": "b6db5df2ed43882ff7e8f8b3edebd061eea196601e32ec725c74d5c5fd581001",
+      "after": "d5c144b11878e8cd1db2d96a04435fef33571c2ae3d8fd5bc649544c19f6627e"
+    },
+    "docs/workflows/observability-stack-polish/index.html": {
+      "before": "e53a7f6c5c0a53d65a818fb9876ca09e3f9eb664c6d4b5d73234a97ae3e9b15b",
+      "after": "d5ba0b410b922b08a29492caaffa517dc2c45f4ee16c18c2fad0c59ef35d2ce8"
+    },
+    "docs/workflows/ocr-document-ai-audit/index.html": {
+      "before": "d5c94a4949dbbbdfcbaa602397a299ec049dbe2a1384f64dd2aafa2fcb48bf50",
+      "after": "b5b9b54219b3a3c94cefe016d4f0a69019d763602929a804b4fae227b74e1b8a"
+    },
+    "docs/workflows/ocr-document-ai-polish/index.html": {
+      "before": "c81ac2557425525cb60145dc4a6a42b8d4a3a339c8b998fce15a2ba2856bcb53",
+      "after": "7b5178652874c88b8f5c42013f88591981484b4b3f9cf5f5d05c0751ddbacefd"
+    },
+    "docs/workflows/onboarding-activation-audit/index.html": {
+      "before": "0d4a8b65cb6991859d086220d6ffc673604f98d9f3e814506ae1ae8aa9d8d06e",
+      "after": "bde92086d21d23836d448c0d32fda1539cab9bba378ed1b274135bf152ff0160"
+    },
+    "docs/workflows/onboarding-activation-polish/index.html": {
+      "before": "2f54d1af25f2b63844c5f6e92f48e252de1305afa2ab454f66fc353ebe3c363d",
+      "after": "195d03ee949349c1249b53a2e6aace7427fa3460b798b7fcb273e27cd0cc8dec"
+    },
+    "docs/workflows/ownership-invariant-map/index.html": {
+      "before": "efcec915bd17bec91291eac7a5a96f60f5f3129b647856edddfddaddc7c1f687",
+      "after": "880ca1778dabc794d68d6b87694b0fe10772c4315296a0d1860bc3e1959a7b71"
+    },
+    "docs/workflows/patch-checking/index.html": {
+      "before": "4d88561d76a92791c2f37ca209452cad43d3b2cfc6685b3d752301891d90da9c",
+      "after": "e78fe3fd1aad2cc6545a9f6c5d99f4a428a021bdd40c7d2ea2263f50cdbb2d80"
+    },
+    "docs/workflows/payments-provider-audit/index.html": {
+      "before": "2926090586d226a353ea4c00875267365e912dea444222ce0d63989392599255",
+      "after": "4639102a1b0daed37cb6f06dd14755a50f95ceb30a36daca20a8dfcdd9280569"
+    },
+    "docs/workflows/payments-provider-polish/index.html": {
+      "before": "f6779e5ffb32d3553194350152d370a89d846afeaf3ecdfc95481cf8ef63ab0f",
+      "after": "4fca7c9733c91a6a09e8a97aa6201a6fff50603a3def652d250bdd69b6709fc7"
+    },
+    "docs/workflows/payments-webhook-reconciliation-check/index.html": {
+      "before": "85c589e59e3bd8c1e431866a3d3ec9556d10a3a639caddb7e3d52e18a824ec77",
+      "after": "518cab96ea0f6f27364f0e8457d8761af31a142b9d57db4e997e8801cac0ef69"
+    },
+    "docs/workflows/performance-audit/index.html": {
+      "before": "fdb0d0c1b7a7f2b204a7e8fb5b3ffe45dd6b8c26dbc8b85b9ad03fe84259d5bd",
+      "after": "9a6ccc9160d6a0c72fa1db398ad3fc6df2f23c0dff75ed29223faf300ba87d77"
+    },
+    "docs/workflows/performance-budget-audit/index.html": {
+      "before": "7687c0f0488b2b41cc32f66d6747511e37b02692c776f1ff9ce82d1ad541ab62",
+      "after": "35cd20f1e80d43cbad907e42746274601ee1b3a9f5b1b6723008e5251287395c"
+    },
+    "docs/workflows/performance-budget-polish/index.html": {
+      "before": "f7867e8b86b04deaa44e4f8b52f8e3125d62ff6e51e9335033ca7fd6edc02836",
+      "after": "16c3c7d1f0012f1ec52feff7f25d3979f63989324af8e7ed0d3229a34a79bd92"
+    },
+    "docs/workflows/performance-polish/index.html": {
+      "before": "f572a0b7cee53cb915c7ac3dd6c29ba660052b6507d8d8f8788e7c65276e4bf1",
+      "after": "f2ee488027db4ff2dc7a01fe7d974be87edefa8299223cc737a32c4d20bebe5d"
+    },
+    "docs/workflows/privacy-data-rights-audit/index.html": {
+      "before": "0ef0bee930d833fb0eae55243652c575df7b41884cd85486a8eb30bdc1c10ae0",
+      "after": "0b3f9b1a437339991a954a0d12690d17ad2ec80ec452c85c157f7d0f62028b14"
+    },
+    "docs/workflows/privacy-data-rights-check/index.html": {
+      "before": "420989d11039ed248b6a9a677f176f0a34db5fe00a4eb8288432c3516f4bc68c",
+      "after": "7ae4b8b1b59255efe5556cbb97889d176eb99513298ac71ea5fbb04bfb63f0d0"
+    },
+    "docs/workflows/privacy-data-rights-polish/index.html": {
+      "before": "a2688b4a4d96cdcba86907556f91cc435ff3c5f6b799292aa4b12f3886b97482",
+      "after": "4cfc738ed2eab443110177faba902da680c485733fa36496d5eb09b862eb6111"
+    },
+    "docs/workflows/product-acceptance-check/index.html": {
+      "before": "0204665175d47f449a261aa29a57ebe153a0c2ec3a1eb6c00f7ce108b07fd964",
+      "after": "4e1702f183a402ea83aebec6a358df70fd325f6865e1ce39a3442f83e5be64bd"
+    },
+    "docs/workflows/product-analytics-audit/index.html": {
+      "before": "4ccd06f61958b442a670faec037b0f2599ac7c1ecd00832b37390b77e7ef7af2",
+      "after": "4111fd7a2348e06cf9b17da7b015eac0257004f4b9b6259b808ca9b7067b9d2d"
+    },
+    "docs/workflows/product-analytics-polish/index.html": {
+      "before": "03c093f1b32d10b0e733caf7ddb9fa5943c9f3a86badfb8126bf2f6eb3a4321a",
+      "after": "6a3d72184ddb2a6e9a4110e636461f03d98bb20b84d39102eceec40f167dd318"
+    },
+    "docs/workflows/product-capability-map/index.html": {
+      "before": "e996f7d9f917ea9d4be479726f3c63bce6270ad36b60714a6a4d6b7fc1aac9d5",
+      "after": "1d342d45c9a4c9864e8003ad17eb4a9a3c04166b0b97e4b7cf2dcf9b1fbd5796"
+    },
+    "docs/workflows/product-decision-metrics-check/index.html": {
+      "before": "ff052104b6b4cf47e95fc59efcde4d464be88b4cdf885a48413cfeb69bb3dcb4",
+      "after": "0067a3f4576751c23b7310990c41f1c111315ed41a29461d943e136feb9e6a27"
+    },
+    "docs/workflows/product-journey-map/index.html": {
+      "before": "cbedfe160c79896263420624b66b231d6fbf8683280bcdbf65ee9af98e48e5af",
+      "after": "55f2f967dcfbf26db9722bd820ec6edc30c2dd1f26263e8c7b3b1d789a27e4eb"
+    },
+    "docs/workflows/product-landing-copy-audit/index.html": {
+      "before": "ba3e068afcaf47314b4eb9db9113b453169a2ba6254d589d00b2588d8932dad8",
+      "after": "2a1bd92b551db4bd69311be184d0a838df1dc3459b9416fd643a33925f2e7270"
+    },
+    "docs/workflows/product-landing-copy-polish/index.html": {
+      "before": "d07aa885608095bee14aab1b5a3e08632acb4a6ea8b2c2bed169a4a3c94767b4",
+      "after": "ce76058a760d96b4b75072f08a3a6db20ad8488f1f0a2373ac08e658d9b2d2bc"
+    },
+    "docs/workflows/product-metrics-events-map/index.html": {
+      "before": "4f9384bd002f02edcd062f521b94ebf40d656939e0f70c456f8ca4344f43d7b1",
+      "after": "b3b70a5b854d6d1396b101381a63bd06b963c275ff3b11e7a1f1e58e33b2f683"
+    },
+    "docs/workflows/product-requirements-audit/index.html": {
+      "before": "07a7b3c97361da313bb75398a01ce4ac8efaab46c0a6319451862c1fae19acb5",
+      "after": "ba242f0e05aaa8430d9b2e9a8ea1a92dee89138ccf10338600ad4097c9c4349f"
+    },
+    "docs/workflows/product-requirements-map/index.html": {
+      "before": "a925e904057df3a45f4384480ddb00572e824dc928739283df9c5a1198c03e4b",
+      "after": "b87ee620be107bf3080dda340688896c33460b88878573442eb84fa67e4ac3f1"
+    },
+    "docs/workflows/product-requirements-polish/index.html": {
+      "before": "c4ecca901d71d8ac3651cf62a8c5a823a197f7c6c6b30e3306b04cc4e1a3b847",
+      "after": "abbb459ab4b8678ec31b5d5e124d733a195d1fce3a3b500f505d2b6c369d1d73"
+    },
+    "docs/workflows/product-ui-audit/index.html": {
+      "before": "e2f15d8031bf2ff0fbff777dd5dd292fe13766c8d4d249bc89e6c11897ba5e95",
+      "after": "530a04af40dd77e80db44be42596229ae98ac1a464f600a3bd0cd27cc303b0b0"
+    },
+    "docs/workflows/product-ui-polish/index.html": {
+      "before": "a38dac92077ea99f7bce5cab020651961f48d51daee27c65d8d45f38fc148c53",
+      "after": "a3f2be21a4f054a36203558a47414eead3486c0390a4b4043521e6d3db6595f3"
+    },
+    "docs/workflows/project-atlas-map/index.html": {
+      "before": "707d921a43bcaa93cf67e97b15d9df6715ddf901bc053aef06b2aa117d921691",
+      "after": "b72bf3d9df8ff61cc1c1b368ef644982999f5dc8980ad370799201af99c2dd76"
+    },
+    "docs/workflows/prompt-skill-sync-audit/index.html": {
+      "before": "12e622f956b73a3681ca2f0dc3c07637680a16b3eeb716623da9b11354d5677c",
+      "after": "aa6001cd792b8ec74888a58f3022b21276a62418a8c437fdc71e5dc00fe478cd"
+    },
+    "docs/workflows/prompt-skill-sync-polish/index.html": {
+      "before": "ec32934ec0680dd65fa8d177e9952b0cd9138fae94fbb01febd5d7895e035ca8",
+      "after": "05cc0a3fcad9ac31b79cc352cb47335679228535d0022b01deb7e34504f749e6"
+    },
+    "docs/workflows/rabbitmq-audit/index.html": {
+      "before": "b1ed095497bd9b1a07e0eda8023e126fe99482fa1a2a6b8dcca7e26eefd2201f",
+      "after": "91cb1b43b89d98d8e8442c8a0c6a3e8ff7f82007e5559dfc2b0b9de35a347367"
+    },
+    "docs/workflows/rabbitmq-polish/index.html": {
+      "before": "5b4ea625cdb718e142189fd049f75282074337b5861a651f4a1e0fc0a6c6738e",
+      "after": "c433707176b7f132497ef980674e915cc421a6fe5aa5b377a1f68d17bc632369"
+    },
+    "docs/workflows/rabbitmq-redelivery-recovery-check/index.html": {
+      "before": "147a2a1835a676e2f6ab6a2ade29653a546a0dd7bdc2af1c5d9fa78faf6de9f6",
+      "after": "27c21c141c4cb034a22c652bbfa74e25e3bd008596fc82375824501d737a0220"
+    },
+    "docs/workflows/rag-audit/index.html": {
+      "before": "46ac2091b7afbe05346003fe08c30749f9b488f8499902be42abe55bc72e2c3c",
+      "after": "e00fc0505877910818e82eb56c53de0ec30fdb8cca6e0e8fab52a09a1cfc4042"
+    },
+    "docs/workflows/rag-polish/index.html": {
+      "before": "c3eb6f29850910986c86555c5cc6798852f1a560367c1f2e7be192fa4d712bbe",
+      "after": "f3351a1cd61a3ee95b812a27fb7f0c9c92ec863c6eced744c4636396b9d896a2"
+    },
+    "docs/workflows/rbac-abac-matrix-check/index.html": {
+      "before": "b1682190dd2cc4c433c8c865006adbcb11bd984c10e39cf0a5e21a03483148e3",
+      "after": "ca6a5c66ee4b6d366d76e06e720667150674b4802378f0803ba40ad5c8363763"
+    },
+    "docs/workflows/rbac-abac-policy-audit/index.html": {
+      "before": "946bb2ecb83655d8a4681261bf6a26c0f471ba2653142dc45790b2860419cd57",
+      "after": "8891f97d36d9c179f6221904fcdf84e39b5b2d0eaacc42b60a9fbd5bd11c8926"
+    },
+    "docs/workflows/rbac-abac-policy-map/index.html": {
+      "before": "b727bfdf37834cc11cd5d48ad0f172371f51d69bcf6b7ccf7033ba4da38d723f",
+      "after": "0ca6877e8c83704fc8ad1c5f8e1beee2b5d315414e9d55e2d79482cfa0ad2887"
+    },
+    "docs/workflows/rbac-abac-policy-polish/index.html": {
+      "before": "ff4c0986c3c102b08685cfcdffec3d1d02d49f81fe5ab13d8448325506b627d8",
+      "after": "428a146645c6382e2d14b644daf064fb6e0f460f6f85a85282073da1b63d0ab5"
+    },
+    "docs/workflows/readme-gen/index.html": {
+      "before": "1d75c7fd26f3f061b9716013173d625953600041e51d37ffa074fee91bd919c7",
+      "after": "a98d1456c88ccd8f499aa828d38c1a02d94f3411e5b061343d8f4dbb897f5d7f"
+    },
+    "docs/workflows/realtime-frontend-audit/index.html": {
+      "before": "2ab4870ed715fe2053c9cc66091bdcaf661da44e3708505883eaa5210cb42731",
+      "after": "ffeaedba80420141040d2bd49273d3594e2ebf4ea405f101efb34f840e7dd2c8"
+    },
+    "docs/workflows/realtime-frontend-polish/index.html": {
+      "before": "52d55977a095101e63d01bc621731dcf4e8bbac1e6f1f85a5462650e48699080",
+      "after": "31f2eaf4e1eecb2ed36811f0ae957bb8515708a96accfa8f411b8ed33b6a8529"
+    },
+    "docs/workflows/realtime-interface-profiling-recovery-check/index.html": {
+      "before": "c90e5f35a2d235fb68bc6b3c46d1f15f39ad174e9b3978ce00d8e6ac7c76bde8",
+      "after": "39ed93bb514feb538e9692d6d08192331022b9e8bac9d35e31572fe694ece110"
+    },
+    "docs/workflows/redis-job-queues-audit/index.html": {
+      "before": "8c03ca3780398d5ec2177e5e5ce5556575f05fca8754618112c7a5f20b8e855b",
+      "after": "aea50aff1befa345968c34feb87deb8fabd65ea4e33862f22be491afb18f082f"
+    },
+    "docs/workflows/redis-job-queues-polish/index.html": {
+      "before": "585698a4fa6166865ae325150511874d4daddf579d6228b859593804c637bf86",
+      "after": "0135d79ca88d8588ddecd837ca667d41435b53ed82bcf80fca2525f86509b7a9"
+    },
+    "docs/workflows/redis-queue-load-recovery-check/index.html": {
+      "before": "eec8157a6598d5bb329a094992828c1adfd81208b6e03e6ed8dc9e1154597881",
+      "after": "6878add80ea636cd596e97727f724ef241756c56b58e3b1cc422ff3f3c45c0d8"
+    },
+    "docs/workflows/refactor-boundary-audit/index.html": {
+      "before": "306c4670ac5b61b4fdea6c185d147cf41da1245362eab616df3eb760f8d69c94",
+      "after": "c454ab568bedd9616f6443ec490dc2f937d3381f28264319aa1c65e76ff6d9a0"
+    },
+    "docs/workflows/refactor-boundary-polish/index.html": {
+      "before": "1015d6943d51ac3e5d03de8568b31ba365e28316c70084fb728a255fbb1f6b74",
+      "after": "3be7fb1ce7fff66d1e07ad9699fc5ab89ea596a657278b0199eb7b8598ed4f37"
+    },
+    "docs/workflows/release-artifact-trust-check/index.html": {
+      "before": "2c3dd9cda9d605b059c523d6ceea4dd1467af69c5fca6695328c5e3ffba6971b",
+      "after": "3295bcb9469a9aa0616887a7df9ef84d854b071fbc74d63f603c44fd833365c8"
+    },
+    "docs/workflows/release-readiness-audit/index.html": {
+      "before": "9359ac5034e18973af4c185988dec58be21708eb20db6f6c88291c18c4731013",
+      "after": "d5a6b392c918915d6fe2740ad0e8a2228482cc600854d72ce6c130a2fef00a70"
+    },
+    "docs/workflows/reliability-audit/index.html": {
+      "before": "a21e4f72bb8e022ffcc1d152c08d9c968dc2f60401a29c8666582579564b96f0",
+      "after": "b83853330f1bdc27d4ed005e54d82a7f52fa8202d18afaf8ee39dde206e6fa8f"
+    },
+    "docs/workflows/reliability-polish/index.html": {
+      "before": "9564c3f90aa2b55460c3f109f7ea797554a387e05324fa6efd3494d0b49624e1",
+      "after": "d98611efeb4473f749f171fb67ace9e31dff1ddb809d7e780d7a24ef9fda34d1"
+    },
+    "docs/workflows/reverse-engineering-audit/index.html": {
+      "before": "9354e5cb2d671d4677daf1fe26e4c8c70955f0ca107ddd6ffeb01b6e3f8e2802",
+      "after": "b41cfbefd4a5b87ff91a71c4cf7106876ddcdeb618ea056f4d53e73202ddb528"
+    },
+    "docs/workflows/reverse-engineering-polish/index.html": {
+      "before": "ed80b1306396df4bc7adf317b276139dc1b5ccfaf4ca04ff94bfb95208558a39",
+      "after": "700e4525e072cdf84cee31af45fec31f1fcf40c3e095ec8ef009c8b29a827e4a"
+    },
+    "docs/workflows/risk-release-map/index.html": {
+      "before": "4260ef02ec3e6d2c9b8d26e12ec31a92edf09d3a77281b09cedf3a0b3c21aada",
+      "after": "b0c27426bb03a0c1b444183c93481df2db3352e46d05fae6d0e4d9c7a8754cfc"
+    },
+    "docs/workflows/runtime-flow-map/index.html": {
+      "before": "85622c1bcbd98e9b9b2a426fe80955d5df6b4a24ddf475292baa97c059c9b113",
+      "after": "c6faef5524dd7d91d1a1a0639ed3c2fc1e2e676f4b023c93f65a6723dd337612"
+    },
+    "docs/workflows/saas-navigation-map/index.html": {
+      "before": "08eb66364f294de8971aa6cee2c3ffa372e39a3c8e2f048e609c7ea57dcb7d52",
+      "after": "f929a89f9aca2c70af36df6a4670cb9a29c64cb18a9bbe21b238627b5b8387fd"
+    },
+    "docs/workflows/scoped-audit/index.html": {
+      "before": "e6128d3f274cdf6c357e04c26ae0372bd9f187284c468673fd8c01361374ae06",
+      "after": "566f84f65dcdb2158470eb8cfd84597a2aa07083943d4a708815ab8d9f78f7b5"
+    },
+    "docs/workflows/scoped-polish/index.html": {
+      "before": "c1123bb18aa1d344162ee940bebe1c5ebf6c7c510d76cfa008f5555ccdf697d9",
+      "after": "25adb5bec5a78883ead6399244cf87441f0a555cb9d123602f83410ef26a2a1e"
+    },
+    "docs/workflows/search-index-audit/index.html": {
+      "before": "56687ce8586772788854a074fc454c44a3cb9a616b38a0790a55d88365ecf769",
+      "after": "0f5c83dd7bb54160f11d31b86009c3648b0dc6d3eb9d8a47b04e878f341f812b"
+    },
+    "docs/workflows/search-index-polish/index.html": {
+      "before": "7f9c0424266657fa44a8afdfdd747d5a3c4a4fc584b6c3dcc4333a2f576fe39c",
+      "after": "9e29c1eae89dc30e18d433a75aca72363824d20541ec86d242e5016efeeae798"
+    },
+    "docs/workflows/search-recall-freshness-check/index.html": {
+      "before": "1b6aa19329f80a10abebcdf5ded04d5fb0bdc531fe2f27420bfa3a237e9d2e67",
+      "after": "9e343ab9a45c180d92863422b1426d584b1efe3d3c0f895c5bdb3ed556f50cc0"
+    },
+    "docs/workflows/security-abuse-defense-check/index.html": {
+      "before": "97f9de44995dd41959c1ef251e230e51050c430df6d1e8b955012d7e23607678",
+      "after": "4c3c00b588bf03e57abcda593f807748df39d326a234c2643a848ff74751c2b7"
+    },
+    "docs/workflows/security-audit/index.html": {
+      "before": "96a85c589393d495eb0b50a19f86a58316f8ac6470fdfde2445599141aef7cf4",
+      "after": "12d90a6b860e3ab7b6735e5a4e6da4820712035b30d748ff5c7660a6d92cc9b6"
+    },
+    "docs/workflows/security-polish/index.html": {
+      "before": "622d718cf80aab4ec67a34e66a7bec8aadb6485de1723080dc498b5c0093b36a",
+      "after": "f0aba4655ac16cca1197201e12236e3aca53e10e40a81c18922c8fd313e35c61"
+    },
+    "docs/workflows/seo-geo-audit/index.html": {
+      "before": "ff74a25bdc5781410ee378ed024f72c74c2d690dcbddbf8f6ce008bed13f4548",
+      "after": "55a66f0ae550ea3d10f9ab33c95d2a3ade131549b2d9797b37eef3cc504f5f73"
+    },
+    "docs/workflows/seo-geo-polish/index.html": {
+      "before": "c80d5a84e51f1108f17581e0643ab0241709f775091d2b6f4624a6e0deb17f98",
+      "after": "8f5ff43336e5d1ac9738a160c75f274735245dcfaf0372d0aab2158230957572"
+    },
+    "docs/workflows/serverless-invocation-check/index.html": {
+      "before": "a63516e7e3eb5e7cbdbe9fb8dad8d790e8b2ab713108e94be3db5df5b5d7ec0d",
+      "after": "218275e22dfbddd3fef955357a4c707d41f354dfb1874bd87d59675a4ecf7268"
+    },
+    "docs/workflows/serverless-runtime-audit/index.html": {
+      "before": "a3ffe9b8a9b4c29cbbd9c2a82f63b585a81b8fce0ce3ddc5ee8dff3f19ef83c1",
+      "after": "0af811dfad042678c740ed5df887f9d8f8f42b1e390e9e519004fa373ad88fca"
+    },
+    "docs/workflows/serverless-runtime-polish/index.html": {
+      "before": "bf4e2eb5be1b954e698debf61fe291a850421ac73edba60443cd2cdd20902c0b",
+      "after": "f6b5e7f6398f17d8e8d4d75d1ecf802de4fbad1e572d26ef80265b9794429554"
+    },
+    "docs/workflows/sql-databases-audit/index.html": {
+      "before": "2d6947a438a03eb947beeef92c33f6d9babd5d8d01330f79670251d06ad1ca97",
+      "after": "383ff0f350266c5f4cf981c4c60e76184acc701a4dbbd4af0b5059fcfe1e4d42"
+    },
+    "docs/workflows/sql-databases-polish/index.html": {
+      "before": "019840c35eec049bb196c4aa8e8d7eb28cf9c21eef6e41ae5558b61759bb6b0f",
+      "after": "b7e3e992d78fd5279a53920a41c31ff2cb39f7bc183de3cdca2bf62a8f09b88d"
+    },
+    "docs/workflows/sql-load-lock-failover-check/index.html": {
+      "before": "b8ef3bd219c87060afeba23b064cac64362018a0e1555591c2b65992fda1cbe4",
+      "after": "1ede61f710c743d8939a615377b6821a5f2ed2ef6c6e7bfb6d92dccdfb587085"
+    },
+    "docs/workflows/synthesis/index.html": {
+      "before": "5859934dbb269a62fba805b6819c5dfe822be692e0fead0ea3d803c77d526fd5",
+      "after": "2711c8978027950855787d81f3860d2b9ee393f0c86f5ea5a6dffbbe65773966"
+    },
+    "docs/workflows/system-security-hardening-audit/index.html": {
+      "before": "1cfdaf6f05de9ed5ab9392c5772ede1a8f641ad51973075b93b7f5a75d45d2bb",
+      "after": "53387d28d6b92631e4258191ce3eb9adef2460a9f1da636699242d31e55661a4"
+    },
+    "docs/workflows/system-security-hardening-polish/index.html": {
+      "before": "98f4d38532164194205576f0f1178b944db0c3c0eb1c36d9ffd5879c1fa29b58",
+      "after": "0f650ab0e31f39b9a6e6e90b6236b6de9bdc2dd878da9c21dfef7f35b8c7dd62"
+    },
+    "docs/workflows/task-shaping/index.html": {
+      "before": "470102bd149ffc9cf9843311a5bc27b885f5b6523e5f66e8c6b2e98cae1d2494",
+      "after": "a75839c389472f283db047149a44ab48686fb405e347849205efc3990bff9781"
+    },
+    "docs/workflows/temporal-replay-versioning-check/index.html": {
+      "before": "490d149a144ddb0f8c06519367a00383b8960df02b0675d0a82cb15ec1c8bb5f",
+      "after": "fc9a1511f8e61b64e403a113665ae01beb99de368f865af2655a04453849be80"
+    },
+    "docs/workflows/temporal-workflows-audit/index.html": {
+      "before": "a55e4a56889b4354bb44610265880c475233dd0f30b4dce954b055c86c35d367",
+      "after": "a76ca031feee8cd5231a2f17efa3ba8e08e839adfea585a02e1734415ab0f727"
+    },
+    "docs/workflows/temporal-workflows-polish/index.html": {
+      "before": "043bdf8a7b3b5f05fea241a443fef421e20f033b575c228bad5acfe950dc8a4e",
+      "after": "ed2c59a77758aac2ea31dc4dfdb952e3e595324b4a9c50d030c8307764c5f912"
+    },
+    "docs/workflows/tenant-isolation-check/index.html": {
+      "before": "ae084c87cfc70e33f32606204d00e353e76b4e2dd36ded9f36ed101b2ffcebe6",
+      "after": "b09ff3e4f3d4167824c077d513057d83923880c114136aad42367128c39a406d"
+    },
+    "docs/workflows/terraform-delivery-audit/index.html": {
+      "before": "6ffcfa09696b636e33beb20c1fa744f0a200e7873b198bb23e1299d355d0b5ad",
+      "after": "0b3fab5c1a4bf1cdb3f6f046eef3ce4b7c9f154b99440aa749fa6beac75c2be1"
+    },
+    "docs/workflows/terraform-delivery-polish/index.html": {
+      "before": "8f40f108f580dad53f2d84fd9ee7263ed09881be27e02289badc1ce694b9e99b",
+      "after": "b69d9c7f840e1bcf27cf667b018cc09e477ed07bd65b435a01b84d7ae211e6bc"
+    },
+    "docs/workflows/terraform-plan-state-check/index.html": {
+      "before": "2d543989c02ea743e03471f53d4e8784cadd0f532457674a0992186a8f6f6a39",
+      "after": "cc074b532fbdc23d8de96fde4ab2795fd8df5e6d68ebd7e7cae2b9f90d9631fc"
+    },
+    "docs/workflows/test-coverage-audit/index.html": {
+      "before": "c4b2cd98f7ebcdd571f77e3a5eb386a3ef89cafd0ad3e50182aeec1463202940",
+      "after": "e254e49768b12256d087bf6ea0d6300ae3fd8c0237c40e13cb0455495395ff48"
+    },
+    "docs/workflows/test-coverage-map/index.html": {
+      "before": "fc6044f1ec83741a9cea502ec4f3e500154ea6741e18df26c35a3cb472932cca",
+      "after": "9acbcec6832f27474afa4e0499729f6b768d500f0dfe27dd6802b0109e1a4a4d"
+    },
+    "docs/workflows/test-harness-polish/index.html": {
+      "before": "90fb2cb2f1fcd952c569627bbf9bccb46dd9cf39f79bf281769fe853f36a5033",
+      "after": "903177d185600812ca98837446312172419ca016c0b26c0bb1100a396010691d"
+    },
+    "docs/workflows/traceability-map/index.html": {
+      "before": "e6f7ea6659f5fb0eaa4af83deba5f5c9ee99f6ef151f875d58ff404d3656ea3c",
+      "after": "d54f2c03671713d3712efdea1f62ea2fd146347ed54f8d5243d7535ab64660d6"
+    },
+    "docs/workflows/transactional-delivery-check/index.html": {
+      "before": "e6d855eaf60532b7fa3205e2e5be99e2fc5fcc3cbd98af8c2244773ff4026849",
+      "after": "305611922e96f7addd234a098d0855315803c0ea9d0e0dca893a85398ae0a52d"
+    },
+    "docs/workflows/ux-flow-audit/index.html": {
+      "before": "6c94bc5fc94299308d82174edf02aa1a217ae59458193b357d3f1d20b9d1bae4",
+      "after": "f4c7fc4ddbdbbfc77b1bf1e1ae65f932ee6f503997b156ea8ef22edfdd4f90c5"
+    },
+    "docs/workflows/ux-flow-polish/index.html": {
+      "before": "42df4c999b309704844f9041759c53ba68db510aa0a1f137b8e32e8d30dae247",
+      "after": "de7e010986ab6d8d78de7110cb17c33dae0c1156ff9443b1bf6bc5da53fbfb4d"
+    },
+    "docs/workflows/validation-clarification/index.html": {
+      "before": "d5c8a0c8e1b7de6ca8b1a54a4c982077b534c009a55f62e158fb4db48764c339",
+      "after": "f6f5b9af5cfc790131bb2734ff4b16cc0bd06fdacaf383d3d903286d27297e08"
+    },
+    "docs/workflows/vector-databases-audit/index.html": {
+      "before": "7743a4bf44d69b8c4e7fdc9071b616ff9bf87b38f32d01152e7bb3a68784e71c",
+      "after": "a4127448a8ec67c9f69e5e16c6ba7de639b126efddd688b72784555a28d12d86"
+    },
+    "docs/workflows/vector-databases-polish/index.html": {
+      "before": "74dde586e604440c9ed631a6c8f19ed70f2e8d401029347384a47b8ef354e05a",
+      "after": "69dc452a8c0078e95e56c10d425d86e3881d50853c57f84d77c8714ce53e87b1"
+    },
+    "docs/workflows/vector-recall-degradation-check/index.html": {
+      "before": "d00421c8c0162a28a220f92dd0cd2b31a61ab5571ea8f35a1c33d75e1c174568",
+      "after": "74f0fd2f21c504903c73bf838de63cc8f10e377a62b1b7b83f000c1c08ad4b4d"
+    },
+    "docs/workflows/visual-regression-check/index.html": {
+      "before": "8f4c4328d114bfd0705dfc3551f2b0cd0f5bce2ef75aabfbb7dd8372204f6821",
+      "after": "1cabd2e7207d0efe6e39260ddb3f7704254342de6d995a5ddf4f6136d016a25e"
+    },
+    "docs/workflows/web-art-direction/index.html": {
+      "before": "42473d6295fffb325edc25973d4e793b2d2f9980ec81eadecdf7cb2b04fdbb36",
+      "after": "97287ac33bef9c0f4017059273e1e8aad3ff6dd351989a3e13d655d40c0a0463"
+    },
+    "docs/workflows/web-boundary-check/index.html": {
+      "before": "7c25cedb10350b71753fc72e201196848fed0506e21f402d53dad1d091848389",
+      "after": "11166def7c71076e2308ce63eafeea66edcf31c3da49b3d6ec87750635d69365"
+    },
+    "docs/workflows/web-brand-assets/index.html": {
+      "before": "59dfee36e1ca21f2eed7e927f64337d0229449adb6783ed8c3c9ae1b5a2114ab",
+      "after": "9213a03bbecd8dff6c160caad86ac8ccf497b54e6c971b79667e43475d639d39"
+    },
+    "docs/workflows/web-design-kit/index.html": {
+      "before": "7527d895477258672ce43bcfefcaa7479a2a57da69c5958646629a57df90db26",
+      "after": "7021edf45452ec0393d7a1fdfaf2c8ec17901d080e500fa11183e515c6bcb4bf"
+    },
+    "docs/workflows/web-experience-brief/index.html": {
+      "before": "2ff2fb65c8665178d15327f317195367f419136e8e5c784d8f1fdd533bf315a6",
+      "after": "45a88cfbd5f92cc12dd7a442009a42f458db94b8bc8f71307ce6b208abc5a776"
+    },
+    "docs/workflows/web-interaction-motion-check/index.html": {
+      "before": "b7d8a146d5d1122eef78c2b0cb8effa94d6a3e42e849c826494610bb69b70e78",
+      "after": "48fad44c5634a19fc7e3d3c8efddf8246b3d8ef26e6ba94fe1efe44387f51949"
+    },
+    "docs/workflows/web-interaction-storyboard/index.html": {
+      "before": "0b70b139e65aa81462e2b8c27515ecf010316476ec5567288e0a43b75bb7ec2d",
+      "after": "8f9aaedfb7d6fc7ef7a94c3a79ea0205cd9626aa76a6b7d408066fef4a6975cb"
+    },
+    "docs/workflows/web-navigation-state-check/index.html": {
+      "before": "0f87eb474c3e7c37d3a28c26d1f4c7b91454bd5f73582f99bede3782b45dbe5e",
+      "after": "ba1a716302a28bd4530f05763f27e3ae67e3d6fe868b521c39bc8781c1f9492f"
+    },
+    "docs/workflows/web-offer-synthesis/index.html": {
+      "before": "d97475fc8bfb37e1d09293d9c2e7b4c7176cfec371c32e6f694de57724cf9c82",
+      "after": "ddf558014f40b79a71fd17d52d37d4e8b76fb9a4e6fbbc334c0a97be3585de9b"
+    },
+    "docs/workflows/web-page-acceptance-check/index.html": {
+      "before": "13a11a9a404d71196290a1cadf2aa8820bfdc7af8d1769e6a6d665c08ffd7589",
+      "after": "161f01a828928968d90f062b9a896aab61373adb46dfa07edece5cbd35890874"
+    },
+    "docs/workflows/web-page-architecture/index.html": {
+      "before": "cfe5422bec65f822e51ec90d4770cfc2c602f308c52deb768ec8290e3a16d994",
+      "after": "50f76f468daf487f71eeb6b1c3b009c7ca601dd9ee6253921b92c8196d1f1a02"
+    },
+    "docs/workflows/web-page-copy/index.html": {
+      "before": "7f1327c490f333b6ca04c76a761f9d7403777e79d8bc1fbda29151c434c1f5cc",
+      "after": "a3dd84a13f639253d590880959e5f4d25ffd523ddd74a8e8bbe2d0680765e977"
+    },
+    "docs/workflows/web-project-architecture/index.html": {
+      "before": "1c5c9e1d6783b4dafb094d021c4baaac7e4c52d21798ba99a7d4d53289527387",
+      "after": "79bd3033b8a353003158138a777be8c173f8bde9eb68b72e8dc77e833bc197d5"
+    },
+    "docs/workflows/web-reference-research/index.html": {
+      "before": "7ea00e1502e3e979e767c607ab11cf887eee484735393b9500af91e954709576",
+      "after": "d6dc2f2e53490751826a025a3fc9b1ab4751cf1b634f894db6bf648ddfb29425"
+    },
+    "docs/workflows/web-rendering-audit/index.html": {
+      "before": "a3f617a03ebdfc046e138af50c41be4b9780f0dd533224534b68089ba79f5f8a",
+      "after": "f98b89a3934c9a729b43251b2a2261bcb66089e44e858000ad004a1bd6b03aa6"
+    },
+    "docs/workflows/web-rendering-polish/index.html": {
+      "before": "4c6d4745f5338167a73330c11ac1d55bcb4b12f84f26815bbeae24cfa8c60ed4",
+      "after": "6dbe463b4a6f449c1e5842097df166d08880e6830430942d783b7f2c1373da26"
+    },
+    "docs/workflows/web-search-performance-check/index.html": {
+      "before": "8fd23e217bfad13338c04eab6d9ca30cdefe4cbf156109bc71aea5f4c76a8df7",
+      "after": "87a6cde95d33b9d2ad1e7e993cbb148138cc7fe26c9444f91ade825e716acba6"
+    },
+    "docs/workflows/web-visual-hierarchy-check/index.html": {
+      "before": "0b31618b76f7bcc148ee40dfcb3da3b4b23c3f00e49a42af507a44b524abcf6c",
+      "after": "0ba8fdaa39822fd1158ba6437d8c56352a94c1a4049ebe903fc571996bee4c76"
+    },
+    "docs/workflows/web-visual-system/index.html": {
+      "before": "d0de3d6b70e565624332902b99251cc0ef9b37539bb0ae944c358bbe05ea6fa7",
+      "after": "56467e3c9d4aad7eab9541d74e3c08deb64c800736c0519bb0a358e63a4728e1"
+    },
+    "docs/workflows/workstream-decomposition/index.html": {
+      "before": "ee35bbe1bb3c6de6a51b8fdb08aa85e42982885c0339938c130c056d39771e73",
+      "after": "00a72d59d5e522a121060481463c68332abd847039fdfe9a91483d7f47dc07ae"
+    },
+    "docs/zh-CN/index.html": {
+      "before": "c7faeede1a5418925de7a9fbb12889250b2d2bfd16a6cf1af3860c8953373b05",
+      "after": "3f194be2a14a9cbeb2fb7d44cf95ad619ba364e33b86b93650a1c299648398e6"
+    },
+    "docs/zh-CN/privacy.html": {
+      "before": "90c79a6e2d781a7080608465d8534d3da89b0e55ad76eab44b9487f91ccfa721",
+      "after": "fc24e3dcaf07f941af0de65271795c456a2d425ca719c0229e2318002afb53cd"
+    },
+    "docs/zh-CN/terms.html": {
+      "before": "1304cad8e0635332d357e35089689e1fbef6e5d0e3a49501d2a419ea8a44afb3",
+      "after": "c53dd47a68ea122ea23405061dce5c5cf132b1faa1260d1e8471df3d34289c07"
+    },
+    "docs/zh-CN/workflows/index.html": {
+      "before": "ae30f2e305647bd54391c9492c8cb86d47aa6ea54448b2b8eb3c8ff87dc31267",
+      "after": "e66c98d7b8e01c6681d768b0221503350b85e5b114abf95c308ec85be903fb4c"
+    },
+    "mcp/README.md": {
+      "before": "5cdde06ee9a5fb1b02dd78963d646c7d8364978c4d9858d0bec6a31b4a29331c",
+      "after": "0febc612af0460b953c7fa2952e4e93a994e39ef44b55de2706cbd5ed35720c7"
+    },
+    "mcp/package-lock.json": {
+      "before": "7c71483b5255e92207c0e7844f4e18d9b5f186bf2b1ef3b7a18280ce53e2f5e2",
+      "after": "d919c7d825cc2957ecf2a65f0afcc0b5f1d16ce271a514dc975a11a087bdfd7c"
+    },
+    "mcp/package.json": {
+      "before": "87079c1c65fe45cc54d968e76c46fe0008320d4d6d3f91ca4725e52f86fc2454",
+      "after": "e1f6203fd637960cd23da03b45b94d28eb931ce42dcf01ad7cf96ae943ba886d"
+    },
+    "mcp/site/app/demo.tsx": {
+      "before": "8649d28707f8bfae5d2ebab9cdab8c62a98b4da714eec121d7e09e69f771745a",
+      "after": "c2c23337579d18d7fcf8c8314183333f48ee811ac7ef7f59a467dff8f675bfbf"
+    },
+    "mcp/site/app/globals.css": {
+      "before": "8cdbaa51475b07944b23597340e70752f3b1961a9d3b490671fc5701810a26ce",
+      "after": "713f93389cffdcf81fd251685b09695c07e6c06ec9e4fdef9cd33cfdfe490179"
+    },
+    "mcp/site/app/page.tsx": {
+      "before": "17012b5e14214bf461678bdb9878384123ce28f0e4994f6f04749cc668dc3bdc",
+      "after": "858e44f1dd93a4336f734304db1b537be4303baf35bf429a9e08f76ceb47d547"
+    },
+    "plugins/vibe-coding-library/.claude-plugin/plugin.json": {
+      "before": "61a5a310f92bec192129c7c687e95abd3284471e416bd92214cdc636644eba27",
+      "after": "472a18bb1899f94feae0b36cff6c7d39442eb5c36c45ddbbfc605d574502b928"
+    },
+    "plugins/vibe-coding-library/.codex-plugin/plugin.json": {
+      "before": "4d39de31121393a676013e4a567960311188c12a731348457950e18f6ef7e731",
+      "after": "04e06c6688162ed6b515697000556b2cfe58adfc17049b5651b47c614ab9ec22"
+    },
+    "plugins/vibe-coding-library/README.md": {
+      "before": "a958c194c60c3114c17724cdaed40839388cd38a89dabc3947029598b1fb1c24",
+      "after": "c94993fc943ac4518d95280ed65c43b489afc332ec670eb4e2b3eeb11fe51cbf"
+    },
+    "plugins/vibe-coding-library/plugin.json": {
+      "before": "e56d026bb0ab1577f03295750055e1c2782e6df8804f34165a20bc6f6885d95b",
+      "after": "e8e66832f1e0e642a1272e3604a6839565a5a2947f714cdafe62c1cad60d90fa"
+    },
+    "plugins/vibe-coding/.claude-plugin/plugin.json": {
+      "before": "e124531399612ac1483bbbb409873959c5fc59ee32fc17c816af1f50503ddcb4",
+      "after": "a8dfc4421e81fa4e5a5b2b57c0fd0d1ad234174ff18bfa4ee0731d93cd3a9a45"
+    },
+    "plugins/vibe-coding/.codex-plugin/plugin.json": {
+      "before": "1ea9981736abf3e5ed0cb6e9e9867349d8287293c6071f9fcd8662e58cf85d36",
+      "after": "51e9f89124ca1fce47087de23a9a8a7f63cbd9c4e5c6ba69011e204f76c5d62a"
+    },
+    "plugins/vibe-coding/CATALOG.html": {
+      "before": "2215554c53c6f8d1aaeeadd6b8567c40c4af536ec2cbf77b02a22abffbee3a1b",
+      "after": "08e8a9efcc7e8ac9ad036c743b72279b77c95f66ec4c3fd740aba1de2c092cfb"
+    },
+    "plugins/vibe-coding/catalog.json": {
+      "before": "86e67a76dc43775c9e0e7167a6031b583e8f298f58bdd57f8ca7a9fe3b3df3eb",
+      "after": "3c7ef8149282df18b130034818686290d7b7eeaf9e18d80b1ada5afe2265e4a9"
+    },
+    "plugins/vibe-coding/plugin.json": {
+      "before": "065ed04807f95fff7a915444eb0bb666dba0e8321c371a34110f50efbc6145d0",
+      "after": "d76771dd8331626cff38a3bed180840a58118ef1bed98dc6298914258852b49a"
+    },
+    "plugins/vibe-coding/skills/vibe-landing/SKILL.md": {
+      "before": "18f0182a9da1c1b8892d5509c7ac6b27372af4d80ade95e591e0cc3c6f0a1fa9",
+      "after": "902c7439e24f036887aa984af9b93ab1b3609cb5f0aacc1c9d71f88009bc1bb3"
+    },
+    "plugins/vibe-coding/skills/vibe-landing/references/web-navigation-state-check.md": {
+      "before": "e4986e67c66f76fc8d870b7b1fd750f6b584e165d361e1643e6f425be9e768a4",
+      "after": "bd72acc62fd5b0cc0fdc01613fd306a977a1887950977722dab65e7951b98b01"
+    },
+    "plugins/vibe-coding/skills/vibe-landing/references/web-page-acceptance-check.md": {
+      "before": "ffb6f519f3c7a2901f0df039fd4c8b4b66b7bb5c2f302f67e28165b03c1706f1",
+      "after": "e4b07a78c1ce61e945dcb217008d1426a264944cb9dfe11a476fbad049b0a18d"
+    },
+    "scripts/build_site.py": {
+      "before": "4a13c2906c18d1e5d4ad8f1d96cbdb4813ab94a659f706396ef07d6cb0e096e0",
+      "after": "15ea9abcbaaba5073266c22dc355a7210c79574e9237dff66689fab2d26daa3d"
+    },
+    "site/site.css": {
+      "before": "482399789ca0a7e801501314e3f12195d1779ebf5fece29a5fdc2f82e8410a5a",
+      "after": "e3ca2c4c10cf82b4b7a7509c2fa61cb21637fb4298cfab515401cacb63e6d4d0"
+    },
+    "site/site.js": {
+      "before": "f71494fff3f76eea5fd2897901dbedd0a7da849acca0d7bc1a4043c81c43b2f0",
+      "after": "8a51b142dc1783efe5293153b743ee29e984b742cd7e2a9e1f209291702690f7"
+    },
+    "tests/test_evaluations.py": {
+      "before": "22a5645ddcaa4f5bf93b175b6a90875b04720ef4b445885011f4b0814b390355",
+      "after": "2ea004c17545833bd5567a58a20ebb40c462245bfa2d5d70335484e297597c4d"
+    }
+  },
+  "new_files": {
+    "docs/assets/search.4f2fb64943de.json": "4f2fb64943dec882f0e6ea31fa79cf15d9df0222c6ae548a3f0241b9d7b4b899",
+    "docs/assets/site.8a51b142dc17.js": "8a51b142dc1783efe5293153b743ee29e984b742cd7e2a9e1f209291702690f7",
+    "docs/assets/site.e3ca2c4c10cf.css": "e3ca2c4c10cf82b4b7a7509c2fa61cb21637fb4298cfab515401cacb63e6d4d0"
+  }
+}

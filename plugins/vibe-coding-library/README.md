@@ -1,6 +1,6 @@
 # Vibe Coding Library
 
-Engineering methods for any coding agent supporting MCP over Streamable HTTP. Search 260 workflow entries from the task goal and load the current prompt with its domain instructions, required references and conditional next steps. Instructions and client distribution share version 1.7.1.
+Engineering methods for any coding agent supporting MCP over Streamable HTTP. Search 260 workflow entries from the task goal and load the current prompt with its domain instructions, required references and conditional next steps. Instructions and client distribution share version 1.7.2.
 
 Direct MCP use needs no native skill installation. The optional native packages expose `$vibe-library` in Codex and `/vibe-coding-library:vibe-library` in Claude Code. Search supports English, Spanish, Russian and Simplified Chinese; technical purposes and instructions are English.
 

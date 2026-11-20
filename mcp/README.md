@@ -1,6 +1,6 @@
 # Vibe Coding Library MCP service
 
-Two read-only tools provide engineering methods to any coding agent supporting MCP over Streamable HTTP. Discovery descriptions explain task-driven use without a prior library name or native skill installation. Search returns up to ten concise records with individual purposes and match reasons. Retrieval returns the current prompt, required context and an instructions-only conditional workflow. Client and instruction versions are aligned at 1.7.1.
+Two read-only tools provide engineering methods to any coding agent supporting MCP over Streamable HTTP. Discovery descriptions explain task-driven use without a prior library name or native skill installation. Search returns up to ten concise records with individual purposes and match reasons. Retrieval returns the current prompt, required context and an instructions-only conditional workflow. Client and instruction versions are aligned at 1.7.2.
 
 Explicit composition in `plugins/vibe-coding/workflows.json` preserves all 260 IDs. Read-only requests stay read-only; authorized corrections carry evidence through repair, relevant checks and repeated Patch Checking. Later prompts load when reached. `include_context:false` reuses available same-version foundations. Missing required evidence and repeated unchanged failure cannot become a clean verdict.
 

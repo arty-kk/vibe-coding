@@ -14,6 +14,8 @@ For each requirement, record its actual implementation/artifact, acceptance case
 
 Check the delivered page as a whole after individual checks. Follow the primary and secondary visitor paths from entry to their useful outcomes and recovery. Use real strings, assets and representative narrow/wide/short-height conditions. Confirm the page retains the intended visual character and professional copy instead of merely containing all expected headings.
 
+For whole-site acceptance, require the recorded [browser pass](web-navigation-state-check.md#run-the-browser-acceptance-pass) for desktop hover and keyboard focus, opened menus, narrow touch interactions and copy outcomes wherever those controls exist.
+
 For a visual change, give visual execution and the functional path separate verdicts. Include motion when it is in scope. A style property counts as evidence only when its effect is readable in the intended state and within the user's intensity limit. Revisit the primary material, adjacent surfaces and actual controls together.
 
 Inspect the actual workspace/build output and declared asset/configuration paths. Confirm required logos/favicons, content, routes, controls and state variants exist and are integrated; source filenames alone do not establish that the page uses them. Real effects need the relevant authorized integration/persistence/recipient evidence. A local test adapter, generated study or optimistic message cannot stand in for production behavior.

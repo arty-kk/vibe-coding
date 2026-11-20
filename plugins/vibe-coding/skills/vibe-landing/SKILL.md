@@ -30,4 +30,6 @@ Choose the project mode from the request and actual files: **new** establishes t
 
 For a new build or authorized improvement, preserve the original requirements and comparison base through visual, navigation/state, interaction/motion, search/performance and final acceptance checks, then [Patch Checking](../vibe-review/references/patch-checking.md). Select checks by their stated applicability for a bounded change; a complete new page needs coverage across all relevant areas. Return a failed case to its owner and recheck after correction. Repeat Patch Checking until an unchanged complete pass or a concrete gate.
 
+For a whole-site review or release, run the [browser acceptance pass](references/web-navigation-state-check.md#run-the-browser-acceptance-pass) across distinct page templates and both desktop and narrow touch layouts before final acceptance.
+
 Carry the requirement ledger, page/route, exact content, assets and their availability, tokens/components, state contracts, architecture, patch and actual evidence. A known missing asset, useful destination, working integration or required check remains open; a polished placeholder or a source-only assertion cannot close it. Distinguish proposed, built, tested and published results.

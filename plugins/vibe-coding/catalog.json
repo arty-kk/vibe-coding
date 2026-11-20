@@ -6523,7 +6523,7 @@
       "summary": "New builds, completion/redesign, modular architecture, geometry/navigation/states, SEO and loading.",
       "purpose": "Traverse meaningful navigation and control state/effect/recovery paths; valid IDs alone cannot close empty or misleading destinations.",
       "example": "Use $vibe-landing, workflow “Web Navigation & State Check” (ID: web-navigation-state-check). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "e4986e67c66f76fc8d870b7b1fd750f6b584e165d361e1643e6f425be9e768a4",
+      "sha256": "bd72acc62fd5b0cc0fdc01613fd306a977a1887950977722dab65e7951b98b01",
       "keywords": [
         "button",
         "dead end",
@@ -6640,7 +6640,7 @@
       "summary": "New builds, completion/redesign, modular architecture, geometry/navigation/states, SEO and loading.",
       "purpose": "Reconcile the complete actual page with required outcomes and domain evidence; omitted assets, unavailable actions and unverified gates remain open.",
       "example": "Use $vibe-landing, workflow “Web Page Acceptance Check” (ID: web-page-acceptance-check). Follow this workflow for the task below. Report the result in English.",
-      "sha256": "ffb6f519f3c7a2901f0df039fd4c8b4b66b7bb5c2f302f67e28165b03c1706f1",
+      "sha256": "e4b07a78c1ce61e945dcb217008d1426a264944cb9dfe11a476fbad049b0a18d",
       "keywords": [
         "acceptance",
         "brand identity",

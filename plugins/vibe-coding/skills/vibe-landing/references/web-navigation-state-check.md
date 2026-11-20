@@ -10,6 +10,19 @@ Use the actual page/route map, selected audience/conversion paths, component/sta
 
 For each important visible edge, record **entry/state → control → destination/effect → feedback → exit/back/retry**. Include primary and secondary paths and alternate entry points. Check normal browser behavior, keyboard and pointer/touch rather than relying on one scripted happy path.
 
+## Run the browser acceptance pass
+
+Open the running build. For a whole-site pass, sample each distinct route template and control family, including shared headers, footers, filters, forms, disclosures, navigation and copy actions. Exercise variants where the layout, theme, locale or hosting surface changes the control. For a bounded repair, cover the affected controls and their shared variants.
+
+| Environment | Execute in the rendered UI |
+|---|---|
+| Desktop pointer | Hover and activate each distinct control. Inspect text, icon and surface contrast at rest, on hover and after activation. Open menus, selects and disclosures and inspect clipping, selected items and dismissal. |
+| Desktop keyboard | Reach controls with Tab and Shift+Tab, then open, select and dismiss with supported keys. Inspect visible focus against the surrounding surface while the control is closed and open. Verify focus moves to a useful target on close or navigation. |
+| Narrow touch layout | Enable touch on a browser device profile or real phone. Tap, select, close and copy at the narrow width and verify that essential actions remain visible and reachable. Check focus at that width with keyboard input when supported. Exercise any action exposed by desktop hover through its touch equivalent. |
+| Clipboard | Activate each distinct copy control on both layouts. Verify the exact displayed value, including spaces and line breaks, written to an isolated clipboard or captured at the browser API boundary. Reject the write in a test and verify the truthful status and a usable manual copy path. |
+
+Record route, browser, viewport, input method, observed state and effect. Inspect the rendered focus and open states where they fail or were changed. A native popup that the test environment cannot observe remains unverified. Repair the owning component and replay the failing path and its shared variants before declaring acceptance.
+
 ## Verify transitions and controls
 
 1. Follow links to actual useful content. Check the target's state and promise: a portfolio invitation leading to “not published yet” is still unresolved. Real top-of-page links or external references may be valid; placeholder `#` handlers posing as a conversion path are not. Check fragment targets, sticky-header offsets, direct/deep entry and relevant query/hash/history state.

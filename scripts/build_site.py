@@ -180,6 +180,16 @@ def copy_button(c, target, label, status_id=None):
     return f'<div class="copy-line" hidden><button type="button" class="copy-command" data-copy-target="{target}"{status} data-success="{e(c["copied"])}" data-failure="{e(c["copyFallback"])}">{button_label}</button>{feedback}</div>'
 
 
+def code_copy_field(c, key, value, label, labelled_by=None):
+    group = f' role="group" aria-labelledby="{labelled_by}"' if labelled_by else ''
+    field_class = 'code-copy-field endpoint-field' if labelled_by else 'code-copy-field'
+    status = f'{key}-copy-status'
+    return (
+        f'<div class="{field_class}"{group}><code id="{key}">{e(value)}</code>{copy_button(c, key, label, status)}</div>'
+        f'<p class="code-copy-status" id="{status}" role="status"></p>'
+    )
+
+
 def workflow_demo(rows, c):
     examples = {
         row['id']: {
@@ -209,8 +219,8 @@ def connection_section(lang, c, version):
     claude = 'claude mcp add --transport http vibe-coding-library ' + MCP_ENDPOINT
     plugin = 'claude plugin marketplace add arty-kk/vibe-coding\nclaude plugin install vibe-coding-library@vibe-coding'
     commands = ''.join(
-        f'<details class="install-command"><summary>{label}</summary><pre><code id="{key}">{e(command)}</code></pre>'
-        f'{copy_button(c, key, c["copy"])}<a class="text-link" href="{docs}">{e(c["docs"])} <span aria-hidden="true">↗</span></a></details>'
+        f'<details class="install-command"><summary>{label}</summary>{code_copy_field(c, key, command, c["copy"])}'
+        f'<a class="text-link" href="{docs}">{e(c["docs"])} <span aria-hidden="true">↗</span></a></details>'
         for label, key, command, docs in (
             ('Codex', 'codex-mcp', codex, 'https://developers.openai.com/learn/docs-mcp'),
             ('Claude Code', 'claude-mcp', claude, 'https://code.claude.com/docs/en/mcp'),
@@ -222,13 +232,12 @@ def connection_section(lang, c, version):
 <div class="install-cards">
 <article class="install-card endpoint-card"><h3>{e(c['clientTitle'])}</h3><p>{e(c['clientInstall'])}</p>
 <p class="command-label" id="mcp-endpoint-label">{e(c['endpointLabel'])}</p>
-<div class="endpoint-field" role="group" aria-labelledby="mcp-endpoint-label"><code id="mcp-endpoint">{MCP_ENDPOINT}</code>{copy_button(c, 'mcp-endpoint', c['copyEndpoint'], 'endpoint-copy-status')}</div>
-<p class="endpoint-status" id="endpoint-copy-status" role="status"></p>
+{code_copy_field(c, 'mcp-endpoint', MCP_ENDPOINT, c['copyEndpoint'], 'mcp-endpoint-label')}
 <a class="text-link" href="{console_url(lang)}#try-library">{e(c['consoleLink'])} <span aria-hidden="true">↗</span></a></article>
 <article class="install-card"><h3>{e(c['pluginTitle'])}</h3><p>{e(c['clientStart'])}</p>
 <div class="install-commands">{commands}</div>
 <details class="install-command plugin-setup"><summary>{e(c['pluginLink'])}</summary><p>{e(c['pluginInstall'])}</p>
-<p class="command-label">Claude Code</p><pre><code id="claude-install">{e(plugin)}</code></pre>{copy_button(c, 'claude-install', c['copy'])}
+<p class="command-label">Claude Code</p>{code_copy_field(c, 'claude-install', plugin, c['copy'])}
 <a class="text-link" href="{REPO}/tree/v{version}/plugins/vibe-coding-library">{e(c['source'])} <span aria-hidden="true">↗</span></a></details></article></div>
 <aside class="offline-option"><div><h3>{e(c['offlineTitle'])}</h3><p>{e(c['offlineNote'])}</p></div><a href="{REPO}/blob/main/plugins/vibe-coding/docs/INSTALL.md">{e(c['offlineLink'])} <span aria-hidden="true">↗</span></a></aside>
 <div class="install-next"><p class="fine">{e(c['cost'])}</p><a class="text-link" href="#workflow-demo">{e(c['demoReturn'])} <span aria-hidden="true">↑</span></a></div></section>'''

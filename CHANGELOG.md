@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.7.2 — browser acceptance and control states
+
+- Require a browser pass across page templates for whole-site acceptance. Cover desktop pointer and keyboard states, opened menus, narrow touch layouts, exact clipboard values and denied writes.
+- Place URL and command copy actions in their fields, preserve manual selection on clipboard errors and keep topic cards readable on hover.
+- Refine compact focus indicators, disclosure icons and language navigation on the public site and console.
+
 ## 1.7.1 — visual restraint and material depth
 
 - Carry the requested degree of visual change into the entry recipe and verify it in a rendered view.

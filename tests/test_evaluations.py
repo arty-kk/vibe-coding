@@ -21,6 +21,7 @@ WEB = ROOT/'review/evaluations/1.7.0.json'
 SITE_REDESIGN = ROOT/'review/evaluations/site-redesign-2026-11-20.json'
 MATERIAL = ROOT/'review/evaluations/1.7.1.json'
 SITE_CONTROLS = ROOT/'review/evaluations/site-controls-2026-11-21.json'
+BROWSER_ACCEPTANCE = ROOT/'review/evaluations/1.7.2.json'
 
 
 class EvaluationRecordTests(unittest.TestCase):
@@ -43,13 +44,21 @@ class EvaluationRecordTests(unittest.TestCase):
         self.redesign = json.loads(SITE_REDESIGN.read_text(encoding='utf-8'))
         self.material = json.loads(MATERIAL.read_text(encoding='utf-8'))
         self.controls = json.loads(SITE_CONTROLS.read_text(encoding='utf-8'))
+        self.browser_acceptance = json.loads(BROWSER_ACCEPTANCE.read_text(encoding='utf-8'))
+
+    def browser_fingerprint(self, name, expected):
+        change = self.browser_acceptance['changes'].get(name)
+        if change:
+            self.assertEqual(expected, change['before'], name)
+            return change['after']
+        return expected
 
     def controls_fingerprint(self, name, expected):
         change = self.controls['changes'].get(name)
         if change:
             self.assertEqual(expected, change['before'], name)
-            return change['after']
-        return expected
+            expected = change['after']
+        return self.browser_fingerprint(name, expected)
 
     def material_fingerprint(self, name, expected):
         change = self.material['changes'].get(name)
@@ -212,7 +221,7 @@ class EvaluationRecordTests(unittest.TestCase):
 
     def test_required_behavior_records_are_complete_and_bounded(self):
         manifest = json.loads((ROOT/'plugins/vibe-coding/plugin.json').read_text(encoding='utf-8'))
-        self.assertEqual(manifest['version'], self.material['release'])
+        self.assertEqual(manifest['version'], self.browser_acceptance['release'])
         cases = {row['id']: row for row in self.record['behaviors']}
         self.assertEqual({'serverless-required-write', 'mcp-http-readonly-control', 'react-hydration-preference'}, set(cases))
         for case in cases.values():
@@ -359,9 +368,17 @@ class EvaluationRecordTests(unittest.TestCase):
         approved = ('site/', 'docs/', 'scripts/build_site.py', 'tests/test_evaluations.py')
         for name, change in self.controls['changes'].items():
             self.assertTrue(name.startswith(approved), name)
-            self.assertEqual(change['after'], hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
+            self.assertEqual(self.browser_fingerprint(name, change['after']), hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
         for name, value in self.controls['new_files'].items():
             self.assertTrue(name.startswith(approved), name)
+            self.assertEqual(self.browser_fingerprint(name, value), hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
+
+    def test_browser_acceptance_has_current_fingerprints(self):
+        self.assertEqual(hashlib.sha256(SITE_CONTROLS.read_bytes()).hexdigest(), self.browser_acceptance['baseline']['sha256'])
+        self.assertTrue(self.browser_acceptance['checks'])
+        for name, value in self.browser_acceptance['changes'].items():
+            self.assertEqual(value['after'], hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
+        for name, value in self.browser_acceptance['new_files'].items():
             self.assertEqual(value, hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
 
 

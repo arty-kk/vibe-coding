@@ -45,7 +45,7 @@ export function LanguageSwitcher({language}: {language: Language}) {
       if (menu.current) menu.current.open = true;
       const index = links.indexOf(document.activeElement as HTMLAnchorElement);
       const next = event.key === 'Home' ? 0 : event.key === 'End' ? links.length - 1
-        : event.key === 'ArrowDown' ? (index + 1) % links.length : (index - 1 + links.length) % links.length;
+        : event.key === 'ArrowDown' ? (index + 1) % links.length : (index <= 0 ? links.length - 1 : index - 1);
       links[next]?.focus();
     }
   }
@@ -59,11 +59,33 @@ export function LanguageSwitcher({language}: {language: Language}) {
 
 export function CopyEndpoint({endpoint, c}: {endpoint: string; c: UiCopy}) {
   const [status, setStatus] = useState('');
+  const address = useRef<HTMLElement>(null);
   async function copy() {
     try {await navigator.clipboard.writeText(endpoint); setStatus(c.copied);}
-    catch {setStatus(c.copyFallback);}
+    catch {
+      const selection = window.getSelection();
+      if (address.current && selection) {
+        const range = document.createRange();
+        range.selectNodeContents(address.current);
+        selection.removeAllRanges();
+        selection.addRange(range);
+      }
+      setStatus(c.copyFallback);
+    }
   }
-  return <div className="endpoint-action"><button type="button" onClick={() => void copy()}>{c.copy}</button><span role="status">{status}</span></div>;
+  return <>
+    <div className="endpoint-field" role="group" aria-labelledby="connect-title">
+      <code ref={address}>{endpoint}</code>
+      <button type="button" onClick={() => void copy()}>
+        <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <rect x="5.5" y="5.5" width="8" height="8" rx="1.25" stroke="currentColor" />
+          <path d="M3 10V4a1 1 0 0 1 1-1h6" stroke="currentColor" strokeLinecap="round" />
+        </svg>
+        <span className="copy-label">{c.copy}</span>
+      </button>
+    </div>
+    <p className="endpoint-status" role="status">{status}</p>
+  </>;
 }
 
 export default function Demo({modes, language: interfaceLanguage, version}: {modes: string[]; language: Language; version: string}) {
