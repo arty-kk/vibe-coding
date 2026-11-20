@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.7.0 — homepage design and delivery
+
+- Add 19 workflows for planning, building, finishing and redesigning homepages and landing pages.
+- Add local design-kit generation and requirement coverage checks.
+- Update tool discovery and search across four catalog languages.
+
 ## 1.6.1 — catalog-first search
 
 - Fix Russian authorization forms and common login/access expressions. Primary subject tags rank owning workflows ahead of incidental permission mentions.

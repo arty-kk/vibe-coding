@@ -83,6 +83,23 @@ class Rules:
         signatures = {self.intents(self.concepts(item)).strip() for item in matches}
         return matches[0] if len(signatures) == 1 else word
 
+    @lru_cache(maxsize=256)
+    def website_goal(self, text):
+        routes = self.lexicon.get('website_goal_routes')
+        if not routes:
+            return None
+        normalized = ' ' + ' '.join(words(text)) + ' '
+
+        def mentions(phrase):
+            if CJK.search(phrase):
+                return fold(phrase) in normalized
+            return ' ' + ' '.join(words(phrase)) + ' ' in normalized
+
+        if any(mentions(phrase) for phrase in routes['subjects']):
+            return next((identity for identity, phrases in routes['goals'].items()
+                         if any(mentions(phrase) for phrase in phrases)), None)
+        return None
+
     def query(self, text):
         text = re.sub(r'[^\W_]+(?:[+#]+)?|[+#]+', lambda match: self.correct(match[0]), fold(text))
         text = self.intents(self.concepts(text))
@@ -157,9 +174,9 @@ def match_score(entry, query, full_text=True, rules=None):
         elif contains(keywords, term): total += 20
         elif contains(topic, term): total += 8
         else:
-            if not full_text: return None
+            if not full_text: return -2000 if identity and identity == rules.website_goal(query) else None
             if body is None: body = rules.tokens(entry['body'])
-            if not contains(body, term): return None
+            if not contains(body, term): return -2000 if identity and identity == rules.website_goal(query) else None
             total += 1
             body_only = True
     if entry.get('mode') in hints: total += 35

@@ -170,7 +170,7 @@ def home(lang, rows, locale, c, version, resources):
     for row in rows:
         title = display_title(row, locale, c, lang)
         summary = c['featured'].get(row['id'], {}).get('description', locale['summaries'][row['skill']])
-        entries.append(f'''<article class="row" id="{row['id']}" data-id="{row['id']}" data-skill="{row['skill']}" data-mode="{row['mode']}">
+        entries.append(f'''<article class="row" id="{row['id']}" data-id="{row['id']}">
 <div class="card-meta"><span class="category">{e(locale['categories'][row['skill']])}</span><span class="badge {row['mode']}">{e(locale['modes'][row['mode']])}</span></div>
 <h3><a class="workflow-link" href="{PREFIX}{workflow_route(row)}" hreflang="en" data-id="{row['id']}">{e(title)}</a></h3><p>{e(summary)}</p>
 <div class="card-bottom"><code>{row['skill']}</code><span class="body-match" hidden>{e(c['bodyMatch'])}</span><span class="card-arrow" aria-hidden="true">→</span></div></article>''')
@@ -179,9 +179,12 @@ def home(lang, rows, locale, c, version, resources):
     faqs = ''.join(f'<details><summary>{e(q)}</summary><p>{e(a)}</p></details>' for q,a in c['faq'])
     shortcuts = ''.join(f'<button type="button" data-topic="{skill}">{e(label)}</button>' for label,skill in c['quickLinks'])
     messages = {key:c[key] for key in ('count','countOne','pageStatus','removeFilter','searchLoading','searchFallback')}
+    lexicon = json.loads((PLUGIN/'assets/catalog/search-lexicon.json').read_text(encoding='utf-8'))
+    # Each entry already carries its resolved purpose. Ship the query rules once.
+    lexicon.pop('purposes', None)
     search_data = {
         'index':resources['search'], 'messages':messages,
-        'searchLexicon':json.loads((PLUGIN/'assets/catalog/search-lexicon.json').read_text(encoding='utf-8')) if (PLUGIN/'assets/catalog/search-lexicon.json').is_file() else {},
+        'searchLexicon':lexicon,
         'entries':[{'id':r['id'],'skill':r['skill'],'mode':r['mode'],'purpose':r.get('purpose',''),'primary_keywords':r.get('primary_keywords',[]),'titles':[loc['titles'][r['id']] for loc in resources['locales'].values()]+[text['featured'][r['id']]['title'] for text in resources['content'].values() if r['id'] in text['featured']],'keywords':r.get('keywords',[])} for r in rows],
         'topics':{skill:[loc['categories'][skill] for loc in resources['locales'].values()] for skill in locale['categories']},
         'actions':{mode:[loc['modes'][mode] for loc in resources['locales'].values()] for mode in locale['modes']}}

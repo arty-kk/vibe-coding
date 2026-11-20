@@ -8,6 +8,6 @@
 <text x="60" y="280" fill="#f0f4ed" font-family="Arial,sans-serif" font-size="76" font-weight="bold" letter-spacing="-3">Find the workflow.</text>
 <text x="60" y="370" fill="#c3f078" font-family="Arial,sans-serif" font-size="76" font-weight="bold" letter-spacing="-3">Load what you need.</text>
 <line x1="64" y1="443" x2="1136" y2="443" stroke="#303733" stroke-width="2"/>
-<text x="64" y="507" fill="#f0f4ed" font-family="Arial,sans-serif" font-size="28">2 read-only tools</text><text x="365" y="507" fill="#f0f4ed" font-family="Arial,sans-serif" font-size="28">241 workflows</text><text x="705" y="507" fill="#f0f4ed" font-family="Arial,sans-serif" font-size="28">Streamable HTTP · No auth</text>
+<text x="64" y="507" fill="#f0f4ed" font-family="Arial,sans-serif" font-size="28">2 read-only tools</text><text x="365" y="507" fill="#f0f4ed" font-family="Arial,sans-serif" font-size="28">260 workflows</text><text x="705" y="507" fill="#f0f4ed" font-family="Arial,sans-serif" font-size="28">Streamable HTTP · No auth</text>
 <text x="64" y="572" fill="#a5b1a8" font-family="Arial,sans-serif" font-size="20">arty-kk.github.io/vibe-coding</text>
 </svg>

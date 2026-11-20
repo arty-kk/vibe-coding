@@ -2,9 +2,11 @@
 
 **Understand the code. Make the change. Verify the result.**
 
-Engineering workflows for coding agents with MCP: project mapping, planning, code review, debugging, implementation and verification. The library offers 241 focused entry points; native offline packages provide 46 skills for Codex and Claude Code.
+Engineering workflows for coding agents with MCP: project mapping, planning, code review, debugging, implementation and verification. The library offers 260 focused entry points; native offline packages provide 49 skills for Codex and Claude Code.
 
 [Browse the catalog](https://arty-kk.github.io/vibe-coding) · [Русский](README.ru.md) · [Releases](https://github.com/arty-kk/vibe-coding/releases) · [Support](https://github.com/arty-kk/vibe-coding/issues)
+
+For a new homepage, start with `web-offer-synthesis` to prepare a proposal or `homepage-landing-build` to implement a ready brief. Use `homepage-landing-polish` to finish or redesign an existing site. The visual, navigation, interaction and search checks each load independently.
 
 ## Install
 
@@ -26,6 +28,10 @@ claude plugin install vibe-coding-library@vibe-coding
 ```
 
 For other agents, select transport **Streamable HTTP** and authentication **None**. The tools describe when to use the library; no native skill command is required. Native packages expose `/vibe-coding-library:vibe-library` in Claude Code and `$vibe-library` in Codex. See the [Library package](plugins/vibe-coding-library/README.md) for the tool and privacy contracts.
+
+For teams that want the library used on every substantial website task, add this convention to the project instructions read by your agent. In Codex this can be `AGENTS.md`, in Claude Code `CLAUDE.md`.
+
+> For homepage planning, building, completion or redesign, load the appropriate Vibe Coding method before drafting or editing. Start an offer proposal with `web-offer-synthesis`. Find an unknown method with `search_workflows` and load it with `get_workflow` using `response_format:workflow`. Use one step at a time.
 
 ### Codex
 
@@ -101,7 +107,7 @@ python3 plugins/vibe-coding/scripts/validate.py
 python3 -m unittest discover -s tests -v
 python3 plugins/vibe-coding/scripts/catalog.py search webhook --mode check
 python3 plugins/vibe-coding/scripts/catalog.py search MCP --lang es
-python3 plugins/vibe-coding/scripts/package.py --output dist/vibe-coding-1.6.1.zip
+python3 plugins/vibe-coding/scripts/package.py --output dist/vibe-coding-1.7.0.zip
 ```
 
 See [Contributing](CONTRIBUTING.md), [installation](plugins/vibe-coding/docs/INSTALL.md), [privacy](PRIVACY.md) and [license](LICENSE).

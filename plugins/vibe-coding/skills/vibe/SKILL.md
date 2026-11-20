@@ -25,6 +25,9 @@ When an authorized workflow changes the repository, finish its domain validation
 | MCP protocol, tool contracts or transport authorization | [MCP](../vibe-mcp/SKILL.md) |
 | SSR, hydration, serialized data or server actions | [Web rendering](../vibe-web/SKILL.md) |
 | Serverless invocation lifetime, duplicate triggers or edge limits | [Serverless](../vibe-serverless/SKILL.md) |
+| Prepare an offer and a homepage proposal | [Web strategy](../vibe-web-strategy/SKILL.md) |
+| Choose references, identity, typography or motion | [Web art direction](../vibe-web-art-direction/SKILL.md) |
+| Build, complete, redesign or audit a homepage | [Homepages and landing pages](../vibe-landing/SKILL.md) |
 | Named domain, framework or infrastructure | [Domain catalog](../../references/catalog.md) |
 | Check stale maps or maintain this package | [Workflow](../vibe-workflow/SKILL.md) |
 

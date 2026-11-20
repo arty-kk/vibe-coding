@@ -65,6 +65,17 @@
     return value => value.replace(pattern, match => ' ' + table.get(match) + ' ');
   }
 
+  // Recover a broad website request only when its explicit subject and operation agree.
+  // Free-form business details need not appear in the workflow metadata.
+  function websiteGoal(text, routes) {
+    if (!routes) return null;
+    const normalized = ' ' + words(text).join(' ') + ' ';
+    const mentions = phrase => cjk(phrase) ? normalized.includes(fold(phrase))
+      : normalized.includes(' ' + words(phrase).join(' ') + ' ');
+    if (!routes.subjects.some(mentions)) return null;
+    return Object.entries(routes.goals).find(([, phrases]) => phrases.some(mentions))?.[0] || null;
+  }
+
   function rulesFor(lexicon) {
     if (!compiled.has(lexicon)) {
       const concepts = replacer(lexicon.terms);
@@ -82,7 +93,7 @@
           const text = intents(concepts(correct ? correct(value) : fold(value)));
           const hints = [...text.matchAll(/intent_([a-z]+)/g)].map(match => match[1]);
           const terms = words(cleanCjk(text.replace(/intent_[a-z]+/g, ' '))).filter(term => !stops.has(term));
-          return {terms: [...new Set(terms)], hints: [...new Set(hints)]};
+          return {terms: [...new Set(terms)], hints: [...new Set(hints)], goal: websiteGoal(value, lexicon.website_goal_routes)};
         }});
     }
     return compiled.get(lexicon);
@@ -125,7 +136,8 @@
       else if (contains(entry.keywordWords, term)) total += 20;
       else if (contains(entry.topicWords, term)) total += 8;
       else if (bodies && contains(bodyWords(entry, bodies), term)) {total += 1; bodyOnly = true;}
-      else return null;
+      else return entry.id === analysis.goal
+        ? {score: -2000, bodyOnly: false, kind: 'catalog', terms: analysis.terms} : null;
     }
     if (analysis.hints.includes(entry.mode)) total += 35;
     if (bodyOnly) total -= 1000;

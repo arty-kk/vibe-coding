@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vibe · Homepages & landing pages"
+  short_description: "Complete website builds, architecture and rendered acceptance"
+  default_prompt: "Use $vibe-landing to build or improve this homepage from its brief and verify the complete visual and interactive result."

@@ -1,0 +1,28 @@
+{
+  "name": "Material & craft study",
+  "colors": {"background": "#F8F6F0", "surface": "#FFFFFF", "text": "#1B2926", "muted": "#52605C", "accent": "#245C4C", "on-accent": "#FFFFFF", "line": "#B7C6BD", "atmosphere": "#D6E7DB", "focus": "#9B3D19"},
+  "type": {
+    "families": {"display": ["Georgia", "serif"], "body": ["Arial", "sans-serif"]},
+    "roles": {
+      "display": {"family": "display", "min_rem": 2.75, "max_rem": 6.5, "fluid_vw": 3.5, "line_height": 1.02, "weight": 400, "tracking_em": -0.035, "measure_ch": 16},
+      "heading": {"family": "display", "min_rem": 2, "max_rem": 3.5, "fluid_vw": 1.5, "line_height": 1.12, "weight": 400, "tracking_em": -0.025, "measure_ch": 24},
+      "subheading": {"family": "body", "min_rem": 1.25, "max_rem": 1.5, "fluid_vw": 0.2, "line_height": 1.25, "weight": 600, "tracking_em": -0.01, "measure_ch": 36},
+      "body": {"family": "body", "min_rem": 1, "max_rem": 1.125, "fluid_vw": 0.2, "line_height": 1.6, "weight": 400, "tracking_em": 0, "measure_ch": 65},
+      "label": {"family": "body", "min_rem": 0.875, "max_rem": 1, "fluid_vw": 0, "line_height": 1.4, "weight": 600, "tracking_em": 0.025, "measure_ch": 40},
+      "caption": {"family": "body", "min_rem": 0.8125, "max_rem": 0.875, "fluid_vw": 0, "line_height": 1.5, "weight": 400, "tracking_em": 0, "measure_ch": 60}
+    }
+  },
+  "layout": {"container_rem": 80, "gutter_min_rem": 1.25, "gutter_max_rem": 4, "gutter_vw": 4, "columns": 12, "gap_rem": 1.5, "section_min_rem": 3.5, "section_max_rem": 7, "header_rem": 4.5},
+  "motion": {"fast_ms": 160, "base_ms": 320, "scene_ms": 650, "easing": "cubic-bezier(0.22, 1, 0.36, 1)"},
+  "materials": {
+    "gradient": {"colors": ["surface", "atmosphere"], "angle_deg": 125},
+    "glass": {"color": "surface", "fallback": "surface", "border": "line", "alpha": 0.86, "blur_px": 12},
+    "procedural": {"kind": "contours", "seed": 23, "density": 30, "opacity": 0.25, "stroke_px": 0.8, "color": "accent", "quiet": "left"}
+  },
+  "effects": {
+    "tints": {"accent-soft": {"color": "accent", "alpha": 0.10}},
+    "borders": {"subtle": {"color": "text", "alpha": 0.16, "width_px": 1}},
+    "shadows": {"raised": {"color": "text", "alpha": 0.12, "x_px": 0, "y_px": 12, "blur_px": 32, "spread_px": -8}}
+  },
+  "assets": [{"id": "hero-photo", "kind": "photo", "status": "planned", "source": "Project-owned photography to select", "rights": "Confirm selected file and usage rights", "role": "Real material or process evidence in the opening", "fallback": "Editorial type-led composition until inspected photography is available", "budget_kb": 240}]
+}

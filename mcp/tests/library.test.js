@@ -18,7 +18,7 @@ test('operation and skill filters intersect and pagination has no duplicates', (
   assert.deepEqual(result.workflows.map(row => row.id), ['api-contract-compatibility-check']);
   const a = searchWorkflows({limit: 10});
   const b = searchWorkflows({limit: 10, offset: a.next_offset});
-  assert.equal(a.total, 241);
+  assert.equal(a.total, 260);
   assert.equal(new Set([...a.workflows, ...b.workflows].map(row => row.id)).size, 20);
   assert.equal(searchWorkflows({query: 'zzzzzzz-no-such-domain'}).total, 0);
 });
@@ -32,9 +32,9 @@ test('body search is explicit and results localize without changing IDs', () => 
   assert.notEqual(en.workflows[0].title, ru.workflows[0].title);
 });
 
-test('all 241 bundles preserve exact source bytes and load a bounded relevant context', () => {
-  assert.equal(libraryStatus().skills, 46);
-  assert.equal(Object.keys(library.files).length, 297);
+test('all workflow bundles preserve exact source bytes and load a bounded relevant context', () => {
+  assert.equal(libraryStatus().skills, 49);
+  assert.equal(Object.keys(library.files).length, 322);
   for (const row of library.recipes) {
     const result = getWorkflow({id: row.id});
     assert.ok(result.files.some(file => file.path === row.path));

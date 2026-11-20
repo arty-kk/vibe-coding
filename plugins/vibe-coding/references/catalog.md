@@ -10,7 +10,7 @@ Choose the requested domain and operation. Each link opens its focused skill. In
 | [`vibe-celery`](../skills/vibe-celery/SKILL.md) | Celery task delivery, retries and worker shutdown. | 3 |
 | [`vibe-clickhouse`](../skills/vibe-clickhouse/SKILL.md) | Data ingestion, table engines and query cost. | 3 |
 | [`vibe-compatibility`](../skills/vibe-compatibility/SKILL.md) | Compatibility contracts and reference comparisons. | 3 |
-| [`vibe-content`](../skills/vibe-content/SKILL.md) | Product copy, localization and search visibility. | 8 |
+| [`vibe-content`](../skills/vibe-content/SKILL.md) | Website/product copy, microcopy, localization, notifications and search visibility. | 9 |
 | [`vibe-design`](../skills/vibe-design/SKILL.md) | Design systems, keyboard navigation, focus and accessibility. | 4 |
 | [`vibe-desktop`](../skills/vibe-desktop/SKILL.md) | Desktop apps, browser extensions and IPC. | 5 |
 | [`vibe-docs`](../skills/vibe-docs/SKILL.md) | READMEs, design documents and refactoring boundaries. | 7 |
@@ -21,6 +21,7 @@ Choose the requested domain and operation. Each link opens its focused skill. In
 | [`vibe-integrations`](../skills/vibe-integrations/SKILL.md) | External APIs, webhooks, timeouts and network failures. | 3 |
 | [`vibe-kafka`](../skills/vibe-kafka/SKILL.md) | Events, offsets, redelivery and rebalancing. | 3 |
 | [`vibe-kubernetes`](../skills/vibe-kubernetes/SKILL.md) | Kubernetes deployments, resources and recovery. | 3 |
+| [`vibe-landing`](../skills/vibe-landing/SKILL.md) | New builds, completion/redesign, modular architecture, geometry/navigation/states, SEO and loading. | 10 |
 | [`vibe-map`](../skills/vibe-map/SKILL.md) | Project structure, connections and contract ownership. | 18 |
 | [`vibe-mcp`](../skills/vibe-mcp/SKILL.md) | MCP versions, tool contracts, transport and authorization. | 3 |
 | [`vibe-mobile`](../skills/vibe-mobile/SKILL.md) | Navigation, offline behavior, permissions and releases. | 3 |
@@ -48,4 +49,6 @@ Choose the requested domain and operation. Each link opens its focused skill. In
 | [`vibe-terraform`](../skills/vibe-terraform/SKILL.md) | Terraform plans, state and resource moves. | 3 |
 | [`vibe-vectors`](../skills/vibe-vectors/SKILL.md) | Vector search, ACLs, recall and reindexing. | 3 |
 | [`vibe-web`](../skills/vibe-web/SKILL.md) | SSR, hydration, serialized data, caches and server actions. | 3 |
+| [`vibe-web-art-direction`](../skills/vibe-web-art-direction/SKILL.md) | Real references/assets, original identity, typography, color, components, materials and motion. | 6 |
+| [`vibe-web-strategy`](../skills/vibe-web-strategy/SKILL.md) | Offer synthesis, audience/proof, page narrative and conversion architecture. | 2 |
 | [`vibe-workflow`](../skills/vibe-workflow/SKILL.md) | Evidence checks, map updates and plugin maintenance. | 8 |

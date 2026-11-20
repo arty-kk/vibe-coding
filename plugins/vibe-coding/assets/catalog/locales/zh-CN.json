@@ -17,7 +17,7 @@
     "task": "明确任务",
     "catalog": "工作流目录",
     "search": "搜索",
-    "searchPlaceholder": "例如：支付、webhook、Kubernetes",
+    "searchPlaceholder": "试试首页、字体、授权或缓存",
     "category": "领域",
     "allCategories": "所有领域",
     "action": "操作",
@@ -100,7 +100,10 @@
     "vibe-workflow": "流程检查与维护",
     "vibe-mcp": "MCP 服务器与客户端",
     "vibe-web": "Web 渲染与服务端边界",
-    "vibe-serverless": "无服务器与边缘计算"
+    "vibe-serverless": "无服务器与边缘计算",
+    "vibe-web-strategy": "网站定位与页面策略",
+    "vibe-web-art-direction": "网站艺术方向与视觉系统",
+    "vibe-landing": "首页与落地页"
   },
   "summaries": {
     "vibe-ai": "AI 功能、文档检索与质量评估。",
@@ -109,7 +112,7 @@
     "vibe-celery": "Celery 任务投递、重试与工作进程关闭。",
     "vibe-clickhouse": "数据摄取、表引擎与查询成本。",
     "vibe-compatibility": "兼容性契约与基准行为对比。",
-    "vibe-content": "产品文案、本地化与搜索可见性。",
+    "vibe-content": "网站与产品文案、交互提示、本地化、通知和搜索可见性。",
     "vibe-design": "设计系统、键盘导航、焦点与无障碍体验。",
     "vibe-desktop": "桌面应用、浏览器扩展与进程间通信。",
     "vibe-docs": "README、设计文档与重构边界。",
@@ -147,7 +150,10 @@
     "vibe-workflow": "证据核查、项目图更新与插件维护。",
     "vibe-mcp": "MCP 版本、工具契约、传输与授权。",
     "vibe-web": "SSR、水合、序列化数据、缓存与服务端操作。",
-    "vibe-serverless": "调用生命周期、重复事件与运行时限制。"
+    "vibe-serverless": "调用生命周期、重复事件与运行时限制。",
+    "vibe-web-strategy": "价值主张、受众与证据、页面叙事和转化路径。",
+    "vibe-web-art-direction": "真实参考与素材、品牌标识、字体配色、组件、材质和动画。",
+    "vibe-landing": "新建、完善与改版、模块化架构、几何布局、导航状态、SEO和加载。"
   },
   "titles": {
     "ai-evaluation-audit": "AI 评估 — 审计",
@@ -390,7 +396,26 @@
     "incident-recovery-check": "事件恢复验证",
     "serverless-runtime-audit": "无服务器运行时审计",
     "serverless-runtime-polish": "无服务器运行时改进",
-    "serverless-invocation-check": "无服务器调用验证"
+    "serverless-invocation-check": "无服务器调用验证",
+    "web-offer-synthesis": "网站定位与价值主张",
+    "web-page-architecture": "首页结构与转化路径",
+    "web-page-copy": "网站文案与交互提示",
+    "web-reference-research": "设计参考与素材研究",
+    "web-art-direction": "网站艺术方向",
+    "web-brand-assets": "品牌标识与网站图标",
+    "web-visual-system": "网站视觉系统",
+    "web-design-kit": "设计素材包生成",
+    "web-interaction-storyboard": "交互与动画分镜",
+    "web-project-architecture": "Web 项目架构",
+    "web-experience-brief": "网站实施交付包",
+    "homepage-landing-build": "构建首页与落地页",
+    "homepage-landing-audit": "首页与落地页审计",
+    "homepage-landing-polish": "完善与重新设计首页",
+    "web-visual-hierarchy-check": "视觉层级与几何检查",
+    "web-navigation-state-check": "导航与状态检查",
+    "web-interaction-motion-check": "交互与动画检查",
+    "web-search-performance-check": "搜索可见性与加载性能检查",
+    "web-page-acceptance-check": "首页与落地页验收"
   },
   "policy": {
     "privacy": "# 隐私\n\nVibe Coding 由 Arty S. / ARTSIOM SATSUK（[arty-kk](https://github.com/arty-kk)）维护。\n\n分发的插件包含文本指令、本地目录和本地 Python 工具。它没有由发布者运营的后端、分析系统、跟踪像素、Cookie、账户系统或遥测功能。目录与打包工具不会将项目内容发送给发布者。\n\n在 Codex、ChatGPT 或 Claude 中使用插件时，宿主应用会按照自身的设置和政策处理提示词、文件和工具结果。工作流可能使用用户已启用的工具和服务；这些服务适用各自的数据政策。插件不会自行获取额外权限。\n\n公共网站托管于 GitHub Pages。GitHub 可能根据其隐私政策处理常规请求信息。自愿发布在仓库 issue 或 pull request 中的信息是公开的，由 GitHub 处理。请勿发布凭据、私有源代码或个人数据。\n\n网站和离线目录仅在浏览器本地存储中保存所选语言和助手。这些偏好不会发送给发布者。\n\n插件不会在发布者的服务器上收集或保留提示词或项目文件。浏览器偏好会一直保留，直到您更改偏好或清除相应的浏览器存储。维护者使用您自愿在支持讨论中发布的信息来答复请求并调查所报告的问题。这些帖子保留在 GitHub 上，可以使用 GitHub 的功能编辑或删除，但仍受其数据保留政策约束。由 GitHub 处理的托管日志、支持内容和数据权利请求适用 [GitHub 隐私声明](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement)。如需访问助手处理的数据，或管理其保留和删除，请使用相应助手的设置和支持渠道。\n\n如有隐私问题，可通过 [GitHub Issues](https://github.com/arty-kk/vibe-coding/issues) 提出，请勿包含敏感信息。\n",

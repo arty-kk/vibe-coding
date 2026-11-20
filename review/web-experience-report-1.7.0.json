@@ -1,0 +1,45 @@
+{
+  "release": "1.7.0",
+  "baseline": "1.6.1",
+  "change": {
+    "skills_added": 3,
+    "catalog_entries_added": 19,
+    "workflow_total": 260,
+    "skill_total": 49
+  },
+  "retrieval": {
+    "cases": "review/web-experience-cases-1.7.0.json",
+    "query_cases": 23,
+    "coverage": "All judged website queries passed at their declared ranks. The frozen engineering corpus still passes.",
+    "browser": "In the built Worker console, create, finish and plan searches loaded the appropriate workflow. The planning outline ended at the implementation brief."
+  },
+  "forward_trials": [
+    {
+      "scope": "Offer planning",
+      "observed": "Separated a request for consultation from reserving an actual appointment. No invented proof, quotations or service location."
+    },
+    {
+      "scope": "Art direction and identity",
+      "observed": "Used available licensed fonts, source-attributed references, original vector material and a family of identity exports. Fixed a review board font-stack bug and checked light/dark assets."
+    },
+    {
+      "scope": "Russian product copy",
+      "observed": "Initial correction kept a portfolio link to an empty destination. After revision the optional invitation was suppressed, availability was explicit, and the original source remained unchanged."
+    },
+    {
+      "scope": "Working modular prototype",
+      "observed": "A fictional furniture-studio site passed 14 serial fixture tests with a loopback-only enquiry inbox. Chrome checks at 320×740, 844×390 and 1440×900 found no horizontal page overflow or missing images. The layout calculation transferred into the enquiry. On collapsed navigation, Enter opened the menu and Escape returned focus."
+    }
+  ],
+  "tool_selection": {
+    "client": "Codex CLI, ephemeral read-only session, local Streamable HTTP server",
+    "user_goal": "Prepare an offer and a homepage for a pottery studio, with a short initial proposal. No tool or skill name in the user prompt.",
+    "without_project_rule": [],
+    "with_project_rule": [
+      "get_workflow(web-offer-synthesis)",
+      "get_workflow(web-page-architecture)"
+    ],
+    "limits": "One independent session per condition. This is an observed difference, not a population-wide activation rate."
+  },
+  "limits": "No real customer data or recipient, real production conversion, field CWV, search rankings, universal LLM behavior or browser-selected icon on every platform was evaluated."
+}

@@ -1,0 +1,254 @@
+{
+  "version": "1.7.0",
+  "limits": "Query cases test deterministic retrieval. Natural requests are separate independent model-routing inputs; their expected IDs are withheld from the evaluating agent.",
+  "cases": [
+    {
+      "id": "proposal",
+      "query": "план главной сайта",
+      "language": "ru",
+      "expected": [
+        "web-offer-synthesis",
+        "web-page-architecture"
+      ],
+      "max_rank": 3,
+      "request": "У меня небольшая мастерская. Хочу красивый сайт, чтобы люди обращались. Сначала нужно понять, что на нём будет и как это подать."
+    },
+    {
+      "id": "structure",
+      "query": "структура главной",
+      "language": "ru",
+      "expected": [
+        "web-page-architecture"
+      ],
+      "max_rank": 1,
+      "request": "Не понимаю, какие блоки ставить на главную и в каком порядке, чтобы человек дошёл до заявки."
+    },
+    {
+      "id": "references",
+      "query": "референсы",
+      "language": "ru",
+      "expected": [
+        "web-reference-research"
+      ],
+      "max_rank": 1,
+      "request": "Хочу сначала посмотреть достойные примеры и подобрать настоящую графику для нашего сайта."
+    },
+    {
+      "id": "direction",
+      "query": "премиальный дизайн",
+      "language": "ru",
+      "expected": [
+        "web-art-direction"
+      ],
+      "max_rank": 2,
+      "request": "Смысл и структура уже есть. Нужно придумать собственный выразительный визуальный характер, сейчас всё похоже на шаблон."
+    },
+    {
+      "id": "type-palette",
+      "query": "типографика палитра",
+      "language": "ru",
+      "expected": [
+        "web-visual-system"
+      ],
+      "max_rank": 1,
+      "request": "Не хватает цельной системы шрифтов, цветов, сетки, иконок и компонентов."
+    },
+    {
+      "id": "icons-typo",
+      "query": "логотип фавикоин",
+      "language": "ru",
+      "expected": [
+        "web-brand-assets"
+      ],
+      "max_rank": 1,
+      "request": "А где взять комплект логотипов и значок, который будет нормально выглядеть во вкладке и на телефоне?"
+    },
+    {
+      "id": "procedural",
+      "query": "алгоритмический фон",
+      "language": "ru",
+      "expected": [
+        "web-design-kit",
+        "web-art-direction"
+      ],
+      "max_rank": 2,
+      "request": "В нашем направлении уместны контуры и потоковые линии. Хочу получить настраиваемый материал под цвета бренда."
+    },
+    {
+      "id": "copy",
+      "query": "копирайт микрокопирайт",
+      "language": "ru",
+      "expected": [
+        "web-page-copy"
+      ],
+      "max_rank": 1,
+      "request": "Нужно написать профессиональные тексты страницы, короткие кнопки и понятные ошибки формы, по-русски и без служебных комментариев."
+    },
+    {
+      "id": "navigation",
+      "query": "проверь навигацию",
+      "language": "ru",
+      "expected": [
+        "web-navigation-state-check"
+      ],
+      "max_rank": 1,
+      "request": "Проверь, можно ли нормально пройти со всех кнопок и меню, вернуться назад и выбраться из ошибочного состояния."
+    },
+    {
+      "id": "geometry",
+      "query": "геометрия блоков",
+      "language": "ru",
+      "expected": [
+        "web-visual-hierarchy-check"
+      ],
+      "max_rank": 1,
+      "request": "Внутри карточек всё как будто перекошено: иконки, подписи, отступы и нижние действия живут каждый отдельно."
+    },
+    {
+      "id": "hierarchy",
+      "query": "визуальная иерархия",
+      "language": "ru",
+      "expected": [
+        "web-visual-hierarchy-check"
+      ],
+      "max_rank": 1,
+      "request": "Ссылка с весом 800, заголовок 740. Нужно выяснить, действительно ли нарушены акценты, прежде чем менять оформление."
+    },
+    {
+      "id": "motion",
+      "query": "анимация переходы",
+      "language": "ru",
+      "expected": [
+        "web-interaction-storyboard",
+        "web-interaction-motion-check"
+      ],
+      "max_rank": 2,
+      "request": "Страница выглядит мёртвой. Нужен осмысленный сценарий движения, переходов и реакции элементов, с мобильным и спокойным режимом."
+    },
+    {
+      "id": "monorepo",
+      "query": "архитектура монорепозитория",
+      "language": "ru",
+      "expected": [
+        "web-project-architecture"
+      ],
+      "max_rank": 1,
+      "request": "Подготовь модульную архитектуру монорепозитория и подходящий производительный стек под этот сайт и его формы, калькулятор и контент."
+    },
+    {
+      "id": "search-loading",
+      "query": "SEO GEO загрузка",
+      "language": "ru",
+      "expected": [
+        "web-search-performance-check"
+      ],
+      "max_rank": 1,
+      "request": "Перед выпуском проверь технический поиск и AI-поиск по фактическим требованиям поисковиков, а также загрузку и стабильность страницы."
+    },
+    {
+      "id": "build",
+      "query": "сделай современный лендинг",
+      "language": "ru",
+      "expected": [
+        "homepage-landing-build"
+      ],
+      "max_rank": 1,
+      "request": "Предложение, тексты, дизайн и техническое задание уже готовы. Собери по ним качественную главную с работающими компонентами."
+    },
+    {
+      "id": "existing-improve",
+      "query": "улучши главную",
+      "language": "ru",
+      "expected": [
+        "homepage-landing-polish"
+      ],
+      "max_rank": 1,
+      "request": "Главная уже работает. Исправь подтверждённые проблемы в существующих компонентах, не начинай проект заново."
+    },
+    {
+      "id": "audit-only",
+      "query": "аудит лендинга",
+      "language": "ru",
+      "expected": [
+        "homepage-landing-audit"
+      ],
+      "max_rank": 1,
+      "request": "Только разберись, почему наша главная выглядит плохо и мешает заявкам. Код пока не меняй."
+    },
+    {
+      "id": "brief",
+      "query": "задание на сайт",
+      "language": "ru",
+      "expected": [
+        "web-experience-brief"
+      ],
+      "max_rank": 1,
+      "request": "Сведи уже принятые решения в полный пакет для реализации. Проверь, что ни одно моё требование не потерялось."
+    },
+    {
+      "id": "english",
+      "query": "homepage typography",
+      "language": "en",
+      "expected": [
+        "web-visual-system",
+        "web-visual-hierarchy-check"
+      ],
+      "max_rank": 2
+    },
+    {
+      "id": "spanish",
+      "query": "estructura página de inicio",
+      "language": "es",
+      "expected": [
+        "web-page-architecture"
+      ],
+      "max_rank": 1
+    },
+    {
+      "id": "chinese",
+      "query": "首页 字体 配色",
+      "language": "zh-CN",
+      "expected": [
+        "web-visual-system"
+      ],
+      "max_rank": 1
+    },
+    {
+      "id": "finish-existing",
+      "query": "доделай сайт",
+      "language": "ru",
+      "expected": [
+        "homepage-landing-polish"
+      ],
+      "max_rank": 1,
+      "request": "Уже собрана половина сайта. Доделай недостающие разделы и состояния, сохрани то, что работает."
+    },
+    {
+      "id": "redesign-existing",
+      "query": "переделай главную",
+      "language": "ru",
+      "expected": [
+        "homepage-landing-polish"
+      ],
+      "max_rank": 1,
+      "request": "Главная устарела. Переделай её визуально, но сохрани реальные материалы, адреса страниц и приём заявок."
+    }
+  ],
+  "routing_controls": [
+    {
+      "id": "narrow-copy",
+      "request": "В уже работающей форме замени подпись кнопки «Отправить все мои данные для получения консультации» на «Запросить консультацию». Больше ничего не переделывай.",
+      "expected": "Direct bounded edit or product-landing-copy-polish; no full website proposal chain."
+    },
+    {
+      "id": "off-topic",
+      "request": "Напиши короткое поздравление с днём рождения другу.",
+      "expected": "No library or engineering workflow required."
+    },
+    {
+      "id": "legacy-auth",
+      "request": "После выхода из аккаунта старая сессия всё ещё открывает личный кабинет. Найди причину и исправь.",
+      "expected": "Identity/session diagnosis and authorized repair, not a homepage design workflow."
+    }
+  ]
+}

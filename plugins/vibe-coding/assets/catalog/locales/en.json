@@ -17,7 +17,7 @@
     "task": "Shape a task",
     "catalog": "Workflow catalog",
     "search": "Search",
-    "searchPlaceholder": "Try payments, webhook or Kubernetes",
+    "searchPlaceholder": "Try homepage, typography, authorization or cache",
     "category": "Domain",
     "allCategories": "All domains",
     "action": "Action",
@@ -100,7 +100,10 @@
     "vibe-workflow": "Workflow checks & maintenance",
     "vibe-mcp": "MCP servers & clients",
     "vibe-web": "Web rendering & server boundaries",
-    "vibe-serverless": "Serverless & edge"
+    "vibe-serverless": "Serverless & edge",
+    "vibe-web-strategy": "Web offer & page strategy",
+    "vibe-web-art-direction": "Web art direction & materials",
+    "vibe-landing": "Homepages & landing experiences"
   },
   "summaries": {
     "vibe-ai": "AI features, document retrieval and quality evaluation.",
@@ -109,7 +112,7 @@
     "vibe-celery": "Celery task delivery, retries and worker shutdown.",
     "vibe-clickhouse": "Data ingestion, table engines and query cost.",
     "vibe-compatibility": "Compatibility contracts and reference comparisons.",
-    "vibe-content": "Product copy, localization and search visibility.",
+    "vibe-content": "Website/product copy, microcopy, localization, notifications and search visibility.",
     "vibe-design": "Design systems, keyboard navigation, focus and accessibility.",
     "vibe-desktop": "Desktop apps, browser extensions and IPC.",
     "vibe-docs": "READMEs, design documents and refactoring boundaries.",
@@ -147,7 +150,10 @@
     "vibe-workflow": "Evidence checks, map updates and plugin maintenance.",
     "vibe-mcp": "MCP versions, tool contracts, transport and authorization.",
     "vibe-web": "SSR, hydration, serialized data, caches and server actions.",
-    "vibe-serverless": "Invocation lifetime, duplicate events and runtime limits."
+    "vibe-serverless": "Invocation lifetime, duplicate events and runtime limits.",
+    "vibe-web-strategy": "Offer synthesis, audience/proof, page narrative and conversion architecture.",
+    "vibe-web-art-direction": "Real references/assets, original identity, typography, color, components, materials and motion.",
+    "vibe-landing": "New builds, completion/redesign, modular architecture, geometry/navigation/states, SEO and loading."
   },
   "titles": {
     "ai-evaluation-audit": "AI Evaluation Audit",
@@ -390,7 +396,26 @@
     "incident-recovery-check": "Incident Recovery Check",
     "serverless-runtime-audit": "Serverless Runtime Audit",
     "serverless-runtime-polish": "Improve Serverless Runtime",
-    "serverless-invocation-check": "Serverless Invocation Check"
+    "serverless-invocation-check": "Serverless Invocation Check",
+    "web-offer-synthesis": "Web Offer Synthesis",
+    "web-page-architecture": "Page Narrative & Conversion Structure",
+    "web-page-copy": "Website Copy & Microcopy",
+    "web-reference-research": "Web Reference Research",
+    "web-art-direction": "Web Art Direction",
+    "web-brand-assets": "Web Brand Assets",
+    "web-visual-system": "Web Visual System",
+    "web-design-kit": "Web Design Kit",
+    "web-interaction-storyboard": "Web Interaction Storyboard",
+    "web-project-architecture": "Web Project Architecture",
+    "web-experience-brief": "Web Experience Brief",
+    "homepage-landing-build": "Build Homepage & Landing Page",
+    "homepage-landing-audit": "Homepage & Landing Audit",
+    "homepage-landing-polish": "Improve Homepage & Landing Page",
+    "web-visual-hierarchy-check": "Web Visual Hierarchy & Geometry Check",
+    "web-navigation-state-check": "Web Navigation & State Check",
+    "web-interaction-motion-check": "Web Interaction & Motion Check",
+    "web-search-performance-check": "Web Search & Performance Check",
+    "web-page-acceptance-check": "Web Page Acceptance Check"
   },
   "policy": {
     "privacy": "# Privacy\n\nVibe Coding is maintained by Arty S. / ARTSIOM SATSUK ([arty-kk](https://github.com/arty-kk)).\n\nThe distributed plugin contains text instructions, a local catalog and local Python utilities. It has no publisher-operated backend, analytics, tracking pixels, cookies, account system or telemetry. Its catalog and packaging utilities do not send project contents to the publisher.\n\nWhen the plugin is used in Codex, ChatGPT or Claude, the host processes prompts, files and tool results under the host's settings and policies. Workflows may use tools and services that the user has enabled; those services apply their own data policies. The plugin does not grant itself additional permissions.\n\nThe public website is hosted on GitHub Pages. GitHub may process ordinary request information under its privacy policy. Information voluntarily posted in repository issues or pull requests is public and handled by GitHub. Do not post credentials, private source code or personal data.\n\nThe website and offline catalog store only your selected language and assistant in your browser's local storage. These preferences are not sent to the publisher.\n\nThe plugin does not collect or retain prompts or project files on a publisher server. Browser preferences remain until you change them or clear the corresponding browser storage. The maintainer uses information you voluntarily post in support threads to answer your request and investigate reported issues. Those posts remain on GitHub and can be edited or deleted using GitHub controls, subject to GitHub's retention policy. Hosting logs, support content and data-rights requests handled by GitHub are governed by the [GitHub Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement). Use your assistant's settings and support channels for access, retention or deletion of data processed by that assistant.\n\nPrivacy questions can be raised at [https://github.com/arty-kk/vibe-coding/issues](https://github.com/arty-kk/vibe-coding/issues) without including sensitive details.\n",

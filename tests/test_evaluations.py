@@ -35,12 +35,24 @@ class EvaluationRecordTests(unittest.TestCase):
         self.search_keys = json.loads(SEARCH_KEYS.read_text(encoding='utf-8'))
         self.ci_temp = json.loads(CI_TEMP.read_text(encoding='utf-8'))
 
+        self.web = json.loads((ROOT/'review/evaluations/1.7.0.json').read_text(encoding='utf-8'))
+
+    def web_fingerprint(self, name, expected):
+        change = self.web['changes'].get(name)
+        if change:
+            self.assertEqual(expected, change['before'], name)
+            return change['after']
+        return expected
+
+    def new_instructions(self):
+        return {name for name in self.web['new_files'] if name.startswith('plugins/vibe-coding/skills/') and name.endswith('.md')}
+
     def ci_temp_fingerprint(self, name, expected):
         change = self.ci_temp['changes'].get(name)
         if change:
             self.assertEqual(expected, change['before'], 'CI directory correction must retain its released baseline: '+name)
-            return change['after']
-        return expected
+            expected = change['after']
+        return self.web_fingerprint(name, expected)
 
     def search_key_fingerprint(self, name, expected):
         change = self.search_keys['changes'].get(name)
@@ -132,7 +144,7 @@ class EvaluationRecordTests(unittest.TestCase):
         self.assertEqual('1.2.0', self.current['baseline']['release'])
         self.assertTrue(self.current['limits'])
         files = list((ROOT/'plugins/vibe-coding/skills').rglob('*.md')) + list((ROOT/'plugins/vibe-coding/references').glob('*.md'))
-        self.assertEqual({p.relative_to(ROOT).as_posix() for p in files}, set(self.current['instructions']))
+        self.assertEqual({p.relative_to(ROOT).as_posix() for p in files}, set(self.current['instructions']) | self.new_instructions())
         for section in ('instructions', 'inputs_and_artifacts'):
             for name, expected in self.current[section].items():
                 change = self.website['release_artifact_changes'].get(name) if section == 'inputs_and_artifacts' else None
@@ -172,7 +184,7 @@ class EvaluationRecordTests(unittest.TestCase):
 
     def test_required_behavior_records_are_complete_and_bounded(self):
         manifest = json.loads((ROOT/'plugins/vibe-coding/plugin.json').read_text(encoding='utf-8'))
-        self.assertEqual(manifest['version'], self.search_keys['release'])
+        self.assertEqual(manifest['version'], self.web['release'])
         cases = {row['id']: row for row in self.record['behaviors']}
         self.assertEqual({'serverless-required-write', 'mcp-http-readonly-control', 'react-hydration-preference'}, set(cases))
         for case in cases.values():
@@ -190,7 +202,7 @@ class EvaluationRecordTests(unittest.TestCase):
         self.assertEqual(hashlib.sha256(CURRENT.read_bytes()).hexdigest(), self.revision['baseline']['sha256'])
         self.assertEqual(hashlib.sha256(WEBSITE.read_bytes()).hexdigest(), self.revision['website_baseline']['sha256'])
         files = list((ROOT/'plugins/vibe-coding/skills').rglob('*.md')) + list((ROOT/'plugins/vibe-coding/references').glob('*.md'))
-        self.assertEqual({p.relative_to(ROOT).as_posix() for p in files}, set(self.revision['instructions']))
+        self.assertEqual({p.relative_to(ROOT).as_posix() for p in files}, set(self.revision['instructions']) | self.new_instructions())
         self.assertEqual(set(self.revision['instructions']), set(self.revision['instruction_review']['paths']))
         for section in ('instructions', 'inputs_and_artifacts'):
             for name, expected in self.revision[section].items():
@@ -284,7 +296,14 @@ class EvaluationRecordTests(unittest.TestCase):
         self.assertEqual(hashlib.sha256(SEARCH_KEYS.read_bytes()).hexdigest(), self.ci_temp['baseline']['sha256'])
         self.assertEqual({'.github/workflows/openai-distribution.yml', 'tests/test_evaluations.py'}, set(self.ci_temp['changes']))
         for name, change in self.ci_temp['changes'].items():
-            self.assertEqual(change['after'], hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
+            self.assertEqual(self.web_fingerprint(name, change['after']), hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
+
+    def test_website_release_artifacts_preserve_baseline(self):
+        self.assertEqual(hashlib.sha256(CI_TEMP.read_bytes()).hexdigest(), self.web['baseline']['sha256'])
+        for name, value in self.web['changes'].items():
+            self.assertEqual(value['after'], hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
+        for name, value in self.web['new_files'].items():
+            self.assertEqual(value, hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
 
 
 if __name__ == '__main__':

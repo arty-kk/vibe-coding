@@ -310,7 +310,14 @@
       "веб",
       "сайта",
       "sitio web",
-      "网站"
+      "网站",
+      "сайт",
+      "сайты",
+      "сайтик",
+      "сайтики",
+      "sitio",
+      "web page",
+      "网页"
     ],
     "notification": [
       "notifications",
@@ -861,6 +868,592 @@
       "бэкэнда",
       "серверная часть",
       "后端"
+    ],
+    "homepage": [
+      "home page",
+      "главная",
+      "главной",
+      "главную",
+      "главная сайта",
+      "главную сайта",
+      "главная страница",
+      "главной страницы",
+      "главную страницу",
+      "página de inicio",
+      "página principal",
+      "首页",
+      "主页"
+    ],
+    "landing page": [
+      "landing",
+      "landingpage",
+      "лендинг",
+      "лендинга",
+      "лендингу",
+      "лендинги",
+      "лендингов",
+      "посадочная страница",
+      "посадочной страницы",
+      "посадочную страницу",
+      "página de aterrizaje",
+      "página de destino",
+      "落地页",
+      "着陆页"
+    ],
+    "visual design": [
+      "beautiful",
+      "beautiful design",
+      "красивый",
+      "красивую",
+      "красивое",
+      "красивого",
+      "красиво",
+      "дизайн",
+      "дизайна",
+      "эстетика",
+      "эстетизм",
+      "эстетичный",
+      "diseño visual",
+      "diseño",
+      "视觉设计"
+    ],
+    "art direction": [
+      "арт-дирекшн",
+      "артдирекшн",
+      "арт-дирекшен",
+      "художественное направление",
+      "dirección artística",
+      "艺术方向"
+    ],
+    "modern": [
+      "современный",
+      "современная",
+      "современную",
+      "современное",
+      "современного",
+      "ultramodern",
+      "ультрасовременный",
+      "moderno",
+      "moderna",
+      "现代",
+      "现代化"
+    ],
+    "premium": [
+      "премиальный",
+      "премиальная",
+      "премиальную",
+      "премиального",
+      "премиум",
+      "премиальности",
+      "sofisticado",
+      "高端"
+    ],
+    "structure": [
+      "структура",
+      "структуру",
+      "структуры",
+      "estructura",
+      "结构"
+    ],
+    "references": [
+      "reference",
+      "референс",
+      "референсы",
+      "референсов",
+      "референсами",
+      "примеры сайтов",
+      "referencias",
+      "参考",
+      "设计参考"
+    ],
+    "design assets": [
+      "графические материалы",
+      "графика",
+      "графики",
+      "ресурсы дизайна",
+      "recursos gráficos",
+      "设计素材",
+      "图形素材"
+    ],
+    "offer": [
+      "предложение",
+      "оффер",
+      "оффера",
+      "ценностное предложение",
+      "oferta",
+      "价值主张"
+    ],
+    "conversion": [
+      "воронка",
+      "воронки",
+      "конверсия",
+      "конверсии",
+      "conversión",
+      "转化"
+    ],
+    "page structure": [
+      "структура страницы",
+      "структура главной",
+      "страничная структура",
+      "estructura de página",
+      "页面结构"
+    ],
+    "website brief": [
+      "задание на сайт",
+      "задание для сайта",
+      "пакет для реализации",
+      "техническое задание сайта",
+      "brief del sitio",
+      "网站实施方案"
+    ],
+    "requirement coverage": [
+      "полнота требований",
+      "покрытие требований",
+      "ничего не пропустить",
+      "cobertura de requisitos",
+      "需求覆盖"
+    ],
+    "copywriting": [
+      "копирайт",
+      "копирайтинг",
+      "тексты сайта",
+      "текст сайта",
+      "redacción web",
+      "文案",
+      "网站文案"
+    ],
+    "microcopy": [
+      "микрокопирайт",
+      "микрокопирайтинг",
+      "микротексты",
+      "микротекст",
+      "тексты кнопок",
+      "текст кнопки",
+      "交互提示",
+      "微文案"
+    ],
+    "grammar": [
+      "грамматика",
+      "грамматики",
+      "профессиональный текст",
+      "gramática",
+      "语法"
+    ],
+    "declension": [
+      "склонение",
+      "склонения",
+      "согласование",
+      "词形"
+    ],
+    "brand identity": [
+      "айдентика",
+      "бренд-комплект",
+      "брендбук",
+      "identidad de marca",
+      "品牌标识"
+    ],
+    "logo": [
+      "логотип",
+      "логотипы",
+      "логотипа",
+      "логотипов",
+      "лого",
+      "logotipo",
+      "logotipos",
+      "标志"
+    ],
+    "favicon": [
+      "фавикон",
+      "фавикона",
+      "фавиконы",
+      "фавиконов",
+      "фавиконка",
+      "网站图标"
+    ],
+    "icon": [
+      "icons",
+      "иконка",
+      "иконки",
+      "иконок",
+      "иконку",
+      "iconos",
+      "图标"
+    ],
+    "font": [
+      "fonts",
+      "шрифт",
+      "шрифты",
+      "шрифтов",
+      "шрифта",
+      "fuente",
+      "fuentes",
+      "字形"
+    ],
+    "typography": [
+      "типографика",
+      "типографики",
+      "типографику",
+      "типографию",
+      "типография",
+      "tipografía",
+      "字体",
+      "排版"
+    ],
+    "palette": [
+      "палитра",
+      "палитры",
+      "палитру",
+      "цвета",
+      "цветов",
+      "цветовую палитру",
+      "paleta",
+      "colores",
+      "配色",
+      "色板"
+    ],
+    "grid": [
+      "сетка",
+      "сетку",
+      "сетки",
+      "retícula",
+      "网格"
+    ],
+    "geometry": [
+      "геометрия",
+      "геометрии",
+      "геометрию",
+      "геометрией",
+      "геометричность",
+      "geometría",
+      "几何"
+    ],
+    "layout": [
+      "верстка",
+      "вёрстка",
+      "вёрстки",
+      "верстки",
+      "раскладка",
+      "компоновка",
+      "maquetación",
+      "布局"
+    ],
+    "components": [
+      "component",
+      "блоки",
+      "блоков",
+      "блока",
+      "компоненты",
+      "компонентов",
+      "компонент",
+      "componentes",
+      "组件",
+      "区块"
+    ],
+    "visual hierarchy": [
+      "визуальная иерархия",
+      "визуальной иерархии",
+      "иерархия",
+      "акценты",
+      "акцентов",
+      "акценты страницы",
+      "jerarquía visual",
+      "视觉层级"
+    ],
+    "height": [
+      "высота",
+      "высоты",
+      "высоту",
+      "altura",
+      "高度"
+    ],
+    "hero": [
+      "hero section",
+      "хиро",
+      "первый экран",
+      "первого экрана",
+      "первом экране",
+      "primer bloque",
+      "首屏"
+    ],
+    "header": [
+      "хедер",
+      "хедера",
+      "хедере",
+      "шапка",
+      "шапки",
+      "шапку",
+      "cabecera",
+      "页头"
+    ],
+    "footer": [
+      "футер",
+      "футера",
+      "футере",
+      "подвал",
+      "подвала",
+      "pie de página",
+      "页脚"
+    ],
+    "navigation": [
+      "навигация",
+      "навигации",
+      "навигацию",
+      "меню",
+      "navegación",
+      "导航"
+    ],
+    "interaction states": [
+      "состояния кнопок",
+      "состояния элементов",
+      "состояния блоков",
+      "estados de interacción",
+      "交互状态"
+    ],
+    "button": [
+      "buttons",
+      "кнопка",
+      "кнопки",
+      "кнопок",
+      "кнопку",
+      "botón",
+      "botones",
+      "按钮"
+    ],
+    "motion": [
+      "animation",
+      "animations",
+      "transition",
+      "transitions",
+      "анимация",
+      "анимации",
+      "анимацию",
+      "анимацией",
+      "переходы",
+      "переходов",
+      "анимационные переходы",
+      "animación",
+      "transiciones",
+      "动画",
+      "过渡"
+    ],
+    "interaction design": [
+      "интерактив",
+      "интерактива",
+      "интерактивность",
+      "сценарии взаимодействия",
+      "interacción",
+      "交互设计"
+    ],
+    "gradient": [
+      "gradients",
+      "градиент",
+      "градиенты",
+      "градиента",
+      "градиентов",
+      "degradado",
+      "degradados",
+      "渐变"
+    ],
+    "glass": [
+      "glassmorphism",
+      "стекло",
+      "стекла",
+      "стеклом",
+      "стеклянный",
+      "cristal",
+      "vidrio",
+      "玻璃"
+    ],
+    "shadow": [
+      "shadows",
+      "тень",
+      "тени",
+      "теней",
+      "sombra",
+      "sombras",
+      "阴影"
+    ],
+    "transparency": [
+      "opacity",
+      "прозрачность",
+      "прозрачности",
+      "прозрачные",
+      "альфа",
+      "transparencia",
+      "透明度"
+    ],
+    "border": [
+      "borders",
+      "outline",
+      "обводки",
+      "обводка",
+      "обводок",
+      "бордеры",
+      "контуры элементов",
+      "bordes",
+      "边框"
+    ],
+    "depth": [
+      "объём",
+      "объем",
+      "объёмные формы",
+      "объемные формы",
+      "объёмные",
+      "объемные",
+      "profundidad",
+      "立体"
+    ],
+    "3d": [
+      "3D scene",
+      "3d graphics",
+      "3d сцена",
+      "трехмерная графика",
+      "трёхмерная графика",
+      "3d场景"
+    ],
+    "procedural graphics": [
+      "algorithmic background",
+      "generative background",
+      "алгоритмический фон",
+      "алгоритмические фоны",
+      "алгоритмический",
+      "алгоритмическая",
+      "алгоритмические",
+      "процедурная графика",
+      "генеративная графика",
+      "шейдер",
+      "shader",
+      "fondos generativos",
+      "算法背景",
+      "程序化图形"
+    ],
+    "design kit": [
+      "дизайн-пакет",
+      "дизайн пакет",
+      "набор материалов",
+      "kit de diseño",
+      "设计素材包"
+    ],
+    "monorepo": [
+      "monorepository",
+      "монорепо",
+      "монореп",
+      "монорепозиторий",
+      "монорепозитория",
+      "монорепа",
+      "монорепы",
+      "monorepositorio",
+      "单体仓库"
+    ],
+    "project architecture": [
+      "архитектура проекта",
+      "архитектура сайта",
+      "архитектура веб-проекта",
+      "arquitectura del proyecto",
+      "项目架构"
+    ],
+    "stack": [
+      "tech stack",
+      "technology stack",
+      "стек",
+      "стека",
+      "стеком",
+      "pila tecnológica",
+      "技术栈"
+    ],
+    "seo": [
+      "поисковая оптимизация",
+      "搜索引擎优化"
+    ],
+    "geo": [
+      "generative engine optimization",
+      "генеративная оптимизация",
+      "生成式搜索优化"
+    ],
+    "loading": [
+      "загрузка",
+      "загрузки",
+      "загрузку",
+      "скорость загрузки",
+      "carga",
+      "加载"
+    ],
+    "calculator": [
+      "калькулятор",
+      "калькулятора",
+      "калькуляторы",
+      "calculadora",
+      "计算器"
+    ],
+    "pricing": [
+      "тарифы",
+      "тарифов",
+      "тариф",
+      "цены",
+      "тарификация",
+      "precios",
+      "tarifas",
+      "定价"
+    ],
+    "carousel": [
+      "slider",
+      "sliders",
+      "слайдер",
+      "слайдеры",
+      "слайдера",
+      "карусель",
+      "карусели",
+      "carrusel",
+      "轮播"
+    ],
+    "lead magnet": [
+      "лидмагнит",
+      "лид-магнит",
+      "лидмагниты",
+      "лидмагнита",
+      "recurso descargable",
+      "引流资料"
+    ],
+    "social proof": [
+      "соцдоказательства",
+      "социальные доказательства",
+      "отзывы",
+      "prueba social",
+      "社会证明"
+    ],
+    "responsive": [
+      "адаптивность",
+      "адаптивный",
+      "адаптивная",
+      "адаптивности",
+      "адаптивную",
+      "responsive design",
+      "адаптив",
+      "adaptable",
+      "响应式"
+    ],
+    "finish": [
+      "доделать",
+      "доделка",
+      "завершить сайт",
+      "завершение сайта",
+      "terminar",
+      "完善"
+    ],
+    "redesign": [
+      "редизайн",
+      "редизайна",
+      "переделка",
+      "переделать",
+      "rediseño",
+      "重新设计"
+    ],
+    "architecture": [
+      "архитектура",
+      "архитектуры",
+      "архитектуру",
+      "arquitectura",
+      "架构"
     ]
   },
   "intents": {
@@ -913,7 +1506,27 @@
       "внедрить",
       "añadir",
       "agregar",
-      "添加"
+      "添加",
+      "build",
+      "create",
+      "make",
+      "создай",
+      "создать",
+      "сделай",
+      "сделать",
+      "сверстай",
+      "сверстать",
+      "доделай",
+      "доделать",
+      "переделай",
+      "переделать",
+      "redesign",
+      "finish",
+      "crear",
+      "construir",
+      "制作",
+      "创建",
+      "搭建"
     ],
     "check": [
       "check",
@@ -1140,6 +1753,8 @@
     "где",
     "для",
     "до",
+    "еще",
+    "ещё",
     "и",
     "из",
     "или",
@@ -1172,6 +1787,7 @@
     "о",
     "об",
     "от",
+    "очень",
     "перед",
     "по",
     "пожалуйста",
@@ -1195,6 +1811,7 @@
     "там",
     "то",
     "у",
+    "хочется",
     "хочу",
     "что",
     "чтото",
@@ -1244,6 +1861,46 @@
       "карта проекта",
       "mapa del proyecto",
       "项目地图"
+    ],
+    "homepage-landing-polish": [
+      "улучши главную",
+      "улучшить главную",
+      "доделай сайт",
+      "доделать сайт",
+      "переделай главную",
+      "переделать главную",
+      "доделай лендинг",
+      "redesign homepage",
+      "improve homepage",
+      "finish this website",
+      "finish website",
+      "finish homepage",
+      "rediseñar la página de inicio",
+      "完善首页"
+    ],
+    "homepage-landing-build": [
+      "создай лендинг",
+      "сделай лендинг",
+      "build a landing page",
+      "create homepage",
+      "build homepage",
+      "создай сайт с нуля",
+      "сделай сайт с нуля"
+    ],
+    "web-page-architecture": [
+      "структура главной",
+      "структура главной сайта",
+      "структура лендинга",
+      "homepage structure"
+    ],
+    "web-visual-system": [
+      "типографика палитра",
+      "homepage typography"
+    ],
+    "web-experience-brief": [
+      "задание на сайт",
+      "пакет для реализации сайта",
+      "полное задание на сайт"
     ]
   },
   "discovery": {
@@ -1401,6 +2058,91 @@
     "prompt-skill-sync-audit": "Inspect this plugin for drift between prompt intent, skill triggers, workflow transitions, retrieval contracts and packaged content.",
     "prompt-skill-sync-polish": "Repair demonstrated prompt, skill, composition or retrieval drift while preserving useful domain instructions and stable identities.",
     "scoped-audit": "Find concrete defects in a selected behavior when no more specific domain workflow fits; hand off its owner, failure and acceptance check.",
-    "scoped-polish": "Implement a selected, already-authorized correction at its owning boundary and synchronize directly affected contracts."
+    "scoped-polish": "Implement a selected, already-authorized correction at its owning boundary and synchronize directly affected contracts.",
+    "web-offer-synthesis": "Synthesize a real offer, audience, proof and conversion contract before planning an original homepage or landing page.",
+    "web-page-architecture": "Choose and order meaningful page sections, functional modules and conversion paths from the actual offer and visitor questions.",
+    "web-page-copy": "Write exact professional page copy and concise action/error/state strings with truthful claims and correct locale grammar.",
+    "web-reference-research": "Inspect relevant references and real assets, extract adaptable design mechanisms and record source/status and production needs.",
+    "web-art-direction": "Define an original project-specific visual concept, opening, section compositions, rhythm, transitions and material/graphic language.",
+    "web-brand-assets": "Create or preserve a coherent logo family, optical small mark, favicon/browser/touch/sharing assets and verified export manifest.",
+    "web-visual-system": "Specify concrete type, semantic colors, grid, components, surfaces/elevation, borders and responsive/material rules from the chosen direction.",
+    "web-design-kit": "Compile chosen parameters into local CSS tokens, procedural SVG/materials, a visual review board and explicit numeric validation evidence.",
+    "web-interaction-storyboard": "Specify triggers, states, useful feedback, timing, recovery, responsive variants and static/reduced-motion fallbacks for selected page modules.",
+    "web-project-architecture": "Choose a supported efficient stack, modular workspace/import boundaries, rendering/content/integration owners and measurable delivery budgets.",
+    "web-experience-brief": "Consolidate actual strategy, copy, assets, design and architecture decisions into a coherent build packet and reconcile every required outcome.",
+    "homepage-landing-build": "Build a complete new homepage or landing experience from its real brief, with modular components, useful interactions and evidenced acceptance.",
+    "homepage-landing-audit": "Inspect a rendered existing page and reachable states for evidenced visual, content, navigation, conversion and loading defects without editing.",
+    "homepage-landing-polish": "Finish a partial site, correct its supported defects or implement an authorized redesign while preserving required working content, routes and effects.",
+    "web-visual-hierarchy-check": "Verify actual page/component hierarchy, optical alignment, spacing, typography and material accents across relevant rendered states and viewports.",
+    "web-navigation-state-check": "Traverse meaningful navigation and control state/effect/recovery paths; valid IDs alone cannot close empty or misleading destinations.",
+    "web-interaction-motion-check": "Verify selected modules, actual timing/effects, accessible and reduced-motion/static controls, material states and bounded resource lifecycle.",
+    "web-search-performance-check": "Check real route/head/crawler/provider readiness and measured loading budgets, separating local proof from indexing, citations and field performance.",
+    "web-page-acceptance-check": "Reconcile the complete actual page with required outcomes and domain evidence; omitted assets, unavailable actions and unverified gates remain open."
+  },
+  "website_goal_routes": {
+    "subjects": [
+      "website",
+      "site",
+      "homepage",
+      "landing page",
+      "web site",
+      "сайт",
+      "сайта",
+      "сайтик",
+      "лендинг",
+      "лендинга",
+      "главную страницу",
+      "главную сайта",
+      "главную",
+      "главная страница",
+      "sitio web",
+      "página de inicio",
+      "página de destino",
+      "网站",
+      "首页",
+      "落地页"
+    ],
+    "goals": {
+      "web-offer-synthesis": [
+        "сначала понять",
+        "сначала нужно понять",
+        "сначала продумать",
+        "продумать предложение",
+        "нужна концепция",
+        "пока только план",
+        "proposal",
+        "plan first",
+        "oferta",
+        "先规划"
+      ],
+      "homepage-landing-polish": [
+        "доделай",
+        "доделать",
+        "довести до ума",
+        "переделай",
+        "переделать",
+        "обнови дизайн",
+        "redesign",
+        "finish",
+        "rediseñar",
+        "terminar",
+        "改版",
+        "完善"
+      ],
+      "homepage-landing-build": [
+        "сделай",
+        "создай",
+        "собери",
+        "нужен красивый",
+        "хочу красивый",
+        "build",
+        "create",
+        "make",
+        "crear",
+        "construir",
+        "创建",
+        "搭建"
+      ]
+    }
   }
 }

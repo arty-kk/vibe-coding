@@ -1,6 +1,6 @@
 # Vibe Coding Library
 
-Engineering methods for any coding agent supporting MCP over Streamable HTTP. Search 241 workflow entries from the task goal and load the current prompt with its domain instructions, required references and conditional next steps. Instructions and client distribution share version 1.6.1.
+Engineering methods for any coding agent supporting MCP over Streamable HTTP. Search 260 workflow entries from the task goal and load the current prompt with its domain instructions, required references and conditional next steps. Instructions and client distribution share version 1.7.0.
 
 Direct MCP use needs no native skill installation. The optional native packages expose `$vibe-library` in Codex and `/vibe-coding-library:vibe-library` in Claude Code. Search supports English, Spanish, Russian and Simplified Chinese; technical purposes and instructions are English.
 
@@ -24,7 +24,7 @@ The MCP server reads its compiled public library. It has no repository, local-fi
 
 [Live server and examples](https://vibe-coding-library.swift-seal-1081.chatgpt.site/) · [Catalog](https://arty-kk.github.io/vibe-coding/) · [Source](https://github.com/arty-kk/vibe-coding) · [Support](https://github.com/arty-kk/vibe-coding/issues) · [Privacy](https://vibe-coding-library.swift-seal-1081.chatgpt.site/privacy) · [Terms](https://vibe-coding-library.swift-seal-1081.chatgpt.site/terms)
 
-The complete offline Vibe Coding plugin remains available separately, with 46 local skills and all 241 recipes. The Library distribution uses one selection skill and retrieves the chosen instructions on demand.
+The complete offline Vibe Coding plugin remains available separately, with 49 local skills and all 260 recipes. The Library distribution uses one selection skill and retrieves the chosen instructions on demand.
 
 Use `response_format:workflow` on both tools for the current purposes and structured outline. Calls that omit the option retain the exact 1.5.1 response shape while still using current search and instruction content; this keeps previously published schemas working during continuous review.
 

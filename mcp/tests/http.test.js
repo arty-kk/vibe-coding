@@ -51,7 +51,7 @@ for (const mode of ['legacy', 'auto']) {
       assert.ok(!next.structuredContent.files.some(file => file.path === 'references/workflow.md'));
       const rootCatalog = await connection.callTool({name:'search_workflows', arguments:{view:'catalog',language:'ru'}});
       assert.equal(rootCatalog.isError,undefined);
-      assert.equal(rootCatalog.structuredContent.catalog.domains.length,45);
+      assert.equal(rootCatalog.structuredContent.catalog.domains.length,48);
       assert.equal(rootCatalog.structuredContent.workflows.length,0);
       const scopedCatalog = await connection.callTool({name:'search_workflows',arguments:{view:'catalog',skill:'vibe-domain',mode:'implement'}});
       const authTopic = scopedCatalog.structuredContent.catalog.topics.find(topic=>topic.keywords.includes('authorization') && topic.key==='auth-permissions');

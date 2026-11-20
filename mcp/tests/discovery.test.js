@@ -18,7 +18,7 @@ test('all domain/topic keys are discoverable, bounded and backed by real workflo
   const seen = new Set();
   for (const language of ['en','es','ru','zh-CN']) {
     const root = searchWorkflows({view:'catalog',language});
-    assert.equal(root.catalog.domains.length,45);
+    assert.equal(root.catalog.domains.length,48);
     assert.equal(root.workflows.length,0);
     assert.ok(Buffer.byteLength(JSON.stringify(root)) < 16000);
     assert.ok(!JSON.stringify(root).includes('source_url'));
@@ -84,4 +84,38 @@ test('catalog recovery never invents a topic or drops explicit filters', () => {
   assert.equal(searchWorkflows({view:'catalog',skill:'vibe-cache',mode:'review'}).catalog.status,'empty_scope');
   assert.deepEqual(searchWorkflows({view:'catalog',mode:'review'}).catalog.domains.map(row=>row.key),['vibe-review']);
   assert.throws(()=>searchWorkflows({view:'catalog',query:'private words'}),/Leave query empty/);
+});
+
+const websiteCases = JSON.parse((await import('node:fs')).readFileSync(
+  new URL('../../review/web-experience-cases-1.7.0.json', import.meta.url), 'utf8'));
+
+test('website goals reach their expected method in the localized catalog', () => {
+  for (const {query, language, expected, max_rank} of websiteCases.cases) {
+    const ids = searchWorkflows({query, language}).workflows.slice(0, max_rank).map(row => row.id);
+    assert.ok(ids.some(id => expected.includes(id)), `${query} → ${ids}`);
+  }
+});
+
+test('specific ordinary-language project requests survive unfamiliar business context', () => {
+  for (const [query, expected] of [
+    ['Создай сайт для цветочной лавки у вокзала', 'homepage-landing-build'],
+    ['Доделай сайт студии керамики, маме нужна рабочая форма', 'homepage-landing-polish'],
+    ['Хочу сайт школы танцев. Сначала нужно понять предложение', 'web-offer-synthesis']
+  ]) assert.equal(searchWorkflows({query}).workflows[0]?.id, expected, query);
+  assert.equal(searchWorkflows({query:'Собери отчет о запасах глины'}).total, 0);
+  assert.equal(searchWorkflows({query:'Доделай сайт гончарной студии',skill:'vibe-sql'}).total, 0);
+});
+
+test('new, existing and read-only page tasks load the correct stages and resources', () => {
+  const proposal = getWorkflow({id:'web-offer-synthesis'}).execution.steps;
+  assert.equal(proposal.at(-1).id, 'web-experience-brief');
+  assert.ok(proposal.every(step => step.role !== 'implement'));
+  for (const id of ['homepage-landing-build', 'homepage-landing-polish']) {
+    const ids = getWorkflow({id}).execution.steps.map(s => s.id);
+    assert.deepEqual(ids.slice(1), ['web-visual-hierarchy-check','web-navigation-state-check',
+      'web-interaction-motion-check','web-search-performance-check','web-page-acceptance-check','patch-checking']);
+  }
+  assert.equal(getWorkflow({id:'homepage-landing-audit'}).execution.steps.length, 1);
+  assert.ok(getWorkflow({id:'web-design-kit'}).files.some(f=>f.path.endsWith('/compile_design_kit.py')));
+  assert.ok(getWorkflow({id:'web-visual-system'}).files.every(f=>!f.path.endsWith('.py')));
 });

@@ -1,6 +1,6 @@
 ---
 name: vibe-content
-description: "Review or edit product copy, localization, notification templates and public SEO/GEO metadata against implemented behavior."
+description: "Write, review or improve professional website/product copy and microcopy, localization, notification templates and SEO/GEO metadata against real offers, actions and states."
 ---
 
 # Copy, localization & SEO
@@ -9,6 +9,7 @@ Apply [the working contract](../../references/workflow.md) once. Select the cont
 
 ## Workflows
 
+- **New homepage/landing text:** offer and page architecture → [Website Copy & Microcopy](references/web-page-copy.md) → a production-text deck for design and implementation. Carry the glossary, claims and all action/error states into the visual and interaction stages.
 - **Product/landing copy:** Product & Landing Copy Audit → Improve Product & Landing Copy → verify the claim, action destination and rendered state → [Patch Checking](../vibe-review/references/patch-checking.md).
 - **Localization:** Localization Audit → Improve Localization → replay explicit locale/default/fallback and affected formatting/rendering paths → Patch Checking.
 - **Notification wording:** Notification Content Audit → Improve Notification Content → synthetic channel/locale previews and destination checks → Patch Checking. Sending a real message is not part of this content workflow.
@@ -22,6 +23,7 @@ Recheck failed copy in its actual state and renderer after correction. When seve
 
 | Recipe | Operation |
 |---|---|
+| [Website Copy & Microcopy](references/web-page-copy.md) | plan |
 | [Localization Audit](references/localization-audit.md) | audit |
 | [Improve Localization](references/localization-polish.md) | implement |
 | [Notification Content Audit](references/notification-content-audit.md) | audit |

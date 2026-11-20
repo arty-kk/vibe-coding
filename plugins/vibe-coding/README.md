@@ -1,6 +1,6 @@
 # Vibe Coding
 
-46 skills and 241 engineering workflows for Codex and Claude Code: repository mapping, planning, review, debugging, implementation and verification.
+49 skills and 260 engineering workflows for Codex and Claude Code: repository mapping, planning, review, debugging, implementation and verification.
 
 [Website and catalog](https://arty-kk.github.io/vibe-coding) · [Repository](https://github.com/arty-kk/vibe-coding) · [Support](https://github.com/arty-kk/vibe-coding/issues)
 

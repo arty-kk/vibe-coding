@@ -74,7 +74,7 @@ test('pagination has no duplicates, clamps stale pages and reports the actual ra
   const first = engine.paginate(result.matches,1), next = engine.paginate(result.matches,2), last = engine.paginate(result.matches,99999);
   assert.equal(first.items.length,12); assert.equal(next.from,13);
   assert.equal(new Set([...first.items,...next.items].map(x => x.entry.id)).size,24);
-  assert.equal(last.total,241); assert.equal(last.to,241); assert.equal(last.page,21);
+  assert.equal(last.total,260); assert.equal(last.to,260); assert.equal(last.page,22);
   assert.deepEqual(engine.paginate([],999),{items:[],page:1,pages:1,total:0,from:0,to:0});
 });
 

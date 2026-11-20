@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vibe · Web offer & strategy"
+  short_description: "Offer synthesis, page narrative and conversion architecture"
+  default_prompt: "Use $vibe-web-strategy to synthesize the offer and prepare the homepage or landing-page architecture for my project."

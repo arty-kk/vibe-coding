@@ -1,6 +1,6 @@
 ---
 name: vibe-library
-description: "Select and apply an engineering workflow for bug diagnosis, implementation, patch review, task planning or verification using Vibe Coding's MCP library. Discover actual topic keys, select a workflow for the task and follow its evidence handoffs. Works with any MCP coding agent."
+description: "Select a design or engineering workflow for a new homepage, an unfinished site, a redesign, a bug, a planned change or a patch review. Use the user’s goal in any language to discover a method and apply its current step."
 ---
 
 # Vibe Coding Library
@@ -9,7 +9,7 @@ description: "Select and apply an engineering workflow for bug diagnosis, implem
 
 Set `response_format:workflow` on both tools to request purposes, match reasons and the structured step outline. Omitting this option preserves the older response shape; the server still supplies current instructions.
 
-Use the task itself to find a relevant method; the user need not mention the library. Examples include a repeated payment effect, broken hydration, an unfamiliar API change, a patch needing review or a release guarantee needing verification. A precise named workflow or ID takes precedence over inferred routing.
+Use the task itself to find a relevant method; the user need not mention the library. Examples include a repeated payment effect, broken hydration, an unfamiliar API change, a patch needing review or a release guarantee needing verification. For a website proposal with an undefined offer, start at `web-offer-synthesis`. Build from an accepted brief with `homepage-landing-build`. Finish or redesign existing work with `homepage-landing-polish`. For inspection only, use `homepage-landing-audit`. Inspect current project state when the distinction matters. A precise named workflow or ID takes precedence over inferred routing.
 
 1. Identify the requested operation. Audit/review inspect; implementation makes an already-requested change; checks verify; plans prepare work. A precise known workflow ID can be loaded directly.
 2. When the topic is unknown, call `search_workflows` with `view:catalog` and an empty query. Select a returned domain key by the meaning of the user's task, then request `view:catalog, skill:<that key>`. This returns that domain's real topic keys, canonical English keywords, supported operations and workflow IDs without prompt bodies. Reuse the catalog for the same library version.

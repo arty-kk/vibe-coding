@@ -869,6 +869,33 @@
           "when": "For the explicit affected behavior and its distinguishing failure/control case."
         }
       ]
+    },
+    {
+      "id": "homepage-landing",
+      "audit": "homepage-landing-audit",
+      "implement": "homepage-landing-polish",
+      "checks": [
+        {
+          "id": "web-visual-hierarchy-check",
+          "when": "For a new page or changed composition, typography, geometry, media or material state."
+        },
+        {
+          "id": "web-navigation-state-check",
+          "when": "For a new page or affected navigation, useful destinations, control states and recovery paths."
+        },
+        {
+          "id": "web-interaction-motion-check",
+          "when": "For selected functional modules, animation/material behavior or enhancement/static lifecycle boundaries."
+        },
+        {
+          "id": "web-search-performance-check",
+          "when": "For a new route or changes to public content, metadata, crawling, assets, loading or execution budgets."
+        },
+        {
+          "id": "web-page-acceptance-check",
+          "when": "Reconcile every affected required outcome with actual artifacts and domain evidence."
+        }
+      ]
     }
   ],
   "focused": [
@@ -954,7 +981,24 @@
     "vector-recall-degradation-check",
     "visual-regression-check",
     "web-boundary-check",
-    "workstream-decomposition"
+    "workstream-decomposition",
+    "web-offer-synthesis",
+    "web-page-architecture",
+    "web-page-copy",
+    "web-reference-research",
+    "web-art-direction",
+    "web-brand-assets",
+    "web-visual-system",
+    "web-design-kit",
+    "web-interaction-storyboard",
+    "web-project-architecture",
+    "web-experience-brief",
+    "homepage-landing-build",
+    "web-visual-hierarchy-check",
+    "web-navigation-state-check",
+    "web-interaction-motion-check",
+    "web-search-performance-check",
+    "web-page-acceptance-check"
   ],
   "sequences": {
     "task-shaping": [
@@ -999,6 +1043,227 @@
       {
         "id": "map-staleness-check",
         "when": "Check only the changed map entries against their current source owners."
+      }
+    ],
+    "web-offer-synthesis": [
+      {
+        "id": "web-page-architecture",
+        "when": "After the preceding artifact is ready, continue the already-requested proposal with its preserved requirement ledger and decisions; reuse completed inputs and keep implementation separately authorized."
+      },
+      {
+        "id": "web-page-copy",
+        "when": "After the preceding artifact is ready, continue the already-requested proposal with its preserved requirement ledger and decisions; reuse completed inputs and keep implementation separately authorized."
+      },
+      {
+        "id": "web-reference-research",
+        "when": "After the preceding artifact is ready, continue the already-requested proposal with its preserved requirement ledger and decisions; reuse completed inputs and keep implementation separately authorized."
+      },
+      {
+        "id": "web-art-direction",
+        "when": "After the preceding artifact is ready, continue the already-requested proposal with its preserved requirement ledger and decisions; reuse completed inputs and keep implementation separately authorized."
+      },
+      {
+        "id": "web-brand-assets",
+        "when": "After the preceding artifact is ready, continue the already-requested proposal with its preserved requirement ledger and decisions; reuse completed inputs and keep implementation separately authorized."
+      },
+      {
+        "id": "web-visual-system",
+        "when": "After the preceding artifact is ready, continue the already-requested proposal with its preserved requirement ledger and decisions; reuse completed inputs and keep implementation separately authorized."
+      },
+      {
+        "id": "web-interaction-storyboard",
+        "when": "After the preceding artifact is ready, continue the already-requested proposal with its preserved requirement ledger and decisions; reuse completed inputs and keep implementation separately authorized."
+      },
+      {
+        "id": "web-project-architecture",
+        "when": "After the preceding artifact is ready, continue the already-requested proposal with its preserved requirement ledger and decisions; reuse completed inputs and keep implementation separately authorized."
+      },
+      {
+        "id": "web-experience-brief",
+        "when": "After the preceding artifact is ready, continue the already-requested proposal with its preserved requirement ledger and decisions; reuse completed inputs and keep implementation separately authorized."
+      }
+    ],
+    "web-page-architecture": [
+      {
+        "id": "web-page-copy",
+        "when": "After the preceding artifact is ready, continue the already-requested proposal with its preserved requirement ledger and decisions; reuse completed inputs and keep implementation separately authorized."
+      },
+      {
+        "id": "web-reference-research",
+        "when": "After the preceding artifact is ready, continue the already-requested proposal with its preserved requirement ledger and decisions; reuse completed inputs and keep implementation separately authorized."
+      },
+      {
+        "id": "web-art-direction",
+        "when": "After the preceding artifact is ready, continue the already-requested proposal with its preserved requirement ledger and decisions; reuse completed inputs and keep implementation separately authorized."
+      },
+      {
+        "id": "web-brand-assets",
+        "when": "After the preceding artifact is ready, continue the already-requested proposal with its preserved requirement ledger and decisions; reuse completed inputs and keep implementation separately authorized."
+      },
+      {
+        "id": "web-visual-system",
+        "when": "After the preceding artifact is ready, continue the already-requested proposal with its preserved requirement ledger and decisions; reuse completed inputs and keep implementation separately authorized."
+      },
+      {
+        "id": "web-interaction-storyboard",
+        "when": "After the preceding artifact is ready, continue the already-requested proposal with its preserved requirement ledger and decisions; reuse completed inputs and keep implementation separately authorized."
+      },
+      {
+        "id": "web-project-architecture",
+        "when": "After the preceding artifact is ready, continue the already-requested proposal with its preserved requirement ledger and decisions; reuse completed inputs and keep implementation separately authorized."
+      },
+      {
+        "id": "web-experience-brief",
+        "when": "After the preceding artifact is ready, continue the already-requested proposal with its preserved requirement ledger and decisions; reuse completed inputs and keep implementation separately authorized."
+      }
+    ],
+    "web-page-copy": [
+      {
+        "id": "web-reference-research",
+        "when": "After the preceding artifact is ready, continue the already-requested proposal with its preserved requirement ledger and decisions; reuse completed inputs and keep implementation separately authorized."
+      },
+      {
+        "id": "web-art-direction",
+        "when": "After the preceding artifact is ready, continue the already-requested proposal with its preserved requirement ledger and decisions; reuse completed inputs and keep implementation separately authorized."
+      },
+      {
+        "id": "web-brand-assets",
+        "when": "After the preceding artifact is ready, continue the already-requested proposal with its preserved requirement ledger and decisions; reuse completed inputs and keep implementation separately authorized."
+      },
+      {
+        "id": "web-visual-system",
+        "when": "After the preceding artifact is ready, continue the already-requested proposal with its preserved requirement ledger and decisions; reuse completed inputs and keep implementation separately authorized."
+      },
+      {
+        "id": "web-interaction-storyboard",
+        "when": "After the preceding artifact is ready, continue the already-requested proposal with its preserved requirement ledger and decisions; reuse completed inputs and keep implementation separately authorized."
+      },
+      {
+        "id": "web-project-architecture",
+        "when": "After the preceding artifact is ready, continue the already-requested proposal with its preserved requirement ledger and decisions; reuse completed inputs and keep implementation separately authorized."
+      },
+      {
+        "id": "web-experience-brief",
+        "when": "After the preceding artifact is ready, continue the already-requested proposal with its preserved requirement ledger and decisions; reuse completed inputs and keep implementation separately authorized."
+      }
+    ],
+    "web-reference-research": [
+      {
+        "id": "web-art-direction",
+        "when": "After the preceding artifact is ready, continue the already-requested proposal with its preserved requirement ledger and decisions; reuse completed inputs and keep implementation separately authorized."
+      },
+      {
+        "id": "web-brand-assets",
+        "when": "After the preceding artifact is ready, continue the already-requested proposal with its preserved requirement ledger and decisions; reuse completed inputs and keep implementation separately authorized."
+      },
+      {
+        "id": "web-visual-system",
+        "when": "After the preceding artifact is ready, continue the already-requested proposal with its preserved requirement ledger and decisions; reuse completed inputs and keep implementation separately authorized."
+      },
+      {
+        "id": "web-interaction-storyboard",
+        "when": "After the preceding artifact is ready, continue the already-requested proposal with its preserved requirement ledger and decisions; reuse completed inputs and keep implementation separately authorized."
+      },
+      {
+        "id": "web-project-architecture",
+        "when": "After the preceding artifact is ready, continue the already-requested proposal with its preserved requirement ledger and decisions; reuse completed inputs and keep implementation separately authorized."
+      },
+      {
+        "id": "web-experience-brief",
+        "when": "After the preceding artifact is ready, continue the already-requested proposal with its preserved requirement ledger and decisions; reuse completed inputs and keep implementation separately authorized."
+      }
+    ],
+    "web-art-direction": [
+      {
+        "id": "web-brand-assets",
+        "when": "After the preceding artifact is ready, continue the already-requested proposal with its preserved requirement ledger and decisions; reuse completed inputs and keep implementation separately authorized."
+      },
+      {
+        "id": "web-visual-system",
+        "when": "After the preceding artifact is ready, continue the already-requested proposal with its preserved requirement ledger and decisions; reuse completed inputs and keep implementation separately authorized."
+      },
+      {
+        "id": "web-interaction-storyboard",
+        "when": "After the preceding artifact is ready, continue the already-requested proposal with its preserved requirement ledger and decisions; reuse completed inputs and keep implementation separately authorized."
+      },
+      {
+        "id": "web-project-architecture",
+        "when": "After the preceding artifact is ready, continue the already-requested proposal with its preserved requirement ledger and decisions; reuse completed inputs and keep implementation separately authorized."
+      },
+      {
+        "id": "web-experience-brief",
+        "when": "After the preceding artifact is ready, continue the already-requested proposal with its preserved requirement ledger and decisions; reuse completed inputs and keep implementation separately authorized."
+      }
+    ],
+    "web-brand-assets": [
+      {
+        "id": "web-visual-system",
+        "when": "After the preceding artifact is ready, continue the already-requested proposal with its preserved requirement ledger and decisions; reuse completed inputs and keep implementation separately authorized."
+      },
+      {
+        "id": "web-interaction-storyboard",
+        "when": "After the preceding artifact is ready, continue the already-requested proposal with its preserved requirement ledger and decisions; reuse completed inputs and keep implementation separately authorized."
+      },
+      {
+        "id": "web-project-architecture",
+        "when": "After the preceding artifact is ready, continue the already-requested proposal with its preserved requirement ledger and decisions; reuse completed inputs and keep implementation separately authorized."
+      },
+      {
+        "id": "web-experience-brief",
+        "when": "After the preceding artifact is ready, continue the already-requested proposal with its preserved requirement ledger and decisions; reuse completed inputs and keep implementation separately authorized."
+      }
+    ],
+    "web-visual-system": [
+      {
+        "id": "web-interaction-storyboard",
+        "when": "After the preceding artifact is ready, continue the already-requested proposal with its preserved requirement ledger and decisions; reuse completed inputs and keep implementation separately authorized."
+      },
+      {
+        "id": "web-project-architecture",
+        "when": "After the preceding artifact is ready, continue the already-requested proposal with its preserved requirement ledger and decisions; reuse completed inputs and keep implementation separately authorized."
+      },
+      {
+        "id": "web-experience-brief",
+        "when": "After the preceding artifact is ready, continue the already-requested proposal with its preserved requirement ledger and decisions; reuse completed inputs and keep implementation separately authorized."
+      }
+    ],
+    "web-interaction-storyboard": [
+      {
+        "id": "web-project-architecture",
+        "when": "After the preceding artifact is ready, continue the already-requested proposal with its preserved requirement ledger and decisions; reuse completed inputs and keep implementation separately authorized."
+      },
+      {
+        "id": "web-experience-brief",
+        "when": "After the preceding artifact is ready, continue the already-requested proposal with its preserved requirement ledger and decisions; reuse completed inputs and keep implementation separately authorized."
+      }
+    ],
+    "web-project-architecture": [
+      {
+        "id": "web-experience-brief",
+        "when": "After the preceding artifact is ready, continue the already-requested proposal with its preserved requirement ledger and decisions; reuse completed inputs and keep implementation separately authorized."
+      }
+    ],
+    "web-experience-brief": [],
+    "homepage-landing-build": [
+      {
+        "id": "web-visual-hierarchy-check",
+        "when": "For a new page or changed composition, typography, geometry, media or material state."
+      },
+      {
+        "id": "web-navigation-state-check",
+        "when": "For a new page or affected navigation, useful destinations, control states and recovery paths."
+      },
+      {
+        "id": "web-interaction-motion-check",
+        "when": "For selected functional modules, animation/material behavior or enhancement/static lifecycle boundaries."
+      },
+      {
+        "id": "web-search-performance-check",
+        "when": "For a new route or changes to public content, metadata, crawling, assets, loading or execution budgets."
+      },
+      {
+        "id": "web-page-acceptance-check",
+        "when": "Reconcile every affected required outcome with actual artifacts and domain evidence."
       }
     ]
   },

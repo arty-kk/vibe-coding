@@ -21,6 +21,11 @@ def build_library():
     locales = {code: json.loads((PLUGIN / f'assets/catalog/locales/{code}.json').read_text(encoding='utf-8'))
                for code in ('en', 'es', 'ru', 'zh-CN')}
     files = {}
+    helpers = {
+        'web-design-kit': {'skills/vibe-web-art-direction/scripts/compile_design_kit.py',
+                           'skills/vibe-web-art-direction/assets/design-kit.example.json'},
+        'web-experience-brief': {'skills/vibe-landing/scripts/check_web_packet.py'},
+    }
 
     def include(path):
         absolute = (PLUGIN / path).resolve()
@@ -51,6 +56,10 @@ def build_library():
                 name = resolved.relative_to(PLUGIN).as_posix()
                 # Alternative recipes remain discoverable, not automatically loaded.
                 if name.startswith('references/') and name not in ('references/catalog.md', 'references/hosts.md'):
+                    include(name)
+                    dependencies.append(name)
+                elif source == row['path'] and name in helpers.get(row['id'], ()):
+                    # Linked textual helpers are loaded only by their focused current prompt.
                     include(name)
                     dependencies.append(name)
         row['dependencies'] = sorted(set(dependencies))

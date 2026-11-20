@@ -220,11 +220,17 @@
         "landing copy"
       ],
       "keywords": [
-        "landing copy",
-        "positioning",
-        "headlines",
+        "button",
         "calls to action",
-        "product claims"
+        "copywriting",
+        "declension",
+        "grammar",
+        "headlines",
+        "landing copy",
+        "microcopy",
+        "positioning",
+        "product claims",
+        "professional copy"
       ]
     },
     "seo-geo": {
@@ -1779,14 +1785,16 @@
     },
     "task-shaping": {
       "primary": [
-        "task shaping"
+        "task shaping",
+        "brief"
       ],
       "keywords": [
-        "task shaping",
+        "acceptance",
+        "brief",
+        "constraints",
         "implementation brief",
         "scope",
-        "constraints",
-        "acceptance"
+        "task shaping"
       ]
     },
     "temporal-replay-versioning-check": {
@@ -1903,6 +1911,486 @@
         "dependencies",
         "workstreams",
         "execution briefs"
+      ]
+    },
+    "web-offer-synthesis": {
+      "primary": [
+        "homepage",
+        "landing page",
+        "offer"
+      ],
+      "keywords": [
+        "audience",
+        "benefits",
+        "brief",
+        "conversion",
+        "homepage",
+        "landing page",
+        "modern",
+        "offer",
+        "proposal",
+        "strategy",
+        "structure",
+        "web"
+      ]
+    },
+    "web-page-architecture": {
+      "primary": [
+        "homepage",
+        "landing page",
+        "page structure"
+      ],
+      "keywords": [
+        "calculator",
+        "conversion",
+        "footer",
+        "form",
+        "funnel",
+        "header",
+        "hero",
+        "homepage",
+        "landing page",
+        "lead magnet",
+        "modern",
+        "page structure",
+        "pricing",
+        "sections",
+        "social proof",
+        "structure",
+        "web"
+      ]
+    },
+    "web-page-copy": {
+      "primary": [
+        "copywriting",
+        "microcopy"
+      ],
+      "keywords": [
+        "button",
+        "copywriting",
+        "declension",
+        "form",
+        "grammar",
+        "homepage",
+        "landing page",
+        "localization",
+        "microcopy",
+        "modern",
+        "navigation",
+        "professional copy",
+        "states",
+        "web"
+      ]
+    },
+    "web-reference-research": {
+      "primary": [
+        "references",
+        "design assets"
+      ],
+      "keywords": [
+        "3d",
+        "design assets",
+        "font",
+        "homepage",
+        "icon",
+        "imagery",
+        "landing page",
+        "modern",
+        "photography",
+        "procedural graphics",
+        "references",
+        "visual design",
+        "web"
+      ]
+    },
+    "web-art-direction": {
+      "primary": [
+        "art direction",
+        "visual design"
+      ],
+      "keywords": [
+        "3d",
+        "art direction",
+        "border",
+        "composition",
+        "depth",
+        "footer",
+        "glass",
+        "gradient",
+        "header",
+        "height",
+        "hero",
+        "homepage",
+        "landing page",
+        "modern",
+        "palette",
+        "premium",
+        "procedural graphics",
+        "shadow",
+        "transparency",
+        "typography",
+        "unique",
+        "visual design",
+        "web"
+      ]
+    },
+    "web-brand-assets": {
+      "primary": [
+        "brand identity",
+        "logo",
+        "favicon"
+      ],
+      "keywords": [
+        "app icon",
+        "brand identity",
+        "brand kit",
+        "favicon",
+        "homepage",
+        "ico",
+        "icon",
+        "landing page",
+        "logo",
+        "modern",
+        "png",
+        "social preview",
+        "svg",
+        "touch icon",
+        "web",
+        "wordmark"
+      ]
+    },
+    "web-visual-system": {
+      "primary": [
+        "typography",
+        "palette",
+        "grid",
+        "visual system"
+      ],
+      "keywords": [
+        "border",
+        "components",
+        "depth",
+        "design tokens",
+        "geometry",
+        "glass",
+        "gradient",
+        "grid",
+        "height",
+        "homepage",
+        "icon",
+        "landing page",
+        "layout",
+        "modern",
+        "palette",
+        "shadow",
+        "spacing",
+        "structure",
+        "transparency",
+        "typography",
+        "visual design",
+        "visual system",
+        "web"
+      ]
+    },
+    "web-design-kit": {
+      "primary": [
+        "design kit",
+        "procedural graphics"
+      ],
+      "keywords": [
+        "border",
+        "contours",
+        "design kit",
+        "design tokens",
+        "flow field",
+        "glass",
+        "gradient",
+        "halftone",
+        "homepage",
+        "landing page",
+        "materials",
+        "modern",
+        "palette",
+        "procedural graphics",
+        "shadow",
+        "svg",
+        "transparency",
+        "typography",
+        "visual design",
+        "web"
+      ]
+    },
+    "web-interaction-storyboard": {
+      "primary": [
+        "interaction design",
+        "motion"
+      ],
+      "keywords": [
+        "3d",
+        "button",
+        "calculator",
+        "carousel",
+        "form",
+        "glass",
+        "gradient",
+        "homepage",
+        "interaction design",
+        "landing page",
+        "lead magnet",
+        "map",
+        "modern",
+        "motion",
+        "navigation",
+        "pricing",
+        "procedural graphics",
+        "states",
+        "storyboard",
+        "web"
+      ]
+    },
+    "web-project-architecture": {
+      "primary": [
+        "project architecture",
+        "monorepo",
+        "stack"
+      ],
+      "keywords": [
+        "architecture",
+        "components",
+        "content",
+        "deployment",
+        "homepage",
+        "integration",
+        "landing page",
+        "modern",
+        "modules",
+        "monorepo",
+        "packages",
+        "performance",
+        "project architecture",
+        "rendering",
+        "ssr",
+        "stack",
+        "static",
+        "structure",
+        "web"
+      ]
+    },
+    "web-experience-brief": {
+      "primary": [
+        "website brief",
+        "requirement coverage"
+      ],
+      "keywords": [
+        "acceptance",
+        "brief",
+        "completeness",
+        "components",
+        "design packet",
+        "homepage",
+        "landing page",
+        "modern",
+        "proposal",
+        "requirement coverage",
+        "requirements",
+        "specification",
+        "structure",
+        "web",
+        "website brief"
+      ]
+    },
+    "homepage-landing-build": {
+      "primary": [
+        "homepage",
+        "landing page"
+      ],
+      "keywords": [
+        "calculator",
+        "components",
+        "form",
+        "geo",
+        "geometry",
+        "homepage",
+        "landing page",
+        "modern",
+        "motion",
+        "navigation",
+        "new website",
+        "palette",
+        "performance",
+        "pricing",
+        "seo",
+        "states",
+        "typography",
+        "visual design",
+        "web"
+      ]
+    },
+    "web-visual-hierarchy-check": {
+      "primary": [
+        "visual hierarchy",
+        "geometry",
+        "layout"
+      ],
+      "keywords": [
+        "alignment",
+        "border",
+        "button",
+        "components",
+        "geometry",
+        "gradient",
+        "grid",
+        "height",
+        "hero",
+        "homepage",
+        "icon",
+        "landing page",
+        "layout",
+        "modern",
+        "palette",
+        "shadow",
+        "spacing",
+        "symmetry",
+        "transparency",
+        "typography",
+        "visual design",
+        "visual hierarchy",
+        "web"
+      ]
+    },
+    "web-navigation-state-check": {
+      "primary": [
+        "navigation",
+        "interaction states"
+      ],
+      "keywords": [
+        "button",
+        "dead end",
+        "focus",
+        "form",
+        "homepage",
+        "interaction states",
+        "keyboard",
+        "landing page",
+        "links",
+        "menu",
+        "modern",
+        "navigation",
+        "recovery",
+        "responsive",
+        "states",
+        "web"
+      ]
+    },
+    "web-interaction-motion-check": {
+      "primary": [
+        "motion",
+        "interaction design"
+      ],
+      "keywords": [
+        "3d",
+        "button",
+        "calculator",
+        "carousel",
+        "form",
+        "glass",
+        "gradient",
+        "homepage",
+        "interaction design",
+        "landing page",
+        "lead magnet",
+        "map",
+        "modern",
+        "motion",
+        "performance",
+        "pricing",
+        "procedural graphics",
+        "states",
+        "transparency",
+        "web"
+      ]
+    },
+    "web-search-performance-check": {
+      "primary": [
+        "seo",
+        "geo",
+        "loading"
+      ],
+      "keywords": [
+        "ai search",
+        "canonical",
+        "cls",
+        "core web vitals",
+        "crawl",
+        "geo",
+        "homepage",
+        "hreflang",
+        "inp",
+        "landing page",
+        "lcp",
+        "loading",
+        "metadata",
+        "modern",
+        "performance",
+        "robots",
+        "seo",
+        "sitemap",
+        "structured data",
+        "web"
+      ]
+    },
+    "web-page-acceptance-check": {
+      "primary": [
+        "homepage",
+        "landing page",
+        "acceptance"
+      ],
+      "keywords": [
+        "acceptance",
+        "brand identity",
+        "completeness",
+        "components",
+        "copywriting",
+        "favicon",
+        "geo",
+        "homepage",
+        "landing page",
+        "modern",
+        "motion",
+        "navigation",
+        "performance",
+        "requirement coverage",
+        "requirements",
+        "responsive",
+        "seo",
+        "web"
+      ]
+    },
+    "homepage-landing": {
+      "primary": [
+        "homepage",
+        "landing page"
+      ],
+      "keywords": [
+        "components",
+        "composition",
+        "finish",
+        "form",
+        "geo",
+        "geometry",
+        "homepage",
+        "landing page",
+        "modern",
+        "motion",
+        "navigation",
+        "palette",
+        "performance",
+        "redesign",
+        "seo",
+        "states",
+        "typography",
+        "visual design",
+        "web"
       ]
     }
   },

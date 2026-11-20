@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vibe · Web art direction"
+  short_description: "References, visual systems, materials and interaction design"
+  default_prompt: "Use $vibe-web-art-direction to develop a distinctive visual and interaction system for this homepage or landing page."

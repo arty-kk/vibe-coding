@@ -31,8 +31,8 @@ class TopicCatalogTests(unittest.TestCase):
 
     def test_closed_keys_cover_all_workflows_and_reject_orphans(self):
         data = build_topics(PLUGIN,self.rows,self.flows)
-        self.assertEqual(45,len(data['domains']))
-        self.assertEqual(162,len(data['topics']))
+        self.assertEqual(48,len(data['domains']))
+        self.assertEqual(180,len(data['topics']))
         self.assertEqual({row['id'] for row in self.rows},{identity for topic in data['topics'] for identity in topic['recipe_ids']})
         self.reject(lambda value:value['topics'].pop('auth-permissions'))
         self.reject(lambda value:value['topics'].update(invented_topic={'primary':['invented'],'keywords':['invented']}))

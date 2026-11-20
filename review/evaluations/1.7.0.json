@@ -1,0 +1,1610 @@
+{
+  "release": "1.7.0",
+  "baseline": {
+    "file": "review/evaluations/ci-temp-2026-10-25.json",
+    "sha256": "ad175d0328650186cb789880f087084003702acbddf88aa93f4ff1c5e52e553e",
+    "commit": "10410963f8c835969ff31d875166d24b6bc931e6"
+  },
+  "changes": {
+    ".claude-plugin/marketplace.json": {
+      "before": "3e2a63eb4918fcbe1629697d3f55356ed57c478f9d6f5af0be1d37610e38aec9",
+      "after": "8200856dc5895f937ac105461dbf1f83df2f0080fb80cc23852f3bed6b6bee87",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    ".claude-plugin/plugin.json": {
+      "before": "1409cb8084a81808c79c0bc85565ae68d9fa114f90c0fb2b91d46e6863f365ab",
+      "after": "75ed38dcedd24be9676a9a7ef0597e5dd8603f26cb00b75d67e51a1ee70aa612",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "CHANGELOG.md": {
+      "before": "6739dff1b80fb4f86816bd7ccb045e78180ca934bfb90088635bc0e11fbc8c96",
+      "after": "bae5b81f52fb51b604857c15ad279cb18dbd25ad93cfa4381f8bfc2aa40a70f0",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "README.md": {
+      "before": "242920bcd2b8eb7a8fa084954bb90c378b6d30616c22770941e1268df003541d",
+      "after": "fe7f2e85047bc6622ddba74d0297c1977769a7a41d3e966c1289f07b9e3beca4",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "README.ru.md": {
+      "before": "3e7dd38fcbf39f4c43647b360ea7bfd16ff5febf022d6e71d9da4af8139a02e5",
+      "after": "61c7537d3ad6fc10e532655c09566d36fea1b020fff080dfb5974afb8e11f7ba",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/404.html": {
+      "before": "6c01bd492d750b680283f0ebc0a22d7f6c19b27cc13000ca0470d46e9f06de10",
+      "after": "2ea40d2f34a4667677f7b7fdfe7f652d6a97f02fe81c7fe9af5bd3dd172694aa",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/es/index.html": {
+      "before": "ab04b6525c5174039bdd508c4b314f3fabc2dd7f6ea128668a56994bf8a10be6",
+      "after": "4cb0ac24aa7bce7a766aeb6060c2c97b2a6383e0906c9a07d1a1313232efbd83",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/es/privacy.html": {
+      "before": "d10db6ae5f1500c03a4cb14cf41d8b48e23a65bc60e058cf65bea661a8f5c3c6",
+      "after": "e859345d372032c03da0991042c9db43e8467f9edbd2c66fbffa8027eff96876",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/es/terms.html": {
+      "before": "18551a8c988c49520e93b3698315637a3207dbc045c69ff3757e16a475bca6b3",
+      "after": "7ee73b1adf9f2fb740ee528a4c13a6aaa4dad944194c8479dee4654a09f174cd",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/es/workflows/index.html": {
+      "before": "93d2a5b078c53fbd92425e6415c5d82d7ae819c2cf370dc589bf09d02e6152a1",
+      "after": "23d7271cd147a4824404e54c1c77128de3c44cf2025b545a727970af725b8ef4",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/index.html": {
+      "before": "e0773dcf6b565a4edb9227e7d34512176b5c724e59a054ed3d9c52d05a3de679",
+      "after": "d1767c47c39ef934fb94492039d19835e28df6c377ddf02eeb3e188434330b14",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/privacy.html": {
+      "before": "b7f48c3215f4cce5b3bd4f96e5b22a6d2284480e69b246c39352cfad3352156e",
+      "after": "42183602f69791af900b5218ae1fa3739378c881f3868099cbccb54fc6ce1f16",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/ru/index.html": {
+      "before": "0ea236bbdfa4f7846e0213705cbfd41e5eb0b774d39a72eec591d69ce4026b66",
+      "after": "88cc1e5f6b54fc979bbeeb2e8498a1783bfb7699384fcbe3d81fb7ff60e8c02e",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/ru/privacy.html": {
+      "before": "3d8a703df74d3742c0bc80003e2a93f6426391aad15dd0c09c784608959605e3",
+      "after": "11af720e3c96b035c05d5c5c1b7809e10da53ecaae42ff23eb77768fa0500de8",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/ru/terms.html": {
+      "before": "5f72dbdf43c92514ddc38af3722ef0506279aac8d7a7fe08d7bf66cfb57ecf86",
+      "after": "2dfe2b261526035da425d5d80a881580d95ba273c3b260346e308185777fe54c",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/ru/workflows/index.html": {
+      "before": "666eee2d43b6eb2310da77810fa53091fba7a7e1da75ef7cf4b8a9f23c47e058",
+      "after": "56e3dadcdb666d742a0bb44e72b92470ad6ffa1359e70a8691bba0be72cb9227",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/sitemap.xml": {
+      "before": "d62a48a232667b99d0f444b9d7859fbfd98f89b1b3b6eac56c75a37be5c1a262",
+      "after": "82fae003b20f815aca0cc9d712cf81edfd310760219fa3e063734998f1ecc58d",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/social-card.png": {
+      "before": "4ac9bf512cf80619f2a7d091eda16c81f7cf58d00e309578488cfe79b2093a0c",
+      "after": "ec900a1b404e82cd7271b4b7a672bce83d78fc16668927cf60c916ff9d3275c8",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/terms.html": {
+      "before": "de3de10bb90ebb1ef17620c0f6837016fb713c922210882044d92962fc5e3ed7",
+      "after": "136423a1796071879a4e082bc9f43ceaf561fa831489a32ee30961eb6e16248a",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/accessibility-audit/index.html": {
+      "before": "9b26bb9cf3785ff2b5454415ce001d94c84526f038d0bd510241400c69ee255e",
+      "after": "24cd6c8dc352c15075c51f46068e6d152257ffebf0348969b45c4b9b38fe922c",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/accessibility-polish/index.html": {
+      "before": "c0d9e03c53d53e9355d5276d06c64a7f5ad5d6118ffc91a46cbc5e3729e5ceb5",
+      "after": "58886de80c3bf3f65e124bb90fbd7a98dee35065cdd9d34c9884726e3492a1ca",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/agent-harness-audit/index.html": {
+      "before": "8f3c14121dc66d4c745caae8ba8375a7b44797b9be033abf51c888016d5266f6",
+      "after": "44bfa822d5ecfd49450b70f7b57e8d02f51817810a5bfd5e2ee0d01be9cb017f",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/agent-harness-polish/index.html": {
+      "before": "96d2c6f3e7d7421b1ed1b36020f3c601c6e2a1414d0fd57c75dffb72197a2a26",
+      "after": "72adce9e6b5182c30b739b4644a67e3faa7b8f467ce16bf0bb65ee7bf6b554ea",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/agent-harness-replay-failure-check/index.html": {
+      "before": "9e2a8d304a36d758d4c258546d744c4ad659edead8440b344b40748fcb3f22d6",
+      "after": "00f089b54206726ca4d239fda933b8f62a565bd9f49108e4a8873774e21bdaea",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/ai-evaluation-audit/index.html": {
+      "before": "5bf5102e6931c38c71bbb950625577ac59a6599402ae9bc55e8e4e9038784362",
+      "after": "938264729402a8c85860863fa74fac87aaf6b3bc82e566248f03c308e07397c6",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/ai-evaluation-polish/index.html": {
+      "before": "419360ee7dc6f665ccf85b471c5c9a0ae9607a0fb868e389ed15c4f9573cf08f",
+      "after": "4d3928974cced99b7ae4adfb304cc75c0aa42761412a05e41d6ce8b27379514b",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/ai-feature-audit/index.html": {
+      "before": "19434f7839ab1494bc7d0807318052449cf24f02563f6798f5f2339286fa12e5",
+      "after": "d75ff062c606921960aa68f05a3c2c4e71c6ee0ac8d8d1c51723b8a3a4203800",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/ai-feature-polish/index.html": {
+      "before": "e9e440dfac6ee3c8f8a1b0f808dead980f628ce22b8cafe1582b80d757c6c949",
+      "after": "ca94c6c78b75103d170cd8717df1d6d14b9654523df00a40ede94d4e9d02a9f7",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/ai-ml-problem-framing/index.html": {
+      "before": "8da48f8af733b0cd11d08ff18e9ec9dba33f6bdc9842b9cd0f5183c4fd933421",
+      "after": "645d9d3eaccee38d1b3bd4f8de7618d6653d4459cf3fc015fd43acfe61a4bca2",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/ai-navigation-map/index.html": {
+      "before": "ab9374bbad5e7f382b25043689c8b9ddfddc7583918b6068d55daf40cc04e4dc",
+      "after": "7d6af5b91d5cbc89754ede06ae8a5c9b5b9c0ed79957f227d39ff4ce1c3dd2a6",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/ai-safety-governance-audit/index.html": {
+      "before": "1a0e0c150f794fd2a050d50d9ce6383b353060ba317226102b74c8f4fd904d06",
+      "after": "8c2ebfcd075a3f808cfe2624f104ea641fae031e6efb28a139626c436f311659",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/ai-safety-governance-polish/index.html": {
+      "before": "916926352b4595b70e9879da74f47040feb96923138885c2bd853838cdd6e5f5",
+      "after": "386a611f113acb5dbb5a1f131da7aa82bb9c2a13c5aa175eba47e471ecfadcae",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/api-audit/index.html": {
+      "before": "87996560a25dfbf930699e0abb2ff42ccce0caf05d2fddc799bee28f19e4096c",
+      "after": "34e1983a11eeff074441b7d6550132a9d2ebac4cbd2853ddf4e3d5578e304efb",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/api-contract-compatibility-check/index.html": {
+      "before": "afd35c159069215d318f90c74ed812f09660d2fbbe97fab34640ad5779ee1596",
+      "after": "2db5e3f35b7f0081489499a9cc8cf8a112c9131c0822baac703b1604330fdd17",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/api-contract-evolution-audit/index.html": {
+      "before": "abb2b1d5ddcfa7227b9fc3eaf749fd3c3801da333255d9f6c8209f853200d1ec",
+      "after": "e272f4dec887659b89cc094a496a6679d8271451f141543b123696547b448e91",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/api-contract-evolution-polish/index.html": {
+      "before": "3f9477a4c6cf99e420ee89a8ca490e5324a58c30e3392d04a5a787cefc468acd",
+      "after": "2e0ac3828f9d3df9e538bc05de1a2787785893ea8e3c59c701fd7ddf4e7026fd",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/api-navigation-map/index.html": {
+      "before": "caca4da24b98538bf19e87755d3565270df2ebbd2566279fef47e8d238afa10c",
+      "after": "937f136849eb1e43534decbcff5f3b2be9a269a90e16985261292d0e1cb94cf9",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/api-polish/index.html": {
+      "before": "b417b3f4e03acc93496b8ad6703b5c1bc792cb774c8857cb5761f43db8524be4",
+      "after": "97f60f5a21dfed48d6ce3e749c915fcb762163f77bbcf81a834e92d601e13af0",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/audit-logging-compliance-audit/index.html": {
+      "before": "e062ec60200e4e40a7ea01ff5108466fb95269dc570d494ffc32a63e4deb65d0",
+      "after": "71bda57bda0a0ee621ef1c3351479fb5ae54a3d3f4b6265bbb3b9d0a7ff07c7b",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/audit-logging-compliance-polish/index.html": {
+      "before": "32a98abba8ae06cae366b51f292bda22f1fffde99e2e839eea6fd7531f30a675",
+      "after": "9b5358b6da8f8b3a6979deac445bf94647fa6940c9a7edaa71e8721c7b097e12",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/audit-trail-integrity-check/index.html": {
+      "before": "8a65dbf10c0477f6780e284fb81821fbc16deb51578397faee059ddb05b9e47c",
+      "after": "6328415c0da69113915cbd99e51776ef27564fc4c8976576ec56d59a933cc52f",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/auth-entitlements-map/index.html": {
+      "before": "752b722626add8aeaa2427ba414953371d26a5461169305569af916b72230298",
+      "after": "c062bcc965fc745df07dc7a84fb4b2ff22e24c0fba9f289ce98736fdd7137bbf",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/auth-permissions-audit/index.html": {
+      "before": "09fce3893cbeec158cb95f59bcf22fc2d0a5c2be052f4be0a35ec4456a8b3859",
+      "after": "e1cdf3f577f21c2015a22452defeb6a97e8c27c473550323913ee2cc29783c5c",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/auth-permissions-polish/index.html": {
+      "before": "1af4870a3ed094ba9d1364d584d103dfd43e1f1eb508b748cdc7c562c6ad77d6",
+      "after": "fb5af748c43dbbe6dce6cb59fa17458579c251eff2a0a9a6addfc287a5055fe5",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/backend-integrations-audit/index.html": {
+      "before": "f8aa0ed3f61ee0aefce996ac33a41ad77cb7cece0304180967212101f7d14a75",
+      "after": "80ec5d2db0869501e51cf4281df3e8b3e66f4495ce1ef01b2b02b62ca0dde3b3",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/backend-integrations-polish/index.html": {
+      "before": "ddd78daca58469a2aabb7c691709be4a36a7fdd4ff3876610db32c11579d6d0a",
+      "after": "5f55111a0dbbe3a3c08459a1ceca303a8bbb2387037996581d5236172a615054",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/background-jobs-audit/index.html": {
+      "before": "c38ad5063a0104a672fc2c98cf2e02de678ff8038f9142ebba27f95e4682cafc",
+      "after": "eb5e004a69189410c4a862d09d34f1305b3bfcc6b163cb24689910b9113dfa02",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/background-jobs-polish/index.html": {
+      "before": "f3663152889633c190da952d8ef11de4b8f050eefac9340ec3eca29fed6dd6ee",
+      "after": "cd4db21bb0cabcebd3e86f1f136515ac97728899476fb563b690aa98001634c3",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/behavior-check/index.html": {
+      "before": "9ae21ff4ed6be59a0ef0d28deb4136434acbd6f2bf4df10b324bbd6c4db1f0d5",
+      "after": "96370706f34f49c979806a6ec968ac70b1e2fd0ed8564fa542257ce18b42f1fa",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/billing-entitlements-audit/index.html": {
+      "before": "7a4c5dc8d7e29d03a5ea3fcac07850ababb9a3646876b39c63fe480ec9d2a369",
+      "after": "b652619fb022ce29536caec73aa560b38f2269525a711729bd60ae288e079e28",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/billing-entitlements-polish/index.html": {
+      "before": "5c21748c42321a5b10123895c6a794ef601f70e6577f2f2e1a93f3135a945f1f",
+      "after": "78932dd00edd2cbedafc05db4025f620a078f5bb0fcd81245a31da3eeaacaef5",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/bot-audit/index.html": {
+      "before": "3bdb17158a24571261b7263eebdd519d641282fef4239a168e77bd3598f1d8c6",
+      "after": "2d11e5d1ecf7445a89180e8afec6d7082070f8f7174c3daff60e799a932312b1",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/bot-navigation-map/index.html": {
+      "before": "907a8a95ab64cbd2291fc41ec20d033c80bde90b295c12117fd46ed7a8303c33",
+      "after": "74113d2c9c92c61f51650b7be5004491859fe5b92da13e656f23e1365d0b0de6",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/bot-polish/index.html": {
+      "before": "6f11b578f450032327edb097a3ffa1b50b3f7f797a2ad44dd7a4a5c632b75ae3",
+      "after": "f4d5cead8fac6cae1dfb8bafedb4b4295c85bfb86ff98f97d28f7eb2b9385adf",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/browser-extension-audit/index.html": {
+      "before": "d0cc7f06bf7dab935c380aa4d02bdd4065d9dfc6983c9a3ba8535efd3d8243d3",
+      "after": "0b056ae245ede1a31e33e69dc55b8c29736e7b3e7b791606266859d0e172f2f2",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/browser-extension-polish/index.html": {
+      "before": "7973259eda2a326246972fc6a2d8e9adbc95325a71b879971f4f8811b3140d5e",
+      "after": "d928332a04436bf348a1ebac33b40e95167a4e4a64a7ab292d8f8083ae260a25",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/build-supply-chain-audit/index.html": {
+      "before": "4f8b97bb36282601a265b077de7461bb7f4a36f52f48db9e0fc316690cb27b64",
+      "after": "c2e31f695cc9bbddae2861ecd251d138bf03672701819024a2259d6692328437",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/build-supply-chain-polish/index.html": {
+      "before": "2254c169e859ee3fe535fd31bab247c9377b640217bc8d235c08dc37fea774bb",
+      "after": "8ff1deafdb67e98e15eb351cca2dd8ace851299407e85d5ccb845fab003858c8",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/cache-coherency-check/index.html": {
+      "before": "d6e270be6054e8a74fa764eb8a67dc8000f1496c8583dba7d6fdf52743390bb9",
+      "after": "3504540b160503f3353d079c827ff040da69861eb44efcb71b872b72d5453fa6",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/cache-invalidation-audit/index.html": {
+      "before": "29342404c1e7e8d12c82e385c3e1ca1a26a5c858b08c17e54fcb49353f43fcba",
+      "after": "b4e1a2511253477b977044c46eb6249763838f5d23ec7e361c5820adfbd26f7a",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/cache-invalidation-polish/index.html": {
+      "before": "4bf54239900c17a6bf3d04c42286dcdb49a8b387f2d94c509eea4b675422abc2",
+      "after": "cbe028ab4223287f112d36f8594754797b629d22dbd96350348941e46ee6fdfb",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/celery-delivery-shutdown-check/index.html": {
+      "before": "4128f0c24c55677080276ce848481469767862ddc49b442681226d831aa1e665",
+      "after": "5bb0b89c80a5156ba82e06ae54292cef383c85427c702b9ac01e144f4528897b",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/celery-workers-audit/index.html": {
+      "before": "7ff6418d1c524122641d07bdaa9a022ead9ef118290ab54c7fd1b8ec3109cf63",
+      "after": "3eec8a29c79f30ce73fde826bb700d095b586629b8ce392c5344ff63d7f9cd3d",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/celery-workers-polish/index.html": {
+      "before": "4648ac3bbcbdc07ecd81f0888fbd35a365b4881fc7e31cd50c909a50050e1e12",
+      "after": "3b00a77224f90e9138abbc2ce20d29c8c5d86c2d8ba02470f4c763da17405fbc",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/clickhouse-audit/index.html": {
+      "before": "b35042ca228e2f5ea0cd7511e98905d03bf210ee706983013e33878536ba34dd",
+      "after": "12b72489e2b5f9e92b2b24596df635b0eb28980db12c1149c525fa40d60f3747",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/clickhouse-ingestion-query-load-check/index.html": {
+      "before": "0ba979581a8aa0414ae60ffc3f51e8f27237f485d29bd4341b8dc57c157be7a6",
+      "after": "bee8059e957de245951fc2afe7fb8fea399a4926a24984949a5b7bf1555acdff",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/clickhouse-polish/index.html": {
+      "before": "e33a1e97b5c1d59e00a3abe4b2d8e139acb72583d075723d23768e4fe380cd4d",
+      "after": "9ebe46e50f1ffe6f47ae28c87424fb9b14d21c2da9749b4ccedde2e19457f526",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/compatibility-golden-master-check/index.html": {
+      "before": "8779fae98dd6b5bae093373bafedd28f1bbcb5af3fc8c84acddee49b06abefc9",
+      "after": "e7a1bce1eede23cb053dd22daad7c631c099a0662bf96ee513aa320af60a9afc",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/consistency-invariants-audit/index.html": {
+      "before": "c558b51cc3cbba3d73c15422dd9854ddd3bc20c8dda2a7c32d8350374521632e",
+      "after": "6a898bc9e486466b8433f38bb6e72435ac98bbe5c7d8099a71f9dee14c4e8a5e",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/consistency-invariants-polish/index.html": {
+      "before": "6dd302a9a1e4f5fd36e04114a4a394a23fe638c50c0a688718b604288c35765a",
+      "after": "0e5b445df783605b6ffab1eecdccee6141b07dd60761f9f3ee82a54331f3240c",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/data-model-audit/index.html": {
+      "before": "925d27a78fc7e41f59bf4e83eb71d8a381b25d75a026ef56cd470d705620c973",
+      "after": "e8be3dc31780133fa334005d454369ebf6c69fd44af045803d39d58eeaa0eca2",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/data-model-polish/index.html": {
+      "before": "bc27fb9632e31d61862d06060f8d72e335ee7e5131475d660ac705602f522175",
+      "after": "46ac72f13f9dc891bb50a92f414bbc8aaaa5be861daada344ecfa14d9a63e4fe",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/data-pipeline-quality-audit/index.html": {
+      "before": "c3522d3e201a3039c921b3d04ec76de42fc31c7dfaf1701116dc9fe4b0a51393",
+      "after": "1ed51fb0e64d0032f328718bf22556c32386eb9d277fa6123f565d56f16271d4",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/data-pipeline-quality-polish/index.html": {
+      "before": "62d1048ea19ff8c57df7b0ddac6ee9987e308a2e042900e807b54cc98867a536",
+      "after": "bcf08326a5713f4991535a9b696c482292a146c0fbbe725e34c5d04df5402c2b",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/delivery-recovery-audit/index.html": {
+      "before": "5d1763917902f1df5f7361f21c63a5a14df47913e0d05cf93979a2149a7da066",
+      "after": "e48c5133bff11f1cc563399b1d89f08320ed5ce29dffbed594003b48b64cdd47",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/delivery-recovery-polish/index.html": {
+      "before": "b5d1ee8f5f72aaed4c30489f7d2bd851b13589fd9142c0e5bf4561ce8a1f0212",
+      "after": "13ac4fbbd4750a10d94d502e167c33ba2d73d17731c7d04946095064a40258ca",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/delivery-restore-rollback-check/index.html": {
+      "before": "b03c3c4b46b184ec9ec62136877826e62bc554414c9111b25ad9d43b24c99ffe",
+      "after": "255adcb3b2c6da44999eed8956e82eb8b80793dc0ae505fee3ebd61fb3ce69b8",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/deploy-bootstrap/index.html": {
+      "before": "fff4af06fcd3717755eda1626042e20266348dff54a0cf106841312b45c2f16e",
+      "after": "cb25fb01166f547df864390931b3e8e49fbea13d8670d5823ba535a7e0c1bc3d",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/design-gen/index.html": {
+      "before": "dfd490c4027c4b7c7f3d02c8f3c2597d6e18cb151610ba84b1b92365c08783c9",
+      "after": "a750a2bc929ffb05274751e829003f63463a363195b8bade2cbe98138b725be1",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/design-system-audit/index.html": {
+      "before": "21653c6dc6766b4245d023441110bed75fa1986525d90599352a4560f3eec615",
+      "after": "d2429b810772a264a76023a00914e4a035380dbabe74ca47f2b2ffb30152c1d6",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/design-system-polish/index.html": {
+      "before": "5e316a78bd2cc088f2c70fa2a1cdbcc813956c40609244d70bb3ee0b03126ee7",
+      "after": "98f298bdb2ab3dbdddc454ca604ff7bc5a7f25cd569104cec875d82cc3d87138",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/desktop-app-audit/index.html": {
+      "before": "2ef0aea390cfb4198045e767fc8b7854fe2b3c5baa73cbef1ce9f79c4d73e4f1",
+      "after": "1dc3bdec2309cc1b36f6653e030f4ba0d5fbdff14d15a776d2b9225aa85c0634",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/desktop-app-polish/index.html": {
+      "before": "be2d48f74e841354941e7b87e4ecf5cbc2cd9ab279c59d495a87be13c6fe048d",
+      "after": "f37ca2c497452fd03c860f86a0d9717cb6b44262e063a70409a89f833f22c08a",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/documentation-sync-audit/index.html": {
+      "before": "a48cb649983c60f471a6ab8f5d42ca7211c70794458e1e708ac0a5df9513ad47",
+      "after": "4de66588dba7325bcf5ffa2b059f415bd6bd06332e78ed022ec6b5f6fbf66e34",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/documentation-sync-polish/index.html": {
+      "before": "337f7d9072fef160e2dabdbb2fc18b5c611d168261ea7414c4fd7901df198074",
+      "after": "5c0dee6c8f83954fc1a446a6fd278d7faed5be1f1d25adc7c0adf1bf44040191",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/domain-data-map/index.html": {
+      "before": "e97dbd67b7f42802c1514e70c99b20bc69af644498a6a9eb8bd747172c29c04d",
+      "after": "6d252031e91f217f59a3a0454f8f1495b517133c2e7bd881996083b607d018be",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/evidence-normalization/index.html": {
+      "before": "b4727c741e52109d56ec1e26bd6dec627b70bda4c071832185c5fbb728421f6b",
+      "after": "536e8870a3436a3058e97099cacb8cfbff7ae91a0a579a994344298b30d2aebd",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/evolution-improvement/index.html": {
+      "before": "34e00fcd52131185ea11fcc22e323df2569540aa573f66a5656c31e233cd186b",
+      "after": "f35caa49a5bf9f0a1d14b5d67c8021bf117050e0a0d8fca8032353f172473225",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/experiment-design-audit/index.html": {
+      "before": "c736caae2b54b6b809593fe6e6ecab71b16f438628a0ade5fe0c7b2cdd4e252e",
+      "after": "9fe69614bf33d844f5314d91e0d599f29dace5f8ed533d462332058dec21f07d",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/experiment-design-polish/index.html": {
+      "before": "37480dc293e7e8067102963799d435080ad4e5aa3052fbfd10e9b152475e2d5d",
+      "after": "05ee51777e526f3cf050397c4a8bc6f1c2c86bb4b1adce7b1c7a334236b5c579",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/feature-flag-exposure-rollback-check/index.html": {
+      "before": "e99826021dd005e4da5f4267acbefe848c3913ca5aca8f29182f23c98509c800",
+      "after": "40f0b6d27d038317ca1b34bcff40e83ef332f0d071200b8fc1255fd51f1ba11a",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/feature-flags-rollout-audit/index.html": {
+      "before": "56e140cbbd36274dec07d792413317ccf193ad9254f218b156a35555ab1b4262",
+      "after": "ce6d19251781b31ea0219d1b770ede886e14fac0511aa2ba408d2c1d2fc48d46",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/feature-flags-rollout-polish/index.html": {
+      "before": "b0a2476d8ad60f9d6a38f90779e3abc9f4011536ea36babb6134c3504df77cf3",
+      "after": "acdf7d17580d39878d90c90fe45d9e854c97343887ee1ccfa7666b8d1c0aa41f",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/form-data-ui-audit/index.html": {
+      "before": "b0bc45381d9f4e4581d895edadaf12aed27ff93a5a6f8168091124542ab7f92a",
+      "after": "1fefeaafcdd5d38674d09901577ae8967e47e3d569847e67e46bcd2c2c3ec17d",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/form-data-ui-polish/index.html": {
+      "before": "a54aeba447c2154044c4d932f3700e551750316aea36b1b70302e5f5012e5f29",
+      "after": "01bad9509804499eed9c1f468f6c020e16d9a7771d81ec8b7cb1ddb4a4a17fa8",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/go-rust-concurrency-shutdown-check/index.html": {
+      "before": "76895c9930277f5c66983da638ec8f11debe33be6d865832c60699cd0a3090c1",
+      "after": "3edce32cbd9ca07eba85d03f9a77c52ce288fad57e5e386b389983e78c83f138",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/go-rust-microservices-audit/index.html": {
+      "before": "a1c88e9f0407c8790276d3a4afadbb6f86472347523d89652c3b722d63b52885",
+      "after": "0b8193ff0f9e09966e9ff79a4687bca50dda2c22be40c94f354e7137bcf2398b",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/go-rust-microservices-polish/index.html": {
+      "before": "975ca481bd70762bf292e34593736a80f3ed07fe8c74912cec3dbf79b10a5972",
+      "after": "d833401006ca79b2ff1157c89dbd9ff8af1ac20d2986000c17dd2341ea307e57",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/idempotency-concurrency-audit/index.html": {
+      "before": "89292bf62517b5e31a4d22aaba70c6b54450b39aecbb9eaa25bbb80a3a0ea673",
+      "after": "f0846f9edb821278eb6e10d0fbeb0289b5c2be86d3c064a92c879ea713affafc",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/idempotency-concurrency-polish/index.html": {
+      "before": "bb061f3cf4d2257a1e3aca1b1de3e9bf0eb5e0f885e5e9804b5934b35d14fbcc",
+      "after": "e075438b54623a75c2501353944fd6ad2e2686fc28d8d077cccfc93d8ef1dc5e",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/incident-recovery-check/index.html": {
+      "before": "49cb9825ac45b8cac3b723474fa79c938bb2f4f1e115c7678ab3bf0c539384f0",
+      "after": "2e815854e5deba679ec16dcf58e8af91067a49fcf16113fedcfae37402aca470",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/incident-remediation-polish/index.html": {
+      "before": "0a0abfb5e64104d1b2d97aea4d6c5ed3a2db77ce52eeaaeaaab12e1ff6df4f5e",
+      "after": "8c57260700087567367c6c8ff7f02ea2e75c038a01db5fcb23c09b7e9cda8214",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/incident-triage-audit/index.html": {
+      "before": "5d3d0ece4a0740668448125e410587b5e0aca33741182ed51dc06057aaf9a6a0",
+      "after": "157c7e075ebbbd97e91ed6e1e18f936e0638955c323d9d3da1a6c56f0cef22de",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/index.html": {
+      "before": "c4152cc4563eca6bfa119cd99ee581a8ef8f18f133bde048f34fcc877ea15ba4",
+      "after": "0da69fcdec9df6664db7cc3cad3a35361c87794fb925ae17978f26792cd0ac54",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/infra-ops-audit/index.html": {
+      "before": "660a4be7068d25facf4deb1905b57e54bb8e80e1b741f3012693f7383caec780",
+      "after": "0ab478387e90e496866c15c4e2c6f7d77a623556d4f58cc53836ef460c0ff45d",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/infra-ops-polish/index.html": {
+      "before": "4e37ef81190e2b2d85e764c81b2a23af35260f8ca3859b01b01e598f6f8d8141",
+      "after": "1f3814c10760bf858a661b46fd93baec7678c6e0f95d5542521323fb7a939de8",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/instant-architecture-probe/index.html": {
+      "before": "7a850ccae6313166925b47bf28adbc7ed2834b5c5cd10a0f81678ffffee4128c",
+      "after": "5b9af733e503befbc033ed0b74071c18b6b448faea3ad43e9487fe254a023b20",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/instant-backend-probe/index.html": {
+      "before": "4bc5571cf76cfde8d886edafa5a5053e0294d6040e9994ef6965481c04f28cf2",
+      "after": "c901381b523847c206b25a1656d23d6c2f7acee8d0ed54a168558c7244afd995",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/instant-bug-fix-polish/index.html": {
+      "before": "5988b3b6b1d6ddf1626c81a19754d03927102fee4bf8f2a97f9670edb7969c24",
+      "after": "d7e0b839733e7e7c2e6d3543878fbf5549d0c3ed80f59c1be16f7428ce2f64f3",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/instant-frontend-probe/index.html": {
+      "before": "d0bb0d158f072a6ea2b12a74c4b5d8cdea3377d2efc4895ccec8ac5e9d7231d5",
+      "after": "7f7a2e1b06c15b88454c62e282c25a58d81e2c07efb90483db8c08477a3516cd",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/instant-ui-ux-visual-probe/index.html": {
+      "before": "156f7f1a649911743338bd1eb97b4c84f5509139eab4532ba964a3d6947ec04b",
+      "after": "d0733b894926a5924a72e7b377cdf113f00d731236e77353bd9b0f2d2915b313",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/integration-map/index.html": {
+      "before": "b30e18fbb3dcb0fc7a1d4f31f24ea9ee3be0561c4c9264c79655e62ea6fec78f",
+      "after": "9224699760131058070792d1c560995aec9de75b2b374804ff0dc1933a343a60",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/iteration-closure/index.html": {
+      "before": "f8efdd72cea3cc2f20bdb283ef662637dd80c4ea63e9d674b3cb43b557a38689",
+      "after": "4cf66b02c2d65ed06f8f5ccc6b06dedec9f58a5ea130f1f5a6488d29065aac05",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/kafka-redpanda-audit/index.html": {
+      "before": "73d524940710338b23d6f957bfdb28361e6a506b7c0070791e1f166801b6a652",
+      "after": "b849fe2d6899e8019995343b946d2cb5f8ea32a084e95b183b077668e21ddfbc",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/kafka-redpanda-polish/index.html": {
+      "before": "74e4f3561c68a8784f5e0818828549d8d6773b27e8c2c411a8c8cdf7e3df1422",
+      "after": "9dcb55e502ee35705e42b45e448b7a3c81697322544155b8c21377b5464bc195",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/kafka-redpanda-rebalance-failure-check/index.html": {
+      "before": "dfd4887c92911e47995433326bf4bfe3b9c5c22c5ade4d81f367742c762f0045",
+      "after": "4eb9359313f0b57f3a6a283f47e204c85a688e679d2e65b1ef874c76a59ed31e",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/kubernetes-platform-audit/index.html": {
+      "before": "fd348a5a140b416cc1f60dc6139cfdba5e172a1734d0936c4dc7107fb6f87d4e",
+      "after": "e1e9b6aa6e515636ad7d5c7770d76018f103b29fb76239385e0bb4bbcc06170f",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/kubernetes-platform-polish/index.html": {
+      "before": "46693844f68c8512ee42e0e52d7efe445f53a80cf6c5a05809ae63fc0ca4e73b",
+      "after": "b82484ba24fa616c71ebf676b6cb418c7631bbfa8fa2eadd12e0ed836c4be6a7",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/kubernetes-rollout-failure-check/index.html": {
+      "before": "334df5b5e4c005cccb0e3becd4090d7e778262aefdcb6b6986e29fdb5aa8f61c",
+      "after": "9b5807561173ec4962ea193475052c4ef1d28c5d8aafc02e8eacb223d75c5c86",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/llm-agent-tools-audit/index.html": {
+      "before": "1669779254f2246f352849985bced051734404af0ee97aaf4cec5af3ebe7d387",
+      "after": "740a0f6d37b9edd751e321f52f7e57665140590732fe9b459f5772ded115bb8f",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/llm-agent-tools-polish/index.html": {
+      "before": "eeb7198613af668908f0678fcb4776f925cdda34cca0a0e747466d56137785a2",
+      "after": "cdeb91da6be68f565d931009c5cb725048c4168bb62170a4d27dbb325c148cb4",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/local-client-runtime-security-check/index.html": {
+      "before": "3c3a74858e3560907ed4dfcd35fc20193d5ccdf1266d8c23ef5b86b579dccfef",
+      "after": "eb341c1794f724982add665d43769aee9f62b1498f1f355e1e1ed3fa7d3ee900",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/localization-audit/index.html": {
+      "before": "6fc75aedfb4e35aa0d08ea1621a237a58a7dbde1f73c06b0073e5c0d17127ae0",
+      "after": "cc1fb5fefd90cea1b035b54af4929257f4f1ff84e75f38c970f2b7575c221f2c",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/localization-polish/index.html": {
+      "before": "3843e6b92f36679f14476a5a328dc91c6702a321456e9bb2dc7e718482699c6f",
+      "after": "98503791c43c6a2d6830b1a90f737c3a1f39eb7b1e9f14e29edfb57e14b86cac",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/map-refresh-polish/index.html": {
+      "before": "04a15141517a21fe5edbb5521f7969847a7ff7bc5f2b92801efc824b49c54e27",
+      "after": "ca4f9b9c175da88cf1871c630561b05668420b4e220cf1a815066e32d306b922",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/map-staleness-check/index.html": {
+      "before": "7e3b938b1c16738c7354fddc0d9383357677bf667922013ece9bd42ea914322d",
+      "after": "ef6ce0077f656d6be6a14b2e0e414e970674dd930c7fbe5f1bbb8593a415123b",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/map-synthesis/index.html": {
+      "before": "a8fb2022136a5691c7f935122597f95c443a53b0c68f330c2962b9d2207f61b8",
+      "after": "58be868b06f9844b646d5cee6d7b4a325bc7d330496fc2c962520d4c1c85444e",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/mcp-protocol-auth-check/index.html": {
+      "before": "d9c8e0f8ffbe8f4ab5d4466163a504735502b6c43027e1ee1482c6d6037c2e6e",
+      "after": "5f6f85a5e28c96a3f259dd21f51c16e6c79002d1f17b663572544613b77ed583",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/mcp-server-audit/index.html": {
+      "before": "d65398cc592fc2770dfacee07d87443f62c6cf3e2aa60c6383fafe37ca3e019c",
+      "after": "169243fd5047134cbdf8b8404591ac463c0b6b80919a33036a1cf13c2fc490d8",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/mcp-server-polish/index.html": {
+      "before": "f1ebc29dea657584145e336e870ed8add5ca5db13d985c675b3e7cdb0f9c68b5",
+      "after": "545c2902aacbcf6740f27631a45dbd569f3408a687d2def712ce42b99c38c99c",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/migration-refactor-plan/index.html": {
+      "before": "ceb61b6c6a65b10bb9cf45d6759a3384965ccb61b50e9a256ce2d84c42081b1b",
+      "after": "46b31949ae45b668136719d99799bebccffb7cbd09330a8608103e39aaba8329",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/ml-pipeline-audit/index.html": {
+      "before": "8484523d5cf11df4b2f6451be7ef7d4017a61675b9402079d5ef44b10f3a5d2e",
+      "after": "c19fd9b48761dab4f5e16e893dc68aaa736336f67c832bac2e633f997e7ad8d4",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/ml-pipeline-polish/index.html": {
+      "before": "b39cfa089d1fdaab09e35ae82314d039c267d04ee281100b0188a054d922ba5c",
+      "after": "1cd2c0c3e6c632fb58e147b8d07e40630da4e11732d5a4f39120bea1b81a8339",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/mobile-app-audit/index.html": {
+      "before": "5ab22fb2fbfad5cc94f1f5ae0064247b1a0603d8f3c4fd1d9f39e28853c97942",
+      "after": "f90c616113c297868aacb95a2dab66eb4958ee916038ff12ae6daa0945c7a100",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/mobile-app-polish/index.html": {
+      "before": "99298bfd53fcb8b410c265af701725dd6b36a3d46e1d709efa7139073709b5d5",
+      "after": "b4b141eeadbec40f714fab4640315189813f5e48e39a5731fd10c91bc82052e5",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/mobile-release-offline-check/index.html": {
+      "before": "7e443c64fb4522f16a58d8eab29ee179fffa8f7b7a816b6b789bb3821582a284",
+      "after": "0a5583e2a7e0450ce967f4d07c5e08dbe1c358eab093067d5acbbed12ab29889",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/model-serving-monitoring-audit/index.html": {
+      "before": "08c56cb845bfff117583082ec06912b04049b44a1d778e7a8fd6ffa20e9235d6",
+      "after": "36069d3c609cea1c8137b95451195f0de1cda48d34e024bea4b00c702b3412e4",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/model-serving-monitoring-polish/index.html": {
+      "before": "5d83254b7c429bd3f8a89a1056870b776cb707180423324deb7e4f1fb3369ee7",
+      "after": "75678926e5473df86649d76be4b148f46f8fd9369843164936edeccb4c844a1a",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/multi-tenant-isolation-audit/index.html": {
+      "before": "63d0a24c8ed2426a40ab475498062aa5fe186348396e15f642c7ad5f2af0e17c",
+      "after": "a0464f3a05562de147c87e162935ff51cff7b0257b2631d571448092b76a90d0",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/multi-tenant-isolation-polish/index.html": {
+      "before": "3ef0ffeccdb1d67f11a0f941e9a9f8f7bc5b51f844dea444480e7feeb357c1c9",
+      "after": "70577fd15eb7ba8026ffb621a0d086e798bd113bd97479ee4ec6bd2ab06a7d37",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/network-integration-failure-check/index.html": {
+      "before": "c431bc79be5ba1eac06bcdea905e11ec6695fb35e3f523f0e50b86d4f0c0f6c6",
+      "after": "9ad8f73ca77888f82fc6eba2f633768fca7f878270181d09935b4e5499da6ddc",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/nosql-consistency-hot-partition-check/index.html": {
+      "before": "bd014f9f939dd861a03421644d2d22efbc0b69bef8b7b3756a17b9998ac30008",
+      "after": "05eecf3f71c6612cff770c887c59b789b3ea72c818e5e4f5b1f023b24ade8388",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/nosql-databases-audit/index.html": {
+      "before": "771be0e111ee19a121607f8207cd1afc02f733a9ad832ba5763b0b450658251f",
+      "after": "97f7ce90f19b7b754996490077ba0aa2cd25a83b06e8a7c5baebf6916b6c4c02",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/nosql-databases-polish/index.html": {
+      "before": "333028086fa039e20a224db654de194a7c01c012dc096ea55f41168418b38d23",
+      "after": "7ade6033cad891af32a7d881e43ebcf9471143f262a72bc70dae2b372100f493",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/notebook-productionization-audit/index.html": {
+      "before": "bee2ca54b8023f0107bf3611100ff260f9ac2358669a74e96e3351d448ee22c2",
+      "after": "06ccb5351337456e72e363bf86e707805bae951e9e13dcc4ee02df1b9b7368ea",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/notebook-productionization-polish/index.html": {
+      "before": "b716769a45047e48b186cac87eb61bcefeed5e31c9c6aebb1eeba5d2ada58ba9",
+      "after": "1b2dd8aa998a914cc677cb62da11793d251649d4264638037a4f752f45bf5e6d",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/notification-content-audit/index.html": {
+      "before": "50e2aeab4b71b3d41f4a084b70342529c1a93d8a5de34e90fa584fca9134784a",
+      "after": "df6439ae2fe2c56686a095922261cfb36d9793d80d0a30238b2d369bd0c7a91a",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/notification-content-polish/index.html": {
+      "before": "001b04fea1f6a02fb2b17a13f41f99e4bfd396c6d1c94c5c43c7b73f52d9809b",
+      "after": "f0b7d6733fb38632a89101a4274ee764f39bb9ed095866c7d785bc78edc5d4a7",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/notification-delivery-audit/index.html": {
+      "before": "1dafc7a34aed6ed0a82cc9584c60a9d30327ede2b719ccf2a170f40b636362aa",
+      "after": "4b8f2fd33978aeb2337a97132df8bfe978cf39a9ad79ae964eb79872fc832e8e",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/notification-delivery-polish/index.html": {
+      "before": "ddc49d05ac5f55b585c3b871d6486ba3c4fc4f7b668fcd0fcfb4874b83f1901e",
+      "after": "a61a17bff7d107309d01ebf52c39d2390be433f62da61d897a98e73277b2b5cd",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/notification-failure-idempotency-check/index.html": {
+      "before": "144b35563d4aae093984af0c123109c546e83c1432b82748221b392d48b948d9",
+      "after": "8a22403fffab961cfbca10e9ce7aa03e2ac8aa01cabc7dd26d015ae5602519cf",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/oauth-oidc-session-check/index.html": {
+      "before": "dd27caf39b722b31be007750ef2ec5ed30e89d79dab863b11a417eaf04fb11a6",
+      "after": "b7bd8b98cd4badbdc1507d13daf730eb6d56950a37cec351ee414b358711076c",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/object-storage-audit/index.html": {
+      "before": "e888eb06d977768d0ecebb224cd3c1449b733d08d260aeebd85692eab1b1320d",
+      "after": "0c873c5b10bb3945661b6a380ba8f05a276b4fc46bcf00782bbb7e6be759a307",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/object-storage-integrity-recovery-check/index.html": {
+      "before": "65a9087538c7322017f1da643aa6d36155c86907845f7f554ab7ea6eb2497e7f",
+      "after": "b2bd3be1ed7df63359bf79b317c8cd04eae537d34188e514ebcf72cfe2282d4f",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/object-storage-polish/index.html": {
+      "before": "78fcc0783afa750c0becee38c483311b0a1a136e67cf4912677c69293d385221",
+      "after": "32c05c1ed73f18ef59e2babd4469cbff31c2a1ef788b1c43b0e3c3a0fe7e3030",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/observability-semantics-cost-check/index.html": {
+      "before": "8db5dd62646ce8721c8bed36862b3f371ec5a0d26158fffb565b7ce06f589a75",
+      "after": "4e9499b4da4aedd744a5eb55b52a52ab3f5e199d3e5cac798145b09b3ecbddd3",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/observability-stack-audit/index.html": {
+      "before": "e970c3f27c00d3838214871cd5be80c59acbfc13e86d92701d385afe3c380d46",
+      "after": "ae945fdbf334241f9d906790bc6d060e67dd5672c381576cc3c0119a7fc9a449",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/observability-stack-polish/index.html": {
+      "before": "ac8b24141c952fcd08c958315650b414eef61415a91fe7284f770fa621084c9d",
+      "after": "6b0d6f854fd40cb8836888d2ca97326da6f3682909df4949df0198cc15990732",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/ocr-document-ai-audit/index.html": {
+      "before": "872ea998c33d1c2a9da0ac5b1aec45f4a78c3a0b57c2160b22e033997dc63338",
+      "after": "6fe566af40cd6ec279fb9936d4f588f2c0d1ff2d869316d510d2d3ce322b2905",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/ocr-document-ai-polish/index.html": {
+      "before": "3fd58e4dee8cd512bd92d2fb317bd1097e07e6b6ee8fdbc3d9df7672d438f374",
+      "after": "671404f9e19587698e2de151f46cd4ffce5039c281f261684fd8709c9d563f5b",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/onboarding-activation-audit/index.html": {
+      "before": "2def214de3051ad004f2a6508a50835971077d67228193ab0f76e271f084a20b",
+      "after": "b93d561b5e3708c8d5721c2e1ff635d3342137bfeb13d5221a3cabdd17255c4f",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/onboarding-activation-polish/index.html": {
+      "before": "6d28e9804022e4e71b308a2153216e642f7118e253e78cb3467985125246cc14",
+      "after": "0b98084c0daa26f9418e4e1a6e88171511f982c3fd554e7d2e10f37ba4f23d38",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/ownership-invariant-map/index.html": {
+      "before": "c17e9db2fb841b4a89a1937429d0e9d7ee52b33efc7f7f04d37b8ec8dfd0239a",
+      "after": "604d2ae8f9127fbad21425ff949bd52544af72d17da02f70fd175f07408758e0",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/patch-checking/index.html": {
+      "before": "951def56e94d989f4b60fbcdcfcb22127f1ccf43b1538339c5f74ab5faef07a0",
+      "after": "72785e3b7b60734bce50631d8b36196798a3629b35024d9b8c720ab8795e47cc",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/payments-provider-audit/index.html": {
+      "before": "abfec5794c42fbf5d7103d2c55a2d9856264aa579df293f5dfe77c6aff9d5729",
+      "after": "54caae8faa3558a05e5c5d61f0bfbae6021b76b719cf66321f073cc1c402e3d8",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/payments-provider-polish/index.html": {
+      "before": "beadfc59e46c151125f7a3f11057813c081d80de0c3ee4082d35abb0fc13ce9e",
+      "after": "284e726a03a8827ce5467ed4fadf0582a6eefb9194f21a65f407afc2acc089fe",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/payments-webhook-reconciliation-check/index.html": {
+      "before": "f6dec71d52b81248c8a95ab1dbb776c2441592269c325d3cb50f9c6e469a88ac",
+      "after": "aa2d4a084101b065866fb573600951b7389ce4b20a0878f75415a2bae66b045b",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/performance-audit/index.html": {
+      "before": "ce4a8a330792d921f650055ffd1992f9914b9766f3c08252dbc40c4e0206d006",
+      "after": "dea5672360229398b63bc7e8ff1b3b4d8090c5a149ac1ae81117c696b8c66c1c",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/performance-budget-audit/index.html": {
+      "before": "b42c48095a948b82c9e33f1a98bc7673c3662edf766e067fd5223006b2a5db06",
+      "after": "f72beff70cd4fc2d5ed5b3f6fe890810e4032b993b1c36bf6cf957404534fc7f",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/performance-budget-polish/index.html": {
+      "before": "1a3730485e51d9c011941d8992ec6704942df9fa15851dc19ddda62aef9eccac",
+      "after": "457cbe89f563fb305d2158b422bdc41a22ffa888d7ecf2ec22e68c5a2abec136",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/performance-polish/index.html": {
+      "before": "0772b643dff213abeace569e719e324ac107da94995f2ca6eb27c4c113f96447",
+      "after": "9aecb3909fb298f9490d2152142b450f8de76483c541201d5d51b0a10acdd87b",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/privacy-data-rights-audit/index.html": {
+      "before": "0a763a07fb2610cea7f79b64810e7f7353b25524fcb1e3e0c7ef1fe14a26b1cd",
+      "after": "8102bb25d7c5796cbb4fcdce46f26f5788e37c2a6543fb91fc3b137b54237145",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/privacy-data-rights-check/index.html": {
+      "before": "64aaf3fc6f26a59f96eb115db6071cd37edaf93892966635c96c53a049c97e6a",
+      "after": "58d9496afd2db87bd20e14a1d2958985bd10b51e6b7aefa43be0874c77ddb91e",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/privacy-data-rights-polish/index.html": {
+      "before": "ea9642c6c9afcec8e401135af04797e878a3e7043abf47006e48f4f43d73db93",
+      "after": "c21cb1b3a1295f7d0f2194a6a89d0320affda6cf92b8cf88524e17151363b0c0",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/product-acceptance-check/index.html": {
+      "before": "ff4b39c743de3d8de095c0c28c7ff988ea108c7be39e09a90c4cf857affe416f",
+      "after": "c6d2b899459ee652375726a218db1db61e7b687307f6ea76f7b56a0cf429dadb",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/product-analytics-audit/index.html": {
+      "before": "2ee76f8049d5f7ead0ef6292681c9a88f611558be170a05f3001da7ccdf6613e",
+      "after": "7b677d1df24e2404534227ec25277bb623665b3b78955444880d429f0fb2a1a2",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/product-analytics-polish/index.html": {
+      "before": "0df906ac58035ab7a6e6900855d5e530b53c839c3cce4dbee4654fd109feef4c",
+      "after": "2601f403aa5704d1aeb1220ae970baa97bb65a2e68359d407385d1dfca0c978f",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/product-capability-map/index.html": {
+      "before": "cc642e6f54df97d6ee42128b4e4a967219165f80aadfeeff02b85e826256408c",
+      "after": "acee86d573c01c7b8ee12e0a94402e5f34ea30b050a846ef19506b25dd5a1efa",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/product-decision-metrics-check/index.html": {
+      "before": "fd477d9ef9ab91a4f39f360c75c75241c0c056607f12722814976d78c01d22e9",
+      "after": "61fce0d575878e9b1d766aa4b6ded2b186c7e431333dcb1ebaa0860cd82704a9",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/product-journey-map/index.html": {
+      "before": "b3fee7c0eb169c18aa4949f9bb3a125661ea91071a32426c25cfd760dc5a0cf7",
+      "after": "b251f7ffd5c665922e6e592094e53ac401d9443d75463642cd9dce418f7bbcd5",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/product-landing-copy-audit/index.html": {
+      "before": "8645d25facda3f2c4c73628684c698e8e2ca2d495500e4e2319fde700c80ac48",
+      "after": "8578222c3036021c843b07f9d8626da622b9441df7ae6040af5fef1ecd74b888",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/product-landing-copy-polish/index.html": {
+      "before": "664b5aa6c6d79bf727818c29f56aab847d265d4f3cc4842d57dbde9474c70f9c",
+      "after": "53088ad565fab221ed9a9676ffd653c081636e92702b7773e087b94738039cbc",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/product-metrics-events-map/index.html": {
+      "before": "eb418308b2936818528535bd5ade436f33348e290abd297f87be48d019944fc2",
+      "after": "bb901f0b300adcc4dacbf1518fd46076da15970f2d87719a8b5e2bdc272632e2",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/product-requirements-audit/index.html": {
+      "before": "e91d113201f8dd375f7f876bdce669b85800db3541e8bd5eba411bd2d96f3c8a",
+      "after": "a1bee82099e92a65f1c84fff95a853f5b5109449a120ec6c4aac3ef492a3807e",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/product-requirements-map/index.html": {
+      "before": "68b0dd2ebb224540dade7c1ac0a763c00f8956ff805db25d2011f01249e5da5a",
+      "after": "888a0e5ba5a2b19969b9f28182f48f3743439ab04ba93720e0734005d3ec83cd",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/product-requirements-polish/index.html": {
+      "before": "09f97e8638e2bcfd206eadb46897e6c9e426e286bdf24d1392f6a7643cf8fe42",
+      "after": "6ba2ece1dbb80cf59a5d55a227d11a857aa86c5f05ffd5cd4d83d9a02bc4d821",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/product-ui-audit/index.html": {
+      "before": "33cf310693bc60abff693c332609e20e2d4bc5daf1805d15faa0da5bfeeca5d0",
+      "after": "b6e5c4d0f88e301d9d33612d19d837aa0d307971b6fe8f6bf64e282f58b3f5ab",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/product-ui-polish/index.html": {
+      "before": "d0842c8280a262332cd04743621b0b16ec055239ab0ae6a40d3842b697f442a4",
+      "after": "8f5369eb312e66d38f645deba6c208ad4e9c892eeda03af9d49db29b8f62e578",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/project-atlas-map/index.html": {
+      "before": "c3f9a222c068619f80c8df1f752bfc742ddb371d5aefbb078267f25c1a2be2ec",
+      "after": "ed947f99916f4da0c80724100898d2a24dfc467ede30df5d5227d68bc16588db",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/prompt-skill-sync-audit/index.html": {
+      "before": "8e74919cee8facf3351de0b4651eb74a3136d7c8590d14619ee25fed5ebb1e66",
+      "after": "385f912377d0564f33cb0ca1e522164675601750b048b5f5472de66ad0d059ca",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/prompt-skill-sync-polish/index.html": {
+      "before": "f3b47f2737771a877c43517db79c0ff95cefb819959b8a1ebd49833da9506e14",
+      "after": "64c48146661dd6dc78dcb2115fb93c20ed406cbe440189251c2edb9144dabb73",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/rabbitmq-audit/index.html": {
+      "before": "4d0ea4296bfc8b5fbbb6522d0a017f54aa0e57a17503df9df828084de4ed36d9",
+      "after": "4718864bdb5a0d5f0d784d341ae684383c853113074f2563be2e44096ea12a2c",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/rabbitmq-polish/index.html": {
+      "before": "40c6b4077667addba018174db4532a6f679bd1b3d8ca39973308296a16779b5c",
+      "after": "f7ca95249845f913d9abb09bba59da96f45ee0e20f0d8907cc8c2f10afe0a3a9",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/rabbitmq-redelivery-recovery-check/index.html": {
+      "before": "eb058d161993101afe3777df6b3467a4ae8eef755bf1a5688daaeda3184348e0",
+      "after": "9d4c6b5c12f6fef3eb2f1ffe1aa0e3ea77e725605312bff56e127d0c2f565b9d",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/rag-audit/index.html": {
+      "before": "4ca4583e577de0d2eeffae41a8771d0430e07b3a297bcd1134bf9de978d1ef5a",
+      "after": "ffe7cd4c0b6078ee8a3d134790c68d6fdc97be01f29ea6ae8867e9d037b34c88",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/rag-polish/index.html": {
+      "before": "c26759d38c6cde6fc7234e3b1a33efd03c3cdd02edfb2c65847b5d3756ea1866",
+      "after": "732487b5f2e01f921326ada5d53b5c02b9b97996f0216713ffc764aec1f13d56",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/rbac-abac-matrix-check/index.html": {
+      "before": "8389805a20f75656e02be87891c4dfaf183fb0e2a3c40847e747089fa04c0ce9",
+      "after": "b023be1382fc2fa716fe1307134954918654b12b5605e520f99cc962fc4cb557",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/rbac-abac-policy-audit/index.html": {
+      "before": "1828140c2764a6c16c6d6932983220d03ea1410459766866d4055ee74cda2cb7",
+      "after": "7b925251a5930483daf4db5a293821ac5055effe23575e39c9a179cf305e073a",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/rbac-abac-policy-map/index.html": {
+      "before": "e36c8fd721815a7c47e10a4400ee5f32b25c2fabc766698722203604054c287f",
+      "after": "57ac9f4a1e3c96bc8b67d54012726739cc8ee7136ac486476a4a406aaaa55637",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/rbac-abac-policy-polish/index.html": {
+      "before": "040062767c1baf4a589ea61989ab216346660ee7317f5b05e641832fa434b84e",
+      "after": "09e5d4163b9d40d2d70b5ee4fd60aca6b43f74e2462f281a07508b224be7fc66",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/readme-gen/index.html": {
+      "before": "7e9aeb5522548384437d102db03bd0bd3b3bd892a8dbe5efba038b7bdf9cf55d",
+      "after": "5ad2d0f9417372e4c811f7612d43bcee0ad9f31998779d4101c710a9d61641b9",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/realtime-frontend-audit/index.html": {
+      "before": "8911b463697e60e8ad69926d4cf7ae007e925948da595d8d56ad9fcf69087c2e",
+      "after": "3ccf11f6d1daf8e491483022186738b930adca1284182f84bd8500ebe09163b3",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/realtime-frontend-polish/index.html": {
+      "before": "6321a455bae3eed2e1c9d238a7813b321fc8da9167ead31738dfbfdf43190801",
+      "after": "b12aacaa048e3b074b76977b2154f8dc56753d42196774c78fe9ec9a0eb2a120",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/realtime-interface-profiling-recovery-check/index.html": {
+      "before": "057dd4db96de44c7b35e82cc890874e02dfbbcd500cf6ab301e6f2b0571db11d",
+      "after": "8435bb8078bfac85ca066892b6f7fe5def8139558ec1319936aa0eac156c3f0a",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/redis-job-queues-audit/index.html": {
+      "before": "5f782c2b46df956a4ed8710defc2d6aaffe39a5fb119f51716aaa4ed8aa2accb",
+      "after": "f3d8d5a71494005dbfcf85bc944af04667c628f96fff7b3c8233bf5426b35460",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/redis-job-queues-polish/index.html": {
+      "before": "f56d28c6f97833c02e1ecb49987d75dcaf8b2b29d2f1f5cc99f3c05dc27609e4",
+      "after": "772469c5a6284f334a9a6e38699331088db65358e5d5dabcc369d9c2ebfa24f7",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/redis-queue-load-recovery-check/index.html": {
+      "before": "6611d6cd2c164e24bbe6e962604d836ad9f8aa4a44142d4e1902c1531712ef86",
+      "after": "cc571c03d925645d4d337bdddc7cadae640b656138c3f5beff258364e0f9b9ed",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/refactor-boundary-audit/index.html": {
+      "before": "9204db34d35e93fafd9999337cca0df48716ef1db0520ee7cb601714d60e6c20",
+      "after": "56ac976dd616bc4fb0fe6a8758ab169b1e594182b0b3c69a64ba9f4bed147568",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/refactor-boundary-polish/index.html": {
+      "before": "5f84d47170da11bc0ba50921312a0e709352a5e634077def70943a20cadea26b",
+      "after": "4e7eb08acdc9f64c9650feb2569959593fd74be866954ea1dea930b589e3f082",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/release-artifact-trust-check/index.html": {
+      "before": "43533283d94101fa1cda3c51c06c3f9c1927fe0ed03584a17195a1bfb2fc0c33",
+      "after": "ed5be115248d97275eada7e5879baf859c187b7217be80e72e6a228cdb009ebc",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/release-readiness-audit/index.html": {
+      "before": "67b79160299e4fe7b1f32c38d59ba1a3a4e217df1a457503f003c0e84a0a06ef",
+      "after": "db1850f9b43d7ccebf574105a7f8d59b676c56c34f9efefdf1c21a6b78e2f5f0",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/reliability-audit/index.html": {
+      "before": "a815ddff9aedb5289699169360635e49dc5c302621ca824098207dbe1bb88146",
+      "after": "2306c804cfd2be8ff59bee5f81937245c9cb7a96399d330229ffedc35e00f43d",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/reliability-polish/index.html": {
+      "before": "fbf6b84b8c7292cae3d9dcdced986d084a4771aa1289ab7ac7b07bea71aeddac",
+      "after": "738df65b84b3c219b954474ac84d4497dd607376361f46b7fabf8f6fbc1304f7",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/reverse-engineering-audit/index.html": {
+      "before": "f7c86422e35a0d4feaf9b44ac4b061ee7b71e839be878ec3c68822df275d83f5",
+      "after": "f4004ea15efdc7e0087bd55d5c8b62cfd7803dd45c9a32b8f4fc4f37033447b2",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/reverse-engineering-polish/index.html": {
+      "before": "71ac8dc74f769db22118b528d8e9e9571eb83718ecf9729ffd2a32169151e7f2",
+      "after": "d41923ec8a4a68947e3793a75b2c052a8773277f01c734a9b7e8695fc995aa03",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/risk-release-map/index.html": {
+      "before": "0d85ab8255634e1981275ba055c8a84f5362f1ded6fcd6265e83d954058bb9be",
+      "after": "87ea3e43acdd88d2b167d445f47cdca16346052037d3470d1ae9fca82766f7a1",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/runtime-flow-map/index.html": {
+      "before": "349f69568499a3ba4df3bcfb5a72464293dda3a0e5f88bcbac1077d46c41807f",
+      "after": "b96dd75aa4804e31dc1afe5ed0d0593d9b2d019eff232c9151e1905b31441e70",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/saas-navigation-map/index.html": {
+      "before": "f5bc11ecace56a92264b2ae91f88f73a33c6dc0b027d3867bfa541d9f2a51b02",
+      "after": "57837db39be980940de06d83fe3ae134787389d4de1142899a62bd438ba992e6",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/scoped-audit/index.html": {
+      "before": "5eade858cd99d89c8ec0f50271742ee9ffb9b365f7c047a507a59648468e90e8",
+      "after": "439adc34aa296d6caba81e8e93f182c63371f0e4334eb71def996e887b84d686",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/scoped-polish/index.html": {
+      "before": "37fa24773b79762f4e0a8559955f0ac7e839e5c0361688cb931f0bcb2eb254b6",
+      "after": "61630d78b879936f1c6349bfbe86cba0bb3829948064ba0cbc3306528d30eef5",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/search-index-audit/index.html": {
+      "before": "3044145a03fc9be3b63d8eada96e1a458f5528048e417d5acce4b54185aa7b56",
+      "after": "ed9277894f9cd2c8f41f9446f05cc661ae8a74998776841cc7c52859c4d2d7ba",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/search-index-polish/index.html": {
+      "before": "9facb6cfb529d064e7c01cc218e6942d63c2a77169289e2aad8cce8d31b2018b",
+      "after": "9d7e9a0f1b85f4bdaaa906631c24eb58d2756cf048c26e00d9b6cedb060bce0b",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/search-recall-freshness-check/index.html": {
+      "before": "6ec469be283bfd0f9218d10820ea82aaabfd3c7d058147d93a78e4627480af3c",
+      "after": "6a8f8645362341ce4b44d551599a893168f982c5858064947946c356b32b3ff3",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/security-abuse-defense-check/index.html": {
+      "before": "14c8d3f56dfa7906541b0314616990a02a8452eeeffa0e9110f33d70dd2feca6",
+      "after": "18e31b05c3af67482f31f98f084fb79cce0c5c12c254f7ca8f1be48d2a43d344",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/security-audit/index.html": {
+      "before": "f1c3e385fa461a8d7a2800345c90f3dbe25f541a42dc3e7db31cb8b0089f7ac8",
+      "after": "ad2a0224f37464ce9e6b75348ffe8b88d3343144f132969c0297801a8b2ca874",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/security-polish/index.html": {
+      "before": "179d68445ff61c4eaa893ae5893eb08f16b4fafe5a74ef0a63cdff6f2ce7aca7",
+      "after": "d3a4df5f7956eebe752409ad16ada7fb4af499c38c5d214c4d958840483ec07e",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/seo-geo-audit/index.html": {
+      "before": "65a35deb043631806dcb71449c130ec096bd64fa16af08c87559f890e7f72a0d",
+      "after": "e5e08469d5b50f8f6673e9f61cda149115601f86a64bed1cb9f27d4a0b9b3bcb",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/seo-geo-polish/index.html": {
+      "before": "5bbfce3dd5907b15b6c8da308d799424453a809ebf82c99a29b6fd2a58405439",
+      "after": "fe6f00a76954ea1880b822ae620c22c71b3385757fcd8005d5d26b2c5cab547a",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/serverless-invocation-check/index.html": {
+      "before": "f96b211c52ff68a214853da6564797351fba4134f202102430e5548c4780e3b7",
+      "after": "065851da73f5d44d68e00ff7151b74aa0c1af4fcb12c9410712a84494aa802d1",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/serverless-runtime-audit/index.html": {
+      "before": "39cd9583f66f69aefb075303de00ae9218ee9624063dfed6f5ef92cbe986deb3",
+      "after": "7b12645422f96c8a6e8fbd5ad341c71d0baa01207acb1fa19ba369b9dcbc74cf",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/serverless-runtime-polish/index.html": {
+      "before": "8b7dbaa0387fc664523edfccbe15a8af2a60d8303055d51de10ec12b72ecacd9",
+      "after": "4e45eceffb2f12e1aeeda7e4c2230062130ed2ce664eac9e8b154e6973e42190",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/sql-databases-audit/index.html": {
+      "before": "622bb7d2249e93c393ac24d30543983875952ed4f752adcc60cc9190e44c7de1",
+      "after": "3070c0fe4ece20ca92dd9b43d4dcc1dc998aa687335398a4c30c844353667556",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/sql-databases-polish/index.html": {
+      "before": "6edc2cd89654c69172a9b18266b676136876563c5017ee7a7aedef975871f32f",
+      "after": "48de50f68da45825435f38edbd7103d1fce5e663135fdb42eb8e3caaa6b8825a",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/sql-load-lock-failover-check/index.html": {
+      "before": "0ba8d050b81d08c72a2cc6b32b03c5208c581dfe99ee4031b152c28a960e92b9",
+      "after": "235cd0490ddb34b5744d5fbdd07af906f76dbef9571800409a5184b2f8e35d15",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/synthesis/index.html": {
+      "before": "186559365c85100411aa51db87f372af674617b1352fee9a0e29cfbcc40b83bc",
+      "after": "24d55be673cd523b7aca85d0e46a0020497cd822342b7dc5dfdca7fbefdcd564",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/system-security-hardening-audit/index.html": {
+      "before": "107578593e4117aeeb6fe6d9ece471c27f6d906eb141c6cebef46c74c997f05f",
+      "after": "53ab132ba53f726d7edf443f37e86731b23afb078b850e10936ee4de47477459",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/system-security-hardening-polish/index.html": {
+      "before": "4dba14c3153b12afc7785f11ca2975781090f08736f35542ffa2e54af47a6e49",
+      "after": "7c454de640398d89ce20a61aa1d99e543859da0b692db8ca6ec463af617c6a3e",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/task-shaping/index.html": {
+      "before": "ed77fe2239b746f127b7fc2c8f4adfda75c5047e655c39d1d9a01853e02665b8",
+      "after": "66dd7b218f33d695ab440f9100c4f13de950dbb4c56d788d85a1580208d939a1",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/temporal-replay-versioning-check/index.html": {
+      "before": "99370f98d9e8ebd639832af122b82453e077f0aa13cbad815b35f9eaaac6df0c",
+      "after": "c6650748ba0572d0fa4c5106aac20847e1ffda31d3f2fabd4e1b5acb0c2712b1",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/temporal-workflows-audit/index.html": {
+      "before": "fcb6a8533a9f8e7bddcc57213dc604d0e2ea5b64b2a7e0da882d4edb47a6fed0",
+      "after": "3e86d3cca1e8a7da8a7c3719a516d39fe375d28aec077cf0acbddafb13008412",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/temporal-workflows-polish/index.html": {
+      "before": "e7e58826bb26d9eb5cef7eb4f70238697cae83d267b9df97720c1f341b3ae614",
+      "after": "fc584d89550d4ea1933f761c5f02c392544dc099fcb7554e6be21d3b4503cafd",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/tenant-isolation-check/index.html": {
+      "before": "7f7a4261892c65cd2e9c1a2e2b3516bd4083eda5aef00ccd73c9bf34ac444293",
+      "after": "0d43e832a6e2da32317b488e270235f0b41b7cd0fe35dece0b842296e21895c4",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/terraform-delivery-audit/index.html": {
+      "before": "298d1ebf3d45484dfffe1d9e597a5075ce12c5ee10e71c53e489670c8bb4c33f",
+      "after": "a374de525d74bb466ff556ea5c4e9c78c830ee3e76c58634061966df9ce1ed6d",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/terraform-delivery-polish/index.html": {
+      "before": "f3d31792da4f18a18c6b7911fab8cfa59075f735cf302a0adcc31b2c28fdfafb",
+      "after": "cfa471194ea22c17c2776f8642b316332cf7e2fa2aaff9512fe28c0513ef9788",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/terraform-plan-state-check/index.html": {
+      "before": "6f750ef91128c7781f12368eccccaa62dc5a06de636f0bf32f084e40e8edc72f",
+      "after": "0e1ccf6427c32a9b56410cc53abb4ea340894969a96cf5b662b0df45abab3674",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/test-coverage-audit/index.html": {
+      "before": "3bef13ed75c71462d2758b493bcd9ee59a7f916c18facd03f85dda96b668133d",
+      "after": "c0a331d87264fbf8ff7f06bee26b1e7a91e7c3243786e64f1c75bf9d47463762",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/test-coverage-map/index.html": {
+      "before": "86421032273336848eab8d5a9630c7eaa6052b54c4f896754687269e22dc5de7",
+      "after": "202186151691db168fd50e0ec3b3e064cd863b3fbf35e20faee324c88db8b044",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/test-harness-polish/index.html": {
+      "before": "dd6f50d0371ffe0740811edc0bdf411b2acf1bbe157ee884373f02148332514f",
+      "after": "14e2c4ba7687d006dda7d6c24602ff2126c4500df12c95588e336b44b6ebabe8",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/traceability-map/index.html": {
+      "before": "7afd43ab467ee7a135ae136e8eeee1d3059bd2a7e659efb9b05c2a54fe40c8a3",
+      "after": "3fff9779d0cf67feebd96a6ebdd61b64c7289c1bae74805f8528ca394e2dc9d4",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/transactional-delivery-check/index.html": {
+      "before": "785d9be30ba1979e1f936ac4be11b34543ac75b800788d87d59fb53825dfe9dc",
+      "after": "c414410b4fa052bc912870a2fbd4151b275c121b6e07b45e49f8297bc4b9b73d",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/ux-flow-audit/index.html": {
+      "before": "e71cf8db7ef40f8b469293230065ab23e20156bbbad51e63b123ea7c08c8fd62",
+      "after": "fa2ae1e65a106b8c5ef28fcc6999726702c20087107406875a15ee2f023cb225",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/ux-flow-polish/index.html": {
+      "before": "99d1bc353a79703a2275ef3a73a76b6121a8676a3d1c52d2b2bea8be3554cc8e",
+      "after": "539fadc312ecc88415b55fabbffaf8a53e9726711580fc308f379b59958fabf5",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/validation-clarification/index.html": {
+      "before": "3a68450fd80b48e07bdb1950ed2e9634805cb21f7de62a9e8cb791ead38c314a",
+      "after": "6eadbd6af10f4ab2f0ed46c03476e0502947e66afbb1c6ed7618ab61ebb86027",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/vector-databases-audit/index.html": {
+      "before": "f3e709f7141334d2ca3e398534f46d5e5c60c18e1e76b78e6cc177731da1f295",
+      "after": "6fe4e186353bf511a6d2cca54dc6dfe66d526fddd780c0a51bf6fa818d993f75",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/vector-databases-polish/index.html": {
+      "before": "4909e65ccfbc4b671ddbc6c837ca385179e3a9d3bed555e5427f81a64d2343ac",
+      "after": "4a3219b36cd20611fbda7e9e6cb35a038b2ba5994ed18efacc770bf7c4e798fd",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/vector-recall-degradation-check/index.html": {
+      "before": "6fb87da6bd4037c32eef1721b228f20f0311c6cd44bf40c687de318f89dd95e4",
+      "after": "acead6d457605b242381675ae37314ca5d460c2187378a586bfaf350bb204981",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/visual-regression-check/index.html": {
+      "before": "df4f3fcfe77d6150cad0659257515366d5e1e70eb6246d80eec63648ae5d07f4",
+      "after": "c939f9ad8669b802aef718247e8466e91a4f058cc8d9891b0ff3ec56d289ee9d",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/web-boundary-check/index.html": {
+      "before": "415d128c028e0ee3840ce4557125b8f37369fd8f61a2cf2eeb45485dfa857eaf",
+      "after": "2c71ece5ebcd6da2700a0a09f067fe4d24ece0002c2ce621836020e358de5945",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/web-rendering-audit/index.html": {
+      "before": "76ad07ef74ef701b2194ea56dda01f06b34fb46813eb63bf0f52fb73a585463a",
+      "after": "5add2cf0699b47a76baf0fd2fddb1d613d74e3566bbc4e4642db7ed0adcaed65",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/web-rendering-polish/index.html": {
+      "before": "361c35885c5679f8b42884591b92ff9ced962cd4bf7541ad34d51dfe975a7762",
+      "after": "d42d4b52912b07ddc1d59597160cec6ba7796429666dfad4b89842e0e73b36db",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/workflows/workstream-decomposition/index.html": {
+      "before": "d487591168456ddc35a4a58b1d67c6fcfcb40a806df11e1411c2c2bedbf19b50",
+      "after": "4ad281c672cc20ad51e7fdeca0817b3c372233600b45779b5a99f9baf935a5ea",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/zh-CN/index.html": {
+      "before": "798b3b7a5c667a4d61f71e38e42d7121ba6336c9e3cc213b913abfdf806e2e22",
+      "after": "c19f4c21eceee570943bd2b1e4f0616ee5bd580bc82556590496f72098c93e48",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/zh-CN/privacy.html": {
+      "before": "9ad10cbe1c1772d8d7b070b4bd5a93ded7465c4c0e2eb6a21858030eb6e49fbb",
+      "after": "f9f19afefae4e020fff834b5136a002bf20c8b3a590c918a9972e03426591fe7",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/zh-CN/terms.html": {
+      "before": "65ff9fbd5586fc6161277d3f213897063627f8316fe2441c79dd5c0387a65560",
+      "after": "40e0ae4d69bd3734055577ba047192ec33af846de2a3afb4a41b0d9f0d3ec86d",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "docs/zh-CN/workflows/index.html": {
+      "before": "f8469a0fad7d955af3a4590e2cdc2488a64b8aed6dafd50cb792b0487b71e429",
+      "after": "343fe485f41b548302d71ba09dcb285dd0762595f6195a76dbcbe02bdbd574b1",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "mcp/README.md": {
+      "before": "08c685700fb9f2ed46ebd0f2f01ad25b1addc606d04dcdec2b9f728434ca83ea",
+      "after": "0c1a6f843a4f2304fa904e7b7ff7564d4b3ab35162799b222bc90a141d3110d0",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "mcp/generate.py": {
+      "before": "acfa3c833b4e8a8b5b761be0a6fcd137371ceb191567235ec3bf480fe8a3803a",
+      "after": "9705642fd6cd1060ed86d93a91ef7785029dbed9392d20dd846aa5b36e889fdd",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "mcp/package-lock.json": {
+      "before": "daa165213912ecf413905d7604f360cb88b52078935c26e04508a57cdda34188",
+      "after": "d64a69a280447141ba19e6762e71e08a8cb92fa386afea3a1246d4e430475238",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "mcp/package.json": {
+      "before": "e6bdd68c8bf7a4e347aeb866c42c6740403277a583e17f80ba7afdcc2b282259",
+      "after": "b46e3d0e3b4ca2a8baf7eb6b4e751c93e10d9e0273edad9cd32cfbb36029c3df",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "mcp/server.js": {
+      "before": "71ab0639ad2f036e7d8899ee335fec03ad4ef6c31faf7ef076e4521c5029a14a",
+      "after": "9115d8f7390229c51c76dd68c4ad2830ab0b4b674f915c1f37bb5cc4f8274720",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "mcp/tests/discovery.test.js": {
+      "before": "d1b0b87943db8747b959c6d7026a89b9cddd0fb3b51d94d6113827772e9252fe",
+      "after": "77807049a74903cbd0778cb4895b18c2e929032f161eecbaa282512a06680e73",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "mcp/tests/http.test.js": {
+      "before": "7479b64bf9ba1d6a05cc6a8cceca6520ec63cae9a2d91708b67cd8d976dc2c42",
+      "after": "6b90eb799c41cf2b99db7bb6c3b603ab19b74a943de562f7639d8a6603c82a98",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "mcp/tests/library.test.js": {
+      "before": "299340d425f90f54ca52227f68dfa189bdd7c98ffd046874e3bd9dd21397df4f",
+      "after": "48f2b194e252bad25121f2b05f5976aedcb2e5f21fe45272b5a7257ccca490cc",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "plugins/vibe-coding-library/.claude-plugin/plugin.json": {
+      "before": "a710bf421384cb2dd2343a071045c577a998cda3109a7226ee7d472d6adf382d",
+      "after": "085988658971ed503ca8bb48b14078e0a866828a678eb91cc96a776e2bf847a7",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "plugins/vibe-coding-library/.codex-plugin/plugin.json": {
+      "before": "c109806d108cb8a6ac8c603f686c5178da5e7c4b0efa354248a088dda93c71de",
+      "after": "9b605249d800f301e18fbf3533bbc4bb8562ecacb2c13a58e8177c6057c42b0a",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "plugins/vibe-coding-library/README.md": {
+      "before": "481cdbca28a01a3094b31a6f9af5096b678429c5021edc1d0962d56312e3db5f",
+      "after": "1bb93847106034ac12d6a7901384e99dc4d95a2b32f936b9b827e3122bb5cd30",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "plugins/vibe-coding-library/plugin.json": {
+      "before": "37f9dd7086d0bfb48619a7e319a376b1b162a1cee6dfc40639a1ea0393118914",
+      "after": "4365439e933c0ac84b33c9551a6b5f3ef31b1a958ae65d57f8a370b362c3154f",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "plugins/vibe-coding-library/skills/vibe-library/SKILL.md": {
+      "before": "8846305b55d0b944a5b47b7da0fc6f1cc63704e50af65b284c44bdc137beaffd",
+      "after": "0fc32ffa5750c7b85a5b6e43964c50bc4dcf79d174e99c1f9c70f17e84609477",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "plugins/vibe-coding-library/skills/vibe-library/agents/openai.yaml": {
+      "before": "f45d25199f0bc3a04b8785c44862b8c1822e040c5fa9d9c528811ffaa93c4dc1",
+      "after": "83ba4006b256721771f4ed369a6eec20b4dbc422f9e3bff9b29fa6652269cbd7",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "plugins/vibe-coding/.claude-plugin/plugin.json": {
+      "before": "95cbd0807af16c5dc0c8129bd37e169bdd0e78f28aeb04fab734ea33aaeb8dce",
+      "after": "cd80c216c542db80a05dc20fd8c0e03652b570a8fbd67184e0bea97a1c582e88",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "plugins/vibe-coding/.codex-plugin/plugin.json": {
+      "before": "01fa53c16d716dd9677db960ed079e07e6f458b33bb2a03b694429662b9c7686",
+      "after": "c77b63998ce12a676a24a9ae41ce539ac04fad8faf52c8bbfea1f6fe8724af17",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "plugins/vibe-coding/CATALOG.html": {
+      "before": "a2dc0a17232115e2e829561ed245231ea6be2e00761c412babce582667955299",
+      "after": "f85dbb1a50096e6871c72c2386003120386928f5b662d7de03670de2b551361a",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "plugins/vibe-coding/README.md": {
+      "before": "449ff4d7052b1206ac3484497e2d2d5bceb403f5222143aa535d4e6e5c6291dc",
+      "after": "eff042d4f9afaed498017f021438de2c35ec395001ddb992d2d3b91d8cf307e5",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "plugins/vibe-coding/assets/catalog/engine.js": {
+      "before": "4992cfd6e830be0e994591a406e375e390c4accf9f3d179662608fde7cfac190",
+      "after": "0655a9ec6c4dcbb4b3883cf9c631e83fa1943da047a3882959251fc6eef38f6b",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "plugins/vibe-coding/assets/catalog/locales/en.json": {
+      "before": "57f5b185fd7767e7a520972e73c3dd3e6546ecd75217f8ce18e97ffffe391cb6",
+      "after": "50965c156d5f52f8239f3ad1203a0c16c861315c0036684e27acbd6a5f1f2a07",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "plugins/vibe-coding/assets/catalog/locales/es.json": {
+      "before": "af9e157bb11e25e2260314e81aee24c67d67791a9a2537ca318be8e3b2ba59ee",
+      "after": "91e39b0f6d9103ddffadda47186c383547fc2034ebbcf1ccdf744a06e78176bb",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "plugins/vibe-coding/assets/catalog/locales/ru.json": {
+      "before": "11a074ec34920efa93dd2be0a7437dd6a33bb07111919f140b171ce5641b42d9",
+      "after": "ea1472d4966350933828ced70339aaed917d682bbf20c6cd8773f0de733389b5",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "plugins/vibe-coding/assets/catalog/locales/zh-CN.json": {
+      "before": "7ab181c3b0f98b1643601510a2f51a539be1d79f1adf355dd0be062ce3725788",
+      "after": "65eec41e90e0a9012bdb5d8751d872984e78ba0a2f2dc77eb0b6e86b9d77a9b2",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "plugins/vibe-coding/assets/catalog/search-lexicon.json": {
+      "before": "469f7e78f251b15a9b3296eb72618129a0d3e9123c6db748aeeb2662a5ece691",
+      "after": "17879a2f857411daa6ff3ab3a81159a5ff2fae82d5195afbab87cd12c374a8d3",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "plugins/vibe-coding/assets/catalog/search-topics.json": {
+      "before": "759ebca3bc9d8ecd6680e329531d65efc35fc14d2af9b8c09c138331f50ad1a9",
+      "after": "6d268eba87feb11b68511b1a4fe26bbf1a510ede585c23116f47e495e3a2febb",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "plugins/vibe-coding/catalog.json": {
+      "before": "583a762b3b511ad171fdaa4daa3e3a17ea5b6822304c28b91a678a87e96cacfd",
+      "after": "53dad74d08b91bccd5769c889760554bb5d5890c86bc3a7e35b8a8c03a3a8271",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "plugins/vibe-coding/package-files.json": {
+      "before": "2a84b14c168cc26ba81578ae976e5a7209d6e47402e3df238ce08fa8c61b882b",
+      "after": "44f4b45fa48a1357f330c88a76d552c30bfe6dc3834212e8c4085e1bd26002d6",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "plugins/vibe-coding/plugin.json": {
+      "before": "e8b1b5367f6019d902f11fcd1dbf120f660b43ae181ac26397d914db075dde00",
+      "after": "84f67124628f2894db8e5a64eb0125150867f55bf2467b602575bef8d165ae65",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "plugins/vibe-coding/references/catalog.md": {
+      "before": "947e0279a41e2e612041a96d3796e9b04cf3f52169c3bddeb861fa24f2af8c54",
+      "after": "0fa7c51312d0b98dbac81500c4c0e4fc5f69b3b41c2c27a34ca97adb52861aa2",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "plugins/vibe-coding/scripts/search_index.py": {
+      "before": "6fe1f3ef240715ac3017984b46f7781b490208df841120f3d1e6c527bd751c9e",
+      "after": "a3acc1ef0208930e9f3370564eed3a93d019396784468bead736c6285b613524",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "plugins/vibe-coding/skills/vibe-content/SKILL.md": {
+      "before": "bb82f5a895698dbb82c187b7529d7313299c3f9ace31028739e977b6d2f135a5",
+      "after": "fbf493de09825d8b4b24f1bb541aa9fe1326caa1b79d3058f708ae21b599918a",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "plugins/vibe-coding/skills/vibe-content/references/product-landing-copy-audit.md": {
+      "before": "6f4dd9551876a41ff1b2cb9ce1d16dfa828b8b0b082c56c023da5cb68848e10b",
+      "after": "521c9ac3cc3dcb25be1ad1df776c29d2defdd288d34a9c2855e8e7ed32ee0f25",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "plugins/vibe-coding/skills/vibe-content/references/product-landing-copy-polish.md": {
+      "before": "eb133e9a9e1b9a8365200f24f96ac51ad8dbe1fc28688ed7e42372c82e77f614",
+      "after": "40143e3016a5b17fb2de42b0565cba0708d1769eaf84c27615b06b125b6a8287",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "plugins/vibe-coding/skills/vibe/SKILL.md": {
+      "before": "cf82a2bc80bc953c3ea0d467635ecf9a720f2f6858c612c6b08c437229c6b450",
+      "after": "c2f90fb6a0121f13de3f40867613541ad16a0b4cb5564ceeb426d68b9b9cccb7",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "plugins/vibe-coding/workflows.json": {
+      "before": "f1e6a32eacec24bf3af1495ba52e9830f6a8dc814d572b24e3bffd18701f4762",
+      "after": "4cb35e7a5ba22eae79cda5ff9bf7dfa2c401b285960fcc82945b7a5b806f8ec5",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "scripts/build_site.py": {
+      "before": "72fe6e5981f05c07fabaff61528026668b21bbbf0d1c03511297617d8463db2b",
+      "after": "101d2bb49aa1fe922cf0c961702663c6fb3d3f1044a86b704d13a3f57fa322e5",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "site/catalog-engine.js": {
+      "before": "4992cfd6e830be0e994591a406e375e390c4accf9f3d179662608fde7cfac190",
+      "after": "0655a9ec6c4dcbb4b3883cf9c631e83fa1943da047a3882959251fc6eef38f6b",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "site/content.json": {
+      "before": "ab8e5ddbf157160e59cb682c9ace940f705d5886e74ccef6686e71a2181df262",
+      "after": "b8a795f89c6c5589a801c3b28515a6905906b222212cab97fe34a41c52d2c43c",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "site/social-card.png": {
+      "before": "4ac9bf512cf80619f2a7d091eda16c81f7cf58d00e309578488cfe79b2093a0c",
+      "after": "ec900a1b404e82cd7271b4b7a672bce83d78fc16668927cf60c916ff9d3275c8",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "site/social-card.svg": {
+      "before": "756bf1ec39ab7129b70d6ed5e4c93c9866f4cf03be4514c97bcdad82aca161fe",
+      "after": "3e04be3e2f1ec4e052bb15e15a7b0f0f1644299f28bd36816ea624546d0fd46b",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "tests/test_evaluations.py": {
+      "before": "820eab08e0227d3cc4be66f864751a56abe6b711d3783177d15a4ae9ea20437a",
+      "after": "3c917d64cecf71b4f7348ab4f3a7de7301696e1d014d32ba736a6b711bcd2ea9",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "tests/test_site_search.cjs": {
+      "before": "c5c3cc0bf77009b6b2e1f915fd53d87e9e8d3ce2f591640e832ad235d453377e",
+      "after": "7a62a5c1dce9e3faa6acf46a911db91cb167db4a9d0fa3c323d73ccc75ad8d15",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    },
+    "tests/test_topics.py": {
+      "before": "b08979d97f41311c81507c6daca3fa507b88870081fbc7d3b9f513826b968daf",
+      "after": "2cc742af9237c1a06191a1fa7399c7bb17ba612c52faeb6ca34936f975e42c87",
+      "review": "Website methods, discoverability, versioned delivery and corresponding evidence."
+    }
+  },
+  "new_files": {
+    "docs/assets/catalog-engine.0655a9ec6c4d.js": "0655a9ec6c4dcbb4b3883cf9c631e83fa1943da047a3882959251fc6eef38f6b",
+    "docs/assets/search.016c48fb4352.json": "016c48fb435204199fc84c3075c6ccef48822e3c9185a27aafe32f4274feea2d",
+    "docs/workflows/homepage-landing-audit/index.html": "f68a37c0c8ce38ea5a6c52fe4241d79b265cd569cd308d633865e4fa2d33dc18",
+    "docs/workflows/homepage-landing-build/index.html": "6a127457639b1513ea310e7a7fbcf463118ade3fedc9718789a9e436591a4bd3",
+    "docs/workflows/homepage-landing-polish/index.html": "37946499d3e8f0bd0dc5060fe00164772bbefd8291068aaeff068a9d67899007",
+    "docs/workflows/web-art-direction/index.html": "e070ae99bcb6a3a27ebfdd8826d962ef1975231bf887254d6bc9fa72f2c6a914",
+    "docs/workflows/web-brand-assets/index.html": "185fd7dfff5801261c38ccbc3bbaf50664e6c8c9938b2aca9216a5641e0d6904",
+    "docs/workflows/web-design-kit/index.html": "c95395ed5ad70759f2f7ee925290318c1593c44059463dc3ddc0eb27c8f15e02",
+    "docs/workflows/web-experience-brief/index.html": "0477bb766379116ca720cc561c3e8d5715a10180adbe231aa89b6c98557d4c68",
+    "docs/workflows/web-interaction-motion-check/index.html": "d4569a1b95e40a7fcb45e517ea8758bb020ef587c6d6b62d409b893b761dba88",
+    "docs/workflows/web-interaction-storyboard/index.html": "d77abef9753e2183b083482e10508a4265c694ef8ade2f63c09a02f80f2cbb89",
+    "docs/workflows/web-navigation-state-check/index.html": "1eed2da0d792ba4ebec463d1d8f38d8fc9e2584fb95c7a3c823ac5da423fa83e",
+    "docs/workflows/web-offer-synthesis/index.html": "4018bff2f7896778a264ecefc33b2ee1d5e12155220e92f536983af1c31703a4",
+    "docs/workflows/web-page-acceptance-check/index.html": "a88eda05c4b1ab71f450360aa928ab13a31481192da4e8ee7f9e46a6dca21c69",
+    "docs/workflows/web-page-architecture/index.html": "82f8632f104527b6bc35ba3ce37dc49d573c6ffe891a5a64b908e469ea09a084",
+    "docs/workflows/web-page-copy/index.html": "73d23c06a12adb867e7d097e9b4977e55aabc2b2fea8b6c443016959811f70c7",
+    "docs/workflows/web-project-architecture/index.html": "dee550beea28e45c4001fcee9a64aa7ac59c5324dbf1da5c698a526e4e356b12",
+    "docs/workflows/web-reference-research/index.html": "7b8da7e90705e27f4fd060d40ff4fba269c66f387116876d972f7c0629ce7f70",
+    "docs/workflows/web-search-performance-check/index.html": "952c62f7c9fa02e2388e3a320ced99fa60ba6f2cae7e71db194f072b091f9a30",
+    "docs/workflows/web-visual-hierarchy-check/index.html": "fe21daba59d15d626aa8199c5b5ded19a5db3f9286c248d26b31f181bc800a96",
+    "docs/workflows/web-visual-system/index.html": "c170bc41aa4e6945392239417079b70492b9ff180c8c195f67a087f8b8578e29",
+    "plugins/vibe-coding/skills/vibe-content/references/web-page-copy.md": "59d0ce4f5268c46422e1858abc227524aadb5976dc24c40a406f34bbe40be0a5",
+    "plugins/vibe-coding/skills/vibe-landing/SKILL.md": "a740c6ff96ef5b01eb83a566bf76c9826c41742eebd9265f5d20deec89e8ed78",
+    "plugins/vibe-coding/skills/vibe-landing/agents/openai.yaml": "4fc01f8b857b83a89e27b52b3356e24426d4949e0930c664443654cfeedf33d6",
+    "plugins/vibe-coding/skills/vibe-landing/references/homepage-landing-audit.md": "1b50c30f60a6da86135799537659780416e3a9e6caf074a87f24630d1d5212e7",
+    "plugins/vibe-coding/skills/vibe-landing/references/homepage-landing-build.md": "1a7e9c7cc2334d53f04546d095d9b808ca14a4a7c16c810c02c732e3a112fdac",
+    "plugins/vibe-coding/skills/vibe-landing/references/homepage-landing-polish.md": "18450bef0465a93576fc6700df8648402c0ca629f2085895b3679ac8a7959cf8",
+    "plugins/vibe-coding/skills/vibe-landing/references/web-experience-brief.md": "b9fbbcb391382c66fb5077ccb7d27eff7f91872cfa94ee3c335ca2a090325753",
+    "plugins/vibe-coding/skills/vibe-landing/references/web-interaction-motion-check.md": "79839987412fc1bdccbe35763cf81a3367b9c19453b38cedd0990238930519be",
+    "plugins/vibe-coding/skills/vibe-landing/references/web-navigation-state-check.md": "e4986e67c66f76fc8d870b7b1fd750f6b584e165d361e1643e6f425be9e768a4",
+    "plugins/vibe-coding/skills/vibe-landing/references/web-page-acceptance-check.md": "45cd6c642f3c841f03e6552ead5883c03cbcb4776e1d707771e003e8bd3ce0ac",
+    "plugins/vibe-coding/skills/vibe-landing/references/web-project-architecture.md": "79373c75be101e2289807cf01ceb72576ce9568f7cd759075bc1636e95d87e87",
+    "plugins/vibe-coding/skills/vibe-landing/references/web-search-performance-check.md": "e4f6388f819ff8d790a3e9af0491b8317d26df9bb5a353e50ac3503989b314b1",
+    "plugins/vibe-coding/skills/vibe-landing/references/web-visual-hierarchy-check.md": "4255300ce1f3227514f95a9750fbeda2753ad59c525d1dc65fb69b8f5282d4f3",
+    "plugins/vibe-coding/skills/vibe-landing/scripts/check_web_packet.py": "2d230c4144cd52ebc1125046c06859c7247cd94ebafe2a64f152d664cd4ba460",
+    "plugins/vibe-coding/skills/vibe-web-art-direction/SKILL.md": "a126f758a51ccde0f523b68c79fa556d986c4c24e71bc58275caac4802ebb984",
+    "plugins/vibe-coding/skills/vibe-web-art-direction/agents/openai.yaml": "22d71b130d335f748cd47033501854652e902b492693219fb1406a7cedcca455",
+    "plugins/vibe-coding/skills/vibe-web-art-direction/assets/design-kit.example.json": "3a507b73a6785e04028b15b0f4c6a12875df8e635a95e4b0705039652c11d50c",
+    "plugins/vibe-coding/skills/vibe-web-art-direction/references/web-art-direction.md": "41d7b32df82e8ab3902609265960241028291ed3160242324ab8861f84f96542",
+    "plugins/vibe-coding/skills/vibe-web-art-direction/references/web-brand-assets.md": "f767c6927c838361dde558fc59536b9ffcaa0fdd835e09b1e787c626a526a01f",
+    "plugins/vibe-coding/skills/vibe-web-art-direction/references/web-design-kit.md": "89c24c3462df8cd07805de55ffdeef0d334c1696131df7614e52e0c6534bd139",
+    "plugins/vibe-coding/skills/vibe-web-art-direction/references/web-interaction-storyboard.md": "44d9f0f78881d3cc73eb9fec1dfce091d5d3652eded7b58faa38c640af028e75",
+    "plugins/vibe-coding/skills/vibe-web-art-direction/references/web-reference-research.md": "5c76747a9ec339e7b5e2297d0177f16588c58cdc4f06b7ccf511fa9195a41889",
+    "plugins/vibe-coding/skills/vibe-web-art-direction/references/web-visual-system.md": "00fa4ac72da049ade0f3399d999f3a3838fe54d3e94251da9ba2a647b6bec2da",
+    "plugins/vibe-coding/skills/vibe-web-art-direction/scripts/compile_design_kit.py": "991027a160a07100f9a4b65df4f52bc4df3a3a68a15522be1e844a9677d74c2e",
+    "plugins/vibe-coding/skills/vibe-web-strategy/SKILL.md": "3af60516190607aa4f922cd424ec80b2e1860bb971e65da2b27b1774d3cf1af2",
+    "plugins/vibe-coding/skills/vibe-web-strategy/agents/openai.yaml": "17ac5b5bed3f3ca288dc821a488e6baab129cf99222be3138d02183ef10e07e4",
+    "plugins/vibe-coding/skills/vibe-web-strategy/references/web-offer-synthesis.md": "fc467818666b1888748d2cba8132e1cf7b067bffb182d657bea24e9206429121",
+    "plugins/vibe-coding/skills/vibe-web-strategy/references/web-page-architecture.md": "a0a73fb45f0508b19e2896a7dc5d418e0f14da1a4a3f674b925bdc540fd87d5c",
+    "review/web-experience-cases-1.7.0.json": "5598764df5b8bee874371c6b7f84a05d141dc54c03f4124ce62e7f35ac492058",
+    "review/web-experience-report-1.7.0.json": "a97716dcd0352c89b376b6f4f5c23c50a563195ac86094afd6b46b92967e9e44",
+    "tests/test_web_design_kit.py": "4a4a201e8df1e97df217ea31b4b210336aac3e982eb492c9871d6a09151643e9",
+    "tests/test_web_packet.py": "68f91385b5a109dce39309a4c30a665e1847b4afd100709091a130ee1ca9f097"
+  },
+  "checks": [
+    "Multilingual search, graph membership, current-step retrieval and optional helper isolation",
+    "Forward exercises for strategy, brand assets, local copy and visual systems, including follow-up corrections"
+  ],
+  "limits": "Deterministic retrieval, local renderer and synthetic exercises have independent scope. No universal model auto-invocation, production conversion, search ranking or field-performance guarantee."
+}
