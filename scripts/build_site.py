@@ -167,8 +167,17 @@ def display_title(row, locale, content, lang='en'):
     return 'Improve ' + title[:-7] if lang == 'en' and title.endswith(' Polish') else title
 
 
-def copy_button(c, target, label):
-    return f'<div class="copy-line" hidden><button type="button" class="copy-command" data-copy-target="{target}" data-success="{e(c["copied"])}" data-failure="{e(c["copyFallback"])}">{e(label)}</button><span role="status"></span></div>'
+def copy_button(c, target, label, status_id=None):
+    if status_id:
+        icon = '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.15" aria-hidden="true"><rect x="6" y="6" width="7" height="7" rx="1.4"/><path d="M10 4V3.8A1.8 1.8 0 0 0 8.2 2h-4.4A1.8 1.8 0 0 0 2 3.8v4.4A1.8 1.8 0 0 0 3.8 10H4" stroke-linecap="round"/></svg>'
+        button_label = icon + f'<span class="copy-label">{e(label)}</span>'
+        status = f' data-copy-status="{e(status_id)}"'
+        feedback = ''
+    else:
+        button_label = e(label)
+        status = ''
+        feedback = '<span role="status"></span>'
+    return f'<div class="copy-line" hidden><button type="button" class="copy-command" data-copy-target="{target}"{status} data-success="{e(c["copied"])}" data-failure="{e(c["copyFallback"])}">{button_label}</button>{feedback}</div>'
 
 
 def workflow_demo(rows, c):
@@ -212,8 +221,10 @@ def connection_section(lang, c, version):
 <a class="version" href="{REPO}/releases/tag/v{version}">{e(c['libraryVersion'])} v{version}</a></div>
 <div class="install-cards">
 <article class="install-card endpoint-card"><h3>{e(c['clientTitle'])}</h3><p>{e(c['clientInstall'])}</p>
-<p class="command-label">{e(c['endpointLabel'])}</p><pre><code id="mcp-endpoint">{MCP_ENDPOINT}</code></pre>
-{copy_button(c, 'mcp-endpoint', c['copyEndpoint'])}<a class="text-link" href="{console_url(lang)}#try-library">{e(c['consoleLink'])} <span aria-hidden="true">↗</span></a></article>
+<p class="command-label" id="mcp-endpoint-label">{e(c['endpointLabel'])}</p>
+<div class="endpoint-field" role="group" aria-labelledby="mcp-endpoint-label"><code id="mcp-endpoint">{MCP_ENDPOINT}</code>{copy_button(c, 'mcp-endpoint', c['copyEndpoint'], 'endpoint-copy-status')}</div>
+<p class="endpoint-status" id="endpoint-copy-status" role="status"></p>
+<a class="text-link" href="{console_url(lang)}#try-library">{e(c['consoleLink'])} <span aria-hidden="true">↗</span></a></article>
 <article class="install-card"><h3>{e(c['pluginTitle'])}</h3><p>{e(c['clientStart'])}</p>
 <div class="install-commands">{commands}</div>
 <details class="install-command plugin-setup"><summary>{e(c['pluginLink'])}</summary><p>{e(c['pluginInstall'])}</p>

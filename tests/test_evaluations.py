@@ -20,6 +20,7 @@ CI_TEMP = ROOT/'review/evaluations/ci-temp-2026-10-25.json'
 WEB = ROOT/'review/evaluations/1.7.0.json'
 SITE_REDESIGN = ROOT/'review/evaluations/site-redesign-2026-11-20.json'
 MATERIAL = ROOT/'review/evaluations/1.7.1.json'
+SITE_CONTROLS = ROOT/'review/evaluations/site-controls-2026-11-21.json'
 
 
 class EvaluationRecordTests(unittest.TestCase):
@@ -41,13 +42,21 @@ class EvaluationRecordTests(unittest.TestCase):
         self.web = json.loads(WEB.read_text(encoding='utf-8'))
         self.redesign = json.loads(SITE_REDESIGN.read_text(encoding='utf-8'))
         self.material = json.loads(MATERIAL.read_text(encoding='utf-8'))
+        self.controls = json.loads(SITE_CONTROLS.read_text(encoding='utf-8'))
+
+    def controls_fingerprint(self, name, expected):
+        change = self.controls['changes'].get(name)
+        if change:
+            self.assertEqual(expected, change['before'], name)
+            return change['after']
+        return expected
 
     def material_fingerprint(self, name, expected):
         change = self.material['changes'].get(name)
         if change:
             self.assertEqual(expected, change['before'], name)
-            return change['after']
-        return expected
+            expected = change['after']
+        return self.controls_fingerprint(name, expected)
 
     def redesign_fingerprint(self, name, expected):
         change = self.redesign['changes'].get(name)
@@ -340,8 +349,19 @@ class EvaluationRecordTests(unittest.TestCase):
         self.assertEqual(hashlib.sha256(SITE_REDESIGN.read_bytes()).hexdigest(), self.material['baseline']['sha256'])
         self.assertTrue(self.material['checks'])
         for name, value in self.material['changes'].items():
-            self.assertEqual(value['after'], hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
+            self.assertEqual(self.controls_fingerprint(name, value['after']), hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
         for name, value in self.material['new_files'].items():
+            self.assertEqual(self.controls_fingerprint(name, value), hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
+
+    def test_site_controls_have_current_fingerprints(self):
+        self.assertEqual(hashlib.sha256(MATERIAL.read_bytes()).hexdigest(), self.controls['baseline']['sha256'])
+        self.assertTrue(self.controls['checks'])
+        approved = ('site/', 'docs/', 'scripts/build_site.py', 'tests/test_evaluations.py')
+        for name, change in self.controls['changes'].items():
+            self.assertTrue(name.startswith(approved), name)
+            self.assertEqual(change['after'], hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
+        for name, value in self.controls['new_files'].items():
+            self.assertTrue(name.startswith(approved), name)
             self.assertEqual(value, hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
 
 

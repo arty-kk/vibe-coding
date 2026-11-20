@@ -86,10 +86,12 @@
     host.closest('label').hidden = false;
   }
   for (const button of document.querySelectorAll('[data-copy-target]')) {
-    button.parentElement.hidden = false;
+    const container = button.parentElement;
+    const status = button.dataset.copyStatus ? $(button.dataset.copyStatus) : container.querySelector('[role="status"]');
+    container.hidden = false;
     button.addEventListener('click', async () => {
       const success = await copy($(button.dataset.copyTarget).textContent);
-      button.parentElement.querySelector('[role="status"]').textContent = button.dataset[success ? 'success' : 'failure'];
+      status.textContent = button.dataset[success ? 'success' : 'failure'];
     });
   }
 

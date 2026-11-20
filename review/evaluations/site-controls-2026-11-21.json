@@ -1,0 +1,1428 @@
+{
+  "date": "2026-11-21",
+  "baseline": {
+    "file": "review/evaluations/1.7.1.json",
+    "sha256": "bcd0ede3f7817315c4fd3d633fa963971f0bdf29bf9038b84447531953634e47",
+    "commit": "d62567c01a871d07c2774aae78fd7f537b42ef2b"
+  },
+  "summary": [
+    "Compact, quieter keyboard focus on select controls",
+    "Shared fine chevrons and disclosure indicators",
+    "Copy action shares the endpoint field and darkens on hover"
+  ],
+  "checks": [
+    "Opened the actual select in Chrome and checked the focus geometry",
+    "Checked field alignment and hover at 1440 and 320 px, exact copied URL, rejection feedback, and the no-script endpoint"
+  ],
+  "changes": {
+    "docs/404.html": {
+      "before": "b01e047c5661a8d31711db3ee6e5ee68f49136a69decb51df2b5e6eda657479c",
+      "after": "8bd3d70c78990ae207ebe426365eaf4dc05666012fe12acd2202e1eb8bf336dc",
+      "review": "Compact interactive website controls"
+    },
+    "docs/es/index.html": {
+      "before": "8027234560d6074d0eab49520cbf0ab426973590a53dc4493e5e954c5137df9a",
+      "after": "ded19a2f30ecc51a468769e447fcba25865fc58a1cb8ad81dc8ef7dc4141ae36",
+      "review": "Compact interactive website controls"
+    },
+    "docs/es/privacy.html": {
+      "before": "f2f3b65ab1d6cde6fb87bb418849c906dc4cb8fd51077968f876413cce321e40",
+      "after": "f314b293786e366925722a7c14245555f7e85ab510b1e1bf03e35e8794c42e6c",
+      "review": "Compact interactive website controls"
+    },
+    "docs/es/terms.html": {
+      "before": "d7403f53b8bc366ecc2eb1a3ce9005f073ff3d8db8265a05cfffdd13542494ac",
+      "after": "7c664cbdbfd11112650374eacd909094bac59de9b27d2857df62e2b5f241c1a7",
+      "review": "Compact interactive website controls"
+    },
+    "docs/es/workflows/index.html": {
+      "before": "ce638d2074a530a7cd9928639f55d5027cfc2f6edcd7375d8e3997f097e7f75d",
+      "after": "48d028d3f2f28ddf6bd350d6355b64b8358fe87ea74a7885022131614f986b9f",
+      "review": "Compact interactive website controls"
+    },
+    "docs/index.html": {
+      "before": "c4e7f821bb6cec32e0275be9c131b17c084a9259b1132ab514515cf8c69a191a",
+      "after": "a1eed7eabda1e04bd6b284b32cdbd28c308c7cb8050acf2c4efe82344be6407d",
+      "review": "Compact interactive website controls"
+    },
+    "docs/privacy.html": {
+      "before": "03e34ccd046988671247235e35db4a5a7c3bc90f30767b08a5b3901516400872",
+      "after": "f3b2ba8f9e518219303879ca0c5de4673e2b0ebee83ea1133416220bad87276b",
+      "review": "Compact interactive website controls"
+    },
+    "docs/ru/index.html": {
+      "before": "24ab884e854a0047afc58a4ee4bf13b35df0f29a319429edfa88cc79e297ac05",
+      "after": "e673338b73ba9f7d030cdb7411a8dae881f68cc5496d6fae3da18d9c721a0e0d",
+      "review": "Compact interactive website controls"
+    },
+    "docs/ru/privacy.html": {
+      "before": "f3e63bcbe09bcfc0741498ad028242b295eacad3dc614c75915a4eba62e017ca",
+      "after": "3d087a636cb38fff0a69c8d19166a39c8c427b407bd811cf4451ae79ba4df463",
+      "review": "Compact interactive website controls"
+    },
+    "docs/ru/terms.html": {
+      "before": "0c24bfc8846e5e13072181de092bd340ced70a87c90307afb663dc0f547ce3c6",
+      "after": "7cec2c87b8694de08af94316d22d3eae3caabe5f112b2c8a553310d2157c5334",
+      "review": "Compact interactive website controls"
+    },
+    "docs/ru/workflows/index.html": {
+      "before": "90a27692feeea35042bce84cdeff5955163b697755f0d70cb39077a2d91728c6",
+      "after": "3c1da12c1d374968e6412ca049f36e34b4734d8305bd11543a40fcc5d8622b71",
+      "review": "Compact interactive website controls"
+    },
+    "docs/terms.html": {
+      "before": "c74878266e48a8b259f6cdb0c37c07a8901df65def1ea82e2b7033634c386398",
+      "after": "06df7f5947c893b7277ba868e73ec99c3cd7345e1a02960911843373663cedb7",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/accessibility-audit/index.html": {
+      "before": "c47eb2b0356138bf0799d3599a3069ec5f8aefd46788e6f043b43f96472888f0",
+      "after": "ecbb98064ac6f05706672ebf45f3c46760ffbacad54334318224885fa0cdb5a2",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/accessibility-polish/index.html": {
+      "before": "d8e82ae7363a6b579f497101ce0ace48321411d322a920ffca0cc139e895ddf7",
+      "after": "725a137c916cf86fc64aaaee9c084c5959ef58af5d2393924c6ee4878cc71346",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/agent-harness-audit/index.html": {
+      "before": "6cf17490e5dbd330a6370253667c95360a10d5e15051142cc3113798c31cbd15",
+      "after": "4ef687b32e16c2c2c668f264426b87b4921651109fca300739a1650a84042396",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/agent-harness-polish/index.html": {
+      "before": "eae1fdf4d0208897c64a857acdd51b144a023e98224bc818f5e4b9830485229c",
+      "after": "6847f7bbc6f1ae560330572b1fdf3fd3bd61d4217d46318636f021db0f0a42fd",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/agent-harness-replay-failure-check/index.html": {
+      "before": "e8313a6ead82c904d57548ab75c0997ed9fb37d497313734f50d99e1fbc328d9",
+      "after": "cf86294930258d88c41638ca27f130d2710eeec6e1e81e24f0c95c9b0240da75",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/ai-evaluation-audit/index.html": {
+      "before": "18fab2bb17ab23466b62e7104451e431fc6da0627638904361e720ba60cfab3a",
+      "after": "79697c464884a9672ebd0fc311c173c134e0d1069c47b5505eacdd384fc7f684",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/ai-evaluation-polish/index.html": {
+      "before": "b5ef6f4c8e3efb1ee19763a0a5b607cec2136284d8369a91a8d7e40197343431",
+      "after": "fddd1fce3e39d6764607a86f9e28c6ad43d8cef6d073866d951745878f27a4cc",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/ai-feature-audit/index.html": {
+      "before": "69015e40f2122e2ed75fa5f964a418a5aed71c70e75bebad7aa9cbd625451d57",
+      "after": "396fe42e4b07c1c822cad42811c99acae6e8816185e5f8ee7a2b4104cd30760b",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/ai-feature-polish/index.html": {
+      "before": "1820403c510422a2eb1d1359e2924f1eec1a717332065fc7cae2cc1409c5b059",
+      "after": "a59a860ee567e91a5818c3a27e956fa99438dd7c9566df042f980db183ab6597",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/ai-ml-problem-framing/index.html": {
+      "before": "7d7908a8d3690467f57f3b5eea03b6ec15c2c602d5810ad731e59dc9f1a8306d",
+      "after": "798183ead3c0d3d5b72271053734ada8ac9a0f9643ace726d0c899c423cafa84",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/ai-navigation-map/index.html": {
+      "before": "769c1ec12d26745f9c553a512e999abfe3e11e8b469fd1dbe5bd7e5eebf80c31",
+      "after": "aaa8cd2fdc343e9595fe1a751a3f465c7bbe9c525b5652179f9f16b47755af5e",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/ai-safety-governance-audit/index.html": {
+      "before": "a373d4da8e53f38547708843ca30e5e13157763a66e1d72dfdf835cd5fbeea5f",
+      "after": "d6a4fd4f4e48516cfe6fdb79c01e8bebcf2391c8c022fb6ec8e97e4ee1e42595",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/ai-safety-governance-polish/index.html": {
+      "before": "f4d40bed47fa7335834a8186424bdfc92074676043d8a277f729233753343b6c",
+      "after": "d6714e6689a50c0fa5d3db4282ac93ce5e9c9204f48fd6097601a43f243f79ef",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/api-audit/index.html": {
+      "before": "b52dd3ca0c12532ded4875a4d0dca286082a2142400372249261b4aef0f501a8",
+      "after": "25d7c7ed4a15ff9201b6e8f7537d6dfef3472ae4a6b9f8c90c104c60b7cb0f3a",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/api-contract-compatibility-check/index.html": {
+      "before": "f40814ada2b1271fae73292af0de39b146776ac6bee74a37c8e3fdcc1a34f2bf",
+      "after": "9c4127c5ba7c65e6c222380bde85b54b71732b42746c676d34f59442c60abac9",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/api-contract-evolution-audit/index.html": {
+      "before": "d4b80cadb02f8b6393f35d8b8818e233c6ce3693f56f7fb58a0e57792813bcce",
+      "after": "d54798f3a022799aae5cc2fa4425eb35984db24d2ba4ce6d9429d0cd75d4818f",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/api-contract-evolution-polish/index.html": {
+      "before": "d89120824f6f56f84d59a1fd772cf6cea25e980b0a5bd331cbd4822b782be61f",
+      "after": "6e2b751dce2bfda42f6a70fe613d6770cdeb0f98ec9fd7dfad92703c5599a79c",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/api-navigation-map/index.html": {
+      "before": "786e1a4ac8d5fea1cce9cd9cea1a2c9db3fc3509cfabd5d3887f79c849e39300",
+      "after": "51e508581d1db4a5831433a9347394f7000b25f5329bfe65a30341cddd91a542",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/api-polish/index.html": {
+      "before": "e2bd05d50ec963dd4339e9c3afe599f44b05ab8708a323ec42f218469dc24e4b",
+      "after": "c8cb4416997b5a11a26069f9d797860356cb2f3ed83a5dbb7641a4baa4e84df3",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/audit-logging-compliance-audit/index.html": {
+      "before": "0bac01fbac843107a87a84a63bae97bbc4d41da9b26519367cfbea2d9685d51c",
+      "after": "6591bdcf8d76f3b1968e7e308252d7798bb7aedc312936750c47283fd1b388e7",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/audit-logging-compliance-polish/index.html": {
+      "before": "605d91103feeb042923639c74f0bfbc6cedb0bd8ccbd328370ab88db70549124",
+      "after": "feaf11553acb01a707daa436eb3054d1b63d1eb448e71151650c12f309372704",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/audit-trail-integrity-check/index.html": {
+      "before": "e58ff49cb7ff3addfeb687f8de0f0d047a30520af201170283c49558471b2c02",
+      "after": "fe640dc16b1d8cffd2fb6db104365fde4ee8d5aa940a510ee689f4410389106a",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/auth-entitlements-map/index.html": {
+      "before": "9833f571ff90425ab70365d56eb96bdba8ff95feb9d59add31d82bd72faa5555",
+      "after": "b26ce6cc94abd8dd07d3d887a2e1c7d1fc46e65c49bfebb4fba7bb026605f63b",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/auth-permissions-audit/index.html": {
+      "before": "af88a4689f2c853fd897c269b76d06ec93b0de7da7e609d74cb0ded07c035ccf",
+      "after": "34251e9553822a5c95f0b500aa6a4814f40fe5cab4829766971a70638c578681",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/auth-permissions-polish/index.html": {
+      "before": "2e8bfa7d8bf9a839435a7215b5cda9e3d86472264550613044735735afc10efe",
+      "after": "532e26fc9fd4b986730e30dd64ce9d350c2b71ae4ea75a11bc1b0a9e6e8a3c31",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/backend-integrations-audit/index.html": {
+      "before": "947394c74cb7546c9241ea3f9d05458c651a1f17403465c6c97dab61de9b4de9",
+      "after": "7347e657e70ac64c45ae150cd59b86a5c07f6b4a364a8a8a273e0fe2ef7d14a5",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/backend-integrations-polish/index.html": {
+      "before": "d94716f0c265ce85a459cff0728026bf153ef8d4d056acf324547a19f43cf4bc",
+      "after": "4dd6bd7329207d037e8f8bb85f10641804f081f34a2af0eb92826b569325740d",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/background-jobs-audit/index.html": {
+      "before": "00826f9d3c246a8be334382f68bd2efafd82fc47d12770144f7df72205413e69",
+      "after": "fe72cfdd1220c9c8339d7c32fb78ece6531af331af9df527ff18db703ac61278",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/background-jobs-polish/index.html": {
+      "before": "1f13062e47b6772f6e3d1a66780234d15e2fec44201789e12e92f94d974faa24",
+      "after": "6c94146d11e74f1b9362111855a31a31c9aaeaa048d728cc8d4661ef99455478",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/behavior-check/index.html": {
+      "before": "a670262962371a12cc2ef2e61b1cdfe349f0ddd9c828e99dbdc1ed0a80244f8b",
+      "after": "e65b032b60a5491b1d05d4f4939fa4133def0538f62884e6c0c98673bc403d8a",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/billing-entitlements-audit/index.html": {
+      "before": "03bc2485f04b09efd52003a79960f8c5c40d42528fa963526540d106af12461a",
+      "after": "27c15dfb93c9ab86448e3039ee1c147dc9f84acd2c6c217b3a782416a3df04f4",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/billing-entitlements-polish/index.html": {
+      "before": "ab0af6b9ee25915a0984583e35c8a88e09052ea9fd170555b231f605954e5a13",
+      "after": "123ce92eb6caf9520c159d0fb6d9d00961e9d17ebd42d5ec0395af01ddc887f2",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/bot-audit/index.html": {
+      "before": "9d58bcf5b7519195ec9c601831b1c22e3e57198c757c19dda1bbe5ac975bc594",
+      "after": "90bebf6a563e5bf400b6490b804d5429d199444f5fb07663548f549df47d4647",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/bot-navigation-map/index.html": {
+      "before": "750af2390fa768723a0cf9b45385f4de84d958306f818756a094a8cb84ce9a65",
+      "after": "6c39043b8c2c7f2fb651056838831be63bcd36d747649f6184bebc81f73a6a4c",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/bot-polish/index.html": {
+      "before": "db255918159c4de225717734b59f56d3edb9199c8d664f1e5113fd1c1b5b00da",
+      "after": "1f6c0e3086f3f9eaad711f3a343149174dc499c7afaf9d3e7a7520d2eccc12c4",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/browser-extension-audit/index.html": {
+      "before": "b57eb89918fabe120befff56f73c532baf7fcc78dcd1d5be1b9d0a1f36fde799",
+      "after": "e220662a92deacc1b95832c6b46f53fae6872b78dfb933ddf223034310dd4c91",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/browser-extension-polish/index.html": {
+      "before": "7b88310ebbe9a01b438f0fdf4b9be8dc16cef1640c94a523f97a7d980a4d13d0",
+      "after": "18e45c07d688a5f9d3073346f1abf675fbc8a7edc5ee4eecc2c6bb0f9951b885",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/build-supply-chain-audit/index.html": {
+      "before": "6b30af7076d5c1cf30dbd88116ba2716558cf54731ac0bf3d9352d8b381f1950",
+      "after": "55383eabca365c2bae1ad1cd0c64f4bca023cd248fea12652ad26ea3ec39fba3",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/build-supply-chain-polish/index.html": {
+      "before": "980391488fcbed5856f41472ed9e890c8a806f10df7069835bcf537c8e2c5752",
+      "after": "6aea4ea058b9676b88adc5e1596f7f2dbcaebf68caf176ee1240c47be80b6ea6",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/cache-coherency-check/index.html": {
+      "before": "b6109f9d76c7b8dfaab5109d603fd9991fe63b28aaaadbfccee83aacfef40dfc",
+      "after": "fc69b4bebd3434daf465392a0cf80328e19e24b79b40d9fb419f68f0697950ba",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/cache-invalidation-audit/index.html": {
+      "before": "e654406985c7e67a6368eb0312cee997cc8c947084826a2cccb8c45b3a36a903",
+      "after": "7bb1c19f3ef25184f05ef5ce62a07d487904a66206bc2b54e59dc5016f7b63d0",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/cache-invalidation-polish/index.html": {
+      "before": "fa6821dd73491d51331c9be9fb8dc8310a85a3e4a00eb63781b61d851279cfc6",
+      "after": "ed339a2c035aeb0ad7451126c12c00000854e28c9b2e5d8c61c2fdc0c9049a7c",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/celery-delivery-shutdown-check/index.html": {
+      "before": "2d9f63f116d3c739b97c35cb5ccbd0c976b4f6f5160cc2b6f14ab27abd5588a3",
+      "after": "8288049f69a8455e70abeb34f3d6f5160ed31902ed11226f67911508eae07115",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/celery-workers-audit/index.html": {
+      "before": "f734a05a1b7f02afdf3e44f9cdedec25b6dfddac4731d55d44e47a89dc2217b4",
+      "after": "d700a05d9c81cf94fd0f5a2fce6ebe432f6829a5c1a6f41e5a53af99fdb342f6",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/celery-workers-polish/index.html": {
+      "before": "51d593336ed402b7204954e21db176af853b30e0537244031d1d8a2149d50219",
+      "after": "032833d12c67c7d61a12153dd465895e36cb745a110daa1ff8966efc09027169",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/clickhouse-audit/index.html": {
+      "before": "36977a82eb46ec589d65c2b7df1d7d50dc1d5eff5098bda144294f647f973588",
+      "after": "6d0cc20a30a85034cbc0d729263d2d0eb4c0c6dfb07b696f1d9681951fbcd291",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/clickhouse-ingestion-query-load-check/index.html": {
+      "before": "7f914ba82333d6416034159dd7aa9ad76056194e9ad584dfda20e874f45f7a4c",
+      "after": "ec7c11d5e39892a2c1c2127f92c31bbacbd1dd2b95a02e9d3fc108d7ffc8e299",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/clickhouse-polish/index.html": {
+      "before": "3ace154d597c3dac961bfdda37d29aaf2940d9d9267f1859acf11f84228bd238",
+      "after": "ffe63e963b5cf8399b4fe4fc8ba5a97a2bde8cd83e61360524dc2694c1f4381e",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/compatibility-golden-master-check/index.html": {
+      "before": "0e8227ac8b92dd03cc873e97b16c319ca05b68599b9e43007a20fa6dab1bbda9",
+      "after": "0fd875aadbdfbf0c06751f5faaa89f9c9d17708e44d6f35fe5558287d51b2c8f",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/consistency-invariants-audit/index.html": {
+      "before": "3238228feceab2f0ec07afb39dae2f226edbff5868b1e499695fe96f3a8c14b5",
+      "after": "265825a5ae8eaf76114bb9fb71cd243079726c2214c76cd433fa18155240bc53",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/consistency-invariants-polish/index.html": {
+      "before": "781666d3e6ff073872b9237a2134b654071a424c0bf727c3177e8e189923c373",
+      "after": "6339ecda5ee893660c38f6ef4602c14c28e132b52ab4062b3e8e807e96351c4b",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/data-model-audit/index.html": {
+      "before": "3aa3f2692b8f17474218533cc2c6294dfd46d8756336a015c43e2448d08946ea",
+      "after": "1fb7b5e5da4cbbb9a2eaace2078a90b2b69a07cb2676647d5e69f01621d54dfc",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/data-model-polish/index.html": {
+      "before": "a84c0f1b4cbd1b2bcecfd082978094595522004bbe24508c45076b919c2d6d01",
+      "after": "046f82fb3f48af0100b0a8267bebc0e425e2b605049d7f1b6c55aaaecdfbe53a",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/data-pipeline-quality-audit/index.html": {
+      "before": "ebe4b867d1fb6d5d2cb77067d092b36ba17077ea4e7395f993900cea13de4054",
+      "after": "18810465f517e640ff12a652298a99898186a7291fa50856af98d7cd4bb1eabc",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/data-pipeline-quality-polish/index.html": {
+      "before": "c489de20a965c040ea1005d0c9965dc2bab485320d85360a828c47b0029252c3",
+      "after": "e45dc52937dabde2e034a7ced6c74ba9915cd85b5b49f453d151c0c046fad947",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/delivery-recovery-audit/index.html": {
+      "before": "4d267504ee82f34308bd199cf3c326fd884dc601dab692db54497a6ecd9642a8",
+      "after": "29dc63579ff35b28b83cc45d1834797e8319d3428c969d445a131b3c49a3df37",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/delivery-recovery-polish/index.html": {
+      "before": "fed3fc3c2390b0c96a04dde3df3d6019d6bffdbc8e941147f7a6b6c1c802d9bb",
+      "after": "f8259bf57c27a44ba0da66bec051277f05c776e9afca42fd104cec5ebe0348ac",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/delivery-restore-rollback-check/index.html": {
+      "before": "91b796df568113b1fef3babe5fee63e7434c2d04b38a86e6e0e7142e7ded3c08",
+      "after": "8e2370f2e2c6c01ebb5310c2af9e867c8131dd04b6f87743311cf8b43fa37dc4",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/deploy-bootstrap/index.html": {
+      "before": "8db1475bf7be816dc4eb165c48f68acf9074e3120daf971a2d7b2244a7ffbb52",
+      "after": "b62f735e7a5f6d5d8c0e5249c0b2ef30153a64d63393162d22dd04a47ed75032",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/design-gen/index.html": {
+      "before": "c5c7705058a7387e0eeb162e3c8ca106039227064b9fe5aca489235377d5949f",
+      "after": "55378622c664dd8152d990d9b660d599b0964c9f9c72eaf32aea798b1c6262d8",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/design-system-audit/index.html": {
+      "before": "9bc6566a072a1bb466edd61992d9c7f1ad2df00450366d6460d89f91a6f7f2c6",
+      "after": "9576a97c8b92bb7ba44dc192d4926ed1ecb1b8f63e44a5418691cacb711c4443",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/design-system-polish/index.html": {
+      "before": "abcd414ecb4ef01ed14c540e11894bee6bd3dfaaaa83dfb0dbe73ce846ad7f7f",
+      "after": "4d039fbd7a391409f1246265a523f02d0efb1287cb9b4c731d9c30ee6e75854d",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/desktop-app-audit/index.html": {
+      "before": "afd7a28a1660c56f8b95777467725147b359a3aa6a4627255e9acd7ec2669f39",
+      "after": "9b24e580e7204a95ce4ee466169a6a3299ac9de9ffeabe2d1b83f20e7df52a36",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/desktop-app-polish/index.html": {
+      "before": "e8b0989816455af30002fa0198c3f65175e454ad8b4c577833a4f805630a60a3",
+      "after": "1dd2d6f246ee94b586c7e6580c07ae74e28ea05c083d93c149c4b0ece49b9b43",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/documentation-sync-audit/index.html": {
+      "before": "f8156d36431d36776021318250a49986e4c1441c3d5ca9a7fdd45a1a4d689619",
+      "after": "e8d041f3740dbdb94a51d2746819387f9d16457b6198ed9a2e165e60f2228552",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/documentation-sync-polish/index.html": {
+      "before": "c7cfe3187eedba8bf4c85431588a6c64c5f870bdeb62918a516b3f7191688a8b",
+      "after": "dea5c4123245bcaa3a9fe425f9ce8f29a1e5868b8e57265c0d83f493a00c2b2c",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/domain-data-map/index.html": {
+      "before": "9cf3489d98e6f44db9c62132793741b355716439113fdd07ed4fde4e90b9e285",
+      "after": "72b781a59f741c4a71ffd4946ce935422194b1e70841319c2e4dd848bffea2bc",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/evidence-normalization/index.html": {
+      "before": "724bd44fd0c41039085a97944c1cc78d7e0dc60a4d7649bd19f3d524b303c526",
+      "after": "3c27e1557f744034686ad12ecabb44cbe0caae267fdfc354ddcc111de80f1395",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/evolution-improvement/index.html": {
+      "before": "61fcf3ec4f3f5f6525d5159ee5f6551a68f73e5fb112328c084129faa20a2e17",
+      "after": "ee015455929d50658732ee89109c9db2e29eb8d875f008dee4e4b0f0047d59e5",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/experiment-design-audit/index.html": {
+      "before": "082a1c78bf8800d8a2cecb2f922ebd4369b817054821ae37750c49bc6c8bd2e2",
+      "after": "6e1cf31b16b10af86de96b6a5346043139e16fd259270527e55666b360571019",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/experiment-design-polish/index.html": {
+      "before": "3d364951d7cff68a663491d854afe4dbbf261105f4019798c25f946535f2e599",
+      "after": "05cf9a3a2056d05393ad327a0f54233eb61b9d2a2c3f73850c515e5814eb5ed2",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/feature-flag-exposure-rollback-check/index.html": {
+      "before": "f372e57de8dbb3f2fe166dbfa469427bb81545df3a5d537a1e5f9fe29b97d8d0",
+      "after": "e73ce73df52e32b1631bad3d712c94546322145db2fe0f199960c310a7e9641c",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/feature-flags-rollout-audit/index.html": {
+      "before": "888ea0aef375e61c1029af84b0c8205a7537f95a4bee00595f8d2c4e68f304b5",
+      "after": "fd78b09dc9845161f3d1ea78328c16fe1351e770c24bbefcb53f7944908554ba",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/feature-flags-rollout-polish/index.html": {
+      "before": "3bbddf6cf8db473daf931609146ad574942bf78d63999a7a538f31afe0fec788",
+      "after": "fb42e7d4d4c8a2ca17aa1c188633a0bafd37438d15de8957641e62924ab09f6a",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/form-data-ui-audit/index.html": {
+      "before": "e4c00dbdbf5823bffa18127b78dc37979bcea385c9770dc3c07e430f4a954e0e",
+      "after": "2d82033ba9823d8456efbc9945b3db6e41f2dbe0571d9aad092603a33cf0de4e",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/form-data-ui-polish/index.html": {
+      "before": "ae02c225f1b29a74c8701ed70737527554baa67c8aa0e0034221fb57e6bbb6a3",
+      "after": "570db1c8f10636e3c878cb87db9c89bed5082254a6c7563c02a8a0bdbbc1fc4a",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/go-rust-concurrency-shutdown-check/index.html": {
+      "before": "4acc832ff0562a78dd23873a0171b9646cf84f3b33fc773e023120efafbf18d2",
+      "after": "a58a17e8d70b6c166fad7ec46ec1c3f1ccdce8cd9f4824c71f7ed360ef4a2685",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/go-rust-microservices-audit/index.html": {
+      "before": "fe4052cf5ef3bcfc352e3ddb2ccc5ece946d5e9309ae138a089b18e512a8a588",
+      "after": "73f87280d283dc1a913f837ecf746cb1bb09ee02f20e0cc84ea5cd1432620aea",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/go-rust-microservices-polish/index.html": {
+      "before": "397962924c8f4f6639e3f56c7c3365fc4cdd22fdb0efba4b56eb1f0f70fd426a",
+      "after": "1514a8438ca654dd4ba10c571e3145fdea148b58a3dc0fe836df892124756137",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/homepage-landing-audit/index.html": {
+      "before": "0484edcdbfb1ff6b0fe27124645ca2e2eb9bdba474960c34d33c75930821cd33",
+      "after": "08967de46c3871242285a0961b61e552371b25dac159b3f59965e78aea902003",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/homepage-landing-build/index.html": {
+      "before": "65d6972a55728cb4f82f30eefd1de3a48d5c7671888007d5797d8a981811e326",
+      "after": "88a0d38d0facdfe5e176b7eb7c25b74ec14e56bd004f6690ae8f29b6c8be87bc",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/homepage-landing-polish/index.html": {
+      "before": "abef2f99b73a3b4c491e40ed5776cad3a39c0697d19f61c332111f969bca419a",
+      "after": "5717e499af3a60d8f9227ff6d657766bb824aea644d15e71d63fb36b6fb63377",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/idempotency-concurrency-audit/index.html": {
+      "before": "6d990304c75b750e24600508290c1a529f9903c7e2c6b864c181a949cc5d2c5a",
+      "after": "e8cbd65a6be829e0d80450fca5f2eb652a477d6f64b7b449fbf69043e8d393c5",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/idempotency-concurrency-polish/index.html": {
+      "before": "71ba36fbd8042e754b49a75c5779b8e7841c8e131a622a5a17c54e05e37b32bf",
+      "after": "4a139ea2ba530b8ff4b060775fc68b737271d26d3f67d78d42f7581f354766e5",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/incident-recovery-check/index.html": {
+      "before": "1bf72230810d2505390b78be97acb3484a8a5e786df277e45def1b06e822f102",
+      "after": "5e5bda7b5ada934a2ed81928d4121bc198eaffdbd7c57d0667d25536543e5b8e",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/incident-remediation-polish/index.html": {
+      "before": "8317d8bcb00e1f4577b113ee44a78b1308ab1b9a315f96da1d542bf9112966b3",
+      "after": "28f41545988bebe9405d5183e0c4bdc786a2745952eaaa9a4e7565474c066dd6",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/incident-triage-audit/index.html": {
+      "before": "57911d017d98648c94474e49cc6811e957e71b265169a469c1e1fd01a3958395",
+      "after": "5d958652097d6034cd7f9b33192a0d7a32a20b74807601ccb301608d373d1894",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/index.html": {
+      "before": "d0e7267b2236836e7a41f8bc5d33a3a6c7b5e0fa314c5ace208fb407d7c7f508",
+      "after": "b70b71c8ad829bdc781a3c8e7fd35d39e6f0e91843692e21dded73e55b29a16f",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/infra-ops-audit/index.html": {
+      "before": "caa7c1a993ef295a932174c9ca735bd4ab3949c12763fe160eb07e92fcbf17be",
+      "after": "ad9d02decb276e7d3b7566acb0aaadfc05beb0be450ba9b385a9f6c57ae9e093",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/infra-ops-polish/index.html": {
+      "before": "3571567fe8375d9c8d534a3c5744e4afa01030d5c5da8efc2b61490f75779061",
+      "after": "148c2cd69d5c2d288cb3d3bf57d609d53db7b69e5919332f6330553dcc577b08",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/instant-architecture-probe/index.html": {
+      "before": "f645b793d035d0d96e3044a0c8179ead336c70088745c9bdcf518f1ce9834ba5",
+      "after": "9ed886141eb32b488ecb79450a6955e9f095550c7eedbb4d7ae3b02b7b3c12fd",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/instant-backend-probe/index.html": {
+      "before": "e3f85415d6f4860b90086bc25e17d47fd00befd1f3b0f3683dbd5d818b4b95df",
+      "after": "0e452aec7a5e466f0052fdad2eee7f9000b092e5c3fb372dbe5c5e9bde819e78",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/instant-bug-fix-polish/index.html": {
+      "before": "bb00c4b4b5791199c6dabe43bf07b191ef598760cc36cc330c4ad084e8adec89",
+      "after": "3870570ff73a67ba1edd740a9f5a43aff0eb71b519a9310581e594c4a6fedf17",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/instant-frontend-probe/index.html": {
+      "before": "d1f3b87bd908d114ca73aa84ddb78b70c2503d1367b6f04f95063e78e5641721",
+      "after": "5410a9f49a0cba5bba7f81d4f666348ba19028a57654b3aa2aed7127590e3fee",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/instant-ui-ux-visual-probe/index.html": {
+      "before": "f004dcfef8f077bff855104017d4a111410074d9a20757fdbacafd7341c5b033",
+      "after": "669afc422bf4895c9a2792a52398b593b7440ba2236e4221b9a8c581656d4f0f",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/integration-map/index.html": {
+      "before": "4a47d9e24f3d4e825ef06fccadeef31a7ff3364eb90509f32805063f5124ac99",
+      "after": "9b1139952d182cd64ff472270e7ce8fcef3e9a4c5fe7488b579667af219d7a44",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/iteration-closure/index.html": {
+      "before": "19bd5b6c15c124c760dbd0f8ef855b21578a9ff9d09b0dd324f096116cf52e11",
+      "after": "0cf08417af89dcd566a07f9ee2c6a09f55288cf56c757acaa6201633e1f1ff86",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/kafka-redpanda-audit/index.html": {
+      "before": "8293ceaa9b5df604abc7316c1e5562c4a065ac861e99c277d87979179d9a132a",
+      "after": "92d119429429eb5172be881b12635a7bc6c7341aed16c67476738bafe04ee1b6",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/kafka-redpanda-polish/index.html": {
+      "before": "2745046c61563a39385a5aab6072a166bf33ebb2885f6e04763f41ddebe50856",
+      "after": "e8c53b9c475f80b8debfc341e7db8d9f245a6a3819207b932c43cb4522830339",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/kafka-redpanda-rebalance-failure-check/index.html": {
+      "before": "240e5bd116f4d2d0de25052e8f249e1e2a0c9296fd794ba650b5aec492b3f6c4",
+      "after": "2c87ae622abc1caedcd155fd04673e7a727ba1a408b9379c1a97272269bf52d3",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/kubernetes-platform-audit/index.html": {
+      "before": "dccf0f5ba9e2793da5938b50ed488b447c0f53ea3582ae321c57f12bc5b844d7",
+      "after": "1f357c3cf999df65b800821aca7a6daa5ea7b636b706707cf2d8ca15ef5d350a",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/kubernetes-platform-polish/index.html": {
+      "before": "097b11854a07571dbdf8853a66cf307b52dda2aa2be160657e71657ccd2f215e",
+      "after": "78b4dea95c54ab83373e4b1491514fa4a87e0531e1b3c4ab50774df3cdcb3b60",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/kubernetes-rollout-failure-check/index.html": {
+      "before": "c4cd85455d8d222abb71a3e19c4a74bef853150d04d99f3b86b42e86e984c37b",
+      "after": "072a00e0fc787bb21714b4cac5518264ee42881a3bb2745a9e5128e9107d65c4",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/llm-agent-tools-audit/index.html": {
+      "before": "9d70d9601eb1e07f13bfc1b55192f1affba5fd395233ca41fb52f01eba351b51",
+      "after": "7fdf2b893a8dc620f0c02b2813acb348a33a48d9a661fb05e9f52edd70d25885",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/llm-agent-tools-polish/index.html": {
+      "before": "cc787a12df2cdd19f90837a3f841255875130d93b362e1b0f8a06aa0f0c68b97",
+      "after": "05defa5effae4c89f51a0c07ed360d653be2ddd502432c3e6bc35239a74cd0bf",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/local-client-runtime-security-check/index.html": {
+      "before": "60b20d4325c11dc874dbbe154ea7af5300efaf45abeca339fe3022ff6bc39588",
+      "after": "8564c3ea2417b495bd810ac730842aa8fa38cc26ff03a4171ca8fa4876c2afe4",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/localization-audit/index.html": {
+      "before": "a737926148c849a04085f881fdf9c5707224f554a45151568cf37f2f614e926e",
+      "after": "3cd90daebac884e94603339b440f6d36673fc8b0f44617666fdccf85f7f934f0",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/localization-polish/index.html": {
+      "before": "5de60dbf9e5d4939cb30c98bbc0e99f4ca234e6a355aa4769ee74371586f87b7",
+      "after": "424b790887ecba0bec6779417fd45db24cfede1052cdc49b29bc92e8ba171182",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/map-refresh-polish/index.html": {
+      "before": "97e2b19d2f62c73c54ffedf3e532606f0f157c4883894ded4e23d9f5da9fbe43",
+      "after": "5035071f6e179beae47e640ae59324e6f0d128b95063cf97419fea6a340a9ac9",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/map-staleness-check/index.html": {
+      "before": "00387007c1ffc4082c8887f9c5173151446ff1a55330beff8e5e8458e8d058a4",
+      "after": "5bb5100300b9de919cff790d83e412ee92f8020d116143dc90b90a8442796dc4",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/map-synthesis/index.html": {
+      "before": "da0363467ae6ae69bbbdf77e7c419a3254a86db02528786c8fed356851efe23e",
+      "after": "7a7420e9fb8fdaf3c60a20fad52e474ce5c59b6bb46e6911a23e76c827b25925",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/mcp-protocol-auth-check/index.html": {
+      "before": "65e63fadbc46e69f48004f8750c5e87cf574a7088d96ece915b6fc4c5d7a8ca9",
+      "after": "6c89e06c39481a18d566f462110d4c47665e5af334d901c0398e24e420664062",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/mcp-server-audit/index.html": {
+      "before": "ce442c632d65c9b4a7320432a6d639f5ca5683411556b112f3e3b549780330f0",
+      "after": "c26fff636fcb274f4decb4af30f7fd3d03dc44d5c6a17719c07c2c9a55e41462",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/mcp-server-polish/index.html": {
+      "before": "e06a3e7edbcfbcd23b91598aa1c1deda61efa90f2c7e80aa75d415aec64a07e9",
+      "after": "bd6457409e894d3128eb8d3eaa3606e463d3490db383a9e581c383473de9a255",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/migration-refactor-plan/index.html": {
+      "before": "0e71c5c4db80f50f5d4d20276677e4fb84d0f7337f8cd892bf99311bd09f9bea",
+      "after": "1760ce12db848014b2a588b0da0e79685cce33e82885d72638672bf27f50ca25",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/ml-pipeline-audit/index.html": {
+      "before": "f8479ecba32b3f35fd00e464d90ec8462a13e7487912040664c47c73bf193709",
+      "after": "2f045f70e52d76fe16efa25343467978c50f4a7afcae56c88515344b8d8010de",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/ml-pipeline-polish/index.html": {
+      "before": "0877e70b6de3b813bc8badd5f8067a9e8d595bcf7a95c5cf9f6b8a8fd31c0b79",
+      "after": "9e902a437703f260a80c4341b0215b1758a26cf8f8f8a301db805b7beeb5a04e",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/mobile-app-audit/index.html": {
+      "before": "8d66021052d089b777673a31f53d1122dc756794fb968b7aa8d5a38ae5e5f870",
+      "after": "9dee4575345d9f926a0deb31835599bdc1986361c1e3e87436013b36ced5ec6b",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/mobile-app-polish/index.html": {
+      "before": "5ab54c51b6aa29767e9196eb773217c6f342fc0d397580b57db217afccabb8f8",
+      "after": "ec47f8b1ed1e87fd77c6a9836a899dd4fdd57ad9a0cf5ca2af550cb2bedbdcef",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/mobile-release-offline-check/index.html": {
+      "before": "16c5bda53024687c8a1d618bedc952a352c92f01d434c49090e3ade993fbb6a8",
+      "after": "23595e78c9aa767e4c2f7a596d0e1eff735fc7a6c391b9d5efb4b5d7d048a7f3",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/model-serving-monitoring-audit/index.html": {
+      "before": "f73014522e2b71f78554020dd2eac33f182ced4b0e8537fcb06beaa170e85769",
+      "after": "966ba996dffa066e085341eff1314a07639c288f711c8668a517c89ce3345560",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/model-serving-monitoring-polish/index.html": {
+      "before": "43ad7a027df827719b146b022b16e5d832bfef7f6d0bcbc993ccd2f737c02eba",
+      "after": "2b362e6589b0ca2b79d1ad9ba854dbd3e505e8600428646acd27539bb320ea10",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/multi-tenant-isolation-audit/index.html": {
+      "before": "c275c0f5a569687cee8886b548e88796fb815fba554f46ad8b7ddf24330afa1b",
+      "after": "f3c92b006b5b61c8d3a9b783cc6b5d8dc357d16158b67dad2a95728cd72d9660",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/multi-tenant-isolation-polish/index.html": {
+      "before": "0255eee04db386e5522abdf3a5b54354a926ddf61855e379b97b1f25146e210b",
+      "after": "fee43974d1154f996a8472253765e871a954212863c02f2e7a84859a9ded9d83",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/network-integration-failure-check/index.html": {
+      "before": "66fbdb5fb07ea331702683e810a0e5f6f519276a959bbd94abfa4692061797cc",
+      "after": "b6b9b1178610dbdc9d2c8ad0e6bf92040813f7ba222bc8af608501dc37e25180",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/nosql-consistency-hot-partition-check/index.html": {
+      "before": "cdd133547ff59fe7c1ae5cda4b274d470443d864ae0efdf9ad338bb628b698ab",
+      "after": "f6bbc58bea3feed04afc71ac43dba8ddea2761973040c8816ed4828bef991c6f",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/nosql-databases-audit/index.html": {
+      "before": "501eba4d1477ad13e1d97cabb403378ef309781e8f97ed66669d351ba110aab4",
+      "after": "b72db73b605f1c43b52e5e98ddde683c20c3cfc6024e3a6ba2cff0594d7ed70e",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/nosql-databases-polish/index.html": {
+      "before": "80afab2664637f61bd9703a2a1fe611b679b40719757def115804b6f174e3bd7",
+      "after": "638ef8ec0e44f0aba4d90e61d753545a5e20e07dc93463dfec0546186c1813e4",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/notebook-productionization-audit/index.html": {
+      "before": "8f4b05eb1d1c13c7ece01a6e2f778e5ef58dc6d071ef60afe5e1d3294b601998",
+      "after": "91b639a8054325d16d807314eeb3fa4b09b4b33b9385ad95bb7c164b92003417",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/notebook-productionization-polish/index.html": {
+      "before": "f84253a7ee32e17b97a5ad1e3fe0ab78c6300a85a013a2b423a38be0a86d0d93",
+      "after": "54b09e9536395e8edc887fdb9e3ca244c6d1a8fe3a7a071137fc5dd9b5328f4f",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/notification-content-audit/index.html": {
+      "before": "1ae329888981a3538e6c0fd9ec246a7d41e66229cd2333bfd87ae1b575a580d7",
+      "after": "bf96d629bff8c09854c9d0a229cb86735c196a052f77b5a576770817b232131e",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/notification-content-polish/index.html": {
+      "before": "b96a1863ad041ba08406669d648ad22412890a278034294e31ffed60e331b1ad",
+      "after": "20de9bd041d234ea02e460dbc3759b6d0875a9c9f87cb3e91003797b16171423",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/notification-delivery-audit/index.html": {
+      "before": "815e2649c6e000660ffed0b8d2c9f081970b307137f87167bb162a33d094dbce",
+      "after": "6f3544314ec26b8c7d6997aab7df3c0a9c5841ff294e528504978e81725ec389",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/notification-delivery-polish/index.html": {
+      "before": "591166ca1c61f96e0991c1b321110c94f6cb3d2974a127ff1791f843d0dc843d",
+      "after": "bb99ff75b9aa49d9cb1c3de8c2541253640cc89ac316da91824c1cb1c347f94d",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/notification-failure-idempotency-check/index.html": {
+      "before": "8186599b5bb107d3f76caf615b20303fc9ea7e210986b5406db637194fa46435",
+      "after": "523546c517d3b04ed5b05a3c5a26f8bb46aecfcbb0a9b9fd0df3bc3891f7515b",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/oauth-oidc-session-check/index.html": {
+      "before": "63b36b65f15ff585688205460938e7bd5e467c34f8f1c46f3ae487af0a04e9f6",
+      "after": "da48203b3c62496422f8e746b976164a5b2e499310fe4018b0d14f0c75fc5b46",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/object-storage-audit/index.html": {
+      "before": "a05633f6ba22dfbed356d27db3fd32a07a367189ed690d293fe55c36c53b35ff",
+      "after": "8611843248b5ff3c89273fa40c0c2950b96d2a7fc94dab9f5f591de95e4bb0ce",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/object-storage-integrity-recovery-check/index.html": {
+      "before": "9badd9d9cd454e462be3dc1b53edcaeae77e15fd7321547644a592c4b154d775",
+      "after": "7b82316543fc54fe702cf737c355016482111fac4f6217be25aabf7ce7d0d1bd",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/object-storage-polish/index.html": {
+      "before": "04d57f300023eaf6d26e10a4e65150625cf2b91f8e535e7d998538bf4fe76294",
+      "after": "051b7502f928d95b333132fcf89f9d6ba212919233abd1163d93275c973ba22b",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/observability-semantics-cost-check/index.html": {
+      "before": "c1b63da7ca6a05781381c5a21145fa991b0ee94363e8176557050772e15b4076",
+      "after": "e6df8defbed9fd4dd535b355e14e1c4a828fe3d11c04f72d379d36cfb80b2824",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/observability-stack-audit/index.html": {
+      "before": "7f19ef681ca603db6ee524d186575495434eca7c543c19f064036ba7941a2d30",
+      "after": "b6db5df2ed43882ff7e8f8b3edebd061eea196601e32ec725c74d5c5fd581001",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/observability-stack-polish/index.html": {
+      "before": "2742d9c38e5b7d0aff6c084bd408daf06cd997f232f4fb0e5e36b34fc12d20a2",
+      "after": "e53a7f6c5c0a53d65a818fb9876ca09e3f9eb664c6d4b5d73234a97ae3e9b15b",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/ocr-document-ai-audit/index.html": {
+      "before": "3cba4b00da28314ab5cfe5c9435b0d72310e4ebe68b70cee686083b2dde8290c",
+      "after": "d5c94a4949dbbbdfcbaa602397a299ec049dbe2a1384f64dd2aafa2fcb48bf50",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/ocr-document-ai-polish/index.html": {
+      "before": "4d91d909df11030bc031f0d7460ba0c195a1bbea0cec54a7f3a8627fa3fa5a97",
+      "after": "c81ac2557425525cb60145dc4a6a42b8d4a3a339c8b998fce15a2ba2856bcb53",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/onboarding-activation-audit/index.html": {
+      "before": "73b12db34ac4a45b7bb4a76acf67c6e4151d8d8a99248ee968927368007a3da2",
+      "after": "0d4a8b65cb6991859d086220d6ffc673604f98d9f3e814506ae1ae8aa9d8d06e",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/onboarding-activation-polish/index.html": {
+      "before": "d63f7446d5303f3824722a87a94af71c5893c82d2a3f98ba3e3a36460e78d090",
+      "after": "2f54d1af25f2b63844c5f6e92f48e252de1305afa2ab454f66fc353ebe3c363d",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/ownership-invariant-map/index.html": {
+      "before": "3411cd3db69d036b80df08add6a604fb837aaf8cc26dd591346023a3542e33a0",
+      "after": "efcec915bd17bec91291eac7a5a96f60f5f3129b647856edddfddaddc7c1f687",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/patch-checking/index.html": {
+      "before": "2c25369c6eb85048ff77b88e2a3564ff51e71b91dc737c420540792dbfd6ca82",
+      "after": "4d88561d76a92791c2f37ca209452cad43d3b2cfc6685b3d752301891d90da9c",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/payments-provider-audit/index.html": {
+      "before": "4223f00f37be2794fdeb98e4af50bd67e326ce96b8e3164e598179b89e8e3951",
+      "after": "2926090586d226a353ea4c00875267365e912dea444222ce0d63989392599255",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/payments-provider-polish/index.html": {
+      "before": "a0d910467bf5cbd6d1a900f173d2c021af78e109074ed9fa5f41312475963357",
+      "after": "f6779e5ffb32d3553194350152d370a89d846afeaf3ecdfc95481cf8ef63ab0f",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/payments-webhook-reconciliation-check/index.html": {
+      "before": "b09d4a66c496a1b6e0fcfc3fa6fbe5b9164b9768edc577b046fdd7fd35ab3ee2",
+      "after": "85c589e59e3bd8c1e431866a3d3ec9556d10a3a639caddb7e3d52e18a824ec77",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/performance-audit/index.html": {
+      "before": "73bf29e0ae5f0e434a7b924345dc055058b16c61fe66d690bbf47f18f1e0dce2",
+      "after": "fdb0d0c1b7a7f2b204a7e8fb5b3ffe45dd6b8c26dbc8b85b9ad03fe84259d5bd",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/performance-budget-audit/index.html": {
+      "before": "8b3e34be8e7eb90f7ecb433f55724881751d56ec70c6a2570782da30093dab85",
+      "after": "7687c0f0488b2b41cc32f66d6747511e37b02692c776f1ff9ce82d1ad541ab62",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/performance-budget-polish/index.html": {
+      "before": "480a8a765255c9a4c9cefdc1f25ca0f0dc754dc578d3141d097254f3b463cc28",
+      "after": "f7867e8b86b04deaa44e4f8b52f8e3125d62ff6e51e9335033ca7fd6edc02836",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/performance-polish/index.html": {
+      "before": "1c18d6fc71001bea58547ae5ae9dc723a0cd6d71fbd907b547db74ddcf2f147a",
+      "after": "f572a0b7cee53cb915c7ac3dd6c29ba660052b6507d8d8f8788e7c65276e4bf1",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/privacy-data-rights-audit/index.html": {
+      "before": "7d18fe529b3ef374dd0c75f905506d9febaf8de82794ec5df964b747035a0fee",
+      "after": "0ef0bee930d833fb0eae55243652c575df7b41884cd85486a8eb30bdc1c10ae0",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/privacy-data-rights-check/index.html": {
+      "before": "1d47c443324b47a2f8d1bfb6bc3509abcc2e7ae9dc5b8bd6ee295d90fd8e5723",
+      "after": "420989d11039ed248b6a9a677f176f0a34db5fe00a4eb8288432c3516f4bc68c",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/privacy-data-rights-polish/index.html": {
+      "before": "e784c118ef4b32efbc344d36a46e7e178b855f8a329cd2c568ae667383563722",
+      "after": "a2688b4a4d96cdcba86907556f91cc435ff3c5f6b799292aa4b12f3886b97482",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/product-acceptance-check/index.html": {
+      "before": "0005b192e116c510d20ec05ceb79aa2fb7f965c343901f95439030ebe6bbd9bf",
+      "after": "0204665175d47f449a261aa29a57ebe153a0c2ec3a1eb6c00f7ce108b07fd964",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/product-analytics-audit/index.html": {
+      "before": "9ff42c2ad06111c63fa9fc7785f2881cc8326cec9186eb35b237c4080cff028c",
+      "after": "4ccd06f61958b442a670faec037b0f2599ac7c1ecd00832b37390b77e7ef7af2",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/product-analytics-polish/index.html": {
+      "before": "bd3d2b799e144d7fb79ec4dd23b216c39db07be71ca27b517b7c3ac0995fab34",
+      "after": "03c093f1b32d10b0e733caf7ddb9fa5943c9f3a86badfb8126bf2f6eb3a4321a",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/product-capability-map/index.html": {
+      "before": "32c40826f9be671f7e7e71ae264be283ef907b479c17c889196b68ad04fe0216",
+      "after": "e996f7d9f917ea9d4be479726f3c63bce6270ad36b60714a6a4d6b7fc1aac9d5",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/product-decision-metrics-check/index.html": {
+      "before": "c9dd6734de19bb214e05f969e6b9db91d0a6b898dbaab08feeb5ef0c50bd161d",
+      "after": "ff052104b6b4cf47e95fc59efcde4d464be88b4cdf885a48413cfeb69bb3dcb4",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/product-journey-map/index.html": {
+      "before": "c5b9ef7139e1840ab21dbecab3d64d34030ff1e906ef623bda385d44b160da3d",
+      "after": "cbedfe160c79896263420624b66b231d6fbf8683280bcdbf65ee9af98e48e5af",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/product-landing-copy-audit/index.html": {
+      "before": "c09de517698a2172a1b7d28ab16b81ecc4b2fcaeed8669f1779f1c6f15725d25",
+      "after": "ba3e068afcaf47314b4eb9db9113b453169a2ba6254d589d00b2588d8932dad8",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/product-landing-copy-polish/index.html": {
+      "before": "61059e6774634f29b76a072ee48bf5662611f3cddc93b84ee331e2e17dcbf8cf",
+      "after": "d07aa885608095bee14aab1b5a3e08632acb4a6ea8b2c2bed169a4a3c94767b4",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/product-metrics-events-map/index.html": {
+      "before": "2404f50050a73c291831bbe095f2322e56d2df03e984f13701cf9286f5a1d1a7",
+      "after": "4f9384bd002f02edcd062f521b94ebf40d656939e0f70c456f8ca4344f43d7b1",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/product-requirements-audit/index.html": {
+      "before": "244d64a380c9465b7e54f1eca6409fcf9a68031e2847bfcf81bbc533822bcb48",
+      "after": "07a7b3c97361da313bb75398a01ce4ac8efaab46c0a6319451862c1fae19acb5",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/product-requirements-map/index.html": {
+      "before": "578eb74527b9899826e7575ff6dce286799a4410c7b5339758b66fc6fec94a0c",
+      "after": "a925e904057df3a45f4384480ddb00572e824dc928739283df9c5a1198c03e4b",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/product-requirements-polish/index.html": {
+      "before": "1bee48df7444ee62bea37762063187fe99abef8e0ca8e4974c59a590183c8bbc",
+      "after": "c4ecca901d71d8ac3651cf62a8c5a823a197f7c6c6b30e3306b04cc4e1a3b847",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/product-ui-audit/index.html": {
+      "before": "ce41fb792d05c1a52ab16349bedf1545e3b888bf8d30e2de6c0ccc0cde2ca3fb",
+      "after": "e2f15d8031bf2ff0fbff777dd5dd292fe13766c8d4d249bc89e6c11897ba5e95",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/product-ui-polish/index.html": {
+      "before": "4cdfcc2e2beff3ce9bd2bfdfde6d51c0de66158ffe71c3a6f70e8a7e49485f64",
+      "after": "a38dac92077ea99f7bce5cab020651961f48d51daee27c65d8d45f38fc148c53",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/project-atlas-map/index.html": {
+      "before": "102cc22304b75c107513ae3809d436a029fdad197b7e4c5dbaf8d0e1e85894ed",
+      "after": "707d921a43bcaa93cf67e97b15d9df6715ddf901bc053aef06b2aa117d921691",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/prompt-skill-sync-audit/index.html": {
+      "before": "94b2c05f27ec439bf87efa62a81be68d7367dcf0f562f28dd7e649a027b07ede",
+      "after": "12e622f956b73a3681ca2f0dc3c07637680a16b3eeb716623da9b11354d5677c",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/prompt-skill-sync-polish/index.html": {
+      "before": "f9aeb8009eec743d14742b7219457ee60db2c64f39363b6d55752c8a93abc70f",
+      "after": "ec32934ec0680dd65fa8d177e9952b0cd9138fae94fbb01febd5d7895e035ca8",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/rabbitmq-audit/index.html": {
+      "before": "9ecfbe0ba6bbb60399c01d5db4c7898294d5093112f7ee7cc86d58a5f465d1fb",
+      "after": "b1ed095497bd9b1a07e0eda8023e126fe99482fa1a2a6b8dcca7e26eefd2201f",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/rabbitmq-polish/index.html": {
+      "before": "7e158ed522e9889c227d7886f145ac9ee0495beac08f28eb1bc8994a97dab095",
+      "after": "5b4ea625cdb718e142189fd049f75282074337b5861a651f4a1e0fc0a6c6738e",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/rabbitmq-redelivery-recovery-check/index.html": {
+      "before": "8d40112f6a32b714d00326491ecda53873d74c0999db87b289869f37b9d46589",
+      "after": "147a2a1835a676e2f6ab6a2ade29653a546a0dd7bdc2af1c5d9fa78faf6de9f6",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/rag-audit/index.html": {
+      "before": "da24e7a57242b069d29a028de77d78ad7eb4c7e34867b1287bdfcc8e25ec98b1",
+      "after": "46ac2091b7afbe05346003fe08c30749f9b488f8499902be42abe55bc72e2c3c",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/rag-polish/index.html": {
+      "before": "796899e5fcf74d428b28c8e6a6f743f8bdd10b519079e7549d1a83b2b8fde1b7",
+      "after": "c3eb6f29850910986c86555c5cc6798852f1a560367c1f2e7be192fa4d712bbe",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/rbac-abac-matrix-check/index.html": {
+      "before": "05282afa9d5a8742cba53e6d0dbb6157a3da93da0d766e4eb2482af7ff1797b1",
+      "after": "b1682190dd2cc4c433c8c865006adbcb11bd984c10e39cf0a5e21a03483148e3",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/rbac-abac-policy-audit/index.html": {
+      "before": "527456a20828f83399d4bcd772fe40e3e7f58079b9a44d5fddcc177163b4f563",
+      "after": "946bb2ecb83655d8a4681261bf6a26c0f471ba2653142dc45790b2860419cd57",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/rbac-abac-policy-map/index.html": {
+      "before": "dd75508b6349ecc725f2e94f1aadca42c443889470ac62318c66a509dc600880",
+      "after": "b727bfdf37834cc11cd5d48ad0f172371f51d69bcf6b7ccf7033ba4da38d723f",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/rbac-abac-policy-polish/index.html": {
+      "before": "081b815cc86f339a69f0bdac96c51f8d51ec7f2b2580dfa7128e668017829baf",
+      "after": "ff4c0986c3c102b08685cfcdffec3d1d02d49f81fe5ab13d8448325506b627d8",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/readme-gen/index.html": {
+      "before": "2a4a934460e7a268aeca671b184551525141fb9492b4c1b2a3240dc0c2d64817",
+      "after": "1d75c7fd26f3f061b9716013173d625953600041e51d37ffa074fee91bd919c7",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/realtime-frontend-audit/index.html": {
+      "before": "cff0fbcd70f01f0f252b194bff2d81c8b555a82b9f423decb6a4ddfd1ff4ce4b",
+      "after": "2ab4870ed715fe2053c9cc66091bdcaf661da44e3708505883eaa5210cb42731",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/realtime-frontend-polish/index.html": {
+      "before": "e50f2add80d5038dfcb4141801e602f54c9d6ca61ba94e92796f1cf636f9039e",
+      "after": "52d55977a095101e63d01bc621731dcf4e8bbac1e6f1f85a5462650e48699080",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/realtime-interface-profiling-recovery-check/index.html": {
+      "before": "7ac19451b10f6ba153be9dd469a2ff775bccddb34348ff3b6ca0001494510c28",
+      "after": "c90e5f35a2d235fb68bc6b3c46d1f15f39ad174e9b3978ce00d8e6ac7c76bde8",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/redis-job-queues-audit/index.html": {
+      "before": "c93b12698a10e40bcf3b64258d6262ec47810ab0f1cf83dfc785c8ec3eb4cea3",
+      "after": "8c03ca3780398d5ec2177e5e5ce5556575f05fca8754618112c7a5f20b8e855b",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/redis-job-queues-polish/index.html": {
+      "before": "1c1071ec092e25ec9ffa659ee60990adc84efe088b17b27ebdd2bc6cc334703a",
+      "after": "585698a4fa6166865ae325150511874d4daddf579d6228b859593804c637bf86",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/redis-queue-load-recovery-check/index.html": {
+      "before": "724b90a2e11e871633da0463a82059183e665e977eced906428260dfe6df19fc",
+      "after": "eec8157a6598d5bb329a094992828c1adfd81208b6e03e6ed8dc9e1154597881",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/refactor-boundary-audit/index.html": {
+      "before": "fddde1328bb21a4dbc8a6090415b9cbfbc215012042e1f570ed80e2fda17b964",
+      "after": "306c4670ac5b61b4fdea6c185d147cf41da1245362eab616df3eb760f8d69c94",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/refactor-boundary-polish/index.html": {
+      "before": "7fd5463c1018411bd496a0ea4d5525b33d41306c46ae51b893bce1a44b7a2587",
+      "after": "1015d6943d51ac3e5d03de8568b31ba365e28316c70084fb728a255fbb1f6b74",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/release-artifact-trust-check/index.html": {
+      "before": "9641b075376d7f88759213278ca69817fd74700e93219f5f27edd0c71da2245b",
+      "after": "2c3dd9cda9d605b059c523d6ceea4dd1467af69c5fca6695328c5e3ffba6971b",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/release-readiness-audit/index.html": {
+      "before": "f43b5e6465016fea5353ad5f7c6816f9aaed6e889aa50ef284cbc88464eb5bf2",
+      "after": "9359ac5034e18973af4c185988dec58be21708eb20db6f6c88291c18c4731013",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/reliability-audit/index.html": {
+      "before": "f4b233151f4d557d9cc2d84bedfd86028663185488b84248029c69849eb171f8",
+      "after": "a21e4f72bb8e022ffcc1d152c08d9c968dc2f60401a29c8666582579564b96f0",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/reliability-polish/index.html": {
+      "before": "204a8299e8bf324c3b0431aa58f66ead442a07621fae1d967a401b40bd1039fd",
+      "after": "9564c3f90aa2b55460c3f109f7ea797554a387e05324fa6efd3494d0b49624e1",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/reverse-engineering-audit/index.html": {
+      "before": "779bf5d82d69d8c4994ce9011eb273583b7aadd95d0151a29872216ec167258a",
+      "after": "9354e5cb2d671d4677daf1fe26e4c8c70955f0ca107ddd6ffeb01b6e3f8e2802",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/reverse-engineering-polish/index.html": {
+      "before": "a32ea9b6ae92d5e3aaad9b38acb3635d04c5613e457d4307d7ddbaa48efb3815",
+      "after": "ed80b1306396df4bc7adf317b276139dc1b5ccfaf4ca04ff94bfb95208558a39",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/risk-release-map/index.html": {
+      "before": "16544d5cece31641768ba1f72306c84b27e4e92b09b4bea7a614c863161ee849",
+      "after": "4260ef02ec3e6d2c9b8d26e12ec31a92edf09d3a77281b09cedf3a0b3c21aada",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/runtime-flow-map/index.html": {
+      "before": "809734c5242f36f2539ea6c9ceb72ba0de547039addbb1c60514dbda3e2552f8",
+      "after": "85622c1bcbd98e9b9b2a426fe80955d5df6b4a24ddf475292baa97c059c9b113",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/saas-navigation-map/index.html": {
+      "before": "17d294f4c24cf0f838632dcf65495279143b01057d60e7dd1bde6163f5ca37e6",
+      "after": "08eb66364f294de8971aa6cee2c3ffa372e39a3c8e2f048e609c7ea57dcb7d52",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/scoped-audit/index.html": {
+      "before": "4a9a2e8147d081ede7c6200511e4b2d39bd98de796c62e32430bdb99b1c4a658",
+      "after": "e6128d3f274cdf6c357e04c26ae0372bd9f187284c468673fd8c01361374ae06",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/scoped-polish/index.html": {
+      "before": "f0faed88c320fa2067f606f5cf4be6bec6fbebb478f35c13f91c097f56cfc8f3",
+      "after": "c1123bb18aa1d344162ee940bebe1c5ebf6c7c510d76cfa008f5555ccdf697d9",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/search-index-audit/index.html": {
+      "before": "f0b3c94e57c352ca2785bef2577f8655f8d133711e3b596759dd26bdf211ff2d",
+      "after": "56687ce8586772788854a074fc454c44a3cb9a616b38a0790a55d88365ecf769",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/search-index-polish/index.html": {
+      "before": "f8e54e89d266790c1670961bc431b0edffb9d78e25647ff075a586a480f57e41",
+      "after": "7f9c0424266657fa44a8afdfdd747d5a3c4a4fc584b6c3dcc4333a2f576fe39c",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/search-recall-freshness-check/index.html": {
+      "before": "4b5f9a94e54d45eb33b71f59535ba2aa201a34dad87b2f33c384512c8dbfec6b",
+      "after": "1b6aa19329f80a10abebcdf5ded04d5fb0bdc531fe2f27420bfa3a237e9d2e67",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/security-abuse-defense-check/index.html": {
+      "before": "763f4ff2c2f8b8449a4bfe7cc58ff9f1a8454b9a9a8cd3db9bb89a62836d2f72",
+      "after": "97f9de44995dd41959c1ef251e230e51050c430df6d1e8b955012d7e23607678",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/security-audit/index.html": {
+      "before": "aa59ce7291150148f8d2ab5244d0fa7389d82ec068ad30a59d0bd1491c884787",
+      "after": "96a85c589393d495eb0b50a19f86a58316f8ac6470fdfde2445599141aef7cf4",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/security-polish/index.html": {
+      "before": "e0f5fbf12928d0ad59e1e4b8415f9022fa4844753ab2c99d0201ca0b8cf639e8",
+      "after": "622d718cf80aab4ec67a34e66a7bec8aadb6485de1723080dc498b5c0093b36a",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/seo-geo-audit/index.html": {
+      "before": "e063bcbbb2ff5caab4bceef47ad0d501899f20dfe903a4a70f5d7b99043e60c9",
+      "after": "ff74a25bdc5781410ee378ed024f72c74c2d690dcbddbf8f6ce008bed13f4548",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/seo-geo-polish/index.html": {
+      "before": "ed1387eb537b44672b6a79b23b5bd125043800ce60976e762f3119f3ca0b1e87",
+      "after": "c80d5a84e51f1108f17581e0643ab0241709f775091d2b6f4624a6e0deb17f98",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/serverless-invocation-check/index.html": {
+      "before": "41b92be1afe906e897f99b679a779eaa2c3a2f9b3cfbfeaffee422ac749a4dc7",
+      "after": "a63516e7e3eb5e7cbdbe9fb8dad8d790e8b2ab713108e94be3db5df5b5d7ec0d",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/serverless-runtime-audit/index.html": {
+      "before": "2c7f71f3eed3db9ffd2736f06172fd8e9eb99d3d126a2827ecf0340c8e580849",
+      "after": "a3ffe9b8a9b4c29cbbd9c2a82f63b585a81b8fce0ce3ddc5ee8dff3f19ef83c1",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/serverless-runtime-polish/index.html": {
+      "before": "2b94ce235b0722802972796196357e618db2aec5a8ae9609c988bb14a6514566",
+      "after": "bf4e2eb5be1b954e698debf61fe291a850421ac73edba60443cd2cdd20902c0b",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/sql-databases-audit/index.html": {
+      "before": "b46c209a10c59682df9bc166fad926a2ed4dbc450a1f4ccc55ec0585f83a80b7",
+      "after": "2d6947a438a03eb947beeef92c33f6d9babd5d8d01330f79670251d06ad1ca97",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/sql-databases-polish/index.html": {
+      "before": "ff812ed2991a99d13dcba15989a0f4781287d6712fedce079da8a8cdda229f28",
+      "after": "019840c35eec049bb196c4aa8e8d7eb28cf9c21eef6e41ae5558b61759bb6b0f",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/sql-load-lock-failover-check/index.html": {
+      "before": "451e480a056d1937befa90209562aa9dabfce97f21ca28ecdf5b85e7a41fb835",
+      "after": "b8ef3bd219c87060afeba23b064cac64362018a0e1555591c2b65992fda1cbe4",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/synthesis/index.html": {
+      "before": "69823f58377c4c1ca055f08ac6a90f44be564e27e648abe08b42723728edd06c",
+      "after": "5859934dbb269a62fba805b6819c5dfe822be692e0fead0ea3d803c77d526fd5",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/system-security-hardening-audit/index.html": {
+      "before": "4f14bd10036446857682d355d636c8fd5dc28853a4dd5455038db64b74718fdb",
+      "after": "1cfdaf6f05de9ed5ab9392c5772ede1a8f641ad51973075b93b7f5a75d45d2bb",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/system-security-hardening-polish/index.html": {
+      "before": "f35d0dc5d7b18552a3b4c3b8b57152f653d7ff68ed5ed72aaa1df6967a537d6f",
+      "after": "98f4d38532164194205576f0f1178b944db0c3c0eb1c36d9ffd5879c1fa29b58",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/task-shaping/index.html": {
+      "before": "b7189473c117955c30efbd91e5397ee4c927d903f5376b013037cec4cff0e745",
+      "after": "470102bd149ffc9cf9843311a5bc27b885f5b6523e5f66e8c6b2e98cae1d2494",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/temporal-replay-versioning-check/index.html": {
+      "before": "74ee756128c78f7c4dfea0d3dc59c3625469c0a69f267a1d0d46aca432f516bd",
+      "after": "490d149a144ddb0f8c06519367a00383b8960df02b0675d0a82cb15ec1c8bb5f",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/temporal-workflows-audit/index.html": {
+      "before": "045da8dd97765d0db17ae60407435aa1e6ddcc174364d5a4e8e8c7cf6b2cdd92",
+      "after": "a55e4a56889b4354bb44610265880c475233dd0f30b4dce954b055c86c35d367",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/temporal-workflows-polish/index.html": {
+      "before": "ac1ca2ad2d5c052d2c273181452770f61731f7c0eb5ae456e46a1b5d8a7efd0e",
+      "after": "043bdf8a7b3b5f05fea241a443fef421e20f033b575c228bad5acfe950dc8a4e",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/tenant-isolation-check/index.html": {
+      "before": "9f5963828bc6c189d1f44aff21ee64086c24626c9dca29da3f58590d5e6cdd5b",
+      "after": "ae084c87cfc70e33f32606204d00e353e76b4e2dd36ded9f36ed101b2ffcebe6",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/terraform-delivery-audit/index.html": {
+      "before": "e08e1120d2ae3df1c869fac1b2be7a84cb29bded34056663f5b2650ff2661d2b",
+      "after": "6ffcfa09696b636e33beb20c1fa744f0a200e7873b198bb23e1299d355d0b5ad",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/terraform-delivery-polish/index.html": {
+      "before": "603b130af44c8ecff72702590b81b84d03b73235acfc5d3522a18e68748576ef",
+      "after": "8f40f108f580dad53f2d84fd9ee7263ed09881be27e02289badc1ce694b9e99b",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/terraform-plan-state-check/index.html": {
+      "before": "b230e98ef59b3c21ac404a6dca356b8cf85286ef832ebc57ac014fb4e99fefee",
+      "after": "2d543989c02ea743e03471f53d4e8784cadd0f532457674a0992186a8f6f6a39",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/test-coverage-audit/index.html": {
+      "before": "9892a56a7f684f7bab48d75c07c34ccac290d42973045c1ae73ec0cb9898df2c",
+      "after": "c4b2cd98f7ebcdd571f77e3a5eb386a3ef89cafd0ad3e50182aeec1463202940",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/test-coverage-map/index.html": {
+      "before": "a27f65708021e196927ef5dc8d29fa52b55cb7ed97e250fbc7b7d63ade46d7d3",
+      "after": "fc6044f1ec83741a9cea502ec4f3e500154ea6741e18df26c35a3cb472932cca",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/test-harness-polish/index.html": {
+      "before": "5a7af750283b682b966ad680ff222fd5092e935138da2f817e46df7edbe1f063",
+      "after": "90fb2cb2f1fcd952c569627bbf9bccb46dd9cf39f79bf281769fe853f36a5033",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/traceability-map/index.html": {
+      "before": "89f75113e92dc9e072670f431421015187053ae8c27edcbffb2491028702547c",
+      "after": "e6f7ea6659f5fb0eaa4af83deba5f5c9ee99f6ef151f875d58ff404d3656ea3c",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/transactional-delivery-check/index.html": {
+      "before": "c5b49a01a85ffc2957c9b3c484c4ed4b39cb4cc205136968eaf855528427dd8b",
+      "after": "e6d855eaf60532b7fa3205e2e5be99e2fc5fcc3cbd98af8c2244773ff4026849",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/ux-flow-audit/index.html": {
+      "before": "20b681ffb1112b5bce5a2d0c316e245766b5a0fd3de50b13e6ea3a793fc1f99e",
+      "after": "6c94bc5fc94299308d82174edf02aa1a217ae59458193b357d3f1d20b9d1bae4",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/ux-flow-polish/index.html": {
+      "before": "14bc95de24f3736732d010457cb0592f50de194b7c01fda4f43e7d98b74f4f44",
+      "after": "42df4c999b309704844f9041759c53ba68db510aa0a1f137b8e32e8d30dae247",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/validation-clarification/index.html": {
+      "before": "d80eace7cbf44b9eddf484edf8128fdd3fdba6745d415384a95a40e536ce2ff2",
+      "after": "d5c8a0c8e1b7de6ca8b1a54a4c982077b534c009a55f62e158fb4db48764c339",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/vector-databases-audit/index.html": {
+      "before": "25d3b67ebf836157c3decbedd603b199586e82c36da0edfdc3897db8671b1eda",
+      "after": "7743a4bf44d69b8c4e7fdc9071b616ff9bf87b38f32d01152e7bb3a68784e71c",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/vector-databases-polish/index.html": {
+      "before": "e2e1dec2b8ff8b1f6e15e3f2f4637c6afbce0c86de0b755df6de6da09dfe2920",
+      "after": "74dde586e604440c9ed631a6c8f19ed70f2e8d401029347384a47b8ef354e05a",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/vector-recall-degradation-check/index.html": {
+      "before": "b5d8fc0e69873f7ce66265a745c5338ece652087a51405e0e6746425f1e8e817",
+      "after": "d00421c8c0162a28a220f92dd0cd2b31a61ab5571ea8f35a1c33d75e1c174568",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/visual-regression-check/index.html": {
+      "before": "38177b8228ed7087491d55b4487e748d0491ebb427a77010629a2616704f5f3a",
+      "after": "8f4c4328d114bfd0705dfc3551f2b0cd0f5bce2ef75aabfbb7dd8372204f6821",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/web-art-direction/index.html": {
+      "before": "eee8d4faf224cfeafd742a719e9400c77cc046e5c96a994846b1f2687ba5f40a",
+      "after": "42473d6295fffb325edc25973d4e793b2d2f9980ec81eadecdf7cb2b04fdbb36",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/web-boundary-check/index.html": {
+      "before": "b1cff862e830fa7ef3cec44d0ac791112b90d972a8e46a8e1d1dc750fcab1d77",
+      "after": "7c25cedb10350b71753fc72e201196848fed0506e21f402d53dad1d091848389",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/web-brand-assets/index.html": {
+      "before": "5651fd127ea1d6a295fd13dc93eb6304a65108e7214301022b0a691fc064d298",
+      "after": "59dfee36e1ca21f2eed7e927f64337d0229449adb6783ed8c3c9ae1b5a2114ab",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/web-design-kit/index.html": {
+      "before": "afb90f2861b7f2fcca8add144a128a10d566bc6d97d857ce9eecdf03cbd7b2a5",
+      "after": "7527d895477258672ce43bcfefcaa7479a2a57da69c5958646629a57df90db26",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/web-experience-brief/index.html": {
+      "before": "d7dcc160f87cbcf2497f7ef2c1230ef633eac5eeeca4fc6f5d830d0357c9f65a",
+      "after": "2ff2fb65c8665178d15327f317195367f419136e8e5c784d8f1fdd533bf315a6",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/web-interaction-motion-check/index.html": {
+      "before": "dce2b44aaf39fef169d9a67e1e7852544726bedd17cf3b3e7b7834033ef0d72a",
+      "after": "b7d8a146d5d1122eef78c2b0cb8effa94d6a3e42e849c826494610bb69b70e78",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/web-interaction-storyboard/index.html": {
+      "before": "f10c0796a57cd28b8ea89684294a5335dfbff03e9ac96297994823a520112f34",
+      "after": "0b70b139e65aa81462e2b8c27515ecf010316476ec5567288e0a43b75bb7ec2d",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/web-navigation-state-check/index.html": {
+      "before": "2c221c1af5be3e8d42f4b5e9d99e279c6c1febab53754149dd6d127b36fb094c",
+      "after": "0f87eb474c3e7c37d3a28c26d1f4c7b91454bd5f73582f99bede3782b45dbe5e",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/web-offer-synthesis/index.html": {
+      "before": "0b66455e16122d382d5269e9121c3074d0498f0c0d933cfe482d1ea405912a99",
+      "after": "d97475fc8bfb37e1d09293d9c2e7b4c7176cfec371c32e6f694de57724cf9c82",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/web-page-acceptance-check/index.html": {
+      "before": "cb3808ceffea8e8057a5390a9a86d4a7bdf4ccf13d46292d6f0a97f738d27686",
+      "after": "13a11a9a404d71196290a1cadf2aa8820bfdc7af8d1769e6a6d665c08ffd7589",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/web-page-architecture/index.html": {
+      "before": "3bdf39984f06d9ba36d3caf7c3495a8417046dfd253c638eda65b65616bcf616",
+      "after": "cfe5422bec65f822e51ec90d4770cfc2c602f308c52deb768ec8290e3a16d994",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/web-page-copy/index.html": {
+      "before": "586ef028ecbbce6b15d54ba18c034c954aab3d831d6386c630b07f25dca132bc",
+      "after": "7f1327c490f333b6ca04c76a761f9d7403777e79d8bc1fbda29151c434c1f5cc",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/web-project-architecture/index.html": {
+      "before": "7587f93ae6a104830d5424208ed682283c75584dd6a7262389662e4bb0a9e55e",
+      "after": "1c5c9e1d6783b4dafb094d021c4baaac7e4c52d21798ba99a7d4d53289527387",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/web-reference-research/index.html": {
+      "before": "863a3a154796ebfb82cfc0d48d33b709ae08d3f6989f8135c0388601419fa6c7",
+      "after": "7ea00e1502e3e979e767c607ab11cf887eee484735393b9500af91e954709576",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/web-rendering-audit/index.html": {
+      "before": "b4a2260237b476cd8689061da8dc89b52f0f6d3504c183c00a0fa5a9003a1bc6",
+      "after": "a3f617a03ebdfc046e138af50c41be4b9780f0dd533224534b68089ba79f5f8a",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/web-rendering-polish/index.html": {
+      "before": "eb7338e2ff866871104c44aa80c986cfa7bf2348e26cdfd76f848ccbd83c1f89",
+      "after": "4c6d4745f5338167a73330c11ac1d55bcb4b12f84f26815bbeae24cfa8c60ed4",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/web-search-performance-check/index.html": {
+      "before": "95f563244b6b99a60cb28bc842b0eafe2c4a5a3e86c11fdd31482a2445c9ce06",
+      "after": "8fd23e217bfad13338c04eab6d9ca30cdefe4cbf156109bc71aea5f4c76a8df7",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/web-visual-hierarchy-check/index.html": {
+      "before": "c086bbab48aa7505c6ca4d58a0d47090e927b931c421527ce3e01dd66707c91a",
+      "after": "0b31618b76f7bcc148ee40dfcb3da3b4b23c3f00e49a42af507a44b524abcf6c",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/web-visual-system/index.html": {
+      "before": "0b261f3d66896239e80f28fa853c91baa504e4e539ee2812b7a4a56979a57c53",
+      "after": "d0de3d6b70e565624332902b99251cc0ef9b37539bb0ae944c358bbe05ea6fa7",
+      "review": "Compact interactive website controls"
+    },
+    "docs/workflows/workstream-decomposition/index.html": {
+      "before": "52aeb10c2af0e3ce78d7988ebec26842a3ad1d9b31f62ae19ac6ac37304b4241",
+      "after": "ee35bbe1bb3c6de6a51b8fdb08aa85e42982885c0339938c130c056d39771e73",
+      "review": "Compact interactive website controls"
+    },
+    "docs/zh-CN/index.html": {
+      "before": "ca93d0cf86e56ce1c517959e12d052c3d4302fe27a2ba46c0c5980f644cdfbc4",
+      "after": "c7faeede1a5418925de7a9fbb12889250b2d2bfd16a6cf1af3860c8953373b05",
+      "review": "Compact interactive website controls"
+    },
+    "docs/zh-CN/privacy.html": {
+      "before": "d41ee72686d2128ddd84116a68d4f5a65e06cb287779e96791be64144ea11adf",
+      "after": "90c79a6e2d781a7080608465d8534d3da89b0e55ad76eab44b9487f91ccfa721",
+      "review": "Compact interactive website controls"
+    },
+    "docs/zh-CN/terms.html": {
+      "before": "d4e7988e6bee7755704ec6c552f9d25f727bf1a2ac29347ff11fe6b607216efc",
+      "after": "1304cad8e0635332d357e35089689e1fbef6e5d0e3a49501d2a419ea8a44afb3",
+      "review": "Compact interactive website controls"
+    },
+    "docs/zh-CN/workflows/index.html": {
+      "before": "46031137d85f0e41f347a07358386683722ebf90bd866dfc419d7d4b3daf26d5",
+      "after": "ae30f2e305647bd54391c9492c8cb86d47aa6ea54448b2b8eb3c8ff87dc31267",
+      "review": "Compact interactive website controls"
+    },
+    "scripts/build_site.py": {
+      "before": "2d7d17f80be1129865a463ebf8e87925b717069d82b4e84837179b0bb67b2e81",
+      "after": "4a13c2906c18d1e5d4ad8f1d96cbdb4813ab94a659f706396ef07d6cb0e096e0",
+      "review": "Compact interactive website controls"
+    },
+    "site/site.css": {
+      "before": "55f068e572d54b17fb594e8eb0e914fa34a9ab5e17edaf70edee8a86bc2b4cda",
+      "after": "482399789ca0a7e801501314e3f12195d1779ebf5fece29a5fdc2f82e8410a5a",
+      "review": "Compact interactive website controls"
+    },
+    "site/site.js": {
+      "before": "dc2f0206165876b6b155014ec784f35893cf3e1bd574fa06de2e7b82705c05f1",
+      "after": "f71494fff3f76eea5fd2897901dbedd0a7da849acca0d7bc1a4043c81c43b2f0",
+      "review": "Compact interactive website controls"
+    },
+    "tests/test_evaluations.py": {
+      "before": "925afe5eaae87f5fd8db439f20cd0db797bb6731e8c6cf5129ce22ccb48f633d",
+      "after": "22a5645ddcaa4f5bf93b175b6a90875b04720ef4b445885011f4b0814b390355",
+      "review": "Compact interactive website controls"
+    }
+  },
+  "new_files": {
+    "docs/assets/site.482399789ca0.css": "482399789ca0a7e801501314e3f12195d1779ebf5fece29a5fdc2f82e8410a5a",
+    "docs/assets/site.f71494fff3f7.js": "f71494fff3f76eea5fd2897901dbedd0a7da849acca0d7bc1a4043c81c43b2f0"
+  }
+}
