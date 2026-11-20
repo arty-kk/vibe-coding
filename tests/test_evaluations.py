@@ -17,6 +17,8 @@ POLISHING = ROOT/'review/evaluations/1.6.0.json'
 CI_UTF8 = ROOT/'review/evaluations/ci-utf8-2026-10-25.json'
 SEARCH_KEYS = ROOT/'review/evaluations/1.6.1.json'
 CI_TEMP = ROOT/'review/evaluations/ci-temp-2026-10-25.json'
+WEB = ROOT/'review/evaluations/1.7.0.json'
+SITE_REDESIGN = ROOT/'review/evaluations/site-redesign-2026-11-20.json'
 
 
 class EvaluationRecordTests(unittest.TestCase):
@@ -35,14 +37,22 @@ class EvaluationRecordTests(unittest.TestCase):
         self.search_keys = json.loads(SEARCH_KEYS.read_text(encoding='utf-8'))
         self.ci_temp = json.loads(CI_TEMP.read_text(encoding='utf-8'))
 
-        self.web = json.loads((ROOT/'review/evaluations/1.7.0.json').read_text(encoding='utf-8'))
+        self.web = json.loads(WEB.read_text(encoding='utf-8'))
+        self.redesign = json.loads(SITE_REDESIGN.read_text(encoding='utf-8'))
+
+    def redesign_fingerprint(self, name, expected):
+        change = self.redesign['changes'].get(name)
+        if change:
+            self.assertEqual(expected, change['before'], name)
+            return change['after']
+        return expected
 
     def web_fingerprint(self, name, expected):
         change = self.web['changes'].get(name)
         if change:
             self.assertEqual(expected, change['before'], name)
-            return change['after']
-        return expected
+            expected = change['after']
+        return self.redesign_fingerprint(name, expected)
 
     def new_instructions(self):
         return {name for name in self.web['new_files'] if name.startswith('plugins/vibe-coding/skills/') and name.endswith('.md')}
@@ -301,8 +311,19 @@ class EvaluationRecordTests(unittest.TestCase):
     def test_website_release_artifacts_preserve_baseline(self):
         self.assertEqual(hashlib.sha256(CI_TEMP.read_bytes()).hexdigest(), self.web['baseline']['sha256'])
         for name, value in self.web['changes'].items():
-            self.assertEqual(value['after'], hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
+            self.assertEqual(self.redesign_fingerprint(name, value['after']), hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
         for name, value in self.web['new_files'].items():
+            self.assertEqual(self.redesign_fingerprint(name, value), hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
+
+    def test_redesign_retains_release_and_has_current_fingerprints(self):
+        self.assertEqual(hashlib.sha256(WEB.read_bytes()).hexdigest(), self.redesign['baseline']['sha256'])
+        self.assertTrue(self.redesign['checks'])
+        approved = ('site/', 'docs/', 'scripts/build_site.py', 'tests/test_evaluations.py', 'tests/test_site.py')
+        for name, value in self.redesign['changes'].items():
+            self.assertTrue(name.startswith(approved), name)
+            self.assertEqual(value['after'], hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
+        for name, value in self.redesign['new_files'].items():
+            self.assertTrue(name.startswith(approved), name)
             self.assertEqual(value, hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
 
 

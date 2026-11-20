@@ -13,16 +13,15 @@
   const format = (text, values) => text.replace(/\{(\w+)\}/g, (match, key) => values[key] ?? match);
   // Keep crawlable links canonical. Attach optional navigation context only when
   // a visitor follows or copies a link, including middle-click and context menus.
-  function contextualLink(link, destination) {
+  function contextualLink(link, destination, canonical = link.dataset.canonical || link.getAttribute('href')) {
+    if (!link.dataset.canonical) {
+      for (const type of ['click', 'auxclick', 'contextmenu']) {
+        link.addEventListener(type, () => { link.href = link.dataset.navigation; });
+      }
+    }
+    link.dataset.canonical = canonical;
     link.dataset.navigation = destination;
-    if (link.dataset.canonical) {
-      link.href = link.dataset.canonical;
-      return;
-    }
-    link.dataset.canonical = link.getAttribute('href');
-    for (const type of ['click', 'auxclick', 'contextmenu']) {
-      link.addEventListener(type, () => { link.href = link.dataset.navigation; });
-    }
+    link.href = canonical;
   }
   async function copy(text) {
     try { await navigator.clipboard.writeText(text); return true; } catch { return false; }
@@ -55,18 +54,39 @@
       languageMenu.open = false; languageMenu.querySelector('summary').focus();
     }
   });
-  if ($('demo-host')) {
-    const host = $('demo-host'), prompt = $('demo-prompt');
-    host.value = ['codex', 'claude'].includes(saved('vibe-coding-host')) ? saved('vibe-coding-host') : 'generic';
-    const update = () => {
+  if ($('demo-data')) {
+    const examples = JSON.parse($('demo-data').textContent);
+    const choices = document.querySelector('.demo-choices');
+    const host = $('demo-host'), prompt = $('demo-prompt'), workflow = $('demo-workflow');
+    const status = $('workflow-demo').querySelector('[role="status"]');
+    const preference = saved('vibe-coding-host');
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    let promptTransition;
+    host.value = ['codex', 'claude'].includes(preference) ? preference : 'generic';
+    function updateDemo(animate = false) {
+      const selected = examples[choices.querySelector('input:checked').value];
       const invocation = host.value === 'claude' ? '/vibe-coding-library:vibe-library\n' : host.value === 'codex' ? '$vibe-library\n' : '';
-      prompt.textContent = invocation + prompt.dataset.task;
-      prompt.parentElement.parentElement.querySelector('[role="status"]').textContent = '';
-    };
-    host.addEventListener('change', () => { save('vibe-coding-host', host.value); update(); });
-    update();
+      prompt.textContent = invocation + selected.prompt;
+      status.textContent = '';
+      const destination = new URL(selected.url, location.origin);
+      if (current !== 'en') destination.searchParams.set('lang', current);
+      contextualLink(workflow, destination.pathname + destination.search, selected.url);
+      promptTransition?.cancel();
+      if (animate && !reducedMotion.matches) {
+        promptTransition = prompt.parentElement.animate?.(
+          [{opacity:.65, transform:'translateY(3px)'}, {opacity:1, transform:'translateY(0)'}],
+          {duration:180, easing:'ease-out'}
+        );
+      }
+    }
+    choices.addEventListener('change', () => updateDemo(true));
+    host.addEventListener('change', () => { save('vibe-coding-host', host.value); updateDemo(true); });
+    updateDemo();
+    choices.hidden = false;
+    host.closest('label').hidden = false;
   }
   for (const button of document.querySelectorAll('[data-copy-target]')) {
+    button.parentElement.hidden = false;
     button.addEventListener('click', async () => {
       const success = await copy($(button.dataset.copyTarget).textContent);
       button.parentElement.querySelector('[role="status"]').textContent = button.dataset[success ? 'success' : 'failure'];
@@ -76,7 +96,7 @@
   if ($('catalog-data')) {
     const data = JSON.parse($('catalog-data').textContent);
     const entries = engine.prepare(data.entries, data.topics, data.actions, data.searchLexicon);
-    const rows = new Map([...document.querySelectorAll('#rows .row')].map(row => [row.dataset.id, row]));
+    const rows = new Map([...document.querySelectorAll('#rows .row')].map(row => [row.id, row]));
     const query = $('query'), category = $('category'), mode = $('mode'), full = $('full-text');
     const status = $('search-status'), container = $('catalog');
     const topicOptions = [...category.options], actionOptions = [...mode.options];

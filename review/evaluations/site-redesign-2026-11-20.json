@@ -1,0 +1,1451 @@
+{
+  "date": "2026-11-20",
+  "website": "https://arty-kk.github.io/vibe-coding/",
+  "changes_summary": [
+    "A working three-example workflow picker with exact instruction links and host-specific prompt formats",
+    "A localized opening and connection section with the direct public MCP address",
+    "A subtle prompt transition and a static reduced-motion result"
+  ],
+  "checks": [
+    "Rendered four locales and short landscape in Chrome without overflow or page errors",
+    "Exercised all example radios with keyboard, copied output, followed the exact workflow, and observed 180ms prompt movement and reduced-motion operation",
+    "Checked query, mode, language, back link, empty state recovery and pagination",
+    "Verified usable no-script output with 260 workflow links and the direct MCP address",
+    "Verified the published SDK endpoint and 15 static and 10 search tests; 260 article bodies and four directory bodies retain the same instructions and structure"
+  ],
+  "limits": [
+    "Browser evidence is local Chrome, with no field performance or ranking claims.",
+    "The site change is independent of the packaged 1.7.0 plugins and the hosted MCP console."
+  ],
+  "baseline": {
+    "file": "review/evaluations/1.7.0.json",
+    "sha256": "8ef884fbbfede79a73adfbdcee0568970fabda0fcf0901c50ebc6d8e84d0ea8d",
+    "commit": "67d71af271f82bfa103a94723c71509d311cb0cf"
+  },
+  "changes": {
+    "docs/404.html": {
+      "before": "2ea40d2f34a4667677f7b7fdfe7f652d6a97f02fe81c7fe9af5bd3dd172694aa",
+      "after": "bfc8856330712fffa486104a4842b8973c98ad9a47c2637dd8ab3f4fc26ae45e",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/es/index.html": {
+      "before": "4cb0ac24aa7bce7a766aeb6060c2c97b2a6383e0906c9a07d1a1313232efbd83",
+      "after": "292431abf7b07005f079ad673638872e2ea3d4bd2620c208a37090c914df5971",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/es/privacy.html": {
+      "before": "e859345d372032c03da0991042c9db43e8467f9edbd2c66fbffa8027eff96876",
+      "after": "175b197fdef13492c759aaa424b2fcd346004e99e4903373647160fa202dc4ed",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/es/terms.html": {
+      "before": "7ee73b1adf9f2fb740ee528a4c13a6aaa4dad944194c8479dee4654a09f174cd",
+      "after": "2ab6606277e3b8d8608a40004e59709f54d74a05cb41791792bdfdf40fe26abe",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/es/workflows/index.html": {
+      "before": "23d7271cd147a4824404e54c1c77128de3c44cf2025b545a727970af725b8ef4",
+      "after": "b2151099b0f01039f391ae5f178dece0516fb8073bd539091555ea6caf45d27b",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/index.html": {
+      "before": "d1767c47c39ef934fb94492039d19835e28df6c377ddf02eeb3e188434330b14",
+      "after": "acbc46f855ef751f6702a292c51798a7d3822b8278af64a5ce6a36694ecf4f7c",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/privacy.html": {
+      "before": "42183602f69791af900b5218ae1fa3739378c881f3868099cbccb54fc6ce1f16",
+      "after": "33f316c4d055fcebe24214d83e4f99c7737a82e2ab190c1df75498323297707c",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/ru/index.html": {
+      "before": "88cc1e5f6b54fc979bbeeb2e8498a1783bfb7699384fcbe3d81fb7ff60e8c02e",
+      "after": "dce9e3bd3e0109b61322e80295a9af9aa21ec1750b4da47dade0ee81f81fcf4e",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/ru/privacy.html": {
+      "before": "11af720e3c96b035c05d5c5c1b7809e10da53ecaae42ff23eb77768fa0500de8",
+      "after": "121c2b3d3da19f9710e4b0735b186c1a6fb2a20fa6b2610d162bfa2a87fb2e24",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/ru/terms.html": {
+      "before": "2dfe2b261526035da425d5d80a881580d95ba273c3b260346e308185777fe54c",
+      "after": "68bae9395c97416f39ca950c1ef3add4d74587202ad56611c15a2bac2ebffd03",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/ru/workflows/index.html": {
+      "before": "56e3dadcdb666d742a0bb44e72b92470ad6ffa1359e70a8691bba0be72cb9227",
+      "after": "20222ddc2b1e7ae95b679b3924e1b15086d8136dc3231b229c46e49d8bcd30f2",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/terms.html": {
+      "before": "136423a1796071879a4e082bc9f43ceaf561fa831489a32ee30961eb6e16248a",
+      "after": "de87c42e57681143c16659f825640e561ecbaae472ba7ab5105d5e281666242a",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/accessibility-audit/index.html": {
+      "before": "24cd6c8dc352c15075c51f46068e6d152257ffebf0348969b45c4b9b38fe922c",
+      "after": "842d1b25eac81dea42dc0bdf6fff0465e9733f98094acf43fd2979279172d14b",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/accessibility-polish/index.html": {
+      "before": "58886de80c3bf3f65e124bb90fbd7a98dee35065cdd9d34c9884726e3492a1ca",
+      "after": "d4a16ec43b3ea491d8f9bebc13585423abbfc60a8eadf5adfb92523a03ad4ac7",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/agent-harness-audit/index.html": {
+      "before": "44bfa822d5ecfd49450b70f7b57e8d02f51817810a5bfd5e2ee0d01be9cb017f",
+      "after": "dd14d94601e07966cdcee91e314bb494f6864c39c403c7e25fc424f90095af63",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/agent-harness-polish/index.html": {
+      "before": "72adce9e6b5182c30b739b4644a67e3faa7b8f467ce16bf0bb65ee7bf6b554ea",
+      "after": "a0040d01710c82377c6c90ce4859a219c2b723173e942408b1c024ce4e519915",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/agent-harness-replay-failure-check/index.html": {
+      "before": "00f089b54206726ca4d239fda933b8f62a565bd9f49108e4a8873774e21bdaea",
+      "after": "75e5a0206d9b459e33a1f8a867fded5df7d2213884009550e383f64a4a95ae4a",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/ai-evaluation-audit/index.html": {
+      "before": "938264729402a8c85860863fa74fac87aaf6b3bc82e566248f03c308e07397c6",
+      "after": "242fde5f2c6d4c17482409da8049243c6602468d90a6988bd72e0d0a31748474",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/ai-evaluation-polish/index.html": {
+      "before": "4d3928974cced99b7ae4adfb304cc75c0aa42761412a05e41d6ce8b27379514b",
+      "after": "1c353804ae77263463a355c760f82debc595e21627cc6d71c415584431287624",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/ai-feature-audit/index.html": {
+      "before": "d75ff062c606921960aa68f05a3c2c4e71c6ee0ac8d8d1c51723b8a3a4203800",
+      "after": "a017adf4b4edccfecb21f0c06229ed3af9023224059b01fe0b91d06e20c6261e",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/ai-feature-polish/index.html": {
+      "before": "ca94c6c78b75103d170cd8717df1d6d14b9654523df00a40ede94d4e9d02a9f7",
+      "after": "462437c44e1f8c2d7e28b9c1d13cfea58c7137829855c576f02adba06db97e5d",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/ai-ml-problem-framing/index.html": {
+      "before": "645d9d3eaccee38d1b3bd4f8de7618d6653d4459cf3fc015fd43acfe61a4bca2",
+      "after": "73f83216d129c0c3ca5515db4781baee505ce33c5028f21bc507d098d884d425",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/ai-navigation-map/index.html": {
+      "before": "7d6af5b91d5cbc89754ede06ae8a5c9b5b9c0ed79957f227d39ff4ce1c3dd2a6",
+      "after": "83754497bba444bd16579fb5893d2d806d254d6dbacf99afcf167267c0be5e23",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/ai-safety-governance-audit/index.html": {
+      "before": "8c2ebfcd075a3f808cfe2624f104ea641fae031e6efb28a139626c436f311659",
+      "after": "e517a2fb245da388b718f41d5e537eb0cbb11f934c95d4d829f8d486699c05d2",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/ai-safety-governance-polish/index.html": {
+      "before": "386a611f113acb5dbb5a1f131da7aa82bb9c2a13c5aa175eba47e471ecfadcae",
+      "after": "9e38495af05c1976cd038fafad28d2e726e2285105d768f04940c3b2c623420c",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/api-audit/index.html": {
+      "before": "34e1983a11eeff074441b7d6550132a9d2ebac4cbd2853ddf4e3d5578e304efb",
+      "after": "130a639ee96fa715dd985a4a515cad7ce22efa6a1329be9516476a3f3ad03d34",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/api-contract-compatibility-check/index.html": {
+      "before": "2db5e3f35b7f0081489499a9cc8cf8a112c9131c0822baac703b1604330fdd17",
+      "after": "b29cbd53a94d6dd0119b477d18785126a0b13db2a1a168d154e49f40139a08c4",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/api-contract-evolution-audit/index.html": {
+      "before": "e272f4dec887659b89cc094a496a6679d8271451f141543b123696547b448e91",
+      "after": "6d6dd87303ae164ee55d920e575e02de6a6675a4b40072c28c7f4cf28a91a238",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/api-contract-evolution-polish/index.html": {
+      "before": "2e0ac3828f9d3df9e538bc05de1a2787785893ea8e3c59c701fd7ddf4e7026fd",
+      "after": "800de8df1346413f06e76101b7dbc88233fd53ab3dfef9937c4c5602f09880b4",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/api-navigation-map/index.html": {
+      "before": "937f136849eb1e43534decbcff5f3b2be9a269a90e16985261292d0e1cb94cf9",
+      "after": "552beff92e614478ade45891d7f24d47a1ca41a327e27cdb80f1b9ad53aec831",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/api-polish/index.html": {
+      "before": "97f60f5a21dfed48d6ce3e749c915fcb762163f77bbcf81a834e92d601e13af0",
+      "after": "f0eb12a4c1ec4058c43b4eeee406ef5c285eb023c342d3135f76a0e5671dc822",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/audit-logging-compliance-audit/index.html": {
+      "before": "71bda57bda0a0ee621ef1c3351479fb5ae54a3d3f4b6265bbb3b9d0a7ff07c7b",
+      "after": "d8a6361753826186118b8e85c341c97aa57b9a937d827778af75797cee1672e7",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/audit-logging-compliance-polish/index.html": {
+      "before": "9b5358b6da8f8b3a6979deac445bf94647fa6940c9a7edaa71e8721c7b097e12",
+      "after": "1cff9121431bb23a61660bd13d3e0486cf1ed0b01b601aa653aecd40cf2c8a60",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/audit-trail-integrity-check/index.html": {
+      "before": "6328415c0da69113915cbd99e51776ef27564fc4c8976576ec56d59a933cc52f",
+      "after": "3a5b61390af1a5abe2f0d7016ed7b85ae0e0864375fbf16d869c1d3a7607bf1e",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/auth-entitlements-map/index.html": {
+      "before": "c062bcc965fc745df07dc7a84fb4b2ff22e24c0fba9f289ce98736fdd7137bbf",
+      "after": "7953e74188134584ffbe7351e5061fdffbb1fdb132732f1be79d2d7612413c26",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/auth-permissions-audit/index.html": {
+      "before": "e1cdf3f577f21c2015a22452defeb6a97e8c27c473550323913ee2cc29783c5c",
+      "after": "2a1c6577068b761a3abc1c2616d6dc603802fb5b7271a3cb69aa61fd0f195cf8",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/auth-permissions-polish/index.html": {
+      "before": "fb5af748c43dbbe6dce6cb59fa17458579c251eff2a0a9a6addfc287a5055fe5",
+      "after": "8e79d55046646d23eabee7bab7a10ae14aedcf0c79655ae6397c9d770c7215ae",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/backend-integrations-audit/index.html": {
+      "before": "80ec5d2db0869501e51cf4281df3e8b3e66f4495ce1ef01b2b02b62ca0dde3b3",
+      "after": "cc6162308099a699805d6c40920f2b16c99ad86964aea1505ea3bc326c08a0d7",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/backend-integrations-polish/index.html": {
+      "before": "5f55111a0dbbe3a3c08459a1ceca303a8bbb2387037996581d5236172a615054",
+      "after": "c0acb412f7d74c64ea6c71cc18d7c5be600b7d9999c3802747ddb8cae2bccbfd",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/background-jobs-audit/index.html": {
+      "before": "eb5e004a69189410c4a862d09d34f1305b3bfcc6b163cb24689910b9113dfa02",
+      "after": "6b2e630a0055ab68f9cc3853d46832751a889a50b7f7fa5758291300dbf4997f",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/background-jobs-polish/index.html": {
+      "before": "cd4db21bb0cabcebd3e86f1f136515ac97728899476fb563b690aa98001634c3",
+      "after": "fcef065396b107d7dc01e6634d0bf820cef3686d139b66fbdc4b2c9c53a0b096",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/behavior-check/index.html": {
+      "before": "96370706f34f49c979806a6ec968ac70b1e2fd0ed8564fa542257ce18b42f1fa",
+      "after": "b03420f67a6d8d662a81130b376660a6c2b851ecc4c91359c7ea559b9fc16fb8",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/billing-entitlements-audit/index.html": {
+      "before": "b652619fb022ce29536caec73aa560b38f2269525a711729bd60ae288e079e28",
+      "after": "2f473d8494ef45cd0040751ced955b6763054e7427027ab8ff209c298dc2f861",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/billing-entitlements-polish/index.html": {
+      "before": "78932dd00edd2cbedafc05db4025f620a078f5bb0fcd81245a31da3eeaacaef5",
+      "after": "21785c57e55ef719539f5a6e35777ba004d8ca193eb4d6bd92d759c724f263f2",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/bot-audit/index.html": {
+      "before": "2d11e5d1ecf7445a89180e8afec6d7082070f8f7174c3daff60e799a932312b1",
+      "after": "de23ca1ba3fd5882f4460437d36f71af228874b014acb128fb01167fb2a919a4",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/bot-navigation-map/index.html": {
+      "before": "74113d2c9c92c61f51650b7be5004491859fe5b92da13e656f23e1365d0b0de6",
+      "after": "5dfc9a11d43ff328b36363db0fbc0e007ffb41ade234648addfb57269845ca16",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/bot-polish/index.html": {
+      "before": "f4d5cead8fac6cae1dfb8bafedb4b4295c85bfb86ff98f97d28f7eb2b9385adf",
+      "after": "238f3b0c1e14316206577bc8a263e86bdbfe4202d70bd037e3c06953cd633926",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/browser-extension-audit/index.html": {
+      "before": "0b056ae245ede1a31e33e69dc55b8c29736e7b3e7b791606266859d0e172f2f2",
+      "after": "750d190a79d450d0fd7773f5376a6ee3abbe3d85dc224fe011cd6c3b27e29654",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/browser-extension-polish/index.html": {
+      "before": "d928332a04436bf348a1ebac33b40e95167a4e4a64a7ab292d8f8083ae260a25",
+      "after": "2d9467d80c30c4e1db512a98c4ff94f51c7765d4ad048a164366336ba674e686",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/build-supply-chain-audit/index.html": {
+      "before": "c2e31f695cc9bbddae2861ecd251d138bf03672701819024a2259d6692328437",
+      "after": "ae4391d3f592f1d98ae52d57547b302d904e39cd718afd5675198a814720b937",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/build-supply-chain-polish/index.html": {
+      "before": "8ff1deafdb67e98e15eb351cca2dd8ace851299407e85d5ccb845fab003858c8",
+      "after": "808914880e87a1cbe84483504cf5787791ce09bb8b119890cfd84697394fe430",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/cache-coherency-check/index.html": {
+      "before": "3504540b160503f3353d079c827ff040da69861eb44efcb71b872b72d5453fa6",
+      "after": "1a986c1ff665b40725d1ecb728ee99470150fae443d4684c36476309c30176b4",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/cache-invalidation-audit/index.html": {
+      "before": "b4e1a2511253477b977044c46eb6249763838f5d23ec7e361c5820adfbd26f7a",
+      "after": "25ebd8c788952c1b5b946ca73e86f3a23ca6e55955c6a910b9e41588aab0a88c",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/cache-invalidation-polish/index.html": {
+      "before": "cbe028ab4223287f112d36f8594754797b629d22dbd96350348941e46ee6fdfb",
+      "after": "b3945029b6d12e831ca78377d00b4924f1cac2e81a03a4844a990e34e84ae19a",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/celery-delivery-shutdown-check/index.html": {
+      "before": "5bb0b89c80a5156ba82e06ae54292cef383c85427c702b9ac01e144f4528897b",
+      "after": "4a6cf3dddbe13955e08f2858cb22cb5c44ff6dc9b00ae7ac1724666c02fcf2c2",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/celery-workers-audit/index.html": {
+      "before": "3eec8a29c79f30ce73fde826bb700d095b586629b8ce392c5344ff63d7f9cd3d",
+      "after": "701d20e7fa16ad5b8f31be4494c5f740158cb92687f4d3480a8a4d2b22e7fe99",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/celery-workers-polish/index.html": {
+      "before": "3b00a77224f90e9138abbc2ce20d29c8c5d86c2d8ba02470f4c763da17405fbc",
+      "after": "f5547a7307607f3ec7d2723c8128aeb4f05694ff4d87e02ef7e379e5f19a2efc",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/clickhouse-audit/index.html": {
+      "before": "12b72489e2b5f9e92b2b24596df635b0eb28980db12c1149c525fa40d60f3747",
+      "after": "5a83fa707a8d43d0bdbd5dc325caa10885dbd41d60b4d6f2b0308c7e2a3c418c",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/clickhouse-ingestion-query-load-check/index.html": {
+      "before": "bee8059e957de245951fc2afe7fb8fea399a4926a24984949a5b7bf1555acdff",
+      "after": "69698a84924bed2702ce416c7ac2c11e5eeb7bd078977eb7efb8f6afc1cf6e5d",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/clickhouse-polish/index.html": {
+      "before": "9ebe46e50f1ffe6f47ae28c87424fb9b14d21c2da9749b4ccedde2e19457f526",
+      "after": "0e6678afa8a6666fa526a8fa0bcbfb4808aafb0675f73972fa9a7c092e361a1e",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/compatibility-golden-master-check/index.html": {
+      "before": "e7a1bce1eede23cb053dd22daad7c631c099a0662bf96ee513aa320af60a9afc",
+      "after": "6ce109ff9d7aa8693a9d5db7e18f03622331000f79a252525b12b9506f0e9837",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/consistency-invariants-audit/index.html": {
+      "before": "6a898bc9e486466b8433f38bb6e72435ac98bbe5c7d8099a71f9dee14c4e8a5e",
+      "after": "68f7a492c2e7367ff87f321c06edac1e9ac3ac7bb8f76b33d156e44369451346",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/consistency-invariants-polish/index.html": {
+      "before": "0e5b445df783605b6ffab1eecdccee6141b07dd60761f9f3ee82a54331f3240c",
+      "after": "cd2d1dd021c36ee782e42f5259a0d107100f6de07aed181f6eeb21fd93332287",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/data-model-audit/index.html": {
+      "before": "e8be3dc31780133fa334005d454369ebf6c69fd44af045803d39d58eeaa0eca2",
+      "after": "15ebca67545624b00e571b5aee6fcece52774bc9158629c000fceb8a45cab552",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/data-model-polish/index.html": {
+      "before": "46ac72f13f9dc891bb50a92f414bbc8aaaa5be861daada344ecfa14d9a63e4fe",
+      "after": "445057f1e6c46e70eec7203b13a87e6f241f405400869170d8377f1d5b33aa28",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/data-pipeline-quality-audit/index.html": {
+      "before": "1ed51fb0e64d0032f328718bf22556c32386eb9d277fa6123f565d56f16271d4",
+      "after": "90c1b8d20150a20bcecdcef23c7babdcf928b1cfbc917b7f773d2b05b4d4dc63",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/data-pipeline-quality-polish/index.html": {
+      "before": "bcf08326a5713f4991535a9b696c482292a146c0fbbe725e34c5d04df5402c2b",
+      "after": "4032ea8835090b69435daca44e91e23426549894fca5a44f887b4b65944c6a6f",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/delivery-recovery-audit/index.html": {
+      "before": "e48c5133bff11f1cc563399b1d89f08320ed5ce29dffbed594003b48b64cdd47",
+      "after": "6ee77bc81ca64110c6331136e817b4d7dbdd28c5ec89cb3861c7a484c95af0e3",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/delivery-recovery-polish/index.html": {
+      "before": "13ac4fbbd4750a10d94d502e167c33ba2d73d17731c7d04946095064a40258ca",
+      "after": "d91f163151c79365c18987d5585793824cb7889b4336499248d71b3740d4f53c",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/delivery-restore-rollback-check/index.html": {
+      "before": "255adcb3b2c6da44999eed8956e82eb8b80793dc0ae505fee3ebd61fb3ce69b8",
+      "after": "56731dd70f52b10658d1194153239dbcc9371a5dd90f02e3a4bbdd0596235364",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/deploy-bootstrap/index.html": {
+      "before": "cb25fb01166f547df864390931b3e8e49fbea13d8670d5823ba535a7e0c1bc3d",
+      "after": "84b46cbedd25a58f692236a5fa07de9fbba9d4f6a4934d430c8ba68509421569",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/design-gen/index.html": {
+      "before": "a750a2bc929ffb05274751e829003f63463a363195b8bade2cbe98138b725be1",
+      "after": "c3ca16ca9658d1b7b3e2621b0a1093db82510f6a99a928818e64c9db6dc51098",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/design-system-audit/index.html": {
+      "before": "d2429b810772a264a76023a00914e4a035380dbabe74ca47f2b2ffb30152c1d6",
+      "after": "b6996d0f42345101e714f1b287b7891c5378d3892ad090c9d179912ce6ba4bfe",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/design-system-polish/index.html": {
+      "before": "98f298bdb2ab3dbdddc454ca604ff7bc5a7f25cd569104cec875d82cc3d87138",
+      "after": "874e8a9c3ff69ed141fe20f21e85cbf72e7569f7dbe2257ffe7529f2e5dc5c19",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/desktop-app-audit/index.html": {
+      "before": "1dc3bdec2309cc1b36f6653e030f4ba0d5fbdff14d15a776d2b9225aa85c0634",
+      "after": "86a13866d29eaa52ea78effc673d97c1ab84ed7882cc7b4bc72c5d05ee454882",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/desktop-app-polish/index.html": {
+      "before": "f37ca2c497452fd03c860f86a0d9717cb6b44262e063a70409a89f833f22c08a",
+      "after": "04d2eb92bd0a0834c720dcbd441fa306a58d5a9e5727f3037ce0d4ad596c2b73",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/documentation-sync-audit/index.html": {
+      "before": "4de66588dba7325bcf5ffa2b059f415bd6bd06332e78ed022ec6b5f6fbf66e34",
+      "after": "2e9be805115243edd9299c01da4673e09b77b955b7c74127c8cfa69f74aa2ae5",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/documentation-sync-polish/index.html": {
+      "before": "5c0dee6c8f83954fc1a446a6fd278d7faed5be1f1d25adc7c0adf1bf44040191",
+      "after": "4e58b4d3dc6a1d02e965dca58ab14044997e5595bfc842cbaa997e4347e177db",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/domain-data-map/index.html": {
+      "before": "6d252031e91f217f59a3a0454f8f1495b517133c2e7bd881996083b607d018be",
+      "after": "9d09a6ee163161374cac8e8a30101bfcbe469060603463600da4fe6757cea989",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/evidence-normalization/index.html": {
+      "before": "536e8870a3436a3058e97099cacb8cfbff7ae91a0a579a994344298b30d2aebd",
+      "after": "0dc678cd0f7efe85ce50fc0c6f20ac199eb902c5aa416490f43510e26537fb24",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/evolution-improvement/index.html": {
+      "before": "f35caa49a5bf9f0a1d14b5d67c8021bf117050e0a0d8fca8032353f172473225",
+      "after": "ad6524a56548a1e4ccff8304057bbef5ab70efc1673bc88827045e43f7f5f78e",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/experiment-design-audit/index.html": {
+      "before": "9fe69614bf33d844f5314d91e0d599f29dace5f8ed533d462332058dec21f07d",
+      "after": "794a368906f29f53d396b77e1b2f306b0bc8e3b6e985bcc84e148f25a8e514e5",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/experiment-design-polish/index.html": {
+      "before": "05ee51777e526f3cf050397c4a8bc6f1c2c86bb4b1adce7b1c7a334236b5c579",
+      "after": "7a8047eff50b6509a9ad7a131046ed5359c28755dd7f60003c6ac3da8b88156d",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/feature-flag-exposure-rollback-check/index.html": {
+      "before": "40f0b6d27d038317ca1b34bcff40e83ef332f0d071200b8fc1255fd51f1ba11a",
+      "after": "ed6fea5b38f8b4b22a5b6b31cef6c4565e328b5e555152c01a7290e8ec137872",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/feature-flags-rollout-audit/index.html": {
+      "before": "ce6d19251781b31ea0219d1b770ede886e14fac0511aa2ba408d2c1d2fc48d46",
+      "after": "6410816a895af818be39117bb24438ebf433b7e56b112bc82892865ce5d5d0e5",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/feature-flags-rollout-polish/index.html": {
+      "before": "acdf7d17580d39878d90c90fe45d9e854c97343887ee1ccfa7666b8d1c0aa41f",
+      "after": "ba856392f2995622e739926d1c16f3f212476c7dd0972cd6e8a739e8c651026b",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/form-data-ui-audit/index.html": {
+      "before": "1fefeaafcdd5d38674d09901577ae8967e47e3d569847e67e46bcd2c2c3ec17d",
+      "after": "50b826503521ea7231ec86920096e0ccd993a76b78dba9b169fa225a09fd2b6a",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/form-data-ui-polish/index.html": {
+      "before": "01bad9509804499eed9c1f468f6c020e16d9a7771d81ec8b7cb1ddb4a4a17fa8",
+      "after": "6d18545f8e961c568065b21d5470a89426d64a3e39a4a254ee392ce676b7fd2b",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/go-rust-concurrency-shutdown-check/index.html": {
+      "before": "3edce32cbd9ca07eba85d03f9a77c52ce288fad57e5e386b389983e78c83f138",
+      "after": "20333d328d22a4dbc9169ea03cd40206b5f653502e54156d53d7d89df1711cbc",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/go-rust-microservices-audit/index.html": {
+      "before": "0b8193ff0f9e09966e9ff79a4687bca50dda2c22be40c94f354e7137bcf2398b",
+      "after": "9b0a331e9234cadfca9ff5478dbe1e2b98d7bfd71f335e85730e70dd0e9a9f2e",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/go-rust-microservices-polish/index.html": {
+      "before": "d833401006ca79b2ff1157c89dbd9ff8af1ac20d2986000c17dd2341ea307e57",
+      "after": "6bbe95b71fdf3643b09b3e23f6725405d35b83f1107060b4c9e97c354b9caeb6",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/homepage-landing-audit/index.html": {
+      "before": "f68a37c0c8ce38ea5a6c52fe4241d79b265cd569cd308d633865e4fa2d33dc18",
+      "after": "ad2a205a2950da51baa80347eccc42fc0b794906853b5f30b72132fb4616b3ac",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/homepage-landing-build/index.html": {
+      "before": "6a127457639b1513ea310e7a7fbcf463118ade3fedc9718789a9e436591a4bd3",
+      "after": "86b54468bb5aadd92e1e8781d444d60677ee0bd7dcbbbd7d4cd72457f29e28b1",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/homepage-landing-polish/index.html": {
+      "before": "37946499d3e8f0bd0dc5060fe00164772bbefd8291068aaeff068a9d67899007",
+      "after": "e589c19b73f71d64cdb39c4a4f26056589ea3685ec56834a71ccac535c7707f7",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/idempotency-concurrency-audit/index.html": {
+      "before": "f0846f9edb821278eb6e10d0fbeb0289b5c2be86d3c064a92c879ea713affafc",
+      "after": "33511f624f42edc3d4ea6571e5aa95ccdbb33d3035af19c82131fa86ec07155a",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/idempotency-concurrency-polish/index.html": {
+      "before": "e075438b54623a75c2501353944fd6ad2e2686fc28d8d077cccfc93d8ef1dc5e",
+      "after": "8d030b35fdcd80b37260df7abe75cc33a5bf35468a222b2f81f158ce5c8992a5",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/incident-recovery-check/index.html": {
+      "before": "2e815854e5deba679ec16dcf58e8af91067a49fcf16113fedcfae37402aca470",
+      "after": "805e64fee02484b02c469f8dd621448cb6fb4d72fa2ebccfd8d5e1889c5d80db",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/incident-remediation-polish/index.html": {
+      "before": "8c57260700087567367c6c8ff7f02ea2e75c038a01db5fcb23c09b7e9cda8214",
+      "after": "97eb072ea9b3e9936cdf3a2a7a9b75f35402bfd9e6d52bcf06daa2a6699fa29f",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/incident-triage-audit/index.html": {
+      "before": "157c7e075ebbbd97e91ed6e1e18f936e0638955c323d9d3da1a6c56f0cef22de",
+      "after": "aefad2130ccb4370eb37624551c8484ac3cc44e8ba445a3e1de605528be13ae3",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/index.html": {
+      "before": "0da69fcdec9df6664db7cc3cad3a35361c87794fb925ae17978f26792cd0ac54",
+      "after": "a2f16bcea4799d9f8d458321041f02347ba2adeda5498312578b548907a47005",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/infra-ops-audit/index.html": {
+      "before": "0ab478387e90e496866c15c4e2c6f7d77a623556d4f58cc53836ef460c0ff45d",
+      "after": "19235f68cae189158d3f8f1cace9f7f988f64d286d4cd580e99dfd702e3a8c4f",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/infra-ops-polish/index.html": {
+      "before": "1f3814c10760bf858a661b46fd93baec7678c6e0f95d5542521323fb7a939de8",
+      "after": "7beb2364d839b9d15afc5429f977689dbad89eac78101dec8901e575e20197c9",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/instant-architecture-probe/index.html": {
+      "before": "5b9af733e503befbc033ed0b74071c18b6b448faea3ad43e9487fe254a023b20",
+      "after": "970576a66dfc5f13375ded729eb6e7ee34625f06d697a396fc38bc90083f5112",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/instant-backend-probe/index.html": {
+      "before": "c901381b523847c206b25a1656d23d6c2f7acee8d0ed54a168558c7244afd995",
+      "after": "afa8dc85903e7ca467417ddf562706d64d124c95ca15c41689ccad45f03c03e0",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/instant-bug-fix-polish/index.html": {
+      "before": "d7e0b839733e7e7c2e6d3543878fbf5549d0c3ed80f59c1be16f7428ce2f64f3",
+      "after": "73915303d0a602d299feae080d01eeee57df219ab48fd680548352fbe8655136",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/instant-frontend-probe/index.html": {
+      "before": "7f7a2e1b06c15b88454c62e282c25a58d81e2c07efb90483db8c08477a3516cd",
+      "after": "9c0cae09e62fec476ddb8f74e63f037a2872a18aed5f9cf380aac8ff1da99776",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/instant-ui-ux-visual-probe/index.html": {
+      "before": "d0733b894926a5924a72e7b377cdf113f00d731236e77353bd9b0f2d2915b313",
+      "after": "8e775e41ed5f7b8c522fea4cf8bdd732eb3ce2822793409564835901c5d58785",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/integration-map/index.html": {
+      "before": "9224699760131058070792d1c560995aec9de75b2b374804ff0dc1933a343a60",
+      "after": "1fddc3d070e5ac221b7964b655af7e2de447f4fc6d011f974c532aed97030c6f",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/iteration-closure/index.html": {
+      "before": "4cf66b02c2d65ed06f8f5ccc6b06dedec9f58a5ea130f1f5a6488d29065aac05",
+      "after": "0f2163440df4e670fe80d346c3743527ddf5406d6c4e6eae72076b1ce344103b",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/kafka-redpanda-audit/index.html": {
+      "before": "b849fe2d6899e8019995343b946d2cb5f8ea32a084e95b183b077668e21ddfbc",
+      "after": "c56f2a0ede9417c10d37c3acf04fb8dcabfa14985ada287861941d673a894b27",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/kafka-redpanda-polish/index.html": {
+      "before": "9dcb55e502ee35705e42b45e448b7a3c81697322544155b8c21377b5464bc195",
+      "after": "2c5412ec186ccf1da526eb7675f1222ceef3574bf80d2929df299ae42f17f11e",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/kafka-redpanda-rebalance-failure-check/index.html": {
+      "before": "4eb9359313f0b57f3a6a283f47e204c85a688e679d2e65b1ef874c76a59ed31e",
+      "after": "d549c0b380d7521a7b1d6a76ba16e48b51f4f837b68b67d8949109338be17305",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/kubernetes-platform-audit/index.html": {
+      "before": "e1e9b6aa6e515636ad7d5c7770d76018f103b29fb76239385e0bb4bbcc06170f",
+      "after": "534b5fdb5bbd86d019dff2ff708767e2e7f9684351fa21edc3646787c3356bd4",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/kubernetes-platform-polish/index.html": {
+      "before": "b82484ba24fa616c71ebf676b6cb418c7631bbfa8fa2eadd12e0ed836c4be6a7",
+      "after": "993866e878b05bd3744cbac4c3148bd1257884c323fd32d21b5fe0acbcb7d634",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/kubernetes-rollout-failure-check/index.html": {
+      "before": "9b5807561173ec4962ea193475052c4ef1d28c5d8aafc02e8eacb223d75c5c86",
+      "after": "ee56225fa423dced32c8f29f9deb4407e3424cc0bf00d50bdc6022c21a34c5c2",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/llm-agent-tools-audit/index.html": {
+      "before": "740a0f6d37b9edd751e321f52f7e57665140590732fe9b459f5772ded115bb8f",
+      "after": "69504720dceeeb5fe9850907342bb84e4b0014c033bb0bc474e603bcc8b9b1ea",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/llm-agent-tools-polish/index.html": {
+      "before": "cdeb91da6be68f565d931009c5cb725048c4168bb62170a4d27dbb325c148cb4",
+      "after": "0d3731f93d1939ff54c1c3e99b562ad4c16549546bf75b14dd96f8e0ce25ccca",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/local-client-runtime-security-check/index.html": {
+      "before": "eb341c1794f724982add665d43769aee9f62b1498f1f355e1e1ed3fa7d3ee900",
+      "after": "e87bb5324dd11ae53d5cd33f50837301686a718483048c3ea3a3179f5ee576a6",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/localization-audit/index.html": {
+      "before": "cc1fb5fefd90cea1b035b54af4929257f4f1ff84e75f38c970f2b7575c221f2c",
+      "after": "50af3d7767a50ecfc0c2e3d4aff906f3ed0973fba1b6d04c4421be647c26dd84",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/localization-polish/index.html": {
+      "before": "98503791c43c6a2d6830b1a90f737c3a1f39eb7b1e9f14e29edfb57e14b86cac",
+      "after": "6e4835e6e37116a3bf70c534374e756d949fc63d2dd5a27e1aa562cadb6d722e",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/map-refresh-polish/index.html": {
+      "before": "ca4f9b9c175da88cf1871c630561b05668420b4e220cf1a815066e32d306b922",
+      "after": "29ff13307d830885b764fd0fe007a4824e6c3cec2ecae6c034aef1d0a07974c6",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/map-staleness-check/index.html": {
+      "before": "ef6ce0077f656d6be6a14b2e0e414e970674dd930c7fbe5f1bbb8593a415123b",
+      "after": "d2f0787d8c583c5f57f4ae5574fbc92dc2f2b718b8b1a498d89a5501259b818d",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/map-synthesis/index.html": {
+      "before": "58be868b06f9844b646d5cee6d7b4a325bc7d330496fc2c962520d4c1c85444e",
+      "after": "3f3099610921d1a002175eb4348dfa8f7414747136818de82c9d8839240e5501",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/mcp-protocol-auth-check/index.html": {
+      "before": "5f6f85a5e28c96a3f259dd21f51c16e6c79002d1f17b663572544613b77ed583",
+      "after": "4de98cf5e3727b0dcca476d1726ab566e2f9beda91e6c274f8d9f23a6da23fb0",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/mcp-server-audit/index.html": {
+      "before": "169243fd5047134cbdf8b8404591ac463c0b6b80919a33036a1cf13c2fc490d8",
+      "after": "9263952787e68416fa1ef7383a575396e68130bff9c7053d68e4ece43e20645e",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/mcp-server-polish/index.html": {
+      "before": "545c2902aacbcf6740f27631a45dbd569f3408a687d2def712ce42b99c38c99c",
+      "after": "cba6d5cfb117672a291dbd7551bc955b5bf6ea14a135f13284aacaf5071c0e7f",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/migration-refactor-plan/index.html": {
+      "before": "46b31949ae45b668136719d99799bebccffb7cbd09330a8608103e39aaba8329",
+      "after": "2d194075a3276b5593625e501e45aeddaeb2a64cd05efe29d89abaca4665a917",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/ml-pipeline-audit/index.html": {
+      "before": "c19fd9b48761dab4f5e16e893dc68aaa736336f67c832bac2e633f997e7ad8d4",
+      "after": "f2c2ca8d2033c8eff73b32f4ed801fd2af7602e154ffc0aceae00a156e1ec3a3",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/ml-pipeline-polish/index.html": {
+      "before": "1cd2c0c3e6c632fb58e147b8d07e40630da4e11732d5a4f39120bea1b81a8339",
+      "after": "48af90f204197fc71ce6b650eb652d9445ca4157dd3173fbd40d3413f5a551da",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/mobile-app-audit/index.html": {
+      "before": "f90c616113c297868aacb95a2dab66eb4958ee916038ff12ae6daa0945c7a100",
+      "after": "8c47d1539e5a636571f841afdde9c973a8adc18ab21d92d492d13ae65f1d89fd",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/mobile-app-polish/index.html": {
+      "before": "b4b141eeadbec40f714fab4640315189813f5e48e39a5731fd10c91bc82052e5",
+      "after": "3b0f63f6e7e1cc2528752a57583d4d79727e89e0854c2018be92239e8c08958a",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/mobile-release-offline-check/index.html": {
+      "before": "0a5583e2a7e0450ce967f4d07c5e08dbe1c358eab093067d5acbbed12ab29889",
+      "after": "a4a8c38109fff261b57bab1a679223bb60ff316217032f090e81585c80093d87",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/model-serving-monitoring-audit/index.html": {
+      "before": "36069d3c609cea1c8137b95451195f0de1cda48d34e024bea4b00c702b3412e4",
+      "after": "630baf10dc2bd7a52ca5ad9fd18d49072c8542b8fb1132a5df9a00c35fdf2fa7",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/model-serving-monitoring-polish/index.html": {
+      "before": "75678926e5473df86649d76be4b148f46f8fd9369843164936edeccb4c844a1a",
+      "after": "2d4e22896635b0efa6801a7f747805cefd8914fea9e4569c91799d9eb367fc33",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/multi-tenant-isolation-audit/index.html": {
+      "before": "a0464f3a05562de147c87e162935ff51cff7b0257b2631d571448092b76a90d0",
+      "after": "97698a11df92189b8b450902f042d20bf34d017c2f5fe188927b0af63dfdad0c",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/multi-tenant-isolation-polish/index.html": {
+      "before": "70577fd15eb7ba8026ffb621a0d086e798bd113bd97479ee4ec6bd2ab06a7d37",
+      "after": "6b7ce04a6e894bc04079669f0700a98fba46541711e2e2eed78c76a82abd6dfb",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/network-integration-failure-check/index.html": {
+      "before": "9ad8f73ca77888f82fc6eba2f633768fca7f878270181d09935b4e5499da6ddc",
+      "after": "0c28b5f7231bf4f2da9a5bea92b40fcbba6133e686b2abff997a410ed2e3d7b2",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/nosql-consistency-hot-partition-check/index.html": {
+      "before": "05eecf3f71c6612cff770c887c59b789b3ea72c818e5e4f5b1f023b24ade8388",
+      "after": "02b25fc324972d964307a436415349db2c89adc170e2d7edbd8a7ab513aa7bb3",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/nosql-databases-audit/index.html": {
+      "before": "97f7ce90f19b7b754996490077ba0aa2cd25a83b06e8a7c5baebf6916b6c4c02",
+      "after": "451289e231c72b6e08e3ad4645d0bf46f779c074ab95ed6cf2c2aa1dbc0d2678",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/nosql-databases-polish/index.html": {
+      "before": "7ade6033cad891af32a7d881e43ebcf9471143f262a72bc70dae2b372100f493",
+      "after": "461b984ee89c4dad27d1ddff2070fe01ebaa9413a8f09e3ec8817672379db541",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/notebook-productionization-audit/index.html": {
+      "before": "06ccb5351337456e72e363bf86e707805bae951e9e13dcc4ee02df1b9b7368ea",
+      "after": "14ebdfa01a08ed3e3fc7ee77cf711d4530e6a6c87c338670c887754ae9a6e5f1",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/notebook-productionization-polish/index.html": {
+      "before": "1b2dd8aa998a914cc677cb62da11793d251649d4264638037a4f752f45bf5e6d",
+      "after": "ce3584ce8cc2dc25e9c55af774f564f6096a588557db45745237a46acc64e8e9",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/notification-content-audit/index.html": {
+      "before": "df6439ae2fe2c56686a095922261cfb36d9793d80d0a30238b2d369bd0c7a91a",
+      "after": "af3329b15d185fdf0449d153b4a5fc293dd8569b2f270e9bd57bc94c7570b809",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/notification-content-polish/index.html": {
+      "before": "f0b7d6733fb38632a89101a4274ee764f39bb9ed095866c7d785bc78edc5d4a7",
+      "after": "2130661056906337b6d7e99107e8d73efd4d9886e64fc3d37a95e6d497993675",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/notification-delivery-audit/index.html": {
+      "before": "4b8f2fd33978aeb2337a97132df8bfe978cf39a9ad79ae964eb79872fc832e8e",
+      "after": "6e77a758a140d81be5b636917dbc6610f5393463ad90299bb20ae663cb01ecab",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/notification-delivery-polish/index.html": {
+      "before": "a61a17bff7d107309d01ebf52c39d2390be433f62da61d897a98e73277b2b5cd",
+      "after": "8519dc36305ec30975ffd938c99a2353b8f2119a185827623d791fda94abec70",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/notification-failure-idempotency-check/index.html": {
+      "before": "8a22403fffab961cfbca10e9ce7aa03e2ac8aa01cabc7dd26d015ae5602519cf",
+      "after": "41e03d1fdeb5fd96252483123186e388f6c06e76c7de98a67acb1040df8576f2",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/oauth-oidc-session-check/index.html": {
+      "before": "b7bd8b98cd4badbdc1507d13daf730eb6d56950a37cec351ee414b358711076c",
+      "after": "2d660b504889dfc3a56ace14ed1410c62dce1a3d2743a9d8ee6685eccc92c4d8",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/object-storage-audit/index.html": {
+      "before": "0c873c5b10bb3945661b6a380ba8f05a276b4fc46bcf00782bbb7e6be759a307",
+      "after": "f50fe04bea87519fccb0f789c52eeae433ff06d26a599cd2c67d184db0e670a5",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/object-storage-integrity-recovery-check/index.html": {
+      "before": "b2bd3be1ed7df63359bf79b317c8cd04eae537d34188e514ebcf72cfe2282d4f",
+      "after": "2f35d85e0814d21ac09d84e0ff162b0a130f4f5740839704bef62bdc12f5ede9",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/object-storage-polish/index.html": {
+      "before": "32c05c1ed73f18ef59e2babd4469cbff31c2a1ef788b1c43b0e3c3a0fe7e3030",
+      "after": "78bc9b9a23cfb4d06564473c8dbacedf39bb46c5c655cc61492b0a39c173070c",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/observability-semantics-cost-check/index.html": {
+      "before": "4e9499b4da4aedd744a5eb55b52a52ab3f5e199d3e5cac798145b09b3ecbddd3",
+      "after": "3f0cefaec1b518bace150d473c0e947733344d79e2c59006b56c9003f106a1e3",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/observability-stack-audit/index.html": {
+      "before": "ae945fdbf334241f9d906790bc6d060e67dd5672c381576cc3c0119a7fc9a449",
+      "after": "d86cbd8f2234adaf9677927dba54326657c8f90b32d44cd33b9f0e482ee80490",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/observability-stack-polish/index.html": {
+      "before": "6b0d6f854fd40cb8836888d2ca97326da6f3682909df4949df0198cc15990732",
+      "after": "87a1498212c8fadc48ab841bc7aa69c1f94ac11a3643e20a8b8143d0d318aad3",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/ocr-document-ai-audit/index.html": {
+      "before": "6fe566af40cd6ec279fb9936d4f588f2c0d1ff2d869316d510d2d3ce322b2905",
+      "after": "555611f8ef430745162677792dca32633ae0cd74388d5a2a36ccf13e07d313f8",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/ocr-document-ai-polish/index.html": {
+      "before": "671404f9e19587698e2de151f46cd4ffce5039c281f261684fd8709c9d563f5b",
+      "after": "f718886780c390b1e0267ef82ce992cc3060f476e6566768f0a7225ab738058c",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/onboarding-activation-audit/index.html": {
+      "before": "b93d561b5e3708c8d5721c2e1ff635d3342137bfeb13d5221a3cabdd17255c4f",
+      "after": "b1d89fb759d9583f92bce07dcc45ddf294bbf34fdc0adc96eaa0007e9f4b2471",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/onboarding-activation-polish/index.html": {
+      "before": "0b98084c0daa26f9418e4e1a6e88171511f982c3fd554e7d2e10f37ba4f23d38",
+      "after": "27ca47822d660f55c762b81ff4ee3d02bf840fb9e2915f223a7b150cb4e43e68",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/ownership-invariant-map/index.html": {
+      "before": "604d2ae8f9127fbad21425ff949bd52544af72d17da02f70fd175f07408758e0",
+      "after": "55c89782819fe7219a349f12001072f182353f48b5b8e7e5415c9166d2511381",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/patch-checking/index.html": {
+      "before": "72785e3b7b60734bce50631d8b36196798a3629b35024d9b8c720ab8795e47cc",
+      "after": "1145407a0c00fe45c1d322dd9aea243c2938b201ba3a8716b94e0e644ed5dac1",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/payments-provider-audit/index.html": {
+      "before": "54caae8faa3558a05e5c5d61f0bfbae6021b76b719cf66321f073cc1c402e3d8",
+      "after": "ac8d14f96afb6f317132c5da726ce4e8a6324a57f5059452b361d853be7ef379",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/payments-provider-polish/index.html": {
+      "before": "284e726a03a8827ce5467ed4fadf0582a6eefb9194f21a65f407afc2acc089fe",
+      "after": "0b811eca0b5fbfdf09f8cc5e7fb23d3c7931dacf87be3b6bf2f99b39547bc4de",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/payments-webhook-reconciliation-check/index.html": {
+      "before": "aa2d4a084101b065866fb573600951b7389ce4b20a0878f75415a2bae66b045b",
+      "after": "1ba1e92407efd9147092fa7890889428b404082fe0a106c05f496662dd42f651",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/performance-audit/index.html": {
+      "before": "dea5672360229398b63bc7e8ff1b3b4d8090c5a149ac1ae81117c696b8c66c1c",
+      "after": "bd3416aed713540bad02af3953553db7745854bb026c8bada350cad9e32e2936",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/performance-budget-audit/index.html": {
+      "before": "f72beff70cd4fc2d5ed5b3f6fe890810e4032b993b1c36bf6cf957404534fc7f",
+      "after": "6c67d59431c796129970b8df94473eb4ab962b21642fd1f19c5abf50e1df1742",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/performance-budget-polish/index.html": {
+      "before": "457cbe89f563fb305d2158b422bdc41a22ffa888d7ecf2ec22e68c5a2abec136",
+      "after": "04ffe75208c57eb4cb30c3890e719da6712f4e408e2afee24765b085e011827f",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/performance-polish/index.html": {
+      "before": "9aecb3909fb298f9490d2152142b450f8de76483c541201d5d51b0a10acdd87b",
+      "after": "aa949d78ad2aa5903e48eec90af0dea404182beaa9ab8f696cfc2fe88821a54f",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/privacy-data-rights-audit/index.html": {
+      "before": "8102bb25d7c5796cbb4fcdce46f26f5788e37c2a6543fb91fc3b137b54237145",
+      "after": "093f8a4ce02aee113726c5ccad12fef9a8d361905dda86c677c7f9c87575de8f",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/privacy-data-rights-check/index.html": {
+      "before": "58d9496afd2db87bd20e14a1d2958985bd10b51e6b7aefa43be0874c77ddb91e",
+      "after": "4480bcd672d7fca2857fc41ba242b078aac56fb024e5739ccbe80c413ef02c50",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/privacy-data-rights-polish/index.html": {
+      "before": "c21cb1b3a1295f7d0f2194a6a89d0320affda6cf92b8cf88524e17151363b0c0",
+      "after": "c34b0aca5e51543440ff278d477fb02520b34efccaa1944066a6b71d1d791dc6",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/product-acceptance-check/index.html": {
+      "before": "c6d2b899459ee652375726a218db1db61e7b687307f6ea76f7b56a0cf429dadb",
+      "after": "16997db3686544237ca5abf5f49211484ecb650b3ddefe03b04e3a3090e9a8b1",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/product-analytics-audit/index.html": {
+      "before": "7b677d1df24e2404534227ec25277bb623665b3b78955444880d429f0fb2a1a2",
+      "after": "ab9fe393865333269b0b3c942e576239af0ab102bb714425da3d4d6d57bf7ea0",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/product-analytics-polish/index.html": {
+      "before": "2601f403aa5704d1aeb1220ae970baa97bb65a2e68359d407385d1dfca0c978f",
+      "after": "d0898e1d7e4362cdf24ab640a606b21c4648304ab74d774697f5ff7a12a28c80",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/product-capability-map/index.html": {
+      "before": "acee86d573c01c7b8ee12e0a94402e5f34ea30b050a846ef19506b25dd5a1efa",
+      "after": "fd79dc99f7d4157395d2bc226258f20e07d692e962dc6397b84f9be0655eb7a1",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/product-decision-metrics-check/index.html": {
+      "before": "61fce0d575878e9b1d766aa4b6ded2b186c7e431333dcb1ebaa0860cd82704a9",
+      "after": "819387aafe713fa2b588d459c9ff08f045a7e506a23f4fa000f75179a0b358d8",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/product-journey-map/index.html": {
+      "before": "b251f7ffd5c665922e6e592094e53ac401d9443d75463642cd9dce418f7bbcd5",
+      "after": "c1dbd09252665374d18529ad89fd9097b51e5da21f5c6d8203303a6368099777",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/product-landing-copy-audit/index.html": {
+      "before": "8578222c3036021c843b07f9d8626da622b9441df7ae6040af5fef1ecd74b888",
+      "after": "0dda82e899e594cbb20be4373c99bdf08918fa4eba2ad7ad44382bc142b175a6",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/product-landing-copy-polish/index.html": {
+      "before": "53088ad565fab221ed9a9676ffd653c081636e92702b7773e087b94738039cbc",
+      "after": "6b46c385f985e323b226f58502e230510cc5fd70a08f33c533529a960868d9c6",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/product-metrics-events-map/index.html": {
+      "before": "bb901f0b300adcc4dacbf1518fd46076da15970f2d87719a8b5e2bdc272632e2",
+      "after": "09114ae84858699a7f1eb77c0db452ce82eecf6afc3e48017d99b786efa583d7",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/product-requirements-audit/index.html": {
+      "before": "a1bee82099e92a65f1c84fff95a853f5b5109449a120ec6c4aac3ef492a3807e",
+      "after": "990d32a7aeb7b764d21ca2819f1dcdb485e4b107c769e6587e2841751ac99335",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/product-requirements-map/index.html": {
+      "before": "888a0e5ba5a2b19969b9f28182f48f3743439ab04ba93720e0734005d3ec83cd",
+      "after": "f72f549fbaadb8d4baa8ad09fd036de88878c5279ab00b494367947db70641ab",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/product-requirements-polish/index.html": {
+      "before": "6ba2ece1dbb80cf59a5d55a227d11a857aa86c5f05ffd5cd4d83d9a02bc4d821",
+      "after": "aa7d220da180a9ee454759b01ef24b35dcc03e2fb3f71136a1dc27de92f393ae",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/product-ui-audit/index.html": {
+      "before": "b6e5c4d0f88e301d9d33612d19d837aa0d307971b6fe8f6bf64e282f58b3f5ab",
+      "after": "91ab4290d5118b3f03e22357b50584a2877bbb90c9fb56ab02beb06784b6e993",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/product-ui-polish/index.html": {
+      "before": "8f5369eb312e66d38f645deba6c208ad4e9c892eeda03af9d49db29b8f62e578",
+      "after": "60e0aa3fd890e4dd8a2bd8e0ca782f0c016a680f143762b94179c8a1bb6c1eb2",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/project-atlas-map/index.html": {
+      "before": "ed947f99916f4da0c80724100898d2a24dfc467ede30df5d5227d68bc16588db",
+      "after": "efa68b9649cad784b8f1540bbd967dd41fea5d74e1940e3635a63ed448ddfcd8",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/prompt-skill-sync-audit/index.html": {
+      "before": "385f912377d0564f33cb0ca1e522164675601750b048b5f5472de66ad0d059ca",
+      "after": "13fe1095767f2d3fef2c221fd64ba119b4193842d5b346dabef54082a6a3ec82",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/prompt-skill-sync-polish/index.html": {
+      "before": "64c48146661dd6dc78dcb2115fb93c20ed406cbe440189251c2edb9144dabb73",
+      "after": "d57a2813f384d7389a04a4bcba490a277b625ae907dda582f7d6cd3f7be333af",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/rabbitmq-audit/index.html": {
+      "before": "4718864bdb5a0d5f0d784d341ae684383c853113074f2563be2e44096ea12a2c",
+      "after": "a0faaaa16092873957f57eec249932dc5c64a947e5c09432c5f0703f8c60b5d7",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/rabbitmq-polish/index.html": {
+      "before": "f7ca95249845f913d9abb09bba59da96f45ee0e20f0d8907cc8c2f10afe0a3a9",
+      "after": "89ea1f7318d7ebca46d3ee729178d2e122064c187b1b8e7819003cc8f3129c11",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/rabbitmq-redelivery-recovery-check/index.html": {
+      "before": "9d4c6b5c12f6fef3eb2f1ffe1aa0e3ea77e725605312bff56e127d0c2f565b9d",
+      "after": "8a96d480f163f16147a78ff638fc94bb17667e00ee5999df4706a30047fe9850",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/rag-audit/index.html": {
+      "before": "ffe7cd4c0b6078ee8a3d134790c68d6fdc97be01f29ea6ae8867e9d037b34c88",
+      "after": "d36033e376d969d8688947dd21cfce7adf9aec208b34ffbc967cf9486b8f65bd",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/rag-polish/index.html": {
+      "before": "732487b5f2e01f921326ada5d53b5c02b9b97996f0216713ffc764aec1f13d56",
+      "after": "b3b45e2f07b7617af58851525dec46979efbabe82e1f9408f377c37903d5e670",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/rbac-abac-matrix-check/index.html": {
+      "before": "b023be1382fc2fa716fe1307134954918654b12b5605e520f99cc962fc4cb557",
+      "after": "429de73baf259f4d2819fc02aea021b94bac9a6aed312b7f008873c72f03b4fe",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/rbac-abac-policy-audit/index.html": {
+      "before": "7b925251a5930483daf4db5a293821ac5055effe23575e39c9a179cf305e073a",
+      "after": "3799a47044b25ee680e7b66a11b09f7e7d2569ddd6c396d35e3f6364926da78d",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/rbac-abac-policy-map/index.html": {
+      "before": "57ac9f4a1e3c96bc8b67d54012726739cc8ee7136ac486476a4a406aaaa55637",
+      "after": "fdbd44272cf638ff3cdcad316b6c6d0c413ebb5ab249c7d374cdc1116df2cb72",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/rbac-abac-policy-polish/index.html": {
+      "before": "09e5d4163b9d40d2d70b5ee4fd60aca6b43f74e2462f281a07508b224be7fc66",
+      "after": "ab71be7bfd863eec5a7d3a3cd33d1291950a027fed359d6800cfd330b8bdb772",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/readme-gen/index.html": {
+      "before": "5ad2d0f9417372e4c811f7612d43bcee0ad9f31998779d4101c710a9d61641b9",
+      "after": "d55259d167830a21b9d4e47b07495d057c45d831e7419f8b7253cf800148066a",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/realtime-frontend-audit/index.html": {
+      "before": "3ccf11f6d1daf8e491483022186738b930adca1284182f84bd8500ebe09163b3",
+      "after": "a72340ca39293a07c216cd95f176f44392e1c980c7fd33e1fad57e07b403f8d6",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/realtime-frontend-polish/index.html": {
+      "before": "b12aacaa048e3b074b76977b2154f8dc56753d42196774c78fe9ec9a0eb2a120",
+      "after": "400c416188f2a37622012f538bd6a3d7b7931ba67b0054ee561ee3391b70ac60",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/realtime-interface-profiling-recovery-check/index.html": {
+      "before": "8435bb8078bfac85ca066892b6f7fe5def8139558ec1319936aa0eac156c3f0a",
+      "after": "119d368de914260d7f243f8473fd0b88a9ea2dfc5197e48079b90e96eea2d6ae",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/redis-job-queues-audit/index.html": {
+      "before": "f3d8d5a71494005dbfcf85bc944af04667c628f96fff7b3c8233bf5426b35460",
+      "after": "62068f38a822ecb4eb86429450e18e807cd624ddddc2d52fb232089264343834",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/redis-job-queues-polish/index.html": {
+      "before": "772469c5a6284f334a9a6e38699331088db65358e5d5dabcc369d9c2ebfa24f7",
+      "after": "7c0b5c0fe38c25fdd05b6503fac507944991443c91fe546d3d52d8d6f791165c",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/redis-queue-load-recovery-check/index.html": {
+      "before": "cc571c03d925645d4d337bdddc7cadae640b656138c3f5beff258364e0f9b9ed",
+      "after": "74ea53dcf143ae10cb64993ddd992215c45d2170e55c396513593ab010f18bc7",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/refactor-boundary-audit/index.html": {
+      "before": "56ac976dd616bc4fb0fe6a8758ab169b1e594182b0b3c69a64ba9f4bed147568",
+      "after": "d0939536d4c83c10935618feb7a7644efcd35ef18ce2f2ac068822e3835a7efe",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/refactor-boundary-polish/index.html": {
+      "before": "4e7eb08acdc9f64c9650feb2569959593fd74be866954ea1dea930b589e3f082",
+      "after": "67205b69fb5bf0dc71cece5233f8e583fc3b898923bebea60df6b0816df42e4a",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/release-artifact-trust-check/index.html": {
+      "before": "ed5be115248d97275eada7e5879baf859c187b7217be80e72e6a228cdb009ebc",
+      "after": "ee42da19e507f40a5aa84968153c18aef4bcc279dca9e6a1221d6281ffd0f1d7",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/release-readiness-audit/index.html": {
+      "before": "db1850f9b43d7ccebf574105a7f8d59b676c56c34f9efefdf1c21a6b78e2f5f0",
+      "after": "2fbf5a6fdbafb5690165b3d588352e6d557663f439886bf40d71589813fde0ee",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/reliability-audit/index.html": {
+      "before": "2306c804cfd2be8ff59bee5f81937245c9cb7a96399d330229ffedc35e00f43d",
+      "after": "a578766b658044e85616f136d73604a4043beeb44c565bcf46492e3869964d3f",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/reliability-polish/index.html": {
+      "before": "738df65b84b3c219b954474ac84d4497dd607376361f46b7fabf8f6fbc1304f7",
+      "after": "28844a761ff0a3be0f3d43c9d08a9627aa9c19943d12b6c68d82b4bd38e445e3",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/reverse-engineering-audit/index.html": {
+      "before": "f4004ea15efdc7e0087bd55d5c8b62cfd7803dd45c9a32b8f4fc4f37033447b2",
+      "after": "c3cfd994692ef52447eb8fbf3568611f0703d348f6bb3c105b23d75482e8eea0",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/reverse-engineering-polish/index.html": {
+      "before": "d41923ec8a4a68947e3793a75b2c052a8773277f01c734a9b7e8695fc995aa03",
+      "after": "52ca0ed75f65e1c9d78c64e4beb9bd929c35d9b80264b728904aecbafb035c3a",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/risk-release-map/index.html": {
+      "before": "87ea3e43acdd88d2b167d445f47cdca16346052037d3470d1ae9fca82766f7a1",
+      "after": "1b17f4bc0f6e1a2f2d216bbea175da63197709cdfc21da8c1d53a551d71f3881",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/runtime-flow-map/index.html": {
+      "before": "b96dd75aa4804e31dc1afe5ed0d0593d9b2d019eff232c9151e1905b31441e70",
+      "after": "c57e8951b14bb2996b9a8ba38993992a6b6090cfbe5573db2f2e63f1f38a23d7",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/saas-navigation-map/index.html": {
+      "before": "57837db39be980940de06d83fe3ae134787389d4de1142899a62bd438ba992e6",
+      "after": "854977788e3cd82ab040d8e9ff2194a10e2c4a39ed1db1c8a654d3a747b7473f",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/scoped-audit/index.html": {
+      "before": "439adc34aa296d6caba81e8e93f182c63371f0e4334eb71def996e887b84d686",
+      "after": "f4410030afc5e35c405dab719c61e7007d6e5018e70b73b32a6a8929a5aad595",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/scoped-polish/index.html": {
+      "before": "61630d78b879936f1c6349bfbe86cba0bb3829948064ba0cbc3306528d30eef5",
+      "after": "9de55d82e7c6f7af5773f4b205a92c81dfa327b5e7ed1e064c38323b5a848e20",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/search-index-audit/index.html": {
+      "before": "ed9277894f9cd2c8f41f9446f05cc661ae8a74998776841cc7c52859c4d2d7ba",
+      "after": "91d8ac357e25f387dcc0afd241b828c536540fd3c44b37df5bd374ea16070c0c",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/search-index-polish/index.html": {
+      "before": "9d7e9a0f1b85f4bdaaa906631c24eb58d2756cf048c26e00d9b6cedb060bce0b",
+      "after": "b93b176727d0995a4e1a93cfd1574496b7bef9d1761c9b31fa1a430d96fab3c2",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/search-recall-freshness-check/index.html": {
+      "before": "6a8f8645362341ce4b44d551599a893168f982c5858064947946c356b32b3ff3",
+      "after": "713e381a9b0a412aeb9a6cc9397099e17052cc0569de6dcccc02eadf134a0e59",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/security-abuse-defense-check/index.html": {
+      "before": "18e31b05c3af67482f31f98f084fb79cce0c5c12c254f7ca8f1be48d2a43d344",
+      "after": "cc869aa2df2732fa81b88fa5447d71a26377cdcf773fedda2c7ac4467f5d9838",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/security-audit/index.html": {
+      "before": "ad2a0224f37464ce9e6b75348ffe8b88d3343144f132969c0297801a8b2ca874",
+      "after": "1bec1041dbdde7a3ebbead183d3d41f408b15b87701defb6d3905c9c5146938a",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/security-polish/index.html": {
+      "before": "d3a4df5f7956eebe752409ad16ada7fb4af499c38c5d214c4d958840483ec07e",
+      "after": "7caf486e5bf2e41921a0ae40cd9ae08a7cf4c42095d2cb6c244825e40d1fc67c",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/seo-geo-audit/index.html": {
+      "before": "e5e08469d5b50f8f6673e9f61cda149115601f86a64bed1cb9f27d4a0b9b3bcb",
+      "after": "bfd25aae3de8ff163a38579e5170accf5dce2009353a5725a23c6cc41520984f",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/seo-geo-polish/index.html": {
+      "before": "fe6f00a76954ea1880b822ae620c22c71b3385757fcd8005d5d26b2c5cab547a",
+      "after": "07dcf867f2e1f9a0bdb2ea060425868c1fe5c80898b4eb6d90f8ddc98cfefb65",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/serverless-invocation-check/index.html": {
+      "before": "065851da73f5d44d68e00ff7151b74aa0c1af4fcb12c9410712a84494aa802d1",
+      "after": "1263dade850fd957b089b8be4ea9dde213a97b30987a16e1b171ce72cbade910",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/serverless-runtime-audit/index.html": {
+      "before": "7b12645422f96c8a6e8fbd5ad341c71d0baa01207acb1fa19ba369b9dcbc74cf",
+      "after": "4ede42a7d2700fb737ea8d424add681bb5d77282dfb43bf2866daf49b022ca6e",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/serverless-runtime-polish/index.html": {
+      "before": "4e45eceffb2f12e1aeeda7e4c2230062130ed2ce664eac9e8b154e6973e42190",
+      "after": "ef4b5720b005750245f0fa81fab38ef465da418db24d0c5d5c208327fe91df86",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/sql-databases-audit/index.html": {
+      "before": "3070c0fe4ece20ca92dd9b43d4dcc1dc998aa687335398a4c30c844353667556",
+      "after": "ce0b06111809b2bcd6bb488fbdff088b5bad1417342aff376a0bff194eb0b440",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/sql-databases-polish/index.html": {
+      "before": "48de50f68da45825435f38edbd7103d1fce5e663135fdb42eb8e3caaa6b8825a",
+      "after": "416ddcdf3f50547c7b9bb7aac4a25d888bdc9096bd1e276ca7517d7029fb01ce",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/sql-load-lock-failover-check/index.html": {
+      "before": "235cd0490ddb34b5744d5fbdd07af906f76dbef9571800409a5184b2f8e35d15",
+      "after": "77df4695ee8cefd68abb8a17357edd12bf2c4f30d7be13c05f83d5e723411a52",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/synthesis/index.html": {
+      "before": "24d55be673cd523b7aca85d0e46a0020497cd822342b7dc5dfdca7fbefdcd564",
+      "after": "0162efc0efdcbc870731ac7fbba39571ac002a39718322b1cb8d727836b41aa7",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/system-security-hardening-audit/index.html": {
+      "before": "53ab132ba53f726d7edf443f37e86731b23afb078b850e10936ee4de47477459",
+      "after": "4d492c9a7c2284c17964b960c64e933840df54793deafdbde29a3bed20a242d6",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/system-security-hardening-polish/index.html": {
+      "before": "7c454de640398d89ce20a61aa1d99e543859da0b692db8ca6ec463af617c6a3e",
+      "after": "9769a591e8cff8063526f8fdc9436338544686040a46ab8ac2e408ec35f6ca4c",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/task-shaping/index.html": {
+      "before": "66dd7b218f33d695ab440f9100c4f13de950dbb4c56d788d85a1580208d939a1",
+      "after": "506c679a69e1f33d8a4805bb04e53ffd433b2a5bd8de3070011c614a50ac6952",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/temporal-replay-versioning-check/index.html": {
+      "before": "c6650748ba0572d0fa4c5106aac20847e1ffda31d3f2fabd4e1b5acb0c2712b1",
+      "after": "1afd7ad9888d53551982abd58e88b454056c1387c31434487ba16e2d7aea2c38",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/temporal-workflows-audit/index.html": {
+      "before": "3e86d3cca1e8a7da8a7c3719a516d39fe375d28aec077cf0acbddafb13008412",
+      "after": "5a5f05feada4d83fe47122d516010db636da4b65089444b20fcaedec10ac5562",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/temporal-workflows-polish/index.html": {
+      "before": "fc584d89550d4ea1933f761c5f02c392544dc099fcb7554e6be21d3b4503cafd",
+      "after": "4ca017a7e252ad02d0411fe572bb82d5715b5b82c66d0607402c434e5a652200",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/tenant-isolation-check/index.html": {
+      "before": "0d43e832a6e2da32317b488e270235f0b41b7cd0fe35dece0b842296e21895c4",
+      "after": "a7a2276ef8c49e9d8cd8a90162a890ef7be5a9243ab8232d9cda1fb79ab13ce4",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/terraform-delivery-audit/index.html": {
+      "before": "a374de525d74bb466ff556ea5c4e9c78c830ee3e76c58634061966df9ce1ed6d",
+      "after": "2bcd9b60c2b693bbb458fe776015b84e591c3ebcd060fe5e49cfeeefc1e5d315",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/terraform-delivery-polish/index.html": {
+      "before": "cfa471194ea22c17c2776f8642b316332cf7e2fa2aaff9512fe28c0513ef9788",
+      "after": "e7b9a28602d7d58675be3e46cf22dbcc2f945ee0fd97b793878dd2a0466b00da",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/terraform-plan-state-check/index.html": {
+      "before": "0e1ccf6427c32a9b56410cc53abb4ea340894969a96cf5b662b0df45abab3674",
+      "after": "93e2373f1ba99152493d87e5df9993257b6fce7bd1c952e4340c7deb936a4e15",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/test-coverage-audit/index.html": {
+      "before": "c0a331d87264fbf8ff7f06bee26b1e7a91e7c3243786e64f1c75bf9d47463762",
+      "after": "d73a799fc0c2d8c14fd3f2619e886eabb83b29c05e9af49e14388a9742bc894a",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/test-coverage-map/index.html": {
+      "before": "202186151691db168fd50e0ec3b3e064cd863b3fbf35e20faee324c88db8b044",
+      "after": "58066d2dac2ce9f2efece89fc1494d86c77eefe5f682dc19391145318166a65a",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/test-harness-polish/index.html": {
+      "before": "14e2c4ba7687d006dda7d6c24602ff2126c4500df12c95588e336b44b6ebabe8",
+      "after": "496014783f863b1c38fc2813ea366709254a22c532ac04941f0098bb91ce3393",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/traceability-map/index.html": {
+      "before": "3fff9779d0cf67feebd96a6ebdd61b64c7289c1bae74805f8528ca394e2dc9d4",
+      "after": "cd178a86261d53fc143b64bdea3a4ef429f6ca1be684fb91a27b793e02183b23",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/transactional-delivery-check/index.html": {
+      "before": "c414410b4fa052bc912870a2fbd4151b275c121b6e07b45e49f8297bc4b9b73d",
+      "after": "1090fcedb964bc45777a2a16a544416123e0240d9d2794960aa9097b8f08e72a",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/ux-flow-audit/index.html": {
+      "before": "fa2ae1e65a106b8c5ef28fcc6999726702c20087107406875a15ee2f023cb225",
+      "after": "db9943bb4d4dafd181d5e0f03762708a1e814639d3c133721403c5e6e77824f0",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/ux-flow-polish/index.html": {
+      "before": "539fadc312ecc88415b55fabbffaf8a53e9726711580fc308f379b59958fabf5",
+      "after": "d3f58c12060cfe034aa4e166e2b0f02bb314f4747300bf74de2f159959800cfd",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/validation-clarification/index.html": {
+      "before": "6eadbd6af10f4ab2f0ed46c03476e0502947e66afbb1c6ed7618ab61ebb86027",
+      "after": "6e166dc36f759c24f246272613b30d7f81e137742ab5409da0c585b0a59beb3b",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/vector-databases-audit/index.html": {
+      "before": "6fe4e186353bf511a6d2cca54dc6dfe66d526fddd780c0a51bf6fa818d993f75",
+      "after": "764059fe44a313b376d7ec1fda2bf529a108eb6dc82c96f6cb2b87ff52697af1",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/vector-databases-polish/index.html": {
+      "before": "4a3219b36cd20611fbda7e9e6cb35a038b2ba5994ed18efacc770bf7c4e798fd",
+      "after": "2a22b287bd256f4e18cbd69ba331f9bdc27f24389b44d73bc3d4d425292ea559",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/vector-recall-degradation-check/index.html": {
+      "before": "acead6d457605b242381675ae37314ca5d460c2187378a586bfaf350bb204981",
+      "after": "4ead0ba03971b943995bddad8c1dfd01531b5583c6d76fb0263d67ec59cd5e07",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/visual-regression-check/index.html": {
+      "before": "c939f9ad8669b802aef718247e8466e91a4f058cc8d9891b0ff3ec56d289ee9d",
+      "after": "0a6435c6a832146e1566b03e1b7ea90ca04904bde0a0ec439d11f6ebe1bb1cfb",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/web-art-direction/index.html": {
+      "before": "e070ae99bcb6a3a27ebfdd8826d962ef1975231bf887254d6bc9fa72f2c6a914",
+      "after": "5f5b3879ea8af7ac601f7f75ec726c378ab4d8014d8f9661af822fc376949a20",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/web-boundary-check/index.html": {
+      "before": "2c71ece5ebcd6da2700a0a09f067fe4d24ece0002c2ce621836020e358de5945",
+      "after": "906adab8bb848b64a11a35ea4172b8c5a38545ba3a047d8547cb4ccc981a297d",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/web-brand-assets/index.html": {
+      "before": "185fd7dfff5801261c38ccbc3bbaf50664e6c8c9938b2aca9216a5641e0d6904",
+      "after": "8a05dbd2da428ff3a303994d177fbec2d9f1ad023601dacdc794404c1ee76fb1",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/web-design-kit/index.html": {
+      "before": "c95395ed5ad70759f2f7ee925290318c1593c44059463dc3ddc0eb27c8f15e02",
+      "after": "5d923ae810ebcf4a874af49cba95b48a988fdc4f6dd3cce8c6b19da392b9a7fe",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/web-experience-brief/index.html": {
+      "before": "0477bb766379116ca720cc561c3e8d5715a10180adbe231aa89b6c98557d4c68",
+      "after": "4584d6f8f65095109ef75da632601a8335715727d30f4a26dc14f3198b27145f",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/web-interaction-motion-check/index.html": {
+      "before": "d4569a1b95e40a7fcb45e517ea8758bb020ef587c6d6b62d409b893b761dba88",
+      "after": "cc8b83dde816599a7857d9c6d861489c5a0350d978947624423c1453fcef0d54",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/web-interaction-storyboard/index.html": {
+      "before": "d77abef9753e2183b083482e10508a4265c694ef8ade2f63c09a02f80f2cbb89",
+      "after": "2044f8698b59600dab7e2fe67eef08beb719f61315931c9b94d7b620be8747f3",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/web-navigation-state-check/index.html": {
+      "before": "1eed2da0d792ba4ebec463d1d8f38d8fc9e2584fb95c7a3c823ac5da423fa83e",
+      "after": "4be4512b0afd727337515c1b0a467d4a3979895993816a094848321b336d1461",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/web-offer-synthesis/index.html": {
+      "before": "4018bff2f7896778a264ecefc33b2ee1d5e12155220e92f536983af1c31703a4",
+      "after": "14f85b042faac676098d4565f7e3334be2e8c86894d7ce527b71674aa255d147",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/web-page-acceptance-check/index.html": {
+      "before": "a88eda05c4b1ab71f450360aa928ab13a31481192da4e8ee7f9e46a6dca21c69",
+      "after": "5c0356993755d12af60c9c8d085b6cd9938ff1f3c4b300757d21a413843b9d5f",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/web-page-architecture/index.html": {
+      "before": "82f8632f104527b6bc35ba3ce37dc49d573c6ffe891a5a64b908e469ea09a084",
+      "after": "d4bb08806a1cc5ff9741d8e208c5316eea0736a80bbebff46e6722a551953293",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/web-page-copy/index.html": {
+      "before": "73d23c06a12adb867e7d097e9b4977e55aabc2b2fea8b6c443016959811f70c7",
+      "after": "574cbf18b2cac9c4db8aa262b1cfae89bf15a5bc6f0a27a36fd1b17d6c17f31b",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/web-project-architecture/index.html": {
+      "before": "dee550beea28e45c4001fcee9a64aa7ac59c5324dbf1da5c698a526e4e356b12",
+      "after": "94ee279f2dd729e785b89d04b3f2ab579dc057db4684ae691e40e9b1dbd6568b",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/web-reference-research/index.html": {
+      "before": "7b8da7e90705e27f4fd060d40ff4fba269c66f387116876d972f7c0629ce7f70",
+      "after": "668aaacb6d1c48f6565c828174840ad4528df0b053c74085205da7059905f306",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/web-rendering-audit/index.html": {
+      "before": "5add2cf0699b47a76baf0fd2fddb1d613d74e3566bbc4e4642db7ed0adcaed65",
+      "after": "11ae7f4b0a38dd786467b864049f11272be8456a487427247d874f1eac229353",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/web-rendering-polish/index.html": {
+      "before": "d42d4b52912b07ddc1d59597160cec6ba7796429666dfad4b89842e0e73b36db",
+      "after": "19fde7e63c8bf710368842bf33769a3b8fceddf9601061484d3b40a8f08e5bd4",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/web-search-performance-check/index.html": {
+      "before": "952c62f7c9fa02e2388e3a320ced99fa60ba6f2cae7e71db194f072b091f9a30",
+      "after": "cae691c092e2004ee1a5bf1002c42b473796403957c4fbce8fc611b17c46b097",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/web-visual-hierarchy-check/index.html": {
+      "before": "fe21daba59d15d626aa8199c5b5ded19a5db3f9286c248d26b31f181bc800a96",
+      "after": "5b5ceb9854e262e35be3a3abc692a8aecc7960b64a5adc4732fe847d0748ce08",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/web-visual-system/index.html": {
+      "before": "c170bc41aa4e6945392239417079b70492b9ff180c8c195f67a087f8b8578e29",
+      "after": "6fe4117376073e5c20d3dfed51df088cb90841fb398a629b323d69be9bb6af87",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/workflows/workstream-decomposition/index.html": {
+      "before": "4ad281c672cc20ad51e7fdeca0817b3c372233600b45779b5a99f9baf935a5ea",
+      "after": "75f290ab6a0a8ad7658fef7a9d1fbcdb914fbbffc544481765810cc0f2c88417",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/zh-CN/index.html": {
+      "before": "c19f4c21eceee570943bd2b1e4f0616ee5bd580bc82556590496f72098c93e48",
+      "after": "18d0f00daa9a905273cfb1cdd8a054e161ca85fd311b11e230b7290dde848527",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/zh-CN/privacy.html": {
+      "before": "f9f19afefae4e020fff834b5136a002bf20c8b3a590c918a9972e03426591fe7",
+      "after": "a0702dbfb33dd6c8b08de13fe6152d779706a6fb07d9a62b74382c0dcef78496",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/zh-CN/terms.html": {
+      "before": "40e0ae4d69bd3734055577ba047192ec33af846de2a3afb4a41b0d9f0d3ec86d",
+      "after": "dd44d7f6a2f2723995ba0a79a9219bb6482355aede084f6b8003a4160ac188a9",
+      "review": "Localized website redesign and verification"
+    },
+    "docs/zh-CN/workflows/index.html": {
+      "before": "343fe485f41b548302d71ba09dcb285dd0762595f6195a76dbcbe02bdbd574b1",
+      "after": "e173c9252fa0c20a612d68928bd09dbe6bb51bb562a1d232a719dd499592f202",
+      "review": "Localized website redesign and verification"
+    },
+    "scripts/build_site.py": {
+      "before": "101d2bb49aa1fe922cf0c961702663c6fb3d3f1044a86b704d13a3f57fa322e5",
+      "after": "2d7d17f80be1129865a463ebf8e87925b717069d82b4e84837179b0bb67b2e81",
+      "review": "Localized website redesign and verification"
+    },
+    "site/content.json": {
+      "before": "b8a795f89c6c5589a801c3b28515a6905906b222212cab97fe34a41c52d2c43c",
+      "after": "0451254af5bb579f46bcf8f30e94ced577a8cc9e582596949c57b1117ed04d46",
+      "review": "Localized website redesign and verification"
+    },
+    "site/policies.json": {
+      "before": "d05c608cc6e058254931d309cb6343dda5361bd1b0e7997e5d8de47c0b67b860",
+      "after": "9f3b8ce967397ee03235a79affc2bc459826951d9164d2e1c995b3b3c12bdbfa",
+      "review": "Localized website redesign and verification"
+    },
+    "site/site.css": {
+      "before": "727cb6ab20faefca94365273cb794372fd4336fcbf86ac6b5366d725d4ffa4d0",
+      "after": "491e3caa1f62a492aec03d493a06dcfa778f7f011b1ea663a70abd869e449c02",
+      "review": "Localized website redesign and verification"
+    },
+    "site/site.js": {
+      "before": "2d91da2404d6843150a53ce4cb9bcb15773a7180989eede21a5b213f1447b46c",
+      "after": "dc2f0206165876b6b155014ec784f35893cf3e1bd574fa06de2e7b82705c05f1",
+      "review": "Localized website redesign and verification"
+    },
+    "tests/test_evaluations.py": {
+      "before": "3c917d64cecf71b4f7348ab4f3a7de7301696e1d014d32ba736a6b711bcd2ea9",
+      "after": "ca9247f69df5c96ecda370c127a60834f6ad63c55bb739e94b10112114d604a4",
+      "review": "Localized website redesign and verification"
+    },
+    "tests/test_site.py": {
+      "before": "e820018271e68ff45e087cfc32613dfdeb8585af391b71557e9d7d414987f912",
+      "after": "aedd83313c4a7b99bdbba7583ca17b9a6085743bb6e13afa4757911fea79c8b6",
+      "review": "Localized website redesign and verification"
+    }
+  },
+  "new_files": {
+    "docs/assets/site.491e3caa1f62.css": "491e3caa1f62a492aec03d493a06dcfa778f7f011b1ea663a70abd869e449c02",
+    "docs/assets/site.dc2f02061658.js": "dc2f0206165876b6b155014ec784f35893cf3e1bd574fa06de2e7b82705c05f1"
+  }
+}

@@ -108,6 +108,29 @@ class SiteTests(unittest.TestCase):
                     # Complete static cards plus multilingual titles, purposes and search lexicon.
                     self.assertLess(len(page.encode()),400_000)
 
+    def test_home_examples_match_workflows_and_direct_mcp_setup(self):
+        routes = {row['id']: site.PREFIX + site.workflow_route(row) for row in self.rows}
+        for lang in self.locales:
+            key = site.route(lang) + 'index.html'
+            doc = self.documents[key]
+            page = self.pages[key]
+            examples = json.loads(re.search(r'<script type="application/json" id="demo-data">(.*?)</script>', page)[1])
+            choices = doc.matching('input', name='demo-example', type='radio')
+            self.assertEqual(list(site.DEMO_WORKFLOWS), [choice['value'] for choice in choices])
+            self.assertEqual([site.DEMO_WORKFLOWS[0]], [choice['value'] for choice in choices if 'checked' in choice])
+            self.assertEqual(set(site.DEMO_WORKFLOWS), set(examples))
+            for workflow_id, example in examples.items():
+                self.assertEqual(routes[workflow_id], example['url'])
+                self.assertIn(workflow_id, example['prompt'])
+            default = site.DEMO_WORKFLOWS[0]
+            self.assertEqual(routes[default], doc.matching('a', id='demo-workflow')[0]['href'])
+            self.assertIn(site.e(examples[default]['prompt']), page)
+            for target in ('demo-prompt', 'mcp-endpoint', 'codex-mcp', 'claude-mcp'):
+                self.assertTrue(doc.matching('button', **{'data-copy-target': target}))
+                self.assertTrue(doc.matching('code', id=target))
+            self.assertIn(f'codex mcp add vibe-coding-library --url {site.MCP_ENDPOINT}', page)
+            self.assertIn(f'claude mcp add --transport http vibe-coding-library {site.MCP_ENDPOINT}', page)
+
     def test_workflows_have_full_instructions_and_truthful_metadata(self):
         descriptions=[]
         for row in self.rows:
