@@ -2333,6 +2333,251 @@
           "prefer": true
         }
       ]
+    },
+    {
+      "subjects": [
+        "база данных",
+        "базе",
+        "базу",
+        "таблица",
+        "таблицу",
+        "database",
+        "table",
+        "base de datos",
+        "tabla",
+        "数据库",
+        "数据表"
+      ],
+      "goals": [
+        {
+          "id": "sql-databases-audit",
+          "phrases": [
+            "добавить обязательное поле",
+            "добавить поле без простоя",
+            "обязательное поле",
+            "без остановки сервиса",
+            "add a required column",
+            "add a column without downtime",
+            "change the schema without downtime",
+            "añadir una columna obligatoria",
+            "sin parar el servicio",
+            "添加必填字段",
+            "不停机修改表结构",
+            "zero downtime",
+            "required database field",
+            "adding a required field",
+            "no downtime"
+          ],
+          "prefer": true
+        }
+      ]
+    },
+    {
+      "subjects": [
+        "роль",
+        "роли",
+        "ролью",
+        "права",
+        "доступ",
+        "role",
+        "permissions",
+        "access",
+        "rol",
+        "permisos",
+        "角色",
+        "权限"
+      ],
+      "goals": [
+        {
+          "id": "rbac-abac-policy-audit",
+          "phrases": [
+            "после смены роли",
+            "роль изменилась",
+            "доступ остался",
+            "все еще видит закрытые записи",
+            "бывшая роль",
+            "after a role change",
+            "still has access",
+            "permissions did not update",
+            "después de cambiar de rol",
+            "sigue teniendo acceso",
+            "角色变更后",
+            "权限未更新",
+            "还能看到受限记录",
+            "role changed",
+            "stale permissions",
+            "still see restricted records"
+          ],
+          "prefer": true
+        }
+      ]
+    },
+    {
+      "subjects": [
+        "тесты",
+        "тест",
+        "проверки",
+        "tests",
+        "test",
+        "pruebas",
+        "测试"
+      ],
+      "goals": [
+        {
+          "id": "test-coverage-audit",
+          "phrases": [
+            "то проходят то падают",
+            "случайно падают",
+            "падают без правок",
+            "нестабильные тесты",
+            "pass and fail without changes",
+            "fail intermittently",
+            "flaky tests",
+            "nondeterministic tests",
+            "fallan de forma intermitente",
+            "pruebas inestables",
+            "时过时不过",
+            "偶尔失败",
+            "结果不稳定",
+            "intermittent test failures",
+            "tests fail randomly",
+            "иногда падают",
+            "не всегда проходят"
+          ],
+          "prefer": true
+        }
+      ]
+    },
+    {
+      "subjects": [
+        "патч",
+        "правка",
+        "правку",
+        "изменения",
+        "коммит",
+        "patch",
+        "changes",
+        "pull request",
+        "commit",
+        "cambios",
+        "parche",
+        "改动",
+        "补丁",
+        "diff",
+        "дифф",
+        "изменение"
+      ],
+      "goals": [
+        {
+          "id": "patch-checking",
+          "phrases": [
+            "до слияния",
+            "перед слиянием",
+            "можно ли вливать",
+            "что может сломаться после",
+            "before merging",
+            "safe to merge",
+            "review my changes",
+            "what could break after this change",
+            "antes de fusionar",
+            "revisa mis cambios",
+            "合并前",
+            "能否合并",
+            "检查这次改动",
+            "review this diff",
+            "перед мерджем"
+          ],
+          "prefer": true
+        }
+      ]
+    },
+    {
+      "subjects": [
+        "новую возможность",
+        "новую функцию",
+        "релиз",
+        "выкатить",
+        "new feature",
+        "release",
+        "rollout",
+        "funcionalidad",
+        "nueva función",
+        "lanzamiento",
+        "新功能",
+        "发布",
+        "feature"
+      ],
+      "goals": [
+        {
+          "id": "feature-flags-rollout-audit",
+          "phrases": [
+            "части пользователей",
+            "по группам",
+            "по частям",
+            "не всем сразу",
+            "быстро выключить",
+            "subset of users",
+            "fraction of users",
+            "gradual rollout",
+            "turn it off quickly",
+            "gradually enable",
+            "parte de los usuarios",
+            "por grupos",
+            "desactivar rápidamente",
+            "分批",
+            "部分用户",
+            "快速关闭",
+            "limited user cohort",
+            "kill switch",
+            "percentage of users"
+          ],
+          "prefer": true
+        }
+      ]
+    },
+    {
+      "subjects": [
+        "приложение",
+        "приложения",
+        "клиент",
+        "клиента",
+        "ответ",
+        "ответа",
+        "api",
+        "application",
+        "client",
+        "response",
+        "aplicación",
+        "cliente",
+        "respuesta",
+        "应用",
+        "客户端",
+        "接口",
+        "响应"
+      ],
+      "goals": [
+        {
+          "id": "api-contract-compatibility-check",
+          "phrases": [
+            "перестала получать привычные поля",
+            "пропали поля",
+            "совместимость ответа",
+            "сломали совместимость",
+            "older client stopped receiving",
+            "response fields disappeared",
+            "backward compatibility",
+            "faltan campos en la respuesta",
+            "compatibilidad con versiones anteriores",
+            "旧版缺少字段",
+            "向后兼容",
+            "字段消失",
+            "backwards compatibility",
+            "missing response fields",
+            "response fields removed"
+          ],
+          "prefer": true
+        }
+      ]
     }
   ]
 }

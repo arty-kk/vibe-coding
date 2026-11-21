@@ -1,6 +1,6 @@
 # Vibe Coding Library MCP service
 
-Connect any coding agent that supports MCP over Streamable HTTP. Load a website planning method with `get_website_plan_workflow`. Choose and load a workflow from an ordinary goal with `get_workflow`. Compare options with `search_workflows`. The host and model select tools. Runtime 1.7.7 serves the versioned 1.7.2 instructions.
+Connect any coding agent that supports MCP over Streamable HTTP. Use `get_workflow` to select and load an engineering method from the user's ordinary goal. Cover planning, schema changes, access, diagnosis, tests, review, compatibility, and rollout. Use `get_website_plan_workflow` for a website plan or `search_workflows` to compare methods. The host and model select tools. Runtime 1.7.8 serves the versioned 1.7.2 instructions.
 
 ## Codex startup
 
@@ -55,6 +55,7 @@ For a website plan, load the planning workflow in one call. Choose `sections` fo
 ```text
 get_website_plan_workflow({"focus":"sections","language":"ru"})
 get_workflow({"query":"Бэкэнд глючит, иногда ответ не приходит","language":"ru"})
+get_workflow({"query":"Тесты то проходят, то падают без правок","language":"ru"})
 ```
 
 Compare results with `search_workflows` when the top matches tie. Use the catalog when a description produces no useful match or the caller wants to explore the available topics.

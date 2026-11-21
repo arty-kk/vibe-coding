@@ -27,7 +27,11 @@ for (const mode of ['legacy', 'auto']) {
       const loadTool = tools[1];
       assert.match(loadTool.inputSchema.properties.query.description, /exactly one of query or id/);
       assert.match(tools[2].description, /^Load the read-only planning method/);
-      if (mode === 'legacy') assert.match(connection.getInstructions(), /Call get_website_plan_workflow for advice/);
+      if (mode === 'legacy') {
+        const instructions = connection.getInstructions();
+        assert.match(instructions, /Load an applicable workflow at the start of a software task/);
+        assert.match(instructions, /Call get_website_plan_workflow when asked/);
+      }
       for (const tool of tools) {
         assert.deepEqual(tool.annotations, {readOnlyHint: true, destructiveHint: false, openWorldHint: false});
         assert.equal(tool.inputSchema.additionalProperties, false);

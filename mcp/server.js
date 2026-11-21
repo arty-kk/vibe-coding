@@ -4,9 +4,10 @@ import {VERSION, LANGUAGES, MODES, SKILLS} from './metadata.js';
 
 const annotations = {readOnlyHint: true, destructiveHint: false, openWorldHint: false};
 const instructions = [
-  'Call get_website_plan_workflow for advice about what sections a website needs, how to order its content or how visitors leave an enquiry. Use it from the initial brief even if there is no code or repository. Choose focus:offer for the offer or focus:architecture for the stack and modules.',
-  'Find a workflow at the start of a website build, redesign, software diagnosis or patch review. Pass the ordinary goal or symptom to search_workflows, then load the matching ID. Call get_workflow with a query to choose and load a method in one operation.',
-  'Apply the current step with the host’s tools and within the requested scope. Load further steps when reached. Send only public technical goals or symptoms.'
+  'Load an applicable workflow at the start of a software task that calls for planning, a change, diagnosis, verification, or review. Use the user’s goal or symptom for architecture, data changes, permissions, unstable tests, API compatibility, performance, deployment, and rollout.',
+  'Call get_workflow with a short public task description to choose and load a method. Use search_workflows to compare candidates or browse domains when the fit is unclear.',
+  'Call get_website_plan_workflow when asked what sections a site needs, how to order its content, or how visitors leave an enquiry. Choose offer for audience and positioning or architecture for the stack and modules.',
+  'Apply the current step within the requested scope. Load later steps when reached. Handle unrelated tasks or a goal with no matching method using the host’s ordinary tools.'
 ].join(' ');
 const websitePlans = {
   sections: 'web-page-architecture',
@@ -67,8 +68,8 @@ export function buildServer() {
     instructions
   });
   server.registerTool('search_workflows', {
-    title: 'Find a workflow for a site plan, design, bug or patch',
-    description: 'Find a workflow before advising on website sections, enquiry flow or technical architecture. Use it for new site builds, existing-page improvements, software bugs and patch review. Start these tasks from the goal or symptom in the user’s words. Send a short public description to get ranked workflow IDs, then load a matching ID with get_workflow. Browse domain or topic keys with view:catalog and an empty query when no method matches. Keep source code, credentials and personal data out of queries.',
+    title: 'Find workflows across software engineering tasks',
+    description: 'Compare workflows for designing websites or codebases, changing schemas or permissions, diagnosing defects, stabilizing tests, checking API compatibility, reviewing patches and preparing releases. Start these tasks from the goal or symptom in the user’s words. Send a short public description to get ranked workflow IDs, then load a matching ID with get_workflow. Browse domains or topics with view:catalog and an empty query when no method matches. Keep source code, credentials and personal data out of queries.',
     inputSchema: z.object({
       query: z.string().max(240).default('').describe('Describe a short task or symptom in ordinary language, or give a title or exact ID. Keep the purpose and relevant symptom or constraint. Omit source code, credentials and personal data.'),
       view: z.enum(['workflows', 'catalog']).default('workflows').describe('Choose workflows to rank a task description. Choose catalog with an empty query to list domains, or topics and workflow IDs for the supplied skill.'),
@@ -77,8 +78,8 @@ export function buildServer() {
       mode: z.enum(MODES).optional().describe('Choose audit to inspect, implement to make an authorized change, check to verify, review to assess a patch, or plan to prepare work. Omit the filter when unsure.'),
       language, response_format: responseFormat.default('legacy'),
       full_text: z.boolean().default(false).describe('Set true to search instruction bodies when catalog metadata is insufficient.'),
-      limit: z.number().int().min(1).max(10).default(5),
-      offset: z.number().int().min(0).default(0)
+      limit: z.number().int().min(1).max(10).default(5).describe('Request up to ten results. Omit for five.'),
+      offset: z.number().int().min(0).default(0).describe('Pass the returned next_offset to load the next page.')
     }).strict(),
     outputSchema: z.object({version: z.string(), instruction_version: z.string(), language: z.enum(LANGUAGES),
       total: z.number().int(), next_offset: z.number().int().nullable(), suggested_action: z.string().optional(), catalog: catalog.optional(),
@@ -91,8 +92,8 @@ export function buildServer() {
     } catch (error) { return failure('search_workflows', error.message); }
   });
   server.registerTool('get_workflow', {
-    title: 'Load the workflow for the current task or step',
-    description: 'Load a matching workflow to guide the requested plan, build, diagnosis or review. Pass a known ID or a short public task description in query. Start a ready website build at homepage-landing-build, an existing homepage inspection at homepage-landing-audit, and a vague backend hang at instant-backend-probe. Choose response_format:workflow for instructions and conditional next IDs. Apply the current step with the host’s tools and load subsequent steps when reached.',
+    title: 'Load a workflow for ordinary software engineering work',
+    description: 'Load an engineering playbook before planning, changing, diagnosing, verifying or reviewing software. Use it for practical requests such as adding a database field without downtime, checking access after a role change, fixing intermittent tests, reviewing a change before merge, or rolling out to part of the audience. Pass a brief public task description in query to choose and load the workflow, or pass a known ID for a specific step. Apply the returned method within the user’s scope. Use search_workflows when several methods fit.',
     inputSchema: z.object({
       id: z.string().min(1).max(100).regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/).optional().describe('Pass a known workflow ID. Supply exactly one of id or query.'),
       query: z.string().trim().min(1).max(240).optional().describe('Describe a task or question in ordinary language, such as "I want a nice site for a studio, what sections should it have?". Supply exactly one of query or id. Omit source code, credentials and personal data.'),

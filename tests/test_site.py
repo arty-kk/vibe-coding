@@ -105,8 +105,26 @@ class SiteTests(unittest.TestCase):
                     self.assertEqual(len(self.rows),len(links))
                     self.assertEqual({site.PREFIX+site.workflow_route(row) for row in self.rows},{a['href'] for a in links})
                     self.assertNotIn('recipe-data',doc.ids)
-                    # Complete static cards plus multilingual titles, purposes and search lexicon.
+                    # Complete static cards plus multilingual titles and purposes.
                     self.assertLess(len(page.encode()),400_000)
+
+    def test_catalog_rule_data_is_shared_by_the_localized_pages(self):
+        lexicon = json.loads((site.PLUGIN/'assets/catalog/search-lexicon.json').read_text(encoding='utf-8'))
+        del lexicon['purposes']
+        engines = set()
+        for lang in self.locales:
+            key = site.route(lang)+'index.html'
+            page = self.pages[key]
+            data = json.loads(re.search(r'<script type="application/json" id="catalog-data">(.*?)</script>', page)[1])
+            self.assertNotIn('searchLexicon', data)
+            scripts = [tag['src'] for tag in self.documents[key].matching('script') if 'src' in tag]
+            engine = next(src for src in scripts if '/catalog-engine.' in src)
+            engines.add(engine)
+            self.assertLess(scripts.index(engine), next(i for i, src in enumerate(scripts) if '/site.' in src))
+        self.assertEqual(len(engines), 1)
+        source = (self.destination/engines.pop().removeprefix(site.PREFIX)).read_text(encoding='utf-8')
+        rules = source.rsplit('\nwindow.VibeCatalog.lexicon = ', 1)[1].strip().removesuffix(';')
+        self.assertEqual(json.loads(rules), lexicon)
 
     def test_home_examples_match_workflows_and_direct_mcp_setup(self):
         routes = {row['id']: site.PREFIX + site.workflow_route(row) for row in self.rows}

@@ -259,12 +259,8 @@ def catalog_section(lang, rows, locale, c, resources):
     modes = '<option value="">'+e(c['allActions'])+'</option>'+''.join(f'<option value="{mode}">{e(title)}</option>' for mode,title in locale['modes'].items())
     shortcuts = ''.join(f'<button type="button" data-topic="{skill}">{e(label)}</button>' for label,skill in c['quickLinks'])
     messages = {key:c[key] for key in ('count','countOne','pageStatus','removeFilter','searchLoading','searchFallback')}
-    lexicon = json.loads((PLUGIN/'assets/catalog/search-lexicon.json').read_text(encoding='utf-8'))
-    # Each entry already carries its resolved purpose. Ship the query rules once.
-    lexicon.pop('purposes', None)
     search_data = {
         'index':resources['search'], 'messages':messages,
-        'searchLexicon':lexicon,
         'entries':[{'id':r['id'],'skill':r['skill'],'mode':r['mode'],'purpose':r.get('purpose',''),'primary_keywords':r.get('primary_keywords',[]),'titles':[loc['titles'][r['id']] for loc in resources['locales'].values()]+[text['featured'][r['id']]['title'] for text in resources['content'].values() if r['id'] in text['featured']],'keywords':r.get('keywords',[])} for r in rows],
         'topics':{skill:[loc['categories'][skill] for loc in resources['locales'].values()] for skill in locale['categories']},
         'actions':{mode:[loc['modes'][mode] for loc in resources['locales'].values()] for mode in locale['modes']}}
@@ -399,9 +395,13 @@ def build(destination=SITE):
         if placeholders(values) != placeholders(content['en']): raise ValueError(f'Mismatched site placeholders: {language}')
     if not set(DEMO_WORKFLOWS) <= {row['id'] for row in rows}: raise ValueError('Unknown workflow example')
     policies = load_site_policies()
+    lexicon = json.loads((PLUGIN/'assets/catalog/search-lexicon.json').read_text(encoding='utf-8'))
+    lexicon.pop('purposes', None)
+    engine = (ROOT/'site/catalog-engine.js').read_text(encoding='utf-8')
+    engine += '\nwindow.VibeCatalog.lexicon = ' + script_json(lexicon) + ';\n'
     resources = {'locales':locales, 'content':content, 'skills':skills,
         'css':asset(destination,'site.css',(ROOT/'site/site.css').read_text(encoding='utf-8')),
-        'engine':asset(destination,'catalog-engine.js',(ROOT/'site/catalog-engine.js').read_text(encoding='utf-8')),
+        'engine':asset(destination,'catalog-engine.js',engine),
         'js':asset(destination,'site.js',(ROOT/'site/site.js').read_text(encoding='utf-8')),
         'search':asset(destination,'search.json',script_json(build_index(rows,locales,PLUGIN)))}
     paths = []

@@ -107,7 +107,7 @@
 
   if ($('catalog-data')) {
     const data = JSON.parse($('catalog-data').textContent);
-    const entries = engine.prepare(data.entries, data.topics, data.actions, data.searchLexicon);
+    const entries = engine.prepare(data.entries, data.topics, data.actions, engine.lexicon);
     const rows = new Map([...document.querySelectorAll('#rows .row')].map(row => [row.id, row]));
     const query = $('query'), category = $('category'), mode = $('mode'), full = $('full-text');
     const status = $('search-status'), container = $('catalog');

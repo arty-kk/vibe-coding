@@ -1,13 +1,13 @@
 ---
 name: vibe-library
-description: "Consult a workflow before advising on website sections, an enquiry path or technical architecture. Use the ordinary request to load a method for a website build, redesign, software symptom or patch review."
+description: "Select a workflow for planning a website or codebase, changing data or permissions, diagnosing a defect, stabilizing tests, reviewing a patch, or preparing a release. Load the current method from the user's ordinary request."
 ---
 
 # Vibe Coding Library
 
 ## Choose the method
 
-Use the ordinary request to choose a workflow. For "what sections should my studio site have?", start at `web-page-architecture`. Choose `web-offer-synthesis` for an undefined offer or `web-project-architecture` for a stack or modular code structure. Build from an accepted brief with `homepage-landing-build`. Choose `homepage-landing-polish` for a redesign and `homepage-landing-audit` for inspection. Diagnose a vague backend hang with `instant-backend-probe`.
+Use the ordinary request to choose a workflow. Cover planning, implementation, diagnosis, review, and verification in the task's domain. For website sections and enquiries, start at `web-page-architecture`. Choose `web-offer-synthesis` for an undefined offer or `web-project-architecture` for a stack or modular code structure. Choose `homepage-landing-build` for a build, `homepage-landing-polish` for a redesign, and `homepage-landing-audit` for inspection. Diagnose a vague backend hang with `instant-backend-probe`.
 
 1. Identify the requested operation and preserve its scope. Keep planning and inspection read-only. Use `intent:improve` when the user has authorized both diagnosis and repair.
 2. Load website planning with `get_website_plan_workflow` when the client exposes it. Choose the focus according to the task. For other tasks or older clients, load a known matching ID with `get_workflow`. Pass the brief goal in `query` if the live schema offers it. Otherwise search the ordinary goal with `search_workflows`, compare purpose and operation, and load the matching ID.

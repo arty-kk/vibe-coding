@@ -1,5 +1,6 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
 import library from '../generated/library.json' with {type:'json'};
 import {searchWorkflows, getWorkflow} from '../library.js';
 
@@ -86,7 +87,7 @@ test('catalog recovery never invents a topic or drops explicit filters', () => {
   assert.throws(()=>searchWorkflows({view:'catalog',query:'private words'}),/Leave query empty/);
 });
 
-const websiteCases = JSON.parse((await import('node:fs')).readFileSync(
+const websiteCases = JSON.parse(readFileSync(
   new URL('../../review/web-experience-cases-1.7.0.json', import.meta.url), 'utf8'));
 
 test('website goals reach their expected method in the localized catalog', () => {
@@ -121,6 +122,16 @@ test('conversational goals rank the requested starting method ahead of related s
   ]) assert.equal(searchWorkflows({query, language}).workflows[0]?.id, expected, query);
   assert.equal(searchWorkflows({query:'Сколько будет 15% от 480?'}).total, 0);
   assert.equal(searchWorkflows({query:'бэкэнд глючит, иногда ответ не приходит',skill:'vibe-sql'}).total, 0);
+});
+
+test('ordinary engineering requests select the initial method across domains', () => {
+  const cases = JSON.parse(readFileSync(new URL('./everyday-requests.json', import.meta.url), 'utf8'));
+  for (const {query, language, expected} of cases) {
+    assert.equal(searchWorkflows({query, language}).workflows[0]?.id, expected, query);
+    assert.equal(getWorkflow({query, language}).workflow.id, expected, query);
+  }
+  assert.equal(searchWorkflows({query:cases[0].query, skill:'vibe-web-art-direction'}).total, 0);
+  assert.equal(searchWorkflows({query:'Сколько будет 15% от 480?'}).total, 0);
 });
 
 test('new, existing and read-only page tasks load the correct stages and resources', () => {

@@ -1,5 +1,10 @@
 # Changelog
 
+## MCP 1.7.8 — discover workflows across everyday engineering tasks
+
+- Route ordinary requests about database changes, permissions, intermittent tests, patch review, compatibility, and gradual rollout to their starting workflows.
+- Describe general workflow selection before the website-specific entry point.
+
 ## MCP 1.7.7 — load the tool list promptly
 
 - Serve initialization and tool discovery from compact metadata.

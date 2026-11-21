@@ -101,7 +101,9 @@ test('catalog back links cannot become external redirects or arbitrary local pat
 
 test('site and offline ranking agree with Python for the judged query corpus', () => {
   const corpus = JSON.parse(fs.readFileSync(path.join(root,'review/search-cases-1.6.0.json')));
+  const everyday = JSON.parse(fs.readFileSync(path.join(root,'mcp/tests/everyday-requests.json')));
   const cases = [...corpus.cases, ...corpus.negative_cases,
+    ...everyday,
     {query:'outbox',full_text:true}, {query:'API',skill:'vibe-backend',mode:'check'},
     {query:'сделай мне красивый сайт'}, {query:'хочу правильную архитектуру сайта'},
     {query:'главная выглядит дёшево и разваливается на телефоне'},

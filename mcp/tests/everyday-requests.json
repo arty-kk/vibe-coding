@@ -1,0 +1,86 @@
+[
+  {
+    "scenario": "data-change",
+    "query": "В базе уже есть рабочие записи. Нужно добавить обязательное поле и выпустить изменение без остановки сервиса. Как к этому подойти?",
+    "language": "ru",
+    "expected": "sql-databases-audit"
+  },
+  {
+    "scenario": "access",
+    "query": "После смены роли сотрудник всё ещё видит закрытые записи. Разберись, где проверять доступ.",
+    "language": "ru",
+    "expected": "rbac-abac-policy-audit"
+  },
+  {
+    "scenario": "flaky-tests",
+    "query": "Одни и те же тесты то проходят, то падают без правок. Помоги найти причину и сделать проверки стабильными.",
+    "language": "ru",
+    "expected": "test-coverage-audit"
+  },
+  {
+    "scenario": "review",
+    "query": "Посмотри мою правку и скажи, что может сломаться после неё. Нужны замечания до слияния.",
+    "language": "ru",
+    "expected": "patch-checking"
+  },
+  {
+    "scenario": "rollout",
+    "query": "Хочу включать новую возможность только части пользователей и быстро выключить, если начнутся ошибки. Как это организовать?",
+    "language": "ru",
+    "expected": "feature-flags-rollout-audit"
+  },
+  {
+    "scenario": "compatibility",
+    "query": "После обновления сервиса старая версия приложения перестала получать привычные поля. Проверь совместимость ответа.",
+    "language": "ru",
+    "expected": "api-contract-compatibility-check"
+  },
+  {
+    "scenario": "data-change",
+    "query": "Add a required column to a database that already has orders. How do I ship the change without downtime?",
+    "language": "en",
+    "expected": "sql-databases-audit"
+  },
+  {
+    "scenario": "access",
+    "query": "Tras cambiar de rol, el empleado sigue teniendo acceso a registros restringidos. Revisa dónde se decide el acceso.",
+    "language": "es",
+    "expected": "rbac-abac-policy-audit"
+  },
+  {
+    "scenario": "flaky-tests",
+    "query": "同一批测试没改代码却时过时不过。帮我找原因。",
+    "language": "zh-CN",
+    "expected": "test-coverage-audit"
+  },
+  {
+    "scenario": "review",
+    "query": "Could you review my changes before merging? I want to know what might break.",
+    "language": "en",
+    "expected": "patch-checking"
+  },
+  {
+    "scenario": "rollout",
+    "query": "Quiero activar una nueva función para parte de los usuarios y desactivar rápidamente si falla.",
+    "language": "es",
+    "expected": "feature-flags-rollout-audit"
+  },
+  {
+    "scenario": "compatibility",
+    "query": "旧版客户端升级后缺少字段，检查接口的向后兼容。",
+    "language": "zh-CN",
+    "expected": "api-contract-compatibility-check"
+  },
+  {
+    "scenario": "data-change",
+    "query": "Plan adding a required database field to existing production rows with zero downtime, rolling deploy, backfill and constraint enforcement",
+    "language": "en",
+    "expected": "sql-databases-audit"
+  },
+  {
+    "scenario": "flaky-tests",
+    "query": "Find the cause of intermittent test failures and make the tests stable",
+    "language": "en",
+    "expected": "test-coverage-audit"
+  }
+]
