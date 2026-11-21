@@ -1,5 +1,11 @@
 # Changelog
 
+## MCP 1.7.9 — find workflows from symptoms
+
+- Match everyday descriptions of login loops, stale data, duplicate notifications, missing search results, slow pages and other engineering problems.
+- Recover longer requests from a workflow's subject and a second catalog tag. Return an empty result for queries with no task signal.
+- Keep tool calls scoped to a goal, symptom or selected step.
+
 ## MCP 1.7.8 — discover workflows across everyday engineering tasks
 
 - Route ordinary requests about database changes, permissions, intermittent tests, patch review, compatibility, and gradual rollout to their starting workflows.

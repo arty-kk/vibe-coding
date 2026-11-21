@@ -5,8 +5,8 @@ import {VERSION, LANGUAGES, MODES, SKILLS} from './metadata.js';
 const annotations = {readOnlyHint: true, destructiveHint: false, openWorldHint: false};
 const instructions = [
   'Load an applicable workflow at the start of a software task that calls for planning, a change, diagnosis, verification, or review. Use the user’s goal or symptom for architecture, data changes, permissions, unstable tests, API compatibility, performance, deployment, and rollout.',
-  'Call get_workflow with a short public task description to choose and load a method. Use search_workflows to compare candidates or browse domains when the fit is unclear.',
-  'Call get_website_plan_workflow when asked what sections a site needs, how to order its content, or how visitors leave an enquiry. Choose offer for audience and positioning or architecture for the stack and modules.',
+  'Call get_workflow with a short public goal or symptom to choose and load a method. If it misses, retry with the technical area and one concrete symptom, or browse the catalog to identify the area.',
+  'Call get_website_plan_workflow before drafting a site plan that covers sections, content order or how visitors contact the business. Use it for early planning even when no project files exist. Choose offer for audience and positioning or architecture for the stack and modules.',
   'Apply the current step within the requested scope. Load later steps when reached. Handle unrelated tasks or a goal with no matching method using the host’s ordinary tools.'
 ].join(' ');
 const websitePlans = {
@@ -69,7 +69,7 @@ export function buildServer() {
   });
   server.registerTool('search_workflows', {
     title: 'Find workflows across software engineering tasks',
-    description: 'Compare workflows for designing websites or codebases, changing schemas or permissions, diagnosing defects, stabilizing tests, checking API compatibility, reviewing patches and preparing releases. Start these tasks from the goal or symptom in the user’s words. Send a short public description to get ranked workflow IDs, then load a matching ID with get_workflow. Browse domains or topics with view:catalog and an empty query when no method matches. Keep source code, credentials and personal data out of queries.',
+    description: 'Compare workflows for design, architecture, code changes, debugging, testing, review and releases. Describe the goal or a symptom such as a login loop, stale data after saving, or a duplicate notification. Load the matching ID with get_workflow. Refine a miss with the technical area and the symptom, or browse actual domains and topics with view:catalog and an empty query. Omit source code, credentials and personal data.',
     inputSchema: z.object({
       query: z.string().max(240).default('').describe('Describe a short task or symptom in ordinary language, or give a title or exact ID. Keep the purpose and relevant symptom or constraint. Omit source code, credentials and personal data.'),
       view: z.enum(['workflows', 'catalog']).default('workflows').describe('Choose workflows to rank a task description. Choose catalog with an empty query to list domains, or topics and workflow IDs for the supplied skill.'),
@@ -93,10 +93,10 @@ export function buildServer() {
   });
   server.registerTool('get_workflow', {
     title: 'Load a workflow for ordinary software engineering work',
-    description: 'Load an engineering playbook before planning, changing, diagnosing, verifying or reviewing software. Use it for practical requests such as adding a database field without downtime, checking access after a role change, fixing intermittent tests, reviewing a change before merge, or rolling out to part of the audience. Pass a brief public task description in query to choose and load the workflow, or pass a known ID for a specific step. Apply the returned method within the user’s scope. Use search_workflows when several methods fit.',
+    description: 'Load an engineering playbook before designing, planning, changing, diagnosing, verifying or reviewing software. Cover websites, codebases, database changes, access control, intermittent tests, reviews, compatibility and rollout. Pass one public goal or symptom in query, such as losing a draft when the connection drops or seeing an old price after saving. Pass a known ID to load a specific step. Apply the current method within the user’s scope. Use search_workflows when several methods fit.',
     inputSchema: z.object({
       id: z.string().min(1).max(100).regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/).optional().describe('Pass a known workflow ID. Supply exactly one of id or query.'),
-      query: z.string().trim().min(1).max(240).optional().describe('Describe a task or question in ordinary language, such as "I want a nice site for a studio, what sections should it have?". Supply exactly one of query or id. Omit source code, credentials and personal data.'),
+      query: z.string().trim().min(1).max(240).optional().describe('Describe one task or symptom in ordinary language. Keep the desired outcome and the distinguishing condition. Supply exactly one of query or id. Omit source code, credentials and personal data.'),
       language, response_format: responseFormat.describe('Omit to receive workflow for a query or legacy for an exact ID. Choose a format to override that default.').optional(),
       host,
       intent: z.enum(['requested', 'improve']).default('requested').describe('Use requested for the selected operation. Choose improve to compose diagnosis and repair when the user has authorized changes. Respect current permissions.'),

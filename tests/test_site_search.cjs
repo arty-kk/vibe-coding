@@ -105,6 +105,7 @@ test('site and offline ranking agree with Python for the judged query corpus', (
   const cases = [...corpus.cases, ...corpus.negative_cases,
     ...everyday,
     {query:'outbox',full_text:true}, {query:'API',skill:'vibe-backend',mode:'check'},
+    {query:'помоги'}, {query:'fix this'}, {query:'?'}, {query:''},
     {query:'сделай мне красивый сайт'}, {query:'хочу правильную архитектуру сайта'},
     {query:'главная выглядит дёшево и разваливается на телефоне'},
     {query:'бэкэнд глючит, иногда ответ не приходит'}, {query:'session cookie zxstrangelabel'},

@@ -28,6 +28,7 @@ MCP_ONE_CALL = ROOT/'review/evaluations/mcp-one-call-1.7.5.json'
 MCP_WEBSITE_PLAN = ROOT/'review/evaluations/mcp-website-plan-1.7.6.json'
 MCP_FAST_STARTUP = ROOT/'review/evaluations/mcp-fast-startup-1.7.7.json'
 MCP_EVERYDAY_REQUESTS = ROOT/'review/evaluations/mcp-everyday-1.7.8.json'
+MCP_SYMPTOM_ROUTING = ROOT/'review/evaluations/mcp-symptom-routing-1.7.9.json'
 
 
 class EvaluationRecordTests(unittest.TestCase):
@@ -57,13 +58,21 @@ class EvaluationRecordTests(unittest.TestCase):
         self.mcp_website_plan = json.loads(MCP_WEBSITE_PLAN.read_text(encoding='utf-8'))
         self.mcp_fast_startup = json.loads(MCP_FAST_STARTUP.read_text(encoding='utf-8'))
         self.mcp_everyday = json.loads(MCP_EVERYDAY_REQUESTS.read_text(encoding='utf-8'))
+        self.mcp_symptom_routing = json.loads(MCP_SYMPTOM_ROUTING.read_text(encoding='utf-8'))
+
+    def symptom_fingerprint(self, name, expected):
+        change = self.mcp_symptom_routing['changes'].get(name)
+        if change:
+            self.assertEqual(expected, change['before'], name)
+            return change['after']
+        return expected
 
     def everyday_fingerprint(self, name, expected):
         change = self.mcp_everyday['changes'].get(name)
         if change:
             self.assertEqual(expected, change['before'], name)
-            return change['after']
-        return expected
+            expected = change['after']
+        return self.symptom_fingerprint(name, expected)
 
     def fast_startup_fingerprint(self, name, expected):
         change = self.mcp_fast_startup['changes'].get(name)
@@ -476,13 +485,23 @@ class EvaluationRecordTests(unittest.TestCase):
 
     def test_mcp_everyday_requests_have_current_fingerprints(self):
         self.assertEqual(hashlib.sha256(MCP_FAST_STARTUP.read_bytes()).hexdigest(), self.mcp_everyday['baseline']['sha256'])
-        runtime = json.loads((ROOT/'mcp/package.json').read_text(encoding='utf-8'))
-        self.assertEqual(runtime['version'], self.mcp_everyday['runtime_version'])
         self.assertEqual(self.mcp_everyday['instruction_version'], self.mcp_fast_startup['instruction_version'])
         self.assertTrue(self.mcp_everyday['checks'])
         for name, value in self.mcp_everyday['changes'].items():
-            self.assertEqual(value['after'], hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
+            self.assertEqual(self.symptom_fingerprint(name, value['after']), hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
         for name, value in self.mcp_everyday['new_files'].items():
+            self.assertEqual(self.symptom_fingerprint(name, value), hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
+
+    def test_mcp_symptom_routing_has_current_fingerprints(self):
+        record = self.mcp_symptom_routing
+        self.assertEqual(hashlib.sha256(MCP_EVERYDAY_REQUESTS.read_bytes()).hexdigest(), record['baseline']['sha256'])
+        runtime = json.loads((ROOT/'mcp/package.json').read_text(encoding='utf-8'))
+        self.assertEqual(runtime['version'], record['runtime_version'])
+        self.assertEqual(self.mcp_everyday['instruction_version'], record['instruction_version'])
+        self.assertTrue(record['checks'])
+        for name, value in record['changes'].items():
+            self.assertEqual(value['after'], hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
+        for name, value in record['new_files'].items():
             self.assertEqual(value, hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
 
 

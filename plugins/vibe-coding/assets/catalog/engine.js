@@ -24,6 +24,12 @@
   function typoCorrector(rules, entries) {
     const forms = new Set(Object.values(rules.lexicon.terms || {}).flat()
       .concat(Object.keys(rules.lexicon.terms || {}), Object.values(rules.lexicon.intents || {}).flat()));
+    for (const group of rules.lexicon.goal_routes || []) {
+      for (const phrase of group.subjects) forms.add(phrase);
+      for (const goal of group.goals) {
+        for (const phrase of [...goal.phrases, ...(goal.requires || [])]) forms.add(phrase);
+      }
+    }
     for (const entry of entries) {
       for (const text of [entry.id, entry.skill, ...entry.titles, ...(entry.keywords || [])]) {
         for (const word of words(text)) forms.add(word);
@@ -65,17 +71,24 @@
     return value => value.replace(pattern, match => ' ' + table.get(match) + ' ');
   }
 
-  function taskGoal(text, groups) {
-    if (!groups?.length) return null;
-    const normalized = ' ' + words(text).join(' ') + ' ';
-    const mentions = phrase => cjk(phrase) ? normalized.includes(fold(phrase))
-      : normalized.includes(' ' + words(phrase).join(' ') + ' ');
-    for (const group of groups) {
-      if (!group.subjects.some(mentions)) continue;
-      const goal = group.goals.find(route => route.phrases.some(mentions));
-      if (goal) return goal;
-    }
-    return null;
+  function goalMatcher(groups = []) {
+    const padded = value => ' ' + words(value).join(' ') + ' ';
+    const cue = value => cjk(value) ? fold(value) : padded(value);
+    const routes = groups.map(group => ({
+      subjects: group.subjects.map(cue),
+      goals: group.goals.map(goal => ({goal, phrases: goal.phrases.map(cue), requires: (goal.requires || []).map(cue)}))
+    }));
+    return value => {
+      const normalized = padded(value);
+      const mentions = phrase => normalized.includes(phrase);
+      for (const group of routes) {
+        if (!group.subjects.some(mentions)) continue;
+        const matched = group.goals.find(route => route.phrases.some(mentions)
+          && (!route.requires.length || route.requires.some(mentions)));
+        if (matched) return matched.goal;
+      }
+      return null;
+    };
   }
 
   function rulesFor(lexicon) {
@@ -83,6 +96,7 @@
       const concepts = replacer(lexicon.terms);
       const intents = replacer(Object.fromEntries(Object.entries(lexicon.intents || {}).map(([mode, values]) => ['intent_' + mode, values])));
       const stops = new Set((lexicon.stopwords || []).map(fold));
+      const taskGoal = goalMatcher(lexicon.goal_routes);
       // CJK filler removal is exact phrase replacement, not an unrestricted stemmer.
       const cleanCjk = text => {
         for (const stop of [...stops].filter(cjk).sort((a, b) => b.length - a.length)) text = text.replaceAll(stop, ' ');
@@ -92,10 +106,13 @@
         signature: value => intents(concepts(fold(value))).trim(),
         tokens: value => words(concepts(fold(value))),
         query: (value, correct) => {
-          const text = intents(concepts(correct ? correct(value) : fold(value)));
+          const folded = fold(value);
+          const corrected = correct ? correct(value) : folded;
+          const text = intents(concepts(corrected));
           const hints = [...text.matchAll(/intent_([a-z]+)/g)].map(match => match[1]);
           const terms = words(cleanCjk(text.replace(/intent_[a-z]+/g, ' '))).filter(term => !stops.has(term));
-          return {terms: [...new Set(terms)], hints: [...new Set(hints)], goal: taskGoal(value, lexicon.goal_routes)};
+          const goal = taskGoal(folded) ?? (corrected === folded ? null : taskGoal(corrected));
+          return {terms: [...new Set(terms)], hints: [...new Set(hints)], goal};
         }});
     }
     return compiled.get(lexicon);
@@ -108,6 +125,7 @@
     return entries.map((entry, order) => ({...entry, order, rules,
       titleWords: rules.tokens(entry.titles.join(' ')),
       subjects: (entry.primary_keywords || []).map(value => rules.tokens(value)),
+      tagWords: rules.tokens((entry.keywords || []).join(' ')),
       keywordWords: rules.tokens([entry.id, entry.skill, entry.purpose || '', ...(entry.keywords || []),
         ...(lexicon.discovery?.[entry.id] || [])].join(' ')),
       topicWords: rules.tokens((topics[entry.skill] || []).join(' ')),
@@ -132,6 +150,7 @@
     if (exact) return {score: exact === 'exact_id' ? 20000 : 15000, bodyOnly: false, kind: exact, terms: analysis.terms};
     const isGoal = entry.id === analysis.goal?.id;
     if (isGoal && analysis.goal.prefer) return {score: 8000, bodyOnly: false, kind: 'catalog', terms: []};
+    if (query.trim() && !analysis.terms.length && !isGoal) return null;
     let total = 0, bodyOnly = false;
     for (const term of analysis.terms) {
       if (entry.subjects.some(subject => contains(subject, term)
@@ -145,6 +164,16 @@
     if (analysis.hints.includes(entry.mode)) total += 35;
     if (bodyOnly) total -= 1000;
     return {score: total, bodyOnly, kind: bodyOnly ? 'instruction_body' : query.trim() ? 'catalog' : 'browse', terms: analysis.terms};
+  }
+
+  function partialMatch(entry, queryTerms, hints) {
+    const subjects = entry.subjects.filter(subject => subject.every(term => queryTerms.has(term))).flat();
+    if (!subjects.length) return null;
+    const context = entry.tagWords.filter(term => term.length >= 3 && queryTerms.has(term) && !subjects.includes(term));
+    if (!context.length) return null;
+    const terms = [...new Set([...subjects, ...context])];
+    const taskScore = hints.length ? Number(hints.includes(entry.mode)) * 35 : Number(entry.mode === 'audit');
+    return {score: terms.length * 20 + taskScore, bodyOnly: false, kind: 'catalog', terms};
   }
 
   function select(entries, state, bodies) {
@@ -161,6 +190,11 @@
         contains(entry.titleWords, term) || contains(entry.keywordWords, term) || contains(entry.topicWords, term)));
       if (terms.length >= 2 && terms.length < analysis.terms.length && terms.length * 2 >= analysis.terms.length) {
         candidates = collect({...analysis, terms, key: ''});
+      }
+      if (!candidates.length) {
+        // Recover a clear subject plus an independent catalog tag in a longer request.
+        const queryTerms = new Set(analysis.terms);
+        candidates = entries.map(entry => ({entry, match: partialMatch(entry, queryTerms, analysis.hints)})).filter(item => item.match);
       }
     }
     const topics = {}, actions = {};

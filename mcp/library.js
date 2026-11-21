@@ -57,12 +57,12 @@ export function searchWorkflows({query = '', skill, mode, topic, view = 'workflo
     workflows: page.map(({entry, match}) => ({...metadata(entry, language), match: {kind: match.kind, terms: match.terms}})),
     suggested_action: page.length
       ? 'Choose the workflow whose purpose and operation fit the task, then call get_workflow with its ID and response_format:workflow. Titles are localized; the purpose and instructions are English. This search has not inspected your project.'
-      : 'No match under these exact query and filters. This does not mean the library lacks the capability. If view is advertised in the live tool schema, call search_workflows with view:catalog, an empty query and the same skill/mode to inspect actual keys. Preserve explicit scope; choose only a listed key. Otherwise browse with an empty query, retaining the filters.'};
+      : 'Retry with a short technical area and one concrete symptom. If the area is unclear, use view:catalog with an empty query to choose a listed domain or topic. Keep the supplied filters. If the client lacks view:catalog, browse with an empty query and the same filters.'};
 }
 
 function workflowForQuery(query) {
   const [first, second] = rankWorkflows(query);
-  if (!first) throw new Error('No workflow matches that goal. Describe the task or symptom, or browse with search_workflows.');
+  if (!first) throw new Error('No workflow matches that goal. Retry with one technical area and one symptom, or browse domains with search_workflows.');
   if (second?.match.score === first.match.score) {
     throw new Error('Several workflows match equally. Compare them with search_workflows or specify the goal or symptom more precisely.');
   }

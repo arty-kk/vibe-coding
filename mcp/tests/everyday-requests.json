@@ -82,5 +82,173 @@
     "query": "Find the cause of intermittent test failures and make the tests stable",
     "language": "en",
     "expected": "test-coverage-audit"
+  },
+  {
+    "scenario": "login-loop",
+    "query": "Нажимаю войти, ввожу пароль, а приложение снова выкидывает на экран входа. С чего начать диагностику?",
+    "language": "ru",
+    "expected": "auth-permissions-audit"
+  },
+  {
+    "scenario": "stale-price",
+    "query": "Сохраняю новую цену, а покупатель всё равно видит старую. Через несколько минут сама обновляется. Помоги найти причину.",
+    "language": "ru",
+    "expected": "cache-invalidation-audit"
+  },
+  {
+    "scenario": "release-readiness",
+    "query": "Хочу завтра выкатить новую версию. Что проверить перед выкладкой, чтобы вовремя заметить проблему и можно было откатиться?",
+    "language": "ru",
+    "expected": "release-readiness-audit"
+  },
+  {
+    "scenario": "duplicate-alert",
+    "query": "Письмо о заказе иногда приходит два раза, особенно если сервис долго отвечает. Помоги разобраться.",
+    "language": "ru",
+    "expected": "notification-failure-idempotency-check"
+  },
+  {
+    "scenario": "runtime-map",
+    "query": "Я только пришёл в проект. Помоги понять, что происходит после нажатия кнопки и где данные сохраняются.",
+    "language": "ru",
+    "expected": "runtime-flow-map"
+  },
+  {
+    "scenario": "evidence-answer",
+    "query": "Наш бот находит нужный документ, но в ответе пишет выдуманные числа вместо цифр из документа. Что проверить?",
+    "language": "ru",
+    "expected": "rag-audit"
+  },
+  {
+    "scenario": "keyboard-menu",
+    "query": "I can open the menu with a mouse, but when I press Tab I can't reach the items. What should I inspect?",
+    "language": "en",
+    "expected": "accessibility-audit"
+  },
+  {
+    "scenario": "slow-images",
+    "query": "The page takes forever to show its first image on a phone. Where do I start measuring?",
+    "language": "en",
+    "expected": "performance-audit"
+  },
+  {
+    "scenario": "lost-draft",
+    "query": "En el móvil, si se va la conexión mientras escribo, se pierde el borrador. ¿Qué debo comprobar?",
+    "language": "es",
+    "expected": "mobile-release-offline-check"
+  },
+  {
+    "scenario": "search-freshness",
+    "query": "新建的商品在列表里有，但搜索半天都搜不到。帮我排查。",
+    "language": "zh-CN",
+    "expected": "search-recall-freshness-check"
+  },
+  {
+    "scenario": "duplicate-provider-callback",
+    "query": "Our checkout provider can send the same confirmation twice. How should I verify it doesn't create another order?",
+    "language": "en",
+    "expected": "payments-webhook-reconciliation-check"
+  },
+  {
+    "scenario": "slow-queries",
+    "query": "После обновления выборка заказов стала идти несколько секунд, особенно когда несколько человек открывают отчёт. С чего начать?",
+    "language": "ru",
+    "expected": "sql-load-lock-failover-check"
+  },
+  {
+    "scenario": "login-loop",
+    "query": "After submitting the password, the app redirects me back to login. Where should I troubleshoot?",
+    "language": "en",
+    "expected": "auth-permissions-audit"
+  },
+  {
+    "scenario": "stale-price",
+    "query": "Después de guardar los cambios, la pantalla del cliente sigue mostrando el valor anterior. ¿Qué reviso?",
+    "language": "es",
+    "expected": "cache-invalidation-audit"
+  },
+  {
+    "scenario": "stale-price",
+    "query": "После сохранения покупатель видит старюу цену. Обновляется только через минуту.",
+    "language": "ru",
+    "expected": "cache-invalidation-audit"
+  },
+  {
+    "scenario": "release-readiness",
+    "query": "Prepare a production release tomorrow. Pre-release checklist to detect problems early during rollout and verify rollback readiness.",
+    "language": "en",
+    "expected": "release-readiness-audit"
+  },
+  {
+    "scenario": "release-readiness",
+    "query": "Plan a production release with preflight checks, early regression monitoring and tested rollback criteria",
+    "language": "en",
+    "expected": "release-readiness-audit"
+  },
+  {
+    "scenario": "release-readiness",
+    "query": "Plan tomorrow's production rollout with pre-release checks, early monitoring signals and a tested rollback",
+    "language": "en",
+    "expected": "release-readiness-audit"
+  },
+  {
+    "scenario": "release-readiness",
+    "query": "How do we plan the rollout and keep the option to roll back if the charts go red?",
+    "language": "en",
+    "expected": "release-readiness-audit"
+  },
+  {
+    "scenario": "duplicate-alert",
+    "query": "有时候同一个订单通知会重复发送，帮我找找原因。",
+    "language": "zh-CN",
+    "expected": "notification-failure-idempotency-check"
+  },
+  {
+    "scenario": "evidence-answer",
+    "query": "The assistant finds the right documents but makes up numbers in its answer. Where should I look?",
+    "language": "en",
+    "expected": "rag-audit"
+  },
+  {
+    "scenario": "keyboard-menu",
+    "query": "С клавиатуры фокус перескакивает через открытое меню. Где искать проблему?",
+    "language": "ru",
+    "expected": "accessibility-audit"
+  },
+  {
+    "scenario": "lost-draft",
+    "query": "When my connection drops the phone loses the draft I was typing. What should we check?",
+    "language": "en",
+    "expected": "mobile-release-offline-check"
+  },
+  {
+    "scenario": "search-freshness",
+    "query": "Acabo de añadir un artículo. Ya se ve en el listado, pero no aparece en la búsqueda. ¿Por qué?",
+    "language": "es",
+    "expected": "search-recall-freshness-check"
+  },
+  {
+    "scenario": "slow-queries",
+    "query": "The database query for recent orders takes several seconds now. Where should I measure?",
+    "language": "en",
+    "expected": "sql-load-lock-failover-check"
+  },
+  {
+    "scenario": "rabbitmq",
+    "query": "In RabbitMQ, messages keep coming back as redelivery even when the handler finished. How can we see where the duplicate came from?",
+    "language": "en",
+    "expected": "rabbitmq-audit"
+  },
+  {
+    "scenario": "temporal",
+    "query": "When a Temporal worker starts after deployment, replay fails for runs that started yesterday. Could you look into what explains it?",
+    "language": "en",
+    "expected": "temporal-workflows-audit"
+  },
+  {
+    "scenario": "extension",
+    "query": "The content scripts in our browser extension get permissions from the browser. Why would this die after a routine update?",
+    "language": "en",
+    "expected": "browser-extension-audit"
   }
 ]

@@ -22,7 +22,7 @@ for (const mode of ['legacy', 'auto']) {
       const tools = (await connection.listTools()).tools;
       assert.deepEqual(tools.map(tool => tool.name), ['search_workflows', 'get_workflow', 'get_website_plan_workflow']);
       const searchTool = tools[0];
-      assert.match(searchTool.description, /Start these tasks from the goal or symptom/);
+      assert.match(searchTool.description, /Describe the goal or a symptom/);
       assert.match(searchTool.inputSchema.properties.query.description, /ordinary language/);
       const loadTool = tools[1];
       assert.match(loadTool.inputSchema.properties.query.description, /exactly one of query or id/);
@@ -30,7 +30,7 @@ for (const mode of ['legacy', 'auto']) {
       if (mode === 'legacy') {
         const instructions = connection.getInstructions();
         assert.match(instructions, /Load an applicable workflow at the start of a software task/);
-        assert.match(instructions, /Call get_website_plan_workflow when asked/);
+        assert.match(instructions, /Call get_website_plan_workflow before drafting a site plan/);
       }
       for (const tool of tools) {
         assert.deepEqual(tool.annotations, {readOnlyHint: true, destructiveHint: false, openWorldHint: false});
@@ -81,7 +81,8 @@ for (const mode of ['legacy', 'auto']) {
         [{}, /Provide one workflow ID/],
         [{id:'api-audit', query:'api'}, /Provide one workflow ID/],
         [{query:'zzzz-unknown-technical-method'}, /No workflow matches/],
-        [{query:'...'}, /Several workflows match equally/]
+        [{query:'...'}, /No workflow matches/],
+        [{query:'deployment rollout'}, /Several workflows match equally/]
       ]) {
         const invalidQuery = await connection.callTool({name:'get_workflow', arguments:args});
         assert.equal(invalidQuery.isError, true);

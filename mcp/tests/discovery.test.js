@@ -134,6 +134,21 @@ test('ordinary engineering requests select the initial method across domains', (
   assert.equal(searchWorkflows({query:'Сколько будет 15% от 480?'}).total, 0);
 });
 
+test('a description with no engineering signal does not browse or choose a workflow', () => {
+  for (const query of ['помоги', 'help me', 'fix this', '?', 'Придумай загадку для квеста, чтобы дети узнали пароль от сундука.']) {
+    assert.equal(searchWorkflows({query}).total, 0, query);
+    assert.throws(() => getWorkflow({query}), /No workflow matches/, query);
+  }
+  assert.equal(searchWorkflows({query:''}).total, 260);
+});
+
+test('an additional condition distinguishes lost mobile drafts from offline failures', () => {
+  const query = 'The phone loses the draft as soon as I open another tab.';
+  assert.ok(searchWorkflows({query}).workflows.every(row => row.id !== 'mobile-release-offline-check'));
+  const offline = 'When the connection drops the phone loses the draft I was typing.';
+  assert.equal(searchWorkflows({query:offline, skill:'vibe-web'}).total, 0);
+});
+
 test('new, existing and read-only page tasks load the correct stages and resources', () => {
   const proposal = getWorkflow({id:'web-offer-synthesis'}).execution.steps;
   assert.equal(proposal.at(-1).id, 'web-experience-brief');

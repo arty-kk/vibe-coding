@@ -1,6 +1,6 @@
 # Vibe Coding Library MCP service
 
-Connect any coding agent that supports MCP over Streamable HTTP. Use `get_workflow` to select and load an engineering method from the user's ordinary goal. Cover planning, schema changes, access, diagnosis, tests, review, compatibility, and rollout. Use `get_website_plan_workflow` for a website plan or `search_workflows` to compare methods. The host and model select tools. Runtime 1.7.8 serves the versioned 1.7.2 instructions.
+Connect any coding agent that supports MCP over Streamable HTTP. Use `get_workflow` to select and load an engineering method from the user's ordinary goal or symptom. Cover planning, schema changes, access, diagnosis, tests, review, compatibility and rollout. Use `get_website_plan_workflow` for a website plan or `search_workflows` to compare methods. The host and model select tools. Runtime 1.7.9 serves the versioned 1.7.2 instructions.
 
 ## Codex startup
 
@@ -58,7 +58,7 @@ get_workflow({"query":"Бэкэнд глючит, иногда ответ не �
 get_workflow({"query":"Тесты то проходят, то падают без правок","language":"ru"})
 ```
 
-Compare results with `search_workflows` when the top matches tie. Use the catalog when a description produces no useful match or the caller wants to explore the available topics.
+Compare results with `search_workflows` when the top matches tie. If a description misses, retry with the technical area and one concrete symptom. Browse the catalog when the area is unclear.
 
 ```text
 search_workflows({"view":"catalog"})
@@ -69,4 +69,4 @@ get_workflow({"id":"auth-permissions-polish","response_format":"workflow"})
 
 The compact catalog lists actual domain/topic keys and canonical English keywords without instruction bodies. Choose by the meaning of the user’s request; reuse known keys for the same library version. Topic lookup uses explicit membership, not an invented query term. Text search remains available, including Russian authorization forms. Unknown topic keys return catalog guidance. A miss does not authorize dropping an explicit filter. No embedding model, API key or external query processing is required. Existing requests that omit the new catalog/topic arguments retain their previous result shapes.
 
-Text typo repair uses only the actual metadata vocabulary and registered concepts: words of at least five letters may be corrected by one edit or an adjacent transposition when the semantic target is unambiguous. Exact topic/workflow ID arguments are never fuzzy-corrected. Unknown or ambiguous phrases remain eligible for catalog-guided selection by the caller.
+Match everyday symptoms by their subject and distinguishing condition. Recover longer requests that mention a catalog subject and an independent tag for the same workflow. Browse with an empty query. A description containing only generic request words yields no match. Correct words of at least five letters by one edit or one adjacent transposition when the catalog vocabulary gives an unambiguous correction. Pass exact topic and workflow IDs as identifiers.

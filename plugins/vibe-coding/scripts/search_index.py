@@ -22,6 +22,14 @@ def compact(text):
     return ''.join(words(text))
 
 
+def padded(text):
+    return ' ' + ' '.join(words(text)) + ' '
+
+
+def goal_cue(text):
+    return fold(text) if CJK.search(text) else padded(text)
+
+
 def load_lexicon(root=ROOT):
     return json.loads((root/'assets/catalog/search-lexicon.json').read_text(encoding='utf-8'))
 
@@ -58,6 +66,15 @@ class Rules:
         forms = [*lexicon.get('terms', {})]
         forms += [value for values in lexicon.get('terms', {}).values() for value in values]
         forms += [value for values in lexicon.get('intents', {}).values() for value in values]
+        self.goal_routes = []
+        for group in lexicon.get('goal_routes', []):
+            forms.extend(group['subjects'])
+            goals = []
+            for goal in group['goals']:
+                required = goal.get('requires', [])
+                forms.extend([*goal['phrases'], *required])
+                goals.append((goal, tuple(map(goal_cue, goal['phrases'])), tuple(map(goal_cue, required))))
+            self.goal_routes.append((tuple(map(goal_cue, group['subjects'])), goals))
         self.exact = {word for value in [*forms, *candidate_texts] for word in words(value)} | self.stops
         self.deletions = {}
         for word in self.exact:
@@ -85,35 +102,31 @@ class Rules:
 
     @lru_cache(maxsize=256)
     def task_goal(self, text):
-        groups = self.lexicon.get('goal_routes', [])
-        if not groups:
-            return None
-        normalized = ' ' + ' '.join(words(text)) + ' '
-
-        def mentions(phrase):
-            if CJK.search(phrase):
-                return fold(phrase) in normalized
-            return ' ' + ' '.join(words(phrase)) + ' ' in normalized
-
-        for group in groups:
-            if not any(mentions(phrase) for phrase in group['subjects']):
+        normalized = padded(text)
+        for subjects, goals in self.goal_routes:
+            if not any(phrase in normalized for phrase in subjects):
                 continue
-            for goal in group['goals']:
-                if any(mentions(phrase) for phrase in goal['phrases']):
+            for goal, phrases, required in goals:
+                if any(phrase in normalized for phrase in phrases) and (
+                    not required or any(phrase in normalized for phrase in required)
+                ):
                     return goal
         return None
 
     @lru_cache(maxsize=256)
     def query(self, original):
-        text = original
-        text = re.sub(r'[^\W_]+(?:[+#]+)?|[+#]+', lambda match: self.correct(match[0]), fold(text))
-        text = self.intents(self.concepts(text))
+        folded = fold(original)
+        corrected = re.sub(r'[^\W_]+(?:[+#]+)?|[+#]+', lambda match: self.correct(match[0]), folded)
+        text = self.intents(self.concepts(corrected))
         hints = re.findall(r'intent_([a-z]+)', text)
         text = re.sub(r'intent_[a-z]+', ' ', text)
         for stop in sorted((s for s in self.stops if CJK.search(s)), key=lambda value: (-len(value), value)):
             text = text.replace(stop, ' ')
+        goal = self.task_goal(folded)
+        if goal is None and corrected != folded:
+            goal = self.task_goal(corrected)
         return {'terms': tuple(dict.fromkeys(w for w in words(text) if w not in self.stops)),
-                'hints': frozenset(hints), 'goal': self.task_goal(original), 'key': compact(original)}
+                'hints': frozenset(hints), 'goal': goal, 'key': compact(original), 'has_query': bool(original.strip())}
 
 
 @lru_cache(maxsize=4)
@@ -178,6 +191,7 @@ def score_entry(entry, analysis, full_text, rules):
     is_goal = goal and identity == goal['id']
     if is_goal and goal.get('prefer'): return 8000
     terms = analysis['terms']
+    if analysis['has_query'] and not terms and not is_goal: return None
     subjects = [rules.tokens(value) for value in entry.get('primary_keywords', [])]
     title, keywords, topic = metadata_tokens(entry, rules)
     body = None
@@ -202,6 +216,23 @@ def match_score(entry, query, full_text=True, rules=None):
     return score_entry(entry, rules.query(query), full_text, rules)
 
 
+def partial_score(entry, query_terms, hints, rules):
+    subjects = set()
+    for phrase in entry.get('primary_keywords', []):
+        tokens = rules.tokens(phrase)
+        if query_terms.issuperset(tokens):
+            subjects.update(tokens)
+    if not subjects:
+        return None
+    tags = rules.tokens(' '.join(entry.get('keywords', [])))
+    context = {token for token in tags if len(token) >= 3} & (query_terms - subjects)
+    if not context:
+        return None
+    mode = entry['mode']
+    task_score = 35 * (mode in hints) if hints else int(mode == 'audit')
+    return (len(subjects) + len(context)) * 20 + task_score
+
+
 def rank_entries(entries, query, full_text=False):
     entries = list(entries)
     if not entries:
@@ -223,6 +254,12 @@ def rank_entries(entries, query, full_text=False):
         terms = tuple(term for term in analysis['terms'] if contains(vocabulary, term))
         if 2 <= len(terms) < len(analysis['terms']) <= len(terms) * 2:
             matches = collect({**analysis, 'terms': terms, 'key': ''})
+        if not matches:
+            query_terms = set(analysis['terms'])
+            for entry in entries:
+                score = partial_score(entry, query_terms, analysis['hints'], rules)
+                if score is not None:
+                    matches.append((score, entry))
 
     if query.strip():
         matches.sort(key=lambda item: (-item[0], item[1]['mode'] != 'audit', item[1]['id']))

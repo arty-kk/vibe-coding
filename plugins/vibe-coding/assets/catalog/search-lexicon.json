@@ -1608,8 +1608,7 @@
       "документировать",
       "documentar",
       "documentación",
-      "文档",
-      "update the readme"
+      "文档"
     ],
     "closure": [
       "closure",
@@ -2574,6 +2573,586 @@
             "backwards compatibility",
             "missing response fields",
             "response fields removed"
+          ],
+          "prefer": true
+        }
+      ]
+    },
+    {
+      "subjects": [
+        "вход",
+        "войти",
+        "экран входа",
+        "логин",
+        "авторизация",
+        "signin",
+        "sign in",
+        "log in",
+        "login",
+        "iniciar sesión",
+        "登录"
+      ],
+      "goals": [
+        {
+          "id": "auth-permissions-audit",
+          "phrases": [
+            "выкидывает на экран входа",
+            "возвращает на экран входа",
+            "возвращает на страницу входа",
+            "возвращает на форму входа",
+            "снова просит пароль",
+            "опять просит войти",
+            "сразу разлогинивает",
+            "back to the login screen",
+            "back to login",
+            "back to sign in",
+            "keeps asking me to sign in",
+            "keeps sending me back to login",
+            "redirects to the login screen",
+            "login loop",
+            "vuelve a pedir la contraseña",
+            "vuelve a la pantalla de inicio de sesión",
+            "登录后又回到登录页",
+            "重复要求登录"
+          ],
+          "prefer": true
+        }
+      ]
+    },
+    {
+      "subjects": [
+        "новую цену",
+        "изменил цену",
+        "обновил данные",
+        "после сохранения",
+        "после правки",
+        "после обновления записи",
+        "after saving",
+        "after updating",
+        "updated the record",
+        "updated the price",
+        "change the price",
+        "después de guardar",
+        "al actualizar",
+        "保存后",
+        "修改后",
+        "更新后"
+      ],
+      "goals": [
+        {
+          "id": "cache-invalidation-audit",
+          "phrases": [
+            "видит старую",
+            "видят старую",
+            "старая цена",
+            "показывает старую",
+            "показывает старое значение",
+            "остается прежнее значение",
+            "не меняется до перезагрузки",
+            "still shows the old",
+            "still sees the old",
+            "still see the old",
+            "still displays the old",
+            "only updates after a refresh",
+            "sigue mostrando el valor anterior",
+            "sigue viendo el valor anterior",
+            "还是旧值",
+            "还是旧价格",
+            "显示旧数据"
+          ],
+          "prefer": true
+        }
+      ]
+    },
+    {
+      "subjects": [
+        "выкатить",
+        "выкладка",
+        "выкладкой",
+        "выкладку",
+        "новую версию",
+        "релиз",
+        "релизом",
+        "выкаткой",
+        "выпуском",
+        "deploy",
+        "deploying",
+        "ship a new version",
+        "release",
+        "rollout",
+        "shipping",
+        "publicar",
+        "desplegar",
+        "nueva versión",
+        "发布",
+        "上线"
+      ],
+      "goals": [
+        {
+          "id": "release-readiness-audit",
+          "phrases": [
+            "что проверить перед",
+            "перед выкладкой",
+            "перед выкаткой",
+            "перед релизом",
+            "перед выходом новой версии",
+            "готовность к релизу",
+            "what should we check before",
+            "pre-release checks",
+            "pre-release checklist",
+            "release checklist",
+            "preflight checks",
+            "preflight checklist",
+            "pre-deploy checks",
+            "rollout checklist",
+            "release gates",
+            "go no go",
+            "release readiness",
+            "ready to ship",
+            "rollback readiness",
+            "checks before deploying",
+            "check before shipping",
+            "before the release",
+            "qué revisar antes",
+            "qué comprobar antes",
+            "comprobaciones antes de",
+            "上线前要检查",
+            "发布前检查",
+            "发布前要检查",
+            "上线前需要确认"
+          ],
+          "prefer": true
+        },
+        {
+          "id": "release-readiness-audit",
+          "phrases": [
+            "rollback",
+            "roll back",
+            "откат",
+            "откатиться",
+            "reversión",
+            "revertir",
+            "回滚"
+          ],
+          "prefer": true,
+          "requires": [
+            "plan",
+            "planning",
+            "prepare",
+            "подготовить",
+            "спланировать",
+            "planear",
+            "planificar",
+            "preparar",
+            "计划",
+            "准备"
+          ]
+        }
+      ]
+    },
+    {
+      "subjects": [
+        "письмо",
+        "письма",
+        "уведомление",
+        "уведомления",
+        "смс",
+        "email",
+        "emails",
+        "notification",
+        "notifications",
+        "text message",
+        "correo",
+        "notificación",
+        "邮件",
+        "通知",
+        "短信"
+      ],
+      "goals": [
+        {
+          "id": "notification-failure-idempotency-check",
+          "phrases": [
+            "приходит два раза",
+            "приходят дважды",
+            "приходит дважды",
+            "отправляется дважды",
+            "прилетает два раза",
+            "sends twice",
+            "sent twice",
+            "received twice",
+            "arrives twice",
+            "comes through twice",
+            "se envía dos veces",
+            "llega dos veces",
+            "se duplica",
+            "收到两次",
+            "重复发送",
+            "发了两次"
+          ],
+          "prefer": true
+        }
+      ]
+    },
+    {
+      "subjects": [
+        "проект",
+        "код",
+        "коде",
+        "приложение",
+        "сервер",
+        "repo",
+        "repository",
+        "codebase",
+        "app",
+        "application",
+        "backend",
+        "repositorio",
+        "aplicación",
+        "项目",
+        "代码",
+        "应用"
+      ],
+      "goals": [
+        {
+          "id": "runtime-flow-map",
+          "phrases": [
+            "что происходит после",
+            "где данные сохраняются",
+            "куда сохраняются данные",
+            "куда уходит запрос",
+            "проследи путь запроса",
+            "что вызывается по клику",
+            "trace what happens after",
+            "what happens after clicking",
+            "what happens when i submit",
+            "where the data ends up",
+            "where does it save",
+            "qué ocurre al pulsar",
+            "dónde se guardan los datos",
+            "点击之后发生什么",
+            "提交之后发生什么",
+            "数据存在哪里"
+          ],
+          "prefer": true
+        }
+      ]
+    },
+    {
+      "subjects": [
+        "бот",
+        "ассистент",
+        "модель",
+        "chatbot",
+        "assistant",
+        "model",
+        "bot",
+        "asistente",
+        "modelo",
+        "模型",
+        "机器人",
+        "助手"
+      ],
+      "goals": [
+        {
+          "id": "rag-audit",
+          "phrases": [
+            "выдуманные числа",
+            "выдуманные цифры",
+            "придумывает цифры",
+            "выдумывает факты",
+            "игнорирует источники",
+            "ответ противоречит источнику",
+            "makes up numbers",
+            "invents figures",
+            "hallucinates facts",
+            "ignores the sources",
+            "contradicts the source",
+            "se inventa cifras",
+            "inventa los datos",
+            "编造数字",
+            "编造数据",
+            "回答与资料不符"
+          ],
+          "prefer": true,
+          "requires": [
+            "документ",
+            "документа",
+            "источник",
+            "источники",
+            "база знаний",
+            "document",
+            "documents",
+            "source",
+            "sources",
+            "knowledge base",
+            "fuente",
+            "fuentes",
+            "documentos",
+            "资料",
+            "文档",
+            "知识库"
+          ]
+        }
+      ]
+    },
+    {
+      "subjects": [
+        "press tab",
+        "tab key",
+        "keyboard",
+        "нажимаю tab",
+        "клавиатура",
+        "клавиатурой",
+        "с клавиатуры",
+        "teclado",
+        "tecla tab",
+        "按tab",
+        "键盘"
+      ],
+      "goals": [
+        {
+          "id": "accessibility-audit",
+          "phrases": [
+            "can't reach",
+            "cannot reach",
+            "can't tab into",
+            "doesn't get focus",
+            "won't focus",
+            "skips the items",
+            "фокус не попадает",
+            "фокус перескакивает",
+            "нельзя добраться",
+            "не могу добраться",
+            "не выделяется при",
+            "no puedo llegar",
+            "no recibe el foco",
+            "焦点跳过",
+            "无法聚焦",
+            "选不到"
+          ],
+          "prefer": true
+        }
+      ]
+    },
+    {
+      "subjects": [
+        "page",
+        "homepage",
+        "landing",
+        "first image",
+        "first screen",
+        "страница",
+        "странице",
+        "страницы",
+        "главная",
+        "первый экран",
+        "portada",
+        "página",
+        "primera imagen",
+        "页面",
+        "首页",
+        "首屏",
+        "首图"
+      ],
+      "goals": [
+        {
+          "id": "performance-audit",
+          "phrases": [
+            "takes forever to show",
+            "takes forever to load",
+            "takes a long time to load",
+            "loads slowly",
+            "slow to appear",
+            "долго грузится",
+            "долго загружается",
+            "долго открывается",
+            "долго не появляется",
+            "tarda mucho en cargar",
+            "carga muy lento",
+            "tarda en aparecer",
+            "加载很慢",
+            "半天才加载",
+            "很久才显示"
+          ],
+          "prefer": true
+        }
+      ]
+    },
+    {
+      "subjects": [
+        "mobile",
+        "phone",
+        "android",
+        "iphone",
+        "телефон",
+        "телефоне",
+        "смартфоне",
+        "мобильном",
+        "мобильное приложение",
+        "móvil",
+        "celular",
+        "手机"
+      ],
+      "goals": [
+        {
+          "id": "mobile-release-offline-check",
+          "phrases": [
+            "draft is lost",
+            "loses the draft",
+            "draft disappears",
+            "loses my changes",
+            "пропадает черновик",
+            "теряется черновик",
+            "сбрасывается форма",
+            "теряются изменения",
+            "se pierde el borrador",
+            "pierde los cambios",
+            "草稿丢失",
+            "草稿没了",
+            "内容丢失"
+          ],
+          "prefer": true,
+          "requires": [
+            "offline",
+            "connection drops",
+            "lose connection",
+            "loses connection",
+            "losing signal",
+            "отваливается интернет",
+            "без сети",
+            "без интернета",
+            "пропадает интернет",
+            "пропадает связь",
+            "нет связи",
+            "sin conexión",
+            "se va la conexión",
+            "pierdo la conexión",
+            "断网",
+            "掉线",
+            "离线"
+          ]
+        }
+      ]
+    },
+    {
+      "subjects": [
+        "newly added",
+        "recently created",
+        "just added",
+        "just created",
+        "new products",
+        "new item",
+        "new entry",
+        "добавил товар",
+        "добавили товары",
+        "добавил запись",
+        "новый товар",
+        "новые записи",
+        "recién creado",
+        "acabo de añadir",
+        "nuevo producto",
+        "新建",
+        "新商品",
+        "刚添加",
+        "新发布"
+      ],
+      "goals": [
+        {
+          "id": "search-recall-freshness-check",
+          "phrases": [
+            "can't find it in search",
+            "cannot find it in search",
+            "doesn't show up in search",
+            "doesn't appear in search",
+            "missing from search",
+            "search does not find",
+            "search can't find",
+            "поиск не находит",
+            "не видно в поиске",
+            "в поиске не появляется",
+            "в поиске не найти",
+            "no aparece en la búsqueda",
+            "el buscador no lo encuentra",
+            "搜不到",
+            "搜索不到",
+            "检索不到"
+          ],
+          "prefer": true
+        }
+      ]
+    },
+    {
+      "subjects": [
+        "checkout provider",
+        "payment processor",
+        "payment provider",
+        "payment confirmation",
+        "платежный провайдер",
+        "платежного провайдера",
+        "провайдер оплаты",
+        "подтверждение оплаты",
+        "proveedor de pagos",
+        "procesador de pagos",
+        "支付回调",
+        "支付平台",
+        "付款确认"
+      ],
+      "goals": [
+        {
+          "id": "payments-webhook-reconciliation-check",
+          "phrases": [
+            "same confirmation twice",
+            "same event twice",
+            "sends a duplicate",
+            "send the same notification",
+            "sent twice",
+            "repeated confirmation",
+            "повторное уведомление",
+            "один и тот же платеж",
+            "пришел дважды",
+            "дублирует заказ",
+            "dos veces",
+            "repite la notificación",
+            "重复通知",
+            "回调两次"
+          ],
+          "prefer": true
+        }
+      ]
+    },
+    {
+      "subjects": [
+        "sql",
+        "выборка",
+        "запрос к базе",
+        "запросы к базе",
+        "запросы к бд",
+        "database query",
+        "database queries",
+        "sql query",
+        "sql queries",
+        "consulta sql",
+        "consulta de base de datos",
+        "数据库查询",
+        "查询数据库"
+      ],
+      "goals": [
+        {
+          "id": "sql-load-lock-failover-check",
+          "phrases": [
+            "несколько секунд",
+            "запросы тормозят",
+            "долго выполняется",
+            "запросы выполняются медленно",
+            "takes several seconds",
+            "take several seconds",
+            "slow queries",
+            "queries are slow",
+            "tarda varios segundos",
+            "consultas lentas",
+            "执行很慢",
+            "查了好几秒",
+            "查询很慢"
           ],
           "prefer": true
         }
