@@ -25,5 +25,7 @@ jobs:
           python-version: '3.13'
       - run: npm ci --prefix mcp --ignore-scripts --no-audit --no-fund
       - run: python mcp/generate.py
-      - run: npm test --prefix mcp
+      - name: Run MCP tests serially
+        timeout-minutes: 15
+        run: node --test --test-concurrency=1 mcp/tests/*.test.js
       - run: node mcp/run-review.js

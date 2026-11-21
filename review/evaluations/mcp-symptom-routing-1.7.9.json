@@ -19,6 +19,10 @@
     "local_candidate_studio_plan": "web-page-architecture"
   },
   "changes": {
+    ".github/workflows/mcp-library.yml": {
+      "before": "55d7582e21eea26d1d249c5ebf9b6183f0c7effba089bd39001694253b32f6b5",
+      "after": "c991681935d24e176b22387aa8f70df19c2312bf2eaef22b021741984030869f"
+    },
     "CHANGELOG.md": {
       "before": "8f22f77eaacbac9bd3a745fff3badbe0b041d87a2def5b8a538e59620e76ff11",
       "after": "51ca52b1bebbc0d285789f8d1f00bcd9dcf3c5cdff4ba50d28667414dea00768"
