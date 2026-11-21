@@ -3,7 +3,7 @@ import argparse
 import json
 from pathlib import Path
 import shutil
-from generate import build_library, build_engine, HERE
+from generate import build_library, build_metadata, build_engine, HERE
 
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument('destination', type=Path)
@@ -14,19 +14,22 @@ if destination.is_relative_to(HERE.parent):
 manifest = destination / '.openai/hosting.json'
 if not manifest.is_file() or not json.loads(manifest.read_text(encoding='utf-8')).get('project_id'):
     parser.error('Configure the Sites project and persist its ID before staging.')
-if not (HERE/'generated/library.json').is_file():
+if not all((HERE/'generated'/name).is_file() for name in ('library.json', 'metadata.json', 'catalog-engine.js')):
     parser.error('Run python3 mcp/generate.py before staging.')
-if json.loads((HERE/'generated/library.json').read_text(encoding='utf-8')) != build_library():
+library = build_library()
+if json.loads((HERE/'generated/library.json').read_text(encoding='utf-8')) != library:
     parser.error('Compiled library is stale; run python3 mcp/generate.py before staging.')
+if json.loads((HERE/'generated/metadata.json').read_text(encoding='utf-8')) != build_metadata(library):
+    parser.error('Compiled metadata is stale; run python3 mcp/generate.py before staging.')
 if (HERE/'generated/catalog-engine.js').read_text(encoding='utf-8') != build_engine():
     parser.error('Compiled search engine is stale; regenerate before staging.')
 shutil.copytree(HERE/'site/app', destination/'app', dirs_exist_ok=True)
 target = destination/'lib/vibe'
 target.mkdir(parents=True, exist_ok=True)
-for name in ('server.js', 'library.js', 'workflow.js', 'discovery.js', 'review-cases.json'):
+for name in ('server.js', 'metadata.js', 'library.js', 'workflow.js', 'discovery.js', 'review-cases.json'):
     shutil.copyfile(HERE/name, target/name)
 (target/'generated').mkdir(exist_ok=True)
-for name in ('library.json', 'catalog-engine.js'):
+for name in ('library.json', 'metadata.json', 'catalog-engine.js'):
     shutil.copyfile(HERE/'generated'/name, target/'generated'/name)
 # Remove the obsolete CommonJS projection from the explicit deployment inputs.
 (target/'generated/catalog-engine.cjs').unlink(missing_ok=True)

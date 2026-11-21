@@ -3,7 +3,7 @@ import {readFile, writeFile} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
 import {Client, StreamableHTTPClientTransport} from '@modelcontextprotocol/client';
 import {startServer} from './dev.js';
-import {VERSION} from './library.js';
+import {VERSION} from './metadata.js';
 
 const cases = JSON.parse(await readFile(new URL('./review-cases.json', import.meta.url)));
 const local = process.argv[2] ? null : await startServer();

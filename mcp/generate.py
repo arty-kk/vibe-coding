@@ -90,10 +90,25 @@ def build_engine():
     return engine[len(wrapper):-len(export)] + 'export default engine;\n'
 
 
+def build_metadata(library):
+    recipes = library['recipes']
+    return {
+        'version': library['version'],
+        'instructionVersion': library['instructionVersion'],
+        'digest': library['digest'],
+        'workflowCount': len(recipes),
+        'skillCount': library['skillCount'],
+        'languages': list(library['locales']),
+        'modes': sorted({row['mode'] for row in recipes}),
+        'domains': sorted({row['skill'] for row in recipes}),
+    }
+
+
 if __name__ == '__main__':
     library = build_library()
     output = HERE / 'generated'
     output.mkdir(exist_ok=True)
     (output / 'library.json').write_text(json.dumps(library, ensure_ascii=False, separators=(',', ':')) + '\n', encoding='utf-8', newline='\n')
+    (output / 'metadata.json').write_text(json.dumps(build_metadata(library), separators=(',', ':')) + '\n', encoding='utf-8', newline='\n')
     (output / 'catalog-engine.js').write_text(build_engine(), encoding='utf-8', newline='\n')
     print(f"Compiled {len(library['recipes'])} workflows, {len(library['files'])} instruction files; {library['digest']}")

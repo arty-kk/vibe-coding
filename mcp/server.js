@@ -1,6 +1,6 @@
 import {createMcpHandler, McpServer} from '@modelcontextprotocol/server';
 import * as z from 'zod/v4';
-import {searchWorkflows, getWorkflow, VERSION, LANGUAGES, MODES, SKILLS} from './library.js';
+import {VERSION, LANGUAGES, MODES, SKILLS} from './metadata.js';
 
 const annotations = {readOnlyHint: true, destructiveHint: false, openWorldHint: false};
 const instructions = [
@@ -85,8 +85,10 @@ export function buildServer() {
       workflows: z.array(workflow.extend({match: z.object({kind: z.enum(['browse', 'catalog', 'instruction_body', 'exact_id', 'exact_title', 'alias']), terms: z.array(z.string())}).optional()}))}),
     annotations, _meta: {securitySchemes: [{type: 'noauth'}]}
   }, async args => {
-    try { return output(searchWorkflows(args), args.response_format); }
-    catch (error) { return failure('search_workflows', error.message); }
+    try {
+      const {searchWorkflows} = await import('./library.js');
+      return output(searchWorkflows(args), args.response_format);
+    } catch (error) { return failure('search_workflows', error.message); }
   });
   server.registerTool('get_workflow', {
     title: 'Load the workflow for the current task or step',
@@ -101,8 +103,10 @@ export function buildServer() {
     outputSchema: workflowBundle,
     annotations, _meta: {securitySchemes: [{type: 'noauth'}]}
   }, async args => {
-    try { return output(getWorkflow(args), args.response_format ?? (args.query ? 'workflow' : 'legacy')); }
-    catch (error) { return failure('get_workflow', error.message); }
+    try {
+      const {getWorkflow} = await import('./library.js');
+      return output(getWorkflow(args), args.response_format ?? (args.query ? 'workflow' : 'legacy'));
+    } catch (error) { return failure('get_workflow', error.message); }
   });
   server.registerTool('get_website_plan_workflow', {
     title: 'Load a website planning workflow',
@@ -114,8 +118,10 @@ export function buildServer() {
     outputSchema: workflowBundle,
     annotations, _meta: {securitySchemes: [{type: 'noauth'}]}
   }, async ({focus, language, host}) => {
-    try { return output(getWorkflow({id: websitePlans[focus], language, host}), 'workflow'); }
-    catch (error) { return failure('get_website_plan_workflow', error.message); }
+    try {
+      const {getWorkflow} = await import('./library.js');
+      return output(getWorkflow({id: websitePlans[focus], language, host}), 'workflow');
+    } catch (error) { return failure('get_website_plan_workflow', error.message); }
   });
   return server;
 }

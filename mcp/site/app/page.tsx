@@ -1,5 +1,5 @@
 import type {Metadata} from 'next';
-import {libraryStatus, MODES} from '../lib/vibe/library.js';
+import {libraryStatus, MODES} from '../lib/vibe/metadata.js';
 import Demo, {CopyEndpoint, LanguageSwitcher} from './demo';
 import {COPY, LANGUAGES, text, type Language} from './copy';
 

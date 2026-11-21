@@ -2,23 +2,16 @@ import library from './generated/library.json' with { type: 'json' };
 import engine from './generated/catalog-engine.js';
 import {buildExecution} from './workflow.js';
 import {createDiscovery} from './discovery.js';
+import {VERSION, INSTRUCTION_VERSION, MODES, SKILLS} from './metadata.js';
 
-export const LANGUAGES = ['en', 'es', 'ru', 'zh-CN'];
-export const MODES = [...new Set(library.recipes.map(row => row.mode))].sort();
-export const SKILLS = [...new Set(library.recipes.map(row => row.skill))].sort();
-export const VERSION = library.version;
-export const DIGEST = library.digest;
-export const INSTRUCTION_VERSION = library.instructionVersion;
+export {LANGUAGES, MODES, SKILLS, VERSION, DIGEST, INSTRUCTION_VERSION, libraryStatus} from './metadata.js';
 const byId = new Map(library.recipes.map(row => [row.id, row]));
 const discovery = createDiscovery(library);
 const topics = Object.fromEntries(SKILLS.map(skill => [skill,
   Object.values(library.locales).map(locale => locale.categories[skill])]));
 const actions = Object.fromEntries(MODES.map(mode => [mode, Object.values(library.locales).map(locale => locale.modes[mode])]));
-const prepared = engine.prepare(library.recipes.map(row => ({...row,
-  titles: Object.values(library.locales).map(locale => locale.titles[row.id])})), topics, actions, library.searchLexicon);
-const bodies = Object.fromEntries(library.recipes.map(row => [row.id, {
-  body: library.files[row.path].text.replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
-}]));
+let prepared;
+let bodies;
 
 function metadata(row, language) {
   const locale = library.locales[language];
@@ -28,6 +21,13 @@ function metadata(row, language) {
 }
 
 function rankWorkflows(query, {skill = '', mode = '', full_text = false} = {}) {
+  prepared ??= engine.prepare(library.recipes.map(row => ({...row,
+    titles: Object.values(library.locales).map(locale => locale.titles[row.id])})), topics, actions, library.searchLexicon);
+  if (full_text && !bodies) {
+    bodies = Object.fromEntries(library.recipes.map(row => [row.id, {
+      body: library.files[row.path].text.replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+    }]));
+  }
   return engine.select(prepared, {q: query, topic: skill, action: mode, full: full_text}, bodies).matches;
 }
 
@@ -85,10 +85,4 @@ export function getWorkflow({id, query, language = 'en', host = 'generic', inten
     language, host, context_included: include_context, workflow: metadata(row, language), files,
     execution: buildExecution(library, identity, intent),
     words: files.reduce((count, file) => count + file.text.trim().split(/\s+/u).length, 0)};
-}
-
-export function libraryStatus() {
-  return {service: 'Vibe Coding Library', version: VERSION, instruction_version: INSTRUCTION_VERSION,
-    workflows: library.recipes.length, skills: library.skillCount, digest: DIGEST,
-    tools: ['search_workflows', 'get_workflow', 'get_website_plan_workflow'], authentication: 'none'};
 }

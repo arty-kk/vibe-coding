@@ -1,6 +1,6 @@
 import {createServer} from 'node:http';
 import {handleMcp} from './server.js';
-import {libraryStatus} from './library.js';
+import {libraryStatus} from './metadata.js';
 
 export function startServer(port = 0) {
   const server = createServer(async (incoming, outgoing) => {

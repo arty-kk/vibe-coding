@@ -1,5 +1,10 @@
 # Changelog
 
+## MCP 1.7.7 — load the tool list promptly
+
+- Serve initialization and tool discovery from compact metadata.
+- Load the instruction corpus on a tool call and prepare the index when a search needs it.
+
 ## MCP 1.7.6 — start website planning directly
 
 - Load guidance for site sections, the offer, or technical architecture with a focused planning tool.

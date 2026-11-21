@@ -1,6 +1,17 @@
 # Vibe Coding Library MCP service
 
-Connect any coding agent that supports MCP over Streamable HTTP. Load a website planning method with `get_website_plan_workflow`. Choose and load a workflow from an ordinary goal with `get_workflow`. Compare options with `search_workflows`. The host and model select tools. Runtime 1.7.6 serves the versioned 1.7.2 instructions.
+Connect any coding agent that supports MCP over Streamable HTTP. Load a website planning method with `get_website_plan_workflow`. Choose and load a workflow from an ordinary goal with `get_workflow`. Compare options with `search_workflows`. The host and model select tools. Runtime 1.7.7 serves the versioned 1.7.2 instructions.
+
+## Codex startup
+
+Start Codex with the MCP connection required when the first prompt should use the library.
+
+```sh
+codex -c 'mcp_servers.vibe_library.url="https://vibe-coding-library.artem-satsuk.chatgpt.site/library/mcp"' \
+  -c 'mcp_servers.vibe_library.required=true'
+```
+
+Ask for the task in ordinary words once Codex starts. Keep the same settings in your MCP connection configuration for repeated use.
 
 Explicit composition in `plugins/vibe-coding/workflows.json` preserves all 260 IDs. Read-only requests stay read-only; authorized corrections carry evidence through repair, relevant checks and repeated Patch Checking. Later prompts load when reached. `include_context:false` reuses available same-version foundations. Missing required evidence and repeated unchanged failure cannot become a clean verdict.
 
@@ -18,7 +29,7 @@ node mcp/run-review.js
 node mcp/dev.js
 ```
 
-The local endpoint binds to `127.0.0.1:3105/mcp`. `generate.py` validates catalog hashes and workflow ownership and projects the same search engine used by the website into an ES module. `run-review.js` executes the five positive and three negative tool cases with the official client, using a real loopback server by default. Give it a public endpoint and optional report path to check deployment. This harness tests tool behavior, not natural-language model selection.
+The local endpoint binds to `127.0.0.1:3105/mcp`. `generate.py` validates catalog hashes and workflow ownership and projects the same search engine used by the website into an ES module. Connect and list tools from the compact generated metadata. The service loads the instruction corpus on a tool call and prepares the search index only for a search. Give `run-review.js` a public endpoint and an optional report path to check the five positive and three negative cases through the official client.
 
 ## Hosting
 
