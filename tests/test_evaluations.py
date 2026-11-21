@@ -23,6 +23,7 @@ MATERIAL = ROOT/'review/evaluations/1.7.1.json'
 SITE_CONTROLS = ROOT/'review/evaluations/site-controls-2026-11-21.json'
 BROWSER_ACCEPTANCE = ROOT/'review/evaluations/1.7.2.json'
 MCP_ROUTING = ROOT/'review/evaluations/mcp-routing-1.7.3.json'
+MCP_QUERY_REFINEMENT = ROOT/'review/evaluations/mcp-routing-1.7.4.json'
 
 
 class EvaluationRecordTests(unittest.TestCase):
@@ -47,13 +48,21 @@ class EvaluationRecordTests(unittest.TestCase):
         self.controls = json.loads(SITE_CONTROLS.read_text(encoding='utf-8'))
         self.browser_acceptance = json.loads(BROWSER_ACCEPTANCE.read_text(encoding='utf-8'))
         self.mcp_routing = json.loads(MCP_ROUTING.read_text(encoding='utf-8'))
+        self.mcp_query_refinement = json.loads(MCP_QUERY_REFINEMENT.read_text(encoding='utf-8'))
+
+    def query_refinement_fingerprint(self, name, expected):
+        change = self.mcp_query_refinement['changes'].get(name)
+        if change:
+            self.assertEqual(expected, change['before'], name)
+            return change['after']
+        return expected
 
     def routing_fingerprint(self, name, expected):
         change = self.mcp_routing['changes'].get(name)
         if change:
             self.assertEqual(expected, change['before'], name)
-            return change['after']
-        return expected
+            expected = change['after']
+        return self.query_refinement_fingerprint(name, expected)
 
     def browser_fingerprint(self, name, expected):
         change = self.browser_acceptance['changes'].get(name)
@@ -392,14 +401,21 @@ class EvaluationRecordTests(unittest.TestCase):
 
     def test_mcp_routing_has_current_fingerprints(self):
         self.assertEqual(hashlib.sha256(BROWSER_ACCEPTANCE.read_bytes()).hexdigest(), self.mcp_routing['baseline']['sha256'])
-        runtime = json.loads((ROOT/'mcp/package.json').read_text(encoding='utf-8'))
-        self.assertEqual(runtime['version'], self.mcp_routing['runtime_version'])
         self.assertEqual(self.mcp_routing['instruction_version'], self.browser_acceptance['release'])
         self.assertTrue(self.mcp_routing['checks'])
         for name, value in self.mcp_routing['changes'].items():
-            self.assertEqual(value['after'], hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
+            self.assertEqual(self.query_refinement_fingerprint(name, value['after']), hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
         for name, value in self.mcp_routing['new_files'].items():
             self.assertEqual(value, hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
+
+    def test_mcp_query_refinement_has_current_fingerprints(self):
+        self.assertEqual(hashlib.sha256(MCP_ROUTING.read_bytes()).hexdigest(), self.mcp_query_refinement['baseline']['sha256'])
+        runtime = json.loads((ROOT/'mcp/package.json').read_text(encoding='utf-8'))
+        self.assertEqual(runtime['version'], self.mcp_query_refinement['runtime_version'])
+        self.assertEqual(self.mcp_query_refinement['instruction_version'], self.mcp_routing['instruction_version'])
+        self.assertTrue(self.mcp_query_refinement['checks'])
+        for name, value in self.mcp_query_refinement['changes'].items():
+            self.assertEqual(value['after'], hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
 
 
 if __name__ == '__main__':

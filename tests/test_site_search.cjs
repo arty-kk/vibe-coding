@@ -105,7 +105,9 @@ test('site and offline ranking agree with Python for the judged query corpus', (
     {query:'outbox',full_text:true}, {query:'API',skill:'vibe-backend',mode:'check'},
     {query:'сделай мне красивый сайт'}, {query:'хочу правильную архитектуру сайта'},
     {query:'главная выглядит дёшево и разваливается на телефоне'},
-    {query:'бэкэнд глючит, иногда ответ не приходит'}, {query:'session cookie zxstrangelabel'}];
+    {query:'бэкэнд глючит, иногда ответ не приходит'}, {query:'session cookie zxstrangelabel'},
+    {query:'Какие разделы нужны красивому сайту небольшой студии и как посетитель оставит заявку?'},
+    {query:'Сделать красивый сайт небольшой студии с услугами, формой заявки и понятной архитектурой'}];
   const {spawnSync} = require('node:child_process');
   const pythonCommand = process.env.PYTHON || (process.platform === 'win32' ? 'python' : 'python3');
   const result = spawnSync(pythonCommand,[path.join(__dirname,'search_parity.py')], {input:JSON.stringify(cases),encoding:'utf8',maxBuffer:2_000_000});

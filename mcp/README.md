@@ -1,6 +1,12 @@
 # Vibe Coding Library MCP service
 
-Two read-only tools provide engineering methods to coding agents that support MCP over Streamable HTTP. Start a relevant task by searching for the user's ordinary goal or symptom, then load a matching workflow. The host and model select tools. Runtime 1.7.3 serves the versioned 1.7.2 instructions.
+Two read-only tools provide engineering methods to coding agents that support MCP over Streamable HTTP. Start a relevant task by searching for the user's ordinary goal or symptom, then load a matching workflow. The host and model select tools. Runtime 1.7.4 serves the versioned 1.7.2 instructions.
+
+A client can steer selection at the project level. Add the following once to the agent's project guidance, such as `AGENTS.md` for Codex.
+
+> For website planning or building, improving an existing page, diagnosing a software symptom, or reviewing a patch, use the connected Vibe Coding MCP to select an applicable workflow before giving advice or editing files. A request for advice still qualifies when it asks for website structure or diagnosis.
+>
+> Send a brief public goal or symptom to `search_workflows`, then load a fitting ID with `get_workflow`. A known fitting ID can be loaded directly. Use the retrieved step to guide the task and respect the user's scope. For unrelated tasks, answer without consulting the library.
 
 Explicit composition in `plugins/vibe-coding/workflows.json` preserves all 260 IDs. Read-only requests stay read-only; authorized corrections carry evidence through repair, relevant checks and repeated Patch Checking. Later prompts load when reached. `include_context:false` reuses available same-version foundations. Missing required evidence and repeated unchanged failure cannot become a clean verdict.
 

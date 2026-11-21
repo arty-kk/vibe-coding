@@ -1,5 +1,10 @@
 # Changelog
 
+## MCP 1.7.4 — phrasing used by coding agents
+
+- Cover common word forms and infinitive phrases that agents use when restating website requests before search.
+- Make the website advice trigger more specific and document a project-level selection rule for direct MCP clients.
+
 ## MCP 1.7.3 — natural-language workflow selection
 
 - Give connected agents a direct entry point for website planning, implementation, and bug diagnosis from the user's goal.

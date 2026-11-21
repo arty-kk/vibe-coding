@@ -110,6 +110,8 @@ test('conversational goals rank the requested starting method ahead of related s
   for (const [query, language, expected] of [
     ['сделай мне красивый сайт', 'ru', 'homepage-landing-build'],
     ['Хочу красивый сайт для студии. Какие разделы нужны и как посетитель оставит заявку?', 'ru', 'web-page-architecture'],
+    ['Какие разделы нужны красивому сайту небольшой студии и как посетитель оставит заявку?', 'ru', 'web-page-architecture'],
+    ['Сделать красивый сайт небольшой студии с услугами, формой заявки и понятной архитектурой', 'ru', 'homepage-landing-build'],
     ['хочу правильную архитектуру сайта', 'ru', 'web-project-architecture'],
     ['главная выглядит дёшево и разваливается на телефоне', 'ru', 'homepage-landing-audit'],
     ['бэкэнд глючит, иногда ответ не приходит', 'ru', 'instant-backend-probe'],
