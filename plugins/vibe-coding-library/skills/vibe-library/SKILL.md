@@ -1,21 +1,18 @@
 ---
 name: vibe-library
-description: "Select a design or engineering workflow for a new homepage, an unfinished site, a redesign, a bug, a planned change or a patch review. Use the user’s goal in any language to discover a method and apply its current step."
+description: "Consult a workflow before advising on website sections, an enquiry path or technical architecture. Use the ordinary request to load a method for a website build, redesign, software symptom or patch review."
 ---
 
 # Vibe Coding Library
 
 ## Choose the method
 
-Set `response_format:workflow` on both tools to request purposes, match reasons and the structured step outline. Omitting this option preserves the older response shape; the server still supplies current instructions.
+Use the ordinary request to choose a workflow. For "what sections should my studio site have?", start at `web-page-architecture`. Choose `web-offer-synthesis` for an undefined offer or `web-project-architecture` for a stack or modular code structure. Build from an accepted brief with `homepage-landing-build`. Choose `homepage-landing-polish` for a redesign and `homepage-landing-audit` for inspection. Diagnose a vague backend hang with `instant-backend-probe`.
 
-Use the task itself to find a relevant method; the user need not mention the library. Examples include a repeated payment effect, broken hydration, an unfamiliar API change, a patch needing review or a release guarantee needing verification. For a website proposal with an undefined offer, start at `web-offer-synthesis`. Build from an accepted brief with `homepage-landing-build`. Finish or redesign existing work with `homepage-landing-polish`. For inspection only, use `homepage-landing-audit`. Inspect current project state when the distinction matters. A precise named workflow or ID takes precedence over inferred routing.
-
-1. Identify the requested operation. Audit/review inspect; implementation makes an already-requested change; checks verify; plans prepare work. A precise known workflow ID can be loaded directly.
-2. When the topic is unknown, call `search_workflows` with `view:catalog` and an empty query. Select a returned domain key by the meaning of the user's task, then request `view:catalog, skill:<that key>`. This returns that domain's real topic keys, canonical English keywords, supported operations and workflow IDs without prompt bodies. Reuse the catalog for the same library version.
-3. Copy a returned `topic` key and select the intended `mode` to retrieve its exact workflow members. Alternatively, load a listed workflow ID directly when its operation is clear. Do not invent a search keyword as a topic key. Match the user's language to the catalog's meaning; English keys remain stable while `language` localizes labels.
-4. Free-text search is available for a named recipe or technical phrase. If it finds nothing, use the actual catalog rather than concluding that the capability is absent or repeating arbitrary words. Preserve user-specified filters; correct your own inferred filter only when the task and catalog support that correction. Use `full_text:true` for a term genuinely needed from an instruction body.
-5. Compare the selected purpose, operation and domain before `get_workflow`. Keep `host:generic` for other coding agents. Use `intent:improve` only when diagnosis and correction are already authorized; otherwise retain `requested`. Send no source code, credentials or personal data.
+1. Identify the requested operation and preserve its scope. Keep planning and inspection read-only. Use `intent:improve` when the user has authorized both diagnosis and repair.
+2. Load a known matching ID with `get_workflow`. When its live schema offers `query`, pass the brief goal or symptom to find and load a method in one call. Otherwise search the ordinary goal with `search_workflows`, compare purpose and operation, and load the matching ID.
+3. Browse with `view:catalog` and an empty query when several results fit or the first search is empty. Select a returned domain and topic key. Preserve explicit filters. Use `full_text:true` for a term needed from an instruction body.
+4. Request `response_format:workflow` for the current step and conditional outline. Keep `host:generic` for other MCP agents. Send a public technical goal or symptom and omit source code, credentials, and personal data.
 
 If the live schema does not advertise `view` or `topic`, omit those arguments and browse with an empty query plus an established domain/operation filter. Do not send unsupported parameters. A catalog that does not cover the task is an explicit coverage limit, not permission to force an unrelated method.
 

@@ -22,10 +22,12 @@ for (const mode of ['legacy', 'auto']) {
       const tools = (await connection.listTools()).tools;
       assert.deepEqual(tools.map(tool => tool.name), ['search_workflows', 'get_workflow']);
       const searchTool = tools[0];
-      assert.match(searchTool.description, /Use at the start of these tasks/);
-      assert.match(searchTool.description, /planning questions without edits/);
+      assert.match(searchTool.description, /load a starting method in one call/);
       assert.match(searchTool.inputSchema.properties.query.description, /ordinary language/);
-      if (mode === 'legacy') assert.match(connection.getInstructions(), /At the start of one of these tasks/);
+      const loadTool = tools[1];
+      assert.match(loadTool.description, /before answering a website planning question/);
+      assert.match(loadTool.inputSchema.properties.query.description, /exactly one of query or id/);
+      if (mode === 'legacy') assert.match(connection.getInstructions(), /select and load a method in one read-only call/);
       for (const tool of tools) {
         assert.deepEqual(tool.annotations, {readOnlyHint: true, destructiveHint: false, openWorldHint: false});
         assert.equal(tool.inputSchema.additionalProperties, false);
@@ -38,6 +40,32 @@ for (const mode of ['legacy', 'auto']) {
       assert.equal(fetched.structuredContent.instruction_language, 'en');
       assert.ok(fetched.structuredContent.files.some(file => file.path === 'references/mcp-contract.md'));
       assert.ok(fetched.structuredContent.words < 3500);
+      const selected = await connection.callTool({name:'get_workflow', arguments:{
+        query:'Хочу красивый сайт для небольшой студии. Какие разделы нужны и как посетитель оставит заявку?',
+        language:'ru'
+      }});
+      assert.equal(selected.isError, undefined);
+      assert.equal(selected.structuredContent.workflow.id, 'web-page-architecture');
+      assert.equal(selected.structuredContent.execution.current_step, 'web-page-architecture');
+      assert.ok(selected.structuredContent.files.some(file=>file.path.endsWith('/web-page-architecture.md')));
+      for (const [query, id] of [
+        ['Сделать красивый сайт с формой заявки', 'homepage-landing-build'],
+        ['На телефоне главная разваливается и выглядит дёшево', 'homepage-landing-audit'],
+        ['Бэкэнд глючит, иногда ответ не приходит', 'instant-backend-probe']
+      ]) {
+        const match = await connection.callTool({name:'get_workflow', arguments:{query}});
+        assert.equal(match.structuredContent?.workflow.id, id, query);
+      }
+      for (const [args, message] of [
+        [{}, /Provide one workflow ID/],
+        [{id:'api-audit', query:'api'}, /Provide one workflow ID/],
+        [{query:'zzzz-unknown-technical-method'}, /No workflow matches/],
+        [{query:'...'}, /Several workflows match equally/]
+      ]) {
+        const invalidQuery = await connection.callTool({name:'get_workflow', arguments:args});
+        assert.equal(invalidQuery.isError, true);
+        assert.match(invalidQuery.content[0].text, message);
+      }
       const missing = await connection.callTool({name: 'get_workflow', arguments: {id: 'does-not-exist'}});
       assert.equal(missing.isError, true);
       for (const args of [{id: '../secrets'}, {id: 'api-audit', credentials: 'ignored-field'}]) {

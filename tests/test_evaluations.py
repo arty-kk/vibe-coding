@@ -24,6 +24,7 @@ SITE_CONTROLS = ROOT/'review/evaluations/site-controls-2026-11-21.json'
 BROWSER_ACCEPTANCE = ROOT/'review/evaluations/1.7.2.json'
 MCP_ROUTING = ROOT/'review/evaluations/mcp-routing-1.7.3.json'
 MCP_QUERY_REFINEMENT = ROOT/'review/evaluations/mcp-routing-1.7.4.json'
+MCP_ONE_CALL = ROOT/'review/evaluations/mcp-one-call-1.7.5.json'
 
 
 class EvaluationRecordTests(unittest.TestCase):
@@ -49,13 +50,21 @@ class EvaluationRecordTests(unittest.TestCase):
         self.browser_acceptance = json.loads(BROWSER_ACCEPTANCE.read_text(encoding='utf-8'))
         self.mcp_routing = json.loads(MCP_ROUTING.read_text(encoding='utf-8'))
         self.mcp_query_refinement = json.loads(MCP_QUERY_REFINEMENT.read_text(encoding='utf-8'))
+        self.mcp_one_call = json.loads(MCP_ONE_CALL.read_text(encoding='utf-8'))
+
+    def one_call_fingerprint(self, name, expected):
+        change = self.mcp_one_call['changes'].get(name)
+        if change:
+            self.assertEqual(expected, change['before'], name)
+            return change['after']
+        return expected
 
     def query_refinement_fingerprint(self, name, expected):
         change = self.mcp_query_refinement['changes'].get(name)
         if change:
             self.assertEqual(expected, change['before'], name)
-            return change['after']
-        return expected
+            expected = change['after']
+        return self.one_call_fingerprint(name, expected)
 
     def routing_fingerprint(self, name, expected):
         change = self.mcp_routing['changes'].get(name)
@@ -410,11 +419,18 @@ class EvaluationRecordTests(unittest.TestCase):
 
     def test_mcp_query_refinement_has_current_fingerprints(self):
         self.assertEqual(hashlib.sha256(MCP_ROUTING.read_bytes()).hexdigest(), self.mcp_query_refinement['baseline']['sha256'])
-        runtime = json.loads((ROOT/'mcp/package.json').read_text(encoding='utf-8'))
-        self.assertEqual(runtime['version'], self.mcp_query_refinement['runtime_version'])
         self.assertEqual(self.mcp_query_refinement['instruction_version'], self.mcp_routing['instruction_version'])
         self.assertTrue(self.mcp_query_refinement['checks'])
         for name, value in self.mcp_query_refinement['changes'].items():
+            self.assertEqual(self.one_call_fingerprint(name, value['after']), hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
+
+    def test_mcp_one_call_has_current_fingerprints(self):
+        self.assertEqual(hashlib.sha256(MCP_QUERY_REFINEMENT.read_bytes()).hexdigest(), self.mcp_one_call['baseline']['sha256'])
+        runtime = json.loads((ROOT/'mcp/package.json').read_text(encoding='utf-8'))
+        self.assertEqual(runtime['version'], self.mcp_one_call['runtime_version'])
+        self.assertEqual(self.mcp_one_call['instruction_version'], self.mcp_query_refinement['instruction_version'])
+        self.assertTrue(self.mcp_one_call['checks'])
+        for name, value in self.mcp_one_call['changes'].items():
             self.assertEqual(value['after'], hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), name)
 
 

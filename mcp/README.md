@@ -1,12 +1,6 @@
 # Vibe Coding Library MCP service
 
-Two read-only tools provide engineering methods to coding agents that support MCP over Streamable HTTP. Start a relevant task by searching for the user's ordinary goal or symptom, then load a matching workflow. The host and model select tools. Runtime 1.7.4 serves the versioned 1.7.2 instructions.
-
-A client can steer selection at the project level. Add the following once to the agent's project guidance, such as `AGENTS.md` for Codex.
-
-> For website planning or building, improving an existing page, diagnosing a software symptom, or reviewing a patch, use the connected Vibe Coding MCP to select an applicable workflow before giving advice or editing files. A request for advice still qualifies when it asks for website structure or diagnosis.
->
-> Send a brief public goal or symptom to `search_workflows`, then load a fitting ID with `get_workflow`. A known fitting ID can be loaded directly. Use the retrieved step to guide the task and respect the user's scope. For unrelated tasks, answer without consulting the library.
+Connect any coding agent that supports MCP over Streamable HTTP. Load one engineering workflow from the user's ordinary goal with `get_workflow`. Compare options with `search_workflows` when several fit. The host and model select tools. Runtime 1.7.5 serves the versioned 1.7.2 instructions.
 
 Explicit composition in `plugins/vibe-coding/workflows.json` preserves all 260 IDs. Read-only requests stay read-only; authorized corrections carry evidence through repair, relevant checks and repeated Patch Checking. Later prompts load when reached. `include_context:false` reuses available same-version foundations. Missing required evidence and repeated unchanged failure cannot become a clean verdict.
 
@@ -43,16 +37,15 @@ After deployment, verify the production endpoint with the same review harness, i
 
 `review-cases.json` contains five positive cases and three negative cases, with exact tool inputs for deterministic replay. The package builder imports the reviewer fields and excludes the replay-only `calls` field. The walkthrough demonstrates live MCP requests and their responses through the public console. Reviewers can inspect the raw requests, source links and exact hashes.
 
-Use `response_format:workflow` on both tools for the current purposes and structured outline. Calls that omit the option retain the exact 1.5.1 response shape while still using current search and instruction content; this keeps previously published schemas working during continuous review.
+Use `response_format:workflow` on both tools for purposes and structured outlines. Omit it to get the original shape on search and exact-ID calls, or the structured outline on a `get_workflow` query.
 
-Search with a brief description of the user's goal. Load the matching ID.
+Choose and load the method from a brief public goal in one call. Pass an exact ID for a known workflow or a later step.
 
 ```text
-search_workflows({"query":"Хочу красивый сайт для студии. Какие разделы нужны?","language":"ru","response_format":"workflow"})
-get_workflow({"id":"web-page-architecture","language":"ru","response_format":"workflow"})
+get_workflow({"query":"Хочу красивый сайт для студии. Какие разделы нужны?","language":"ru"})
 ```
 
-Use the catalog when a description produces no useful match or the caller wants to explore the available topics.
+Compare results with `search_workflows` when the top matches tie. Use the catalog when a description produces no useful match or the caller wants to explore the available topics.
 
 ```text
 search_workflows({"view":"catalog"})

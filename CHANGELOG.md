@@ -1,5 +1,10 @@
 # Changelog
 
+## MCP 1.7.5 — load a workflow in one call
+
+- Select and load a website or engineering workflow from an ordinary task with `get_workflow`.
+- Lead the tool and entry skill descriptions with concrete website planning cases, including advice before code exists.
+
 ## MCP 1.7.4 — phrasing used by coding agents
 
 - Cover common word forms and infinitive phrases that agents use when restating website requests before search.

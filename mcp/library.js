@@ -27,6 +27,10 @@ function metadata(row, language) {
     url: `https://arty-kk.github.io/vibe-coding/workflows/${row.id}/`};
 }
 
+function rankWorkflows(query, {skill = '', mode = '', full_text = false} = {}) {
+  return engine.select(prepared, {q: query, topic: skill, action: mode, full: full_text}, bodies).matches;
+}
+
 export function searchWorkflows({query = '', skill, mode, topic, view = 'workflows', language = 'en', full_text = false, limit = 5, offset = 0}) {
   if (skill && !SKILLS.includes(skill)) throw new Error('Unknown skill. Use a skill identifier returned by search_workflows.');
   if (view === 'catalog' || topic && !discovery.byTopic.has(topic)) {
@@ -45,7 +49,7 @@ export function searchWorkflows({query = '', skill, mode, topic, view = 'workflo
           ? 'Choose the domain key that fits the user’s goal, then call search_workflows with view:catalog and skill:<that key>. The catalog contains metadata only, not prompt bodies.'
           : 'Choose a returned topic key and call search_workflows with topic:<that key> and the requested mode. Reuse known keys for this library version. Then load a returned workflow ID with get_workflow.'};
   }
-  const {matches} = engine.select(prepared, {q: query, topic: skill || '', action: mode || '', full: full_text}, bodies);
+  const matches = rankWorkflows(query, {skill, mode, full_text});
   const scoped = topic ? matches.filter(({entry}) => discovery.byTopic.get(topic).recipe_ids.includes(entry.id)) : matches;
   const page = scoped.slice(offset, offset + limit);
   return {version: VERSION, instruction_version: INSTRUCTION_VERSION, language, total: scoped.length,
@@ -56,8 +60,20 @@ export function searchWorkflows({query = '', skill, mode, topic, view = 'workflo
       : 'No match under these exact query and filters. This does not mean the library lacks the capability. If view is advertised in the live tool schema, call search_workflows with view:catalog, an empty query and the same skill/mode to inspect actual keys. Preserve explicit scope; choose only a listed key. Otherwise browse with an empty query, retaining the filters.'};
 }
 
-export function getWorkflow({id, language = 'en', host = 'generic', intent = 'requested', include_context = true}) {
-  const row = byId.get(id);
+function workflowForQuery(query) {
+  const [first, second] = rankWorkflows(query);
+  if (!first) throw new Error('No workflow matches that goal. Describe the task or symptom, or browse with search_workflows.');
+  if (second?.match.score === first.match.score) {
+    throw new Error('Several workflows match equally. Compare them with search_workflows or specify the goal or symptom more precisely.');
+  }
+  return first.entry.id;
+}
+
+export function getWorkflow({id, query, language = 'en', host = 'generic', intent = 'requested', include_context = true}) {
+  const hasId = id !== undefined;
+  if (hasId ? query !== undefined : !query?.trim()) throw new Error('Provide one workflow ID or one nonempty task description.');
+  const identity = hasId ? id : workflowForQuery(query.trim());
+  const row = byId.get(identity);
   if (!row) throw new Error('Unknown workflow ID. Search the public library with search_workflows first.');
   const foundation = ['references/workflow.md', 'references/cycles.md', `skills/${row.skill}/SKILL.md`];
   const paths = [...new Set([...(include_context ? foundation : []), row.path,
@@ -67,7 +83,7 @@ export function getWorkflow({id, language = 'en', host = 'generic', intent = 're
     source_url: `https://github.com/arty-kk/vibe-coding/blob/v${INSTRUCTION_VERSION}/plugins/vibe-coding/${path}`}));
   return {version: VERSION, instruction_version: INSTRUCTION_VERSION, instruction_language: 'en',
     language, host, context_included: include_context, workflow: metadata(row, language), files,
-    execution: buildExecution(library, id, intent),
+    execution: buildExecution(library, identity, intent),
     words: files.reduce((count, file) => count + file.text.trim().split(/\s+/u).length, 0)};
 }
 
