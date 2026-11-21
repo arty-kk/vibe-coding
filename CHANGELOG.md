@@ -1,5 +1,10 @@
 # Changelog
 
+## MCP 1.7.3 — natural-language workflow selection
+
+- Give connected agents a direct entry point for website planning, implementation, and bug diagnosis from the user's goal.
+- Rank the appropriate starting workflow for common website and backend requests. Recover empty metadata searches using the known terms and preserve explicit filters.
+
 ## 1.7.2 — browser acceptance and control states
 
 - Require a browser pass across page templates for whole-site acceptance. Cover desktop pointer and keyboard states, opened menus, narrow touch layouts, exact clipboard values and denied writes.

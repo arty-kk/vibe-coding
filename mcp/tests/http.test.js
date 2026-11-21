@@ -21,6 +21,11 @@ for (const mode of ['legacy', 'auto']) {
       if (mode === 'auto') assert.equal(connection.getNegotiatedProtocolVersion(), '2026-07-28');
       const tools = (await connection.listTools()).tools;
       assert.deepEqual(tools.map(tool => tool.name), ['search_workflows', 'get_workflow']);
+      const searchTool = tools[0];
+      assert.match(searchTool.description, /Use at the start of these tasks/);
+      assert.match(searchTool.description, /planning questions without edits/);
+      assert.match(searchTool.inputSchema.properties.query.description, /ordinary language/);
+      if (mode === 'legacy') assert.match(connection.getInstructions(), /At the start of one of these tasks/);
       for (const tool of tools) {
         assert.deepEqual(tool.annotations, {readOnlyHint: true, destructiveHint: false, openWorldHint: false});
         assert.equal(tool.inputSchema.additionalProperties, false);

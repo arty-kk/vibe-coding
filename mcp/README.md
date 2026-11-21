@@ -1,10 +1,10 @@
 # Vibe Coding Library MCP service
 
-Two read-only tools provide engineering methods to any coding agent supporting MCP over Streamable HTTP. Discovery descriptions explain task-driven use without a prior library name or native skill installation. Search returns up to ten concise records with individual purposes and match reasons. Retrieval returns the current prompt, required context and an instructions-only conditional workflow. Client and instruction versions are aligned at 1.7.2.
+Two read-only tools provide engineering methods to coding agents that support MCP over Streamable HTTP. Start a relevant task by searching for the user's ordinary goal or symptom, then load a matching workflow. The host and model select tools. Runtime 1.7.3 serves the versioned 1.7.2 instructions.
 
 Explicit composition in `plugins/vibe-coding/workflows.json` preserves all 260 IDs. Read-only requests stay read-only; authorized corrections carry evidence through repair, relevant checks and repeated Patch Checking. Later prompts load when reached. `include_context:false` reuses available same-version foundations. Missing required evidence and repeated unchanged failure cannot become a clean verdict.
 
-The canonical browser engine is `plugins/vibe-coding/assets/catalog/engine.js`; `site/catalog-engine.js` is its identical public-site copy. Shared concepts and aliases live in `assets/catalog/search-lexicon.json`. CLI ranking uses the equivalent Python implementation. Metadata search uses titles, purposes and curated discovery data; body search is explicit in MCP and the public site. The offline catalog/CLI retain body search for compatibility.
+The canonical browser engine is `plugins/vibe-coding/assets/catalog/engine.js`. The public site uses an identical copy, and the CLI uses equivalent Python ranking. Search preserves exact IDs and filters, recognizes task goals in the supported languages, and can retry an empty metadata search using the request's known terms. Body search is explicit in MCP and the public site. The offline catalog and CLI also search instruction bodies.
 
 The official TypeScript MCP SDK 2.3.1 serves both 2025 initialization-era clients and MCP 2026-07-28 self-contained requests. Inputs are strict and bounded. The HTTP entry rejects conflicting protocol headers, invalid origins and bodies over 64 KiB. There is no runtime outbound lookup or filesystem access. Errors are logged without arguments or results.
 
@@ -39,7 +39,14 @@ After deployment, verify the production endpoint with the same review harness, i
 
 Use `response_format:workflow` on both tools for the current purposes and structured outline. Calls that omit the option retain the exact 1.5.1 response shape while still using current search and instruction content; this keeps previously published schemas working during continuous review.
 
-Discover before searching when the topic is unknown:
+Search with a brief description of the user's goal. Load the matching ID.
+
+```text
+search_workflows({"query":"Хочу красивый сайт для студии. Какие разделы нужны?","language":"ru","response_format":"workflow"})
+get_workflow({"id":"web-page-architecture","language":"ru","response_format":"workflow"})
+```
+
+Use the catalog when a description produces no useful match or the caller wants to explore the available topics.
 
 ```text
 search_workflows({"view":"catalog"})

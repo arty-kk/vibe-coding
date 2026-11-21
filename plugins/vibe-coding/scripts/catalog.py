@@ -8,7 +8,7 @@ import re
 import sys
 from pathlib import Path
 from catalog_site import load_locales, render_catalog, LANGUAGES
-from search_index import build_index, match_score
+from search_index import build_index, rank_entries
 from workflow_graph import load_workflows
 from topic_index import build_topics
 
@@ -29,15 +29,12 @@ def contained_path(raw):
 
 def search(rows, query='', mode=None, skill=None, topic=None):
     index = build_index(rows, load_locales(), ROOT)
-    result = []
-    for row in rows:
-        if mode and row['mode'] != mode: continue
-        if skill and row['skill'] != skill: continue
-        if topic and row.get('topic_key') != topic: continue
-        score = match_score(index[row['id']], query)
-        if score is not None: result.append((score, row))
-    return [row for _, row in sorted(result, key=lambda item: (-item[0],
-        item[1]['mode'] != 'audit' if query.strip() else False, item[1]['id'] if query.strip() else ''))]
+    by_id = {row['id']: row for row in rows
+             if (not mode or row['mode'] == mode)
+             and (not skill or row['skill'] == skill)
+             and (not topic or row.get('topic_key') == topic)}
+    matches = rank_entries((index[identity] for identity in by_id), query, full_text=True)
+    return [by_id[match['id']] for match in matches]
 
 
 def purpose(text, title):

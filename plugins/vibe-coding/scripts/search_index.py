@@ -84,9 +84,9 @@ class Rules:
         return matches[0] if len(signatures) == 1 else word
 
     @lru_cache(maxsize=256)
-    def website_goal(self, text):
-        routes = self.lexicon.get('website_goal_routes')
-        if not routes:
+    def task_goal(self, text):
+        groups = self.lexicon.get('goal_routes', [])
+        if not groups:
             return None
         normalized = ' ' + ' '.join(words(text)) + ' '
 
@@ -95,19 +95,25 @@ class Rules:
                 return fold(phrase) in normalized
             return ' ' + ' '.join(words(phrase)) + ' ' in normalized
 
-        if any(mentions(phrase) for phrase in routes['subjects']):
-            return next((identity for identity, phrases in routes['goals'].items()
-                         if any(mentions(phrase) for phrase in phrases)), None)
+        for group in groups:
+            if not any(mentions(phrase) for phrase in group['subjects']):
+                continue
+            for goal in group['goals']:
+                if any(mentions(phrase) for phrase in goal['phrases']):
+                    return goal
         return None
 
-    def query(self, text):
+    @lru_cache(maxsize=256)
+    def query(self, original):
+        text = original
         text = re.sub(r'[^\W_]+(?:[+#]+)?|[+#]+', lambda match: self.correct(match[0]), fold(text))
         text = self.intents(self.concepts(text))
         hints = re.findall(r'intent_([a-z]+)', text)
         text = re.sub(r'intent_[a-z]+', ' ', text)
         for stop in sorted((s for s in self.stops if CJK.search(s)), key=lambda value: (-len(value), value)):
             text = text.replace(stop, ' ')
-        return list(dict.fromkeys(w for w in words(text) if w not in self.stops)), set(hints)
+        return {'terms': tuple(dict.fromkeys(w for w in words(text) if w not in self.stops)),
+                'hints': frozenset(hints), 'goal': self.task_goal(original), 'key': compact(original)}
 
 
 @lru_cache(maxsize=4)
@@ -150,22 +156,30 @@ def contains(tokens, term):
         token == term or (len(term) >= 3 and token.startswith(term)) for token in tokens)
 
 
-def match_score(entry, query, full_text=True, rules=None):
-    rules = rules or getattr(entry, 'search_rules', None) or rules_for()
-    terms, hints = rules.query(query)
+def metadata_tokens(entry, rules):
     identity = entry.get('id', '')
-    key = compact(query)
-    if key and identity:
-        if key == compact(identity): return 20000
-        if key in [compact(title) for title in entry['titles']]: return 15000
-        if key in [compact(alias) for alias in rules.lexicon.get('aliases', {}).get(identity, [])]: return 15000
     title = rules.tokens(' '.join(entry.get('titles', [])))
-    subjects = [rules.tokens(value) for value in entry.get('primary_keywords', [])]
     keywords = rules.tokens(' '.join([identity, entry.get('skill', ''), entry.get('purpose', ''),
                             *entry.get('keywords', []), *rules.lexicon.get('discovery', {}).get(identity, [])]))
     topic = rules.tokens(' '.join(entry.get('topics', [])))
     # Old callers may provide only primary/body rather than the structured index.
     if not identity: title = rules.tokens(entry['primary'])
+    return title, keywords, topic
+
+
+def score_entry(entry, analysis, full_text, rules):
+    identity = entry.get('id', '')
+    key = analysis['key']
+    if key and identity:
+        if key == compact(identity): return 20000
+        if key in [compact(title) for title in entry['titles']]: return 15000
+        if key in [compact(alias) for alias in rules.lexicon.get('aliases', {}).get(identity, [])]: return 15000
+    goal = analysis['goal']
+    is_goal = goal and identity == goal['id']
+    if is_goal and goal.get('prefer'): return 8000
+    terms = analysis['terms']
+    subjects = [rules.tokens(value) for value in entry.get('primary_keywords', [])]
+    title, keywords, topic = metadata_tokens(entry, rules)
     body = None
     total, body_only = 0, False
     for term in terms:
@@ -174,10 +188,42 @@ def match_score(entry, query, full_text=True, rules=None):
         elif contains(keywords, term): total += 20
         elif contains(topic, term): total += 8
         else:
-            if not full_text: return -2000 if identity and identity == rules.website_goal(query) else None
+            if not full_text: return -2000 if is_goal else None
             if body is None: body = rules.tokens(entry['body'])
-            if not contains(body, term): return -2000 if identity and identity == rules.website_goal(query) else None
+            if not contains(body, term): return -2000 if is_goal else None
             total += 1
             body_only = True
-    if entry.get('mode') in hints: total += 35
+    if entry.get('mode') in analysis['hints']: total += 35
     return total - (1000 if body_only else 0)
+
+
+def match_score(entry, query, full_text=True, rules=None):
+    rules = rules or getattr(entry, 'search_rules', None) or rules_for()
+    return score_entry(entry, rules.query(query), full_text, rules)
+
+
+def rank_entries(entries, query, full_text=False):
+    entries = list(entries)
+    if not entries:
+        return []
+    rules = getattr(entries[0], 'search_rules', None) or rules_for()
+    analysis = rules.query(query)
+
+    def collect(parsed):
+        matches = []
+        for entry in entries:
+            score = score_entry(entry, parsed, full_text, rules)
+            if score is not None:
+                matches.append((score, entry))
+        return matches
+
+    matches = collect(analysis)
+    if not matches and not full_text and len(analysis['terms']) > 2:
+        vocabulary = set(token for entry in entries for field in metadata_tokens(entry, rules) for token in field)
+        terms = tuple(term for term in analysis['terms'] if contains(vocabulary, term))
+        if 2 <= len(terms) < len(analysis['terms']) <= len(terms) * 2:
+            matches = collect({**analysis, 'terms': terms, 'key': ''})
+
+    if query.strip():
+        matches.sort(key=lambda item: (-item[0], item[1]['mode'] != 'audit', item[1]['id']))
+    return [entry for _, entry in matches]

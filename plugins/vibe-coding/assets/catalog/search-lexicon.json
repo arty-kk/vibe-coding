@@ -2079,70 +2079,252 @@
     "web-search-performance-check": "Check real route/head/crawler/provider readiness and measured loading budgets, separating local proof from indexing, citations and field performance.",
     "web-page-acceptance-check": "Reconcile the complete actual page with required outcomes and domain evidence; omitted assets, unavailable actions and unverified gates remain open."
   },
-  "website_goal_routes": {
-    "subjects": [
-      "website",
-      "site",
-      "homepage",
-      "landing page",
-      "web site",
-      "сайт",
-      "сайта",
-      "сайтик",
-      "лендинг",
-      "лендинга",
-      "главную страницу",
-      "главную сайта",
-      "главную",
-      "главная страница",
-      "sitio web",
-      "página de inicio",
-      "página de destino",
-      "网站",
-      "首页",
-      "落地页"
-    ],
-    "goals": {
-      "web-offer-synthesis": [
-        "сначала понять",
-        "сначала нужно понять",
-        "сначала продумать",
-        "продумать предложение",
-        "нужна концепция",
-        "пока только план",
-        "proposal",
-        "plan first",
-        "oferta",
-        "先规划"
+  "goal_routes": [
+    {
+      "subjects": [
+        "website",
+        "site",
+        "homepage",
+        "landing page",
+        "web site",
+        "сайт",
+        "сайта",
+        "сайтик",
+        "лендинг",
+        "лендинга",
+        "главную страницу",
+        "главную сайта",
+        "главную",
+        "главная страница",
+        "sitio web",
+        "página de inicio",
+        "página de destino",
+        "网站",
+        "首页",
+        "落地页",
+        "сайте",
+        "главная",
+        "главной",
+        "sitio",
+        "portada",
+        "网页"
       ],
-      "homepage-landing-polish": [
-        "доделай",
-        "доделать",
-        "довести до ума",
-        "переделай",
-        "переделать",
-        "обнови дизайн",
-        "redesign",
-        "finish",
-        "rediseñar",
-        "terminar",
-        "改版",
-        "完善"
+      "goals": [
+        {
+          "id": "web-offer-synthesis",
+          "phrases": [
+            "сначала понять предложение",
+            "сначала нужно понять предложение",
+            "сначала продумать предложение",
+            "продумать предложение",
+            "нужна концепция",
+            "figure out the offer",
+            "define the offer",
+            "definir la oferta",
+            "先明确定位"
+          ],
+          "prefer": true
+        },
+        {
+          "id": "web-project-architecture",
+          "phrases": [
+            "архитектура сайта",
+            "архитектуру сайта",
+            "архитектура проекта",
+            "какой стек",
+            "из чего собрать",
+            "как разложить код",
+            "модульную структуру",
+            "project architecture",
+            "site architecture",
+            "architecture of the site",
+            "what stack",
+            "structure the codebase",
+            "arquitectura del sitio",
+            "qué tecnología",
+            "qué stack",
+            "网站架构",
+            "技术栈",
+            "怎么组织代码"
+          ],
+          "prefer": true
+        },
+        {
+          "id": "web-page-architecture",
+          "phrases": [
+            "какие разделы",
+            "какие блоки нужны",
+            "структуру главной",
+            "как построить главную",
+            "what sections",
+            "which sections",
+            "how should the homepage be structured",
+            "qué secciones",
+            "qué apartados",
+            "cómo estructurar la portada",
+            "哪些板块",
+            "哪些栏目"
+          ],
+          "prefer": true
+        },
+        {
+          "id": "homepage-landing-polish",
+          "phrases": [
+            "доделай сайт",
+            "переделай сайт",
+            "улучши главную",
+            "переделай главную",
+            "доделай лендинг",
+            "finish the website",
+            "improve the homepage",
+            "redesign the homepage",
+            "rediseñar la portada",
+            "mejora la página de inicio",
+            "改版首页",
+            "完善网站"
+          ],
+          "prefer": true
+        },
+        {
+          "id": "homepage-landing-audit",
+          "phrases": [
+            "разваливается на телефоне",
+            "ломается на телефоне",
+            "съезжает на мобильном",
+            "выглядит дешево",
+            "looks cheap",
+            "falls apart on mobile",
+            "broken on mobile",
+            "se rompe en el móvil",
+            "se ve mal en el móvil",
+            "手机上乱了",
+            "手机上错位",
+            "看起来廉价"
+          ],
+          "prefer": true
+        },
+        {
+          "id": "homepage-landing-build",
+          "phrases": [
+            "сделай сайт",
+            "сделай мне сайт",
+            "создай сайт",
+            "собери лендинг",
+            "сделай красивый сайт",
+            "сделай мне красивый сайт",
+            "хочу красивый сайт",
+            "сделай современный лендинг",
+            "build a website",
+            "build a landing page",
+            "create a website",
+            "make a website",
+            "make a beautiful site",
+            "make me a beautiful website",
+            "make a beautiful website",
+            "quiero crear un sitio web",
+            "hazme un sitio web bonito",
+            "hazme una web bonita",
+            "做个漂亮的网站",
+            "做一个漂亮的网站",
+            "给我做个网站"
+          ],
+          "prefer": true
+        },
+        {
+          "id": "web-offer-synthesis",
+          "phrases": [
+            "сначала понять",
+            "сначала нужно понять",
+            "сначала продумать",
+            "продумать предложение",
+            "нужна концепция",
+            "пока только план",
+            "proposal",
+            "plan first",
+            "oferta",
+            "先规划"
+          ]
+        },
+        {
+          "id": "homepage-landing-polish",
+          "phrases": [
+            "доделай",
+            "доделать",
+            "довести до ума",
+            "переделай",
+            "переделать",
+            "обнови дизайн",
+            "redesign",
+            "finish",
+            "rediseñar",
+            "terminar",
+            "改版",
+            "完善"
+          ]
+        },
+        {
+          "id": "homepage-landing-build",
+          "phrases": [
+            "сделай",
+            "создай",
+            "собери",
+            "нужен красивый",
+            "хочу красивый",
+            "build",
+            "create",
+            "make",
+            "crear",
+            "construir",
+            "创建",
+            "搭建"
+          ]
+        }
+      ]
+    },
+    {
+      "subjects": [
+        "бэкэнд",
+        "бэкенд",
+        "бекенд",
+        "бэкенда",
+        "бэкенде",
+        "сервер",
+        "сервере",
+        "backend",
+        "back end",
+        "api",
+        "servidor",
+        "servicio",
+        "后端",
+        "服务器",
+        "接口"
       ],
-      "homepage-landing-build": [
-        "сделай",
-        "создай",
-        "собери",
-        "нужен красивый",
-        "хочу красивый",
-        "build",
-        "create",
-        "make",
-        "crear",
-        "construir",
-        "创建",
-        "搭建"
+      "goals": [
+        {
+          "id": "instant-backend-probe",
+          "phrases": [
+            "глючит",
+            "зависает",
+            "не отвечает",
+            "ответ не приходит",
+            "ответ так и не приходит",
+            "висит и",
+            "висит без ответа",
+            "never responds",
+            "stops responding",
+            "hangs",
+            "stalls",
+            "gets stuck",
+            "no responde",
+            "se queda cargando",
+            "se cuelga",
+            "一直转圈",
+            "没有响应",
+            "卡住"
+          ],
+          "prefer": true
+        }
       ]
     }
-  }
+  ]
 }

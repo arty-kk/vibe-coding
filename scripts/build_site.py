@@ -387,6 +387,7 @@ def build(destination=SITE):
     validate_locales(locales, rows)
     version = json.loads((LIBRARY_PLUGIN/'plugin.json').read_text(encoding='utf-8'))['version']
     instruction_version = json.loads((PLUGIN/'plugin.json').read_text(encoding='utf-8'))['version']
+    mcp_version = json.loads((ROOT/'mcp/package.json').read_text(encoding='utf-8'))['version']
     skills = len(list((PLUGIN/'skills').glob('*/SKILL.md')))
     content = json.loads((ROOT/'site/content.json').read_text(encoding='utf-8').replace('{skills}',str(skills)).replace('{recipes}',str(len(rows))))
     if set(content) != set(LANGUAGES): raise ValueError('Missing site locale')
@@ -433,7 +434,7 @@ def build(destination=SITE):
         source_url = f'{REPO}/blob/v{instruction_version}/plugins/vibe-coding/{quote(row["path"])}'
         body = f'''<article class="workflow"><nav aria-label="Breadcrumb"><a href="{PREFIX}">Vibe Coding</a><span aria-hidden="true"> / </span><a href="{PREFIX}workflows/">{e(content['en']['allWorkflows'])}</a><span aria-hidden="true"> / </span><span>{e(title)}</span></nav>
 <p class="eyebrow">{e(row['category'])} · {e(locales['en']['modes'][row['mode']])}</p><h1>{e(title)}</h1>
-<p class="intro">{e(introduction)}</p><p class="fine">MCP library {version} · Instruction library {instruction_version} · English technical instructions</p><a id="catalog-back" class="text-link" href="{PREFIX}#catalog">← Back to search</a>
+<p class="intro">{e(introduction)}</p><p class="fine">MCP library {mcp_version} · Instruction library {instruction_version} · English technical instructions</p><a id="catalog-back" class="text-link" href="{PREFIX}#catalog">← Back to search</a>
 <section class="run-workflow" aria-labelledby="run-title"><h2 id="run-title">Use this workflow</h2><p>{e(content['en']['workflowIntro'])}</p>
 <div class="tools prompt-options" hidden><label class="select-field" for="host">Coding agent<select id="host"><option value="generic">{e(content['en']['genericHost'])}</option><option value="codex">Codex</option><option value="claude">Claude Code</option></select></label>
 <label class="select-field" for="prompt-language">Prompt language<select id="prompt-language">{''.join(f'<option value="{code}">{label}</option>' for code,label in LANGUAGES.items())}</select></label></div>

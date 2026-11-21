@@ -65,15 +65,17 @@
     return value => value.replace(pattern, match => ' ' + table.get(match) + ' ');
   }
 
-  // Recover a broad website request only when its explicit subject and operation agree.
-  // Free-form business details need not appear in the workflow metadata.
-  function websiteGoal(text, routes) {
-    if (!routes) return null;
+  function taskGoal(text, groups) {
+    if (!groups?.length) return null;
     const normalized = ' ' + words(text).join(' ') + ' ';
     const mentions = phrase => cjk(phrase) ? normalized.includes(fold(phrase))
       : normalized.includes(' ' + words(phrase).join(' ') + ' ');
-    if (!routes.subjects.some(mentions)) return null;
-    return Object.entries(routes.goals).find(([, phrases]) => phrases.some(mentions))?.[0] || null;
+    for (const group of groups) {
+      if (!group.subjects.some(mentions)) continue;
+      const goal = group.goals.find(route => route.phrases.some(mentions));
+      if (goal) return goal;
+    }
+    return null;
   }
 
   function rulesFor(lexicon) {
@@ -93,7 +95,7 @@
           const text = intents(concepts(correct ? correct(value) : fold(value)));
           const hints = [...text.matchAll(/intent_([a-z]+)/g)].map(match => match[1]);
           const terms = words(cleanCjk(text.replace(/intent_[a-z]+/g, ' '))).filter(term => !stops.has(term));
-          return {terms: [...new Set(terms)], hints: [...new Set(hints)], goal: websiteGoal(value, lexicon.website_goal_routes)};
+          return {terms: [...new Set(terms)], hints: [...new Set(hints)], goal: taskGoal(value, lexicon.goal_routes)};
         }});
     }
     return compiled.get(lexicon);
@@ -128,6 +130,8 @@
     const exact = key && (key === entry.exactId ? 'exact_id'
       : entry.exactTitles.includes(key) ? 'exact_title' : entry.exactAliases.includes(key) ? 'alias' : null);
     if (exact) return {score: exact === 'exact_id' ? 20000 : 15000, bodyOnly: false, kind: exact, terms: analysis.terms};
+    const isGoal = entry.id === analysis.goal?.id;
+    if (isGoal && analysis.goal.prefer) return {score: 8000, bodyOnly: false, kind: 'catalog', terms: []};
     let total = 0, bodyOnly = false;
     for (const term of analysis.terms) {
       if (entry.subjects.some(subject => contains(subject, term)
@@ -136,8 +140,7 @@
       else if (contains(entry.keywordWords, term)) total += 20;
       else if (contains(entry.topicWords, term)) total += 8;
       else if (bodies && contains(bodyWords(entry, bodies), term)) {total += 1; bodyOnly = true;}
-      else return entry.id === analysis.goal
-        ? {score: -2000, bodyOnly: false, kind: 'catalog', terms: analysis.terms} : null;
+      else return isGoal ? {score: -2000, bodyOnly: false, kind: 'catalog', terms: []} : null;
     }
     if (analysis.hints.includes(entry.mode)) total += 35;
     if (bodyOnly) total -= 1000;
@@ -148,8 +151,18 @@
     const query = state.q || '';
     const analysis = entries[0]?.rules.query(query) || {terms: words(query), hints: []};
     analysis.key = compact(query);
-    const candidates = entries.map(entry => ({entry, match: score(entry, query, analysis, state.full ? bodies : null)}))
+    const collect = parsed => entries.map(entry => ({entry, match: score(entry, query, parsed, state.full ? bodies : null)}))
       .filter(item => item.match !== null);
+    let candidates = collect(analysis);
+    if (!candidates.length && !state.full && analysis.terms.length > 2) {
+      // Retry only after an empty result. Keep every term known to the catalog,
+      // and require at least two terms representing at least half of the request.
+      const terms = analysis.terms.filter(term => entries.some(entry =>
+        contains(entry.titleWords, term) || contains(entry.keywordWords, term) || contains(entry.topicWords, term)));
+      if (terms.length >= 2 && terms.length < analysis.terms.length && terms.length * 2 >= analysis.terms.length) {
+        candidates = collect({...analysis, terms, key: ''});
+      }
+    }
     const topics = {}, actions = {};
     for (const {entry} of candidates) {
       if (!state.action || entry.mode === state.action) topics[entry.skill] = (topics[entry.skill] || 0) + 1;

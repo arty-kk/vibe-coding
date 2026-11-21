@@ -61,6 +61,21 @@ test('no matches remains empty rather than silently dropping a filter', () => {
   assert.equal(engine.select(entries,state({topic:'vibe-redis',action:'review'})).matches.length,0);
 });
 
+test('an empty metadata search can recover from extra words outside the catalog', () => {
+  const sample = engine.prepare([
+    {id:'session-cookie-check',titles:['Session Cookie'],skill:'auth',mode:'check'},
+    {id:'disk-cache-check',titles:['Disk Cache'],skill:'cache',mode:'check'}
+  ],{},{});
+  const q = 'session cookie zxstrangelabel';
+  const found = engine.select(sample,state({q}));
+  assert.deepEqual(ids(found),['session-cookie-check']);
+  assert.deepEqual(found.matches[0].match.terms,['session','cookie']);
+  assert.equal(engine.select(sample,state({q,topic:'cache'})).matches.length,0);
+  assert.equal(engine.select(sample,state({q,full:true})).matches.length,0);
+  assert.equal(engine.select(sample,state({q:'session disk zxstrangelabel'})).matches.length,0);
+  assert.equal(engine.select(sample,state({q:'session zxstrangelabel'})).matches.length,0);
+});
+
 test('query and filters round-trip through a shared URL, including Unicode', () => {
   const input = state({q:'кэш API',topic:'vibe-cache',action:'check',full:true,page:2});
   assert.deepEqual(engine.readState(engine.searchParams(input),Object.keys(topics),Object.keys(actions)),input);
@@ -87,7 +102,10 @@ test('catalog back links cannot become external redirects or arbitrary local pat
 test('site and offline ranking agree with Python for the judged query corpus', () => {
   const corpus = JSON.parse(fs.readFileSync(path.join(root,'review/search-cases-1.6.0.json')));
   const cases = [...corpus.cases, ...corpus.negative_cases,
-    {query:'outbox',full_text:true}, {query:'API',skill:'vibe-backend',mode:'check'}];
+    {query:'outbox',full_text:true}, {query:'API',skill:'vibe-backend',mode:'check'},
+    {query:'сделай мне красивый сайт'}, {query:'хочу правильную архитектуру сайта'},
+    {query:'главная выглядит дёшево и разваливается на телефоне'},
+    {query:'бэкэнд глючит, иногда ответ не приходит'}, {query:'session cookie zxstrangelabel'}];
   const {spawnSync} = require('node:child_process');
   const pythonCommand = process.env.PYTHON || (process.platform === 'win32' ? 'python' : 'python3');
   const result = spawnSync(pythonCommand,[path.join(__dirname,'search_parity.py')], {input:JSON.stringify(cases),encoding:'utf8',maxBuffer:2_000_000});

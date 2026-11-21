@@ -106,6 +106,21 @@ test('specific ordinary-language project requests survive unfamiliar business co
   assert.equal(searchWorkflows({query:'Доделай сайт гончарной студии',skill:'vibe-sql'}).total, 0);
 });
 
+test('conversational goals rank the requested starting method ahead of related steps', () => {
+  for (const [query, language, expected] of [
+    ['сделай мне красивый сайт', 'ru', 'homepage-landing-build'],
+    ['Хочу красивый сайт для студии. Какие разделы нужны и как посетитель оставит заявку?', 'ru', 'web-page-architecture'],
+    ['хочу правильную архитектуру сайта', 'ru', 'web-project-architecture'],
+    ['главная выглядит дёшево и разваливается на телефоне', 'ru', 'homepage-landing-audit'],
+    ['бэкэнд глючит, иногда ответ не приходит', 'ru', 'instant-backend-probe'],
+    ['On my phone the homepage falls apart and looks cheap.', 'en', 'homepage-landing-audit'],
+    ['Quiero un sitio para mi estudio. ¿Qué secciones necesito para que me contacten?', 'es', 'web-page-architecture'],
+    ['后端接口一直转圈，提交表单后没有响应。', 'zh-CN', 'instant-backend-probe'],
+  ]) assert.equal(searchWorkflows({query, language}).workflows[0]?.id, expected, query);
+  assert.equal(searchWorkflows({query:'Сколько будет 15% от 480?'}).total, 0);
+  assert.equal(searchWorkflows({query:'бэкэнд глючит, иногда ответ не приходит',skill:'vibe-sql'}).total, 0);
+});
+
 test('new, existing and read-only page tasks load the correct stages and resources', () => {
   const proposal = getWorkflow({id:'web-offer-synthesis'}).execution.steps;
   assert.equal(proposal.at(-1).id, 'web-experience-brief');
