@@ -12,7 +12,7 @@ For a new homepage, start with `web-offer-synthesis` to prepare a proposal or `h
 
 ### Vibe Coding Library via MCP
 
-[Vibe Coding Library](https://vibe-coding-library.artem-satsuk.chatgpt.site/) works with any coding agent supporting MCP through Streamable HTTP. Its two read-only tools select a method from the task goal and load the current prompt, required context and conditional next steps. No publisher account, token or API key is required. Direct MCP use needs no Codex or Claude installation; the optional native distribution adds a selection skill.
+[Vibe Coding Library](https://vibe-coding-library.artem-satsuk.chatgpt.site/) works with coding agents that support MCP through Streamable HTTP. Plan a website or load an engineering workflow from the task goal with the read-only tools. No publisher account, token or API key is required. The optional native distribution adds a selection skill.
 
 Add this Streamable HTTP endpoint to a compatible MCP client:
 

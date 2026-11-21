@@ -90,5 +90,5 @@ export function getWorkflow({id, query, language = 'en', host = 'generic', inten
 export function libraryStatus() {
   return {service: 'Vibe Coding Library', version: VERSION, instruction_version: INSTRUCTION_VERSION,
     workflows: library.recipes.length, skills: library.skillCount, digest: DIGEST,
-    tools: ['search_workflows', 'get_workflow'], authentication: 'none'};
+    tools: ['search_workflows', 'get_workflow', 'get_website_plan_workflow'], authentication: 'none'};
 }

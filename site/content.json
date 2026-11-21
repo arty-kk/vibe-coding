@@ -75,8 +75,8 @@
         "Use a coding agent or client that supports remote MCP servers over Streamable HTTP. Add the public endpoint with authentication set to none. The library does not require its own API key. Your agent or model provider may have separate setup requirements."
       ],
       [
-        "What do the two tools do?",
-        "search_workflows returns workflow titles, summaries and stable IDs. get_workflow loads the guidance for the selected workflow step. Your coding agent applies it with its own project tools and keeps the context needed for later steps."
+        "What do the MCP tools do?",
+        "Use get_website_plan_workflow to plan site sections, the offer or the stack. Compare workflows with search_workflows and load the current step with get_workflow."
       ],
       [
         "Which languages are supported?",
@@ -268,8 +268,8 @@
         "Usa un agente o cliente que admita servidores MCP remotos por Streamable HTTP. Añade el endpoint público sin autenticación. La biblioteca no requiere una clave de API propia. El agente o proveedor del modelo puede tener requisitos de configuración independientes."
       ],
       [
-        "¿Qué hacen las dos herramientas?",
-        "search_workflows devuelve títulos, resúmenes e identificadores estables. get_workflow carga las instrucciones del paso elegido. Tu agente las aplica con sus herramientas del proyecto y conserva el contexto necesario para los pasos posteriores."
+        "¿Qué hacen las herramientas MCP?",
+        "Usa get_website_plan_workflow para planificar las secciones, la oferta o el stack. Compara flujos con search_workflows y carga el paso actual con get_workflow."
       ],
       [
         "¿Qué idiomas admite?",
@@ -461,8 +461,8 @@
         "Используйте агента или клиент с поддержкой удалённых MCP-серверов через Streamable HTTP. Добавьте публичный endpoint без авторизации. Библиотека не требует собственного API-ключа. У агента и провайдера модели могут быть отдельные требования к настройке."
       ],
       [
-        "Что делают два инструмента?",
-        "search_workflows возвращает названия, описания и стабильные ID. get_workflow загружает инструкции выбранного шага. Агент применяет их своими инструментами проекта и сохраняет контекст, нужный для следующих шагов."
+        "Что делают инструменты MCP?",
+        "Используйте get_website_plan_workflow для планирования разделов сайта, предложения или стека. Сравните сценарии через search_workflows и загрузите текущий шаг через get_workflow."
       ],
       [
         "Какие языки поддерживаются?",
@@ -654,8 +654,8 @@
         "使用支持通过 Streamable HTTP 访问远程 MCP 服务器的编程智能体或客户端。添加公共端点，并将身份验证设为无。工作流库不需要专用 API 密钥，智能体或模型提供方可能有各自的设置要求。"
       ],
       [
-        "两个工具分别做什么？",
-        "search_workflows 返回工作流标题、摘要和稳定 ID。get_workflow 加载所选步骤的说明。智能体通过自身项目工具应用说明，并保留后续步骤需要的上下文。"
+        "MCP 工具分别做什么？",
+        "用 get_website_plan_workflow 规划网站栏目、产品定位或技术栈。用 search_workflows 比较工作流，用 get_workflow 加载当前步骤。"
       ],
       [
         "支持哪些语言？",

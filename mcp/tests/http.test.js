@@ -20,14 +20,14 @@ for (const mode of ['legacy', 'auto']) {
     try {
       if (mode === 'auto') assert.equal(connection.getNegotiatedProtocolVersion(), '2026-07-28');
       const tools = (await connection.listTools()).tools;
-      assert.deepEqual(tools.map(tool => tool.name), ['search_workflows', 'get_workflow']);
+      assert.deepEqual(tools.map(tool => tool.name), ['search_workflows', 'get_workflow', 'get_website_plan_workflow']);
       const searchTool = tools[0];
-      assert.match(searchTool.description, /load a starting method in one call/);
+      assert.match(searchTool.description, /Start these tasks from the goal or symptom/);
       assert.match(searchTool.inputSchema.properties.query.description, /ordinary language/);
       const loadTool = tools[1];
-      assert.match(loadTool.description, /before answering a website planning question/);
       assert.match(loadTool.inputSchema.properties.query.description, /exactly one of query or id/);
-      if (mode === 'legacy') assert.match(connection.getInstructions(), /select and load a method in one read-only call/);
+      assert.match(tools[2].description, /^Load the read-only planning method/);
+      if (mode === 'legacy') assert.match(connection.getInstructions(), /Call get_website_plan_workflow for advice/);
       for (const tool of tools) {
         assert.deepEqual(tool.annotations, {readOnlyHint: true, destructiveHint: false, openWorldHint: false});
         assert.equal(tool.inputSchema.additionalProperties, false);
@@ -48,10 +48,27 @@ for (const mode of ['legacy', 'auto']) {
       assert.equal(selected.structuredContent.workflow.id, 'web-page-architecture');
       assert.equal(selected.structuredContent.execution.current_step, 'web-page-architecture');
       assert.ok(selected.structuredContent.files.some(file=>file.path.endsWith('/web-page-architecture.md')));
+      for (const [args, id] of [
+        [{language:'ru'}, 'web-page-architecture'],
+        [{focus:'offer'}, 'web-offer-synthesis'],
+        [{focus:'architecture'}, 'web-project-architecture']
+      ]) {
+        const plan = await connection.callTool({name:'get_website_plan_workflow', arguments:args});
+        assert.equal(plan.isError, undefined);
+        assert.equal(plan.structuredContent.workflow.id, id);
+        assert.equal(plan.structuredContent.workflow.mode, 'plan');
+        assert.equal(plan.structuredContent.execution.current_step, id);
+        assert.ok(plan.structuredContent.execution.steps.every(step => step.role !== 'implement'));
+      }
+      for (const args of [{focus:'build'}, {id:'homepage-landing-build'}]) {
+        const invalidPlan = await connection.callTool({name:'get_website_plan_workflow', arguments:args});
+        assert.equal(invalidPlan.isError, true);
+      }
       for (const [query, id] of [
         ['Сделать красивый сайт с формой заявки', 'homepage-landing-build'],
         ['На телефоне главная разваливается и выглядит дёшево', 'homepage-landing-audit'],
-        ['Бэкэнд глючит, иногда ответ не приходит', 'instant-backend-probe']
+        ['Бэкэнд глючит, иногда ответ не приходит', 'instant-backend-probe'],
+        ['Intermittent backend hang after clicking Send, no response arrives', 'instant-backend-probe']
       ]) {
         const match = await connection.callTool({name:'get_workflow', arguments:{query}});
         assert.equal(match.structuredContent?.workflow.id, id, query);

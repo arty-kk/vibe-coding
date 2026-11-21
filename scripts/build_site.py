@@ -74,7 +74,7 @@ def graph(version):
          'inLanguage': list(LANGUAGES), 'publisher': {'@id': BASE+'#maintainer'}},
         {'@type': 'SoftwareSourceCode', '@id': BASE+'#software', 'name': 'Vibe Coding Library',
          'url': BASE, 'codeRepository': REPO, 'version': version,
-         'description': 'Open-source engineering workflows for MCP-compatible coding agents through the read-only search_workflows and get_workflow tools over Streamable HTTP.',
+         'description': 'Find engineering workflows and load website planning or implementation guidance with read-only MCP tools over Streamable HTTP.',
          'runtimePlatform': ['MCP clients with Streamable HTTP support'], 'programmingLanguage': ['Markdown', 'JavaScript'],
          'license': REPO+'/blob/main/LICENSE', 'isAccessibleForFree': True,
          'maintainer': {'@id': BASE+'#maintainer'},

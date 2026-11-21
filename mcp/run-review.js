@@ -13,7 +13,7 @@ const results = [];
 try {
   await client.connect(new StreamableHTTPClientTransport(new URL(endpoint)));
   const tools = (await client.listTools()).tools;
-  assert.deepEqual(tools.map(tool => tool.name), ['search_workflows', 'get_workflow']);
+  assert.deepEqual(tools.map(tool => tool.name), ['search_workflows', 'get_workflow', 'get_website_plan_workflow']);
   for (const [kind, list] of Object.entries(cases)) {
     for (const [index, scenario] of list.entries()) {
       const calls = [];

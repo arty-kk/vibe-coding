@@ -4,11 +4,17 @@ import {searchWorkflows, getWorkflow, VERSION, LANGUAGES, MODES, SKILLS} from '.
 
 const annotations = {readOnlyHint: true, destructiveHint: false, openWorldHint: false};
 const instructions = [
-  'Consult a website planning workflow when the user asks which sections a site needs, how to order the content, or how visitors leave an enquiry. Use it for advice from a short brief, even before there is code or a repository.',
-  'Call get_workflow with query to select and load a method in one read-only call for website planning, builds, redesigns, software diagnosis, and patch review. Pass id for a known method. Use search_workflows to compare candidates when the goal is ambiguous.',
-  'Apply the current method with the host’s tools, preserve the user’s scope, and load further steps when reached. Send public technical goals or symptoms only.'
+  'Call get_website_plan_workflow for advice about what sections a website needs, how to order its content or how visitors leave an enquiry. Use it from the initial brief even if there is no code or repository. Choose focus:offer for the offer or focus:architecture for the stack and modules.',
+  'Find a workflow at the start of a website build, redesign, software diagnosis or patch review. Pass the ordinary goal or symptom to search_workflows, then load the matching ID. Call get_workflow with a query to choose and load a method in one operation.',
+  'Apply the current step with the host’s tools and within the requested scope. Load further steps when reached. Send only public technical goals or symptoms.'
 ].join(' ');
+const websitePlans = {
+  sections: 'web-page-architecture',
+  offer: 'web-offer-synthesis',
+  architecture: 'web-project-architecture'
+};
 const language = z.enum(LANGUAGES).default('en').describe('Choose a language for titles and summaries. Read the technical instructions in English.');
+const host = z.enum(['generic', 'codex', 'claude']).default('generic').describe('Choose the coding agent for optional host guidance. Use generic for any other MCP client.');
 const workflow = z.object({id: z.string(), title: z.string(), skill: z.string(), mode: z.string(),
   category: z.string(), summary: z.string(), purpose: z.string().optional(), url: z.string()});
 const responseFormat = z.enum(['workflow', 'legacy']).describe('Use workflow for purpose, match reasons and step outlines. Choose legacy for the original compact response.');
@@ -28,6 +34,11 @@ const execution = z.object({
     recheck_marker: z.string(), no_patch_marker: z.string(), rule: z.string()}),
   resource_rule: z.string()
 });
+const workflowBundle = z.object({version: z.string(), instruction_version: z.string(),
+  instruction_language: z.literal('en'), language: z.enum(LANGUAGES), host: z.enum(['generic', 'codex', 'claude']),
+  context_included: z.boolean().optional(), workflow, execution: execution.optional(),
+  files: z.array(z.object({path: z.string(), text: z.string(), sha256: z.string(), source_url: z.string()})),
+  words: z.number().int()});
 
 function output(value, format) {
   if (format !== 'workflow' && !value.catalog) {
@@ -56,8 +67,8 @@ export function buildServer() {
     instructions
   });
   server.registerTool('search_workflows', {
-    title: 'Compare workflows for websites and engineering tasks',
-    description: 'Compare relevant methods for website planning, building or redesign, bug diagnosis, and patch review. Send an ordinary task description to receive ranked workflow IDs and purposes. Use get_workflow with a query to load a starting method in one call. Browse domains or topic keys with view:catalog and an empty query when the goal is unclear or no method matches. Send public technical goals or symptoms only.',
+    title: 'Find a workflow for a site plan, design, bug or patch',
+    description: 'Find a workflow before advising on website sections, enquiry flow or technical architecture. Use it for new site builds, existing-page improvements, software bugs and patch review. Start these tasks from the goal or symptom in the user’s words. Send a short public description to get ranked workflow IDs, then load a matching ID with get_workflow. Browse domain or topic keys with view:catalog and an empty query when no method matches. Keep source code, credentials and personal data out of queries.',
     inputSchema: z.object({
       query: z.string().max(240).default('').describe('Describe a short task or symptom in ordinary language, or give a title or exact ID. Keep the purpose and relevant symptom or constraint. Omit source code, credentials and personal data.'),
       view: z.enum(['workflows', 'catalog']).default('workflows').describe('Choose workflows to rank a task description. Choose catalog with an empty query to list domains, or topics and workflow IDs for the supplied skill.'),
@@ -78,23 +89,33 @@ export function buildServer() {
     catch (error) { return failure('search_workflows', error.message); }
   });
   server.registerTool('get_workflow', {
-    title: 'Get a website planning or engineering workflow',
-    description: 'Load a website planning workflow to choose sections, content order and a path to enquiries. Consult it before answering a website planning question, even when no code exists. Use this tool for site builds, existing-page improvements, software symptoms and patch review as well. Pass the public task in query, such as "какие разделы нужны сайту студии и как клиент оставит заявку", to choose and load one workflow in a read-only call. Pass id for a known workflow. Apply the returned instructions to the user’s request.',
+    title: 'Load the workflow for the current task or step',
+    description: 'Load a matching workflow to guide the requested plan, build, diagnosis or review. Pass a known ID or a short public task description in query. Start a ready website build at homepage-landing-build, an existing homepage inspection at homepage-landing-audit, and a vague backend hang at instant-backend-probe. Choose response_format:workflow for instructions and conditional next IDs. Apply the current step with the host’s tools and load subsequent steps when reached.',
     inputSchema: z.object({
       id: z.string().min(1).max(100).regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/).optional().describe('Pass a known workflow ID. Supply exactly one of id or query.'),
       query: z.string().trim().min(1).max(240).optional().describe('Describe a task or question in ordinary language, such as "I want a nice site for a studio, what sections should it have?". Supply exactly one of query or id. Omit source code, credentials and personal data.'),
       language, response_format: responseFormat.describe('Omit to receive workflow for a query or legacy for an exact ID. Choose a format to override that default.').optional(),
-      host: z.enum(['generic', 'codex', 'claude']).default('generic').describe('Keep generic for any other MCP coding agent; host-specific project files and native skill commands are not required.'),
+      host,
       intent: z.enum(['requested', 'improve']).default('requested').describe('Use requested for the selected operation. Choose improve to compose diagnosis and repair when the user has authorized changes. Respect current permissions.'),
       include_context: z.boolean().default(true).describe('Keep true on first load. Set false for later steps only while the same-version working contract, cycle rules and domain context remain available; returns the current prompt and specialized references without repeating those foundations.')}).strict(),
-    outputSchema: z.object({version: z.string(), instruction_version: z.string(), instruction_language: z.literal('en'),
-      language: z.enum(LANGUAGES), host: z.enum(['generic', 'codex', 'claude']), context_included: z.boolean().optional(), workflow, execution: execution.optional(),
-      files: z.array(z.object({path: z.string(), text: z.string(), sha256: z.string(), source_url: z.string()})),
-      words: z.number().int()}),
+    outputSchema: workflowBundle,
     annotations, _meta: {securitySchemes: [{type: 'noauth'}]}
   }, async args => {
     try { return output(getWorkflow(args), args.response_format ?? (args.query ? 'workflow' : 'legacy')); }
     catch (error) { return failure('get_workflow', error.message); }
+  });
+  server.registerTool('get_website_plan_workflow', {
+    title: 'Load a website planning workflow',
+    description: 'Load the read-only planning method before advising on a new website’s sections, content order or enquiry path. Use it for a brief question such as "what should go on my studio website and how can clients contact me?", even before there are project files. Choose sections for page structure and conversion, offer for audience and positioning, or architecture for the stack and module boundaries. Apply the returned method to the user’s brief.',
+    inputSchema: z.object({
+      focus: z.enum(Object.keys(websitePlans)).default('sections').describe('Choose sections for page structure and enquiry flow, offer for the value proposition, or architecture for the stack and modules.'),
+      language, host
+    }).strict(),
+    outputSchema: workflowBundle,
+    annotations, _meta: {securitySchemes: [{type: 'noauth'}]}
+  }, async ({focus, language, host}) => {
+    try { return output(getWorkflow({id: websitePlans[focus], language, host}), 'workflow'); }
+    catch (error) { return failure('get_website_plan_workflow', error.message); }
   });
   return server;
 }

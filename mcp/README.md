@@ -1,6 +1,6 @@
 # Vibe Coding Library MCP service
 
-Connect any coding agent that supports MCP over Streamable HTTP. Load one engineering workflow from the user's ordinary goal with `get_workflow`. Compare options with `search_workflows` when several fit. The host and model select tools. Runtime 1.7.5 serves the versioned 1.7.2 instructions.
+Connect any coding agent that supports MCP over Streamable HTTP. Load a website planning method with `get_website_plan_workflow`. Choose and load a workflow from an ordinary goal with `get_workflow`. Compare options with `search_workflows`. The host and model select tools. Runtime 1.7.6 serves the versioned 1.7.2 instructions.
 
 Explicit composition in `plugins/vibe-coding/workflows.json` preserves all 260 IDs. Read-only requests stay read-only; authorized corrections carry evidence through repair, relevant checks and repeated Patch Checking. Later prompts load when reached. `include_context:false` reuses available same-version foundations. Missing required evidence and repeated unchanged failure cannot become a clean verdict.
 
@@ -39,10 +39,11 @@ After deployment, verify the production endpoint with the same review harness, i
 
 Use `response_format:workflow` on both tools for purposes and structured outlines. Omit it to get the original shape on search and exact-ID calls, or the structured outline on a `get_workflow` query.
 
-Choose and load the method from a brief public goal in one call. Pass an exact ID for a known workflow or a later step.
+For a website plan, load the planning workflow in one call. Choose `sections` for page structure and enquiries, `offer` for audience and positioning, or `architecture` for the stack and modules.
 
 ```text
-get_workflow({"query":"Хочу красивый сайт для студии. Какие разделы нужны?","language":"ru"})
+get_website_plan_workflow({"focus":"sections","language":"ru"})
+get_workflow({"query":"Бэкэнд глючит, иногда ответ не приходит","language":"ru"})
 ```
 
 Compare results with `search_workflows` when the top matches tie. Use the catalog when a description produces no useful match or the caller wants to explore the available topics.

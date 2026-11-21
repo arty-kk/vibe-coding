@@ -1,5 +1,10 @@
 # Changelog
 
+## MCP 1.7.6 — start website planning directly
+
+- Load guidance for site sections, the offer, or technical architecture with a focused planning tool.
+- Keep distinct discovery cues for builds, redesigns, software symptoms, and patch review.
+
 ## MCP 1.7.5 — load a workflow in one call
 
 - Select and load a website or engineering workflow from an ordinary task with `get_workflow`.
